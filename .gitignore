@@ -14,10 +14,3 @@ archive/historical_stage_artifacts/
 archive/historical_packages/
 *.zip
 .DS_Store
-
-# Cowork 내부
-.claude/
-
-# 빌드 산출물 filelist
-FILELIST.txt
-V1700_stage*_filelist.txt

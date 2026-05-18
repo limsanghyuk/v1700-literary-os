@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "title": "Cross-project influence edges read-only validator",
+  "formula": "MultiWorkCIM = CIM_project_local + CrossProjectInfluenceEdges(read_only)",
+  "read_only_edge_count": 2,
+  "blocked_edge_count": 2,
+  "cross_project_write_edges": 1,
+  "cross_project_write_allowed": false,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "license_edge_missing_but_access_allowed": false,
+  "allowed_edges": [
+    {
+      "edge_id": "cpi-read-001",
+      "source_project_id": "proj_alpha",
+      "target_project_id": "proj_shared_reference",
+      "entity_id": "shared_city_rule",
+      "access_type": "read",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "resource_scope_permits": true,
+      "read_only": true,
+      "access_allowed": true
+    },
+    {
+      "edge_id": "cpi-reference-001",
+      "source_project_id": "proj_beta",
+      "target_project_id": "proj_shared_reference",
+      "entity_id": "shared_calendar_rule",
+      "access_type": "reference",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "resource_scope_permits": true,
+      "read_only": true,
+      "access_allowed": true
+    }
+  ],
+  "blocked_edges": [
+    {
+      "edge_id": "cpi-block-write-001",
+      "source_project_id": "proj_alpha",
+      "target_project_id": "proj_beta",
+      "entity_id": "private_character_arc",
+      "access_type": "write",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "resource_scope_permits": true,
+      "read_only": false,
+      "access_allowed": false
+    },
+    {
+      "edge_id": "cpi-block-license-001",
+      "source_project_id": "proj_beta",
+      "target_project_id": "proj_alpha",
+      "entity_id": "unlicensed_character",
+      "access_type": "reference",
+      "license_edge_exists": false,
+      "approved_by_author": false,
+      "resource_scope_permits": false,
+      "read_only": true,
+      "access_allowed": false
+    }
+  ],
+  "issues": []
+}

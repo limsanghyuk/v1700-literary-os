@@ -14,7 +14,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage98", "stage99", "stage100", "stage101", "stage102", "stage103", "stage104",
     "stage105", "stage106", "stage107", "stage107_5", "stage108", "stage109", "stage110",
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
-    "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128",
+    "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -35,6 +35,7 @@ STAGE_REQUIRED_GATES = {
     "stage126": ["stage126_cross_lineage_release", "stage126_release_gate"],
     "stage127": ["stage127_multiwork_preflight", "stage127_release_gate"],
     "stage128": ["stage128_read_only_absorption", "stage128_release_gate"],
+    "stage129": ["stage129_multiwork_cim_governor", "stage129_release_gate"],
 }
 
 STAGE_REQUIRED_FILES = {
@@ -104,6 +105,18 @@ STAGE_REQUIRED_FILES["stage128"] = [
 ]
 
 
+
+STAGE_REQUIRED_FILES["stage129"] = [
+    "manifests/stage129_manifest.json",
+    "manifests/stage129_multiwork_cim_governor_manifest.json",
+    "manifests/stage129_branchpoint_trace_manifest.json",
+    "docs/stages/stage129.md",
+    "docs/architecture/stage129_blueprint.md",
+    "docs/proposals/stage129_proposal.md",
+    "release/current/stage129_multiwork_cim_governor_report.json",
+    "release/current/stage129_release_gate_report.json",
+]
+
 def main() -> int:
     issues: list[str] = []
     required = [
@@ -147,6 +160,7 @@ def main() -> int:
         "stage126": "stage125_release_gate",
         "stage127": "stage126_release_gate",
         "stage128": "stage127_release_gate",
+        "stage129": "stage128_release_gate",
     }.get(active)
     if predecessor_gate and predecessor_gate not in gates:
         issues.append(f"{predecessor_gate}_missing")
@@ -177,3 +191,5 @@ if __name__ == "__main__":
 # stage127_release_gate stage127_multiwork_preflight
 
 # stage128_release_gate stage128_read_only_absorption
+
+# stage129_release_gate stage129_multiwork_cim_governor

@@ -49,3 +49,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage127 — MultiWork Preflight & Isolation Audit](stage127.md)
 
 - Stage128 — SharedWorld / SharedCharacter Read-Only Absorption: read-only shared character/world adapter absorption with cross-project write, raw text export, and canon truth promotion blocked.
+
+- Stage129 — MultiWorkCIM + Cross-Work Canon Governor

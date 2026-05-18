@@ -1,5 +1,5 @@
 {
-  "active_version": "stage128",
+  "active_version": "stage129",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -159,7 +159,9 @@
     "stage127_multiwork_preflight",
     "stage127_release_gate",
     "stage128_read_only_absorption",
-    "stage128_release_gate"
+    "stage128_release_gate",
+    "stage129_multiwork_cim_governor",
+    "stage129_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -370,7 +372,7 @@
     "stage128_cross_project_write_disabled": true,
     "stage128_shared_world_truth_promotion_deferred": true
   },
-  "canonical_package": "V1700_stage127_multiwork_preflight_isolation_audit_integrated_repository.zip",
+  "canonical_package": "V1700_stage129_multiwork_cim_cross_work_canon_governor_integrated_repository.zip",
   "stage80": {
     "status": "active",
     "purpose": "Korean drama composition hierarchy and macro plot architecture"
@@ -656,12 +658,24 @@
     "baseline_stage": "stage126",
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
-  "canonical_filelist": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_filelist.txt",
-  "canonical_sha256_sidecar": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_integrated_repository.zip.sha256",
+  "canonical_filelist": "V1700_stage129_multiwork_cim_cross_work_canon_governor_filelist.txt",
+  "canonical_sha256_sidecar": "V1700_stage129_multiwork_cim_cross_work_canon_governor_integrated_repository.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
     "baseline_stage": "stage127",
     "purpose": "Absorbs SharedCharacter and SharedWorld concepts through read-only adapters while keeping cross-project write, raw manuscript sharing, and canon source-of-truth promotion blocked until Stage129."
+  },
+  "stage129": {
+    "title": "MultiWorkCIM + Cross-Work Canon Governor",
+    "baseline_stage": "stage128",
+    "status": "active",
+    "release_gate": "release/current/stage129_release_gate_report.json",
+    "evidence": "release/current/stage129_multiwork_cim_governor_report.json",
+    "cross_project_influence_write": 0,
+    "canon_auto_resolution_count": 0
+  },
+  "implemented_capabilities": {
+    "stage129_multiwork_cim_cross_work_canon_governor": true
   }
 }

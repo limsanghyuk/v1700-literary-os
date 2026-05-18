@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "gitnexus_available": true,
+  "python_fallback_used": false,
+  "python_fallback": {
+    "status": "PASS",
+    "import_graph_estimated": true,
+    "file_change_detection": true,
+    "test_mapping": [
+      "tests/test_stage129_multiwork_cim_governor.py"
+    ],
+    "manifest_exists": true,
+    "release_evidence_exists": true,
+    "critical_path_orphan_detected": false
+  },
+  "shape_check": {
+    "status": "pass"
+  },
+  "survival_matrix": {
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "stage128_read_only_absorption_survives": true,
+    "stage129_release_gate_integrated": true
+  },
+  "concept_impact": {
+    "provider_zero": "preserved",
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "cross_project_write": 0,
+    "canon_auto_resolution": 0
+  },
+  "symbol_to_branchpoint_trace": {
+    "run_stage129_multiwork_cim_governor": [
+      "provider_zero",
+      "cross_work_memory_isolation",
+      "project_local_cim"
+    ],
+    "run_stage129_release_gate": [
+      "release_gate",
+      "repo_doctor",
+      "branchpoint_survival"
+    ]
+  },
+  "issues": []
+}

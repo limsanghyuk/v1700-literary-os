@@ -12,11 +12,11 @@
     "status": "pass",
     "issues": [],
     "gitnexus": {
-      "installed": false,
-      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "installed": true,
+      "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.CMD",
       "optional_runtime_dependency": false,
       "fallback_available": true,
-      "error": "gitnexus binary not installed; npx path is available for optional use"
+      "error": ""
     },
     "gitnexus_optional_only": true,
     "python_fallback_available": true,
@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 35,
+        "stage_count": 36,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 35,
+          "lineage_node_count": 36,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 746
+        "node_count": 757
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 35,
+        "node_count": 36,
         "stage72_1_present": true
       },
       "warnings": [
@@ -726,6 +726,19 @@
     "stage": "128",
     "baseline_stage": "127",
     "title": "SharedWorld / SharedCharacter Read-Only Absorption Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage129_release_gate": {
+    "status": "pass",
+    "stage": "129",
+    "baseline_stage": "128",
+    "title": "MultiWorkCIM + Cross-Work Canon Governor Release Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

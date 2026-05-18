@@ -30,10 +30,20 @@
       "status": "pass",
       "multiwork_candidate_references": [
         {
-          "path": "docs/stages/STAGE_INDEX.md",
+          "path": "docs/architecture/stage129_blueprint.md",
           "terms": [
             "MultiWork",
-            "shared character"
+            "MultiWorkCIM",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "shared world"
+          ]
+        },
+        {
+          "path": "docs/proposals/stage129_proposal.md",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
           ]
         },
         {
@@ -56,10 +66,35 @@
           ]
         },
         {
+          "path": "docs/stages/stage129.md",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "shared world"
+          ]
+        },
+        {
+          "path": "docs/stages/STAGE_INDEX.md",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "shared character"
+          ]
+        },
+        {
           "path": "manifests/live_core_manifest.json",
           "terms": [
             "MultiWork",
+            "MultiWorkCIM",
             "V571"
+          ]
+        },
+        {
+          "path": "manifests/stage127_branchpoint_trace_manifest.json",
+          "terms": [
+            "MultiWork"
           ]
         },
         {
@@ -77,12 +112,6 @@
           ]
         },
         {
-          "path": "manifests/stage127_branchpoint_trace_manifest.json",
-          "terms": [
-            "MultiWork"
-          ]
-        },
-        {
           "path": "manifests/stage128_read_only_absorption_manifest.json",
           "terms": [
             "MultiWork",
@@ -91,40 +120,37 @@
           ]
         },
         {
-          "path": "release/current/release_gate_report.json",
+          "path": "manifests/stage129_branchpoint_trace_manifest.json",
           "terms": [
             "MultiWork"
           ]
         },
         {
-          "path": "release/current/stage127_multiwork_preflight_report.json",
+          "path": "manifests/stage129_manifest.json",
           "terms": [
-            "AuthorLicenseAPI",
-            "CrossWork",
             "MultiWork",
-            "MultiWorkCIM",
-            "MultiWorkOrchestrator",
-            "ProjectIsolationManager",
-            "SharedCharacterDB",
-            "SharedWorldDB",
-            "V571",
-            "shared character",
-            "shared world"
+            "MultiWorkCIM"
           ]
         },
         {
-          "path": "release/current/stage127_summary.json",
+          "path": "manifests/stage129_multiwork_cim_governor_manifest.json",
           "terms": [
             "MultiWork",
-            "MultiWorkCIM",
-            "V571"
+            "MultiWorkCIM"
           ]
         },
         {
-          "path": "release/current/stage127_release_gate_report.json",
+          "path": "manifests/stage_lineage_manifest.json",
           "terms": [
             "MultiWork",
-            "V571"
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/release_gate_report.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
           ]
         },
         {
@@ -144,6 +170,37 @@
           ]
         },
         {
+          "path": "release/current/stage127_multiwork_preflight_report.json",
+          "terms": [
+            "AuthorLicenseAPI",
+            "CrossWork",
+            "MultiWork",
+            "MultiWorkCIM",
+            "MultiWorkOrchestrator",
+            "ProjectIsolationManager",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571",
+            "shared character",
+            "shared world"
+          ]
+        },
+        {
+          "path": "release/current/stage127_release_gate_report.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage127_summary.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "V571"
+          ]
+        },
+        {
           "path": "release/current/stage128_read_only_absorption_report.json",
           "terms": [
             "V571"
@@ -157,9 +214,46 @@
           ]
         },
         {
-          "path": "release/current/stage99_gitnexus_pack/impact_nodes.json",
+          "path": "release/current/stage129_multiwork_cim_governor_report.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage129_release_gate_report.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage129_summary.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/absorption_plan.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "ProjectIsolationManager",
+            "SharedWorldDB"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/gitnexus_preflight_snapshot.json",
           "terms": [
             "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/multiwork_risk_matrix.json",
+          "terms": [
+            "ProjectIsolationManager",
+            "V571"
           ]
         },
         {
@@ -179,35 +273,39 @@
           ]
         },
         {
-          "path": "release/current/stage127_multiwork_preflight_pack/multiwork_risk_matrix.json",
-          "terms": [
-            "ProjectIsolationManager",
-            "V571"
-          ]
-        },
-        {
-          "path": "release/current/stage127_multiwork_preflight_pack/absorption_plan.json",
-          "terms": [
-            "MultiWork",
-            "MultiWorkCIM",
-            "ProjectIsolationManager",
-            "SharedWorldDB"
-          ]
-        },
-        {
           "path": "release/current/stage127_multiwork_preflight_pack/python_fallback_report.json",
           "terms": [
             "MultiWork"
           ]
         },
         {
-          "path": "release/current/stage127_multiwork_preflight_pack/gitnexus_preflight_snapshot.json",
+          "path": "release/current/stage129_multiwork_cim_governor_pack/cross_project_influence_report.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage129_multiwork_cim_governor_pack/gitnexus_preflight_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage129_multiwork_cim_governor_pack/stage129_summary.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage99_gitnexus_pack/impact_nodes.json",
           "terms": [
             "MultiWork"
           ]
         }
       ],
-      "candidate_reference_count": 22,
+      "candidate_reference_count": 35,
       "direct_v571_merge_detected": false,
       "direct_merge_paths_present": [],
       "scan_terms": [
@@ -521,7 +619,7 @@
     "python_fallback": {
       "status": "PASS",
       "python_fallback_used": true,
-      "import_edges_total": 2722,
+      "import_edges_total": 2769,
       "import_edges_sample": [
         {
           "from": "v1700.cli",
@@ -550,10 +648,6 @@
         {
           "from": "v1700.semantic_cache",
           "to": "v1700.cache.semantic_cache"
-        },
-        {
-          "from": "v1700.agent_benchmark.__init__",
-          "to": "v1700.agent_benchmark.harness"
         },
         {
           "from": "v1700.agent_benchmark.agents",
@@ -604,84 +698,88 @@
           "to": "v1700.episode_scaleup.evidence"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.__init__",
+          "from": "v1700.agent_benchmark.__init__",
+          "to": "v1700.agent_benchmark.harness"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "enum"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
           "to": "v1700.arc_reveal_knowledge.arc_contracts"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.__init__",
-          "to": "v1700.arc_reveal_knowledge.causal_plot_graph"
+          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
+          "to": "__future__"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.__init__",
-          "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.__init__",
+          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
           "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.__init__",
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "enum"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
           "to": "v1700.arc_reveal_knowledge.reveal_budget"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.__init__",
-          "to": "v1700.arc_reveal_knowledge.series_arc_planner"
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "v1700.nodes.node2_prose_renderer.contract"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "from": "v1700.arc_reveal_knowledge.reveal_budget",
           "to": "__future__"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "from": "v1700.arc_reveal_knowledge.reveal_budget",
           "to": "dataclasses"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "from": "v1700.arc_reveal_knowledge.reveal_budget",
           "to": "enum"
         },
         {
-          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
-          "to": "__future__"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
-          "to": "dataclasses"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
-          "to": "v1700.arc_reveal_knowledge.arc_contracts"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
-          "to": "__future__"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
-          "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
-          "to": "__future__"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
-          "to": "dataclasses"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
-          "to": "enum"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
-          "to": "__future__"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
-          "to": "dataclasses"
-        },
-        {
-          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
-          "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+          "from": "v1700.arc_reveal_knowledge.reveal_budget",
+          "to": "v1700.arc_reveal_knowledge.causal_plot_graph"
         }
       ],
       "critical_paths_checked": {

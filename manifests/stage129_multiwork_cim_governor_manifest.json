@@ -1,0 +1,23 @@
+{
+  "stage": "stage129",
+  "component": "multiwork_cim_governor",
+  "formulae": {
+    "MultiWorkCIM": "CIM_project_local + CrossProjectInfluenceEdges(read_only)",
+    "CanonConflictScore": "timeline_conflict*0.35 + world_rule_conflict*0.30 + character_identity_conflict*0.20 + relationship_conflict*0.15"
+  },
+  "thresholds": {
+    "PASS": "score <= 0.30",
+    "WARN": "0.30 < score <= 0.60",
+    "BLOCK": "score > 0.60"
+  },
+  "evidence_pack": "release/current/stage129_multiwork_cim_governor_pack/",
+  "required_reports": [
+    "project_local_cim_report.json",
+    "cross_project_influence_report.json",
+    "cross_work_canon_governor_report.json",
+    "gitnexus_preflight_report.json",
+    "stage129_summary.json"
+  ],
+  "write_enabled": false,
+  "auto_resolution_enabled": false
+}

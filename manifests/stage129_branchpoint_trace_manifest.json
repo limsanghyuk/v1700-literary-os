@@ -1,0 +1,30 @@
+{
+  "stage": "stage129",
+  "baseline_stage": "stage128",
+  "branchpoints": {
+    "provider_zero": {
+      "status": "preserved",
+      "evidence": "release/current/stage129_release_gate_report.json"
+    },
+    "node2_boundary": {
+      "status": "preserved",
+      "evidence": "release/current/stage129_release_gate_report.json"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "preserved",
+      "evidence": "release/current/stage129_multiwork_cim_governor_report.json"
+    },
+    "stage128_read_only_absorption": {
+      "status": "survives",
+      "evidence": "release/current/stage128_release_gate_report.json"
+    },
+    "multiwork_cim_project_locality": {
+      "status": "added",
+      "evidence": "release/current/stage129_multiwork_cim_governor_pack/project_local_cim_report.json"
+    },
+    "cross_work_canon_governor": {
+      "status": "added",
+      "evidence": "release/current/stage129_multiwork_cim_governor_pack/cross_work_canon_governor_report.json"
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "stage": "129",
+  "baseline_stage": "128",
+  "title": "MultiWorkCIM + Cross-Work Canon Governor",
+  "status": "pass",
+  "issues": [],
+  "project_local_cim_preserved": true,
+  "multiwork_cim_formula": "MultiWorkCIM = CIM_project_local + CrossProjectInfluenceEdges(read_only)",
+  "project_local_cim_count": 3,
+  "cross_project_read_only_edges": 2,
+  "cross_project_blocked_edges": 2,
+  "cross_project_write_edges": 1,
+  "cross_project_write_allowed": false,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "license_edge_missing_but_access_allowed": false,
+  "canon_conflict_blocks": 1,
+  "canon_auto_resolution_count": 0,
+  "cross_work_canon_merge_allowed": false,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "full_text_exported": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "python_fallback_used": false,
+  "stage130_multiwork_release_required": true,
+  "parts": {
+    "project_local_cim": {
+      "status": "pass",
+      "title": "Project-local CIM snapshot builder",
+      "project_local_only": true,
+      "project_count": 3,
+      "snapshots": [
+        {
+          "project_id": "proj_alpha",
+          "canon_root_id": "canon_alpha",
+          "local_character_count": 12,
+          "local_world_rule_count": 8,
+          "local_relation_count": 21,
+          "cross_project_influence_write": 0,
+          "raw_manuscript_exported": false
+        },
+        {
+          "project_id": "proj_beta",
+          "canon_root_id": "canon_beta",
+          "local_character_count": 9,
+          "local_world_rule_count": 11,
+          "local_relation_count": 18,
+          "cross_project_influence_write": 0,
+          "raw_manuscript_exported": false
+        },
+        {
+          "project_id": "proj_shared_reference",
+          "canon_root_id": "canon_shared_reference",
+          "local_character_count": 4,
+          "local_world_rule_count": 5,
+          "local_relation_count": 7,
+          "cross_project_influence_write": 0,
+          "raw_manuscript_exported": false
+        }
+      ],
+      "cross_project_influence_write": 0,
+      "raw_manuscript_exported": false,
+      "issues": []
+    },
+    "cross_project_influence": {
+      "status": "pass",
+      "title": "Cross-project influence edges read-only validator",
+      "formula": "MultiWorkCIM = CIM_project_local + CrossProjectInfluenceEdges(read_only)",
+      "read_only_edge_count": 2,
+      "blocked_edge_count": 2,
+      "cross_project_write_edges": 1,
+      "cross_project_write_allowed": false,
+      "unauthorized_cross_reads": 0,
+      "unauthorized_cross_writes": 0,
+      "license_edge_missing_but_access_allowed": false,
+      "allowed_edges": [
+        {
+          "edge_id": "cpi-read-001",
+          "source_project_id": "proj_alpha",
+          "target_project_id": "proj_shared_reference",
+          "entity_id": "shared_city_rule",
+          "access_type": "read",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "resource_scope_permits": true,
+          "read_only": true,
+          "access_allowed": true
+        },
+        {
+          "edge_id": "cpi-reference-001",
+          "source_project_id": "proj_beta",
+          "target_project_id": "proj_shared_reference",
+          "entity_id": "shared_calendar_rule",
+          "access_type": "reference",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "resource_scope_permits": true,
+          "read_only": true,
+          "access_allowed": true
+        }
+      ],
+      "blocked_edges": [
+        {
+          "edge_id": "cpi-block-write-001",
+          "source_project_id": "proj_alpha",
+          "target_project_id": "proj_beta",
+          "entity_id": "private_character_arc",
+          "access_type": "write",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "resource_scope_permits": true,
+          "read_only": false,
+          "access_allowed": false
+        },
+        {
+          "edge_id": "cpi-block-license-001",
+          "source_project_id": "proj_beta",
+          "target_project_id": "proj_alpha",
+          "entity_id": "unlicensed_character",
+          "access_type": "reference",
+          "license_edge_exists": false,
+          "approved_by_author": false,
+          "resource_scope_permits": false,
+          "read_only": true,
+          "access_allowed": false
+        }
+      ],
+      "issues": []
+    },
+    "cross_work_canon_governor": {
+      "status": "pass",
+      "title": "Cross-Work Canon Governor",
+      "formula": "CanonConflictScore = timeline_conflict*0.35 + world_rule_conflict*0.30 + character_identity_conflict*0.20 + relationship_conflict*0.15",
+      "thresholds": {
+        "PASS": "score <= 0.30",
+        "WARN": "0.30 < score <= 0.60",
+        "BLOCK": "score > 0.60"
+      },
+      "conflicts_total": 3,
+      "pass_count": 2,
+      "warn_count": 0,
+      "block_count": 1,
+      "canon_auto_resolution_count": 0,
+      "human_review_required_count": 1,
+      "project_local_canon_preserved": true,
+      "cross_work_canon_merge_allowed": false,
+      "conflicts": [
+        {
+          "conflict_id": "canon-pass-001",
+          "source_project_id": "proj_alpha",
+          "target_project_id": "proj_shared_reference",
+          "entity_id": "shared_city_rule",
+          "timeline_conflict": 0.0,
+          "world_rule_conflict": 0.2,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.0,
+          "evidence": [
+            "shared rule has compatible local override"
+          ],
+          "recommended_action": "allow_read_only_reference"
+        },
+        {
+          "conflict_id": "canon-warn-001",
+          "source_project_id": "proj_beta",
+          "target_project_id": "proj_shared_reference",
+          "entity_id": "shared_calendar_rule",
+          "timeline_conflict": 0.5,
+          "world_rule_conflict": 0.2,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.1,
+          "evidence": [
+            "calendar drift requires author-facing note"
+          ],
+          "recommended_action": "warn_and_preserve_project_local_canon"
+        },
+        {
+          "conflict_id": "canon-block-001",
+          "source_project_id": "proj_alpha",
+          "target_project_id": "proj_beta",
+          "entity_id": "private_character_arc",
+          "timeline_conflict": 1.0,
+          "world_rule_conflict": 0.7,
+          "character_identity_conflict": 1.0,
+          "relationship_conflict": 0.8,
+          "evidence": [
+            "private character arc cannot merge into another project"
+          ],
+          "recommended_action": "block_cross_work_canon_merge"
+        }
+      ],
+      "decisions": [
+        {
+          "conflict_id": "canon-pass-001",
+          "score": 0.06,
+          "status": "PASS",
+          "action": "allow",
+          "auto_resolution_allowed": false,
+          "human_review_required": false
+        },
+        {
+          "conflict_id": "canon-warn-001",
+          "score": 0.25,
+          "status": "PASS",
+          "action": "allow",
+          "auto_resolution_allowed": false,
+          "human_review_required": false
+        },
+        {
+          "conflict_id": "canon-block-001",
+          "score": 0.88,
+          "status": "BLOCK",
+          "action": "block",
+          "auto_resolution_allowed": false,
+          "human_review_required": true
+        }
+      ],
+      "issues": []
+    },
+    "gitnexus_preflight": {
+      "status": "PASS",
+      "gitnexus_available": true,
+      "python_fallback_used": false,
+      "python_fallback": {
+        "status": "PASS",
+        "import_graph_estimated": true,
+        "file_change_detection": true,
+        "test_mapping": [
+          "tests/test_stage129_multiwork_cim_governor.py"
+        ],
+        "manifest_exists": true,
+        "release_evidence_exists": true,
+        "critical_path_orphan_detected": false
+      },
+      "shape_check": {
+        "status": "pass"
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "stage128_read_only_absorption_survives": true,
+        "stage129_release_gate_integrated": true
+      },
+      "concept_impact": {
+        "provider_zero": "preserved",
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "cross_project_write": 0,
+        "canon_auto_resolution": 0
+      },
+      "symbol_to_branchpoint_trace": {
+        "run_stage129_multiwork_cim_governor": [
+          "provider_zero",
+          "cross_work_memory_isolation",
+          "project_local_cim"
+        ],
+        "run_stage129_release_gate": [
+          "release_gate",
+          "repo_doctor",
+          "branchpoint_survival"
+        ]
+      },
+      "issues": []
+    }
+  }
+}

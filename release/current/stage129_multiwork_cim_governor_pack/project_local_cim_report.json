@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "title": "Project-local CIM snapshot builder",
+  "project_local_only": true,
+  "project_count": 3,
+  "snapshots": [
+    {
+      "project_id": "proj_alpha",
+      "canon_root_id": "canon_alpha",
+      "local_character_count": 12,
+      "local_world_rule_count": 8,
+      "local_relation_count": 21,
+      "cross_project_influence_write": 0,
+      "raw_manuscript_exported": false
+    },
+    {
+      "project_id": "proj_beta",
+      "canon_root_id": "canon_beta",
+      "local_character_count": 9,
+      "local_world_rule_count": 11,
+      "local_relation_count": 18,
+      "cross_project_influence_write": 0,
+      "raw_manuscript_exported": false
+    },
+    {
+      "project_id": "proj_shared_reference",
+      "canon_root_id": "canon_shared_reference",
+      "local_character_count": 4,
+      "local_world_rule_count": 5,
+      "local_relation_count": 7,
+      "cross_project_influence_write": 0,
+      "raw_manuscript_exported": false
+    }
+  ],
+  "cross_project_influence_write": 0,
+  "raw_manuscript_exported": false,
+  "issues": []
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "stage129",
+  "title": "MultiWorkCIM + Cross-Work Canon Governor",
+  "baseline_stage": "stage128",
+  "status": "implemented",
+  "package": "src/v1700/multiwork_cim_governor",
+  "gate": "src/v1700/gates/stage129_release_gate.py",
+  "tools": [
+    "tools/run_stage129_multiwork_cim_governor.py",
+    "tools/run_stage129_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage129_multiwork_cim_governor.py"
+  ],
+  "docs": [
+    "docs/stages/stage129.md",
+    "docs/architecture/stage129_blueprint.md",
+    "docs/proposals/stage129_proposal.md"
+  ],
+  "invariants": {
+    "cross_project_influence_write": 0,
+    "canon_auto_resolution_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "next_stage": "stage130"
+}

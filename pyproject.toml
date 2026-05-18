@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.28.0"
-description = "V1700 Literary OS Stage128 — SharedWorld / SharedCharacter Read-Only Absorption"
+version = "1.29.0"
+description = "V1700 Stage129 - MultiWorkCIM + Cross-Work Canon Governor"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

@@ -385,9 +385,20 @@
         "Stage122-126 absorption plan"
       ],
       "surviving_runtime_value": "Keeps Stage120 as trunk while converting V545/V546/V555 into auditable successor candidates."
+    },
+    {
+      "stage_id": "STAGE129",
+      "title": "MultiWorkCIM + Cross-Work Canon Governor",
+      "introduced_concepts": [
+        "project-local CIM preservation",
+        "read-only cross-project influence edges",
+        "cross-work canon governor",
+        "canon conflict score"
+      ],
+      "surviving_runtime_value": "Keeps Stage128 read-only shared absorption safe while adding deterministic cross-work canon validation before Stage130 MultiWork Release."
     }
   ],
-  "active_version": "stage124",
+  "active_version": "stage129",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
