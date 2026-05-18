@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "vault_mode": "LOCAL_ONLY",
+  "raw_text_exported": false,
+  "provider_export_allowed": false,
+  "feature_fingerprint": "2c7aede4fc5f60b1ce850eba00c9dc19b6948c473ca44b0172cbec56c83f0bc3",
+  "stored_feature_keys": [
+    "language_hint",
+    "length_bucket",
+    "sentence_count_bucket",
+    "style_feature_mode"
+  ],
+  "issues": []
+}

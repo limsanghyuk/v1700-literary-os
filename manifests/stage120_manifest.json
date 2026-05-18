@@ -1,0 +1,21 @@
+{
+  "stage": "stage120",
+  "title": "Gate25 NIE v1.0 Release",
+  "baseline_stage": "stage119",
+  "status": "active",
+  "entrypoints": [
+    "tools/run_stage120_gate25_nie_v1.py",
+    "tools/run_stage120_release_gate.py"
+  ],
+  "release_reports": [
+    "release/current/stage120_gate25_nie_v1_report.json",
+    "release/current/stage120_release_gate_report.json"
+  ],
+  "required_invariants": [
+    "provider_zero",
+    "node2_boundary",
+    "raw_manuscript_leakage_zero",
+    "branchpoint_lineage_preserved",
+    "clean_zip"
+  ]
+}

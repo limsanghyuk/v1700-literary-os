@@ -1,0 +1,8 @@
+{
+  "stage": "Stage72.1",
+  "sidecar": "GitNexus",
+  "runtime_dependency": false,
+  "fallback": "src/v1700/sidecars/gitnexus/python_fallback.py",
+  "probe": "src/v1700/sidecars/gitnexus/probe.py",
+  "windows_command_policy": "use npm.cmd and npx.cmd when npm.ps1 is blocked"
+}

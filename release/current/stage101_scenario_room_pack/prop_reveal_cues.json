@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "issues": [],
+  "prop_reveal_cue_count": 2,
+  "reveal_budget_safe": true,
+  "cues": [
+    {
+      "cue_id": "prop-001",
+      "prop_id": "missing-ledger-page",
+      "first_appearance_scene": "ep01-sc001",
+      "reveal_budget_slot": "RB-EP01-SETUP-02",
+      "payoff_episode": "ep04",
+      "status": "SETUP"
+    },
+    {
+      "cue_id": "prop-002",
+      "prop_id": "cracked-watch",
+      "first_appearance_scene": "ep01-sc003",
+      "reveal_budget_slot": "RB-EP01-SETUP-04",
+      "payoff_episode": "ep08",
+      "status": "ACTIVE"
+    }
+  ]
+}

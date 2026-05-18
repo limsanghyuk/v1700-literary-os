@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.node2.literary_quality_engine",
+  "stage_origins": [
+    "STAGE14"
+  ],
+  "title": "Node2 Literary Quality Engine",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage14_node2_literary_quality_engine_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

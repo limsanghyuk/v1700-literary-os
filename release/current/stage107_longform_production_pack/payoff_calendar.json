@@ -1,0 +1,45 @@
+{
+  "stage": "107.4a",
+  "title": "Payoff Calendar",
+  "status": "pass",
+  "unresolved_block_payoffs": [],
+  "payoff_count": 5,
+  "items": [
+    {
+      "payoff_id": "payoff_missing_sibling",
+      "planted_episode": "episode_01",
+      "due_episode": "episode_16",
+      "status": "DUE",
+      "severity": "WARN"
+    },
+    {
+      "payoff_id": "payoff_false_forecast",
+      "planted_episode": "episode_01",
+      "due_episode": "episode_08",
+      "status": "PAID",
+      "severity": "INFO"
+    },
+    {
+      "payoff_id": "payoff_institutional_cover",
+      "planted_episode": "episode_12",
+      "due_episode": "episode_28",
+      "status": "WATCH",
+      "severity": "WARN"
+    },
+    {
+      "payoff_id": "payoff_childhood_witness",
+      "planted_episode": "episode_06",
+      "due_episode": "episode_24",
+      "status": "DUE",
+      "severity": "WARN"
+    },
+    {
+      "payoff_id": "payoff_umbrella_object",
+      "planted_episode": "episode_02",
+      "due_episode": "episode_31",
+      "status": "WATCH",
+      "severity": "INFO"
+    }
+  ],
+  "provider_call_count": 0
+}

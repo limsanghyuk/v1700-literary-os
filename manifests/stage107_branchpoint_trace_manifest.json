@@ -1,0 +1,11 @@
+{
+  "stage": "107",
+  "status": "pass",
+  "branchpoints": [
+    "stage97_payoff_debt",
+    "stage97_attention_economy",
+    "stage101_scenario_room",
+    "stage106_style_genome"
+  ],
+  "branchpoint_lineage_preserved": true
+}

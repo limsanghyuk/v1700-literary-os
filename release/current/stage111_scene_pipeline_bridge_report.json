@@ -1,0 +1,25 @@
+{
+  "stage": "111.3",
+  "status": "pass",
+  "bridge": {
+    "bridge_id": "scene_pipeline_bridge_v485_to_v1700",
+    "source_pipeline": "V485 SceneGenerationPipeline concept",
+    "target_mode": "DRAMA",
+    "provider_call_mode": "FIXTURE",
+    "raw_manuscript_included": false,
+    "raw_response_stored": false,
+    "normalized_scene_count": 3,
+    "writer_decision_required": true,
+    "bridge_status": "PASS"
+  },
+  "flow": [
+    "SceneIntent",
+    "SceneGenerationPlan",
+    "ProviderPromptPacket",
+    "NormalizedSceneDraft",
+    "ReviewQueueItem",
+    "WriterDecision"
+  ],
+  "auto_apply_allowed": false,
+  "writer_approval_required": true
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "stage122",
+  "name": "NIE v2.0 Stability Absorption",
+  "baseline_stage": "stage121",
+  "status": "active",
+  "purpose": "Absorb V525 NIE v2.0 stability concepts as conservative adapters over Stage120/121 without direct V545/V555 merge.",
+  "primary_authority": "Gate25 remains primary until Stage125 Governor",
+  "new_gates": [
+    "stage122_nie_v2_stability_absorption",
+    "stage122_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "zip_internal_manifests_required": [
+    "FILELIST.txt",
+    "SHA256SUMS.txt",
+    "release/current/stage122_sha256.txt",
+    "release/current/stage122_filelist.txt"
+  ]
+}

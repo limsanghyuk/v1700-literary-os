@@ -1,0 +1,50 @@
+{
+  "stage": "102",
+  "title": "Real Writer Trial & Blind Benchmark",
+  "baseline_stage": "101",
+  "status": "active",
+  "purpose": "Validate Stage101 through deterministic writer workflow, blind benchmark, and revision-efficiency evidence.",
+  "runtime_files": [
+    "src/v1700/stage102/contracts.py",
+    "src/v1700/stage102/seed_bank.py",
+    "src/v1700/stage102/candidate_builder.py",
+    "src/v1700/stage102/writer_trial.py",
+    "src/v1700/stage102/blind_benchmark.py",
+    "src/v1700/stage102/revision_efficiency.py",
+    "src/v1700/stage102/orchestrator.py",
+    "src/v1700/gates/stage102_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage102_0_preflight.py",
+    "tools/run_stage102_1_writer_trial.py",
+    "tools/run_stage102_2_blind_benchmark.py",
+    "tools/run_stage102_3_revision_efficiency.py",
+    "tools/run_stage102_release_gate.py",
+    "tools/export_stage102_artifacts.py",
+    "tools/package_stage102_fixed.py"
+  ],
+  "tests": [
+    "tests/test_stage102_writer_trial.py",
+    "tests/test_stage102_blind_benchmark.py",
+    "tests/test_stage102_revision_efficiency.py",
+    "tests/test_stage102_release_gate.py",
+    "tests/test_stage102_clean_packaging_policy.py"
+  ],
+  "release_evidence": [
+    "release/current/stage102_0_preflight_report.json",
+    "release/current/stage102_writer_trial_report.json",
+    "release/current/stage102_blind_benchmark_report.json",
+    "release/current/stage102_revision_efficiency_report.json",
+    "release/current/stage102_real_writer_trial_report.json",
+    "release/current/stage102_release_gate_report.json"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "external_human_claim": false,
+    "gitnexus_runtime_dependency_required": false,
+    "python_fallback_required": true
+  }
+}

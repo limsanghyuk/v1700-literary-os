@@ -1,0 +1,29 @@
+{
+  "repoPath": "C:\\AI_Codex\\codex-work\\gpt\\work\\v1700_stage97_gitnexus_index_probe",
+  "lastCommit": "",
+  "indexedAt": "2026-05-14T03:30:11.678Z",
+  "stats": {
+    "files": 782,
+    "nodes": 7063,
+    "edges": 11217,
+    "communities": 96,
+    "processes": 279,
+    "embeddings": 0
+  },
+  "capabilities": {
+    "graph": {
+      "provider": "ladybugdb",
+      "status": "available"
+    },
+    "fts": {
+      "provider": "ladybugdb-fts",
+      "status": "available"
+    },
+    "vectorSearch": {
+      "provider": "exact-scan",
+      "status": "unavailable",
+      "exactScanLimit": 10000,
+      "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+    }
+  }
+}

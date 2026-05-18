@@ -1,0 +1,29 @@
+{
+  "stage": "98",
+  "baseline_stage": "97.2",
+  "title": "Commercial Studio Workflow + Publishing Package",
+  "status": "active",
+  "provider_default_calls": 0,
+  "release_gate": "stage98_release_gate",
+  "tools": [
+    "tools/run_stage98_0_studio_workflow_core.py",
+    "tools/run_stage98_1_review_queue.py",
+    "tools/run_stage98_2_publishing_package.py",
+    "tools/run_stage98_studio_workflow.py",
+    "tools/run_stage98_release_gate.py",
+    "tools/export_stage98_artifacts.py"
+  ],
+  "modules": [
+    "src/v1700/studio_workflow",
+    "src/v1700/stage98",
+    "src/v1700/gates/stage98_release_gate.py"
+  ],
+  "release_evidence": [
+    "release/current/stage98_0_studio_workflow_core_report.json",
+    "release/current/stage98_1_review_queue_report.json",
+    "release/current/stage98_2_publishing_package_report.json",
+    "release/current/stage98_studio_workflow_report.json",
+    "release/current/stage98_release_gate_report.json",
+    "release/current/stage98_studio_pack/publishing_package_manifest.json"
+  ]
+}

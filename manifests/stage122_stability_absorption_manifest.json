@@ -1,0 +1,21 @@
+{
+  "stage": "122",
+  "title": "NIE v2.0 Stability Absorption",
+  "absorbed_from_reference": "V525 NIE v2.0 stability concepts only",
+  "absorbed_components": [
+    "NILStabilityModule",
+    "AgentCalibrator",
+    "TIdealLearner",
+    "TemporalCIMAdapter",
+    "MetaLearnerSkeleton"
+  ],
+  "blocked_components": [
+    "Gate28 authority",
+    "Gate29 authority",
+    "runtime model training",
+    "AMW alpha range relaxation",
+    "direct V545/V555 merge"
+  ],
+  "provider_default_calls": 0,
+  "release_gate_runtime_training_allowed": false
+}

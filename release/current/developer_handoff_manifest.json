@@ -1,0 +1,15 @@
+{
+  "stage": "Stage72.3",
+  "status": "prepared",
+  "handoff_docs": [
+    "README.md",
+    "docs/runbooks/developer_handoff.md",
+    "docs/runbooks/graph_nexus_release.md",
+    "docs/runbooks/organic_impact_review_protocol.md",
+    "docs/runbooks/foundation_evidence_policy.md",
+    "docs/stages/stage_001_039_foundation.md",
+    "release/current/stage72_3_developer_handoff_report.md",
+    "docs/stages/STAGE_INDEX.md"
+  ],
+  "runtime_entrypoint": "src/v1700/cli.py"
+}

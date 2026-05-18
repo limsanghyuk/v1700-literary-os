@@ -1,0 +1,283 @@
+{
+  "stage": "94",
+  "status": "pass",
+  "mode": "dry_run_fixture_evaluation",
+  "prompt_count": 3,
+  "provider_count": 4,
+  "evaluation_count": 12,
+  "scores": [
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "prompt_id": "stage94_drama_scene_surface",
+      "request_id": "stage94-stage94_drama_scene_surface",
+      "normalized_schema_pass": true,
+      "latency_ms": 180,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.0,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.45,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.53,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "prompt_id": "stage94_drama_scene_surface",
+      "request_id": "stage94-stage94_drama_scene_surface",
+      "normalized_schema_pass": true,
+      "latency_ms": 420,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.216,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.65,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.55,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "prompt_id": "stage94_drama_scene_surface",
+      "request_id": "stage94-stage94_drama_scene_surface",
+      "normalized_schema_pass": true,
+      "latency_ms": 460,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.27,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.75,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.58,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "prompt_id": "stage94_drama_scene_surface",
+      "request_id": "stage94-stage94_drama_scene_surface",
+      "normalized_schema_pass": true,
+      "latency_ms": 390,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.162,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.55,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.53,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "prompt_id": "stage94_reveal_guard_probe",
+      "request_id": "stage94-stage94_reveal_guard_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 180,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.0,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.2,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.45,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "prompt_id": "stage94_reveal_guard_probe",
+      "request_id": "stage94-stage94_reveal_guard_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 420,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.216,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.4,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.48,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "prompt_id": "stage94_reveal_guard_probe",
+      "request_id": "stage94-stage94_reveal_guard_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 460,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.27,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.5,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.5,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "prompt_id": "stage94_reveal_guard_probe",
+      "request_id": "stage94-stage94_reveal_guard_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 390,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.162,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.3,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.45,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "prompt_id": "stage94_studio_handoff_probe",
+      "request_id": "stage94-stage94_studio_handoff_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 180,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.0,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.2,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.45,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "prompt_id": "stage94_studio_handoff_probe",
+      "request_id": "stage94-stage94_studio_handoff_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 420,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.216,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.4,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.48,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "prompt_id": "stage94_studio_handoff_probe",
+      "request_id": "stage94-stage94_studio_handoff_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 460,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.27,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.5,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.5,
+      "live_call_performed": false,
+      "issues": []
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "prompt_id": "stage94_studio_handoff_probe",
+      "request_id": "stage94-stage94_studio_handoff_probe",
+      "normalized_schema_pass": true,
+      "latency_ms": 390,
+      "input_tokens": 36,
+      "output_tokens": 54,
+      "estimated_cost_units": 0.162,
+      "safety_score": 10.0,
+      "literary_quality_score": 8.3,
+      "branchpoint_compliance_score": 10.0,
+      "total_score": 9.45,
+      "live_call_performed": false,
+      "issues": []
+    }
+  ],
+  "provider_profiles": [
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "average_score": 9.53,
+      "average_latency_ms": 460,
+      "estimated_cost_units": 0.81,
+      "strengths": [
+        "literary_surface",
+        "subtext_sensitivity",
+        "long_context_editorial_tone"
+      ],
+      "weaknesses": [
+        "cloud_cost_requires_policy"
+      ]
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "average_score": 9.5,
+      "average_latency_ms": 420,
+      "estimated_cost_units": 0.648,
+      "strengths": [
+        "rule_following",
+        "structured_reasoning",
+        "schema_discipline"
+      ],
+      "weaknesses": [
+        "cloud_cost_requires_policy"
+      ]
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "average_score": 9.48,
+      "average_latency_ms": 390,
+      "estimated_cost_units": 0.486,
+      "strengths": [
+        "fast_broad_context",
+        "multimodal_extension_path",
+        "low_latency_cloud_route"
+      ],
+      "weaknesses": [
+        "style_consistency_needs_guardrails"
+      ]
+    },
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "average_score": 9.48,
+      "average_latency_ms": 180,
+      "estimated_cost_units": 0.0,
+      "strengths": [
+        "local_privacy",
+        "zero_cloud_cost",
+        "offline_dry_run"
+      ],
+      "weaknesses": [
+        "quality_varies_by_local_model"
+      ]
+    }
+  ],
+  "best_provider_id": "claude_anthropic",
+  "live_call_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "credential_secret_value_leaked": false,
+  "normalized_schema_fail_count": 0,
+  "issues": []
+}

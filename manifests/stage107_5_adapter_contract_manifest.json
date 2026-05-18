@@ -1,0 +1,10 @@
+{
+  "stage": "107.5",
+  "status": "pass",
+  "adapters": [
+    "openai_live_adapter",
+    "anthropic_live_adapter",
+    "gemini_live_adapter",
+    "ollama_live_adapter"
+  ]
+}

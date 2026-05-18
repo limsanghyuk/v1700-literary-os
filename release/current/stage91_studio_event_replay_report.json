@@ -1,0 +1,375 @@
+{
+  "stage": "91",
+  "status": "pass",
+  "event_count": 18,
+  "replayed_event_count": 18,
+  "persistence_snapshot_count": 3,
+  "review_queue_total_items": 6,
+  "review_queue_resolved_count": 6,
+  "review_queue_blocking_count": 0,
+  "final_workspace_stage": "91",
+  "final_workspace_panel_count": 8,
+  "replay_checksum": "6CE3047E6DC56DE31D79B7776A9A4FECA4C9187B2F9520A989C8F6D906FD6E52",
+  "snapshot_checksums": [
+    "64749AB75222E506A75AAC353AEB8CF778D0EBA4A3A315928B962B1DD53817D9",
+    "CF4C9A188CF741ADD1D1C14A66889B62554BEE4B373096253C4008D7B5A125AB",
+    "CF4C9A188CF741ADD1D1C14A66889B62554BEE4B373096253C4008D7B5A125AB"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": [],
+  "events": [
+    {
+      "event_id": "EV001",
+      "sequence": 1,
+      "event_type": "panel_opened",
+      "actor_id": "writer",
+      "panel_id": "story_bible",
+      "target_id": "series_premise",
+      "payload": {
+        "mode": "read"
+      }
+    },
+    {
+      "event_id": "EV002",
+      "sequence": 2,
+      "event_type": "item_selected",
+      "actor_id": "writer",
+      "panel_id": "episode_board",
+      "target_id": "EP08",
+      "payload": {
+        "reason": "midseason_turn_review"
+      }
+    },
+    {
+      "event_id": "EV003",
+      "sequence": 3,
+      "event_type": "review_queued",
+      "actor_id": "editor_agent",
+      "panel_id": "episode_board",
+      "target_id": "EP08",
+      "payload": {
+        "category": "branchpoint_impact",
+        "severity": "blocking"
+      }
+    },
+    {
+      "event_id": "EV004",
+      "sequence": 4,
+      "event_type": "review_resolved",
+      "actor_id": "principal_engineer",
+      "panel_id": "episode_board",
+      "target_id": "RQ001",
+      "payload": {
+        "status": "approved",
+        "note": "Stage86/87 constraints preserved."
+      }
+    },
+    {
+      "event_id": "EV005",
+      "sequence": 5,
+      "event_type": "edit_submitted",
+      "actor_id": "writer",
+      "panel_id": "episode_board",
+      "target_id": "EP08",
+      "payload": {
+        "field": "interactive_persistence_note",
+        "value": "Stage91 event replay confirms the midseason turn survives persistence."
+      }
+    },
+    {
+      "event_id": "EV006",
+      "sequence": 6,
+      "event_type": "review_queued",
+      "actor_id": "continuity_agent",
+      "panel_id": "scene_card_board",
+      "target_id": "EP08_SC10",
+      "payload": {
+        "category": "continuity",
+        "severity": "advisory"
+      }
+    },
+    {
+      "event_id": "EV007",
+      "sequence": 7,
+      "event_type": "review_resolved",
+      "actor_id": "writer",
+      "panel_id": "scene_card_board",
+      "target_id": "RQ002",
+      "payload": {
+        "status": "resolved",
+        "note": "Continuity note accepted into replay log."
+      }
+    },
+    {
+      "event_id": "EV008",
+      "sequence": 8,
+      "event_type": "edit_submitted",
+      "actor_id": "writer",
+      "panel_id": "scene_card_board",
+      "target_id": "EP08_SC10",
+      "payload": {
+        "field": "event_replay_marker",
+        "value": "stage91_replay_verified"
+      }
+    },
+    {
+      "event_id": "EV009",
+      "sequence": 9,
+      "event_type": "review_queued",
+      "actor_id": "surface_agent",
+      "panel_id": "reveal_budget_board",
+      "target_id": "foreshadow_only",
+      "payload": {
+        "category": "reveal_policy",
+        "severity": "blocking"
+      }
+    },
+    {
+      "event_id": "EV010",
+      "sequence": 10,
+      "event_type": "review_resolved",
+      "actor_id": "principal_engineer",
+      "panel_id": "reveal_budget_board",
+      "target_id": "RQ003",
+      "payload": {
+        "status": "approved",
+        "note": "No direct reveal introduced."
+      }
+    },
+    {
+      "event_id": "EV011",
+      "sequence": 11,
+      "event_type": "review_queued",
+      "actor_id": "export_agent",
+      "panel_id": "export_pipeline_panel",
+      "target_id": "scene_csv",
+      "payload": {
+        "category": "export_fidelity",
+        "severity": "advisory"
+      }
+    },
+    {
+      "event_id": "EV012",
+      "sequence": 12,
+      "event_type": "review_resolved",
+      "actor_id": "export_agent",
+      "panel_id": "export_pipeline_panel",
+      "target_id": "RQ004",
+      "payload": {
+        "status": "resolved",
+        "note": "CSV route included in persistence audit."
+      }
+    },
+    {
+      "event_id": "EV013",
+      "sequence": 13,
+      "event_type": "review_queued",
+      "actor_id": "branchpoint_agent",
+      "panel_id": "branchpoint_impact_panel",
+      "target_id": "Stage85 Traceability",
+      "payload": {
+        "category": "branchpoint_impact",
+        "severity": "advisory"
+      }
+    },
+    {
+      "event_id": "EV014",
+      "sequence": 14,
+      "event_type": "review_resolved",
+      "actor_id": "principal_engineer",
+      "panel_id": "branchpoint_impact_panel",
+      "target_id": "RQ005",
+      "payload": {
+        "status": "approved",
+        "note": "Symbol trace gate remains blocking."
+      }
+    },
+    {
+      "event_id": "EV015",
+      "sequence": 15,
+      "event_type": "review_queued",
+      "actor_id": "studio_agent",
+      "panel_id": "story_bible",
+      "target_id": "series_premise",
+      "payload": {
+        "category": "studio_persistence",
+        "severity": "advisory"
+      }
+    },
+    {
+      "event_id": "EV016",
+      "sequence": 16,
+      "event_type": "review_resolved",
+      "actor_id": "studio_agent",
+      "panel_id": "story_bible",
+      "target_id": "RQ006",
+      "payload": {
+        "status": "resolved",
+        "note": "Persistence snapshot checksums stable."
+      }
+    },
+    {
+      "event_id": "EV017",
+      "sequence": 17,
+      "event_type": "snapshot_saved",
+      "actor_id": "system",
+      "panel_id": "writer_studio",
+      "target_id": "snapshot",
+      "payload": {
+        "reason": "post_review_queue_resolution"
+      }
+    },
+    {
+      "event_id": "EV018",
+      "sequence": 18,
+      "event_type": "export_requested",
+      "actor_id": "writer",
+      "panel_id": "export_pipeline_panel",
+      "target_id": "all",
+      "payload": {
+        "formats": [
+          "json",
+          "markdown",
+          "html",
+          "platform_serialization_pack",
+          "scene_csv"
+        ]
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "stage91_snapshot_000",
+      "sequence": 0,
+      "reason": "initial_stage91_workspace",
+      "workspace_stage": "91",
+      "panel_count": 8,
+      "item_count": 73,
+      "review_queue_size": 0,
+      "event_count": 0,
+      "checksum": "64749AB75222E506A75AAC353AEB8CF778D0EBA4A3A315928B962B1DD53817D9"
+    },
+    {
+      "snapshot_id": "stage91_snapshot_017",
+      "sequence": 17,
+      "reason": "post_review_queue_resolution",
+      "workspace_stage": "91",
+      "panel_count": 8,
+      "item_count": 73,
+      "review_queue_size": 6,
+      "event_count": 17,
+      "checksum": "CF4C9A188CF741ADD1D1C14A66889B62554BEE4B373096253C4008D7B5A125AB"
+    },
+    {
+      "snapshot_id": "stage91_snapshot_018",
+      "sequence": 18,
+      "reason": "pre_export_event_replay_snapshot",
+      "workspace_stage": "91",
+      "panel_count": 8,
+      "item_count": 73,
+      "review_queue_size": 6,
+      "event_count": 18,
+      "checksum": "CF4C9A188CF741ADD1D1C14A66889B62554BEE4B373096253C4008D7B5A125AB"
+    }
+  ],
+  "review_queue": {
+    "stage": "91",
+    "status": "pass",
+    "total_items": 6,
+    "pending_count": 0,
+    "approved_count": 3,
+    "needs_changes_count": 0,
+    "resolved_count": 3,
+    "blocking_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "issues": [],
+    "items": [
+      {
+        "item_id": "RQ001",
+        "source_event_id": "EV003",
+        "panel_id": "episode_board",
+        "severity": "blocking",
+        "category": "branchpoint_impact",
+        "status": "approved",
+        "summary": "episode_board:EP08 requires branchpoint_impact review.",
+        "branchpoint_refs": [
+          "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+          "BP_STAGE86_SERIES_ARC_PLANNER"
+        ],
+        "resolution_note": "Stage86/87 constraints preserved."
+      },
+      {
+        "item_id": "RQ002",
+        "source_event_id": "EV006",
+        "panel_id": "scene_card_board",
+        "severity": "advisory",
+        "category": "continuity",
+        "status": "resolved",
+        "summary": "scene_card_board:EP08_SC10 requires continuity review.",
+        "branchpoint_refs": [
+          "BP_STAGE25_NODE2",
+          "BP_STAGE90_STUDIO_ROUNDTRIP_EDITING"
+        ],
+        "resolution_note": "Continuity note accepted into replay log."
+      },
+      {
+        "item_id": "RQ003",
+        "source_event_id": "EV009",
+        "panel_id": "reveal_budget_board",
+        "severity": "blocking",
+        "category": "reveal_policy",
+        "status": "approved",
+        "summary": "reveal_budget_board:foreshadow_only requires reveal_policy review.",
+        "branchpoint_refs": [
+          "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+          "BP_STAGE90_EXPORT_FIDELITY_HARDENING"
+        ],
+        "resolution_note": "No direct reveal introduced."
+      },
+      {
+        "item_id": "RQ004",
+        "source_event_id": "EV011",
+        "panel_id": "export_pipeline_panel",
+        "severity": "advisory",
+        "category": "export_fidelity",
+        "status": "resolved",
+        "summary": "export_pipeline_panel:scene_csv requires export_fidelity review.",
+        "branchpoint_refs": [
+          "BP_STAGE89_EXPORT_PIPELINE",
+          "BP_STAGE90_EXPORT_FIDELITY_HARDENING"
+        ],
+        "resolution_note": "CSV route included in persistence audit."
+      },
+      {
+        "item_id": "RQ005",
+        "source_event_id": "EV013",
+        "panel_id": "branchpoint_impact_panel",
+        "severity": "advisory",
+        "category": "branchpoint_impact",
+        "status": "approved",
+        "summary": "branchpoint_impact_panel:Stage85 Traceability requires branchpoint_impact review.",
+        "branchpoint_refs": [
+          "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+          "BP_STAGE85_GRAPHNEXUS_AUTHORITY"
+        ],
+        "resolution_note": "Symbol trace gate remains blocking."
+      },
+      {
+        "item_id": "RQ006",
+        "source_event_id": "EV015",
+        "panel_id": "story_bible",
+        "severity": "advisory",
+        "category": "studio_persistence",
+        "status": "resolved",
+        "summary": "story_bible:series_premise requires studio_persistence review.",
+        "branchpoint_refs": [
+          "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+          "BP_STAGE91_STUDIO_PERSISTENCE"
+        ],
+        "resolution_note": "Persistence snapshot checksums stable."
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "101.1-101.2",
+  "purpose": "Define ScenarioRoomContract, SceneBeatBoard, InvestigationActionBeat, DialogueSilenceCue, and PropRevealCue without violating prose-mode or Node2 boundaries.",
+  "required_reports": [
+    "release/current/stage101_scenario_room_contract_report.json",
+    "release/current/stage101_scenario_cue_integration_report.json"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0
+}

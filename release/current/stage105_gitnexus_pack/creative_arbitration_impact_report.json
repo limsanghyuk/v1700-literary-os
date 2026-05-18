@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "impacted_areas": [
+    "creative_arbitration",
+    "provider_runtime",
+    "stage105",
+    "stage105_release_gate"
+  ]
+}

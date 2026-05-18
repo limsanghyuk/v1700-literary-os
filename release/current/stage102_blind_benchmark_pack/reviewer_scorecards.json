@@ -1,0 +1,1408 @@
+{
+  "scorecards": [
+    {
+      "candidate_id": "stage102_seed_prose_01_A",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.61,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_B",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.41,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_C",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.07,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_D",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_E",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.42,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_F",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.35,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_G",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.79,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_H",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.84,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_A",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.61,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_B",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.41,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_C",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.07,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_D",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_E",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.42,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_F",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.35,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_G",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.79,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_H",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.84,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_A",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.61,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_B",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.41,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_C",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.07,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_D",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_E",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.42,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_F",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.35,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_G",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.79,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_H",
+      "reviewer_id": "professional_drama_critic",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.84,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_A",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.49,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_B",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.23,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_C",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.01,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_D",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_E",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.31,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_F",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.4,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_G",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.8,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_H",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.86,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_A",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.49,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_B",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.23,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_C",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.01,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_D",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_E",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.31,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_F",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.4,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_G",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.8,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_H",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.86,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_A",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.49,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_B",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.23,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_C",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.01,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_D",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.37,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_E",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.31,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_F",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.4,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_G",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.8,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_H",
+      "reviewer_id": "writer_workflow_editor",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.86,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_A",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.67,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_B",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.5,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_C",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.1,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_D",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.35,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_E",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.47,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_F",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.29,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_G",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.75,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_H",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.82,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_A",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.67,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_B",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.5,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_C",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.1,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_D",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.35,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_E",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.47,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_F",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.29,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_G",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.75,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_H",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.82,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_A",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.6,
+        "reader_pull": 7.0,
+        "character_agency": 6.8,
+        "prose_surface": 6.7,
+        "scenario_actionability": 6.4,
+        "reveal_discipline": 6.5,
+        "revision_readiness": 6.0
+      },
+      "weighted_score": 6.67,
+      "verdict": "REVISE",
+      "notes": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_B",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.4,
+        "reader_pull": 7.8,
+        "character_agency": 7.7,
+        "prose_surface": 8.0,
+        "scenario_actionability": 6.9,
+        "reveal_discipline": 7.0,
+        "revision_readiness": 6.6
+      },
+      "weighted_score": 7.5,
+      "verdict": "REVISE",
+      "notes": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_C",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.0,
+        "reader_pull": 7.3,
+        "character_agency": 7.0,
+        "prose_surface": 7.1,
+        "scenario_actionability": 7.6,
+        "reveal_discipline": 6.9,
+        "revision_readiness": 6.5
+      },
+      "weighted_score": 7.1,
+      "verdict": "REVISE",
+      "notes": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_D",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 6.4,
+        "reader_pull": 6.3,
+        "character_agency": 6.4,
+        "prose_surface": 6.1,
+        "scenario_actionability": 6.5,
+        "reveal_discipline": 6.7,
+        "revision_readiness": 6.2
+      },
+      "weighted_score": 6.35,
+      "verdict": "REVISE",
+      "notes": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_E",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.5,
+        "reader_pull": 8.6,
+        "character_agency": 8.4,
+        "prose_surface": 8.8,
+        "scenario_actionability": 7.5,
+        "reveal_discipline": 8.7,
+        "revision_readiness": 8.1
+      },
+      "weighted_score": 8.47,
+      "verdict": "PASS",
+      "notes": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_F",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.4,
+        "reader_pull": 8.1,
+        "character_agency": 8.5,
+        "prose_surface": 7.8,
+        "scenario_actionability": 8.8,
+        "reveal_discipline": 8.6,
+        "revision_readiness": 8.4
+      },
+      "weighted_score": 8.29,
+      "verdict": "PASS",
+      "notes": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_G",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 7.9,
+        "reader_pull": 7.7,
+        "character_agency": 7.8,
+        "prose_surface": 7.4,
+        "scenario_actionability": 8.5,
+        "reveal_discipline": 7.8,
+        "revision_readiness": 7.5
+      },
+      "weighted_score": 7.75,
+      "verdict": "REVISE",
+      "notes": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_H",
+      "reviewer_id": "binge_reader_panel",
+      "axis_scores": {
+        "structure": 8.9,
+        "reader_pull": 8.8,
+        "character_agency": 8.7,
+        "prose_surface": 8.7,
+        "scenario_actionability": 8.9,
+        "reveal_discipline": 9.0,
+        "revision_readiness": 8.9
+      },
+      "weighted_score": 8.82,
+      "verdict": "PASS",
+      "notes": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    }
+  ]
+}

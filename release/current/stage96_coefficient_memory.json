@@ -1,0 +1,163 @@
+{
+  "version": "stage96",
+  "source_policy": "local_feature_only",
+  "baseline_coefficients": {
+    "state_continuity_weight": 1.0,
+    "belief_consistency_weight": 1.0,
+    "reveal_entropy_weight": 1.0,
+    "emotional_momentum_weight": 1.0,
+    "conflict_collision_weight": 1.0,
+    "scene_energy_weight": 1.0,
+    "motif_residue_weight": 1.0,
+    "curiosity_gradient_weight": 1.0,
+    "surface_safety_weight": 1.25,
+    "branchpoint_survival_weight": 1.35,
+    "leakage_penalty_weight": 2.0,
+    "fatigue_penalty_weight": 0.6,
+    "confusion_penalty_weight": 0.8,
+    "repetition_penalty_weight": 0.5
+  },
+  "learned_coefficients": {
+    "state_continuity_weight": 1.02,
+    "belief_consistency_weight": 1.02,
+    "reveal_entropy_weight": 1.03,
+    "emotional_momentum_weight": 1.02,
+    "conflict_collision_weight": 1.02,
+    "scene_energy_weight": 1.03,
+    "motif_residue_weight": 1.02,
+    "curiosity_gradient_weight": 1.03,
+    "surface_safety_weight": 1.28,
+    "branchpoint_survival_weight": 1.39,
+    "leakage_penalty_weight": 2.02,
+    "fatigue_penalty_weight": 0.61,
+    "confusion_penalty_weight": 0.81,
+    "repetition_penalty_weight": 0.51
+  },
+  "update_log": [
+    {
+      "coefficient": "state_continuity_weight",
+      "baseline": 1.0,
+      "delta": 0.02,
+      "learned": 1.02
+    },
+    {
+      "coefficient": "belief_consistency_weight",
+      "baseline": 1.0,
+      "delta": 0.02,
+      "learned": 1.02
+    },
+    {
+      "coefficient": "reveal_entropy_weight",
+      "baseline": 1.0,
+      "delta": 0.03,
+      "learned": 1.03
+    },
+    {
+      "coefficient": "emotional_momentum_weight",
+      "baseline": 1.0,
+      "delta": 0.02,
+      "learned": 1.02
+    },
+    {
+      "coefficient": "conflict_collision_weight",
+      "baseline": 1.0,
+      "delta": 0.02,
+      "learned": 1.02
+    },
+    {
+      "coefficient": "scene_energy_weight",
+      "baseline": 1.0,
+      "delta": 0.03,
+      "learned": 1.03
+    },
+    {
+      "coefficient": "motif_residue_weight",
+      "baseline": 1.0,
+      "delta": 0.02,
+      "learned": 1.02
+    },
+    {
+      "coefficient": "curiosity_gradient_weight",
+      "baseline": 1.0,
+      "delta": 0.03,
+      "learned": 1.03
+    },
+    {
+      "coefficient": "surface_safety_weight",
+      "baseline": 1.25,
+      "delta": 0.03,
+      "learned": 1.28
+    },
+    {
+      "coefficient": "branchpoint_survival_weight",
+      "baseline": 1.35,
+      "delta": 0.04,
+      "learned": 1.39
+    },
+    {
+      "coefficient": "leakage_penalty_weight",
+      "baseline": 2.0,
+      "delta": 0.02,
+      "learned": 2.02
+    },
+    {
+      "coefficient": "fatigue_penalty_weight",
+      "baseline": 0.6,
+      "delta": 0.01,
+      "learned": 0.61
+    },
+    {
+      "coefficient": "confusion_penalty_weight",
+      "baseline": 0.8,
+      "delta": 0.01,
+      "learned": 0.81
+    },
+    {
+      "coefficient": "repetition_penalty_weight",
+      "baseline": 0.5,
+      "delta": 0.01,
+      "learned": 0.51
+    }
+  ],
+  "drift_guard": {
+    "status": "pass",
+    "max_single_update_delta": 0.04,
+    "mean_total_drift_from_baseline": 0.022,
+    "protected_non_decreasing_weights": [
+      "branchpoint_survival_weight",
+      "surface_safety_weight",
+      "leakage_penalty_weight"
+    ],
+    "deltas": {
+      "state_continuity_weight": 0.02,
+      "belief_consistency_weight": 0.02,
+      "reveal_entropy_weight": 0.03,
+      "emotional_momentum_weight": 0.02,
+      "conflict_collision_weight": 0.02,
+      "scene_energy_weight": 0.03,
+      "motif_residue_weight": 0.02,
+      "curiosity_gradient_weight": 0.03,
+      "surface_safety_weight": 0.03,
+      "branchpoint_survival_weight": 0.04,
+      "leakage_penalty_weight": 0.02,
+      "fatigue_penalty_weight": 0.01,
+      "confusion_penalty_weight": 0.01,
+      "repetition_penalty_weight": 0.01
+    },
+    "issues": []
+  },
+  "privacy_report": {
+    "status": "pass",
+    "source_policy": "local_feature_only",
+    "raw_manuscript_sent_to_provider": false,
+    "raw_manuscript_stored_in_report": false,
+    "provider_log_leakage_count": 0,
+    "leaked_markers": []
+  },
+  "feature_summary": {
+    "scene_count": 40,
+    "reveal_event_count": 8,
+    "curiosity_hook_count": 8,
+    "branchpoint_touchpoint_count": 80
+  }
+}

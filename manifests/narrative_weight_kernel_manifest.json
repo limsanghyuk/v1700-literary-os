@@ -1,0 +1,26 @@
+{
+  "stage": "111.1",
+  "name": "Narrative Weight Kernel",
+  "status": "active",
+  "purpose": "Unify auditable narrative weights for characters, events, relations, and bounded self-calibration feedback.",
+  "modules": [
+    "src/v1700/narrative_weight_kernel/contracts.py",
+    "src/v1700/narrative_weight_kernel/character_board.py",
+    "src/v1700/narrative_weight_kernel/relation_engine.py",
+    "src/v1700/narrative_weight_kernel/learning.py",
+    "src/v1700/narrative_weight_kernel/report.py"
+  ],
+  "tests": [
+    "tests/test_narrative_weight_kernel.py"
+  ],
+  "tools": [
+    "tools/run_narrative_weight_kernel_report.py"
+  ],
+  "invariants": {
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "bounded_self_calibration": true,
+    "neural_network_training": false,
+    "explainable_weight_axes": true
+  }
+}

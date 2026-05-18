@@ -1,0 +1,17 @@
+{
+  "stage": "Stage72.1",
+  "graph_nexus": {
+    "code_graph": "src/v1700/graph_nexus/code_graph.py",
+    "narrative_graph": "src/v1700/graph_nexus/narrative_graph.py",
+    "stage_lineage_graph": "src/v1700/graph_nexus/stage_lineage_graph.py",
+    "registry": "src/v1700/graph_nexus/registry.py"
+  },
+  "gates": [
+    "lineage_preflight_gate",
+    "graph_nexus_impact_gate",
+    "legacy_logic_survival_gate",
+    "node_projection_gate",
+    "graph_nexus_release_gate"
+  ],
+  "provider_default_calls": 0
+}

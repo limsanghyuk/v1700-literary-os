@@ -1,0 +1,79 @@
+{
+  "stage": "105.2-normalization",
+  "status": "pass",
+  "issues": [],
+  "response_schema": "CreativeCandidate/v1",
+  "normalized_count": 5,
+  "normalized_candidates": [
+    {
+      "candidate_id": "cand_structure_gpt_fixture",
+      "provider_id": "gpt_reasoning_lane",
+      "task": "STRUCTURE",
+      "mode": "HYBRID",
+      "payload_kind": "fixture_summary",
+      "score": 8.7,
+      "rationale": "Strong outline synthesis without live provider call.",
+      "contains_raw_manuscript": false,
+      "live_call_count": 0,
+      "normalized": true,
+      "raw_manuscript_removed": true,
+      "response_schema": "CreativeCandidate/v1"
+    },
+    {
+      "candidate_id": "cand_dialogue_claude_fixture",
+      "provider_id": "claude_long_context_lane",
+      "task": "DIALOGUE",
+      "mode": "PROSE",
+      "payload_kind": "feature_only",
+      "score": 8.9,
+      "rationale": "Subtext and silence cue handling from feature-only context.",
+      "contains_raw_manuscript": false,
+      "live_call_count": 0,
+      "normalized": true,
+      "raw_manuscript_removed": true,
+      "response_schema": "CreativeCandidate/v1"
+    },
+    {
+      "candidate_id": "cand_visual_gemini_fixture",
+      "provider_id": "gemini_visual_lane",
+      "task": "VISUAL",
+      "mode": "SCENARIO",
+      "payload_kind": "feature_only",
+      "score": 8.8,
+      "rationale": "Visual beat and production-space planning.",
+      "contains_raw_manuscript": false,
+      "live_call_count": 0,
+      "normalized": true,
+      "raw_manuscript_removed": true,
+      "response_schema": "CreativeCandidate/v1"
+    },
+    {
+      "candidate_id": "cand_local_ollama_fixture",
+      "provider_id": "ollama_local_privacy_lane",
+      "task": "LOCAL_PRIVACY",
+      "mode": "HYBRID",
+      "payload_kind": "fixture_summary",
+      "score": 8.4,
+      "rationale": "Local-first privacy-preserving draft lane.",
+      "contains_raw_manuscript": false,
+      "live_call_count": 0,
+      "normalized": true,
+      "raw_manuscript_removed": true,
+      "response_schema": "CreativeCandidate/v1"
+    },
+    {
+      "candidate_id": "cand_release_fixture_control",
+      "provider_id": "fixture_release_lane",
+      "task": "SCENARIO_BEAT",
+      "mode": "SCENARIO",
+      "payload_kind": "fixture_summary",
+      "score": 8.6,
+      "rationale": "Deterministic release baseline for scenario beat contracts.",
+      "contains_raw_manuscript": false,
+      "live_call_count": 0,
+      "normalized": true,
+      "raw_manuscript_removed": true,
+      "response_schema": "CreativeCandidate/v1"
+    }
+  ]
+}

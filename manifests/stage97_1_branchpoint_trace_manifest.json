@@ -1,0 +1,18 @@
+{
+  "stage": "97.1",
+  "baseline_stage": "97",
+  "branchpoint_authority": "Stage97 endurance proof plus adversarial negative corpus hardening",
+  "tracepoints": [
+    "adversarial_negative_corpus",
+    "broken_topology_block",
+    "broken_payoff_block",
+    "passive_agency_block",
+    "weak_scene_block",
+    "speech_level_violation_block",
+    "style_drift_violation_block",
+    "attention_fatigue_block",
+    "coefficient_memory_bridge",
+    "local_only_manuscript_ingest",
+    "production_scene_mapping"
+  ]
+}

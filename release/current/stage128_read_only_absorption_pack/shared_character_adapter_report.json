@@ -1,0 +1,122 @@
+{
+  "adapter_name": "SharedCharacterReadOnlyAdapter",
+  "status": "PASS",
+  "read_only": true,
+  "allowed_reads": 2,
+  "blocked_reads": 1,
+  "blocked_writes": 1,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_text_exported": false,
+  "raw_manuscript_provider_leakage": 0,
+  "evidence": {
+    "records_feature_only": [
+      {
+        "character_id": "char_alpha_mentor",
+        "owner_project_id": "project_alpha",
+        "owner_id": "author_a",
+        "display_name": "Alpha Mentor",
+        "public_domain_flag": false,
+        "license_policy_id": "author_a_private",
+        "surface_traits": [
+          "mentor",
+          "strategic",
+          "recurring"
+        ],
+        "raw_text_redacted": true
+      },
+      {
+        "character_id": "char_beta_guest",
+        "owner_project_id": "project_beta",
+        "owner_id": "author_a",
+        "display_name": "Beta Guest",
+        "public_domain_flag": false,
+        "license_policy_id": "shared_with_author_a_projects",
+        "surface_traits": [
+          "guest",
+          "cross-reference-safe"
+        ],
+        "raw_text_redacted": false
+      },
+      {
+        "character_id": "char_public_legend",
+        "owner_project_id": "public_domain",
+        "owner_id": "public",
+        "display_name": "Public Legend",
+        "public_domain_flag": true,
+        "license_policy_id": "public_domain",
+        "surface_traits": [
+          "legend",
+          "public-domain"
+        ],
+        "raw_text_redacted": false
+      }
+    ],
+    "allowed_requests": [
+      {
+        "source_project_id": "project_beta",
+        "target_project_id": "project_alpha",
+        "resource_id": "char_alpha_mentor",
+        "resource_type": "shared_character",
+        "access_type": "read",
+        "same_owner": true,
+        "license_edge_exists": false,
+        "author_approval_valid": true,
+        "isolation_policy_allows": true,
+        "resource_scope_permits": true,
+        "public_domain_flag": false,
+        "access_allowed": true,
+        "write_disabled_by_stage128": false
+      },
+      {
+        "source_project_id": "project_gamma",
+        "target_project_id": "public_domain",
+        "resource_id": "char_public_legend",
+        "resource_type": "shared_character",
+        "access_type": "read",
+        "same_owner": false,
+        "license_edge_exists": false,
+        "author_approval_valid": true,
+        "isolation_policy_allows": true,
+        "resource_scope_permits": true,
+        "public_domain_flag": true,
+        "access_allowed": true,
+        "write_disabled_by_stage128": false
+      }
+    ],
+    "blocked_requests": [
+      {
+        "source_project_id": "project_alpha",
+        "target_project_id": "project_beta",
+        "resource_id": "char_beta_guest",
+        "resource_type": "shared_character",
+        "access_type": "write",
+        "same_owner": true,
+        "license_edge_exists": true,
+        "author_approval_valid": true,
+        "isolation_policy_allows": true,
+        "resource_scope_permits": true,
+        "public_domain_flag": false,
+        "access_allowed": false,
+        "write_disabled_by_stage128": true
+      },
+      {
+        "source_project_id": "project_delta",
+        "target_project_id": "project_alpha",
+        "resource_id": "char_alpha_mentor",
+        "resource_type": "shared_character",
+        "access_type": "read",
+        "same_owner": false,
+        "license_edge_exists": false,
+        "author_approval_valid": false,
+        "isolation_policy_allows": true,
+        "resource_scope_permits": true,
+        "public_domain_flag": false,
+        "access_allowed": false,
+        "write_disabled_by_stage128": false
+      }
+    ],
+    "license_edge_required_for_cross_owner_private_character": true,
+    "public_domain_reference_allowed": true
+  }
+}

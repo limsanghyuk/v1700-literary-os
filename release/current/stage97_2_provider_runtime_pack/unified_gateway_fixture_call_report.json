@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "response": {
+    "text": "fixture provider response: Stage97.2 provider runtime governance dry run",
+    "provider_id": "fixture",
+    "provider_kind": "fixture",
+    "tokens_used": 0,
+    "latency_ms": 0.0040559998524258845,
+    "estimated_cost_usd": 0.0,
+    "fallback_used": false,
+    "safety_flags": {},
+    "metadata": {}
+  }
+}

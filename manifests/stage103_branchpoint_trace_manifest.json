@@ -1,0 +1,15 @@
+{
+  "stage": "103",
+  "name": "Stage103 Branchpoint Trace Manifest",
+  "status": "pass",
+  "branchpoints": [
+    "BP_STAGE103_INSTALL_REPLAY",
+    "BP_STAGE103_RUNTIME_PROFILE_SEPARATION",
+    "BP_STAGE103_LOCAL_VAULT_BACKUP_RESTORE",
+    "BP_STAGE103_ERROR_RELEASE_NOTES",
+    "BP_STAGE103_PROVIDER_ZERO_DEPLOYMENT"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0
+}

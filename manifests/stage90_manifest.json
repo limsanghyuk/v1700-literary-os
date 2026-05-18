@@ -1,0 +1,43 @@
+{
+  "stage": "90",
+  "title": "Studio Round-trip Editing + Export Fidelity Hardening",
+  "status": "pass",
+  "depends_on": [
+    "stage89",
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "required_outputs": [
+    "src/v1700/writer_studio/roundtrip.py",
+    "src/v1700/gates/stage90_release_gate.py",
+    "tools/run_stage90_roundtrip.py",
+    "tools/run_stage90_release_gate.py",
+    "tools/export_stage90_artifacts.py",
+    "tests/test_stage90_roundtrip_export_fidelity.py",
+    "manifests/stage90_branchpoint_trace_manifest.json",
+    "release/current/stage90_roundtrip_fidelity_report.json",
+    "release/current/stage90_release_gate_report.json"
+  ],
+  "roundtrip_targets": {
+    "minimum_edit_count": 4,
+    "minimum_changed_artifact_count": 5,
+    "required_fidelity_score": 10.0
+  },
+  "export_fidelity_targets": {
+    "formats": [
+      "html",
+      "json",
+      "markdown",
+      "platform_serialization_pack",
+      "scene_csv"
+    ],
+    "artifact_count": 5,
+    "post_edit_export_folder": "release/current/stage90_exports"
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "checks": {
+    "workspace_has_scene_cards": true,
+    "export_ready_without_blocks": true,
+    "raw_manuscript_provider_leakage_zero": true,
+    "node2_raw_reveal_access_zero": true
+  },
+  "issues": [],
+  "project": {
+    "project_id": "stage104_sample_project",
+    "title": "Rain Station Studio Beta Sample",
+    "project_type": "series",
+    "privacy_mode": "FEATURE_ONLY",
+    "active_mode": "PROSE",
+    "baseline_stage": "stage103",
+    "feature_only": true,
+    "metadata": {
+      "source": "stage104_beta_fixture",
+      "writer_control": "approval_required"
+    }
+  },
+  "workspace_state": {
+    "project_id": "stage104_sample_project",
+    "episodes": [
+      "ep-001",
+      "ep-002",
+      "ep-003"
+    ],
+    "scene_cards": [
+      {
+        "scene_id": "scene-001",
+        "episode_id": "ep-001",
+        "title": "폐역 도착",
+        "mode": "PROSE",
+        "intent": "guilt_sensory_anchor",
+        "beat_count": 3,
+        "has_raw_manuscript": false
+      },
+      {
+        "scene_id": "scene-002",
+        "episode_id": "ep-001",
+        "title": "전광판 점등",
+        "mode": "SCENARIO",
+        "intent": "prop_led_reveal",
+        "beat_count": 4,
+        "has_raw_manuscript": false
+      },
+      {
+        "scene_id": "scene-003",
+        "episode_id": "ep-001",
+        "title": "수정 검토",
+        "mode": "REVIEW",
+        "intent": "writer_decision_checkpoint",
+        "beat_count": 2,
+        "has_raw_manuscript": false
+      }
+    ],
+    "revision_queue_size": 2,
+    "unresolved_block_count": 0,
+    "export_ready": true,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

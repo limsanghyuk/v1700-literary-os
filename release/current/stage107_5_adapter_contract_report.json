@@ -1,0 +1,42 @@
+{
+  "stage": "107.5.2",
+  "title": "Live Adapter Contract Verification",
+  "status": "pass",
+  "issues": [],
+  "contracts": [
+    {
+      "provider_id": "openai",
+      "status": "pass",
+      "live_adapter_present": true,
+      "release_safe_default": true,
+      "raw_manuscript_allowed": false,
+      "endpoint_family": "openai_responses_or_compatible"
+    },
+    {
+      "provider_id": "anthropic",
+      "status": "pass",
+      "live_adapter_present": true,
+      "release_safe_default": true,
+      "raw_manuscript_allowed": false,
+      "endpoint_family": "anthropic_messages"
+    },
+    {
+      "provider_id": "gemini",
+      "status": "pass",
+      "live_adapter_present": true,
+      "release_safe_default": true,
+      "raw_manuscript_allowed": false,
+      "endpoint_family": "gemini_generate_content"
+    },
+    {
+      "provider_id": "ollama",
+      "status": "pass",
+      "live_adapter_present": true,
+      "release_safe_default": true,
+      "raw_manuscript_allowed": false,
+      "openai_compatible_local": true
+    }
+  ],
+  "live_provider_call_count": 0,
+  "raw_manuscript_allowed": false
+}

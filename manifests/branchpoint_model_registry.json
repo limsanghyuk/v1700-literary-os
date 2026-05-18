@@ -1,0 +1,177 @@
+{
+  "stage": "75",
+  "branchpoints": [
+    {
+      "branchpoint_id": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "source": "Stage25 / Node2 Generative Rewrite Engine",
+      "priority": "P0",
+      "why_it_branches": "Node2 changed from evaluator/surface helper into a candidate-generating rewrite orchestrator.",
+      "core_logic_ids": [
+        "node2_candidate_generation",
+        "node2_authority_guard",
+        "node2_selection_layer"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "source": "Stage39 Drama Execution Engine",
+      "priority": "P0",
+      "why_it_branches": "The project moved from literary scaffolding into drama execution: temporal continuity, pressure, branch rollback, and reconvergence.",
+      "core_logic_ids": [
+        "temporal_continuity",
+        "emotional_pressure_valve",
+        "branch_commit_rollback",
+        "replay_reconvergence"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "source": "Stage50 Prompt-to-Three-Episode Engine",
+      "priority": "P0",
+      "why_it_branches": "Prompt-to-longform became a three-episode, sequence, and scene scale engine.",
+      "core_logic_ids": [
+        "three_episode_structure",
+        "sequence_scale_planning",
+        "scene_scale_planning"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE56_QUALITY_GATE",
+      "source": "Stage56 Literary Quality Evaluation Gate",
+      "priority": "P0",
+      "why_it_branches": "Literary generation gained multi-axis quality scoring rather than ad-hoc acceptance.",
+      "core_logic_ids": [
+        "ten_axis_literary_quality",
+        "quality_blocker_detection"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE57_REFINEMENT_LOOP",
+      "source": "Stage57 Literary Refinement Loop",
+      "priority": "P0",
+      "why_it_branches": "Drafts gained a measured critic -> revise -> rescore loop with score delta.",
+      "core_logic_ids": [
+        "score_improving_refinement",
+        "blocker_axis_reduction"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE60_FINAL_USER_RC",
+      "source": "Stage60 Final User Release Candidate",
+      "priority": "P0",
+      "why_it_branches": "The literary engine reached a user-facing release candidate with Stage50/56/57 evidence.",
+      "core_logic_ids": [
+        "stage60_release_contract",
+        "stage60_literary_engine_bundle"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_V328_DRSE_STACK",
+      "source": "V328 / DRSE, EmotionalMomentum, Mise-en-scene",
+      "priority": "P0",
+      "why_it_branches": "The user's mathematical literary theory became a relational scoring and mise-en-scene stack.",
+      "core_logic_ids": [
+        "drse_weighted_relation_scoring",
+        "emotional_momentum_vector",
+        "mise_en_scene_directive"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE12_E2E_AUTHORING",
+      "source": "Stage12 End-to-End Authoring Scenario Runner",
+      "priority": "P1",
+      "why_it_branches": "Early isolated loops became an end-to-end authoring scenario.",
+      "core_logic_ids": [
+        "e2e_authoring_scenario"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE29_GRAPHRAG_MEMORY",
+      "source": "Stage29~31 Canon Memory Index / GraphRAG / Controlled Weight Mutation",
+      "priority": "P1",
+      "why_it_branches": "Memory became indexed, graph-queryable, and weight-adjustable.",
+      "core_logic_ids": [
+        "canon_memory_index",
+        "scene_graph_query",
+        "controlled_weight_mutation"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE33_35_VALIDATION_AND_CRITIC",
+      "source": "Stage33~35 Concept Validation / Authoring Console / Critic Comparison Gate",
+      "priority": "P1",
+      "why_it_branches": "Generation became a validated, author-facing, critic-comparable process.",
+      "core_logic_ids": [
+        "concept_validation_workbench",
+        "authoring_console",
+        "critic_comparison_gate"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE65_GRAPH_INTELLIGENCE",
+      "source": "Stage65~66 Graph Intelligence Consolidation",
+      "priority": "P1",
+      "why_it_branches": "Graph sidecar thinking became consolidated and authority-bounded.",
+      "core_logic_ids": [
+        "graph_intelligence_sidecar",
+        "authority_boundary"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE70_FINAL_VERIFIED_RUNTIME",
+      "source": "Stage70 Final Verified Runtime Release",
+      "priority": "P1",
+      "why_it_branches": "The system gained local-first runtime verification and provider default call zero.",
+      "core_logic_ids": [
+        "local_first_runtime",
+        "provider_zero_gate",
+        "verified_release_gate"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE71_READER_SURFACE",
+      "source": "Stage71 Node2 Reader-Facing Prose Renderer",
+      "priority": "P1",
+      "why_it_branches": "The project re-centered reader-facing prose surface and anti-LLM naturalness.",
+      "core_logic_ids": [
+        "reader_surface_renderer",
+        "anti_llm_surface"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE72_GRAPHNEXUS",
+      "source": "Stage72.1~72.3 GraphNexus / GitNexus / Foundation Lineage",
+      "priority": "P1",
+      "why_it_branches": "The system built code/narrative/stage lineage graphs and pre-Stage40 survival gates.",
+      "core_logic_ids": [
+        "graph_nexus_three_graphs",
+        "foundation_lineage_survival"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "source": "Stage73~74 Full Workspace Baseline / Formula Restoration",
+      "priority": "P1",
+      "why_it_branches": "Full workspace reproducibility and smoke-level literary formula restoration became canonical.",
+      "core_logic_ids": [
+        "full_workspace_reproducibility",
+        "longform_smoke_engine"
+      ],
+      "required_in_current_model": true
+    }
+  ]
+}

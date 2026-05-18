@@ -1,0 +1,10 @@
+{
+  "stage": "111",
+  "baseline_stage": "110",
+  "title": "V485 Absorption Candidate Bridge",
+  "status": "active",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "direct_v485_metadata_import_allowed": false,
+  "direct_v485_code_import_allowed": false
+}

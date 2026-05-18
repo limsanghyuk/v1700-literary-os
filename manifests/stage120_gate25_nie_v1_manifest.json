@@ -1,0 +1,20 @@
+{
+  "stage": "stage120",
+  "gate": "Gate25 NIE v1.0",
+  "components": [
+    "gitnexus_preflight",
+    "physics_reward_bridge",
+    "adaptive_momentum_weights",
+    "character_influence_matrix",
+    "domain_specific_rag_fusion",
+    "narrative_tension_curve",
+    "nil_orchestrator",
+    "nie_adversarial_regression"
+  ],
+  "pack_dir": "release/current/stage120_nie_v1_release_pack",
+  "policy": {
+    "live_provider_in_release_gate": 0,
+    "physics_reward_bridge_llm_calls": 0,
+    "query_classifier_llm_calls": 0
+  }
+}

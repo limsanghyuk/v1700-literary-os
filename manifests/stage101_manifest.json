@@ -1,0 +1,14 @@
+{
+  "stage": "101",
+  "name": "Cross-Lineage Absorption & Scenario Room Integration",
+  "baseline_stage": "100",
+  "baseline_package": "V1700_stage100_literary_os_1_0_release_candidate_FIXED.zip",
+  "purpose": "Safely absorb V430 scenario-room strengths into V1700 Branchpoint OS through contracts, evidence, tests, and release gates.",
+  "v430_untraced_merge": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "release_gate_status": "pass"
+}

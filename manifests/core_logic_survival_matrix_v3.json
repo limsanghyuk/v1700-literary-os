@@ -1,0 +1,487 @@
+{
+  "stage": "83.1",
+  "status": "pass",
+  "basis": "Stage81.1 reconciled matrix plus Stage80~83 release evidence.",
+  "entry_count": 25,
+  "p0_total": 23,
+  "p0_live_runtime_count": 23,
+  "p0_non_live_logic_ids": [],
+  "entries": [
+    {
+      "logic_id": "node2_candidate_generation",
+      "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "original_survival_status": "PARTIAL_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_smoke_verified",
+      "evidence_files": [
+        "src/v1700/nodes/node2_prose_renderer/rewrite_orchestrator.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage77_node2_rewrite_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage77_release_gate"
+      ],
+      "reconciliation_note": "Stage77 now verifies 3+ Node2 rewrite candidates and selection under authority guard."
+    },
+    {
+      "logic_id": "node2_authority_guard",
+      "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "src/v1700/nodes/node2_prose_renderer/validators.py",
+        "src/v1700/nodes/node2_prose_renderer/rewrite_orchestrator.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage72_1_node_projection_gate.py",
+        "tests/test_stage77_node2_rewrite_restoration.py"
+      ],
+      "gate_coverage": [
+        "node_projection_gate",
+        "stage77_release_gate"
+      ],
+      "reconciliation_note": "Node2 remains surface-only; raw reveal access is zero."
+    },
+    {
+      "logic_id": "temporal_continuity",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_smoke_verified",
+      "evidence_files": [
+        "src/v1700/drama_execution/engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "reconciliation_note": "Stage78 verifies ordered three-episode temporal continuity smoke."
+    },
+    {
+      "logic_id": "emotional_pressure_valve",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_smoke_verified",
+      "evidence_files": [
+        "src/v1700/drama_execution/engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "reconciliation_note": "Stage78 verifies pressure escalation and controlled release."
+    },
+    {
+      "logic_id": "branch_commit_rollback",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_smoke_verified",
+      "evidence_files": [
+        "src/v1700/drama_execution/engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "reconciliation_note": "Stage78 verifies branch commit, rollback exercise, and reconvergence smoke."
+    },
+    {
+      "logic_id": "three_episode_structure",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "original_survival_status": "PARTIAL_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "metadata_runtime_verified",
+      "evidence_files": [
+        "src/v1700/reabsorption/stage60_literary_engine.py",
+        "src/v1700/drama_composition/engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+        "tests/test_stage80_korean_drama_composition.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate",
+        "stage80_release_gate"
+      ],
+      "reconciliation_note": "Stage76 preserves the three-episode proof; Stage80 separates it from series story and macro plot."
+    },
+    {
+      "logic_id": "sequence_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "metadata_runtime_verified",
+      "evidence_files": [
+        "src/v1700/reabsorption/stage60_literary_engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "reconciliation_note": "Stage76 restores Stage60-scale 29-sequence planning metadata."
+    },
+    {
+      "logic_id": "scene_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "metadata_runtime_verified_not_full_render",
+      "evidence_files": [
+        "src/v1700/reabsorption/stage60_literary_engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "reconciliation_note": "Stage76 restores Stage60-scale 532-scene planning metadata; actual rendering remains a commercial-readiness target."
+    },
+    {
+      "logic_id": "ten_axis_literary_quality",
+      "source_branchpoint": "BP_STAGE56_QUALITY_GATE",
+      "original_survival_status": "MISSING_BUT_REQUIRED",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "actual_text_verified",
+      "evidence_files": [
+        "src/v1700/reabsorption/stage60_literary_engine.py",
+        "src/v1700/quality_endurance/engine.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+        "tests/stage_gates/test_stage81_release_gate.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate",
+        "stage81_release_gate"
+      ],
+      "reconciliation_note": "Stage56 10-axis gate is restored and Stage81 applies actual-text evaluation to 30 rendered scenes."
+    },
+    {
+      "logic_id": "score_improving_refinement",
+      "source_branchpoint": "BP_STAGE57_REFINEMENT_LOOP",
+      "original_survival_status": "PARTIAL_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "actual_text_verified",
+      "evidence_files": [
+        "src/v1700/quality_endurance/engine.py",
+        "src/v1700/longform/refinement.py"
+      ],
+      "test_coverage": [
+        "tests/stage_gates/test_stage81_release_gate.py",
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage81_release_gate",
+        "stage76_release_gate"
+      ],
+      "reconciliation_note": "Stage81 verifies actual-text before/after quality delta and blocker removal."
+    },
+    {
+      "logic_id": "drse_weighted_relation_scoring",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "docs/concepts/drse_formula.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "reconciliation_note": "DRSE remains live from Stage73.1 onward and participates in Stage74+ longform logic."
+    },
+    {
+      "logic_id": "emotional_momentum_vector",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "docs/concepts/emotional_momentum_vector.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "reconciliation_note": "EmotionalMomentum remains live from Stage73.1 onward."
+    },
+    {
+      "logic_id": "mise_en_scene_directive",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "docs/concepts/mise_en_scene_compiler.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "reconciliation_note": "Mise-en-scène directives remain live and are extended by Stage80/81 composition and quality loops."
+    },
+    {
+      "logic_id": "graph_nexus_three_graphs",
+      "source_branchpoint": "BP_STAGE72_GRAPHNEXUS",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P1",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "docs/concepts/graph_nexus_3graph_model.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage72_1_graph_nexus_three_graphs.py"
+      ],
+      "gate_coverage": [
+        "graph_nexus_release_gate"
+      ],
+      "reconciliation_note": "GraphNexus remains live as code/narrative/stage lineage infrastructure."
+    },
+    {
+      "logic_id": "full_workspace_reproducibility",
+      "source_branchpoint": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "original_survival_status": "LIVE_RUNTIME",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P1",
+      "completion_level": "runtime_verified",
+      "evidence_files": [
+        "release/current/STAGE74_FULL_WORKSPACE_RELEASE_REPORT.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage74_longform_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage74_release_gate"
+      ],
+      "reconciliation_note": "Full workspace packaging remains live from Stage73 onward."
+    },
+    {
+      "logic_id": "korean_drama_composition_hierarchy",
+      "source_branchpoint": "BP_STAGE80_KOREAN_DRAMA_COMPOSITION_HIERARCHY",
+      "original_survival_status": "NEW_STAGE80",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "runtime_smoke_verified",
+      "evidence_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/drama_composition/contracts.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage80_korean_drama_composition.py"
+      ],
+      "gate_coverage": [
+        "stage80_release_gate"
+      ],
+      "reconciliation_note": "Stage80 verifies the six-level Korean drama hierarchy: series story, macro plot, broadcast episode, micro plot, sequence, and scene."
+    },
+    {
+      "logic_id": "series_macro_episode_micro_sequence_scene_boundary",
+      "source_branchpoint": "BP_STAGE80_KOREAN_DRAMA_COMPOSITION_HIERARCHY",
+      "original_survival_status": "NEW_STAGE80",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "contract_verified",
+      "evidence_files": [
+        "src/v1700/drama_composition/contracts.py",
+        "docs/concepts/korean_drama_composition_hierarchy.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage80_korean_drama_composition.py"
+      ],
+      "gate_coverage": [
+        "stage80_release_gate"
+      ],
+      "reconciliation_note": "Composition contracts keep each scale distinct so Stage84 runtime muscle cannot collapse the V1700 Korean drama skeleton."
+    },
+    {
+      "logic_id": "composition_hierarchy_release_gate",
+      "source_branchpoint": "BP_STAGE80_KOREAN_DRAMA_COMPOSITION_HIERARCHY",
+      "original_survival_status": "NEW_STAGE80",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "gate_verified",
+      "evidence_files": [
+        "src/v1700/gates/stage80_release_gate.py"
+      ],
+      "test_coverage": [
+        "tests/test_stage80_korean_drama_composition.py"
+      ],
+      "gate_coverage": [
+        "stage80_release_gate"
+      ],
+      "reconciliation_note": "Stage80 gate is the structural precondition for Stage84 runtime absorption."
+    },
+    {
+      "logic_id": "actual_text_quality_endurance",
+      "source_branchpoint": "BP_STAGE81_ACTUAL_TEXT_QUALITY_ENDURANCE",
+      "original_survival_status": "NEW_STAGE81",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "actual_text_verified",
+      "evidence_files": [
+        "src/v1700/quality_endurance/engine.py",
+        "release/current/stage81_release_gate_report.json"
+      ],
+      "test_coverage": [
+        "tests/stage_gates/test_stage81_release_gate.py"
+      ],
+      "gate_coverage": [
+        "stage81_release_gate"
+      ],
+      "reconciliation_note": "Stage81 verifies 30 rendered scenes with quality average after refinement above release threshold and zero blockers."
+    },
+    {
+      "logic_id": "quality_refinement_trace_integrity",
+      "source_branchpoint": "BP_STAGE81_ACTUAL_TEXT_QUALITY_ENDURANCE",
+      "original_survival_status": "NEW_STAGE81",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "trace_verified",
+      "evidence_files": [
+        "src/v1700/longform/refinement.py",
+        "sample_longform_project_01/refinement_trace.json"
+      ],
+      "test_coverage": [
+        "tests/stage_gates/test_stage81_release_gate.py",
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gate_coverage": [
+        "stage81_release_gate",
+        "stage83_release_gate"
+      ],
+      "reconciliation_note": "Refinement evidence is tied to actual generated text and preserved through the Stage83 commercial evidence pack."
+    },
+    {
+      "logic_id": "blind_critic_benchmark",
+      "source_branchpoint": "BP_STAGE82_BLIND_CRITIC_BENCHMARK",
+      "original_survival_status": "NEW_STAGE82",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "benchmark_verified",
+      "evidence_files": [
+        "src/v1700/blind_critic/harness.py",
+        "release/current/stage82_blind_critic_benchmark_report.json"
+      ],
+      "test_coverage": [
+        "tests/test_stage82_blind_critic_benchmark.py"
+      ],
+      "gate_coverage": [
+        "stage82_release_gate"
+      ],
+      "reconciliation_note": "Stage82 verifies blind critic benchmark evidence before commercial packaging."
+    },
+    {
+      "logic_id": "v1700_margin_over_pure_gpt",
+      "source_branchpoint": "BP_STAGE82_BLIND_CRITIC_BENCHMARK",
+      "original_survival_status": "NEW_STAGE82",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "margin_verified",
+      "evidence_files": [
+        "release/current/stage82_blind_critic_benchmark_report.json",
+        "sample_longform_project_01/blind_eval_report.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage82_blind_critic_benchmark.py",
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gate_coverage": [
+        "stage82_release_gate",
+        "stage83_release_gate"
+      ],
+      "reconciliation_note": "The Stage83 manifest preserves the V1700 margin over pure GPT as commercial-readiness evidence."
+    },
+    {
+      "logic_id": "commercial_longform_release_candidate",
+      "source_branchpoint": "BP_STAGE83_COMMERCIAL_LONGFORM_RELEASE_CANDIDATE",
+      "original_survival_status": "NEW_STAGE83",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "commercial_evidence_pack_verified",
+      "evidence_files": [
+        "src/v1700/commercial_release/engine.py",
+        "sample_longform_project_01/commercial_release_manifest.json"
+      ],
+      "test_coverage": [
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gate_coverage": [
+        "stage83_release_gate"
+      ],
+      "reconciliation_note": "Stage83 produces a local-first commercial longform evidence pack."
+    },
+    {
+      "logic_id": "three_episode_actual_rendering",
+      "source_branchpoint": "BP_STAGE83_COMMERCIAL_LONGFORM_RELEASE_CANDIDATE",
+      "original_survival_status": "NEW_STAGE83",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "actual_render_verified",
+      "evidence_files": [
+        "sample_longform_project_01/generated_episode_01.md",
+        "sample_longform_project_01/generated_episode_02.md",
+        "sample_longform_project_01/generated_episode_03.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gate_coverage": [
+        "stage83_release_gate"
+      ],
+      "reconciliation_note": "Three generated episode files and at least 30 actual rendered scenes are present in the release candidate."
+    },
+    {
+      "logic_id": "provider_zero_commercial_contract",
+      "source_branchpoint": "BP_STAGE83_COMMERCIAL_LONGFORM_RELEASE_CANDIDATE",
+      "original_survival_status": "NEW_STAGE83",
+      "current_survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0",
+      "completion_level": "release_contract_verified",
+      "evidence_files": [
+        "src/v1700/gates/stage83_release_gate.py",
+        "manifests/stage83_manifest.json"
+      ],
+      "test_coverage": [
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gate_coverage": [
+        "stage83_release_gate"
+      ],
+      "reconciliation_note": "Commercial gate keeps provider default calls at 0 and Node2 raw reveal access at 0."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "stage": "128",
+  "baseline_stage": "127",
+  "title": "SharedWorld / SharedCharacter Read-Only Absorption Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage127_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "shared_character_read_only_adapter_pass": {
+      "status": "pass"
+    },
+    "shared_world_read_only_adapter_pass": {
+      "status": "pass"
+    },
+    "license_boundary_adapter_pass": {
+      "status": "pass"
+    },
+    "project_isolation_guard_pass": {
+      "status": "pass"
+    },
+    "canon_conflict_report_pass": {
+      "status": "pass"
+    },
+    "read_only_absorption_enforced": {
+      "status": "pass"
+    },
+    "no_shared_db_write_enabled": {
+      "status": "pass"
+    },
+    "unauthorized_cross_reads_writes_zero": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "stage129_canon_governor_deferred": {
+      "status": "pass"
+    },
+    "gitnexus_python_fallback_preflight_pass": {
+      "status": "pass"
+    },
+    "gitnexus_shape_check_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage128": {
+    "status": "pass",
+    "stage": "128",
+    "baseline_stage": "127",
+    "title": "SharedWorld / SharedCharacter Read-Only Absorption",
+    "issues": [],
+    "read_only_absorption": true,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "cross_project_write": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "python_fallback_used": true,
+    "stage129_canon_governor_required": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "story_doctor_llm_call_count": 0,
+  "pne_provider_call_count": 0,
+  "pne_runtime_training_count": 0,
+  "auto_repair_mutation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

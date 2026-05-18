@@ -1,0 +1,482 @@
+{
+  "stage": "107.5",
+  "baseline_stage": "107",
+  "title": "Provider Live Sandbox Adapter Verification",
+  "status": "pass",
+  "issues": [],
+  "stage107_5_0_sandbox_preflight": {
+    "stage": "107.5.0",
+    "title": "Provider Live Sandbox Preflight",
+    "status": "pass",
+    "issues": [],
+    "baseline_stage": "107",
+    "checks": {
+      "stage107_baseline_gate_pass": true,
+      "gitnexus_python_fallback_visible": true,
+      "branchpoint_survival_pass": true,
+      "release_gate_isolation_pass": true,
+      "sandbox_explicit_opt_in_required": true,
+      "raw_manuscript_block_pass": true,
+      "raw_response_storage_block_pass": true,
+      "credential_externality_pass": true
+    },
+    "config": {
+      "sandbox_enabled": false,
+      "allow_live_provider_calls": false,
+      "release_gate_affected": false,
+      "raw_manuscript_allowed": false,
+      "provider_ids": [
+        "openai",
+        "anthropic",
+        "gemini",
+        "ollama"
+      ],
+      "model_aliases": "redacted_to_provider_aliases",
+      "max_live_calls": 12,
+      "max_prompt_chars": 6000,
+      "store_raw_response": false
+    },
+    "live_call_guard_issues": [
+      "sandbox_not_enabled",
+      "live_calls_not_allowed"
+    ],
+    "credential_status": [
+      {
+        "provider_id": "openai",
+        "credential_env": "OPENAI_API_KEY",
+        "present": false,
+        "value_recorded": false
+      },
+      {
+        "provider_id": "anthropic",
+        "credential_env": "ANTHROPIC_API_KEY",
+        "present": false,
+        "value_recorded": false
+      },
+      {
+        "provider_id": "gemini",
+        "credential_env": "GEMINI_API_KEY",
+        "present": false,
+        "value_recorded": false
+      },
+      {
+        "provider_id": "ollama",
+        "credential_env": "OLLAMA_BASE_URL",
+        "present": false,
+        "value_recorded": false
+      }
+    ],
+    "release_isolation": {
+      "status": "pass",
+      "release_gate_affected": false,
+      "live_provider_call_count_in_release_gate": 0,
+      "provider_default_calls": 0
+    },
+    "branchpoint_trace_status": "pass"
+  },
+  "stage107_5_1_model_id_probe": {
+    "stage": "107.5.1",
+    "title": "Model ID Probe",
+    "status": "pass",
+    "issues": [],
+    "live_call_performed": false,
+    "model_ids_hardcoded_as_canonical": false,
+    "results": [
+      {
+        "provider_id": "openai",
+        "requested_alias": "env:OPENAI_MODEL_ID",
+        "resolved_model_id": null,
+        "probe_status": "SKIPPED",
+        "reason": "live_probe_not_enabled_or_credential_missing",
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "anthropic",
+        "requested_alias": "env:ANTHROPIC_MODEL_ID",
+        "resolved_model_id": null,
+        "probe_status": "SKIPPED",
+        "reason": "live_probe_not_enabled_or_credential_missing",
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "gemini",
+        "requested_alias": "env:GEMINI_MODEL_ID",
+        "resolved_model_id": null,
+        "probe_status": "SKIPPED",
+        "reason": "live_probe_not_enabled_or_credential_missing",
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "requested_alias": "qwen3:14b",
+        "resolved_model_id": "qwen3:14b",
+        "probe_status": "PASS",
+        "reason": "ollama_model_alias_configured",
+        "live_call_performed": false
+      }
+    ],
+    "note": "Model aliases are treated as account-specific probe targets, not canonical release constants."
+  },
+  "stage107_5_2_adapter_contract": {
+    "stage": "107.5.2",
+    "title": "Live Adapter Contract Verification",
+    "status": "pass",
+    "issues": [],
+    "contracts": [
+      {
+        "provider_id": "openai",
+        "status": "pass",
+        "live_adapter_present": true,
+        "release_safe_default": true,
+        "raw_manuscript_allowed": false,
+        "endpoint_family": "openai_responses_or_compatible"
+      },
+      {
+        "provider_id": "anthropic",
+        "status": "pass",
+        "live_adapter_present": true,
+        "release_safe_default": true,
+        "raw_manuscript_allowed": false,
+        "endpoint_family": "anthropic_messages"
+      },
+      {
+        "provider_id": "gemini",
+        "status": "pass",
+        "live_adapter_present": true,
+        "release_safe_default": true,
+        "raw_manuscript_allowed": false,
+        "endpoint_family": "gemini_generate_content"
+      },
+      {
+        "provider_id": "ollama",
+        "status": "pass",
+        "live_adapter_present": true,
+        "release_safe_default": true,
+        "raw_manuscript_allowed": false,
+        "openai_compatible_local": true
+      }
+    ],
+    "live_provider_call_count": 0,
+    "raw_manuscript_allowed": false
+  },
+  "stage107_5_3_provider_benchmark": {
+    "stage": "107.5.3",
+    "title": "Provider Benchmark Runner",
+    "status": "pass",
+    "issues": [],
+    "release_gate_affected": false,
+    "provider_live_call_count": 0,
+    "raw_manuscript_sent": false,
+    "raw_response_stored": false,
+    "result_count": 12
+  },
+  "stage107_5_4_arbitration_comparison": {
+    "stage": "107.5.4",
+    "title": "V1700 Arbitration Comparison",
+    "status": "pass",
+    "issues": [],
+    "score_report": {
+      "stage": "107.5.4",
+      "title": "V1700 Arbitration Comparison",
+      "status": "pass",
+      "score_count": 12,
+      "scores": [
+        {
+          "seed_id": "seed_001",
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "score_total": 88.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_001",
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "score_total": 87.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_001",
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "score_total": 86.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_001",
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "score_total": 85.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_002",
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "score_total": 88.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_002",
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "score_total": 87.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_002",
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "score_total": 86.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_002",
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "score_total": 85.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_003",
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "score_total": 88.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_003",
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "score_total": 87.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_003",
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "score_total": 86.5,
+          "v1700_improvement_delta": 3.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        },
+        {
+          "seed_id": "seed_003",
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "score_total": 85.5,
+          "v1700_improvement_delta": 4.0,
+          "score_breakdown": {
+            "structure": 8.6,
+            "style": 8.3,
+            "safety": 10.0,
+            "longform_fit": 8.8
+          },
+          "reviewer_notes": [
+            "fixture-level scoring for sandbox contract validation"
+          ]
+        }
+      ],
+      "comparison_claim": "contract_level_fixture_scoring_not_human_benchmark"
+    },
+    "cost_latency_ledger": {
+      "status": "pass",
+      "rows": [
+        {
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "openai",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "openai",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "PROSE",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "ollama",
+          "mode": "SCENARIO",
+          "latency_ms": 0,
+          "estimated_cost": null,
+          "live_call_performed": false
+        }
+      ],
+      "live_call_count": 0,
+      "estimated_total_cost": 0.0
+    },
+    "release_gate_affected": false,
+    "raw_manuscript_sent": false
+  },
+  "release_gate_affected": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "sandbox_live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "raw_response_stored": false,
+  "python_fallback_required": true
+}

@@ -1,0 +1,1057 @@
+{
+  "stage": "75",
+  "status": "pass",
+  "issues": [],
+  "truthful_stage75_status": {
+    "stage": "75",
+    "status": "pass",
+    "issues": [],
+    "branchpoint_count": 15,
+    "core_logic_count": 15,
+    "known_p0_missing_or_partial_count": 9,
+    "pass_meaning": "All critical branchpoints are registered and missing/partial P0 logic is truthfully recorded for Stage76+ reabsorption."
+  },
+  "branchpoint_registry": [
+    {
+      "branchpoint_id": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "source": "Stage25 / Node2 Generative Rewrite Engine",
+      "priority": "P0",
+      "why_it_branches": "Node2 changed from evaluator/surface helper into a candidate-generating rewrite orchestrator.",
+      "core_logic_ids": [
+        "node2_candidate_generation",
+        "node2_authority_guard",
+        "node2_selection_layer"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "source": "Stage39 Drama Execution Engine",
+      "priority": "P0",
+      "why_it_branches": "The project moved from literary scaffolding into drama execution: temporal continuity, pressure, branch rollback, and reconvergence.",
+      "core_logic_ids": [
+        "temporal_continuity",
+        "emotional_pressure_valve",
+        "branch_commit_rollback",
+        "replay_reconvergence"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "source": "Stage50 Prompt-to-Three-Episode Engine",
+      "priority": "P0",
+      "why_it_branches": "Prompt-to-longform became a three-episode, sequence, and scene scale engine.",
+      "core_logic_ids": [
+        "three_episode_structure",
+        "sequence_scale_planning",
+        "scene_scale_planning"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE56_QUALITY_GATE",
+      "source": "Stage56 Literary Quality Evaluation Gate",
+      "priority": "P0",
+      "why_it_branches": "Literary generation gained multi-axis quality scoring rather than ad-hoc acceptance.",
+      "core_logic_ids": [
+        "ten_axis_literary_quality",
+        "quality_blocker_detection"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE57_REFINEMENT_LOOP",
+      "source": "Stage57 Literary Refinement Loop",
+      "priority": "P0",
+      "why_it_branches": "Drafts gained a measured critic -> revise -> rescore loop with score delta.",
+      "core_logic_ids": [
+        "score_improving_refinement",
+        "blocker_axis_reduction"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE60_FINAL_USER_RC",
+      "source": "Stage60 Final User Release Candidate",
+      "priority": "P0",
+      "why_it_branches": "The literary engine reached a user-facing release candidate with Stage50/56/57 evidence.",
+      "core_logic_ids": [
+        "stage60_release_contract",
+        "stage60_literary_engine_bundle"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_V328_DRSE_STACK",
+      "source": "V328 / DRSE, EmotionalMomentum, Mise-en-scene",
+      "priority": "P0",
+      "why_it_branches": "The user's mathematical literary theory became a relational scoring and mise-en-scene stack.",
+      "core_logic_ids": [
+        "drse_weighted_relation_scoring",
+        "emotional_momentum_vector",
+        "mise_en_scene_directive"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE12_E2E_AUTHORING",
+      "source": "Stage12 End-to-End Authoring Scenario Runner",
+      "priority": "P1",
+      "why_it_branches": "Early isolated loops became an end-to-end authoring scenario.",
+      "core_logic_ids": [
+        "e2e_authoring_scenario"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE29_GRAPHRAG_MEMORY",
+      "source": "Stage29~31 Canon Memory Index / GraphRAG / Controlled Weight Mutation",
+      "priority": "P1",
+      "why_it_branches": "Memory became indexed, graph-queryable, and weight-adjustable.",
+      "core_logic_ids": [
+        "canon_memory_index",
+        "scene_graph_query",
+        "controlled_weight_mutation"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE33_35_VALIDATION_AND_CRITIC",
+      "source": "Stage33~35 Concept Validation / Authoring Console / Critic Comparison Gate",
+      "priority": "P1",
+      "why_it_branches": "Generation became a validated, author-facing, critic-comparable process.",
+      "core_logic_ids": [
+        "concept_validation_workbench",
+        "authoring_console",
+        "critic_comparison_gate"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE65_GRAPH_INTELLIGENCE",
+      "source": "Stage65~66 Graph Intelligence Consolidation",
+      "priority": "P1",
+      "why_it_branches": "Graph sidecar thinking became consolidated and authority-bounded.",
+      "core_logic_ids": [
+        "graph_intelligence_sidecar",
+        "authority_boundary"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE70_FINAL_VERIFIED_RUNTIME",
+      "source": "Stage70 Final Verified Runtime Release",
+      "priority": "P1",
+      "why_it_branches": "The system gained local-first runtime verification and provider default call zero.",
+      "core_logic_ids": [
+        "local_first_runtime",
+        "provider_zero_gate",
+        "verified_release_gate"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE71_READER_SURFACE",
+      "source": "Stage71 Node2 Reader-Facing Prose Renderer",
+      "priority": "P1",
+      "why_it_branches": "The project re-centered reader-facing prose surface and anti-LLM naturalness.",
+      "core_logic_ids": [
+        "reader_surface_renderer",
+        "anti_llm_surface"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE72_GRAPHNEXUS",
+      "source": "Stage72.1~72.3 GraphNexus / GitNexus / Foundation Lineage",
+      "priority": "P1",
+      "why_it_branches": "The system built code/narrative/stage lineage graphs and pre-Stage40 survival gates.",
+      "core_logic_ids": [
+        "graph_nexus_three_graphs",
+        "foundation_lineage_survival"
+      ],
+      "required_in_current_model": true
+    },
+    {
+      "branchpoint_id": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "source": "Stage73~74 Full Workspace Baseline / Formula Restoration",
+      "priority": "P1",
+      "why_it_branches": "Full workspace reproducibility and smoke-level literary formula restoration became canonical.",
+      "core_logic_ids": [
+        "full_workspace_reproducibility",
+        "longform_smoke_engine"
+      ],
+      "required_in_current_model": true
+    }
+  ],
+  "core_logic_survival_matrix": [
+    {
+      "logic_id": "node2_candidate_generation",
+      "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "expected_behavior": "Generate multiple prose candidates and select by authority/surface rules.",
+      "current_location": "src/v1700/nodes/node2_prose_renderer/candidates.py + planned Stage77 rewrite_orchestrator",
+      "evidence_files": [
+        "docs/concepts/reader_surface_evaluation.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage77_node2_rewrite_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage77_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "node2_authority_guard",
+      "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "expected_behavior": "Prevent Node2 from overriding canon, reveal, or raw graph authority.",
+      "current_location": "src/v1700/nodes/node2_prose_renderer/validators.py",
+      "evidence_files": [
+        "docs/architecture/node_authority_boundaries.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage72_1_node_projection_gate.py"
+      ],
+      "gate_coverage": [
+        "node_projection_gate",
+        "stage77_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "temporal_continuity",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Maintain ordered dramatic timeline and detect discontinuity.",
+      "current_location": "planned src/v1700/drama_execution/temporal_continuity.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "emotional_pressure_valve",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Escalate/release scene pressure deterministically.",
+      "current_location": "planned src/v1700/drama_execution/pressure.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "branch_commit_rollback",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Commit, rollback, and reconverge narrative branch choices.",
+      "current_location": "planned src/v1700/drama_execution/branching.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "three_episode_structure",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Build a three-episode macro proof from a user prompt.",
+      "current_location": "src/v1700/longform/planners.py",
+      "evidence_files": [
+        "docs/runbooks/stage74_longform_execution.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage74_longform_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "longform_execution_gate",
+        "stage76_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "sequence_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Recover Stage60-scale sequence planning, target >= 29 sequences.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "scene_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Recover Stage60-scale scene planning, target >= 532 planned scenes.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "ten_axis_literary_quality",
+      "source_branchpoint": "BP_STAGE56_QUALITY_GATE",
+      "expected_behavior": "Score prose using a multi-axis literary quality gate.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "score_improving_refinement",
+      "source_branchpoint": "BP_STAGE57_REFINEMENT_LOOP",
+      "expected_behavior": "Show measured before/after improvement with blockers reduced.",
+      "current_location": "src/v1700/longform/refinement.py + planned Stage76 Stage60 loop",
+      "evidence_files": [
+        "docs/concepts/literary_formula_stack.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "drse_weighted_relation_scoring",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "expected_behavior": "Compute relation, causality, emotion, residue, and legacy weights outside the LLM.",
+      "current_location": "src/v1700/literary_formulas/drse.py",
+      "evidence_files": [
+        "docs/concepts/drse_formula.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "emotional_momentum_vector",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "expected_behavior": "Track tension, sympathy, dread, catharsis as a 4D vector.",
+      "current_location": "src/v1700/literary_formulas/emotional_momentum.py",
+      "evidence_files": [
+        "docs/concepts/emotional_momentum_vector.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "mise_en_scene_directive",
+      "source_branchpoint": "BP_V328_DRSE_STACK",
+      "expected_behavior": "Compile DRSE and momentum into sensory/directorial directives.",
+      "current_location": "src/v1700/literary_formulas/mise_en_scene_compiler.py",
+      "evidence_files": [
+        "docs/concepts/mise_en_scene_compiler.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage73_1_literary_formula_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage73_1_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "graph_nexus_three_graphs",
+      "source_branchpoint": "BP_STAGE72_GRAPHNEXUS",
+      "expected_behavior": "Maintain CodeGraph, NarrativeGraph, StageLineageGraph.",
+      "current_location": "src/v1700/graph_nexus",
+      "evidence_files": [
+        "docs/concepts/graph_nexus_3graph_model.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage72_1_graph_nexus_three_graphs.py"
+      ],
+      "gate_coverage": [
+        "graph_nexus_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P1"
+    },
+    {
+      "logic_id": "full_workspace_reproducibility",
+      "source_branchpoint": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "expected_behavior": "Package active repo and knowledge base for cross-local reproduction.",
+      "current_location": "package/release manifests",
+      "evidence_files": [
+        "release/current/STAGE74_FULL_WORKSPACE_RELEASE_REPORT.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage74_longform_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage74_release_gate"
+      ],
+      "survival_status": "LIVE_RUNTIME",
+      "reabsorption_priority": "P1"
+    }
+  ],
+  "missing_required_logic_manifest": {
+    "stage": "75",
+    "status": "known_blockers_registered",
+    "meaning": "Stage75 identifies required missing or partial branchpoint logics; Stage76+ must reabsorb them.",
+    "missing_or_partial_count": 9,
+    "items": [
+      {
+        "logic_id": "node2_candidate_generation",
+        "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+        "expected_behavior": "Generate multiple prose candidates and select by authority/surface rules.",
+        "current_location": "src/v1700/nodes/node2_prose_renderer/candidates.py + planned Stage77 rewrite_orchestrator",
+        "evidence_files": [
+          "docs/concepts/reader_surface_evaluation.md"
+        ],
+        "test_coverage": [
+          "tests/test_stage77_node2_rewrite_restoration.py"
+        ],
+        "gate_coverage": [
+          "stage77_release_gate"
+        ],
+        "survival_status": "PARTIAL_RUNTIME",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "temporal_continuity",
+        "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+        "expected_behavior": "Maintain ordered dramatic timeline and detect discontinuity.",
+        "current_location": "planned src/v1700/drama_execution/temporal_continuity.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage78_drama_execution_engine.py"
+        ],
+        "gate_coverage": [
+          "stage78_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "emotional_pressure_valve",
+        "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+        "expected_behavior": "Escalate/release scene pressure deterministically.",
+        "current_location": "planned src/v1700/drama_execution/pressure.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage78_drama_execution_engine.py"
+        ],
+        "gate_coverage": [
+          "stage78_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "branch_commit_rollback",
+        "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+        "expected_behavior": "Commit, rollback, and reconverge narrative branch choices.",
+        "current_location": "planned src/v1700/drama_execution/branching.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage78_drama_execution_engine.py"
+        ],
+        "gate_coverage": [
+          "stage78_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "three_episode_structure",
+        "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+        "expected_behavior": "Build a three-episode macro proof from a user prompt.",
+        "current_location": "src/v1700/longform/planners.py",
+        "evidence_files": [
+          "docs/runbooks/stage74_longform_execution.md"
+        ],
+        "test_coverage": [
+          "tests/test_stage74_longform_execution_engine.py"
+        ],
+        "gate_coverage": [
+          "longform_execution_gate",
+          "stage76_release_gate"
+        ],
+        "survival_status": "PARTIAL_RUNTIME",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "sequence_scale_planning",
+        "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+        "expected_behavior": "Recover Stage60-scale sequence planning, target >= 29 sequences.",
+        "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+        ],
+        "gate_coverage": [
+          "stage76_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "scene_scale_planning",
+        "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+        "expected_behavior": "Recover Stage60-scale scene planning, target >= 532 planned scenes.",
+        "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+        ],
+        "gate_coverage": [
+          "stage76_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "ten_axis_literary_quality",
+        "source_branchpoint": "BP_STAGE56_QUALITY_GATE",
+        "expected_behavior": "Score prose using a multi-axis literary quality gate.",
+        "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+        "evidence_files": [],
+        "test_coverage": [
+          "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+        ],
+        "gate_coverage": [
+          "stage76_release_gate"
+        ],
+        "survival_status": "MISSING_BUT_REQUIRED",
+        "reabsorption_priority": "P0"
+      },
+      {
+        "logic_id": "score_improving_refinement",
+        "source_branchpoint": "BP_STAGE57_REFINEMENT_LOOP",
+        "expected_behavior": "Show measured before/after improvement with blockers reduced.",
+        "current_location": "src/v1700/longform/refinement.py + planned Stage76 Stage60 loop",
+        "evidence_files": [
+          "docs/concepts/literary_formula_stack.md"
+        ],
+        "test_coverage": [
+          "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+        ],
+        "gate_coverage": [
+          "stage76_release_gate"
+        ],
+        "survival_status": "PARTIAL_RUNTIME",
+        "reabsorption_priority": "P0"
+      }
+    ]
+  },
+  "organic_relation_graph": [
+    {
+      "source": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "node2_candidate_generation",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/nodes/node2_prose_renderer/candidates.py + planned Stage77 rewrite_orchestrator",
+      "evidence": [
+        "docs/concepts/reader_surface_evaluation.md"
+      ]
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage77_node2_rewrite_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "REQUIRES_GATE",
+      "target": "stage77_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "node2_authority_guard",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/nodes/node2_prose_renderer/validators.py",
+      "evidence": [
+        "docs/architecture/node_authority_boundaries.md"
+      ]
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage72_1_node_projection_gate.py",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_GATE",
+      "target": "node_projection_gate",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_GATE",
+      "target": "stage77_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "temporal_continuity",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/temporal_continuity.py",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "emotional_pressure_valve",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/pressure.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "branch_commit_rollback",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/branching.py",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "three_episode_structure",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/longform/planners.py",
+      "evidence": [
+        "docs/runbooks/stage74_longform_execution.md"
+      ]
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage74_longform_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_GATE",
+      "target": "longform_execution_gate",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "sequence_scale_planning",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "scene_scale_planning",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE56_QUALITY_GATE",
+      "relation": "DEFINES_LOGIC",
+      "target": "ten_axis_literary_quality",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE57_REFINEMENT_LOOP",
+      "relation": "DEFINES_LOGIC",
+      "target": "score_improving_refinement",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/longform/refinement.py + planned Stage76 Stage60 loop",
+      "evidence": [
+        "docs/concepts/literary_formula_stack.md"
+      ]
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "drse_weighted_relation_scoring",
+      "evidence": []
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/drse.py",
+      "evidence": [
+        "docs/concepts/drse_formula.md"
+      ]
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "emotional_momentum_vector",
+      "evidence": []
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/emotional_momentum.py",
+      "evidence": [
+        "docs/concepts/emotional_momentum_vector.md"
+      ]
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "mise_en_scene_directive",
+      "evidence": []
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/mise_en_scene_compiler.py",
+      "evidence": [
+        "docs/concepts/mise_en_scene_compiler.md"
+      ]
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE72_GRAPHNEXUS",
+      "relation": "DEFINES_LOGIC",
+      "target": "graph_nexus_three_graphs",
+      "evidence": []
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/graph_nexus",
+      "evidence": [
+        "docs/concepts/graph_nexus_3graph_model.md"
+      ]
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage72_1_graph_nexus_three_graphs.py",
+      "evidence": []
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "REQUIRES_GATE",
+      "target": "graph_nexus_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "relation": "DEFINES_LOGIC",
+      "target": "full_workspace_reproducibility",
+      "evidence": []
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "CURRENT_LOCATION",
+      "target": "package/release manifests",
+      "evidence": [
+        "release/current/STAGE74_FULL_WORKSPACE_RELEASE_REPORT.md"
+      ]
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage74_longform_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "REQUIRES_GATE",
+      "target": "stage74_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "GitNexus",
+      "relation": "SUPPORTS",
+      "target": "GraphNexus CodeGraph",
+      "evidence": []
+    },
+    {
+      "source": "GraphNexus",
+      "relation": "SUPPORTS",
+      "target": "BranchpointLogicGraph",
+      "evidence": []
+    },
+    {
+      "source": "BranchpointLogicGraph",
+      "relation": "PROTECTS",
+      "target": "Longform Literary Engine",
+      "evidence": []
+    },
+    {
+      "source": "DRSE",
+      "relation": "SAFE_PROJECTS_TO_NODE2",
+      "target": "Node2GraphSurfacePacket",
+      "evidence": []
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

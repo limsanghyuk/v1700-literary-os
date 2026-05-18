@@ -1,0 +1,677 @@
+{
+  "stage": "72.3",
+  "name": "Pre-Stage40 Foundation Lineage Manifest",
+  "generated_at": "2026-05-12T06:21:39.170198+00:00",
+  "knowledge_base_root": "C:\\AI_Codex\\codex-work\\gpt\\knowledge_base\\v1650_stage35_critic_comparison_gate",
+  "evidence_levels": [
+    "E1_DOCUMENT",
+    "E2_ARTIFACT",
+    "E3_EXECUTABLE",
+    "E4_TESTED",
+    "E5_LIVE_CURRENT"
+  ],
+  "survival_statuses": [
+    "LIVE_RUNTIME",
+    "LIVE_GATE_ONLY",
+    "PARTIAL",
+    "DOCUMENTED_ONLY",
+    "DEFERRED",
+    "REJECTED_WITH_REASON",
+    "UNKNOWN_NEEDS_REVIEW"
+  ],
+  "concept_count": 25,
+  "concepts": [
+    {
+      "concept_id": "foundation.provider.multi_provider_creative_comparison",
+      "stage_origins": [
+        "STAGE10"
+      ],
+      "title": "Multi-Provider Creative Comparison",
+      "problem_solved": "Compare provider outputs without letting one provider silently define quality.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage10_multi_provider_creative_comparison_manifest.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/runtime/provider_boundary.py"
+      ],
+      "current_test_anchor": [
+        "tests/test_stage72_2_release_gate.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "provider quality score normalization"
+      ],
+      "promotion_priority": "MEDIUM",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.provider.execution_trace",
+      "stage_origins": [
+        "STAGE11"
+      ],
+      "title": "Provider Execution Trace",
+      "problem_solved": "Make provider calls auditable and quarantine unsafe or unexpected execution.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage11_provider_execution_trace_harness_manifest.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/runtime/cost_ledger.py",
+        "src/v1700/runtime/provider_boundary.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [
+        "src/v1700/gates/release_gate.py"
+      ],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "full provider trace persistence"
+      ],
+      "promotion_priority": "MEDIUM",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.authoring.end_to_end_scenario_runner",
+      "stage_origins": [
+        "STAGE12"
+      ],
+      "title": "End-to-End Authoring Scenario Runner",
+      "problem_solved": "Keep authoring behavior testable as a whole workflow rather than isolated snippets.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage12_end_to_end_authoring_scenario_runner_manifest.json"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/stages/stage_001_039_foundation.md"
+      ],
+      "survival_status": "DOCUMENTED_ONLY",
+      "missing_runtime_work": [
+        "modern authoring scenario runner"
+      ],
+      "promotion_priority": "LOW",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.memory.conflict_resolver",
+      "stage_origins": [
+        "STAGE13"
+      ],
+      "title": "Memory Conflict Resolver",
+      "problem_solved": "Detect and resolve canon memory conflicts before they poison longform continuity.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage13_memory_conflict_resolver_manifest.json"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [
+        "src/v1700/ledgers/character_event_time.py",
+        "src/v1700/ledgers/reveal_budget.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "explicit conflict resolver gate"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.node2.literary_quality_engine",
+      "stage_origins": [
+        "STAGE14"
+      ],
+      "title": "Node2 Literary Quality Engine",
+      "problem_solved": "Evaluate prose for rhythm, indirect emotion, cliche control, and reader-facing quality.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage14_node2_literary_quality_engine_manifest.json"
+      ],
+      "evidence_level": "E5_LIVE_CURRENT",
+      "current_runtime_anchor": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/nodes/node2_prose_renderer/scorer.py"
+      ],
+      "current_test_anchor": [
+        "tests/unit/node2_prose_renderer/test_compiler.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "LIVE_RUNTIME",
+      "missing_runtime_work": [],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.node2.literary_depth_calibration",
+      "stage_origins": [
+        "STAGE15"
+      ],
+      "title": "Literary Depth Calibration",
+      "problem_solved": "Keep generated prose from being merely fluent by scoring depth and afterimage.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage15_literary_depth_calibration_manifest.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/nodes/node2_prose_renderer/scorer.py",
+        "src/v1700/ir/style_profile.py"
+      ],
+      "current_test_anchor": [
+        "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "dedicated literary depth benchmark"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.memory.long_horizon_drift_stress",
+      "stage_origins": [
+        "STAGE16"
+      ],
+      "title": "Long-Horizon Memory Drift Stress",
+      "problem_solved": "Stress longform memory so reveal budgets and invariants do not collapse over episodes.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage16_long_horizon_memory_drift_stress_manifest.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/ledgers/reveal_budget.py",
+        "src/v1700/ledgers/character_event_time.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/concepts/reveal_budget_memory_guard.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "long horizon regression fixture"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.review.authoring_workflow",
+      "stage_origins": [
+        "STAGE17"
+      ],
+      "title": "Authoring Review Workflow",
+      "problem_solved": "Make review and rewrite decisions durable instead of conversational only.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage17_authoring_review_workflow_manifest.json"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/runbooks/organic_impact_review_protocol.md"
+      ],
+      "survival_status": "DOCUMENTED_ONLY",
+      "missing_runtime_work": [
+        "modern review workflow runtime"
+      ],
+      "promotion_priority": "MEDIUM",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.review.human_agent_console",
+      "stage_origins": [
+        "STAGE18"
+      ],
+      "title": "Human/Agent Review Console",
+      "problem_solved": "Separate review authority and make agent judgment visible before promotion.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage18_human_review_console_manifest.json"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/reviews/stage72_3_principal_engineer_validation.md"
+      ],
+      "survival_status": "DOCUMENTED_ONLY",
+      "missing_runtime_work": [
+        "agent review console adapter"
+      ],
+      "promotion_priority": "MEDIUM",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.longform.episode_draft_export",
+      "stage_origins": [
+        "STAGE21"
+      ],
+      "title": "Episode Draft Export Harness",
+      "problem_solved": "Export episode-scale drafts as reviewable artifacts instead of transient model text.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage21_episode_draft_export_harness_manifest.json",
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage21_harness_result.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/stages/stage_050_052_longform_state_guards.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "episode draft export command"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.longform.series_arc_control",
+      "stage_origins": [
+        "STAGE22"
+      ],
+      "title": "Series Arc Control",
+      "problem_solved": "Keep season and episode progression coherent beyond isolated scene generation.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage22_node1_series_arc_control_manifest.json",
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage22_series_arc_harness_result.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/ir/scene_intent.py",
+        "src/v1700/nodes/node1_architect/__init__.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/stages/stage_050_052_longform_state_guards.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "season arc planner",
+        "episode arc planner"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.node2.style_evolution_memory",
+      "stage_origins": [
+        "STAGE23"
+      ],
+      "title": "Node2 Style Evolution Memory",
+      "problem_solved": "Preserve authorial taste and anti-LLM preferences across revision cycles.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage23_node2_style_evolution_memory_manifest.json",
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage23_node2_style_memory_harness_result.json"
+      ],
+      "evidence_level": "E5_LIVE_CURRENT",
+      "current_runtime_anchor": [
+        "src/v1700/ledgers/style_memory.py",
+        "src/v1700/nodes/node2_prose_renderer/authorial_profile.py"
+      ],
+      "current_test_anchor": [
+        "tests/unit/node2_prose_renderer/test_compiler.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "LIVE_RUNTIME",
+      "missing_runtime_work": [],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.governance.boundary_registry",
+      "stage_origins": [
+        "STAGE24"
+      ],
+      "title": "Boundary Registry",
+      "problem_solved": "Prevent node authority drift and forbidden knowledge leakage.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage24_1_1_boundary_registry_manifest.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/graph_nexus/projection.py",
+        "src/v1700/graph_nexus/graph_nexus_packet.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [
+        "src/v1700/gates/graph_nexus_release_gate.py"
+      ],
+      "current_doc_anchor": [
+        "docs/architecture/node_authority_boundaries.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "central boundary registry manifest"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.governance.release_candidate_gate",
+      "stage_origins": [
+        "STAGE25"
+      ],
+      "title": "Release Candidate Gate",
+      "problem_solved": "Require promotion evidence before a stage becomes a developer handoff candidate.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_candidate_manifest.json"
+      ],
+      "evidence_level": "E5_LIVE_CURRENT",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [
+        "tests/test_stage72_2_release_gate.py"
+      ],
+      "current_gate_anchor": [
+        "src/v1700/gates/release_gate.py",
+        "src/v1700/gates/stage72_2_release_gate.py"
+      ],
+      "current_doc_anchor": [],
+      "survival_status": "LIVE_RUNTIME",
+      "missing_runtime_work": [],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.governance.stage26_28_regression_stream",
+      "stage_origins": [
+        "STAGE26",
+        "STAGE27",
+        "STAGE28"
+      ],
+      "title": "Stage26-28 Regression Stream",
+      "problem_solved": "Keep feedback, graph, retrieval, and regression decisions connected across patches.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_27_28_regression.py",
+        "archive/_cleanup_20260511/legacy_root_tests/test_stage28_phase28_10_stage26_27_28_regression.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [
+        "tests/integration/test_node1_node2_node3_pipeline.py"
+      ],
+      "current_gate_anchor": [
+        "src/v1700/gates/release_gate.py"
+      ],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "cross-stage regression matrix"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.governance.concept_validation_workbench",
+      "stage_origins": [
+        "STAGE33"
+      ],
+      "title": "Concept Validation Workbench",
+      "problem_solved": "Validate whether a concept should be promoted, deferred, or rejected.",
+      "source_evidence": [
+        "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage33_all_validation_report.json"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [
+        "src/v1700/gates/pre_stage40_survival_gate.py"
+      ],
+      "current_doc_anchor": [
+        "docs/reviews/stage72_3_principal_engineer_validation.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "interactive concept workbench revival"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.evidence_intake_foundation",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Evidence Intake Foundation",
+      "problem_solved": "Convert raw evidence into structured packets before generation uses it.",
+      "source_evidence": [
+        "run_stage39_phase39_1_foundation.py"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [
+        "src/v1700/graph_nexus/tools/context.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "evidence intake queue integration"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.analyzer_librarian_integration",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Analyzer/Librarian Integration",
+      "problem_solved": "Separate analysis, indexing, and retrieval authority before generation.",
+      "source_evidence": [
+        "run_stage39_phase39_2_analyzer_librarian_integration.py"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [
+        "src/v1700/graph_nexus/tools/query.py",
+        "src/v1700/graph_nexus/tools/context.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "librarian role runtime adapter"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.graph_retrieval_bridge",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Graph Retrieval Bridge",
+      "problem_solved": "Use graph context as evidence rather than free-floating prompt memory.",
+      "source_evidence": [
+        "run_stage39_phase39_3_graph_retrieval_bridge.py"
+      ],
+      "evidence_level": "E3_EXECUTABLE",
+      "current_runtime_anchor": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/graph_nexus/tools/query.py"
+      ],
+      "current_test_anchor": [
+        "tests/test_stage72_2_graph_nexus_operational_tools.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "narrative GraphRAG retriever"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.temporal_continuity",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Temporal Continuity",
+      "problem_solved": "Apply time deltas so character and event state cannot contradict elapsed story time.",
+      "source_evidence": [
+        "run_stage39_phase39_4_temporal_continuity.py",
+        "temporal_delta_controller.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/ledgers/character_event_time.py",
+        "src/v1700/ir/scene_intent.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "temporal delta controller in Node1 planning route"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.longform_scene_sequence_planner",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Longform Scene-Sequence Planner",
+      "problem_solved": "Let scenes and sequences be organically calculated from story pressure and episode needs.",
+      "source_evidence": [
+        "run_stage39_phase39_5_longform_scene_sequence_planner.py",
+        "longform_scene_sequence_planner.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/ir/scene_intent.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md"
+      ],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "runtime sequence planner",
+        "scene count estimator"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.branch_commit_rollback",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Branch Commit/Rollback",
+      "problem_solved": "Prevent rejected shadow runs from contaminating main canon memory.",
+      "source_evidence": [
+        "run_stage39_phase39_6_branch_commit_rollback.py",
+        "commit_rollback_protocol.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [
+        "docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md"
+      ],
+      "survival_status": "DOCUMENTED_ONLY",
+      "missing_runtime_work": [
+        "branch isolation runtime",
+        "what-if archive policy"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.emotional_pressure_valve",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Emotional Pressure Valve",
+      "problem_solved": "Control suspense and relief so longform drama does not become monotonous pressure.",
+      "source_evidence": [
+        "run_stage39_phase39_7_emotional_pressure_valve.py",
+        "pressure_threshold_monitor.py",
+        "pressure_relief_event_planner.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [
+        "src/v1700/ir/scene_intent.py",
+        "src/v1700/nodes/node2_prose_renderer/emotion_renderer.py"
+      ],
+      "current_test_anchor": [],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "series-level emotional wave controller"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.node2_candidate_rendering",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Node2 Candidate Rendering",
+      "problem_solved": "Render multiple safe prose candidates before selecting the strongest reader-facing surface.",
+      "source_evidence": [
+        "run_stage39_phase39_8_node2_candidate_rendering.py"
+      ],
+      "evidence_level": "E5_LIVE_CURRENT",
+      "current_runtime_anchor": [
+        "src/v1700/nodes/node2_prose_renderer/candidates.py",
+        "src/v1700/nodes/node2_prose_renderer/compiler.py"
+      ],
+      "current_test_anchor": [
+        "tests/unit/node2_prose_renderer/test_compiler.py"
+      ],
+      "current_gate_anchor": [],
+      "current_doc_anchor": [],
+      "survival_status": "LIVE_RUNTIME",
+      "missing_runtime_work": [],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    },
+    {
+      "concept_id": "foundation.stage39.actual_replay_reconvergence",
+      "stage_origins": [
+        "STAGE39"
+      ],
+      "title": "Actual Replay Reconvergence",
+      "problem_solved": "Replay and reconverge execution evidence so decisions remain reproducible.",
+      "source_evidence": [
+        "run_stage39_phase39_9_actual_replay_reconvergence.py"
+      ],
+      "evidence_level": "E4_TESTED",
+      "current_runtime_anchor": [],
+      "current_test_anchor": [
+        "tests/integration/test_node1_node2_node3_pipeline.py"
+      ],
+      "current_gate_anchor": [
+        "src/v1700/gates/release_gate.py"
+      ],
+      "current_doc_anchor": [],
+      "survival_status": "PARTIAL",
+      "missing_runtime_work": [
+        "deterministic replay ledger"
+      ],
+      "promotion_priority": "HIGH",
+      "review_notes": ""
+    }
+  ]
+}

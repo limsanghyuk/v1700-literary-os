@@ -1,0 +1,25 @@
+{
+  "stage": "73",
+  "title": "Workspace Packaging and Evidence Dependency Fix",
+  "created_at": "2026-05-12T08:28:54.942109Z",
+  "active_repo": "gpt/active/v1700/literary_generator",
+  "knowledge_base": "gpt/knowledge_base/v1650_stage35_critic_comparison_gate",
+  "fixes": [
+    "Stage72.3 active-repo-only packaging",
+    "pre_stage40 source evidence dependency missing",
+    "full workspace restoration for cross-local reproducibility"
+  ],
+  "gitnexus_required_at_runtime": false,
+  "python_fallback_required": true,
+  "source_drive_folder": "https://drive.google.com/drive/folders/1EJHDTH8ufxZvDkyHWxiXJqlnA-YomozQ",
+  "evidence_placeholder_policy": "Minimal evidence files preserve required paths and lineage pointers; original full evidence remains in Google Drive knowledge_base/packages.",
+  "canonical_package_filename": "V1700_stage73_full_workspace_integrated_repository.zip",
+  "canonical_sha256_filename": "V1700_stage73_full_workspace_integrated_repository.sha256.txt",
+  "canonical_filelist_filename": "V1700_stage73_full_workspace_integrated_repository_filelist.txt",
+  "filename_alias_manifest": "gpt/manifests/stage73_filename_alias_manifest.json",
+  "previous_stage_labels": [
+    "Stage72.3",
+    "Stage72.3.1"
+  ],
+  "canonical_stage_label": "Stage73"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "impacted_areas": [
+    "longform_production",
+    "longform_endurance",
+    "stage107",
+    "stage107_release_gate",
+    "studio_beta"
+  ]
+}

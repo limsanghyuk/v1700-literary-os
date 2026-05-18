@@ -1,0 +1,92 @@
+{
+  "stage": "111",
+  "baseline_stage": "110",
+  "title": "V485 Absorption Candidate Bridge",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage110_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "gitnexus_absorption_preflight_pass": {
+      "status": "pass"
+    },
+    "v485_version_drift_detected_and_contained": {
+      "status": "pass"
+    },
+    "v485_metadata_direct_import_blocked": {
+      "status": "pass"
+    },
+    "v485_direct_code_import_blocked": {
+      "status": "pass"
+    },
+    "v485_release_gate_replacement_blocked": {
+      "status": "pass"
+    },
+    "adapter_bridge_probe_pass": {
+      "status": "pass"
+    },
+    "scene_pipeline_bridge_pass": {
+      "status": "pass"
+    },
+    "drama_episode_bridge_pass": {
+      "status": "pass"
+    },
+    "absorption_candidate_matrix_pass": {
+      "status": "pass"
+    },
+    "release_path_provider_zero_pass": {
+      "status": "pass"
+    },
+    "sandbox_path_isolated_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_pass": {
+      "status": "pass"
+    },
+    "raw_response_storage_block_pass": {
+      "status": "pass"
+    },
+    "writer_decision_guard_pass": {
+      "status": "pass"
+    },
+    "readme_active_stage_consistency_pass": {
+      "status": "pass"
+    },
+    "package_manifest_canonical_reference_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    },
+    "narrative_weight_kernel_pass": {
+      "status": "pass"
+    }
+  },
+  "stage111": {
+    "status": "pass",
+    "stage": "111",
+    "baseline_stage": "110",
+    "title": "V485 Absorption Candidate Bridge",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "sandbox_live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

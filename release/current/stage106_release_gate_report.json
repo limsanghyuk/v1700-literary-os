@@ -1,0 +1,350 @@
+{
+  "stage": "106",
+  "baseline_stage": "105",
+  "title": "Adaptive Author Profile & Style Genome",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage105_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "mandatory_predevelopment_check_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "feature_extraction_pass": {
+      "status": "pass"
+    },
+    "style_genome_pass": {
+      "status": "pass"
+    },
+    "style_drift_guard_pass": {
+      "status": "pass"
+    },
+    "node2_style_bridge_pass": {
+      "status": "pass"
+    },
+    "author_profile_release_policy_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_pass": {
+      "status": "pass"
+    },
+    "full_text_export_default_false_pass": {
+      "status": "pass"
+    },
+    "readme_active_stage_consistency_pass": {
+      "status": "pass"
+    },
+    "package_manifest_canonical_reference_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_pass": {
+      "status": "pass"
+    },
+    "main_release_gate_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage105_release_gate": {
+    "status": "pass",
+    "stage": "105",
+    "title": "Multi-Provider Creative Arbitration historical baseline evidence",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0
+  },
+  "stage106": {
+    "stage": "106",
+    "baseline_stage": "105",
+    "title": "Adaptive Author Profile & Style Genome",
+    "status": "pass",
+    "issues": [],
+    "stage106_0_author_profile_preflight": {
+      "status": "pass",
+      "baseline_stage": "105",
+      "stage105_gate_status": "pass",
+      "gitnexus_preflight_status": "python_fallback_visible",
+      "branchpoint_survival_status": "pass",
+      "provider_zero": true,
+      "privacy_mode": "FEATURE_ONLY",
+      "issues": [],
+      "stage": "106.0",
+      "title": "Author Profile & Style Genome Preflight",
+      "checks": {
+        "stage105_baseline_gate_pass": true,
+        "mandatory_predevelopment_visible": true,
+        "branchpoint_survival_pass": true,
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage": true,
+        "feature_only_profile_mode": true
+      },
+      "mandatory_predevelopment": {
+        "stage": "predevelopment",
+        "status": "pass",
+        "issues": [],
+        "priority_manifest": "manifests/predevelopment_priority_manifest.json",
+        "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+        "gitnexus": {
+          "installed": false,
+          "status": "fallback_required",
+          "optional_runtime_dependency": true
+        },
+        "invariant_checks": {
+          "provider_default_calls": true,
+          "stage101_gate_pass": true,
+          "active_stage_gate_pass": true,
+          "main_release_gate_pass": true,
+          "branchpoint_lineage_preserved": true,
+          "python_fallback_required": true,
+          "gitnexus_runtime_dependency_required_false": true
+        },
+        "must_check": [
+          "gitnexus_index_freshness",
+          "list_repos",
+          "query",
+          "context",
+          "impact",
+          "detect_changes",
+          "concept_impact",
+          "survival_matrix",
+          "symbol_to_branchpoint_trace",
+          "shape_check",
+          "change_review",
+          "release_gate_integration",
+          "repo_doctor",
+          "clean_zip_packaging"
+        ]
+      }
+    },
+    "stage106_1_feature_extraction": {
+      "stage": "106.1",
+      "title": "Feature-only Author Style Extraction",
+      "status": "pass",
+      "project_id": "stage106_sample_author",
+      "feature_vector_count": 3,
+      "feature_vectors": [
+        {
+          "project_id": "stage106_sample_author",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.68,
+          "sensory_density": 0.74,
+          "dialogue_ratio": 0.31,
+          "introspection_ratio": 0.62,
+          "scene_motion_ratio": 0.41,
+          "lexical_signature_hash": "f6451c9a0551c86c",
+          "raw_text_retained": false
+        },
+        {
+          "project_id": "stage106_sample_author",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.71,
+          "sensory_density": 0.69,
+          "dialogue_ratio": 0.36,
+          "introspection_ratio": 0.57,
+          "scene_motion_ratio": 0.46,
+          "lexical_signature_hash": "e92ad09129ace8ef",
+          "raw_text_retained": false
+        },
+        {
+          "project_id": "stage106_sample_author",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.66,
+          "sensory_density": 0.77,
+          "dialogue_ratio": 0.29,
+          "introspection_ratio": 0.65,
+          "scene_motion_ratio": 0.38,
+          "lexical_signature_hash": "5c8762a8a55bf85c",
+          "raw_text_retained": false
+        }
+      ],
+      "raw_text_retained": false,
+      "raw_manuscript_provider_leakage": 0,
+      "provider_call_count": 0,
+      "privacy_guard": {
+        "stage": "106.privacy",
+        "status": "pass",
+        "issues": [],
+        "raw_manuscript_provider_leakage": 0,
+        "raw_manuscript_retained": false,
+        "provider_export_allowed": false,
+        "feature_only": true,
+        "credential_leakage": 0
+      }
+    },
+    "stage106_2_style_genome": {
+      "genome_id": "style_genome_stage106_feature_only",
+      "author_profile_id": "author_profile_stage106",
+      "feature_vectors": [
+        {
+          "project_id": "author_profile_stage106",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.68,
+          "sensory_density": 0.74,
+          "dialogue_ratio": 0.31,
+          "introspection_ratio": 0.62,
+          "scene_motion_ratio": 0.41,
+          "lexical_signature_hash": "29c385b95cf6acac",
+          "raw_text_retained": false
+        },
+        {
+          "project_id": "author_profile_stage106",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.71,
+          "sensory_density": 0.69,
+          "dialogue_ratio": 0.36,
+          "introspection_ratio": 0.57,
+          "scene_motion_ratio": 0.46,
+          "lexical_signature_hash": "715d213a1a9661ca",
+          "raw_text_retained": false
+        },
+        {
+          "project_id": "author_profile_stage106",
+          "source_scope": "FEATURE_ONLY",
+          "sentence_rhythm": 0.66,
+          "sensory_density": 0.77,
+          "dialogue_ratio": 0.29,
+          "introspection_ratio": 0.65,
+          "scene_motion_ratio": 0.38,
+          "lexical_signature_hash": "7c76cd67ac78ac36",
+          "raw_text_retained": false
+        }
+      ],
+      "authorial_rhythm": 0.683,
+      "sensory_preference": 0.733,
+      "dialogue_preference": 0.32,
+      "introspection_preference": 0.613,
+      "motion_preference": 0.417,
+      "privacy_mode": "FEATURE_ONLY",
+      "raw_manuscript_retained": false,
+      "provider_export_allowed": false,
+      "stage": "106.2",
+      "title": "Adaptive Author Profile & Style Genome",
+      "status": "pass",
+      "feature_only": true,
+      "raw_manuscript_provider_leakage": 0,
+      "provider_call_count": 0,
+      "genome_contract": "style_vector_statistics_only_no_raw_text",
+      "privacy_guard": {
+        "stage": "106.privacy",
+        "status": "pass",
+        "issues": [],
+        "raw_manuscript_provider_leakage": 0,
+        "raw_manuscript_retained": false,
+        "provider_export_allowed": false,
+        "feature_only": true,
+        "credential_leakage": 0
+      }
+    },
+    "stage106_3_node2_style_bridge": {
+      "stage": "106.3",
+      "title": "Node2 Style Genome Bridge",
+      "status": "pass",
+      "issues": [],
+      "style_drift_guard": {
+        "status": "pass",
+        "genome_id": "style_genome_stage106_feature_only",
+        "voice_drift_score": 0.12,
+        "allowed_delta": 0.22,
+        "action": "ALLOW",
+        "issues": [],
+        "stage": "106.3",
+        "title": "Authorial Drift Guard",
+        "raw_manuscript_provider_leakage": 0,
+        "provider_call_count": 0
+      },
+      "node2_author_profile_bridge": {
+        "status": "pass",
+        "genome_id": "style_genome_stage106_feature_only",
+        "node2_profile_id": "node2_surface_profile_stage106",
+        "allowed_surface_controls": [
+          "rhythm_hint",
+          "sensory_density_hint",
+          "dialogue_ratio_hint",
+          "introspection_hint",
+          "motion_hint"
+        ],
+        "forbidden_controls": [
+          "raw_reveal",
+          "raw_manuscript_prompt",
+          "provider_export",
+          "verbatim_style_copy"
+        ],
+        "raw_reveal_access": 0,
+        "provider_call_count": 0,
+        "stage": "106.3",
+        "title": "Node2 Feature-only Author Profile Bridge",
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0
+      },
+      "privacy_guard": {
+        "stage": "106.privacy",
+        "status": "pass",
+        "issues": [],
+        "raw_manuscript_provider_leakage": 0,
+        "raw_manuscript_retained": false,
+        "provider_export_allowed": false,
+        "feature_only": true,
+        "credential_leakage": 0
+      },
+      "node2_raw_reveal_access": 0,
+      "provider_call_count": 0,
+      "raw_manuscript_provider_leakage": 0
+    },
+    "stage106_4_release_policy": {
+      "stage": "106.4",
+      "title": "Author Profile Release Policy",
+      "status": "pass",
+      "feature_only_style_genome": true,
+      "local_full_text_allowed": true,
+      "provider_export_allowed": false,
+      "raw_manuscript_retained_in_release": false,
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "full_text_export_default": false,
+      "policy": [
+        "style genome stores aggregate feature vectors only",
+        "Node2 receives surface controls, never raw manuscript text",
+        "provider export of author profile is blocked in release mode"
+      ]
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "full_text_export_default": false,
+    "author_profile_claim": "feature_only_style_genome_not_raw_manuscript_learning"
+  },
+  "feature_extraction_status": "pass",
+  "style_genome_status": "pass",
+  "node2_style_bridge_status": "pass",
+  "author_profile_release_policy_status": "pass",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-05-11T10:15:34.151094+00:00",
+  "archive_policy": "The full Stage71 repository snapshot is not tracked in the canonical GitHub repo by default. Attach it as a release asset and use manifests/file_inventory.json plus docs/stages for searchable lineage.",
+  "source_zip": "gpt1700_stage71_node2_reader_facing_prose_renderer_full_integrated_repository.zip",
+  "source_zip_sha256": "cb28ff361fc8fc2111043b2d69f943e6afff9fb44a3a346056737dd93f747ef8",
+  "source_file_count": 1729,
+  "source_root_file_count": 479
+}

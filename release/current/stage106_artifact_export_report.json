@@ -1,0 +1,10 @@
+{
+  "stage": "106",
+  "status": "pass",
+  "artifact_files": [
+    "release/current/stage106_adaptive_author_profile_style_genome_report.json",
+    "release/current/stage106_release_gate_report.json",
+    "release/current/stage106_developer_handoff_report.md"
+  ],
+  "canonical_package": "V1700_stage106_adaptive_author_profile_style_genome_FIXED.zip"
+}

@@ -1,0 +1,48 @@
+{
+  "stage": "91",
+  "title": "Studio Persistence + Review Queue + UI Event Replay",
+  "status": "pass",
+  "predecessor": "stage90",
+  "purpose": "Add deterministic Writer Studio persistence snapshots, branchpoint-aware review queue state, and replayable UI event logs while preserving Stage90 export fidelity.",
+  "runtime_modules": [
+    "src/v1700/writer_studio/persistence.py",
+    "src/v1700/writer_studio/review_queue.py",
+    "src/v1700/writer_studio/event_replay.py",
+    "src/v1700/gates/stage91_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage91_studio_persistence.py",
+    "tools/run_stage91_release_gate.py",
+    "tools/export_stage91_artifacts.py"
+  ],
+  "tests": [
+    "tests/test_stage91_studio_persistence.py"
+  ],
+  "release_gate": "stage91_release_gate",
+  "inherited_stages": [
+    "stage90",
+    "stage89",
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "core_invariants": {
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "gitnexus_optional_sidecar": true,
+    "graphnexus_authority_preserved": true,
+    "stage90_roundtrip_fidelity_preserved": true
+  },
+  "acceptance_criteria": [
+    "minimum 18 replayed UI events",
+    "minimum 3 persistence snapshots",
+    "minimum 6 review queue items",
+    "all blocking review items resolved",
+    "deterministic replay checksum",
+    "stage91 release gate pass",
+    "main release gate includes stage91"
+  ]
+}

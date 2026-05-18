@@ -1,0 +1,12 @@
+{
+  "stage": "107",
+  "status": "active",
+  "suite": [
+    "multi_season_arc",
+    "production_calendar",
+    "character_memory_evolution",
+    "payoff_calendar",
+    "attention_heatmap",
+    "production_scene_mapping"
+  ]
+}

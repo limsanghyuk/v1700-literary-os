@@ -1,0 +1,396 @@
+{
+  "generated_at": "2026-05-11T10:15:34.151094+00:00",
+  "lineage_policy": "Preserve concepts and logic, not root-level sprawl.",
+  "stages": [
+    {
+      "stage_id": "STAGE40",
+      "title": "Core-AIOS Reconciliation",
+      "introduced_concepts": [
+        "provider route",
+        "prompt-to-output trace",
+        "longform continuity"
+      ],
+      "surviving_runtime_value": "Runtime route and operational proof became explicit."
+    },
+    {
+      "stage_id": "STAGE41",
+      "title": "Repository Canonicalizer",
+      "introduced_concepts": [
+        "stage inventory",
+        "utility extraction",
+        "concept compiler IR",
+        "style genome",
+        "benchmark grid"
+      ],
+      "surviving_runtime_value": "Direct ancestor of Stage72 canonicalization."
+    },
+    {
+      "stage_id": "STAGE45-60",
+      "title": "Productization",
+      "introduced_concepts": [
+        "CLI",
+        "config/prompt/output layout",
+        "runtime smoke",
+        "clean install continuity doctor",
+        "cost/provider controls"
+      ],
+      "surviving_runtime_value": "Provides developer-facing runtime and release discipline."
+    },
+    {
+      "stage_id": "STAGE50-52",
+      "title": "Longform State Guards",
+      "introduced_concepts": [
+        "prompt-to-three-episode engine",
+        "character-event-time ledger",
+        "reveal budget memory guard"
+      ],
+      "surviving_runtime_value": "Preserved as Node1/ledger constraints."
+    },
+    {
+      "stage_id": "STAGE61-66",
+      "title": "Graph Intelligence Sidecar",
+      "introduced_concepts": [
+        "graph sidecar",
+        "authority boundaries",
+        "feature flag integration"
+      ],
+      "surviving_runtime_value": "Preserved as optional sidecar principle, excluded from default runtime."
+    },
+    {
+      "stage_id": "STAGE70",
+      "title": "Final Verified Runtime Release",
+      "introduced_concepts": [
+        "full runtime verification",
+        "local_first",
+        "provider calls 0",
+        "blind literary evaluation"
+      ],
+      "surviving_runtime_value": "Baseline before Node2 reader-facing improvement."
+    },
+    {
+      "stage_id": "STAGE71",
+      "title": "Node2 Reader-Facing Prose Renderer",
+      "introduced_concepts": [
+        "surface-only contract",
+        "reader surface scorecard",
+        "marker/reveal leakage gate"
+      ],
+      "surviving_runtime_value": "Promoted into Stage72 modular Node2 compiler."
+    },
+    {
+      "stage_id": "STAGE72",
+      "title": "Repository Canonicalization & Node2 Maturation",
+      "introduced_concepts": [
+        "canonical repo",
+        "stage knowledge archive",
+        "modular Node2 prose compiler",
+        "core/full CI split"
+      ],
+      "surviving_runtime_value": "Current active development baseline."
+    },
+    {
+      "stage_id": "STAGE72.1",
+      "title": "GraphNexus Restoration Patch",
+      "introduced_concepts": [
+        "GraphNexus",
+        "GitNexus optional sidecar",
+        "Python fallback graph gate",
+        "Node projection packet"
+      ],
+      "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+    },
+    {
+      "stage_id": "STAGE72.2",
+      "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+      "introduced_concepts": [
+        "GraphNexus operational tools",
+        "GitNexus CLI adapter boundary",
+        "index freshness detection",
+        "route map and tool map",
+        "shape check",
+        "generated skills",
+        "deterministic wiki"
+      ],
+      "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+    },
+    {
+      "stage_id": "STAGE72.3",
+      "title": "Foundation Lineage Recovery and Organic Impact Governance",
+      "introduced_concepts": [
+        "pre-Stage40 foundation lineage",
+        "concept survival matrix",
+        "evidence level",
+        "survival status",
+        "organic impact review",
+        "pre-Stage40 survival gate"
+      ],
+      "surviving_runtime_value": "Maps Stage01-39 concepts to current anchors and blocks future promotion if foundation lineage evidence disappears."
+    },
+    {
+      "stage_id": "STAGE85",
+      "title": "GitNexus Density Upgrade and Symbol-to-Branchpoint Traceability",
+      "introduced_concepts": [
+        "symbol-to-branchpoint traceability",
+        "GitNexus index quality gate",
+        "index quality ratios",
+        "ZIP release probe",
+        "developer handoff matrix"
+      ],
+      "surviving_runtime_value": "Connects literary concepts, code symbols, tests, gates, and GitNexus index evidence without making GitNexus mandatory at runtime."
+    },
+    {
+      "stage_id": "STAGE86",
+      "title": "V380 Arc-Reveal-Knowledge Absorption",
+      "introduced_concepts": [
+        "SeriesArcPlanner",
+        "CausalPlotGraph",
+        "EpisodeRevealBudget",
+        "CharacterKnowledgeProseBridge",
+        "KnowledgeStatus to ProseRenderContract"
+      ],
+      "surviving_runtime_value": "Promotes V380 arc, reveal, and character-knowledge concepts into live V1700 code, tests, and release gates while preserving provider-zero and Node2 surface-only boundaries."
+    },
+    {
+      "stage_id": "STAGE87",
+      "title": "8-16 Episode Scale-up Evidence",
+      "introduced_concepts": [
+        "8-episode scale-up evidence",
+        "16-episode scale-up evidence",
+        "80/160 scene-level contract evidence",
+        "reveal-knowledge scale lock",
+        "Stage86 lineage preservation at scale"
+      ],
+      "surviving_runtime_value": "Proves V380 Arc-Reveal-Knowledge controls survive beyond smoke tests into 8-16 episode evidence packs."
+    },
+    {
+      "stage_id": "STAGE88",
+      "title": "AI-Agent Editor/Reader Blind Benchmark",
+      "introduced_concepts": [
+        "local AI editor agents",
+        "blind agent benchmark",
+        "provider-zero panel"
+      ],
+      "surviving_runtime_value": "Replaces external human benchmark with deterministic local AI-agent critic evidence."
+    },
+    {
+      "stage_id": "STAGE89",
+      "title": "Writer Studio UI + Export Pipeline",
+      "introduced_concepts": [
+        "Writer Studio panels",
+        "static HTML preview",
+        "JSON/Markdown/CSV/platform exports"
+      ],
+      "surviving_runtime_value": "Adds writer-facing Studio data and export surfaces around the protected engine."
+    },
+    {
+      "stage_id": "STAGE90",
+      "title": "Studio Round-trip Editing and Export Fidelity",
+      "introduced_concepts": [
+        "edit patch contract",
+        "before/after export checksums",
+        "fidelity audit"
+      ],
+      "surviving_runtime_value": "Proves Studio edits can round-trip through exports without breaking branchpoint lineage."
+    },
+    {
+      "stage_id": "STAGE91",
+      "title": "Studio Persistence, Review Queue, and UI Event Replay",
+      "introduced_concepts": [
+        "persistence snapshots",
+        "review queue state machine",
+        "deterministic UI event replay"
+      ],
+      "surviving_runtime_value": "Adds deterministic interaction replay and review queue governance."
+    },
+    {
+      "stage_id": "STAGE92",
+      "title": "Local Multi-Provider Adapter Runtime",
+      "introduced_concepts": [
+        "Ollama adapter",
+        "GPT adapter",
+        "Claude adapter",
+        "Gemini adapter",
+        "provider-zero adapter guard"
+      ],
+      "surviving_runtime_value": "Configures four local developer providers while release gates perform zero live calls."
+    },
+    {
+      "stage_id": "STAGE93",
+      "title": "Live Provider Opt-in Sandbox / Credential Audit / Response Normalization",
+      "introduced_concepts": [
+        "live provider opt-in sandbox",
+        "credential redaction audit",
+        "four-provider response normalization"
+      ],
+      "surviving_runtime_value": "Hardens multi-provider usage for developer workstations without allowing release-time provider calls."
+    },
+    {
+      "stage_id": "STAGE94",
+      "title": "Live Provider Evaluation Harness",
+      "introduced_concepts": [
+        "dry-run provider evaluation suite",
+        "normalized provider scoring",
+        "provider strength and weakness profiles",
+        "provider-zero evaluation release gate"
+      ],
+      "surviving_runtime_value": "Compares four provider adapters through fixture-backed evaluation while preserving Stage93 sandbox safety, credential redaction, zero release-time live calls, and branchpoint traceability."
+    },
+    {
+      "stage_id": "STAGE95",
+      "title": "Native Narrative Physics Engine",
+      "introduced_concepts": [
+        "Narrative State Tensor",
+        "Character Belief-State Vector",
+        "Reveal Entropy Budget",
+        "Emotional Momentum Dynamics",
+        "Branchpoint Survival Dynamics"
+      ],
+      "surviving_runtime_value": "Moves V1700 from provider comparison toward a native local-first narrative physics authority."
+    },
+    {
+      "stage_id": "STAGE96",
+      "title": "Narrative Optimization, Manuscript Learning, and Provider Ensemble Arbitration",
+      "introduced_concepts": [
+        "coefficient memory",
+        "local-only manuscript feature extraction",
+        "directive-level provider ensemble arbitration"
+      ],
+      "surviving_runtime_value": "Uses local coefficient memory and provider candidate scoring without sending raw manuscript text to providers."
+    },
+    {
+      "stage_id": "STAGE97",
+      "title": "Full Longform Narrative Endurance Engine",
+      "introduced_concepts": [
+        "fractal narrative topology",
+        "dramatic load balancing",
+        "character agency conservation",
+        "payoff debt ledger",
+        "voice manifold",
+        "narrative attention economy"
+      ],
+      "surviving_runtime_value": "Proves 16-episode required endurance and optional 24-episode evidence before Studio commercialization."
+    },
+    {
+      "stage_id": "STAGE97.1",
+      "title": "Adversarial Longform Validation Hardening",
+      "introduced_concepts": [
+        "adversarial negative corpus",
+        "broken longform mutation blocking",
+        "Stage96 coefficient memory bridge",
+        "local-only manuscript ingest skeleton",
+        "structural to production scene mapping"
+      ],
+      "surviving_runtime_value": "Proves broken longform structures are blocked before Stage98 while preserving provider-zero and Node2 boundaries."
+    },
+    {
+      "stage_id": "STAGE112",
+      "title": "GitNexus-Aware NIE Preflight Bridge",
+      "introduced_concepts": [
+        "NIE preflight bridge",
+        "GitNexus-aware impact protocol",
+        "Python fallback impact analyzer",
+        "NIE branchpoint manifest"
+      ],
+      "surviving_runtime_value": "Ensures Stage113~Stage120 Narrative Intelligence Engine work connects to existing branchpoints before implementation."
+    },
+    {
+      "stage_id": "STAGE113",
+      "title": "PhysicsRewardBridge + MAE Reward Wiring",
+      "introduced_concepts": [
+        "cached MAE reward contract",
+        "PhysicsRewardSignal",
+        "advantage baseline EMA"
+      ],
+      "surviving_runtime_value": "Connects MAE evaluation fixtures to deterministic reward signals without release-time provider calls."
+    },
+    {
+      "stage_id": "STAGE114",
+      "title": "AdaptiveMomentumWeights",
+      "introduced_concepts": [
+        "bounded alpha calibration",
+        "MAE dimension feedback",
+        "emotional momentum drift guard"
+      ],
+      "surviving_runtime_value": "Replaces hard-coded emotional mixing ratios with auditable bounded calibration."
+    },
+    {
+      "stage_id": "STAGE115",
+      "title": "CharacterInfluenceMatrix + Structural Balance",
+      "introduced_concepts": [
+        "asymmetric W[n×n] character matrix",
+        "triangle tension",
+        "janggi role tier assignment"
+      ],
+      "surviving_runtime_value": "Makes character influence and role power measurable through graph metrics."
+    },
+    {
+      "stage_id": "STAGE116",
+      "title": "Domain-Specific RAG Fusion",
+      "introduced_concepts": [
+        "QueryIntentClassifier",
+        "DramaLexicon boost",
+        "adaptive BM25/Dense policy"
+      ],
+      "surviving_runtime_value": "Tunes retrieval for drama domain queries without LLM classification or release-time embedding calls."
+    },
+    {
+      "stage_id": "STAGE117",
+      "title": "NarrativeTensionCurve",
+      "introduced_concepts": [
+        "ideal 4-act tension curve",
+        "tension loss",
+        "coverage loss",
+        "final narrative loss"
+      ],
+      "surviving_runtime_value": "Provides a deterministic mathematical objective for longform tension pacing before NIL orchestration."
+    },
+    {
+      "stage_id": "STAGE118",
+      "title": "NIL Orchestrator",
+      "introduced_concepts": [
+        "closed-loop NIL orchestration",
+        "CIM-AMW-Reward-RAG-Tension integration",
+        "loop evidence report"
+      ],
+      "surviving_runtime_value": "Binds Stage112~117 into one deterministic NIE loop."
+    },
+    {
+      "stage_id": "STAGE119",
+      "title": "NIE Adversarial Regression Pack",
+      "introduced_concepts": [
+        "negative NIE corpus",
+        "broken loop blocking",
+        "unexpected pass guard"
+      ],
+      "surviving_runtime_value": "Proves normal NIL passes while broken NIE cases are blocked."
+    },
+    {
+      "stage_id": "STAGE120",
+      "title": "Gate25 NIE v1.0 Release",
+      "introduced_concepts": [
+        "Gate25 release authority",
+        "NIE v1.0 component matrix",
+        "integrity-fixed packaging"
+      ],
+      "surviving_runtime_value": "Establishes the verified Stage120 trunk for post-NIE absorption."
+    },
+    {
+      "stage_id": "STAGE121",
+      "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+      "introduced_concepts": [
+        "formula ledger",
+        "conflict matrix",
+        "gate authority map",
+        "candidate direct merge block",
+        "Stage122-126 absorption plan"
+      ],
+      "surviving_runtime_value": "Keeps Stage120 as trunk while converting V545/V546/V555 into auditable successor candidates."
+    }
+  ],
+  "active_version": "stage124",
+  "stage124": {
+    "status": "active",
+    "baseline_stage": "stage123",
+    "purpose": "PNE / Gate29 Absorption"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "stage": "83.1",
+  "title": "Consistency Audit & Manifest Reconciliation",
+  "depends_on": [
+    "stage83"
+  ],
+  "status": "pass",
+  "required_outputs": [
+    "manifests/branchpoint_model_registry_v2.json",
+    "manifests/core_logic_survival_matrix_v3.json",
+    "manifests/organic_relation_graph_manifest_v2.json",
+    "manifests/commercial_readiness_gap_manifest_v2.json",
+    "manifests/gitnexus_branchpoint_bridge_manifest.json",
+    "tools/run_stage83_1_consistency_audit.py",
+    "tools/run_gitnexus_branchpoint_bridge_audit.py",
+    "tools/run_stage83_1_release_gate.py",
+    "tests/test_stage83_1_consistency_audit.py",
+    "tests/test_gitnexus_branchpoint_bridge.py",
+    "tests/test_supporting_character_relation_edges.py"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

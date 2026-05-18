@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "entry_count": 5,
+  "entries": [
+    {
+      "gate_id": "Gate25",
+      "source_lineage": "stage120_trunk",
+      "authority_scope": "NIE v1.0 release authority",
+      "release_mode": "PRIMARY",
+      "depends_on": [
+        "stage112",
+        "stage113",
+        "stage114",
+        "stage115",
+        "stage116",
+        "stage117",
+        "stage118",
+        "stage119"
+      ],
+      "conflict_notes": []
+    },
+    {
+      "gate_id": "Gate25-v2",
+      "source_lineage": "v525_candidate",
+      "authority_scope": "NIE v2.0 stability/metalerner candidate",
+      "release_mode": "ADVISORY",
+      "depends_on": [
+        "Gate25"
+      ],
+      "conflict_notes": [
+        "name collision with Stage120 Gate25",
+        "requires Stage122 adapter"
+      ]
+    },
+    {
+      "gate_id": "Gate28",
+      "source_lineage": "v545_candidate",
+      "authority_scope": "ASD story quality / autonomous repair gate",
+      "release_mode": "SECONDARY",
+      "depends_on": [
+        "Gate25"
+      ],
+      "conflict_notes": [
+        "must run dry-run only until Stage123",
+        "must not mutate manuscripts in release gate"
+      ]
+    },
+    {
+      "gate_id": "Gate29",
+      "source_lineage": "v555_candidate",
+      "authority_scope": "PNE predictive debt preemptive gate",
+      "release_mode": "ADVISORY",
+      "depends_on": [
+        "Gate25",
+        "Gate28"
+      ],
+      "conflict_notes": [
+        "ML training prohibited in release gate",
+        "requires frozen fixtures and heuristic fallback"
+      ]
+    },
+    {
+      "gate_id": "Gate25/28/29 Governor",
+      "source_lineage": "future_stage125",
+      "authority_scope": "single final gate arbitration layer",
+      "release_mode": "BLOCKED",
+      "depends_on": [
+        "Gate25",
+        "Gate28",
+        "Gate29"
+      ],
+      "conflict_notes": [
+        "not implemented in Stage121",
+        "target Stage125"
+      ]
+    }
+  ],
+  "primary_gate": "Gate25",
+  "secondary_or_advisory": [
+    "Gate25-v2",
+    "Gate28",
+    "Gate29"
+  ],
+  "future_governor_blocked_until_stage125": true
+}

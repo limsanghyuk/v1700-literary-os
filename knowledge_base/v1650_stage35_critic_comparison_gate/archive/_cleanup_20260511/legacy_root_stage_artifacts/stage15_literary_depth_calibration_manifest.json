@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.node2.literary_depth_calibration",
+  "stage_origins": [
+    "STAGE15"
+  ],
+  "title": "Literary Depth Calibration",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage15_literary_depth_calibration_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

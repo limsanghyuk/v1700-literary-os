@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "speech_profiles": {
+    "protagonist": {
+      "honorific_distance": 0.62,
+      "subtext_density": 0.74,
+      "silence_ratio": 0.18
+    },
+    "antagonist": {
+      "honorific_distance": 0.81,
+      "subtext_density": 0.69,
+      "silence_ratio": 0.11
+    },
+    "mentor": {
+      "honorific_distance": 0.76,
+      "subtext_density": 0.57,
+      "silence_ratio": 0.23
+    },
+    "rival": {
+      "honorific_distance": 0.55,
+      "subtext_density": 0.64,
+      "silence_ratio": 0.15
+    }
+  },
+  "episode_dialogue_scores": [
+    {
+      "episode_id": "EP01",
+      "dialogue_force": 1.111,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP02",
+      "dialogue_force": 1.227,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP03",
+      "dialogue_force": 1.343,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP04",
+      "dialogue_force": 1.139,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP05",
+      "dialogue_force": 1.255,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP06",
+      "dialogue_force": 1.371,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP07",
+      "dialogue_force": 1.486,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP08",
+      "dialogue_force": 1.282,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP09",
+      "dialogue_force": 1.398,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP10",
+      "dialogue_force": 1.515,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP11",
+      "dialogue_force": 1.63,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP12",
+      "dialogue_force": 1.426,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP13",
+      "dialogue_force": 1.542,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP14",
+      "dialogue_force": 1.658,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP15",
+      "dialogue_force": 1.774,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    },
+    {
+      "episode_id": "EP16",
+      "dialogue_force": 1.57,
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.12
+    }
+  ],
+  "speech_level_inconsistency_count": 0,
+  "explanatory_dialogue_ratio_max": 0.12,
+  "issues": []
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "99.1",
+  "baseline_stage": "99.0",
+  "status": "pass",
+  "issues": [],
+  "credential_audit_status": "pass",
+  "raw_manuscript_leakage_simulation_status": "pass",
+  "provider_live_call_replay_status": "pass",
+  "node2_boundary_replay_status": "pass",
+  "internal_marker_leakage_scan_status": "pass",
+  "package_secret_scan_status": "pass",
+  "credential_leakage": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_live_call_count_in_release": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "internal_marker_leakage": 0,
+  "reader_only_leakage": 0,
+  "full_text_exported_by_default": false,
+  "security_pack": "release/current/stage99_security_pack"
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "103.ci",
+  "status": "pass",
+  "ci_replay_mode": "documented_local_replay_contract",
+  "commands": [
+    "python -m compileall src tools",
+    "python -m pip install -e .",
+    "python -m v1700.cli --help",
+    "python tools/run_mandatory_predevelopment_check.py",
+    "python tools/run_stage102_release_gate.py",
+    "python tools/run_stage103_release_gate.py",
+    "python tools/run_release_gate.py",
+    "python tools/run_stage72_repo_doctor.py",
+    "python -m pytest -q tests"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0
+}

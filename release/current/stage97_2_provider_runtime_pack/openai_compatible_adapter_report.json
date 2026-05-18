@@ -1,0 +1,5 @@
+{
+  "status": "pass",
+  "provider_id": "ollama",
+  "base_url_supported": true
+}

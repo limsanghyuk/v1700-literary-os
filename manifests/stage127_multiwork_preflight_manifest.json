@@ -1,0 +1,27 @@
+{
+  "stage": "127",
+  "title": "MultiWork Preflight & Isolation Audit",
+  "baseline_stage": "126",
+  "purpose": "Scan V571 MultiWork references and validate isolation, license, canon, and GitNexus-aware integration before direct absorption.",
+  "preflight_components": [
+    "multiwork_scanner",
+    "project_isolation_audit",
+    "shared_character_audit",
+    "shared_world_audit",
+    "author_license_audit",
+    "cross_work_memory_probe",
+    "canon_conflict_probe",
+    "multiwork_risk_matrix",
+    "absorption_plan",
+    "python_fallback"
+  ],
+  "blocked_behaviors": [
+    "direct_v571_merge",
+    "cross_project_write",
+    "raw_manuscript_cross_project_sharing",
+    "license_missing_character_reuse",
+    "shared_world_as_source_of_truth",
+    "active_learning"
+  ],
+  "next_stage": "Stage128 — SharedWorld / SharedCharacter Read-Only Absorption"
+}

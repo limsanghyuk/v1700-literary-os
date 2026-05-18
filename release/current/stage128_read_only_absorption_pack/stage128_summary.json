@@ -1,0 +1,11 @@
+{
+  "stage": "128",
+  "status": "pass",
+  "read_only_absorption": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "stage129_canon_governor_required": true
+}

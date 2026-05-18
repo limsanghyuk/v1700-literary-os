@@ -1,0 +1,21 @@
+{
+  "stage": "125",
+  "title": "Gate25/28/29 Governor",
+  "absorbed_concepts": [
+    "Gate25 primary release authority preservation",
+    "Gate28 secondary quality gate arbitration",
+    "Gate29 secondary predictive gate arbitration",
+    "single deterministic release governor decision"
+  ],
+  "blocked_concepts": [
+    "Gate28 primary authority",
+    "Gate29 primary authority",
+    "release-gate runtime training",
+    "auto-repair mutation during release",
+    "live provider calls in governor",
+    "direct V545/V555 package merge"
+  ],
+  "governor_report": "release/current/stage125_gate25_28_29_governor_report.json",
+  "gate_authority_map": "release/current/stage125_gate_authority_map.json",
+  "provider_default_calls": 0
+}

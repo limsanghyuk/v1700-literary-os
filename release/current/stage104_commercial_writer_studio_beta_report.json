@@ -1,0 +1,569 @@
+{
+  "stage": "104",
+  "baseline_stage": "103",
+  "title": "Commercial Writer Studio Beta",
+  "status": "pass",
+  "issues": [],
+  "stage104_0_studio_beta_preflight": {
+    "status": "pass",
+    "baseline_stage": "103",
+    "gitnexus_preflight_status": "python_fallback_visible",
+    "stage103_gate_status": "pass",
+    "branchpoint_survival_status": "pass",
+    "provider_zero": true,
+    "issues": [],
+    "stage": "104.0",
+    "checks": {
+      "stage103_baseline_gate_pass": true,
+      "mandatory_predevelopment_check_visible": true,
+      "branchpoint_survival_pass": true,
+      "provider_zero": true,
+      "node2_boundary": true,
+      "raw_manuscript_leakage": true
+    },
+    "mandatory_predevelopment": {
+      "stage": "predevelopment",
+      "status": "pass",
+      "issues": [],
+      "priority_manifest": "manifests/predevelopment_priority_manifest.json",
+      "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+      "gitnexus": {
+        "installed": false,
+        "status": "fallback_required",
+        "optional_runtime_dependency": true
+      },
+      "invariant_checks": {
+        "provider_default_calls": true,
+        "stage101_gate_pass": true,
+        "active_stage_gate_pass": true,
+        "main_release_gate_pass": true,
+        "branchpoint_lineage_preserved": true,
+        "python_fallback_required": true,
+        "gitnexus_runtime_dependency_required_false": true
+      },
+      "must_check": [
+        "gitnexus_index_freshness",
+        "list_repos",
+        "query",
+        "context",
+        "impact",
+        "detect_changes",
+        "concept_impact",
+        "survival_matrix",
+        "symbol_to_branchpoint_trace",
+        "shape_check",
+        "change_review",
+        "release_gate_integration",
+        "repo_doctor",
+        "clean_zip_packaging"
+      ]
+    }
+  },
+  "stage104_1_workspace_kernel": {
+    "stage": "104.1",
+    "title": "Workspace Kernel",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "workspace_state_pass": true,
+      "session_provider_zero": true,
+      "scene_cards_present": true,
+      "navigation_pass": true,
+      "snapshot_feature_only": true
+    },
+    "workspace": {
+      "status": "pass",
+      "checks": {
+        "workspace_has_scene_cards": true,
+        "export_ready_without_blocks": true,
+        "raw_manuscript_provider_leakage_zero": true,
+        "node2_raw_reveal_access_zero": true
+      },
+      "issues": [],
+      "project": {
+        "project_id": "stage104_sample_project",
+        "title": "Rain Station Studio Beta Sample",
+        "project_type": "series",
+        "privacy_mode": "FEATURE_ONLY",
+        "active_mode": "PROSE",
+        "baseline_stage": "stage103",
+        "feature_only": true,
+        "metadata": {
+          "source": "stage104_beta_fixture",
+          "writer_control": "approval_required"
+        }
+      },
+      "workspace_state": {
+        "project_id": "stage104_sample_project",
+        "episodes": [
+          "ep-001",
+          "ep-002",
+          "ep-003"
+        ],
+        "scene_cards": [
+          {
+            "scene_id": "scene-001",
+            "episode_id": "ep-001",
+            "title": "폐역 도착",
+            "mode": "PROSE",
+            "intent": "guilt_sensory_anchor",
+            "beat_count": 3,
+            "has_raw_manuscript": false
+          },
+          {
+            "scene_id": "scene-002",
+            "episode_id": "ep-001",
+            "title": "전광판 점등",
+            "mode": "SCENARIO",
+            "intent": "prop_led_reveal",
+            "beat_count": 4,
+            "has_raw_manuscript": false
+          },
+          {
+            "scene_id": "scene-003",
+            "episode_id": "ep-001",
+            "title": "수정 검토",
+            "mode": "REVIEW",
+            "intent": "writer_decision_checkpoint",
+            "beat_count": 2,
+            "has_raw_manuscript": false
+          }
+        ],
+        "revision_queue_size": 2,
+        "unresolved_block_count": 0,
+        "export_ready": true,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      }
+    },
+    "session": {
+      "session_id": "stage104-session-001",
+      "project_id": "stage104_sample_project",
+      "opened_at": "2026-05-18T09:13:30+00:00",
+      "active_episode_id": "ep-001",
+      "active_scene_id": "scene-001",
+      "unsaved_changes": false,
+      "provider_call_count": 0,
+      "live_provider_call_count_in_release_gate": 0
+    },
+    "scene_card_index": {
+      "status": "pass",
+      "scene_count": 3,
+      "scene_cards": [
+        {
+          "scene_id": "scene-001",
+          "episode_id": "ep-001",
+          "title": "폐역 도착",
+          "mode": "PROSE",
+          "intent": "guilt_sensory_anchor",
+          "beat_count": 3,
+          "has_raw_manuscript": false
+        },
+        {
+          "scene_id": "scene-002",
+          "episode_id": "ep-001",
+          "title": "전광판 점등",
+          "mode": "SCENARIO",
+          "intent": "prop_led_reveal",
+          "beat_count": 4,
+          "has_raw_manuscript": false
+        },
+        {
+          "scene_id": "scene-003",
+          "episode_id": "ep-001",
+          "title": "수정 검토",
+          "mode": "REVIEW",
+          "intent": "writer_decision_checkpoint",
+          "beat_count": 2,
+          "has_raw_manuscript": false
+        }
+      ],
+      "raw_manuscript_included": false
+    },
+    "navigation": {
+      "status": "pass",
+      "navigation_model": "episode_scene_beat_navigation",
+      "routes": [
+        "/project",
+        "/episode/ep-001",
+        "/scene/scene-001",
+        "/review",
+        "/export"
+      ],
+      "provider_call_count": 0
+    },
+    "snapshot": {
+      "status": "pass",
+      "snapshot_path": "/mnt/data/stage127_work/release/current/stage104_studio_beta_pack/workspace_state_report.json",
+      "contains_raw_manuscript": false
+    }
+  },
+  "stage104_2_unified_board": {
+    "stage": "104.2",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "prose_board_pass": true,
+      "scenario_board_pass": true,
+      "metric_conflation_prevented": true,
+      "provider_zero": true
+    },
+    "prose_board": {
+      "status": "pass",
+      "board_id": "stage104-prose-board",
+      "mode": "PROSE",
+      "cards": [
+        {
+          "card_id": "prose-001",
+          "scene_id": "scene-001",
+          "voice_note": "restrained guilt",
+          "sensory_anchor": "rain_on_platform",
+          "node2_surface_safety": "pass"
+        },
+        {
+          "card_id": "prose-002",
+          "scene_id": "scene-002",
+          "rhythm_note": "short beats before reveal",
+          "emotion_movement": "avoidance_to_confrontation",
+          "node2_surface_safety": "pass"
+        }
+      ],
+      "provider_call_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "issues": []
+    },
+    "scenario_board": {
+      "status": "pass",
+      "board_id": "stage104-scenario-board",
+      "mode": "SCENARIO",
+      "cards": [
+        {
+          "card_id": "scenario-001",
+          "scene_id": "scene-001",
+          "beat": "investigator_enters_closed_station",
+          "action": "records_rain_mismatch",
+          "production_note": "single_location"
+        },
+        {
+          "card_id": "scenario-002",
+          "scene_id": "scene-002",
+          "beat": "prop_led_reveal",
+          "prop": "dead_timetable_board",
+          "cue": "date_appears"
+        },
+        {
+          "card_id": "scenario-003",
+          "scene_id": "scene-002",
+          "beat": "silence_cue",
+          "dialogue_function": "subtext_not_exposition",
+          "cue": "unanswered_question"
+        }
+      ],
+      "provider_call_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "issues": []
+    },
+    "active_modes": [
+      "PROSE",
+      "SCENARIO",
+      "REVIEW"
+    ]
+  },
+  "stage104_3_review_decision_loop": {
+    "stage": "104.3",
+    "title": "Review Queue + Writer Decision Loop",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "review_queue_pass": true,
+      "writer_decision_guard_pass": true,
+      "unauthorized_apply_zero": true,
+      "unresolved_block_zero": true
+    },
+    "review_queue": {
+      "status": "pass",
+      "queue_id": "stage104-review-queue",
+      "items": [
+        {
+          "revision_id": "rev-001",
+          "source": "stage101_scenario_room",
+          "severity": "WARN",
+          "issue_type": "dialogue_silence_balance",
+          "recommendation": "shift exposition into prop cue and silence beat",
+          "writer_decision": "PENDING"
+        },
+        {
+          "revision_id": "rev-002",
+          "source": "stage102_writer_trial",
+          "severity": "INFO",
+          "issue_type": "reader_orientation",
+          "recommendation": "keep station location label visible in scene card",
+          "writer_decision": "PENDING"
+        }
+      ],
+      "revision_queue_size": 2,
+      "unresolved_block_count": 0,
+      "writer_approval_required": true,
+      "provider_call_count": 0
+    },
+    "revision_apply_guard": {
+      "status": "pass",
+      "applied_revision_count": 1,
+      "blocked_revision_count": 0,
+      "writer_approval_required": true,
+      "unauthorized_apply_count": 0,
+      "issues": [],
+      "approved_revision_ids": [
+        "rev-001"
+      ]
+    }
+  },
+  "stage104_4_sample_project_beta": {
+    "stage": "104.4",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "workspace_pass": true,
+      "unified_board_pass": true,
+      "review_queue_pass": true,
+      "export_manifest_pass": true,
+      "full_text_default_false": true
+    },
+    "workspace": {
+      "status": "pass",
+      "checks": {
+        "workspace_has_scene_cards": true,
+        "export_ready_without_blocks": true,
+        "raw_manuscript_provider_leakage_zero": true,
+        "node2_raw_reveal_access_zero": true
+      },
+      "issues": [],
+      "project": {
+        "project_id": "stage104_sample_project",
+        "title": "Rain Station Studio Beta Sample",
+        "project_type": "series",
+        "privacy_mode": "FEATURE_ONLY",
+        "active_mode": "PROSE",
+        "baseline_stage": "stage103",
+        "feature_only": true,
+        "metadata": {
+          "source": "stage104_beta_fixture",
+          "writer_control": "approval_required"
+        }
+      },
+      "workspace_state": {
+        "project_id": "stage104_sample_project",
+        "episodes": [
+          "ep-001",
+          "ep-002",
+          "ep-003"
+        ],
+        "scene_cards": [
+          {
+            "scene_id": "scene-001",
+            "episode_id": "ep-001",
+            "title": "폐역 도착",
+            "mode": "PROSE",
+            "intent": "guilt_sensory_anchor",
+            "beat_count": 3,
+            "has_raw_manuscript": false
+          },
+          {
+            "scene_id": "scene-002",
+            "episode_id": "ep-001",
+            "title": "전광판 점등",
+            "mode": "SCENARIO",
+            "intent": "prop_led_reveal",
+            "beat_count": 4,
+            "has_raw_manuscript": false
+          },
+          {
+            "scene_id": "scene-003",
+            "episode_id": "ep-001",
+            "title": "수정 검토",
+            "mode": "REVIEW",
+            "intent": "writer_decision_checkpoint",
+            "beat_count": 2,
+            "has_raw_manuscript": false
+          }
+        ],
+        "revision_queue_size": 2,
+        "unresolved_block_count": 0,
+        "export_ready": true,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      }
+    },
+    "unified_board": {
+      "stage": "104.2",
+      "status": "pass",
+      "issues": [],
+      "checks": {
+        "prose_board_pass": true,
+        "scenario_board_pass": true,
+        "metric_conflation_prevented": true,
+        "provider_zero": true
+      },
+      "prose_board": {
+        "status": "pass",
+        "board_id": "stage104-prose-board",
+        "mode": "PROSE",
+        "cards": [
+          {
+            "card_id": "prose-001",
+            "scene_id": "scene-001",
+            "voice_note": "restrained guilt",
+            "sensory_anchor": "rain_on_platform",
+            "node2_surface_safety": "pass"
+          },
+          {
+            "card_id": "prose-002",
+            "scene_id": "scene-002",
+            "rhythm_note": "short beats before reveal",
+            "emotion_movement": "avoidance_to_confrontation",
+            "node2_surface_safety": "pass"
+          }
+        ],
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "issues": []
+      },
+      "scenario_board": {
+        "status": "pass",
+        "board_id": "stage104-scenario-board",
+        "mode": "SCENARIO",
+        "cards": [
+          {
+            "card_id": "scenario-001",
+            "scene_id": "scene-001",
+            "beat": "investigator_enters_closed_station",
+            "action": "records_rain_mismatch",
+            "production_note": "single_location"
+          },
+          {
+            "card_id": "scenario-002",
+            "scene_id": "scene-002",
+            "beat": "prop_led_reveal",
+            "prop": "dead_timetable_board",
+            "cue": "date_appears"
+          },
+          {
+            "card_id": "scenario-003",
+            "scene_id": "scene-002",
+            "beat": "silence_cue",
+            "dialogue_function": "subtext_not_exposition",
+            "cue": "unanswered_question"
+          }
+        ],
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "issues": []
+      },
+      "active_modes": [
+        "PROSE",
+        "SCENARIO",
+        "REVIEW"
+      ]
+    },
+    "review_queue": {
+      "status": "pass",
+      "queue_id": "stage104-review-queue",
+      "items": [
+        {
+          "revision_id": "rev-001",
+          "source": "stage101_scenario_room",
+          "severity": "WARN",
+          "issue_type": "dialogue_silence_balance",
+          "recommendation": "shift exposition into prop cue and silence beat",
+          "writer_decision": "PENDING"
+        },
+        {
+          "revision_id": "rev-002",
+          "source": "stage102_writer_trial",
+          "severity": "INFO",
+          "issue_type": "reader_orientation",
+          "recommendation": "keep station location label visible in scene card",
+          "writer_decision": "PENDING"
+        }
+      ],
+      "revision_queue_size": 2,
+      "unresolved_block_count": 0,
+      "writer_approval_required": true,
+      "provider_call_count": 0
+    },
+    "export_manifest": {
+      "status": "pass",
+      "export_id": "stage104-beta-export-001",
+      "project_id": "stage104_sample_project",
+      "includes_full_text": false,
+      "includes_feature_reports": true,
+      "includes_release_evidence": true,
+      "workspace_snapshot_path": "release/current/stage104_studio_beta_pack/workspace_snapshot.json",
+      "writer_handoff_path": "release/current/stage104_studio_beta_pack/writer_handoff_beta.md",
+      "issues": []
+    },
+    "provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "stage104_5_beta_handoff": {
+    "stage": "104.5",
+    "status": "pass",
+    "issues": [],
+    "handoff": {
+      "status": "pass",
+      "path": "release/current/stage104_developer_handoff_report.md"
+    },
+    "local_telemetry": {
+      "status": "pass",
+      "event_count": 4,
+      "raw_manuscript_included": false,
+      "credential_included": false,
+      "provider_payload_included": false,
+      "local_only": true,
+      "issues": [],
+      "event_log": {
+        "status": "pass",
+        "events": [
+          {
+            "event": "open_project",
+            "project_id": "stage104_sample_project",
+            "raw_text": false
+          },
+          {
+            "event": "switch_mode",
+            "mode": "SCENARIO",
+            "raw_text": false
+          },
+          {
+            "event": "approve_revision",
+            "revision_id": "rev-001",
+            "raw_text": false
+          },
+          {
+            "event": "export_feature_only",
+            "export_id": "stage104-beta-export-001",
+            "raw_text": false
+          }
+        ],
+        "event_count": 4,
+        "raw_manuscript_included": false
+      },
+      "safe_error_boundary": {
+        "status": "pass",
+        "redaction_policy": "drop_raw_text_drop_credentials_keep_stage_and_safe_error_code",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "provider_payload_included": false,
+        "safe_error_code": "STAGE104_SAFE_BETA_WARNING"
+      }
+    },
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "studio_beta_claim": "local_first_writer_studio_beta_not_full_saas"
+}

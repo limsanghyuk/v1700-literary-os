@@ -1,0 +1,26 @@
+{
+  "stage": "81.1",
+  "status": "known_commercial_gaps_registered",
+  "items": [
+    {
+      "gap_id": "full_episode_actual_rendering",
+      "status": "PENDING_STAGE82_OR_STAGE83",
+      "reason": "Stage81 renders 30 scenes for endurance; it does not yet produce 3 full broadcast episodes as final manuscripts."
+    },
+    {
+      "gap_id": "full_532_scene_actual_rendering",
+      "status": "NOT_REQUIRED_FOR_STAGE81_1",
+      "reason": "Stage76 restores 532-scene planning metadata. Actual rendering at that scale is outside Stage81.1 scope."
+    },
+    {
+      "gap_id": "external_blind_critic_benchmark",
+      "status": "PENDING_STAGE82",
+      "reason": "Stage82 must compare V1700 against pure GPT and external baselines."
+    },
+    {
+      "gap_id": "commercial_release_candidate",
+      "status": "PENDING_STAGE83",
+      "reason": "Commercial declaration needs user-facing package, sample episodes, quality reports, and blind benchmark evidence."
+    }
+  ]
+}

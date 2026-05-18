@@ -1,0 +1,7 @@
+{
+  "stage": "109",
+  "status": "pass",
+  "network_default": "blocked",
+  "live_provider_default": false,
+  "credential_access": false
+}

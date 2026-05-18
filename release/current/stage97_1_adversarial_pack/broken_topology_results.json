@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-TOP-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "orphan_microplot_detected",
+    "triggered_gate": "fractal_topology",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-TOP-001.json"
+  },
+  {
+    "case_id": "ADV-TOP-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "episode_function_coverage_incomplete",
+    "triggered_gate": "fractal_topology",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-TOP-002.json"
+  }
+]

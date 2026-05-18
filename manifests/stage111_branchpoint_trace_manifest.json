@@ -1,0 +1,10 @@
+{
+  "stage": "111",
+  "status": "pass",
+  "branchpoint_lineage_preserved": true,
+  "symbol_to_branchpoint_trace": [
+    "v485_bridge",
+    "stage111",
+    "stage111_release_gate"
+  ]
+}

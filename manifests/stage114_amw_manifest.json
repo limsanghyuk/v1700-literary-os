@@ -1,0 +1,33 @@
+{
+  "stage": "114",
+  "name": "AdaptiveMomentumWeights",
+  "adr_alignment": [
+    "ADR-015 adaptive emotional momentum weights",
+    "ADR-017 MAE reward signal isolation"
+  ],
+  "mathematical_contract": {
+    "delta_dim": "alpha_dim * process_signal + (1-alpha_dim) * observation_signal",
+    "loss": "(delta_dim - mae_dim_score)^2",
+    "gradient": "2*(delta_dim - mae_dim_score)*(process_signal - observation_signal)",
+    "update": "alpha_dim <- clip(alpha_dim - 0.005*gradient, 0.30, 0.80) with per-update drift guard"
+  },
+  "dimensions": [
+    "tension",
+    "sympathy",
+    "dread",
+    "catharsis"
+  ],
+  "genres": [
+    "melodrama",
+    "thriller",
+    "family",
+    "generic"
+  ],
+  "release_safe": {
+    "uses_cached_mae_dimension_scores": true,
+    "live_provider_calls": 0,
+    "bridge_llm_calls": 0,
+    "protected_surface_safety_can_loosen": false,
+    "protected_branchpoint_sensitivity_can_decrease": false
+  }
+}

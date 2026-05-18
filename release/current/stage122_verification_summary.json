@@ -1,0 +1,28 @@
+{
+  "stage": "122",
+  "title": "NIE v2.0 Stability Absorption",
+  "baseline_stage": "121",
+  "status": "pass",
+  "checks": [
+    "compileall src tools tests pass",
+    "stage122_nie_v2_stability_absorption pass",
+    "stage122_release_gate pass",
+    "main release_gate pass",
+    "stage72_repo_doctor pass",
+    "targeted regression tests pass: 31 passed"
+  ],
+  "full_pytest_note": "Full single-run pytest exceeded session time; pytest --collect-only reports 374 tests. Stage122, Stage121, Stage120, repo doctor, and Stage100 successor-context regressions were executed and passed.",
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  },
+  "zip_internal_manifests": [
+    "FILELIST.txt",
+    "SHA256SUMS.txt",
+    "release/current/stage122_filelist.txt",
+    "release/current/stage122_sha256.txt"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "stage": "128",
+  "access_formula": "read_only AND (same_owner OR license_edge_exists OR public_domain_flag) AND author_approval_valid AND isolation_policy_allows AND resource_scope_permits",
+  "safe_requests": [
+    {
+      "source_project_id": "project_beta",
+      "target_project_id": "project_alpha",
+      "resource_id": "char_alpha_mentor",
+      "resource_type": "shared_character",
+      "access_type": "read",
+      "same_owner": true,
+      "license_edge_exists": false,
+      "author_approval_valid": true,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": false,
+      "access_allowed": true,
+      "write_disabled_by_stage128": false
+    },
+    {
+      "source_project_id": "project_beta",
+      "target_project_id": "project_alpha",
+      "resource_id": "world_alpha_city",
+      "resource_type": "shared_world",
+      "access_type": "reference",
+      "same_owner": true,
+      "license_edge_exists": true,
+      "author_approval_valid": true,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": false,
+      "access_allowed": true,
+      "write_disabled_by_stage128": false
+    },
+    {
+      "source_project_id": "project_gamma",
+      "target_project_id": "public_domain",
+      "resource_id": "char_public_legend",
+      "resource_type": "shared_character",
+      "access_type": "read",
+      "same_owner": false,
+      "license_edge_exists": false,
+      "author_approval_valid": true,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": true,
+      "access_allowed": true,
+      "write_disabled_by_stage128": false
+    }
+  ],
+  "blocked_probe_requests": [
+    {
+      "source_project_id": "project_alpha",
+      "target_project_id": "project_beta",
+      "resource_id": "char_beta_guest",
+      "resource_type": "shared_character",
+      "access_type": "write",
+      "same_owner": true,
+      "license_edge_exists": true,
+      "author_approval_valid": true,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": false,
+      "access_allowed": false,
+      "write_disabled_by_stage128": true
+    },
+    {
+      "source_project_id": "project_delta",
+      "target_project_id": "project_alpha",
+      "resource_id": "char_alpha_mentor",
+      "resource_type": "shared_character",
+      "access_type": "read",
+      "same_owner": false,
+      "license_edge_exists": false,
+      "author_approval_valid": false,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": false,
+      "access_allowed": false,
+      "write_disabled_by_stage128": false
+    },
+    {
+      "source_project_id": "project_delta",
+      "target_project_id": "project_alpha",
+      "resource_id": "world_alpha_city",
+      "resource_type": "shared_world",
+      "access_type": "adapt",
+      "same_owner": false,
+      "license_edge_exists": false,
+      "author_approval_valid": false,
+      "isolation_policy_allows": true,
+      "resource_scope_permits": true,
+      "public_domain_flag": false,
+      "access_allowed": false,
+      "write_disabled_by_stage128": false
+    }
+  ],
+  "license_edge_missing_but_access_allowed": false,
+  "cross_project_write_allowed": false,
+  "author_approval_required": true,
+  "read_only_absorption": true
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "72.3",
+  "phase": "0",
+  "name": "Baseline Lock",
+  "status": "pass",
+  "validated_at": "2026-05-12",
+  "active_repo": "C:\\AI_Codex\\codex-work\\gpt\\active\\v1700\\literary_generator",
+  "gitnexus": {
+    "alias": "v1700_stage72_2_ascii",
+    "index_path": "C:\\AI_Codex\\codex-work\\gpt\\gitnexus_index\\v1700_stage72_2_ascii",
+    "stale": false,
+    "stats": {
+      "files": 166,
+      "nodes": 1301,
+      "edges": 1963,
+      "clusters": 15,
+      "flows": 45,
+      "embeddings": 0
+    }
+  },
+  "checks": {
+    "stage72_2_release_gate": "pass",
+    "main_release_gate": "pass",
+    "pytest": "20 passed",
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "phase1_ready": true,
+  "next_phase": "Historical Evidence Scan",
+  "next_outputs": [
+    "manifests/pre_stage40_raw_evidence_index.json"
+  ]
+}

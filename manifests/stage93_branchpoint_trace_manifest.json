@@ -1,0 +1,61 @@
+{
+  "stage": "93",
+  "title": "Stage93 Branchpoint Trace Manifest",
+  "status": "pass",
+  "branchpoints": [
+    {
+      "branchpoint_id": "BP_STAGE93_LIVE_PROVIDER_OPT_IN_SANDBOX",
+      "priority": "P0",
+      "symbols": [
+        "v1700.provider_adapters.live_sandbox.run_stage93_live_provider_sandbox"
+      ],
+      "tests": [
+        "tests/test_stage93_provider_sandbox.py"
+      ],
+      "gates": [
+        "stage93_release_gate"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_CREDENTIAL_REDACTION_AUDIT",
+      "priority": "P0",
+      "symbols": [
+        "v1700.provider_adapters.credential_audit.audit_provider_credentials"
+      ],
+      "tests": [
+        "tests/test_stage93_provider_sandbox.py"
+      ],
+      "gates": [
+        "stage93_release_gate"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_PROVIDER_RESPONSE_NORMALIZATION",
+      "priority": "P0",
+      "symbols": [
+        "v1700.provider_adapters.normalization.normalize_provider_response"
+      ],
+      "tests": [
+        "tests/test_stage93_provider_sandbox.py"
+      ],
+      "gates": [
+        "stage93_release_gate"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_PROVIDER_ZERO_LIVE_SANDBOX_GUARD",
+      "priority": "P0",
+      "symbols": [
+        "v1700.gates.stage93_release_gate.run_stage93_release_gate"
+      ],
+      "tests": [
+        "tests/test_stage93_provider_sandbox.py"
+      ],
+      "gates": [
+        "release_gate"
+      ]
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "81.1",
+  "title": "Branchpoint Reabsorption Reconciliation Gate",
+  "purpose": "Recompute Stage75 branchpoint survival after Stage76~81 reabsorption before blind critic evaluation.",
+  "status": "implemented",
+  "outputs": [
+    "manifests/core_logic_survival_matrix_v2.json",
+    "manifests/reabsorption_completion_manifest.json",
+    "manifests/commercial_readiness_gap_manifest.json",
+    "tools/run_reabsorption_reconciliation_gate.py",
+    "tools/run_stage81_1_release_gate.py"
+  ],
+  "truthful_scope": "Runtime/smoke/actual-text reabsorption verification, not commercial readiness declaration."
+}

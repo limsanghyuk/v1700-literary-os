@@ -1,0 +1,260 @@
+{
+  "status": "pass",
+  "voice_vectors": [
+    {
+      "episode_id": "EP01",
+      "sentence_length_distribution": 14.58,
+      "dialogue_ratio": 0.435,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.228,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.192,
+      "subtext_density": 0.592
+    },
+    {
+      "episode_id": "EP02",
+      "sentence_length_distribution": 14.66,
+      "dialogue_ratio": 0.45,
+      "silence_ratio": 0.18,
+      "metaphor_density": 0.236,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.204,
+      "subtext_density": 0.604
+    },
+    {
+      "episode_id": "EP03",
+      "sentence_length_distribution": 14.74,
+      "dialogue_ratio": 0.465,
+      "silence_ratio": 0.16,
+      "metaphor_density": 0.244,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.216,
+      "subtext_density": 0.616
+    },
+    {
+      "episode_id": "EP04",
+      "sentence_length_distribution": 14.82,
+      "dialogue_ratio": 0.42,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.252,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.18,
+      "subtext_density": 0.628
+    },
+    {
+      "episode_id": "EP05",
+      "sentence_length_distribution": 14.9,
+      "dialogue_ratio": 0.435,
+      "silence_ratio": 0.18,
+      "metaphor_density": 0.22,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.192,
+      "subtext_density": 0.64
+    },
+    {
+      "episode_id": "EP06",
+      "sentence_length_distribution": 14.98,
+      "dialogue_ratio": 0.45,
+      "silence_ratio": 0.16,
+      "metaphor_density": 0.228,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.204,
+      "subtext_density": 0.58
+    },
+    {
+      "episode_id": "EP07",
+      "sentence_length_distribution": 15.06,
+      "dialogue_ratio": 0.465,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.236,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.216,
+      "subtext_density": 0.592
+    },
+    {
+      "episode_id": "EP08",
+      "sentence_length_distribution": 15.14,
+      "dialogue_ratio": 0.42,
+      "silence_ratio": 0.18,
+      "metaphor_density": 0.244,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.18,
+      "subtext_density": 0.604
+    },
+    {
+      "episode_id": "EP09",
+      "sentence_length_distribution": 15.22,
+      "dialogue_ratio": 0.435,
+      "silence_ratio": 0.16,
+      "metaphor_density": 0.252,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.192,
+      "subtext_density": 0.616
+    },
+    {
+      "episode_id": "EP10",
+      "sentence_length_distribution": 15.3,
+      "dialogue_ratio": 0.45,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.22,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.204,
+      "subtext_density": 0.628
+    },
+    {
+      "episode_id": "EP11",
+      "sentence_length_distribution": 15.38,
+      "dialogue_ratio": 0.465,
+      "silence_ratio": 0.18,
+      "metaphor_density": 0.228,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.216,
+      "subtext_density": 0.64
+    },
+    {
+      "episode_id": "EP12",
+      "sentence_length_distribution": 15.46,
+      "dialogue_ratio": 0.42,
+      "silence_ratio": 0.16,
+      "metaphor_density": 0.236,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.18,
+      "subtext_density": 0.58
+    },
+    {
+      "episode_id": "EP13",
+      "sentence_length_distribution": 15.54,
+      "dialogue_ratio": 0.435,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.244,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.192,
+      "subtext_density": 0.592
+    },
+    {
+      "episode_id": "EP14",
+      "sentence_length_distribution": 15.62,
+      "dialogue_ratio": 0.45,
+      "silence_ratio": 0.18,
+      "metaphor_density": 0.252,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.204,
+      "subtext_density": 0.604
+    },
+    {
+      "episode_id": "EP15",
+      "sentence_length_distribution": 15.7,
+      "dialogue_ratio": 0.465,
+      "silence_ratio": 0.16,
+      "metaphor_density": 0.22,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.216,
+      "subtext_density": 0.616
+    },
+    {
+      "episode_id": "EP16",
+      "sentence_length_distribution": 15.78,
+      "dialogue_ratio": 0.42,
+      "silence_ratio": 0.17,
+      "metaphor_density": 0.228,
+      "sensory_channel_preference": "tactile_visual",
+      "rhythm_variance": 0.18,
+      "subtext_density": 0.628
+    }
+  ],
+  "style_drifts": [
+    {
+      "from_episode": "EP01",
+      "to_episode": "EP02",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP02",
+      "to_episode": "EP03",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP03",
+      "to_episode": "EP04",
+      "style_drift": 0.057,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP04",
+      "to_episode": "EP05",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP05",
+      "to_episode": "EP06",
+      "style_drift": 0.075,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP06",
+      "to_episode": "EP07",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP07",
+      "to_episode": "EP08",
+      "style_drift": 0.057,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP08",
+      "to_episode": "EP09",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP09",
+      "to_episode": "EP10",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP10",
+      "to_episode": "EP11",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP11",
+      "to_episode": "EP12",
+      "style_drift": 0.105,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP12",
+      "to_episode": "EP13",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP13",
+      "to_episode": "EP14",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP14",
+      "to_episode": "EP15",
+      "style_drift": 0.027,
+      "classification": "permitted_style_evolution"
+    },
+    {
+      "from_episode": "EP15",
+      "to_episode": "EP16",
+      "style_drift": 0.057,
+      "classification": "permitted_style_evolution"
+    }
+  ],
+  "max_style_drift": 0.105,
+  "style_drift_summary": "permitted evolution only",
+  "issues": []
+}

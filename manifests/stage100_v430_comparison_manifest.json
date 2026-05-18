@@ -1,0 +1,9 @@
+{
+  "stage": "100.3",
+  "baseline_stage": "100.2",
+  "purpose": "Compare V430 scenario-room and product-pipeline strengths without merging V430 code into the RC.",
+  "required_report": "release/current/stage100_v430_comparison_report.json",
+  "immediate_absorption_allowed": false,
+  "next_absorption_stage": "Stage101"
+}
+

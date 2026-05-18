@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "project": {
+    "project_id": "stage98-commercial-studio-fixture",
+    "title": "Stage98 Commercial Studio Fixture",
+    "format": "series",
+    "episode_count": 24,
+    "baseline_stage": "97.2",
+    "privacy_mode": "FEATURE_ONLY",
+    "created_at": "2026-05-14T00:00:00Z",
+    "metadata": {
+      "source": "stage97_2_feature_reports",
+      "stage97_endurance_pack": "release/current/stage97_longform_endurance_pack",
+      "raw_manuscript_loaded": false,
+      "provider_export": false,
+      "root_name": "stage127_work"
+    }
+  },
+  "privacy_mode": "FEATURE_ONLY",
+  "feature_only_reference": true,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_call_count": 0
+}

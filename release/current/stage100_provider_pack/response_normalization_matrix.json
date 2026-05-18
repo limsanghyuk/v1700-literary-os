@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "providers": [
+    "fixture",
+    "mock",
+    "gpt",
+    "claude",
+    "gemini",
+    "ollama"
+  ]
+}

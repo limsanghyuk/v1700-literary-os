@@ -1,0 +1,50 @@
+{
+  "stage": "98",
+  "baseline_stage": "97.2",
+  "status": "pass",
+  "stage98_0_status": "pass",
+  "stage98_1_status": "pass",
+  "stage98_2_status": "pass",
+  "studio_project_status": "pass",
+  "episode_board_status": "pass",
+  "microplot_matrix_editor_status": "pass",
+  "revision_queue_status": "pass",
+  "review_package_status": "pass",
+  "publishing_package_status": "pass",
+  "warn_revision_items": 1,
+  "unresolved_block_items": 0,
+  "writer_approval_guard_status": "pass",
+  "publishing_package": {
+    "package_id": "stage98-publishing-package",
+    "project_id": "stage98-commercial-studio-fixture",
+    "export_formats": [
+      "json",
+      "md",
+      "txt"
+    ],
+    "includes_full_text": false,
+    "includes_feature_reports": true,
+    "includes_release_evidence": true,
+    "package_manifest_path": "release/current/stage98_studio_pack/publishing_package_manifest.json"
+  },
+  "provider_default_calls": 0,
+  "provider_call_count": 0,
+  "live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "reader_only_leakage": 0,
+  "internal_marker_leakage": 0,
+  "full_text_exported": false,
+  "branchpoint_lineage_preserved": true,
+  "stage_sequence": [
+    "98.0",
+    "98.1",
+    "98.2"
+  ],
+  "stage_reports": {
+    "stage98_0": "release/current/stage98_0_studio_workflow_core_report.json",
+    "stage98_1": "release/current/stage98_1_review_queue_report.json",
+    "stage98_2": "release/current/stage98_2_publishing_package_report.json"
+  },
+  "studio_pack": "release/current/stage98_studio_pack"
+}

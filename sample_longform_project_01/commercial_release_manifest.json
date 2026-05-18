@@ -1,0 +1,36 @@
+{
+  "stage": "83",
+  "title": "Commercial Longform Release Candidate",
+  "prompt": "낮은 위치의 인물이 제도, 추방, 귀환을 통과하며 자기 역할을 완성하는 한국 드라마",
+  "project_dir": "sample_longform_project_01",
+  "episode_files": [
+    "sample_longform_project_01/generated_episode_01.md",
+    "sample_longform_project_01/generated_episode_02.md",
+    "sample_longform_project_01/generated_episode_03.md"
+  ],
+  "quality_report": "sample_longform_project_01/quality_report.json",
+  "refinement_trace": "sample_longform_project_01/refinement_trace.json",
+  "blind_eval_report": "sample_longform_project_01/blind_eval_report.md",
+  "episode_count": 3,
+  "actual_rendered_scene_count": 30,
+  "episode_scene_counts": {
+    "EP01": 10,
+    "EP02": 10,
+    "EP03": 10
+  },
+  "quality_average_after": 9.03,
+  "quality_average_delta": 0.55,
+  "quality_blocker_count_after": 0,
+  "reveal_leakage_count": 0,
+  "timeline_contradiction_count": 0,
+  "blind_v1700_margin_over_pure_gpt": 2.22,
+  "blind_winner": "v1700_stage81_1_engineered_literary_os",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "commercial_readiness": "release_candidate",
+  "limitations": [
+    "local_first benchmark; no paid external provider API call",
+    "candidate evidence pack, not final market release",
+    "full 532-scene rendering remains a later scale-up target"
+  ]
+}

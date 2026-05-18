@@ -1,0 +1,6 @@
+{
+  "stage": "108",
+  "status": "pass",
+  "provider_reviewers": "fixture_only",
+  "live_provider_call_count_in_release_gate": 0
+}

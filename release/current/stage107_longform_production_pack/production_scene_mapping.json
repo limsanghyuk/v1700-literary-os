@@ -1,0 +1,235 @@
+{
+  "stage": "107.4c",
+  "title": "Production Scene Mapping",
+  "status": "pass",
+  "mapped_episode_count": 32,
+  "production_scene_total": 320,
+  "raw_manuscript_required": false,
+  "maps": [
+    {
+      "episode_id": "episode_01",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_02",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_03",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_04",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_05",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_06",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_07",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_08",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_09",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_10",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_11",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_12",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_13",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_14",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_15",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_16",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_17",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_18",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_19",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_20",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_21",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_22",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_23",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_24",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_25",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_26",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_27",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_28",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_29",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_30",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_31",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    },
+    {
+      "episode_id": "episode_32",
+      "structural_scene_count": 6,
+      "production_scene_count": 10,
+      "mapping_policy": "structural_to_production_scene_expansion_feature_only",
+      "raw_manuscript_required": false
+    }
+  ],
+  "provider_call_count": 0
+}

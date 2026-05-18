@@ -1,0 +1,557 @@
+{
+  "stage": "94",
+  "status": "pass",
+  "title": "Symbol-to-Branchpoint Traceability with Stage94 Provider Evaluation Evidence",
+  "principle": "Connect literary logic to concrete code symbols, tests, and release gates without making GitNexus mandatory at runtime.",
+  "issues": [],
+  "entry_count": 47,
+  "coverage": {
+    "P0": {
+      "priority": "P0",
+      "total": 41,
+      "covered": 41,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "P1": {
+      "priority": "P1",
+      "total": 6,
+      "covered": 6,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "overall": {
+      "total": 47,
+      "covered": 47,
+      "coverage": 1.0
+    }
+  },
+  "entry_statuses": [
+    {
+      "branchpoint_id": "BP_STAGE85_NODE2_REVEAL_BOUNDARY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/gates/node_projection_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_PROVIDER_ZERO_LOCAL_FIRST",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime/provider_boundary.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GRAPHNEXUS_AUTHORITY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/gates/graph_nexus_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/lineage/stage83_1_consistency_audit.py",
+        "src/v1700/lineage/branchpoint_registry.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_DRAMA_HIERARCHY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/gates/stage80_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STAGE84_ABSORPTION_SAFE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/gates/stage84_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_COMMERCIAL_EVIDENCE_PACK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/commercial_release/engine.py",
+        "src/v1700/gates/stage83_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_ANTI_LLM_FILTER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STYLE_DNA",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_CLOSED_LOOP_RENDERER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_SELF_LEARNING_TRACE",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GITNEXUS_OPTIONAL_SIDECAR",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/sidecars/gitnexus/probe.py",
+        "src/v1700/sidecars/gitnexus/adapter.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_SERIES_ARC_PLANNER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/series_arc_planner.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CAUSAL_PLOT_GRAPH",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/causal_plot_graph.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CHARACTER_KNOWLEDGE_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROSE_RENDER_CONTRACT_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+        "src/v1700/nodes/node2_prose_renderer/contract.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROVIDER_ZERO_ABSORPTION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/stage86_smoke.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_EIGHT_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_REVEAL_KNOWLEDGE_SCALE_LOCK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_STAGE86_LINEAGE_PRESERVATION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage87_release_gate.py",
+        "src/v1700/gates/stage86_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/writer_studio/workspace.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_EXPORT_PIPELINE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_STATIC_STUDIO_PREVIEW",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_PROVIDER_ZERO_EXPORT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/gates/stage89_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_STUDIO_ROUNDTRIP_EDITING",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/writer_studio/roundtrip.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_EXPORT_FIDELITY_HARDENING",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_PROVIDER_ZERO_ROUNDTRIP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_STUDIO_PERSISTENCE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/persistence.py",
+        "src/v1700/writer_studio/persistence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_REVIEW_QUEUE_STATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/review_queue.py",
+        "src/v1700/writer_studio/review_queue.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_UI_EVENT_REPLAY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/writer_studio/event_replay.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_PROVIDER_ZERO_INTERACTION_LAYER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/gates/stage91_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_LOCAL_MULTI_PROVIDER_ADAPTER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/router.py",
+        "src/v1700/provider_adapters/config.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_PROVIDER_ZERO_ADAPTER_GUARD",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/adapters.py",
+        "src/v1700/gates/stage92_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_STUDIO_ADAPTER_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/studio_bridge.py",
+        "src/v1700/provider_adapters/studio_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_LIVE_PROVIDER_OPT_IN_SANDBOX",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/live_sandbox.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_CREDENTIAL_REDACTION_AUDIT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/credential_audit.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_PROVIDER_RESPONSE_NORMALIZATION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/normalization.py",
+        "src/v1700/provider_adapters/normalization.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE93_PROVIDER_ZERO_LIVE_SANDBOX_GUARD",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage93_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE94_PROVIDER_EVALUATION_HARNESS",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_evaluation/harness.py",
+        "src/v1700/provider_evaluation/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE94_NORMALIZED_PROVIDER_SCORING",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_evaluation/scoring.py",
+        "src/v1700/provider_evaluation/scoring.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE94_PROVIDER_ZERO_EVALUATION_GUARD",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage94_release_gate.py"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "branchpoint_id": "BP_STAGE94_PROVIDER_EVALUATION_HARNESS",
+      "priority": "P0",
+      "concept": "Stage94 evaluates Ollama, GPT, Claude, and Gemini through a common dry-run prompt suite.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.provider_evaluation.harness.ProviderEvaluationHarness",
+        "v1700.provider_evaluation.harness.run_stage94_provider_evaluation_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/provider_evaluation/harness.py",
+        "docs/stages/stage94.md",
+        "manifests/stage94_provider_evaluation_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage94_provider_evaluation.py"
+      ],
+      "gates": [
+        "stage94_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This creates provider comparison evidence without letting any provider become the hidden runtime authority."
+    },
+    {
+      "branchpoint_id": "BP_STAGE94_NORMALIZED_PROVIDER_SCORING",
+      "priority": "P0",
+      "concept": "Stage94 scores normalized provider responses across latency, cost, tokens, safety, literary quality, and branchpoint compliance.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.provider_evaluation.scoring.score_normalized_response",
+        "v1700.provider_evaluation.scoring.build_provider_profiles"
+      ],
+      "evidence_files": [
+        "src/v1700/provider_evaluation/scoring.py",
+        "src/v1700/provider_evaluation/contracts.py",
+        "manifests/stage94_provider_evaluation_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage94_provider_evaluation.py"
+      ],
+      "gates": [
+        "stage94_release_gate"
+      ],
+      "rationale": "This gives the developer a comparable provider scorecard before Stage95 ensemble arbitration."
+    },
+    {
+      "branchpoint_id": "BP_STAGE94_PROVIDER_ZERO_EVALUATION_GUARD",
+      "priority": "P0",
+      "concept": "Stage94 release evaluation performs zero live provider calls and keeps Node2 raw reveal access at zero.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.gates.stage94_release_gate.run_stage94_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/gates/stage94_release_gate.py",
+        "manifests/live_core_manifest.json",
+        "manifests/stage94_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage94_provider_evaluation.py"
+      ],
+      "gates": [
+        "stage94_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This preserves Stage93 provider sandbox safety while adding provider comparison."
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

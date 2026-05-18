@@ -1,0 +1,14 @@
+{
+  "stage": "96",
+  "title": "Narrative Physics Optimization, Manuscript Learning, and Provider Ensemble Arbitration",
+  "status": "pass_pending_export",
+  "baseline_stage": "95",
+  "phases": [
+    "96A_narrative_physics_optimization",
+    "96B_manuscript_learning",
+    "96C_provider_ensemble_arbitration"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count": 0,
+  "node2_raw_reveal_access_count": 0
+}

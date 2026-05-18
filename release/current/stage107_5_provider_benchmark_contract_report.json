@@ -1,0 +1,11 @@
+{
+  "stage": "107.5.3",
+  "title": "Provider Benchmark Runner",
+  "status": "pass",
+  "issues": [],
+  "release_gate_affected": false,
+  "provider_live_call_count": 0,
+  "raw_manuscript_sent": false,
+  "raw_response_stored": false,
+  "result_count": 12
+}

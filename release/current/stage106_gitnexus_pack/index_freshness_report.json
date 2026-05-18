@@ -1,0 +1,5 @@
+{
+  "status": "pass",
+  "gitnexus_optional_sidecar": true,
+  "python_fallback_required": true
+}

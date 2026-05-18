@@ -1,0 +1,73 @@
+{
+  "stage": "107.5",
+  "baseline_stage": "107",
+  "title": "Provider Live Sandbox Adapter Verification",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage107_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "sandbox_explicit_opt_in_policy_pass": {
+      "status": "pass"
+    },
+    "credential_externality_pass": {
+      "status": "pass"
+    },
+    "payload_redactor_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_block_pass": {
+      "status": "pass"
+    },
+    "model_id_probe_shape_pass": {
+      "status": "pass"
+    },
+    "adapter_contract_pass": {
+      "status": "pass"
+    },
+    "response_normalization_pass": {
+      "status": "pass"
+    },
+    "cost_latency_ledger_pass": {
+      "status": "pass"
+    },
+    "release_gate_isolation_pass": {
+      "status": "pass"
+    },
+    "raw_response_storage_block_pass": {
+      "status": "pass"
+    },
+    "provider_zero_release_path_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage107_5": {
+    "status": "pass",
+    "stage": "107.5",
+    "baseline_stage": "107",
+    "title": "Provider Live Sandbox Adapter Verification",
+    "issues": [],
+    "release_gate_affected": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "sandbox_live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "raw_response_stored": false
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "release_gate_affected": false
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "101",
+  "purpose": "Trace Stage101 cross-lineage absorption and scenario-room contracts to concrete symbols, tests, gates, and release evidence.",
+  "branchpoints": [
+    "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+    "BP_STAGE101_SCENARIO_ROOM_CONTRACT",
+    "BP_STAGE101_SCENARIO_CUE_INTEGRATION",
+    "BP_STAGE101_DUAL_MODE_REGRESSION"
+  ],
+  "required_gate": "stage101_release_gate",
+  "status": "pass"
+}

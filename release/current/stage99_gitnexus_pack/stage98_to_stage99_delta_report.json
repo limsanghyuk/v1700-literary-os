@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "baseline_stage": "98",
+  "target_stage": "99",
+  "new_feature_expansion": false,
+  "hardening_only": true
+}

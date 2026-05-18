@@ -1,0 +1,851 @@
+{
+  "stage": "121",
+  "baseline_stage": "120",
+  "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "121",
+    "baseline_stage": "120",
+    "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+    "required_candidate_versions": [
+      "V545_HF",
+      "V546_cleanup",
+      "V555_PNE"
+    ],
+    "required_outputs": [
+      "manifests/stage121_formula_ledger.json",
+      "manifests/stage121_lineage_relationship_map.json",
+      "manifests/stage121_conflict_matrix.json",
+      "manifests/stage121_absorption_candidate_registry.json",
+      "manifests/stage121_gate_authority_map.json",
+      "release/current/stage121_cross_lineage_preflight_report.json",
+      "release/current/stage121_formula_conflict_report.json",
+      "release/current/stage121_packaging_cleanliness_report.json"
+    ]
+  },
+  "cross_lineage_preflight": {
+    "stage": "121",
+    "baseline_stage": "120",
+    "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+    "status": "pass",
+    "issues": [],
+    "preflight_method": "GitNexus-aware Python fallback",
+    "trunk_policy": "Stage120 Integrity FIXED remains the only primary trunk",
+    "merge_policy": "V545/V546/V555 are reference branches; direct merge is blocked",
+    "formula_ledger": {
+      "status": "pass",
+      "entry_count": 9,
+      "entries": [
+        {
+          "formula_id": "STAGE120_REWARD_ADVANTAGE_EMA",
+          "source_lineage": "stage120_trunk",
+          "source_version": "Stage120 Gate25 NIE v1.0",
+          "module_path": "src/v1700/nie/reward/physics_reward_bridge.py",
+          "formula_type": "reward_signal",
+          "expression": "R=0.35*reader+0.25*writer+0.25*editor+0.15*cultural; advantage=R-baseline; baseline'=0.95*baseline+0.05*R",
+          "constants": {
+            "reader": 0.35,
+            "writer": 0.25,
+            "editor": 0.25,
+            "cultural": 0.15,
+            "baseline_decay": 0.95,
+            "baseline_lr": 0.05
+          },
+          "conflicts_with": [],
+          "absorption_status": "KEEP",
+          "reason": "current Gate25 NIE v1.0 reward contract remains primary"
+        },
+        {
+          "formula_id": "STAGE120_AMW_ALPHA_BOUNDS",
+          "source_lineage": "stage120_trunk",
+          "source_version": "Stage114/Stage120",
+          "module_path": "src/v1700/nie/emotion/adaptive_momentum_weights.py",
+          "formula_type": "bounded_calibration",
+          "expression": "delta=alpha*process+(1-alpha)*observation; alpha in [0.30,0.80]; per_update<=0.03; per_run<=0.10",
+          "constants": {
+            "alpha_min": 0.3,
+            "alpha_max": 0.8,
+            "per_update_shift_max": 0.03,
+            "per_run_shift_max": 0.1
+          },
+          "conflicts_with": [
+            "V525_AMW_ALPHA_BOUNDS"
+          ],
+          "absorption_status": "KEEP",
+          "reason": "safety-first bounded calibration; V525 wider alpha is deferred until drift adversarial tests exist"
+        },
+        {
+          "formula_id": "V525_AMW_ALPHA_BOUNDS",
+          "source_lineage": "v525_candidate",
+          "source_version": "V525 NIE v2.0 candidate",
+          "module_path": "literary_system/nie/adaptive_momentum_weights.py",
+          "formula_type": "bounded_calibration_candidate",
+          "expression": "alpha in [0.05,0.95]; LR_AMW=0.005",
+          "constants": {
+            "alpha_min": 0.05,
+            "alpha_max": 0.95,
+            "lr_amw": 0.005
+          },
+          "conflicts_with": [
+            "STAGE120_AMW_ALPHA_BOUNDS"
+          ],
+          "absorption_status": "DEFER",
+          "reason": "wider alpha range conflicts with Stage120 drift guard; record as experiment-only candidate"
+        },
+        {
+          "formula_id": "STAGE120_TENSION_CURVE",
+          "source_lineage": "stage120_trunk",
+          "source_version": "Stage117/Stage120",
+          "module_path": "src/v1700/nie/arc/narrative_tension_curve.py",
+          "formula_type": "loss_function",
+          "expression": "T_ideal(t)=0.60+0.40*sin(2*pi*t-0.50)+0.20*sin(6*pi*t); L_final=L_tension+0.3*L_coverage",
+          "constants": {
+            "base": 0.6,
+            "primary_amp": 0.4,
+            "primary_phase": -0.5,
+            "secondary_amp": 0.2,
+            "lambda_coverage": 0.3
+          },
+          "conflicts_with": [],
+          "absorption_status": "KEEP",
+          "reason": "current tension objective remains Gate25 baseline"
+        },
+        {
+          "formula_id": "V545_GATE28_STORY_QUALITY",
+          "source_lineage": "v545_candidate",
+          "source_version": "V545 ASD candidate",
+          "module_path": "literary_system/graph_intelligence/asd/gate28.py",
+          "formula_type": "quality_gate_candidate",
+          "expression": "debt<=0.50; arc<=0.40; high_priority<=5; combined=min(debt*0.55+arc*0.45,1.0)<=0.45",
+          "constants": {
+            "debt_threshold": 0.5,
+            "arc_threshold": 0.4,
+            "high_priority_threshold": 5,
+            "debt_weight": 0.55,
+            "arc_weight": 0.45,
+            "combined_threshold": 0.45
+          },
+          "conflicts_with": [],
+          "absorption_status": "ADAPT",
+          "reason": "valuable secondary quality gate, but must be introduced after Stage121 reconciliation as Stage123"
+        },
+        {
+          "formula_id": "V545_ASD_PRIORITY_SCORE",
+          "source_lineage": "v545_candidate",
+          "source_version": "V545 ASD candidate",
+          "module_path": "literary_system/graph_intelligence/asd/story_doctor_orchestrator.py",
+          "formula_type": "repair_priority_candidate",
+          "expression": "priority_score=severity*(1+1.5*blast_ratio)",
+          "constants": {
+            "blast_multiplier": 1.5
+          },
+          "conflicts_with": [],
+          "absorption_status": "ADAPT",
+          "reason": "candidate for ASD repair triage; release mutation must remain dry-run until Stage123"
+        },
+        {
+          "formula_id": "V555_PNE_PREEMPTIVE_GATE",
+          "source_lineage": "v555_candidate",
+          "source_version": "V555 PNE candidate",
+          "module_path": "literary_system/predictive/preemptive_gate.py",
+          "formula_type": "predictive_gate_candidate",
+          "expression": "block if predicted_debt_probability>=0.60",
+          "constants": {
+            "block_threshold": 0.6
+          },
+          "conflicts_with": [],
+          "absorption_status": "ADAPT",
+          "reason": "use as Gate29 candidate; release gate must use frozen fixtures, not live training"
+        },
+        {
+          "formula_id": "V555_PNE_FEEDBACK_PRECISION_TARGET",
+          "source_lineage": "v555_candidate",
+          "source_version": "V555 PNE candidate",
+          "module_path": "literary_system/predictive/feedback_learner.py",
+          "formula_type": "model_quality_target",
+          "expression": "precision_target>=0.70; positive threshold=0.60",
+          "constants": {
+            "precision_target": 0.7,
+            "positive_threshold": 0.6
+          },
+          "conflicts_with": [],
+          "absorption_status": "ADAPT",
+          "reason": "0.70 is quality target, not scene approval threshold; must be documented to avoid formula mixing"
+        },
+        {
+          "formula_id": "V555_DEBT_PREDICTOR_RF",
+          "source_lineage": "v555_candidate",
+          "source_version": "V555 PNE candidate",
+          "module_path": "literary_system/predictive/debt_predictor.py",
+          "formula_type": "ml_predictor_candidate",
+          "expression": "RandomForestClassifier(n_estimators=100,max_depth=5,random_state=42,min_samples=5) with heuristic fallback",
+          "constants": {
+            "n_estimators": 100,
+            "max_depth": 5,
+            "random_state": 42,
+            "min_samples": 5
+          },
+          "conflicts_with": [],
+          "absorption_status": "DEFER",
+          "reason": "predictive ML layer requires frozen model-card fixtures and sklearn-optional fallback before release authority"
+        }
+      ],
+      "by_absorption_status": {
+        "KEEP": 3,
+        "DEFER": 2,
+        "ADAPT": 4
+      },
+      "formula_sources": [
+        "stage120_trunk",
+        "v525_candidate",
+        "v545_candidate",
+        "v555_candidate"
+      ],
+      "stage120_formulas_preserved": true
+    },
+    "lineage_relationship_map": {
+      "status": "pass",
+      "trunk_stage": "stage120",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "name": "literary_os_v545_HF.zip",
+          "source_version": "V545_HF",
+          "sha256": "eb23125d410ddb905831796990f891a0b108b2cdd23d10d33be55b90f4972978",
+          "entry_count": 14558,
+          "cache_file_count": 715,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "gate28"
+          ],
+          "observed_reports": [
+            "CHANGELOG_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md",
+            "CHANGELOG_V545_HF.md"
+          ],
+          "notes": [
+            "contains pycache/pyc artifacts",
+            "reference only; direct merge blocked"
+          ]
+        },
+        {
+          "name": "literary_os_v546_cleanup.zip",
+          "source_version": "V546_cleanup",
+          "sha256": "e531ac44a8942e9a2c914e9c33b1ba465e4761ac1d49957b208946dec12f42c5",
+          "entry_count": 14629,
+          "cache_file_count": 0,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "gate28"
+          ],
+          "observed_reports": [
+            "MANIFEST_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md"
+          ],
+          "notes": [
+            "cache cleaned but internal FILELIST/SHA256SUMS absent",
+            "reference only"
+          ]
+        },
+        {
+          "name": "literary_os_v555_PNE.zip",
+          "source_version": "V555_PNE",
+          "sha256": "edb3f94b1cae9849a1c1361fa2e41e805076cdb18adae4c8f0f78f1a05bda7d4",
+          "entry_count": 15080,
+          "cache_file_count": 0,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "literary_system/predictive",
+            "gate28",
+            "gate29"
+          ],
+          "observed_reports": [
+            "MANIFEST_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md",
+            "tests/test_v551_v555_pne.py"
+          ],
+          "notes": [
+            "PNE/Gate29 candidate present",
+            "internal FILELIST/SHA256SUMS absent",
+            "direct merge blocked"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "trunk_stage": "stage120",
+          "candidate_version": "V545_HF",
+          "relationship_type": "successor_candidate",
+          "clean_packaging_pass": false,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "cache_file_count": 715,
+          "direct_merge_allowed": false,
+          "rationale": "Candidate contains post-Stage120 concepts but is blocked from direct merge until formulas, gates, and packaging are reconciled."
+        },
+        {
+          "trunk_stage": "stage120",
+          "candidate_version": "V546_cleanup",
+          "relationship_type": "successor_candidate",
+          "clean_packaging_pass": false,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "cache_file_count": 0,
+          "direct_merge_allowed": false,
+          "rationale": "Candidate contains post-Stage120 concepts but is blocked from direct merge until formulas, gates, and packaging are reconciled."
+        },
+        {
+          "trunk_stage": "stage120",
+          "candidate_version": "V555_PNE",
+          "relationship_type": "successor_candidate",
+          "clean_packaging_pass": false,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "cache_file_count": 0,
+          "direct_merge_allowed": false,
+          "rationale": "Candidate contains post-Stage120 concepts but is blocked from direct merge until formulas, gates, and packaging are reconciled."
+        }
+      ],
+      "direct_merge_allowed_count": 0,
+      "all_direct_merges_blocked": true
+    },
+    "conflict_matrix": {
+      "status": "pass",
+      "conflict_count": 6,
+      "blocker_count": 1,
+      "high_count": 3,
+      "conflicts": [
+        {
+          "conflict_id": "C121-001",
+          "subject": "NIE version naming",
+          "trunk_value": "Gate25 NIE v1.0",
+          "candidate_value": "NIE v2.0",
+          "severity": "medium",
+          "decision": "Keep Stage120 naming; register V525 as successor candidate",
+          "required_resolution_stage": "stage121"
+        },
+        {
+          "conflict_id": "C121-002",
+          "subject": "AMW alpha bounds",
+          "trunk_value": "[0.30,0.80]",
+          "candidate_value": "[0.05,0.95]",
+          "severity": "high",
+          "decision": "Keep Stage120 bounds; defer wider range to Stage122 adversarial drift tests",
+          "required_resolution_stage": "stage122"
+        },
+        {
+          "conflict_id": "C121-003",
+          "subject": "Gate25 authority",
+          "trunk_value": "Stage120 Gate25 primary",
+          "candidate_value": "V525 Gate25 candidate",
+          "severity": "high",
+          "decision": "Do not replace primary Gate25; map V525 Gate25 as Gate25-v2 candidate",
+          "required_resolution_stage": "stage122"
+        },
+        {
+          "conflict_id": "C121-004",
+          "subject": "Gate28/Gate29 authority",
+          "trunk_value": "not present in Stage120",
+          "candidate_value": "candidate secondary gates",
+          "severity": "medium",
+          "decision": "Introduce as secondary/advisory until Stage125 governor",
+          "required_resolution_stage": "stage123-stage125"
+        },
+        {
+          "conflict_id": "C121-005",
+          "subject": "Candidate packaging",
+          "trunk_value": "clean ZIP with internal FILELIST/SHA256SUMS",
+          "candidate_value": "candidate archives lack internal FILELIST/SHA256SUMS; V545 has cache",
+          "severity": "blocker",
+          "decision": "Direct merge blocked; extract formulas only",
+          "required_resolution_stage": "stage121"
+        },
+        {
+          "conflict_id": "C121-006",
+          "subject": "PNE runtime learning",
+          "trunk_value": "release gates deterministic fixtures only",
+          "candidate_value": "DebtPredictor can train RandomForest",
+          "severity": "high",
+          "decision": "Training forbidden in release gate; frozen fixture/model-card required",
+          "required_resolution_stage": "stage124"
+        }
+      ],
+      "direct_merge_blocked": true,
+      "resolution_required_before_absorption": [
+        "C121-002",
+        "C121-003",
+        "C121-005",
+        "C121-006"
+      ]
+    },
+    "absorption_candidate_registry": {
+      "status": "pass",
+      "candidate_count": 6,
+      "candidates": [
+        {
+          "candidate_id": "V525-NIL-STABILITY",
+          "source_version": "V525",
+          "module_family": "NIE v2.0 stability",
+          "priority": 1,
+          "target_stage": "stage122",
+          "absorption_status": "ADAPT",
+          "required_adapters": [
+            "stage120_nil_adapter",
+            "gate25_v2_namespace_adapter"
+          ],
+          "required_tests": [
+            "test_stage122_nil_stability_absorption.py"
+          ],
+          "blocked_by": [
+            "C121-003"
+          ]
+        },
+        {
+          "candidate_id": "V525-TIDEAL-LEARNER",
+          "source_version": "V525",
+          "module_family": "adaptive tension objective",
+          "priority": 2,
+          "target_stage": "stage122",
+          "absorption_status": "ADAPT",
+          "required_adapters": [
+            "stage117_tension_curve_bridge"
+          ],
+          "required_tests": [
+            "test_stage122_tideal_learner.py"
+          ],
+          "blocked_by": []
+        },
+        {
+          "candidate_id": "V525-TEMPORAL-CIM",
+          "source_version": "V525",
+          "module_family": "temporal character influence",
+          "priority": 3,
+          "target_stage": "stage122",
+          "absorption_status": "ADAPT",
+          "required_adapters": [
+            "stage115_cim_bridge"
+          ],
+          "required_tests": [
+            "test_stage122_temporal_cim.py"
+          ],
+          "blocked_by": []
+        },
+        {
+          "candidate_id": "V545-ASD-GATE28",
+          "source_version": "V545",
+          "module_family": "Autonomous Story Doctor",
+          "priority": 4,
+          "target_stage": "stage123",
+          "absorption_status": "ADAPT",
+          "required_adapters": [
+            "dry_run_repair_adapter",
+            "gate28_secondary_adapter"
+          ],
+          "required_tests": [
+            "test_stage123_asd_gate28.py"
+          ],
+          "blocked_by": [
+            "C121-005"
+          ]
+        },
+        {
+          "candidate_id": "V555-PNE-GATE29",
+          "source_version": "V555",
+          "module_family": "Predictive Narrative Engine",
+          "priority": 5,
+          "target_stage": "stage124",
+          "absorption_status": "ADAPT",
+          "required_adapters": [
+            "frozen_model_card_adapter",
+            "heuristic_fallback_adapter",
+            "gate29_advisory_adapter"
+          ],
+          "required_tests": [
+            "test_stage124_pne_gate29.py"
+          ],
+          "blocked_by": [
+            "C121-006"
+          ]
+        },
+        {
+          "candidate_id": "GOVERNOR-25-28-29",
+          "source_version": "future",
+          "module_family": "Release gate governor",
+          "priority": 6,
+          "target_stage": "stage125",
+          "absorption_status": "DEFER",
+          "required_adapters": [
+            "multi_gate_arbitration_adapter"
+          ],
+          "required_tests": [
+            "test_stage125_gate_governor.py"
+          ],
+          "blocked_by": [
+            "Gate28/Gate29 not absorbed yet"
+          ]
+        }
+      ],
+      "target_stages": [
+        "stage122",
+        "stage123",
+        "stage124",
+        "stage125"
+      ],
+      "direct_trunk_mutations_allowed": false
+    },
+    "gate_authority_map": {
+      "status": "pass",
+      "entry_count": 5,
+      "entries": [
+        {
+          "gate_id": "Gate25",
+          "source_lineage": "stage120_trunk",
+          "authority_scope": "NIE v1.0 release authority",
+          "release_mode": "PRIMARY",
+          "depends_on": [
+            "stage112",
+            "stage113",
+            "stage114",
+            "stage115",
+            "stage116",
+            "stage117",
+            "stage118",
+            "stage119"
+          ],
+          "conflict_notes": []
+        },
+        {
+          "gate_id": "Gate25-v2",
+          "source_lineage": "v525_candidate",
+          "authority_scope": "NIE v2.0 stability/metalerner candidate",
+          "release_mode": "ADVISORY",
+          "depends_on": [
+            "Gate25"
+          ],
+          "conflict_notes": [
+            "name collision with Stage120 Gate25",
+            "requires Stage122 adapter"
+          ]
+        },
+        {
+          "gate_id": "Gate28",
+          "source_lineage": "v545_candidate",
+          "authority_scope": "ASD story quality / autonomous repair gate",
+          "release_mode": "SECONDARY",
+          "depends_on": [
+            "Gate25"
+          ],
+          "conflict_notes": [
+            "must run dry-run only until Stage123",
+            "must not mutate manuscripts in release gate"
+          ]
+        },
+        {
+          "gate_id": "Gate29",
+          "source_lineage": "v555_candidate",
+          "authority_scope": "PNE predictive debt preemptive gate",
+          "release_mode": "ADVISORY",
+          "depends_on": [
+            "Gate25",
+            "Gate28"
+          ],
+          "conflict_notes": [
+            "ML training prohibited in release gate",
+            "requires frozen fixtures and heuristic fallback"
+          ]
+        },
+        {
+          "gate_id": "Gate25/28/29 Governor",
+          "source_lineage": "future_stage125",
+          "authority_scope": "single final gate arbitration layer",
+          "release_mode": "BLOCKED",
+          "depends_on": [
+            "Gate25",
+            "Gate28",
+            "Gate29"
+          ],
+          "conflict_notes": [
+            "not implemented in Stage121",
+            "target Stage125"
+          ]
+        }
+      ],
+      "primary_gate": "Gate25",
+      "secondary_or_advisory": [
+        "Gate25-v2",
+        "Gate28",
+        "Gate29"
+      ],
+      "future_governor_blocked_until_stage125": true
+    },
+    "packaging_cleanliness_report": {
+      "status": "pass",
+      "trunk": {
+        "stage": "stage120",
+        "sha256": "27aa90f64abdde79e4363ab2707ffec1a005bbbb15234db3732e3fed740b9955",
+        "clean_packaging_pass": true,
+        "has_internal_filelist": true,
+        "has_internal_sha256sums": true,
+        "cache_file_count": 0,
+        "backslash_path_count": 0
+      },
+      "candidates": [
+        {
+          "name": "literary_os_v545_HF.zip",
+          "source_version": "V545_HF",
+          "sha256": "eb23125d410ddb905831796990f891a0b108b2cdd23d10d33be55b90f4972978",
+          "entry_count": 14558,
+          "cache_file_count": 715,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "gate28"
+          ],
+          "observed_reports": [
+            "CHANGELOG_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md",
+            "CHANGELOG_V545_HF.md"
+          ],
+          "notes": [
+            "contains pycache/pyc artifacts",
+            "reference only; direct merge blocked"
+          ]
+        },
+        {
+          "name": "literary_os_v546_cleanup.zip",
+          "source_version": "V546_cleanup",
+          "sha256": "e531ac44a8942e9a2c914e9c33b1ba465e4761ac1d49957b208946dec12f42c5",
+          "entry_count": 14629,
+          "cache_file_count": 0,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "gate28"
+          ],
+          "observed_reports": [
+            "MANIFEST_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md"
+          ],
+          "notes": [
+            "cache cleaned but internal FILELIST/SHA256SUMS absent",
+            "reference only"
+          ]
+        },
+        {
+          "name": "literary_os_v555_PNE.zip",
+          "source_version": "V555_PNE",
+          "sha256": "edb3f94b1cae9849a1c1361fa2e41e805076cdb18adae4c8f0f78f1a05bda7d4",
+          "entry_count": 15080,
+          "cache_file_count": 0,
+          "backslash_path_count": 0,
+          "has_internal_filelist": false,
+          "has_internal_sha256sums": false,
+          "clean_packaging_pass": false,
+          "direct_merge_allowed": false,
+          "observed_modules": [
+            "literary_system/nie",
+            "literary_system/graph_intelligence/asd",
+            "literary_system/predictive",
+            "gate28",
+            "gate29"
+          ],
+          "observed_reports": [
+            "MANIFEST_V525_NIE.md",
+            "CHANGELOG_V545_ASD.md",
+            "tests/test_v551_v555_pne.py"
+          ],
+          "notes": [
+            "PNE/Gate29 candidate present",
+            "internal FILELIST/SHA256SUMS absent",
+            "direct merge blocked"
+          ]
+        }
+      ],
+      "candidate_direct_merge_allowed_count": 0,
+      "candidate_clean_packaging_pass_count": 0,
+      "direct_merge_policy": "blocked_until_clean_repackaging_and_formula_reconciliation"
+    },
+    "stage122_to_stage126_plan": [
+      {
+        "stage": "stage122",
+        "title": "NIE v2.0 Stability Absorption",
+        "candidates": [
+          "V525-NIL-STABILITY",
+          "V525-TIDEAL-LEARNER",
+          "V525-TEMPORAL-CIM"
+        ],
+        "required_adapters": [
+          "stage120_nil_adapter",
+          "gate25_v2_namespace_adapter"
+        ],
+        "blocked_items": [
+          "V525_AMW_ALPHA_BOUNDS wider range"
+        ],
+        "required_tests": [
+          "test_stage122_nil_stability_absorption.py"
+        ],
+        "required_manifests": [
+          "manifests/stage122_manifest.json"
+        ],
+        "required_release_evidence": [
+          "release/current/stage122_release_gate_report.json"
+        ]
+      },
+      {
+        "stage": "stage123",
+        "title": "ASD / Gate28 Absorption",
+        "candidates": [
+          "V545-ASD-GATE28"
+        ],
+        "required_adapters": [
+          "dry_run_repair_adapter",
+          "gate28_secondary_adapter"
+        ],
+        "blocked_items": [
+          "candidate direct merge due packaging"
+        ],
+        "required_tests": [
+          "test_stage123_asd_gate28.py"
+        ],
+        "required_manifests": [
+          "manifests/stage123_manifest.json"
+        ],
+        "required_release_evidence": [
+          "release/current/stage123_release_gate_report.json"
+        ]
+      },
+      {
+        "stage": "stage124",
+        "title": "PNE / Gate29 Absorption",
+        "candidates": [
+          "V555-PNE-GATE29"
+        ],
+        "required_adapters": [
+          "frozen_model_card_adapter",
+          "heuristic_fallback_adapter"
+        ],
+        "blocked_items": [
+          "release-gate runtime training"
+        ],
+        "required_tests": [
+          "test_stage124_pne_gate29.py"
+        ],
+        "required_manifests": [
+          "manifests/stage124_manifest.json"
+        ],
+        "required_release_evidence": [
+          "release/current/stage124_release_gate_report.json"
+        ]
+      },
+      {
+        "stage": "stage125",
+        "title": "Gate25/28/29 Governor",
+        "candidates": [
+          "GOVERNOR-25-28-29"
+        ],
+        "required_adapters": [
+          "multi_gate_arbitration_adapter"
+        ],
+        "blocked_items": [
+          "unabsorbed Gate28/Gate29"
+        ],
+        "required_tests": [
+          "test_stage125_gate_governor.py"
+        ],
+        "required_manifests": [
+          "manifests/stage125_manifest.json"
+        ],
+        "required_release_evidence": [
+          "release/current/stage125_release_gate_report.json"
+        ]
+      },
+      {
+        "stage": "stage126",
+        "title": "Cross-Lineage Intelligence Release",
+        "candidates": [
+          "V525",
+          "V545",
+          "V555"
+        ],
+        "required_adapters": [
+          "clean_packaging_adapter",
+          "cross_lineage_release_manifest"
+        ],
+        "blocked_items": [
+          "any unresolved C121 conflict"
+        ],
+        "required_tests": [
+          "test_stage126_cross_lineage_release.py"
+        ],
+        "required_manifests": [
+          "manifests/stage126_manifest.json"
+        ],
+        "required_release_evidence": [
+          "release/current/stage126_release_gate_report.json"
+        ]
+      }
+    ],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "direct_merge_allowed": false
+  },
+  "stage120_trunk_preserved": true,
+  "candidate_direct_merge_allowed": false,
+  "formula_ledger_entry_count": 9,
+  "conflict_count": 6,
+  "gate_authority_primary": "Gate25",
+  "next_development_order": [
+    "stage122",
+    "stage123",
+    "stage124",
+    "stage125",
+    "stage126"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

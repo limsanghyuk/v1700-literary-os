@@ -1,0 +1,29 @@
+{
+  "stage": "121",
+  "name": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+  "baseline_stage": "120",
+  "status": "implemented",
+  "primary_trunk": "Stage120 Gate25 NIE v1.0 Integrity FIXED",
+  "candidate_branches": ["V545_HF", "V546_cleanup", "V555_PNE"],
+  "direct_merge_allowed": false,
+  "required_reports": [
+    "release/current/stage121_cross_lineage_preflight_report.json",
+    "release/current/stage121_formula_conflict_report.json",
+    "release/current/stage121_packaging_cleanliness_report.json",
+    "release/current/stage121_release_gate_report.json"
+  ],
+  "required_manifests": [
+    "manifests/stage121_formula_ledger.json",
+    "manifests/stage121_lineage_relationship_map.json",
+    "manifests/stage121_conflict_matrix.json",
+    "manifests/stage121_absorption_candidate_registry.json",
+    "manifests/stage121_gate_authority_map.json"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

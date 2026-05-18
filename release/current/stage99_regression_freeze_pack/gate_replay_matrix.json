@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "gates": {
+    "stage95": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage96": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage97": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage97.1": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage97.2": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage98": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

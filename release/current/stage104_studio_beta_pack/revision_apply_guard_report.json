@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "applied_revision_count": 1,
+  "blocked_revision_count": 0,
+  "writer_approval_required": true,
+  "unauthorized_apply_count": 0,
+  "issues": [],
+  "approved_revision_ids": [
+    "rev-001"
+  ]
+}

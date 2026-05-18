@@ -1,0 +1,177 @@
+{
+  "status": "pass",
+  "project_id": "stage98-commercial-studio-fixture",
+  "row_count": 24,
+  "rows": [
+    {
+      "episode_id": "ep-01",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-02",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-03",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-04",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-05",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-06",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-07",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-08",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-09",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-10",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-11",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-12",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-13",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-14",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-15",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-16",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-17",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-18",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-19",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-20",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-21",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-22",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-23",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    },
+    {
+      "episode_id": "ep-24",
+      "microplot_slots": 5,
+      "branchpoint_lineage_preserved": true,
+      "editable": true,
+      "raw_text_cell": false
+    }
+  ],
+  "provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0
+}

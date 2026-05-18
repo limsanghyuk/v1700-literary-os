@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "backup_format": "json_feature_only_project_snapshot",
+  "source_checksum": "f8e0b066fb9264afe0cbc88428422d45bc6dec3b25ec737f104611ae47e75388",
+  "restored_checksum": "f8e0b066fb9264afe0cbc88428422d45bc6dec3b25ec737f104611ae47e75388",
+  "metadata_only": true,
+  "issues": []
+}

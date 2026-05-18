@@ -1,0 +1,10 @@
+{
+  "stage": "108",
+  "status": "pass",
+  "branchpoint_lineage_preserved": true,
+  "traced_symbols": [
+    "run_stage108",
+    "run_editorial_board",
+    "run_stage108_release_gate"
+  ]
+}

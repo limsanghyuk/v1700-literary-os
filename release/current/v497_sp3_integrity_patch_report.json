@@ -1,0 +1,25 @@
+{
+  "stage": "V497-SP3-integrity-patch-over-stage111-package",
+  "baseline_zip": "V1700_stage111_v485_absorption_candidate_bridge_FIXED.zip",
+  "status": "pass",
+  "patches": [
+    "PIIScrubberSP3: credit-card pattern priority/non-overlap masking prevents account-number partial capture",
+    "DatasetCardGenerator: ADR-008 license allow-list rejects proprietary license",
+    "Gate24: documented symbols_checked/symbols_passed keys added while preserving symbols_verified/count",
+    "TraceQualityFilterSP3: deterministic quality/policy filter, exact shingled Jaccard dedup, split result contract",
+    "SyntheticAugmentorSP3: deterministic 3-strategy augmentation with synthetic/source_id traceability",
+    "OTel tracer fallback: get_tracer() always returns a non-null tracer-compatible object",
+    "SemanticCache: conservative lexical cosine threshold prevents low-similarity cache hits",
+    "Historical successor gates: Stage100~Stage109 baseline gates now recognize Stage108~Stage111 successor context where appropriate",
+    "pyproject.toml description updated to V497 — SP1~SP5 Full Build integrated repository"
+  ],
+  "verification": {
+    "compileall_src_tools": "pass",
+    "stage111_release_gate": "pass",
+    "main_release_gate": "pass",
+    "repo_doctor": "pass",
+    "pytest_chunked_total": "324 passed / 0 failed",
+    "pytest_chunking_note": "The monolithic `pytest -q tests` command exceeded the interactive command timeout, so the same collected suite was executed by file chunks. All 324 collected tests passed across chunks."
+  },
+  "created_at_utc": "2026-05-16T14:14:41Z"
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "116",
+  "title": "Domain-Specific RAG Fusion",
+  "verification": {
+    "compileall": "pass",
+    "stage116_domain_rag_fusion": "pass",
+    "stage116_release_gate": "pass",
+    "main_release_gate": "pass",
+    "repo_doctor": "pass",
+    "pytest_collected": 349,
+    "pytest_result": "349 PASS / 0 FAIL (file and chunk execution due session timeout)"
+  },
+  "packaging": {
+    "FILELIST.txt_inside_zip": true,
+    "SHA256SUMS.txt_inside_zip": true,
+    "clean_cache_excluded": true
+  }
+}

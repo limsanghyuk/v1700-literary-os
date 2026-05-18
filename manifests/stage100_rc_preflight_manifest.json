@@ -1,0 +1,14 @@
+{
+  "stage": "100.0",
+  "baseline_stage": "99",
+  "purpose": "Lock GitNexus-aware preflight, GraphNexus authority, and Branchpoint survival before declaring the RC.",
+  "required_pack": "release/current/stage100_gitnexus_rc_pack",
+  "release_blockers": [
+    "stale_gitnexus_index",
+    "orphan_critical_node",
+    "broken_gate_edge",
+    "branchpoint_lineage_broken",
+    "repo_doctor_blocked"
+  ]
+}
+

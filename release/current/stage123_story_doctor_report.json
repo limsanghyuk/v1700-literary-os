@@ -1,0 +1,90 @@
+{
+  "status": "pass",
+  "total_issues": 2,
+  "mutation_allowed": false,
+  "provider_calls": 0,
+  "debt_report": {
+    "status": "pass",
+    "total_debts": 2,
+    "overall_debt_score": 0.4,
+    "items": [
+      {
+        "debt_id": "D-001",
+        "debt_type": "unresolved_secret",
+        "node_id": "secret_birth_record",
+        "label": "Birth Record Secret",
+        "severity": 0.42,
+        "blast_ratio": 0.1,
+        "related_ids": []
+      },
+      {
+        "debt_id": "D-002",
+        "debt_type": "broken_foreshadow",
+        "node_id": "motif_red_scarf",
+        "label": "Red Scarf Payoff",
+        "severity": 0.38,
+        "blast_ratio": 0.08,
+        "related_ids": []
+      }
+    ],
+    "issues": []
+  },
+  "arc_report": {
+    "status": "pass",
+    "total_issues": 0,
+    "overall_score": 0.0,
+    "issues_found": [],
+    "issues": []
+  },
+  "recommendations": [
+    {
+      "recommendation_id": "R-001",
+      "category": "resolve_secret",
+      "node_id": "secret_birth_record",
+      "label": "Birth Record Secret",
+      "severity": 0.42,
+      "blast_ratio": 0.1,
+      "priority_score": 0.483,
+      "source": "debt",
+      "related_ids": []
+    },
+    {
+      "recommendation_id": "R-002",
+      "category": "fix_foreshadow",
+      "node_id": "motif_red_scarf",
+      "label": "Red Scarf Payoff",
+      "severity": 0.38,
+      "blast_ratio": 0.08,
+      "priority_score": 0.4256,
+      "source": "debt",
+      "related_ids": []
+    }
+  ],
+  "high_priority": [],
+  "medium_priority": [
+    {
+      "recommendation_id": "R-001",
+      "category": "resolve_secret",
+      "node_id": "secret_birth_record",
+      "label": "Birth Record Secret",
+      "severity": 0.42,
+      "blast_ratio": 0.1,
+      "priority_score": 0.483,
+      "source": "debt",
+      "related_ids": []
+    },
+    {
+      "recommendation_id": "R-002",
+      "category": "fix_foreshadow",
+      "node_id": "motif_red_scarf",
+      "label": "Red Scarf Payoff",
+      "severity": 0.38,
+      "blast_ratio": 0.08,
+      "priority_score": 0.4256,
+      "source": "debt",
+      "related_ids": []
+    }
+  ],
+  "low_priority": [],
+  "issues": []
+}

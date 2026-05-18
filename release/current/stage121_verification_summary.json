@@ -1,0 +1,23 @@
+{
+  "stage": "121",
+  "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight",
+  "baseline_stage": "120",
+  "status": "pass",
+  "verified_commands": [
+    "python -m compileall -q src tools tests",
+    "python tools/run_stage121_cross_lineage_preflight.py",
+    "python tools/run_stage121_release_gate.py",
+    "python tools/run_release_gate.py",
+    "python tools/run_stage72_repo_doctor.py",
+    "pytest -q tests/test_stage121_cross_lineage_preflight.py tests/test_stage120_gate25_nie_v1.py tests/stage_gates/test_stage72_repo_doctor.py tests/test_stage100_rc_preflight.py tests/test_stage100_release_gate.py tests/test_stage100_v430_comparison_bridge.py tests/test_stage101_release_gate.py"
+  ],
+  "collected_tests": "369 collected by pytest --collect-only",
+  "note": "Full single pytest run was not used as the release authority because legacy/full-suite execution exceeds session limits; Stage121 and relevant predecessor/successor gate tests passed.",
+  "internal_filelist": "FILELIST.txt",
+  "internal_sha256sums": "SHA256SUMS.txt",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0
+}

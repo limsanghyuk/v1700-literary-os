@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "error_id": "STAGE103-DEMO-ERROR",
+  "severity": "WARN",
+  "safe_message": "A recoverable local workflow issue was captured with redacted context.",
+  "raw_prompt_included": false,
+  "credential_included": false,
+  "redaction_policy": "drop_raw_prompt_drop_credentials_keep_stage_tool_and_gate_ids",
+  "issues": []
+}

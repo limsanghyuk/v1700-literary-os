@@ -1,0 +1,17 @@
+{
+  "stage": "115",
+  "title": "CharacterInfluenceMatrix + Structural Balance",
+  "compileall": "pass",
+  "stage115_character_influence_matrix": "pass",
+  "stage115_release_gate": "pass",
+  "main_release_gate": "pass",
+  "repo_doctor": "pass",
+  "pytest_collection": "346 tests collected",
+  "pytest_strategy": "chunked/per-file due session timeout; executed stage115, stage114, stage113, stage112, core gate, historical gate, SP3, node2, and quality-endurance test groups after fixes",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "zip_policy": "FILELIST.txt and SHA256SUMS.txt are included inside the archive as requested."
+}

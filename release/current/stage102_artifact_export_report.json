@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "stage102_release_gate_status": "pass",
+  "canonical_package": "V1700_stage102_real_writer_trial_blind_benchmark_FIXED.zip",
+  "sha256_sidecar": "V1700_stage102_real_writer_trial_blind_benchmark_FIXED.zip.sha256",
+  "filelist": "V1700_stage102_FIXED_filelist.txt",
+  "files": [
+    "release/current/stage102_0_preflight_report.json",
+    "release/current/stage102_blind_benchmark_pack/blind_benchmark_summary.md",
+    "release/current/stage102_blind_benchmark_pack/blind_candidates.json",
+    "release/current/stage102_blind_benchmark_pack/candidate_averages.json",
+    "release/current/stage102_blind_benchmark_pack/reviewer_scorecards.json",
+    "release/current/stage102_blind_benchmark_report.json",
+    "release/current/stage102_developer_handoff_report.md",
+    "release/current/stage102_gitnexus_index_report.json",
+    "release/current/stage102_real_writer_trial_report.json",
+    "release/current/stage102_release_gate_report.json",
+    "release/current/stage102_revision_efficiency_pack/revision_efficiency.json",
+    "release/current/stage102_revision_efficiency_pack/user_feedback_summary.md",
+    "release/current/stage102_revision_efficiency_report.json",
+    "release/current/stage102_writer_trial_pack/writer_trial_summary.md",
+    "release/current/stage102_writer_trial_pack/writer_trial_tasks.json",
+    "release/current/stage102_writer_trial_report.json"
+  ]
+}

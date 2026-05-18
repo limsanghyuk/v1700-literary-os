@@ -1,0 +1,410 @@
+[
+  {
+    "scorecard_id": "score_rev_literary_critic_pkt_prose_fixture",
+    "reviewer_id": "rev_literary_critic",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 9.21,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "LITERARY_CRITIC reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_literary_critic_pkt_scenario_fixture",
+    "reviewer_id": "rev_literary_critic",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 8.95,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "LITERARY_CRITIC reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_literary_critic_pkt_longform_structure",
+    "reviewer_id": "rev_literary_critic",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 9.29,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "LITERARY_CRITIC reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_literary_critic_pkt_production_readiness",
+    "reviewer_id": "rev_literary_critic",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 9.32,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "LITERARY_CRITIC reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_dramaturg_pkt_prose_fixture",
+    "reviewer_id": "rev_dramaturg",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 8.95,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "DRAMATURG reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_dramaturg_pkt_scenario_fixture",
+    "reviewer_id": "rev_dramaturg",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 9.11,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "DRAMATURG reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_dramaturg_pkt_longform_structure",
+    "reviewer_id": "rev_dramaturg",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 9.4,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "DRAMATURG reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_dramaturg_pkt_production_readiness",
+    "reviewer_id": "rev_dramaturg",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 9.32,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "DRAMATURG reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_market_editor_pkt_prose_fixture",
+    "reviewer_id": "rev_market_editor",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 8.53,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "MARKET_EDITOR reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_market_editor_pkt_scenario_fixture",
+    "reviewer_id": "rev_market_editor",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 8.53,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "MARKET_EDITOR reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_market_editor_pkt_longform_structure",
+    "reviewer_id": "rev_market_editor",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 8.85,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "MARKET_EDITOR reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_market_editor_pkt_production_readiness",
+    "reviewer_id": "rev_market_editor",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 8.97,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "MARKET_EDITOR reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_genre_editor_pkt_prose_fixture",
+    "reviewer_id": "rev_genre_editor",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 8.53,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "GENRE_EDITOR reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_genre_editor_pkt_scenario_fixture",
+    "reviewer_id": "rev_genre_editor",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 8.62,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "GENRE_EDITOR reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_genre_editor_pkt_longform_structure",
+    "reviewer_id": "rev_genre_editor",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 8.85,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "GENRE_EDITOR reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_genre_editor_pkt_production_readiness",
+    "reviewer_id": "rev_genre_editor",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 8.88,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "GENRE_EDITOR reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_continuity_auditor_pkt_prose_fixture",
+    "reviewer_id": "rev_continuity_auditor",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 8.95,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "CONTINUITY_AUDITOR reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_continuity_auditor_pkt_scenario_fixture",
+    "reviewer_id": "rev_continuity_auditor",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 8.95,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "CONTINUITY_AUDITOR reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_continuity_auditor_pkt_longform_structure",
+    "reviewer_id": "rev_continuity_auditor",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 9.55,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "CONTINUITY_AUDITOR reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_continuity_auditor_pkt_production_readiness",
+    "reviewer_id": "rev_continuity_auditor",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 9.32,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "CONTINUITY_AUDITOR reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_scenario_producer_pkt_prose_fixture",
+    "reviewer_id": "rev_scenario_producer",
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "score_total": 8.95,
+    "score_breakdown": {
+      "literary_merit": 8.8,
+      "voice_integrity": 8.6,
+      "originality": 8.3,
+      "surface_polish": 8.4
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "SCENARIO_PRODUCER reviewed PROSE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_scenario_producer_pkt_scenario_fixture",
+    "reviewer_id": "rev_scenario_producer",
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "score_total": 9.21,
+    "score_breakdown": {
+      "scene_beat": 8.7,
+      "dialogue_subtext": 8.4,
+      "visual_clarity": 8.8,
+      "production_feasibility": 8.2
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "SCENARIO_PRODUCER reviewed SCENARIO through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_scenario_producer_pkt_longform_structure",
+    "reviewer_id": "rev_scenario_producer",
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "score_total": 9.29,
+    "score_breakdown": {
+      "continuity": 9.1,
+      "payoff_coherence": 8.9,
+      "character_memory": 8.8,
+      "attention_curve": 8.6
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "SCENARIO_PRODUCER reviewed LONGFORM_STRUCTURE through feature-only packet"
+    ]
+  },
+  {
+    "scorecard_id": "score_rev_scenario_producer_pkt_production_readiness",
+    "reviewer_id": "rev_scenario_producer",
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "score_total": 9.32,
+    "score_breakdown": {
+      "workspace_readiness": 8.7,
+      "export_loop": 8.5,
+      "review_queue": 8.8,
+      "privacy_posture": 9.5
+    },
+    "release_relevance": "INFO",
+    "notes": [
+      "SCENARIO_PRODUCER reviewed PRODUCTION_READINESS through feature-only packet"
+    ]
+  }
+]

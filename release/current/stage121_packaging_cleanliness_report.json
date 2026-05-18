@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "trunk": {
+    "stage": "stage120",
+    "sha256": "27aa90f64abdde79e4363ab2707ffec1a005bbbb15234db3732e3fed740b9955",
+    "clean_packaging_pass": true,
+    "has_internal_filelist": true,
+    "has_internal_sha256sums": true,
+    "cache_file_count": 0,
+    "backslash_path_count": 0
+  },
+  "candidates": [
+    {
+      "name": "literary_os_v545_HF.zip",
+      "source_version": "V545_HF",
+      "sha256": "eb23125d410ddb905831796990f891a0b108b2cdd23d10d33be55b90f4972978",
+      "entry_count": 14558,
+      "cache_file_count": 715,
+      "backslash_path_count": 0,
+      "has_internal_filelist": false,
+      "has_internal_sha256sums": false,
+      "clean_packaging_pass": false,
+      "direct_merge_allowed": false,
+      "observed_modules": [
+        "literary_system/nie",
+        "literary_system/graph_intelligence/asd",
+        "gate28"
+      ],
+      "observed_reports": [
+        "CHANGELOG_V525_NIE.md",
+        "CHANGELOG_V545_ASD.md",
+        "CHANGELOG_V545_HF.md"
+      ],
+      "notes": [
+        "contains pycache/pyc artifacts",
+        "reference only; direct merge blocked"
+      ]
+    },
+    {
+      "name": "literary_os_v546_cleanup.zip",
+      "source_version": "V546_cleanup",
+      "sha256": "e531ac44a8942e9a2c914e9c33b1ba465e4761ac1d49957b208946dec12f42c5",
+      "entry_count": 14629,
+      "cache_file_count": 0,
+      "backslash_path_count": 0,
+      "has_internal_filelist": false,
+      "has_internal_sha256sums": false,
+      "clean_packaging_pass": false,
+      "direct_merge_allowed": false,
+      "observed_modules": [
+        "literary_system/nie",
+        "literary_system/graph_intelligence/asd",
+        "gate28"
+      ],
+      "observed_reports": [
+        "MANIFEST_V525_NIE.md",
+        "CHANGELOG_V545_ASD.md"
+      ],
+      "notes": [
+        "cache cleaned but internal FILELIST/SHA256SUMS absent",
+        "reference only"
+      ]
+    },
+    {
+      "name": "literary_os_v555_PNE.zip",
+      "source_version": "V555_PNE",
+      "sha256": "edb3f94b1cae9849a1c1361fa2e41e805076cdb18adae4c8f0f78f1a05bda7d4",
+      "entry_count": 15080,
+      "cache_file_count": 0,
+      "backslash_path_count": 0,
+      "has_internal_filelist": false,
+      "has_internal_sha256sums": false,
+      "clean_packaging_pass": false,
+      "direct_merge_allowed": false,
+      "observed_modules": [
+        "literary_system/nie",
+        "literary_system/graph_intelligence/asd",
+        "literary_system/predictive",
+        "gate28",
+        "gate29"
+      ],
+      "observed_reports": [
+        "MANIFEST_V525_NIE.md",
+        "CHANGELOG_V545_ASD.md",
+        "tests/test_v551_v555_pne.py"
+      ],
+      "notes": [
+        "PNE/Gate29 candidate present",
+        "internal FILELIST/SHA256SUMS absent",
+        "direct merge blocked"
+      ]
+    }
+  ],
+  "candidate_direct_merge_allowed_count": 0,
+  "candidate_clean_packaging_pass_count": 0,
+  "direct_merge_policy": "blocked_until_clean_repackaging_and_formula_reconciliation"
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "100.0",
+  "baseline_stage": "99",
+  "title": "RC Preflight Lock",
+  "index_freshness_status": "pass",
+  "list_repos_status": "pass",
+  "query_context_impact_status": "pass",
+  "detect_changes_status": "pass",
+  "concept_impact_status": "pass",
+  "survival_matrix_status": "pass",
+  "symbol_to_branchpoint_trace_status": "pass",
+  "shape_check_status": "pass",
+  "release_gate_integration_status": "pass",
+  "repo_doctor_status": "pass",
+  "metadata": {
+    "gitnexus_metrics": {
+      "files": 1225,
+      "nodes": 9793,
+      "edges": 15233,
+      "clusters": 162,
+      "flows": 298,
+      "embeddings": 0,
+      "nodes_per_file": 7.994,
+      "edges_per_node": 1.555,
+      "clusters_per_100_files": 13.224,
+      "flows_per_100_files": 24.327
+    },
+    "p0_coverage": 1.0,
+    "p1_coverage": 1.0
+  },
+  "status": "pass",
+  "issues": [],
+  "gitnexus_rc_pack": "release/current/stage100_gitnexus_rc_pack"
+}

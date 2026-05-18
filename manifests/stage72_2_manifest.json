@@ -1,0 +1,34 @@
+{
+  "stage": "Stage72.2",
+  "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+  "status": "implemented",
+  "active_repo": "C:\\AI_Codex\\codex-work\\gpt\\active\\v1700\\literary_generator",
+  "gitnexus_alias": "v1700_stage72_2_ascii",
+  "gitnexus_index_policy": {
+    "optional_runtime_dependency": true,
+    "expected_workspace_root": "C:\\AI_Codex\\codex-work\\gpt",
+    "expected_index_parent": "C:\\AI_Codex\\codex-work\\gpt\\gitnexus_index",
+    "vendor_gitnexus_source": false,
+    "python_fallback_required": true
+  },
+  "capabilities": {
+    "query": "src/v1700/graph_nexus/tools/query.py",
+    "context": "src/v1700/graph_nexus/tools/context.py",
+    "impact": "src/v1700/graph_nexus/tools/impact.py",
+    "detect_changes": "src/v1700/graph_nexus/tools/detect_changes.py",
+    "route_map": "src/v1700/graph_nexus/tools/route_map.py",
+    "tool_map": "src/v1700/graph_nexus/tools/tool_map.py",
+    "shape_check": "src/v1700/graph_nexus/tools/shape_check.py",
+    "skill_generator": "src/v1700/graph_nexus/tools/skill_generator.py",
+    "wiki_generator": "src/v1700/graph_nexus/tools/wiki_generator.py"
+  },
+  "release_invariants": {
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "gitnexus_optional_only": true,
+    "python_fallback_available": true,
+    "embeddings_default_enabled": false,
+    "cypher_default_enabled": false,
+    "auto_rename_default_enabled": false
+  }
+}

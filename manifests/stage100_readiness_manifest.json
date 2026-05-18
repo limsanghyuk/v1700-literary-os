@@ -1,0 +1,14 @@
+{
+  "stage": "100-precheck",
+  "baseline_stage": "99",
+  "purpose": "Declare whether the repository can enter V1700 Literary OS 1.0 RC.",
+  "required_report": "release/current/stage100_readiness_precheck_report.json",
+  "requires": [
+    "stage99_release_gate_pass",
+    "main_release_gate_pass",
+    "repo_doctor_pass",
+    "clean_zip_pass",
+    "security_hardened",
+    "regression_frozen"
+  ]
+}

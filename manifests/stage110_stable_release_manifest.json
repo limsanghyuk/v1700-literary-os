@@ -1,0 +1,6 @@
+{
+  "stage": "110",
+  "stable_release_declared": true,
+  "provider_zero": true,
+  "clean_packaging_required": true
+}

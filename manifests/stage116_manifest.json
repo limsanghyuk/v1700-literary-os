@@ -1,0 +1,30 @@
+{
+  "stage": "stage116",
+  "name": "Domain-Specific RAG Fusion",
+  "baseline_stage": "stage115",
+  "status": "active",
+  "new_packages": [
+    "src/v1700/nie/rag",
+    "src/v1700/stage116"
+  ],
+  "new_gates": [
+    "src/v1700/gates/stage116_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage116_domain_rag_fusion.py",
+    "tools/run_stage116_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage116_domain_rag_fusion.py"
+  ],
+  "release_evidence": [
+    "release/current/stage116_domain_rag_fusion_report.json",
+    "release/current/stage116_release_gate_report.json"
+  ],
+  "invariants": {
+    "llm_query_classification_allowed": false,
+    "embedding_provider_calls_in_release_gate": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

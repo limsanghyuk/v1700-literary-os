@@ -1,0 +1,18 @@
+{
+  "stage": "119",
+  "name": "NIE Adversarial Regression Pack",
+  "baseline_stage": "118",
+  "status": "active",
+  "primary_report": "release/current/stage119_nie_adversarial_regression_report.json",
+  "release_gate_report": "release/current/stage119_release_gate_report.json",
+  "package": "V1700_stage119_nie_adversarial_regression_pack_integrated_repository.zip",
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

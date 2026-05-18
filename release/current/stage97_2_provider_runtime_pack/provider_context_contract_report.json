@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "context": {
+    "series_id": "stage97_2_fixture",
+    "episode_idx": 1,
+    "scene_id": "",
+    "stage": "97.2",
+    "narrative_fitness": 0.91,
+    "endurance_risk": 0.0,
+    "adversarial_severity": "NONE",
+    "provider_hint": "quality",
+    "cost_policy": "bounded",
+    "latency_policy": "normal",
+    "max_tokens": 2000,
+    "temperature": 0.7,
+    "timeout_seconds": 30,
+    "cold_start_timeout_seconds": 90,
+    "release_mode": true,
+    "allow_live_provider_calls": false,
+    "raw_manuscript_allowed": false
+  }
+}

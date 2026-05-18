@@ -1,0 +1,158 @@
+{
+  "stage": "92",
+  "status": "pass",
+  "configured_provider_count": 4,
+  "enabled_provider_count": 4,
+  "provider_kinds": [
+    "claude",
+    "gemini",
+    "gpt",
+    "ollama"
+  ],
+  "route_order": [
+    "local_ollama",
+    "gpt_openai",
+    "claude_anthropic",
+    "gemini_google"
+  ],
+  "health_checks": [
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "status": "configured_dry_run",
+      "configured": true,
+      "live_call_performed": false,
+      "endpoint": "http://127.0.0.1:11434/api/chat",
+      "model": "llama3.1",
+      "api_key_env": null,
+      "issues": []
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "status": "configured_dry_run",
+      "configured": true,
+      "live_call_performed": false,
+      "endpoint": "https://api.openai.com/v1/responses",
+      "model": "gpt-4.1-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "issues": [
+        "secret_env_not_present_but_not_required_for_dry_run"
+      ]
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "status": "configured_dry_run",
+      "configured": true,
+      "live_call_performed": false,
+      "endpoint": "https://api.anthropic.com/v1/messages",
+      "model": "claude-3-5-sonnet-latest",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "issues": [
+        "secret_env_not_present_but_not_required_for_dry_run"
+      ]
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "status": "configured_dry_run",
+      "configured": true,
+      "live_call_performed": false,
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+      "model": "gemini-1.5-flash",
+      "api_key_env": "GOOGLE_API_KEY",
+      "issues": [
+        "secret_env_not_present_but_not_required_for_dry_run"
+      ]
+    }
+  ],
+  "dry_run_responses": [
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "request_id": "stage92-multi-provider-smoke",
+      "status": "dry_run_ready",
+      "content_sha256": "3F97059F723B771434B70D432BB5EA17EDAF689C7FF7613B266072BE2C795346",
+      "content_preview": "[local_ollama] dry-run adapter ready for task=studio_adapter_probe; no provider call performed.",
+      "live_call_performed": false,
+      "payload_preview": {
+        "endpoint": "http://127.0.0.1:11434/api/chat",
+        "model": "llama3.1",
+        "messages": "<redacted-for-release-evidence>",
+        "stream": false,
+        "options": {
+          "temperature": 0.2,
+          "num_predict": 1024
+        }
+      },
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "request_id": "stage92-multi-provider-smoke",
+      "status": "dry_run_ready",
+      "content_sha256": "1CD31445C6A5499598C0D7ED7ADBF54F7C61A8E613510108C4058C4E4F34F976",
+      "content_preview": "[gpt_openai] dry-run adapter ready for task=studio_adapter_probe; no provider call performed.",
+      "live_call_performed": false,
+      "payload_preview": {
+        "endpoint": "https://api.openai.com/v1/responses",
+        "model": "gpt-4.1-mini",
+        "input": "<redacted-for-release-evidence>",
+        "temperature": 0.2,
+        "max_output_tokens": 1024
+      },
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "request_id": "stage92-multi-provider-smoke",
+      "status": "dry_run_ready",
+      "content_sha256": "E03F2297B546707A5E6FC681222AB1FFD721B99B9A35E202625D52C17670FB4D",
+      "content_preview": "[claude_anthropic] dry-run adapter ready for task=studio_adapter_probe; no provider call performed.",
+      "live_call_performed": false,
+      "payload_preview": {
+        "endpoint": "https://api.anthropic.com/v1/messages",
+        "model": "claude-3-5-sonnet-latest",
+        "max_tokens": 1024,
+        "temperature": 0.2,
+        "messages": "<redacted-for-release-evidence>",
+        "system": "You are a provider adapter probe. Do not reveal V1700 internals."
+      },
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "request_id": "stage92-multi-provider-smoke",
+      "status": "dry_run_ready",
+      "content_sha256": "4BD5725BC929F29972982FA57B4CDBF545AD71DDB7715673AA6145E4A49EBD1A",
+      "content_preview": "[gemini_google] dry-run adapter ready for task=studio_adapter_probe; no provider call performed.",
+      "live_call_performed": false,
+      "payload_preview": {
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+        "model": "gemini-1.5-flash",
+        "contents": "<redacted-for-release-evidence>",
+        "generationConfig": {
+          "temperature": 0.2,
+          "maxOutputTokens": 1024
+        }
+      },
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "live_call_count": 0,
+  "issues": []
+}

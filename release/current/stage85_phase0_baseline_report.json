@@ -1,0 +1,10 @@
+{
+  "stage": "85",
+  "status": "pass",
+  "title": "Stage85 Phase0 Baseline Lock",
+  "stage84_preserved": true,
+  "graph_nexus_preserved": true,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "gitnexus_density_baseline": true
+}

@@ -1,0 +1,61 @@
+{
+  "stage": "89",
+  "title": "Writer Studio UI + Export Pipeline",
+  "status": "pass",
+  "depends_on": [
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "required_outputs": [
+    "src/v1700/writer_studio/contracts.py",
+    "src/v1700/writer_studio/workspace.py",
+    "src/v1700/writer_studio/export_pipeline.py",
+    "src/v1700/gates/stage89_release_gate.py",
+    "tools/run_stage89_writer_studio.py",
+    "tools/run_stage89_export_pipeline.py",
+    "tools/run_stage89_release_gate.py",
+    "tools/export_stage89_artifacts.py",
+    "tests/test_stage89_writer_studio_export.py",
+    "manifests/stage89_branchpoint_trace_manifest.json",
+    "release/current/stage89_writer_studio_workspace.json",
+    "release/current/stage89_export_bundle_report.json",
+    "release/current/stage89_release_gate_report.json"
+  ],
+  "writer_studio_targets": {
+    "minimum_panel_count": 8,
+    "panel_ids": [
+      "story_bible",
+      "episode_board",
+      "scene_card_board",
+      "character_knowledge_board",
+      "reveal_budget_board",
+      "agent_benchmark_panel",
+      "branchpoint_impact_panel",
+      "export_pipeline_panel"
+    ],
+    "export_targets": [
+      "markdown",
+      "json",
+      "html",
+      "platform_serialization_pack",
+      "scene_csv"
+    ]
+  },
+  "export_pipeline_targets": {
+    "minimum_artifact_count": 5,
+    "formats": [
+      "html",
+      "json",
+      "markdown",
+      "platform_serialization_pack",
+      "scene_csv"
+    ],
+    "artifact_count": 5
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

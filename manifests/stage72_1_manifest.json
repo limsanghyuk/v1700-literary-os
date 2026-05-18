@@ -1,0 +1,18 @@
+{
+  "stage": "Stage72.1",
+  "title": "GraphNexus Restoration Patch",
+  "status": "implemented",
+  "deliverables": [
+    "src/v1700/graph_nexus",
+    "src/v1700/sidecars/gitnexus",
+    "src/v1700/gates/graph_nexus_release_gate.py",
+    "tools/run_graph_nexus_release_gate.py",
+    "tests/test_stage72_1_graph_nexus_release_gate.py"
+  ],
+  "acceptance": {
+    "gitnexus_optional_only": true,
+    "python_fallback_available": true,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  }
+}

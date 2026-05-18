@@ -1,0 +1,10 @@
+{
+  "stage": "110",
+  "baseline_stage": "109",
+  "title": "V1700 Literary OS 1.0 Stable",
+  "status": "stable",
+  "required_reports": [
+    "release/current/stage110_release_gate_report.json",
+    "release/current/stage110_literary_os_stable_report.json"
+  ]
+}

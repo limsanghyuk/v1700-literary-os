@@ -1,0 +1,25 @@
+{
+  "stage": "112",
+  "title": "GitNexus NIE Preflight Manifest",
+  "tool_order": [
+    "index_status",
+    "stale_index_detector",
+    "list_repos",
+    "query",
+    "context",
+    "impact",
+    "detect_changes",
+    "concept_impact",
+    "survival_matrix",
+    "symbol_to_branchpoint_trace",
+    "shape_check",
+    "change_review",
+    "release_gate_integration"
+  ],
+  "python_fallback_required": true,
+  "result_normalizer_required": true,
+  "shape_check_required": true,
+  "release_gate_integration_required": true,
+  "repo_doctor_integration_required": true
+}
+

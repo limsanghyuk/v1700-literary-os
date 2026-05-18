@@ -1,0 +1,38 @@
+{
+  "stage": "83.1",
+  "status": "pass",
+  "gitnexus_role": "optional_sidecar",
+  "graphnexus_role": "CodeGraph + NarrativeGraph + StageLineageGraph",
+  "branchpoint_logic_graph_role": "Core logic survival and stale-manifest protection.",
+  "bridges": [
+    {
+      "bridge_id": "gitnexus_to_codegraph",
+      "source": "GitNexus",
+      "target": "GraphNexus.CodeGraph",
+      "contract": "Index code impact without becoming narrative authority.",
+      "evidence": [
+        "docs/concepts/gitnexus_optional_sidecar.md",
+        "manifests/gitnexus_optional_sidecar_manifest.json"
+      ]
+    },
+    {
+      "bridge_id": "codegraph_to_branchpoint_logic_graph",
+      "source": "GraphNexus.CodeGraph",
+      "target": "BranchpointLogicGraph",
+      "contract": "Map implementation files to branchpoint logic IDs.",
+      "evidence": [
+        "manifests/branchpoint_model_registry_v2.json",
+        "manifests/core_logic_survival_matrix_v3.json"
+      ]
+    },
+    {
+      "bridge_id": "stage_lineage_to_release_gate",
+      "source": "GraphNexus.StageLineageGraph",
+      "target": "Stage83.1ReleaseGate",
+      "contract": "Prevent Stage84 from mounting V370 runtime muscle on stale Stage75/81.1 manifests.",
+      "evidence": [
+        "src/v1700/gates/stage83_1_release_gate.py"
+      ]
+    }
+  ]
+}

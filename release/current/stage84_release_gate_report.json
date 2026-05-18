@@ -1,0 +1,159 @@
+{
+  "stage": "84",
+  "status": "pass",
+  "issues": [],
+  "claim": "Stage84 release gate proves V370 runtime absorption under V1700 hierarchy, local-first provider-zero execution, and Node2 reveal safety.",
+  "stage84_absorption_smoke": {
+    "stage": "84",
+    "status": "pass",
+    "issues": [],
+    "claim": "Stage84 absorbs Claude V370 runtime muscle into V1700 Korean Drama OS without breaking Stage80 hierarchy, provider-zero local-first execution, or Node2 reveal authority boundaries.",
+    "stage83_1_consistency_audit": {
+      "status": "pass",
+      "issues": []
+    },
+    "stage80_hierarchy_preserved": true,
+    "v370_feature_map_manifest": {
+      "stage": "84",
+      "status": "mapped",
+      "source_archive": "literary_os_v370_release.zip",
+      "principle": "Map Claude V370 runtime features into V1700 contracts rather than copying authority boundaries wholesale.",
+      "features": [
+        {
+          "v370_feature": "ClosedLoopRenderOrchestratorV2",
+          "v1700_absorption": "ClosedLoopRenderer",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "KoreanAntiLLMFilter",
+          "v1700_absorption": "KoreanAntiLLMFilter",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "StyleDNA",
+          "v1700_absorption": "StyleDNA",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "SensoryAnchorInjector",
+          "v1700_absorption": "SensoryAnchorInjector",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "EmotionToBehaviorRenderer",
+          "v1700_absorption": "EmotionToBehaviorRenderer",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "KoreanRhythmRewriter",
+          "v1700_absorption": "KoreanRhythmRewriter",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "ReaderSurfaceScorer",
+          "v1700_absorption": "ReaderSurfaceScorer",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "LocalJudgmentValidator",
+          "v1700_absorption": "LocalJudgmentValidator",
+          "status": "absorbed"
+        },
+        {
+          "v370_feature": "LLMNodeRouter / ClaudeAdapter / OllamaAdapter / MockAdapter",
+          "v1700_absorption": "LLMNodeRouter with provider default calls locked to 0",
+          "status": "safe_mock_absorbed"
+        },
+        {
+          "v370_feature": "SelfLearningCollector / trace dataset",
+          "v1700_absorption": "SelfLearningCollector local JSONL trace dataset",
+          "status": "absorbed"
+        }
+      ]
+    },
+    "absorption_decision_matrix": {
+      "stage": "84",
+      "status": "pass",
+      "decisions": [
+        {
+          "decision": "copy_wholesale_v370",
+          "result": "rejected",
+          "risk": "Would bypass V1700 node authority, hierarchy, gates, and release evidence."
+        },
+        {
+          "decision": "adapter_only",
+          "result": "rejected",
+          "risk": "Would add routing without improving reader-facing prose surface."
+        },
+        {
+          "decision": "surface_runtime_absorption",
+          "result": "selected",
+          "reason": "Absorbs V370 muscle while preserving V1700 Korean drama skeleton and provider-zero contract."
+        },
+        {
+          "decision": "provider_default_calls",
+          "result": "locked_to_zero",
+          "reason": "Commercial candidate remains local-first by default."
+        },
+        {
+          "decision": "node2_raw_reveal_access",
+          "result": "locked_to_zero",
+          "reason": "Node2 may improve surface only and cannot access raw reveal authority."
+        }
+      ]
+    },
+    "closed_loop_render_result": {
+      "status": "pass",
+      "scene_id": "stage84_scene_001",
+      "genre_id": "literary",
+      "text": "문틈으로 들어오던 바람이 멎었다. 그는 식은 숨이 한 번 새어 나왔다. 하지만 말하지 않았다.\n\n컵 가장자리의 찬기가 손끝에 남았다. 복도 끝에서 엘리베이터가 낮게 울렸다.",
+      "scores": {
+        "anti_llm": 10.0,
+        "emotion_to_behavior": 9.0,
+        "rhythm": 7.735,
+        "sensory_afterimage": 8.05,
+        "korean_dialogue_surface": 8.4,
+        "reader_surface_average": 8.637
+      },
+      "validator": {
+        "status": "pass",
+        "issues": [],
+        "average": 8.637,
+        "scores": {
+          "anti_llm": 10.0,
+          "emotion_to_behavior": 9.0,
+          "rhythm": 7.735,
+          "sensory_afterimage": 8.05,
+          "korean_dialogue_surface": 8.4,
+          "reader_surface_average": 8.637
+        }
+      },
+      "replacements": [
+        [
+          "그 순간, 모든 것이 달라질 것만 같았다",
+          "문틈으로 들어오던 바람이 멎었다"
+        ],
+        [
+          "복잡한 감정이 밀려왔다",
+          "식은 숨이 한 번 새어 나왔다"
+        ]
+      ],
+      "anchors": [
+        "컵 가장자리의 찬기가 손끝에 남았다.",
+        "복도 끝에서 엘리베이터가 낮게 울렸다."
+      ],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0
+    },
+    "trace_dataset_statistics": {
+      "total_records": 1,
+      "accepted_records": 1,
+      "accepted_rate": 1.0
+    },
+    "trace_dataset_path": "release/current/stage84_trace_dataset/stage84_trace_dataset.jsonl",
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

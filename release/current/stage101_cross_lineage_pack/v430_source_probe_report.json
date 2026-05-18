@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "source_status": "MISSING",
+  "source_available": false,
+  "source_paths": [],
+  "absorption_mode": "fixture_contract_validation",
+  "v430_untraced_merge": false
+}

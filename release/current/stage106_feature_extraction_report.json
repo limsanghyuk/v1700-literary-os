@@ -1,0 +1,55 @@
+{
+  "stage": "106.1",
+  "title": "Feature-only Author Style Extraction",
+  "status": "pass",
+  "project_id": "stage106_sample_author",
+  "feature_vector_count": 3,
+  "feature_vectors": [
+    {
+      "project_id": "stage106_sample_author",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.68,
+      "sensory_density": 0.74,
+      "dialogue_ratio": 0.31,
+      "introspection_ratio": 0.62,
+      "scene_motion_ratio": 0.41,
+      "lexical_signature_hash": "f6451c9a0551c86c",
+      "raw_text_retained": false
+    },
+    {
+      "project_id": "stage106_sample_author",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.71,
+      "sensory_density": 0.69,
+      "dialogue_ratio": 0.36,
+      "introspection_ratio": 0.57,
+      "scene_motion_ratio": 0.46,
+      "lexical_signature_hash": "e92ad09129ace8ef",
+      "raw_text_retained": false
+    },
+    {
+      "project_id": "stage106_sample_author",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.66,
+      "sensory_density": 0.77,
+      "dialogue_ratio": 0.29,
+      "introspection_ratio": 0.65,
+      "scene_motion_ratio": 0.38,
+      "lexical_signature_hash": "5c8762a8a55bf85c",
+      "raw_text_retained": false
+    }
+  ],
+  "raw_text_retained": false,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_call_count": 0,
+  "privacy_guard": {
+    "stage": "106.privacy",
+    "status": "pass",
+    "issues": [],
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_retained": false,
+    "provider_export_allowed": false,
+    "feature_only": true,
+    "credential_leakage": 0
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "stage": "105.3",
+  "title": "Creative Arbitration Decisions",
+  "status": "pass",
+  "issues": [],
+  "decision_count": 3,
+  "decisions": [
+    {
+      "decision_id": "decision_prose_surface",
+      "mode": "PROSE",
+      "selected_candidate_ids": [
+        "cand_dialogue_claude_fixture",
+        "cand_structure_gpt_fixture",
+        "cand_local_ollama_fixture"
+      ],
+      "rejected_candidate_ids": [
+        "cand_release_fixture_control",
+        "cand_visual_gemini_fixture"
+      ],
+      "merge_policy": "dialogue_subtext_plus_structure_local_privacy",
+      "final_authority": "V1700_Node3_Critic_Gate",
+      "provider_call_count": 0,
+      "raw_manuscript_leakage": 0,
+      "status": "PASS"
+    },
+    {
+      "decision_id": "decision_scenario_room",
+      "mode": "SCENARIO",
+      "selected_candidate_ids": [
+        "cand_visual_gemini_fixture",
+        "cand_release_fixture_control",
+        "cand_structure_gpt_fixture"
+      ],
+      "rejected_candidate_ids": [
+        "cand_dialogue_claude_fixture",
+        "cand_local_ollama_fixture"
+      ],
+      "merge_policy": "visual_beats_plus_fixture_scenario_contract",
+      "final_authority": "V1700_Scenario_Room_Gate",
+      "provider_call_count": 0,
+      "raw_manuscript_leakage": 0,
+      "status": "PASS"
+    },
+    {
+      "decision_id": "decision_hybrid_studio",
+      "mode": "HYBRID",
+      "selected_candidate_ids": [
+        "cand_structure_gpt_fixture",
+        "cand_dialogue_claude_fixture",
+        "cand_visual_gemini_fixture",
+        "cand_local_ollama_fixture"
+      ],
+      "rejected_candidate_ids": [
+        "cand_release_fixture_control"
+      ],
+      "merge_policy": "role_weighted_multi_lane_with_writer_approval",
+      "final_authority": "V1700_Studio_Beta_Review_Queue",
+      "provider_call_count": 0,
+      "raw_manuscript_leakage": 0,
+      "status": "PASS"
+    }
+  ],
+  "final_authority": "V1700 gates, not providers"
+}

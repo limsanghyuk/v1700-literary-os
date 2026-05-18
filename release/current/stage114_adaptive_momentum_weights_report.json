@@ -1,0 +1,147 @@
+{
+  "stage": "114",
+  "baseline_stage": "113",
+  "title": "AdaptiveMomentumWeights",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "114",
+    "baseline_stage": "113",
+    "title": "AdaptiveMomentumWeights",
+    "alpha_min": 0.3,
+    "alpha_max": 0.8,
+    "max_single_alpha_shift": 0.03,
+    "max_run_total_alpha_shift": 0.1,
+    "mae_live_calls_allowed_in_release_gate": false,
+    "physics_reward_bridge_llm_calls_allowed": false,
+    "protected_policy": {
+      "surface_safety_tolerance_can_loosen": false,
+      "branchpoint_sensitivity_can_decrease": false,
+      "provider_zero_policy_can_change": false,
+      "node2_raw_reveal_tolerance": 0
+    },
+    "next_development_order": [
+      "Stage115",
+      "Stage116",
+      "Stage117",
+      "Stage118",
+      "Stage119",
+      "Stage120"
+    ]
+  },
+  "adaptive_momentum_weights": {
+    "stage": "114",
+    "status": "pass",
+    "genre": "melodrama",
+    "scene_id": "stage114_fixture_scene_001",
+    "alpha_before": {
+      "tension": 0.55,
+      "sympathy": 0.65,
+      "dread": 0.4,
+      "catharsis": 0.55
+    },
+    "alpha_after": {
+      "tension": 0.550086,
+      "sympathy": 0.64999,
+      "dread": 0.40004,
+      "catharsis": 0.550034
+    },
+    "updates": [
+      {
+        "dim": "tension",
+        "alpha_before": 0.55,
+        "process_signal": 0.82,
+        "observation_signal": 0.63,
+        "mae_dim_score": 0.78,
+        "delta_dim": 0.7345,
+        "loss": 0.00207,
+        "gradient": -0.01729,
+        "raw_alpha_after": 0.550086,
+        "alpha_after": 0.550086,
+        "shift": 8.6e-05,
+        "clamped": false,
+        "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+      },
+      {
+        "dim": "sympathy",
+        "alpha_before": 0.65,
+        "process_signal": 0.68,
+        "observation_signal": 0.76,
+        "mae_dim_score": 0.72,
+        "delta_dim": 0.708,
+        "loss": 0.000144,
+        "gradient": 0.00192,
+        "raw_alpha_after": 0.64999,
+        "alpha_after": 0.64999,
+        "shift": -1e-05,
+        "clamped": false,
+        "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+      },
+      {
+        "dim": "dread",
+        "alpha_before": 0.4,
+        "process_signal": 0.58,
+        "observation_signal": 0.52,
+        "mae_dim_score": 0.61,
+        "delta_dim": 0.544,
+        "loss": 0.004356,
+        "gradient": -0.00792,
+        "raw_alpha_after": 0.40004,
+        "alpha_after": 0.40004,
+        "shift": 4e-05,
+        "clamped": false,
+        "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+      },
+      {
+        "dim": "catharsis",
+        "alpha_before": 0.55,
+        "process_signal": 0.66,
+        "observation_signal": 0.6,
+        "mae_dim_score": 0.69,
+        "delta_dim": 0.633,
+        "loss": 0.003249,
+        "gradient": -0.00684,
+        "raw_alpha_after": 0.550034,
+        "alpha_after": 0.550034,
+        "shift": 3.4e-05,
+        "clamped": false,
+        "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+      }
+    ],
+    "drift_guard": {
+      "status": "pass",
+      "alpha_min": 0.3,
+      "alpha_max": 0.8,
+      "max_single_shift": 0.03,
+      "max_run_total_shift": 0.1,
+      "observed_max_single_shift": 8.6e-05,
+      "observed_run_total_shift": 0.00017,
+      "protected_policy": {
+        "surface_safety_tolerance_can_loosen": false,
+        "branchpoint_sensitivity_can_decrease": false,
+        "provider_zero_policy_can_change": false,
+        "node2_raw_reveal_tolerance": 0
+      },
+      "issues": []
+    },
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "issues": []
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage115",
+    "Stage116",
+    "Stage117",
+    "Stage118",
+    "Stage119",
+    "Stage120"
+  ]
+}

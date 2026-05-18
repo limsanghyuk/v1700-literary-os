@@ -1,0 +1,23 @@
+{
+  "stage": "81",
+  "name": "Quality & Refinement Endurance System",
+  "purpose": "Apply Stage56/57 literary quality and refinement logic to actual rendered Korean drama scenes.",
+  "source_stage_lineage": ["Stage56", "Stage57", "Stage80"],
+  "quality_axes": [
+    "anti_llm",
+    "emotion_accessibility",
+    "naturalness",
+    "rhythm",
+    "dialogue_taste",
+    "sensory_afterimage",
+    "causality",
+    "character_relation",
+    "mise_en_scene",
+    "reveal_safety"
+  ],
+  "minimum_actual_rendered_scenes": 30,
+  "minimum_average_quality_after": 8.0,
+  "minimum_average_delta": 0.5,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

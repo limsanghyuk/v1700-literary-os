@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "precision_target": 0.7,
+  "runtime_retraining_triggered": false,
+  "metrics": {
+    "total": 6,
+    "tp": 3,
+    "fp": 1,
+    "fn": 0,
+    "tn": 2,
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.857143,
+    "accuracy": 0.833333
+  },
+  "records": [
+    {
+      "scene_id": "s101",
+      "category": "unresolved_secret",
+      "predicted_probability": 0.78,
+      "predicted_high": true,
+      "actual_occurred": true,
+      "threshold": 0.6
+    },
+    {
+      "scene_id": "s102",
+      "category": "broken_foreshadow",
+      "predicted_probability": 0.71,
+      "predicted_high": true,
+      "actual_occurred": true,
+      "threshold": 0.6
+    },
+    {
+      "scene_id": "s103",
+      "category": "arc_contradiction",
+      "predicted_probability": 0.82,
+      "predicted_high": true,
+      "actual_occurred": true,
+      "threshold": 0.6
+    },
+    {
+      "scene_id": "s104",
+      "category": "arc_post_death",
+      "predicted_probability": 0.66,
+      "predicted_high": true,
+      "actual_occurred": false,
+      "threshold": 0.6
+    },
+    {
+      "scene_id": "s105",
+      "category": "abandoned_thread",
+      "predicted_probability": 0.32,
+      "predicted_high": false,
+      "actual_occurred": false,
+      "threshold": 0.6
+    },
+    {
+      "scene_id": "s106",
+      "category": "arc_inversion",
+      "predicted_probability": 0.28,
+      "predicted_high": false,
+      "actual_occurred": false,
+      "threshold": 0.6
+    }
+  ],
+  "issues": []
+}

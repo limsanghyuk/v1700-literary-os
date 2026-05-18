@@ -1,0 +1,28 @@
+{
+  "stage": "102.3",
+  "baseline_stage": "102.2",
+  "title": "Revision Efficiency and Continuity Audit",
+  "status": "pass",
+  "issues": [],
+  "revision_efficiency": {
+    "baseline_revision_minutes": 320,
+    "v1700_revision_minutes": 172,
+    "issue_count_before": 24,
+    "issue_count_after": 8,
+    "unresolved_block_items": 0,
+    "plot_consistency_status": "PASS",
+    "payoff_debt_status": "PASS",
+    "scene_necessity_status": "PASS",
+    "revision_time_reduction_ratio": 0.463,
+    "issue_reduction_ratio": 0.667
+  },
+  "revision_time_reduction_ratio": 0.463,
+  "issue_reduction_ratio": 0.667,
+  "plot_consistency_status": "PASS",
+  "payoff_debt_status": "PASS",
+  "scene_necessity_status": "PASS",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0
+}

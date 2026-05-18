@@ -1,0 +1,549 @@
+{
+  "stage": "79",
+  "status": "pass",
+  "issues": [],
+  "final_output": {
+    "kind": "stage79_integrated_smoke_output",
+    "season_arc": "침묵한 조력자와 사라진 증거를 둘러싼 장편 드라마를 인물의 신뢰 붕괴와 회복 불가능한 선택으로 밀어붙이는 시즌 아크",
+    "episode_count": 3,
+    "sequence_count_total": 29,
+    "scene_count_total": 532,
+    "rendered_scene_count": 3,
+    "selected_reader_surface_text": "그는 조력자의 침묵이 우연이 아님을 감지한다. 대답 대신 창문에 맺힌 물방울을 손끝으로 지웠다.",
+    "drama_pressure_peak": 0.91
+  },
+  "longform_execution": {
+    "status": "pass",
+    "plan": {
+      "prompt": "침묵한 조력자와 사라진 증거를 둘러싼 장편 드라마",
+      "season_arc": "침묵한 조력자와 사라진 증거를 둘러싼 장편 드라마를 인물의 신뢰 붕괴와 회복 불가능한 선택으로 밀어붙이는 시즌 아크",
+      "trilogy_proof": [
+        "1막: 관계의 균열을 작은 행동과 누락된 대답으로 증명한다.",
+        "2막: 과거 사건의 잔향이 현재 선택을 압박한다.",
+        "3막: reveal은 폭로가 아니라 돌이킬 수 없는 행동의 결과로 도착한다."
+      ],
+      "episodes": [
+        {
+          "episode_id": "EP01",
+          "title": "균열의 첫 장면",
+          "major_turn": "주인공은 조력자의 침묵이 우연이 아님을 감지한다.",
+          "sequences": [
+            {
+              "sequence_id": "EP01_SQ01",
+              "objective": "표면 목표를 세운다",
+              "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+              "emotional_shift": "안도→의심",
+              "reveal_boundary": "핵심 reveal 금지"
+            },
+            {
+              "sequence_id": "EP01_SQ02",
+              "objective": "관계 압력을 높인다",
+              "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+              "emotional_shift": "의심→불신",
+              "reveal_boundary": "복선은 사물로만 남김"
+            },
+            {
+              "sequence_id": "EP01_SQ03",
+              "objective": "행동 결과를 남긴다",
+              "conflict": "선택과 회피의 충돌",
+              "emotional_shift": "불신→결심",
+              "reveal_boundary": "정답 공개 금지"
+            }
+          ]
+        },
+        {
+          "episode_id": "EP02",
+          "title": "잔향의 역류",
+          "major_turn": "과거 사건의 흔적이 현재의 동선을 바꾼다.",
+          "sequences": [
+            {
+              "sequence_id": "EP02_SQ01",
+              "objective": "표면 목표를 세운다",
+              "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+              "emotional_shift": "안도→의심",
+              "reveal_boundary": "핵심 reveal 금지"
+            },
+            {
+              "sequence_id": "EP02_SQ02",
+              "objective": "관계 압력을 높인다",
+              "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+              "emotional_shift": "의심→불신",
+              "reveal_boundary": "복선은 사물로만 남김"
+            },
+            {
+              "sequence_id": "EP02_SQ03",
+              "objective": "행동 결과를 남긴다",
+              "conflict": "선택과 회피의 충돌",
+              "emotional_shift": "불신→결심",
+              "reveal_boundary": "정답 공개 금지"
+            }
+          ]
+        },
+        {
+          "episode_id": "EP03",
+          "title": "선택의 비용",
+          "major_turn": "관계는 회복이 아니라 비용 지불로 종결된다.",
+          "sequences": [
+            {
+              "sequence_id": "EP03_SQ01",
+              "objective": "표면 목표를 세운다",
+              "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+              "emotional_shift": "안도→의심",
+              "reveal_boundary": "핵심 reveal 금지"
+            },
+            {
+              "sequence_id": "EP03_SQ02",
+              "objective": "관계 압력을 높인다",
+              "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+              "emotional_shift": "의심→불신",
+              "reveal_boundary": "복선은 사물로만 남김"
+            },
+            {
+              "sequence_id": "EP03_SQ03",
+              "objective": "행동 결과를 남긴다",
+              "conflict": "선택과 회피의 충돌",
+              "emotional_shift": "불신→결심",
+              "reveal_boundary": "정답 공개 금지"
+            }
+          ]
+        }
+      ]
+    },
+    "scenes": [
+      {
+        "scene_id": "EP01_SC01",
+        "scene_goal": "주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다",
+        "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+        "emotional_delta": {
+          "from": "안도",
+          "to": "불신"
+        },
+        "must_keep_facts": [
+          "조력자는 결정적인 질문에 대답하지 않았다",
+          "주인공은 조력자의 침묵이 우연이 아님을 감지한다."
+        ],
+        "forbidden_reveals": [
+          "조력자가 범인",
+          "최종 비밀의 이름"
+        ],
+        "timeline_position": "EP01_NIGHT",
+        "character_state_refs": [
+          "protagonist:trust_fracture",
+          "ally:withheld_answer"
+        ],
+        "dialogue_seed": "아직 말하지 않은 게 있지.",
+        "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+      },
+      {
+        "scene_id": "EP02_SC01",
+        "scene_goal": "과거 사건의 흔적이 현재의 동선을 바꾼다. 표면 목표를 세운다",
+        "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+        "emotional_delta": {
+          "from": "안도",
+          "to": "불신"
+        },
+        "must_keep_facts": [
+          "조력자는 결정적인 질문에 대답하지 않았다",
+          "과거 사건의 흔적이 현재의 동선을 바꾼다."
+        ],
+        "forbidden_reveals": [
+          "조력자가 범인",
+          "최종 비밀의 이름"
+        ],
+        "timeline_position": "EP02_NIGHT",
+        "character_state_refs": [
+          "protagonist:trust_fracture",
+          "ally:withheld_answer"
+        ],
+        "dialogue_seed": "아직 말하지 않은 게 있지.",
+        "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+      },
+      {
+        "scene_id": "EP03_SC01",
+        "scene_goal": "관계는 회복이 아니라 비용 지불로 종결된다. 표면 목표를 세운다",
+        "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+        "emotional_delta": {
+          "from": "안도",
+          "to": "불신"
+        },
+        "must_keep_facts": [
+          "조력자는 결정적인 질문에 대답하지 않았다",
+          "관계는 회복이 아니라 비용 지불로 종결된다."
+        ],
+        "forbidden_reveals": [
+          "조력자가 범인",
+          "최종 비밀의 이름"
+        ],
+        "timeline_position": "EP03_NIGHT",
+        "character_state_refs": [
+          "protagonist:trust_fracture",
+          "ally:withheld_answer"
+        ],
+        "dialogue_seed": "아직 말하지 않은 게 있지.",
+        "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+      }
+    ],
+    "rendered": [
+      {
+        "scene_id": "EP01_SC01",
+        "final_text": "그들은 EP01_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 주인공은 조력자의 침묵이 우연이 아님을 감지한다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 9.4,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.88
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": []
+      },
+      {
+        "scene_id": "EP02_SC01",
+        "final_text": "그들은 EP02_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 과거 사건의 흔적이 현재의 동선을 바꾼다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 과거 사건의 흔적이 현재의 동선을 바꾼다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 9.4,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.88
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": []
+      },
+      {
+        "scene_id": "EP03_SC01",
+        "final_text": "그들은 EP03_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 관계는 회복이 아니라 비용 지불로 종결된다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 관계는 회복이 아니라 비용 지불로 종결된다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 9.4,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.88
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": []
+      }
+    ],
+    "drse": {
+      "scene_goal": "주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다",
+      "dominant_pattern": "literary_quality",
+      "average_score": 0.4457,
+      "scores": [
+        {
+          "node_id": "stage56.quality",
+          "node_type": "literary_quality",
+          "final_score": 0.7571,
+          "components": {
+            "scene_goal_similarity": 0.0,
+            "causality": 0.0,
+            "emotion": 1.2,
+            "residue": 2.0,
+            "legacy": 1.1,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다."
+        },
+        {
+          "node_id": "stage50.three_episode",
+          "node_type": "macro_structure",
+          "final_score": 0.6429,
+          "components": {
+            "scene_goal_similarity": 0.0,
+            "causality": 1.5,
+            "emotion": 0.0,
+            "residue": 0.0,
+            "legacy": 1.1,
+            "motif": 0.9,
+            "base_weight": 1.0
+          },
+          "safe_directive": "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다."
+        },
+        {
+          "node_id": "stage39.execution",
+          "node_type": "legacy_causality",
+          "final_score": 0.5143,
+          "components": {
+            "scene_goal_similarity": 0.0,
+            "causality": 1.5,
+            "emotion": 0.0,
+            "residue": 0.0,
+            "legacy": 1.1,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+        },
+        {
+          "node_id": "EP01_SC01:forbidden:조력자가 범인",
+          "node_type": "ForbiddenReveal",
+          "final_score": 0.4286,
+          "components": {
+            "scene_goal_similarity": 0.0,
+            "causality": 0.0,
+            "emotion": 0.0,
+            "residue": 2.0,
+            "legacy": 0.0,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "forbiddenreveal 단서를 낮은 강도의 표면 힌트로 유지한다."
+        },
+        {
+          "node_id": "EP01_SC01:forbidden:최종 비밀의 이름",
+          "node_type": "ForbiddenReveal",
+          "final_score": 0.4286,
+          "components": {
+            "scene_goal_similarity": 0.0,
+            "causality": 0.0,
+            "emotion": 0.0,
+            "residue": 2.0,
+            "legacy": 0.0,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "forbiddenreveal 단서를 낮은 강도의 표면 힌트로 유지한다."
+        },
+        {
+          "node_id": "EP01_SC01",
+          "node_type": "SceneIntent",
+          "final_score": 0.1923,
+          "components": {
+            "scene_goal_similarity": 0.3462,
+            "causality": 0.0,
+            "emotion": 0.0,
+            "residue": 0.0,
+            "legacy": 0.0,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "sceneintent 정보는 배경 압력으로만 둔다."
+        },
+        {
+          "node_id": "EP02_SC01",
+          "node_type": "SceneIntent",
+          "final_score": 0.1562,
+          "components": {
+            "scene_goal_similarity": 0.0938,
+            "causality": 0.0,
+            "emotion": 0.0,
+            "residue": 0.0,
+            "legacy": 0.0,
+            "motif": 0.0,
+            "base_weight": 1.0
+          },
+          "safe_directive": "sceneintent 정보는 배경 압력으로만 둔다."
+        }
+      ],
+      "surface_directives": [
+        "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다.",
+        "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다.",
+        "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+      ],
+      "provider_default_calls": 0
+    },
+    "emotional_momentum": {
+      "tension": 0.7,
+      "sympathy": 0.5,
+      "dread": 0.55,
+      "catharsis": 0.1,
+      "intensity": 0.4625
+    },
+    "mise_en_scene": {
+      "scene_id": "EP01_SC01",
+      "sensory_directives": [
+        "손끝·컵·문틈 같은 작은 물체를 감정의 앵커로 사용한다.",
+        "대사보다 침묵과 시선의 방향을 먼저 배치한다."
+      ],
+      "spatial_pressure": "인물 사이의 거리를 한 박자 늦게 드러낸다.",
+      "emotional_temperature": "찬기와 건조한 표면으로 감정을 간접화한다.",
+      "drse_surface_directives": [
+        "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다.",
+        "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다.",
+        "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+      ]
+    },
+    "ledger": {
+      "fact_count": 6,
+      "timeline_position": "EP03_NIGHT"
+    },
+    "reveal_budget": {
+      "forbidden_count": 2,
+      "leakage": []
+    },
+    "refinement": {
+      "status": "pass",
+      "revision_count": 0,
+      "issues_before": [],
+      "issues_after": []
+    },
+    "issues": [],
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "stage60_literary_engine_reabsorption": {
+    "stage": "76",
+    "status": "pass",
+    "issues": [],
+    "stage50_scale_plan": {
+      "episode_count": 3,
+      "sequence_count_total": 29,
+      "scene_count_total": 532,
+      "major_turns": [
+        "EP01: 신뢰 균열을 행동으로 증명",
+        "EP02: 과거 잔향이 현재 동선을 압박",
+        "EP03: reveal이 폭로가 아니라 선택의 비용으로 도착"
+      ]
+    },
+    "stage56_quality_gate": {
+      "axis_scores": {
+        "macro_structure": 8.8,
+        "causality": 8.7,
+        "character_state": 8.4,
+        "event_time_continuity": 8.5,
+        "reveal_budget": 9.0,
+        "reader_surface": 8.2,
+        "emotional_accessibility": 8.3,
+        "dialogue_naturalness": 8.1,
+        "sensory_density": 8.0,
+        "afterimage": 8.4
+      },
+      "blocker_axes": [],
+      "average_score": 8.44
+    },
+    "stage57_refinement_loop": {
+      "before_score": 7.19,
+      "after_score": 8.69,
+      "quality_delta": 1.5,
+      "blocker_axis_count_before": 5,
+      "blocker_axis_count_after": 0
+    },
+    "reabsorbed_from": [
+      "Stage50",
+      "Stage56",
+      "Stage57",
+      "Stage60"
+    ],
+    "provider_default_calls": 0
+  },
+  "node2_rewrite_restoration": {
+    "stage": "77",
+    "status": "pass",
+    "issues": [],
+    "rewrite": {
+      "status": "pass",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "candidate_id": "cand_surface_minimal",
+          "text": "비가 멎자 조력자의 침묵이 우연이 아님을 감지한다. 말은 줄고, 식은 컵만 둘 사이에 남았다.",
+          "score": 8.1,
+          "authority_safe": true
+        },
+        {
+          "candidate_id": "cand_emotional_indirect",
+          "text": "그는 조력자의 침묵이 우연이 아님을 감지한다. 대답 대신 창문에 맺힌 물방울을 손끝으로 지웠다.",
+          "score": 8.6,
+          "authority_safe": true
+        },
+        {
+          "candidate_id": "cand_sensory_afterimage",
+          "text": "조력자의 침묵이 우연이 아님을 감지한다. 형광등의 낮은 떨림이 침묵을 더 오래 붙잡았다.",
+          "score": 8.4,
+          "authority_safe": true
+        }
+      ],
+      "selected": {
+        "candidate_id": "cand_emotional_indirect",
+        "text": "그는 조력자의 침묵이 우연이 아님을 감지한다. 대답 대신 창문에 맺힌 물방울을 손끝으로 지웠다.",
+        "score": 8.6,
+        "authority_safe": true
+      },
+      "authority_guard": {
+        "raw_reveal_access": 0,
+        "canon_override": false,
+        "provider_default_calls": 0
+      }
+    },
+    "reader_chain_evaluation": {
+      "status": "pass",
+      "scores": {
+        "human_style": 8.4,
+        "series_management": 8.0,
+        "anti_llm": 8.7,
+        "reveal_break": 10.0,
+        "repetition_risk": 8.2,
+        "afterimage": 8.3
+      },
+      "issues": []
+    },
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "drama_execution_reabsorption": {
+    "stage": "78",
+    "status": "pass",
+    "issues": [],
+    "temporal_continuity": {
+      "status": "pass",
+      "timeline": [
+        "EP01_NIGHT",
+        "EP02_DAWN",
+        "EP03_NIGHT"
+      ],
+      "issues": []
+    },
+    "emotional_pressure_valve": {
+      "status": "pass",
+      "pressures": [
+        0.42,
+        0.68,
+        0.91,
+        0.54
+      ],
+      "peak": 0.91,
+      "controlled_release": true,
+      "issues": []
+    },
+    "branch_commit_rollback": {
+      "status": "pass",
+      "branches": [
+        {
+          "branch_id": "B1_false_accusation",
+          "committed": true,
+          "rolled_back": true,
+          "reconverged_to": "main_truth_cost"
+        },
+        {
+          "branch_id": "B2_withheld_letter",
+          "committed": true,
+          "rolled_back": false,
+          "reconverged_to": "main_truth_cost"
+        }
+      ],
+      "issues": []
+    },
+    "provider_default_calls": 0
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "claim": "Stage79 integrates branchpoint survival, Stage60-scale literary engine metadata, Node2 rewrite restoration, drama execution, and Stage74 literary formula smoke into one local-first loop."
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "102.1",
+  "title": "Real Writer Workflow Trial",
+  "minimum_seed_count": 3,
+  "minimum_task_count": 5,
+  "minimum_average_friction_score": 8.0,
+  "provider_default_calls": 0,
+  "raw_manuscript_provider_leakage": 0
+}

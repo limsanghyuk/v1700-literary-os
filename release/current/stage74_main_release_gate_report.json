@@ -1,0 +1,1913 @@
+{
+  "status": "pass",
+  "issues": [],
+  "runtime_smoke": {
+    "status": "pass",
+    "issues": [],
+    "scene_id": "example_scene_001",
+    "external_provider_calls": 0
+  },
+  "graph_nexus_release_gate": {
+    "stage": "72.1",
+    "status": "pass",
+    "issues": [],
+    "gitnexus": {
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "optional_runtime_dependency": false,
+      "fallback_available": true,
+      "error": "gitnexus binary not installed; npx path is available for optional use"
+    },
+    "gitnexus_optional_only": true,
+    "python_fallback_available": true,
+    "provider_default_calls": 0,
+    "code_graph_available": true,
+    "narrative_graph_available": true,
+    "stage_lineage_graph_available": true,
+    "node2_raw_reveal_access_count": 0,
+    "checks": {
+      "lineage_preflight": {
+        "status": "pass",
+        "goal": "Stage72.1 GraphNexus restoration",
+        "missing_stages": [],
+        "stage_count": 11,
+        "graph_intelligence_lineage_present": true
+      },
+      "impact": {
+        "status": "pass",
+        "impact": {
+          "target": "Node2ProseCompiler",
+          "risk_level": "medium",
+          "risk_score": 0.6000000000000001,
+          "code_hits": [
+            "src/v1700/nodes/node2_prose_renderer/compiler.py"
+          ],
+          "narrative_node_count": 2,
+          "lineage_node_count": 11,
+          "risks": [
+            "node2_surface_contract_must_hold",
+            "forbidden_reveal_projection_required"
+          ]
+        },
+        "requires_human_attention": false
+      },
+      "legacy_logic_survival": {
+        "status": "pass",
+        "stage": "STAGE61-66",
+        "required_concepts": [
+          "authority boundaries",
+          "feature flag integration",
+          "graph sidecar"
+        ],
+        "missing_concepts": [],
+        "current_status": "restored_as_optional_graphnexus_layer"
+      },
+      "node_projection": {
+        "status": "pass",
+        "node2_raw_graph_access": false,
+        "node2_packet": {
+          "packet_type": "Node2GraphSurfacePacket",
+          "scene_id": "S72_1_SAMPLE",
+          "surface_tone": "reader_facing",
+          "relationship_pressure": "medium",
+          "sensory_anchors": [
+            "setting",
+            "gesture"
+          ],
+          "forbidden_reveal_labels": [
+            "locked_reveal_1"
+          ],
+          "style_drift_warnings": []
+        },
+        "node3_packet": {
+          "packet_type": "Node3GraphCriticPacket",
+          "contradiction_risks": [
+            "forbidden_reveal_projection_required"
+          ],
+          "leakage_risks": [
+            "forbidden_reveal_projection_required"
+          ],
+          "impact": {
+            "risks": [
+              "forbidden_reveal_projection_required"
+            ]
+          }
+        }
+      }
+    },
+    "context_packet": {
+      "code_summary": {
+        "available": true,
+        "source": "python_fallback",
+        "node_count": 92
+      },
+      "narrative_summary": {
+        "available": true,
+        "node_count": 2,
+        "edge_count": 1
+      },
+      "lineage_summary": {
+        "available": true,
+        "node_count": 11,
+        "stage72_1_present": true
+      },
+      "warnings": [
+        "node2_surface_contract_must_hold",
+        "forbidden_reveal_projection_required"
+      ]
+    }
+  },
+  "stage72_2_release_gate": {
+    "stage": "72.2",
+    "status": "pass",
+    "issues": [],
+    "gitnexus": {
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "optional_runtime_dependency": false,
+      "fallback_available": true,
+      "error": "gitnexus binary not installed; npx path is available for optional use"
+    },
+    "gitnexus_index_status": {
+      "alias": "v1700_stage72_3_ascii",
+      "registered": false,
+      "path": "",
+      "storage_path": "",
+      "indexed_at": "",
+      "stats": {},
+      "registry_path": "/home/oai/.gitnexus/registry.json",
+      "stale": true,
+      "reason": "alias_not_registered"
+    },
+    "gitnexus_index_under_gpt_workspace": false,
+    "manual_reindex_recommended": true,
+    "gitnexus_optional_only": true,
+    "python_fallback_available": true,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "checks": {
+      "graph_nexus_release_gate": {
+        "stage": "72.1",
+        "status": "pass",
+        "issues": [],
+        "gitnexus": {
+          "installed": false,
+          "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+          "optional_runtime_dependency": false,
+          "fallback_available": true,
+          "error": "gitnexus binary not installed; npx path is available for optional use"
+        },
+        "gitnexus_optional_only": true,
+        "python_fallback_available": true,
+        "provider_default_calls": 0,
+        "code_graph_available": true,
+        "narrative_graph_available": true,
+        "stage_lineage_graph_available": true,
+        "node2_raw_reveal_access_count": 0,
+        "checks": {
+          "lineage_preflight": {
+            "status": "pass",
+            "goal": "Stage72.1 GraphNexus restoration",
+            "missing_stages": [],
+            "stage_count": 11,
+            "graph_intelligence_lineage_present": true
+          },
+          "impact": {
+            "status": "pass",
+            "impact": {
+              "target": "Node2ProseCompiler",
+              "risk_level": "medium",
+              "risk_score": 0.6000000000000001,
+              "code_hits": [
+                "src/v1700/nodes/node2_prose_renderer/compiler.py"
+              ],
+              "narrative_node_count": 2,
+              "lineage_node_count": 11,
+              "risks": [
+                "node2_surface_contract_must_hold",
+                "forbidden_reveal_projection_required"
+              ]
+            },
+            "requires_human_attention": false
+          },
+          "legacy_logic_survival": {
+            "status": "pass",
+            "stage": "STAGE61-66",
+            "required_concepts": [
+              "authority boundaries",
+              "feature flag integration",
+              "graph sidecar"
+            ],
+            "missing_concepts": [],
+            "current_status": "restored_as_optional_graphnexus_layer"
+          },
+          "node_projection": {
+            "status": "pass",
+            "node2_raw_graph_access": false,
+            "node2_packet": {
+              "packet_type": "Node2GraphSurfacePacket",
+              "scene_id": "S72_1_SAMPLE",
+              "surface_tone": "reader_facing",
+              "relationship_pressure": "medium",
+              "sensory_anchors": [
+                "setting",
+                "gesture"
+              ],
+              "forbidden_reveal_labels": [
+                "locked_reveal_1"
+              ],
+              "style_drift_warnings": []
+            },
+            "node3_packet": {
+              "packet_type": "Node3GraphCriticPacket",
+              "contradiction_risks": [
+                "forbidden_reveal_projection_required"
+              ],
+              "leakage_risks": [
+                "forbidden_reveal_projection_required"
+              ],
+              "impact": {
+                "risks": [
+                  "forbidden_reveal_projection_required"
+                ]
+              }
+            }
+          }
+        },
+        "context_packet": {
+          "code_summary": {
+            "available": true,
+            "source": "python_fallback",
+            "node_count": 92
+          },
+          "narrative_summary": {
+            "available": true,
+            "node_count": 2,
+            "edge_count": 1
+          },
+          "lineage_summary": {
+            "available": true,
+            "node_count": 11,
+            "stage72_1_present": true
+          },
+          "warnings": [
+            "node2_surface_contract_must_hold",
+            "forbidden_reveal_projection_required"
+          ]
+        }
+      },
+      "query": {
+        "status": "pass",
+        "query": "GraphNexus",
+        "source": "python_fallback",
+        "matches": [
+          {
+            "kind": "code",
+            "path": "src/v1700/graph_nexus/graph_nexus_packet.py",
+            "defines": [
+              "GraphNexusContextPacket",
+              "Node1GraphPacket",
+              "Node2GraphSurfacePacket",
+              "Node3GraphCriticPacket",
+              "assert_surface_safe",
+              "to_dict"
+            ],
+            "tested_by": [
+              "tests/integration/test_node1_node2_node3_pipeline.py",
+              "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+              "tests/test_stage72_1_graph_nexus_release_gate.py",
+              "tests/test_stage72_1_graph_nexus_three_graphs.py",
+              "tests/test_stage72_1_legacy_logic_survival_gate.py",
+              "tests/test_stage72_1_lineage_preflight_gate.py",
+              "tests/test_stage72_1_node_projection_gate.py",
+              "tests/test_stage72_2_graph_nexus_operational_tools.py"
+            ],
+            "gated_by": [
+              "graph_nexus_release_gate"
+            ],
+            "stage_origin": "STAGE72.1"
+          },
+          {
+            "kind": "code",
+            "path": "src/v1700/graph_nexus/registry.py",
+            "defines": [
+              "GraphNexusRegistry",
+              "build",
+              "context_packet",
+              "to_dict"
+            ],
+            "tested_by": [
+              "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+              "tests/test_stage72_1_graph_nexus_release_gate.py",
+              "tests/test_stage72_1_graph_nexus_three_graphs.py",
+              "tests/test_stage72_1_legacy_logic_survival_gate.py",
+              "tests/test_stage72_1_lineage_preflight_gate.py",
+              "tests/test_stage72_1_node_projection_gate.py"
+            ],
+            "gated_by": [
+              "graph_nexus_release_gate"
+            ],
+            "stage_origin": "STAGE72.1"
+          },
+          {
+            "kind": "code",
+            "path": "src/v1700/graph_nexus/tools/contracts.py",
+            "defines": [
+              "GeneratedNodeSkill",
+              "GeneratedSceneSkill",
+              "GeneratedStageSkill",
+              "GeneratedWikiPage",
+              "GraphNexusContextRequest",
+              "GraphNexusDetectChangesReport",
+              "GraphNexusImpactRequest",
+              "GraphNexusQueryRequest",
+              "GraphNexusQueryResult",
+              "GraphNexusRouteMap",
+              "GraphNexusShapeCheckReport",
+              "GraphNexusToolMap",
+              "to_dict"
+            ],
+            "tested_by": [
+              "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+              "tests/test_stage72_1_graph_nexus_release_gate.py",
+              "tests/test_stage72_1_graph_nexus_three_graphs.py",
+              "tests/test_stage72_1_legacy_logic_survival_gate.py",
+              "tests/test_stage72_1_lineage_preflight_gate.py",
+              "tests/test_stage72_1_node_projection_gate.py"
+            ],
+            "gated_by": [
+              "graph_nexus_release_gate"
+            ],
+            "stage_origin": "STAGE72.1"
+          },
+          {
+            "kind": "stage",
+            "stage_id": "STAGE72.1",
+            "title": "GraphNexus Restoration Patch",
+            "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+          },
+          {
+            "kind": "stage",
+            "stage_id": "STAGE72.2",
+            "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+            "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+          }
+        ],
+        "gitnexus": {
+          "provider": "gitnexus_cli",
+          "capability": "query",
+          "available": false,
+          "returncode": 127,
+          "timed_out": false,
+          "payload": {},
+          "stderr": "gitnexus binary not installed; npx path is available for optional use"
+        }
+      },
+      "context": {
+        "status": "pass",
+        "target": "Node2ProseCompiler",
+        "source": "python_fallback",
+        "packet": {
+          "code_summary": {
+            "available": true,
+            "source": "python_fallback",
+            "node_count": 92
+          },
+          "narrative_summary": {
+            "available": true,
+            "node_count": 2,
+            "edge_count": 1
+          },
+          "lineage_summary": {
+            "available": true,
+            "node_count": 11,
+            "stage72_1_present": true
+          },
+          "warnings": [
+            "node2_surface_contract_must_hold",
+            "forbidden_reveal_projection_required"
+          ]
+        },
+        "code_hits": [
+          {
+            "path": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+            "defines": [
+              "Node2CompileResult",
+              "Node2ProseCompiler",
+              "__init__",
+              "aggregate_report",
+              "compile",
+              "compile_many"
+            ],
+            "imports": [
+              "__future__",
+              "anti_llm_filter",
+              "authorial_profile",
+              "candidates",
+              "contract",
+              "dataclasses",
+              "dialogue_renderer",
+              "emotion_renderer",
+              "marker_stripper",
+              "rhythm_rewriter",
+              "scorer",
+              "sensory_anchor",
+              "statistics",
+              "v1700.ir.rendered_prose",
+              "v1700.ir.scene_intent",
+              "v1700.ir.style_profile",
+              "validators"
+            ],
+            "tested_by": [
+              "tests/integration/test_node1_node2_node3_pipeline.py",
+              "tests/unit/node2_prose_renderer/test_compiler.py"
+            ],
+            "gated_by": [
+              "node_projection_gate"
+            ],
+            "stage_origin": "STAGE71_72"
+          }
+        ],
+        "gitnexus": {
+          "provider": "gitnexus_cli",
+          "capability": "context",
+          "available": false,
+          "returncode": 127,
+          "timed_out": false,
+          "payload": {},
+          "stderr": "gitnexus binary not installed; npx path is available for optional use"
+        }
+      },
+      "impact": {
+        "status": "pass",
+        "target": "Node2ProseCompiler",
+        "source": "python_fallback",
+        "fallback_impact": {
+          "target": "Node2ProseCompiler",
+          "risk_level": "medium",
+          "risk_score": 0.6000000000000001,
+          "code_hits": [
+            "src/v1700/nodes/node2_prose_renderer/compiler.py"
+          ],
+          "narrative_node_count": 2,
+          "lineage_node_count": 11,
+          "risks": [
+            "node2_surface_contract_must_hold",
+            "forbidden_reveal_projection_required"
+          ]
+        },
+        "gitnexus": {
+          "provider": "gitnexus_cli",
+          "capability": "impact",
+          "available": false,
+          "returncode": 127,
+          "timed_out": false,
+          "payload": {},
+          "stderr": "gitnexus binary not installed; npx path is available for optional use"
+        },
+        "requires_human_attention": false
+      },
+      "detect_changes": {
+        "status": "pass",
+        "source": "python_fallback",
+        "mode": "stage72_2_structural_scan",
+        "changed_paths": [
+          "src/v1700/gates/graph_nexus_impact_gate.py",
+          "src/v1700/gates/graph_nexus_release_gate.py",
+          "src/v1700/graph_nexus/__init__.py",
+          "src/v1700/graph_nexus/code_graph.py",
+          "src/v1700/graph_nexus/detect_changes.py",
+          "src/v1700/graph_nexus/graph_nexus_packet.py",
+          "src/v1700/graph_nexus/impact.py",
+          "src/v1700/graph_nexus/narrative_graph.py",
+          "src/v1700/graph_nexus/projection.py",
+          "src/v1700/graph_nexus/registry.py",
+          "src/v1700/graph_nexus/stage_lineage_graph.py",
+          "src/v1700/graph_nexus/tools/__init__.py",
+          "src/v1700/graph_nexus/tools/change_review.py",
+          "src/v1700/graph_nexus/tools/concept_impact.py",
+          "src/v1700/graph_nexus/tools/context.py",
+          "src/v1700/graph_nexus/tools/contracts.py",
+          "src/v1700/graph_nexus/tools/detect_changes.py",
+          "src/v1700/graph_nexus/tools/foundation_lineage.py",
+          "src/v1700/graph_nexus/tools/impact.py",
+          "src/v1700/graph_nexus/tools/query.py",
+          "src/v1700/graph_nexus/tools/route_map.py",
+          "src/v1700/graph_nexus/tools/shape_check.py",
+          "src/v1700/graph_nexus/tools/skill_generator.py",
+          "src/v1700/graph_nexus/tools/survival_matrix.py",
+          "src/v1700/graph_nexus/tools/tool_map.py",
+          "src/v1700/graph_nexus/tools/wiki_generator.py",
+          "src/v1700/sidecars/gitnexus/__init__.py",
+          "src/v1700/sidecars/gitnexus/adapter.py",
+          "src/v1700/sidecars/gitnexus/cli_adapter.py",
+          "src/v1700/sidecars/gitnexus/contracts.py",
+          "src/v1700/sidecars/gitnexus/index_status.py",
+          "src/v1700/sidecars/gitnexus/mcp_adapter.py",
+          "src/v1700/sidecars/gitnexus/probe.py",
+          "src/v1700/sidecars/gitnexus/python_fallback.py",
+          "src/v1700/sidecars/gitnexus/result_normalizer.py",
+          "src/v1700/sidecars/gitnexus/stale_index_detector.py"
+        ],
+        "impacted_tests": [
+          "tests/integration/test_node1_node2_node3_pipeline.py",
+          "tests/stage_gates/test_stage72_repo_doctor.py",
+          "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+          "tests/test_stage72_1_graph_nexus_release_gate.py",
+          "tests/test_stage72_1_graph_nexus_three_graphs.py",
+          "tests/test_stage72_1_legacy_logic_survival_gate.py",
+          "tests/test_stage72_1_lineage_preflight_gate.py",
+          "tests/test_stage72_1_node_projection_gate.py",
+          "tests/test_stage72_2_graph_nexus_operational_tools.py",
+          "tests/test_stage72_2_release_gate.py",
+          "tests/test_stage72_3_foundation_lineage.py",
+          "tests/test_stage73_1_literary_formula_restoration.py",
+          "tests/test_stage74_longform_execution_engine.py"
+        ],
+        "stale_index": true,
+        "gitnexus": {
+          "command": {
+            "provider": "gitnexus_cli",
+            "capability": "detect_changes",
+            "available": false,
+            "reason": "active_repo_is_not_git_worktree; python fallback used"
+          },
+          "index_status": {
+            "alias": "v1700_stage72_3_ascii",
+            "registered": false,
+            "path": "",
+            "storage_path": "",
+            "indexed_at": "",
+            "stats": {},
+            "registry_path": "/home/oai/.gitnexus/registry.json",
+            "stale": true,
+            "reason": "alias_not_registered"
+          }
+        }
+      },
+      "route_map": {
+        "status": "pass",
+        "routes": [
+          {
+            "name": "runtime_generation_route",
+            "steps": [
+              "src/v1700/cli.py",
+              "src/v1700/nodes/node1_architect/__init__.py",
+              "src/v1700/nodes/node2_prose_renderer/compiler.py",
+              "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+            ]
+          },
+          {
+            "name": "graph_context_route",
+            "steps": [
+              "src/v1700/graph_nexus/registry.py",
+              "src/v1700/graph_nexus/code_graph.py",
+              "src/v1700/graph_nexus/narrative_graph.py",
+              "src/v1700/graph_nexus/stage_lineage_graph.py"
+            ]
+          },
+          {
+            "name": "stage72_2_operational_route",
+            "steps": [
+              "src/v1700/sidecars/gitnexus/cli_adapter.py",
+              "src/v1700/graph_nexus/tools/query.py",
+              "src/v1700/graph_nexus/tools/context.py",
+              "src/v1700/graph_nexus/tools/impact.py",
+              "src/v1700/graph_nexus/tools/detect_changes.py",
+              "src/v1700/gates/stage72_2_release_gate.py"
+            ]
+          },
+          {
+            "name": "stage72_3_foundation_lineage_route",
+            "steps": [
+              "src/v1700/graph_nexus/tools/foundation_lineage.py",
+              "src/v1700/graph_nexus/tools/survival_matrix.py",
+              "src/v1700/gates/pre_stage40_survival_gate.py",
+              "src/v1700/gates/stage72_3_release_gate.py"
+            ]
+          }
+        ],
+        "missing_paths": []
+      },
+      "tool_map": {
+        "status": "pass",
+        "tools": [
+          {
+            "name": "query",
+            "path": "tools/run_graph_nexus_query.py"
+          },
+          {
+            "name": "context",
+            "path": "tools/run_graph_nexus_context.py"
+          },
+          {
+            "name": "impact",
+            "path": "tools/run_graph_nexus_impact.py"
+          },
+          {
+            "name": "detect_changes",
+            "path": "tools/run_graph_nexus_detect_changes.py"
+          },
+          {
+            "name": "route_map",
+            "path": "tools/run_graph_nexus_route_map.py"
+          },
+          {
+            "name": "tool_map",
+            "path": "tools/run_graph_nexus_tool_map.py"
+          },
+          {
+            "name": "shape_check",
+            "path": "tools/run_graph_nexus_shape_check.py"
+          },
+          {
+            "name": "generate_skills",
+            "path": "tools/run_graph_nexus_generate_skills.py"
+          },
+          {
+            "name": "generate_wiki",
+            "path": "tools/run_graph_nexus_generate_wiki.py"
+          },
+          {
+            "name": "stage72_2_release",
+            "path": "tools/run_stage72_2_release_gate.py"
+          },
+          {
+            "name": "build_stage72_3_foundation_lineage",
+            "path": "tools/build_stage72_3_foundation_lineage.py"
+          },
+          {
+            "name": "pre_stage40_survival_gate",
+            "path": "tools/run_pre_stage40_survival_gate.py"
+          },
+          {
+            "name": "stage72_3_release",
+            "path": "tools/run_stage72_3_release_gate.py"
+          }
+        ],
+        "gates": [
+          {
+            "name": "graph_nexus_release_gate",
+            "path": "src/v1700/gates/graph_nexus_release_gate.py"
+          },
+          {
+            "name": "stage72_2_release_gate",
+            "path": "src/v1700/gates/stage72_2_release_gate.py"
+          },
+          {
+            "name": "pre_stage40_survival_gate",
+            "path": "src/v1700/gates/pre_stage40_survival_gate.py"
+          },
+          {
+            "name": "stage72_3_release_gate",
+            "path": "src/v1700/gates/stage72_3_release_gate.py"
+          },
+          {
+            "name": "release_gate",
+            "path": "src/v1700/gates/release_gate.py"
+          }
+        ],
+        "tests": [
+          "tests/integration/test_node1_node2_node3_pipeline.py",
+          "tests/stage_gates/test_stage72_repo_doctor.py",
+          "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+          "tests/test_stage72_1_graph_nexus_release_gate.py",
+          "tests/test_stage72_1_graph_nexus_three_graphs.py",
+          "tests/test_stage72_1_legacy_logic_survival_gate.py",
+          "tests/test_stage72_1_lineage_preflight_gate.py",
+          "tests/test_stage72_1_node_projection_gate.py",
+          "tests/test_stage72_2_graph_nexus_operational_tools.py",
+          "tests/test_stage72_2_release_gate.py",
+          "tests/test_stage72_3_foundation_lineage.py",
+          "tests/test_stage73_1_literary_formula_restoration.py",
+          "tests/test_stage74_longform_execution_engine.py",
+          "tests/unit/node2_prose_renderer/test_compiler.py",
+          "tests/unit/node2_prose_renderer/test_contract.py",
+          "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+        ],
+        "missing_paths": []
+      },
+      "generated_skills": {
+        "status": "pass",
+        "stage_skill": {
+          "stage": "Stage72.2",
+          "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md",
+          "source_files": [
+            "src/v1700/graph_nexus/tools/query.py"
+          ]
+        },
+        "node_skill": {
+          "node": "Node2",
+          "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md",
+          "source_files": [
+            "src/v1700/graph_nexus/tools/shape_check.py"
+          ]
+        },
+        "scene_skill": {
+          "scene": "GraphContextScene",
+          "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md",
+          "source_files": [
+            "src/v1700/graph_nexus/registry.py"
+          ]
+        }
+      },
+      "generated_wiki": {
+        "status": "pass",
+        "pages": [
+          {
+            "title": "Architecture Wiki",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md",
+            "source_files": [
+              "src/v1700/cli.py"
+            ]
+          },
+          {
+            "title": "Stage Lineage Wiki",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md",
+            "source_files": [
+              "manifests/stage_lineage_manifest.json"
+            ]
+          },
+          {
+            "title": "Narrative Wiki",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md",
+            "source_files": [
+              "src/v1700/graph_nexus/narrative_graph.py"
+            ]
+          }
+        ]
+      },
+      "shape_check": {
+        "status": "pass",
+        "checks": [
+          {
+            "name": "node2_surface_packet_safe",
+            "status": "pass"
+          },
+          {
+            "name": "generated_docs_no_raw_reveal_terms",
+            "status": "pass"
+          }
+        ],
+        "violations": []
+      }
+    }
+  },
+  "stage72_3_release_gate": {
+    "stage": "72.3",
+    "status": "pass",
+    "issues": [],
+    "stage72_2_release_gate": {
+      "stage": "72.2",
+      "status": "pass",
+      "issues": [],
+      "gitnexus": {
+        "installed": false,
+        "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+        "optional_runtime_dependency": false,
+        "fallback_available": true,
+        "error": "gitnexus binary not installed; npx path is available for optional use"
+      },
+      "gitnexus_index_status": {
+        "alias": "v1700_stage72_3_ascii",
+        "registered": false,
+        "path": "",
+        "storage_path": "",
+        "indexed_at": "",
+        "stats": {},
+        "registry_path": "/home/oai/.gitnexus/registry.json",
+        "stale": true,
+        "reason": "alias_not_registered"
+      },
+      "gitnexus_index_under_gpt_workspace": false,
+      "manual_reindex_recommended": true,
+      "gitnexus_optional_only": true,
+      "python_fallback_available": true,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0,
+      "checks": {
+        "graph_nexus_release_gate": {
+          "stage": "72.1",
+          "status": "pass",
+          "issues": [],
+          "gitnexus": {
+            "installed": false,
+            "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+            "optional_runtime_dependency": false,
+            "fallback_available": true,
+            "error": "gitnexus binary not installed; npx path is available for optional use"
+          },
+          "gitnexus_optional_only": true,
+          "python_fallback_available": true,
+          "provider_default_calls": 0,
+          "code_graph_available": true,
+          "narrative_graph_available": true,
+          "stage_lineage_graph_available": true,
+          "node2_raw_reveal_access_count": 0,
+          "checks": {
+            "lineage_preflight": {
+              "status": "pass",
+              "goal": "Stage72.1 GraphNexus restoration",
+              "missing_stages": [],
+              "stage_count": 11,
+              "graph_intelligence_lineage_present": true
+            },
+            "impact": {
+              "status": "pass",
+              "impact": {
+                "target": "Node2ProseCompiler",
+                "risk_level": "medium",
+                "risk_score": 0.6000000000000001,
+                "code_hits": [
+                  "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                ],
+                "narrative_node_count": 2,
+                "lineage_node_count": 11,
+                "risks": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "requires_human_attention": false
+            },
+            "legacy_logic_survival": {
+              "status": "pass",
+              "stage": "STAGE61-66",
+              "required_concepts": [
+                "authority boundaries",
+                "feature flag integration",
+                "graph sidecar"
+              ],
+              "missing_concepts": [],
+              "current_status": "restored_as_optional_graphnexus_layer"
+            },
+            "node_projection": {
+              "status": "pass",
+              "node2_raw_graph_access": false,
+              "node2_packet": {
+                "packet_type": "Node2GraphSurfacePacket",
+                "scene_id": "S72_1_SAMPLE",
+                "surface_tone": "reader_facing",
+                "relationship_pressure": "medium",
+                "sensory_anchors": [
+                  "setting",
+                  "gesture"
+                ],
+                "forbidden_reveal_labels": [
+                  "locked_reveal_1"
+                ],
+                "style_drift_warnings": []
+              },
+              "node3_packet": {
+                "packet_type": "Node3GraphCriticPacket",
+                "contradiction_risks": [
+                  "forbidden_reveal_projection_required"
+                ],
+                "leakage_risks": [
+                  "forbidden_reveal_projection_required"
+                ],
+                "impact": {
+                  "risks": [
+                    "forbidden_reveal_projection_required"
+                  ]
+                }
+              }
+            }
+          },
+          "context_packet": {
+            "code_summary": {
+              "available": true,
+              "source": "python_fallback",
+              "node_count": 92
+            },
+            "narrative_summary": {
+              "available": true,
+              "node_count": 2,
+              "edge_count": 1
+            },
+            "lineage_summary": {
+              "available": true,
+              "node_count": 11,
+              "stage72_1_present": true
+            },
+            "warnings": [
+              "node2_surface_contract_must_hold",
+              "forbidden_reveal_projection_required"
+            ]
+          }
+        },
+        "query": {
+          "status": "pass",
+          "query": "GraphNexus",
+          "source": "python_fallback",
+          "matches": [
+            {
+              "kind": "code",
+              "path": "src/v1700/graph_nexus/graph_nexus_packet.py",
+              "defines": [
+                "GraphNexusContextPacket",
+                "Node1GraphPacket",
+                "Node2GraphSurfacePacket",
+                "Node3GraphCriticPacket",
+                "assert_surface_safe",
+                "to_dict"
+              ],
+              "tested_by": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py",
+                "tests/test_stage72_2_graph_nexus_operational_tools.py"
+              ],
+              "gated_by": [
+                "graph_nexus_release_gate"
+              ],
+              "stage_origin": "STAGE72.1"
+            },
+            {
+              "kind": "code",
+              "path": "src/v1700/graph_nexus/registry.py",
+              "defines": [
+                "GraphNexusRegistry",
+                "build",
+                "context_packet",
+                "to_dict"
+              ],
+              "tested_by": [
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py"
+              ],
+              "gated_by": [
+                "graph_nexus_release_gate"
+              ],
+              "stage_origin": "STAGE72.1"
+            },
+            {
+              "kind": "code",
+              "path": "src/v1700/graph_nexus/tools/contracts.py",
+              "defines": [
+                "GeneratedNodeSkill",
+                "GeneratedSceneSkill",
+                "GeneratedStageSkill",
+                "GeneratedWikiPage",
+                "GraphNexusContextRequest",
+                "GraphNexusDetectChangesReport",
+                "GraphNexusImpactRequest",
+                "GraphNexusQueryRequest",
+                "GraphNexusQueryResult",
+                "GraphNexusRouteMap",
+                "GraphNexusShapeCheckReport",
+                "GraphNexusToolMap",
+                "to_dict"
+              ],
+              "tested_by": [
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py"
+              ],
+              "gated_by": [
+                "graph_nexus_release_gate"
+              ],
+              "stage_origin": "STAGE72.1"
+            },
+            {
+              "kind": "stage",
+              "stage_id": "STAGE72.1",
+              "title": "GraphNexus Restoration Patch",
+              "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+            },
+            {
+              "kind": "stage",
+              "stage_id": "STAGE72.2",
+              "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+              "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+            }
+          ],
+          "gitnexus": {
+            "provider": "gitnexus_cli",
+            "capability": "query",
+            "available": false,
+            "returncode": 127,
+            "timed_out": false,
+            "payload": {},
+            "stderr": "gitnexus binary not installed; npx path is available for optional use"
+          }
+        },
+        "context": {
+          "status": "pass",
+          "target": "Node2ProseCompiler",
+          "source": "python_fallback",
+          "packet": {
+            "code_summary": {
+              "available": true,
+              "source": "python_fallback",
+              "node_count": 92
+            },
+            "narrative_summary": {
+              "available": true,
+              "node_count": 2,
+              "edge_count": 1
+            },
+            "lineage_summary": {
+              "available": true,
+              "node_count": 11,
+              "stage72_1_present": true
+            },
+            "warnings": [
+              "node2_surface_contract_must_hold",
+              "forbidden_reveal_projection_required"
+            ]
+          },
+          "code_hits": [
+            {
+              "path": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+              "defines": [
+                "Node2CompileResult",
+                "Node2ProseCompiler",
+                "__init__",
+                "aggregate_report",
+                "compile",
+                "compile_many"
+              ],
+              "imports": [
+                "__future__",
+                "anti_llm_filter",
+                "authorial_profile",
+                "candidates",
+                "contract",
+                "dataclasses",
+                "dialogue_renderer",
+                "emotion_renderer",
+                "marker_stripper",
+                "rhythm_rewriter",
+                "scorer",
+                "sensory_anchor",
+                "statistics",
+                "v1700.ir.rendered_prose",
+                "v1700.ir.scene_intent",
+                "v1700.ir.style_profile",
+                "validators"
+              ],
+              "tested_by": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/unit/node2_prose_renderer/test_compiler.py"
+              ],
+              "gated_by": [
+                "node_projection_gate"
+              ],
+              "stage_origin": "STAGE71_72"
+            }
+          ],
+          "gitnexus": {
+            "provider": "gitnexus_cli",
+            "capability": "context",
+            "available": false,
+            "returncode": 127,
+            "timed_out": false,
+            "payload": {},
+            "stderr": "gitnexus binary not installed; npx path is available for optional use"
+          }
+        },
+        "impact": {
+          "status": "pass",
+          "target": "Node2ProseCompiler",
+          "source": "python_fallback",
+          "fallback_impact": {
+            "target": "Node2ProseCompiler",
+            "risk_level": "medium",
+            "risk_score": 0.6000000000000001,
+            "code_hits": [
+              "src/v1700/nodes/node2_prose_renderer/compiler.py"
+            ],
+            "narrative_node_count": 2,
+            "lineage_node_count": 11,
+            "risks": [
+              "node2_surface_contract_must_hold",
+              "forbidden_reveal_projection_required"
+            ]
+          },
+          "gitnexus": {
+            "provider": "gitnexus_cli",
+            "capability": "impact",
+            "available": false,
+            "returncode": 127,
+            "timed_out": false,
+            "payload": {},
+            "stderr": "gitnexus binary not installed; npx path is available for optional use"
+          },
+          "requires_human_attention": false
+        },
+        "detect_changes": {
+          "status": "pass",
+          "source": "python_fallback",
+          "mode": "stage72_2_structural_scan",
+          "changed_paths": [
+            "src/v1700/gates/graph_nexus_impact_gate.py",
+            "src/v1700/gates/graph_nexus_release_gate.py",
+            "src/v1700/graph_nexus/__init__.py",
+            "src/v1700/graph_nexus/code_graph.py",
+            "src/v1700/graph_nexus/detect_changes.py",
+            "src/v1700/graph_nexus/graph_nexus_packet.py",
+            "src/v1700/graph_nexus/impact.py",
+            "src/v1700/graph_nexus/narrative_graph.py",
+            "src/v1700/graph_nexus/projection.py",
+            "src/v1700/graph_nexus/registry.py",
+            "src/v1700/graph_nexus/stage_lineage_graph.py",
+            "src/v1700/graph_nexus/tools/__init__.py",
+            "src/v1700/graph_nexus/tools/change_review.py",
+            "src/v1700/graph_nexus/tools/concept_impact.py",
+            "src/v1700/graph_nexus/tools/context.py",
+            "src/v1700/graph_nexus/tools/contracts.py",
+            "src/v1700/graph_nexus/tools/detect_changes.py",
+            "src/v1700/graph_nexus/tools/foundation_lineage.py",
+            "src/v1700/graph_nexus/tools/impact.py",
+            "src/v1700/graph_nexus/tools/query.py",
+            "src/v1700/graph_nexus/tools/route_map.py",
+            "src/v1700/graph_nexus/tools/shape_check.py",
+            "src/v1700/graph_nexus/tools/skill_generator.py",
+            "src/v1700/graph_nexus/tools/survival_matrix.py",
+            "src/v1700/graph_nexus/tools/tool_map.py",
+            "src/v1700/graph_nexus/tools/wiki_generator.py",
+            "src/v1700/sidecars/gitnexus/__init__.py",
+            "src/v1700/sidecars/gitnexus/adapter.py",
+            "src/v1700/sidecars/gitnexus/cli_adapter.py",
+            "src/v1700/sidecars/gitnexus/contracts.py",
+            "src/v1700/sidecars/gitnexus/index_status.py",
+            "src/v1700/sidecars/gitnexus/mcp_adapter.py",
+            "src/v1700/sidecars/gitnexus/probe.py",
+            "src/v1700/sidecars/gitnexus/python_fallback.py",
+            "src/v1700/sidecars/gitnexus/result_normalizer.py",
+            "src/v1700/sidecars/gitnexus/stale_index_detector.py"
+          ],
+          "impacted_tests": [
+            "tests/integration/test_node1_node2_node3_pipeline.py",
+            "tests/stage_gates/test_stage72_repo_doctor.py",
+            "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+            "tests/test_stage72_1_graph_nexus_release_gate.py",
+            "tests/test_stage72_1_graph_nexus_three_graphs.py",
+            "tests/test_stage72_1_legacy_logic_survival_gate.py",
+            "tests/test_stage72_1_lineage_preflight_gate.py",
+            "tests/test_stage72_1_node_projection_gate.py",
+            "tests/test_stage72_2_graph_nexus_operational_tools.py",
+            "tests/test_stage72_2_release_gate.py",
+            "tests/test_stage72_3_foundation_lineage.py",
+            "tests/test_stage73_1_literary_formula_restoration.py",
+            "tests/test_stage74_longform_execution_engine.py"
+          ],
+          "stale_index": true,
+          "gitnexus": {
+            "command": {
+              "provider": "gitnexus_cli",
+              "capability": "detect_changes",
+              "available": false,
+              "reason": "active_repo_is_not_git_worktree; python fallback used"
+            },
+            "index_status": {
+              "alias": "v1700_stage72_3_ascii",
+              "registered": false,
+              "path": "",
+              "storage_path": "",
+              "indexed_at": "",
+              "stats": {},
+              "registry_path": "/home/oai/.gitnexus/registry.json",
+              "stale": true,
+              "reason": "alias_not_registered"
+            }
+          }
+        },
+        "route_map": {
+          "status": "pass",
+          "routes": [
+            {
+              "name": "runtime_generation_route",
+              "steps": [
+                "src/v1700/cli.py",
+                "src/v1700/nodes/node1_architect/__init__.py",
+                "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+              ]
+            },
+            {
+              "name": "graph_context_route",
+              "steps": [
+                "src/v1700/graph_nexus/registry.py",
+                "src/v1700/graph_nexus/code_graph.py",
+                "src/v1700/graph_nexus/narrative_graph.py",
+                "src/v1700/graph_nexus/stage_lineage_graph.py"
+              ]
+            },
+            {
+              "name": "stage72_2_operational_route",
+              "steps": [
+                "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                "src/v1700/graph_nexus/tools/query.py",
+                "src/v1700/graph_nexus/tools/context.py",
+                "src/v1700/graph_nexus/tools/impact.py",
+                "src/v1700/graph_nexus/tools/detect_changes.py",
+                "src/v1700/gates/stage72_2_release_gate.py"
+              ]
+            },
+            {
+              "name": "stage72_3_foundation_lineage_route",
+              "steps": [
+                "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                "src/v1700/graph_nexus/tools/survival_matrix.py",
+                "src/v1700/gates/pre_stage40_survival_gate.py",
+                "src/v1700/gates/stage72_3_release_gate.py"
+              ]
+            }
+          ],
+          "missing_paths": []
+        },
+        "tool_map": {
+          "status": "pass",
+          "tools": [
+            {
+              "name": "query",
+              "path": "tools/run_graph_nexus_query.py"
+            },
+            {
+              "name": "context",
+              "path": "tools/run_graph_nexus_context.py"
+            },
+            {
+              "name": "impact",
+              "path": "tools/run_graph_nexus_impact.py"
+            },
+            {
+              "name": "detect_changes",
+              "path": "tools/run_graph_nexus_detect_changes.py"
+            },
+            {
+              "name": "route_map",
+              "path": "tools/run_graph_nexus_route_map.py"
+            },
+            {
+              "name": "tool_map",
+              "path": "tools/run_graph_nexus_tool_map.py"
+            },
+            {
+              "name": "shape_check",
+              "path": "tools/run_graph_nexus_shape_check.py"
+            },
+            {
+              "name": "generate_skills",
+              "path": "tools/run_graph_nexus_generate_skills.py"
+            },
+            {
+              "name": "generate_wiki",
+              "path": "tools/run_graph_nexus_generate_wiki.py"
+            },
+            {
+              "name": "stage72_2_release",
+              "path": "tools/run_stage72_2_release_gate.py"
+            },
+            {
+              "name": "build_stage72_3_foundation_lineage",
+              "path": "tools/build_stage72_3_foundation_lineage.py"
+            },
+            {
+              "name": "pre_stage40_survival_gate",
+              "path": "tools/run_pre_stage40_survival_gate.py"
+            },
+            {
+              "name": "stage72_3_release",
+              "path": "tools/run_stage72_3_release_gate.py"
+            }
+          ],
+          "gates": [
+            {
+              "name": "graph_nexus_release_gate",
+              "path": "src/v1700/gates/graph_nexus_release_gate.py"
+            },
+            {
+              "name": "stage72_2_release_gate",
+              "path": "src/v1700/gates/stage72_2_release_gate.py"
+            },
+            {
+              "name": "pre_stage40_survival_gate",
+              "path": "src/v1700/gates/pre_stage40_survival_gate.py"
+            },
+            {
+              "name": "stage72_3_release_gate",
+              "path": "src/v1700/gates/stage72_3_release_gate.py"
+            },
+            {
+              "name": "release_gate",
+              "path": "src/v1700/gates/release_gate.py"
+            }
+          ],
+          "tests": [
+            "tests/integration/test_node1_node2_node3_pipeline.py",
+            "tests/stage_gates/test_stage72_repo_doctor.py",
+            "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+            "tests/test_stage72_1_graph_nexus_release_gate.py",
+            "tests/test_stage72_1_graph_nexus_three_graphs.py",
+            "tests/test_stage72_1_legacy_logic_survival_gate.py",
+            "tests/test_stage72_1_lineage_preflight_gate.py",
+            "tests/test_stage72_1_node_projection_gate.py",
+            "tests/test_stage72_2_graph_nexus_operational_tools.py",
+            "tests/test_stage72_2_release_gate.py",
+            "tests/test_stage72_3_foundation_lineage.py",
+            "tests/test_stage73_1_literary_formula_restoration.py",
+            "tests/test_stage74_longform_execution_engine.py",
+            "tests/unit/node2_prose_renderer/test_compiler.py",
+            "tests/unit/node2_prose_renderer/test_contract.py",
+            "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+          ],
+          "missing_paths": []
+        },
+        "generated_skills": {
+          "status": "pass",
+          "stage_skill": {
+            "stage": "Stage72.2",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md",
+            "source_files": [
+              "src/v1700/graph_nexus/tools/query.py"
+            ]
+          },
+          "node_skill": {
+            "node": "Node2",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md",
+            "source_files": [
+              "src/v1700/graph_nexus/tools/shape_check.py"
+            ]
+          },
+          "scene_skill": {
+            "scene": "GraphContextScene",
+            "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md",
+            "source_files": [
+              "src/v1700/graph_nexus/registry.py"
+            ]
+          }
+        },
+        "generated_wiki": {
+          "status": "pass",
+          "pages": [
+            {
+              "title": "Architecture Wiki",
+              "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md",
+              "source_files": [
+                "src/v1700/cli.py"
+              ]
+            },
+            {
+              "title": "Stage Lineage Wiki",
+              "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md",
+              "source_files": [
+                "manifests/stage_lineage_manifest.json"
+              ]
+            },
+            {
+              "title": "Narrative Wiki",
+              "path": "/mnt/data/stage74_work/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md",
+              "source_files": [
+                "src/v1700/graph_nexus/narrative_graph.py"
+              ]
+            }
+          ]
+        },
+        "shape_check": {
+          "status": "pass",
+          "checks": [
+            {
+              "name": "node2_surface_packet_safe",
+              "status": "pass"
+            },
+            {
+              "name": "generated_docs_no_raw_reveal_terms",
+              "status": "pass"
+            }
+          ],
+          "violations": []
+        }
+      }
+    },
+    "pre_stage40_survival_gate": {
+      "stage": "72.3",
+      "status": "pass",
+      "issues": [],
+      "concept_count": 25,
+      "required_concept_count": 20,
+      "missing_required": [],
+      "missing_source_evidence": [],
+      "missing_evidence_files": [],
+      "missing_current_anchor": [],
+      "high_priority_unknown": [],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0
+    },
+    "survival_matrix": {
+      "status": "pass",
+      "concept_count": 25,
+      "buckets": {
+        "DOCUMENTED_ONLY": [
+          "foundation.authoring.end_to_end_scenario_runner",
+          "foundation.review.authoring_workflow",
+          "foundation.review.human_agent_console",
+          "foundation.stage39.branch_commit_rollback"
+        ],
+        "LIVE_RUNTIME": [
+          "foundation.governance.release_candidate_gate",
+          "foundation.node2.literary_quality_engine",
+          "foundation.node2.style_evolution_memory",
+          "foundation.stage39.node2_candidate_rendering"
+        ],
+        "PARTIAL": [
+          "foundation.governance.boundary_registry",
+          "foundation.governance.concept_validation_workbench",
+          "foundation.governance.stage26_28_regression_stream",
+          "foundation.longform.episode_draft_export",
+          "foundation.longform.series_arc_control",
+          "foundation.memory.conflict_resolver",
+          "foundation.memory.long_horizon_drift_stress",
+          "foundation.node2.literary_depth_calibration",
+          "foundation.provider.execution_trace",
+          "foundation.provider.multi_provider_creative_comparison",
+          "foundation.stage39.actual_replay_reconvergence",
+          "foundation.stage39.analyzer_librarian_integration",
+          "foundation.stage39.emotional_pressure_valve",
+          "foundation.stage39.evidence_intake_foundation",
+          "foundation.stage39.graph_retrieval_bridge",
+          "foundation.stage39.longform_scene_sequence_planner",
+          "foundation.stage39.temporal_continuity"
+        ]
+      }
+    },
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "stage73_1_release_gate": {
+    "stage": "73.1",
+    "status": "pass",
+    "issues": [],
+    "literary_formula_survival_gate": {
+      "stage": "73.1",
+      "status": "pass",
+      "issues": [],
+      "formula_count": 5,
+      "required_formulas": [
+        "DRSE",
+        "EmotionalMomentum4D",
+        "MiseEnSceneCompiler",
+        "SceneGraphQueryEngine",
+        "LiteraryRefinementLoop"
+      ],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0
+    },
+    "drse_quality_gate": {
+      "stage": "73.1",
+      "status": "pass",
+      "issues": [],
+      "score_count": 3,
+      "dominant_pattern": "residue",
+      "surface_directive_count": 3,
+      "provider_default_calls": 0
+    },
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "stage74_release_gate": {
+    "stage": "74",
+    "status": "pass",
+    "issues": [],
+    "stage73_1_release_gate": {
+      "stage": "73.1",
+      "status": "pass",
+      "issues": [],
+      "literary_formula_survival_gate": {
+        "stage": "73.1",
+        "status": "pass",
+        "issues": [],
+        "formula_count": 5,
+        "required_formulas": [
+          "DRSE",
+          "EmotionalMomentum4D",
+          "MiseEnSceneCompiler",
+          "SceneGraphQueryEngine",
+          "LiteraryRefinementLoop"
+        ],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access_count": 0
+      },
+      "drse_quality_gate": {
+        "stage": "73.1",
+        "status": "pass",
+        "issues": [],
+        "score_count": 3,
+        "dominant_pattern": "residue",
+        "surface_directive_count": 3,
+        "provider_default_calls": 0
+      },
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0
+    },
+    "longform_execution_gate": {
+      "stage": "74",
+      "status": "pass",
+      "issues": [],
+      "longform_smoke": {
+        "status": "pass",
+        "plan": {
+          "prompt": "침묵한 조력자와 사라진 증거를 둘러싼 장편 드라마",
+          "season_arc": "침묵한 조력자와 사라진 증거를 둘러싼 장편 드라마를 인물의 신뢰 붕괴와 회복 불가능한 선택으로 밀어붙이는 시즌 아크",
+          "trilogy_proof": [
+            "1막: 관계의 균열을 작은 행동과 누락된 대답으로 증명한다.",
+            "2막: 과거 사건의 잔향이 현재 선택을 압박한다.",
+            "3막: reveal은 폭로가 아니라 돌이킬 수 없는 행동의 결과로 도착한다."
+          ],
+          "episodes": [
+            {
+              "episode_id": "EP01",
+              "title": "균열의 첫 장면",
+              "major_turn": "주인공은 조력자의 침묵이 우연이 아님을 감지한다.",
+              "sequences": [
+                {
+                  "sequence_id": "EP01_SQ01",
+                  "objective": "표면 목표를 세운다",
+                  "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+                  "emotional_shift": "안도→의심",
+                  "reveal_boundary": "핵심 reveal 금지"
+                },
+                {
+                  "sequence_id": "EP01_SQ02",
+                  "objective": "관계 압력을 높인다",
+                  "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+                  "emotional_shift": "의심→불신",
+                  "reveal_boundary": "복선은 사물로만 남김"
+                },
+                {
+                  "sequence_id": "EP01_SQ03",
+                  "objective": "행동 결과를 남긴다",
+                  "conflict": "선택과 회피의 충돌",
+                  "emotional_shift": "불신→결심",
+                  "reveal_boundary": "정답 공개 금지"
+                }
+              ]
+            },
+            {
+              "episode_id": "EP02",
+              "title": "잔향의 역류",
+              "major_turn": "과거 사건의 흔적이 현재의 동선을 바꾼다.",
+              "sequences": [
+                {
+                  "sequence_id": "EP02_SQ01",
+                  "objective": "표면 목표를 세운다",
+                  "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+                  "emotional_shift": "안도→의심",
+                  "reveal_boundary": "핵심 reveal 금지"
+                },
+                {
+                  "sequence_id": "EP02_SQ02",
+                  "objective": "관계 압력을 높인다",
+                  "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+                  "emotional_shift": "의심→불신",
+                  "reveal_boundary": "복선은 사물로만 남김"
+                },
+                {
+                  "sequence_id": "EP02_SQ03",
+                  "objective": "행동 결과를 남긴다",
+                  "conflict": "선택과 회피의 충돌",
+                  "emotional_shift": "불신→결심",
+                  "reveal_boundary": "정답 공개 금지"
+                }
+              ]
+            },
+            {
+              "episode_id": "EP03",
+              "title": "선택의 비용",
+              "major_turn": "관계는 회복이 아니라 비용 지불로 종결된다.",
+              "sequences": [
+                {
+                  "sequence_id": "EP03_SQ01",
+                  "objective": "표면 목표를 세운다",
+                  "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+                  "emotional_shift": "안도→의심",
+                  "reveal_boundary": "핵심 reveal 금지"
+                },
+                {
+                  "sequence_id": "EP03_SQ02",
+                  "objective": "관계 압력을 높인다",
+                  "conflict": "보호하려는 말과 추적하려는 행동의 충돌",
+                  "emotional_shift": "의심→불신",
+                  "reveal_boundary": "복선은 사물로만 남김"
+                },
+                {
+                  "sequence_id": "EP03_SQ03",
+                  "objective": "행동 결과를 남긴다",
+                  "conflict": "선택과 회피의 충돌",
+                  "emotional_shift": "불신→결심",
+                  "reveal_boundary": "정답 공개 금지"
+                }
+              ]
+            }
+          ]
+        },
+        "scenes": [
+          {
+            "scene_id": "EP01_SC01",
+            "scene_goal": "주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다",
+            "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+            "emotional_delta": {
+              "from": "안도",
+              "to": "불신"
+            },
+            "must_keep_facts": [
+              "조력자는 결정적인 질문에 대답하지 않았다",
+              "주인공은 조력자의 침묵이 우연이 아님을 감지한다."
+            ],
+            "forbidden_reveals": [
+              "조력자가 범인",
+              "최종 비밀의 이름"
+            ],
+            "timeline_position": "EP01_NIGHT",
+            "character_state_refs": [
+              "protagonist:trust_fracture",
+              "ally:withheld_answer"
+            ],
+            "dialogue_seed": "아직 말하지 않은 게 있지.",
+            "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+          },
+          {
+            "scene_id": "EP02_SC01",
+            "scene_goal": "과거 사건의 흔적이 현재의 동선을 바꾼다. 표면 목표를 세운다",
+            "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+            "emotional_delta": {
+              "from": "안도",
+              "to": "불신"
+            },
+            "must_keep_facts": [
+              "조력자는 결정적인 질문에 대답하지 않았다",
+              "과거 사건의 흔적이 현재의 동선을 바꾼다."
+            ],
+            "forbidden_reveals": [
+              "조력자가 범인",
+              "최종 비밀의 이름"
+            ],
+            "timeline_position": "EP02_NIGHT",
+            "character_state_refs": [
+              "protagonist:trust_fracture",
+              "ally:withheld_answer"
+            ],
+            "dialogue_seed": "아직 말하지 않은 게 있지.",
+            "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+          },
+          {
+            "scene_id": "EP03_SC01",
+            "scene_goal": "관계는 회복이 아니라 비용 지불로 종결된다. 표면 목표를 세운다",
+            "conflict": "말하지 않은 사실과 현재 행동의 충돌",
+            "emotional_delta": {
+              "from": "안도",
+              "to": "불신"
+            },
+            "must_keep_facts": [
+              "조력자는 결정적인 질문에 대답하지 않았다",
+              "관계는 회복이 아니라 비용 지불로 종결된다."
+            ],
+            "forbidden_reveals": [
+              "조력자가 범인",
+              "최종 비밀의 이름"
+            ],
+            "timeline_position": "EP03_NIGHT",
+            "character_state_refs": [
+              "protagonist:trust_fracture",
+              "ally:withheld_answer"
+            ],
+            "dialogue_seed": "아직 말하지 않은 게 있지.",
+            "setting_seed": "비가 그친 창문 아래, 컵 하나가 식어 있었다"
+          }
+        ],
+        "rendered": [
+          {
+            "scene_id": "EP01_SC01",
+            "final_text": "그들은 EP01_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 주인공은 조력자의 침묵이 우연이 아님을 감지한다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+            "surface_score": {
+              "anti_llm": 10.0,
+              "emotion_accessibility": 8.8,
+              "naturalness": 8.3,
+              "rhythm": 9.4,
+              "dialogue_taste": 8.2,
+              "sensory_afterimage": 8.6,
+              "reader_surface_average": 8.88
+            },
+            "constraint_score": {
+              "fact_preservation": 10.0,
+              "reveal_preservation": 10.0,
+              "scene_goal_preservation": 9.8
+            },
+            "risk_flags": []
+          },
+          {
+            "scene_id": "EP02_SC01",
+            "final_text": "그들은 EP02_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 과거 사건의 흔적이 현재의 동선을 바꾼다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 과거 사건의 흔적이 현재의 동선을 바꾼다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+            "surface_score": {
+              "anti_llm": 10.0,
+              "emotion_accessibility": 8.8,
+              "naturalness": 8.3,
+              "rhythm": 9.4,
+              "dialogue_taste": 8.2,
+              "sensory_afterimage": 8.6,
+              "reader_surface_average": 8.88
+            },
+            "constraint_score": {
+              "fact_preservation": 10.0,
+              "reveal_preservation": 10.0,
+              "scene_goal_preservation": 9.8
+            },
+            "risk_flags": []
+          },
+          {
+            "scene_id": "EP03_SC01",
+            "final_text": "그들은 EP03_NIGHT에 같은 자리에 있었지만 같은 쪽을 보지 않았다. 관계는 회복이 아니라 비용 지불로 종결된다. 표면 목표를 세운다이라는 목적은 드러나지 않은 채, 말하지 않은 사실과 현재 행동의 충돌만 식탁 위에 남았다. 조력자는 결정적인 질문에 대답하지 않았다 관계는 회복이 아니라 비용 지불로 종결된다. “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+            "surface_score": {
+              "anti_llm": 10.0,
+              "emotion_accessibility": 8.8,
+              "naturalness": 8.3,
+              "rhythm": 9.4,
+              "dialogue_taste": 8.2,
+              "sensory_afterimage": 8.6,
+              "reader_surface_average": 8.88
+            },
+            "constraint_score": {
+              "fact_preservation": 10.0,
+              "reveal_preservation": 10.0,
+              "scene_goal_preservation": 9.8
+            },
+            "risk_flags": []
+          }
+        ],
+        "drse": {
+          "scene_goal": "주인공은 조력자의 침묵이 우연이 아님을 감지한다. 표면 목표를 세운다",
+          "dominant_pattern": "literary_quality",
+          "average_score": 0.4457,
+          "scores": [
+            {
+              "node_id": "stage56.quality",
+              "node_type": "literary_quality",
+              "final_score": 0.7571,
+              "components": {
+                "scene_goal_similarity": 0.0,
+                "causality": 0.0,
+                "emotion": 1.2,
+                "residue": 2.0,
+                "legacy": 1.1,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다."
+            },
+            {
+              "node_id": "stage50.three_episode",
+              "node_type": "macro_structure",
+              "final_score": 0.6429,
+              "components": {
+                "scene_goal_similarity": 0.0,
+                "causality": 1.5,
+                "emotion": 0.0,
+                "residue": 0.0,
+                "legacy": 1.1,
+                "motif": 0.9,
+                "base_weight": 1.0
+              },
+              "safe_directive": "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다."
+            },
+            {
+              "node_id": "stage39.execution",
+              "node_type": "legacy_causality",
+              "final_score": 0.5143,
+              "components": {
+                "scene_goal_similarity": 0.0,
+                "causality": 1.5,
+                "emotion": 0.0,
+                "residue": 0.0,
+                "legacy": 1.1,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+            },
+            {
+              "node_id": "EP01_SC01:forbidden:조력자가 범인",
+              "node_type": "ForbiddenReveal",
+              "final_score": 0.4286,
+              "components": {
+                "scene_goal_similarity": 0.0,
+                "causality": 0.0,
+                "emotion": 0.0,
+                "residue": 2.0,
+                "legacy": 0.0,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "forbiddenreveal 단서를 낮은 강도의 표면 힌트로 유지한다."
+            },
+            {
+              "node_id": "EP01_SC01:forbidden:최종 비밀의 이름",
+              "node_type": "ForbiddenReveal",
+              "final_score": 0.4286,
+              "components": {
+                "scene_goal_similarity": 0.0,
+                "causality": 0.0,
+                "emotion": 0.0,
+                "residue": 2.0,
+                "legacy": 0.0,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "forbiddenreveal 단서를 낮은 강도의 표면 힌트로 유지한다."
+            },
+            {
+              "node_id": "EP01_SC01",
+              "node_type": "SceneIntent",
+              "final_score": 0.1923,
+              "components": {
+                "scene_goal_similarity": 0.3462,
+                "causality": 0.0,
+                "emotion": 0.0,
+                "residue": 0.0,
+                "legacy": 0.0,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "sceneintent 정보는 배경 압력으로만 둔다."
+            },
+            {
+              "node_id": "EP02_SC01",
+              "node_type": "SceneIntent",
+              "final_score": 0.1562,
+              "components": {
+                "scene_goal_similarity": 0.0938,
+                "causality": 0.0,
+                "emotion": 0.0,
+                "residue": 0.0,
+                "legacy": 0.0,
+                "motif": 0.0,
+                "base_weight": 1.0
+              },
+              "safe_directive": "sceneintent 정보는 배경 압력으로만 둔다."
+            }
+          ],
+          "surface_directives": [
+            "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다.",
+            "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다.",
+            "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+          ],
+          "provider_default_calls": 0
+        },
+        "emotional_momentum": {
+          "tension": 0.7,
+          "sympathy": 0.5,
+          "dread": 0.55,
+          "catharsis": 0.1,
+          "intensity": 0.4625
+        },
+        "mise_en_scene": {
+          "scene_id": "EP01_SC01",
+          "sensory_directives": [
+            "손끝·컵·문틈 같은 작은 물체를 감정의 앵커로 사용한다.",
+            "대사보다 침묵과 시선의 방향을 먼저 배치한다."
+          ],
+          "spatial_pressure": "인물 사이의 거리를 한 박자 늦게 드러낸다.",
+          "emotional_temperature": "찬기와 건조한 표면으로 감정을 간접화한다.",
+          "drse_surface_directives": [
+            "literary quality 압력이 높다. 직접 설명하지 말고 행동·사물·간격으로 표면화한다.",
+            "macro structure 단서를 낮은 강도의 표면 힌트로 유지한다.",
+            "legacy causality 단서를 낮은 강도의 표면 힌트로 유지한다."
+          ]
+        },
+        "ledger": {
+          "fact_count": 6,
+          "timeline_position": "EP03_NIGHT"
+        },
+        "reveal_budget": {
+          "forbidden_count": 2,
+          "leakage": []
+        },
+        "refinement": {
+          "status": "pass",
+          "revision_count": 0,
+          "issues_before": [],
+          "issues_after": []
+        },
+        "issues": [],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access_count": 0
+      },
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access_count": 0
+    },
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  }
+}

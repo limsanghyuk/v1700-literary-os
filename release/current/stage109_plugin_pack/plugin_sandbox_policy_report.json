@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "rows": [
+    {
+      "plugin_id": "core.genre.literary_thriller",
+      "network_default": "blocked",
+      "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+      "raw_manuscript_access": false,
+      "credential_access": false,
+      "live_provider_default": false,
+      "manual_review_required": false
+    },
+    {
+      "plugin_id": "core.evaluator.editorial_scorecard",
+      "network_default": "blocked",
+      "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+      "raw_manuscript_access": false,
+      "credential_access": false,
+      "live_provider_default": false,
+      "manual_review_required": false
+    },
+    {
+      "plugin_id": "core.export.writer_handoff",
+      "network_default": "blocked",
+      "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+      "raw_manuscript_access": false,
+      "credential_access": false,
+      "live_provider_default": false,
+      "manual_review_required": false
+    },
+    {
+      "plugin_id": "sandbox.provider.live_adapter_probe",
+      "network_default": "blocked",
+      "filesystem_write_scope": "none",
+      "raw_manuscript_access": false,
+      "credential_access": false,
+      "live_provider_default": false,
+      "manual_review_required": true
+    }
+  ],
+  "blockers": []
+}

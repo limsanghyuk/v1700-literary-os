@@ -1,0 +1,55 @@
+{
+  "stage": "93",
+  "title": "Live Provider Opt-in Sandbox / Credential Audit / Response Normalization",
+  "status": "pass",
+  "predecessor": "stage92",
+  "purpose": "Harden the local multi-provider adapter runtime before real provider execution by adding opt-in sandbox boundaries, redacted credential audit, and normalized provider response contracts.",
+  "runtime_modules": [
+    "src/v1700/provider_adapters/credential_audit.py",
+    "src/v1700/provider_adapters/normalization.py",
+    "src/v1700/provider_adapters/live_sandbox.py",
+    "src/v1700/gates/stage93_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage93_live_provider_sandbox.py",
+    "tools/run_stage93_release_gate.py",
+    "tools/export_stage93_artifacts.py"
+  ],
+  "tests": [
+    "tests/test_stage93_provider_sandbox.py"
+  ],
+  "release_gate": "stage93_release_gate",
+  "providers": [
+    "ollama",
+    "gpt",
+    "claude",
+    "gemini"
+  ],
+  "inherited_stages": [
+    "stage92",
+    "stage91",
+    "stage90",
+    "stage89",
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "core_invariants": {
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "credential_raw_value_leakage": 0,
+    "release_gate_live_call_count": 0,
+    "gitnexus_optional_sidecar": true,
+    "graphnexus_authority_preserved": true
+  },
+  "acceptance_criteria": [
+    "credential audit redacts secrets",
+    "normalization supports Ollama/GPT/Claude/Gemini",
+    "live sandbox requires explicit opt-in",
+    "release gate performs zero live provider calls",
+    "main release gate includes stage93"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "128",
+  "name": "Read-Only Absorption Manifest",
+  "adapters": [
+    "SharedCharacterReadOnlyAdapter",
+    "SharedWorldReadOnlyAdapter",
+    "LicenseBoundaryAdapter",
+    "ProjectIsolationGuard",
+    "CanonConflictReport"
+  ],
+  "read_only": true,
+  "blocked": [
+    "cross_project_write",
+    "raw_manuscript_sharing",
+    "license_missing_character_reuse",
+    "SharedWorldDB_as_source_of_truth",
+    "MultiWorkCIM_write_edges"
+  ],
+  "next_stage": "Stage129 — MultiWorkCIM + Cross-Work Canon Governor"
+}

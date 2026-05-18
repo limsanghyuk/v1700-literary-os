@@ -1,0 +1,25 @@
+{
+  "stage": "125",
+  "title": "Gate25/28/29 Governor",
+  "baseline_stage": "124",
+  "status": "pass",
+  "commands": [
+    "python -m compileall -q src tools tests",
+    "python tools/run_stage125_gate25_28_29_governor.py",
+    "python tools/run_stage125_release_gate.py",
+    "python tools/run_release_gate.py",
+    "python tools/run_stage72_repo_doctor.py",
+    "pytest -q tests/test_stage125_gate25_28_29_governor.py tests/test_stage124_pne_gate29_absorption.py tests/test_stage123_asd_gate28_absorption.py tests/test_stage122_nie_v2_stability_absorption.py tests/test_stage121_cross_lineage_preflight.py tests/test_stage120_gate25_nie_v1.py tests/stage_gates/test_stage72_repo_doctor.py",
+    "pytest --collect-only -q"
+  ],
+  "test_result": "43 passed; 388 tests collected",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_training_enabled": false,
+  "auto_repair_mutation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "internal_filelist_included": true,
+  "internal_sha256sums_included": true
+}

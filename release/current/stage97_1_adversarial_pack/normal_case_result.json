@@ -1,0 +1,13 @@
+[
+  {
+    "case_id": "ADV-NOR-001",
+    "actual_status": "PASS",
+    "expected_status": "PASS",
+    "matched_expectation": true,
+    "block_reason": null,
+    "triggered_gate": null,
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-NOR-001.json"
+  }
+]

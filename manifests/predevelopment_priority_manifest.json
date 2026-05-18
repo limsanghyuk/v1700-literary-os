@@ -1,0 +1,47 @@
+{
+  "priority": 0,
+  "name": "Mandatory Pre-Development Protocol",
+  "status": "active",
+  "applies_before": [
+    "proposal",
+    "blueprint",
+    "roadmap",
+    "implementation",
+    "release_packaging"
+  ],
+  "canonical_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+  "source_documents": [
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\00_GitNexus_Development_Preflight_Guide.docx",
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\01_PreDevelopment_Mandatory_Checklist_GitNexus_GraphNexus_Branchpoint.docx",
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\PREFLIGHT_PRIORITY_MANIFEST.json"
+  ],
+  "must_check": [
+    "gitnexus_index_freshness",
+    "list_repos",
+    "query",
+    "context",
+    "impact",
+    "detect_changes",
+    "concept_impact",
+    "survival_matrix",
+    "symbol_to_branchpoint_trace",
+    "shape_check",
+    "change_review",
+    "release_gate_integration",
+    "repo_doctor",
+    "clean_zip_packaging"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "reader_only_leakage": 0,
+    "internal_marker_leakage": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "python_fallback_required": true,
+    "gitnexus_runtime_dependency_required": false
+  },
+  "stage101_status": "applied"
+}

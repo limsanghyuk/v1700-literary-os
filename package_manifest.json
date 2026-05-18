@@ -1,0 +1,12 @@
+{
+  "stage": "stage128",
+  "package": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_integrated_repository.zip",
+  "canonical_package": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_integrated_repository.zip",
+  "sha256": "release/current/stage128_sha256.txt",
+  "sha256_sidecar": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_integrated_repository.zip.sha256",
+  "filelist": "V1700_stage128_sharedworld_sharedcharacter_read_only_absorption_filelist.txt",
+  "created_by": "stage128_sharedworld_sharedcharacter_read_only_absorption",
+  "active_version": "stage128",
+  "patch_report": "release/current/stage128_read_only_absorption_report.json",
+  "release_gate": "release/current/stage128_release_gate_report.json"
+}

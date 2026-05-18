@@ -1,0 +1,16 @@
+{
+  "stage": "98.0",
+  "baseline_stage": "97.2",
+  "status": "pass",
+  "studio_project_status": "pass",
+  "episode_board_status": "pass",
+  "microplot_matrix_editor_status": "pass",
+  "provider_default_calls": 0,
+  "provider_call_count": 0,
+  "live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "full_text_exported": false,
+  "branchpoint_lineage_preserved": true,
+  "studio_pack": "release/current/stage98_studio_pack"
+}

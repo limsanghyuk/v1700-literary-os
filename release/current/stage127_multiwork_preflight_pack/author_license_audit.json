@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "access_formula": "license_edge_exists AND isolation_policy_allows AND resource_scope_permits AND author_approval_valid",
+  "safe_edges": [
+    {
+      "source_project_id": "project_beta",
+      "target_project_id": "project_alpha",
+      "access_type": "read",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "expires_at": null,
+      "resource_scope_permits": true,
+      "isolation_policy_allows": true,
+      "access_allowed": true
+    },
+    {
+      "source_project_id": "project_beta",
+      "target_project_id": "project_alpha",
+      "access_type": "reference",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "expires_at": null,
+      "resource_scope_permits": true,
+      "isolation_policy_allows": true,
+      "access_allowed": true
+    }
+  ],
+  "blocked_probe_edges": [
+    {
+      "source_project_id": "project_alpha",
+      "target_project_id": "project_beta",
+      "access_type": "write",
+      "license_edge_exists": true,
+      "approved_by_author": true,
+      "expires_at": null,
+      "resource_scope_permits": true,
+      "isolation_policy_allows": true,
+      "access_allowed": false
+    },
+    {
+      "source_project_id": "project_beta",
+      "target_project_id": "project_alpha",
+      "access_type": "read",
+      "license_edge_exists": false,
+      "approved_by_author": false,
+      "expires_at": null,
+      "resource_scope_permits": true,
+      "isolation_policy_allows": true,
+      "access_allowed": false
+    }
+  ],
+  "license_edge_missing_but_access_allowed": false,
+  "cross_project_write_allowed": false,
+  "author_approval_required": true
+}

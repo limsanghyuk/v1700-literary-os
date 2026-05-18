@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-PAY-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "critical_payoff_debt_defaulted",
+    "triggered_gate": "payoff_debt_ledger",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-PAY-001.json"
+  },
+  {
+    "case_id": "ADV-PAY-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "finale_new_critical_debt_created",
+    "triggered_gate": "payoff_debt_ledger",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-PAY-002.json"
+  }
+]

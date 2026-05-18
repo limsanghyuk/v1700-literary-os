@@ -1,0 +1,14 @@
+{
+  "stage": "111",
+  "status": "pass",
+  "included_reports": [
+    "stage111_v485_absorption_bridge_report.json",
+    "stage111_v485_version_drift_report.json",
+    "stage111_adapter_bridge_probe_report.json",
+    "stage111_scene_pipeline_bridge_report.json",
+    "stage111_drama_episode_bridge_report.json",
+    "stage111_v485_absorption_candidate_matrix.json",
+    "stage111_release_gate_report.json"
+  ],
+  "raw_v485_source_included": false
+}

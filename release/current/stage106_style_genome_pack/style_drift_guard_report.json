@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "genome_id": "style_genome_stage106_feature_only",
+  "voice_drift_score": 0.12,
+  "allowed_delta": 0.22,
+  "action": "ALLOW",
+  "issues": [],
+  "stage": "106.3",
+  "title": "Authorial Drift Guard",
+  "raw_manuscript_provider_leakage": 0,
+  "provider_call_count": 0
+}

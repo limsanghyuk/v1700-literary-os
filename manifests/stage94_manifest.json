@@ -1,0 +1,34 @@
+{
+  "stage": "94",
+  "title": "Live Provider Evaluation Harness",
+  "status": "pass_pending_export",
+  "depends_on": [
+    "stage93",
+    "stage92",
+    "stage85"
+  ],
+  "required_outputs": [
+    "src/v1700/provider_evaluation/contracts.py",
+    "src/v1700/provider_evaluation/harness.py",
+    "src/v1700/provider_evaluation/scoring.py",
+    "src/v1700/provider_evaluation/prompt_suite.py",
+    "src/v1700/provider_evaluation/report.py",
+    "src/v1700/gates/stage94_release_gate.py",
+    "tools/run_stage94_provider_evaluation.py",
+    "tools/run_stage94_release_gate.py",
+    "tests/test_stage94_provider_evaluation.py",
+    "manifests/stage94_provider_evaluation_manifest.json",
+    "release/current/stage94_provider_evaluation_report.json"
+  ],
+  "acceptance": {
+    "four_provider_adapter_contract": true,
+    "live_opt_in_without_release_calls": true,
+    "dry_run_fixture_evaluation": true,
+    "credential_raw_value_leak_count_zero": true,
+    "normalized_provider_response_schema": true,
+    "stage93_release_gate_inherited": true
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "live_call_count": 0
+}

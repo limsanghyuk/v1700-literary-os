@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-SCN-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "weak_scene_ratio_above_threshold",
+    "triggered_gate": "scene_necessity",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SCN-001.json"
+  },
+  {
+    "case_id": "ADV-SCN-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "atmosphere_scene_function_label_missing",
+    "triggered_gate": "scene_necessity",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SCN-002.json"
+  }
+]

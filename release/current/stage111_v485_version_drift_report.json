@@ -1,0 +1,14 @@
+{
+  "package_label": "literary_os_v485_COMPLETE.zip",
+  "readme_version": "V430",
+  "pyproject_version": "4.8.5",
+  "manifest_version": "V485",
+  "live_manifest_version": "V481",
+  "release_gate_version": "V480",
+  "drift_detected": true,
+  "release_block": false,
+  "direct_metadata_import_allowed": false,
+  "status": "pass",
+  "v1700_absorption_policy": "metadata_wrapper_required",
+  "source_mode": "reference_profile_no_external_source_required"
+}

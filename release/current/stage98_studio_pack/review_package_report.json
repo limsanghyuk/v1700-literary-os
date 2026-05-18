@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "review_package": {
+    "package_id": "stage98-review-package",
+    "project_id": "stage98-commercial-studio-fixture",
+    "revision_items": [
+      {
+        "revision_id": "rev-stage98-warn-001",
+        "project_id": "stage98-commercial-studio-fixture",
+        "episode_id": "ep-08",
+        "source_gate": "stage97_attention_economy",
+        "severity": "WARN",
+        "issue_type": "attention_heat_variance",
+        "diagnosis": "Feature reports suggest a mid-season attention spike should be reviewed.",
+        "recommended_action": "Inspect episode board load distribution before export.",
+        "writer_decision": "PENDING",
+        "evidence_path": "release/current/stage97_longform_endurance_report.json",
+        "applied": false
+      }
+    ],
+    "unresolved_block_count": 0,
+    "warn_count": 1,
+    "info_count": 0,
+    "ready_for_publishing": true
+  },
+  "stage97_1_adversarial_block_evidence_preserved": true
+}

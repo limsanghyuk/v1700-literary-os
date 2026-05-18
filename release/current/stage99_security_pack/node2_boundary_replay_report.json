@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "node2_raw_reveal_access": 0,
+  "surface_only_node2": true,
+  "inspected_reports": [
+    "release/current/stage72_node2_prose_compiler_report.json",
+    "release/current/stage98_studio_workflow_report.json",
+    "release/current/stage98_release_gate_report.json"
+  ]
+}

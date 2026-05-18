@@ -1,0 +1,55 @@
+{
+  "project_count": 2,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "shared_character_conflicts": 0,
+  "shared_world_conflicts": 0,
+  "raw_manuscript_leakage": 0,
+  "status": "PASS",
+  "details": {
+    "projects": [
+      {
+        "project_id": "project_alpha",
+        "title": "Alpha Sovereign Series",
+        "owner_id": "author_a",
+        "genre": "mystery-drama",
+        "canon_root_id": "canon_alpha",
+        "license_policy_id": "license_alpha_private"
+      },
+      {
+        "project_id": "project_beta",
+        "title": "Beta Shared-World Candidate",
+        "owner_id": "author_a",
+        "genre": "thriller-drama",
+        "canon_root_id": "canon_beta",
+        "license_policy_id": "license_beta_private"
+      }
+    ],
+    "allowed_edges": [
+      {
+        "source_project_id": "project_beta",
+        "target_project_id": "project_alpha",
+        "access_type": "read",
+        "license_edge_exists": true,
+        "approved_by_author": true,
+        "expires_at": null,
+        "resource_scope_permits": true,
+        "isolation_policy_allows": true,
+        "access_allowed": true
+      },
+      {
+        "source_project_id": "project_beta",
+        "target_project_id": "project_alpha",
+        "access_type": "reference",
+        "license_edge_exists": true,
+        "approved_by_author": true,
+        "expires_at": null,
+        "resource_scope_permits": true,
+        "isolation_policy_allows": true,
+        "access_allowed": true
+      }
+    ],
+    "blocked_edges": [],
+    "cross_project_influence_write": 0
+  }
+}

@@ -1,0 +1,3008 @@
+{
+  "status": "pass",
+  "generated_at": "2026-05-12T06:21:39.170198+00:00",
+  "source_root": "C:\\AI_Codex\\codex-work\\gpt\\knowledge_base\\v1650_stage35_critic_comparison_gate",
+  "artifact_count": 500,
+  "artifacts": [
+    {
+      "path": "agent_review_packet_contract.py",
+      "stage_id": null,
+      "artifact_type": "executable",
+      "bytes": 2002
+    },
+    {
+      "path": "archive/_cleanup_20260511/delete_candidates_empty_tmp/STAGE27_PHASE27_10_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 0
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_repo_stage5.zip",
+      "stage_id": "STAGE05",
+      "artifact_type": "package",
+      "bytes": 45890
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_repo_stage6.zip",
+      "stage_id": "STAGE06",
+      "artifact_type": "package",
+      "bytes": 82782
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage10_1_integrated_repository_hardened(2).zip",
+      "stage_id": "STAGE10",
+      "artifact_type": "package",
+      "bytes": 126462
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage10_multi_provider_creative_comparison(3).zip",
+      "stage_id": "STAGE10",
+      "artifact_type": "package",
+      "bytes": 118715
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage15_integrated_repository_literary_depth_calibration_harness.zip",
+      "stage_id": "STAGE15",
+      "artifact_type": "package",
+      "bytes": 228100
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage16_integrated_repository_long_horizon_memory_drift_stress_test.zip",
+      "stage_id": "STAGE16",
+      "artifact_type": "package",
+      "bytes": 227467
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage17_integrated_repository_authoring_review_workflow_hardened(1).zip",
+      "stage_id": "STAGE17",
+      "artifact_type": "package",
+      "bytes": 255057
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage18_integrated_repository_human_review_console(1).zip",
+      "stage_id": "STAGE18",
+      "artifact_type": "package",
+      "bytes": 261281
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage19_1_integrated_repository_sectioned_python_execution_hardened.zip",
+      "stage_id": "STAGE19",
+      "artifact_type": "package",
+      "bytes": 280416
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage19_2_integrated_repository_embedded_review_pause_resume_hardened.zip",
+      "stage_id": "STAGE19",
+      "artifact_type": "package",
+      "bytes": 289970
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage20_integrated_repository_learning_candidate_review_console.zip",
+      "stage_id": "STAGE20",
+      "artifact_type": "package",
+      "bytes": 306495
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage21_integrated_repository_episode_draft_export_harness.zip",
+      "stage_id": "STAGE21",
+      "artifact_type": "package",
+      "bytes": 323612
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage22_integrated_repository_node1_series_arc_control(2).zip",
+      "stage_id": "STAGE22",
+      "artifact_type": "package",
+      "bytes": 369295
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage23_integrated_repository_node2_literary_style_evolution_memory(2).zip",
+      "stage_id": "STAGE23",
+      "artifact_type": "package",
+      "bytes": 376936
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage24_1_integrated_repository_final_roadmap_consolidation(5).zip",
+      "stage_id": "STAGE24",
+      "artifact_type": "package",
+      "bytes": 440914
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_1_contract_layer_full_integrated_repository.tar.gz",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 248214
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_4_candidate_generation_layer_full_integrated_repository.tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1976320
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_8_golden_corpus_regression_full_integrated_repository.tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1804800
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_release_candidate_final_handoff_full_integrated_repository(3).tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1812480
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_release_candidate_final_handoff_full_integrated_repository.tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1812480
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_release_candidate_final_qa_full_integrated_repository(2).tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1802240
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage25_release_candidate_full_integrated_repository.tar",
+      "stage_id": "STAGE25",
+      "artifact_type": "package",
+      "bytes": 1781760
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage7_authoring_repository(3).zip",
+      "stage_id": "STAGE07",
+      "artifact_type": "package",
+      "bytes": 102130
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage8_frontend_authoring_canvas(1).zip",
+      "stage_id": "STAGE08",
+      "artifact_type": "package",
+      "bytes": 109268
+    },
+    {
+      "path": "archive/_cleanup_20260511/historical_packages/v1650_stage9_longform_drama_simulation(1).zip",
+      "stage_id": "STAGE09",
+      "artifact_type": "package",
+      "bytes": 119560
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage10_1_integrated_repository_hardening_manifest.json",
+      "stage_id": "STAGE10",
+      "artifact_type": "manifest",
+      "bytes": 490
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage10_multi_provider_creative_comparison_manifest.json",
+      "stage_id": "STAGE10",
+      "artifact_type": "manifest",
+      "bytes": 431
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage11_provider_execution_trace_harness_manifest.json",
+      "stage_id": "STAGE11",
+      "artifact_type": "manifest",
+      "bytes": 1769
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage12_end_to_end_authoring_scenario_runner_manifest.json",
+      "stage_id": "STAGE12",
+      "artifact_type": "manifest",
+      "bytes": 1409
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage13_memory_conflict_resolver_manifest.json",
+      "stage_id": "STAGE13",
+      "artifact_type": "manifest",
+      "bytes": 1353
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage14_1_release_metadata_hardening_manifest.json",
+      "stage_id": "STAGE14",
+      "artifact_type": "manifest",
+      "bytes": 912
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage14_node2_literary_quality_engine_manifest.json",
+      "stage_id": "STAGE14",
+      "artifact_type": "manifest",
+      "bytes": 991
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage15_literary_depth_calibration_manifest.json",
+      "stage_id": "STAGE15",
+      "artifact_type": "manifest",
+      "bytes": 1185
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage16_long_horizon_memory_drift_stress_manifest.json",
+      "stage_id": "STAGE16",
+      "artifact_type": "manifest",
+      "bytes": 864
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage17_authoring_review_workflow_manifest.json",
+      "stage_id": "STAGE17",
+      "artifact_type": "manifest",
+      "bytes": 1065
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage18_human_review_console_manifest.json",
+      "stage_id": "STAGE18",
+      "artifact_type": "manifest",
+      "bytes": 656
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage19_1_sectioned_python_execution_hardening_manifest.json",
+      "stage_id": "STAGE19",
+      "artifact_type": "manifest",
+      "bytes": 915
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage19_2_embedded_review_pause_resume_manifest.json",
+      "stage_id": "STAGE19",
+      "artifact_type": "manifest",
+      "bytes": 1550
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage19_review_console_scenario_bridge_manifest.json",
+      "stage_id": "STAGE19",
+      "artifact_type": "manifest",
+      "bytes": 982
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage20_harness_result.json",
+      "stage_id": "STAGE20",
+      "artifact_type": "document",
+      "bytes": 976
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage20_learning_candidate_review_console_manifest.json",
+      "stage_id": "STAGE20",
+      "artifact_type": "manifest",
+      "bytes": 404
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage21_episode_draft_export_harness_manifest.json",
+      "stage_id": "STAGE21",
+      "artifact_type": "manifest",
+      "bytes": 461
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage21_harness_result.json",
+      "stage_id": "STAGE21",
+      "artifact_type": "document",
+      "bytes": 1329
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage22_node1_series_arc_control_manifest.json",
+      "stage_id": "STAGE22",
+      "artifact_type": "manifest",
+      "bytes": 1305
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage22_series_arc_harness_result.json",
+      "stage_id": "STAGE22",
+      "artifact_type": "document",
+      "bytes": 1652
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage23_node2_style_evolution_memory_manifest.json",
+      "stage_id": "STAGE23",
+      "artifact_type": "manifest",
+      "bytes": 1418
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage23_node2_style_memory_harness_result.json",
+      "stage_id": "STAGE23",
+      "artifact_type": "document",
+      "bytes": 4537
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage24_1_1_boundary_registry_manifest.json",
+      "stage_id": "STAGE24",
+      "artifact_type": "manifest",
+      "bytes": 1807
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage24_1_1_boundary_registry_report.json",
+      "stage_id": "STAGE24",
+      "artifact_type": "report",
+      "bytes": 1040
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage24_1_final_roadmap_consolidation_manifest.json",
+      "stage_id": "STAGE24",
+      "artifact_type": "manifest",
+      "bytes": 4885
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage24_1_final_roadmap_consolidation_report.json",
+      "stage_id": "STAGE24",
+      "artifact_type": "report",
+      "bytes": 2207
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_completion_declaration.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "document",
+      "bytes": 280
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_final_qa_audit_report.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "report",
+      "bytes": 321
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_regression_report.py",
+      "stage_id": "STAGE25",
+      "artifact_type": "report",
+      "bytes": 2475
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_candidate_audit.py",
+      "stage_id": "STAGE25",
+      "artifact_type": "executable",
+      "bytes": 5035
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_candidate_gate_report.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "report",
+      "bytes": 2711
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_candidate_manifest.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "manifest",
+      "bytes": 1464
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_candidate_report.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "report",
+      "bytes": 1251
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_gate.py",
+      "stage_id": "STAGE25",
+      "artifact_type": "executable",
+      "bytes": 3940
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_manifest.py",
+      "stage_id": "STAGE25",
+      "artifact_type": "manifest",
+      "bytes": 2399
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage25_release_readiness_decision.json",
+      "stage_id": "STAGE25",
+      "artifact_type": "document",
+      "bytes": 1007
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_27_28_regression.py",
+      "stage_id": "STAGE26",
+      "artifact_type": "executable",
+      "bytes": 18359
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 27151
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DEFERRED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 3129
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DRYRUN_MERGE_BRANCH_FILELIST.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 42279
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DRYRUN_MERGE_BRANCH_MANIFEST.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "manifest",
+      "bytes": 148217
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DRYRUN_MERGE_BRANCH_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1373
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DRYRUN_MERGE_BRANCH_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 94551
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_DRYRUN_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 3875
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_FINAL_INTEGRATION_MAP.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1050
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_FILELIST_FOR_STAGE28.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 42440
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_GATE_FILELIST.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 15855
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_GATE_MANIFEST.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "manifest",
+      "bytes": 940
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_GATE_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 40671
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_GATE_ZIP_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 22804
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_MARKDOWN_FILELIST_FOR_STAGE28.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 6784
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_PYTHON_FILELIST_FOR_STAGE28.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 18391
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_REGRESSION_GATE_DECISION.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 3533
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_REGRESSION_GATE_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1152
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_ROOT_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 280
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_INTEGRATED_STAGE27_LOCAL_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 207
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_27_integration_gate.py",
+      "stage_id": "STAGE26",
+      "artifact_type": "executable",
+      "bytes": 6499
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_REJECTED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 4398
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_FILELIST.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 14942
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_HYGIENE_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 185
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_MANIFEST.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "manifest",
+      "bytes": 939
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 912
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 224
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_CANDIDATE_ZIP_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 102
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_27_SELECTIVE_MERGE_PORTING_INSTRUCTIONS.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 666
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_ab_cases.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 3432
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_AB_REGRESSION_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1464
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_ab_regression_summary.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 883
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 17832
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_BASELINE_AUDIT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 3108
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_context_packet_to_graph_adapter.py",
+      "stage_id": "STAGE26",
+      "artifact_type": "executable",
+      "bytes": 29761
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_CONTRACTS_SPEC.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1303
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_DEFERRED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1288
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_DESIGN.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1760
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_expected_outcomes.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 790
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_feedback_to_critic_adapter.py",
+      "stage_id": "STAGE26",
+      "artifact_type": "executable",
+      "bytes": 10663
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_feedback_to_critic_adapter_cases.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 473
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_MANIFEST.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "manifest",
+      "bytes": 2702
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_MERGE_GATES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1848
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "manifest",
+      "bytes": 1980
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE10_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 845
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE10_FEEDBACK_WEIGHT_SUGGESTION_LOOP.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1736
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE10_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 11597
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE10_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 907
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE11_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 908
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE11_SELECTIVE_MERGE_DECISION.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 775
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE11_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 12571
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE11_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 10755
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE12_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 610
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE12_RELEASE_CANDIDATE.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1158
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE12_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 14014
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE12_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 11359
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE1_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 379
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE2_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 892
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE2_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 4963
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE2_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 1014
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE3_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 641
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE3_KNOWLEDGE_STATE_ADAPTER.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1720
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE3_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 4589
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE3_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 801
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE4_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 938
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE4_KNOWLEDGE_BOUNDARY_GATE.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1324
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE4_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 7112
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE4_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 3126
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE5_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1210
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE5_REVEAL_BUDGET_GATE.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1318
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE5_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 2354
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE5_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 4402
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE6_CONTEXT_PACKET_BUILDER.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1745
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE6_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1506
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE6_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 9734
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE6_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 5518
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE7_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1526
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE7_NODE2_CONTEXT_ADAPTER.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1671
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE7_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 7865
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE7_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 6608
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE8_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1418
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE8_NODE3_RELATIONAL_VIOLATION_CHECKER.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1521
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE8_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 9064
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE8_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 8355
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE9_AB_REGRESSION_BENCHMARK.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1144
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE9_EXECUTION_REPORT.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 1427
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE9_SHA256.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 10508
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_PHASE9_TEST_OUTPUT.txt",
+      "stage_id": "STAGE26",
+      "artifact_type": "test",
+      "bytes": 8981
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_REJECTED_MODULES.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 2658
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_ROADMAP.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 1218
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE26_SELECTIVE_MERGE_REPORT.md",
+      "stage_id": "STAGE26",
+      "artifact_type": "report",
+      "bytes": 7082
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_stage27_abc_regression_runner.py",
+      "stage_id": "STAGE26",
+      "artifact_type": "executable",
+      "bytes": 18796
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage26_stage27_abc_regression_summary.json",
+      "stage_id": "STAGE26",
+      "artifact_type": "document",
+      "bytes": 80136
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_ABC_REGRESSION_REPORT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 3070
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 7942
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_BASELINE_AUDIT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 6097
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_DEFERRED_MODULE_REEVALUATION.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 3307
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_DEFERRED_MODULES.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1619
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_FINAL_MANIFEST.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "manifest",
+      "bytes": 1167
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_FINAL_PACKAGE_HYGIENE_REPORT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 493
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_FINAL_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 521
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_FINAL_ZIP_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 22653
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1407
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage27_learning_signal_to_retrieval_feedback_adapter.py",
+      "stage_id": "STAGE27",
+      "artifact_type": "executable",
+      "bytes": 1274
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage27_ledger_to_graph_adapter.py",
+      "stage_id": "STAGE27",
+      "artifact_type": "executable",
+      "bytes": 22502
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_MERGE_GATES.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1634
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "manifest",
+      "bytes": 20034
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_0_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 5269
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_0_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 15129
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_10_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1993
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_10_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 12998
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_10_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 270
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_10_ZIP_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 19545
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1160
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 14046
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_SELECTIVE_MERGE_DECISION.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 895
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 36156
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 277
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_11_ZIP_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 20407
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_12_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 637
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_12_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 14871
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_12_RELEASE_CANDIDATE.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1257
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_12_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 38235
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_1_CRITIC_ROLE_CONTRACT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1873
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_1_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1132
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_1_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 5966
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_1_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 16897
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_1_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 181
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_2_CRITIC_VERDICT_CONTRACT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1487
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_2_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1160
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_2_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 6453
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_2_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 18110
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_2_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 15379
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_3_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 992
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_3_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 7563
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_3_PROFESSIONAL_CRITIC_COUNCIL.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1342
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_3_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 20631
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_3_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 18129
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_4_CRITIC_COUNCIL_AGGREGATOR.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1793
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_4_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 868
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_4_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 8240
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_4_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 22193
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_4_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 371
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_5_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 864
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_5_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 8822
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_5_LEARNING_CANDIDATE_LEDGER.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1122
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_5_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 23884
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_5_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 21690
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_6_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1832
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_6_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 9832
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_6_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 25790
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_6_STAGE26_FEEDBACK_CRITIC_ADAPTERS.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 2094
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_6_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 99
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_7_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1570
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_7_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 10469
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_7_SANDBOX_WEIGHT_BRANCH.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 3299
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_7_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 27235
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_7_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 285
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_8_DEVELOPER_SOVEREIGN_GATE.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 2206
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_8_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1704
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_8_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 11091
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_8_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 29587
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_8_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 119
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_ABC_REGRESSION_REPORT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 3070
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_EXECUTION_REPORT.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 1553
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_FILELIST.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 11897
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_SHA256.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 30905
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_STAGE26_STAGE27_ABC_REGRESSION.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1296
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_PHASE27_9_TEST_OUTPUT.txt",
+      "stage_id": "STAGE27",
+      "artifact_type": "test",
+      "bytes": 266
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_REJECTED_MODULES.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 1437
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_RELEASE_CANDIDATE_REPORT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 2741
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_SELECTIVE_MERGE_DECISION.json",
+      "stage_id": "STAGE27",
+      "artifact_type": "document",
+      "bytes": 14665
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage27_selective_merge_decision.py",
+      "stage_id": "STAGE27",
+      "artifact_type": "executable",
+      "bytes": 14411
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE27_SELECTIVE_MERGE_REPORT.md",
+      "stage_id": "STAGE27",
+      "artifact_type": "report",
+      "bytes": 5516
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_29_retrieval_regression.py",
+      "stage_id": "STAGE28",
+      "artifact_type": "executable",
+      "bytes": 10878
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 7022
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_BASELINE_AUDIT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1434
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_baseline_audit.py",
+      "stage_id": "STAGE28",
+      "artifact_type": "executable",
+      "bytes": 1825
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_DEFERRED_MODULES.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 3982
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_DESIGN.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1615
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1307
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_GRAPH_DATABASE_PROPOSAL.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1585
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_graph_to_evidence_index_adapter.py",
+      "stage_id": "STAGE28",
+      "artifact_type": "executable",
+      "bytes": 4495
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "manifest",
+      "bytes": 6480
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_phase28_0_baseline_case.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 449
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_0_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 585
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_0_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1335
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_0_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 3843
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_0_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 138
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 698
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 885
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 6581
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_REGRESSION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 8959
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 17009
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_STAGE26_27_28_REGRESSION.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1201
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_10_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 17579
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 421
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 744
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_SELECTIVE_MERGE_DECISION.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 12439
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_SELECTIVE_MERGE_DECISION.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2679
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_11_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 196
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 398
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 741
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 7839
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_RELEASE_CANDIDATE.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1171
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 2143
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 19943
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_12_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 196
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 889
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1734
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_RELATION_GRAPH_CONTRACT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1414
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 4836
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_1_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 109
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 969
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2182
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_GRAPH_NODE_EDGE_CONTRACTS.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2141
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 6058
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_2_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 3487
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 811
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 6328
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2798
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_NODE_MVP.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2306
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 7511
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_3_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 5602
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_EDGE_MVP.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1953
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1387
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1341
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 3310
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 9093
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_4_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 7663
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_CONTEXT_PACKET_TO_GRAPH_ADAPTER.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2217
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1109
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 3898
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 10432
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_5_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 501
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 30
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1214
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1267
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 4488
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 11880
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_STAGE27_LEDGER_TO_GRAPH_ADAPTER.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2259
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_6_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 11407
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 610
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1046
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1365
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 4945
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_GRAPH_CONSISTENCY_CHECKER.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1601
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 13102
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_7_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 206
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 74
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_CANON_CONFLICT_CHECKER.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1672
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1191
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1196
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 5388
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 14207
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_8_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 209
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_AUDIT_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 515
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_CHARACTER_KNOWLEDGE_GRAPH_CHECKER.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1924
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_EXECUTION_REPORT.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1658
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_EXECUTION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 1132
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_FILELIST.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 5957
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_SHA256.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 15461
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_PHASE28_9_TEST_OUTPUT.txt",
+      "stage_id": "STAGE28",
+      "artifact_type": "test",
+      "bytes": 16506
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_REGRESSION_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 704
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_REJECTED_MODULES.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 2
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_RELATION_GRAPH_SPEC.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 840
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_release_candidate_bundle.py",
+      "stage_id": "STAGE28",
+      "artifact_type": "executable",
+      "bytes": 8690
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_ROADMAP.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1539
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage28_selective_merge_decision.py",
+      "stage_id": "STAGE28",
+      "artifact_type": "executable",
+      "bytes": 12335
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_SELECTIVE_MERGE_REPORT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "report",
+      "bytes": 467
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_SOURCE_MAP.json",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 5491
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE28_STAGE26_27_CONNECTION_AUDIT.md",
+      "stage_id": "STAGE28",
+      "artifact_type": "document",
+      "bytes": 1044
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage29_30_provider_gateway_regression.py",
+      "stage_id": "STAGE29",
+      "artifact_type": "executable",
+      "bytes": 5807
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 657
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_DEFERRED_MODULES.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 406
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_DESIGN.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 1037
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 656
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_GRAPHRAG_INDEX_PROPOSAL.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 1542
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "manifest",
+      "bytes": 768
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_PHASE29_6_REGRESSION_REPORT.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "report",
+      "bytes": 1765
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_PHASE29_7_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "report",
+      "bytes": 919
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_PHASE29_7_SELECTIVE_MERGE_DECISION.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 2439
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_REJECTED_MODULES.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 4
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_RELEASE_CANDIDATE.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 357
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage29_release_candidate_bundle.py",
+      "stage_id": "STAGE29",
+      "artifact_type": "executable",
+      "bytes": 3800
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_ROADMAP.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 1275
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage29_selective_merge_decision.py",
+      "stage_id": "STAGE29",
+      "artifact_type": "executable",
+      "bytes": 3728
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_SOURCE_MAP.json",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 489
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE29_STAGE28_CONNECTION_AUDIT.md",
+      "stage_id": "STAGE29",
+      "artifact_type": "document",
+      "bytes": 479
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage30_31_mutation_sandbox_regression.py",
+      "stage_id": "STAGE30",
+      "artifact_type": "executable",
+      "bytes": 4200
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 456
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_DEFERRED_MODULES.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 340
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_DESIGN.md",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 565
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 312
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "manifest",
+      "bytes": 611
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_PHASE30_4_REGRESSION_REPORT.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "report",
+      "bytes": 2273
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_PHASE30_5_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "report",
+      "bytes": 697
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_PROVIDER_PROMPT_ADAPTER_PROPOSAL.md",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 1487
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_REJECTED_MODULES.json",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 4
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage30_release_candidate_bundle.py",
+      "stage_id": "STAGE30",
+      "artifact_type": "executable",
+      "bytes": 2636
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE30_ROADMAP.md",
+      "stage_id": "STAGE30",
+      "artifact_type": "document",
+      "bytes": 447
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 530
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_CONTROLLED_WEIGHT_MUTATION_PROPOSAL.md",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 1723
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_DEFERRED_MODULES.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 264
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_DESIGN.md",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 388
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 242
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "manifest",
+      "bytes": 547
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_PHASE31_4_REGRESSION_REPORT.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "report",
+      "bytes": 2621
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_PHASE31_5_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "report",
+      "bytes": 745
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_REJECTED_MODULES.json",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 4
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage31_release_candidate_bundle.py",
+      "stage_id": "STAGE31",
+      "artifact_type": "executable",
+      "bytes": 2786
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE31_ROADMAP.md",
+      "stage_id": "STAGE31",
+      "artifact_type": "document",
+      "bytes": 447
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE32_FULL_INTEGRATED_REPOSITORY.md",
+      "stage_id": "STAGE32",
+      "artifact_type": "document",
+      "bytes": 882
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE32_FULL_INTEGRATED_REPOSITORY_REPORT.json",
+      "stage_id": "STAGE32",
+      "artifact_type": "report",
+      "bytes": 812
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE32_FULL_INTEGRATION_MANIFEST.json",
+      "stage_id": "STAGE32",
+      "artifact_type": "manifest",
+      "bytes": 609
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE32_FULL_INTEGRATION_REGRESSION_REPORT.json",
+      "stage_id": "STAGE32",
+      "artifact_type": "report",
+      "bytes": 1107
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE32_ROADMAP.md",
+      "stage_id": "STAGE32",
+      "artifact_type": "document",
+      "bytes": 339
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 455
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage33_all_validation_report.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 4898
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_CONCEPT_VALIDATION_REPORT.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 4902
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_DEFERRED_MODULES.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 352
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_DESIGN.md",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 856
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 409
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_INTEGRATED_GATE_VALIDATION_REPORT.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 1372
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_LONG_SERIES_VALIDATION_REPORT.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 1266
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_NEGATIVE_BOUNDARY_VALIDATION_REPORT.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 1247
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "manifest",
+      "bytes": 583
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_REJECTED_MODULES.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 4
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage33_release_candidate_gate.py",
+      "stage_id": "STAGE33",
+      "artifact_type": "executable",
+      "bytes": 3469
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "report",
+      "bytes": 1167
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_ROADMAP.md",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 793
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_SOURCE_MAP.json",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 290
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE33_WORKBENCH_MVP.md",
+      "stage_id": "STAGE33",
+      "artifact_type": "document",
+      "bytes": 284
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_ACCEPTED_MODULES.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 510
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage34_authoring_result_to_promotion_candidate_adapter.py",
+      "stage_id": "STAGE34",
+      "artifact_type": "executable",
+      "bytes": 1943
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_AUTHORING_SCENARIO_REPORT.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "report",
+      "bytes": 43647
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage34_custom_authoring_report.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "report",
+      "bytes": 22022
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage34_default_authoring_report.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "report",
+      "bytes": 43645
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_DEFERRED_MODULES.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 275
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_DESIGN.md",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 721
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 371
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "manifest",
+      "bytes": 566
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_REJECTED_MODULES.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 4
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage34_release_candidate_gate.py",
+      "stage_id": "STAGE34",
+      "artifact_type": "executable",
+      "bytes": 3141
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE34",
+      "artifact_type": "report",
+      "bytes": 1159
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE34_ROADMAP.md",
+      "stage_id": "STAGE34",
+      "artifact_type": "document",
+      "bytes": 454
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage35_critic_comparison_report.json",
+      "stage_id": "STAGE35",
+      "artifact_type": "report",
+      "bytes": 594
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage35_critic_result_to_promotion_candidate_adapter.py",
+      "stage_id": "STAGE35",
+      "artifact_type": "executable",
+      "bytes": 2714
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_AGENT_BOARD_REPORT.json",
+      "stage_id": "STAGE36",
+      "artifact_type": "report",
+      "bytes": 6292
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_AI_AGENT_PROMOTION_BOARD.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 1939
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage36_decision_to_shadow_compile_request_adapter.py",
+      "stage_id": "STAGE36",
+      "artifact_type": "executable",
+      "bytes": 2381
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_DESIGN.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 906
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 665
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE36",
+      "artifact_type": "manifest",
+      "bytes": 294
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage36_release_candidate_gate.py",
+      "stage_id": "STAGE36",
+      "artifact_type": "executable",
+      "bytes": 4783
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_RELEASE_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE36",
+      "artifact_type": "report",
+      "bytes": 1525
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_ROADMAP.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 409
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_STAGE37_FRONTIER_VERIFICATION_REVIEW.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 3317
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_STAGE37_NEXT_STEP_DESIGN.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 7919
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE36_STAGE37_NEXT_STEP_ROADMAP.md",
+      "stage_id": "STAGE36",
+      "artifact_type": "document",
+      "bytes": 3893
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage37_candidate_report_to_declaration_request_adapter.py",
+      "stage_id": "STAGE37",
+      "artifact_type": "report",
+      "bytes": 1423
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_DESIGN.md",
+      "stage_id": "STAGE37",
+      "artifact_type": "document",
+      "bytes": 646
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE37",
+      "artifact_type": "document",
+      "bytes": 546
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE37",
+      "artifact_type": "manifest",
+      "bytes": 355
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_REPLAY_REPORT.json",
+      "stage_id": "STAGE37",
+      "artifact_type": "report",
+      "bytes": 1402
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_RISK_GATE_REPORT.json",
+      "stage_id": "STAGE37",
+      "artifact_type": "report",
+      "bytes": 1200
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_ROADMAP.md",
+      "stage_id": "STAGE37",
+      "artifact_type": "document",
+      "bytes": 446
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_SHADOW_COMPILATION_REPORT.json",
+      "stage_id": "STAGE37",
+      "artifact_type": "report",
+      "bytes": 8920
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage37_v1660_candidate_gate.py",
+      "stage_id": "STAGE37",
+      "artifact_type": "executable",
+      "bytes": 4021
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE37_V1660_CANDIDATE_REPORT.json",
+      "stage_id": "STAGE37",
+      "artifact_type": "report",
+      "bytes": 1556
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_DESIGN.md",
+      "stage_id": "STAGE38",
+      "artifact_type": "document",
+      "bytes": 622
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_DEVELOPER_HANDOFF_REPORT.json",
+      "stage_id": "STAGE38",
+      "artifact_type": "report",
+      "bytes": 1514
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_GOVERNANCE_BOUNDARY.md",
+      "stage_id": "STAGE38",
+      "artifact_type": "document",
+      "bytes": 536
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_PATCH_STREAM_MANIFEST.json",
+      "stage_id": "STAGE38",
+      "artifact_type": "manifest",
+      "bytes": 324
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_ROADMAP.md",
+      "stage_id": "STAGE38",
+      "artifact_type": "document",
+      "bytes": 395
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage38_v1660_declaration_gate.py",
+      "stage_id": "STAGE38",
+      "artifact_type": "executable",
+      "bytes": 3775
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE38_V1660_DECLARATION_PACKAGE.json",
+      "stage_id": "STAGE38",
+      "artifact_type": "document",
+      "bytes": 1826
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_1_EVIDENCE_INTAKE_FOUNDATION.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 1580
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_1_EVIDENCE_INTAKE_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 4553
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_2_ANALYZER_LIBRARIAN_INTEGRATION.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 1170
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_2_ANALYZER_LIBRARIAN_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 5593
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_3_GRAPH_RETRIEVAL_BRIDGE.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 1002
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_3_GRAPH_RETRIEVAL_BRIDGE_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 13761
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_4_TEMPORAL_CONTINUITY_AND_LEDGER.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 951
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_4_TEMPORAL_CONTINUITY_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 1635
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_5_LONGFORM_SCENE_SEQUENCE_PLANNER.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_5_LONGFORM_SCENE_SEQUENCE_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 52874
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_6_BRANCH_COMMIT_ROLLBACK_PROTOCOL.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 934
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_6_BRANCH_COMMIT_ROLLBACK_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 2924
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_7_EMOTIONAL_PRESSURE_VALVE.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 905
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_7_EMOTIONAL_PRESSURE_VALVE_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 5881
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_8_NODE2_CANDIDATE_RENDERING_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 4012
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_8_NODE2_CANDIDATE_RENDERING_UPGRADE.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 1062
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_9_ACTUAL_REPLAY_RECONVERGENCE.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 940
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PHASE39_9_ACTUAL_REPLAY_RECONVERGENCE_REPORT.json",
+      "stage_id": "STAGE39",
+      "artifact_type": "report",
+      "bytes": 6331
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_PRINCIPAL_CROSS_VALIDATION_REVIEW.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 2712
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_V1650_DRAMA_EXECUTION_ABSORPTION_PROPOSAL.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 9342
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_V1650_DRAMA_EXECUTION_BLUEPRINT.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 6750
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/STAGE39_V1650_DRAMA_EXECUTION_ROADMAP.md",
+      "stage_id": "STAGE39",
+      "artifact_type": "document",
+      "bytes": 6845
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_GUARDRAIL_CANONICAL_BOUNDARY.md",
+      "stage_id": null,
+      "artifact_type": "document",
+      "bytes": 4124
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE10_1_INTEGRATED_REPOSITORY_HARDENING.md",
+      "stage_id": "STAGE10",
+      "artifact_type": "document",
+      "bytes": 1623
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE10_MULTI_PROVIDER_CREATIVE_COMPARISON.md",
+      "stage_id": "STAGE10",
+      "artifact_type": "document",
+      "bytes": 647
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/v1650_stage11_execution_report(1).md",
+      "stage_id": "STAGE11",
+      "artifact_type": "report",
+      "bytes": 2940
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE11_PROVIDER_EXECUTION_TRACE_HARNESS.md",
+      "stage_id": "STAGE11",
+      "artifact_type": "document",
+      "bytes": 3843
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE12_END_TO_END_AUTHORING_SCENARIO_RUNNER.md",
+      "stage_id": "STAGE12",
+      "artifact_type": "document",
+      "bytes": 2232
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/v1650_stage12_execution_report(1).md",
+      "stage_id": "STAGE12",
+      "artifact_type": "report",
+      "bytes": 1695
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/v1650_stage13_execution_report(1).md",
+      "stage_id": "STAGE13",
+      "artifact_type": "report",
+      "bytes": 1357
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE13_MEMORY_CONFLICT_RESOLVER_CANONICAL_DIFF_VIEWER.md",
+      "stage_id": "STAGE13",
+      "artifact_type": "document",
+      "bytes": 1498
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE14_1_RELEASE_METADATA_HARDENING.md",
+      "stage_id": "STAGE14",
+      "artifact_type": "document",
+      "bytes": 1506
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/v1650_stage14_execution_report(1).md",
+      "stage_id": "STAGE14",
+      "artifact_type": "report",
+      "bytes": 2013
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE14_NODE2_LITERARY_QUALITY_ENGINE.md",
+      "stage_id": "STAGE14",
+      "artifact_type": "document",
+      "bytes": 1487
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE15_EPISODE_SCALE_LITERARY_DEPTH_CALIBRATION_HARNESS.md",
+      "stage_id": "STAGE15",
+      "artifact_type": "document",
+      "bytes": 2364
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE16_LONG_HORIZON_MEMORY_DRIFT_STRESS_TEST.md",
+      "stage_id": "STAGE16",
+      "artifact_type": "document",
+      "bytes": 1500
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE17_AUTHORING_UX_STATE_PERSISTENCE_REVIEW_WORKFLOW_HARDENING.md",
+      "stage_id": "STAGE17",
+      "artifact_type": "document",
+      "bytes": 1109
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE18_HUMAN_REVIEW_CONSOLE.md",
+      "stage_id": "STAGE18",
+      "artifact_type": "document",
+      "bytes": 1289
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE19_1_SECTIONED_PYTHON_EXECUTION_HARDENING.md",
+      "stage_id": "STAGE19",
+      "artifact_type": "document",
+      "bytes": 1479
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE19_2_EMBEDDED_REVIEW_PAUSE_RESUME_HARDENING.md",
+      "stage_id": "STAGE19",
+      "artifact_type": "document",
+      "bytes": 2207
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE19_REVIEW_CONSOLE_SCENARIO_BRIDGE.md",
+      "stage_id": "STAGE19",
+      "artifact_type": "document",
+      "bytes": 2631
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE20_LEARNING_CANDIDATE_REVIEW_CONSOLE.md",
+      "stage_id": "STAGE20",
+      "artifact_type": "document",
+      "bytes": 1317
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE21_EPISODE_DRAFT_ASSEMBLY_EXPORT_HARNESS.md",
+      "stage_id": "STAGE21",
+      "artifact_type": "document",
+      "bytes": 1653
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE22_NODE1_SERIES_ARC_CONTROL.md",
+      "stage_id": "STAGE22",
+      "artifact_type": "document",
+      "bytes": 2093
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE23_NODE2_LITERARY_STYLE_EVOLUTION_MEMORY.md",
+      "stage_id": "STAGE23",
+      "artifact_type": "document",
+      "bytes": 1551
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE24_1_1_HANDOFF_NOTE.md",
+      "stage_id": "STAGE24",
+      "artifact_type": "document",
+      "bytes": 3704
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE24_1_BASELINE_LOCK.md",
+      "stage_id": "STAGE24",
+      "artifact_type": "document",
+      "bytes": 4306
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE24_1_FINAL_ROADMAP_CONSOLIDATION.md",
+      "stage_id": "STAGE24",
+      "artifact_type": "document",
+      "bytes": 1469
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE24_FULL_DRAMA_SEASON_SIMULATION.md",
+      "stage_id": "STAGE24",
+      "artifact_type": "document",
+      "bytes": 1613
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE25_1_CONTRACT_LAYER.md",
+      "stage_id": "STAGE25",
+      "artifact_type": "document",
+      "bytes": 1594
+    },
+    {
+      "path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/V1650_STAGE25_2_PLANNING_LAYER.md",
+      "stage_id": "STAGE25",
+      "artifact_type": "document",
+      "bytes": 943
+    }
+  ]
+}

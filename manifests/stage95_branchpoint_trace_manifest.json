@@ -1,0 +1,28 @@
+{
+  "stage": "95",
+  "title": "Stage95 Branchpoint Trace Manifest",
+  "entries": [
+    {
+      "branchpoint_id": "BP_STAGE95_NATIVE_NARRATIVE_PHYSICS",
+      "priority": "P0",
+      "concept": "V1700 evaluates narrative state through tensor, entropy, dynamics, energy, motif, curiosity, and branchpoint survival before provider ensemble arbitration.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.narrative_physics.engine.NativeNarrativePhysicsEngine",
+        "v1700.gates.stage95_release_gate.run_stage95_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/narrative_physics/engine.py",
+        "src/v1700/gates/stage95_release_gate.py",
+        "manifests/stage95_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage95_narrative_physics.py"
+      ],
+      "gates": [
+        "stage95_release_gate"
+      ],
+      "rationale": "Stage95 creates the native scoring and safety authority needed before Stage96 provider ensemble arbitration."
+    }
+  ]
+}

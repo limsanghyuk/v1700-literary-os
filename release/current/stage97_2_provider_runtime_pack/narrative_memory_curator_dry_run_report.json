@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "dry_run": true,
+  "removed_count": 1,
+  "stale_removed": 1,
+  "weak_removed": 1,
+  "protected_preserved": 2,
+  "reason": "dry_run_auto_curation",
+  "episode_idx": 24
+}

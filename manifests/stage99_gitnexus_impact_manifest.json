@@ -1,0 +1,12 @@
+{
+  "stage": "99.0",
+  "baseline_stage": "98",
+  "purpose": "Lock the Stage98 impact graph before Stage99 hardening.",
+  "required_pack": "release/current/stage99_gitnexus_pack",
+  "release_blockers": [
+    "orphan_critical_node",
+    "broken_gate_edge",
+    "stale_manifest",
+    "branchpoint_survival_recheck_failed"
+  ]
+}

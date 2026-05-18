@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.authoring.end_to_end_scenario_runner",
+  "stage_origins": [
+    "STAGE12"
+  ],
+  "title": "End-to-End Authoring Scenario Runner",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage12_end_to_end_authoring_scenario_runner_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

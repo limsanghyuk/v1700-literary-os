@@ -1,0 +1,17 @@
+from __future__ import annotations
+
+
+def build_release_provider_policy() -> dict:
+    return {
+        "stage": "105.4",
+        "title": "Provider Release Sandbox Policy",
+        "status": "pass",
+        "release_mode_provider": "fixture/mock only",
+        "live_provider_call_count_in_release": 0,
+        "provider_default_calls": 0,
+        "sandbox_opt_in_required_for_live_calls": True,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0,
+        "cost_ledger_status": "pass",
+        "timeout_policy_status": "pass",
+    }

@@ -1,0 +1,150 @@
+{
+  "stage": "75",
+  "status": "known_blockers_registered",
+  "meaning": "Stage75 identifies required missing or partial branchpoint logics; Stage76+ must reabsorb them.",
+  "missing_or_partial_count": 9,
+  "items": [
+    {
+      "logic_id": "node2_candidate_generation",
+      "source_branchpoint": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "expected_behavior": "Generate multiple prose candidates and select by authority/surface rules.",
+      "current_location": "src/v1700/nodes/node2_prose_renderer/candidates.py + planned Stage77 rewrite_orchestrator",
+      "evidence_files": [
+        "docs/concepts/reader_surface_evaluation.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage77_node2_rewrite_restoration.py"
+      ],
+      "gate_coverage": [
+        "stage77_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "temporal_continuity",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Maintain ordered dramatic timeline and detect discontinuity.",
+      "current_location": "planned src/v1700/drama_execution/temporal_continuity.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "emotional_pressure_valve",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Escalate/release scene pressure deterministically.",
+      "current_location": "planned src/v1700/drama_execution/pressure.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "branch_commit_rollback",
+      "source_branchpoint": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "expected_behavior": "Commit, rollback, and reconverge narrative branch choices.",
+      "current_location": "planned src/v1700/drama_execution/branching.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage78_drama_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "stage78_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "three_episode_structure",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Build a three-episode macro proof from a user prompt.",
+      "current_location": "src/v1700/longform/planners.py",
+      "evidence_files": [
+        "docs/runbooks/stage74_longform_execution.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage74_longform_execution_engine.py"
+      ],
+      "gate_coverage": [
+        "longform_execution_gate",
+        "stage76_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "sequence_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Recover Stage60-scale sequence planning, target >= 29 sequences.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "scene_scale_planning",
+      "source_branchpoint": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "expected_behavior": "Recover Stage60-scale scene planning, target >= 532 planned scenes.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "ten_axis_literary_quality",
+      "source_branchpoint": "BP_STAGE56_QUALITY_GATE",
+      "expected_behavior": "Score prose using a multi-axis literary quality gate.",
+      "current_location": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence_files": [],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "MISSING_BUT_REQUIRED",
+      "reabsorption_priority": "P0"
+    },
+    {
+      "logic_id": "score_improving_refinement",
+      "source_branchpoint": "BP_STAGE57_REFINEMENT_LOOP",
+      "expected_behavior": "Show measured before/after improvement with blockers reduced.",
+      "current_location": "src/v1700/longform/refinement.py + planned Stage76 Stage60 loop",
+      "evidence_files": [
+        "docs/concepts/literary_formula_stack.md"
+      ],
+      "test_coverage": [
+        "tests/test_stage76_stage60_literary_engine_reabsorption.py"
+      ],
+      "gate_coverage": [
+        "stage76_release_gate"
+      ],
+      "survival_status": "PARTIAL_RUNTIME",
+      "reabsorption_priority": "P0"
+    }
+  ]
+}

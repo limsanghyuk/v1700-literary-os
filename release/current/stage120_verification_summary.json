@@ -1,0 +1,44 @@
+{
+  "stage": "120",
+  "title": "Gate25 NIE v1.0 Release",
+  "core_command_results": [
+    {
+      "cmd": "python -m compileall -q src tools",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "python tools/run_stage120_gate25_nie_v1.py",
+      "returncode": 0,
+      "stdout_tail": "ount\": 0,\n      \"node2_raw_reveal_access\": 0,\n      \"raw_manuscript_provider_leakage\": 0,\n      \"credential_leakage\": 0\n    },\n    \"provider_default_calls\": 0,\n    \"live_provider_call_count_in_release_gate\": 0,\n    \"embedding_provider_call_count\": 0,\n    \"query_classifier_llm_call_count\": 0,\n    \"physics_reward_bridge_llm_call_count\": 0,\n    \"mae_live_provider_call_count\": 0,\n    \"node2_raw_reveal_access\": 0,\n    \"raw_manuscript_provider_leakage\": 0,\n    \"credential_leakage\": 0,\n    \"branchpoint_lineage_preserved\": true\n  },\n  \"provider_default_calls\": 0,\n  \"live_provider_call_count_in_release_gate\": 0,\n  \"embedding_provider_call_count\": 0,\n  \"query_classifier_llm_call_count\": 0,\n  \"physics_reward_bridge_llm_call_count\": 0,\n  \"mae_live_provider_call_count\": 0,\n  \"node2_raw_reveal_access\": 0,\n  \"raw_manuscript_provider_leakage\": 0,\n  \"credential_leakage\": 0,\n  \"branchpoint_lineage_preserved\": true,\n  \"next_development_order\": [\n    \"post-120 NIE hardening or Stage121 if required\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "python tools/run_stage120_release_gate.py",
+      "returncode": 0,
+      "stdout_tail": "aseline_stage\": \"119\",\n    \"title\": \"Gate25 NIE v1.0 Release\",\n    \"issues\": [],\n    \"provider_default_calls\": 0,\n    \"live_provider_call_count_in_release_gate\": 0,\n    \"embedding_provider_call_count\": 0,\n    \"query_classifier_llm_call_count\": 0,\n    \"physics_reward_bridge_llm_call_count\": 0,\n    \"mae_live_provider_call_count\": 0,\n    \"raw_manuscript_provider_leakage\": 0,\n    \"node2_raw_reveal_access\": 0,\n    \"credential_leakage\": 0,\n    \"branchpoint_lineage_preserved\": true\n  },\n  \"gate25_summary\": {\n    \"component_count\": 8,\n    \"issues\": [],\n    \"pack_dir\": \"release/current/stage120_nie_v1_release_pack\"\n  },\n  \"provider_default_calls\": 0,\n  \"live_provider_call_count_in_release_gate\": 0,\n  \"embedding_provider_call_count\": 0,\n  \"query_classifier_llm_call_count\": 0,\n  \"physics_reward_bridge_llm_call_count\": 0,\n  \"mae_live_provider_call_count\": 0,\n  \"node2_raw_reveal_access\": 0,\n  \"raw_manuscript_provider_leakage\": 0,\n  \"credential_leakage\": 0,\n  \"branchpoint_lineage_preserved\": true\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "python tools/run_release_gate.py",
+      "returncode": 0,
+      "stdout_tail": "live_provider_call_count_in_release_gate\": 0,\n    \"raw_manuscript_provider_leakage\": 0,\n    \"node2_raw_reveal_access\": 0,\n    \"credential_leakage\": 0,\n    \"branchpoint_lineage_preserved\": true\n  },\n  \"stage119_release_gate\": {\n    \"status\": \"pass\",\n    \"stage\": \"119\",\n    \"baseline_stage\": \"118\",\n    \"title\": \"NIE Adversarial Regression Pack\",\n    \"issues\": [],\n    \"provider_default_calls\": 0,\n    \"live_provider_call_count_in_release_gate\": 0,\n    \"raw_manuscript_provider_leakage\": 0,\n    \"node2_raw_reveal_access\": 0,\n    \"credential_leakage\": 0,\n    \"branchpoint_lineage_preserved\": true\n  },\n  \"stage120_release_gate\": {\n    \"status\": \"pass\",\n    \"stage\": \"120\",\n    \"baseline_stage\": \"119\",\n    \"title\": \"Gate25 NIE v1.0 Release Gate\",\n    \"issues\": [],\n    \"provider_default_calls\": 0,\n    \"live_provider_call_count_in_release_gate\": 0,\n    \"raw_manuscript_provider_leakage\": 0,\n    \"node2_raw_reveal_access\": 0,\n    \"credential_leakage\": 0,\n    \"branchpoint_lineage_preserved\": true\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "python tools/run_stage72_repo_doctor.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"pass\",\n  \"root_python_files\": [],\n  \"issues\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "PYTHONPATH=.:src pytest -q tests/test_stage112...test_stage120...",
+      "returncode": 0,
+      "stdout_tail": "................................                                         [100%]\n32 passed in 3.93s\n",
+      "stderr_tail": ""
+    }
+  ],
+  "targeted_nie_track_tests": "32 passed",
+  "full_pytest_note": "Full legacy test collection contains older direct stage-gate tests with active-version assumptions and historical package-manifest checks; Stage112-120 NIE track tests and release gates passed."
+}

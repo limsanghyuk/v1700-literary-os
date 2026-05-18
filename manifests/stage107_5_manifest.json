@@ -1,0 +1,18 @@
+{
+  "stage": "107.5",
+  "title": "Provider Live Sandbox Adapter Verification",
+  "baseline_stage": "107",
+  "status": "fixed",
+  "release_gate_affected": false,
+  "sandbox_only": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "python_fallback_required": true,
+  "artifacts": [
+    "release/current/stage107_5_provider_live_sandbox_report.json",
+    "release/current/stage107_5_sandbox_gate_report.json",
+    "release/sandbox/stage107_5/provider_benchmark_report.json"
+  ]
+}

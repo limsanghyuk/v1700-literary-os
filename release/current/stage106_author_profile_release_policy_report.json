@@ -1,0 +1,17 @@
+{
+  "stage": "106.4",
+  "title": "Author Profile Release Policy",
+  "status": "pass",
+  "feature_only_style_genome": true,
+  "local_full_text_allowed": true,
+  "provider_export_allowed": false,
+  "raw_manuscript_retained_in_release": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "full_text_export_default": false,
+  "policy": [
+    "style genome stores aggregate feature vectors only",
+    "Node2 receives surface controls, never raw manuscript text",
+    "provider export of author profile is blocked in release mode"
+  ]
+}

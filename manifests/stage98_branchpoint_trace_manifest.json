@@ -1,0 +1,19 @@
+{
+  "stage": "98",
+  "baseline_stage": "97.2",
+  "status": "pass",
+  "branchpoint_lineage_preserved": true,
+  "inherits": [
+    "manifests/stage97_branchpoint_trace_manifest.json",
+    "manifests/stage97_1_branchpoint_trace_manifest.json",
+    "manifests/stage97_2_branchpoint_trace_manifest.json"
+  ],
+  "stage98_surfaces": [
+    "episode_board",
+    "microplot_matrix_editor",
+    "revision_queue",
+    "publishing_package"
+  ],
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0
+}

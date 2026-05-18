@@ -1,0 +1,17 @@
+name: ci-core
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e .
+      - run: python -m pytest -q tests/unit tests/integration
+      - run: python tools/run_runtime_smoke.py
+      - run: python tools/run_release_gate.py

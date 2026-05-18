@@ -1,0 +1,14 @@
+{
+  "stage": "72.3",
+  "status": "pass",
+  "issues": [],
+  "concept_count": 25,
+  "required_concept_count": 20,
+  "missing_required": [],
+  "missing_source_evidence": [],
+  "missing_evidence_files": [],
+  "missing_current_anchor": [],
+  "high_priority_unknown": [],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

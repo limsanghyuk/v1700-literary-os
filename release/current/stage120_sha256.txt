@@ -1,0 +1,1 @@
+See /SHA256SUMS.txt for repository file checksums and external .zip.sha256 for the final archive checksum.

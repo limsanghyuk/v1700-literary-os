@@ -1,0 +1,38 @@
+{
+  "stage": "82",
+  "title": "Blind Critic Evaluation & Benchmark Harness",
+  "baseline": "stage81.1",
+  "purpose": "Compare V1700 against local-first pure GPT direct-mode and Claude-style reference simulations using blind 10-axis critic scoring.",
+  "new_modules": [
+    "src/v1700/blind_critic/contracts.py",
+    "src/v1700/blind_critic/harness.py",
+    "src/v1700/gates/stage82_release_gate.py"
+  ],
+  "new_tools": [
+    "tools/run_blind_critic_benchmark.py",
+    "tools/run_stage82_release_gate.py"
+  ],
+  "new_tests": [
+    "tests/test_stage82_blind_critic_benchmark.py"
+  ],
+  "evaluation_axes": [
+    "series_story_arc",
+    "macro_plot_architecture",
+    "episode_microplot_linkage",
+    "supporting_character_web",
+    "causal_event_weaving",
+    "emotional_accessibility",
+    "prose_naturalness",
+    "mise_en_scene_density",
+    "reveal_safety",
+    "longform_expandability"
+  ],
+  "comparison_candidates": [
+    "pure_gpt_direct_mode_baseline",
+    "v1700_stage81_1_engineered_literary_os",
+    "claude_style_reference_simulation"
+  ],
+  "local_first": true,
+  "provider_default_calls": 0,
+  "important_limitation": "Stage82 uses deterministic local baseline simulations; it does not call paid GPT or Claude APIs."
+}

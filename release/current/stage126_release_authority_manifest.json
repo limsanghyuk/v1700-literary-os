@@ -1,0 +1,30 @@
+{
+  "stage": "126",
+  "baseline_stage": "125",
+  "status": "pass",
+  "release_authority": "Gate25 primary + Gate28/Gate29 secondary under Stage125 Governor",
+  "authority_stack": {
+    "Gate25": "primary_nie_release_authority",
+    "Gate28": "secondary_asd_quality_gate",
+    "Gate29": "secondary_pne_predictive_gate",
+    "Governor": "deterministic_gate25_28_29_arbitration"
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "story_doctor_llm_call_count": 0,
+    "pne_provider_call_count": 0,
+    "pne_runtime_training_count": 0,
+    "auto_repair_mutation_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "gate25_primary_authority_preserved": true,
+    "gate28_secondary_quality_preserved": true,
+    "gate29_secondary_predictive_preserved": true
+  }
+}

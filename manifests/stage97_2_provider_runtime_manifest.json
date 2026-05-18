@@ -1,0 +1,17 @@
+{
+  "stage": "97.2",
+  "provider_runtime_components": [
+    "ProviderCallContext",
+    "ProviderResponse",
+    "ProviderBridgeInterface",
+    "OpenAICompatibleProviderAdapter",
+    "ProviderTaskRouter",
+    "ProviderHealthMonitor",
+    "UnifiedProviderGateway",
+    "ProviderCostLedger",
+    "ProviderAdapterContractGate",
+    "NarrativeMemoryCurator"
+  ],
+  "release_mode_provider_policy": "fixture_or_mock_only",
+  "live_provider_call_count": 0
+}

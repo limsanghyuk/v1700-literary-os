@@ -1,0 +1,110 @@
+{
+  "stage": "72.1",
+  "status": "pass",
+  "issues": [],
+  "gitnexus": {
+    "installed": true,
+    "command": "gitnexus",
+    "optional_runtime_dependency": false,
+    "fallback_available": true,
+    "error": ""
+  },
+  "gitnexus_optional_only": true,
+  "python_fallback_available": true,
+  "provider_default_calls": 0,
+  "code_graph_available": true,
+  "narrative_graph_available": true,
+  "stage_lineage_graph_available": true,
+  "node2_raw_reveal_access_count": 0,
+  "checks": {
+    "lineage_preflight": {
+      "status": "pass",
+      "goal": "Stage72.1 GraphNexus restoration",
+      "missing_stages": [],
+      "stage_count": 9,
+      "graph_intelligence_lineage_present": true
+    },
+    "impact": {
+      "status": "pass",
+      "impact": {
+        "target": "Node2ProseCompiler",
+        "risk_level": "medium",
+        "risk_score": 0.6000000000000001,
+        "code_hits": [
+          "src/v1700/nodes/node2_prose_renderer/compiler.py"
+        ],
+        "narrative_node_count": 2,
+        "lineage_node_count": 9,
+        "risks": [
+          "node2_surface_contract_must_hold",
+          "forbidden_reveal_projection_required"
+        ]
+      },
+      "requires_human_attention": false
+    },
+    "legacy_logic_survival": {
+      "status": "pass",
+      "stage": "STAGE61-66",
+      "required_concepts": [
+        "authority boundaries",
+        "feature flag integration",
+        "graph sidecar"
+      ],
+      "missing_concepts": [],
+      "current_status": "restored_as_optional_graphnexus_layer"
+    },
+    "node_projection": {
+      "status": "pass",
+      "node2_raw_graph_access": false,
+      "node2_packet": {
+        "packet_type": "Node2GraphSurfacePacket",
+        "scene_id": "S72_1_SAMPLE",
+        "surface_tone": "reader_facing",
+        "relationship_pressure": "medium",
+        "sensory_anchors": [
+          "setting",
+          "gesture"
+        ],
+        "forbidden_reveal_labels": [
+          "locked_reveal_1"
+        ],
+        "style_drift_warnings": []
+      },
+      "node3_packet": {
+        "packet_type": "Node3GraphCriticPacket",
+        "contradiction_risks": [
+          "forbidden_reveal_projection_required"
+        ],
+        "leakage_risks": [
+          "forbidden_reveal_projection_required"
+        ],
+        "impact": {
+          "risks": [
+            "forbidden_reveal_projection_required"
+          ]
+        }
+      }
+    }
+  },
+  "context_packet": {
+    "code_summary": {
+      "available": true,
+      "source": "python_fallback",
+      "node_count": 54
+    },
+    "narrative_summary": {
+      "available": true,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    "lineage_summary": {
+      "available": true,
+      "node_count": 9,
+      "stage72_1_present": true
+    },
+    "warnings": [
+      "node2_surface_contract_must_hold",
+      "forbidden_reveal_projection_required"
+    ]
+  }
+}

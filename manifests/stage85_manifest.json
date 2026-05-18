@@ -1,0 +1,20 @@
+{
+  "stage": "85",
+  "title": "GitNexus Density Upgrade and Symbol-to-Branchpoint Traceability",
+  "status": "pass",
+  "depends_on": [
+    "stage84",
+    "stage83.1",
+    "stage72.1"
+  ],
+  "required_outputs": [
+    "manifests/symbol_to_branchpoint_trace_manifest.json",
+    "release/current/stage85_gitnexus_index_quality_report.json",
+    "release/current/stage85_release_gate_report.json",
+    "tools/export_stage85_artifacts.py",
+    "tools/run_stage85_release_gate.py",
+    "tests/test_stage85_traceability.py"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

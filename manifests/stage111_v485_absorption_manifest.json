@@ -1,0 +1,6 @@
+{
+  "stage": "111",
+  "status": "active",
+  "absorption_mode": "wrap_only",
+  "v485_direct_merge_allowed": false
+}

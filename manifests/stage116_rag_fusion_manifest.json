@@ -1,0 +1,36 @@
+{
+  "stage": "stage116",
+  "components": {
+    "QueryIntentClassifier": "src/v1700/nie/rag/query_intent_classifier.py",
+    "DramaLexicon": "src/v1700/nie/rag/drama_lexicon.py",
+    "AdaptiveHybridWeights": "src/v1700/nie/rag/adaptive_hybrid_weights.py"
+  },
+  "policy_matrix": {
+    "CHARACTER": {
+      "bm25_weight": 0.7,
+      "dense_weight": 0.3,
+      "k": 40
+    },
+    "EMOTIONAL": {
+      "bm25_weight": 0.3,
+      "dense_weight": 0.7,
+      "k": 60
+    },
+    "PLOT_EVENT": {
+      "bm25_weight": 0.5,
+      "dense_weight": 0.5,
+      "k": 50
+    }
+  },
+  "drama_lexicon_boost": {
+    "CHARACTER_NAMES": 1.5,
+    "EPISODE_TERMS": 1.3,
+    "DRAMA_KEYWORDS": 1.2,
+    "EMOTION_WORDS": 1.15
+  },
+  "forbidden": [
+    "LLM query classification",
+    "embedding provider call in release gate",
+    "live provider call in release gate"
+  ]
+}

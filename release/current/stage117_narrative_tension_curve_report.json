@@ -1,0 +1,145 @@
+{
+  "stage": "117",
+  "baseline_stage": "116",
+  "title": "NarrativeTensionCurve",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "117",
+    "baseline_stage": "116",
+    "title": "NarrativeTensionCurve",
+    "ideal_curve_required": true,
+    "tension_loss_required": true,
+    "coverage_loss_required": true,
+    "final_loss_required": true,
+    "release_gate_live_provider_calls_allowed": false,
+    "next_development_order": [
+      "Stage118",
+      "Stage119",
+      "Stage120"
+    ]
+  },
+  "tension_curve": {
+    "stage": "117",
+    "baseline_stage": "116",
+    "title": "NarrativeTensionCurve",
+    "status": "pass",
+    "issues": [],
+    "formula": "T_ideal(t)=0.60+0.40*sin(2πt-0.50)+0.20*sin(6πt)",
+    "loss_function": "L_final=L_tension+lambda*L_coverage",
+    "lambda_coverage": 0.3,
+    "block_threshold": 0.18,
+    "warn_threshold": 0.1,
+    "scene_count": 8,
+    "act_counts": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "loss": {
+      "scene_count": 8,
+      "tension_loss": 4.1e-05,
+      "coverage_loss": 0.0,
+      "final_loss": 4.1e-05,
+      "lambda_coverage": 0.3,
+      "status": "PASS"
+    },
+    "per_scene": [
+      {
+        "scene_id": "stage117_scene_001",
+        "position": 0.05,
+        "act": 1,
+        "actual_tension": 0.677894,
+        "ideal_tension": 0.687894,
+        "squared_error": 0.0001
+      },
+      {
+        "scene_id": "stage117_scene_002",
+        "position": 0.16,
+        "act": 1,
+        "actual_tension": 0.826698,
+        "ideal_tension": 0.818698,
+        "squared_error": 6.4e-05
+      },
+      {
+        "scene_id": "stage117_scene_003",
+        "position": 0.3,
+        "act": 2,
+        "actual_tension": 0.869555,
+        "ideal_tension": 0.875555,
+        "squared_error": 3.6e-05
+      },
+      {
+        "scene_id": "stage117_scene_004",
+        "position": 0.42,
+        "act": 2,
+        "actual_tension": 1.0,
+        "ideal_tension": 1.0,
+        "squared_error": 0.0
+      },
+      {
+        "scene_id": "stage117_scene_005",
+        "position": 0.56,
+        "act": 3,
+        "actual_tension": 0.461114,
+        "ideal_tension": 0.468114,
+        "squared_error": 4.9e-05
+      },
+      {
+        "scene_id": "stage117_scene_006",
+        "position": 0.69,
+        "act": 3,
+        "actual_tension": 0.434369,
+        "ideal_tension": 0.429369,
+        "squared_error": 2.5e-05
+      },
+      {
+        "scene_id": "stage117_scene_007",
+        "position": 0.82,
+        "act": 4,
+        "actual_tension": 0.244462,
+        "ideal_tension": 0.250462,
+        "squared_error": 3.6e-05
+      },
+      {
+        "scene_id": "stage117_scene_008",
+        "position": 0.95,
+        "act": 4,
+        "actual_tension": 0.151337,
+        "ideal_tension": 0.147337,
+        "squared_error": 1.6e-05
+      }
+    ],
+    "coverage_targets": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "provider_call_count": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage118",
+    "Stage119",
+    "Stage120"
+  ]
+}

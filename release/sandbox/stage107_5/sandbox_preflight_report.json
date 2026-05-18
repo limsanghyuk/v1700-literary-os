@@ -1,0 +1,70 @@
+{
+  "stage": "107.5.0",
+  "title": "Provider Live Sandbox Preflight",
+  "status": "pass",
+  "issues": [],
+  "baseline_stage": "107",
+  "checks": {
+    "stage107_baseline_gate_pass": true,
+    "gitnexus_python_fallback_visible": true,
+    "branchpoint_survival_pass": true,
+    "release_gate_isolation_pass": true,
+    "sandbox_explicit_opt_in_required": true,
+    "raw_manuscript_block_pass": true,
+    "raw_response_storage_block_pass": true,
+    "credential_externality_pass": true
+  },
+  "config": {
+    "sandbox_enabled": false,
+    "allow_live_provider_calls": false,
+    "release_gate_affected": false,
+    "raw_manuscript_allowed": false,
+    "provider_ids": [
+      "openai",
+      "anthropic",
+      "gemini",
+      "ollama"
+    ],
+    "model_aliases": "redacted_to_provider_aliases",
+    "max_live_calls": 12,
+    "max_prompt_chars": 6000,
+    "store_raw_response": false
+  },
+  "live_call_guard_issues": [
+    "sandbox_not_enabled",
+    "live_calls_not_allowed"
+  ],
+  "credential_status": [
+    {
+      "provider_id": "openai",
+      "credential_env": "OPENAI_API_KEY",
+      "present": false,
+      "value_recorded": false
+    },
+    {
+      "provider_id": "anthropic",
+      "credential_env": "ANTHROPIC_API_KEY",
+      "present": false,
+      "value_recorded": false
+    },
+    {
+      "provider_id": "gemini",
+      "credential_env": "GEMINI_API_KEY",
+      "present": false,
+      "value_recorded": false
+    },
+    {
+      "provider_id": "ollama",
+      "credential_env": "OLLAMA_BASE_URL",
+      "present": false,
+      "value_recorded": false
+    }
+  ],
+  "release_isolation": {
+    "status": "pass",
+    "release_gate_affected": false,
+    "live_provider_call_count_in_release_gate": 0,
+    "provider_default_calls": 0
+  },
+  "branchpoint_trace_status": "pass"
+}

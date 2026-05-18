@@ -1,0 +1,38 @@
+{
+  "stage": "120",
+  "title": "Gate25 NIE v1.0 Integrity Audit",
+  "status": "pass",
+  "issues_fixed": [
+    "internal SHA256SUMS self-hash mismatch removed by excluding SHA256SUMS.txt from its own checksum list",
+    "__pycache__/.pyc cache artifacts removed from clean ZIP",
+    "legacy successor-context gates updated to recognize active stage120"
+  ],
+  "verification": {
+    "compileall_src_tools_tests": "pass",
+    "stage120_gate25_nie_v1": "pass",
+    "stage120_release_gate": "pass",
+    "main_release_gate": "pass",
+    "repo_doctor": "pass",
+    "pytest_total_collected": 366,
+    "pytest_execution_mode": "split_by_file_groups_due_session_timeout",
+    "pytest_result": "366 passed / 0 failed"
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  },
+  "clean_packaging_policy": {
+    "disallow_backslash_paths": true,
+    "disallow_pycache": true,
+    "disallow_pyc": true,
+    "disallow_pytest_cache": true,
+    "disallow_env_files": true
+  }
+}

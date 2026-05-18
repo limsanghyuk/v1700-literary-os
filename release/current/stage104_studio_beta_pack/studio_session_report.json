@@ -1,0 +1,10 @@
+{
+  "session_id": "stage104-session-001",
+  "project_id": "stage104_sample_project",
+  "opened_at": "2026-05-18T09:13:30+00:00",
+  "active_episode_id": "ep-001",
+  "active_scene_id": "scene-001",
+  "unsaved_changes": false,
+  "provider_call_count": 0,
+  "live_provider_call_count_in_release_gate": 0
+}

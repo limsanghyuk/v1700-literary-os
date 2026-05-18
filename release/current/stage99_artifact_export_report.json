@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "stage99_release_gate_status": "pass",
+  "files": [
+    "release/current/stage99_gitnexus_pack/branchpoint_survival_recheck_report.json",
+    "release/current/stage99_gitnexus_pack/broken_edge_report.json",
+    "release/current/stage99_gitnexus_pack/impact_edges.json",
+    "release/current/stage99_gitnexus_pack/impact_nodes.json",
+    "release/current/stage99_gitnexus_pack/orphan_node_report.json",
+    "release/current/stage99_gitnexus_pack/stage98_to_stage99_delta_report.json",
+    "release/current/stage99_gitnexus_pack/stage99_0_summary.md",
+    "release/current/stage99_regression_freeze_pack/gate_replay_matrix.json",
+    "release/current/stage99_regression_freeze_pack/regression_test_matrix.json",
+    "release/current/stage99_regression_freeze_pack/stage100_readiness_precheck.json",
+    "release/current/stage99_regression_freeze_pack/stage95_to_stage98_survival_matrix.json",
+    "release/current/stage99_regression_freeze_pack/stage99_2_summary.md",
+    "release/current/stage99_security_pack/credential_audit_report.json",
+    "release/current/stage99_security_pack/internal_marker_leakage_scan_report.json",
+    "release/current/stage99_security_pack/node2_boundary_replay_report.json",
+    "release/current/stage99_security_pack/package_secret_scan_report.json",
+    "release/current/stage99_security_pack/provider_live_call_replay_report.json",
+    "release/current/stage99_security_pack/raw_manuscript_leakage_simulation_report.json",
+    "release/current/stage99_security_pack/stage99_1_summary.md"
+  ]
+}

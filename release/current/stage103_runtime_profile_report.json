@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "profiles": [
+    {
+      "profile_id": "dev",
+      "provider_mode": "fixture_local",
+      "allow_live_provider_calls": false,
+      "raw_manuscript_allowed": false,
+      "credential_source": "none_by_default",
+      "evidence_policy": "write_local_release_evidence",
+      "default_timeout_seconds": 30
+    },
+    {
+      "profile_id": "release",
+      "provider_mode": "fixture_or_mock_only",
+      "allow_live_provider_calls": false,
+      "raw_manuscript_allowed": false,
+      "credential_source": "forbidden",
+      "evidence_policy": "provider_zero_clean_evidence",
+      "default_timeout_seconds": 30
+    },
+    {
+      "profile_id": "sandbox",
+      "provider_mode": "opt_in_live_provider_guarded",
+      "allow_live_provider_calls": false,
+      "raw_manuscript_allowed": false,
+      "credential_source": "explicit_env_only",
+      "evidence_policy": "sandbox_evidence_never_release_gate",
+      "default_timeout_seconds": 90
+    }
+  ],
+  "release_profile_safe": true,
+  "sandbox_opt_in_required": true,
+  "dev_profile_local_first": true,
+  "issues": [],
+  "stage": "103.2",
+  "title": "Runtime Profile Separation"
+}

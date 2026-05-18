@@ -1,0 +1,16 @@
+{
+  "stage": "stage126",
+  "name": "Cross-Lineage Intelligence Release",
+  "baseline_stage": "stage125",
+  "status": "active",
+  "release_gate": "stage126_release_gate",
+  "runner": "tools/run_stage126_cross_lineage_release.py",
+  "required_reports": [
+    "release/current/stage126_cross_lineage_intelligence_release_report.json",
+    "release/current/stage126_release_authority_manifest.json",
+    "release/current/stage126_lineage_release_pack.json",
+    "release/current/stage126_release_gate_report.json"
+  ],
+  "provider_default_calls": 0,
+  "direct_candidate_merge_performed": false
+}

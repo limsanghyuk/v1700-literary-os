@@ -1,0 +1,11 @@
+{
+  "stage": "102",
+  "title": "Stage102 Branchpoint Trace Manifest",
+  "branchpoints": [
+    "BP_STAGE102_REAL_WRITER_TRIAL",
+    "BP_STAGE102_BLIND_BENCHMARK",
+    "BP_STAGE102_REVISION_EFFICIENCY",
+    "BP_STAGE102_PROVIDER_ZERO_PRIVACY"
+  ],
+  "status": "active"
+}

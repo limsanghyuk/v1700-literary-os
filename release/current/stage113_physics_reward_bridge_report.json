@@ -1,0 +1,144 @@
+{
+  "stage": "113",
+  "baseline_stage": "112",
+  "title": "PhysicsRewardBridge + MAE Reward Wiring",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "113",
+    "baseline_stage": "112",
+    "title": "PhysicsRewardBridge + MAE Reward Wiring",
+    "mae_live_calls_allowed_in_release_gate": false,
+    "physics_reward_bridge_llm_calls_allowed": false,
+    "reward_weights": {
+      "reader": 0.35,
+      "writer": 0.25,
+      "editor": 0.25,
+      "cultural": 0.15
+    },
+    "next_development_order": [
+      "Stage114",
+      "Stage115",
+      "Stage116",
+      "Stage117",
+      "Stage118",
+      "Stage119",
+      "Stage120"
+    ]
+  },
+  "reward_bridge": {
+    "stage": "113",
+    "status": "pass",
+    "mae_result": {
+      "scene_id": "stage113_fixture_scene_001",
+      "reader_score": 0.82,
+      "writer_score": 0.76,
+      "editor_score": 0.79,
+      "cultural_score": 0.74,
+      "dimension_scores": {
+        "tension": 0.78,
+        "sympathy": 0.72,
+        "dread": 0.61,
+        "catharsis": 0.69
+      },
+      "rubric_evidence": {
+        "reader": [
+          "curiosity_present",
+          "empathy_anchor_present",
+          "next_scene_pull"
+        ],
+        "writer": [
+          "dialogue_voice_distinct",
+          "image_specificity",
+          "subtext_present"
+        ],
+        "editor": [
+          "causal_link_clear",
+          "reveal_timing_safe",
+          "pace_consistent"
+        ],
+        "cultural": [
+          "k_drama_emotional_code",
+          "relationship_pressure_legible",
+          "cliche_avoidance"
+        ]
+      },
+      "live_provider_call_count": 0,
+      "source": "fixture"
+    },
+    "reward_signal": {
+      "scene_id": "stage113_fixture_scene_001",
+      "reward": 0.7855,
+      "baseline_before": 0.5,
+      "baseline_after": 0.514275,
+      "advantage": 0.2855,
+      "weights": {
+        "reader": 0.35,
+        "writer": 0.25,
+        "editor": 0.25,
+        "cultural": 0.15
+      },
+      "provider_call_count": 0,
+      "physics_reward_bridge_llm_call_count": 0
+    },
+    "coefficient_update_proposals": [
+      {
+        "coefficient": "curiosity_gradient_weight",
+        "feature_value": 0.82,
+        "baseline_value": 1.0,
+        "proposed_value": 0.999486,
+        "delta": -0.000514,
+        "reason": "positive_advantage_moves_toward_feature"
+      },
+      {
+        "coefficient": "emotional_momentum_weight",
+        "feature_value": 0.78,
+        "baseline_value": 1.0,
+        "proposed_value": 0.999372,
+        "delta": -0.000628,
+        "reason": "positive_advantage_moves_toward_feature"
+      },
+      {
+        "coefficient": "motif_residue_weight",
+        "feature_value": 0.74,
+        "baseline_value": 1.0,
+        "proposed_value": 0.999258,
+        "delta": -0.000742,
+        "reason": "positive_advantage_moves_toward_feature"
+      },
+      {
+        "coefficient": "scene_energy_weight",
+        "feature_value": 0.79,
+        "baseline_value": 1.0,
+        "proposed_value": 0.9994,
+        "delta": -0.0006,
+        "reason": "positive_advantage_moves_toward_feature"
+      }
+    ],
+    "drift_guard": {
+      "status": "pass",
+      "max_single_update_delta": 0.000742,
+      "limit": 0.03,
+      "proposal_count": 4,
+      "issues": []
+    },
+    "issues": []
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage114",
+    "Stage115",
+    "Stage116",
+    "Stage117",
+    "Stage118",
+    "Stage119",
+    "Stage120"
+  ]
+}

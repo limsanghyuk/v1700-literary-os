@@ -1,0 +1,10 @@
+{
+  "stage": "105",
+  "status": "active",
+  "branchpoint_lineage_preserved": true,
+  "symbols": [
+    "src/v1700/creative_arbitration",
+    "src/v1700/stage105",
+    "src/v1700/gates/stage105_release_gate.py"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "status": "pass",
+  "entry_count": 9,
+  "entries": [
+    {
+      "formula_id": "STAGE120_REWARD_ADVANTAGE_EMA",
+      "source_lineage": "stage120_trunk",
+      "source_version": "Stage120 Gate25 NIE v1.0",
+      "module_path": "src/v1700/nie/reward/physics_reward_bridge.py",
+      "formula_type": "reward_signal",
+      "expression": "R=0.35*reader+0.25*writer+0.25*editor+0.15*cultural; advantage=R-baseline; baseline'=0.95*baseline+0.05*R",
+      "constants": {
+        "reader": 0.35,
+        "writer": 0.25,
+        "editor": 0.25,
+        "cultural": 0.15,
+        "baseline_decay": 0.95,
+        "baseline_lr": 0.05
+      },
+      "conflicts_with": [],
+      "absorption_status": "KEEP",
+      "reason": "current Gate25 NIE v1.0 reward contract remains primary"
+    },
+    {
+      "formula_id": "STAGE120_AMW_ALPHA_BOUNDS",
+      "source_lineage": "stage120_trunk",
+      "source_version": "Stage114/Stage120",
+      "module_path": "src/v1700/nie/emotion/adaptive_momentum_weights.py",
+      "formula_type": "bounded_calibration",
+      "expression": "delta=alpha*process+(1-alpha)*observation; alpha in [0.30,0.80]; per_update<=0.03; per_run<=0.10",
+      "constants": {
+        "alpha_min": 0.3,
+        "alpha_max": 0.8,
+        "per_update_shift_max": 0.03,
+        "per_run_shift_max": 0.1
+      },
+      "conflicts_with": [
+        "V525_AMW_ALPHA_BOUNDS"
+      ],
+      "absorption_status": "KEEP",
+      "reason": "safety-first bounded calibration; V525 wider alpha is deferred until drift adversarial tests exist"
+    },
+    {
+      "formula_id": "V525_AMW_ALPHA_BOUNDS",
+      "source_lineage": "v525_candidate",
+      "source_version": "V525 NIE v2.0 candidate",
+      "module_path": "literary_system/nie/adaptive_momentum_weights.py",
+      "formula_type": "bounded_calibration_candidate",
+      "expression": "alpha in [0.05,0.95]; LR_AMW=0.005",
+      "constants": {
+        "alpha_min": 0.05,
+        "alpha_max": 0.95,
+        "lr_amw": 0.005
+      },
+      "conflicts_with": [
+        "STAGE120_AMW_ALPHA_BOUNDS"
+      ],
+      "absorption_status": "DEFER",
+      "reason": "wider alpha range conflicts with Stage120 drift guard; record as experiment-only candidate"
+    },
+    {
+      "formula_id": "STAGE120_TENSION_CURVE",
+      "source_lineage": "stage120_trunk",
+      "source_version": "Stage117/Stage120",
+      "module_path": "src/v1700/nie/arc/narrative_tension_curve.py",
+      "formula_type": "loss_function",
+      "expression": "T_ideal(t)=0.60+0.40*sin(2*pi*t-0.50)+0.20*sin(6*pi*t); L_final=L_tension+0.3*L_coverage",
+      "constants": {
+        "base": 0.6,
+        "primary_amp": 0.4,
+        "primary_phase": -0.5,
+        "secondary_amp": 0.2,
+        "lambda_coverage": 0.3
+      },
+      "conflicts_with": [],
+      "absorption_status": "KEEP",
+      "reason": "current tension objective remains Gate25 baseline"
+    },
+    {
+      "formula_id": "V545_GATE28_STORY_QUALITY",
+      "source_lineage": "v545_candidate",
+      "source_version": "V545 ASD candidate",
+      "module_path": "literary_system/graph_intelligence/asd/gate28.py",
+      "formula_type": "quality_gate_candidate",
+      "expression": "debt<=0.50; arc<=0.40; high_priority<=5; combined=min(debt*0.55+arc*0.45,1.0)<=0.45",
+      "constants": {
+        "debt_threshold": 0.5,
+        "arc_threshold": 0.4,
+        "high_priority_threshold": 5,
+        "debt_weight": 0.55,
+        "arc_weight": 0.45,
+        "combined_threshold": 0.45
+      },
+      "conflicts_with": [],
+      "absorption_status": "ADAPT",
+      "reason": "valuable secondary quality gate, but must be introduced after Stage121 reconciliation as Stage123"
+    },
+    {
+      "formula_id": "V545_ASD_PRIORITY_SCORE",
+      "source_lineage": "v545_candidate",
+      "source_version": "V545 ASD candidate",
+      "module_path": "literary_system/graph_intelligence/asd/story_doctor_orchestrator.py",
+      "formula_type": "repair_priority_candidate",
+      "expression": "priority_score=severity*(1+1.5*blast_ratio)",
+      "constants": {
+        "blast_multiplier": 1.5
+      },
+      "conflicts_with": [],
+      "absorption_status": "ADAPT",
+      "reason": "candidate for ASD repair triage; release mutation must remain dry-run until Stage123"
+    },
+    {
+      "formula_id": "V555_PNE_PREEMPTIVE_GATE",
+      "source_lineage": "v555_candidate",
+      "source_version": "V555 PNE candidate",
+      "module_path": "literary_system/predictive/preemptive_gate.py",
+      "formula_type": "predictive_gate_candidate",
+      "expression": "block if predicted_debt_probability>=0.60",
+      "constants": {
+        "block_threshold": 0.6
+      },
+      "conflicts_with": [],
+      "absorption_status": "ADAPT",
+      "reason": "use as Gate29 candidate; release gate must use frozen fixtures, not live training"
+    },
+    {
+      "formula_id": "V555_PNE_FEEDBACK_PRECISION_TARGET",
+      "source_lineage": "v555_candidate",
+      "source_version": "V555 PNE candidate",
+      "module_path": "literary_system/predictive/feedback_learner.py",
+      "formula_type": "model_quality_target",
+      "expression": "precision_target>=0.70; positive threshold=0.60",
+      "constants": {
+        "precision_target": 0.7,
+        "positive_threshold": 0.6
+      },
+      "conflicts_with": [],
+      "absorption_status": "ADAPT",
+      "reason": "0.70 is quality target, not scene approval threshold; must be documented to avoid formula mixing"
+    },
+    {
+      "formula_id": "V555_DEBT_PREDICTOR_RF",
+      "source_lineage": "v555_candidate",
+      "source_version": "V555 PNE candidate",
+      "module_path": "literary_system/predictive/debt_predictor.py",
+      "formula_type": "ml_predictor_candidate",
+      "expression": "RandomForestClassifier(n_estimators=100,max_depth=5,random_state=42,min_samples=5) with heuristic fallback",
+      "constants": {
+        "n_estimators": 100,
+        "max_depth": 5,
+        "random_state": 42,
+        "min_samples": 5
+      },
+      "conflicts_with": [],
+      "absorption_status": "DEFER",
+      "reason": "predictive ML layer requires frozen model-card fixtures and sklearn-optional fallback before release authority"
+    }
+  ],
+  "by_absorption_status": {
+    "KEEP": 3,
+    "DEFER": 2,
+    "ADAPT": 4
+  },
+  "formula_sources": [
+    "stage120_trunk",
+    "v525_candidate",
+    "v545_candidate",
+    "v555_candidate"
+  ],
+  "stage120_formulas_preserved": true
+}

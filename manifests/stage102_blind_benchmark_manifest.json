@@ -1,0 +1,10 @@
+{
+  "stage": "102.2",
+  "title": "Blind Benchmark",
+  "minimum_candidate_count": 8,
+  "minimum_reviewer_count": 3,
+  "minimum_v1700_margin_over_pure_gpt": 0.5,
+  "identity_leakage_allowed": false,
+  "provider_default_calls": 0,
+  "raw_manuscript_provider_leakage": 0
+}

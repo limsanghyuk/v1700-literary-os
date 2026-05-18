@@ -1,0 +1,64 @@
+{
+  "genome_id": "style_genome_stage106_feature_only",
+  "author_profile_id": "author_profile_stage106",
+  "feature_vectors": [
+    {
+      "project_id": "author_profile_stage106",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.68,
+      "sensory_density": 0.74,
+      "dialogue_ratio": 0.31,
+      "introspection_ratio": 0.62,
+      "scene_motion_ratio": 0.41,
+      "lexical_signature_hash": "29c385b95cf6acac",
+      "raw_text_retained": false
+    },
+    {
+      "project_id": "author_profile_stage106",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.71,
+      "sensory_density": 0.69,
+      "dialogue_ratio": 0.36,
+      "introspection_ratio": 0.57,
+      "scene_motion_ratio": 0.46,
+      "lexical_signature_hash": "715d213a1a9661ca",
+      "raw_text_retained": false
+    },
+    {
+      "project_id": "author_profile_stage106",
+      "source_scope": "FEATURE_ONLY",
+      "sentence_rhythm": 0.66,
+      "sensory_density": 0.77,
+      "dialogue_ratio": 0.29,
+      "introspection_ratio": 0.65,
+      "scene_motion_ratio": 0.38,
+      "lexical_signature_hash": "7c76cd67ac78ac36",
+      "raw_text_retained": false
+    }
+  ],
+  "authorial_rhythm": 0.683,
+  "sensory_preference": 0.733,
+  "dialogue_preference": 0.32,
+  "introspection_preference": 0.613,
+  "motion_preference": 0.417,
+  "privacy_mode": "FEATURE_ONLY",
+  "raw_manuscript_retained": false,
+  "provider_export_allowed": false,
+  "stage": "106.2",
+  "title": "Adaptive Author Profile & Style Genome",
+  "status": "pass",
+  "feature_only": true,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_call_count": 0,
+  "genome_contract": "style_vector_statistics_only_no_raw_text",
+  "privacy_guard": {
+    "stage": "106.privacy",
+    "status": "pass",
+    "issues": [],
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_retained": false,
+    "provider_export_allowed": false,
+    "feature_only": true,
+    "credential_leakage": 0
+  }
+}

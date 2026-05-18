@@ -1,0 +1,20 @@
+{
+  "stage": "73.1",
+  "status": "pass",
+  "restored_in_stage73_1": [
+    "DRSE",
+    "EmotionalMomentum4D",
+    "MiseEnSceneCompiler",
+    "SceneGraphQueryEngine",
+    "LiteraryRefinementLoop"
+  ],
+  "activated_in_stage74": [
+    "Stage50PromptToThreeEpisodeEngine",
+    "Stage39DramaExecutionSmoke",
+    "LongformSceneExpansionEngine"
+  ],
+  "still_requires_future_depth": [
+    "full season-scale branch rollback simulation",
+    "multi-episode critic refinement beyond smoke depth"
+  ]
+}

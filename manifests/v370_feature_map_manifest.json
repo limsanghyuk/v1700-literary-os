@@ -1,0 +1,58 @@
+{
+  "stage": "84",
+  "status": "mapped",
+  "source_archive": "literary_os_v370_release.zip",
+  "principle": "Map Claude V370 runtime features into V1700 contracts rather than copying authority boundaries wholesale.",
+  "features": [
+    {
+      "v370_feature": "ClosedLoopRenderOrchestratorV2",
+      "v1700_absorption": "ClosedLoopRenderer",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "KoreanAntiLLMFilter",
+      "v1700_absorption": "KoreanAntiLLMFilter",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "StyleDNA",
+      "v1700_absorption": "StyleDNA",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "SensoryAnchorInjector",
+      "v1700_absorption": "SensoryAnchorInjector",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "EmotionToBehaviorRenderer",
+      "v1700_absorption": "EmotionToBehaviorRenderer",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "KoreanRhythmRewriter",
+      "v1700_absorption": "KoreanRhythmRewriter",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "ReaderSurfaceScorer",
+      "v1700_absorption": "ReaderSurfaceScorer",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "LocalJudgmentValidator",
+      "v1700_absorption": "LocalJudgmentValidator",
+      "status": "absorbed"
+    },
+    {
+      "v370_feature": "LLMNodeRouter / ClaudeAdapter / OllamaAdapter / MockAdapter",
+      "v1700_absorption": "LLMNodeRouter with provider default calls locked to 0",
+      "status": "safe_mock_absorbed"
+    },
+    {
+      "v370_feature": "SelfLearningCollector / trace dataset",
+      "v1700_absorption": "SelfLearningCollector local JSONL trace dataset",
+      "status": "absorbed"
+    }
+  ]
+}

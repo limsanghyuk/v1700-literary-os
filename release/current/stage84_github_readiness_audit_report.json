@@ -1,0 +1,47 @@
+{
+  "stage": "84.0.1",
+  "title": "GitHub repository readiness and full logic integrity audit",
+  "status": "pass_after_patch",
+  "date": "2026-05-13",
+  "found_errors": [
+    {
+      "id": "LIVE_CORE_STILL_STAGE83",
+      "severity": "blocker",
+      "finding": "manifests/live_core_manifest.json active_version remained stage83 and canonical_package pointed to the Stage83 ZIP, so the repository advertised Stage84 in README/package_manifest while the live core still selected Stage83.",
+      "fix": "Set active_version to stage84, canonical_package to Stage84 ZIP, added stage83_1/stage84 active gates and invariants."
+    },
+    {
+      "id": "MAIN_RELEASE_GATE_OMITS_STAGE83_1_AND_STAGE84",
+      "severity": "blocker",
+      "finding": "src/v1700/gates/release_gate.py did not invoke Stage83.1 or Stage84 gates, so the main GitHub CI gate could pass without validating the new development layer.",
+      "fix": "Extended active-version routing to stage83.1/stage84 and added stage83_1_release_gate and stage84_release_gate to the returned gate report."
+    },
+    {
+      "id": "REPO_DOCTOR_REJECTS_STAGE84",
+      "severity": "blocker",
+      "finding": "tools/run_stage72_repo_doctor.py only allowed stage72/stage72.1, while the test allowed only through stage83. This would fail scheduled/full CI after the manifest was corrected.",
+      "fix": "Updated repo doctor and its test to allow stage84 and assert presence of stage83_1/stage84 gates."
+    },
+    {
+      "id": "README_STALE_CANONICAL_STAGE",
+      "severity": "major",
+      "finding": "README claimed Stage84 at top but still carried a “Current Canonical Stage: Stage80” section.",
+      "fix": "Changed the section to Stage84 and clarified Stage80 as preserved hierarchy foundation."
+    }
+  ],
+  "verification": {
+    "sha256_input_zip_matched_sidecar": true,
+    "compileall": "pass",
+    "pytest_split_total": "68 passed",
+    "ci_core_equivalent": "pass: pytest tests/unit tests/integration, runtime_smoke, run_release_gate",
+    "repo_doctor": "pass",
+    "stage83_1_release_gate": "pass",
+    "stage84_release_gate": "pass",
+    "main_release_gate": "pass and includes stage83_1_release_gate + stage84_release_gate",
+    "pip_editable_install": "pass",
+    "cli_help_after_install": "pass",
+    "secret_scan": "no concrete secrets found; one documentation-only api-key option mention in GitNexus SKILL.md",
+    "large_files": "release evidence JSON files exceed 1MB but are acceptable if release evidence is intentionally versioned"
+  },
+  "github_readiness": "repo-capable after patch; recommended next optional cleanup is reducing or moving generated release/current mega-reports if repository weight matters."
+}

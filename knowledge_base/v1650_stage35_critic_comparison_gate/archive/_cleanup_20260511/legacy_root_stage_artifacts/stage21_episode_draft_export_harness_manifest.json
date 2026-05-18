@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.longform.episode_draft_export",
+  "stage_origins": [
+    "STAGE21"
+  ],
+  "title": "Episode Draft Export Harness",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage21_episode_draft_export_harness_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

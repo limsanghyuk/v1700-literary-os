@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-DLG-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "speech_level_inconsistency_above_threshold",
+    "triggered_gate": "dialogue_pragmatics",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-DLG-001.json"
+  },
+  {
+    "case_id": "ADV-DLG-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "explanatory_dialogue_ratio_above_threshold",
+    "triggered_gate": "dialogue_pragmatics",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-DLG-002.json"
+  }
+]

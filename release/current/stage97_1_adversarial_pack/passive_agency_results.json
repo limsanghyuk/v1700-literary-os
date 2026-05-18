@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-AGY-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "passive_protagonist_arc_detected",
+    "triggered_gate": "agency_conservation",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-AGY-001.json"
+  },
+  {
+    "case_id": "ADV-AGY-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "protagonist_agency_collapse_against_antagonist",
+    "triggered_gate": "agency_conservation",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-AGY-002.json"
+  }
+]

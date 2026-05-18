@@ -1,0 +1,16 @@
+{
+  "stage": "stage117",
+  "title": "NarrativeTensionCurve",
+  "compileall": "pass",
+  "stage117_orchestrator": "pass",
+  "stage117_release_gate": "pass",
+  "main_release_gate": "pass",
+  "repo_doctor": "pass",
+  "pytest_collected": 356,
+  "pytest_execution": "split-by-file/groups due session timeout; all executed chunks passed",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "clean_zip_packaging": "pending_package_validation"
+}

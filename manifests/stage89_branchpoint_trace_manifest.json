@@ -1,0 +1,413 @@
+{
+  "stage": "89",
+  "status": "pass",
+  "title": "Symbol-to-Branchpoint Traceability with Stage89 Writer Studio Export Evidence",
+  "principle": "Connect literary logic to concrete code symbols, tests, and release gates without making GitNexus mandatory at runtime.",
+  "issues": [],
+  "entry_count": 30,
+  "coverage": {
+    "P0": {
+      "priority": "P0",
+      "total": 24,
+      "covered": 24,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "P1": {
+      "priority": "P1",
+      "total": 6,
+      "covered": 6,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "overall": {
+      "total": 30,
+      "covered": 30,
+      "coverage": 1.0
+    }
+  },
+  "entry_statuses": [
+    {
+      "branchpoint_id": "BP_STAGE85_NODE2_REVEAL_BOUNDARY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/gates/node_projection_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_PROVIDER_ZERO_LOCAL_FIRST",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime/provider_boundary.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GRAPHNEXUS_AUTHORITY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/gates/graph_nexus_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/lineage/stage83_1_consistency_audit.py",
+        "src/v1700/lineage/branchpoint_registry.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_DRAMA_HIERARCHY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/gates/stage80_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STAGE84_ABSORPTION_SAFE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/gates/stage84_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_COMMERCIAL_EVIDENCE_PACK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/commercial_release/engine.py",
+        "src/v1700/gates/stage83_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_ANTI_LLM_FILTER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STYLE_DNA",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_CLOSED_LOOP_RENDERER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_SELF_LEARNING_TRACE",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GITNEXUS_OPTIONAL_SIDECAR",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/sidecars/gitnexus/probe.py",
+        "src/v1700/sidecars/gitnexus/adapter.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_SERIES_ARC_PLANNER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/series_arc_planner.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CAUSAL_PLOT_GRAPH",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/causal_plot_graph.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CHARACTER_KNOWLEDGE_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROSE_RENDER_CONTRACT_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+        "src/v1700/nodes/node2_prose_renderer/contract.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROVIDER_ZERO_ABSORPTION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/stage86_smoke.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_EIGHT_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_REVEAL_KNOWLEDGE_SCALE_LOCK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_STAGE86_LINEAGE_PRESERVATION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage87_release_gate.py",
+        "src/v1700/gates/stage86_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/writer_studio/workspace.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_EXPORT_PIPELINE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_STATIC_STUDIO_PREVIEW",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_PROVIDER_ZERO_EXPORT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/gates/stage89_release_gate.py"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "branchpoint_id": "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+      "priority": "P0",
+      "concept": "Stage89 exposes writer-facing Studio panels while preserving V1700 branchpoint governance.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.workspace.WriterStudioWorkspaceBuilder",
+        "v1700.writer_studio.workspace.build_writer_studio_workspace"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/writer_studio/contracts.py",
+        "docs/stages/stage89.md"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This turns the engine into a writer-facing Studio contract without bypassing branchpoint survival gates."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_EXPORT_PIPELINE",
+      "priority": "P0",
+      "concept": "Stage89 exports Studio state to JSON, Markdown, HTML, platform pack, and scene CSV artifacts.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.export_pipeline.WriterStudioExportPipeline",
+        "v1700.writer_studio.export_pipeline.run_stage89_export_pipeline_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "release/current/stage89_export_bundle_report.json",
+        "release/current/stage89_exports/stage89_writer_handoff.md"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This makes export a blocking, checksum-bearing pipeline rather than an ad hoc packaging step."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_STATIC_STUDIO_PREVIEW",
+      "priority": "P1",
+      "concept": "Stage89 renders a static Writer Studio HTML preview for developer and writer handoff.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.export_pipeline.WriterStudioExportPipeline"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "release/current/stage89_exports/stage89_writer_studio_preview.html"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate"
+      ],
+      "rationale": "This gives the project a lightweight UI artifact without introducing a web runtime dependency."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_PROVIDER_ZERO_EXPORT",
+      "priority": "P0",
+      "concept": "Writer Studio and exports preserve provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.workspace.run_writer_studio_smoke",
+        "v1700.gates.stage89_release_gate.run_stage89_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/gates/stage89_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps the writer-facing layer inside the same local-first boundary as Stages 84-88."
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

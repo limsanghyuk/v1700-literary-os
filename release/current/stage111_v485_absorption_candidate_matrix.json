@@ -1,0 +1,129 @@
+{
+  "stage": "111.5",
+  "status": "pass",
+  "issues": [],
+  "candidates": [
+    {
+      "candidate_id": "drama_episode_generator",
+      "source_component": "DramaEpisodeGenerator",
+      "source_version_label": "V485",
+      "target_v1700_module": "v1700.v485_bridge.drama_episode_bridge",
+      "absorption_status": "WRAP_ONLY",
+      "risk_level": "MEDIUM",
+      "requires_sandbox": true,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Absorb execution flow, not metadata."
+    },
+    {
+      "candidate_id": "scene_generation_pipeline",
+      "source_component": "SceneGenerationPipeline",
+      "source_version_label": "V485",
+      "target_v1700_module": "v1700.v485_bridge.scene_pipeline_bridge",
+      "absorption_status": "WRAP_ONLY",
+      "risk_level": "MEDIUM",
+      "requires_sandbox": true,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Connect to ReviewQueue and WriterDecision."
+    },
+    {
+      "candidate_id": "anthropic_adapter_pattern",
+      "source_component": "AnthropicAdapter",
+      "source_version_label": "V485",
+      "target_v1700_module": "v1700.provider_live_sandbox.anthropic_live_adapter",
+      "absorption_status": "WRAP_ONLY",
+      "risk_level": "HIGH",
+      "requires_sandbox": true,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Live calls remain sandbox-only."
+    },
+    {
+      "candidate_id": "ollama_adapter_pattern",
+      "source_component": "OllamaAdapter",
+      "source_version_label": "V485",
+      "target_v1700_module": "v1700.provider_live_sandbox.ollama_live_adapter",
+      "absorption_status": "WRAP_ONLY",
+      "risk_level": "MEDIUM",
+      "requires_sandbox": true,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Local endpoint through sandbox guard."
+    },
+    {
+      "candidate_id": "generate_5episodes_cli_flow",
+      "source_component": "generate_5episodes.py",
+      "source_version_label": "V485",
+      "target_v1700_module": "tools/run_stage111_sample_episode_bridge.py",
+      "absorption_status": "ACCEPT",
+      "risk_level": "LOW",
+      "requires_sandbox": false,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Accept as V1700 sample runner pattern only."
+    },
+    {
+      "candidate_id": "v485_release_gate",
+      "source_component": "tools/run_release_gate.py",
+      "source_version_label": "V480/V485 drift",
+      "target_v1700_module": "none",
+      "absorption_status": "REJECT",
+      "risk_level": "BLOCK",
+      "requires_sandbox": false,
+      "requires_redaction": false,
+      "requires_release_gate_trace": false,
+      "rationale": "Do not replace V1700 gate."
+    },
+    {
+      "candidate_id": "v485_metadata",
+      "source_component": "README/MANIFEST/live_core_manifest",
+      "source_version_label": "drift",
+      "target_v1700_module": "none",
+      "absorption_status": "REJECT",
+      "risk_level": "BLOCK",
+      "requires_sandbox": false,
+      "requires_redaction": false,
+      "requires_release_gate_trace": false,
+      "rationale": "Do not overwrite V1700 metadata."
+    },
+    {
+      "candidate_id": "v485_raw_live_call_path",
+      "source_component": "direct adapter generate",
+      "source_version_label": "V485",
+      "target_v1700_module": "none",
+      "absorption_status": "BLOCK",
+      "risk_level": "BLOCK",
+      "requires_sandbox": true,
+      "requires_redaction": true,
+      "requires_release_gate_trace": true,
+      "rationale": "Release path direct live call is forbidden."
+    },
+    {
+      "candidate_id": "v485_otel_layer",
+      "source_component": "OpenTelemetry",
+      "source_version_label": "V485",
+      "target_v1700_module": "future observability",
+      "absorption_status": "DEFER",
+      "risk_level": "MEDIUM",
+      "requires_sandbox": false,
+      "requires_redaction": false,
+      "requires_release_gate_trace": true,
+      "rationale": "Optional dependency layer deferred."
+    },
+    {
+      "candidate_id": "v485_fastapi_studio_api",
+      "source_component": "Studio API",
+      "source_version_label": "V485",
+      "target_v1700_module": "future studio API",
+      "absorption_status": "DEFER",
+      "risk_level": "MEDIUM",
+      "requires_sandbox": false,
+      "requires_redaction": false,
+      "requires_release_gate_trace": true,
+      "rationale": "Potential Stage112+ candidate."
+    }
+  ],
+  "direct_merge_allowed": false,
+  "wrap_only_required": true
+}

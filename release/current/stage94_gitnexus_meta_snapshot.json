@@ -1,0 +1,29 @@
+{
+  "repoPath": "C:\\AI_Codex\\codex-work\\gpt\\work\\v1700_stage94_provider_evaluation_harness\\gpt\\active\\v1700\\literary_generator",
+  "lastCommit": "",
+  "indexedAt": "2026-05-13T10:20:33.192Z",
+  "stats": {
+    "files": 607,
+    "nodes": 5759,
+    "edges": 9172,
+    "communities": 76,
+    "processes": 225,
+    "embeddings": 0
+  },
+  "capabilities": {
+    "graph": {
+      "provider": "ladybugdb",
+      "status": "available"
+    },
+    "fts": {
+      "provider": "ladybugdb-fts",
+      "status": "available"
+    },
+    "vectorSearch": {
+      "provider": "exact-scan",
+      "status": "unavailable",
+      "exactScanLimit": 10000,
+      "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+    }
+  }
+}

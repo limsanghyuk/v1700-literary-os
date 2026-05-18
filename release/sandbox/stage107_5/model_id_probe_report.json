@@ -1,0 +1,43 @@
+{
+  "stage": "107.5.1",
+  "title": "Model ID Probe",
+  "status": "pass",
+  "issues": [],
+  "live_call_performed": false,
+  "model_ids_hardcoded_as_canonical": false,
+  "results": [
+    {
+      "provider_id": "openai",
+      "requested_alias": "env:OPENAI_MODEL_ID",
+      "resolved_model_id": null,
+      "probe_status": "SKIPPED",
+      "reason": "live_probe_not_enabled_or_credential_missing",
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "anthropic",
+      "requested_alias": "env:ANTHROPIC_MODEL_ID",
+      "resolved_model_id": null,
+      "probe_status": "SKIPPED",
+      "reason": "live_probe_not_enabled_or_credential_missing",
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "gemini",
+      "requested_alias": "env:GEMINI_MODEL_ID",
+      "resolved_model_id": null,
+      "probe_status": "SKIPPED",
+      "reason": "live_probe_not_enabled_or_credential_missing",
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "requested_alias": "qwen3:14b",
+      "resolved_model_id": "qwen3:14b",
+      "probe_status": "PASS",
+      "reason": "ollama_model_alias_configured",
+      "live_call_performed": false
+    }
+  ],
+  "note": "Model aliases are treated as account-specific probe targets, not canonical release constants."
+}

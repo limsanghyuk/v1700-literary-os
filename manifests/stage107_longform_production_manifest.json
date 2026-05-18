@@ -1,0 +1,10 @@
+{
+  "stage": "107",
+  "status": "active",
+  "modules": [
+    "longform_production",
+    "stage107",
+    "stage107_release_gate"
+  ],
+  "feature_only": true
+}

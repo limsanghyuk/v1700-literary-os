@@ -1,0 +1,92 @@
+{
+  "stage": "89",
+  "status": "pass",
+  "artifact_count": 5,
+  "formats": [
+    "html",
+    "json",
+    "markdown",
+    "platform_serialization_pack",
+    "scene_csv"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": [],
+  "artifacts": [
+    {
+      "artifact_id": "writer_studio_state",
+      "format": "json",
+      "filename": "stage89_writer_studio_state.json",
+      "byte_size": 20411,
+      "source_panel_ids": [
+        "story_bible",
+        "episode_board",
+        "scene_card_board",
+        "character_knowledge_board",
+        "reveal_budget_board",
+        "agent_benchmark_panel",
+        "branchpoint_impact_panel",
+        "export_pipeline_panel"
+      ],
+      "checksum": "18DFA480B33E418FB925B8C530A46ED3BFCCAAF4CAA3B0C4081C36BCEB44964E"
+    },
+    {
+      "artifact_id": "writer_handoff",
+      "format": "markdown",
+      "filename": "stage89_writer_handoff.md",
+      "byte_size": 1821,
+      "source_panel_ids": [
+        "story_bible",
+        "episode_board",
+        "scene_card_board",
+        "character_knowledge_board",
+        "reveal_budget_board",
+        "agent_benchmark_panel",
+        "branchpoint_impact_panel",
+        "export_pipeline_panel"
+      ],
+      "checksum": "ACE3074DE45F2DBE68F832F582DF2AEA83348AD8315B8D675C0B1907C2B3D086"
+    },
+    {
+      "artifact_id": "static_studio_preview",
+      "format": "html",
+      "filename": "stage89_writer_studio_preview.html",
+      "byte_size": 8356,
+      "source_panel_ids": [
+        "story_bible",
+        "episode_board",
+        "scene_card_board",
+        "character_knowledge_board",
+        "reveal_budget_board",
+        "agent_benchmark_panel",
+        "branchpoint_impact_panel",
+        "export_pipeline_panel"
+      ],
+      "checksum": "349C0F5EAFE867924383E34BBF1B973E097542F4FE71652A54E6006F051EC423"
+    },
+    {
+      "artifact_id": "platform_serialization_pack",
+      "format": "platform_serialization_pack",
+      "filename": "stage89_platform_serialization_pack.md",
+      "byte_size": 3357,
+      "source_panel_ids": [
+        "episode_board",
+        "scene_card_board",
+        "reveal_budget_board"
+      ],
+      "checksum": "6C984BF4F50286C11B4FD71837AF2B633C23E0B60DD7E243510AB6111E3D900A"
+    },
+    {
+      "artifact_id": "scene_review_sheet",
+      "format": "scene_csv",
+      "filename": "stage89_scene_review_sheet.csv",
+      "byte_size": 3107,
+      "source_panel_ids": [
+        "scene_card_board",
+        "character_knowledge_board",
+        "reveal_budget_board"
+      ],
+      "checksum": "E1C5D1505385E0ED23EC0D80F29BFC9ECA380E2DD632AF2601ACC2DC5DB4B9C3"
+    }
+  ]
+}

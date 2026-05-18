@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "impacted_areas": [
+    "author_profile",
+    "node2_prose_renderer",
+    "stage106",
+    "stage106_release_gate"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "status": "pass",
+  "candidate_count": 6,
+  "candidates": [
+    {
+      "candidate_id": "V525-NIL-STABILITY",
+      "source_version": "V525",
+      "module_family": "NIE v2.0 stability",
+      "priority": 1,
+      "target_stage": "stage122",
+      "absorption_status": "ADAPT",
+      "required_adapters": [
+        "stage120_nil_adapter",
+        "gate25_v2_namespace_adapter"
+      ],
+      "required_tests": [
+        "test_stage122_nil_stability_absorption.py"
+      ],
+      "blocked_by": [
+        "C121-003"
+      ]
+    },
+    {
+      "candidate_id": "V525-TIDEAL-LEARNER",
+      "source_version": "V525",
+      "module_family": "adaptive tension objective",
+      "priority": 2,
+      "target_stage": "stage122",
+      "absorption_status": "ADAPT",
+      "required_adapters": [
+        "stage117_tension_curve_bridge"
+      ],
+      "required_tests": [
+        "test_stage122_tideal_learner.py"
+      ],
+      "blocked_by": []
+    },
+    {
+      "candidate_id": "V525-TEMPORAL-CIM",
+      "source_version": "V525",
+      "module_family": "temporal character influence",
+      "priority": 3,
+      "target_stage": "stage122",
+      "absorption_status": "ADAPT",
+      "required_adapters": [
+        "stage115_cim_bridge"
+      ],
+      "required_tests": [
+        "test_stage122_temporal_cim.py"
+      ],
+      "blocked_by": []
+    },
+    {
+      "candidate_id": "V545-ASD-GATE28",
+      "source_version": "V545",
+      "module_family": "Autonomous Story Doctor",
+      "priority": 4,
+      "target_stage": "stage123",
+      "absorption_status": "ADAPT",
+      "required_adapters": [
+        "dry_run_repair_adapter",
+        "gate28_secondary_adapter"
+      ],
+      "required_tests": [
+        "test_stage123_asd_gate28.py"
+      ],
+      "blocked_by": [
+        "C121-005"
+      ]
+    },
+    {
+      "candidate_id": "V555-PNE-GATE29",
+      "source_version": "V555",
+      "module_family": "Predictive Narrative Engine",
+      "priority": 5,
+      "target_stage": "stage124",
+      "absorption_status": "ADAPT",
+      "required_adapters": [
+        "frozen_model_card_adapter",
+        "heuristic_fallback_adapter",
+        "gate29_advisory_adapter"
+      ],
+      "required_tests": [
+        "test_stage124_pne_gate29.py"
+      ],
+      "blocked_by": [
+        "C121-006"
+      ]
+    },
+    {
+      "candidate_id": "GOVERNOR-25-28-29",
+      "source_version": "future",
+      "module_family": "Release gate governor",
+      "priority": 6,
+      "target_stage": "stage125",
+      "absorption_status": "DEFER",
+      "required_adapters": [
+        "multi_gate_arbitration_adapter"
+      ],
+      "required_tests": [
+        "test_stage125_gate_governor.py"
+      ],
+      "blocked_by": [
+        "Gate28/Gate29 not absorbed yet"
+      ]
+    }
+  ],
+  "target_stages": [
+    "stage122",
+    "stage123",
+    "stage124",
+    "stage125"
+  ],
+  "direct_trunk_mutations_allowed": false
+}

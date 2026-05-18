@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "raw_response_stored": false
+}

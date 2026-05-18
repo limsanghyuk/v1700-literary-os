@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "issues": [],
+  "trace_entries": [
+    {
+      "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+      "proposed_action": "ADAPT",
+      "branchpoints": [
+        "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+        "BP_STAGE101_SCENARIO_ROOM_CONTRACT"
+      ],
+      "tests": [
+        "tests/test_stage101_scenario_room_contract.py"
+      ],
+      "traced": true
+    },
+    {
+      "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+      "proposed_action": "ADAPT",
+      "branchpoints": [
+        "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+      ],
+      "tests": [
+        "tests/test_stage101_investigation_action.py"
+      ],
+      "traced": true
+    },
+    {
+      "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
+      "proposed_action": "ADAPT",
+      "branchpoints": [
+        "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+      ],
+      "tests": [
+        "tests/test_stage101_dialogue_silence_cue.py"
+      ],
+      "traced": true
+    },
+    {
+      "candidate_id": "V430_PROP_LED_REVEAL",
+      "proposed_action": "ADAPT",
+      "branchpoints": [
+        "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+      ],
+      "tests": [
+        "tests/test_stage101_prop_reveal.py"
+      ],
+      "traced": true
+    },
+    {
+      "candidate_id": "V430_PRODUCT_PIPELINE_API",
+      "proposed_action": "DEFER",
+      "branchpoints": [
+        "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT"
+      ],
+      "tests": [
+        "tests/test_stage101_absorption_matrix.py"
+      ],
+      "traced": true
+    }
+  ],
+  "v430_untraced_merge": false
+}

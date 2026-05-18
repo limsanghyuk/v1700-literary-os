@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "stage100_release_gate_status": "pass",
+  "canonical_package": "V1700_stage100_literary_os_1_0_release_candidate_FIXED.zip",
+  "sha256_sidecar": "V1700_stage100_literary_os_1_0_release_candidate_FIXED.zip.sha256",
+  "filelist": "V1700_stage100_FIXED_filelist.txt",
+  "files": [
+    "release/current/stage100_developer_handoff_report.md",
+    "release/current/stage100_dual_mode_evaluation_report.json",
+    "release/current/stage100_evaluation_pack/prose_evaluation_matrix.json",
+    "release/current/stage100_evaluation_pack/reviewer_scorecards.json",
+    "release/current/stage100_evaluation_pack/scenario_evaluation_matrix.json",
+    "release/current/stage100_evaluation_pack/seed_bank.json",
+    "release/current/stage100_evaluation_pack/stage100_1_summary.md",
+    "release/current/stage100_gitnexus_rc_pack/change_review_report.json",
+    "release/current/stage100_gitnexus_rc_pack/concept_impact_report.json",
+    "release/current/stage100_gitnexus_rc_pack/index_freshness_report.json",
+    "release/current/stage100_gitnexus_rc_pack/shape_check_report.json",
+    "release/current/stage100_gitnexus_rc_pack/stage100_0_summary.md",
+    "release/current/stage100_gitnexus_rc_pack/survival_matrix_report.json",
+    "release/current/stage100_gitnexus_rc_pack/symbol_to_branchpoint_trace_report.json",
+    "release/current/stage100_literary_os_rc_report.json",
+    "release/current/stage100_provider_certification_report.json",
+    "release/current/stage100_provider_pack/cost_ledger_matrix.json",
+    "release/current/stage100_provider_pack/provider_contract_matrix.json",
+    "release/current/stage100_provider_pack/provider_zero_release_report.json",
+    "release/current/stage100_provider_pack/response_normalization_matrix.json",
+    "release/current/stage100_provider_pack/stage100_2_summary.md",
+    "release/current/stage100_release_gate_report.json",
+    "release/current/stage100_v430_absorption_candidate_matrix.json",
+    "release/current/stage100_v430_comparison_report.json"
+  ]
+}

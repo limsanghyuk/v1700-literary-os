@@ -1,0 +1,445 @@
+{
+  "stage": "107.5.3",
+  "title": "Provider Benchmark Runner",
+  "status": "pass",
+  "issues": [],
+  "release_gate_affected": false,
+  "provider_live_call_count": 0,
+  "raw_manuscript_sent": false,
+  "raw_response_stored": false,
+  "result_count": 12,
+  "results": [
+    {
+      "seed_id": "seed_001",
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_001_openai_prose",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3820e4e9cdb2dad44f826b49a7554b37795f9b6dbb0c3a9a9f7a15af3caef1f6",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3820e4e9cdb2dad44f826b49a7554b37795f9b6dbb0c3a9a9f7a15af3caef1f6",
+        "redacted_chars": 105
+      },
+      "result": {
+        "result_id": "4cc0418ae35246dd",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "315ba9312e004ba50cc542d547a0944fd0ef6d006cea831a94d8c832ed03d40c",
+        "response_excerpt": "openai contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_001",
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_001_openai_scenario",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "8bc8a7080a43aebe06989e78792a6343d617e76b9f73c9e9dfe7d79e0855ce31",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "8bc8a7080a43aebe06989e78792a6343d617e76b9f73c9e9dfe7d79e0855ce31",
+        "redacted_chars": 108
+      },
+      "result": {
+        "result_id": "2ca9d2a4c6e47e13",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "536d20ab6ec3a9da9c2417164a6ca08b7bcc26536566237f873bf4bfc5e3a863",
+        "response_excerpt": "openai contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_001",
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_001_ollama_prose",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3820e4e9cdb2dad44f826b49a7554b37795f9b6dbb0c3a9a9f7a15af3caef1f6",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3820e4e9cdb2dad44f826b49a7554b37795f9b6dbb0c3a9a9f7a15af3caef1f6",
+        "redacted_chars": 105
+      },
+      "result": {
+        "result_id": "51f9525423cc8f95",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "78e7acd7e97534fe1a95bd016a6cd9238c7c633b5b3cbefaa776759d29c520cb",
+        "response_excerpt": "ollama contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_001",
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_001_ollama_scenario",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "8bc8a7080a43aebe06989e78792a6343d617e76b9f73c9e9dfe7d79e0855ce31",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "8bc8a7080a43aebe06989e78792a6343d617e76b9f73c9e9dfe7d79e0855ce31",
+        "redacted_chars": 108
+      },
+      "result": {
+        "result_id": "5b1819882b4746ea",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "7e26e0581d4d418b829164e64d4c2e42bd0847a60f29ea810186c34e58223691",
+        "response_excerpt": "ollama contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_002",
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_002_openai_prose",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3de895c6c0cff248a615468fec31e484aecb864d1f56867747d297222af9f150",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3de895c6c0cff248a615468fec31e484aecb864d1f56867747d297222af9f150",
+        "redacted_chars": 100
+      },
+      "result": {
+        "result_id": "4cc0418ae35246dd",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "315ba9312e004ba50cc542d547a0944fd0ef6d006cea831a94d8c832ed03d40c",
+        "response_excerpt": "openai contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_002",
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_002_openai_scenario",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "6154603daa752d250ad39f89a27672212ea7e729a7a4d2f4629f5cc2cdb08ce0",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "6154603daa752d250ad39f89a27672212ea7e729a7a4d2f4629f5cc2cdb08ce0",
+        "redacted_chars": 103
+      },
+      "result": {
+        "result_id": "2ca9d2a4c6e47e13",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "536d20ab6ec3a9da9c2417164a6ca08b7bcc26536566237f873bf4bfc5e3a863",
+        "response_excerpt": "openai contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_002",
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_002_ollama_prose",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3de895c6c0cff248a615468fec31e484aecb864d1f56867747d297222af9f150",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3de895c6c0cff248a615468fec31e484aecb864d1f56867747d297222af9f150",
+        "redacted_chars": 100
+      },
+      "result": {
+        "result_id": "51f9525423cc8f95",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "78e7acd7e97534fe1a95bd016a6cd9238c7c633b5b3cbefaa776759d29c520cb",
+        "response_excerpt": "ollama contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_002",
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_002_ollama_scenario",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "6154603daa752d250ad39f89a27672212ea7e729a7a4d2f4629f5cc2cdb08ce0",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "6154603daa752d250ad39f89a27672212ea7e729a7a4d2f4629f5cc2cdb08ce0",
+        "redacted_chars": 103
+      },
+      "result": {
+        "result_id": "5b1819882b4746ea",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "7e26e0581d4d418b829164e64d4c2e42bd0847a60f29ea810186c34e58223691",
+        "response_excerpt": "ollama contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_003",
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_003_openai_prose",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3d7606db4efa9814d2d54bf1f3c2b97d1b1f3a5a72f7cec7cd98e2a5469299c7",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3d7606db4efa9814d2d54bf1f3c2b97d1b1f3a5a72f7cec7cd98e2a5469299c7",
+        "redacted_chars": 106
+      },
+      "result": {
+        "result_id": "4cc0418ae35246dd",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "315ba9312e004ba50cc542d547a0944fd0ef6d006cea831a94d8c832ed03d40c",
+        "response_excerpt": "openai contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_003",
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_003_openai_scenario",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "00c0e42dabaf76532889e827f7bff05c4568e9a519cd6710b7beb4275f5c17b1",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "00c0e42dabaf76532889e827f7bff05c4568e9a519cd6710b7beb4275f5c17b1",
+        "redacted_chars": 109
+      },
+      "result": {
+        "result_id": "2ca9d2a4c6e47e13",
+        "provider_id": "openai",
+        "model_id": "env:OPENAI_MODEL_ID",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "536d20ab6ec3a9da9c2417164a6ca08b7bcc26536566237f873bf4bfc5e3a863",
+        "response_excerpt": "openai contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_003",
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "packet": {
+        "packet_id": "seed_003_ollama_prose",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "3d7606db4efa9814d2d54bf1f3c2b97d1b1f3a5a72f7cec7cd98e2a5469299c7",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "3d7606db4efa9814d2d54bf1f3c2b97d1b1f3a5a72f7cec7cd98e2a5469299c7",
+        "redacted_chars": 106
+      },
+      "result": {
+        "result_id": "51f9525423cc8f95",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "PROSE",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "78e7acd7e97534fe1a95bd016a6cd9238c7c633b5b3cbefaa776759d29c520cb",
+        "response_excerpt": "ollama contract-ready dry-run response for PROSE. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    },
+    {
+      "seed_id": "seed_003",
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "packet": {
+        "packet_id": "seed_003_ollama_scenario",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "payload_kind": "FEATURE_ONLY",
+        "prompt_sha256": "00c0e42dabaf76532889e827f7bff05c4568e9a519cd6710b7beb4275f5c17b1",
+        "raw_manuscript_included": false,
+        "credential_included": false,
+        "max_output_tokens": 512
+      },
+      "redaction": {
+        "status": "pass",
+        "issues": [],
+        "prompt_sha256": "00c0e42dabaf76532889e827f7bff05c4568e9a519cd6710b7beb4275f5c17b1",
+        "redacted_chars": 109
+      },
+      "result": {
+        "result_id": "5b1819882b4746ea",
+        "provider_id": "ollama",
+        "model_id": "qwen3:14b",
+        "mode": "SCENARIO",
+        "status": "PASS",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "response_sha256": "7e26e0581d4d418b829164e64d4c2e42bd0847a60f29ea810186c34e58223691",
+        "response_excerpt": "ollama contract-ready dry-run response for SCENARIO. No live provider call was executed.",
+        "raw_response_stored": false,
+        "leakage_status": "pass",
+        "live_call_performed": false,
+        "error": null
+      }
+    }
+  ]
+}

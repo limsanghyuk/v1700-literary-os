@@ -1,0 +1,28 @@
+{
+  "stage": "115",
+  "name": "CharacterInfluenceMatrix + Structural Balance",
+  "baseline_stage": "114",
+  "status": "active",
+  "version": "V1700 Stage115",
+  "critical_sources": [
+    "src/v1700/nie/characters/character_influence_matrix.py",
+    "src/v1700/nie/characters/structural_balance.py",
+    "src/v1700/nie/characters/role_tier_assigner.py",
+    "src/v1700/stage115/orchestrator.py",
+    "src/v1700/gates/stage115_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage115_character_influence_matrix.py"
+  ],
+  "release_evidence": [
+    "release/current/stage115_character_influence_matrix_report.json",
+    "release/current/stage115_release_gate_report.json"
+  ],
+  "invariants": [
+    "provider_zero",
+    "node2_boundary_zero",
+    "asymmetric_character_influence_matrix",
+    "structural_balance_triangle_tension",
+    "role_tier_assignment"
+  ]
+}

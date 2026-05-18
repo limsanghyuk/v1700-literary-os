@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "python_fallback_used": true,
+  "import_edges_total": 2722,
+  "import_edges_sample": [
+    {
+      "from": "v1700.cli",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.cli",
+      "to": "argparse"
+    },
+    {
+      "from": "v1700.cli",
+      "to": "json"
+    },
+    {
+      "from": "v1700.cli",
+      "to": "v1700.nodes.node1_architect"
+    },
+    {
+      "from": "v1700.cli",
+      "to": "v1700.nodes.node2_prose_renderer"
+    },
+    {
+      "from": "v1700.cli",
+      "to": "v1700.ir.style_profile"
+    },
+    {
+      "from": "v1700.semantic_cache",
+      "to": "v1700.cache.semantic_cache"
+    },
+    {
+      "from": "v1700.agent_benchmark.__init__",
+      "to": "v1700.agent_benchmark.harness"
+    },
+    {
+      "from": "v1700.agent_benchmark.agents",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.agent_benchmark.agents",
+      "to": "v1700.agent_benchmark.contracts"
+    },
+    {
+      "from": "v1700.agent_benchmark.contracts",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.agent_benchmark.contracts",
+      "to": "dataclasses"
+    },
+    {
+      "from": "v1700.agent_benchmark.contracts",
+      "to": "statistics"
+    },
+    {
+      "from": "v1700.agent_benchmark.contracts",
+      "to": "typing"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "hashlib"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "statistics"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "v1700.agent_benchmark.agents"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "v1700.agent_benchmark.contracts"
+    },
+    {
+      "from": "v1700.agent_benchmark.harness",
+      "to": "v1700.episode_scaleup.evidence"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.arc_contracts"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.causal_plot_graph"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.reveal_budget"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.__init__",
+      "to": "v1700.arc_reveal_knowledge.series_arc_planner"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.arc_contracts",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.arc_contracts",
+      "to": "dataclasses"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.arc_contracts",
+      "to": "enum"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+      "to": "dataclasses"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+      "to": "v1700.arc_reveal_knowledge.arc_contracts"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
+      "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+      "to": "dataclasses"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+      "to": "enum"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+      "to": "__future__"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+      "to": "dataclasses"
+    },
+    {
+      "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+      "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+    }
+  ],
+  "critical_paths_checked": {
+    "src/v1700/multiwork_preflight/report.py": true,
+    "src/v1700/stage127/stage127_runner.py": true,
+    "src/v1700/gates/stage127_release_gate.py": true,
+    "tools/run_stage127_multiwork_preflight.py": true,
+    "tools/run_stage127_release_gate.py": true,
+    "manifests/stage127_manifest.json": true,
+    "manifests/stage127_multiwork_preflight_manifest.json": true,
+    "docs/stages/stage127.md": true
+  },
+  "manifests_checked": {
+    "manifests/stage127_manifest.json": true,
+    "manifests/stage127_multiwork_preflight_manifest.json": true,
+    "manifests/stage127_branchpoint_trace_manifest.json": true
+  },
+  "release_evidence_checked": {
+    "release/current/stage127_multiwork_preflight_report.json": true,
+    "release/current/stage127_release_gate_report.json": true,
+    "release/current/stage127_multiwork_preflight_pack/absorption_plan.json": true
+  },
+  "orphan_critical_nodes": [],
+  "affected_tests": [
+    "tests/test_stage127_multiwork_preflight.py"
+  ],
+  "affected_processes": [
+    "release_gate",
+    "repo_doctor",
+    "clean_packaging",
+    "multiwork_preflight"
+  ]
+}

@@ -1,0 +1,2 @@
+Stage121 internal repository checksums are recorded in the root SHA256SUMS.txt file.
+The final ZIP package SHA256 is provided in the external .zip.sha256 sidecar after packaging.

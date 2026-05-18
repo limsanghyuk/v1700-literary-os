@@ -1,0 +1,68 @@
+{
+  "stage": "Stage72",
+  "title": "Repository Canonicalization & Node2 Prose Compiler Maturation",
+  "status": "pass",
+  "verdict": "STAGE72_CANONICAL_REPO_READY",
+  "source_stage71": {
+    "total_files": 1729,
+    "root_file_count": 479,
+    "source_zip_sha256": "cb28ff361fc8fc2111043b2d69f943e6afff9fb44a3a346056737dd93f747ef8"
+  },
+  "canonical_repo": {
+    "total_files": 114,
+    "root_python_files": 0,
+    "top_level_file_count": 3,
+    "by_extension": {
+      ".json": 8,
+      ".md": 23,
+      ".py": 43,
+      ".pyc": 32,
+      ".tag": 1,
+      ".toml": 1,
+      ".txt": 1,
+      ".yml": 2,
+      "<no_ext>": 3
+    },
+    "by_top_level": {
+      ".github": 2,
+      ".pytest_cache": 4,
+      "<root>": 3,
+      "archive": 1,
+      "docs": 20,
+      "examples": 2,
+      "manifests": 5,
+      "release": 2,
+      "src": 61,
+      "tests": 10,
+      "tools": 4
+    },
+    "runtime_entrypoint": "src/v1700/cli.py"
+  },
+  "implemented": [
+    "canonical src/v1700 live core",
+    "Stage Knowledge Archive docs/stages and docs/concepts",
+    "live_core_manifest.json",
+    "stage_lineage_manifest.json",
+    "archive_manifest.json",
+    "path_migration_map.json",
+    "modular Node2 prose compiler",
+    "core/full GitHub Actions workflows",
+    "runtime smoke and release gate tools",
+    "stage72 repo doctor"
+  ],
+  "verification": {
+    "pytest": "7 passed",
+    "runtime_smoke": "pass",
+    "release_gate": "pass",
+    "node2_prose_compiler": "pass",
+    "repo_doctor": "pass",
+    "provider_default_calls": 0,
+    "marker_leakage": 0,
+    "reveal_leakage": 0
+  },
+  "known_limits": [
+    "Stage72 canonical repo preserves historical logic by summaries/manifests rather than tracking the full Stage71 snapshot in Git by default.",
+    "Node2 candidate generation is now dynamic/rule-based from SceneIntentIR but not yet connected to external provider adapters or large human blind-evaluation corpus.",
+    "Full Stage71 lineage regression suite was not migrated wholesale; Stage72 uses core tests plus stage knowledge manifests."
+  ]
+}

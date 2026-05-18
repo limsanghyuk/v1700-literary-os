@@ -1,0 +1,18 @@
+{
+  "stage": "111.4",
+  "status": "pass",
+  "episode_bridge": {
+    "episode_plan_id": "stage111_fixture_episode_plan_001",
+    "episode_count": 1,
+    "scene_count": 3,
+    "provider_mode": "FIXTURE",
+    "writer_decision_required": true,
+    "review_queue_items": 3,
+    "export_ready": true,
+    "status": "PASS"
+  },
+  "source_concept": "V485 DramaEpisodeGenerator",
+  "target_v1700_system": "Stage107 Longform Production Suite + Stage108 Editorial Board",
+  "live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0
+}

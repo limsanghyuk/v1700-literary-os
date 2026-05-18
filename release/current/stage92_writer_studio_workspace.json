@@ -1,0 +1,729 @@
+{
+  "stage": "92",
+  "title": "Writer Studio Runtime with Local Multi-Provider Adapter",
+  "status": "pass",
+  "panel_count": 9,
+  "panel_ids": [
+    "story_bible",
+    "episode_board",
+    "scene_card_board",
+    "character_knowledge_board",
+    "reveal_budget_board",
+    "agent_benchmark_panel",
+    "branchpoint_impact_panel",
+    "export_pipeline_panel",
+    "multi_provider_adapter_panel"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "inherited_stages": [
+    "stage91",
+    "stage90",
+    "stage89",
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "export_targets": [
+    "html",
+    "json",
+    "markdown",
+    "multi_provider_adapter_report",
+    "persistence_snapshot",
+    "platform_serialization_pack",
+    "review_queue",
+    "roundtrip_fidelity_report",
+    "scene_csv",
+    "ui_event_replay_log"
+  ],
+  "issues": [],
+  "panels": [
+    {
+      "panel_id": "story_bible",
+      "title": "Story Bible",
+      "purpose": "Portable source-of-truth panel for premise, season scope, and local-first invariants.",
+      "source_stage": "stage87",
+      "item_count": 5,
+      "items": [
+        {
+          "key": "series_premise",
+          "value": "A Korean longform drama season hardened by Stage90 round-trip Studio edits and export fidelity checks."
+        },
+        {
+          "key": "episode_count",
+          "value": 16
+        },
+        {
+          "key": "scene_count",
+          "value": 160
+        },
+        {
+          "key": "act_coverage",
+          "value": "gi,gyeol,jeon,seung"
+        },
+        {
+          "key": "provider_default_calls",
+          "value": 0
+        }
+      ],
+      "blocking_rules": [
+        "episode_count_must_be_16",
+        "provider_default_calls_must_be_0"
+      ]
+    },
+    {
+      "panel_id": "episode_board",
+      "title": "Episode Board",
+      "purpose": "Writer-facing board for 8-16 episode scale-up inspection.",
+      "source_stage": "stage87",
+      "item_count": 16,
+      "items": [
+        {
+          "episode_id": "EP01",
+          "act": "gi",
+          "scene_count": 10,
+          "average_quality": 8.51,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP02",
+          "act": "gi",
+          "scene_count": 10,
+          "average_quality": 8.54,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP03",
+          "act": "gi",
+          "scene_count": 10,
+          "average_quality": 8.56,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP04",
+          "act": "gi",
+          "scene_count": 10,
+          "average_quality": 8.59,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP05",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.5,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP06",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.65,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP07",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.56,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP08",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.71,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1,
+          "editorial_roundtrip_note": "Mid-season turn clarified without direct reveal leakage."
+        },
+        {
+          "episode_id": "EP09",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.63,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP10",
+          "act": "seung",
+          "scene_count": 10,
+          "average_quality": 8.73,
+          "reveal_policy_count": 1,
+          "blocked_direct_reveal_count": 1
+        },
+        {
+          "episode_id": "EP11",
+          "act": "jeon",
+          "scene_count": 10,
+          "average_quality": 8.6,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP12",
+          "act": "jeon",
+          "scene_count": 10,
+          "average_quality": 8.59,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP13",
+          "act": "jeon",
+          "scene_count": 10,
+          "average_quality": 8.56,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP14",
+          "act": "jeon",
+          "scene_count": 10,
+          "average_quality": 8.53,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP15",
+          "act": "gyeol",
+          "scene_count": 10,
+          "average_quality": 8.5,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        },
+        {
+          "episode_id": "EP16",
+          "act": "gyeol",
+          "scene_count": 10,
+          "average_quality": 8.47,
+          "reveal_policy_count": 0,
+          "blocked_direct_reveal_count": 0
+        }
+      ],
+      "blocking_rules": [
+        "minimum_8_episodes",
+        "minimum_80_scenes",
+        "quality_floor_8"
+      ]
+    },
+    {
+      "panel_id": "scene_card_board",
+      "title": "Scene Card Board",
+      "purpose": "Compact scene cards for writer review without raw reveal access.",
+      "source_stage": "stage87",
+      "item_count": 32,
+      "items": [
+        {
+          "scene_id": "EP01_SC01",
+          "episode_id": "EP01",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP01_SC10",
+          "episode_id": "EP01",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP02_SC01",
+          "episode_id": "EP02",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP02_SC10",
+          "episode_id": "EP02",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP03_SC01",
+          "episode_id": "EP03",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP03_SC10",
+          "episode_id": "EP03",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP04_SC01",
+          "episode_id": "EP04",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP04_SC10",
+          "episode_id": "EP04",
+          "act": "gi",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "문턱의 찬기 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP05_SC01",
+          "episode_id": "EP05",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP05_SC10",
+          "episode_id": "EP05",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP06_SC01",
+          "episode_id": "EP06",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP06_SC10",
+          "episode_id": "EP06",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "늦게 접힌 종이 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP07_SC01",
+          "episode_id": "EP07",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP07_SC10",
+          "episode_id": "EP07",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP08_SC01",
+          "episode_id": "EP08",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP08_SC10",
+          "episode_id": "EP08",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "닫히는 엘리베이터 문틈의 찬기 #90",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP09_SC01",
+          "episode_id": "EP09",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP09_SC10",
+          "episode_id": "EP09",
+          "act": "seung",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "늦게 접힌 종이 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP10_SC01",
+          "episode_id": "EP10",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "늦게 접힌 종이 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP10_SC10",
+          "episode_id": "EP10",
+          "act": "seung",
+          "reveal_policy": "foreshadow_only",
+          "knowledge_mode": "do_not_name_fact",
+          "afterimage_marker": "늦게 접힌 종이 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP11_SC01",
+          "episode_id": "EP11",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP11_SC10",
+          "episode_id": "EP11",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP12_SC01",
+          "episode_id": "EP12",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP12_SC10",
+          "episode_id": "EP12",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP13_SC01",
+          "episode_id": "EP13",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP13_SC10",
+          "episode_id": "EP13",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP14_SC01",
+          "episode_id": "EP14",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP14_SC10",
+          "episode_id": "EP14",
+          "act": "jeon",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "뒤집힌 불빛 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP15_SC01",
+          "episode_id": "EP15",
+          "act": "gyeol",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "남은 컵의 온기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP15_SC10",
+          "episode_id": "EP15",
+          "act": "gyeol",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "남은 컵의 온기 #10",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP16_SC01",
+          "episode_id": "EP16",
+          "act": "gyeol",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "남은 컵의 온기 #01",
+          "surface_contract": "node2_surface_only"
+        },
+        {
+          "scene_id": "EP16_SC10",
+          "episode_id": "EP16",
+          "act": "gyeol",
+          "reveal_policy": "allow",
+          "knowledge_mode": "indirect_suspicion_only",
+          "afterimage_marker": "남은 컵의 온기 #10",
+          "surface_contract": "node2_surface_only"
+        }
+      ],
+      "blocking_rules": [
+        "must_not_expose_raw_reveal",
+        "must_keep_node2_surface_contract"
+      ]
+    },
+    {
+      "panel_id": "character_knowledge_board",
+      "title": "Character Knowledge Board",
+      "purpose": "Tracks knows/suspects/unaware/reader-only pressure as a writer-visible board.",
+      "source_stage": "stage86",
+      "item_count": 2,
+      "items": [
+        {
+          "knowledge_mode": "do_not_name_fact",
+          "scene_count": 70
+        },
+        {
+          "knowledge_mode": "indirect_suspicion_only",
+          "scene_count": 90
+        }
+      ],
+      "blocking_rules": [
+        "reader_only_must_not_enter_character_mind",
+        "knowledge_modes_must_be_visible"
+      ]
+    },
+    {
+      "panel_id": "reveal_budget_board",
+      "title": "Reveal Budget Board",
+      "purpose": "Shows allow/foreshadow/delay/block distribution before export.",
+      "source_stage": "stage86",
+      "item_count": 2,
+      "items": [
+        {
+          "reveal_policy": "allow",
+          "scene_count": 90
+        },
+        {
+          "reveal_policy": "foreshadow_only",
+          "scene_count": 70,
+          "roundtrip_policy_note": "Foreshadowing may be strengthened, but direct answer text remains blocked."
+        }
+      ],
+      "blocking_rules": [
+        "direct_reveal_must_follow_policy",
+        "foreshadow_only_must_not_name_answer"
+      ]
+    },
+    {
+      "panel_id": "agent_benchmark_panel",
+      "title": "AI Agent Benchmark Panel",
+      "purpose": "Displays Stage88 artificial editor/reader consensus without requiring external humans.",
+      "source_stage": "stage88",
+      "item_count": 6,
+      "items": [
+        {
+          "agent_id": "senior_drama_editor_agent",
+          "role": "Senior Korean drama editor",
+          "average_score": 8.25
+        },
+        {
+          "agent_id": "platform_serialization_editor_agent",
+          "role": "Commercial serialization platform editor",
+          "average_score": 8.24
+        },
+        {
+          "agent_id": "continuity_script_editor_agent",
+          "role": "Continuity and script logic editor",
+          "average_score": 8.25
+        },
+        {
+          "agent_id": "genre_reader_agent",
+          "role": "Korean longform genre reader",
+          "average_score": 8.25
+        },
+        {
+          "agent_id": "anti_llm_surface_reader_agent",
+          "role": "AI-scent and prose surface detector",
+          "average_score": 8.26
+        },
+        {
+          "agent_id": "skeptical_binge_reader_agent",
+          "role": "Skeptical binge reader",
+          "average_score": 8.24
+        }
+      ],
+      "blocking_rules": [
+        "minimum_6_agents",
+        "consensus_score_minimum_8"
+      ]
+    },
+    {
+      "panel_id": "branchpoint_impact_panel",
+      "title": "Branchpoint Impact Panel",
+      "purpose": "Writer Studio change review panel for branchpoint survival before export.",
+      "source_stage": "stage85",
+      "item_count": 5,
+      "items": [
+        {
+          "branchpoint": "Stage25 Node2",
+          "status": "protected",
+          "gate": "node_projection_gate"
+        },
+        {
+          "branchpoint": "Stage80 Korean Drama Hierarchy",
+          "status": "protected",
+          "gate": "stage80_release_gate"
+        },
+        {
+          "branchpoint": "Stage85 Traceability",
+          "status": "protected",
+          "gate": "symbol_to_branchpoint_trace_gate"
+        },
+        {
+          "branchpoint": "Stage86 Arc-Reveal-Knowledge",
+          "status": "protected",
+          "gate": "stage86_release_gate"
+        },
+        {
+          "branchpoint": "Stage88 Agent Benchmark",
+          "status": "protected",
+          "gate": "stage88_release_gate"
+        }
+      ],
+      "blocking_rules": [
+        "p0_branchpoint_coverage_100_percent",
+        "stage89_must_not_bypass_trace_gate"
+      ]
+    },
+    {
+      "panel_id": "export_pipeline_panel",
+      "title": "Export Pipeline Panel",
+      "purpose": "Lists deterministic export targets generated without external providers.",
+      "source_stage": "stage89",
+      "item_count": 5,
+      "items": [
+        {
+          "format": "markdown",
+          "target": "writer_handoff"
+        },
+        {
+          "format": "json",
+          "target": "machine_readable_studio_state"
+        },
+        {
+          "format": "html",
+          "target": "static_writer_studio_preview"
+        },
+        {
+          "format": "platform_serialization_pack",
+          "target": "episode_upload_preparation"
+        },
+        {
+          "format": "scene_csv",
+          "target": "spreadsheet_scene_review"
+        }
+      ],
+      "blocking_rules": [
+        "minimum_5_export_artifacts",
+        "export_checksums_required"
+      ]
+    },
+    {
+      "panel_id": "multi_provider_adapter_panel",
+      "title": "Multi-Provider Adapter Panel",
+      "purpose": "Configures Ollama, GPT, Claude, and Gemini for a developer workstation while preserving provider-zero release gates.",
+      "source_stage": "stage92",
+      "item_count": 4,
+      "items": [
+        {
+          "provider_id": "local_ollama",
+          "provider_kind": "ollama",
+          "status": "configured_dry_run",
+          "model": "llama3.1",
+          "endpoint": "http://127.0.0.1:11434/api/chat",
+          "api_key_env": "none",
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "gpt_openai",
+          "provider_kind": "gpt",
+          "status": "configured_dry_run",
+          "model": "gpt-4.1-mini",
+          "endpoint": "https://api.openai.com/v1/responses",
+          "api_key_env": "OPENAI_API_KEY",
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "claude_anthropic",
+          "provider_kind": "claude",
+          "status": "configured_dry_run",
+          "model": "claude-3-5-sonnet-latest",
+          "endpoint": "https://api.anthropic.com/v1/messages",
+          "api_key_env": "ANTHROPIC_API_KEY",
+          "live_call_performed": false
+        },
+        {
+          "provider_id": "gemini_google",
+          "provider_kind": "gemini",
+          "status": "configured_dry_run",
+          "model": "gemini-1.5-flash",
+          "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+          "api_key_env": "GOOGLE_API_KEY",
+          "live_call_performed": false
+        }
+      ],
+      "blocking_rules": [
+        "must_configure_ollama_gpt_claude_gemini",
+        "release_gate_must_not_perform_live_provider_calls",
+        "provider_default_calls_must_remain_0"
+      ]
+    }
+  ]
+}

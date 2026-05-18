@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "source_policy": "LOCAL_ONLY",
+  "feature_extraction": "local_feature_only",
+  "raw_manuscript_sent_to_provider": false,
+  "raw_manuscript_stored_in_report": false,
+  "raw_manuscript_provider_leakage": 0,
+  "feature_count": 2,
+  "features": [
+    {
+      "scene_id": "LOCAL_SC01",
+      "episode_id": "LOCAL_EP01",
+      "word_count": 15,
+      "line_count": 2,
+      "sha256": "654d2cf25ac6ccb39d2955de820891a8b9282720df33ed7d125406920214bc15",
+      "contains_raw_text": false
+    },
+    {
+      "scene_id": "LOCAL_SC02",
+      "episode_id": "LOCAL_EP01",
+      "word_count": 13,
+      "line_count": 2,
+      "sha256": "abedd7075376a20d2546fd74bdecc120ac65cb8abd144f2cd233970a02f6a0fb",
+      "contains_raw_text": false
+    }
+  ],
+  "issues": []
+}

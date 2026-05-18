@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "seeds": [
+    {
+      "seed_id": "STAGE100_SEED_KDRAMA_001",
+      "mode": "PROSE"
+    },
+    {
+      "seed_id": "STAGE100_SEED_SCENARIO_001",
+      "mode": "SCENARIO"
+    }
+  ]
+}

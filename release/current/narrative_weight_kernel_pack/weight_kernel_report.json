@@ -1,0 +1,304 @@
+{
+  "character_scores": [
+    {
+      "axis_scores": {
+        "agency": 0.915,
+        "desire_pressure": 0.9,
+        "emotional_momentum": 0.85,
+        "knowledge_asymmetry": 0.635,
+        "reader_attention": 1.0,
+        "reveal_pressure": 0.78,
+        "wound_pressure": 0.8
+      },
+      "board_piece": "king",
+      "character_id": "protagonist",
+      "explanation": [
+        "protagonist uses board_piece=king",
+        "strongest_axis=reader_attention:1.0",
+        "weakest_axis=knowledge_asymmetry:0.635",
+        "weighted_score=0.84",
+        "secret_increases_reveal_pressure",
+        "motif_refs_increase_reader_attention"
+      ],
+      "weighted_score": 0.84
+    },
+    {
+      "axis_scores": {
+        "agency": 0.83,
+        "desire_pressure": 0.88,
+        "emotional_momentum": 0.76,
+        "knowledge_asymmetry": 0.88,
+        "reader_attention": 0.87,
+        "reveal_pressure": 0.96,
+        "wound_pressure": 0.74
+      },
+      "board_piece": "shadow",
+      "character_id": "antagonist",
+      "explanation": [
+        "antagonist uses board_piece=shadow",
+        "strongest_axis=reveal_pressure:0.96",
+        "weakest_axis=wound_pressure:0.74",
+        "weighted_score=0.8457",
+        "secret_increases_reveal_pressure",
+        "motif_refs_increase_reader_attention"
+      ],
+      "weighted_score": 0.8457
+    },
+    {
+      "axis_scores": {
+        "agency": 0.595,
+        "desire_pressure": 0.62,
+        "emotional_momentum": 0.66,
+        "knowledge_asymmetry": 0.81,
+        "reader_attention": 0.76,
+        "reveal_pressure": 0.78,
+        "wound_pressure": 0.76
+      },
+      "board_piece": "bishop",
+      "character_id": "witness",
+      "explanation": [
+        "witness uses board_piece=bishop",
+        "strongest_axis=knowledge_asymmetry:0.81",
+        "weakest_axis=agency:0.595",
+        "weighted_score=0.7121",
+        "secret_increases_reveal_pressure",
+        "motif_refs_increase_reader_attention"
+      ],
+      "weighted_score": 0.7121
+    }
+  ],
+  "invariants": {
+    "bounded_self_calibration": true,
+    "character_event_relation_matrix": true,
+    "kernel_type": "auditable_symbolic_weight_kernel",
+    "neural_network_training": false,
+    "node2_raw_reveal_access": 0,
+    "provider_call_count": 0
+  },
+  "issues": [],
+  "learning_report": {
+    "baseline_weights": {
+      "agency": 1.0,
+      "desire_pressure": 1.0,
+      "emotional_momentum": 1.0,
+      "event_causality": 1.0,
+      "knowledge_asymmetry": 1.0,
+      "motif_residue": 1.0,
+      "reader_attention": 1.0,
+      "relation_tension": 1.0,
+      "reveal_pressure": 1.0,
+      "safety_boundary": 1.25,
+      "scene_energy": 1.0,
+      "style_boundary": 1.0,
+      "wound_pressure": 1.0
+    },
+    "drift_guard": {
+      "deltas": {
+        "agency": 0.013,
+        "desire_pressure": 0.0,
+        "emotional_momentum": 0.0,
+        "event_causality": 0.0,
+        "knowledge_asymmetry": 0.0,
+        "motif_residue": 0.0,
+        "reader_attention": 0.0101,
+        "relation_tension": 0.0154,
+        "reveal_pressure": 0.0,
+        "safety_boundary": 0.0,
+        "scene_energy": 0.0,
+        "style_boundary": 0.0,
+        "wound_pressure": 0.0
+      },
+      "issues": [],
+      "max_single_update_delta": 0.0154,
+      "mean_drift": 0.003,
+      "protected_non_decreasing": [
+        "safety_boundary",
+        "style_boundary"
+      ],
+      "status": "pass"
+    },
+    "feedback_signals": [
+      {
+        "confidence": 0.9,
+        "error": 0.12,
+        "metric": "agency",
+        "observed": 0.58,
+        "source": "agency_conservation_gate",
+        "target": 0.7
+      },
+      {
+        "confidence": 0.8,
+        "error": 0.16,
+        "metric": "relation_tension",
+        "observed": 0.46,
+        "source": "drse_relation_gate",
+        "target": 0.62
+      },
+      {
+        "confidence": 0.7,
+        "error": 0.12,
+        "metric": "reader_attention",
+        "observed": 0.52,
+        "source": "attention_economy_gate",
+        "target": 0.64
+      },
+      {
+        "confidence": 1.0,
+        "error": 0.0,
+        "metric": "safety_boundary",
+        "observed": 1.0,
+        "source": "node2_boundary_gate",
+        "target": 1.0
+      }
+    ],
+    "issues": [],
+    "learned_weights": {
+      "agency": 1.013,
+      "desire_pressure": 1.0,
+      "emotional_momentum": 1.0,
+      "event_causality": 1.0,
+      "knowledge_asymmetry": 1.0,
+      "motif_residue": 1.0,
+      "reader_attention": 1.0101,
+      "relation_tension": 1.0154,
+      "reveal_pressure": 1.0,
+      "safety_boundary": 1.25,
+      "scene_energy": 1.0,
+      "style_boundary": 1.0,
+      "wound_pressure": 1.0
+    },
+    "status": "pass",
+    "update_log": [
+      {
+        "applied_delta": 0.013,
+        "raw_delta": 0.013,
+        "signal_count": 1,
+        "sources": [
+          "agency_conservation_gate"
+        ],
+        "weight": "agency"
+      },
+      {
+        "applied_delta": 0.0101,
+        "raw_delta": 0.0101,
+        "signal_count": 1,
+        "sources": [
+          "attention_economy_gate"
+        ],
+        "weight": "reader_attention"
+      },
+      {
+        "applied_delta": 0.0154,
+        "raw_delta": 0.0154,
+        "signal_count": 1,
+        "sources": [
+          "drse_relation_gate"
+        ],
+        "weight": "relation_tension"
+      },
+      {
+        "applied_delta": 0.0,
+        "raw_delta": 0.0,
+        "signal_count": 1,
+        "sources": [
+          "node2_boundary_gate"
+        ],
+        "weight": "safety_boundary"
+      }
+    ]
+  },
+  "relation_scores": [
+    {
+      "axis_scores": {
+        "agency": 0.97,
+        "emotional_momentum": 0.765,
+        "event_causality": 1.0,
+        "knowledge_asymmetry": 1.0,
+        "motif_residue": 0.5,
+        "reader_attention": 1.0,
+        "relation_tension": 0.8,
+        "reveal_pressure": 0.881,
+        "scene_energy": 0.8732
+      },
+      "character_id": "antagonist",
+      "event_id": "E01_ARCHIVE_FIRE",
+      "learning_tags": [
+        "relation:secret_keeper",
+        "high_reveal_pressure",
+        "causal_anchor",
+        "secret_event_overlap"
+      ],
+      "relation_kind": "secret_keeper",
+      "weighted_score": 0.8655
+    },
+    {
+      "axis_scores": {
+        "agency": 0.99,
+        "emotional_momentum": 0.845,
+        "event_causality": 1.0,
+        "knowledge_asymmetry": 0.79,
+        "motif_residue": 0.56,
+        "reader_attention": 1.0,
+        "relation_tension": 0.98,
+        "reveal_pressure": 0.881,
+        "scene_energy": 0.8732
+      },
+      "character_id": "protagonist",
+      "event_id": "E01_ARCHIVE_FIRE",
+      "learning_tags": [
+        "relation:antagonist",
+        "high_reveal_pressure",
+        "causal_anchor",
+        "secret_event_overlap"
+      ],
+      "relation_kind": "antagonist",
+      "weighted_score": 0.8799
+    },
+    {
+      "axis_scores": {
+        "agency": 0.9,
+        "emotional_momentum": 0.65,
+        "event_causality": 0.84,
+        "knowledge_asymmetry": 0.655,
+        "motif_residue": 0.56,
+        "reader_attention": 0.9028,
+        "relation_tension": 0.54,
+        "reveal_pressure": 0.638,
+        "scene_energy": 0.6888
+      },
+      "character_id": "protagonist",
+      "event_id": "E04_WITNESS_SILENCE",
+      "learning_tags": [
+        "relation:ally",
+        "causal_anchor",
+        "secret_event_overlap"
+      ],
+      "relation_kind": "ally",
+      "weighted_score": 0.7083
+    },
+    {
+      "axis_scores": {
+        "agency": 0.735,
+        "emotional_momentum": 0.6,
+        "event_causality": 0.84,
+        "knowledge_asymmetry": 0.94,
+        "motif_residue": 0.5,
+        "reader_attention": 0.9028,
+        "relation_tension": 0.61,
+        "reveal_pressure": 0.638,
+        "scene_energy": 0.6888
+      },
+      "character_id": "witness",
+      "event_id": "E04_WITNESS_SILENCE",
+      "learning_tags": [
+        "relation:witness",
+        "causal_anchor",
+        "secret_event_overlap"
+      ],
+      "relation_kind": "witness",
+      "weighted_score": 0.7172
+    }
+  ],
+  "stage": "111.1",
+  "status": "pass"
+}

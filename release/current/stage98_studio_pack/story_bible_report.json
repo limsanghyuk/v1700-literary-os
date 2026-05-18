@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "project_id": "stage98-commercial-studio-fixture",
+  "baseline_stage": "97.2",
+  "bible_mode": "feature_only",
+  "tracks": [
+    "branchpoints",
+    "payoff_debt",
+    "agency",
+    "attention",
+    "voice"
+  ],
+  "raw_text_included": false,
+  "node2_raw_reveal_access": 0
+}

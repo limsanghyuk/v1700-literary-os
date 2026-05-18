@@ -1,0 +1,20 @@
+{
+  "stage": "128",
+  "branchpoint_traces": {
+    "shared_character_read_only_absorption": [
+      "provider_zero",
+      "author_license_boundary",
+      "cross_work_memory_isolation"
+    ],
+    "shared_world_read_only_absorption": [
+      "canon_conflict_detection",
+      "stage129_canon_governor_deferred"
+    ],
+    "stage128_release_gate": [
+      "release_gate",
+      "repo_doctor",
+      "clean_packaging"
+    ]
+  },
+  "branchpoint_lineage_preserved": true
+}

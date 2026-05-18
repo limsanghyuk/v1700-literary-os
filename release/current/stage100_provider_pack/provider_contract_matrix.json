@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "providers": [
+    {
+      "provider_id": "fixture",
+      "provider_kind": "fixture",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "mock",
+      "provider_kind": "mock",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "gpt",
+      "provider_kind": "gpt",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "claude",
+      "provider_kind": "claude",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "gemini",
+      "provider_kind": "gemini",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "ollama",
+      "provider_kind": "ollama",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    }
+  ],
+  "contract_gate": {
+    "status": "pass",
+    "adapters_checked": 6,
+    "violations": [],
+    "task_router_llm0_status": "pass"
+  }
+}

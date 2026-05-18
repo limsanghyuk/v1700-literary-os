@@ -1,0 +1,362 @@
+{
+  "low_risk_case": {
+    "status": "pass",
+    "approved": true,
+    "authority_mode": "secondary_predictive_gate",
+    "failed_gates": [],
+    "checks": {
+      "G29-1": {
+        "metric": "threshold",
+        "expected": 0.6,
+        "actual": 0.6,
+        "passed": true
+      },
+      "G29-2": {
+        "metric": "runtime_training_enabled",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      "G29-3": {
+        "metric": "authority_mode",
+        "expected": "secondary_predictive_gate",
+        "actual": "secondary_predictive_gate",
+        "passed": true
+      },
+      "G29-4": {
+        "metric": "feedback_precision",
+        "threshold": 0.7,
+        "actual": 0.75,
+        "passed": true
+      }
+    },
+    "issues": [],
+    "preemptive_result": {
+      "scene_id": "scene-low-risk",
+      "status": "pass",
+      "blocked": false,
+      "threshold": 0.6,
+      "horizon": 3,
+      "high_risk_categories": [],
+      "max_probability": 0.525,
+      "authority_mode": "secondary_predictive_gate",
+      "block_reason": "",
+      "issues": [],
+      "prediction_report": {
+        "scene_id": "scene-low-risk",
+        "horizon": 3,
+        "threshold": 0.6,
+        "predictions": [
+          {
+            "category": "unresolved_secret",
+            "probability": 0.3126,
+            "confidence": 0.697927,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "broken_foreshadow",
+            "probability": 0.3132,
+            "confidence": 0.697987,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "abandoned_thread",
+            "probability": 0.274,
+            "confidence": 0.6274,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_not_tracked",
+            "probability": 0.165,
+            "confidence": 0.549833,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_post_death",
+            "probability": 0.516,
+            "confidence": 0.581733,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_contradiction",
+            "probability": 0.525,
+            "confidence": 0.580833,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_inversion",
+            "probability": 0.192,
+            "confidence": 0.552533,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          }
+        ],
+        "high_risk": [],
+        "max_probability": 0.525,
+        "sklearn_available": true,
+        "runtime_training_enabled": false
+      }
+    },
+    "feedback_report": {
+      "status": "pass",
+      "precision_target": 0.7,
+      "runtime_retraining_triggered": false,
+      "metrics": {
+        "total": 6,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 2,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.857143,
+        "accuracy": 0.833333
+      },
+      "records": [
+        {
+          "scene_id": "s101",
+          "category": "unresolved_secret",
+          "predicted_probability": 0.78,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s102",
+          "category": "broken_foreshadow",
+          "predicted_probability": 0.71,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s103",
+          "category": "arc_contradiction",
+          "predicted_probability": 0.82,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s104",
+          "category": "arc_post_death",
+          "predicted_probability": 0.66,
+          "predicted_high": true,
+          "actual_occurred": false,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s105",
+          "category": "abandoned_thread",
+          "predicted_probability": 0.32,
+          "predicted_high": false,
+          "actual_occurred": false,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s106",
+          "category": "arc_inversion",
+          "predicted_probability": 0.28,
+          "predicted_high": false,
+          "actual_occurred": false,
+          "threshold": 0.6
+        }
+      ],
+      "issues": []
+    }
+  },
+  "high_risk_case": {
+    "status": "blocked",
+    "approved": false,
+    "authority_mode": "secondary_predictive_gate",
+    "failed_gates": [],
+    "checks": {
+      "G29-1": {
+        "metric": "threshold",
+        "expected": 0.6,
+        "actual": 0.6,
+        "passed": true
+      },
+      "G29-2": {
+        "metric": "runtime_training_enabled",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      "G29-3": {
+        "metric": "authority_mode",
+        "expected": "secondary_predictive_gate",
+        "actual": "secondary_predictive_gate",
+        "passed": true
+      },
+      "G29-4": {
+        "metric": "feedback_precision",
+        "threshold": 0.7,
+        "actual": 0.75,
+        "passed": true
+      }
+    },
+    "issues": [],
+    "preemptive_result": {
+      "scene_id": "scene-high-risk",
+      "status": "blocked",
+      "blocked": true,
+      "threshold": 0.6,
+      "horizon": 3,
+      "high_risk_categories": [
+        "unresolved_secret",
+        "broken_foreshadow",
+        "abandoned_thread",
+        "arc_post_death",
+        "arc_contradiction",
+        "arc_inversion"
+      ],
+      "max_probability": 0.945,
+      "authority_mode": "secondary_predictive_gate",
+      "block_reason": "high_risk_categories=unresolved_secret,broken_foreshadow,abandoned_thread,arc_post_death,arc_contradiction,arc_inversion",
+      "issues": [],
+      "prediction_report": {
+        "scene_id": "scene-high-risk",
+        "horizon": 3,
+        "threshold": 0.6,
+        "predictions": [
+          {
+            "category": "unresolved_secret",
+            "probability": 0.7326,
+            "confidence": 0.693407,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "broken_foreshadow",
+            "probability": 0.7332,
+            "confidence": 0.693347,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "abandoned_thread",
+            "probability": 0.694,
+            "confidence": 0.6306,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_not_tracked",
+            "probability": 0.585,
+            "confidence": 0.574833,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_post_death",
+            "probability": 0.936,
+            "confidence": 0.539733,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_contradiction",
+            "probability": 0.945,
+            "confidence": 0.538833,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          },
+          {
+            "category": "arc_inversion",
+            "probability": 0.612,
+            "confidence": 0.572133,
+            "horizon": 3,
+            "mode": "heuristic_fallback"
+          }
+        ],
+        "high_risk": [
+          "unresolved_secret",
+          "broken_foreshadow",
+          "abandoned_thread",
+          "arc_post_death",
+          "arc_contradiction",
+          "arc_inversion"
+        ],
+        "max_probability": 0.945,
+        "sklearn_available": true,
+        "runtime_training_enabled": false
+      }
+    },
+    "feedback_report": {
+      "status": "pass",
+      "precision_target": 0.7,
+      "runtime_retraining_triggered": false,
+      "metrics": {
+        "total": 6,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 2,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.857143,
+        "accuracy": 0.833333
+      },
+      "records": [
+        {
+          "scene_id": "s101",
+          "category": "unresolved_secret",
+          "predicted_probability": 0.78,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s102",
+          "category": "broken_foreshadow",
+          "predicted_probability": 0.71,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s103",
+          "category": "arc_contradiction",
+          "predicted_probability": 0.82,
+          "predicted_high": true,
+          "actual_occurred": true,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s104",
+          "category": "arc_post_death",
+          "predicted_probability": 0.66,
+          "predicted_high": true,
+          "actual_occurred": false,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s105",
+          "category": "abandoned_thread",
+          "predicted_probability": 0.32,
+          "predicted_high": false,
+          "actual_occurred": false,
+          "threshold": 0.6
+        },
+        {
+          "scene_id": "s106",
+          "category": "arc_inversion",
+          "predicted_probability": 0.28,
+          "predicted_high": false,
+          "actual_occurred": false,
+          "threshold": 0.6
+        }
+      ],
+      "issues": []
+    }
+  },
+  "expected_high_risk_status": "blocked",
+  "matched_expectation": true
+}

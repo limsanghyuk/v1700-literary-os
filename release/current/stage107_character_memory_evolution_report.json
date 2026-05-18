@@ -1,0 +1,51 @@
+{
+  "stage": "107.3",
+  "title": "Character Memory Evolution",
+  "status": "pass",
+  "memory_point_count": 5,
+  "agency_conservation_status": "pass",
+  "points": [
+    {
+      "character_id": "protagonist",
+      "episode_id": "episode_01",
+      "knowledge_state": "guilt framed as forecasting error",
+      "agency_delta": 0.1,
+      "relationship_delta": "sibling_absence:unresolved",
+      "memory_commit": "commit_guilt_seed"
+    },
+    {
+      "character_id": "protagonist",
+      "episode_id": "episode_08",
+      "knowledge_state": "admits active avoidance",
+      "agency_delta": 0.22,
+      "relationship_delta": "mother:truth_pressure",
+      "memory_commit": "commit_avoidance_reversal"
+    },
+    {
+      "character_id": "protagonist",
+      "episode_id": "episode_16",
+      "knowledge_state": "chooses investigation over self-preservation",
+      "agency_delta": 0.35,
+      "relationship_delta": "institution:antagonistic",
+      "memory_commit": "commit_agency_turn"
+    },
+    {
+      "character_id": "sibling_memory",
+      "episode_id": "episode_24",
+      "knowledge_state": "memory becomes contested evidence",
+      "agency_delta": 0.18,
+      "relationship_delta": "witness:emergent",
+      "memory_commit": "commit_counter_memory"
+    },
+    {
+      "character_id": "protagonist",
+      "episode_id": "episode_32",
+      "knowledge_state": "integrates guilt with action plan",
+      "agency_delta": 0.42,
+      "relationship_delta": "community:restorative",
+      "memory_commit": "commit_final_agency"
+    }
+  ],
+  "raw_manuscript_required": false,
+  "provider_call_count": 0
+}

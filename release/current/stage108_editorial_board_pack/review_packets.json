@@ -1,0 +1,54 @@
+[
+  {
+    "packet_id": "pkt_prose_fixture",
+    "mode": "PROSE",
+    "payload_kind": "FEATURE_ONLY",
+    "source_stage": "stage107_5",
+    "contains_raw_manuscript": false,
+    "prompt_sha256": "ab17d88688feb0564c5e6c1f8b65a40a28615e2f6a35ca58d5fc3a7d0cd550d8",
+    "production_scope": "stage107_5_to_stage108_editorial_board",
+    "notes": [
+      "feature-only prose candidate review",
+      "raw response and raw manuscript are not stored"
+    ]
+  },
+  {
+    "packet_id": "pkt_scenario_fixture",
+    "mode": "SCENARIO",
+    "payload_kind": "FEATURE_ONLY",
+    "source_stage": "stage107_5",
+    "contains_raw_manuscript": false,
+    "prompt_sha256": "a5dcdb9f8faa9d1c0f46593e0be3f965f1ed090e17f3cf3ae494eb54eece0a93",
+    "production_scope": "stage107_5_to_stage108_editorial_board",
+    "notes": [
+      "feature-only scenario candidate review",
+      "raw response and raw manuscript are not stored"
+    ]
+  },
+  {
+    "packet_id": "pkt_longform_structure",
+    "mode": "LONGFORM_STRUCTURE",
+    "payload_kind": "FEATURE_ONLY",
+    "source_stage": "stage107",
+    "contains_raw_manuscript": false,
+    "prompt_sha256": "6fcbd2a08ebf1c79d212b0f00ff4c7af2c3fe1b930191b45f340d8953e74b0e2",
+    "production_scope": "stage107_5_to_stage108_editorial_board",
+    "notes": [
+      "multi-season arc and payoff calendar review",
+      "raw response and raw manuscript are not stored"
+    ]
+  },
+  {
+    "packet_id": "pkt_production_readiness",
+    "mode": "PRODUCTION_READINESS",
+    "payload_kind": "FEATURE_ONLY",
+    "source_stage": "stage107",
+    "contains_raw_manuscript": false,
+    "prompt_sha256": "e8e3deea60baa21d1dd55cc3652e2d645ae6627aea8756839c055f6e886f1bc6",
+    "production_scope": "stage107_5_to_stage108_editorial_board",
+    "notes": [
+      "production calendar and export readiness review",
+      "raw response and raw manuscript are not stored"
+    ]
+  }
+]

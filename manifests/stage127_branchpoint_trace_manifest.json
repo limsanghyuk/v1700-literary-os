@@ -1,0 +1,27 @@
+{
+  "stage": "127",
+  "baseline_stage": "126",
+  "branchpoints": {
+    "Gate25_NIE_primary_authority": "preserved",
+    "Gate28_ASD_secondary_quality": "preserved",
+    "Gate29_PNE_secondary_predictive": "preserved",
+    "Stage125_Governor": "preserved",
+    "Stage126_CrossLineageRelease": "preserved",
+    "provider_zero": "preserved",
+    "Node2_boundary": "preserved",
+    "raw_manuscript_privacy": "preserved",
+    "clean_packaging": "preserved"
+  },
+  "new_symbols": {
+    "run_multiwork_preflight": [
+      "provider_zero",
+      "project_isolation",
+      "branchpoint_lineage"
+    ],
+    "run_stage127_release_gate": [
+      "release_gate",
+      "repo_doctor",
+      "clean_packaging"
+    ]
+  }
+}

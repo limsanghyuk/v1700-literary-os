@@ -1,0 +1,26 @@
+{
+  "stage": "127",
+  "status": "pass",
+  "title": "MultiWork Preflight & Isolation Audit",
+  "gitnexus_cli_available": false,
+  "python_fallback_used": true,
+  "verification": {
+    "compileall": "pass",
+    "stage127_preflight": "pass",
+    "stage127_release_gate": "pass",
+    "main_release_gate": "pass",
+    "repo_doctor": "pass",
+    "targeted_pytest": "pass",
+    "full_pytest": "timeout_in_sandbox"
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "direct_v571_merge_performed": false,
+    "branchpoint_lineage_preserved": true
+  }
+}

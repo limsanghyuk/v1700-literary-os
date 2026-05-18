@@ -1,0 +1,41 @@
+{
+  "stage": "107.1",
+  "title": "Multi-Season Arc Planner",
+  "status": "pass",
+  "season_count": 2,
+  "episode_target_total": 32,
+  "seasons": [
+    {
+      "season_id": "season_01",
+      "season_index": 1,
+      "episode_count": 16,
+      "dramatic_function": "origin fracture and survival proof",
+      "central_question": "What debt did the protagonist inherit?",
+      "payoff_targets": [
+        "payoff_missing_sibling",
+        "payoff_false_forecast"
+      ],
+      "branchpoint_refs": [
+        "stage97_payoff_debt",
+        "stage101_scenario_room"
+      ]
+    },
+    {
+      "season_id": "season_02",
+      "season_index": 2,
+      "episode_count": 16,
+      "dramatic_function": "expansion into institution and counter-memory",
+      "central_question": "Who benefits from the forgotten event?",
+      "payoff_targets": [
+        "payoff_institutional_cover",
+        "payoff_childhood_witness"
+      ],
+      "branchpoint_refs": [
+        "stage102_blind_benchmark",
+        "stage106_style_genome"
+      ]
+    }
+  ],
+  "branchpoint_lineage_preserved": true,
+  "provider_call_count": 0
+}

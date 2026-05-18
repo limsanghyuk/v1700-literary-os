@@ -1,0 +1,34 @@
+{
+  "case": {
+    "case_id": "NIE-ADV-005",
+    "case_type": "character_influence_matrix",
+    "mutation_type": "matrix_symmetric_only",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "cim_asymmetry_missing",
+    "expected_triggered_gate": "cim_asymmetric_matrix_gate",
+    "severity": "CRITICAL_BLOCK",
+    "payload": {
+      "matrix_is_asymmetric": false,
+      "asymmetric_pair_count": 0
+    }
+  },
+  "result": {
+    "case_id": "NIE-ADV-005",
+    "case_type": "character_influence_matrix",
+    "mutation_type": "matrix_symmetric_only",
+    "expected_status": "BLOCK",
+    "actual_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "cim_asymmetry_missing",
+    "triggered_gate": "cim_asymmetric_matrix_gate",
+    "severity": "CRITICAL_BLOCK",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-005.json",
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

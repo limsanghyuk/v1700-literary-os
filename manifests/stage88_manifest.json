@@ -1,0 +1,43 @@
+{
+  "stage": "88",
+  "title": "AI-Agent Editor/Reader Blind Benchmark",
+  "status": "pass",
+  "depends_on": [
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "substitution_policy": {
+    "external_human_editors": "replaced_by_local_ai_editor_agents",
+    "external_human_readers": "replaced_by_local_ai_reader_agents",
+    "provider_default_calls": 0,
+    "human_benchmark_required": false
+  },
+  "required_outputs": [
+    "src/v1700/agent_benchmark/contracts.py",
+    "src/v1700/agent_benchmark/agents.py",
+    "src/v1700/agent_benchmark/harness.py",
+    "src/v1700/gates/stage88_release_gate.py",
+    "tools/run_stage88_agent_benchmark.py",
+    "tools/run_stage88_release_gate.py",
+    "tools/export_stage88_artifacts.py",
+    "tests/test_stage88_agent_benchmark.py",
+    "manifests/stage88_branchpoint_trace_manifest.json",
+    "release/current/stage88_agent_benchmark_report.json",
+    "release/current/stage88_release_gate_report.json"
+  ],
+  "benchmark_targets": {
+    "minimum_agent_count": 6,
+    "minimum_blind_sample_count": 16,
+    "default_agent_count": 6,
+    "default_sample_count": 32,
+    "pass_threshold": 8.0,
+    "consensus_score": 8.25,
+    "min_agent_average": 8.24,
+    "min_sample_average": 8.21
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

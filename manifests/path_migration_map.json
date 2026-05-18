@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-05-11T10:15:34.151094+00:00",
+  "strategy": "promote active runtime to src/v1700; summarize stage lineage; keep large/generated outputs out of Git.",
+  "selected_migrations": [
+    {
+      "from": "literary_system/v1700_user_release/stage71_node2_reader_facing_prose_renderer.py",
+      "to": "src/v1700/nodes/node2_prose_renderer/*",
+      "status": "modularized"
+    },
+    {
+      "from": "tools/run_runtime_smoke.py",
+      "to": "tools/run_runtime_smoke.py",
+      "status": "canonical wrapper"
+    },
+    {
+      "from": "tools/run_release_gate.py",
+      "to": "tools/run_release_gate.py",
+      "status": "canonical wrapper"
+    },
+    {
+      "from": "manifests/STAGE*.json",
+      "to": "docs/stages + manifests/stage_lineage_manifest.json",
+      "status": "summarized_preserved"
+    },
+    {
+      "from": "outputs/**",
+      "to": "excluded by .gitignore; keep only examples/golden cases",
+      "status": "generated_output_excluded"
+    },
+    {
+      "from": "root/*.py",
+      "to": "src/v1700 or historical release asset",
+      "status": "root_sprawl_removed"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "stage": "102.1",
+  "baseline_stage": "102.0",
+  "title": "Real Writer Workflow Trial",
+  "trial_type": "deterministic_local_writer_trial",
+  "status": "pass",
+  "issues": [],
+  "seed_count": 3,
+  "task_count": 5,
+  "task_completion_count": 5,
+  "average_friction_score": 8.6,
+  "baseline_minutes": 320,
+  "v1700_minutes": 170,
+  "saved_minutes": 150,
+  "tasks": [
+    {
+      "task_id": "task_story_bible",
+      "description": "Create story bible and character relation anchors.",
+      "completion_status": "PASS",
+      "baseline_minutes": 55,
+      "v1700_minutes": 30,
+      "friction_score": 8.7,
+      "notes": [
+        "branchpoint anchors visible"
+      ],
+      "saved_minutes": 25
+    },
+    {
+      "task_id": "task_episode_outline",
+      "description": "Build three-episode outline from the same seed prompt.",
+      "completion_status": "PASS",
+      "baseline_minutes": 90,
+      "v1700_minutes": 48,
+      "friction_score": 8.6,
+      "notes": [
+        "macro and micro plot separated"
+      ],
+      "saved_minutes": 42
+    },
+    {
+      "task_id": "task_scene_revision",
+      "description": "Revise weak scene into reader-facing prose without raw reveal leakage.",
+      "completion_status": "PASS",
+      "baseline_minutes": 70,
+      "v1700_minutes": 36,
+      "friction_score": 8.8,
+      "notes": [
+        "Node2 boundary preserved"
+      ],
+      "saved_minutes": 34
+    },
+    {
+      "task_id": "task_scenario_handoff",
+      "description": "Convert prose intent into scenario room beat board.",
+      "completion_status": "PASS",
+      "baseline_minutes": 65,
+      "v1700_minutes": 34,
+      "friction_score": 8.5,
+      "notes": [
+        "scene beat board and prop cues present"
+      ],
+      "saved_minutes": 31
+    },
+    {
+      "task_id": "task_export_review",
+      "description": "Review export package and release evidence for developer handoff.",
+      "completion_status": "PASS",
+      "baseline_minutes": 40,
+      "v1700_minutes": 22,
+      "friction_score": 8.4,
+      "notes": [
+        "clean evidence path present"
+      ],
+      "saved_minutes": 18
+    }
+  ],
+  "seeds": [
+    {
+      "seed_id": "stage102_seed_prose_01",
+      "prompt": "A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.",
+      "target_mode": "PROSE",
+      "evaluation_goal": "Measure reader-facing prose, emotional access, and anti-LLM surface.",
+      "constraints": [
+        "no raw reveal",
+        "surface-only prose",
+        "scene necessity required"
+      ]
+    },
+    {
+      "seed_id": "stage102_seed_scenario_01",
+      "prompt": "A quiet archivist and a rookie detective track a prop-led clue across three episodes.",
+      "target_mode": "SCENARIO",
+      "evaluation_goal": "Measure scene beats, action movement, dialogue silence, and prop-led reveal control.",
+      "constraints": [
+        "scenario beats visible",
+        "reveal budget preserved",
+        "production scene mapping required"
+      ]
+    },
+    {
+      "seed_id": "stage102_seed_hybrid_01",
+      "prompt": "A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.",
+      "target_mode": "HYBRID",
+      "evaluation_goal": "Measure hybrid longform structure, revision efficiency, and writer workflow usability.",
+      "constraints": [
+        "longform continuity",
+        "payoff debt audit",
+        "writer approval guard"
+      ]
+    }
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0
+}

@@ -1,0 +1,223 @@
+{
+  "stage": "100",
+  "baseline_stage": "99",
+  "title": "Literary OS 1.0 Release Candidate",
+  "status": "pass",
+  "issues": [],
+  "stage100_0_rc_preflight": {
+    "stage": "100.0",
+    "baseline_stage": "99",
+    "title": "RC Preflight Lock",
+    "index_freshness_status": "pass",
+    "list_repos_status": "pass",
+    "query_context_impact_status": "pass",
+    "detect_changes_status": "pass",
+    "concept_impact_status": "pass",
+    "survival_matrix_status": "pass",
+    "symbol_to_branchpoint_trace_status": "pass",
+    "shape_check_status": "pass",
+    "release_gate_integration_status": "pass",
+    "repo_doctor_status": "pass",
+    "metadata": {
+      "gitnexus_metrics": {
+        "files": 1225,
+        "nodes": 9793,
+        "edges": 15233,
+        "clusters": 162,
+        "flows": 298,
+        "embeddings": 0,
+        "nodes_per_file": 7.994,
+        "edges_per_node": 1.555,
+        "clusters_per_100_files": 13.224,
+        "flows_per_100_files": 24.327
+      },
+      "p0_coverage": 1.0,
+      "p1_coverage": 1.0
+    },
+    "status": "pass",
+    "issues": [],
+    "gitnexus_rc_pack": "release/current/stage100_gitnexus_rc_pack"
+  },
+  "stage100_1_dual_mode_evaluation": {
+    "stage": "100.1",
+    "baseline_stage": "100.0",
+    "title": "Dual-Mode Literary / Scenario Evaluation",
+    "evaluation_type": "fixture_contract_validation",
+    "actual_generation_benchmark": false,
+    "benchmark_scope": "Validates evaluator contracts, score schema separation, and release evidence shape. It does not claim a live generation quality benchmark.",
+    "status": "pass",
+    "issues": [],
+    "prose_evaluation_status": "pass",
+    "scenario_evaluation_status": "pass",
+    "prose_scenario_metric_conflation": false,
+    "prose": {
+      "seed_id": "STAGE100_SEED_KDRAMA_001",
+      "mode": "PROSE",
+      "candidate_id": "v1700_stage100_prose_fixture",
+      "engine_profile": "V1700 Literary OS local-first prose authority",
+      "score_total": 8.82,
+      "score_breakdown": {
+        "sentence_density": 8.8,
+        "sensory_texture": 8.6,
+        "interiority": 8.7,
+        "voice_drift_control": 8.9,
+        "longform_literary_structure": 9.1
+      },
+      "reviewer_notes": [
+        "Prose mode values density, sensory residue, interiority, and longform voice stability.",
+        "Scenario-only beat metrics are intentionally excluded from prose scoring."
+      ],
+      "release_relevance": "INFO"
+    },
+    "scenario": {
+      "seed_id": "STAGE100_SEED_SCENARIO_001",
+      "mode": "SCENARIO",
+      "candidate_id": "v1700_stage100_scenario_fixture",
+      "engine_profile": "V1700 Literary OS local-first scenario authority",
+      "score_total": 8.4,
+      "score_breakdown": {
+        "scene_beat_clarity": 8.5,
+        "investigative_action": 8.2,
+        "dialogue_silence_pressure": 8.4,
+        "visualizability": 8.6,
+        "production_feasibility": 8.3
+      },
+      "reviewer_notes": [
+        "Scenario mode values scene action, beat legibility, silence, camera-readiness, and production feasibility.",
+        "Prose interiority metrics are intentionally excluded from scenario scoring."
+      ],
+      "release_relevance": "INFO"
+    },
+    "evaluation_pack": "release/current/stage100_evaluation_pack"
+  },
+  "stage100_2_provider_certification": {
+    "stage": "100.2",
+    "baseline_stage": "100.1",
+    "title": "Multi-Provider Contract Certification",
+    "status": "pass",
+    "issues": [],
+    "providers_certified": 6,
+    "provider_contract_status": "pass",
+    "live_provider_call_count_in_release": 0,
+    "provider_default_calls": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "cost_ledger_status": "pass",
+    "provider_pack": "release/current/stage100_provider_pack",
+    "results": [
+      {
+        "provider_id": "fixture",
+        "provider_kind": "fixture",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      },
+      {
+        "provider_id": "mock",
+        "provider_kind": "mock",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      },
+      {
+        "provider_id": "gpt",
+        "provider_kind": "gpt",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      },
+      {
+        "provider_id": "claude",
+        "provider_kind": "claude",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      },
+      {
+        "provider_id": "gemini",
+        "provider_kind": "gemini",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      },
+      {
+        "provider_id": "ollama",
+        "provider_kind": "ollama",
+        "contract_status": "PASS",
+        "live_call_count_in_release": 0,
+        "response_normalization_status": "pass",
+        "cost_ledger_status": "pass",
+        "raw_manuscript_leakage": 0
+      }
+    ]
+  },
+  "stage100_3_v430_comparison_bridge": {
+    "stage": "100.3",
+    "baseline_stage": "100.2",
+    "title": "V430 Comparison / Absorption Candidate Bridge",
+    "status": "pass",
+    "issues": [],
+    "source_available_in_workspace": false,
+    "v430_code_merged": false,
+    "immediate_absorption_allowed": false,
+    "next_absorption_stage": "Stage101",
+    "candidates": [
+      {
+        "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+        "value": "Scenario room / beat pipeline may improve script-mode orchestration.",
+        "v1700_overlap": "Stage98 Studio Workflow and Stage100 Scenario Evaluation",
+        "branchpoint_risk": "medium",
+        "decision": "DEFER_STAGE101"
+      },
+      {
+        "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+        "value": "Investigation/action beats may improve scenario-mode scene movement.",
+        "v1700_overlap": "Stage97 endurance and Stage100 scenario scoring",
+        "branchpoint_risk": "low",
+        "decision": "DEFER_STAGE101"
+      },
+      {
+        "candidate_id": "V430_PRODUCT_PIPELINE_API",
+        "value": "Product pipeline/API shape may improve future user trials.",
+        "v1700_overlap": "Stage89-98 Studio and Publishing Package",
+        "branchpoint_risk": "medium",
+        "decision": "COMPARE_ONLY"
+      }
+    ]
+  },
+  "stage100_readiness": {
+    "stage": "100",
+    "baseline_stage": "99",
+    "rc_version": "1.0rc1",
+    "gitnexus_preflight_status": "pass",
+    "branchpoint_survival_status": "pass",
+    "dual_mode_evaluation_status": "pass",
+    "provider_certification_status": "pass",
+    "release_gate_status": "pass",
+    "stage100_readiness_status": "pass",
+    "status": "pass",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "gitnexus_runtime_dependency_required": false,
+    "python_fallback_required": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0
+}

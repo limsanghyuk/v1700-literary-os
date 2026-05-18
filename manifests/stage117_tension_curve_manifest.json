@@ -1,0 +1,24 @@
+{
+  "stage": "stage117",
+  "components": {
+    "NarrativeTensionCurve": "src/v1700/nie/arc/narrative_tension_curve.py",
+    "SceneTensionPoint": "src/v1700/nie/arc/contracts.py",
+    "CoverageLoss": "src/v1700/nie/arc/coverage_loss.py"
+  },
+  "ideal_curve": "T_ideal(t)=0.60+0.40*sin(2πt-0.50)+0.20*sin(6πt)",
+  "loss_functions": {
+    "L_tension": "(1/N) * sum((T_actual(t)-T_ideal(t))^2)",
+    "L_coverage": "sum_act max(0, target_count-actual_count)^2",
+    "L_final": "L_tension + lambda * L_coverage",
+    "lambda": 0.3
+  },
+  "gate_thresholds": {
+    "warn_threshold": 0.1,
+    "block_threshold": 0.18
+  },
+  "forbidden": [
+    "live provider call in release gate",
+    "raw manuscript provider leakage",
+    "Node2 raw reveal access"
+  ]
+}

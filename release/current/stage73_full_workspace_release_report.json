@@ -1,0 +1,2202 @@
+{
+  "stage": "73",
+  "title": "Workspace Packaging and Evidence Dependency Fix",
+  "status": "pass",
+  "generated_at": "2026-05-12T08:30:05.799847+00:00",
+  "workspace_root": "gpt",
+  "active_repo": "gpt/active/v1700/literary_generator",
+  "knowledge_base": "gpt/knowledge_base/v1650_stage35_critic_comparison_gate",
+  "source_drive_folder": "https://drive.google.com/drive/folders/1EJHDTH8ufxZvDkyHWxiXJqlnA-YomozQ",
+  "fix_summary": [
+    "Bundled active Stage72.3 repository with required knowledge_base subtree.",
+    "Restored pre-Stage40 source evidence paths required by survival gate.",
+    "Kept GitNexus as optional external sidecar and Python fallback as default executable path."
+  ],
+  "verification": {
+    "pytest": {
+      "returncode": 0,
+      "stdout": "........................                                                 [100%]\n24 passed in 8.47s\n",
+      "stderr": ""
+    },
+    "pre_stage40_survival_gate": {
+      "returncode": 0,
+      "stdout": "{\n  \"stage\": \"72.3\",\n  \"status\": \"pass\",\n  \"issues\": [],\n  \"concept_count\": 25,\n  \"required_concept_count\": 20,\n  \"missing_required\": [],\n  \"missing_source_evidence\": [],\n  \"missing_evidence_files\": [],\n  \"missing_current_anchor\": [],\n  \"high_priority_unknown\": [],\n  \"provider_default_calls\": 0,\n  \"node2_raw_reveal_access_count\": 0\n}\n",
+      "stderr": "",
+      "json": {
+        "stage": "72.3",
+        "status": "pass",
+        "issues": [],
+        "concept_count": 25,
+        "required_concept_count": 20,
+        "missing_required": [],
+        "missing_source_evidence": [],
+        "missing_evidence_files": [],
+        "missing_current_anchor": [],
+        "high_priority_unknown": [],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access_count": 0
+      }
+    },
+    "stage72_3_release_gate": {
+      "returncode": 0,
+      "stdout": "{\n  \"stage\": \"72.3\",\n  \"status\": \"pass\",\n  \"issues\": [],\n  \"stage72_2_release_gate\": {\n    \"stage\": \"72.2\",\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"gitnexus\": {\n      \"installed\": false,\n      \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n      \"optional_runtime_dependency\": false,\n      \"fallback_available\": true,\n      \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n    },\n    \"gitnexus_index_status\": {\n      \"alias\": \"v1700_stage72_3_ascii\",\n      \"registered\": false,\n      \"path\": \"\",\n      \"storage_path\": \"\",\n      \"indexed_at\": \"\",\n      \"stats\": {},\n      \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n      \"stale\": true,\n      \"reason\": \"alias_not_registered\"\n    },\n    \"gitnexus_index_under_gpt_workspace\": false,\n    \"manual_reindex_recommended\": true,\n    \"gitnexus_optional_only\": true,\n    \"python_fallback_available\": true,\n    \"provider_default_calls\": 0,\n    \"node2_raw_reveal_access_count\": 0,\n    \"checks\": {\n      \"graph_nexus_release_gate\": {\n        \"stage\": \"72.1\",\n        \"status\": \"pass\",\n        \"issues\": [],\n        \"gitnexus\": {\n          \"installed\": false,\n          \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n          \"optional_runtime_dependency\": false,\n          \"fallback_available\": true,\n          \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n        },\n        \"gitnexus_optional_only\": true,\n        \"python_fallback_available\": true,\n        \"provider_default_calls\": 0,\n        \"code_graph_available\": true,\n        \"narrative_graph_available\": true,\n        \"stage_lineage_graph_available\": true,\n        \"node2_raw_reveal_access_count\": 0,\n        \"checks\": {\n          \"lineage_preflight\": {\n            \"status\": \"pass\",\n            \"goal\": \"Stage72.1 GraphNexus restoration\",\n            \"missing_stages\": [],\n            \"stage_count\": 11,\n            \"graph_intelligence_lineage_present\": true\n          },\n          \"impact\": {\n            \"status\": \"pass\",\n            \"impact\": {\n              \"target\": \"Node2ProseCompiler\",\n              \"risk_level\": \"medium\",\n              \"risk_score\": 0.6000000000000001,\n              \"code_hits\": [\n                \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n              ],\n              \"narrative_node_count\": 2,\n              \"lineage_node_count\": 11,\n              \"risks\": [\n                \"node2_surface_contract_must_hold\",\n                \"forbidden_reveal_projection_required\"\n              ]\n            },\n            \"requires_human_attention\": false\n          },\n          \"legacy_logic_survival\": {\n            \"status\": \"pass\",\n            \"stage\": \"STAGE61-66\",\n            \"required_concepts\": [\n              \"authority boundaries\",\n              \"feature flag integration\",\n              \"graph sidecar\"\n            ],\n            \"missing_concepts\": [],\n            \"current_status\": \"restored_as_optional_graphnexus_layer\"\n          },\n          \"node_projection\": {\n            \"status\": \"pass\",\n            \"node2_raw_graph_access\": false,\n            \"node2_packet\": {\n              \"packet_type\": \"Node2GraphSurfacePacket\",\n              \"scene_id\": \"S72_1_SAMPLE\",\n              \"surface_tone\": \"reader_facing\",\n              \"relationship_pressure\": \"medium\",\n              \"sensory_anchors\": [\n                \"setting\",\n                \"gesture\"\n              ],\n              \"forbidden_reveal_labels\": [\n                \"locked_reveal_1\"\n              ],\n              \"style_drift_warnings\": []\n            },\n            \"node3_packet\": {\n              \"packet_type\": \"Node3GraphCriticPacket\",\n              \"contradiction_risks\": [\n                \"forbidden_reveal_projection_required\"\n              ],\n              \"leakage_risks\": [\n                \"forbidden_reveal_projection_required\"\n              ],\n              \"impact\": {\n                \"risks\": [\n                  \"forbidden_reveal_projection_required\"\n                ]\n              }\n            }\n          }\n        },\n        \"context_packet\": {\n          \"code_summary\": {\n            \"available\": true,\n            \"source\": \"python_fallback\",\n            \"node_count\": 77\n          },\n          \"narrative_summary\": {\n            \"available\": true,\n            \"node_count\": 2,\n            \"edge_count\": 1\n          },\n          \"lineage_summary\": {\n            \"available\": true,\n            \"node_count\": 11,\n            \"stage72_1_present\": true\n          },\n          \"warnings\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        }\n      },\n      \"query\": {\n        \"status\": \"pass\",\n        \"query\": \"GraphNexus\",\n        \"source\": \"python_fallback\",\n        \"matches\": [\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n            \"defines\": [\n              \"GraphNexusContextPacket\",\n              \"Node1GraphPacket\",\n              \"Node2GraphSurfacePacket\",\n              \"Node3GraphCriticPacket\",\n              \"assert_surface_safe\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/integration/test_node1_node2_node3_pipeline.py\",\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\",\n              \"tests/test_stage72_2_graph_nexus_operational_tools.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/registry.py\",\n            \"defines\": [\n              \"GraphNexusRegistry\",\n              \"build\",\n              \"context_packet\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/tools/contracts.py\",\n            \"defines\": [\n              \"GeneratedNodeSkill\",\n              \"GeneratedSceneSkill\",\n              \"GeneratedStageSkill\",\n              \"GeneratedWikiPage\",\n              \"GraphNexusContextRequest\",\n              \"GraphNexusDetectChangesReport\",\n              \"GraphNexusImpactRequest\",\n              \"GraphNexusQueryRequest\",\n              \"GraphNexusQueryResult\",\n              \"GraphNexusRouteMap\",\n              \"GraphNexusShapeCheckReport\",\n              \"GraphNexusToolMap\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"stage\",\n            \"stage_id\": \"STAGE72.1\",\n            \"title\": \"GraphNexus Restoration Patch\",\n            \"surviving_runtime_value\": \"Restores graph intelligence as optional live architecture.\"\n          },\n          {\n            \"kind\": \"stage\",\n            \"stage_id\": \"STAGE72.2\",\n            \"title\": \"GitNexus Capability Absorption and GraphNexus Operationalization\",\n            \"surviving_runtime_value\": \"Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety.\"\n          }\n        ],\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"query\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        }\n      },\n      \"context\": {\n        \"status\": \"pass\",\n        \"target\": \"Node2ProseCompiler\",\n        \"source\": \"python_fallback\",\n        \"packet\": {\n          \"code_summary\": {\n            \"available\": true,\n            \"source\": \"python_fallback\",\n            \"node_count\": 77\n          },\n          \"narrative_summary\": {\n            \"available\": true,\n            \"node_count\": 2,\n            \"edge_count\": 1\n          },\n          \"lineage_summary\": {\n            \"available\": true,\n            \"node_count\": 11,\n            \"stage72_1_present\": true\n          },\n          \"warnings\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        },\n        \"code_hits\": [\n          {\n            \"path\": \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n            \"defines\": [\n              \"Node2CompileResult\",\n              \"Node2ProseCompiler\",\n              \"__init__\",\n              \"aggregate_report\",\n              \"compile\",\n              \"compile_many\"\n            ],\n            \"imports\": [\n              \"__future__\",\n              \"anti_llm_filter\",\n              \"authorial_profile\",\n              \"candidates\",\n              \"contract\",\n              \"dataclasses\",\n              \"dialogue_renderer\",\n              \"emotion_renderer\",\n              \"marker_stripper\",\n              \"rhythm_rewriter\",\n              \"scorer\",\n              \"sensory_anchor\",\n              \"statistics\",\n              \"v1700.ir.rendered_prose\",\n              \"v1700.ir.scene_intent\",\n              \"v1700.ir.style_profile\",\n              \"validators\"\n            ],\n            \"tested_by\": [\n              \"tests/integration/test_node1_node2_node3_pipeline.py\",\n              \"tests/unit/node2_prose_renderer/test_compiler.py\"\n            ],\n            \"gated_by\": [\n              \"node_projection_gate\"\n            ],\n            \"stage_origin\": \"STAGE71_72\"\n          }\n        ],\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"context\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        }\n      },\n      \"impact\": {\n        \"status\": \"pass\",\n        \"target\": \"Node2ProseCompiler\",\n        \"source\": \"python_fallback\",\n        \"fallback_impact\": {\n          \"target\": \"Node2ProseCompiler\",\n          \"risk_level\": \"medium\",\n          \"risk_score\": 0.6000000000000001,\n          \"code_hits\": [\n            \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n          ],\n          \"narrative_node_count\": 2,\n          \"lineage_node_count\": 11,\n          \"risks\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        },\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"impact\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        },\n        \"requires_human_attention\": false\n      },\n      \"detect_changes\": {\n        \"status\": \"pass\",\n        \"source\": \"python_fallback\",\n        \"mode\": \"stage72_2_structural_scan\",\n        \"changed_paths\": [\n          \"src/v1700/gates/graph_nexus_impact_gate.py\",\n          \"src/v1700/gates/graph_nexus_release_gate.py\",\n          \"src/v1700/graph_nexus/__init__.py\",\n          \"src/v1700/graph_nexus/code_graph.py\",\n          \"src/v1700/graph_nexus/detect_changes.py\",\n          \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n          \"src/v1700/graph_nexus/impact.py\",\n          \"src/v1700/graph_nexus/narrative_graph.py\",\n          \"src/v1700/graph_nexus/projection.py\",\n          \"src/v1700/graph_nexus/registry.py\",\n          \"src/v1700/graph_nexus/stage_lineage_graph.py\",\n          \"src/v1700/graph_nexus/tools/__init__.py\",\n          \"src/v1700/graph_nexus/tools/change_review.py\",\n          \"src/v1700/graph_nexus/tools/concept_impact.py\",\n          \"src/v1700/graph_nexus/tools/context.py\",\n          \"src/v1700/graph_nexus/tools/contracts.py\",\n          \"src/v1700/graph_nexus/tools/detect_changes.py\",\n          \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n          \"src/v1700/graph_nexus/tools/impact.py\",\n          \"src/v1700/graph_nexus/tools/query.py\",\n          \"src/v1700/graph_nexus/tools/route_map.py\",\n          \"src/v1700/graph_nexus/tools/shape_check.py\",\n          \"src/v1700/graph_nexus/tools/skill_generator.py\",\n          \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n          \"src/v1700/graph_nexus/tools/tool_map.py\",\n          \"src/v1700/graph_nexus/tools/wiki_generator.py\",\n          \"src/v1700/sidecars/gitnexus/__init__.py\",\n          \"src/v1700/sidecars/gitnexus/adapter.py\",\n          \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n          \"src/v1700/sidecars/gitnexus/contracts.py\",\n          \"src/v1700/sidecars/gitnexus/index_status.py\",\n          \"src/v1700/sidecars/gitnexus/mcp_adapter.py\",\n          \"src/v1700/sidecars/gitnexus/probe.py\",\n          \"src/v1700/sidecars/gitnexus/python_fallback.py\",\n          \"src/v1700/sidecars/gitnexus/result_normalizer.py\",\n          \"src/v1700/sidecars/gitnexus/stale_index_detector.py\"\n        ],\n        \"impacted_tests\": [\n          \"tests/integration/test_node1_node2_node3_pipeline.py\",\n          \"tests/stage_gates/test_stage72_repo_doctor.py\",\n          \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n          \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n          \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n          \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n          \"tests/test_stage72_1_lineage_preflight_gate.py\",\n          \"tests/test_stage72_1_node_projection_gate.py\",\n          \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n          \"tests/test_stage72_2_release_gate.py\",\n          \"tests/test_stage72_3_foundation_lineage.py\"\n        ],\n        \"stale_index\": true,\n        \"gitnexus\": {\n          \"command\": {\n            \"provider\": \"gitnexus_cli\",\n            \"capability\": \"detect_changes\",\n            \"available\": false,\n            \"reason\": \"active_repo_is_not_git_worktree; python fallback used\"\n          },\n          \"index_status\": {\n            \"alias\": \"v1700_stage72_3_ascii\",\n            \"registered\": false,\n            \"path\": \"\",\n            \"storage_path\": \"\",\n            \"indexed_at\": \"\",\n            \"stats\": {},\n            \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n            \"stale\": true,\n            \"reason\": \"alias_not_registered\"\n          }\n        }\n      },\n      \"route_map\": {\n        \"status\": \"pass\",\n        \"routes\": [\n          {\n            \"name\": \"runtime_generation_route\",\n            \"steps\": [\n              \"src/v1700/cli.py\",\n              \"src/v1700/nodes/node1_architect/__init__.py\",\n              \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n              \"src/v1700/nodes/node3_critic_gate/constraint_validator.py\"\n            ]\n          },\n          {\n            \"name\": \"graph_context_route\",\n            \"steps\": [\n              \"src/v1700/graph_nexus/registry.py\",\n              \"src/v1700/graph_nexus/code_graph.py\",\n              \"src/v1700/graph_nexus/narrative_graph.py\",\n              \"src/v1700/graph_nexus/stage_lineage_graph.py\"\n            ]\n          },\n          {\n            \"name\": \"stage72_2_operational_route\",\n            \"steps\": [\n              \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n              \"src/v1700/graph_nexus/tools/query.py\",\n              \"src/v1700/graph_nexus/tools/context.py\",\n              \"src/v1700/graph_nexus/tools/impact.py\",\n              \"src/v1700/graph_nexus/tools/detect_changes.py\",\n              \"src/v1700/gates/stage72_2_release_gate.py\"\n            ]\n          },\n          {\n            \"name\": \"stage72_3_foundation_lineage_route\",\n            \"steps\": [\n              \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n              \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n              \"src/v1700/gates/pre_stage40_survival_gate.py\",\n              \"src/v1700/gates/stage72_3_release_gate.py\"\n            ]\n          }\n        ],\n        \"missing_paths\": []\n      },\n      \"tool_map\": {\n        \"status\": \"pass\",\n        \"tools\": [\n          {\n            \"name\": \"query\",\n            \"path\": \"tools/run_graph_nexus_query.py\"\n          },\n          {\n            \"name\": \"context\",\n            \"path\": \"tools/run_graph_nexus_context.py\"\n          },\n          {\n            \"name\": \"impact\",\n            \"path\": \"tools/run_graph_nexus_impact.py\"\n          },\n          {\n            \"name\": \"detect_changes\",\n            \"path\": \"tools/run_graph_nexus_detect_changes.py\"\n          },\n          {\n            \"name\": \"route_map\",\n            \"path\": \"tools/run_graph_nexus_route_map.py\"\n          },\n          {\n            \"name\": \"tool_map\",\n            \"path\": \"tools/run_graph_nexus_tool_map.py\"\n          },\n          {\n            \"name\": \"shape_check\",\n            \"path\": \"tools/run_graph_nexus_shape_check.py\"\n          },\n          {\n            \"name\": \"generate_skills\",\n            \"path\": \"tools/run_graph_nexus_generate_skills.py\"\n          },\n          {\n            \"name\": \"generate_wiki\",\n            \"path\": \"tools/run_graph_nexus_generate_wiki.py\"\n          },\n          {\n            \"name\": \"stage72_2_release\",\n            \"path\": \"tools/run_stage72_2_release_gate.py\"\n          },\n          {\n            \"name\": \"build_stage72_3_foundation_lineage\",\n            \"path\": \"tools/build_stage72_3_foundation_lineage.py\"\n          },\n          {\n            \"name\": \"pre_stage40_survival_gate\",\n            \"path\": \"tools/run_pre_stage40_survival_gate.py\"\n          },\n          {\n            \"name\": \"stage72_3_release\",\n            \"path\": \"tools/run_stage72_3_release_gate.py\"\n          }\n        ],\n        \"gates\": [\n          {\n            \"name\": \"graph_nexus_release_gate\",\n            \"path\": \"src/v1700/gates/graph_nexus_release_gate.py\"\n          },\n          {\n            \"name\": \"stage72_2_release_gate\",\n            \"path\": \"src/v1700/gates/stage72_2_release_gate.py\"\n          },\n          {\n            \"name\": \"pre_stage40_survival_gate\",\n            \"path\": \"src/v1700/gates/pre_stage40_survival_gate.py\"\n          },\n          {\n            \"name\": \"stage72_3_release_gate\",\n            \"path\": \"src/v1700/gates/stage72_3_release_gate.py\"\n          },\n          {\n            \"name\": \"release_gate\",\n            \"path\": \"src/v1700/gates/release_gate.py\"\n          }\n        ],\n        \"tests\": [\n          \"tests/integration/test_node1_node2_node3_pipeline.py\",\n          \"tests/stage_gates/test_stage72_repo_doctor.py\",\n          \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n          \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n          \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n          \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n          \"tests/test_stage72_1_lineage_preflight_gate.py\",\n          \"tests/test_stage72_1_node_projection_gate.py\",\n          \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n          \"tests/test_stage72_2_release_gate.py\",\n          \"tests/test_stage72_3_foundation_lineage.py\",\n          \"tests/unit/node2_prose_renderer/test_compiler.py\",\n          \"tests/unit/node2_prose_renderer/test_contract.py\",\n          \"tests/unit/node2_prose_renderer/test_marker_and_emotion.py\"\n        ],\n        \"missing_paths\": []\n      },\n      \"generated_skills\": {\n        \"status\": \"pass\",\n        \"stage_skill\": {\n          \"stage\": \"Stage72.2\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/tools/query.py\"\n          ]\n        },\n        \"node_skill\": {\n          \"node\": \"Node2\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/tools/shape_check.py\"\n          ]\n        },\n        \"scene_skill\": {\n          \"scene\": \"GraphContextScene\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/registry.py\"\n          ]\n        }\n      },\n      \"generated_wiki\": {\n        \"status\": \"pass\",\n        \"pages\": [\n          {\n            \"title\": \"Architecture Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md\",\n            \"source_files\": [\n              \"src/v1700/cli.py\"\n            ]\n          },\n          {\n            \"title\": \"Stage Lineage Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md\",\n            \"source_files\": [\n              \"manifests/stage_lineage_manifest.json\"\n            ]\n          },\n          {\n            \"title\": \"Narrative Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md\",\n            \"source_files\": [\n              \"src/v1700/graph_nexus/narrative_graph.py\"\n            ]\n          }\n        ]\n      },\n      \"shape_check\": {\n        \"status\": \"pass\",\n        \"checks\": [\n          {\n            \"name\": \"node2_surface_packet_safe\",\n            \"status\": \"pass\"\n          },\n          {\n            \"name\": \"generated_docs_no_raw_reveal_terms\",\n            \"status\": \"pass\"\n          }\n        ],\n        \"violations\": []\n      }\n    }\n  },\n  \"pre_stage40_survival_gate\": {\n    \"stage\": \"72.3\",\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"concept_count\": 25,\n    \"required_concept_count\": 20,\n    \"missing_required\": [],\n    \"missing_source_evidence\": [],\n    \"missing_evidence_files\": [],\n    \"missing_current_anchor\": [],\n    \"high_priority_unknown\": [],\n    \"provider_default_calls\": 0,\n    \"node2_raw_reveal_access_count\": 0\n  },\n  \"survival_matrix\": {\n    \"status\": \"pass\",\n    \"concept_count\": 25,\n    \"buckets\": {\n      \"DOCUMENTED_ONLY\": [\n        \"foundation.authoring.end_to_end_scenario_runner\",\n        \"foundation.review.authoring_workflow\",\n        \"foundation.review.human_agent_console\",\n        \"foundation.stage39.branch_commit_rollback\"\n      ],\n      \"LIVE_RUNTIME\": [\n        \"foundation.governance.release_candidate_gate\",\n        \"foundation.node2.literary_quality_engine\",\n        \"foundation.node2.style_evolution_memory\",\n        \"foundation.stage39.node2_candidate_rendering\"\n      ],\n      \"PARTIAL\": [\n        \"foundation.governance.boundary_registry\",\n        \"foundation.governance.concept_validation_workbench\",\n        \"foundation.governance.stage26_28_regression_stream\",\n        \"foundation.longform.episode_draft_export\",\n        \"foundation.longform.series_arc_control\",\n        \"foundation.memory.conflict_resolver\",\n        \"foundation.memory.long_horizon_drift_stress\",\n        \"foundation.node2.literary_depth_calibration\",\n        \"foundation.provider.execution_trace\",\n        \"foundation.provider.multi_provider_creative_comparison\",\n        \"foundation.stage39.actual_replay_reconvergence\",\n        \"foundation.stage39.analyzer_librarian_integration\",\n        \"foundation.stage39.emotional_pressure_valve\",\n        \"foundation.stage39.evidence_intake_foundation\",\n        \"foundation.stage39.graph_retrieval_bridge\",\n        \"foundation.stage39.longform_scene_sequence_planner\",\n        \"foundation.stage39.temporal_continuity\"\n      ]\n    }\n  },\n  \"provider_default_calls\": 0,\n  \"node2_raw_reveal_access_count\": 0\n}\n",
+      "stderr": "",
+      "json": {
+        "stage": "72.3",
+        "status": "pass",
+        "issues": [],
+        "stage72_2_release_gate": {
+          "stage": "72.2",
+          "status": "pass",
+          "issues": [],
+          "gitnexus": {
+            "installed": false,
+            "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+            "optional_runtime_dependency": false,
+            "fallback_available": true,
+            "error": "gitnexus binary not installed; npx path is available for optional use"
+          },
+          "gitnexus_index_status": {
+            "alias": "v1700_stage72_3_ascii",
+            "registered": false,
+            "path": "",
+            "storage_path": "",
+            "indexed_at": "",
+            "stats": {},
+            "registry_path": "/home/oai/.gitnexus/registry.json",
+            "stale": true,
+            "reason": "alias_not_registered"
+          },
+          "gitnexus_index_under_gpt_workspace": false,
+          "manual_reindex_recommended": true,
+          "gitnexus_optional_only": true,
+          "python_fallback_available": true,
+          "provider_default_calls": 0,
+          "node2_raw_reveal_access_count": 0,
+          "checks": {
+            "graph_nexus_release_gate": {
+              "stage": "72.1",
+              "status": "pass",
+              "issues": [],
+              "gitnexus": {
+                "installed": false,
+                "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+                "optional_runtime_dependency": false,
+                "fallback_available": true,
+                "error": "gitnexus binary not installed; npx path is available for optional use"
+              },
+              "gitnexus_optional_only": true,
+              "python_fallback_available": true,
+              "provider_default_calls": 0,
+              "code_graph_available": true,
+              "narrative_graph_available": true,
+              "stage_lineage_graph_available": true,
+              "node2_raw_reveal_access_count": 0,
+              "checks": {
+                "lineage_preflight": {
+                  "status": "pass",
+                  "goal": "Stage72.1 GraphNexus restoration",
+                  "missing_stages": [],
+                  "stage_count": 11,
+                  "graph_intelligence_lineage_present": true
+                },
+                "impact": {
+                  "status": "pass",
+                  "impact": {
+                    "target": "Node2ProseCompiler",
+                    "risk_level": "medium",
+                    "risk_score": 0.6000000000000001,
+                    "code_hits": [
+                      "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                    ],
+                    "narrative_node_count": 2,
+                    "lineage_node_count": 11,
+                    "risks": [
+                      "node2_surface_contract_must_hold",
+                      "forbidden_reveal_projection_required"
+                    ]
+                  },
+                  "requires_human_attention": false
+                },
+                "legacy_logic_survival": {
+                  "status": "pass",
+                  "stage": "STAGE61-66",
+                  "required_concepts": [
+                    "authority boundaries",
+                    "feature flag integration",
+                    "graph sidecar"
+                  ],
+                  "missing_concepts": [],
+                  "current_status": "restored_as_optional_graphnexus_layer"
+                },
+                "node_projection": {
+                  "status": "pass",
+                  "node2_raw_graph_access": false,
+                  "node2_packet": {
+                    "packet_type": "Node2GraphSurfacePacket",
+                    "scene_id": "S72_1_SAMPLE",
+                    "surface_tone": "reader_facing",
+                    "relationship_pressure": "medium",
+                    "sensory_anchors": [
+                      "setting",
+                      "gesture"
+                    ],
+                    "forbidden_reveal_labels": [
+                      "locked_reveal_1"
+                    ],
+                    "style_drift_warnings": []
+                  },
+                  "node3_packet": {
+                    "packet_type": "Node3GraphCriticPacket",
+                    "contradiction_risks": [
+                      "forbidden_reveal_projection_required"
+                    ],
+                    "leakage_risks": [
+                      "forbidden_reveal_projection_required"
+                    ],
+                    "impact": {
+                      "risks": [
+                        "forbidden_reveal_projection_required"
+                      ]
+                    }
+                  }
+                }
+              },
+              "context_packet": {
+                "code_summary": {
+                  "available": true,
+                  "source": "python_fallback",
+                  "node_count": 77
+                },
+                "narrative_summary": {
+                  "available": true,
+                  "node_count": 2,
+                  "edge_count": 1
+                },
+                "lineage_summary": {
+                  "available": true,
+                  "node_count": 11,
+                  "stage72_1_present": true
+                },
+                "warnings": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              }
+            },
+            "query": {
+              "status": "pass",
+              "query": "GraphNexus",
+              "source": "python_fallback",
+              "matches": [
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/graph_nexus_packet.py",
+                  "defines": [
+                    "GraphNexusContextPacket",
+                    "Node1GraphPacket",
+                    "Node2GraphSurfacePacket",
+                    "Node3GraphCriticPacket",
+                    "assert_surface_safe",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/integration/test_node1_node2_node3_pipeline.py",
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py",
+                    "tests/test_stage72_2_graph_nexus_operational_tools.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/registry.py",
+                  "defines": [
+                    "GraphNexusRegistry",
+                    "build",
+                    "context_packet",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/tools/contracts.py",
+                  "defines": [
+                    "GeneratedNodeSkill",
+                    "GeneratedSceneSkill",
+                    "GeneratedStageSkill",
+                    "GeneratedWikiPage",
+                    "GraphNexusContextRequest",
+                    "GraphNexusDetectChangesReport",
+                    "GraphNexusImpactRequest",
+                    "GraphNexusQueryRequest",
+                    "GraphNexusQueryResult",
+                    "GraphNexusRouteMap",
+                    "GraphNexusShapeCheckReport",
+                    "GraphNexusToolMap",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "stage",
+                  "stage_id": "STAGE72.1",
+                  "title": "GraphNexus Restoration Patch",
+                  "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+                },
+                {
+                  "kind": "stage",
+                  "stage_id": "STAGE72.2",
+                  "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+                  "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+                }
+              ],
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "query",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              }
+            },
+            "context": {
+              "status": "pass",
+              "target": "Node2ProseCompiler",
+              "source": "python_fallback",
+              "packet": {
+                "code_summary": {
+                  "available": true,
+                  "source": "python_fallback",
+                  "node_count": 77
+                },
+                "narrative_summary": {
+                  "available": true,
+                  "node_count": 2,
+                  "edge_count": 1
+                },
+                "lineage_summary": {
+                  "available": true,
+                  "node_count": 11,
+                  "stage72_1_present": true
+                },
+                "warnings": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "code_hits": [
+                {
+                  "path": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                  "defines": [
+                    "Node2CompileResult",
+                    "Node2ProseCompiler",
+                    "__init__",
+                    "aggregate_report",
+                    "compile",
+                    "compile_many"
+                  ],
+                  "imports": [
+                    "__future__",
+                    "anti_llm_filter",
+                    "authorial_profile",
+                    "candidates",
+                    "contract",
+                    "dataclasses",
+                    "dialogue_renderer",
+                    "emotion_renderer",
+                    "marker_stripper",
+                    "rhythm_rewriter",
+                    "scorer",
+                    "sensory_anchor",
+                    "statistics",
+                    "v1700.ir.rendered_prose",
+                    "v1700.ir.scene_intent",
+                    "v1700.ir.style_profile",
+                    "validators"
+                  ],
+                  "tested_by": [
+                    "tests/integration/test_node1_node2_node3_pipeline.py",
+                    "tests/unit/node2_prose_renderer/test_compiler.py"
+                  ],
+                  "gated_by": [
+                    "node_projection_gate"
+                  ],
+                  "stage_origin": "STAGE71_72"
+                }
+              ],
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "context",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              }
+            },
+            "impact": {
+              "status": "pass",
+              "target": "Node2ProseCompiler",
+              "source": "python_fallback",
+              "fallback_impact": {
+                "target": "Node2ProseCompiler",
+                "risk_level": "medium",
+                "risk_score": 0.6000000000000001,
+                "code_hits": [
+                  "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                ],
+                "narrative_node_count": 2,
+                "lineage_node_count": 11,
+                "risks": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "impact",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              },
+              "requires_human_attention": false
+            },
+            "detect_changes": {
+              "status": "pass",
+              "source": "python_fallback",
+              "mode": "stage72_2_structural_scan",
+              "changed_paths": [
+                "src/v1700/gates/graph_nexus_impact_gate.py",
+                "src/v1700/gates/graph_nexus_release_gate.py",
+                "src/v1700/graph_nexus/__init__.py",
+                "src/v1700/graph_nexus/code_graph.py",
+                "src/v1700/graph_nexus/detect_changes.py",
+                "src/v1700/graph_nexus/graph_nexus_packet.py",
+                "src/v1700/graph_nexus/impact.py",
+                "src/v1700/graph_nexus/narrative_graph.py",
+                "src/v1700/graph_nexus/projection.py",
+                "src/v1700/graph_nexus/registry.py",
+                "src/v1700/graph_nexus/stage_lineage_graph.py",
+                "src/v1700/graph_nexus/tools/__init__.py",
+                "src/v1700/graph_nexus/tools/change_review.py",
+                "src/v1700/graph_nexus/tools/concept_impact.py",
+                "src/v1700/graph_nexus/tools/context.py",
+                "src/v1700/graph_nexus/tools/contracts.py",
+                "src/v1700/graph_nexus/tools/detect_changes.py",
+                "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                "src/v1700/graph_nexus/tools/impact.py",
+                "src/v1700/graph_nexus/tools/query.py",
+                "src/v1700/graph_nexus/tools/route_map.py",
+                "src/v1700/graph_nexus/tools/shape_check.py",
+                "src/v1700/graph_nexus/tools/skill_generator.py",
+                "src/v1700/graph_nexus/tools/survival_matrix.py",
+                "src/v1700/graph_nexus/tools/tool_map.py",
+                "src/v1700/graph_nexus/tools/wiki_generator.py",
+                "src/v1700/sidecars/gitnexus/__init__.py",
+                "src/v1700/sidecars/gitnexus/adapter.py",
+                "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                "src/v1700/sidecars/gitnexus/contracts.py",
+                "src/v1700/sidecars/gitnexus/index_status.py",
+                "src/v1700/sidecars/gitnexus/mcp_adapter.py",
+                "src/v1700/sidecars/gitnexus/probe.py",
+                "src/v1700/sidecars/gitnexus/python_fallback.py",
+                "src/v1700/sidecars/gitnexus/result_normalizer.py",
+                "src/v1700/sidecars/gitnexus/stale_index_detector.py"
+              ],
+              "impacted_tests": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/stage_gates/test_stage72_repo_doctor.py",
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py",
+                "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                "tests/test_stage72_2_release_gate.py",
+                "tests/test_stage72_3_foundation_lineage.py"
+              ],
+              "stale_index": true,
+              "gitnexus": {
+                "command": {
+                  "provider": "gitnexus_cli",
+                  "capability": "detect_changes",
+                  "available": false,
+                  "reason": "active_repo_is_not_git_worktree; python fallback used"
+                },
+                "index_status": {
+                  "alias": "v1700_stage72_3_ascii",
+                  "registered": false,
+                  "path": "",
+                  "storage_path": "",
+                  "indexed_at": "",
+                  "stats": {},
+                  "registry_path": "/home/oai/.gitnexus/registry.json",
+                  "stale": true,
+                  "reason": "alias_not_registered"
+                }
+              }
+            },
+            "route_map": {
+              "status": "pass",
+              "routes": [
+                {
+                  "name": "runtime_generation_route",
+                  "steps": [
+                    "src/v1700/cli.py",
+                    "src/v1700/nodes/node1_architect/__init__.py",
+                    "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                    "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+                  ]
+                },
+                {
+                  "name": "graph_context_route",
+                  "steps": [
+                    "src/v1700/graph_nexus/registry.py",
+                    "src/v1700/graph_nexus/code_graph.py",
+                    "src/v1700/graph_nexus/narrative_graph.py",
+                    "src/v1700/graph_nexus/stage_lineage_graph.py"
+                  ]
+                },
+                {
+                  "name": "stage72_2_operational_route",
+                  "steps": [
+                    "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                    "src/v1700/graph_nexus/tools/query.py",
+                    "src/v1700/graph_nexus/tools/context.py",
+                    "src/v1700/graph_nexus/tools/impact.py",
+                    "src/v1700/graph_nexus/tools/detect_changes.py",
+                    "src/v1700/gates/stage72_2_release_gate.py"
+                  ]
+                },
+                {
+                  "name": "stage72_3_foundation_lineage_route",
+                  "steps": [
+                    "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                    "src/v1700/graph_nexus/tools/survival_matrix.py",
+                    "src/v1700/gates/pre_stage40_survival_gate.py",
+                    "src/v1700/gates/stage72_3_release_gate.py"
+                  ]
+                }
+              ],
+              "missing_paths": []
+            },
+            "tool_map": {
+              "status": "pass",
+              "tools": [
+                {
+                  "name": "query",
+                  "path": "tools/run_graph_nexus_query.py"
+                },
+                {
+                  "name": "context",
+                  "path": "tools/run_graph_nexus_context.py"
+                },
+                {
+                  "name": "impact",
+                  "path": "tools/run_graph_nexus_impact.py"
+                },
+                {
+                  "name": "detect_changes",
+                  "path": "tools/run_graph_nexus_detect_changes.py"
+                },
+                {
+                  "name": "route_map",
+                  "path": "tools/run_graph_nexus_route_map.py"
+                },
+                {
+                  "name": "tool_map",
+                  "path": "tools/run_graph_nexus_tool_map.py"
+                },
+                {
+                  "name": "shape_check",
+                  "path": "tools/run_graph_nexus_shape_check.py"
+                },
+                {
+                  "name": "generate_skills",
+                  "path": "tools/run_graph_nexus_generate_skills.py"
+                },
+                {
+                  "name": "generate_wiki",
+                  "path": "tools/run_graph_nexus_generate_wiki.py"
+                },
+                {
+                  "name": "stage72_2_release",
+                  "path": "tools/run_stage72_2_release_gate.py"
+                },
+                {
+                  "name": "build_stage72_3_foundation_lineage",
+                  "path": "tools/build_stage72_3_foundation_lineage.py"
+                },
+                {
+                  "name": "pre_stage40_survival_gate",
+                  "path": "tools/run_pre_stage40_survival_gate.py"
+                },
+                {
+                  "name": "stage72_3_release",
+                  "path": "tools/run_stage72_3_release_gate.py"
+                }
+              ],
+              "gates": [
+                {
+                  "name": "graph_nexus_release_gate",
+                  "path": "src/v1700/gates/graph_nexus_release_gate.py"
+                },
+                {
+                  "name": "stage72_2_release_gate",
+                  "path": "src/v1700/gates/stage72_2_release_gate.py"
+                },
+                {
+                  "name": "pre_stage40_survival_gate",
+                  "path": "src/v1700/gates/pre_stage40_survival_gate.py"
+                },
+                {
+                  "name": "stage72_3_release_gate",
+                  "path": "src/v1700/gates/stage72_3_release_gate.py"
+                },
+                {
+                  "name": "release_gate",
+                  "path": "src/v1700/gates/release_gate.py"
+                }
+              ],
+              "tests": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/stage_gates/test_stage72_repo_doctor.py",
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py",
+                "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                "tests/test_stage72_2_release_gate.py",
+                "tests/test_stage72_3_foundation_lineage.py",
+                "tests/unit/node2_prose_renderer/test_compiler.py",
+                "tests/unit/node2_prose_renderer/test_contract.py",
+                "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+              ],
+              "missing_paths": []
+            },
+            "generated_skills": {
+              "status": "pass",
+              "stage_skill": {
+                "stage": "Stage72.2",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/tools/query.py"
+                ]
+              },
+              "node_skill": {
+                "node": "Node2",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/tools/shape_check.py"
+                ]
+              },
+              "scene_skill": {
+                "scene": "GraphContextScene",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/registry.py"
+                ]
+              }
+            },
+            "generated_wiki": {
+              "status": "pass",
+              "pages": [
+                {
+                  "title": "Architecture Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md",
+                  "source_files": [
+                    "src/v1700/cli.py"
+                  ]
+                },
+                {
+                  "title": "Stage Lineage Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md",
+                  "source_files": [
+                    "manifests/stage_lineage_manifest.json"
+                  ]
+                },
+                {
+                  "title": "Narrative Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md",
+                  "source_files": [
+                    "src/v1700/graph_nexus/narrative_graph.py"
+                  ]
+                }
+              ]
+            },
+            "shape_check": {
+              "status": "pass",
+              "checks": [
+                {
+                  "name": "node2_surface_packet_safe",
+                  "status": "pass"
+                },
+                {
+                  "name": "generated_docs_no_raw_reveal_terms",
+                  "status": "pass"
+                }
+              ],
+              "violations": []
+            }
+          }
+        },
+        "pre_stage40_survival_gate": {
+          "stage": "72.3",
+          "status": "pass",
+          "issues": [],
+          "concept_count": 25,
+          "required_concept_count": 20,
+          "missing_required": [],
+          "missing_source_evidence": [],
+          "missing_evidence_files": [],
+          "missing_current_anchor": [],
+          "high_priority_unknown": [],
+          "provider_default_calls": 0,
+          "node2_raw_reveal_access_count": 0
+        },
+        "survival_matrix": {
+          "status": "pass",
+          "concept_count": 25,
+          "buckets": {
+            "DOCUMENTED_ONLY": [
+              "foundation.authoring.end_to_end_scenario_runner",
+              "foundation.review.authoring_workflow",
+              "foundation.review.human_agent_console",
+              "foundation.stage39.branch_commit_rollback"
+            ],
+            "LIVE_RUNTIME": [
+              "foundation.governance.release_candidate_gate",
+              "foundation.node2.literary_quality_engine",
+              "foundation.node2.style_evolution_memory",
+              "foundation.stage39.node2_candidate_rendering"
+            ],
+            "PARTIAL": [
+              "foundation.governance.boundary_registry",
+              "foundation.governance.concept_validation_workbench",
+              "foundation.governance.stage26_28_regression_stream",
+              "foundation.longform.episode_draft_export",
+              "foundation.longform.series_arc_control",
+              "foundation.memory.conflict_resolver",
+              "foundation.memory.long_horizon_drift_stress",
+              "foundation.node2.literary_depth_calibration",
+              "foundation.provider.execution_trace",
+              "foundation.provider.multi_provider_creative_comparison",
+              "foundation.stage39.actual_replay_reconvergence",
+              "foundation.stage39.analyzer_librarian_integration",
+              "foundation.stage39.emotional_pressure_valve",
+              "foundation.stage39.evidence_intake_foundation",
+              "foundation.stage39.graph_retrieval_bridge",
+              "foundation.stage39.longform_scene_sequence_planner",
+              "foundation.stage39.temporal_continuity"
+            ]
+          }
+        },
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access_count": 0
+      }
+    },
+    "release_gate": {
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"issues\": [],\n  \"runtime_smoke\": {\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"scene_id\": \"example_scene_001\",\n    \"external_provider_calls\": 0\n  },\n  \"graph_nexus_release_gate\": {\n    \"stage\": \"72.1\",\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"gitnexus\": {\n      \"installed\": false,\n      \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n      \"optional_runtime_dependency\": false,\n      \"fallback_available\": true,\n      \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n    },\n    \"gitnexus_optional_only\": true,\n    \"python_fallback_available\": true,\n    \"provider_default_calls\": 0,\n    \"code_graph_available\": true,\n    \"narrative_graph_available\": true,\n    \"stage_lineage_graph_available\": true,\n    \"node2_raw_reveal_access_count\": 0,\n    \"checks\": {\n      \"lineage_preflight\": {\n        \"status\": \"pass\",\n        \"goal\": \"Stage72.1 GraphNexus restoration\",\n        \"missing_stages\": [],\n        \"stage_count\": 11,\n        \"graph_intelligence_lineage_present\": true\n      },\n      \"impact\": {\n        \"status\": \"pass\",\n        \"impact\": {\n          \"target\": \"Node2ProseCompiler\",\n          \"risk_level\": \"medium\",\n          \"risk_score\": 0.6000000000000001,\n          \"code_hits\": [\n            \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n          ],\n          \"narrative_node_count\": 2,\n          \"lineage_node_count\": 11,\n          \"risks\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        },\n        \"requires_human_attention\": false\n      },\n      \"legacy_logic_survival\": {\n        \"status\": \"pass\",\n        \"stage\": \"STAGE61-66\",\n        \"required_concepts\": [\n          \"authority boundaries\",\n          \"feature flag integration\",\n          \"graph sidecar\"\n        ],\n        \"missing_concepts\": [],\n        \"current_status\": \"restored_as_optional_graphnexus_layer\"\n      },\n      \"node_projection\": {\n        \"status\": \"pass\",\n        \"node2_raw_graph_access\": false,\n        \"node2_packet\": {\n          \"packet_type\": \"Node2GraphSurfacePacket\",\n          \"scene_id\": \"S72_1_SAMPLE\",\n          \"surface_tone\": \"reader_facing\",\n          \"relationship_pressure\": \"medium\",\n          \"sensory_anchors\": [\n            \"setting\",\n            \"gesture\"\n          ],\n          \"forbidden_reveal_labels\": [\n            \"locked_reveal_1\"\n          ],\n          \"style_drift_warnings\": []\n        },\n        \"node3_packet\": {\n          \"packet_type\": \"Node3GraphCriticPacket\",\n          \"contradiction_risks\": [\n            \"forbidden_reveal_projection_required\"\n          ],\n          \"leakage_risks\": [\n            \"forbidden_reveal_projection_required\"\n          ],\n          \"impact\": {\n            \"risks\": [\n              \"forbidden_reveal_projection_required\"\n            ]\n          }\n        }\n      }\n    },\n    \"context_packet\": {\n      \"code_summary\": {\n        \"available\": true,\n        \"source\": \"python_fallback\",\n        \"node_count\": 77\n      },\n      \"narrative_summary\": {\n        \"available\": true,\n        \"node_count\": 2,\n        \"edge_count\": 1\n      },\n      \"lineage_summary\": {\n        \"available\": true,\n        \"node_count\": 11,\n        \"stage72_1_present\": true\n      },\n      \"warnings\": [\n        \"node2_surface_contract_must_hold\",\n        \"forbidden_reveal_projection_required\"\n      ]\n    }\n  },\n  \"stage72_2_release_gate\": {\n    \"stage\": \"72.2\",\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"gitnexus\": {\n      \"installed\": false,\n      \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n      \"optional_runtime_dependency\": false,\n      \"fallback_available\": true,\n      \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n    },\n    \"gitnexus_index_status\": {\n      \"alias\": \"v1700_stage72_3_ascii\",\n      \"registered\": false,\n      \"path\": \"\",\n      \"storage_path\": \"\",\n      \"indexed_at\": \"\",\n      \"stats\": {},\n      \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n      \"stale\": true,\n      \"reason\": \"alias_not_registered\"\n    },\n    \"gitnexus_index_under_gpt_workspace\": false,\n    \"manual_reindex_recommended\": true,\n    \"gitnexus_optional_only\": true,\n    \"python_fallback_available\": true,\n    \"provider_default_calls\": 0,\n    \"node2_raw_reveal_access_count\": 0,\n    \"checks\": {\n      \"graph_nexus_release_gate\": {\n        \"stage\": \"72.1\",\n        \"status\": \"pass\",\n        \"issues\": [],\n        \"gitnexus\": {\n          \"installed\": false,\n          \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n          \"optional_runtime_dependency\": false,\n          \"fallback_available\": true,\n          \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n        },\n        \"gitnexus_optional_only\": true,\n        \"python_fallback_available\": true,\n        \"provider_default_calls\": 0,\n        \"code_graph_available\": true,\n        \"narrative_graph_available\": true,\n        \"stage_lineage_graph_available\": true,\n        \"node2_raw_reveal_access_count\": 0,\n        \"checks\": {\n          \"lineage_preflight\": {\n            \"status\": \"pass\",\n            \"goal\": \"Stage72.1 GraphNexus restoration\",\n            \"missing_stages\": [],\n            \"stage_count\": 11,\n            \"graph_intelligence_lineage_present\": true\n          },\n          \"impact\": {\n            \"status\": \"pass\",\n            \"impact\": {\n              \"target\": \"Node2ProseCompiler\",\n              \"risk_level\": \"medium\",\n              \"risk_score\": 0.6000000000000001,\n              \"code_hits\": [\n                \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n              ],\n              \"narrative_node_count\": 2,\n              \"lineage_node_count\": 11,\n              \"risks\": [\n                \"node2_surface_contract_must_hold\",\n                \"forbidden_reveal_projection_required\"\n              ]\n            },\n            \"requires_human_attention\": false\n          },\n          \"legacy_logic_survival\": {\n            \"status\": \"pass\",\n            \"stage\": \"STAGE61-66\",\n            \"required_concepts\": [\n              \"authority boundaries\",\n              \"feature flag integration\",\n              \"graph sidecar\"\n            ],\n            \"missing_concepts\": [],\n            \"current_status\": \"restored_as_optional_graphnexus_layer\"\n          },\n          \"node_projection\": {\n            \"status\": \"pass\",\n            \"node2_raw_graph_access\": false,\n            \"node2_packet\": {\n              \"packet_type\": \"Node2GraphSurfacePacket\",\n              \"scene_id\": \"S72_1_SAMPLE\",\n              \"surface_tone\": \"reader_facing\",\n              \"relationship_pressure\": \"medium\",\n              \"sensory_anchors\": [\n                \"setting\",\n                \"gesture\"\n              ],\n              \"forbidden_reveal_labels\": [\n                \"locked_reveal_1\"\n              ],\n              \"style_drift_warnings\": []\n            },\n            \"node3_packet\": {\n              \"packet_type\": \"Node3GraphCriticPacket\",\n              \"contradiction_risks\": [\n                \"forbidden_reveal_projection_required\"\n              ],\n              \"leakage_risks\": [\n                \"forbidden_reveal_projection_required\"\n              ],\n              \"impact\": {\n                \"risks\": [\n                  \"forbidden_reveal_projection_required\"\n                ]\n              }\n            }\n          }\n        },\n        \"context_packet\": {\n          \"code_summary\": {\n            \"available\": true,\n            \"source\": \"python_fallback\",\n            \"node_count\": 77\n          },\n          \"narrative_summary\": {\n            \"available\": true,\n            \"node_count\": 2,\n            \"edge_count\": 1\n          },\n          \"lineage_summary\": {\n            \"available\": true,\n            \"node_count\": 11,\n            \"stage72_1_present\": true\n          },\n          \"warnings\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        }\n      },\n      \"query\": {\n        \"status\": \"pass\",\n        \"query\": \"GraphNexus\",\n        \"source\": \"python_fallback\",\n        \"matches\": [\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n            \"defines\": [\n              \"GraphNexusContextPacket\",\n              \"Node1GraphPacket\",\n              \"Node2GraphSurfacePacket\",\n              \"Node3GraphCriticPacket\",\n              \"assert_surface_safe\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/integration/test_node1_node2_node3_pipeline.py\",\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\",\n              \"tests/test_stage72_2_graph_nexus_operational_tools.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/registry.py\",\n            \"defines\": [\n              \"GraphNexusRegistry\",\n              \"build\",\n              \"context_packet\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"code\",\n            \"path\": \"src/v1700/graph_nexus/tools/contracts.py\",\n            \"defines\": [\n              \"GeneratedNodeSkill\",\n              \"GeneratedSceneSkill\",\n              \"GeneratedStageSkill\",\n              \"GeneratedWikiPage\",\n              \"GraphNexusContextRequest\",\n              \"GraphNexusDetectChangesReport\",\n              \"GraphNexusImpactRequest\",\n              \"GraphNexusQueryRequest\",\n              \"GraphNexusQueryResult\",\n              \"GraphNexusRouteMap\",\n              \"GraphNexusShapeCheckReport\",\n              \"GraphNexusToolMap\",\n              \"to_dict\"\n            ],\n            \"tested_by\": [\n              \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n              \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n              \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n              \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n              \"tests/test_stage72_1_lineage_preflight_gate.py\",\n              \"tests/test_stage72_1_node_projection_gate.py\"\n            ],\n            \"gated_by\": [\n              \"graph_nexus_release_gate\"\n            ],\n            \"stage_origin\": \"STAGE72.1\"\n          },\n          {\n            \"kind\": \"stage\",\n            \"stage_id\": \"STAGE72.1\",\n            \"title\": \"GraphNexus Restoration Patch\",\n            \"surviving_runtime_value\": \"Restores graph intelligence as optional live architecture.\"\n          },\n          {\n            \"kind\": \"stage\",\n            \"stage_id\": \"STAGE72.2\",\n            \"title\": \"GitNexus Capability Absorption and GraphNexus Operationalization\",\n            \"surviving_runtime_value\": \"Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety.\"\n          }\n        ],\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"query\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        }\n      },\n      \"context\": {\n        \"status\": \"pass\",\n        \"target\": \"Node2ProseCompiler\",\n        \"source\": \"python_fallback\",\n        \"packet\": {\n          \"code_summary\": {\n            \"available\": true,\n            \"source\": \"python_fallback\",\n            \"node_count\": 77\n          },\n          \"narrative_summary\": {\n            \"available\": true,\n            \"node_count\": 2,\n            \"edge_count\": 1\n          },\n          \"lineage_summary\": {\n            \"available\": true,\n            \"node_count\": 11,\n            \"stage72_1_present\": true\n          },\n          \"warnings\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        },\n        \"code_hits\": [\n          {\n            \"path\": \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n            \"defines\": [\n              \"Node2CompileResult\",\n              \"Node2ProseCompiler\",\n              \"__init__\",\n              \"aggregate_report\",\n              \"compile\",\n              \"compile_many\"\n            ],\n            \"imports\": [\n              \"__future__\",\n              \"anti_llm_filter\",\n              \"authorial_profile\",\n              \"candidates\",\n              \"contract\",\n              \"dataclasses\",\n              \"dialogue_renderer\",\n              \"emotion_renderer\",\n              \"marker_stripper\",\n              \"rhythm_rewriter\",\n              \"scorer\",\n              \"sensory_anchor\",\n              \"statistics\",\n              \"v1700.ir.rendered_prose\",\n              \"v1700.ir.scene_intent\",\n              \"v1700.ir.style_profile\",\n              \"validators\"\n            ],\n            \"tested_by\": [\n              \"tests/integration/test_node1_node2_node3_pipeline.py\",\n              \"tests/unit/node2_prose_renderer/test_compiler.py\"\n            ],\n            \"gated_by\": [\n              \"node_projection_gate\"\n            ],\n            \"stage_origin\": \"STAGE71_72\"\n          }\n        ],\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"context\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        }\n      },\n      \"impact\": {\n        \"status\": \"pass\",\n        \"target\": \"Node2ProseCompiler\",\n        \"source\": \"python_fallback\",\n        \"fallback_impact\": {\n          \"target\": \"Node2ProseCompiler\",\n          \"risk_level\": \"medium\",\n          \"risk_score\": 0.6000000000000001,\n          \"code_hits\": [\n            \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n          ],\n          \"narrative_node_count\": 2,\n          \"lineage_node_count\": 11,\n          \"risks\": [\n            \"node2_surface_contract_must_hold\",\n            \"forbidden_reveal_projection_required\"\n          ]\n        },\n        \"gitnexus\": {\n          \"provider\": \"gitnexus_cli\",\n          \"capability\": \"impact\",\n          \"available\": false,\n          \"returncode\": 127,\n          \"timed_out\": false,\n          \"payload\": {},\n          \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n        },\n        \"requires_human_attention\": false\n      },\n      \"detect_changes\": {\n        \"status\": \"pass\",\n        \"source\": \"python_fallback\",\n        \"mode\": \"stage72_2_structural_scan\",\n        \"changed_paths\": [\n          \"src/v1700/gates/graph_nexus_impact_gate.py\",\n          \"src/v1700/gates/graph_nexus_release_gate.py\",\n          \"src/v1700/graph_nexus/__init__.py\",\n          \"src/v1700/graph_nexus/code_graph.py\",\n          \"src/v1700/graph_nexus/detect_changes.py\",\n          \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n          \"src/v1700/graph_nexus/impact.py\",\n          \"src/v1700/graph_nexus/narrative_graph.py\",\n          \"src/v1700/graph_nexus/projection.py\",\n          \"src/v1700/graph_nexus/registry.py\",\n          \"src/v1700/graph_nexus/stage_lineage_graph.py\",\n          \"src/v1700/graph_nexus/tools/__init__.py\",\n          \"src/v1700/graph_nexus/tools/change_review.py\",\n          \"src/v1700/graph_nexus/tools/concept_impact.py\",\n          \"src/v1700/graph_nexus/tools/context.py\",\n          \"src/v1700/graph_nexus/tools/contracts.py\",\n          \"src/v1700/graph_nexus/tools/detect_changes.py\",\n          \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n          \"src/v1700/graph_nexus/tools/impact.py\",\n          \"src/v1700/graph_nexus/tools/query.py\",\n          \"src/v1700/graph_nexus/tools/route_map.py\",\n          \"src/v1700/graph_nexus/tools/shape_check.py\",\n          \"src/v1700/graph_nexus/tools/skill_generator.py\",\n          \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n          \"src/v1700/graph_nexus/tools/tool_map.py\",\n          \"src/v1700/graph_nexus/tools/wiki_generator.py\",\n          \"src/v1700/sidecars/gitnexus/__init__.py\",\n          \"src/v1700/sidecars/gitnexus/adapter.py\",\n          \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n          \"src/v1700/sidecars/gitnexus/contracts.py\",\n          \"src/v1700/sidecars/gitnexus/index_status.py\",\n          \"src/v1700/sidecars/gitnexus/mcp_adapter.py\",\n          \"src/v1700/sidecars/gitnexus/probe.py\",\n          \"src/v1700/sidecars/gitnexus/python_fallback.py\",\n          \"src/v1700/sidecars/gitnexus/result_normalizer.py\",\n          \"src/v1700/sidecars/gitnexus/stale_index_detector.py\"\n        ],\n        \"impacted_tests\": [\n          \"tests/integration/test_node1_node2_node3_pipeline.py\",\n          \"tests/stage_gates/test_stage72_repo_doctor.py\",\n          \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n          \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n          \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n          \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n          \"tests/test_stage72_1_lineage_preflight_gate.py\",\n          \"tests/test_stage72_1_node_projection_gate.py\",\n          \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n          \"tests/test_stage72_2_release_gate.py\",\n          \"tests/test_stage72_3_foundation_lineage.py\"\n        ],\n        \"stale_index\": true,\n        \"gitnexus\": {\n          \"command\": {\n            \"provider\": \"gitnexus_cli\",\n            \"capability\": \"detect_changes\",\n            \"available\": false,\n            \"reason\": \"active_repo_is_not_git_worktree; python fallback used\"\n          },\n          \"index_status\": {\n            \"alias\": \"v1700_stage72_3_ascii\",\n            \"registered\": false,\n            \"path\": \"\",\n            \"storage_path\": \"\",\n            \"indexed_at\": \"\",\n            \"stats\": {},\n            \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n            \"stale\": true,\n            \"reason\": \"alias_not_registered\"\n          }\n        }\n      },\n      \"route_map\": {\n        \"status\": \"pass\",\n        \"routes\": [\n          {\n            \"name\": \"runtime_generation_route\",\n            \"steps\": [\n              \"src/v1700/cli.py\",\n              \"src/v1700/nodes/node1_architect/__init__.py\",\n              \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n              \"src/v1700/nodes/node3_critic_gate/constraint_validator.py\"\n            ]\n          },\n          {\n            \"name\": \"graph_context_route\",\n            \"steps\": [\n              \"src/v1700/graph_nexus/registry.py\",\n              \"src/v1700/graph_nexus/code_graph.py\",\n              \"src/v1700/graph_nexus/narrative_graph.py\",\n              \"src/v1700/graph_nexus/stage_lineage_graph.py\"\n            ]\n          },\n          {\n            \"name\": \"stage72_2_operational_route\",\n            \"steps\": [\n              \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n              \"src/v1700/graph_nexus/tools/query.py\",\n              \"src/v1700/graph_nexus/tools/context.py\",\n              \"src/v1700/graph_nexus/tools/impact.py\",\n              \"src/v1700/graph_nexus/tools/detect_changes.py\",\n              \"src/v1700/gates/stage72_2_release_gate.py\"\n            ]\n          },\n          {\n            \"name\": \"stage72_3_foundation_lineage_route\",\n            \"steps\": [\n              \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n              \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n              \"src/v1700/gates/pre_stage40_survival_gate.py\",\n              \"src/v1700/gates/stage72_3_release_gate.py\"\n            ]\n          }\n        ],\n        \"missing_paths\": []\n      },\n      \"tool_map\": {\n        \"status\": \"pass\",\n        \"tools\": [\n          {\n            \"name\": \"query\",\n            \"path\": \"tools/run_graph_nexus_query.py\"\n          },\n          {\n            \"name\": \"context\",\n            \"path\": \"tools/run_graph_nexus_context.py\"\n          },\n          {\n            \"name\": \"impact\",\n            \"path\": \"tools/run_graph_nexus_impact.py\"\n          },\n          {\n            \"name\": \"detect_changes\",\n            \"path\": \"tools/run_graph_nexus_detect_changes.py\"\n          },\n          {\n            \"name\": \"route_map\",\n            \"path\": \"tools/run_graph_nexus_route_map.py\"\n          },\n          {\n            \"name\": \"tool_map\",\n            \"path\": \"tools/run_graph_nexus_tool_map.py\"\n          },\n          {\n            \"name\": \"shape_check\",\n            \"path\": \"tools/run_graph_nexus_shape_check.py\"\n          },\n          {\n            \"name\": \"generate_skills\",\n            \"path\": \"tools/run_graph_nexus_generate_skills.py\"\n          },\n          {\n            \"name\": \"generate_wiki\",\n            \"path\": \"tools/run_graph_nexus_generate_wiki.py\"\n          },\n          {\n            \"name\": \"stage72_2_release\",\n            \"path\": \"tools/run_stage72_2_release_gate.py\"\n          },\n          {\n            \"name\": \"build_stage72_3_foundation_lineage\",\n            \"path\": \"tools/build_stage72_3_foundation_lineage.py\"\n          },\n          {\n            \"name\": \"pre_stage40_survival_gate\",\n            \"path\": \"tools/run_pre_stage40_survival_gate.py\"\n          },\n          {\n            \"name\": \"stage72_3_release\",\n            \"path\": \"tools/run_stage72_3_release_gate.py\"\n          }\n        ],\n        \"gates\": [\n          {\n            \"name\": \"graph_nexus_release_gate\",\n            \"path\": \"src/v1700/gates/graph_nexus_release_gate.py\"\n          },\n          {\n            \"name\": \"stage72_2_release_gate\",\n            \"path\": \"src/v1700/gates/stage72_2_release_gate.py\"\n          },\n          {\n            \"name\": \"pre_stage40_survival_gate\",\n            \"path\": \"src/v1700/gates/pre_stage40_survival_gate.py\"\n          },\n          {\n            \"name\": \"stage72_3_release_gate\",\n            \"path\": \"src/v1700/gates/stage72_3_release_gate.py\"\n          },\n          {\n            \"name\": \"release_gate\",\n            \"path\": \"src/v1700/gates/release_gate.py\"\n          }\n        ],\n        \"tests\": [\n          \"tests/integration/test_node1_node2_node3_pipeline.py\",\n          \"tests/stage_gates/test_stage72_repo_doctor.py\",\n          \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n          \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n          \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n          \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n          \"tests/test_stage72_1_lineage_preflight_gate.py\",\n          \"tests/test_stage72_1_node_projection_gate.py\",\n          \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n          \"tests/test_stage72_2_release_gate.py\",\n          \"tests/test_stage72_3_foundation_lineage.py\",\n          \"tests/unit/node2_prose_renderer/test_compiler.py\",\n          \"tests/unit/node2_prose_renderer/test_contract.py\",\n          \"tests/unit/node2_prose_renderer/test_marker_and_emotion.py\"\n        ],\n        \"missing_paths\": []\n      },\n      \"generated_skills\": {\n        \"status\": \"pass\",\n        \"stage_skill\": {\n          \"stage\": \"Stage72.2\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/tools/query.py\"\n          ]\n        },\n        \"node_skill\": {\n          \"node\": \"Node2\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/tools/shape_check.py\"\n          ]\n        },\n        \"scene_skill\": {\n          \"scene\": \"GraphContextScene\",\n          \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md\",\n          \"source_files\": [\n            \"src/v1700/graph_nexus/registry.py\"\n          ]\n        }\n      },\n      \"generated_wiki\": {\n        \"status\": \"pass\",\n        \"pages\": [\n          {\n            \"title\": \"Architecture Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md\",\n            \"source_files\": [\n              \"src/v1700/cli.py\"\n            ]\n          },\n          {\n            \"title\": \"Stage Lineage Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md\",\n            \"source_files\": [\n              \"manifests/stage_lineage_manifest.json\"\n            ]\n          },\n          {\n            \"title\": \"Narrative Wiki\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md\",\n            \"source_files\": [\n              \"src/v1700/graph_nexus/narrative_graph.py\"\n            ]\n          }\n        ]\n      },\n      \"shape_check\": {\n        \"status\": \"pass\",\n        \"checks\": [\n          {\n            \"name\": \"node2_surface_packet_safe\",\n            \"status\": \"pass\"\n          },\n          {\n            \"name\": \"generated_docs_no_raw_reveal_terms\",\n            \"status\": \"pass\"\n          }\n        ],\n        \"violations\": []\n      }\n    }\n  },\n  \"stage72_3_release_gate\": {\n    \"stage\": \"72.3\",\n    \"status\": \"pass\",\n    \"issues\": [],\n    \"stage72_2_release_gate\": {\n      \"stage\": \"72.2\",\n      \"status\": \"pass\",\n      \"issues\": [],\n      \"gitnexus\": {\n        \"installed\": false,\n        \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n        \"optional_runtime_dependency\": false,\n        \"fallback_available\": true,\n        \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n      },\n      \"gitnexus_index_status\": {\n        \"alias\": \"v1700_stage72_3_ascii\",\n        \"registered\": false,\n        \"path\": \"\",\n        \"storage_path\": \"\",\n        \"indexed_at\": \"\",\n        \"stats\": {},\n        \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n        \"stale\": true,\n        \"reason\": \"alias_not_registered\"\n      },\n      \"gitnexus_index_under_gpt_workspace\": false,\n      \"manual_reindex_recommended\": true,\n      \"gitnexus_optional_only\": true,\n      \"python_fallback_available\": true,\n      \"provider_default_calls\": 0,\n      \"node2_raw_reveal_access_count\": 0,\n      \"checks\": {\n        \"graph_nexus_release_gate\": {\n          \"stage\": \"72.1\",\n          \"status\": \"pass\",\n          \"issues\": [],\n          \"gitnexus\": {\n            \"installed\": false,\n            \"command\": \"/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest\",\n            \"optional_runtime_dependency\": false,\n            \"fallback_available\": true,\n            \"error\": \"gitnexus binary not installed; npx path is available for optional use\"\n          },\n          \"gitnexus_optional_only\": true,\n          \"python_fallback_available\": true,\n          \"provider_default_calls\": 0,\n          \"code_graph_available\": true,\n          \"narrative_graph_available\": true,\n          \"stage_lineage_graph_available\": true,\n          \"node2_raw_reveal_access_count\": 0,\n          \"checks\": {\n            \"lineage_preflight\": {\n              \"status\": \"pass\",\n              \"goal\": \"Stage72.1 GraphNexus restoration\",\n              \"missing_stages\": [],\n              \"stage_count\": 11,\n              \"graph_intelligence_lineage_present\": true\n            },\n            \"impact\": {\n              \"status\": \"pass\",\n              \"impact\": {\n                \"target\": \"Node2ProseCompiler\",\n                \"risk_level\": \"medium\",\n                \"risk_score\": 0.6000000000000001,\n                \"code_hits\": [\n                  \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n                ],\n                \"narrative_node_count\": 2,\n                \"lineage_node_count\": 11,\n                \"risks\": [\n                  \"node2_surface_contract_must_hold\",\n                  \"forbidden_reveal_projection_required\"\n                ]\n              },\n              \"requires_human_attention\": false\n            },\n            \"legacy_logic_survival\": {\n              \"status\": \"pass\",\n              \"stage\": \"STAGE61-66\",\n              \"required_concepts\": [\n                \"authority boundaries\",\n                \"feature flag integration\",\n                \"graph sidecar\"\n              ],\n              \"missing_concepts\": [],\n              \"current_status\": \"restored_as_optional_graphnexus_layer\"\n            },\n            \"node_projection\": {\n              \"status\": \"pass\",\n              \"node2_raw_graph_access\": false,\n              \"node2_packet\": {\n                \"packet_type\": \"Node2GraphSurfacePacket\",\n                \"scene_id\": \"S72_1_SAMPLE\",\n                \"surface_tone\": \"reader_facing\",\n                \"relationship_pressure\": \"medium\",\n                \"sensory_anchors\": [\n                  \"setting\",\n                  \"gesture\"\n                ],\n                \"forbidden_reveal_labels\": [\n                  \"locked_reveal_1\"\n                ],\n                \"style_drift_warnings\": []\n              },\n              \"node3_packet\": {\n                \"packet_type\": \"Node3GraphCriticPacket\",\n                \"contradiction_risks\": [\n                  \"forbidden_reveal_projection_required\"\n                ],\n                \"leakage_risks\": [\n                  \"forbidden_reveal_projection_required\"\n                ],\n                \"impact\": {\n                  \"risks\": [\n                    \"forbidden_reveal_projection_required\"\n                  ]\n                }\n              }\n            }\n          },\n          \"context_packet\": {\n            \"code_summary\": {\n              \"available\": true,\n              \"source\": \"python_fallback\",\n              \"node_count\": 77\n            },\n            \"narrative_summary\": {\n              \"available\": true,\n              \"node_count\": 2,\n              \"edge_count\": 1\n            },\n            \"lineage_summary\": {\n              \"available\": true,\n              \"node_count\": 11,\n              \"stage72_1_present\": true\n            },\n            \"warnings\": [\n              \"node2_surface_contract_must_hold\",\n              \"forbidden_reveal_projection_required\"\n            ]\n          }\n        },\n        \"query\": {\n          \"status\": \"pass\",\n          \"query\": \"GraphNexus\",\n          \"source\": \"python_fallback\",\n          \"matches\": [\n            {\n              \"kind\": \"code\",\n              \"path\": \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n              \"defines\": [\n                \"GraphNexusContextPacket\",\n                \"Node1GraphPacket\",\n                \"Node2GraphSurfacePacket\",\n                \"Node3GraphCriticPacket\",\n                \"assert_surface_safe\",\n                \"to_dict\"\n              ],\n              \"tested_by\": [\n                \"tests/integration/test_node1_node2_node3_pipeline.py\",\n                \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n                \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n                \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n                \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n                \"tests/test_stage72_1_lineage_preflight_gate.py\",\n                \"tests/test_stage72_1_node_projection_gate.py\",\n                \"tests/test_stage72_2_graph_nexus_operational_tools.py\"\n              ],\n              \"gated_by\": [\n                \"graph_nexus_release_gate\"\n              ],\n              \"stage_origin\": \"STAGE72.1\"\n            },\n            {\n              \"kind\": \"code\",\n              \"path\": \"src/v1700/graph_nexus/registry.py\",\n              \"defines\": [\n                \"GraphNexusRegistry\",\n                \"build\",\n                \"context_packet\",\n                \"to_dict\"\n              ],\n              \"tested_by\": [\n                \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n                \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n                \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n                \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n                \"tests/test_stage72_1_lineage_preflight_gate.py\",\n                \"tests/test_stage72_1_node_projection_gate.py\"\n              ],\n              \"gated_by\": [\n                \"graph_nexus_release_gate\"\n              ],\n              \"stage_origin\": \"STAGE72.1\"\n            },\n            {\n              \"kind\": \"code\",\n              \"path\": \"src/v1700/graph_nexus/tools/contracts.py\",\n              \"defines\": [\n                \"GeneratedNodeSkill\",\n                \"GeneratedSceneSkill\",\n                \"GeneratedStageSkill\",\n                \"GeneratedWikiPage\",\n                \"GraphNexusContextRequest\",\n                \"GraphNexusDetectChangesReport\",\n                \"GraphNexusImpactRequest\",\n                \"GraphNexusQueryRequest\",\n                \"GraphNexusQueryResult\",\n                \"GraphNexusRouteMap\",\n                \"GraphNexusShapeCheckReport\",\n                \"GraphNexusToolMap\",\n                \"to_dict\"\n              ],\n              \"tested_by\": [\n                \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n                \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n                \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n                \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n                \"tests/test_stage72_1_lineage_preflight_gate.py\",\n                \"tests/test_stage72_1_node_projection_gate.py\"\n              ],\n              \"gated_by\": [\n                \"graph_nexus_release_gate\"\n              ],\n              \"stage_origin\": \"STAGE72.1\"\n            },\n            {\n              \"kind\": \"stage\",\n              \"stage_id\": \"STAGE72.1\",\n              \"title\": \"GraphNexus Restoration Patch\",\n              \"surviving_runtime_value\": \"Restores graph intelligence as optional live architecture.\"\n            },\n            {\n              \"kind\": \"stage\",\n              \"stage_id\": \"STAGE72.2\",\n              \"title\": \"GitNexus Capability Absorption and GraphNexus Operationalization\",\n              \"surviving_runtime_value\": \"Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety.\"\n            }\n          ],\n          \"gitnexus\": {\n            \"provider\": \"gitnexus_cli\",\n            \"capability\": \"query\",\n            \"available\": false,\n            \"returncode\": 127,\n            \"timed_out\": false,\n            \"payload\": {},\n            \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n          }\n        },\n        \"context\": {\n          \"status\": \"pass\",\n          \"target\": \"Node2ProseCompiler\",\n          \"source\": \"python_fallback\",\n          \"packet\": {\n            \"code_summary\": {\n              \"available\": true,\n              \"source\": \"python_fallback\",\n              \"node_count\": 77\n            },\n            \"narrative_summary\": {\n              \"available\": true,\n              \"node_count\": 2,\n              \"edge_count\": 1\n            },\n            \"lineage_summary\": {\n              \"available\": true,\n              \"node_count\": 11,\n              \"stage72_1_present\": true\n            },\n            \"warnings\": [\n              \"node2_surface_contract_must_hold\",\n              \"forbidden_reveal_projection_required\"\n            ]\n          },\n          \"code_hits\": [\n            {\n              \"path\": \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n              \"defines\": [\n                \"Node2CompileResult\",\n                \"Node2ProseCompiler\",\n                \"__init__\",\n                \"aggregate_report\",\n                \"compile\",\n                \"compile_many\"\n              ],\n              \"imports\": [\n                \"__future__\",\n                \"anti_llm_filter\",\n                \"authorial_profile\",\n                \"candidates\",\n                \"contract\",\n                \"dataclasses\",\n                \"dialogue_renderer\",\n                \"emotion_renderer\",\n                \"marker_stripper\",\n                \"rhythm_rewriter\",\n                \"scorer\",\n                \"sensory_anchor\",\n                \"statistics\",\n                \"v1700.ir.rendered_prose\",\n                \"v1700.ir.scene_intent\",\n                \"v1700.ir.style_profile\",\n                \"validators\"\n              ],\n              \"tested_by\": [\n                \"tests/integration/test_node1_node2_node3_pipeline.py\",\n                \"tests/unit/node2_prose_renderer/test_compiler.py\"\n              ],\n              \"gated_by\": [\n                \"node_projection_gate\"\n              ],\n              \"stage_origin\": \"STAGE71_72\"\n            }\n          ],\n          \"gitnexus\": {\n            \"provider\": \"gitnexus_cli\",\n            \"capability\": \"context\",\n            \"available\": false,\n            \"returncode\": 127,\n            \"timed_out\": false,\n            \"payload\": {},\n            \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n          }\n        },\n        \"impact\": {\n          \"status\": \"pass\",\n          \"target\": \"Node2ProseCompiler\",\n          \"source\": \"python_fallback\",\n          \"fallback_impact\": {\n            \"target\": \"Node2ProseCompiler\",\n            \"risk_level\": \"medium\",\n            \"risk_score\": 0.6000000000000001,\n            \"code_hits\": [\n              \"src/v1700/nodes/node2_prose_renderer/compiler.py\"\n            ],\n            \"narrative_node_count\": 2,\n            \"lineage_node_count\": 11,\n            \"risks\": [\n              \"node2_surface_contract_must_hold\",\n              \"forbidden_reveal_projection_required\"\n            ]\n          },\n          \"gitnexus\": {\n            \"provider\": \"gitnexus_cli\",\n            \"capability\": \"impact\",\n            \"available\": false,\n            \"returncode\": 127,\n            \"timed_out\": false,\n            \"payload\": {},\n            \"stderr\": \"gitnexus binary not installed; npx path is available for optional use\"\n          },\n          \"requires_human_attention\": false\n        },\n        \"detect_changes\": {\n          \"status\": \"pass\",\n          \"source\": \"python_fallback\",\n          \"mode\": \"stage72_2_structural_scan\",\n          \"changed_paths\": [\n            \"src/v1700/gates/graph_nexus_impact_gate.py\",\n            \"src/v1700/gates/graph_nexus_release_gate.py\",\n            \"src/v1700/graph_nexus/__init__.py\",\n            \"src/v1700/graph_nexus/code_graph.py\",\n            \"src/v1700/graph_nexus/detect_changes.py\",\n            \"src/v1700/graph_nexus/graph_nexus_packet.py\",\n            \"src/v1700/graph_nexus/impact.py\",\n            \"src/v1700/graph_nexus/narrative_graph.py\",\n            \"src/v1700/graph_nexus/projection.py\",\n            \"src/v1700/graph_nexus/registry.py\",\n            \"src/v1700/graph_nexus/stage_lineage_graph.py\",\n            \"src/v1700/graph_nexus/tools/__init__.py\",\n            \"src/v1700/graph_nexus/tools/change_review.py\",\n            \"src/v1700/graph_nexus/tools/concept_impact.py\",\n            \"src/v1700/graph_nexus/tools/context.py\",\n            \"src/v1700/graph_nexus/tools/contracts.py\",\n            \"src/v1700/graph_nexus/tools/detect_changes.py\",\n            \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n            \"src/v1700/graph_nexus/tools/impact.py\",\n            \"src/v1700/graph_nexus/tools/query.py\",\n            \"src/v1700/graph_nexus/tools/route_map.py\",\n            \"src/v1700/graph_nexus/tools/shape_check.py\",\n            \"src/v1700/graph_nexus/tools/skill_generator.py\",\n            \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n            \"src/v1700/graph_nexus/tools/tool_map.py\",\n            \"src/v1700/graph_nexus/tools/wiki_generator.py\",\n            \"src/v1700/sidecars/gitnexus/__init__.py\",\n            \"src/v1700/sidecars/gitnexus/adapter.py\",\n            \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n            \"src/v1700/sidecars/gitnexus/contracts.py\",\n            \"src/v1700/sidecars/gitnexus/index_status.py\",\n            \"src/v1700/sidecars/gitnexus/mcp_adapter.py\",\n            \"src/v1700/sidecars/gitnexus/probe.py\",\n            \"src/v1700/sidecars/gitnexus/python_fallback.py\",\n            \"src/v1700/sidecars/gitnexus/result_normalizer.py\",\n            \"src/v1700/sidecars/gitnexus/stale_index_detector.py\"\n          ],\n          \"impacted_tests\": [\n            \"tests/integration/test_node1_node2_node3_pipeline.py\",\n            \"tests/stage_gates/test_stage72_repo_doctor.py\",\n            \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n            \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n            \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n            \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n            \"tests/test_stage72_1_lineage_preflight_gate.py\",\n            \"tests/test_stage72_1_node_projection_gate.py\",\n            \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n            \"tests/test_stage72_2_release_gate.py\",\n            \"tests/test_stage72_3_foundation_lineage.py\"\n          ],\n          \"stale_index\": true,\n          \"gitnexus\": {\n            \"command\": {\n              \"provider\": \"gitnexus_cli\",\n              \"capability\": \"detect_changes\",\n              \"available\": false,\n              \"reason\": \"active_repo_is_not_git_worktree; python fallback used\"\n            },\n            \"index_status\": {\n              \"alias\": \"v1700_stage72_3_ascii\",\n              \"registered\": false,\n              \"path\": \"\",\n              \"storage_path\": \"\",\n              \"indexed_at\": \"\",\n              \"stats\": {},\n              \"registry_path\": \"/home/oai/.gitnexus/registry.json\",\n              \"stale\": true,\n              \"reason\": \"alias_not_registered\"\n            }\n          }\n        },\n        \"route_map\": {\n          \"status\": \"pass\",\n          \"routes\": [\n            {\n              \"name\": \"runtime_generation_route\",\n              \"steps\": [\n                \"src/v1700/cli.py\",\n                \"src/v1700/nodes/node1_architect/__init__.py\",\n                \"src/v1700/nodes/node2_prose_renderer/compiler.py\",\n                \"src/v1700/nodes/node3_critic_gate/constraint_validator.py\"\n              ]\n            },\n            {\n              \"name\": \"graph_context_route\",\n              \"steps\": [\n                \"src/v1700/graph_nexus/registry.py\",\n                \"src/v1700/graph_nexus/code_graph.py\",\n                \"src/v1700/graph_nexus/narrative_graph.py\",\n                \"src/v1700/graph_nexus/stage_lineage_graph.py\"\n              ]\n            },\n            {\n              \"name\": \"stage72_2_operational_route\",\n              \"steps\": [\n                \"src/v1700/sidecars/gitnexus/cli_adapter.py\",\n                \"src/v1700/graph_nexus/tools/query.py\",\n                \"src/v1700/graph_nexus/tools/context.py\",\n                \"src/v1700/graph_nexus/tools/impact.py\",\n                \"src/v1700/graph_nexus/tools/detect_changes.py\",\n                \"src/v1700/gates/stage72_2_release_gate.py\"\n              ]\n            },\n            {\n              \"name\": \"stage72_3_foundation_lineage_route\",\n              \"steps\": [\n                \"src/v1700/graph_nexus/tools/foundation_lineage.py\",\n                \"src/v1700/graph_nexus/tools/survival_matrix.py\",\n                \"src/v1700/gates/pre_stage40_survival_gate.py\",\n                \"src/v1700/gates/stage72_3_release_gate.py\"\n              ]\n            }\n          ],\n          \"missing_paths\": []\n        },\n        \"tool_map\": {\n          \"status\": \"pass\",\n          \"tools\": [\n            {\n              \"name\": \"query\",\n              \"path\": \"tools/run_graph_nexus_query.py\"\n            },\n            {\n              \"name\": \"context\",\n              \"path\": \"tools/run_graph_nexus_context.py\"\n            },\n            {\n              \"name\": \"impact\",\n              \"path\": \"tools/run_graph_nexus_impact.py\"\n            },\n            {\n              \"name\": \"detect_changes\",\n              \"path\": \"tools/run_graph_nexus_detect_changes.py\"\n            },\n            {\n              \"name\": \"route_map\",\n              \"path\": \"tools/run_graph_nexus_route_map.py\"\n            },\n            {\n              \"name\": \"tool_map\",\n              \"path\": \"tools/run_graph_nexus_tool_map.py\"\n            },\n            {\n              \"name\": \"shape_check\",\n              \"path\": \"tools/run_graph_nexus_shape_check.py\"\n            },\n            {\n              \"name\": \"generate_skills\",\n              \"path\": \"tools/run_graph_nexus_generate_skills.py\"\n            },\n            {\n              \"name\": \"generate_wiki\",\n              \"path\": \"tools/run_graph_nexus_generate_wiki.py\"\n            },\n            {\n              \"name\": \"stage72_2_release\",\n              \"path\": \"tools/run_stage72_2_release_gate.py\"\n            },\n            {\n              \"name\": \"build_stage72_3_foundation_lineage\",\n              \"path\": \"tools/build_stage72_3_foundation_lineage.py\"\n            },\n            {\n              \"name\": \"pre_stage40_survival_gate\",\n              \"path\": \"tools/run_pre_stage40_survival_gate.py\"\n            },\n            {\n              \"name\": \"stage72_3_release\",\n              \"path\": \"tools/run_stage72_3_release_gate.py\"\n            }\n          ],\n          \"gates\": [\n            {\n              \"name\": \"graph_nexus_release_gate\",\n              \"path\": \"src/v1700/gates/graph_nexus_release_gate.py\"\n            },\n            {\n              \"name\": \"stage72_2_release_gate\",\n              \"path\": \"src/v1700/gates/stage72_2_release_gate.py\"\n            },\n            {\n              \"name\": \"pre_stage40_survival_gate\",\n              \"path\": \"src/v1700/gates/pre_stage40_survival_gate.py\"\n            },\n            {\n              \"name\": \"stage72_3_release_gate\",\n              \"path\": \"src/v1700/gates/stage72_3_release_gate.py\"\n            },\n            {\n              \"name\": \"release_gate\",\n              \"path\": \"src/v1700/gates/release_gate.py\"\n            }\n          ],\n          \"tests\": [\n            \"tests/integration/test_node1_node2_node3_pipeline.py\",\n            \"tests/stage_gates/test_stage72_repo_doctor.py\",\n            \"tests/test_stage72_1_gitnexus_optional_sidecar.py\",\n            \"tests/test_stage72_1_graph_nexus_release_gate.py\",\n            \"tests/test_stage72_1_graph_nexus_three_graphs.py\",\n            \"tests/test_stage72_1_legacy_logic_survival_gate.py\",\n            \"tests/test_stage72_1_lineage_preflight_gate.py\",\n            \"tests/test_stage72_1_node_projection_gate.py\",\n            \"tests/test_stage72_2_graph_nexus_operational_tools.py\",\n            \"tests/test_stage72_2_release_gate.py\",\n            \"tests/test_stage72_3_foundation_lineage.py\",\n            \"tests/unit/node2_prose_renderer/test_compiler.py\",\n            \"tests/unit/node2_prose_renderer/test_contract.py\",\n            \"tests/unit/node2_prose_renderer/test_marker_and_emotion.py\"\n          ],\n          \"missing_paths\": []\n        },\n        \"generated_skills\": {\n          \"status\": \"pass\",\n          \"stage_skill\": {\n            \"stage\": \"Stage72.2\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md\",\n            \"source_files\": [\n              \"src/v1700/graph_nexus/tools/query.py\"\n            ]\n          },\n          \"node_skill\": {\n            \"node\": \"Node2\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md\",\n            \"source_files\": [\n              \"src/v1700/graph_nexus/tools/shape_check.py\"\n            ]\n          },\n          \"scene_skill\": {\n            \"scene\": \"GraphContextScene\",\n            \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md\",\n            \"source_files\": [\n              \"src/v1700/graph_nexus/registry.py\"\n            ]\n          }\n        },\n        \"generated_wiki\": {\n          \"status\": \"pass\",\n          \"pages\": [\n            {\n              \"title\": \"Architecture Wiki\",\n              \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md\",\n              \"source_files\": [\n                \"src/v1700/cli.py\"\n              ]\n            },\n            {\n              \"title\": \"Stage Lineage Wiki\",\n              \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md\",\n              \"source_files\": [\n                \"manifests/stage_lineage_manifest.json\"\n              ]\n            },\n            {\n              \"title\": \"Narrative Wiki\",\n              \"path\": \"/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md\",\n              \"source_files\": [\n                \"src/v1700/graph_nexus/narrative_graph.py\"\n              ]\n            }\n          ]\n        },\n        \"shape_check\": {\n          \"status\": \"pass\",\n          \"checks\": [\n            {\n              \"name\": \"node2_surface_packet_safe\",\n              \"status\": \"pass\"\n            },\n            {\n              \"name\": \"generated_docs_no_raw_reveal_terms\",\n              \"status\": \"pass\"\n            }\n          ],\n          \"violations\": []\n        }\n      }\n    },\n    \"pre_stage40_survival_gate\": {\n      \"stage\": \"72.3\",\n      \"status\": \"pass\",\n      \"issues\": [],\n      \"concept_count\": 25,\n      \"required_concept_count\": 20,\n      \"missing_required\": [],\n      \"missing_source_evidence\": [],\n      \"missing_evidence_files\": [],\n      \"missing_current_anchor\": [],\n      \"high_priority_unknown\": [],\n      \"provider_default_calls\": 0,\n      \"node2_raw_reveal_access_count\": 0\n    },\n    \"survival_matrix\": {\n      \"status\": \"pass\",\n      \"concept_count\": 25,\n      \"buckets\": {\n        \"DOCUMENTED_ONLY\": [\n          \"foundation.authoring.end_to_end_scenario_runner\",\n          \"foundation.review.authoring_workflow\",\n          \"foundation.review.human_agent_console\",\n          \"foundation.stage39.branch_commit_rollback\"\n        ],\n        \"LIVE_RUNTIME\": [\n          \"foundation.governance.release_candidate_gate\",\n          \"foundation.node2.literary_quality_engine\",\n          \"foundation.node2.style_evolution_memory\",\n          \"foundation.stage39.node2_candidate_rendering\"\n        ],\n        \"PARTIAL\": [\n          \"foundation.governance.boundary_registry\",\n          \"foundation.governance.concept_validation_workbench\",\n          \"foundation.governance.stage26_28_regression_stream\",\n          \"foundation.longform.episode_draft_export\",\n          \"foundation.longform.series_arc_control\",\n          \"foundation.memory.conflict_resolver\",\n          \"foundation.memory.long_horizon_drift_stress\",\n          \"foundation.node2.literary_depth_calibration\",\n          \"foundation.provider.execution_trace\",\n          \"foundation.provider.multi_provider_creative_comparison\",\n          \"foundation.stage39.actual_replay_reconvergence\",\n          \"foundation.stage39.analyzer_librarian_integration\",\n          \"foundation.stage39.emotional_pressure_valve\",\n          \"foundation.stage39.evidence_intake_foundation\",\n          \"foundation.stage39.graph_retrieval_bridge\",\n          \"foundation.stage39.longform_scene_sequence_planner\",\n          \"foundation.stage39.temporal_continuity\"\n        ]\n      }\n    },\n    \"provider_default_calls\": 0,\n    \"node2_raw_reveal_access_count\": 0\n  }\n}\n",
+      "stderr": "",
+      "json": {
+        "status": "pass",
+        "issues": [],
+        "runtime_smoke": {
+          "status": "pass",
+          "issues": [],
+          "scene_id": "example_scene_001",
+          "external_provider_calls": 0
+        },
+        "graph_nexus_release_gate": {
+          "stage": "72.1",
+          "status": "pass",
+          "issues": [],
+          "gitnexus": {
+            "installed": false,
+            "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+            "optional_runtime_dependency": false,
+            "fallback_available": true,
+            "error": "gitnexus binary not installed; npx path is available for optional use"
+          },
+          "gitnexus_optional_only": true,
+          "python_fallback_available": true,
+          "provider_default_calls": 0,
+          "code_graph_available": true,
+          "narrative_graph_available": true,
+          "stage_lineage_graph_available": true,
+          "node2_raw_reveal_access_count": 0,
+          "checks": {
+            "lineage_preflight": {
+              "status": "pass",
+              "goal": "Stage72.1 GraphNexus restoration",
+              "missing_stages": [],
+              "stage_count": 11,
+              "graph_intelligence_lineage_present": true
+            },
+            "impact": {
+              "status": "pass",
+              "impact": {
+                "target": "Node2ProseCompiler",
+                "risk_level": "medium",
+                "risk_score": 0.6000000000000001,
+                "code_hits": [
+                  "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                ],
+                "narrative_node_count": 2,
+                "lineage_node_count": 11,
+                "risks": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "requires_human_attention": false
+            },
+            "legacy_logic_survival": {
+              "status": "pass",
+              "stage": "STAGE61-66",
+              "required_concepts": [
+                "authority boundaries",
+                "feature flag integration",
+                "graph sidecar"
+              ],
+              "missing_concepts": [],
+              "current_status": "restored_as_optional_graphnexus_layer"
+            },
+            "node_projection": {
+              "status": "pass",
+              "node2_raw_graph_access": false,
+              "node2_packet": {
+                "packet_type": "Node2GraphSurfacePacket",
+                "scene_id": "S72_1_SAMPLE",
+                "surface_tone": "reader_facing",
+                "relationship_pressure": "medium",
+                "sensory_anchors": [
+                  "setting",
+                  "gesture"
+                ],
+                "forbidden_reveal_labels": [
+                  "locked_reveal_1"
+                ],
+                "style_drift_warnings": []
+              },
+              "node3_packet": {
+                "packet_type": "Node3GraphCriticPacket",
+                "contradiction_risks": [
+                  "forbidden_reveal_projection_required"
+                ],
+                "leakage_risks": [
+                  "forbidden_reveal_projection_required"
+                ],
+                "impact": {
+                  "risks": [
+                    "forbidden_reveal_projection_required"
+                  ]
+                }
+              }
+            }
+          },
+          "context_packet": {
+            "code_summary": {
+              "available": true,
+              "source": "python_fallback",
+              "node_count": 77
+            },
+            "narrative_summary": {
+              "available": true,
+              "node_count": 2,
+              "edge_count": 1
+            },
+            "lineage_summary": {
+              "available": true,
+              "node_count": 11,
+              "stage72_1_present": true
+            },
+            "warnings": [
+              "node2_surface_contract_must_hold",
+              "forbidden_reveal_projection_required"
+            ]
+          }
+        },
+        "stage72_2_release_gate": {
+          "stage": "72.2",
+          "status": "pass",
+          "issues": [],
+          "gitnexus": {
+            "installed": false,
+            "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+            "optional_runtime_dependency": false,
+            "fallback_available": true,
+            "error": "gitnexus binary not installed; npx path is available for optional use"
+          },
+          "gitnexus_index_status": {
+            "alias": "v1700_stage72_3_ascii",
+            "registered": false,
+            "path": "",
+            "storage_path": "",
+            "indexed_at": "",
+            "stats": {},
+            "registry_path": "/home/oai/.gitnexus/registry.json",
+            "stale": true,
+            "reason": "alias_not_registered"
+          },
+          "gitnexus_index_under_gpt_workspace": false,
+          "manual_reindex_recommended": true,
+          "gitnexus_optional_only": true,
+          "python_fallback_available": true,
+          "provider_default_calls": 0,
+          "node2_raw_reveal_access_count": 0,
+          "checks": {
+            "graph_nexus_release_gate": {
+              "stage": "72.1",
+              "status": "pass",
+              "issues": [],
+              "gitnexus": {
+                "installed": false,
+                "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+                "optional_runtime_dependency": false,
+                "fallback_available": true,
+                "error": "gitnexus binary not installed; npx path is available for optional use"
+              },
+              "gitnexus_optional_only": true,
+              "python_fallback_available": true,
+              "provider_default_calls": 0,
+              "code_graph_available": true,
+              "narrative_graph_available": true,
+              "stage_lineage_graph_available": true,
+              "node2_raw_reveal_access_count": 0,
+              "checks": {
+                "lineage_preflight": {
+                  "status": "pass",
+                  "goal": "Stage72.1 GraphNexus restoration",
+                  "missing_stages": [],
+                  "stage_count": 11,
+                  "graph_intelligence_lineage_present": true
+                },
+                "impact": {
+                  "status": "pass",
+                  "impact": {
+                    "target": "Node2ProseCompiler",
+                    "risk_level": "medium",
+                    "risk_score": 0.6000000000000001,
+                    "code_hits": [
+                      "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                    ],
+                    "narrative_node_count": 2,
+                    "lineage_node_count": 11,
+                    "risks": [
+                      "node2_surface_contract_must_hold",
+                      "forbidden_reveal_projection_required"
+                    ]
+                  },
+                  "requires_human_attention": false
+                },
+                "legacy_logic_survival": {
+                  "status": "pass",
+                  "stage": "STAGE61-66",
+                  "required_concepts": [
+                    "authority boundaries",
+                    "feature flag integration",
+                    "graph sidecar"
+                  ],
+                  "missing_concepts": [],
+                  "current_status": "restored_as_optional_graphnexus_layer"
+                },
+                "node_projection": {
+                  "status": "pass",
+                  "node2_raw_graph_access": false,
+                  "node2_packet": {
+                    "packet_type": "Node2GraphSurfacePacket",
+                    "scene_id": "S72_1_SAMPLE",
+                    "surface_tone": "reader_facing",
+                    "relationship_pressure": "medium",
+                    "sensory_anchors": [
+                      "setting",
+                      "gesture"
+                    ],
+                    "forbidden_reveal_labels": [
+                      "locked_reveal_1"
+                    ],
+                    "style_drift_warnings": []
+                  },
+                  "node3_packet": {
+                    "packet_type": "Node3GraphCriticPacket",
+                    "contradiction_risks": [
+                      "forbidden_reveal_projection_required"
+                    ],
+                    "leakage_risks": [
+                      "forbidden_reveal_projection_required"
+                    ],
+                    "impact": {
+                      "risks": [
+                        "forbidden_reveal_projection_required"
+                      ]
+                    }
+                  }
+                }
+              },
+              "context_packet": {
+                "code_summary": {
+                  "available": true,
+                  "source": "python_fallback",
+                  "node_count": 77
+                },
+                "narrative_summary": {
+                  "available": true,
+                  "node_count": 2,
+                  "edge_count": 1
+                },
+                "lineage_summary": {
+                  "available": true,
+                  "node_count": 11,
+                  "stage72_1_present": true
+                },
+                "warnings": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              }
+            },
+            "query": {
+              "status": "pass",
+              "query": "GraphNexus",
+              "source": "python_fallback",
+              "matches": [
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/graph_nexus_packet.py",
+                  "defines": [
+                    "GraphNexusContextPacket",
+                    "Node1GraphPacket",
+                    "Node2GraphSurfacePacket",
+                    "Node3GraphCriticPacket",
+                    "assert_surface_safe",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/integration/test_node1_node2_node3_pipeline.py",
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py",
+                    "tests/test_stage72_2_graph_nexus_operational_tools.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/registry.py",
+                  "defines": [
+                    "GraphNexusRegistry",
+                    "build",
+                    "context_packet",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "code",
+                  "path": "src/v1700/graph_nexus/tools/contracts.py",
+                  "defines": [
+                    "GeneratedNodeSkill",
+                    "GeneratedSceneSkill",
+                    "GeneratedStageSkill",
+                    "GeneratedWikiPage",
+                    "GraphNexusContextRequest",
+                    "GraphNexusDetectChangesReport",
+                    "GraphNexusImpactRequest",
+                    "GraphNexusQueryRequest",
+                    "GraphNexusQueryResult",
+                    "GraphNexusRouteMap",
+                    "GraphNexusShapeCheckReport",
+                    "GraphNexusToolMap",
+                    "to_dict"
+                  ],
+                  "tested_by": [
+                    "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                    "tests/test_stage72_1_graph_nexus_release_gate.py",
+                    "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                    "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                    "tests/test_stage72_1_lineage_preflight_gate.py",
+                    "tests/test_stage72_1_node_projection_gate.py"
+                  ],
+                  "gated_by": [
+                    "graph_nexus_release_gate"
+                  ],
+                  "stage_origin": "STAGE72.1"
+                },
+                {
+                  "kind": "stage",
+                  "stage_id": "STAGE72.1",
+                  "title": "GraphNexus Restoration Patch",
+                  "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+                },
+                {
+                  "kind": "stage",
+                  "stage_id": "STAGE72.2",
+                  "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+                  "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+                }
+              ],
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "query",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              }
+            },
+            "context": {
+              "status": "pass",
+              "target": "Node2ProseCompiler",
+              "source": "python_fallback",
+              "packet": {
+                "code_summary": {
+                  "available": true,
+                  "source": "python_fallback",
+                  "node_count": 77
+                },
+                "narrative_summary": {
+                  "available": true,
+                  "node_count": 2,
+                  "edge_count": 1
+                },
+                "lineage_summary": {
+                  "available": true,
+                  "node_count": 11,
+                  "stage72_1_present": true
+                },
+                "warnings": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "code_hits": [
+                {
+                  "path": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                  "defines": [
+                    "Node2CompileResult",
+                    "Node2ProseCompiler",
+                    "__init__",
+                    "aggregate_report",
+                    "compile",
+                    "compile_many"
+                  ],
+                  "imports": [
+                    "__future__",
+                    "anti_llm_filter",
+                    "authorial_profile",
+                    "candidates",
+                    "contract",
+                    "dataclasses",
+                    "dialogue_renderer",
+                    "emotion_renderer",
+                    "marker_stripper",
+                    "rhythm_rewriter",
+                    "scorer",
+                    "sensory_anchor",
+                    "statistics",
+                    "v1700.ir.rendered_prose",
+                    "v1700.ir.scene_intent",
+                    "v1700.ir.style_profile",
+                    "validators"
+                  ],
+                  "tested_by": [
+                    "tests/integration/test_node1_node2_node3_pipeline.py",
+                    "tests/unit/node2_prose_renderer/test_compiler.py"
+                  ],
+                  "gated_by": [
+                    "node_projection_gate"
+                  ],
+                  "stage_origin": "STAGE71_72"
+                }
+              ],
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "context",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              }
+            },
+            "impact": {
+              "status": "pass",
+              "target": "Node2ProseCompiler",
+              "source": "python_fallback",
+              "fallback_impact": {
+                "target": "Node2ProseCompiler",
+                "risk_level": "medium",
+                "risk_score": 0.6000000000000001,
+                "code_hits": [
+                  "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                ],
+                "narrative_node_count": 2,
+                "lineage_node_count": 11,
+                "risks": [
+                  "node2_surface_contract_must_hold",
+                  "forbidden_reveal_projection_required"
+                ]
+              },
+              "gitnexus": {
+                "provider": "gitnexus_cli",
+                "capability": "impact",
+                "available": false,
+                "returncode": 127,
+                "timed_out": false,
+                "payload": {},
+                "stderr": "gitnexus binary not installed; npx path is available for optional use"
+              },
+              "requires_human_attention": false
+            },
+            "detect_changes": {
+              "status": "pass",
+              "source": "python_fallback",
+              "mode": "stage72_2_structural_scan",
+              "changed_paths": [
+                "src/v1700/gates/graph_nexus_impact_gate.py",
+                "src/v1700/gates/graph_nexus_release_gate.py",
+                "src/v1700/graph_nexus/__init__.py",
+                "src/v1700/graph_nexus/code_graph.py",
+                "src/v1700/graph_nexus/detect_changes.py",
+                "src/v1700/graph_nexus/graph_nexus_packet.py",
+                "src/v1700/graph_nexus/impact.py",
+                "src/v1700/graph_nexus/narrative_graph.py",
+                "src/v1700/graph_nexus/projection.py",
+                "src/v1700/graph_nexus/registry.py",
+                "src/v1700/graph_nexus/stage_lineage_graph.py",
+                "src/v1700/graph_nexus/tools/__init__.py",
+                "src/v1700/graph_nexus/tools/change_review.py",
+                "src/v1700/graph_nexus/tools/concept_impact.py",
+                "src/v1700/graph_nexus/tools/context.py",
+                "src/v1700/graph_nexus/tools/contracts.py",
+                "src/v1700/graph_nexus/tools/detect_changes.py",
+                "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                "src/v1700/graph_nexus/tools/impact.py",
+                "src/v1700/graph_nexus/tools/query.py",
+                "src/v1700/graph_nexus/tools/route_map.py",
+                "src/v1700/graph_nexus/tools/shape_check.py",
+                "src/v1700/graph_nexus/tools/skill_generator.py",
+                "src/v1700/graph_nexus/tools/survival_matrix.py",
+                "src/v1700/graph_nexus/tools/tool_map.py",
+                "src/v1700/graph_nexus/tools/wiki_generator.py",
+                "src/v1700/sidecars/gitnexus/__init__.py",
+                "src/v1700/sidecars/gitnexus/adapter.py",
+                "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                "src/v1700/sidecars/gitnexus/contracts.py",
+                "src/v1700/sidecars/gitnexus/index_status.py",
+                "src/v1700/sidecars/gitnexus/mcp_adapter.py",
+                "src/v1700/sidecars/gitnexus/probe.py",
+                "src/v1700/sidecars/gitnexus/python_fallback.py",
+                "src/v1700/sidecars/gitnexus/result_normalizer.py",
+                "src/v1700/sidecars/gitnexus/stale_index_detector.py"
+              ],
+              "impacted_tests": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/stage_gates/test_stage72_repo_doctor.py",
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py",
+                "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                "tests/test_stage72_2_release_gate.py",
+                "tests/test_stage72_3_foundation_lineage.py"
+              ],
+              "stale_index": true,
+              "gitnexus": {
+                "command": {
+                  "provider": "gitnexus_cli",
+                  "capability": "detect_changes",
+                  "available": false,
+                  "reason": "active_repo_is_not_git_worktree; python fallback used"
+                },
+                "index_status": {
+                  "alias": "v1700_stage72_3_ascii",
+                  "registered": false,
+                  "path": "",
+                  "storage_path": "",
+                  "indexed_at": "",
+                  "stats": {},
+                  "registry_path": "/home/oai/.gitnexus/registry.json",
+                  "stale": true,
+                  "reason": "alias_not_registered"
+                }
+              }
+            },
+            "route_map": {
+              "status": "pass",
+              "routes": [
+                {
+                  "name": "runtime_generation_route",
+                  "steps": [
+                    "src/v1700/cli.py",
+                    "src/v1700/nodes/node1_architect/__init__.py",
+                    "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                    "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+                  ]
+                },
+                {
+                  "name": "graph_context_route",
+                  "steps": [
+                    "src/v1700/graph_nexus/registry.py",
+                    "src/v1700/graph_nexus/code_graph.py",
+                    "src/v1700/graph_nexus/narrative_graph.py",
+                    "src/v1700/graph_nexus/stage_lineage_graph.py"
+                  ]
+                },
+                {
+                  "name": "stage72_2_operational_route",
+                  "steps": [
+                    "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                    "src/v1700/graph_nexus/tools/query.py",
+                    "src/v1700/graph_nexus/tools/context.py",
+                    "src/v1700/graph_nexus/tools/impact.py",
+                    "src/v1700/graph_nexus/tools/detect_changes.py",
+                    "src/v1700/gates/stage72_2_release_gate.py"
+                  ]
+                },
+                {
+                  "name": "stage72_3_foundation_lineage_route",
+                  "steps": [
+                    "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                    "src/v1700/graph_nexus/tools/survival_matrix.py",
+                    "src/v1700/gates/pre_stage40_survival_gate.py",
+                    "src/v1700/gates/stage72_3_release_gate.py"
+                  ]
+                }
+              ],
+              "missing_paths": []
+            },
+            "tool_map": {
+              "status": "pass",
+              "tools": [
+                {
+                  "name": "query",
+                  "path": "tools/run_graph_nexus_query.py"
+                },
+                {
+                  "name": "context",
+                  "path": "tools/run_graph_nexus_context.py"
+                },
+                {
+                  "name": "impact",
+                  "path": "tools/run_graph_nexus_impact.py"
+                },
+                {
+                  "name": "detect_changes",
+                  "path": "tools/run_graph_nexus_detect_changes.py"
+                },
+                {
+                  "name": "route_map",
+                  "path": "tools/run_graph_nexus_route_map.py"
+                },
+                {
+                  "name": "tool_map",
+                  "path": "tools/run_graph_nexus_tool_map.py"
+                },
+                {
+                  "name": "shape_check",
+                  "path": "tools/run_graph_nexus_shape_check.py"
+                },
+                {
+                  "name": "generate_skills",
+                  "path": "tools/run_graph_nexus_generate_skills.py"
+                },
+                {
+                  "name": "generate_wiki",
+                  "path": "tools/run_graph_nexus_generate_wiki.py"
+                },
+                {
+                  "name": "stage72_2_release",
+                  "path": "tools/run_stage72_2_release_gate.py"
+                },
+                {
+                  "name": "build_stage72_3_foundation_lineage",
+                  "path": "tools/build_stage72_3_foundation_lineage.py"
+                },
+                {
+                  "name": "pre_stage40_survival_gate",
+                  "path": "tools/run_pre_stage40_survival_gate.py"
+                },
+                {
+                  "name": "stage72_3_release",
+                  "path": "tools/run_stage72_3_release_gate.py"
+                }
+              ],
+              "gates": [
+                {
+                  "name": "graph_nexus_release_gate",
+                  "path": "src/v1700/gates/graph_nexus_release_gate.py"
+                },
+                {
+                  "name": "stage72_2_release_gate",
+                  "path": "src/v1700/gates/stage72_2_release_gate.py"
+                },
+                {
+                  "name": "pre_stage40_survival_gate",
+                  "path": "src/v1700/gates/pre_stage40_survival_gate.py"
+                },
+                {
+                  "name": "stage72_3_release_gate",
+                  "path": "src/v1700/gates/stage72_3_release_gate.py"
+                },
+                {
+                  "name": "release_gate",
+                  "path": "src/v1700/gates/release_gate.py"
+                }
+              ],
+              "tests": [
+                "tests/integration/test_node1_node2_node3_pipeline.py",
+                "tests/stage_gates/test_stage72_repo_doctor.py",
+                "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                "tests/test_stage72_1_graph_nexus_release_gate.py",
+                "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                "tests/test_stage72_1_lineage_preflight_gate.py",
+                "tests/test_stage72_1_node_projection_gate.py",
+                "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                "tests/test_stage72_2_release_gate.py",
+                "tests/test_stage72_3_foundation_lineage.py",
+                "tests/unit/node2_prose_renderer/test_compiler.py",
+                "tests/unit/node2_prose_renderer/test_contract.py",
+                "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+              ],
+              "missing_paths": []
+            },
+            "generated_skills": {
+              "status": "pass",
+              "stage_skill": {
+                "stage": "Stage72.2",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/tools/query.py"
+                ]
+              },
+              "node_skill": {
+                "node": "Node2",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/tools/shape_check.py"
+                ]
+              },
+              "scene_skill": {
+                "scene": "GraphContextScene",
+                "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md",
+                "source_files": [
+                  "src/v1700/graph_nexus/registry.py"
+                ]
+              }
+            },
+            "generated_wiki": {
+              "status": "pass",
+              "pages": [
+                {
+                  "title": "Architecture Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md",
+                  "source_files": [
+                    "src/v1700/cli.py"
+                  ]
+                },
+                {
+                  "title": "Stage Lineage Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md",
+                  "source_files": [
+                    "manifests/stage_lineage_manifest.json"
+                  ]
+                },
+                {
+                  "title": "Narrative Wiki",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md",
+                  "source_files": [
+                    "src/v1700/graph_nexus/narrative_graph.py"
+                  ]
+                }
+              ]
+            },
+            "shape_check": {
+              "status": "pass",
+              "checks": [
+                {
+                  "name": "node2_surface_packet_safe",
+                  "status": "pass"
+                },
+                {
+                  "name": "generated_docs_no_raw_reveal_terms",
+                  "status": "pass"
+                }
+              ],
+              "violations": []
+            }
+          }
+        },
+        "stage72_3_release_gate": {
+          "stage": "72.3",
+          "status": "pass",
+          "issues": [],
+          "stage72_2_release_gate": {
+            "stage": "72.2",
+            "status": "pass",
+            "issues": [],
+            "gitnexus": {
+              "installed": false,
+              "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+              "optional_runtime_dependency": false,
+              "fallback_available": true,
+              "error": "gitnexus binary not installed; npx path is available for optional use"
+            },
+            "gitnexus_index_status": {
+              "alias": "v1700_stage72_3_ascii",
+              "registered": false,
+              "path": "",
+              "storage_path": "",
+              "indexed_at": "",
+              "stats": {},
+              "registry_path": "/home/oai/.gitnexus/registry.json",
+              "stale": true,
+              "reason": "alias_not_registered"
+            },
+            "gitnexus_index_under_gpt_workspace": false,
+            "manual_reindex_recommended": true,
+            "gitnexus_optional_only": true,
+            "python_fallback_available": true,
+            "provider_default_calls": 0,
+            "node2_raw_reveal_access_count": 0,
+            "checks": {
+              "graph_nexus_release_gate": {
+                "stage": "72.1",
+                "status": "pass",
+                "issues": [],
+                "gitnexus": {
+                  "installed": false,
+                  "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+                  "optional_runtime_dependency": false,
+                  "fallback_available": true,
+                  "error": "gitnexus binary not installed; npx path is available for optional use"
+                },
+                "gitnexus_optional_only": true,
+                "python_fallback_available": true,
+                "provider_default_calls": 0,
+                "code_graph_available": true,
+                "narrative_graph_available": true,
+                "stage_lineage_graph_available": true,
+                "node2_raw_reveal_access_count": 0,
+                "checks": {
+                  "lineage_preflight": {
+                    "status": "pass",
+                    "goal": "Stage72.1 GraphNexus restoration",
+                    "missing_stages": [],
+                    "stage_count": 11,
+                    "graph_intelligence_lineage_present": true
+                  },
+                  "impact": {
+                    "status": "pass",
+                    "impact": {
+                      "target": "Node2ProseCompiler",
+                      "risk_level": "medium",
+                      "risk_score": 0.6000000000000001,
+                      "code_hits": [
+                        "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                      ],
+                      "narrative_node_count": 2,
+                      "lineage_node_count": 11,
+                      "risks": [
+                        "node2_surface_contract_must_hold",
+                        "forbidden_reveal_projection_required"
+                      ]
+                    },
+                    "requires_human_attention": false
+                  },
+                  "legacy_logic_survival": {
+                    "status": "pass",
+                    "stage": "STAGE61-66",
+                    "required_concepts": [
+                      "authority boundaries",
+                      "feature flag integration",
+                      "graph sidecar"
+                    ],
+                    "missing_concepts": [],
+                    "current_status": "restored_as_optional_graphnexus_layer"
+                  },
+                  "node_projection": {
+                    "status": "pass",
+                    "node2_raw_graph_access": false,
+                    "node2_packet": {
+                      "packet_type": "Node2GraphSurfacePacket",
+                      "scene_id": "S72_1_SAMPLE",
+                      "surface_tone": "reader_facing",
+                      "relationship_pressure": "medium",
+                      "sensory_anchors": [
+                        "setting",
+                        "gesture"
+                      ],
+                      "forbidden_reveal_labels": [
+                        "locked_reveal_1"
+                      ],
+                      "style_drift_warnings": []
+                    },
+                    "node3_packet": {
+                      "packet_type": "Node3GraphCriticPacket",
+                      "contradiction_risks": [
+                        "forbidden_reveal_projection_required"
+                      ],
+                      "leakage_risks": [
+                        "forbidden_reveal_projection_required"
+                      ],
+                      "impact": {
+                        "risks": [
+                          "forbidden_reveal_projection_required"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "context_packet": {
+                  "code_summary": {
+                    "available": true,
+                    "source": "python_fallback",
+                    "node_count": 77
+                  },
+                  "narrative_summary": {
+                    "available": true,
+                    "node_count": 2,
+                    "edge_count": 1
+                  },
+                  "lineage_summary": {
+                    "available": true,
+                    "node_count": 11,
+                    "stage72_1_present": true
+                  },
+                  "warnings": [
+                    "node2_surface_contract_must_hold",
+                    "forbidden_reveal_projection_required"
+                  ]
+                }
+              },
+              "query": {
+                "status": "pass",
+                "query": "GraphNexus",
+                "source": "python_fallback",
+                "matches": [
+                  {
+                    "kind": "code",
+                    "path": "src/v1700/graph_nexus/graph_nexus_packet.py",
+                    "defines": [
+                      "GraphNexusContextPacket",
+                      "Node1GraphPacket",
+                      "Node2GraphSurfacePacket",
+                      "Node3GraphCriticPacket",
+                      "assert_surface_safe",
+                      "to_dict"
+                    ],
+                    "tested_by": [
+                      "tests/integration/test_node1_node2_node3_pipeline.py",
+                      "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                      "tests/test_stage72_1_graph_nexus_release_gate.py",
+                      "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                      "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                      "tests/test_stage72_1_lineage_preflight_gate.py",
+                      "tests/test_stage72_1_node_projection_gate.py",
+                      "tests/test_stage72_2_graph_nexus_operational_tools.py"
+                    ],
+                    "gated_by": [
+                      "graph_nexus_release_gate"
+                    ],
+                    "stage_origin": "STAGE72.1"
+                  },
+                  {
+                    "kind": "code",
+                    "path": "src/v1700/graph_nexus/registry.py",
+                    "defines": [
+                      "GraphNexusRegistry",
+                      "build",
+                      "context_packet",
+                      "to_dict"
+                    ],
+                    "tested_by": [
+                      "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                      "tests/test_stage72_1_graph_nexus_release_gate.py",
+                      "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                      "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                      "tests/test_stage72_1_lineage_preflight_gate.py",
+                      "tests/test_stage72_1_node_projection_gate.py"
+                    ],
+                    "gated_by": [
+                      "graph_nexus_release_gate"
+                    ],
+                    "stage_origin": "STAGE72.1"
+                  },
+                  {
+                    "kind": "code",
+                    "path": "src/v1700/graph_nexus/tools/contracts.py",
+                    "defines": [
+                      "GeneratedNodeSkill",
+                      "GeneratedSceneSkill",
+                      "GeneratedStageSkill",
+                      "GeneratedWikiPage",
+                      "GraphNexusContextRequest",
+                      "GraphNexusDetectChangesReport",
+                      "GraphNexusImpactRequest",
+                      "GraphNexusQueryRequest",
+                      "GraphNexusQueryResult",
+                      "GraphNexusRouteMap",
+                      "GraphNexusShapeCheckReport",
+                      "GraphNexusToolMap",
+                      "to_dict"
+                    ],
+                    "tested_by": [
+                      "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                      "tests/test_stage72_1_graph_nexus_release_gate.py",
+                      "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                      "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                      "tests/test_stage72_1_lineage_preflight_gate.py",
+                      "tests/test_stage72_1_node_projection_gate.py"
+                    ],
+                    "gated_by": [
+                      "graph_nexus_release_gate"
+                    ],
+                    "stage_origin": "STAGE72.1"
+                  },
+                  {
+                    "kind": "stage",
+                    "stage_id": "STAGE72.1",
+                    "title": "GraphNexus Restoration Patch",
+                    "surviving_runtime_value": "Restores graph intelligence as optional live architecture."
+                  },
+                  {
+                    "kind": "stage",
+                    "stage_id": "STAGE72.2",
+                    "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+                    "surviving_runtime_value": "Turns GitNexus capabilities into optional GraphNexus product contracts while preserving Python fallback and Node2 surface safety."
+                  }
+                ],
+                "gitnexus": {
+                  "provider": "gitnexus_cli",
+                  "capability": "query",
+                  "available": false,
+                  "returncode": 127,
+                  "timed_out": false,
+                  "payload": {},
+                  "stderr": "gitnexus binary not installed; npx path is available for optional use"
+                }
+              },
+              "context": {
+                "status": "pass",
+                "target": "Node2ProseCompiler",
+                "source": "python_fallback",
+                "packet": {
+                  "code_summary": {
+                    "available": true,
+                    "source": "python_fallback",
+                    "node_count": 77
+                  },
+                  "narrative_summary": {
+                    "available": true,
+                    "node_count": 2,
+                    "edge_count": 1
+                  },
+                  "lineage_summary": {
+                    "available": true,
+                    "node_count": 11,
+                    "stage72_1_present": true
+                  },
+                  "warnings": [
+                    "node2_surface_contract_must_hold",
+                    "forbidden_reveal_projection_required"
+                  ]
+                },
+                "code_hits": [
+                  {
+                    "path": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                    "defines": [
+                      "Node2CompileResult",
+                      "Node2ProseCompiler",
+                      "__init__",
+                      "aggregate_report",
+                      "compile",
+                      "compile_many"
+                    ],
+                    "imports": [
+                      "__future__",
+                      "anti_llm_filter",
+                      "authorial_profile",
+                      "candidates",
+                      "contract",
+                      "dataclasses",
+                      "dialogue_renderer",
+                      "emotion_renderer",
+                      "marker_stripper",
+                      "rhythm_rewriter",
+                      "scorer",
+                      "sensory_anchor",
+                      "statistics",
+                      "v1700.ir.rendered_prose",
+                      "v1700.ir.scene_intent",
+                      "v1700.ir.style_profile",
+                      "validators"
+                    ],
+                    "tested_by": [
+                      "tests/integration/test_node1_node2_node3_pipeline.py",
+                      "tests/unit/node2_prose_renderer/test_compiler.py"
+                    ],
+                    "gated_by": [
+                      "node_projection_gate"
+                    ],
+                    "stage_origin": "STAGE71_72"
+                  }
+                ],
+                "gitnexus": {
+                  "provider": "gitnexus_cli",
+                  "capability": "context",
+                  "available": false,
+                  "returncode": 127,
+                  "timed_out": false,
+                  "payload": {},
+                  "stderr": "gitnexus binary not installed; npx path is available for optional use"
+                }
+              },
+              "impact": {
+                "status": "pass",
+                "target": "Node2ProseCompiler",
+                "source": "python_fallback",
+                "fallback_impact": {
+                  "target": "Node2ProseCompiler",
+                  "risk_level": "medium",
+                  "risk_score": 0.6000000000000001,
+                  "code_hits": [
+                    "src/v1700/nodes/node2_prose_renderer/compiler.py"
+                  ],
+                  "narrative_node_count": 2,
+                  "lineage_node_count": 11,
+                  "risks": [
+                    "node2_surface_contract_must_hold",
+                    "forbidden_reveal_projection_required"
+                  ]
+                },
+                "gitnexus": {
+                  "provider": "gitnexus_cli",
+                  "capability": "impact",
+                  "available": false,
+                  "returncode": 127,
+                  "timed_out": false,
+                  "payload": {},
+                  "stderr": "gitnexus binary not installed; npx path is available for optional use"
+                },
+                "requires_human_attention": false
+              },
+              "detect_changes": {
+                "status": "pass",
+                "source": "python_fallback",
+                "mode": "stage72_2_structural_scan",
+                "changed_paths": [
+                  "src/v1700/gates/graph_nexus_impact_gate.py",
+                  "src/v1700/gates/graph_nexus_release_gate.py",
+                  "src/v1700/graph_nexus/__init__.py",
+                  "src/v1700/graph_nexus/code_graph.py",
+                  "src/v1700/graph_nexus/detect_changes.py",
+                  "src/v1700/graph_nexus/graph_nexus_packet.py",
+                  "src/v1700/graph_nexus/impact.py",
+                  "src/v1700/graph_nexus/narrative_graph.py",
+                  "src/v1700/graph_nexus/projection.py",
+                  "src/v1700/graph_nexus/registry.py",
+                  "src/v1700/graph_nexus/stage_lineage_graph.py",
+                  "src/v1700/graph_nexus/tools/__init__.py",
+                  "src/v1700/graph_nexus/tools/change_review.py",
+                  "src/v1700/graph_nexus/tools/concept_impact.py",
+                  "src/v1700/graph_nexus/tools/context.py",
+                  "src/v1700/graph_nexus/tools/contracts.py",
+                  "src/v1700/graph_nexus/tools/detect_changes.py",
+                  "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                  "src/v1700/graph_nexus/tools/impact.py",
+                  "src/v1700/graph_nexus/tools/query.py",
+                  "src/v1700/graph_nexus/tools/route_map.py",
+                  "src/v1700/graph_nexus/tools/shape_check.py",
+                  "src/v1700/graph_nexus/tools/skill_generator.py",
+                  "src/v1700/graph_nexus/tools/survival_matrix.py",
+                  "src/v1700/graph_nexus/tools/tool_map.py",
+                  "src/v1700/graph_nexus/tools/wiki_generator.py",
+                  "src/v1700/sidecars/gitnexus/__init__.py",
+                  "src/v1700/sidecars/gitnexus/adapter.py",
+                  "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                  "src/v1700/sidecars/gitnexus/contracts.py",
+                  "src/v1700/sidecars/gitnexus/index_status.py",
+                  "src/v1700/sidecars/gitnexus/mcp_adapter.py",
+                  "src/v1700/sidecars/gitnexus/probe.py",
+                  "src/v1700/sidecars/gitnexus/python_fallback.py",
+                  "src/v1700/sidecars/gitnexus/result_normalizer.py",
+                  "src/v1700/sidecars/gitnexus/stale_index_detector.py"
+                ],
+                "impacted_tests": [
+                  "tests/integration/test_node1_node2_node3_pipeline.py",
+                  "tests/stage_gates/test_stage72_repo_doctor.py",
+                  "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                  "tests/test_stage72_1_graph_nexus_release_gate.py",
+                  "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                  "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                  "tests/test_stage72_1_lineage_preflight_gate.py",
+                  "tests/test_stage72_1_node_projection_gate.py",
+                  "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                  "tests/test_stage72_2_release_gate.py",
+                  "tests/test_stage72_3_foundation_lineage.py"
+                ],
+                "stale_index": true,
+                "gitnexus": {
+                  "command": {
+                    "provider": "gitnexus_cli",
+                    "capability": "detect_changes",
+                    "available": false,
+                    "reason": "active_repo_is_not_git_worktree; python fallback used"
+                  },
+                  "index_status": {
+                    "alias": "v1700_stage72_3_ascii",
+                    "registered": false,
+                    "path": "",
+                    "storage_path": "",
+                    "indexed_at": "",
+                    "stats": {},
+                    "registry_path": "/home/oai/.gitnexus/registry.json",
+                    "stale": true,
+                    "reason": "alias_not_registered"
+                  }
+                }
+              },
+              "route_map": {
+                "status": "pass",
+                "routes": [
+                  {
+                    "name": "runtime_generation_route",
+                    "steps": [
+                      "src/v1700/cli.py",
+                      "src/v1700/nodes/node1_architect/__init__.py",
+                      "src/v1700/nodes/node2_prose_renderer/compiler.py",
+                      "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+                    ]
+                  },
+                  {
+                    "name": "graph_context_route",
+                    "steps": [
+                      "src/v1700/graph_nexus/registry.py",
+                      "src/v1700/graph_nexus/code_graph.py",
+                      "src/v1700/graph_nexus/narrative_graph.py",
+                      "src/v1700/graph_nexus/stage_lineage_graph.py"
+                    ]
+                  },
+                  {
+                    "name": "stage72_2_operational_route",
+                    "steps": [
+                      "src/v1700/sidecars/gitnexus/cli_adapter.py",
+                      "src/v1700/graph_nexus/tools/query.py",
+                      "src/v1700/graph_nexus/tools/context.py",
+                      "src/v1700/graph_nexus/tools/impact.py",
+                      "src/v1700/graph_nexus/tools/detect_changes.py",
+                      "src/v1700/gates/stage72_2_release_gate.py"
+                    ]
+                  },
+                  {
+                    "name": "stage72_3_foundation_lineage_route",
+                    "steps": [
+                      "src/v1700/graph_nexus/tools/foundation_lineage.py",
+                      "src/v1700/graph_nexus/tools/survival_matrix.py",
+                      "src/v1700/gates/pre_stage40_survival_gate.py",
+                      "src/v1700/gates/stage72_3_release_gate.py"
+                    ]
+                  }
+                ],
+                "missing_paths": []
+              },
+              "tool_map": {
+                "status": "pass",
+                "tools": [
+                  {
+                    "name": "query",
+                    "path": "tools/run_graph_nexus_query.py"
+                  },
+                  {
+                    "name": "context",
+                    "path": "tools/run_graph_nexus_context.py"
+                  },
+                  {
+                    "name": "impact",
+                    "path": "tools/run_graph_nexus_impact.py"
+                  },
+                  {
+                    "name": "detect_changes",
+                    "path": "tools/run_graph_nexus_detect_changes.py"
+                  },
+                  {
+                    "name": "route_map",
+                    "path": "tools/run_graph_nexus_route_map.py"
+                  },
+                  {
+                    "name": "tool_map",
+                    "path": "tools/run_graph_nexus_tool_map.py"
+                  },
+                  {
+                    "name": "shape_check",
+                    "path": "tools/run_graph_nexus_shape_check.py"
+                  },
+                  {
+                    "name": "generate_skills",
+                    "path": "tools/run_graph_nexus_generate_skills.py"
+                  },
+                  {
+                    "name": "generate_wiki",
+                    "path": "tools/run_graph_nexus_generate_wiki.py"
+                  },
+                  {
+                    "name": "stage72_2_release",
+                    "path": "tools/run_stage72_2_release_gate.py"
+                  },
+                  {
+                    "name": "build_stage72_3_foundation_lineage",
+                    "path": "tools/build_stage72_3_foundation_lineage.py"
+                  },
+                  {
+                    "name": "pre_stage40_survival_gate",
+                    "path": "tools/run_pre_stage40_survival_gate.py"
+                  },
+                  {
+                    "name": "stage72_3_release",
+                    "path": "tools/run_stage72_3_release_gate.py"
+                  }
+                ],
+                "gates": [
+                  {
+                    "name": "graph_nexus_release_gate",
+                    "path": "src/v1700/gates/graph_nexus_release_gate.py"
+                  },
+                  {
+                    "name": "stage72_2_release_gate",
+                    "path": "src/v1700/gates/stage72_2_release_gate.py"
+                  },
+                  {
+                    "name": "pre_stage40_survival_gate",
+                    "path": "src/v1700/gates/pre_stage40_survival_gate.py"
+                  },
+                  {
+                    "name": "stage72_3_release_gate",
+                    "path": "src/v1700/gates/stage72_3_release_gate.py"
+                  },
+                  {
+                    "name": "release_gate",
+                    "path": "src/v1700/gates/release_gate.py"
+                  }
+                ],
+                "tests": [
+                  "tests/integration/test_node1_node2_node3_pipeline.py",
+                  "tests/stage_gates/test_stage72_repo_doctor.py",
+                  "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+                  "tests/test_stage72_1_graph_nexus_release_gate.py",
+                  "tests/test_stage72_1_graph_nexus_three_graphs.py",
+                  "tests/test_stage72_1_legacy_logic_survival_gate.py",
+                  "tests/test_stage72_1_lineage_preflight_gate.py",
+                  "tests/test_stage72_1_node_projection_gate.py",
+                  "tests/test_stage72_2_graph_nexus_operational_tools.py",
+                  "tests/test_stage72_2_release_gate.py",
+                  "tests/test_stage72_3_foundation_lineage.py",
+                  "tests/unit/node2_prose_renderer/test_compiler.py",
+                  "tests/unit/node2_prose_renderer/test_contract.py",
+                  "tests/unit/node2_prose_renderer/test_marker_and_emotion.py"
+                ],
+                "missing_paths": []
+              },
+              "generated_skills": {
+                "status": "pass",
+                "stage_skill": {
+                  "stage": "Stage72.2",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/stage_skill_stage72_2.md",
+                  "source_files": [
+                    "src/v1700/graph_nexus/tools/query.py"
+                  ]
+                },
+                "node_skill": {
+                  "node": "Node2",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/node_skill_node2_surface_safety.md",
+                  "source_files": [
+                    "src/v1700/graph_nexus/tools/shape_check.py"
+                  ]
+                },
+                "scene_skill": {
+                  "scene": "GraphContextScene",
+                  "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/skills/scene_skill_graph_context_scene.md",
+                  "source_files": [
+                    "src/v1700/graph_nexus/registry.py"
+                  ]
+                }
+              },
+              "generated_wiki": {
+                "status": "pass",
+                "pages": [
+                  {
+                    "title": "Architecture Wiki",
+                    "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/architecture_wiki.md",
+                    "source_files": [
+                      "src/v1700/cli.py"
+                    ]
+                  },
+                  {
+                    "title": "Stage Lineage Wiki",
+                    "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/stage_lineage_wiki.md",
+                    "source_files": [
+                      "manifests/stage_lineage_manifest.json"
+                    ]
+                  },
+                  {
+                    "title": "Narrative Wiki",
+                    "path": "/mnt/data/final_stage73_workspace/gpt/active/v1700/literary_generator/docs/generated/wiki/narrative_wiki.md",
+                    "source_files": [
+                      "src/v1700/graph_nexus/narrative_graph.py"
+                    ]
+                  }
+                ]
+              },
+              "shape_check": {
+                "status": "pass",
+                "checks": [
+                  {
+                    "name": "node2_surface_packet_safe",
+                    "status": "pass"
+                  },
+                  {
+                    "name": "generated_docs_no_raw_reveal_terms",
+                    "status": "pass"
+                  }
+                ],
+                "violations": []
+              }
+            }
+          },
+          "pre_stage40_survival_gate": {
+            "stage": "72.3",
+            "status": "pass",
+            "issues": [],
+            "concept_count": 25,
+            "required_concept_count": 20,
+            "missing_required": [],
+            "missing_source_evidence": [],
+            "missing_evidence_files": [],
+            "missing_current_anchor": [],
+            "high_priority_unknown": [],
+            "provider_default_calls": 0,
+            "node2_raw_reveal_access_count": 0
+          },
+          "survival_matrix": {
+            "status": "pass",
+            "concept_count": 25,
+            "buckets": {
+              "DOCUMENTED_ONLY": [
+                "foundation.authoring.end_to_end_scenario_runner",
+                "foundation.review.authoring_workflow",
+                "foundation.review.human_agent_console",
+                "foundation.stage39.branch_commit_rollback"
+              ],
+              "LIVE_RUNTIME": [
+                "foundation.governance.release_candidate_gate",
+                "foundation.node2.literary_quality_engine",
+                "foundation.node2.style_evolution_memory",
+                "foundation.stage39.node2_candidate_rendering"
+              ],
+              "PARTIAL": [
+                "foundation.governance.boundary_registry",
+                "foundation.governance.concept_validation_workbench",
+                "foundation.governance.stage26_28_regression_stream",
+                "foundation.longform.episode_draft_export",
+                "foundation.longform.series_arc_control",
+                "foundation.memory.conflict_resolver",
+                "foundation.memory.long_horizon_drift_stress",
+                "foundation.node2.literary_depth_calibration",
+                "foundation.provider.execution_trace",
+                "foundation.provider.multi_provider_creative_comparison",
+                "foundation.stage39.actual_replay_reconvergence",
+                "foundation.stage39.analyzer_librarian_integration",
+                "foundation.stage39.emotional_pressure_valve",
+                "foundation.stage39.evidence_intake_foundation",
+                "foundation.stage39.graph_retrieval_bridge",
+                "foundation.stage39.longform_scene_sequence_planner",
+                "foundation.stage39.temporal_continuity"
+              ]
+            }
+          },
+          "provider_default_calls": 0,
+          "node2_raw_reveal_access_count": 0
+        }
+      }
+    }
+  },
+  "gate_summary": {
+    "pytest": "24 passed",
+    "pre_stage40_survival_gate": "pass",
+    "stage72_3_release_gate": "pass",
+    "release_gate": "pass"
+  },
+  "limitations": [
+    "Knowledge-base evidence subtree contains compact evidence files for reproducibility; original full uploaded corpus remains in Google Drive folder.",
+    "GitNexus external index is optional and not included as runtime dependency."
+  ],
+  "canonical_package_filename": "V1700_stage73_full_workspace_integrated_repository.zip",
+  "canonical_sha256_filename": "V1700_stage73_full_workspace_integrated_repository.sha256.txt",
+  "canonical_filelist_filename": "V1700_stage73_full_workspace_integrated_repository_filelist.txt",
+  "filename_alias_manifest": "gpt/manifests/stage73_filename_alias_manifest.json",
+  "historical_aliases": [
+    "v1700_stage72_3.zip",
+    "gpt1700_stage72_3_foundation_lineage_governance_full_integrated_repository.zip",
+    "gpt_v1700_stage72_3_1_full_workspace_integrated_repository.zip"
+  ]
+}

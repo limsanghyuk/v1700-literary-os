@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "export_id": "stage104-beta-export-001",
+  "project_id": "stage104_sample_project",
+  "includes_full_text": false,
+  "includes_feature_reports": true,
+  "includes_release_evidence": true,
+  "workspace_snapshot_path": "release/current/stage104_studio_beta_pack/workspace_snapshot.json",
+  "writer_handoff_path": "release/current/stage104_studio_beta_pack/writer_handoff_beta.md",
+  "issues": []
+}

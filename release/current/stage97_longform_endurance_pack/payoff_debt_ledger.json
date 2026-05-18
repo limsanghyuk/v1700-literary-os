@@ -1,0 +1,282 @@
+{
+  "status": "pass",
+  "debts": [
+    {
+      "debt_id": "D001",
+      "debt_type": "mystery_debt",
+      "created_episode": "EP01",
+      "created_scene": "EP01_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP01",
+        "EP04"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP04",
+      "payoff_scene": "EP04_SC09",
+      "payoff_strength": 0.78,
+      "default_risk": 0.0,
+      "critical": true
+    },
+    {
+      "debt_id": "D002",
+      "debt_type": "emotional_debt",
+      "created_episode": "EP02",
+      "created_scene": "EP02_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP02",
+        "EP05"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP05",
+      "payoff_scene": "EP05_SC09",
+      "payoff_strength": 0.86,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D003",
+      "debt_type": "relationship_debt",
+      "created_episode": "EP03",
+      "created_scene": "EP03_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP03",
+        "EP06"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP06",
+      "payoff_scene": "EP06_SC09",
+      "payoff_strength": 0.94,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D004",
+      "debt_type": "motif_debt",
+      "created_episode": "EP04",
+      "created_scene": "EP04_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP04",
+        "EP07"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP07",
+      "payoff_scene": "EP07_SC09",
+      "payoff_strength": 0.7,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D005",
+      "debt_type": "foreshadow_debt",
+      "created_episode": "EP05",
+      "created_scene": "EP05_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP05",
+        "EP08"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP08",
+      "payoff_scene": "EP08_SC09",
+      "payoff_strength": 0.78,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D006",
+      "debt_type": "mystery_debt",
+      "created_episode": "EP06",
+      "created_scene": "EP06_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP06",
+        "EP09"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP09",
+      "payoff_scene": "EP09_SC09",
+      "payoff_strength": 0.86,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D007",
+      "debt_type": "emotional_debt",
+      "created_episode": "EP07",
+      "created_scene": "EP07_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP07",
+        "EP10"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP10",
+      "payoff_scene": "EP10_SC09",
+      "payoff_strength": 0.94,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D008",
+      "debt_type": "relationship_debt",
+      "created_episode": "EP08",
+      "created_scene": "EP08_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP08",
+        "EP11"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP11",
+      "payoff_scene": "EP11_SC09",
+      "payoff_strength": 0.7,
+      "default_risk": 0.0,
+      "critical": true
+    },
+    {
+      "debt_id": "D009",
+      "debt_type": "motif_debt",
+      "created_episode": "EP09",
+      "created_scene": "EP09_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP09",
+        "EP12"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP12",
+      "payoff_scene": "EP12_SC09",
+      "payoff_strength": 0.78,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D010",
+      "debt_type": "foreshadow_debt",
+      "created_episode": "EP10",
+      "created_scene": "EP10_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP10",
+        "EP13"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP13",
+      "payoff_scene": "EP13_SC09",
+      "payoff_strength": 0.86,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D011",
+      "debt_type": "mystery_debt",
+      "created_episode": "EP11",
+      "created_scene": "EP11_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP11",
+        "EP14"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP14",
+      "payoff_scene": "EP14_SC09",
+      "payoff_strength": 0.94,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D012",
+      "debt_type": "emotional_debt",
+      "created_episode": "EP12",
+      "created_scene": "EP12_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP12",
+        "EP15"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP15",
+      "payoff_scene": "EP15_SC09",
+      "payoff_strength": 0.7,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D013",
+      "debt_type": "relationship_debt",
+      "created_episode": "EP13",
+      "created_scene": "EP13_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP13",
+        "EP16"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP16",
+      "payoff_scene": "EP16_SC09",
+      "payoff_strength": 0.78,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D014",
+      "debt_type": "motif_debt",
+      "created_episode": "EP14",
+      "created_scene": "EP14_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP14",
+        "EP16"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP16",
+      "payoff_scene": "EP16_SC09",
+      "payoff_strength": 0.86,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D015",
+      "debt_type": "foreshadow_debt",
+      "created_episode": "EP15",
+      "created_scene": "EP15_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP15",
+        "EP16"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP16",
+      "payoff_scene": "EP16_SC09",
+      "payoff_strength": 0.94,
+      "default_risk": 0.0,
+      "critical": false
+    },
+    {
+      "debt_id": "D016",
+      "debt_type": "mystery_debt",
+      "created_episode": "EP16",
+      "created_scene": "EP16_SC02",
+      "promise_type": "question_or_motif",
+      "expected_payoff_window": [
+        "EP16",
+        "EP16"
+      ],
+      "current_status": "PAID",
+      "payoff_episode": "EP16",
+      "payoff_scene": "EP16_SC09",
+      "payoff_strength": 0.7,
+      "default_risk": 0.0,
+      "critical": true
+    }
+  ],
+  "open_debt_count": 0,
+  "due_debt_count": 0,
+  "critical_debt_default_count": 0,
+  "finale_unresolved_critical_debt": 0,
+  "issues": []
+}

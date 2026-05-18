@@ -1,0 +1,198 @@
+{
+  "status": "pass",
+  "multiwork_candidate_references": [
+    {
+      "path": "docs/stages/STAGE_INDEX.md",
+      "terms": [
+        "MultiWork",
+        "shared character"
+      ]
+    },
+    {
+      "path": "docs/stages/stage127.md",
+      "terms": [
+        "MultiWork",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "V571"
+      ]
+    },
+    {
+      "path": "docs/stages/stage128.md",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "V571"
+      ]
+    },
+    {
+      "path": "manifests/live_core_manifest.json",
+      "terms": [
+        "MultiWork",
+        "V571"
+      ]
+    },
+    {
+      "path": "manifests/stage127_manifest.json",
+      "terms": [
+        "MultiWork",
+        "V571"
+      ]
+    },
+    {
+      "path": "manifests/stage127_multiwork_preflight_manifest.json",
+      "terms": [
+        "MultiWork",
+        "V571"
+      ]
+    },
+    {
+      "path": "manifests/stage127_branchpoint_trace_manifest.json",
+      "terms": [
+        "MultiWork"
+      ]
+    },
+    {
+      "path": "manifests/stage128_read_only_absorption_manifest.json",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM",
+        "SharedWorldDB"
+      ]
+    },
+    {
+      "path": "release/current/release_gate_report.json",
+      "terms": [
+        "MultiWork"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_report.json",
+      "terms": [
+        "AuthorLicenseAPI",
+        "CrossWork",
+        "MultiWork",
+        "MultiWorkCIM",
+        "MultiWorkOrchestrator",
+        "ProjectIsolationManager",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "V571",
+        "shared character",
+        "shared world"
+      ]
+    },
+    {
+      "path": "release/current/stage127_summary.json",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM",
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage127_release_gate_report.json",
+      "terms": [
+        "MultiWork",
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage127_developer_handoff.md",
+      "terms": [
+        "MultiWork",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage127_execution_report.json",
+      "terms": [
+        "MultiWork",
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage128_read_only_absorption_report.json",
+      "terms": [
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage128_summary.json",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM"
+      ]
+    },
+    {
+      "path": "release/current/stage99_gitnexus_pack/impact_nodes.json",
+      "terms": [
+        "MultiWork"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_pack/multiwork_scanner_report.json",
+      "terms": [
+        "AuthorLicenseAPI",
+        "CrossWork",
+        "MultiWork",
+        "MultiWorkCIM",
+        "MultiWorkOrchestrator",
+        "ProjectIsolationManager",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "V571",
+        "shared character",
+        "shared world"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_pack/multiwork_risk_matrix.json",
+      "terms": [
+        "ProjectIsolationManager",
+        "V571"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_pack/absorption_plan.json",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM",
+        "ProjectIsolationManager",
+        "SharedWorldDB"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_pack/python_fallback_report.json",
+      "terms": [
+        "MultiWork"
+      ]
+    },
+    {
+      "path": "release/current/stage127_multiwork_preflight_pack/gitnexus_preflight_snapshot.json",
+      "terms": [
+        "MultiWork"
+      ]
+    }
+  ],
+  "candidate_reference_count": 22,
+  "direct_v571_merge_detected": false,
+  "direct_merge_paths_present": [],
+  "scan_terms": [
+    "V571",
+    "MultiWork",
+    "SharedCharacterDB",
+    "SharedWorldDB",
+    "ProjectIsolationManager",
+    "MultiWorkCIM",
+    "AuthorLicenseAPI",
+    "MultiWorkOrchestrator",
+    "CrossWork",
+    "shared character",
+    "shared world"
+  ]
+}

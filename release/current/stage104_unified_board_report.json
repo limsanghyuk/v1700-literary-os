@@ -1,0 +1,71 @@
+{
+  "stage": "104.2",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "prose_board_pass": true,
+    "scenario_board_pass": true,
+    "metric_conflation_prevented": true,
+    "provider_zero": true
+  },
+  "prose_board": {
+    "status": "pass",
+    "board_id": "stage104-prose-board",
+    "mode": "PROSE",
+    "cards": [
+      {
+        "card_id": "prose-001",
+        "scene_id": "scene-001",
+        "voice_note": "restrained guilt",
+        "sensory_anchor": "rain_on_platform",
+        "node2_surface_safety": "pass"
+      },
+      {
+        "card_id": "prose-002",
+        "scene_id": "scene-002",
+        "rhythm_note": "short beats before reveal",
+        "emotion_movement": "avoidance_to_confrontation",
+        "node2_surface_safety": "pass"
+      }
+    ],
+    "provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "issues": []
+  },
+  "scenario_board": {
+    "status": "pass",
+    "board_id": "stage104-scenario-board",
+    "mode": "SCENARIO",
+    "cards": [
+      {
+        "card_id": "scenario-001",
+        "scene_id": "scene-001",
+        "beat": "investigator_enters_closed_station",
+        "action": "records_rain_mismatch",
+        "production_note": "single_location"
+      },
+      {
+        "card_id": "scenario-002",
+        "scene_id": "scene-002",
+        "beat": "prop_led_reveal",
+        "prop": "dead_timetable_board",
+        "cue": "date_appears"
+      },
+      {
+        "card_id": "scenario-003",
+        "scene_id": "scene-002",
+        "beat": "silence_cue",
+        "dialogue_function": "subtext_not_exposition",
+        "cue": "unanswered_question"
+      }
+    ],
+    "provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "issues": []
+  },
+  "active_modes": [
+    "PROSE",
+    "SCENARIO",
+    "REVIEW"
+  ]
+}

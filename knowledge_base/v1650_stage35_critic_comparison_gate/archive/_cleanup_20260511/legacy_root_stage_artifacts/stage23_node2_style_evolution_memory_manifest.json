@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.node2.style_evolution_memory",
+  "stage_origins": [
+    "STAGE23"
+  ],
+  "title": "Node2 Style Evolution Memory",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage23_node2_style_evolution_memory_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

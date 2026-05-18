@@ -1,0 +1,5006 @@
+{
+  "stage": "88",
+  "status": "pass",
+  "sample_count": 32,
+  "agent_count": 6,
+  "assessment_count": 192,
+  "pass_threshold": 8.0,
+  "consensus_score": 8.25,
+  "min_agent_average": 8.24,
+  "min_sample_average": 8.21,
+  "agent_averages": {
+    "senior_drama_editor_agent": 8.25,
+    "platform_serialization_editor_agent": 8.24,
+    "continuity_script_editor_agent": 8.25,
+    "genre_reader_agent": 8.25,
+    "anti_llm_surface_reader_agent": 8.26,
+    "skeptical_binge_reader_agent": 8.24
+  },
+  "sample_averages": {
+    "blind_b33dd3ec8aa1": 8.26,
+    "blind_163f8a119db1": 8.26,
+    "blind_0ecbbce3ed26": 8.26,
+    "blind_7945b53dce1f": 8.26,
+    "blind_4ea3b5b6b0b1": 8.26,
+    "blind_283c2d66a019": 8.26,
+    "blind_fd750bd66f87": 8.26,
+    "blind_d8070cd6e590": 8.26,
+    "blind_8ceb072df64c": 8.21,
+    "blind_45a2ffa44789": 8.21,
+    "blind_fc4323721720": 8.3,
+    "blind_8e17c80425de": 8.3,
+    "blind_2ea994370365": 8.21,
+    "blind_37683708310c": 8.21,
+    "blind_d1bad4ce276e": 8.3,
+    "blind_ebdf7103483f": 8.3,
+    "blind_14a4a2ae88b4": 8.21,
+    "blind_c51e246d22ee": 8.21,
+    "blind_d074af6ee521": 8.3,
+    "blind_401d68aac452": 8.3,
+    "blind_f8a322c4b422": 8.24,
+    "blind_7da219fa9664": 8.24,
+    "blind_3fcc3a29f254": 8.24,
+    "blind_cb4f70319e9d": 8.24,
+    "blind_972033fda15c": 8.24,
+    "blind_d5f1769359ce": 8.24,
+    "blind_f985cea05852": 8.24,
+    "blind_67de54d3f712": 8.24,
+    "blind_dc08cbed04b0": 8.22,
+    "blind_f8265e54b3ac": 8.22,
+    "blind_067139ad336b": 8.22,
+    "blind_4794e6fd4fd0": 8.22
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": [],
+  "agents": [
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "role": "Senior Korean drama editor",
+      "stance": "Checks dramatic escalation, episode rhythm, and scene afterimage.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1795,
+        "continuity_integrity": 0.1538,
+        "reveal_discipline": 0.1282,
+        "character_knowledge_integrity": 0.1282,
+        "reader_afterimage": 0.1538,
+        "anti_llm_surface": 0.1282,
+        "bingeability": 0.1282
+      },
+      "red_flag_keywords": [
+        "설명했다",
+        "복잡한 감정",
+        "갑자기"
+      ]
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "role": "Commercial serialization platform editor",
+      "stance": "Checks hook density, bingeability, and episode-to-episode retention.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1572,
+        "continuity_integrity": 0.1258,
+        "reveal_discipline": 0.1384,
+        "character_knowledge_integrity": 0.1258,
+        "reader_afterimage": 0.1258,
+        "anti_llm_surface": 0.1258,
+        "bingeability": 0.2013
+      },
+      "red_flag_keywords": [
+        "늘어졌다",
+        "정체",
+        "정보 과다"
+      ]
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "role": "Continuity and script logic editor",
+      "stance": "Checks causal anchors, continuity, and reveal-budget consistency.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1227,
+        "continuity_integrity": 0.2025,
+        "reveal_discipline": 0.1595,
+        "character_knowledge_integrity": 0.1472,
+        "reader_afterimage": 0.1227,
+        "anti_llm_surface": 0.1227,
+        "bingeability": 0.1227
+      },
+      "red_flag_keywords": [
+        "모순",
+        "잊었다",
+        "설정 붕괴"
+      ]
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "role": "Korean longform genre reader",
+      "stance": "Checks emotional readability, serial momentum, and curiosity gap.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1465,
+        "continuity_integrity": 0.1274,
+        "reveal_discipline": 0.1274,
+        "character_knowledge_integrity": 0.1274,
+        "reader_afterimage": 0.172,
+        "anti_llm_surface": 0.1274,
+        "bingeability": 0.172
+      },
+      "red_flag_keywords": [
+        "밋밋",
+        "인물 없음",
+        "다음 화가 안 궁금"
+      ]
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "role": "AI-scent and prose surface detector",
+      "stance": "Penalizes abstract emotion, generic summary, and non-sensory prose.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1235,
+        "continuity_integrity": 0.1235,
+        "reveal_discipline": 0.1235,
+        "character_knowledge_integrity": 0.1358,
+        "reader_afterimage": 0.1481,
+        "anti_llm_surface": 0.2222,
+        "bingeability": 0.1235
+      },
+      "red_flag_keywords": [
+        "복잡한 감정",
+        "마음이 복잡",
+        "분위기가 묘했다",
+        "중요한 순간"
+      ]
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "role": "Skeptical binge reader",
+      "stance": "Scores only what would keep a tired reader moving to the next episode.",
+      "minimum_pass_score": 8.0,
+      "score_weights": {
+        "narrative_drive": 0.1481,
+        "continuity_integrity": 0.1235,
+        "reveal_discipline": 0.1235,
+        "character_knowledge_integrity": 0.1235,
+        "reader_afterimage": 0.1358,
+        "anti_llm_surface": 0.1235,
+        "bingeability": 0.2222
+      },
+      "red_flag_keywords": [
+        "예상 가능",
+        "흥미 없음",
+        "설명"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "visible_order": 1,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP01",
+      "source_scene_id": "EP01_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_163f8a119db1",
+      "visible_order": 2,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP01",
+      "source_scene_id": "EP01_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "visible_order": 3,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP02",
+      "source_scene_id": "EP02_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "visible_order": 4,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP02",
+      "source_scene_id": "EP02_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "visible_order": 5,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP03",
+      "source_scene_id": "EP03_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_283c2d66a019",
+      "visible_order": 6,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP03",
+      "source_scene_id": "EP03_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "visible_order": 7,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP04",
+      "source_scene_id": "EP04_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "visible_order": 8,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "gi",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP04",
+      "source_scene_id": "EP04_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "visible_order": 9,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP05",
+      "source_scene_id": "EP05_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "visible_order": 10,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP05",
+      "source_scene_id": "EP05_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_fc4323721720",
+      "visible_order": 11,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP06",
+      "source_scene_id": "EP06_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_8e17c80425de",
+      "visible_order": 12,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP06",
+      "source_scene_id": "EP06_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_2ea994370365",
+      "visible_order": 13,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP07",
+      "source_scene_id": "EP07_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_37683708310c",
+      "visible_order": 14,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP07",
+      "source_scene_id": "EP07_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "visible_order": 15,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP08",
+      "source_scene_id": "EP08_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "visible_order": 16,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP08",
+      "source_scene_id": "EP08_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "visible_order": 17,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP09",
+      "source_scene_id": "EP09_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "visible_order": 18,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "seung",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP09",
+      "source_scene_id": "EP09_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_d074af6ee521",
+      "visible_order": 19,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP10",
+      "source_scene_id": "EP10_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_401d68aac452",
+      "visible_order": 20,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다.",
+      "act": "seung",
+      "reveal_policy": "foreshadow_only",
+      "knowledge_mode": "do_not_name_fact",
+      "source_episode_id": "EP10",
+      "source_scene_id": "EP10_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "visible_order": 21,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP11",
+      "source_scene_id": "EP11_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_7da219fa9664",
+      "visible_order": 22,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP11",
+      "source_scene_id": "EP11_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "visible_order": 23,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP12",
+      "source_scene_id": "EP12_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "visible_order": 24,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP12",
+      "source_scene_id": "EP12_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_972033fda15c",
+      "visible_order": 25,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP13",
+      "source_scene_id": "EP13_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "visible_order": 26,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP13",
+      "source_scene_id": "EP13_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_f985cea05852",
+      "visible_order": 27,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP14",
+      "source_scene_id": "EP14_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_67de54d3f712",
+      "visible_order": 28,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "jeon",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP14",
+      "source_scene_id": "EP14_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "visible_order": 29,
+      "visible_excerpt": "남은 컵의 온기 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "gyeol",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP15",
+      "source_scene_id": "EP15_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "visible_order": 30,
+      "visible_excerpt": "남은 컵의 온기 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "gyeol",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP15",
+      "source_scene_id": "EP15_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_067139ad336b",
+      "visible_order": 31,
+      "visible_excerpt": "남은 컵의 온기 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "gyeol",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP16",
+      "source_scene_id": "EP16_SC01",
+      "hidden_origin": "stage87_scaleup_evidence"
+    },
+    {
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "visible_order": 32,
+      "visible_excerpt": "남은 컵의 온기 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다.",
+      "act": "gyeol",
+      "reveal_policy": "allow",
+      "knowledge_mode": "indirect_suspicion_only",
+      "source_episode_id": "EP16",
+      "source_scene_id": "EP16_SC10",
+      "hidden_origin": "stage87_scaleup_evidence"
+    }
+  ],
+  "visible_blind_samples": [
+    {
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "visible_order": 1,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_163f8a119db1",
+      "visible_order": 2,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "visible_order": 3,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "visible_order": 4,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "visible_order": 5,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_283c2d66a019",
+      "visible_order": 6,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "visible_order": 7,
+      "visible_excerpt": "문턱의 찬기 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "visible_order": 8,
+      "visible_excerpt": "문턱의 찬기 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "visible_order": 9,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "visible_order": 10,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_fc4323721720",
+      "visible_order": 11,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_8e17c80425de",
+      "visible_order": 12,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_2ea994370365",
+      "visible_order": 13,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_37683708310c",
+      "visible_order": 14,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "visible_order": 15,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "visible_order": 16,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "visible_order": 17,
+      "visible_excerpt": "늦게 접힌 종이 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "visible_order": 18,
+      "visible_excerpt": "늦게 접힌 종이 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_d074af6ee521",
+      "visible_order": 19,
+      "visible_excerpt": "늦게 접힌 종이 #01. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_401d68aac452",
+      "visible_order": 20,
+      "visible_excerpt": "늦게 접힌 종이 #10. 정답 대신 문턱의 찬기가 먼저 왔다. 이름 없는 의심이 손등 위에 식었다."
+    },
+    {
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "visible_order": 21,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_7da219fa9664",
+      "visible_order": 22,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "visible_order": 23,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "visible_order": 24,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_972033fda15c",
+      "visible_order": 25,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "visible_order": 26,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_f985cea05852",
+      "visible_order": 27,
+      "visible_excerpt": "뒤집힌 불빛 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_67de54d3f712",
+      "visible_order": 28,
+      "visible_excerpt": "뒤집힌 불빛 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "visible_order": 29,
+      "visible_excerpt": "남은 컵의 온기 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "visible_order": 30,
+      "visible_excerpt": "남은 컵의 온기 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_067139ad336b",
+      "visible_order": 31,
+      "visible_excerpt": "남은 컵의 온기 #01. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    },
+    {
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "visible_order": 32,
+      "visible_excerpt": "남은 컵의 온기 #10. 대답은 문장 끝에서 멈췄다. 그는 모르는 사람처럼, 하지만 이미 늦은 사람처럼 컵을 내려놓았다."
+    }
+  ],
+  "assessments": [
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "senior_drama_editor_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "platform_serialization_editor_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "continuity_script_editor_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.26,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "genre_reader_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.27,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.22,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.3,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "anti_llm_surface_reader_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.24,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_b33dd3ec8aa1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_b33dd3ec8aa1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_163f8a119db1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_163f8a119db1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_0ecbbce3ed26",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_0ecbbce3ed26",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_7945b53dce1f",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7945b53dce1f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_4ea3b5b6b0b1",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4ea3b5b6b0b1",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_283c2d66a019",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_283c2d66a019",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_fd750bd66f87",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fd750bd66f87",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_d8070cd6e590",
+      "axis_scores": {
+        "narrative_drive": 8.23,
+        "continuity_integrity": 8.25,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.3,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.13
+      },
+      "weighted_score": 8.25,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d8070cd6e590",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_8ceb072df64c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8ceb072df64c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_45a2ffa44789",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_45a2ffa44789",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_fc4323721720",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_fc4323721720",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_8e17c80425de",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_8e17c80425de",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_2ea994370365",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_2ea994370365",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_37683708310c",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_37683708310c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_d1bad4ce276e",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d1bad4ce276e",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_ebdf7103483f",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_ebdf7103483f",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_14a4a2ae88b4",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_14a4a2ae88b4",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_c51e246d22ee",
+      "axis_scores": {
+        "narrative_drive": 8.17,
+        "continuity_integrity": 8.31,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.04
+      },
+      "weighted_score": 8.2,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_c51e246d22ee",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_d074af6ee521",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d074af6ee521",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_401d68aac452",
+      "axis_scores": {
+        "narrative_drive": 8.35,
+        "continuity_integrity": 8.3,
+        "reveal_discipline": 8.35,
+        "character_knowledge_integrity": 8.32,
+        "reader_afterimage": 8.32,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.18
+      },
+      "weighted_score": 8.29,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_401d68aac452",
+        "reveal_policy=foreshadow_only",
+        "knowledge_mode=do_not_name_fact",
+        "sensory_afterimage_present",
+        "reveal_control_visible_without_raw_fact"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_f8a322c4b422",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8a322c4b422",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_7da219fa9664",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_7da219fa9664",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_3fcc3a29f254",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_3fcc3a29f254",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_cb4f70319e9d",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_cb4f70319e9d",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_972033fda15c",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_972033fda15c",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_d5f1769359ce",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_d5f1769359ce",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_f985cea05852",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f985cea05852",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_67de54d3f712",
+      "axis_scores": {
+        "narrative_drive": 8.27,
+        "continuity_integrity": 8.35,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.34,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.08
+      },
+      "weighted_score": 8.23,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_67de54d3f712",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_dc08cbed04b0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_dc08cbed04b0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_f8265e54b3ac",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_f8265e54b3ac",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_067139ad336b",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_067139ad336b",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    },
+    {
+      "agent_id": "skeptical_binge_reader_agent",
+      "blinded_sample_id": "blind_4794e6fd4fd0",
+      "axis_scores": {
+        "narrative_drive": 8.21,
+        "continuity_integrity": 8.33,
+        "reveal_discipline": 8.06,
+        "character_knowledge_integrity": 8.3,
+        "reader_afterimage": 8.33,
+        "anti_llm_surface": 8.29,
+        "bingeability": 8.06
+      },
+      "weighted_score": 8.21,
+      "verdict": "pass",
+      "notes": [
+        "blind_sample=blind_4794e6fd4fd0",
+        "reveal_policy=allow",
+        "knowledge_mode=indirect_suspicion_only",
+        "sensory_afterimage_present"
+      ],
+      "red_flags": []
+    }
+  ],
+  "claim": "Stage88 replaces external human editor/reader evaluation with a deterministic local AI-agent blind benchmark while preserving provider-zero and Node2 surface-only boundaries."
+}

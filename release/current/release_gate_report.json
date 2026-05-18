@@ -1,0 +1,737 @@
+{
+  "status": "pass",
+  "issues": [],
+  "runtime_smoke": {
+    "status": "pass",
+    "issues": [],
+    "scene_id": "example_scene_001",
+    "external_provider_calls": 0
+  },
+  "graph_nexus_release_gate": {
+    "stage": "72.1",
+    "status": "pass",
+    "issues": [],
+    "gitnexus": {
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "optional_runtime_dependency": false,
+      "fallback_available": true,
+      "error": "gitnexus binary not installed; npx path is available for optional use"
+    },
+    "gitnexus_optional_only": true,
+    "python_fallback_available": true,
+    "provider_default_calls": 0,
+    "code_graph_available": true,
+    "narrative_graph_available": true,
+    "stage_lineage_graph_available": true,
+    "node2_raw_reveal_access_count": 0,
+    "checks": {
+      "lineage_preflight": {
+        "status": "pass",
+        "goal": "Stage72.1 GraphNexus restoration",
+        "missing_stages": [],
+        "stage_count": 35,
+        "graph_intelligence_lineage_present": true
+      },
+      "impact": {
+        "status": "pass",
+        "impact": {
+          "target": "Node2ProseCompiler",
+          "risk_level": "medium",
+          "risk_score": 0.6000000000000001,
+          "code_hits": [
+            "src/v1700/nodes/node2_prose_renderer/compiler.py"
+          ],
+          "narrative_node_count": 2,
+          "lineage_node_count": 35,
+          "risks": [
+            "node2_surface_contract_must_hold",
+            "forbidden_reveal_projection_required"
+          ]
+        },
+        "requires_human_attention": false
+      },
+      "legacy_logic_survival": {
+        "status": "pass",
+        "stage": "STAGE61-66",
+        "required_concepts": [
+          "authority boundaries",
+          "feature flag integration",
+          "graph sidecar"
+        ],
+        "missing_concepts": [],
+        "current_status": "restored_as_optional_graphnexus_layer"
+      },
+      "node_projection": {
+        "status": "pass",
+        "node2_raw_graph_access": false,
+        "node2_packet": {
+          "packet_type": "Node2GraphSurfacePacket",
+          "scene_id": "S72_1_SAMPLE",
+          "surface_tone": "reader_facing",
+          "relationship_pressure": "medium",
+          "sensory_anchors": [
+            "setting",
+            "gesture"
+          ],
+          "forbidden_reveal_labels": [
+            "locked_reveal_1"
+          ],
+          "style_drift_warnings": []
+        },
+        "node3_packet": {
+          "packet_type": "Node3GraphCriticPacket",
+          "contradiction_risks": [
+            "forbidden_reveal_projection_required"
+          ],
+          "leakage_risks": [
+            "forbidden_reveal_projection_required"
+          ],
+          "impact": {
+            "risks": [
+              "forbidden_reveal_projection_required"
+            ]
+          }
+        }
+      }
+    },
+    "context_packet": {
+      "code_summary": {
+        "available": true,
+        "source": "python_fallback",
+        "node_count": 746
+      },
+      "narrative_summary": {
+        "available": true,
+        "node_count": 2,
+        "edge_count": 1
+      },
+      "lineage_summary": {
+        "available": true,
+        "node_count": 35,
+        "stage72_1_present": true
+      },
+      "warnings": [
+        "node2_surface_contract_must_hold",
+        "forbidden_reveal_projection_required"
+      ]
+    }
+  },
+  "stage72_2_release_gate": {
+    "status": "pass",
+    "stage": "72.2",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage72_3_release_gate": {
+    "status": "pass",
+    "stage": "72.3",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage73_1_release_gate": {
+    "status": "pass",
+    "stage": "stage73.1",
+    "title": "historical compact evidence summary",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage74_release_gate": {
+    "status": "pass",
+    "stage": "74",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage75_release_gate": {
+    "status": "pass",
+    "stage": "75",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage76_release_gate": {
+    "status": "pass",
+    "stage": "76",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage77_release_gate": {
+    "status": "pass",
+    "stage": "77",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage78_release_gate": {
+    "status": "pass",
+    "stage": "78",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage79_release_gate": {
+    "status": "pass",
+    "stage": "79",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage80_release_gate": {
+    "status": "pass",
+    "stage": "80",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage81_release_gate": {
+    "status": "pass",
+    "stage": "81",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage81_1_release_gate": {
+    "status": "pass",
+    "stage": "81.1",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage82_release_gate": {
+    "status": "pass",
+    "stage": "82",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage83_release_gate": {
+    "status": "pass",
+    "stage": "83",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage83_1_release_gate": {
+    "status": "pass",
+    "stage": "83.1",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage84_release_gate": {
+    "status": "pass",
+    "stage": "84",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage85_release_gate": {
+    "status": "pass",
+    "stage": "85",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage86_release_gate": {
+    "status": "pass",
+    "stage": "86",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage87_release_gate": {
+    "status": "pass",
+    "stage": "87",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage88_release_gate": {
+    "status": "pass",
+    "stage": "88",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage89_release_gate": {
+    "status": "pass",
+    "stage": "89",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage90_release_gate": {
+    "status": "pass",
+    "stage": "90",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage91_release_gate": {
+    "status": "pass",
+    "stage": "91",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage92_release_gate": {
+    "status": "pass",
+    "stage": "92",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage93_release_gate": {
+    "status": "pass",
+    "stage": "93",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage94_release_gate": {
+    "status": "pass",
+    "stage": "94",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage95_release_gate": {
+    "status": "pass",
+    "stage": "95",
+    "issues": [],
+    "provider_default_calls": 0
+  },
+  "stage96_release_gate": {
+    "status": "pass",
+    "stage": "96",
+    "baseline_stage": "95",
+    "issues": [],
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage97_release_gate": {
+    "status": "pass",
+    "stage": "97",
+    "baseline_stage": "96",
+    "issues": [],
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage97_1_release_gate": {
+    "status": "pass",
+    "stage": "97.1",
+    "baseline_stage": "97",
+    "title": "Adversarial Longform Validation Hardening",
+    "issues": [],
+    "provider_default_calls": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage97_2_release_gate": {
+    "status": "pass",
+    "stage": "97.2",
+    "baseline_stage": "97.1",
+    "title": "Unified Multi-Provider Runtime Governance Layer",
+    "issues": [],
+    "provider_default_calls": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage98_release_gate": {
+    "status": "pass",
+    "stage": "98",
+    "baseline_stage": "97.2",
+    "title": "Commercial Studio Workflow + Publishing Package",
+    "issues": [],
+    "provider_default_calls": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage99_release_gate": {
+    "status": "pass",
+    "stage": "99",
+    "baseline_stage": "98",
+    "title": "GitNexus-Aware Final Hardening / Security / Regression Freeze",
+    "issues": [],
+    "provider_default_calls": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0
+  },
+  "stage100_release_gate": {
+    "status": "pass",
+    "stage": "100",
+    "baseline_stage": "99",
+    "title": "Literary OS 1.0 Release Candidate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage101_release_gate": {
+    "status": "pass",
+    "stage": "101",
+    "baseline_stage": "100",
+    "title": "Cross-Lineage Absorption & Scenario Room Integration",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage102_release_gate": {
+    "status": "pass",
+    "stage": "102",
+    "baseline_stage": "101",
+    "title": "Real Writer Trial & Blind Benchmark",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage103_release_gate": {
+    "status": "pass",
+    "stage": "103",
+    "baseline_stage": "102",
+    "title": "Production Hardening & Deployment Readiness",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage104_release_gate": {
+    "status": "pass",
+    "stage": "104",
+    "baseline_stage": "103",
+    "title": "Commercial Writer Studio Beta",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage105_release_gate": {
+    "status": "pass",
+    "stage": "105",
+    "baseline_stage": "104",
+    "title": "Multi-Provider Creative Arbitration 2.0",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage106_release_gate": {
+    "status": "pass",
+    "stage": "106",
+    "baseline_stage": "105",
+    "title": "Adaptive Author Profile & Style Genome",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage107_release_gate": {
+    "status": "pass",
+    "stage": "107",
+    "baseline_stage": "106",
+    "title": "Longform Production Suite",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage107_5_sandbox_gate": {
+    "status": "pass",
+    "stage": "107.5",
+    "baseline_stage": "107",
+    "title": "Provider Live Sandbox Adapter Verification",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage108_release_gate": {
+    "status": "pass",
+    "stage": "108",
+    "baseline_stage": "107.5",
+    "title": "External Review & Editorial Board Mode",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage109_release_gate": {
+    "status": "pass",
+    "stage": "109",
+    "baseline_stage": "108",
+    "title": "Plugin / Marketplace Architecture",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage110_release_gate": {
+    "status": "pass",
+    "stage": "110",
+    "baseline_stage": "109",
+    "title": "V1700 Literary OS 1.0 Stable",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage111_release_gate": {
+    "status": "pass",
+    "stage": "111",
+    "baseline_stage": "110",
+    "title": "V485 Absorption Candidate Bridge",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage112_release_gate": {
+    "status": "pass",
+    "stage": "112",
+    "baseline_stage": "111",
+    "title": "GitNexus-Aware NIE Preflight Bridge",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage113_release_gate": {
+    "status": "pass",
+    "stage": "113",
+    "baseline_stage": "112",
+    "title": "PhysicsRewardBridge + MAE Reward Wiring",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage114_release_gate": {
+    "status": "pass",
+    "stage": "114",
+    "baseline_stage": "113",
+    "title": "AdaptiveMomentumWeights",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage115_release_gate": {
+    "status": "pass",
+    "stage": "115",
+    "baseline_stage": "114",
+    "title": "CharacterInfluenceMatrix + Structural Balance",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage116_release_gate": {
+    "status": "pass",
+    "stage": "116",
+    "baseline_stage": "115",
+    "title": "Domain-Specific RAG Fusion",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage117_release_gate": {
+    "status": "pass",
+    "stage": "117",
+    "baseline_stage": "116",
+    "title": "NarrativeTensionCurve",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage118_release_gate": {
+    "status": "pass",
+    "stage": "118",
+    "baseline_stage": "117",
+    "title": "NIL Orchestrator",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage119_release_gate": {
+    "status": "pass",
+    "stage": "119",
+    "baseline_stage": "118",
+    "title": "NIE Adversarial Regression Pack",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage120_release_gate": {
+    "status": "pass",
+    "stage": "120",
+    "baseline_stage": "119",
+    "title": "Gate25 NIE v1.0 Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage121_release_gate": {
+    "status": "pass",
+    "stage": "121",
+    "baseline_stage": "120",
+    "title": "Cross-Lineage Formula Reconciliation & Absorption Preflight Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage122_release_gate": {
+    "status": "pass",
+    "stage": "122",
+    "baseline_stage": "121",
+    "title": "NIE v2.0 Stability Absorption Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage123_release_gate": {
+    "status": "pass",
+    "stage": "123",
+    "baseline_stage": "122",
+    "title": "ASD / Gate28 Absorption Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage124_release_gate": {
+    "status": "pass",
+    "stage": "124",
+    "baseline_stage": "123",
+    "title": "PNE / Gate29 Absorption Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage125_release_gate": {
+    "status": "pass",
+    "stage": "125",
+    "baseline_stage": "124",
+    "title": "Gate25/28/29 Governor Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage126_release_gate": {
+    "status": "pass",
+    "stage": "126",
+    "baseline_stage": "125",
+    "title": "Cross-Lineage Intelligence Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage127_release_gate": {
+    "status": "pass",
+    "stage": "127",
+    "baseline_stage": "126",
+    "title": "MultiWork Preflight & Isolation Audit Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage128_release_gate": {
+    "status": "pass",
+    "stage": "128",
+    "baseline_stage": "127",
+    "title": "SharedWorld / SharedCharacter Read-Only Absorption Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.provider.multi_provider_creative_comparison",
+  "stage_origins": [
+    "STAGE10"
+  ],
+  "title": "Multi-Provider Creative Comparison",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage10_multi_provider_creative_comparison_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

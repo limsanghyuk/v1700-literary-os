@@ -1,0 +1,473 @@
+{
+  "stage": "75",
+  "relations": [
+    {
+      "source": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "node2_candidate_generation",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/nodes/node2_prose_renderer/candidates.py + planned Stage77 rewrite_orchestrator",
+      "evidence": [
+        "docs/concepts/reader_surface_evaluation.md"
+      ]
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage77_node2_rewrite_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "REQUIRES_GATE",
+      "target": "stage77_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "node2_candidate_generation",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE25_NODE2_REWRITE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "node2_authority_guard",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/nodes/node2_prose_renderer/validators.py",
+      "evidence": [
+        "docs/architecture/node_authority_boundaries.md"
+      ]
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage72_1_node_projection_gate.py",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_GATE",
+      "target": "node_projection_gate",
+      "evidence": []
+    },
+    {
+      "source": "node2_authority_guard",
+      "relation": "REQUIRES_GATE",
+      "target": "stage77_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "temporal_continuity",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/temporal_continuity.py",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "temporal_continuity",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "emotional_pressure_valve",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/pressure.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "emotional_pressure_valve",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE39_DRAMA_EXECUTION_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "branch_commit_rollback",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/drama_execution/branching.py",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage78_drama_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "REQUIRES_GATE",
+      "target": "stage78_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "branch_commit_rollback",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "three_episode_structure",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/longform/planners.py",
+      "evidence": [
+        "docs/runbooks/stage74_longform_execution.md"
+      ]
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage74_longform_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_GATE",
+      "target": "longform_execution_gate",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "three_episode_structure",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "sequence_scale_planning",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "sequence_scale_planning",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE50_THREE_EPISODE_ENGINE",
+      "relation": "DEFINES_LOGIC",
+      "target": "scene_scale_planning",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "scene_scale_planning",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE56_QUALITY_GATE",
+      "relation": "DEFINES_LOGIC",
+      "target": "ten_axis_literary_quality",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "CURRENT_LOCATION",
+      "target": "planned src/v1700/reabsorption/stage60_literary_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "ten_axis_literary_quality",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE57_REFINEMENT_LOOP",
+      "relation": "DEFINES_LOGIC",
+      "target": "score_improving_refinement",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/longform/refinement.py + planned Stage76 Stage60 loop",
+      "evidence": [
+        "docs/concepts/literary_formula_stack.md"
+      ]
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage76_stage60_literary_engine_reabsorption.py",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "REQUIRES_GATE",
+      "target": "stage76_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "score_improving_refinement",
+      "relation": "BLOCKS_FULL_LITERARY_CLAIM_UNTIL_REABSORBED",
+      "target": "Stage76_or_later",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "drse_weighted_relation_scoring",
+      "evidence": []
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/drse.py",
+      "evidence": [
+        "docs/concepts/drse_formula.md"
+      ]
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "drse_weighted_relation_scoring",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "emotional_momentum_vector",
+      "evidence": []
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/emotional_momentum.py",
+      "evidence": [
+        "docs/concepts/emotional_momentum_vector.md"
+      ]
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "emotional_momentum_vector",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_V328_DRSE_STACK",
+      "relation": "DEFINES_LOGIC",
+      "target": "mise_en_scene_directive",
+      "evidence": []
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/literary_formulas/mise_en_scene_compiler.py",
+      "evidence": [
+        "docs/concepts/mise_en_scene_compiler.md"
+      ]
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage73_1_literary_formula_restoration.py",
+      "evidence": []
+    },
+    {
+      "source": "mise_en_scene_directive",
+      "relation": "REQUIRES_GATE",
+      "target": "stage73_1_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE72_GRAPHNEXUS",
+      "relation": "DEFINES_LOGIC",
+      "target": "graph_nexus_three_graphs",
+      "evidence": []
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "CURRENT_LOCATION",
+      "target": "src/v1700/graph_nexus",
+      "evidence": [
+        "docs/concepts/graph_nexus_3graph_model.md"
+      ]
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage72_1_graph_nexus_three_graphs.py",
+      "evidence": []
+    },
+    {
+      "source": "graph_nexus_three_graphs",
+      "relation": "REQUIRES_GATE",
+      "target": "graph_nexus_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "BP_STAGE73_74_BASELINE_AND_FORMULA",
+      "relation": "DEFINES_LOGIC",
+      "target": "full_workspace_reproducibility",
+      "evidence": []
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "CURRENT_LOCATION",
+      "target": "package/release manifests",
+      "evidence": [
+        "release/current/STAGE74_FULL_WORKSPACE_RELEASE_REPORT.md"
+      ]
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "REQUIRES_TEST",
+      "target": "tests/test_stage74_longform_execution_engine.py",
+      "evidence": []
+    },
+    {
+      "source": "full_workspace_reproducibility",
+      "relation": "REQUIRES_GATE",
+      "target": "stage74_release_gate",
+      "evidence": []
+    },
+    {
+      "source": "GitNexus",
+      "relation": "SUPPORTS",
+      "target": "GraphNexus CodeGraph",
+      "evidence": []
+    },
+    {
+      "source": "GraphNexus",
+      "relation": "SUPPORTS",
+      "target": "BranchpointLogicGraph",
+      "evidence": []
+    },
+    {
+      "source": "BranchpointLogicGraph",
+      "relation": "PROTECTS",
+      "target": "Longform Literary Engine",
+      "evidence": []
+    },
+    {
+      "source": "DRSE",
+      "relation": "SAFE_PROJECTS_TO_NODE2",
+      "target": "Node2GraphSurfacePacket",
+      "evidence": []
+    }
+  ]
+}

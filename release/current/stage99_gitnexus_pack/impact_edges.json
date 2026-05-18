@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "edges": [
+    {
+      "source_node_id": "tools::run_stage95_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage95_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage95_manifest.json",
+      "target_node_id": "src::v1700::gates::stage95_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage95_release_gate.py",
+      "target_node_id": "release::current::stage95_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage96_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage96_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage96_manifest.json",
+      "target_node_id": "src::v1700::gates::stage96_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage96_release_gate.py",
+      "target_node_id": "release::current::stage96_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage97_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage97_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage97_manifest.json",
+      "target_node_id": "src::v1700::gates::stage97_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage97_release_gate.py",
+      "target_node_id": "release::current::stage97_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage97_1_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage97_1_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage97_1_manifest.json",
+      "target_node_id": "src::v1700::gates::stage97_1_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage97_1_release_gate.py",
+      "target_node_id": "release::current::stage97_1_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage97_2_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage97_2_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage97_2_manifest.json",
+      "target_node_id": "src::v1700::gates::stage97_2_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage97_2_release_gate.py",
+      "target_node_id": "release::current::stage97_2_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage98_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage98_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage98_manifest.json",
+      "target_node_id": "src::v1700::gates::stage98_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage98_release_gate.py",
+      "target_node_id": "release::current::stage98_release_gate_report.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage98_manifest.json",
+      "target_node_id": "src::v1700::gates::stage98_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::gates::stage98_release_gate.py",
+      "target_node_id": "src::v1700::studio_workflow::studio_orchestrator.py",
+      "edge_type": "validates",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::studio_workflow::publishing_package.py",
+      "target_node_id": "manifests::stage98_publishing_package_manifest.json",
+      "edge_type": "writes_evidence",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage98_branchpoint_trace_manifest.json",
+      "target_node_id": "manifests::stage97_2_branchpoint_trace_manifest.json",
+      "edge_type": "traces_branchpoint",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "src::v1700::provider_runtime::release_policy.py",
+      "target_node_id": "src::v1700::gates::stage97_2_release_gate.py",
+      "edge_type": "guards",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage99_0_gitnexus_impact_baseline.py",
+      "target_node_id": "src::v1700::stage99::impact_baseline.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage99_1_security_privacy_hardening.py",
+      "target_node_id": "src::v1700::security_hardening::report.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage99_2_gate_replay_freeze.py",
+      "target_node_id": "src::v1700::stage99::gate_replay.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "tools::run_stage99_release_gate.py",
+      "target_node_id": "src::v1700::gates::stage99_release_gate.py",
+      "edge_type": "calls",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage99_manifest.json",
+      "target_node_id": "src::v1700::gates::stage99_release_gate.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage99_gitnexus_impact_manifest.json",
+      "target_node_id": "src::v1700::stage99::impact_baseline.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage99_security_hardening_manifest.json",
+      "target_node_id": "src::v1700::security_hardening::report.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage99_regression_freeze_manifest.json",
+      "target_node_id": "src::v1700::stage99::gate_replay.py",
+      "edge_type": "declares",
+      "confidence": 1.0
+    },
+    {
+      "source_node_id": "manifests::stage100_readiness_manifest.json",
+      "target_node_id": "release::current::stage100_readiness_precheck_report.json",
+      "edge_type": "declares",
+      "confidence": 1.0
+    }
+  ]
+}

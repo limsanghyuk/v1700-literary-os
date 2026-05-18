@@ -1,0 +1,21 @@
+{
+  "stage": "119",
+  "name": "Stage119 NIE Adversarial Negative Corpus Manifest",
+  "min_adversarial_cases": 12,
+  "normal_case_required": true,
+  "expected_failure_contract_required": true,
+  "evidence_required": true,
+  "pack_dir": "release/current/stage119_nie_adversarial_pack",
+  "case_families": [
+    "mae_reward_contract",
+    "reward_bridge_boundary",
+    "adaptive_momentum_weights",
+    "character_influence_matrix",
+    "structural_balance",
+    "role_tier_assignment",
+    "domain_rag_fusion",
+    "narrative_tension_curve",
+    "nil_orchestrator_evidence",
+    "gate25_detection"
+  ]
+}

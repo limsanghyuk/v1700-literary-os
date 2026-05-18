@@ -1,0 +1,2178 @@
+{
+  "stage": "102",
+  "baseline_stage": "101",
+  "title": "Real Writer Trial & Blind Benchmark",
+  "status": "pass",
+  "issues": [],
+  "stage102_0_preflight": {
+    "stage": "102.0",
+    "baseline_stage": "101",
+    "title": "Stage102 Preflight and Trial Scope Lock",
+    "status": "pass",
+    "issues": [],
+    "stage101_release_gate_status": "pass",
+    "mandatory_predevelopment_protocol_present": true,
+    "trial_scope": "real_writer_trial_blind_benchmark_revision_efficiency",
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage102_1_writer_trial": {
+    "stage": "102.1",
+    "baseline_stage": "102.0",
+    "title": "Real Writer Workflow Trial",
+    "trial_type": "deterministic_local_writer_trial",
+    "status": "pass",
+    "issues": [],
+    "seed_count": 3,
+    "task_count": 5,
+    "task_completion_count": 5,
+    "average_friction_score": 8.6,
+    "baseline_minutes": 320,
+    "v1700_minutes": 170,
+    "saved_minutes": 150,
+    "tasks": [
+      {
+        "task_id": "task_story_bible",
+        "description": "Create story bible and character relation anchors.",
+        "completion_status": "PASS",
+        "baseline_minutes": 55,
+        "v1700_minutes": 30,
+        "friction_score": 8.7,
+        "notes": [
+          "branchpoint anchors visible"
+        ],
+        "saved_minutes": 25
+      },
+      {
+        "task_id": "task_episode_outline",
+        "description": "Build three-episode outline from the same seed prompt.",
+        "completion_status": "PASS",
+        "baseline_minutes": 90,
+        "v1700_minutes": 48,
+        "friction_score": 8.6,
+        "notes": [
+          "macro and micro plot separated"
+        ],
+        "saved_minutes": 42
+      },
+      {
+        "task_id": "task_scene_revision",
+        "description": "Revise weak scene into reader-facing prose without raw reveal leakage.",
+        "completion_status": "PASS",
+        "baseline_minutes": 70,
+        "v1700_minutes": 36,
+        "friction_score": 8.8,
+        "notes": [
+          "Node2 boundary preserved"
+        ],
+        "saved_minutes": 34
+      },
+      {
+        "task_id": "task_scenario_handoff",
+        "description": "Convert prose intent into scenario room beat board.",
+        "completion_status": "PASS",
+        "baseline_minutes": 65,
+        "v1700_minutes": 34,
+        "friction_score": 8.5,
+        "notes": [
+          "scene beat board and prop cues present"
+        ],
+        "saved_minutes": 31
+      },
+      {
+        "task_id": "task_export_review",
+        "description": "Review export package and release evidence for developer handoff.",
+        "completion_status": "PASS",
+        "baseline_minutes": 40,
+        "v1700_minutes": 22,
+        "friction_score": 8.4,
+        "notes": [
+          "clean evidence path present"
+        ],
+        "saved_minutes": 18
+      }
+    ],
+    "seeds": [
+      {
+        "seed_id": "stage102_seed_prose_01",
+        "prompt": "A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.",
+        "target_mode": "PROSE",
+        "evaluation_goal": "Measure reader-facing prose, emotional access, and anti-LLM surface.",
+        "constraints": [
+          "no raw reveal",
+          "surface-only prose",
+          "scene necessity required"
+        ]
+      },
+      {
+        "seed_id": "stage102_seed_scenario_01",
+        "prompt": "A quiet archivist and a rookie detective track a prop-led clue across three episodes.",
+        "target_mode": "SCENARIO",
+        "evaluation_goal": "Measure scene beats, action movement, dialogue silence, and prop-led reveal control.",
+        "constraints": [
+          "scenario beats visible",
+          "reveal budget preserved",
+          "production scene mapping required"
+        ]
+      },
+      {
+        "seed_id": "stage102_seed_hybrid_01",
+        "prompt": "A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.",
+        "target_mode": "HYBRID",
+        "evaluation_goal": "Measure hybrid longform structure, revision efficiency, and writer workflow usability.",
+        "constraints": [
+          "longform continuity",
+          "payoff debt audit",
+          "writer approval guard"
+        ]
+      }
+    ],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage102_2_blind_benchmark": {
+    "stage": "102.2",
+    "baseline_stage": "102.1",
+    "title": "Real Writer Trial Blind Benchmark",
+    "benchmark_type": "local_fixture_blind_benchmark",
+    "status": "pass",
+    "issues": [],
+    "seed_count": 3,
+    "candidate_count": 24,
+    "reviewer_count": 3,
+    "scorecard_count": 72,
+    "winner_candidate_id": "stage102_seed_prose_01_H",
+    "winner_mode": "V1700_HYBRID",
+    "candidate_averages": {
+      "stage102_seed_prose_01_A": 6.59,
+      "stage102_seed_prose_01_B": 7.38,
+      "stage102_seed_prose_01_C": 7.06,
+      "stage102_seed_prose_01_D": 6.36,
+      "stage102_seed_prose_01_E": 8.4,
+      "stage102_seed_prose_01_F": 8.35,
+      "stage102_seed_prose_01_G": 7.78,
+      "stage102_seed_prose_01_H": 8.84,
+      "stage102_seed_scenario_01_A": 6.59,
+      "stage102_seed_scenario_01_B": 7.38,
+      "stage102_seed_scenario_01_C": 7.06,
+      "stage102_seed_scenario_01_D": 6.36,
+      "stage102_seed_scenario_01_E": 8.4,
+      "stage102_seed_scenario_01_F": 8.35,
+      "stage102_seed_scenario_01_G": 7.78,
+      "stage102_seed_scenario_01_H": 8.84,
+      "stage102_seed_hybrid_01_A": 6.59,
+      "stage102_seed_hybrid_01_B": 7.38,
+      "stage102_seed_hybrid_01_C": 7.06,
+      "stage102_seed_hybrid_01_D": 6.36,
+      "stage102_seed_hybrid_01_E": 8.4,
+      "stage102_seed_hybrid_01_F": 8.35,
+      "stage102_seed_hybrid_01_G": 7.78,
+      "stage102_seed_hybrid_01_H": 8.84
+    },
+    "v1700_margin_over_pure_gpt": 2.25,
+    "visible_blind_candidates": [
+      {
+        "candidate_id": "stage102_seed_prose_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      }
+    ],
+    "revealed_candidates": [
+      {
+        "candidate_id": "stage102_seed_prose_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ],
+        "mode": "PURE_GPT_DIRECT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ],
+        "mode": "CLAUDE_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ],
+        "mode": "GEMINI_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ],
+        "mode": "OLLAMA_LOCAL_DRAFT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ],
+        "mode": "V1700_PROSE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ],
+        "mode": "V1700_SCENARIO",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ],
+        "mode": "V430_SCENARIO_ROOM",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ],
+        "mode": "V1700_HYBRID",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ],
+        "mode": "PURE_GPT_DIRECT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ],
+        "mode": "CLAUDE_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ],
+        "mode": "GEMINI_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ],
+        "mode": "OLLAMA_LOCAL_DRAFT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ],
+        "mode": "V1700_PROSE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ],
+        "mode": "V1700_SCENARIO",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ],
+        "mode": "V430_SCENARIO_ROOM",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ],
+        "mode": "V1700_HYBRID",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_A",
+        "hidden_label": "A",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+        "evidence_markers": [
+          "direct_draft",
+          "low_structure_evidence"
+        ],
+        "mode": "PURE_GPT_DIRECT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_B",
+        "hidden_label": "B",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+        "evidence_markers": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ],
+        "mode": "CLAUDE_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_C",
+        "hidden_label": "C",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+        "evidence_markers": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ],
+        "mode": "GEMINI_REFERENCE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_D",
+        "hidden_label": "D",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+        "evidence_markers": [
+          "local_privacy",
+          "revision_heavy"
+        ],
+        "mode": "OLLAMA_LOCAL_DRAFT",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_E",
+        "hidden_label": "E",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+        "evidence_markers": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ],
+        "mode": "V1700_PROSE",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_F",
+        "hidden_label": "F",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+        "evidence_markers": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ],
+        "mode": "V1700_SCENARIO",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_G",
+        "hidden_label": "G",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+        "evidence_markers": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ],
+        "mode": "V430_SCENARIO_ROOM",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_H",
+        "hidden_label": "H",
+        "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+        "evidence_markers": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ],
+        "mode": "V1700_HYBRID",
+        "provider_call_count": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "node2_raw_reveal_access": 0
+      }
+    ],
+    "scorecards": [
+      {
+        "candidate_id": "stage102_seed_prose_01_A",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.61,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_B",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.41,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_C",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.07,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_D",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_E",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.42,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_F",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.35,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_G",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.79,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_H",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.84,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_A",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.61,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_B",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.41,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_C",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.07,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_D",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_E",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.42,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_F",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.35,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_G",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.79,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_H",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.84,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_A",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.61,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_B",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.41,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_C",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.07,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_D",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_E",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.42,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_F",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.35,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_G",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.79,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_H",
+        "reviewer_id": "professional_drama_critic",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.84,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_A",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.49,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_B",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.23,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_C",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.01,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_D",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_E",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.31,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_F",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.4,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_G",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.8,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_H",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.86,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_A",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.49,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_B",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.23,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_C",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.01,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_D",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_E",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.31,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_F",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.4,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_G",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.8,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_H",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.86,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_A",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.49,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_B",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.23,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_C",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.01,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_D",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.37,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_E",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.31,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_F",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.4,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_G",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.8,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_H",
+        "reviewer_id": "writer_workflow_editor",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.86,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_A",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.67,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_B",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.5,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_C",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.1,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_D",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.35,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_E",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.47,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_F",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.29,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_G",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.75,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_prose_01_H",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.82,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_A",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.67,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_B",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.5,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_C",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.1,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_D",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.35,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_E",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.47,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_F",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.29,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_G",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.75,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_scenario_01_H",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.82,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_A",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.6,
+          "reader_pull": 7.0,
+          "character_agency": 6.8,
+          "prose_surface": 6.7,
+          "scenario_actionability": 6.4,
+          "reveal_discipline": 6.5,
+          "revision_readiness": 6.0
+        },
+        "weighted_score": 6.67,
+        "verdict": "REVISE",
+        "notes": [
+          "direct_draft",
+          "low_structure_evidence"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_B",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.4,
+          "reader_pull": 7.8,
+          "character_agency": 7.7,
+          "prose_surface": 8.0,
+          "scenario_actionability": 6.9,
+          "reveal_discipline": 7.0,
+          "revision_readiness": 6.6
+        },
+        "weighted_score": 7.5,
+        "verdict": "REVISE",
+        "notes": [
+          "long_context_texture",
+          "manual_gate_inference"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_C",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.0,
+          "reader_pull": 7.3,
+          "character_agency": 7.0,
+          "prose_surface": 7.1,
+          "scenario_actionability": 7.6,
+          "reveal_discipline": 6.9,
+          "revision_readiness": 6.5
+        },
+        "weighted_score": 7.1,
+        "verdict": "REVISE",
+        "notes": [
+          "visual_scene_energy",
+          "partial_contract_trace"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_D",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 6.4,
+          "reader_pull": 6.3,
+          "character_agency": 6.4,
+          "prose_surface": 6.1,
+          "scenario_actionability": 6.5,
+          "reveal_discipline": 6.7,
+          "revision_readiness": 6.2
+        },
+        "weighted_score": 6.35,
+        "verdict": "REVISE",
+        "notes": [
+          "local_privacy",
+          "revision_heavy"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_E",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.5,
+          "reader_pull": 8.6,
+          "character_agency": 8.4,
+          "prose_surface": 8.8,
+          "scenario_actionability": 7.5,
+          "reveal_discipline": 8.7,
+          "revision_readiness": 8.1
+        },
+        "weighted_score": 8.47,
+        "verdict": "PASS",
+        "notes": [
+          "node2_surface_only",
+          "anti_llm_surface",
+          "emotion_to_behavior"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_F",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.4,
+          "reader_pull": 8.1,
+          "character_agency": 8.5,
+          "prose_surface": 7.8,
+          "scenario_actionability": 8.8,
+          "reveal_discipline": 8.6,
+          "revision_readiness": 8.4
+        },
+        "weighted_score": 8.29,
+        "verdict": "PASS",
+        "notes": [
+          "scene_beat_board",
+          "dialogue_silence",
+          "prop_reveal_budget"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_G",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 7.9,
+          "reader_pull": 7.7,
+          "character_agency": 7.8,
+          "prose_surface": 7.4,
+          "scenario_actionability": 8.5,
+          "reveal_discipline": 7.8,
+          "revision_readiness": 7.5
+        },
+        "weighted_score": 7.75,
+        "verdict": "REVISE",
+        "notes": [
+          "scenario_room_fixture",
+          "cross_lineage_guard"
+        ]
+      },
+      {
+        "candidate_id": "stage102_seed_hybrid_01_H",
+        "reviewer_id": "binge_reader_panel",
+        "axis_scores": {
+          "structure": 8.9,
+          "reader_pull": 8.8,
+          "character_agency": 8.7,
+          "prose_surface": 8.7,
+          "scenario_actionability": 8.9,
+          "reveal_discipline": 9.0,
+          "revision_readiness": 8.9
+        },
+        "weighted_score": 8.82,
+        "verdict": "PASS",
+        "notes": [
+          "hybrid_workflow",
+          "payoff_debt_audit",
+          "writer_revision_queue",
+          "provider_zero"
+        ]
+      }
+    ],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "blind_identity_leakage": 0
+  },
+  "stage102_3_revision_efficiency": {
+    "stage": "102.3",
+    "baseline_stage": "102.2",
+    "title": "Revision Efficiency and Continuity Audit",
+    "status": "pass",
+    "issues": [],
+    "revision_efficiency": {
+      "baseline_revision_minutes": 320,
+      "v1700_revision_minutes": 172,
+      "issue_count_before": 24,
+      "issue_count_after": 8,
+      "unresolved_block_items": 0,
+      "plot_consistency_status": "PASS",
+      "payoff_debt_status": "PASS",
+      "scene_necessity_status": "PASS",
+      "revision_time_reduction_ratio": 0.463,
+      "issue_reduction_ratio": 0.667
+    },
+    "revision_time_reduction_ratio": 0.463,
+    "issue_reduction_ratio": 0.667,
+    "plot_consistency_status": "PASS",
+    "payoff_debt_status": "PASS",
+    "scene_necessity_status": "PASS",
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "external_human_claim": false
+}

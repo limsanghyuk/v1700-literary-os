@@ -1,0 +1,34 @@
+{
+  "stage": "stage118",
+  "name": "NIL Orchestrator",
+  "baseline_stage": "stage117",
+  "status": "active",
+  "new_packages": [
+    "src/v1700/nie/nil",
+    "src/v1700/stage118"
+  ],
+  "new_gates": [
+    "src/v1700/gates/stage118_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage118_nil_orchestrator.py",
+    "tools/run_stage118_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage118_nil_orchestrator.py"
+  ],
+  "release_evidence": [
+    "release/current/stage118_nil_orchestrator_report.json",
+    "release/current/stage118_release_gate_report.json"
+  ],
+  "invariants": {
+    "nil_orchestrator_required": true,
+    "component_count_required": 5,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  }
+}

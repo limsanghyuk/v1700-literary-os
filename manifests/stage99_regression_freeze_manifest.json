@@ -1,0 +1,7 @@
+{
+  "stage": "99.2",
+  "baseline_stage": "99.1",
+  "purpose": "Replay Stage95 through Stage98 gates and freeze regression evidence before Stage100.",
+  "required_pack": "release/current/stage99_regression_freeze_pack",
+  "replayed_stages": ["stage95", "stage96", "stage97", "stage97.1", "stage97.2", "stage98"]
+}

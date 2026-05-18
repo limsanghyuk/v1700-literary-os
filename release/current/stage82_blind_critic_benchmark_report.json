@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "prompt": "제도, 추방, 귀환을 통과하며 한 인물이 자신의 역할을 완성하는 한국 드라마",
+  "axes": [
+    "series_story_arc",
+    "macro_plot_architecture",
+    "episode_microplot_linkage",
+    "supporting_character_web",
+    "causal_event_weaving",
+    "emotional_accessibility",
+    "prose_naturalness",
+    "mise_en_scene_density",
+    "reveal_safety",
+    "longform_expandability"
+  ],
+  "blind_candidates": [
+    {
+      "candidate_id": "Candidate-A",
+      "hidden_label": "A",
+      "text": "소재: 제도, 추방, 귀환을 통과하며 한 인물이 자신의 역할을 완성하는 한국 드라마\n주인공은 낮은 자리에서 시작해 강한 적대자와 맞선다. 첫 화에서 그는 억울한 사건을 겪고, 두 번째 화에서는 진실을 찾으려 하며, 마지막에는 자신의 운명을 받아들인다. 이야기는 빠르게 전개되고 주인공과 반대 인물의 갈등을 중심으로 흘러간다. 주변 인물들은 주인공을 돕거나 방해하는 기능을 가진다. 각 장면은 갈등을 보여 주지만 전체 스토리, 거시 플롯, 화 내부 미시 플롯의 구분은 자세히 설계되지 않는다.",
+      "evidence": {
+        "mode": "direct_generation",
+        "provider_default_calls": 0
+      },
+      "source_label": "pure_gpt_direct_mode_baseline"
+    },
+    {
+      "candidate_id": "Candidate-B",
+      "hidden_label": "B",
+      "text": "소재: 제도, 추방, 귀환을 통과하며 한 인물이 자신의 역할을 완성하는 한국 드라마\n전체 스토리 변화: 무력한 생존자에서 관계와 사건의 의미를 읽고 선택의 책임을 감당하는 인물로 변화한다.\n거시 플롯 구조: 거시 플롯 MP01_APPRENTICESHIP_WORLD: 첫 세계 진입과 규율의 학습 — 전체 스토리의 출발점과 첫 정체성 획득을 담당한다.; 압력=재능과 규율, 생존과 윤리, 스승과 경쟁자의 압력이 동시에 작동한다. / 거시 플롯 MP02_EXILE_RECOMPOSITION: 추방과 재구성 — 전체 스토리의 중간 변형과 반전된 학습을 담당한다.; 압력=상실, 생존, 재학습, 다른 계층과의 접촉이 주인공을 다시 만든다. / 거시 플롯 MP03_RETURN_WITH_NEW_FUNCTION: 새 기능으로의 귀환과 최종 책임 — 전체 스토리의 종착점과 처음-끝 변화를 완성한다.; 압력=권력, 생명 윤리, 과거 사건의 잔향, 주변 인물의 선택이 충돌한다.\n각 화 구성: 화 EP01: 첫 세계 진입과 규율의 학습 국면에서 전체 스토리의 변화를 1번째 단계로 전진시킨다.; 미시 플롯: EP01_MPLOT01:닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다./주변 인물이 주인공의 선택을 다르게 해석한다., EP01_MPLOT02:주변 인물의 사소한 선택이 제도적 압력과 연결된다./조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다., EP01_MPLOT03:작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다./주인공은 해결보다 비용이 남는 선택을 한다. / 화 EP02: 첫 세계 진입과 규율의 학습 국면에서 전체 스토리의 변화를 2번째 단계로 전진시킨다.; 미시 플롯: EP02_MPLOT01:닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다./주변 인물이 주인공의 선택을 다르게 해석한다., EP02_MPLOT02:주변 인물의 사소한 선택이 제도적 압력과 연결된다./조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다., EP02_MPLOT03:작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다./주인공은 해결보다 비용이 남는 선택을 한다. / 화 EP03: 추방과 재구성 국면에서 전체 스토리의 변화를 1번째 단계로 전진시킨다.; 미시 플롯: EP03_MPLOT01:변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다./주변 인물이 주인공의 선택을 다르게 해석한다., EP03_MPLOT02:주변 인물의 사소한 선택이 제도적 압력과 연결된다./조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다., EP03_MPLOT03:작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다./주인공은 해결보다 비용이 남는 선택을 한다.\n주변 인물망: mentor_01:스승/재능을 알아보지만 쉽게 인정하지 않는다, rival_01:경쟁자/주인공의 재능을 위협으로 인식한다, exile_witness_01:변방의 조력자/주인공을 제도 밖 지식과 연결한다, institutional_force_01:권력 장치/개인이 아닌 제도적 압력으로 대치한다, hidden_beneficiary_01:숨은 수혜자/작은 사건의 결과를 뒤늦게 의미화한다\n관계 엣지: None->None:shared_rule_conflict, None->None:instrumental_alignment, None->None:delayed_causality, None->None:unseen_cost\n실제 렌더링·개선 근거: EP01_SEQ01_SC01: 품질 8.49→9.04; EP01_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 / EP01_SEQ01_SC02: 품질 8.44→8.99; EP01_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다 / EP01_SEQ01_SC03: 품질 8.49→9.04; EP01_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 \n이 후보는 전체 스토리와 거시 플롯, 화 내부 미시 플롯, 시퀀스, 씬을 구분하고, reveal safety와 Node2 surface-only 원칙을 유지한다.",
+      "evidence": {
+        "mode": "engineered_composition_quality_loop",
+        "provider_default_calls": 0
+      },
+      "source_label": "v1700_stage81_1_engineered_literary_os"
+    },
+    {
+      "candidate_id": "Candidate-C",
+      "hidden_label": "C",
+      "text": "소재: 제도, 추방, 귀환을 통과하며 한 인물이 자신의 역할을 완성하는 한국 드라마\n작품은 제도 안에서 밀려난 인물이 추방과 귀환을 거치며 자신의 윤리적 역할을 찾아가는 흐름을 가진다. 초반부는 궁중의 규칙과 재능의 충돌, 중반부는 추방지에서의 재학습, 후반부는 새 전문성으로 돌아오는 구조로 배치된다. 각 화는 사건과 관계를 나누어 진행하지만, 주변 인물망은 아직 기능적 설명에 머물고 시퀀스별 미시 플롯의 압력 변화는 약하다. 문장은 비교적 안정적이나 reveal budget과 장기 장부는 별도의 구조로 검증되지 않는다.",
+      "evidence": {
+        "mode": "external_reference_style_simulation",
+        "provider_default_calls": 0
+      },
+      "source_label": "claude_style_reference_simulation"
+    }
+  ],
+  "scores": [
+    {
+      "candidate_id": "Candidate-A",
+      "axes": {
+        "series_story_arc": 8.8,
+        "macro_plot_architecture": 6.65,
+        "episode_microplot_linkage": 8.0,
+        "supporting_character_web": 6.2,
+        "causal_event_weaving": 6.75,
+        "emotional_accessibility": 6.2,
+        "prose_naturalness": 4.55,
+        "mise_en_scene_density": 6.25,
+        "reveal_safety": 7.0,
+        "longform_expandability": 6.65
+      },
+      "average": 6.71,
+      "rationale": {
+        "series_story_arc": "series_story_arc: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "macro_plot_architecture": "macro_plot_architecture: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "episode_microplot_linkage": "episode_microplot_linkage: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "supporting_character_web": "supporting_character_web: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "causal_event_weaving": "causal_event_weaving: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "emotional_accessibility": "emotional_accessibility: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "prose_naturalness": "prose_naturalness: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "mise_en_scene_density": "mise_en_scene_density: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "reveal_safety": "reveal_safety: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다.",
+        "longform_expandability": "longform_expandability: 직접 생성 기준선은 빠르지만 구성 계층과 관계망 증거가 약하다."
+      }
+    },
+    {
+      "candidate_id": "Candidate-B",
+      "axes": {
+        "series_story_arc": 10.0,
+        "macro_plot_architecture": 8.15,
+        "episode_microplot_linkage": 9.9,
+        "supporting_character_web": 10.0,
+        "causal_event_weaving": 10.0,
+        "emotional_accessibility": 10.0,
+        "prose_naturalness": 6.2,
+        "mise_en_scene_density": 5.8,
+        "reveal_safety": 9.1,
+        "longform_expandability": 9.7
+      },
+      "average": 8.88,
+      "rationale": {
+        "series_story_arc": "series_story_arc: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "macro_plot_architecture": "macro_plot_architecture: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "episode_microplot_linkage": "episode_microplot_linkage: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "supporting_character_web": "supporting_character_web: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "causal_event_weaving": "causal_event_weaving: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "emotional_accessibility": "emotional_accessibility: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "prose_naturalness": "prose_naturalness: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "mise_en_scene_density": "mise_en_scene_density: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "reveal_safety": "reveal_safety: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다.",
+        "longform_expandability": "longform_expandability: 전체 스토리/거시 플롯/미시 플롯/품질 개선 근거를 명시적으로 제공한다."
+      }
+    },
+    {
+      "candidate_id": "Candidate-C",
+      "axes": {
+        "series_story_arc": 8.8,
+        "macro_plot_architecture": 6.9,
+        "episode_microplot_linkage": 8.0,
+        "supporting_character_web": 8.1,
+        "causal_event_weaving": 7.0,
+        "emotional_accessibility": 7.3,
+        "prose_naturalness": 6.75,
+        "mise_en_scene_density": 6.6,
+        "reveal_safety": 7.7,
+        "longform_expandability": 7.2
+      },
+      "average": 7.44,
+      "rationale": {
+        "series_story_arc": "series_story_arc: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "macro_plot_architecture": "macro_plot_architecture: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "episode_microplot_linkage": "episode_microplot_linkage: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "supporting_character_web": "supporting_character_web: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "causal_event_weaving": "causal_event_weaving: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "emotional_accessibility": "emotional_accessibility: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "prose_naturalness": "prose_naturalness: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "mise_en_scene_density": "mise_en_scene_density: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "reveal_safety": "reveal_safety: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다.",
+        "longform_expandability": "longform_expandability: 구조 설명은 안정적이나 실제 장부·gate 근거는 제한적이다."
+      }
+    }
+  ],
+  "winner_candidate_id": "Candidate-B",
+  "winner_source_label": "v1700_stage81_1_engineered_literary_os",
+  "pure_gpt_baseline_candidate_id": "Candidate-A",
+  "v1700_candidate_id": "Candidate-B",
+  "v1700_margin_over_pure_gpt": 2.17,
+  "reveal_leakage_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "benchmark_mode": "local_first_blind_simulation_no_external_api_calls",
+  "pass_meaning": "Stage82 proves the benchmark harness and local-first blind critic scoring path. It compares V1700 against pure direct-generation and Claude-style reference simulations; it does not claim live paid provider API execution."
+}

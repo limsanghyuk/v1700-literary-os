@@ -1,0 +1,171 @@
+{
+  "status": "pass",
+  "mapping_policy": "structural_scene_to_production_scene_estimate",
+  "episode_count": 16,
+  "total_structural_scene_count": 222,
+  "total_production_scene_count_estimate": 888,
+  "mappings": [
+    {
+      "episode_id": "EP01",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP02",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP03",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP04",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP05",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP06",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP07",
+      "structural_scene_count": 12,
+      "production_scene_count_estimate": 48,
+      "major_sequence_count": 4,
+      "microplot_count": 4,
+      "beat_count_estimate": 144,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP08",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP09",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP10",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP11",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP12",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP13",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP14",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP15",
+      "structural_scene_count": 15,
+      "production_scene_count_estimate": 60,
+      "major_sequence_count": 5,
+      "microplot_count": 5,
+      "beat_count_estimate": 180,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    },
+    {
+      "episode_id": "EP16",
+      "structural_scene_count": 18,
+      "production_scene_count_estimate": 72,
+      "major_sequence_count": 6,
+      "microplot_count": 6,
+      "beat_count_estimate": 216,
+      "runtime_minutes": 60,
+      "density_status": "PASS"
+    }
+  ],
+  "warnings": [],
+  "issues": []
+}

@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "live_provider_call_count": 0,
+  "provider_reviewers": "fixture_only",
+  "release_gate_affected": false
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "case_id": "ADV-LOD-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "mid_season_sag_risk_above_threshold",
+    "triggered_gate": "dramatic_load_balancing",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-LOD-001.json"
+  }
+]

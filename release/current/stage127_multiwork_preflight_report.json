@@ -1,0 +1,785 @@
+{
+  "stage": "127",
+  "baseline_stage": "126",
+  "title": "MultiWork Preflight & Isolation Audit",
+  "status": "pass",
+  "issues": [],
+  "purpose": "Validate MultiWork isolation, licensing, canon conflict, and GitNexus-aware integration before any V571 direct merge.",
+  "direct_v571_merge_performed": false,
+  "direct_v571_merge_detected": false,
+  "v571_read_only_absorption_enabled": false,
+  "shared_character_db_write_enabled": false,
+  "shared_world_db_write_enabled": false,
+  "cross_project_influence_write": 0,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "full_text_exported": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "gate25_28_29_governor_compatibility_preserved": true,
+  "python_fallback_used": true,
+  "gitnexus_sidecar_available": true,
+  "index_fresh": true,
+  "parts": {
+    "multiwork_scanner": {
+      "status": "pass",
+      "multiwork_candidate_references": [
+        {
+          "path": "docs/stages/STAGE_INDEX.md",
+          "terms": [
+            "MultiWork",
+            "shared character"
+          ]
+        },
+        {
+          "path": "docs/stages/stage127.md",
+          "terms": [
+            "MultiWork",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571"
+          ]
+        },
+        {
+          "path": "docs/stages/stage128.md",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571"
+          ]
+        },
+        {
+          "path": "manifests/live_core_manifest.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "manifests/stage127_manifest.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "manifests/stage127_multiwork_preflight_manifest.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "manifests/stage127_branchpoint_trace_manifest.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "manifests/stage128_read_only_absorption_manifest.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "SharedWorldDB"
+          ]
+        },
+        {
+          "path": "release/current/release_gate_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_report.json",
+          "terms": [
+            "AuthorLicenseAPI",
+            "CrossWork",
+            "MultiWork",
+            "MultiWorkCIM",
+            "MultiWorkOrchestrator",
+            "ProjectIsolationManager",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571",
+            "shared character",
+            "shared world"
+          ]
+        },
+        {
+          "path": "release/current/stage127_summary.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage127_release_gate_report.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage127_developer_handoff.md",
+          "terms": [
+            "MultiWork",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage127_execution_report.json",
+          "terms": [
+            "MultiWork",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage128_read_only_absorption_report.json",
+          "terms": [
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage128_summary.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
+          "path": "release/current/stage99_gitnexus_pack/impact_nodes.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/multiwork_scanner_report.json",
+          "terms": [
+            "AuthorLicenseAPI",
+            "CrossWork",
+            "MultiWork",
+            "MultiWorkCIM",
+            "MultiWorkOrchestrator",
+            "ProjectIsolationManager",
+            "SharedCharacterDB",
+            "SharedWorldDB",
+            "V571",
+            "shared character",
+            "shared world"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/multiwork_risk_matrix.json",
+          "terms": [
+            "ProjectIsolationManager",
+            "V571"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/absorption_plan.json",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM",
+            "ProjectIsolationManager",
+            "SharedWorldDB"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/python_fallback_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage127_multiwork_preflight_pack/gitnexus_preflight_snapshot.json",
+          "terms": [
+            "MultiWork"
+          ]
+        }
+      ],
+      "candidate_reference_count": 22,
+      "direct_v571_merge_detected": false,
+      "direct_merge_paths_present": [],
+      "scan_terms": [
+        "V571",
+        "MultiWork",
+        "SharedCharacterDB",
+        "SharedWorldDB",
+        "ProjectIsolationManager",
+        "MultiWorkCIM",
+        "AuthorLicenseAPI",
+        "MultiWorkOrchestrator",
+        "CrossWork",
+        "shared character",
+        "shared world"
+      ]
+    },
+    "project_isolation_audit": {
+      "project_count": 2,
+      "unauthorized_cross_reads": 0,
+      "unauthorized_cross_writes": 0,
+      "shared_character_conflicts": 0,
+      "shared_world_conflicts": 0,
+      "raw_manuscript_leakage": 0,
+      "status": "PASS",
+      "details": {
+        "projects": [
+          {
+            "project_id": "project_alpha",
+            "title": "Alpha Sovereign Series",
+            "owner_id": "author_a",
+            "genre": "mystery-drama",
+            "canon_root_id": "canon_alpha",
+            "license_policy_id": "license_alpha_private"
+          },
+          {
+            "project_id": "project_beta",
+            "title": "Beta Shared-World Candidate",
+            "owner_id": "author_a",
+            "genre": "thriller-drama",
+            "canon_root_id": "canon_beta",
+            "license_policy_id": "license_beta_private"
+          }
+        ],
+        "allowed_edges": [
+          {
+            "source_project_id": "project_beta",
+            "target_project_id": "project_alpha",
+            "access_type": "read",
+            "license_edge_exists": true,
+            "approved_by_author": true,
+            "expires_at": null,
+            "resource_scope_permits": true,
+            "isolation_policy_allows": true,
+            "access_allowed": true
+          },
+          {
+            "source_project_id": "project_beta",
+            "target_project_id": "project_alpha",
+            "access_type": "reference",
+            "license_edge_exists": true,
+            "approved_by_author": true,
+            "expires_at": null,
+            "resource_scope_permits": true,
+            "isolation_policy_allows": true,
+            "access_allowed": true
+          }
+        ],
+        "blocked_edges": [],
+        "cross_project_influence_write": 0
+      }
+    },
+    "shared_character_audit": {
+      "status": "pass",
+      "allowed": [
+        {
+          "character_id": "char_alpha_mentor",
+          "same_owner": true,
+          "explicit_license_edge": false,
+          "public_domain_flag": false,
+          "shared_character_allowed": true
+        },
+        {
+          "character_id": "char_beta_guest",
+          "same_owner": false,
+          "explicit_license_edge": true,
+          "public_domain_flag": false,
+          "shared_character_allowed": true
+        }
+      ],
+      "blocked": [
+        {
+          "character_id": "blocked_private_character",
+          "same_owner": false,
+          "explicit_license_edge": false,
+          "public_domain_flag": false,
+          "shared_character_allowed": false
+        }
+      ],
+      "shared_character_conflicts": 0,
+      "license_edge_required_for_cross_owner_private_character": true
+    },
+    "shared_world_audit": {
+      "status": "pass",
+      "assessed_worlds": [
+        {
+          "world_id": "canon_alpha",
+          "timeline_conflict": 0.0,
+          "world_rule_conflict": 0.0,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.0,
+          "canon_conflict_score": 0.0,
+          "density_status": "PASS"
+        },
+        {
+          "world_id": "canon_beta_probe",
+          "timeline_conflict": 0.2,
+          "world_rule_conflict": 0.1,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.2,
+          "canon_conflict_score": 0.13,
+          "density_status": "PASS"
+        },
+        {
+          "world_id": "blocked_canon_collision",
+          "timeline_conflict": 1.0,
+          "world_rule_conflict": 1.0,
+          "character_identity_conflict": 0.5,
+          "relationship_conflict": 0.6,
+          "canon_conflict_score": 0.84,
+          "density_status": "BLOCK"
+        }
+      ],
+      "shared_world_conflicts": 1,
+      "blocking_conflicts_detected": 1,
+      "canon_conflict_report_required": true
+    },
+    "author_license_audit": {
+      "status": "pass",
+      "access_formula": "license_edge_exists AND isolation_policy_allows AND resource_scope_permits AND author_approval_valid",
+      "safe_edges": [
+        {
+          "source_project_id": "project_beta",
+          "target_project_id": "project_alpha",
+          "access_type": "read",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "expires_at": null,
+          "resource_scope_permits": true,
+          "isolation_policy_allows": true,
+          "access_allowed": true
+        },
+        {
+          "source_project_id": "project_beta",
+          "target_project_id": "project_alpha",
+          "access_type": "reference",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "expires_at": null,
+          "resource_scope_permits": true,
+          "isolation_policy_allows": true,
+          "access_allowed": true
+        }
+      ],
+      "blocked_probe_edges": [
+        {
+          "source_project_id": "project_alpha",
+          "target_project_id": "project_beta",
+          "access_type": "write",
+          "license_edge_exists": true,
+          "approved_by_author": true,
+          "expires_at": null,
+          "resource_scope_permits": true,
+          "isolation_policy_allows": true,
+          "access_allowed": false
+        },
+        {
+          "source_project_id": "project_beta",
+          "target_project_id": "project_alpha",
+          "access_type": "read",
+          "license_edge_exists": false,
+          "approved_by_author": false,
+          "expires_at": null,
+          "resource_scope_permits": true,
+          "isolation_policy_allows": true,
+          "access_allowed": false
+        }
+      ],
+      "license_edge_missing_but_access_allowed": false,
+      "cross_project_write_allowed": false,
+      "author_approval_required": true
+    },
+    "cross_work_memory_probe": {
+      "status": "pass",
+      "raw_manuscript_cross_project_leakage": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "full_text_exported": false,
+      "cross_project_memory_access_formula": "ALLOW only if license_edge exists AND isolation_policy permits",
+      "feature_only_report": true,
+      "project_memory_namespaces": [
+        "project_alpha",
+        "project_beta"
+      ]
+    },
+    "canon_conflict_probe": {
+      "status": "pass",
+      "conflicts_detected": [
+        {
+          "conflict_id": "canon_probe_block_001",
+          "project_id": "project_beta",
+          "entity_id": "blocked_canon_collision",
+          "conflict_type": "timeline",
+          "severity": 0.84,
+          "evidence": [
+            "timeline_conflict=1.0",
+            "world_rule_conflict=1.0"
+          ],
+          "recommended_action": "block direct absorption; require Stage129 Canon Governor mapping"
+        }
+      ],
+      "blocking_conflict_count": 1,
+      "mystery_exemption_deferred_to_stage132": true
+    },
+    "multiwork_risk_matrix": {
+      "status": "pass",
+      "risk_count": 5,
+      "critical_risks": [
+        {
+          "risk": "memory_contamination",
+          "severity": "critical",
+          "mitigation": "ProjectIsolationManager + feature-only reports"
+        },
+        {
+          "risk": "permission_contamination",
+          "severity": "critical",
+          "mitigation": "AuthorLicense edge required before access"
+        },
+        {
+          "risk": "canon_contamination",
+          "severity": "critical",
+          "mitigation": "CanonConflictReport before shared-world absorption"
+        },
+        {
+          "risk": "direct_v571_merge",
+          "severity": "critical",
+          "mitigation": "Stage127 blocks direct merge; Stage128 read-only adapter first"
+        }
+      ],
+      "risks": [
+        {
+          "risk": "memory_contamination",
+          "severity": "critical",
+          "mitigation": "ProjectIsolationManager + feature-only reports"
+        },
+        {
+          "risk": "permission_contamination",
+          "severity": "critical",
+          "mitigation": "AuthorLicense edge required before access"
+        },
+        {
+          "risk": "canon_contamination",
+          "severity": "critical",
+          "mitigation": "CanonConflictReport before shared-world absorption"
+        },
+        {
+          "risk": "direct_v571_merge",
+          "severity": "critical",
+          "mitigation": "Stage127 blocks direct merge; Stage128 read-only adapter first"
+        },
+        {
+          "risk": "gate_authority_drift",
+          "severity": "high",
+          "mitigation": "Gate25 primary + Gate28/29 secondary Governor compatibility check"
+        }
+      ]
+    },
+    "absorption_plan": {
+      "next_stage": "Stage128 — SharedWorld / SharedCharacter Read-Only Absorption",
+      "safe_to_absorb_read_only": true,
+      "blocked_modules": [
+        "cross_project_write",
+        "raw_manuscript_cross_project_sharing",
+        "license_missing_character_reuse",
+        "SharedWorldDB_as_source_of_truth",
+        "MultiWorkCIM_write_edges",
+        "Active_MetaLearner",
+        "ASD_real_mutation"
+      ],
+      "adapter_required": [
+        "SharedCharacterReadOnlyAdapter",
+        "SharedWorldReadOnlyAdapter",
+        "AuthorLicenseBoundaryAdapter",
+        "ProjectIsolationManagerAdapter",
+        "CanonConflictReportAdapter"
+      ],
+      "required_gates": [
+        "stage128_read_only_absorption_gate",
+        "cross_work_memory_isolation_gate",
+        "author_license_boundary_gate",
+        "canon_conflict_preflight_gate"
+      ],
+      "required_tests": [
+        "tests/test_stage128_shared_character_read_only.py",
+        "tests/test_stage128_shared_world_read_only.py",
+        "tests/test_stage128_cross_work_isolation.py"
+      ],
+      "required_manifests": [
+        "manifests/stage128_manifest.json",
+        "manifests/stage128_read_only_absorption_manifest.json"
+      ]
+    },
+    "python_fallback": {
+      "status": "PASS",
+      "python_fallback_used": true,
+      "import_edges_total": 2722,
+      "import_edges_sample": [
+        {
+          "from": "v1700.cli",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.cli",
+          "to": "argparse"
+        },
+        {
+          "from": "v1700.cli",
+          "to": "json"
+        },
+        {
+          "from": "v1700.cli",
+          "to": "v1700.nodes.node1_architect"
+        },
+        {
+          "from": "v1700.cli",
+          "to": "v1700.nodes.node2_prose_renderer"
+        },
+        {
+          "from": "v1700.cli",
+          "to": "v1700.ir.style_profile"
+        },
+        {
+          "from": "v1700.semantic_cache",
+          "to": "v1700.cache.semantic_cache"
+        },
+        {
+          "from": "v1700.agent_benchmark.__init__",
+          "to": "v1700.agent_benchmark.harness"
+        },
+        {
+          "from": "v1700.agent_benchmark.agents",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.agent_benchmark.agents",
+          "to": "v1700.agent_benchmark.contracts"
+        },
+        {
+          "from": "v1700.agent_benchmark.contracts",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.agent_benchmark.contracts",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.agent_benchmark.contracts",
+          "to": "statistics"
+        },
+        {
+          "from": "v1700.agent_benchmark.contracts",
+          "to": "typing"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "hashlib"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "statistics"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "v1700.agent_benchmark.agents"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "v1700.agent_benchmark.contracts"
+        },
+        {
+          "from": "v1700.agent_benchmark.harness",
+          "to": "v1700.episode_scaleup.evidence"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.arc_contracts"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.causal_plot_graph"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.reveal_budget"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.__init__",
+          "to": "v1700.arc_reveal_knowledge.series_arc_planner"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.arc_contracts",
+          "to": "enum"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.causal_plot_graph",
+          "to": "v1700.arc_reveal_knowledge.arc_contracts"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.character_knowledge_bridge",
+          "to": "v1700.arc_reveal_knowledge.knowledge_contracts"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.knowledge_contracts",
+          "to": "enum"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "__future__"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "dataclasses"
+        },
+        {
+          "from": "v1700.arc_reveal_knowledge.prose_contract_bridge",
+          "to": "v1700.arc_reveal_knowledge.character_knowledge_bridge"
+        }
+      ],
+      "critical_paths_checked": {
+        "src/v1700/multiwork_preflight/report.py": true,
+        "src/v1700/stage127/stage127_runner.py": true,
+        "src/v1700/gates/stage127_release_gate.py": true,
+        "tools/run_stage127_multiwork_preflight.py": true,
+        "tools/run_stage127_release_gate.py": true,
+        "manifests/stage127_manifest.json": true,
+        "manifests/stage127_multiwork_preflight_manifest.json": true,
+        "docs/stages/stage127.md": true
+      },
+      "manifests_checked": {
+        "manifests/stage127_manifest.json": true,
+        "manifests/stage127_multiwork_preflight_manifest.json": true,
+        "manifests/stage127_branchpoint_trace_manifest.json": true
+      },
+      "release_evidence_checked": {
+        "release/current/stage127_multiwork_preflight_report.json": true,
+        "release/current/stage127_release_gate_report.json": true,
+        "release/current/stage127_multiwork_preflight_pack/absorption_plan.json": true
+      },
+      "orphan_critical_nodes": [],
+      "affected_tests": [
+        "tests/test_stage127_multiwork_preflight.py"
+      ],
+      "affected_processes": [
+        "release_gate",
+        "repo_doctor",
+        "clean_packaging",
+        "multiwork_preflight"
+      ]
+    },
+    "gitnexus_preflight": {
+      "status": "pass",
+      "gitnexus_sidecar_available": true,
+      "python_fallback_used": true,
+      "index_fresh": true,
+      "stale_index_detected": false,
+      "repo_path": "C:\\AI_Codex\\codex-work\\gpt\\analysis\\stage126_gitnexus_index_20260518",
+      "indexed_at": "2026-05-18T08:44:44.783Z",
+      "stats": {
+        "files": 2121,
+        "nodes": 16918,
+        "edges": 26030,
+        "communities": 271,
+        "processes": 300,
+        "embeddings": 0
+      },
+      "capabilities": {
+        "graph": {
+          "provider": "ladybugdb",
+          "status": "available"
+        },
+        "fts": {
+          "provider": "ladybugdb-fts",
+          "status": "available"
+        },
+        "vectorSearch": {
+          "provider": "exact-scan",
+          "status": "unavailable",
+          "exactScanLimit": 10000,
+          "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+        }
+      },
+      "shape_check": {
+        "status": "pass",
+        "missing": []
+      },
+      "result_normalizer": {
+        "status": "pass",
+        "source": "meta_snapshot+python_fallback"
+      },
+      "concept_impact": {
+        "provider_zero_preserved": true,
+        "node2_boundary_preserved": true,
+        "raw_manuscript_leakage_zero": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "survival_matrix": {
+        "Gate25_NIE_primary_authority": true,
+        "Gate28_ASD_secondary_quality": true,
+        "Gate29_PNE_secondary_predictive": true,
+        "Stage125_Governor": true,
+        "Stage126_CrossLineageRelease": true
+      },
+      "symbol_to_branchpoint_trace": {
+        "run_multiwork_preflight": [
+          "provider_zero",
+          "project_isolation",
+          "branchpoint_lineage"
+        ],
+        "run_stage127_release_gate": [
+          "release_gate",
+          "repo_doctor",
+          "clean_packaging"
+        ]
+      }
+    }
+  }
+}

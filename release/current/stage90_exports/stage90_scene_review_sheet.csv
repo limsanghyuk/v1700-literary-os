@@ -1,0 +1,33 @@
+scene_id,episode_id,act,reveal_policy,knowledge_mode,afterimage_marker,surface_contract
+EP01_SC01,EP01,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #01,node2_surface_only
+EP01_SC10,EP01,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #10,node2_surface_only
+EP02_SC01,EP02,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #01,node2_surface_only
+EP02_SC10,EP02,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #10,node2_surface_only
+EP03_SC01,EP03,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #01,node2_surface_only
+EP03_SC10,EP03,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #10,node2_surface_only
+EP04_SC01,EP04,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #01,node2_surface_only
+EP04_SC10,EP04,gi,foreshadow_only,do_not_name_fact,문턱의 찬기 #10,node2_surface_only
+EP05_SC01,EP05,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #01,node2_surface_only
+EP05_SC10,EP05,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #10,node2_surface_only
+EP06_SC01,EP06,seung,foreshadow_only,do_not_name_fact,늦게 접힌 종이 #01,node2_surface_only
+EP06_SC10,EP06,seung,foreshadow_only,do_not_name_fact,늦게 접힌 종이 #10,node2_surface_only
+EP07_SC01,EP07,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #01,node2_surface_only
+EP07_SC10,EP07,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #10,node2_surface_only
+EP08_SC01,EP08,seung,foreshadow_only,do_not_name_fact,늦게 접힌 종이 #01,node2_surface_only
+EP08_SC10,EP08,seung,foreshadow_only,do_not_name_fact,닫히는 엘리베이터 문틈의 찬기 #90,node2_surface_only
+EP09_SC01,EP09,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #01,node2_surface_only
+EP09_SC10,EP09,seung,allow,indirect_suspicion_only,늦게 접힌 종이 #10,node2_surface_only
+EP10_SC01,EP10,seung,foreshadow_only,do_not_name_fact,늦게 접힌 종이 #01,node2_surface_only
+EP10_SC10,EP10,seung,foreshadow_only,do_not_name_fact,늦게 접힌 종이 #10,node2_surface_only
+EP11_SC01,EP11,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #01,node2_surface_only
+EP11_SC10,EP11,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #10,node2_surface_only
+EP12_SC01,EP12,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #01,node2_surface_only
+EP12_SC10,EP12,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #10,node2_surface_only
+EP13_SC01,EP13,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #01,node2_surface_only
+EP13_SC10,EP13,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #10,node2_surface_only
+EP14_SC01,EP14,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #01,node2_surface_only
+EP14_SC10,EP14,jeon,allow,indirect_suspicion_only,뒤집힌 불빛 #10,node2_surface_only
+EP15_SC01,EP15,gyeol,allow,indirect_suspicion_only,남은 컵의 온기 #01,node2_surface_only
+EP15_SC10,EP15,gyeol,allow,indirect_suspicion_only,남은 컵의 온기 #10,node2_surface_only
+EP16_SC01,EP16,gyeol,allow,indirect_suspicion_only,남은 컵의 온기 #01,node2_surface_only
+EP16_SC10,EP16,gyeol,allow,indirect_suspicion_only,남은 컵의 온기 #10,node2_surface_only

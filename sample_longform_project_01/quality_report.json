@@ -1,0 +1,1495 @@
+{
+  "status": "pass",
+  "scene_count": 30,
+  "revised_scene_count": 30,
+  "average_before": 8.48,
+  "average_after": 9.03,
+  "average_delta": 0.55,
+  "blocker_count_before": 130,
+  "blocker_count_after": 0,
+  "anti_llm_min_after": 10.0,
+  "reveal_leakage_count": 0,
+  "timeline_contradiction_count": 0,
+  "traces": [
+    {
+      "scene_id": "EP01_SEQ01_SC01",
+      "before_text": "EP01_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물이 주인공의 선택을 다르게 해석한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ01_SC02",
+      "before_text": "EP01_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ01_SC03",
+      "before_text": "EP01_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ02_SC01",
+      "before_text": "EP01_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n주변 인물의 사소한 선택이 제도적 압력과 연결된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.39,
+          "reveal_safety": 10.0
+        },
+        "average": 8.51,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.8,
+          "reveal_safety": 10.0
+        },
+        "average": 9.06,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ02_SC02",
+      "before_text": "EP01_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ02_SC03",
+      "before_text": "EP01_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ03_SC01",
+      "before_text": "EP01_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공은 해결보다 비용이 남는 선택을 한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ03_SC02",
+      "before_text": "EP01_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP01_SEQ03_SC03",
+      "before_text": "EP01_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP01_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ01_SC01",
+      "before_text": "EP02_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n닫힌 제도/직능 공동체에서 작은 규칙 위반이 발생한다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물이 주인공의 선택을 다르게 해석한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ01_SC02",
+      "before_text": "EP02_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ01_SC03",
+      "before_text": "EP02_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ02_SC01",
+      "before_text": "EP02_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n주변 인물의 사소한 선택이 제도적 압력과 연결된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.39,
+          "reveal_safety": 10.0
+        },
+        "average": 8.51,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.8,
+          "reveal_safety": 10.0
+        },
+        "average": 9.06,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ02_SC02",
+      "before_text": "EP02_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ02_SC03",
+      "before_text": "EP02_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ03_SC01",
+      "before_text": "EP02_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공은 해결보다 비용이 남는 선택을 한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ03_SC02",
+      "before_text": "EP02_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP02_SEQ03_SC03",
+      "before_text": "EP02_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP02_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ01_SC01",
+      "before_text": "EP03_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물이 주인공의 선택을 다르게 해석한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ01_SC02",
+      "before_text": "EP03_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ01_SC03",
+      "before_text": "EP03_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ02_SC01",
+      "before_text": "EP03_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ02의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 주변 인물의 사소한 선택이 제도적 압력과 연결된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 주변 인물의 사소한 선택이 제도적 압력과 연결된다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n주변 인물의 사소한 선택이 제도적 압력과 연결된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 조력자, 경쟁자, 제도 권력이 각자 다른 목적을 보인다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.39,
+          "reveal_safety": 10.0
+        },
+        "average": 8.51,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.8,
+          "reveal_safety": 10.0
+        },
+        "average": 9.06,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ02_SC02",
+      "before_text": "EP03_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ02의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ02_SC03",
+      "before_text": "EP03_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ02의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ03_SC01",
+      "before_text": "EP03_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ03의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다. 주인공은 해결보다 비용이 남는 선택을 한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n작은 사건의 결과가 당장 풀리지 않고 다음 국면의 빚으로 남는다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공은 해결보다 비용이 남는 선택을 한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ03_SC02",
+      "before_text": "EP03_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ03의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP03_SEQ03_SC03",
+      "before_text": "EP03_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP03_SEQ03의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP04_SEQ01_SC01",
+      "before_text": "EP04_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP04_SEQ01의 장면은 미시 플롯의 표면 사건을 제시한다.을 향해 움직인다. 갈등은 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다. 주변 인물이 주인공의 선택을 다르게 해석한다. 공간의 규칙이 인물의 말을 제한한다. “말하지 않아도 남는 것이 있습니다.” 공간의 규칙이 인물의 말을 제한한다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n변방/민중/자연의 세계에서 작은 규칙 위반이 발생한다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물이 주인공의 선택을 다르게 해석한다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP04_SEQ01_SC02",
+      "before_text": "EP04_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP04_SEQ01의 장면은 관계 충돌과 감정 압력을 증폭한다.을 향해 움직인다. 갈등은 사소한 선택이 다른 인물에게 비용으로 돌아간다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 사소한 선택이 다른 인물에게 비용으로 돌아간다. 주인공과 주변 인물의 해석 차이가 드러난다. 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. “말하지 않아도 남는 것이 있습니다.” 사람들 앞에서 말할 수 없는 정보가 행동으로 새어 나온다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n사소한 선택이 다른 인물에게 비용으로 돌아간다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주인공과 주변 인물의 해석 차이가 드러난다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 7.73,
+          "reveal_safety": 10.0
+        },
+        "average": 8.44,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation",
+          "mise_en_scene"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.14,
+          "reveal_safety": 10.0
+        },
+        "average": 8.99,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    },
+    {
+      "scene_id": "EP04_SEQ01_SC03",
+      "before_text": "EP04_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "after_text": "EP04_SEQ01의 장면은 전체 스토리 또는 다음 시퀀스로 이어지는 잔향을 남긴다.을 향해 움직인다. 갈등은 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.에 걸려 있었다. 압력에서 잔향로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 해결처럼 보이는 행동이 더 큰 국면의 원인이 된다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다. 공간이 바뀌지 않아도 권력의 방향이 바뀐다. “말하지 않아도 남는 것이 있습니다.” 공간이 바뀌지 않아도 권력의 방향이 바뀐다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.\n\n해결처럼 보이는 행동이 더 큰 국면의 원인이 된다.은 설명으로 풀리지 않고, 문 앞에 남은 찬기와 컵의 작은 흔들림으로 먼저 드러났다. 주변 인물의 선택이 주인공의 다음 행로를 바꾼다.의 선택은 주인공의 대답보다 늦게 도착했고, 그 늦음이 관계의 비용을 만들었다. 복도 끝의 낮은 소리와 접힌 종이의 모서리가 다음 장면의 빚처럼 남았다.",
+      "before_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 7.55,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 7.85,
+          "causality": 7.85,
+          "character_relation": 7.6,
+          "mise_en_scene": 8.17,
+          "reveal_safety": 10.0
+        },
+        "average": 8.49,
+        "blockers": [
+          "naturalness",
+          "sensory_afterimage",
+          "causality",
+          "character_relation"
+        ]
+      },
+      "after_score": {
+        "axes": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.7,
+          "rhythm": 8.85,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 9.3,
+          "causality": 8.6,
+          "character_relation": 8.35,
+          "mise_en_scene": 9.58,
+          "reveal_safety": 10.0
+        },
+        "average": 9.04,
+        "blockers": []
+      },
+      "delta": 0.55,
+      "constraints": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": []
+    }
+  ]
+}

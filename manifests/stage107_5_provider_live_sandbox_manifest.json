@@ -1,0 +1,12 @@
+{
+  "stage": "107.5",
+  "status": "pass",
+  "sandbox_only": true,
+  "providers": [
+    "openai",
+    "anthropic",
+    "gemini",
+    "ollama"
+  ],
+  "raw_outputs_included": false
+}

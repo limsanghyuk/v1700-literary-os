@@ -1,0 +1,18 @@
+{
+  "stage": "98.0-98.1",
+  "status": "active",
+  "studio_workflow_core": true,
+  "review_queue_package": true,
+  "privacy_mode": "FEATURE_ONLY",
+  "provider_default_calls": 0,
+  "required_reports": [
+    "release/current/stage98_0_studio_workflow_core_report.json",
+    "release/current/stage98_1_review_queue_report.json",
+    "studio_project_report.json",
+    "story_bible_report.json",
+    "episode_board_report.json",
+    "microplot_matrix_editor_report.json",
+    "revision_queue_report.json",
+    "review_package_report.json"
+  ]
+}

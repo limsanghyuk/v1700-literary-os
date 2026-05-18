@@ -1,0 +1,13 @@
+{
+  "stage": "104",
+  "status": "pass",
+  "package": "V1700_stage104_commercial_writer_studio_beta_FIXED.zip",
+  "canonical_package": "V1700_stage104_commercial_writer_studio_beta_FIXED.zip",
+  "sha256_sidecar": "V1700_stage104_commercial_writer_studio_beta_FIXED.zip.sha256",
+  "filelist": "V1700_stage104_FIXED_filelist.txt",
+  "release_evidence": [
+    "release/current/stage104_commercial_writer_studio_beta_report.json",
+    "release/current/stage104_release_gate_report.json",
+    "release/current/stage104_developer_handoff_report.md"
+  ]
+}

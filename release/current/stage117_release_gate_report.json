@@ -1,0 +1,113 @@
+{
+  "stage": "117",
+  "baseline_stage": "116",
+  "title": "NarrativeTensionCurve",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage116_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "narrative_tension_curve_contract_pass": {
+      "status": "pass"
+    },
+    "ideal_curve_formula_pass": {
+      "status": "pass"
+    },
+    "ideal_tension_bounds_pass": {
+      "status": "pass"
+    },
+    "tension_loss_pass": {
+      "status": "pass"
+    },
+    "coverage_loss_pass": {
+      "status": "pass"
+    },
+    "final_loss_pass": {
+      "status": "pass"
+    },
+    "act_coverage_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "embedding_provider_zero_pass": {
+      "status": "pass"
+    },
+    "query_classifier_llm_zero_pass": {
+      "status": "pass"
+    },
+    "physics_reward_bridge_no_llm_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage117": {
+    "status": "pass",
+    "stage": "117",
+    "baseline_stage": "116",
+    "title": "NarrativeTensionCurve",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "tension_curve_summary": {
+    "scene_count": 8,
+    "act_counts": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "loss": {
+      "scene_count": 8,
+      "tension_loss": 4.1e-05,
+      "coverage_loss": 0.0,
+      "final_loss": 4.1e-05,
+      "lambda_coverage": 0.3,
+      "status": "PASS"
+    },
+    "formula": "T_ideal(t)=0.60+0.40*sin(2πt-0.50)+0.20*sin(6πt)",
+    "lambda_coverage": 0.3,
+    "per_scene_count": 8
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,251 @@
+{
+  "status": "pass",
+  "title": "Cross-Lineage Intelligence Release",
+  "baseline_stage": "125",
+  "release_stage": "126",
+  "release_authority": "Gate25 primary + Gate28/Gate29 secondary under Stage125 Governor",
+  "lineage_layers": [
+    {
+      "stage": "120",
+      "title": "Gate25 NIE v1.0",
+      "report_path": "release/current/stage120_gate25_nie_v1_report.json",
+      "status": "pass",
+      "authority_mode": "primary_gate",
+      "absorbed_capabilities": [
+        "Gate25 NIE v1.0",
+        "NIL evidence",
+        "NIE adversarial regression"
+      ],
+      "blocked_concepts": [],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    },
+    {
+      "stage": "121",
+      "title": "Cross-Lineage Formula Reconciliation",
+      "report_path": "release/current/stage121_cross_lineage_preflight_report.json",
+      "status": "pass",
+      "authority_mode": "preflight",
+      "absorbed_capabilities": [
+        "formula ledger",
+        "conflict matrix",
+        "gate authority map"
+      ],
+      "blocked_concepts": [],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    },
+    {
+      "stage": "122",
+      "title": "NIE v2.0 Stability Absorption",
+      "report_path": "release/current/stage122_nie_v2_stability_absorption_report.json",
+      "status": "pass",
+      "authority_mode": "stability",
+      "absorbed_capabilities": [
+        "NIL stability",
+        "agent calibration",
+        "T_ideal learning",
+        "Temporal CIM adapter"
+      ],
+      "blocked_concepts": [
+        "Gate28 authority",
+        "Gate29 authority",
+        "runtime model training",
+        "AMW alpha range relaxation",
+        "direct V545/V555 merge"
+      ],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    },
+    {
+      "stage": "123",
+      "title": "ASD / Gate28 Absorption",
+      "report_path": "release/current/stage123_asd_gate28_absorption_report.json",
+      "status": "pass",
+      "authority_mode": "secondary_quality_gate",
+      "absorbed_capabilities": [
+        "NarrativeDebtDetector",
+        "ArcConsistencyChecker",
+        "Gate28 secondary quality gate"
+      ],
+      "blocked_concepts": [
+        "Gate28 primary authority",
+        "graph mutation auto-repair",
+        "LLM repair generation",
+        "direct V545 package merge",
+        "Gate29 predictive authority"
+      ],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "auto_repair_mutation_count": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    },
+    {
+      "stage": "124",
+      "title": "PNE / Gate29 Absorption",
+      "report_path": "release/current/stage124_pne_gate29_absorption_report.json",
+      "status": "pass",
+      "authority_mode": "secondary_predictive_gate",
+      "absorbed_capabilities": [
+        "PNECore",
+        "DebtPredictor",
+        "PreemptiveGate",
+        "Gate29 secondary predictive gate"
+      ],
+      "blocked_concepts": [
+        "direct V555 package merge",
+        "Gate29 primary release authority",
+        "release-gate runtime model training",
+        "mandatory sklearn dependency",
+        "graph mutation during prediction"
+      ],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "pne_runtime_training_count": 0,
+        "auto_repair_mutation_count": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    },
+    {
+      "stage": "125",
+      "title": "Gate25/28/29 Governor",
+      "report_path": "release/current/stage125_gate25_28_29_governor_report.json",
+      "status": "pass",
+      "authority_mode": "governor",
+      "absorbed_capabilities": [
+        "Gate25/28/29 Governor",
+        "single deterministic gate stack"
+      ],
+      "blocked_concepts": [
+        "Gate28 primary authority",
+        "Gate29 primary authority",
+        "release-gate runtime training",
+        "auto-repair mutation during release",
+        "live provider calls in governor",
+        "direct V545/V555 package merge"
+      ],
+      "metrics": {
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "pne_runtime_training_count": 0,
+        "auto_repair_mutation_count": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0
+      }
+    }
+  ],
+  "blocked_by": [],
+  "warnings": [],
+  "checks": {
+    "stage125_baseline_preserved": true,
+    "stage120_gate25_primary_present": true,
+    "stage123_gate28_secondary_present": true,
+    "stage124_gate29_secondary_present": true,
+    "gate28_not_primary": true,
+    "gate29_not_primary": true,
+    "direct_candidate_merge_blocked": true,
+    "runtime_training_disabled": true,
+    "auto_repair_mutation_disabled": true,
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "story_doctor_llm_call_count": 0,
+    "pne_provider_call_count": 0,
+    "pne_runtime_training_count": 0,
+    "auto_repair_mutation_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "gate25_primary_authority_preserved": true,
+    "gate28_secondary_quality_preserved": true,
+    "gate29_secondary_predictive_preserved": true
+  },
+  "final_release_pack": {
+    "release_name": "Cross-Lineage Intelligence Release",
+    "release_stage": "126",
+    "baseline_stage": "125",
+    "sealed_lineage": [
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125"
+    ],
+    "authority_stack": {
+      "Gate25": "primary_nie_release_authority",
+      "Gate28": "secondary_asd_quality_gate",
+      "Gate29": "secondary_pne_predictive_gate",
+      "Governor": "deterministic_gate25_28_29_arbitration"
+    },
+    "absorbed_reference_branches": {
+      "V525": "NIE v2.0 stability concepts via Stage122",
+      "V545": "ASD/Gate28 concepts via Stage123 dry-run adapter",
+      "V555": "PNE/Gate29 concepts via Stage124 predictive adapter"
+    },
+    "blocked_at_release": [
+      "direct V545/V555 package merge",
+      "Gate28 primary authority",
+      "Gate29 primary authority",
+      "release-gate runtime model training",
+      "auto-repair graph mutation during release",
+      "live provider calls in release governor"
+    ],
+    "release_evidence": [
+      "release/current/stage126_cross_lineage_intelligence_release_report.json",
+      "release/current/stage126_release_authority_manifest.json",
+      "release/current/stage126_lineage_release_pack.json",
+      "release/current/stage126_release_gate_report.json"
+    ]
+  },
+  "stage126_summary": {
+    "sealed_lineage": [
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125"
+    ],
+    "release_authority": "Gate25 primary + Gate28/Gate29 secondary under Stage125 Governor",
+    "authority_stack": {
+      "Gate25": "primary_nie_release_authority",
+      "Gate28": "secondary_asd_quality_gate",
+      "Gate29": "secondary_pne_predictive_gate",
+      "Governor": "deterministic_gate25_28_29_arbitration"
+    },
+    "blocked_by": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "109",
+  "status": "pass",
+  "artifacts": [
+    "release/current/stage109_plugin_pack/plugin_marketplace_index.json",
+    "release/current/stage109_plugin_pack/plugin_validation_report.json",
+    "release/current/stage109_plugin_pack/plugin_sandbox_policy_report.json"
+  ],
+  "canonical_package": "V1700_stage109_plugin_marketplace_architecture_FIXED.zip"
+}

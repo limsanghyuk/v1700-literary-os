@@ -1,0 +1,16 @@
+{
+  "stage": "81.1",
+  "title": "Branchpoint Reabsorption Reconciliation Gate",
+  "status": "pass",
+  "pytest": "52 passed",
+  "reabsorption_reconciliation_gate": "pass",
+  "stage81_1_release_gate": "pass",
+  "main_release_gate": "pass",
+  "p0_live_runtime_count": 13,
+  "p0_partial_count": 0,
+  "p0_missing_count": 0,
+  "commercial_readiness_gap_count": 4,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "canonical_package": "V1700_stage81_1_reabsorption_reconciliation_integrated_repository.zip"
+}

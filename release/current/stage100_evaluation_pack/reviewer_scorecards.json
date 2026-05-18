@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "scorecards": [
+    {
+      "seed_id": "STAGE100_SEED_KDRAMA_001",
+      "mode": "PROSE",
+      "candidate_id": "v1700_stage100_prose_fixture",
+      "engine_profile": "V1700 Literary OS local-first prose authority",
+      "score_total": 8.82,
+      "score_breakdown": {
+        "sentence_density": 8.8,
+        "sensory_texture": 8.6,
+        "interiority": 8.7,
+        "voice_drift_control": 8.9,
+        "longform_literary_structure": 9.1
+      },
+      "reviewer_notes": [
+        "Prose mode values density, sensory residue, interiority, and longform voice stability.",
+        "Scenario-only beat metrics are intentionally excluded from prose scoring."
+      ],
+      "release_relevance": "INFO"
+    },
+    {
+      "seed_id": "STAGE100_SEED_SCENARIO_001",
+      "mode": "SCENARIO",
+      "candidate_id": "v1700_stage100_scenario_fixture",
+      "engine_profile": "V1700 Literary OS local-first scenario authority",
+      "score_total": 8.4,
+      "score_breakdown": {
+        "scene_beat_clarity": 8.5,
+        "investigative_action": 8.2,
+        "dialogue_silence_pressure": 8.4,
+        "visualizability": 8.6,
+        "production_feasibility": 8.3
+      },
+      "reviewer_notes": [
+        "Scenario mode values scene action, beat legibility, silence, camera-readiness, and production feasibility.",
+        "Prose interiority metrics are intentionally excluded from scenario scoring."
+      ],
+      "release_relevance": "INFO"
+    }
+  ],
+  "prose_scenario_metric_conflation": false,
+  "evaluation_type": "fixture_contract_validation"
+}

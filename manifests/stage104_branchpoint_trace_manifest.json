@@ -1,0 +1,10 @@
+{
+  "stage": "104",
+  "status": "pass",
+  "symbols": [
+    "studio_beta",
+    "stage104",
+    "stage104_release_gate"
+  ],
+  "branchpoint_lineage_preserved": true
+}

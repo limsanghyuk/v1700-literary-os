@@ -1,0 +1,442 @@
+{
+  "stage": "115",
+  "baseline_stage": "114",
+  "title": "CharacterInfluenceMatrix + Structural Balance",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "115",
+    "baseline_stage": "114",
+    "title": "CharacterInfluenceMatrix + Structural Balance",
+    "matrix_must_be_asymmetric": true,
+    "triangle_tension_required": true,
+    "centrality_required": true,
+    "role_tier_assignment_required": true,
+    "live_provider_calls_allowed_in_release_gate": false,
+    "physics_reward_bridge_llm_calls_allowed": false,
+    "next_development_order": [
+      "Stage116",
+      "Stage117",
+      "Stage118",
+      "Stage119",
+      "Stage120"
+    ]
+  },
+  "cim": {
+    "stage": "115",
+    "baseline_stage": "114",
+    "title": "CharacterInfluenceMatrix + Structural Balance",
+    "status": "pass",
+    "issues": [],
+    "scene_id": "stage115_fixture_scene_001",
+    "observations": [
+      {
+        "source": "minjun",
+        "target": "sujin",
+        "delta": 0.72,
+        "evidence": "protagonist protects confidante",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "sujin",
+        "target": "minjun",
+        "delta": 0.41,
+        "evidence": "confidante restores protagonist resolve",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "chairman",
+        "target": "minjun",
+        "delta": -0.82,
+        "evidence": "antagonist applies succession pressure",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "minjun",
+        "target": "chairman",
+        "delta": -0.36,
+        "evidence": "protagonist resists authority",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "haewon",
+        "target": "sujin",
+        "delta": -0.64,
+        "evidence": "rival withholds critical evidence",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "sujin",
+        "target": "haewon",
+        "delta": -0.22,
+        "evidence": "confidante confronts rival",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "detective",
+        "target": "minjun",
+        "delta": 0.31,
+        "evidence": "outsider validates hidden clue",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "haewon",
+        "target": "detective",
+        "delta": -0.58,
+        "evidence": "secret keeper misleads investigator",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "detective",
+        "target": "chairman",
+        "delta": -0.44,
+        "evidence": "investigator threatens concealed power",
+        "scene_id": "stage115_fixture_scene_001"
+      },
+      {
+        "source": "chairman",
+        "target": "haewon",
+        "delta": 0.39,
+        "evidence": "antagonist rewards secret keeper",
+        "scene_id": "stage115_fixture_scene_001"
+      }
+    ],
+    "character_influence_matrix": {
+      "characters": [
+        "minjun",
+        "sujin",
+        "haewon",
+        "chairman",
+        "detective"
+      ],
+      "matrix": {
+        "minjun": {
+          "minjun": 0.0,
+          "sujin": 0.72,
+          "haewon": 0.0,
+          "chairman": -0.36,
+          "detective": 0.0
+        },
+        "sujin": {
+          "minjun": 0.41,
+          "sujin": 0.0,
+          "haewon": -0.22,
+          "chairman": 0.0,
+          "detective": 0.0
+        },
+        "haewon": {
+          "minjun": 0.0,
+          "sujin": -0.64,
+          "haewon": 0.0,
+          "chairman": 0.0,
+          "detective": -0.58
+        },
+        "chairman": {
+          "minjun": -0.82,
+          "sujin": 0.0,
+          "haewon": 0.39,
+          "chairman": 0.0,
+          "detective": 0.0
+        },
+        "detective": {
+          "minjun": 0.31,
+          "sujin": 0.0,
+          "haewon": 0.0,
+          "chairman": -0.44,
+          "detective": 0.0
+        }
+      },
+      "asymmetric_pair_count": 7,
+      "triangle_count": 10,
+      "high_tension_triangle_count": 10,
+      "triangles": [
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "haewon"
+          ],
+          "w_ab": 0.72,
+          "w_bc": -0.22,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "chairman"
+          ],
+          "w_ab": 0.72,
+          "w_bc": 0.0,
+          "w_ca": -0.82,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "detective"
+          ],
+          "w_ab": 0.72,
+          "w_bc": 0.0,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "haewon",
+            "chairman"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": -0.82,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "haewon",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": -0.58,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": -0.36,
+          "w_bc": 0.0,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "haewon",
+            "chairman"
+          ],
+          "w_ab": -0.22,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "haewon",
+            "detective"
+          ],
+          "w_ab": -0.22,
+          "w_bc": -0.58,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "haewon",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        }
+      ],
+      "high_tension_triangles": [
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "haewon"
+          ],
+          "w_ab": 0.72,
+          "w_bc": -0.22,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "chairman"
+          ],
+          "w_ab": 0.72,
+          "w_bc": 0.0,
+          "w_ca": -0.82,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "sujin",
+            "detective"
+          ],
+          "w_ab": 0.72,
+          "w_bc": 0.0,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "haewon",
+            "chairman"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": -0.82,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "haewon",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": -0.58,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "minjun",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": -0.36,
+          "w_bc": 0.0,
+          "w_ca": 0.31,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "haewon",
+            "chairman"
+          ],
+          "w_ab": -0.22,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "haewon",
+            "detective"
+          ],
+          "w_ab": -0.22,
+          "w_bc": -0.58,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "sujin",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        },
+        {
+          "characters": [
+            "haewon",
+            "chairman",
+            "detective"
+          ],
+          "w_ab": 0.0,
+          "w_bc": 0.0,
+          "w_ca": 0.0,
+          "balance": 0,
+          "tension": 2
+        }
+      ],
+      "centrality": {
+        "pagerank": {
+          "minjun": 0.425808,
+          "sujin": 0.405701,
+          "haewon": 0.080963,
+          "chairman": 0.043764,
+          "detective": 0.043764
+        },
+        "betweenness": {
+          "minjun": 1.0,
+          "sujin": 0.333333,
+          "haewon": 1.0,
+          "chairman": 0.333333,
+          "detective": 0.333333
+        },
+        "role_tiers": {
+          "minjun": "jang",
+          "sujin": "jang",
+          "haewon": "po",
+          "chairman": "jol",
+          "detective": "jol"
+        }
+      }
+    },
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage116",
+    "Stage117",
+    "Stage118",
+    "Stage119",
+    "Stage120"
+  ]
+}

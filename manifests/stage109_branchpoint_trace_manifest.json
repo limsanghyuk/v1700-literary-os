@@ -1,0 +1,11 @@
+{
+  "stage": "109",
+  "status": "pass",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "bp-stage109-genre-pack",
+    "bp-stage109-evaluator-pack",
+    "bp-stage109-export-pack",
+    "bp-stage109-provider-adapter-pack"
+  ]
+}

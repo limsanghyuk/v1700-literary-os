@@ -1,0 +1,376 @@
+{
+  "stage": "88",
+  "status": "pass",
+  "title": "Symbol-to-Branchpoint Traceability with Stage88 AI-Agent Benchmark Evidence",
+  "principle": "Connect literary logic to concrete code symbols, tests, and release gates without making GitNexus mandatory at runtime.",
+  "issues": [],
+  "entry_count": 26,
+  "coverage": {
+    "P0": {
+      "priority": "P0",
+      "total": 21,
+      "covered": 21,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "P1": {
+      "priority": "P1",
+      "total": 5,
+      "covered": 5,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "overall": {
+      "total": 26,
+      "covered": 26,
+      "coverage": 1.0
+    }
+  },
+  "entry_statuses": [
+    {
+      "branchpoint_id": "BP_STAGE85_NODE2_REVEAL_BOUNDARY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/gates/node_projection_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_PROVIDER_ZERO_LOCAL_FIRST",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime/provider_boundary.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GRAPHNEXUS_AUTHORITY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/gates/graph_nexus_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/lineage/stage83_1_consistency_audit.py",
+        "src/v1700/lineage/branchpoint_registry.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_DRAMA_HIERARCHY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/gates/stage80_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STAGE84_ABSORPTION_SAFE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/gates/stage84_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_COMMERCIAL_EVIDENCE_PACK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/commercial_release/engine.py",
+        "src/v1700/gates/stage83_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_ANTI_LLM_FILTER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STYLE_DNA",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_CLOSED_LOOP_RENDERER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_SELF_LEARNING_TRACE",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GITNEXUS_OPTIONAL_SIDECAR",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/sidecars/gitnexus/probe.py",
+        "src/v1700/sidecars/gitnexus/adapter.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_SERIES_ARC_PLANNER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/series_arc_planner.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CAUSAL_PLOT_GRAPH",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/causal_plot_graph.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CHARACTER_KNOWLEDGE_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROSE_RENDER_CONTRACT_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+        "src/v1700/nodes/node2_prose_renderer/contract.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROVIDER_ZERO_ABSORPTION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/stage86_smoke.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_EIGHT_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_REVEAL_KNOWLEDGE_SCALE_LOCK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_STAGE86_LINEAGE_PRESERVATION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage87_release_gate.py",
+        "src/v1700/gates/stage86_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "concept": "Stage88 replaces external human editor benchmarking with a deterministic local AI-agent editor panel.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.agents.build_default_agent_profiles",
+        "v1700.agent_benchmark.harness.AgentBlindBenchmarkHarness"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "docs/stages/stage88.md"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This preserves the user's request to substitute external editors/readers with artificial intelligence agents while keeping the benchmark reproducible."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "concept": "Stage88 evaluates blinded Stage87 scale-up samples without exposing model/stage identity to reviewer agents.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.contracts.BlindBenchmarkSample",
+        "v1700.agent_benchmark.harness.AgentBlindBenchmarkHarness"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "release/current/stage88_agent_benchmark_report.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate"
+      ],
+      "rationale": "This prevents agent scoring from becoming a self-confirming non-blind internal smoke test."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "concept": "Stage88 release requires agent consensus, minimum agent average, and minimum sample average above the quality floor.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.gates.stage88_release_gate.run_stage88_release_gate",
+        "v1700.agent_benchmark.harness.run_stage88_agent_benchmark_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "manifests/stage88_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This turns synthetic reviewer-agent output into an actual blocking release condition rather than a narrative report."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "concept": "AI-agent benchmark runs locally and preserves provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.harness.run_stage88_agent_benchmark_smoke",
+        "v1700.gates.stage88_release_gate.run_stage88_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps AI-agent evaluation inside the V1700 local-first operating boundary."
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

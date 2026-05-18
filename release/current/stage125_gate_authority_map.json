@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
+  "primary_gate": "Gate25",
+  "secondary_gates": [
+    "Gate28",
+    "Gate29"
+  ],
+  "blocked_by": [],
+  "warnings": [],
+  "checks": {
+    "gate25_primary_pass": true,
+    "gate28_secondary_quality_pass": true,
+    "gate29_secondary_predictive_expected_behavior": true,
+    "gate28_not_primary": true,
+    "gate29_not_primary": true,
+    "no_release_runtime_training": true,
+    "no_auto_repair_mutation": true,
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true
+  },
+  "gate_inputs": [
+    {
+      "gate_id": "Gate25",
+      "stage": "120",
+      "mode": "primary",
+      "status": "pass",
+      "report_path": "release/current/stage120_gate25_nie_v1_report.json",
+      "issues": [],
+      "metrics": {
+        "component_count": 0,
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0
+      }
+    },
+    {
+      "gate_id": "Gate28",
+      "stage": "123",
+      "mode": "secondary_quality",
+      "status": "pass",
+      "report_path": "release/current/stage123_gate28_report.json",
+      "issues": [],
+      "metrics": {
+        "combined_quality": 0.22,
+        "authority_mode": "secondary_quality_gate",
+        "mutation_count": 0
+      }
+    },
+    {
+      "gate_id": "Gate29",
+      "stage": "124",
+      "mode": "secondary_predictive",
+      "status": "pass",
+      "report_path": "release/current/stage124_gate29_report.json",
+      "issues": [],
+      "metrics": {
+        "low_risk_status": "pass",
+        "high_risk_status": "blocked",
+        "feedback_precision": 0.75,
+        "runtime_training_count": 0
+      }
+    }
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "gate28_primary_authority_enabled": false,
+    "gate29_primary_authority_enabled": false,
+    "release_gate_runtime_training_enabled": false,
+    "pne_runtime_training_count": 0,
+    "auto_repair_mutation_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

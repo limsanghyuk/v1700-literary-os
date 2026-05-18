@@ -1,0 +1,23 @@
+{
+  "stage": "123",
+  "title": "ASD / Gate28 Absorption",
+  "absorbed_from_reference": "V545 ASD / Gate28 concepts only",
+  "absorbed_components": [
+    "NarrativeDebtDetector",
+    "ArcConsistencyChecker",
+    "StoryDoctorOrchestrator",
+    "AutoRepairExecutorDryRun",
+    "Gate28SecondaryQualityGate"
+  ],
+  "blocked_components": [
+    "Gate28 primary authority",
+    "graph mutation auto-repair",
+    "LLM repair generation",
+    "direct V545 package merge",
+    "Gate29 predictive authority"
+  ],
+  "gate28_authority_mode": "secondary_quality_gate",
+  "auto_repair_mode": "dry_run_only",
+  "provider_default_calls": 0,
+  "graph_mutation_allowed": false
+}

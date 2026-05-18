@@ -1,0 +1,757 @@
+{
+  "stage": "101",
+  "baseline_stage": "100",
+  "title": "Cross-Lineage Absorption & Scenario Room Integration",
+  "status": "pass",
+  "issues": [],
+  "stage101_0_cross_lineage_preflight": {
+    "stage": "101.0",
+    "baseline_stage": "100",
+    "title": "Cross-Lineage Preflight & Source Availability Lock",
+    "status": "pass",
+    "issues": [],
+    "stage100_baseline_status": "pass",
+    "gitnexus_status": "pass",
+    "v430_source_status": "MISSING",
+    "absorption_mode": "fixture_contract_validation",
+    "v430_untraced_merge": false,
+    "source_probe": {
+      "status": "pass",
+      "source_status": "MISSING",
+      "source_available": false,
+      "source_paths": [],
+      "absorption_mode": "fixture_contract_validation",
+      "v430_untraced_merge": false
+    },
+    "absorption_matrix": {
+      "stage": "101.0",
+      "baseline_stage": "100",
+      "title": "V430 Absorption Candidate Matrix",
+      "status": "pass",
+      "source_status": "MISSING",
+      "absorption_mode": "fixture_contract_validation",
+      "v430_untraced_merge": false,
+      "candidates": [
+        {
+          "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+          "source_status": "MISSING",
+          "value_area": "SCENARIO_ROOM",
+          "v1700_overlap": "Stage98 Studio Workflow + Stage100 Scenario Evaluation",
+          "branchpoint_risk": "MEDIUM",
+          "proposed_action": "ADAPT",
+          "decision_reason": "Scenario-room orchestration is valuable, but must be recompiled as V1700 contracts before runtime promotion.",
+          "required_branchpoints": [
+            "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+            "BP_STAGE101_SCENARIO_ROOM_CONTRACT"
+          ],
+          "required_tests": [
+            "tests/test_stage101_scenario_room_contract.py"
+          ]
+        },
+        {
+          "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+          "source_status": "MISSING",
+          "value_area": "INVESTIGATION_ACTION",
+          "v1700_overlap": "Stage97 agency conservation + Stage100 scenario scoring",
+          "branchpoint_risk": "LOW",
+          "proposed_action": "ADAPT",
+          "decision_reason": "Action movement can strengthen scenario mode if each beat remains tied to agency and scene necessity.",
+          "required_branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "required_tests": [
+            "tests/test_stage101_investigation_action.py"
+          ]
+        },
+        {
+          "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
+          "source_status": "MISSING",
+          "value_area": "DIALOGUE_SILENCE",
+          "v1700_overlap": "Stage97 dialogue pragmatics + Node2 surface-only boundary",
+          "branchpoint_risk": "MEDIUM",
+          "proposed_action": "ADAPT",
+          "decision_reason": "Dialogue and silence cues are useful only if forbidden reveal and surface-only contracts remain explicit.",
+          "required_branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "required_tests": [
+            "tests/test_stage101_dialogue_silence_cue.py"
+          ]
+        },
+        {
+          "candidate_id": "V430_PROP_LED_REVEAL",
+          "source_status": "MISSING",
+          "value_area": "PROP_REVEAL",
+          "v1700_overlap": "Stage86 EpisodeRevealBudget + Stage97 payoff debt",
+          "branchpoint_risk": "MEDIUM",
+          "proposed_action": "ADAPT",
+          "decision_reason": "Prop reveals are allowed only when every cue is bound to a reveal-budget slot and payoff episode.",
+          "required_branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "required_tests": [
+            "tests/test_stage101_prop_reveal.py"
+          ]
+        },
+        {
+          "candidate_id": "V430_PRODUCT_PIPELINE_API",
+          "source_status": "MISSING",
+          "value_area": "PRODUCT_PIPELINE",
+          "v1700_overlap": "Stage89-98 Studio and publishing package",
+          "branchpoint_risk": "MEDIUM",
+          "proposed_action": "DEFER",
+          "decision_reason": "Product/API expansion belongs after scenario-room safety, most likely Stage103 deployment hardening.",
+          "required_branchpoints": [
+            "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT"
+          ],
+          "required_tests": [
+            "tests/test_stage101_absorption_matrix.py"
+          ]
+        }
+      ],
+      "allowed_actions": [
+        "ADAPT",
+        "DEFER"
+      ],
+      "blocked_actions": [
+        "UNTRACED_MERGE",
+        "DIRECT_RUNTIME_IMPORT"
+      ],
+      "cross_lineage_trace": {
+        "status": "pass",
+        "issues": [],
+        "trace_entries": [
+          {
+            "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+            "proposed_action": "ADAPT",
+            "branchpoints": [
+              "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+              "BP_STAGE101_SCENARIO_ROOM_CONTRACT"
+            ],
+            "tests": [
+              "tests/test_stage101_scenario_room_contract.py"
+            ],
+            "traced": true
+          },
+          {
+            "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+            "proposed_action": "ADAPT",
+            "branchpoints": [
+              "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+            ],
+            "tests": [
+              "tests/test_stage101_investigation_action.py"
+            ],
+            "traced": true
+          },
+          {
+            "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
+            "proposed_action": "ADAPT",
+            "branchpoints": [
+              "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+            ],
+            "tests": [
+              "tests/test_stage101_dialogue_silence_cue.py"
+            ],
+            "traced": true
+          },
+          {
+            "candidate_id": "V430_PROP_LED_REVEAL",
+            "proposed_action": "ADAPT",
+            "branchpoints": [
+              "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+            ],
+            "tests": [
+              "tests/test_stage101_prop_reveal.py"
+            ],
+            "traced": true
+          },
+          {
+            "candidate_id": "V430_PRODUCT_PIPELINE_API",
+            "proposed_action": "DEFER",
+            "branchpoints": [
+              "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT"
+            ],
+            "tests": [
+              "tests/test_stage101_absorption_matrix.py"
+            ],
+            "traced": true
+          }
+        ],
+        "v430_untraced_merge": false
+      },
+      "issues": []
+    },
+    "symbol_to_branchpoint_trace_status": "pass",
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "stage101_1_scenario_room_contract": {
+    "stage": "101.1",
+    "baseline_stage": "101.0",
+    "title": "Scenario Room Contract Layer",
+    "status": "pass",
+    "issues": [],
+    "scenario_room": {
+      "stage": "101.1/101.2",
+      "baseline_stage": "101.0",
+      "title": "Scenario Room Contract and Cue Integration",
+      "status": "pass",
+      "issues": [],
+      "plan": {
+        "series_id": "stage101-scenario-room-fixture",
+        "episode_id": "ep01",
+        "mode": "SCENARIO",
+        "scene_beat_count": 3,
+        "action_movement_count": 2,
+        "dialogue_silence_cue_count": 2,
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "node2_raw_reveal_access": 0,
+        "provider_call_count": 0
+      },
+      "scene_beat_board": {
+        "status": "pass",
+        "issues": [],
+        "scene_beat_count": 3,
+        "beats": [
+          {
+            "beat_id": "beat-001",
+            "scene_id": "ep01-sc001",
+            "beat_function": "visual_inciting_pressure",
+            "visible_action": "The lead notices a missing ledger page before anyone speaks.",
+            "conflict_vector": "truth_vs_institutional_silence",
+            "emotional_pressure_delta": 0.18,
+            "reveal_state": "SETUP",
+            "production_note": "Hold on the empty page, then cut before explanation.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-002",
+            "scene_id": "ep01-sc002",
+            "beat_function": "agency_choice_under_pressure",
+            "visible_action": "The lead hides the page copy and chooses to question the nurse off record.",
+            "conflict_vector": "public_role_vs_private_doubt",
+            "emotional_pressure_delta": 0.22,
+            "reveal_state": "DELAY",
+            "production_note": "Action must carry the decision; avoid exposition.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-003",
+            "scene_id": "ep01-sc003",
+            "beat_function": "prop_reveal_setup",
+            "visible_action": "A cracked watch appears on the antagonist's desk.",
+            "conflict_vector": "memory_object_vs_denial",
+            "emotional_pressure_delta": 0.12,
+            "reveal_state": "SETUP",
+            "production_note": "Prop enters frame before dialogue names it.",
+            "microplot_id": "microplot-antagonist-pressure-01",
+            "payoff_debt_id": "payoff-cracked-watch"
+          }
+        ]
+      },
+      "investigation_action": {
+        "status": "pass",
+        "issues": [],
+        "action_movement_count": 2,
+        "beats": [
+          {
+            "beat_id": "act-001",
+            "scene_id": "ep01-sc001",
+            "actor_id": "protagonist",
+            "action_goal": "Confirm whether the ledger page was removed before the audit.",
+            "clue_or_obstacle": "The timestamp stamp is missing from the scan.",
+            "agency_delta": 0.16,
+            "scene_necessity_anchor": "changes_information_and_goal"
+          },
+          {
+            "beat_id": "act-002",
+            "scene_id": "ep01-sc002",
+            "actor_id": "supporting_witness",
+            "action_goal": "Signal fear without direct confession.",
+            "clue_or_obstacle": "She leaves the room only after hearing the antagonist's name.",
+            "agency_delta": 0.11,
+            "scene_necessity_anchor": "changes_relationship_and_risk"
+          }
+        ]
+      },
+      "dialogue_silence": {
+        "status": "pass",
+        "issues": [],
+        "dialogue_silence_cue_count": 2,
+        "node2_raw_reveal_access": 0,
+        "cues": [
+          {
+            "cue_id": "dlg-001",
+            "scene_id": "ep01-sc002",
+            "speaker_id": "supporting_witness",
+            "speech_level": "formal_avoidant",
+            "silence_function": "withhold_direct_accusation",
+            "subtext": "She knows the missing page matters but fears naming the person who took it.",
+            "forbidden_reveal": [
+              "actual_thief_identity",
+              "finale_payoff_detail"
+            ],
+            "node2_surface_only": true
+          },
+          {
+            "cue_id": "dlg-002",
+            "scene_id": "ep01-sc003",
+            "speaker_id": "antagonist",
+            "speech_level": "polite_control",
+            "silence_function": "turn_question_into_debt",
+            "subtext": "The antagonist answers with courtesy to regain hierarchy.",
+            "forbidden_reveal": [
+              "watch_owner_backstory"
+            ],
+            "node2_surface_only": true
+          }
+        ]
+      },
+      "prop_reveal": {
+        "status": "pass",
+        "issues": [],
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "cues": [
+          {
+            "cue_id": "prop-001",
+            "prop_id": "missing-ledger-page",
+            "first_appearance_scene": "ep01-sc001",
+            "reveal_budget_slot": "RB-EP01-SETUP-02",
+            "payoff_episode": "ep04",
+            "status": "SETUP"
+          },
+          {
+            "cue_id": "prop-002",
+            "prop_id": "cracked-watch",
+            "first_appearance_scene": "ep01-sc003",
+            "reveal_budget_slot": "RB-EP01-SETUP-04",
+            "payoff_episode": "ep08",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      "scenario_room_contract_status": "pass",
+      "scene_beat_board_status": "pass",
+      "investigation_action_status": "pass",
+      "dialogue_silence_cue_status": "pass",
+      "prop_reveal_cue_status": "pass",
+      "provider_call_count": 0,
+      "live_provider_call_count": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "reveal_budget_safe": true
+    },
+    "scenario_room_contract_status": "pass",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "stage101_2_scenario_cue_integration": {
+    "stage": "101.2",
+    "baseline_stage": "101.1",
+    "title": "Beat / Action / Dialogue / Prop Cue Integration",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "scene_beat_board_pass": true,
+      "investigation_action_pass": true,
+      "dialogue_silence_cue_pass": true,
+      "prop_reveal_cue_pass": true,
+      "reveal_budget_safe": true
+    },
+    "scenario_room": {
+      "stage": "101.1/101.2",
+      "baseline_stage": "101.0",
+      "title": "Scenario Room Contract and Cue Integration",
+      "status": "pass",
+      "issues": [],
+      "plan": {
+        "series_id": "stage101-scenario-room-fixture",
+        "episode_id": "ep01",
+        "mode": "SCENARIO",
+        "scene_beat_count": 3,
+        "action_movement_count": 2,
+        "dialogue_silence_cue_count": 2,
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "node2_raw_reveal_access": 0,
+        "provider_call_count": 0
+      },
+      "scene_beat_board": {
+        "status": "pass",
+        "issues": [],
+        "scene_beat_count": 3,
+        "beats": [
+          {
+            "beat_id": "beat-001",
+            "scene_id": "ep01-sc001",
+            "beat_function": "visual_inciting_pressure",
+            "visible_action": "The lead notices a missing ledger page before anyone speaks.",
+            "conflict_vector": "truth_vs_institutional_silence",
+            "emotional_pressure_delta": 0.18,
+            "reveal_state": "SETUP",
+            "production_note": "Hold on the empty page, then cut before explanation.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-002",
+            "scene_id": "ep01-sc002",
+            "beat_function": "agency_choice_under_pressure",
+            "visible_action": "The lead hides the page copy and chooses to question the nurse off record.",
+            "conflict_vector": "public_role_vs_private_doubt",
+            "emotional_pressure_delta": 0.22,
+            "reveal_state": "DELAY",
+            "production_note": "Action must carry the decision; avoid exposition.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-003",
+            "scene_id": "ep01-sc003",
+            "beat_function": "prop_reveal_setup",
+            "visible_action": "A cracked watch appears on the antagonist's desk.",
+            "conflict_vector": "memory_object_vs_denial",
+            "emotional_pressure_delta": 0.12,
+            "reveal_state": "SETUP",
+            "production_note": "Prop enters frame before dialogue names it.",
+            "microplot_id": "microplot-antagonist-pressure-01",
+            "payoff_debt_id": "payoff-cracked-watch"
+          }
+        ]
+      },
+      "investigation_action": {
+        "status": "pass",
+        "issues": [],
+        "action_movement_count": 2,
+        "beats": [
+          {
+            "beat_id": "act-001",
+            "scene_id": "ep01-sc001",
+            "actor_id": "protagonist",
+            "action_goal": "Confirm whether the ledger page was removed before the audit.",
+            "clue_or_obstacle": "The timestamp stamp is missing from the scan.",
+            "agency_delta": 0.16,
+            "scene_necessity_anchor": "changes_information_and_goal"
+          },
+          {
+            "beat_id": "act-002",
+            "scene_id": "ep01-sc002",
+            "actor_id": "supporting_witness",
+            "action_goal": "Signal fear without direct confession.",
+            "clue_or_obstacle": "She leaves the room only after hearing the antagonist's name.",
+            "agency_delta": 0.11,
+            "scene_necessity_anchor": "changes_relationship_and_risk"
+          }
+        ]
+      },
+      "dialogue_silence": {
+        "status": "pass",
+        "issues": [],
+        "dialogue_silence_cue_count": 2,
+        "node2_raw_reveal_access": 0,
+        "cues": [
+          {
+            "cue_id": "dlg-001",
+            "scene_id": "ep01-sc002",
+            "speaker_id": "supporting_witness",
+            "speech_level": "formal_avoidant",
+            "silence_function": "withhold_direct_accusation",
+            "subtext": "She knows the missing page matters but fears naming the person who took it.",
+            "forbidden_reveal": [
+              "actual_thief_identity",
+              "finale_payoff_detail"
+            ],
+            "node2_surface_only": true
+          },
+          {
+            "cue_id": "dlg-002",
+            "scene_id": "ep01-sc003",
+            "speaker_id": "antagonist",
+            "speech_level": "polite_control",
+            "silence_function": "turn_question_into_debt",
+            "subtext": "The antagonist answers with courtesy to regain hierarchy.",
+            "forbidden_reveal": [
+              "watch_owner_backstory"
+            ],
+            "node2_surface_only": true
+          }
+        ]
+      },
+      "prop_reveal": {
+        "status": "pass",
+        "issues": [],
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "cues": [
+          {
+            "cue_id": "prop-001",
+            "prop_id": "missing-ledger-page",
+            "first_appearance_scene": "ep01-sc001",
+            "reveal_budget_slot": "RB-EP01-SETUP-02",
+            "payoff_episode": "ep04",
+            "status": "SETUP"
+          },
+          {
+            "cue_id": "prop-002",
+            "prop_id": "cracked-watch",
+            "first_appearance_scene": "ep01-sc003",
+            "reveal_budget_slot": "RB-EP01-SETUP-04",
+            "payoff_episode": "ep08",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      "scenario_room_contract_status": "pass",
+      "scene_beat_board_status": "pass",
+      "investigation_action_status": "pass",
+      "dialogue_silence_cue_status": "pass",
+      "prop_reveal_cue_status": "pass",
+      "provider_call_count": 0,
+      "live_provider_call_count": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "reveal_budget_safe": true
+    },
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "stage101_3_dual_mode_regression": {
+    "stage": "101.3",
+    "baseline_stage": "101.2",
+    "title": "Dual-Mode Regression + Absorption Release Gate",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "stage100_dual_mode_pass": true,
+      "prose_scenario_metric_conflation_false": true,
+      "scenario_room_pass": true,
+      "provider_zero_pass": true,
+      "node2_boundary_pass": true,
+      "raw_manuscript_leakage_pass": true
+    },
+    "dual_mode_evaluation": {
+      "stage": "100.1",
+      "baseline_stage": "100.0",
+      "title": "Dual-Mode Literary / Scenario Evaluation",
+      "evaluation_type": "fixture_contract_validation",
+      "actual_generation_benchmark": false,
+      "benchmark_scope": "Validates evaluator contracts, score schema separation, and release evidence shape. It does not claim a live generation quality benchmark.",
+      "status": "pass",
+      "issues": [],
+      "prose_evaluation_status": "pass",
+      "scenario_evaluation_status": "pass",
+      "prose_scenario_metric_conflation": false,
+      "prose": {
+        "seed_id": "STAGE100_SEED_KDRAMA_001",
+        "mode": "PROSE",
+        "candidate_id": "v1700_stage100_prose_fixture",
+        "engine_profile": "V1700 Literary OS local-first prose authority",
+        "score_total": 8.82,
+        "score_breakdown": {
+          "sentence_density": 8.8,
+          "sensory_texture": 8.6,
+          "interiority": 8.7,
+          "voice_drift_control": 8.9,
+          "longform_literary_structure": 9.1
+        },
+        "reviewer_notes": [
+          "Prose mode values density, sensory residue, interiority, and longform voice stability.",
+          "Scenario-only beat metrics are intentionally excluded from prose scoring."
+        ],
+        "release_relevance": "INFO"
+      },
+      "scenario": {
+        "seed_id": "STAGE100_SEED_SCENARIO_001",
+        "mode": "SCENARIO",
+        "candidate_id": "v1700_stage100_scenario_fixture",
+        "engine_profile": "V1700 Literary OS local-first scenario authority",
+        "score_total": 8.4,
+        "score_breakdown": {
+          "scene_beat_clarity": 8.5,
+          "investigative_action": 8.2,
+          "dialogue_silence_pressure": 8.4,
+          "visualizability": 8.6,
+          "production_feasibility": 8.3
+        },
+        "reviewer_notes": [
+          "Scenario mode values scene action, beat legibility, silence, camera-readiness, and production feasibility.",
+          "Prose interiority metrics are intentionally excluded from scenario scoring."
+        ],
+        "release_relevance": "INFO"
+      },
+      "evaluation_pack": "release/current/stage100_evaluation_pack"
+    },
+    "scenario_room": {
+      "stage": "101.1/101.2",
+      "baseline_stage": "101.0",
+      "title": "Scenario Room Contract and Cue Integration",
+      "status": "pass",
+      "issues": [],
+      "plan": {
+        "series_id": "stage101-scenario-room-fixture",
+        "episode_id": "ep01",
+        "mode": "SCENARIO",
+        "scene_beat_count": 3,
+        "action_movement_count": 2,
+        "dialogue_silence_cue_count": 2,
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "node2_raw_reveal_access": 0,
+        "provider_call_count": 0
+      },
+      "scene_beat_board": {
+        "status": "pass",
+        "issues": [],
+        "scene_beat_count": 3,
+        "beats": [
+          {
+            "beat_id": "beat-001",
+            "scene_id": "ep01-sc001",
+            "beat_function": "visual_inciting_pressure",
+            "visible_action": "The lead notices a missing ledger page before anyone speaks.",
+            "conflict_vector": "truth_vs_institutional_silence",
+            "emotional_pressure_delta": 0.18,
+            "reveal_state": "SETUP",
+            "production_note": "Hold on the empty page, then cut before explanation.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-002",
+            "scene_id": "ep01-sc002",
+            "beat_function": "agency_choice_under_pressure",
+            "visible_action": "The lead hides the page copy and chooses to question the nurse off record.",
+            "conflict_vector": "public_role_vs_private_doubt",
+            "emotional_pressure_delta": 0.22,
+            "reveal_state": "DELAY",
+            "production_note": "Action must carry the decision; avoid exposition.",
+            "microplot_id": "microplot-investigation-01",
+            "payoff_debt_id": "payoff-ledger-page"
+          },
+          {
+            "beat_id": "beat-003",
+            "scene_id": "ep01-sc003",
+            "beat_function": "prop_reveal_setup",
+            "visible_action": "A cracked watch appears on the antagonist's desk.",
+            "conflict_vector": "memory_object_vs_denial",
+            "emotional_pressure_delta": 0.12,
+            "reveal_state": "SETUP",
+            "production_note": "Prop enters frame before dialogue names it.",
+            "microplot_id": "microplot-antagonist-pressure-01",
+            "payoff_debt_id": "payoff-cracked-watch"
+          }
+        ]
+      },
+      "investigation_action": {
+        "status": "pass",
+        "issues": [],
+        "action_movement_count": 2,
+        "beats": [
+          {
+            "beat_id": "act-001",
+            "scene_id": "ep01-sc001",
+            "actor_id": "protagonist",
+            "action_goal": "Confirm whether the ledger page was removed before the audit.",
+            "clue_or_obstacle": "The timestamp stamp is missing from the scan.",
+            "agency_delta": 0.16,
+            "scene_necessity_anchor": "changes_information_and_goal"
+          },
+          {
+            "beat_id": "act-002",
+            "scene_id": "ep01-sc002",
+            "actor_id": "supporting_witness",
+            "action_goal": "Signal fear without direct confession.",
+            "clue_or_obstacle": "She leaves the room only after hearing the antagonist's name.",
+            "agency_delta": 0.11,
+            "scene_necessity_anchor": "changes_relationship_and_risk"
+          }
+        ]
+      },
+      "dialogue_silence": {
+        "status": "pass",
+        "issues": [],
+        "dialogue_silence_cue_count": 2,
+        "node2_raw_reveal_access": 0,
+        "cues": [
+          {
+            "cue_id": "dlg-001",
+            "scene_id": "ep01-sc002",
+            "speaker_id": "supporting_witness",
+            "speech_level": "formal_avoidant",
+            "silence_function": "withhold_direct_accusation",
+            "subtext": "She knows the missing page matters but fears naming the person who took it.",
+            "forbidden_reveal": [
+              "actual_thief_identity",
+              "finale_payoff_detail"
+            ],
+            "node2_surface_only": true
+          },
+          {
+            "cue_id": "dlg-002",
+            "scene_id": "ep01-sc003",
+            "speaker_id": "antagonist",
+            "speech_level": "polite_control",
+            "silence_function": "turn_question_into_debt",
+            "subtext": "The antagonist answers with courtesy to regain hierarchy.",
+            "forbidden_reveal": [
+              "watch_owner_backstory"
+            ],
+            "node2_surface_only": true
+          }
+        ]
+      },
+      "prop_reveal": {
+        "status": "pass",
+        "issues": [],
+        "prop_reveal_cue_count": 2,
+        "reveal_budget_safe": true,
+        "cues": [
+          {
+            "cue_id": "prop-001",
+            "prop_id": "missing-ledger-page",
+            "first_appearance_scene": "ep01-sc001",
+            "reveal_budget_slot": "RB-EP01-SETUP-02",
+            "payoff_episode": "ep04",
+            "status": "SETUP"
+          },
+          {
+            "cue_id": "prop-002",
+            "prop_id": "cracked-watch",
+            "first_appearance_scene": "ep01-sc003",
+            "reveal_budget_slot": "RB-EP01-SETUP-04",
+            "payoff_episode": "ep08",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      "scenario_room_contract_status": "pass",
+      "scene_beat_board_status": "pass",
+      "investigation_action_status": "pass",
+      "dialogue_silence_cue_status": "pass",
+      "prop_reveal_cue_status": "pass",
+      "provider_call_count": 0,
+      "live_provider_call_count": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "reveal_budget_safe": true
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "v430_untraced_merge": false
+}

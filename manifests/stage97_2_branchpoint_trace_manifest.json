@@ -1,0 +1,12 @@
+{
+  "stage": "97.2",
+  "baseline_stage": "97.1",
+  "branchpoint_lineage_preserved": true,
+  "preserved_boundaries": [
+    "provider_zero",
+    "node2_surface_only",
+    "raw_manuscript_local_only",
+    "stage96_provider_ensemble_not_replaced",
+    "stage97_1_adversarial_validation_preserved"
+  ]
+}

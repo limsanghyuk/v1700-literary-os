@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "beat_count": 3,
+  "beats": [
+    {
+      "card_id": "scenario-001",
+      "scene_id": "scene-001",
+      "beat": "investigator_enters_closed_station",
+      "action": "records_rain_mismatch",
+      "production_note": "single_location"
+    },
+    {
+      "card_id": "scenario-002",
+      "scene_id": "scene-002",
+      "beat": "prop_led_reveal",
+      "prop": "dead_timetable_board",
+      "cue": "date_appears"
+    },
+    {
+      "card_id": "scenario-003",
+      "scene_id": "scene-002",
+      "beat": "silence_cue",
+      "dialogue_function": "subtext_not_exposition",
+      "cue": "unanswered_question"
+    }
+  ]
+}

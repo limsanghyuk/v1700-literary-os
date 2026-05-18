@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "project_memory_namespaces": [
+    "project_alpha",
+    "project_beta",
+    "project_gamma",
+    "project_delta"
+  ],
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "cross_project_write": 0,
+  "raw_manuscript_sharing": 0,
+  "full_text_exported": false,
+  "namespace_isolation_preserved": true
+}

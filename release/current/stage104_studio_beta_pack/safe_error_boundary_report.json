@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "redaction_policy": "drop_raw_text_drop_credentials_keep_stage_and_safe_error_code",
+  "raw_manuscript_included": false,
+  "credential_included": false,
+  "provider_payload_included": false,
+  "safe_error_code": "STAGE104_SAFE_BETA_WARNING"
+}

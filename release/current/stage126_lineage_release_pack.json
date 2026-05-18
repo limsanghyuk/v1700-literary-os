@@ -1,0 +1,38 @@
+{
+  "release_name": "Cross-Lineage Intelligence Release",
+  "release_stage": "126",
+  "baseline_stage": "125",
+  "sealed_lineage": [
+    "120",
+    "121",
+    "122",
+    "123",
+    "124",
+    "125"
+  ],
+  "authority_stack": {
+    "Gate25": "primary_nie_release_authority",
+    "Gate28": "secondary_asd_quality_gate",
+    "Gate29": "secondary_pne_predictive_gate",
+    "Governor": "deterministic_gate25_28_29_arbitration"
+  },
+  "absorbed_reference_branches": {
+    "V525": "NIE v2.0 stability concepts via Stage122",
+    "V545": "ASD/Gate28 concepts via Stage123 dry-run adapter",
+    "V555": "PNE/Gate29 concepts via Stage124 predictive adapter"
+  },
+  "blocked_at_release": [
+    "direct V545/V555 package merge",
+    "Gate28 primary authority",
+    "Gate29 primary authority",
+    "release-gate runtime model training",
+    "auto-repair graph mutation during release",
+    "live provider calls in release governor"
+  ],
+  "release_evidence": [
+    "release/current/stage126_cross_lineage_intelligence_release_report.json",
+    "release/current/stage126_release_authority_manifest.json",
+    "release/current/stage126_lineage_release_pack.json",
+    "release/current/stage126_release_gate_report.json"
+  ]
+}

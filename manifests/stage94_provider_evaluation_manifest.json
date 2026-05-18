@@ -1,0 +1,18 @@
+{
+  "stage": "94",
+  "status": "pass",
+  "title": "Live Provider Evaluation Harness",
+  "provider_count": 4,
+  "prompt_count": 3,
+  "evaluation_count": 12,
+  "best_provider_id": "claude_anthropic",
+  "live_call_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "acceptance": {
+    "four_provider_adapter_contract": true,
+    "dry_run_fixture_evaluation_pass": true,
+    "credential_raw_value_leak_count_zero": true,
+    "normalized_provider_response_schema_pass": true
+  }
+}

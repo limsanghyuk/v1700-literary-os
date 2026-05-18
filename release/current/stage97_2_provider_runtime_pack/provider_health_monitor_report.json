@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "healthy_providers": [
+    "fixture",
+    "mock"
+  ]
+}

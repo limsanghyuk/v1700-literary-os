@@ -1,0 +1,10 @@
+{
+  "stage": "107.5",
+  "status": "pass",
+  "canonical_package": "V1700_stage107_5_provider_live_sandbox_adapter_verification_FIXED.zip",
+  "sha256_sidecar": "V1700_stage107_5_provider_live_sandbox_adapter_verification_FIXED.zip.sha256",
+  "filelist": "V1700_stage107_5_FIXED_filelist.txt",
+  "sandbox_results_included": "contract_reports_only",
+  "raw_outputs_included": false,
+  "credentials_included": false
+}

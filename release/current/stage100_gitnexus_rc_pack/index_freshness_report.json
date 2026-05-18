@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "gitnexus": {
+    "installed": false,
+    "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+    "optional_runtime_dependency": false,
+    "fallback_available": true,
+    "error": "gitnexus binary not installed; npx path is available for optional use"
+  },
+  "index_quality": {
+    "stage": "85",
+    "status": "pass",
+    "title": "GitNexus Index Quality Gate",
+    "principle": "Use GitNexus as optional high-resolution code impact evidence while preserving GraphNexus authority and Python fallback.",
+    "issues": [],
+    "meta_source": "stage100_gitnexus_meta_snapshot_release_snapshot",
+    "gitnexus": {
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "optional_runtime_dependency": false,
+      "fallback_available": true,
+      "error": "gitnexus binary not installed; npx path is available for optional use"
+    },
+    "metrics": {
+      "files": 1225,
+      "nodes": 9793,
+      "edges": 15233,
+      "clusters": 162,
+      "flows": 298,
+      "embeddings": 0,
+      "nodes_per_file": 7.994,
+      "edges_per_node": 1.555,
+      "clusters_per_100_files": 13.224,
+      "flows_per_100_files": 24.327
+    },
+    "thresholds": {
+      "min_files": 300,
+      "min_nodes": 3000,
+      "min_edges": 5000,
+      "min_clusters": 30,
+      "min_flows": 100,
+      "min_p0_coverage": 1.0,
+      "min_p1_coverage": 0.8
+    },
+    "checks": {
+      "meta_available": true,
+      "files_threshold": true,
+      "nodes_threshold": true,
+      "edges_threshold": true,
+      "clusters_threshold": true,
+      "flows_threshold": true,
+      "p0_trace_coverage": true,
+      "p1_trace_coverage": true,
+      "gitnexus_optional_sidecar_preserved": true,
+      "python_fallback_preserved": true,
+      "graphnexus_authority_preserved": true
+    },
+    "symbol_to_branchpoint_trace": {
+      "status": "pass",
+      "entry_count": 68,
+      "coverage": {
+        "P0": {
+          "priority": "P0",
+          "total": 59,
+          "covered": 59,
+          "coverage": 1.0,
+          "missing_branchpoints": []
+        },
+        "P1": {
+          "priority": "P1",
+          "total": 9,
+          "covered": 9,
+          "coverage": 1.0,
+          "missing_branchpoints": []
+        },
+        "overall": {
+          "total": 68,
+          "covered": 68,
+          "coverage": 1.0
+        }
+      }
+    },
+    "claude_v381_reference": {
+      "files": 332,
+      "nodes": 10443,
+      "edges": 21487,
+      "clusters": 361,
+      "flows": 140
+    },
+    "interpretation": "Stage84 already has comparable flow breadth; Stage85 requires traceable symbol and branchpoint density rather than mandatory GitNexus runtime dependency.",
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  },
+  "runtime_dependency_required": false,
+  "python_fallback_required": true
+}

@@ -1,0 +1,91 @@
+{
+  "status": "pass",
+  "rows": [
+    {
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "openai",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "openai",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "PROSE",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    },
+    {
+      "provider_id": "ollama",
+      "mode": "SCENARIO",
+      "latency_ms": 0,
+      "estimated_cost": null,
+      "live_call_performed": false
+    }
+  ],
+  "live_call_count": 0,
+  "estimated_total_cost": 0.0
+}

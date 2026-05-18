@@ -1,0 +1,11 @@
+{
+  "stage": "98.2",
+  "status": "active",
+  "includes_full_text_default": false,
+  "includes_feature_reports": true,
+  "includes_release_evidence": true,
+  "provider_export": false,
+  "raw_manuscript_provider_leakage": 0,
+  "required_stage_report": "release/current/stage98_2_publishing_package_report.json",
+  "required_manifest": "release/current/stage98_studio_pack/publishing_package_manifest.json"
+}

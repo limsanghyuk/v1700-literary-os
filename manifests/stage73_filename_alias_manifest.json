@@ -1,0 +1,27 @@
+{
+  "stage": "73",
+  "canonical_package_filename": "V1700_stage73_full_workspace_integrated_repository.zip",
+  "canonical_sha256_filename": "V1700_stage73_full_workspace_integrated_repository.sha256.txt",
+  "canonical_filelist_filename": "V1700_stage73_full_workspace_integrated_repository_filelist.txt",
+  "previous_artifact_names": [
+    "gpt_v1700_stage72_3_1_full_workspace_integrated_repository.zip",
+    "gpt_v1700_stage72_3_1_full_workspace_integrated_repository.sha256.txt",
+    "gpt_v1700_stage72_3_1_full_workspace_integrated_repository_filelist.txt",
+    "gpt1700_stage72_3_foundation_lineage_governance_full_integrated_repository.zip",
+    "v1700_stage72_3.zip"
+  ],
+  "previous_internal_release_paths": [
+    "gpt/releases/v1700/stage72_3_1/",
+    "gpt/active/v1700/literary_generator/release/current/STAGE72_3_1_FULL_WORKSPACE_RELEASE_REPORT.md",
+    "gpt/active/v1700/literary_generator/release/current/stage72_3_1_full_workspace_release_report.json",
+    "gpt/manifests/stage72_3_1_full_workspace_manifest.json"
+  ],
+  "canonical_internal_release_paths": [
+    "gpt/releases/v1700/stage73/",
+    "gpt/active/v1700/literary_generator/release/current/STAGE73_FULL_WORKSPACE_RELEASE_REPORT.md",
+    "gpt/active/v1700/literary_generator/release/current/stage73_full_workspace_release_report.json",
+    "gpt/manifests/stage73_full_workspace_manifest.json"
+  ],
+  "policy": "Future development must cite Stage73 as the canonical release name while retaining prior Stage72.3.1 filenames as historical aliases for traceability.",
+  "generated_at": "2026-05-12T08:39:11.547343+00:00"
+}

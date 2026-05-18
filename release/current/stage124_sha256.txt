@@ -1,0 +1,1 @@
+Internal file hashes are recorded in /SHA256SUMS.txt. Final ZIP SHA256 is recorded in the external .zip.sha256 sidecar.

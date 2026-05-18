@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "stage": "128",
+  "gitnexus_sidecar_available": true,
+  "python_fallback_used": true,
+  "index_fresh": true,
+  "repo_path": "C:\\AI_Codex\\codex-work\\gpt\\analysis\\stage126_gitnexus_index_20260518",
+  "indexed_at": "2026-05-18T08:44:44.783Z",
+  "stats": {
+    "files": 2121,
+    "nodes": 16918,
+    "edges": 26030,
+    "communities": 271,
+    "processes": 300,
+    "embeddings": 0
+  },
+  "capabilities": {
+    "graph": {
+      "provider": "ladybugdb",
+      "status": "available"
+    },
+    "fts": {
+      "provider": "ladybugdb-fts",
+      "status": "available"
+    },
+    "vectorSearch": {
+      "provider": "exact-scan",
+      "status": "unavailable",
+      "exactScanLimit": 10000,
+      "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+    }
+  },
+  "shape_check": {
+    "status": "pass",
+    "missing": []
+  },
+  "result_normalizer": {
+    "status": "pass",
+    "source": "meta_snapshot+python_fallback"
+  },
+  "concept_impact": {
+    "provider_zero_preserved": true,
+    "node2_boundary_preserved": true,
+    "raw_manuscript_leakage_zero": true,
+    "cross_work_memory_isolation_preserved": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "survival_matrix": {
+    "Stage127_Preflight": true,
+    "Gate25_NIE_primary_authority": true,
+    "Gate28_ASD_secondary_quality": true,
+    "Gate29_PNE_secondary_predictive": true,
+    "Stage125_Governor": true,
+    "Stage126_CrossLineageRelease": true
+  },
+  "symbol_to_branchpoint_trace": {
+    "run_stage128_read_only_absorption": [
+      "shared_character_read_only",
+      "shared_world_read_only",
+      "provider_zero"
+    ],
+    "run_stage128_release_gate": [
+      "release_gate",
+      "repo_doctor",
+      "clean_packaging"
+    ]
+  },
+  "python_fallback": {
+    "status": "PASS",
+    "import_edges_total": 2722,
+    "critical_paths_checked": {
+      "src/v1700/shared_readonly_absorption/contracts.py": true,
+      "src/v1700/shared_readonly_absorption/shared_character_adapter.py": true,
+      "src/v1700/shared_readonly_absorption/shared_world_adapter.py": true,
+      "src/v1700/shared_readonly_absorption/license_boundary.py": true,
+      "src/v1700/stage128/stage128_runner.py": true,
+      "src/v1700/gates/stage128_release_gate.py": true,
+      "tools/run_stage128_read_only_absorption.py": true,
+      "tools/run_stage128_release_gate.py": true,
+      "tests/test_stage128_read_only_absorption.py": true
+    },
+    "manifests_checked": {
+      "manifests/stage128_manifest.json": true,
+      "manifests/stage128_read_only_absorption_manifest.json": true,
+      "manifests/stage128_branchpoint_trace_manifest.json": true
+    },
+    "release_evidence_checked": {
+      "release/current/stage128_read_only_absorption_report.json": true,
+      "release/current/stage128_release_gate_report.json": true,
+      "release/current/stage128_read_only_absorption_pack/shared_character_adapter_report.json": true
+    },
+    "orphan_critical_nodes": [],
+    "affected_tests": [
+      "tests/test_stage128_read_only_absorption.py"
+    ],
+    "affected_processes": [
+      "release_gate",
+      "repo_doctor",
+      "clean_packaging",
+      "shared_read_only_absorption"
+    ]
+  }
+}

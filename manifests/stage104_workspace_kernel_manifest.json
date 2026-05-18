@@ -1,0 +1,9 @@
+{
+  "stage": "104.1",
+  "status": "pass",
+  "components": [
+    "WorkspaceState",
+    "StudioSession",
+    "SceneCard"
+  ]
+}

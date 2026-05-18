@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "assessed_worlds": [
+    {
+      "world_id": "canon_alpha",
+      "timeline_conflict": 0.0,
+      "world_rule_conflict": 0.0,
+      "character_identity_conflict": 0.0,
+      "relationship_conflict": 0.0,
+      "canon_conflict_score": 0.0,
+      "density_status": "PASS"
+    },
+    {
+      "world_id": "canon_beta_probe",
+      "timeline_conflict": 0.2,
+      "world_rule_conflict": 0.1,
+      "character_identity_conflict": 0.0,
+      "relationship_conflict": 0.2,
+      "canon_conflict_score": 0.13,
+      "density_status": "PASS"
+    },
+    {
+      "world_id": "blocked_canon_collision",
+      "timeline_conflict": 1.0,
+      "world_rule_conflict": 1.0,
+      "character_identity_conflict": 0.5,
+      "relationship_conflict": 0.6,
+      "canon_conflict_score": 0.84,
+      "density_status": "BLOCK"
+    }
+  ],
+  "shared_world_conflicts": 1,
+  "blocking_conflicts_detected": 1,
+  "canon_conflict_report_required": true
+}

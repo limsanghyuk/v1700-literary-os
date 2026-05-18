@@ -1,0 +1,40 @@
+{
+  "stage": "86",
+  "title": "V380 Arc-Reveal-Knowledge Feature Map",
+  "absorption_policy": "Absorb concepts into V1700 code symbols and gates; do not wholesale-copy another model repository.",
+  "source_reference": "literary_os_v380_release.zip",
+  "absorbed_features": [
+    {
+      "v380_feature": "SeriesArcPlanner",
+      "v1700_symbol": "v1700.arc_reveal_knowledge.series_arc_planner.SeriesArcPlanner",
+      "runtime_value": "Creates a four-act 16-episode season arc with deterministic tension targets."
+    },
+    {
+      "v380_feature": "CausalPlotGraph",
+      "v1700_symbol": "v1700.arc_reveal_knowledge.causal_plot_graph.CausalPlotGraph",
+      "runtime_value": "Stores causal, foreshadow, callback, and emotional escalation edges."
+    },
+    {
+      "v380_feature": "EpisodeRevealBudget",
+      "v1700_symbol": "v1700.arc_reveal_knowledge.reveal_budget.EpisodeRevealBudget",
+      "runtime_value": "Blocks premature direct reveal while allowing controlled foreshadowing."
+    },
+    {
+      "v380_feature": "CharacterKnowledgeProseBridge",
+      "v1700_symbol": "v1700.arc_reveal_knowledge.character_knowledge_bridge.CharacterKnowledgeProseBridge",
+      "runtime_value": "Converts character knowledge status into prose-safe render constraints."
+    },
+    {
+      "v380_feature": "KnowledgeStatus -> ProseRenderContract",
+      "v1700_symbol": "v1700.arc_reveal_knowledge.prose_contract_bridge.build_prose_render_contract",
+      "runtime_value": "Folds reveal and knowledge constraints into the existing Node2 surface-only contract."
+    }
+  ],
+  "preserved_boundaries": {
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "gitnexus_optional_only": true,
+    "graph_nexus_authority_preserved": true,
+    "python_fallback_required": true
+  }
+}

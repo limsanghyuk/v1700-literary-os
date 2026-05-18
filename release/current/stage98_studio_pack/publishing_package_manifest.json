@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "publishing_package": {
+    "package_id": "stage98-publishing-package",
+    "project_id": "stage98-commercial-studio-fixture",
+    "export_formats": [
+      "json",
+      "md",
+      "txt"
+    ],
+    "includes_full_text": false,
+    "includes_feature_reports": true,
+    "includes_release_evidence": true,
+    "package_manifest_path": "release/current/stage98_studio_pack/publishing_package_manifest.json"
+  },
+  "unresolved_block_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_export": false
+}

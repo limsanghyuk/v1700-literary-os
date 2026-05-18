@@ -1,0 +1,107 @@
+{
+  "stage": "127",
+  "baseline_stage": "126",
+  "title": "MultiWork Preflight & Isolation Audit Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage126_trunk_integrity_preserved": {
+      "status": "pass"
+    },
+    "v571_multiwork_structure_scanned": {
+      "status": "pass"
+    },
+    "project_isolation_audit_generated": {
+      "status": "pass"
+    },
+    "shared_character_db_audit_generated": {
+      "status": "pass"
+    },
+    "shared_world_db_audit_generated": {
+      "status": "pass"
+    },
+    "author_license_api_audit_generated": {
+      "status": "pass"
+    },
+    "cross_work_unauthorized_read_write_zero": {
+      "status": "pass"
+    },
+    "raw_manuscript_cross_project_leakage_zero": {
+      "status": "pass"
+    },
+    "raw_manuscript_provider_leakage_zero": {
+      "status": "pass"
+    },
+    "direct_v571_merge_blocked": {
+      "status": "pass"
+    },
+    "stage128_130_absorption_plan_generated": {
+      "status": "pass"
+    },
+    "gate25_28_29_governor_compatibility_preserved": {
+      "status": "pass"
+    },
+    "gitnexus_python_fallback_preflight_pass": {
+      "status": "pass"
+    },
+    "gitnexus_shape_check_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage127": {
+    "status": "pass",
+    "stage": "127",
+    "baseline_stage": "126",
+    "title": "MultiWork Preflight & Isolation Audit",
+    "issues": [],
+    "direct_v571_merge_detected": false,
+    "direct_v571_merge_performed": false,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "gitnexus_sidecar_available": true,
+    "python_fallback_used": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "story_doctor_llm_call_count": 0,
+  "pne_provider_call_count": 0,
+  "pne_runtime_training_count": 0,
+  "auto_repair_mutation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

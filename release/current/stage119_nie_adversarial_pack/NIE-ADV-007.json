@@ -1,0 +1,41 @@
+{
+  "case": {
+    "case_id": "NIE-ADV-007",
+    "case_type": "role_tier_assignment",
+    "mutation_type": "orphan_character_role_tier",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "role_tier_orphan_character",
+    "expected_triggered_gate": "role_tier_assignment_gate",
+    "severity": "BLOCK",
+    "payload": {
+      "characters": [
+        "minjun",
+        "sujin",
+        "haewon"
+      ],
+      "role_tiers": {
+        "minjun": "jang",
+        "sujin": "jang"
+      }
+    }
+  },
+  "result": {
+    "case_id": "NIE-ADV-007",
+    "case_type": "role_tier_assignment",
+    "mutation_type": "orphan_character_role_tier",
+    "expected_status": "BLOCK",
+    "actual_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "role_tier_orphan_character",
+    "triggered_gate": "role_tier_assignment_gate",
+    "severity": "BLOCK",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-007.json",
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "111.0",
+  "status": "pass",
+  "checks": {
+    "stage110_baseline_gate_pass": true,
+    "gitnexus_absorption_preflight_pass": true,
+    "branchpoint_survival_pass": true,
+    "active_version_stage111_pass": true,
+    "quarantine_policy_pass": true,
+    "no_v485_direct_imports_pass": true,
+    "provider_zero_release_path_pass": true,
+    "node2_boundary_pass": true,
+    "raw_manuscript_leakage_pass": true,
+    "plugin_disabled_by_default_pass": true
+  },
+  "issues": [],
+  "quarantine_policy": {
+    "status": "pass",
+    "direct_code_import_allowed": false,
+    "metadata_direct_import_allowed": false,
+    "release_gate_replacement_allowed": false,
+    "allowed_absorption_mode": "wrap_only_or_recompiled_contract",
+    "forbidden_direct_imports": [
+      "literary_system.llm_bridge",
+      "tools.run_release_gate",
+      "MANIFEST_V485_COMPLETE"
+    ]
+  },
+  "direct_import_scan": {
+    "status": "pass",
+    "direct_import_hits": []
+  }
+}

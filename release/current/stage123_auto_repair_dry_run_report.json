@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "total": 2,
+  "dry_run": 2,
+  "approved": 0,
+  "gate_failed": 0,
+  "mutation_count": 0,
+  "results": [
+    {
+      "recommendation_id": "R-001",
+      "status": "dry_run",
+      "mutation_performed": false,
+      "message": "repair plan validated without mutation"
+    },
+    {
+      "recommendation_id": "R-002",
+      "status": "dry_run",
+      "mutation_performed": false,
+      "message": "repair plan validated without mutation"
+    }
+  ],
+  "issues": []
+}

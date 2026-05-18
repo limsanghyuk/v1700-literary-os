@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "workflow_status": "pass",
+  "files": [
+    "release/current/stage98_studio_pack/agency_dashboard_report.json",
+    "release/current/stage98_studio_pack/attention_heatmap_report.json",
+    "release/current/stage98_studio_pack/dialogue_warning_panel_report.json",
+    "release/current/stage98_studio_pack/episode_board_report.json",
+    "release/current/stage98_studio_pack/microplot_matrix_editor_report.json",
+    "release/current/stage98_studio_pack/payoff_dashboard_report.json",
+    "release/current/stage98_studio_pack/publishing_package_filelist.txt",
+    "release/current/stage98_studio_pack/publishing_package_manifest.json",
+    "release/current/stage98_studio_pack/review_package_report.json",
+    "release/current/stage98_studio_pack/revision_queue_report.json",
+    "release/current/stage98_studio_pack/stage98_0_summary.md",
+    "release/current/stage98_studio_pack/stage98_1_summary.md",
+    "release/current/stage98_studio_pack/stage98_2_summary.md",
+    "release/current/stage98_studio_pack/story_bible_report.json",
+    "release/current/stage98_studio_pack/studio_project_report.json",
+    "release/current/stage98_studio_pack/voice_drift_monitor_report.json"
+  ],
+  "full_text_exported": false
+}

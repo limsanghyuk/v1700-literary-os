@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "validations": [
+    {
+      "plugin_id": "core.genre.literary_thriller",
+      "status": "pass",
+      "issues": []
+    },
+    {
+      "plugin_id": "core.evaluator.editorial_scorecard",
+      "status": "pass",
+      "issues": []
+    },
+    {
+      "plugin_id": "core.export.writer_handoff",
+      "status": "pass",
+      "issues": []
+    },
+    {
+      "plugin_id": "sandbox.provider.live_adapter_probe",
+      "status": "pass",
+      "issues": []
+    }
+  ]
+}

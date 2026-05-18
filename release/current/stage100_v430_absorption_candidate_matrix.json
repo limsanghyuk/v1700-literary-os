@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "candidates": [
+    {
+      "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+      "value": "Scenario room / beat pipeline may improve script-mode orchestration.",
+      "v1700_overlap": "Stage98 Studio Workflow and Stage100 Scenario Evaluation",
+      "branchpoint_risk": "medium",
+      "decision": "DEFER_STAGE101"
+    },
+    {
+      "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+      "value": "Investigation/action beats may improve scenario-mode scene movement.",
+      "v1700_overlap": "Stage97 endurance and Stage100 scenario scoring",
+      "branchpoint_risk": "low",
+      "decision": "DEFER_STAGE101"
+    },
+    {
+      "candidate_id": "V430_PRODUCT_PIPELINE_API",
+      "value": "Product pipeline/API shape may improve future user trials.",
+      "v1700_overlap": "Stage89-98 Studio and Publishing Package",
+      "branchpoint_risk": "medium",
+      "decision": "COMPARE_ONLY"
+    }
+  ]
+}

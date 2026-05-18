@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "entries": {
+    "stage95": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    },
+    "stage96": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    },
+    "stage97": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    },
+    "stage97.1": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    },
+    "stage97.2": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    },
+    "stage98": {
+      "gate_status": "pass",
+      "manifest_present": true,
+      "release_evidence_present": true
+    }
+  }
+}

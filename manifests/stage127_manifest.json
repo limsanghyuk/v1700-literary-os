@@ -1,0 +1,26 @@
+{
+  "stage": "127",
+  "name": "MultiWork Preflight & Isolation Audit",
+  "baseline_stage": "126",
+  "status": "active",
+  "release_gate": "stage127_release_gate",
+  "preflight_tool": "tools/run_stage127_multiwork_preflight.py",
+  "release_gate_tool": "tools/run_stage127_release_gate.py",
+  "docs": "docs/stages/stage127.md",
+  "evidence": [
+    "release/current/stage127_multiwork_preflight_report.json",
+    "release/current/stage127_release_gate_report.json",
+    "release/current/stage127_multiwork_preflight_pack/"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "direct_v571_merge_performed": false,
+    "python_fallback_required": true
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "ADV-ATT-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "attention_fatigue_risk_above_threshold",
+    "triggered_gate": "attention_economy",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-ATT-001.json"
+  },
+  {
+    "case_id": "ADV-ATT-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "low_reward_high_cost_episode_count_above_threshold",
+    "triggered_gate": "attention_economy",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-ATT-002.json"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "stage": "103.2",
+  "name": "Runtime Profile Separation",
+  "status": "pass",
+  "profiles": {
+    "dev": {
+      "provider_mode": "fixture_local",
+      "live_provider_calls_by_default": false
+    },
+    "release": {
+      "provider_mode": "fixture_or_mock_only",
+      "live_provider_calls_by_default": false,
+      "raw_manuscript_allowed": false
+    },
+    "sandbox": {
+      "provider_mode": "opt_in_live_provider_guarded",
+      "live_provider_calls_by_default": false,
+      "credential_source": "explicit_env_only"
+    }
+  }
+}

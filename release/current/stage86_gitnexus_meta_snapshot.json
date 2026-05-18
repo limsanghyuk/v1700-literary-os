@@ -1,0 +1,29 @@
+{
+  "repoPath": "C:\\AI_Codex\\codex-work\\gpt\\work\\v1700_stage86_v380_arc_reveal_knowledge_absorption\\gpt\\active\\v1700\\literary_generator",
+  "lastCommit": "",
+  "indexedAt": "2026-05-13T05:14:18.474Z",
+  "stats": {
+    "files": 465,
+    "nodes": 3989,
+    "edges": 6402,
+    "communities": 52,
+    "processes": 181,
+    "embeddings": 0
+  },
+  "capabilities": {
+    "graph": {
+      "provider": "ladybugdb",
+      "status": "available"
+    },
+    "fts": {
+      "provider": "ladybugdb-fts",
+      "status": "available"
+    },
+    "vectorSearch": {
+      "provider": "exact-scan",
+      "status": "unavailable",
+      "exactScanLimit": 10000,
+      "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+    }
+  }
+}

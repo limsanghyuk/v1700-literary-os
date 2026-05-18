@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "provider_live_call_count_in_release": 0,
+  "provider_default_calls": 0,
+  "release_mode_provider": "fixture/mock only",
+  "inspected_reports": [
+    "release/current/stage97_2_provider_runtime_report.json",
+    "release/current/stage98_studio_workflow_report.json",
+    "release/current/stage98_release_gate_report.json"
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "case": {
+    "case_id": "NIE-NOR-001",
+    "case_type": "normal_nil_loop",
+    "mutation_type": "none",
+    "expected_status": "PASS",
+    "expected_block_reason": null,
+    "expected_triggered_gate": null,
+    "severity": "INFO",
+    "payload": {
+      "nil_report": {
+        "stage": "118",
+        "baseline_stage": "117",
+        "title": "NIL Orchestrator",
+        "status": "pass",
+        "components": [
+          {
+            "name": "reward_bridge",
+            "status": "pass",
+            "stage": "113",
+            "issue_count": 0,
+            "summary": {
+              "reward": 0.7855,
+              "advantage": 0.2855,
+              "baseline_after": 0.514275,
+              "coefficient_update_proposal_count": 4
+            }
+          },
+          {
+            "name": "adaptive_momentum_weights",
+            "status": "pass",
+            "stage": "114",
+            "issue_count": 0,
+            "summary": {
+              "alpha_before": {
+                "tension": 0.55,
+                "sympathy": 0.65,
+                "dread": 0.4,
+                "catharsis": 0.55
+              },
+              "alpha_after": {
+                "tension": 0.550086,
+                "sympathy": 0.64999,
+                "dread": 0.40004,
+                "catharsis": 0.550034
+              },
+              "drift_guard": {
+                "status": "pass",
+                "alpha_min": 0.3,
+                "alpha_max": 0.8,
+                "max_single_shift": 0.03,
+                "max_run_total_shift": 0.1,
+                "observed_max_single_shift": 8.6e-05,
+                "observed_run_total_shift": 0.00017,
+                "protected_policy": {
+                  "surface_safety_tolerance_can_loosen": false,
+                  "branchpoint_sensitivity_can_decrease": false,
+                  "provider_zero_policy_can_change": false,
+                  "node2_raw_reveal_tolerance": 0
+                },
+                "issues": []
+              }
+            }
+          },
+          {
+            "name": "character_influence_matrix",
+            "status": "pass",
+            "stage": "115",
+            "issue_count": 0,
+            "summary": {
+              "character_count": null,
+              "asymmetric_pair_count": 7,
+              "triangle_count": 10,
+              "high_tension_triangle_count": 10,
+              "role_tiers": {
+                "minjun": "jang",
+                "sujin": "jang",
+                "haewon": "po",
+                "chairman": "jol",
+                "detective": "jol"
+              }
+            }
+          },
+          {
+            "name": "domain_rag_fusion",
+            "status": "pass",
+            "stage": "116",
+            "issue_count": 0,
+            "summary": {
+              "intent_coverage": [
+                "CHARACTER",
+                "EMOTIONAL",
+                "PLOT_EVENT"
+              ],
+              "classified_query_count": 3,
+              "llm_call_count": 0,
+              "domain_tuning_enabled": true
+            }
+          },
+          {
+            "name": "narrative_tension_curve",
+            "status": "pass",
+            "stage": "117",
+            "issue_count": 0,
+            "summary": {
+              "scene_count": 8,
+              "loss": {
+                "scene_count": 8,
+                "tension_loss": 4.1e-05,
+                "coverage_loss": 0.0,
+                "final_loss": 4.1e-05,
+                "lambda_coverage": 0.3,
+                "status": "PASS"
+              },
+              "act_counts": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            }
+          }
+        ],
+        "loop_order": [
+          "CharacterInfluenceMatrix",
+          "StructuralBalance",
+          "AdaptiveMomentumWeights",
+          "MAERewardSignal",
+          "PhysicsRewardBridge",
+          "CoefficientUpdateProposal",
+          "DomainSpecificRAGFusion",
+          "NarrativeTensionCurve"
+        ],
+        "convergence": {
+          "loop_closure_status": "pass",
+          "checks": {
+            "positive_reward_advantage": true,
+            "amw_drift_guard_pass": true,
+            "cim_has_high_tension_triangles": true,
+            "rag_covers_required_intents": true,
+            "tension_final_loss_pass": true
+          },
+          "reward_advantage": 0.2855,
+          "amw_max_single_shift": 8.6e-05,
+          "high_tension_triangle_count": 10,
+          "rag_intents": [
+            "CHARACTER",
+            "EMOTIONAL",
+            "PLOT_EVENT"
+          ],
+          "final_tension_loss": 4.1e-05
+        },
+        "invariant_counts": {
+          "provider_call_count": 0,
+          "live_provider_call_count_in_release_gate": 0,
+          "embedding_provider_call_count": 0,
+          "query_classifier_llm_call_count": 0,
+          "physics_reward_bridge_llm_call_count": 0,
+          "mae_live_provider_call_count": 0,
+          "node2_raw_reveal_access": 0,
+          "raw_manuscript_provider_leakage": 0,
+          "credential_leakage": 0
+        },
+        "issues": [],
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0,
+        "embedding_provider_call_count": 0,
+        "query_classifier_llm_call_count": 0,
+        "physics_reward_bridge_llm_call_count": 0,
+        "mae_live_provider_call_count": 0,
+        "node2_raw_reveal_access": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0,
+        "branchpoint_lineage_preserved": true,
+        "component_reports": {
+          "stage113_reward_bridge": {
+            "stage": "113",
+            "status": "pass",
+            "mae_result": {
+              "scene_id": "stage113_fixture_scene_001",
+              "reader_score": 0.82,
+              "writer_score": 0.76,
+              "editor_score": 0.79,
+              "cultural_score": 0.74,
+              "dimension_scores": {
+                "tension": 0.78,
+                "sympathy": 0.72,
+                "dread": 0.61,
+                "catharsis": 0.69
+              },
+              "rubric_evidence": {
+                "reader": [
+                  "curiosity_present",
+                  "empathy_anchor_present",
+                  "next_scene_pull"
+                ],
+                "writer": [
+                  "dialogue_voice_distinct",
+                  "image_specificity",
+                  "subtext_present"
+                ],
+                "editor": [
+                  "causal_link_clear",
+                  "reveal_timing_safe",
+                  "pace_consistent"
+                ],
+                "cultural": [
+                  "k_drama_emotional_code",
+                  "relationship_pressure_legible",
+                  "cliche_avoidance"
+                ]
+              },
+              "live_provider_call_count": 0,
+              "source": "fixture"
+            },
+            "reward_signal": {
+              "scene_id": "stage113_fixture_scene_001",
+              "reward": 0.7855,
+              "baseline_before": 0.5,
+              "baseline_after": 0.514275,
+              "advantage": 0.2855,
+              "weights": {
+                "reader": 0.35,
+                "writer": 0.25,
+                "editor": 0.25,
+                "cultural": 0.15
+              },
+              "provider_call_count": 0,
+              "physics_reward_bridge_llm_call_count": 0
+            },
+            "coefficient_update_proposals": [
+              {
+                "coefficient": "curiosity_gradient_weight",
+                "feature_value": 0.82,
+                "baseline_value": 1.0,
+                "proposed_value": 0.999486,
+                "delta": -0.000514,
+                "reason": "positive_advantage_moves_toward_feature"
+              },
+              {
+                "coefficient": "emotional_momentum_weight",
+                "feature_value": 0.78,
+                "baseline_value": 1.0,
+                "proposed_value": 0.999372,
+                "delta": -0.000628,
+                "reason": "positive_advantage_moves_toward_feature"
+              },
+              {
+                "coefficient": "motif_residue_weight",
+                "feature_value": 0.74,
+                "baseline_value": 1.0,
+                "proposed_value": 0.999258,
+                "delta": -0.000742,
+                "reason": "positive_advantage_moves_toward_feature"
+              },
+              {
+                "coefficient": "scene_energy_weight",
+                "feature_value": 0.79,
+                "baseline_value": 1.0,
+                "proposed_value": 0.9994,
+                "delta": -0.0006,
+                "reason": "positive_advantage_moves_toward_feature"
+              }
+            ],
+            "drift_guard": {
+              "status": "pass",
+              "max_single_update_delta": 0.000742,
+              "limit": 0.03,
+              "proposal_count": 4,
+              "issues": []
+            },
+            "issues": []
+          },
+          "stage114_adaptive_momentum_weights": {
+            "stage": "114",
+            "status": "pass",
+            "genre": "melodrama",
+            "scene_id": "stage114_fixture_scene_001",
+            "alpha_before": {
+              "tension": 0.55,
+              "sympathy": 0.65,
+              "dread": 0.4,
+              "catharsis": 0.55
+            },
+            "alpha_after": {
+              "tension": 0.550086,
+              "sympathy": 0.64999,
+              "dread": 0.40004,
+              "catharsis": 0.550034
+            },
+            "updates": [
+              {
+                "dim": "tension",
+                "alpha_before": 0.55,
+                "process_signal": 0.82,
+                "observation_signal": 0.63,
+                "mae_dim_score": 0.78,
+                "delta_dim": 0.7345,
+                "loss": 0.00207,
+                "gradient": -0.01729,
+                "raw_alpha_after": 0.550086,
+                "alpha_after": 0.550086,
+                "shift": 8.6e-05,
+                "clamped": false,
+                "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+              },
+              {
+                "dim": "sympathy",
+                "alpha_before": 0.65,
+                "process_signal": 0.68,
+                "observation_signal": 0.76,
+                "mae_dim_score": 0.72,
+                "delta_dim": 0.708,
+                "loss": 0.000144,
+                "gradient": 0.00192,
+                "raw_alpha_after": 0.64999,
+                "alpha_after": 0.64999,
+                "shift": -1e-05,
+                "clamped": false,
+                "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+              },
+              {
+                "dim": "dread",
+                "alpha_before": 0.4,
+                "process_signal": 0.58,
+                "observation_signal": 0.52,
+                "mae_dim_score": 0.61,
+                "delta_dim": 0.544,
+                "loss": 0.004356,
+                "gradient": -0.00792,
+                "raw_alpha_after": 0.40004,
+                "alpha_after": 0.40004,
+                "shift": 4e-05,
+                "clamped": false,
+                "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+              },
+              {
+                "dim": "catharsis",
+                "alpha_before": 0.55,
+                "process_signal": 0.66,
+                "observation_signal": 0.6,
+                "mae_dim_score": 0.69,
+                "delta_dim": 0.633,
+                "loss": 0.003249,
+                "gradient": -0.00684,
+                "raw_alpha_after": 0.550034,
+                "alpha_after": 0.550034,
+                "shift": 3.4e-05,
+                "clamped": false,
+                "reason": "sgd_step_toward_mae_dimension_score_with_bounded_shift"
+              }
+            ],
+            "drift_guard": {
+              "status": "pass",
+              "alpha_min": 0.3,
+              "alpha_max": 0.8,
+              "max_single_shift": 0.03,
+              "max_run_total_shift": 0.1,
+              "observed_max_single_shift": 8.6e-05,
+              "observed_run_total_shift": 0.00017,
+              "protected_policy": {
+                "surface_safety_tolerance_can_loosen": false,
+                "branchpoint_sensitivity_can_decrease": false,
+                "provider_zero_policy_can_change": false,
+                "node2_raw_reveal_tolerance": 0
+              },
+              "issues": []
+            },
+            "provider_call_count": 0,
+            "physics_reward_bridge_llm_call_count": 0,
+            "issues": []
+          },
+          "stage115_character_influence_matrix": {
+            "stage": "115",
+            "baseline_stage": "114",
+            "title": "CharacterInfluenceMatrix + Structural Balance",
+            "status": "pass",
+            "issues": [],
+            "scene_id": "stage115_fixture_scene_001",
+            "observations": [
+              {
+                "source": "minjun",
+                "target": "sujin",
+                "delta": 0.72,
+                "evidence": "protagonist protects confidante",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "sujin",
+                "target": "minjun",
+                "delta": 0.41,
+                "evidence": "confidante restores protagonist resolve",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "chairman",
+                "target": "minjun",
+                "delta": -0.82,
+                "evidence": "antagonist applies succession pressure",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "minjun",
+                "target": "chairman",
+                "delta": -0.36,
+                "evidence": "protagonist resists authority",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "haewon",
+                "target": "sujin",
+                "delta": -0.64,
+                "evidence": "rival withholds critical evidence",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "sujin",
+                "target": "haewon",
+                "delta": -0.22,
+                "evidence": "confidante confronts rival",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "detective",
+                "target": "minjun",
+                "delta": 0.31,
+                "evidence": "outsider validates hidden clue",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "haewon",
+                "target": "detective",
+                "delta": -0.58,
+                "evidence": "secret keeper misleads investigator",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "detective",
+                "target": "chairman",
+                "delta": -0.44,
+                "evidence": "investigator threatens concealed power",
+                "scene_id": "stage115_fixture_scene_001"
+              },
+              {
+                "source": "chairman",
+                "target": "haewon",
+                "delta": 0.39,
+                "evidence": "antagonist rewards secret keeper",
+                "scene_id": "stage115_fixture_scene_001"
+              }
+            ],
+            "character_influence_matrix": {
+              "characters": [
+                "minjun",
+                "sujin",
+                "haewon",
+                "chairman",
+                "detective"
+              ],
+              "matrix": {
+                "minjun": {
+                  "minjun": 0.0,
+                  "sujin": 0.72,
+                  "haewon": 0.0,
+                  "chairman": -0.36,
+                  "detective": 0.0
+                },
+                "sujin": {
+                  "minjun": 0.41,
+                  "sujin": 0.0,
+                  "haewon": -0.22,
+                  "chairman": 0.0,
+                  "detective": 0.0
+                },
+                "haewon": {
+                  "minjun": 0.0,
+                  "sujin": -0.64,
+                  "haewon": 0.0,
+                  "chairman": 0.0,
+                  "detective": -0.58
+                },
+                "chairman": {
+                  "minjun": -0.82,
+                  "sujin": 0.0,
+                  "haewon": 0.39,
+                  "chairman": 0.0,
+                  "detective": 0.0
+                },
+                "detective": {
+                  "minjun": 0.31,
+                  "sujin": 0.0,
+                  "haewon": 0.0,
+                  "chairman": -0.44,
+                  "detective": 0.0
+                }
+              },
+              "asymmetric_pair_count": 7,
+              "triangle_count": 10,
+              "high_tension_triangle_count": 10,
+              "triangles": [
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "haewon"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": -0.22,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "chairman"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": 0.0,
+                  "w_ca": -0.82,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "detective"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": 0.0,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "haewon",
+                    "chairman"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": -0.82,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "haewon",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": -0.58,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": -0.36,
+                  "w_bc": 0.0,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "haewon",
+                    "chairman"
+                  ],
+                  "w_ab": -0.22,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "haewon",
+                    "detective"
+                  ],
+                  "w_ab": -0.22,
+                  "w_bc": -0.58,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "haewon",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                }
+              ],
+              "high_tension_triangles": [
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "haewon"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": -0.22,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "chairman"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": 0.0,
+                  "w_ca": -0.82,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "sujin",
+                    "detective"
+                  ],
+                  "w_ab": 0.72,
+                  "w_bc": 0.0,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "haewon",
+                    "chairman"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": -0.82,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "haewon",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": -0.58,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "minjun",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": -0.36,
+                  "w_bc": 0.0,
+                  "w_ca": 0.31,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "haewon",
+                    "chairman"
+                  ],
+                  "w_ab": -0.22,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "haewon",
+                    "detective"
+                  ],
+                  "w_ab": -0.22,
+                  "w_bc": -0.58,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "sujin",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                },
+                {
+                  "characters": [
+                    "haewon",
+                    "chairman",
+                    "detective"
+                  ],
+                  "w_ab": 0.0,
+                  "w_bc": 0.0,
+                  "w_ca": 0.0,
+                  "balance": 0,
+                  "tension": 2
+                }
+              ],
+              "centrality": {
+                "pagerank": {
+                  "minjun": 0.425808,
+                  "sujin": 0.405701,
+                  "haewon": 0.080963,
+                  "chairman": 0.043764,
+                  "detective": 0.043764
+                },
+                "betweenness": {
+                  "minjun": 1.0,
+                  "sujin": 0.333333,
+                  "haewon": 1.0,
+                  "chairman": 0.333333,
+                  "detective": 0.333333
+                },
+                "role_tiers": {
+                  "minjun": "jang",
+                  "sujin": "jang",
+                  "haewon": "po",
+                  "chairman": "jol",
+                  "detective": "jol"
+                }
+              }
+            },
+            "provider_call_count": 0,
+            "physics_reward_bridge_llm_call_count": 0,
+            "node2_raw_reveal_access": 0,
+            "raw_manuscript_provider_leakage": 0,
+            "credential_leakage": 0,
+            "branchpoint_lineage_preserved": true
+          },
+          "stage116_domain_rag_fusion": {
+            "stage": "116",
+            "baseline_stage": "115",
+            "title": "Domain-Specific RAG Fusion",
+            "status": "pass",
+            "issues": [],
+            "query_intent_classifier": {
+              "llm_call_count": 0,
+              "classified_queries": [
+                {
+                  "query": "민준 수진 대화",
+                  "intent": "CHARACTER",
+                  "bm25_weight": 0.7,
+                  "dense_weight": 0.3,
+                  "k": 40,
+                  "confidence": 0.7,
+                  "proper_noun_ratio": 0.666667,
+                  "emotion_ratio": 0.0,
+                  "plot_ratio": 0.0,
+                  "episode_ratio": 0.0,
+                  "token_count": 3,
+                  "matched_terms": {
+                    "CHARACTER_NAMES": [
+                      "민준",
+                      "수진"
+                    ]
+                  },
+                  "llm_call_count": 0,
+                  "policy": {
+                    "intent": "CHARACTER",
+                    "bm25_weight": 0.7,
+                    "dense_weight": 0.3,
+                    "k": 40,
+                    "rrf_k": 60
+                  },
+                  "boosts": [
+                    {
+                      "term": "민준",
+                      "category": "CHARACTER_NAMES",
+                      "boost": 1.5
+                    },
+                    {
+                      "term": "수진",
+                      "category": "CHARACTER_NAMES",
+                      "boost": 1.5
+                    }
+                  ],
+                  "sample_fusion_top3": [
+                    {
+                      "doc_id": "scene.character.dialogue",
+                      "bm25_rank": 1,
+                      "dense_rank": 2,
+                      "score": 0.01631412
+                    },
+                    {
+                      "doc_id": "scene.plot.climax",
+                      "bm25_rank": 2,
+                      "dense_rank": 3,
+                      "score": 0.016052227
+                    },
+                    {
+                      "doc_id": "scene.emotion.betrayal",
+                      "bm25_rank": 3,
+                      "dense_rank": 1,
+                      "score": 0.016029144
+                    }
+                  ]
+                },
+                {
+                  "query": "배신감 절정 장면",
+                  "intent": "EMOTIONAL",
+                  "bm25_weight": 0.3,
+                  "dense_weight": 0.7,
+                  "k": 60,
+                  "confidence": 0.68,
+                  "proper_noun_ratio": 0.0,
+                  "emotion_ratio": 0.333333,
+                  "plot_ratio": 0.333333,
+                  "episode_ratio": 0.0,
+                  "token_count": 3,
+                  "matched_terms": {
+                    "EMOTION_WORDS": [
+                      "배신감"
+                    ],
+                    "DRAMA_KEYWORDS": [
+                      "장면"
+                    ]
+                  },
+                  "llm_call_count": 0,
+                  "policy": {
+                    "intent": "EMOTIONAL",
+                    "bm25_weight": 0.3,
+                    "dense_weight": 0.7,
+                    "k": 60,
+                    "rrf_k": 60
+                  },
+                  "boosts": [
+                    {
+                      "term": "배신감",
+                      "category": "EMOTION_WORDS",
+                      "boost": 1.15
+                    },
+                    {
+                      "term": "장면",
+                      "category": "DRAMA_KEYWORDS",
+                      "boost": 1.2
+                    }
+                  ],
+                  "sample_fusion_top3": [
+                    {
+                      "doc_id": "scene.emotion.betrayal",
+                      "bm25_rank": 3,
+                      "dense_rank": 1,
+                      "score": 0.016237315
+                    },
+                    {
+                      "doc_id": "scene.character.dialogue",
+                      "bm25_rank": 1,
+                      "dense_rank": 2,
+                      "score": 0.016208355
+                    },
+                    {
+                      "doc_id": "scene.plot.climax",
+                      "bm25_rank": 2,
+                      "dense_rank": 3,
+                      "score": 0.015949821
+                    }
+                  ]
+                },
+                {
+                  "query": "3화 클라이맥스 사건",
+                  "intent": "PLOT_EVENT",
+                  "bm25_weight": 0.5,
+                  "dense_weight": 0.5,
+                  "k": 50,
+                  "confidence": 1.0,
+                  "proper_noun_ratio": 0.0,
+                  "emotion_ratio": 0.0,
+                  "plot_ratio": 0.666667,
+                  "episode_ratio": 0.333333,
+                  "token_count": 3,
+                  "matched_terms": {
+                    "EPISODE_TERMS": [
+                      "3화"
+                    ],
+                    "DRAMA_KEYWORDS": [
+                      "사건",
+                      "클라이맥스"
+                    ]
+                  },
+                  "llm_call_count": 0,
+                  "policy": {
+                    "intent": "PLOT_EVENT",
+                    "bm25_weight": 0.5,
+                    "dense_weight": 0.5,
+                    "k": 50,
+                    "rrf_k": 60
+                  },
+                  "boosts": [
+                    {
+                      "term": "3화",
+                      "category": "EPISODE_TERMS",
+                      "boost": 1.3
+                    },
+                    {
+                      "term": "클라이맥스",
+                      "category": "DRAMA_KEYWORDS",
+                      "boost": 1.2
+                    },
+                    {
+                      "term": "사건",
+                      "category": "DRAMA_KEYWORDS",
+                      "boost": 1.2
+                    }
+                  ],
+                  "sample_fusion_top3": [
+                    {
+                      "doc_id": "scene.character.dialogue",
+                      "bm25_rank": 1,
+                      "dense_rank": 2,
+                      "score": 0.016261237
+                    },
+                    {
+                      "doc_id": "scene.emotion.betrayal",
+                      "bm25_rank": 3,
+                      "dense_rank": 1,
+                      "score": 0.016133229
+                    },
+                    {
+                      "doc_id": "scene.plot.climax",
+                      "bm25_rank": 2,
+                      "dense_rank": 3,
+                      "score": 0.016001024
+                    }
+                  ]
+                }
+              ]
+            },
+            "drama_lexicon": {
+              "character_names_count": 10,
+              "episode_terms_count": 10,
+              "drama_keywords_count": 14,
+              "emotion_words_count": 13,
+              "boosts_observed": [
+                {
+                  "term": "민준",
+                  "category": "CHARACTER_NAMES",
+                  "boost": 1.5
+                },
+                {
+                  "term": "수진",
+                  "category": "CHARACTER_NAMES",
+                  "boost": 1.5
+                },
+                {
+                  "term": "배신감",
+                  "category": "EMOTION_WORDS",
+                  "boost": 1.15
+                },
+                {
+                  "term": "장면",
+                  "category": "DRAMA_KEYWORDS",
+                  "boost": 1.2
+                },
+                {
+                  "term": "3화",
+                  "category": "EPISODE_TERMS",
+                  "boost": 1.3
+                },
+                {
+                  "term": "클라이맥스",
+                  "category": "DRAMA_KEYWORDS",
+                  "boost": 1.2
+                },
+                {
+                  "term": "사건",
+                  "category": "DRAMA_KEYWORDS",
+                  "boost": 1.2
+                }
+              ]
+            },
+            "adaptive_hybrid_weights": {
+              "policies": [
+                {
+                  "intent": "CHARACTER",
+                  "bm25_weight": 0.7,
+                  "dense_weight": 0.3,
+                  "k": 40,
+                  "rrf_k": 60
+                },
+                {
+                  "intent": "EMOTIONAL",
+                  "bm25_weight": 0.3,
+                  "dense_weight": 0.7,
+                  "k": 60,
+                  "rrf_k": 60
+                },
+                {
+                  "intent": "PLOT_EVENT",
+                  "bm25_weight": 0.5,
+                  "dense_weight": 0.5,
+                  "k": 50,
+                  "rrf_k": 60
+                }
+              ],
+              "rrf_k": 60,
+              "domain_tuning_enabled": true
+            },
+            "provider_call_count": 0,
+            "embedding_provider_call_count": 0,
+            "node2_raw_reveal_access": 0,
+            "raw_manuscript_provider_leakage": 0,
+            "credential_leakage": 0,
+            "branchpoint_lineage_preserved": true
+          },
+          "stage117_narrative_tension_curve": {
+            "stage": "117",
+            "baseline_stage": "116",
+            "title": "NarrativeTensionCurve",
+            "status": "pass",
+            "issues": [],
+            "formula": "T_ideal(t)=0.60+0.40*sin(2πt-0.50)+0.20*sin(6πt)",
+            "loss_function": "L_final=L_tension+lambda*L_coverage",
+            "lambda_coverage": 0.3,
+            "block_threshold": 0.18,
+            "warn_threshold": 0.1,
+            "scene_count": 8,
+            "act_counts": {
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "loss": {
+              "scene_count": 8,
+              "tension_loss": 4.1e-05,
+              "coverage_loss": 0.0,
+              "final_loss": 4.1e-05,
+              "lambda_coverage": 0.3,
+              "status": "PASS"
+            },
+            "per_scene": [
+              {
+                "scene_id": "stage117_scene_001",
+                "position": 0.05,
+                "act": 1,
+                "actual_tension": 0.677894,
+                "ideal_tension": 0.687894,
+                "squared_error": 0.0001
+              },
+              {
+                "scene_id": "stage117_scene_002",
+                "position": 0.16,
+                "act": 1,
+                "actual_tension": 0.826698,
+                "ideal_tension": 0.818698,
+                "squared_error": 6.4e-05
+              },
+              {
+                "scene_id": "stage117_scene_003",
+                "position": 0.3,
+                "act": 2,
+                "actual_tension": 0.869555,
+                "ideal_tension": 0.875555,
+                "squared_error": 3.6e-05
+              },
+              {
+                "scene_id": "stage117_scene_004",
+                "position": 0.42,
+                "act": 2,
+                "actual_tension": 1.0,
+                "ideal_tension": 1.0,
+                "squared_error": 0.0
+              },
+              {
+                "scene_id": "stage117_scene_005",
+                "position": 0.56,
+                "act": 3,
+                "actual_tension": 0.461114,
+                "ideal_tension": 0.468114,
+                "squared_error": 4.9e-05
+              },
+              {
+                "scene_id": "stage117_scene_006",
+                "position": 0.69,
+                "act": 3,
+                "actual_tension": 0.434369,
+                "ideal_tension": 0.429369,
+                "squared_error": 2.5e-05
+              },
+              {
+                "scene_id": "stage117_scene_007",
+                "position": 0.82,
+                "act": 4,
+                "actual_tension": 0.244462,
+                "ideal_tension": 0.250462,
+                "squared_error": 3.6e-05
+              },
+              {
+                "scene_id": "stage117_scene_008",
+                "position": 0.95,
+                "act": 4,
+                "actual_tension": 0.151337,
+                "ideal_tension": 0.147337,
+                "squared_error": 1.6e-05
+              }
+            ],
+            "coverage_targets": {
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "provider_call_count": 0,
+            "embedding_provider_call_count": 0,
+            "query_classifier_llm_call_count": 0,
+            "physics_reward_bridge_llm_call_count": 0,
+            "mae_live_provider_call_count": 0,
+            "node2_raw_reveal_access": 0,
+            "raw_manuscript_provider_leakage": 0,
+            "credential_leakage": 0,
+            "branchpoint_lineage_preserved": true
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "case_id": "NIE-NOR-001",
+    "case_type": "normal_nil_loop",
+    "mutation_type": "none",
+    "expected_status": "PASS",
+    "actual_status": "PASS",
+    "matched_expectation": true,
+    "block_reason": null,
+    "triggered_gate": null,
+    "severity": "INFO",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-NOR-001.json",
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

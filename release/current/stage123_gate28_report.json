@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "approved": true,
+  "authority_mode": "secondary_quality_gate",
+  "combined_quality": 0.22,
+  "failed_gates": [],
+  "checks": {
+    "G28-1": {
+      "metric": "debt_score",
+      "threshold": 0.5,
+      "actual": 0.4,
+      "passed": true
+    },
+    "G28-2": {
+      "metric": "arc_score",
+      "threshold": 0.4,
+      "actual": 0.0,
+      "passed": true
+    },
+    "G28-3": {
+      "metric": "high_priority_cnt",
+      "threshold": 5,
+      "actual": 0,
+      "passed": true
+    },
+    "G28-4": {
+      "metric": "combined_quality",
+      "threshold": 0.45,
+      "actual": 0.22,
+      "passed": true
+    }
+  },
+  "issues": []
+}

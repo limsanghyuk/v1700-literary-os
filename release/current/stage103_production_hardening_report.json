@@ -1,0 +1,188 @@
+{
+  "stage": "103",
+  "baseline_stage": "102",
+  "title": "Production Hardening & Deployment Readiness",
+  "status": "pass",
+  "issues": [],
+  "stage103_0_deployment_preflight": {
+    "stage": "103.0",
+    "baseline_stage": "102",
+    "title": "Deployment Preflight Lock",
+    "status": "pass",
+    "issues": [],
+    "stage102_release_gate_status": "pass",
+    "mandatory_predevelopment_protocol_present": true,
+    "scope": "production_hardening_deployment_readiness",
+    "new_feature_expansion": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "stage103_1_install_replay": {
+    "stage": "103.1",
+    "title": "Install Replay and CI Contract",
+    "status": "pass",
+    "issues": [],
+    "install_replay": {
+      "status": "pass",
+      "fresh_clone_ready": true,
+      "editable_install_ready": true,
+      "cli_smoke_ready": true,
+      "release_gate_replay_ready": true,
+      "documented_commands": [
+        "python -m pip install -e .",
+        "python -m v1700.cli --help",
+        "python tools/run_mandatory_predevelopment_check.py",
+        "python tools/run_stage102_release_gate.py",
+        "python tools/run_stage103_release_gate.py",
+        "python tools/run_release_gate.py",
+        "python tools/run_stage72_repo_doctor.py",
+        "python -m pytest -q tests"
+      ],
+      "issues": []
+    },
+    "ci_replay": {
+      "stage": "103.ci",
+      "status": "pass",
+      "ci_replay_mode": "documented_local_replay_contract",
+      "commands": [
+        "python -m compileall src tools",
+        "python -m pip install -e .",
+        "python -m v1700.cli --help",
+        "python tools/run_mandatory_predevelopment_check.py",
+        "python tools/run_stage102_release_gate.py",
+        "python tools/run_stage103_release_gate.py",
+        "python tools/run_release_gate.py",
+        "python tools/run_stage72_repo_doctor.py",
+        "python -m pytest -q tests"
+      ],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "node2_raw_reveal_access": 0
+    },
+    "fresh_clone_install_replay_status": "pass",
+    "ci_replay_status": "pass"
+  },
+  "stage103_2_runtime_profiles": {
+    "status": "pass",
+    "profiles": [
+      {
+        "profile_id": "dev",
+        "provider_mode": "fixture_local",
+        "allow_live_provider_calls": false,
+        "raw_manuscript_allowed": false,
+        "credential_source": "none_by_default",
+        "evidence_policy": "write_local_release_evidence",
+        "default_timeout_seconds": 30
+      },
+      {
+        "profile_id": "release",
+        "provider_mode": "fixture_or_mock_only",
+        "allow_live_provider_calls": false,
+        "raw_manuscript_allowed": false,
+        "credential_source": "forbidden",
+        "evidence_policy": "provider_zero_clean_evidence",
+        "default_timeout_seconds": 30
+      },
+      {
+        "profile_id": "sandbox",
+        "provider_mode": "opt_in_live_provider_guarded",
+        "allow_live_provider_calls": false,
+        "raw_manuscript_allowed": false,
+        "credential_source": "explicit_env_only",
+        "evidence_policy": "sandbox_evidence_never_release_gate",
+        "default_timeout_seconds": 90
+      }
+    ],
+    "release_profile_safe": true,
+    "sandbox_opt_in_required": true,
+    "dev_profile_local_first": true,
+    "issues": [],
+    "stage": "103.2",
+    "title": "Runtime Profile Separation"
+  },
+  "stage103_3_vault_backup_error_release": {
+    "stage": "103.3",
+    "title": "Local Vault, Backup/Restore, Error Report, Release Notes",
+    "status": "pass",
+    "issues": [],
+    "checks": {
+      "vault_pass": true,
+      "backup_restore_pass": true,
+      "safe_error_report_pass": true,
+      "release_notes_pass": true,
+      "raw_text_not_exported": true,
+      "backup_metadata_only": true,
+      "safe_error_redacted": true
+    },
+    "local_manuscript_vault": {
+      "status": "pass",
+      "vault_mode": "LOCAL_ONLY",
+      "raw_text_exported": false,
+      "provider_export_allowed": false,
+      "feature_fingerprint": "2c7aede4fc5f60b1ce850eba00c9dc19b6948c473ca44b0172cbec56c83f0bc3",
+      "stored_feature_keys": [
+        "language_hint",
+        "length_bucket",
+        "sentence_count_bucket",
+        "style_feature_mode"
+      ],
+      "issues": []
+    },
+    "backup_restore": {
+      "status": "pass",
+      "backup_format": "json_feature_only_project_snapshot",
+      "source_checksum": "f8e0b066fb9264afe0cbc88428422d45bc6dec3b25ec737f104611ae47e75388",
+      "restored_checksum": "f8e0b066fb9264afe0cbc88428422d45bc6dec3b25ec737f104611ae47e75388",
+      "metadata_only": true,
+      "issues": []
+    },
+    "safe_error_report": {
+      "status": "pass",
+      "error_id": "STAGE103-DEMO-ERROR",
+      "severity": "WARN",
+      "safe_message": "A recoverable local workflow issue was captured with redacted context.",
+      "raw_prompt_included": false,
+      "credential_included": false,
+      "redaction_policy": "drop_raw_prompt_drop_credentials_keep_stage_tool_and_gate_ids",
+      "issues": []
+    },
+    "release_notes": {
+      "status": "pass",
+      "stage": "103",
+      "package_name": "V1700_stage103_production_hardening_deployment_readiness_FIXED.zip",
+      "highlights": [
+        "Production hardening and deployment readiness layer over Stage102.",
+        "Fresh-clone install replay commands and CI replay contract.",
+        "Dev/release/sandbox runtime profile separation.",
+        "Local-only manuscript vault, feature-only backup/restore, and safe error reporting.",
+        "Provider-zero and Node2 boundary remain intact."
+      ],
+      "verification_commands": [
+        "python -m pip install -e .",
+        "python -m v1700.cli --help",
+        "python tools/run_mandatory_predevelopment_check.py",
+        "python tools/run_stage102_release_gate.py",
+        "python tools/run_stage103_release_gate.py",
+        "python tools/run_release_gate.py",
+        "python tools/run_stage72_repo_doctor.py",
+        "python -m pytest -q tests"
+      ],
+      "known_limits": [
+        "Stage103 is deployment readiness, not a full commercial SaaS/desktop installer.",
+        "Live provider benchmarking remains opt-in sandbox work outside release gates."
+      ]
+    },
+    "raw_manuscript_provider_leakage": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "production_claim": "deployment_readiness_not_full_commercial_saas"
+}

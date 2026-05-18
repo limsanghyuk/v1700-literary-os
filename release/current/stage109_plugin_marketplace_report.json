@@ -1,0 +1,222 @@
+{
+  "stage": "109",
+  "baseline_stage": "108",
+  "title": "Plugin / Marketplace Architecture",
+  "status": "pass",
+  "stage109_0_preflight": {
+    "stage": "109.0",
+    "status": "pass",
+    "checks": {
+      "stage108_baseline_gate_pass": true,
+      "gitnexus_protocol_fallback_pass": true,
+      "plugin_runtime_dependency_optional_pass": true,
+      "python_fallback_required_pass": true,
+      "release_path_isolation_pass": true,
+      "provider_zero_release_path_pass": true,
+      "raw_manuscript_leakage_guard_pass": true,
+      "branchpoint_survival_pass": true
+    },
+    "issues": []
+  },
+  "stage109_1_marketplace_index": {
+    "stage": "109",
+    "status": "pass",
+    "plugin_count": 4,
+    "enabled_by_default_count": 0,
+    "live_provider_default_count": 0,
+    "raw_manuscript_access_count": 0,
+    "plugins": [
+      {
+        "plugin_id": "core.genre.literary_thriller",
+        "name": "Literary Thriller Genre Pack",
+        "version": "1.0.0",
+        "kind": "genre_pack",
+        "entrypoint": "v1700.plugins.genre.literary_thriller",
+        "trust_level": "core",
+        "enabled_by_default": false,
+        "requires_live_provider": false,
+        "requires_raw_manuscript": false,
+        "writes_release_evidence": true,
+        "branchpoint_trace_id": "bp-stage109-genre-pack",
+        "test_target": "tests/test_stage109_plugin_manifest.py"
+      },
+      {
+        "plugin_id": "core.evaluator.editorial_scorecard",
+        "name": "Editorial Scorecard Pack",
+        "version": "1.0.0",
+        "kind": "evaluator_pack",
+        "entrypoint": "v1700.plugins.evaluator.editorial_scorecard",
+        "trust_level": "core",
+        "enabled_by_default": false,
+        "requires_live_provider": false,
+        "requires_raw_manuscript": false,
+        "writes_release_evidence": true,
+        "branchpoint_trace_id": "bp-stage109-evaluator-pack",
+        "test_target": "tests/test_stage109_plugin_manifest.py"
+      },
+      {
+        "plugin_id": "core.export.writer_handoff",
+        "name": "Writer Handoff Export Pack",
+        "version": "1.0.0",
+        "kind": "export_pack",
+        "entrypoint": "v1700.plugins.export.writer_handoff",
+        "trust_level": "core",
+        "enabled_by_default": false,
+        "requires_live_provider": false,
+        "requires_raw_manuscript": false,
+        "writes_release_evidence": true,
+        "branchpoint_trace_id": "bp-stage109-export-pack",
+        "test_target": "tests/test_stage109_plugin_manifest.py"
+      },
+      {
+        "plugin_id": "sandbox.provider.live_adapter_probe",
+        "name": "Provider Live Adapter Probe Pack",
+        "version": "0.1.0",
+        "kind": "provider_adapter_pack",
+        "entrypoint": "v1700.plugins.provider.live_adapter_probe",
+        "trust_level": "review_required",
+        "enabled_by_default": false,
+        "requires_live_provider": true,
+        "requires_raw_manuscript": false,
+        "writes_release_evidence": false,
+        "branchpoint_trace_id": "bp-stage109-provider-adapter-pack",
+        "test_target": "tests/test_stage109_plugin_sandbox_policy.py"
+      }
+    ],
+    "validations": [
+      {
+        "plugin_id": "core.genre.literary_thriller",
+        "status": "pass",
+        "issues": []
+      },
+      {
+        "plugin_id": "core.evaluator.editorial_scorecard",
+        "status": "pass",
+        "issues": []
+      },
+      {
+        "plugin_id": "core.export.writer_handoff",
+        "status": "pass",
+        "issues": []
+      },
+      {
+        "plugin_id": "sandbox.provider.live_adapter_probe",
+        "status": "pass",
+        "issues": []
+      }
+    ],
+    "sandbox_policy": {
+      "status": "pass",
+      "rows": [
+        {
+          "plugin_id": "core.genre.literary_thriller",
+          "network_default": "blocked",
+          "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+          "raw_manuscript_access": false,
+          "credential_access": false,
+          "live_provider_default": false,
+          "manual_review_required": false
+        },
+        {
+          "plugin_id": "core.evaluator.editorial_scorecard",
+          "network_default": "blocked",
+          "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+          "raw_manuscript_access": false,
+          "credential_access": false,
+          "live_provider_default": false,
+          "manual_review_required": false
+        },
+        {
+          "plugin_id": "core.export.writer_handoff",
+          "network_default": "blocked",
+          "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+          "raw_manuscript_access": false,
+          "credential_access": false,
+          "live_provider_default": false,
+          "manual_review_required": false
+        },
+        {
+          "plugin_id": "sandbox.provider.live_adapter_probe",
+          "network_default": "blocked",
+          "filesystem_write_scope": "none",
+          "raw_manuscript_access": false,
+          "credential_access": false,
+          "live_provider_default": false,
+          "manual_review_required": true
+        }
+      ],
+      "blockers": []
+    },
+    "marketplace_modes": [
+      "local_catalog",
+      "review_required",
+      "disabled_by_default"
+    ],
+    "artifacts": [
+      "release/current/stage109_plugin_pack/plugin_marketplace_index.json",
+      "release/current/stage109_plugin_pack/plugin_validation_report.json",
+      "release/current/stage109_plugin_pack/plugin_sandbox_policy_report.json"
+    ]
+  },
+  "stage109_2_plugin_sandbox_policy": {
+    "status": "pass",
+    "rows": [
+      {
+        "plugin_id": "core.genre.literary_thriller",
+        "network_default": "blocked",
+        "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+        "raw_manuscript_access": false,
+        "credential_access": false,
+        "live_provider_default": false,
+        "manual_review_required": false
+      },
+      {
+        "plugin_id": "core.evaluator.editorial_scorecard",
+        "network_default": "blocked",
+        "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+        "raw_manuscript_access": false,
+        "credential_access": false,
+        "live_provider_default": false,
+        "manual_review_required": false
+      },
+      {
+        "plugin_id": "core.export.writer_handoff",
+        "network_default": "blocked",
+        "filesystem_write_scope": "release/current/stage109_plugin_pack only",
+        "raw_manuscript_access": false,
+        "credential_access": false,
+        "live_provider_default": false,
+        "manual_review_required": false
+      },
+      {
+        "plugin_id": "sandbox.provider.live_adapter_probe",
+        "network_default": "blocked",
+        "filesystem_write_scope": "none",
+        "raw_manuscript_access": false,
+        "credential_access": false,
+        "live_provider_default": false,
+        "manual_review_required": true
+      }
+    ],
+    "blockers": []
+  },
+  "release_contract": {
+    "stage": "109",
+    "baseline_stage": "108",
+    "title": "Plugin / Marketplace Architecture",
+    "release_gate_affected_by_plugins": false,
+    "plugins_enabled_by_default": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "sandbox_live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "plugins_enabled_by_default": 0,
+  "plugin_raw_manuscript_access_count": 0,
+  "release_gate_affected_by_plugins": false,
+  "branchpoint_lineage_preserved": true
+}

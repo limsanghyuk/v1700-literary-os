@@ -1,0 +1,184 @@
+{
+  "stage": "101.0",
+  "baseline_stage": "100",
+  "title": "Cross-Lineage Preflight & Source Availability Lock",
+  "status": "pass",
+  "issues": [],
+  "stage100_baseline_status": "pass",
+  "gitnexus_status": "pass",
+  "v430_source_status": "MISSING",
+  "absorption_mode": "fixture_contract_validation",
+  "v430_untraced_merge": false,
+  "source_probe": {
+    "status": "pass",
+    "source_status": "MISSING",
+    "source_available": false,
+    "source_paths": [],
+    "absorption_mode": "fixture_contract_validation",
+    "v430_untraced_merge": false
+  },
+  "absorption_matrix": {
+    "stage": "101.0",
+    "baseline_stage": "100",
+    "title": "V430 Absorption Candidate Matrix",
+    "status": "pass",
+    "source_status": "MISSING",
+    "absorption_mode": "fixture_contract_validation",
+    "v430_untraced_merge": false,
+    "candidates": [
+      {
+        "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+        "source_status": "MISSING",
+        "value_area": "SCENARIO_ROOM",
+        "v1700_overlap": "Stage98 Studio Workflow + Stage100 Scenario Evaluation",
+        "branchpoint_risk": "MEDIUM",
+        "proposed_action": "ADAPT",
+        "decision_reason": "Scenario-room orchestration is valuable, but must be recompiled as V1700 contracts before runtime promotion.",
+        "required_branchpoints": [
+          "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+          "BP_STAGE101_SCENARIO_ROOM_CONTRACT"
+        ],
+        "required_tests": [
+          "tests/test_stage101_scenario_room_contract.py"
+        ]
+      },
+      {
+        "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+        "source_status": "MISSING",
+        "value_area": "INVESTIGATION_ACTION",
+        "v1700_overlap": "Stage97 agency conservation + Stage100 scenario scoring",
+        "branchpoint_risk": "LOW",
+        "proposed_action": "ADAPT",
+        "decision_reason": "Action movement can strengthen scenario mode if each beat remains tied to agency and scene necessity.",
+        "required_branchpoints": [
+          "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+        ],
+        "required_tests": [
+          "tests/test_stage101_investigation_action.py"
+        ]
+      },
+      {
+        "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
+        "source_status": "MISSING",
+        "value_area": "DIALOGUE_SILENCE",
+        "v1700_overlap": "Stage97 dialogue pragmatics + Node2 surface-only boundary",
+        "branchpoint_risk": "MEDIUM",
+        "proposed_action": "ADAPT",
+        "decision_reason": "Dialogue and silence cues are useful only if forbidden reveal and surface-only contracts remain explicit.",
+        "required_branchpoints": [
+          "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+        ],
+        "required_tests": [
+          "tests/test_stage101_dialogue_silence_cue.py"
+        ]
+      },
+      {
+        "candidate_id": "V430_PROP_LED_REVEAL",
+        "source_status": "MISSING",
+        "value_area": "PROP_REVEAL",
+        "v1700_overlap": "Stage86 EpisodeRevealBudget + Stage97 payoff debt",
+        "branchpoint_risk": "MEDIUM",
+        "proposed_action": "ADAPT",
+        "decision_reason": "Prop reveals are allowed only when every cue is bound to a reveal-budget slot and payoff episode.",
+        "required_branchpoints": [
+          "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+        ],
+        "required_tests": [
+          "tests/test_stage101_prop_reveal.py"
+        ]
+      },
+      {
+        "candidate_id": "V430_PRODUCT_PIPELINE_API",
+        "source_status": "MISSING",
+        "value_area": "PRODUCT_PIPELINE",
+        "v1700_overlap": "Stage89-98 Studio and publishing package",
+        "branchpoint_risk": "MEDIUM",
+        "proposed_action": "DEFER",
+        "decision_reason": "Product/API expansion belongs after scenario-room safety, most likely Stage103 deployment hardening.",
+        "required_branchpoints": [
+          "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT"
+        ],
+        "required_tests": [
+          "tests/test_stage101_absorption_matrix.py"
+        ]
+      }
+    ],
+    "allowed_actions": [
+      "ADAPT",
+      "DEFER"
+    ],
+    "blocked_actions": [
+      "UNTRACED_MERGE",
+      "DIRECT_RUNTIME_IMPORT"
+    ],
+    "cross_lineage_trace": {
+      "status": "pass",
+      "issues": [],
+      "trace_entries": [
+        {
+          "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
+          "proposed_action": "ADAPT",
+          "branchpoints": [
+            "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT",
+            "BP_STAGE101_SCENARIO_ROOM_CONTRACT"
+          ],
+          "tests": [
+            "tests/test_stage101_scenario_room_contract.py"
+          ],
+          "traced": true
+        },
+        {
+          "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
+          "proposed_action": "ADAPT",
+          "branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "tests": [
+            "tests/test_stage101_investigation_action.py"
+          ],
+          "traced": true
+        },
+        {
+          "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
+          "proposed_action": "ADAPT",
+          "branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "tests": [
+            "tests/test_stage101_dialogue_silence_cue.py"
+          ],
+          "traced": true
+        },
+        {
+          "candidate_id": "V430_PROP_LED_REVEAL",
+          "proposed_action": "ADAPT",
+          "branchpoints": [
+            "BP_STAGE101_SCENARIO_CUE_INTEGRATION"
+          ],
+          "tests": [
+            "tests/test_stage101_prop_reveal.py"
+          ],
+          "traced": true
+        },
+        {
+          "candidate_id": "V430_PRODUCT_PIPELINE_API",
+          "proposed_action": "DEFER",
+          "branchpoints": [
+            "BP_STAGE101_CROSS_LINEAGE_PREFLIGHT"
+          ],
+          "tests": [
+            "tests/test_stage101_absorption_matrix.py"
+          ],
+          "traced": true
+        }
+      ],
+      "v430_untraced_merge": false
+    },
+    "issues": []
+  },
+  "symbol_to_branchpoint_trace_status": "pass",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "97",
+  "title": "Full Longform Narrative Endurance Engine",
+  "status": "pass_pending_export",
+  "required_proof": "16_episode_endurance",
+  "extended_proof": "24_episode_optional",
+  "provider_default_calls": 0,
+  "live_provider_call_count": 0,
+  "node2_raw_reveal_access_count": 0
+}

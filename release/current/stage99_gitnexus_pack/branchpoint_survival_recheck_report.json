@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "required_manifests": [
+    "manifests/stage97_2_branchpoint_trace_manifest.json",
+    "manifests/stage98_branchpoint_trace_manifest.json"
+  ]
+}

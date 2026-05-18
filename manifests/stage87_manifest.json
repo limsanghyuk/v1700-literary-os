@@ -1,0 +1,31 @@
+{
+  "stage": "87",
+  "title": "8-16 Episode Scale-up Evidence",
+  "status": "pass",
+  "depends_on": [
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "required_outputs": [
+    "src/v1700/episode_scaleup/evidence.py",
+    "src/v1700/gates/stage87_release_gate.py",
+    "tools/run_stage87_release_gate.py",
+    "tools/export_stage87_artifacts.py",
+    "tests/test_stage87_episode_scaleup.py",
+    "manifests/stage87_branchpoint_trace_manifest.json",
+    "release/current/stage87_episode_scaleup_evidence.json",
+    "release/current/stage87_release_gate_report.json",
+    "release/current/stage87_zip_probe_report.md"
+  ],
+  "scaleup_targets": {
+    "minimum_episode_count": 8,
+    "full_episode_count": 16,
+    "scenes_per_episode": 10,
+    "minimum_scene_count": 80,
+    "full_scene_count": 160
+  },
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

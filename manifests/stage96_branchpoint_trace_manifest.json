@@ -1,0 +1,11 @@
+{
+  "stage": "96",
+  "branchpoint_authority": "Stage95 Native Narrative Physics + Stage96 release gate",
+  "survival_required": true,
+  "tracepoints": [
+    "surface_only_node2",
+    "branchpoint_survival_weight_non_decreasing",
+    "provider_candidate_veto_on_leakage",
+    "directive_level_merge_only"
+  ]
+}

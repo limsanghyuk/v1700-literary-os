@@ -1,0 +1,300 @@
+{
+  "stage": "107.5.4",
+  "title": "V1700 Arbitration Comparison",
+  "status": "pass",
+  "issues": [],
+  "score_report": {
+    "stage": "107.5.4",
+    "title": "V1700 Arbitration Comparison",
+    "status": "pass",
+    "score_count": 12,
+    "scores": [
+      {
+        "seed_id": "seed_001",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "score_total": 88.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_001",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "score_total": 87.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_001",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "score_total": 86.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_001",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "score_total": 85.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_002",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "score_total": 88.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_002",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "score_total": 87.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_002",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "score_total": 86.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_002",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "score_total": 85.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_003",
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "score_total": 88.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_003",
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "score_total": 87.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_003",
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "score_total": 86.5,
+        "v1700_improvement_delta": 3.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      },
+      {
+        "seed_id": "seed_003",
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "score_total": 85.5,
+        "v1700_improvement_delta": 4.0,
+        "score_breakdown": {
+          "structure": 8.6,
+          "style": 8.3,
+          "safety": 10.0,
+          "longform_fit": 8.8
+        },
+        "reviewer_notes": [
+          "fixture-level scoring for sandbox contract validation"
+        ]
+      }
+    ],
+    "comparison_claim": "contract_level_fixture_scoring_not_human_benchmark"
+  },
+  "cost_latency_ledger": {
+    "status": "pass",
+    "rows": [
+      {
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "openai",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "openai",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "PROSE",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      },
+      {
+        "provider_id": "ollama",
+        "mode": "SCENARIO",
+        "latency_ms": 0,
+        "estimated_cost": null,
+        "live_call_performed": false
+      }
+    ],
+    "live_call_count": 0,
+    "estimated_total_cost": 0.0
+  },
+  "release_gate_affected": false,
+  "raw_manuscript_sent": false
+}

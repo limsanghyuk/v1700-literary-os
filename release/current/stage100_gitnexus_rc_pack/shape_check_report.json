@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "required_contracts": [
+    "GitNexusRCPreflightReport",
+    "DualModeEvaluationResult",
+    "ProviderCertificationResult",
+    "Stage100ReleaseCandidate"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "stage": "STAGE72.3",
+  "title": "Foundation Lineage Recovery and Organic Impact Governance",
+  "status": "implemented",
+  "introduced_concepts": [
+    "pre-Stage40 foundation lineage",
+    "concept survival matrix",
+    "evidence level",
+    "survival status",
+    "organic impact review",
+    "pre-Stage40 survival gate"
+  ],
+  "primary_outputs": [
+    "manifests/pre_stage40_raw_evidence_index.json",
+    "manifests/pre_stage40_lineage_manifest.json",
+    "docs/stages/stage_001_039_foundation.md",
+    "docs/generated/wiki/foundation_lineage_wiki.md",
+    "docs/generated/skills/foundation_lineage_skill.md",
+    "src/v1700/gates/pre_stage40_survival_gate.py",
+    "src/v1700/gates/stage72_3_release_gate.py"
+  ],
+  "promotion_requirement": [
+    "stage72_2_release_gate pass",
+    "pre_stage40_survival_gate pass",
+    "stage72_3_release_gate pass",
+    "main release_gate pass",
+    "pytest green",
+    "provider_default_calls 0",
+    "node2_raw_reveal_access_count 0"
+  ]
+}

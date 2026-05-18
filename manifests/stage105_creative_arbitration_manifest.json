@@ -1,0 +1,12 @@
+{
+  "stage": "105",
+  "status": "active",
+  "components": [
+    "role_matrix",
+    "candidate_lanes",
+    "response_normalization",
+    "literary_scoring",
+    "arbitration_policy",
+    "release_provider_policy"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "100.2",
+  "baseline_stage": "100.1",
+  "purpose": "Certify GPT, Claude, Gemini, Ollama, fixture, and mock provider contracts without live release calls.",
+  "required_report": "release/current/stage100_provider_certification_report.json",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release": 0,
+  "release_mode_provider": "fixture_or_mock"
+}
+

@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "scene_count": 3,
+  "scene_cards": [
+    {
+      "scene_id": "scene-001",
+      "episode_id": "ep-001",
+      "title": "폐역 도착",
+      "mode": "PROSE",
+      "intent": "guilt_sensory_anchor",
+      "beat_count": 3,
+      "has_raw_manuscript": false
+    },
+    {
+      "scene_id": "scene-002",
+      "episode_id": "ep-001",
+      "title": "전광판 점등",
+      "mode": "SCENARIO",
+      "intent": "prop_led_reveal",
+      "beat_count": 4,
+      "has_raw_manuscript": false
+    },
+    {
+      "scene_id": "scene-003",
+      "episode_id": "ep-001",
+      "title": "수정 검토",
+      "mode": "REVIEW",
+      "intent": "writer_decision_checkpoint",
+      "beat_count": 2,
+      "has_raw_manuscript": false
+    }
+  ],
+  "raw_manuscript_included": false
+}

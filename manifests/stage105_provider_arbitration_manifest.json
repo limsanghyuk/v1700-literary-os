@@ -1,0 +1,13 @@
+{
+  "stage": "105",
+  "status": "active",
+  "providers": [
+    "gpt",
+    "claude",
+    "gemini",
+    "ollama",
+    "fixture",
+    "mock"
+  ],
+  "release_mode": "fixture_only"
+}

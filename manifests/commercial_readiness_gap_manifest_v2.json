@@ -1,0 +1,40 @@
+{
+  "stage": "83.1",
+  "status": "commercial_release_candidate_ready",
+  "basis": "Stage82 and Stage83 evidence has been reconciled after the Stage81.1 gap manifest.",
+  "items": [
+    {
+      "gap_id": "full_episode_actual_rendering",
+      "status": "RESOLVED_STAGE83",
+      "evidence": [
+        "sample_longform_project_01/generated_episode_01.md",
+        "sample_longform_project_01/generated_episode_02.md",
+        "sample_longform_project_01/generated_episode_03.md"
+      ]
+    },
+    {
+      "gap_id": "full_532_scene_actual_rendering",
+      "status": "DEFERRED_STAGE85_NOT_REQUIRED_FOR_STAGE83_1",
+      "evidence": [
+        "docs/stages/stage76.md",
+        "docs/roadmaps/stage83_commercial_release_candidate.md"
+      ]
+    },
+    {
+      "gap_id": "external_blind_critic_benchmark",
+      "status": "RESOLVED_STAGE82",
+      "evidence": [
+        "release/current/stage82_blind_critic_benchmark_report.json",
+        "sample_longform_project_01/blind_eval_report.md"
+      ]
+    },
+    {
+      "gap_id": "commercial_release_candidate",
+      "status": "RESOLVED_STAGE83",
+      "evidence": [
+        "sample_longform_project_01/commercial_release_manifest.json",
+        "release/current/stage83_release_gate_report.json"
+      ]
+    }
+  ]
+}

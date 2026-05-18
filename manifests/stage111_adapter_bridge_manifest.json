@@ -1,0 +1,10 @@
+{
+  "stage": "111",
+  "status": "active",
+  "adapters": [
+    "anthropic_pattern",
+    "ollama_pattern",
+    "mock_fixture_pattern"
+  ],
+  "release_live_calls": 0
+}

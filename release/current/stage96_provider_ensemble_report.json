@@ -1,0 +1,182 @@
+{
+  "stage": "96C",
+  "status": "pass",
+  "mode": "dry_run_fixture_candidates",
+  "provider_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate_id": "stage96-candidate-1",
+      "provider_id": "ollama-local",
+      "provider_kind": "ollama",
+      "prompt_id": "stage96-ensemble-fixture",
+      "normalized_response_preview": "structure and privacy-first offline continuity",
+      "estimated_cost": 0.1,
+      "latency_ms": 300,
+      "safety_flags": [],
+      "metadata": {
+        "stage": "96C",
+        "source": "dry_run_fixture_candidate",
+        "provider_average_score": 8.0,
+        "normalized_schema_pass": true
+      }
+    },
+    {
+      "candidate_id": "stage96-candidate-2",
+      "provider_id": "gpt-frontier",
+      "provider_kind": "gpt",
+      "prompt_id": "stage96-ensemble-fixture",
+      "normalized_response_preview": "schema discipline and branchpoint-safe refinement",
+      "estimated_cost": 0.1,
+      "latency_ms": 300,
+      "safety_flags": [],
+      "metadata": {
+        "stage": "96C",
+        "source": "dry_run_fixture_candidate",
+        "provider_average_score": 8.0,
+        "normalized_schema_pass": true
+      }
+    },
+    {
+      "candidate_id": "stage96-candidate-3",
+      "provider_id": "claude-editorial",
+      "provider_kind": "claude",
+      "prompt_id": "stage96-ensemble-fixture",
+      "normalized_response_preview": "subtext-sensitive surface prose without raw reveal leakage",
+      "estimated_cost": 0.1,
+      "latency_ms": 300,
+      "safety_flags": [],
+      "metadata": {
+        "stage": "96C",
+        "source": "dry_run_fixture_candidate",
+        "provider_average_score": 8.0,
+        "normalized_schema_pass": true
+      }
+    },
+    {
+      "candidate_id": "stage96-candidate-4",
+      "provider_id": "gemini-fast",
+      "provider_kind": "gemini",
+      "prompt_id": "stage96-ensemble-fixture",
+      "normalized_response_preview": "fast broad-context outline with READER_ONLY leakage",
+      "estimated_cost": 0.1,
+      "latency_ms": 300,
+      "safety_flags": [
+        "READER_ONLY_leakage"
+      ],
+      "metadata": {
+        "stage": "96C",
+        "source": "dry_run_fixture_candidate",
+        "provider_average_score": 8.0,
+        "normalized_schema_pass": true
+      }
+    }
+  ],
+  "scores": [
+    {
+      "candidate_id": "stage96-candidate-1",
+      "provider_id": "ollama-local",
+      "narrative_fitness": 9.344,
+      "reader_surface_score": 8.5,
+      "agent_benchmark_score": 8.8,
+      "provider_reliability_score": 8.0,
+      "cost_efficiency_score": 9.9,
+      "leakage_risk": 0.0,
+      "branchpoint_regression_risk": 0.0,
+      "style_drift_penalty": 0.0,
+      "arbitration_score": 7.264
+    },
+    {
+      "candidate_id": "stage96-candidate-2",
+      "provider_id": "gpt-frontier",
+      "narrative_fitness": 9.344,
+      "reader_surface_score": 8.5,
+      "agent_benchmark_score": 8.8,
+      "provider_reliability_score": 8.0,
+      "cost_efficiency_score": 9.9,
+      "leakage_risk": 0.0,
+      "branchpoint_regression_risk": 0.0,
+      "style_drift_penalty": 0.0,
+      "arbitration_score": 7.264
+    },
+    {
+      "candidate_id": "stage96-candidate-3",
+      "provider_id": "claude-editorial",
+      "narrative_fitness": 9.344,
+      "reader_surface_score": 9.2,
+      "agent_benchmark_score": 8.8,
+      "provider_reliability_score": 8.0,
+      "cost_efficiency_score": 9.9,
+      "leakage_risk": 0.0,
+      "branchpoint_regression_risk": 0.0,
+      "style_drift_penalty": 0.0,
+      "arbitration_score": 7.376
+    },
+    {
+      "candidate_id": "stage96-candidate-4",
+      "provider_id": "gemini-fast",
+      "narrative_fitness": 9.344,
+      "reader_surface_score": 8.5,
+      "agent_benchmark_score": 8.8,
+      "provider_reliability_score": 8.0,
+      "cost_efficiency_score": 9.9,
+      "leakage_risk": 10.0,
+      "branchpoint_regression_risk": 3.0,
+      "style_drift_penalty": 0.2,
+      "arbitration_score": -5.936
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_id": "stage96-candidate-4",
+      "provider_id": "gemini-fast",
+      "decision": "REJECT",
+      "arbitration_score": -5.936,
+      "reasons": [
+        "READER_ONLY_leakage",
+        "arbitration_score_below_floor",
+        "branchpoint_regression_risk"
+      ],
+      "directive": "Reject provider candidate before merge or surface rendering."
+    },
+    {
+      "candidate_id": "stage96-candidate-3",
+      "provider_id": "claude-editorial",
+      "decision": "SELECT",
+      "arbitration_score": 7.376,
+      "reasons": [
+        "narrative_physics_guard_pass",
+        "branchpoint_guard_pass",
+        "surface_guard_pass"
+      ],
+      "directive": "Use as a source for V1700-local refinement directive, not as final authority."
+    },
+    {
+      "candidate_id": "stage96-candidate-1",
+      "provider_id": "ollama-local",
+      "decision": "SELECT",
+      "arbitration_score": 7.264,
+      "reasons": [
+        "narrative_physics_guard_pass",
+        "branchpoint_guard_pass",
+        "surface_guard_pass"
+      ],
+      "directive": "Use as a source for V1700-local refinement directive, not as final authority."
+    },
+    {
+      "candidate_id": "stage96-directive-merge",
+      "provider_id": "v1700-local-arbiter",
+      "decision": "MERGE",
+      "arbitration_score": 7.32,
+      "reasons": [
+        "directive_level_merge_only",
+        "text_concatenation_forbidden"
+      ],
+      "directive": "Use directive-level merge only: preserve the strongest structure, prose surface, reveal timing, and dialogue rhythm from ollama, claude while rerunning Node2 surface transform guard."
+    }
+  ],
+  "live_provider_call_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": []
+}

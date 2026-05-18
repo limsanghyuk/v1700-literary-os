@@ -1,0 +1,12 @@
+{
+  "stage": "108",
+  "status": "pass",
+  "reviewer_roles": [
+    "LITERARY_CRITIC",
+    "DRAMATURG",
+    "MARKET_EDITOR",
+    "GENRE_EDITOR",
+    "CONTINUITY_AUDITOR",
+    "SCENARIO_PRODUCER"
+  ]
+}

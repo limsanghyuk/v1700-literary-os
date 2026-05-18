@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.governance.concept_validation_workbench",
+  "stage_origins": [
+    "STAGE33"
+  ],
+  "title": "Concept Validation Workbench",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage33_all_validation_report.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

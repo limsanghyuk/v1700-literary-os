@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "fresh_clone_ready": true,
+  "editable_install_ready": true,
+  "cli_smoke_ready": true,
+  "release_gate_replay_ready": true,
+  "documented_commands": [
+    "python -m pip install -e .",
+    "python -m v1700.cli --help",
+    "python tools/run_mandatory_predevelopment_check.py",
+    "python tools/run_stage102_release_gate.py",
+    "python tools/run_stage103_release_gate.py",
+    "python tools/run_release_gate.py",
+    "python tools/run_stage72_repo_doctor.py",
+    "python -m pytest -q tests"
+  ],
+  "issues": []
+}

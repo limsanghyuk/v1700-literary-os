@@ -1,0 +1,17 @@
+{
+  "stage": "99",
+  "baseline_stage": "98",
+  "title": "GitNexus-Aware Final Hardening / Security / Regression Freeze",
+  "status": "active",
+  "required_gate": "stage99_release_gate",
+  "required_evidence": [
+    "release/current/stage99_0_gitnexus_impact_baseline_report.json",
+    "release/current/stage99_1_security_privacy_hardening_report.json",
+    "release/current/stage99_2_gate_replay_freeze_report.json",
+    "release/current/stage99_release_gate_report.json",
+    "release/current/stage100_readiness_precheck_report.json"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release": 0,
+  "full_text_manuscript_export_default": false
+}

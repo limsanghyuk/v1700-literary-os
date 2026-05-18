@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "conflicts_detected": [
+    {
+      "conflict_id": "canon_probe_block_001",
+      "project_id": "project_beta",
+      "entity_id": "blocked_canon_collision",
+      "conflict_type": "timeline",
+      "severity": 0.84,
+      "evidence": [
+        "timeline_conflict=1.0",
+        "world_rule_conflict=1.0"
+      ],
+      "recommended_action": "block direct absorption; require Stage129 Canon Governor mapping"
+    }
+  ],
+  "blocking_conflict_count": 1,
+  "mystery_exemption_deferred_to_stage132": true
+}

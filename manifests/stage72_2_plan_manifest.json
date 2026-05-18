@@ -1,0 +1,59 @@
+{
+  "stage": "Stage72.2",
+  "title": "GitNexus Capability Absorption and GraphNexus Operationalization",
+  "status": "implemented",
+  "source_document": "C:\\Users\\User\\Downloads\\지피티\\개발 문서 개발자용\\깃넥서스 기능 추가 적용.docx",
+  "baseline": {
+    "active_repo": "C:\\AI_Codex\\codex-work\\gpt\\active\\v1700\\literary_generator",
+    "gitnexus_index_repo": "C:\\AI_Codex\\codex-work\\gpt\\gitnexus_index\\v1700_stage72_2_ascii",
+    "gitnexus_alias": "v1700_stage72_2_ascii",
+    "graph_nexus_release_gate": "pass",
+    "release_gate": "pass",
+    "pytest": "15 passed"
+  },
+  "capabilities": [
+    "query",
+    "context",
+    "impact",
+    "detect_changes",
+    "route_map",
+    "tool_map",
+    "shape_check",
+    "skill_generator",
+    "wiki_generator"
+  ],
+  "non_goals": [
+    "vendor GitNexus source",
+    "make GitNexus hard runtime dependency",
+    "allow Node2 raw reveal access",
+    "enable provider calls in release gates",
+    "enable embeddings by default"
+  ],
+  "acceptance": {
+    "gitnexus_optional": true,
+    "python_fallback_required": true,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "gitnexus_index_under_gpt_workspace": true
+  },
+  "planned_outputs": [
+    "src/v1700/graph_nexus/tools",
+    "src/v1700/sidecars/gitnexus/cli_adapter.py",
+    "src/v1700/gates/stage72_2_release_gate.py",
+    "tools/run_stage72_2_release_gate.py",
+    "docs/generated/skills",
+    "docs/generated/wiki",
+    "release/current/stage72_2_release_gate_report.json"
+  ],
+  "implemented_outputs": [
+    "src/v1700/graph_nexus/tools",
+    "src/v1700/sidecars/gitnexus/cli_adapter.py",
+    "src/v1700/sidecars/gitnexus/index_status.py",
+    "src/v1700/sidecars/gitnexus/stale_index_detector.py",
+    "src/v1700/sidecars/gitnexus/result_normalizer.py",
+    "src/v1700/gates/stage72_2_release_gate.py",
+    "tools/run_stage72_2_release_gate.py",
+    "tools/run_graph_nexus_query.py",
+    "tools/run_graph_nexus_context.py"
+  ]
+}

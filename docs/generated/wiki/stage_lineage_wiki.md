@@ -1,0 +1,41 @@
+# Stage Lineage Wiki
+
+- STAGE40: Core-AIOS Reconciliation
+- STAGE41: Repository Canonicalizer
+- STAGE45-60: Productization
+- STAGE50-52: Longform State Guards
+- STAGE61-66: Graph Intelligence Sidecar
+- STAGE70: Final Verified Runtime Release
+- STAGE71: Node2 Reader-Facing Prose Renderer
+- STAGE72: Repository Canonicalization & Node2 Maturation
+- STAGE72.1: GraphNexus Restoration Patch
+- STAGE72.2: GitNexus Capability Absorption and GraphNexus Operationalization
+- STAGE72.3: Foundation Lineage Recovery and Organic Impact Governance
+- STAGE85: GitNexus Density Upgrade and Symbol-to-Branchpoint Traceability
+- STAGE86: V380 Arc-Reveal-Knowledge Absorption
+- STAGE87: 8-16 Episode Scale-up Evidence
+- STAGE88: AI-Agent Editor/Reader Blind Benchmark
+- STAGE89: Writer Studio UI + Export Pipeline
+- STAGE90: Studio Round-trip Editing and Export Fidelity
+- STAGE91: Studio Persistence, Review Queue, and UI Event Replay
+- STAGE92: Local Multi-Provider Adapter Runtime
+- STAGE93: Live Provider Opt-in Sandbox / Credential Audit / Response Normalization
+- STAGE94: Live Provider Evaluation Harness
+- STAGE95: Native Narrative Physics Engine
+- STAGE96: Narrative Optimization, Manuscript Learning, and Provider Ensemble Arbitration
+- STAGE97: Full Longform Narrative Endurance Engine
+- STAGE97.1: Adversarial Longform Validation Hardening
+- STAGE112: GitNexus-Aware NIE Preflight Bridge
+- STAGE113: PhysicsRewardBridge + MAE Reward Wiring
+- STAGE114: AdaptiveMomentumWeights
+- STAGE115: CharacterInfluenceMatrix + Structural Balance
+- STAGE116: Domain-Specific RAG Fusion
+- STAGE117: NarrativeTensionCurve
+- STAGE118: NIL Orchestrator
+- STAGE119: NIE Adversarial Regression Pack
+- STAGE120: Gate25 NIE v1.0 Release
+- STAGE121: Cross-Lineage Formula Reconciliation & Absorption Preflight
+
+Source files:
+- manifests/stage_lineage_manifest.json
+- docs/stages/STAGE_INDEX.md

@@ -1,0 +1,33 @@
+{
+  "case": {
+    "case_id": "NIE-ADV-008",
+    "case_type": "domain_rag_fusion",
+    "mutation_type": "query_classifier_uses_llm",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "query_classifier_llm_call_nonzero",
+    "expected_triggered_gate": "domain_rag_classifier_no_llm_gate",
+    "severity": "CRITICAL_BLOCK",
+    "payload": {
+      "query_classifier_llm_call_count": 1
+    }
+  },
+  "result": {
+    "case_id": "NIE-ADV-008",
+    "case_type": "domain_rag_fusion",
+    "mutation_type": "query_classifier_uses_llm",
+    "expected_status": "BLOCK",
+    "actual_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "query_classifier_llm_call_nonzero",
+    "triggered_gate": "domain_rag_classifier_no_llm_gate",
+    "severity": "CRITICAL_BLOCK",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-008.json",
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "query_classifier_llm_call_count": 1,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

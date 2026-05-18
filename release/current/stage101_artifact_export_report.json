@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "stage101_release_gate_status": "pass",
+  "canonical_package": "V1700_stage101_cross_lineage_absorption_scenario_room_FIXED.zip",
+  "sha256_sidecar": "V1700_stage101_cross_lineage_absorption_scenario_room_FIXED.zip.sha256",
+  "filelist": "V1700_stage101_FIXED_filelist.txt",
+  "files": [
+    "release/current/stage101_0_cross_lineage_preflight_report.json",
+    "release/current/stage101_absorption_candidate_matrix.json",
+    "release/current/stage101_cross_lineage_pack/absorption_candidate_matrix.json",
+    "release/current/stage101_cross_lineage_pack/absorption_matrix_summary.md",
+    "release/current/stage101_cross_lineage_pack/cross_lineage_trace_report.json",
+    "release/current/stage101_cross_lineage_pack/stage101_0_cross_lineage_preflight_report.json",
+    "release/current/stage101_cross_lineage_pack/stage101_0_summary.md",
+    "release/current/stage101_cross_lineage_pack/v430_source_probe_report.json",
+    "release/current/stage101_cross_lineage_pack/v430_source_probe_summary.md",
+    "release/current/stage101_cross_lineage_scenario_room_report.json",
+    "release/current/stage101_developer_handoff_report.md",
+    "release/current/stage101_dual_mode_regression_report.json",
+    "release/current/stage101_gitnexus_index_report.json",
+    "release/current/stage101_release_gate_report.json",
+    "release/current/stage101_scenario_cue_integration_report.json",
+    "release/current/stage101_scenario_room_contract_report.json",
+    "release/current/stage101_scenario_room_pack/dialogue_silence_cues.json",
+    "release/current/stage101_scenario_room_pack/investigation_action_beats.json",
+    "release/current/stage101_scenario_room_pack/prop_reveal_cues.json",
+    "release/current/stage101_scenario_room_pack/scenario_room_plan.json",
+    "release/current/stage101_scenario_room_pack/scenario_room_summary.md",
+    "release/current/stage101_scenario_room_pack/scene_beat_board.json",
+    "release/current/stage101_v430_source_probe_report.json"
+  ]
+}

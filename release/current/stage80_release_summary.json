@@ -1,0 +1,14 @@
+{
+  "stage": "80",
+  "status": "pass",
+  "pytest": "45 passed",
+  "stage80_release_gate": "pass",
+  "main_release_gate": "pass",
+  "macro_plot_count": 3,
+  "broadcast_episode_count": 6,
+  "micro_plot_count": 18,
+  "sequence_count": 18,
+  "scene_count": 54,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

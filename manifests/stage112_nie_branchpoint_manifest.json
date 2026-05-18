@@ -1,0 +1,41 @@
+{
+  "stage": "112",
+  "title": "NIE Branchpoint Manifest",
+  "baseline_stage": "111",
+  "branchpoints_to_preserve": [
+    "stage51_character_event_time_ledger",
+    "stage52_reveal_budget_memory_guard",
+    "stage72_graphnexus_lineage",
+    "stage80_korean_drama_composition",
+    "stage86_arc_reveal_knowledge",
+    "stage95_narrative_physics",
+    "stage96_coefficient_memory",
+    "stage97_longform_endurance",
+    "stage97_1_adversarial_validation",
+    "stage107_longform_production_suite",
+    "stage111_absorption_candidate_bridge",
+    "stage111_1_narrative_weight_kernel"
+  ],
+  "planned_nie_branchpoints": [
+    "stage113_physics_reward_bridge",
+    "stage114_adaptive_momentum_weights",
+    "stage115_character_influence_matrix",
+    "stage116_domain_specific_rag_fusion",
+    "stage117_narrative_tension_curve",
+    "stage118_nil_orchestrator",
+    "stage119_nie_adversarial_regression_pack",
+    "stage120_gate25_nie_v1"
+  ],
+  "release_block_if": [
+    "orphan critical node",
+    "broken gate edge",
+    "branchpoint lineage cut",
+    "provider live call in release gate",
+    "Node2 raw reveal access",
+    "raw manuscript provider leakage",
+    "credential leakage",
+    "shape_check failed",
+    "stale index used as authority"
+  ]
+}
+

@@ -1,0 +1,29 @@
+{
+  "stage": "86",
+  "title": "V380 Arc-Reveal-Knowledge Absorption",
+  "status": "pass",
+  "depends_on": [
+    "stage85",
+    "stage84",
+    "stage83.1",
+    "stage72.1"
+  ],
+  "required_outputs": [
+    "src/v1700/arc_reveal_knowledge/series_arc_planner.py",
+    "src/v1700/arc_reveal_knowledge/causal_plot_graph.py",
+    "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+    "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py",
+    "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+    "src/v1700/gates/stage86_release_gate.py",
+    "tools/export_stage86_artifacts.py",
+    "tools/run_stage86_release_gate.py",
+    "tests/test_stage86_arc_reveal_knowledge.py",
+    "manifests/stage86_v380_feature_map_manifest.json",
+    "manifests/stage86_branchpoint_trace_manifest.json",
+    "release/current/stage86_release_gate_report.json",
+    "release/current/stage86_gitnexus_index_quality_report.json",
+    "release/current/stage86_zip_probe_report.md"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

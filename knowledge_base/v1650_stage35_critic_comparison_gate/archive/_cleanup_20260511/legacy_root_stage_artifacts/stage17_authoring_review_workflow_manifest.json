@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.review.authoring_workflow",
+  "stage_origins": [
+    "STAGE17"
+  ],
+  "title": "Authoring Review Workflow",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage17_authoring_review_workflow_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

@@ -1,0 +1,110 @@
+{
+  "stage": "115",
+  "baseline_stage": "114",
+  "title": "CharacterInfluenceMatrix + Structural Balance",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage114_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "cim_contract_pass": {
+      "status": "pass"
+    },
+    "cim_asymmetric_matrix_pass": {
+      "status": "pass"
+    },
+    "structural_balance_triangle_pass": {
+      "status": "pass"
+    },
+    "pagerank_centrality_pass": {
+      "status": "pass"
+    },
+    "betweenness_centrality_pass": {
+      "status": "pass"
+    },
+    "role_tier_assignment_pass": {
+      "status": "pass"
+    },
+    "janggi_role_tier_growth_ready": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "physics_reward_bridge_no_llm_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage115": {
+    "status": "pass",
+    "stage": "115",
+    "baseline_stage": "114",
+    "title": "CharacterInfluenceMatrix + Structural Balance",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "cim_summary": {
+    "character_count": 5,
+    "asymmetric_pair_count": 7,
+    "triangle_count": 10,
+    "high_tension_triangle_count": 10,
+    "role_tiers": {
+      "minjun": "jang",
+      "sujin": "jang",
+      "haewon": "po",
+      "chairman": "jol",
+      "detective": "jol"
+    },
+    "pagerank": {
+      "minjun": 0.425808,
+      "sujin": 0.405701,
+      "haewon": 0.080963,
+      "chairman": 0.043764,
+      "detective": 0.043764
+    },
+    "betweenness": {
+      "minjun": 1.0,
+      "sujin": 0.333333,
+      "haewon": 1.0,
+      "chairman": 0.333333,
+      "detective": 0.333333
+    }
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,90 @@
+{
+  "gitnexus_preflight": {
+    "stage": "stage112",
+    "report_path": "release/current/stage112_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "physics_reward_bridge": {
+    "stage": "stage113",
+    "report_path": "release/current/stage113_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "adaptive_momentum_weights": {
+    "stage": "stage114",
+    "report_path": "release/current/stage114_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "character_influence_matrix": {
+    "stage": "stage115",
+    "report_path": "release/current/stage115_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "domain_specific_rag_fusion": {
+    "stage": "stage116",
+    "report_path": "release/current/stage116_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "narrative_tension_curve": {
+    "stage": "stage117",
+    "report_path": "release/current/stage117_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "nil_orchestrator": {
+    "stage": "stage118",
+    "report_path": "release/current/stage118_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "nie_adversarial_regression": {
+    "stage": "stage119",
+    "report_path": "release/current/stage119_release_gate_report.json",
+    "status": "pass",
+    "issues": [],
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "credential_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  }
+}

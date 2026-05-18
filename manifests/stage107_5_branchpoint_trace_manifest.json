@@ -1,0 +1,12 @@
+{
+  "stage": "107.5",
+  "status": "pass",
+  "baseline_stage": "107",
+  "branchpoints": [
+    "provider-zero",
+    "release_gate_isolation",
+    "raw_manuscript_leakage_block",
+    "credential_externality",
+    "response_normalization"
+  ]
+}

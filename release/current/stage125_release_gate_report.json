@@ -1,0 +1,105 @@
+{
+  "stage": "125",
+  "baseline_stage": "124",
+  "title": "Gate25/28/29 Governor Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage124_baseline_preserved": {
+      "status": "pass"
+    },
+    "gate25_primary_authority_preserved": {
+      "status": "pass"
+    },
+    "gate28_secondary_quality_preserved": {
+      "status": "pass"
+    },
+    "gate29_secondary_predictive_preserved": {
+      "status": "pass"
+    },
+    "governor_decision_pass": {
+      "status": "pass"
+    },
+    "gate28_not_primary": {
+      "status": "pass"
+    },
+    "gate29_not_primary": {
+      "status": "pass"
+    },
+    "runtime_training_disabled": {
+      "status": "pass"
+    },
+    "auto_repair_mutation_disabled": {
+      "status": "pass"
+    },
+    "direct_v545_v555_merge_blocked": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage125": {
+    "status": "pass",
+    "stage": "125",
+    "baseline_stage": "124",
+    "title": "Gate25/28/29 Governor",
+    "issues": [],
+    "summary": {
+      "primary_gate": "Gate25",
+      "secondary_gates": [
+        "Gate28",
+        "Gate29"
+      ],
+      "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
+      "blocked_by": [],
+      "gate25_status": "pass",
+      "gate28_status": "pass",
+      "gate29_status": "pass"
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "pne_provider_call_count": 0,
+    "pne_runtime_training_count": 0,
+    "auto_repair_mutation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "story_doctor_llm_call_count": 0,
+  "pne_provider_call_count": 0,
+  "pne_runtime_training_count": 0,
+  "auto_repair_mutation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

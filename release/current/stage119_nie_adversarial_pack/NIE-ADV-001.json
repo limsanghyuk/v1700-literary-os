@@ -1,0 +1,37 @@
+{
+  "case": {
+    "case_id": "NIE-ADV-001",
+    "case_type": "mae_reward_contract",
+    "mutation_type": "remove_dimension_score",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "mae_dimension_score_missing",
+    "expected_triggered_gate": "mae_reward_contract_gate",
+    "severity": "CRITICAL_BLOCK",
+    "payload": {
+      "dimension_scores": {
+        "tension": 0.7,
+        "sympathy": 0.6,
+        "catharsis": 0.5
+      }
+    }
+  },
+  "result": {
+    "case_id": "NIE-ADV-001",
+    "case_type": "mae_reward_contract",
+    "mutation_type": "remove_dimension_score",
+    "expected_status": "BLOCK",
+    "actual_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "mae_dimension_score_missing",
+    "triggered_gate": "mae_reward_contract_gate",
+    "severity": "CRITICAL_BLOCK",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-001.json",
+    "provider_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

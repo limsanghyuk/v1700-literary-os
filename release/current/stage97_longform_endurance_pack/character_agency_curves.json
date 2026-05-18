@@ -1,0 +1,586 @@
+{
+  "protagonist": [
+    {
+      "episode_id": "EP01",
+      "agency_delta": 0.881,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP02",
+      "agency_delta": 1.012,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP03",
+      "agency_delta": 0.784,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP04",
+      "agency_delta": 0.915,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP05",
+      "agency_delta": 1.046,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP06",
+      "agency_delta": 0.818,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP07",
+      "agency_delta": 0.949,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP08",
+      "agency_delta": 1.08,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP09",
+      "agency_delta": 0.931,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP10",
+      "agency_delta": 1.062,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP11",
+      "agency_delta": 1.194,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP12",
+      "agency_delta": 0.965,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP13",
+      "agency_delta": 1.096,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP14",
+      "agency_delta": 1.227,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP15",
+      "agency_delta": 0.999,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP16",
+      "agency_delta": 1.13,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    }
+  ],
+  "antagonist": [
+    {
+      "episode_id": "EP01",
+      "agency_delta": 0.781,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP02",
+      "agency_delta": 0.912,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP03",
+      "agency_delta": 0.684,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP04",
+      "agency_delta": 0.815,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP05",
+      "agency_delta": 0.946,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP06",
+      "agency_delta": 0.718,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP07",
+      "agency_delta": 0.849,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP08",
+      "agency_delta": 0.98,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP09",
+      "agency_delta": 0.831,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP10",
+      "agency_delta": 0.962,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP11",
+      "agency_delta": 1.094,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP12",
+      "agency_delta": 0.865,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP13",
+      "agency_delta": 0.996,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP14",
+      "agency_delta": 1.127,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP15",
+      "agency_delta": 0.899,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP16",
+      "agency_delta": 1.03,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    }
+  ],
+  "mentor": [
+    {
+      "episode_id": "EP01",
+      "agency_delta": 0.581,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP02",
+      "agency_delta": 0.712,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP03",
+      "agency_delta": 0.484,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP04",
+      "agency_delta": 0.615,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP05",
+      "agency_delta": 0.746,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP06",
+      "agency_delta": 0.518,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP07",
+      "agency_delta": 0.649,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP08",
+      "agency_delta": 0.78,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP09",
+      "agency_delta": 0.631,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP10",
+      "agency_delta": 0.762,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP11",
+      "agency_delta": 0.894,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP12",
+      "agency_delta": 0.665,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP13",
+      "agency_delta": 0.796,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP14",
+      "agency_delta": 0.927,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP15",
+      "agency_delta": 0.699,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP16",
+      "agency_delta": 0.83,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    }
+  ],
+  "rival": [
+    {
+      "episode_id": "EP01",
+      "agency_delta": 0.681,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP02",
+      "agency_delta": 0.812,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP03",
+      "agency_delta": 0.584,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP04",
+      "agency_delta": 0.715,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP05",
+      "agency_delta": 0.846,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP06",
+      "agency_delta": 0.618,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP07",
+      "agency_delta": 0.749,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP08",
+      "agency_delta": 0.88,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP09",
+      "agency_delta": 0.731,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP10",
+      "agency_delta": 0.862,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP11",
+      "agency_delta": 0.994,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP12",
+      "agency_delta": 0.765,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP13",
+      "agency_delta": 0.896,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP14",
+      "agency_delta": 1.027,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP15",
+      "agency_delta": 0.799,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    },
+    {
+      "episode_id": "EP16",
+      "agency_delta": 0.93,
+      "agency_events": [
+        "choice",
+        "refusal",
+        "consequence"
+      ]
+    }
+  ]
+}

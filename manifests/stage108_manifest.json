@@ -1,0 +1,17 @@
+{
+  "stage": "108",
+  "title": "External Review & Editorial Board Mode",
+  "baseline_stage": "107.5",
+  "status": "fixed",
+  "release_gate_affected": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "python_fallback_required": true,
+  "artifacts": [
+    "release/current/stage108_external_review_editorial_board_report.json",
+    "release/current/stage108_release_gate_report.json",
+    "release/current/stage108_editorial_board_pack/editorial_scorecards.json"
+  ]
+}

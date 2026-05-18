@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "queue_id": "stage104-review-queue",
+  "items": [
+    {
+      "revision_id": "rev-001",
+      "source": "stage101_scenario_room",
+      "severity": "WARN",
+      "issue_type": "dialogue_silence_balance",
+      "recommendation": "shift exposition into prop cue and silence beat",
+      "writer_decision": "PENDING"
+    },
+    {
+      "revision_id": "rev-002",
+      "source": "stage102_writer_trial",
+      "severity": "INFO",
+      "issue_type": "reader_orientation",
+      "recommendation": "keep station location label visible in scene card",
+      "writer_decision": "PENDING"
+    }
+  ],
+  "revision_queue_size": 2,
+  "unresolved_block_count": 0,
+  "writer_approval_required": true,
+  "provider_call_count": 0
+}

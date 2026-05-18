@@ -1,0 +1,18 @@
+{
+  "stage": "125",
+  "title": "Gate25/28/29 Governor",
+  "baseline_stage": "124",
+  "status": "active",
+  "purpose": "Unify Gate25 primary release authority with Gate28 secondary quality and Gate29 secondary predictive gates.",
+  "entrypoints": [
+    "tools/run_stage125_gate25_28_29_governor.py",
+    "tools/run_stage125_release_gate.py"
+  ],
+  "required_reports": [
+    "release/current/stage125_gate25_28_29_governor_report.json",
+    "release/current/stage125_gate_authority_map.json",
+    "release/current/stage125_governor_decision.json",
+    "release/current/stage125_release_gate_report.json"
+  ],
+  "internal_packaging_files_required": ["FILELIST.txt", "SHA256SUMS.txt"]
+}

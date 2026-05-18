@@ -1,0 +1,91 @@
+{
+  "stage": "122",
+  "baseline_stage": "121",
+  "title": "NIE v2.0 Stability Absorption Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage121_baseline_preserved": {
+      "status": "pass"
+    },
+    "stage120_gate25_primary_authority_preserved": {
+      "status": "pass"
+    },
+    "direct_candidate_merge_blocked": {
+      "status": "pass"
+    },
+    "v525_alpha_relaxation_not_adopted": {
+      "status": "pass"
+    },
+    "gate28_gate29_not_enabled": {
+      "status": "pass"
+    },
+    "nil_stability_pass": {
+      "status": "pass"
+    },
+    "agent_calibrator_pass": {
+      "status": "pass"
+    },
+    "t_ideal_learner_pass": {
+      "status": "pass"
+    },
+    "temporal_cim_adapter_pass": {
+      "status": "pass"
+    },
+    "meta_learner_proposal_only": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage122": {
+    "status": "pass",
+    "stage": "122",
+    "baseline_stage": "121",
+    "title": "NIE v2.0 Stability Absorption",
+    "issues": [],
+    "stability_score": 0.963996,
+    "agent_calibration_max_shift": 0.001212,
+    "t_ideal_max_shift": 0.004397,
+    "temporal_cim_mean_volatility": 0.103333,
+    "meta_learner_mode": "proposal_only",
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

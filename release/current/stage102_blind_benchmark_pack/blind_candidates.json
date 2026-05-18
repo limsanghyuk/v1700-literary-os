@@ -1,0 +1,232 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "stage102_seed_prose_01_A",
+      "hidden_label": "A",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+      "evidence_markers": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_B",
+      "hidden_label": "B",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+      "evidence_markers": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_C",
+      "hidden_label": "C",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+      "evidence_markers": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_D",
+      "hidden_label": "D",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+      "evidence_markers": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_E",
+      "hidden_label": "E",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+      "evidence_markers": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_F",
+      "hidden_label": "F",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+      "evidence_markers": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_G",
+      "hidden_label": "G",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+      "evidence_markers": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_prose_01_H",
+      "hidden_label": "H",
+      "visible_excerpt": "Prompt: A Seoul trauma surgeon finds that a past rescue has become the key to a political cover-up.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+      "evidence_markers": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_A",
+      "hidden_label": "A",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+      "evidence_markers": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_B",
+      "hidden_label": "B",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+      "evidence_markers": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_C",
+      "hidden_label": "C",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+      "evidence_markers": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_D",
+      "hidden_label": "D",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+      "evidence_markers": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_E",
+      "hidden_label": "E",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+      "evidence_markers": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_F",
+      "hidden_label": "F",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+      "evidence_markers": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_G",
+      "hidden_label": "G",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+      "evidence_markers": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_scenario_01_H",
+      "hidden_label": "H",
+      "visible_excerpt": "Prompt: A quiet archivist and a rookie detective track a prop-led clue across three episodes.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+      "evidence_markers": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_A",
+      "hidden_label": "A",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The story moves quickly through conflict, secret, and resolution, but the macro plot, scene contract, payoff debt, and revision evidence remain mostly implicit.",
+      "evidence_markers": [
+        "direct_draft",
+        "low_structure_evidence"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_B",
+      "hidden_label": "B",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft has reflective emotional texture and clear motivations, yet the writer must still infer scenario beats, reveal timing, and branchpoint survival manually.",
+      "evidence_markers": [
+        "long_context_texture",
+        "manual_gate_inference"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_C",
+      "hidden_label": "C",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft gives cinematic scene images and broad action direction, but the evidence trail for character knowledge, payoff slots, and writer revision tasks is partial.",
+      "evidence_markers": [
+        "visual_scene_energy",
+        "partial_contract_trace"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_D",
+      "hidden_label": "D",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The draft keeps the manuscript local and inexpensive, but its prose surface, dialogue hierarchy, and episode-level escalation need heavier revision.",
+      "evidence_markers": [
+        "local_privacy",
+        "revision_heavy"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_E",
+      "hidden_label": "E",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The prose mode keeps Node2 surface-only, removes flat AI phrasing, and turns emotion into behavior while preserving hidden reveal facts outside the visible draft.",
+      "evidence_markers": [
+        "node2_surface_only",
+        "anti_llm_surface",
+        "emotion_to_behavior"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_F",
+      "hidden_label": "F",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario mode exposes scene beats, investigation movement, dialogue silence, prop-led reveal cues, and production-ready episode handoff evidence.",
+      "evidence_markers": [
+        "scene_beat_board",
+        "dialogue_silence",
+        "prop_reveal_budget"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_G",
+      "hidden_label": "G",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The scenario-room candidate improves actionability and shot logic, but remains accepted only as a V1700 contract fixture until its source lineage is traced.",
+      "evidence_markers": [
+        "scenario_room_fixture",
+        "cross_lineage_guard"
+      ]
+    },
+    {
+      "candidate_id": "stage102_seed_hybrid_01_H",
+      "hidden_label": "H",
+      "visible_excerpt": "Prompt: A family restaurant drama expands into a 16-episode season about memory, labor, and betrayal.. The hybrid candidate combines prose surface, scenario beats, payoff debt, writer revision queue, branchpoint trace, and provider-zero privacy into one auditable workflow.",
+      "evidence_markers": [
+        "hybrid_workflow",
+        "payoff_debt_audit",
+        "writer_revision_queue",
+        "provider_zero"
+      ]
+    }
+  ]
+}

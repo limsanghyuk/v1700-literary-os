@@ -1,0 +1,18 @@
+{
+  "stage": "115",
+  "name": "Stage115 CIM/Structural Balance Manifest",
+  "matrix": "W[n×n] asymmetric in [-1,+1]",
+  "centrality": [
+    "pagerank_positive",
+    "betweenness_unweighted"
+  ],
+  "role_tiers": [
+    "jang",
+    "cha",
+    "po",
+    "ma_sang",
+    "jol"
+  ],
+  "release_gate": "v1700.gates.stage115_release_gate.run_stage115_release_gate",
+  "next_stage": "Stage116 Domain-Specific RAG Fusion"
+}

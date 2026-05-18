@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "allowed": [
+    {
+      "character_id": "char_alpha_mentor",
+      "same_owner": true,
+      "explicit_license_edge": false,
+      "public_domain_flag": false,
+      "shared_character_allowed": true
+    },
+    {
+      "character_id": "char_beta_guest",
+      "same_owner": false,
+      "explicit_license_edge": true,
+      "public_domain_flag": false,
+      "shared_character_allowed": true
+    }
+  ],
+  "blocked": [
+    {
+      "character_id": "blocked_private_character",
+      "same_owner": false,
+      "explicit_license_edge": false,
+      "public_domain_flag": false,
+      "shared_character_allowed": false
+    }
+  ],
+  "shared_character_conflicts": 0,
+  "license_edge_required_for_cross_owner_private_character": true
+}

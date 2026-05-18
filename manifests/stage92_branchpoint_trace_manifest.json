@@ -1,0 +1,1317 @@
+{
+  "stage": "92",
+  "status": "pass",
+  "title": "Symbol-to-Branchpoint Traceability with Stage92 Local Multi-Provider Adapter Evidence",
+  "principle": "Connect literary logic to concrete code symbols, tests, and release gates without making GitNexus mandatory at runtime.",
+  "issues": [],
+  "entry_count": 40,
+  "coverage": {
+    "P0": {
+      "priority": "P0",
+      "total": 34,
+      "covered": 34,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "P1": {
+      "priority": "P1",
+      "total": 6,
+      "covered": 6,
+      "coverage": 1.0,
+      "missing_branchpoints": []
+    },
+    "overall": {
+      "total": 40,
+      "covered": 40,
+      "coverage": 1.0
+    }
+  },
+  "entry_statuses": [
+    {
+      "branchpoint_id": "BP_STAGE85_NODE2_REVEAL_BOUNDARY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/gates/node_projection_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_PROVIDER_ZERO_LOCAL_FIRST",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime/provider_boundary.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GRAPHNEXUS_AUTHORITY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/gates/graph_nexus_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/lineage/stage83_1_consistency_audit.py",
+        "src/v1700/lineage/branchpoint_registry.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_DRAMA_HIERARCHY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/gates/stage80_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STAGE84_ABSORPTION_SAFE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/gates/stage84_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_COMMERCIAL_EVIDENCE_PACK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/commercial_release/engine.py",
+        "src/v1700/gates/stage83_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_ANTI_LLM_FILTER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STYLE_DNA",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_CLOSED_LOOP_RENDERER",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_SELF_LEARNING_TRACE",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GITNEXUS_OPTIONAL_SIDECAR",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/sidecars/gitnexus/probe.py",
+        "src/v1700/sidecars/gitnexus/adapter.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_SERIES_ARC_PLANNER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/series_arc_planner.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CAUSAL_PLOT_GRAPH",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/causal_plot_graph.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CHARACTER_KNOWLEDGE_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROSE_RENDER_CONTRACT_BRIDGE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+        "src/v1700/nodes/node2_prose_renderer/contract.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROVIDER_ZERO_ABSORPTION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/stage86_smoke.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_EIGHT_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/episode_scaleup/evidence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_REVEAL_KNOWLEDGE_SCALE_LOCK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_STAGE86_LINEAGE_PRESERVATION",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage87_release_gate.py",
+        "src/v1700/gates/stage86_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/writer_studio/workspace.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_EXPORT_PIPELINE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_STATIC_STUDIO_PREVIEW",
+      "priority": "P1",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/export_pipeline.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_PROVIDER_ZERO_EXPORT",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/gates/stage89_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_STUDIO_ROUNDTRIP_EDITING",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/writer_studio/roundtrip.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_EXPORT_FIDELITY_HARDENING",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_PROVIDER_ZERO_ROUNDTRIP",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_STUDIO_PERSISTENCE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/persistence.py",
+        "src/v1700/writer_studio/persistence.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_REVIEW_QUEUE_STATE",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/review_queue.py",
+        "src/v1700/writer_studio/review_queue.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_UI_EVENT_REPLAY",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/writer_studio/event_replay.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_PROVIDER_ZERO_INTERACTION_LAYER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/gates/stage91_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_LOCAL_MULTI_PROVIDER_ADAPTER",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/router.py",
+        "src/v1700/provider_adapters/config.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_PROVIDER_ZERO_ADAPTER_GUARD",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/adapters.py",
+        "src/v1700/gates/stage92_release_gate.py"
+      ]
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_STUDIO_ADAPTER_PANEL",
+      "priority": "P0",
+      "covered": true,
+      "missing_paths": [],
+      "symbol_files": [
+        "src/v1700/provider_adapters/studio_bridge.py",
+        "src/v1700/provider_adapters/studio_bridge.py"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "branchpoint_id": "BP_STAGE85_NODE2_REVEAL_BOUNDARY",
+      "priority": "P0",
+      "concept": "Node2 renders reader-facing surface only and cannot access raw reveal authority.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.nodes.node2_prose_renderer.compiler.Node2ProseCompiler",
+        "v1700.gates.node_projection_gate.run_node_projection_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/nodes/node2_prose_renderer/compiler.py",
+        "src/v1700/gates/node_projection_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py",
+        "tests/test_stage72_1_graph_nexus_release_gate.py"
+      ],
+      "gates": [
+        "node_projection_gate",
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This protects the user's reveal-budget and authority-boundary design from prose-layer leakage."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_PROVIDER_ZERO_LOCAL_FIRST",
+      "priority": "P0",
+      "concept": "Default execution remains local-first with provider_default_calls fixed at 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime.provider_boundary.ProviderBoundary",
+        "v1700.runtime_absorption.v370_absorption.LLMNodeRouter"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime/provider_boundary.py",
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "runtime_smoke",
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This preserves the cost-control rule while allowing optional adapters to exist."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GRAPHNEXUS_AUTHORITY",
+      "priority": "P0",
+      "concept": "GraphNexus remains the internal authority graph: CodeGraph, NarrativeGraph, and StageLineageGraph.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.graph_nexus.registry.GraphNexusRegistry",
+        "v1700.gates.graph_nexus_release_gate.run_graph_nexus_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/graph_nexus/registry.py",
+        "src/v1700/gates/graph_nexus_release_gate.py",
+        "manifests/graph_nexus_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage72_1_graph_nexus_three_graphs.py",
+        "tests/test_stage72_1_graph_nexus_release_gate.py"
+      ],
+      "gates": [
+        "graph_nexus_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "GitNexus may enrich CodeGraph, but it must not replace the narrative and lineage authority layers."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_BRANCHPOINT_SURVIVAL",
+      "priority": "P0",
+      "concept": "BranchpointLogicGraph keeps legacy literary logic alive across staged evolution.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.lineage.stage83_1_consistency_audit.build_core_logic_survival_matrix_v3",
+        "v1700.lineage.branchpoint_registry.build_branchpoint_registry"
+      ],
+      "evidence_files": [
+        "src/v1700/lineage/stage83_1_consistency_audit.py",
+        "src/v1700/lineage/branchpoint_registry.py",
+        "manifests/core_logic_survival_matrix_v3.json"
+      ],
+      "tests": [
+        "tests/test_stage83_1_consistency_audit.py",
+        "tests/test_gitnexus_branchpoint_bridge.py"
+      ],
+      "gates": [
+        "stage83_1_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This directly answers the user's concern that past patches can become disconnected from the current core."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_DRAMA_HIERARCHY",
+      "priority": "P0",
+      "concept": "Series, macro plot, episode, micro plot, sequence, and scene remain distinct runtime levels.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.drama_composition.engine.KoreanDramaCompositionEngine",
+        "v1700.gates.stage80_release_gate.run_stage80_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/drama_composition/engine.py",
+        "src/v1700/drama_composition/contracts.py",
+        "src/v1700/gates/stage80_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage80_korean_drama_composition.py"
+      ],
+      "gates": [
+        "stage80_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This keeps the user's macro/micro story architecture from collapsing into generic plotting."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STAGE84_ABSORPTION_SAFE",
+      "priority": "P0",
+      "concept": "Claude V370 runtime muscle is absorbed under V1700 authority without copying the whole Claude architecture.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime_absorption.v370_absorption.run_stage84_absorption_smoke",
+        "v1700.gates.stage84_release_gate.run_stage84_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "src/v1700/gates/stage84_release_gate.py",
+        "manifests/v370_feature_map_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "Stage85 must increase traceability without weakening the Stage84 surface-runtime absorption."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_COMMERCIAL_EVIDENCE_PACK",
+      "priority": "P0",
+      "concept": "Commercial longform release evidence remains tied to three episodes, rendered scenes, and gates.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.commercial_release.engine.CommercialLongformReleaseEngine",
+        "v1700.gates.stage83_release_gate.run_stage83_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/commercial_release/engine.py",
+        "src/v1700/gates/stage83_release_gate.py",
+        "sample_longform_project_01/commercial_release_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage83_commercial_release_candidate.py"
+      ],
+      "gates": [
+        "stage83_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This prevents Stage85 refactoring from becoming detached from product-level evidence."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_KOREAN_ANTI_LLM_FILTER",
+      "priority": "P1",
+      "concept": "KoreanAntiLLMFilter removes cliche and AI-like phrasing before reader-facing evaluation.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime_absorption.v370_absorption.KoreanAntiLLMFilter"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This is one of the user's most visible quality concerns: sentence surface and anti-LLM texture."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_STYLE_DNA",
+      "priority": "P1",
+      "concept": "StyleDNA preserves writerly rhythm, genre register, and prose taste as an explicit surface module.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime_absorption.v370_absorption.StyleDNA"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This anchors the user's authorial-DNA concept to a runtime symbol and test."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_CLOSED_LOOP_RENDERER",
+      "priority": "P1",
+      "concept": "ClosedLoopRenderer performs render, filter, score, validate, and trace collection as a local loop.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime_absorption.v370_absorption.ClosedLoopRenderer",
+        "v1700.runtime_absorption.v370_absorption.LocalJudgmentValidator"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This keeps surface prose improvement measurable without delegating default judgment to an external provider."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_SELF_LEARNING_TRACE",
+      "priority": "P1",
+      "concept": "SelfLearningCollector records accepted local traces as the seed of future quality improvement.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.runtime_absorption.v370_absorption.SelfLearningCollector"
+      ],
+      "evidence_files": [
+        "src/v1700/runtime_absorption/v370_absorption.py",
+        "release/current/stage84_trace_dataset/stage84_trace_dataset.jsonl"
+      ],
+      "tests": [
+        "tests/test_stage84_v370_runtime_absorption.py"
+      ],
+      "gates": [
+        "stage84_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This keeps self-learning as local trace evidence, not uncontrolled model fine-tuning."
+    },
+    {
+      "branchpoint_id": "BP_STAGE85_GITNEXUS_OPTIONAL_SIDECAR",
+      "priority": "P1",
+      "concept": "GitNexus provides high-resolution code impact analysis while remaining optional.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.sidecars.gitnexus.probe.probe_gitnexus",
+        "v1700.sidecars.gitnexus.adapter.GitNexusAdapter"
+      ],
+      "evidence_files": [
+        "src/v1700/sidecars/gitnexus/probe.py",
+        "src/v1700/sidecars/gitnexus/adapter.py",
+        "manifests/gitnexus_optional_sidecar_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage72_1_gitnexus_optional_sidecar.py",
+        "tests/test_gitnexus_branchpoint_bridge.py"
+      ],
+      "gates": [
+        "graph_nexus_release_gate",
+        "stage85_release_gate"
+      ],
+      "rationale": "This is the boundary that lets developers use GitNexus without forcing users to install it."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_SERIES_ARC_PLANNER",
+      "priority": "P0",
+      "concept": "SeriesArcPlanner turns a 16-episode season arc into a verified four-act graph.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.series_arc_planner.SeriesArcPlanner"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/series_arc_planner.py",
+        "docs/stages/stage86.md",
+        "manifests/stage86_v380_feature_map_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate"
+      ],
+      "rationale": "This absorbs V380 SeriesArcPlanner as live V1700 code instead of leaving it as a document-only concept."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CAUSAL_PLOT_GRAPH",
+      "priority": "P0",
+      "concept": "CausalPlotGraph stores causal, foreshadow, callback, and emotional escalation edges.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.causal_plot_graph.CausalPlotGraph"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/causal_plot_graph.py",
+        "manifests/stage86_v380_feature_map_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This protects the user's go-like event placement idea with inspectable graph edges."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_EPISODE_REVEAL_BUDGET",
+      "priority": "P0",
+      "concept": "EpisodeRevealBudget blocks premature direct reveal while permitting controlled foreshadowing.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.reveal_budget.EpisodeRevealBudget"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate"
+      ],
+      "rationale": "This keeps reveal budget from collapsing over multi-episode generation."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_CHARACTER_KNOWLEDGE_BRIDGE",
+      "priority": "P0",
+      "concept": "CharacterKnowledgeProseBridge converts per-character knowledge status into prose-safe constraints.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.character_knowledge_bridge.CharacterKnowledgeProseBridge"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py",
+        "src/v1700/arc_reveal_knowledge/knowledge_contracts.py"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate"
+      ],
+      "rationale": "This prevents characters from narrating facts they do not know or facts reserved for the reader."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROSE_RENDER_CONTRACT_BRIDGE",
+      "priority": "P0",
+      "concept": "KnowledgeStatus and reveal policy are folded into a Node2 SurfaceOnlyContract before prose rendering.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.prose_contract_bridge.build_prose_render_contract",
+        "v1700.nodes.node2_prose_renderer.contract.SurfaceOnlyContract"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/prose_contract_bridge.py",
+        "src/v1700/nodes/node2_prose_renderer/contract.py"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate",
+        "node_projection_gate"
+      ],
+      "rationale": "This connects Arc-Reveal-Knowledge absorption to the existing Node2 no-structural-authority rule."
+    },
+    {
+      "branchpoint_id": "BP_STAGE86_PROVIDER_ZERO_ABSORPTION",
+      "priority": "P0",
+      "concept": "V380 absorption remains local-first and does not introduce default external provider calls.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.stage86_smoke.run_stage86_arc_reveal_knowledge_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/stage86_smoke.py",
+        "src/v1700/gates/stage86_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage86_arc_reveal_knowledge.py"
+      ],
+      "gates": [
+        "stage86_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps the user's cost-control and provider-zero operating-system principle intact."
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_EIGHT_EPISODE_SCALEUP",
+      "priority": "P0",
+      "concept": "Stage87 proves the minimum 8-episode scale-up evidence target with 80 scene-level contracts.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.episode_scaleup.evidence.EpisodeScaleupEvidenceEngine"
+      ],
+      "evidence_files": [
+        "src/v1700/episode_scaleup/evidence.py",
+        "docs/stages/stage87.md",
+        "release/current/stage87_episode_scaleup_evidence.json"
+      ],
+      "tests": [
+        "tests/test_stage87_episode_scaleup.py"
+      ],
+      "gates": [
+        "stage87_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This is the first explicit evidence layer beyond the Stage83 three-episode pack."
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_SIXTEEN_EPISODE_SCALEUP",
+      "priority": "P0",
+      "concept": "Stage87 proves full 16-episode season evidence with 160 scene-level contracts.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.episode_scaleup.evidence.run_stage87_episode_scaleup_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/episode_scaleup/evidence.py",
+        "release/current/stage87_episode_scaleup_evidence.json",
+        "manifests/stage87_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage87_episode_scaleup.py"
+      ],
+      "gates": [
+        "stage87_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This turns Stage86 Arc-Reveal-Knowledge contracts into scale evidence rather than a single smoke proof."
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_REVEAL_KNOWLEDGE_SCALE_LOCK",
+      "priority": "P0",
+      "concept": "EpisodeRevealBudget and CharacterKnowledgeProseBridge remain active across long episode maps.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.arc_reveal_knowledge.reveal_budget.EpisodeRevealBudget",
+        "v1700.arc_reveal_knowledge.character_knowledge_bridge.CharacterKnowledgeProseBridge"
+      ],
+      "evidence_files": [
+        "src/v1700/arc_reveal_knowledge/reveal_budget.py",
+        "src/v1700/arc_reveal_knowledge/character_knowledge_bridge.py",
+        "src/v1700/episode_scaleup/evidence.py"
+      ],
+      "tests": [
+        "tests/test_stage87_episode_scaleup.py"
+      ],
+      "gates": [
+        "stage86_release_gate",
+        "stage87_release_gate"
+      ],
+      "rationale": "This blocks the common regression where scale-up silently drops reveal and knowledge constraints."
+    },
+    {
+      "branchpoint_id": "BP_STAGE87_STAGE86_LINEAGE_PRESERVATION",
+      "priority": "P0",
+      "concept": "Stage87 inherits Stage86 and Stage85 gates before accepting scale-up evidence.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.gates.stage87_release_gate.run_stage87_release_gate",
+        "v1700.gates.stage86_release_gate.run_stage86_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/gates/stage87_release_gate.py",
+        "src/v1700/gates/stage86_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage87_episode_scaleup.py"
+      ],
+      "gates": [
+        "stage87_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps scale-up from becoming a parallel fork outside the branchpoint-governed OS."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AI_AGENT_EDITOR_PANEL",
+      "priority": "P0",
+      "concept": "Stage88 replaces external human editor benchmarking with a deterministic local AI-agent editor panel.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.agents.build_default_agent_profiles",
+        "v1700.agent_benchmark.harness.AgentBlindBenchmarkHarness"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/agents.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "docs/stages/stage88.md"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This preserves the user's request to substitute external editors/readers with artificial intelligence agents while keeping the benchmark reproducible."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_BLIND_SAMPLE_PROTOCOL",
+      "priority": "P0",
+      "concept": "Stage88 evaluates blinded Stage87 scale-up samples without exposing model/stage identity to reviewer agents.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.contracts.BlindBenchmarkSample",
+        "v1700.agent_benchmark.harness.AgentBlindBenchmarkHarness"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/contracts.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "release/current/stage88_agent_benchmark_report.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate"
+      ],
+      "rationale": "This prevents agent scoring from becoming a self-confirming non-blind internal smoke test."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_AGENT_CONSENSUS_GATE",
+      "priority": "P0",
+      "concept": "Stage88 release requires agent consensus, minimum agent average, and minimum sample average above the quality floor.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.gates.stage88_release_gate.run_stage88_release_gate",
+        "v1700.agent_benchmark.harness.run_stage88_agent_benchmark_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/gates/stage88_release_gate.py",
+        "src/v1700/agent_benchmark/harness.py",
+        "manifests/stage88_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This turns synthetic reviewer-agent output into an actual blocking release condition rather than a narrative report."
+    },
+    {
+      "branchpoint_id": "BP_STAGE88_PROVIDER_ZERO_AGENT_BENCHMARK",
+      "priority": "P0",
+      "concept": "AI-agent benchmark runs locally and preserves provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.agent_benchmark.harness.run_stage88_agent_benchmark_smoke",
+        "v1700.gates.stage88_release_gate.run_stage88_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/agent_benchmark/harness.py",
+        "src/v1700/gates/stage88_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage88_agent_benchmark.py"
+      ],
+      "gates": [
+        "stage88_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps AI-agent evaluation inside the V1700 local-first operating boundary."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_WRITER_STUDIO_UI_CONTRACT",
+      "priority": "P0",
+      "concept": "Stage89 exposes writer-facing Studio panels while preserving V1700 branchpoint governance.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.workspace.WriterStudioWorkspaceBuilder",
+        "v1700.writer_studio.workspace.build_writer_studio_workspace"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/writer_studio/contracts.py",
+        "docs/stages/stage89.md"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This turns the engine into a writer-facing Studio contract without bypassing branchpoint survival gates."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_EXPORT_PIPELINE",
+      "priority": "P0",
+      "concept": "Stage89 exports Studio state to JSON, Markdown, HTML, platform pack, and scene CSV artifacts.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.export_pipeline.WriterStudioExportPipeline",
+        "v1700.writer_studio.export_pipeline.run_stage89_export_pipeline_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "release/current/stage89_export_bundle_report.json",
+        "release/current/stage89_exports/stage89_writer_handoff.md"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This makes export a blocking, checksum-bearing pipeline rather than an ad hoc packaging step."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_STATIC_STUDIO_PREVIEW",
+      "priority": "P1",
+      "concept": "Stage89 renders a static Writer Studio HTML preview for developer and writer handoff.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.export_pipeline.WriterStudioExportPipeline"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/export_pipeline.py",
+        "release/current/stage89_exports/stage89_writer_studio_preview.html"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate"
+      ],
+      "rationale": "This gives the project a lightweight UI artifact without introducing a web runtime dependency."
+    },
+    {
+      "branchpoint_id": "BP_STAGE89_PROVIDER_ZERO_EXPORT",
+      "priority": "P0",
+      "concept": "Writer Studio and exports preserve provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.workspace.run_writer_studio_smoke",
+        "v1700.gates.stage89_release_gate.run_stage89_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/workspace.py",
+        "src/v1700/gates/stage89_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage89_writer_studio_export.py"
+      ],
+      "gates": [
+        "stage89_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This keeps the writer-facing layer inside the same local-first boundary as Stages 84-88."
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_STUDIO_ROUNDTRIP_EDITING",
+      "priority": "P0",
+      "concept": "Stage90 applies writer-side Studio edit patches and proves they survive re-export.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.roundtrip.StudioRoundTripEngine",
+        "v1700.writer_studio.roundtrip.run_stage90_roundtrip_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "release/current/stage90_roundtrip_fidelity_report.json",
+        "docs/stages/stage90.md"
+      ],
+      "tests": [
+        "tests/test_stage90_roundtrip_export_fidelity.py"
+      ],
+      "gates": [
+        "stage90_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This makes writer edits a tested round-trip contract rather than a one-way static export."
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_EXPORT_FIDELITY_HARDENING",
+      "priority": "P0",
+      "concept": "Stage90 compares before/after checksums across JSON, Markdown, HTML, platform pack, and scene CSV exports.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.roundtrip.RoundTripFidelityReport",
+        "v1700.gates.stage90_release_gate.run_stage90_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py",
+        "release/current/stage90_release_gate_report.json"
+      ],
+      "tests": [
+        "tests/test_stage90_roundtrip_export_fidelity.py"
+      ],
+      "gates": [
+        "stage90_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This turns export fidelity into a blocking release criterion with deterministic evidence."
+    },
+    {
+      "branchpoint_id": "BP_STAGE90_PROVIDER_ZERO_ROUNDTRIP",
+      "priority": "P0",
+      "concept": "Studio interaction and export fidelity hardening preserve provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.roundtrip.run_stage90_roundtrip_smoke",
+        "v1700.gates.stage90_release_gate.run_stage90_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/roundtrip.py",
+        "src/v1700/gates/stage90_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage90_roundtrip_export_fidelity.py"
+      ],
+      "gates": [
+        "stage90_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This protects the local-first and Node2 surface-only invariants while adding writer interaction semantics."
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_STUDIO_PERSISTENCE",
+      "priority": "P0",
+      "concept": "Stage91 persists Writer Studio workspace snapshots with deterministic checksums and no database/provider dependency.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.persistence.StudioPersistenceStore",
+        "v1700.writer_studio.persistence.build_stage91_base_workspace"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/persistence.py",
+        "release/current/stage91_studio_event_replay_report.json",
+        "docs/stages/stage91.md"
+      ],
+      "tests": [
+        "tests/test_stage91_studio_persistence.py"
+      ],
+      "gates": [
+        "stage91_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This turns Writer Studio state into an auditable persistence contract without introducing a server runtime."
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_REVIEW_QUEUE_STATE",
+      "priority": "P0",
+      "concept": "Stage91 routes Studio changes through a deterministic review queue with branchpoint-impact references.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.review_queue.StudioReviewQueue",
+        "v1700.writer_studio.review_queue.ReviewQueueItem"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/review_queue.py",
+        "release/current/stage91_studio_event_replay_report.json"
+      ],
+      "tests": [
+        "tests/test_stage91_studio_persistence.py"
+      ],
+      "gates": [
+        "stage91_release_gate"
+      ],
+      "rationale": "This protects the user's branchpoint-governed development principle when UI edits are introduced."
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_UI_EVENT_REPLAY",
+      "priority": "P0",
+      "concept": "Stage91 replays Studio UI events deterministically and verifies replay checksum stability.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.event_replay.StudioEventReplayEngine",
+        "v1700.writer_studio.event_replay.run_stage91_event_replay_smoke"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/gates/stage91_release_gate.py",
+        "manifests/stage91_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage91_studio_persistence.py"
+      ],
+      "gates": [
+        "stage91_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This gives the Studio an interaction audit trail before adding a live UI server."
+    },
+    {
+      "branchpoint_id": "BP_STAGE91_PROVIDER_ZERO_INTERACTION_LAYER",
+      "priority": "P0",
+      "concept": "Stage91 interaction replay preserves provider_default_calls = 0 and Node2 raw reveal access = 0.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.writer_studio.event_replay.run_stage91_event_replay_smoke",
+        "v1700.gates.stage91_release_gate.run_stage91_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/writer_studio/event_replay.py",
+        "src/v1700/gates/stage91_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage91_studio_persistence.py"
+      ],
+      "gates": [
+        "stage91_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This ensures Studio interactivity does not regress the local-first and Node2 surface-only invariants."
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_LOCAL_MULTI_PROVIDER_ADAPTER",
+      "priority": "P0",
+      "concept": "Stage92 configures local developer adapters for Ollama, GPT, Claude, and Gemini without making any provider call during release gates.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.provider_adapters.router.MultiProviderAdapterRouter",
+        "v1700.provider_adapters.config.build_default_multi_provider_configs"
+      ],
+      "evidence_files": [
+        "src/v1700/provider_adapters/router.py",
+        "src/v1700/provider_adapters/config.py",
+        "docs/stages/stage92.md"
+      ],
+      "tests": [
+        "tests/test_stage92_multi_provider_adapter.py"
+      ],
+      "gates": [
+        "stage92_release_gate",
+        "symbol_to_branchpoint_trace_gate"
+      ],
+      "rationale": "This satisfies the developer requirement that the personal local computer can configure Ollama, GPT, Claude, and Gemini as a multi-adapter runtime."
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_PROVIDER_ZERO_ADAPTER_GUARD",
+      "priority": "P0",
+      "concept": "Stage92 adapters remain dry-run by default and release gates never perform live provider calls.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.provider_adapters.adapters.BaseProviderAdapter",
+        "v1700.gates.stage92_release_gate.run_stage92_release_gate"
+      ],
+      "evidence_files": [
+        "src/v1700/provider_adapters/adapters.py",
+        "src/v1700/gates/stage92_release_gate.py",
+        "manifests/live_core_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage92_multi_provider_adapter.py"
+      ],
+      "gates": [
+        "stage92_release_gate",
+        "release_gate"
+      ],
+      "rationale": "This preserves provider_default_calls = 0 while still allowing explicit developer-side provider configuration."
+    },
+    {
+      "branchpoint_id": "BP_STAGE92_STUDIO_ADAPTER_PANEL",
+      "priority": "P0",
+      "concept": "Stage92 exposes the four-provider adapter configuration through a Writer Studio panel without granting Node2 raw reveal access.",
+      "runtime_status": "LIVE_RUNTIME",
+      "code_symbols": [
+        "v1700.provider_adapters.studio_bridge.build_stage92_provider_panel",
+        "v1700.provider_adapters.studio_bridge.build_stage92_studio_workspace"
+      ],
+      "evidence_files": [
+        "src/v1700/provider_adapters/studio_bridge.py",
+        "manifests/stage92_manifest.json"
+      ],
+      "tests": [
+        "tests/test_stage92_multi_provider_adapter.py"
+      ],
+      "gates": [
+        "stage92_release_gate"
+      ],
+      "rationale": "This connects the adapter runtime to the Stage89-91 Studio layer while keeping the interaction and review queue lineage alive."
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

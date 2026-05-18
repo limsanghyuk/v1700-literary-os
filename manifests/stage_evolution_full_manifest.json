@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "stage_count": 7,
+  "stages": {
+    "stage39": "drama_execution_engine",
+    "stage50": "prompt_to_three_episode_engine",
+    "stage56": "literary_quality_evaluation_gate",
+    "stage57": "literary_refinement_loop",
+    "stage72.1": "graphnexus_restoration",
+    "stage73": "full_workspace_reproducibility",
+    "stage74": "longform_literary_execution_engine"
+  },
+  "provider_default_calls": 0
+}

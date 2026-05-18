@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "events": [
+    {
+      "event": "open_project",
+      "project_id": "stage104_sample_project",
+      "raw_text": false
+    },
+    {
+      "event": "switch_mode",
+      "mode": "SCENARIO",
+      "raw_text": false
+    },
+    {
+      "event": "approve_revision",
+      "revision_id": "rev-001",
+      "raw_text": false
+    },
+    {
+      "event": "export_feature_only",
+      "export_id": "stage104-beta-export-001",
+      "raw_text": false
+    }
+  ],
+  "event_count": 4,
+  "raw_manuscript_included": false
+}

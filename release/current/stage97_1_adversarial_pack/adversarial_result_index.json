@@ -1,0 +1,222 @@
+[
+  {
+    "case_id": "ADV-NOR-001",
+    "actual_status": "PASS",
+    "expected_status": "PASS",
+    "matched_expectation": true,
+    "block_reason": null,
+    "triggered_gate": null,
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-NOR-001.json"
+  },
+  {
+    "case_id": "ADV-TOP-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "orphan_microplot_detected",
+    "triggered_gate": "fractal_topology",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-TOP-001.json"
+  },
+  {
+    "case_id": "ADV-TOP-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "episode_function_coverage_incomplete",
+    "triggered_gate": "fractal_topology",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-TOP-002.json"
+  },
+  {
+    "case_id": "ADV-LOD-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "mid_season_sag_risk_above_threshold",
+    "triggered_gate": "dramatic_load_balancing",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-LOD-001.json"
+  },
+  {
+    "case_id": "ADV-PAY-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "critical_payoff_debt_defaulted",
+    "triggered_gate": "payoff_debt_ledger",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-PAY-001.json"
+  },
+  {
+    "case_id": "ADV-PAY-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "finale_new_critical_debt_created",
+    "triggered_gate": "payoff_debt_ledger",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-PAY-002.json"
+  },
+  {
+    "case_id": "ADV-AGY-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "passive_protagonist_arc_detected",
+    "triggered_gate": "agency_conservation",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-AGY-001.json"
+  },
+  {
+    "case_id": "ADV-AGY-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "protagonist_agency_collapse_against_antagonist",
+    "triggered_gate": "agency_conservation",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-AGY-002.json"
+  },
+  {
+    "case_id": "ADV-SCN-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "weak_scene_ratio_above_threshold",
+    "triggered_gate": "scene_necessity",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SCN-001.json"
+  },
+  {
+    "case_id": "ADV-SCN-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "atmosphere_scene_function_label_missing",
+    "triggered_gate": "scene_necessity",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SCN-002.json"
+  },
+  {
+    "case_id": "ADV-DLG-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "speech_level_inconsistency_above_threshold",
+    "triggered_gate": "dialogue_pragmatics",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-DLG-001.json"
+  },
+  {
+    "case_id": "ADV-DLG-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "explanatory_dialogue_ratio_above_threshold",
+    "triggered_gate": "dialogue_pragmatics",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-DLG-002.json"
+  },
+  {
+    "case_id": "ADV-VOC-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "unexplained_style_drift_above_tolerance",
+    "triggered_gate": "voice_manifold",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-VOC-001.json"
+  },
+  {
+    "case_id": "ADV-VOC-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "character_voice_collapse_detected",
+    "triggered_gate": "voice_manifold",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-VOC-002.json"
+  },
+  {
+    "case_id": "ADV-ATT-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "attention_fatigue_risk_above_threshold",
+    "triggered_gate": "attention_economy",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-ATT-001.json"
+  },
+  {
+    "case_id": "ADV-ATT-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "low_reward_high_cost_episode_count_above_threshold",
+    "triggered_gate": "attention_economy",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-ATT-002.json"
+  },
+  {
+    "case_id": "ADV-SEC-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "provider_live_call_detected",
+    "triggered_gate": "provider_zero_guard",
+    "provider_call_count": 1,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SEC-001.json"
+  },
+  {
+    "case_id": "ADV-SEC-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "node2_raw_reveal_access_detected",
+    "triggered_gate": "node2_surface_guard",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 1,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-SEC-002.json"
+  },
+  {
+    "case_id": "ADV-MAN-001",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "stale_manifest_detected",
+    "triggered_gate": "manifest_consistency_guard",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-MAN-001.json"
+  },
+  {
+    "case_id": "ADV-MAN-002",
+    "actual_status": "BLOCK",
+    "expected_status": "BLOCK",
+    "matched_expectation": true,
+    "block_reason": "missing_release_evidence_detected",
+    "triggered_gate": "release_evidence_guard",
+    "provider_call_count": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_path": "release\\current\\stage97_1_adversarial_pack\\ADV-MAN-002.json"
+  }
+]

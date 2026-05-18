@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "plans": [
+    {
+      "stage": "stage122",
+      "title": "NIE v2.0 Stability Absorption",
+      "candidates": [
+        "V525-NIL-STABILITY",
+        "V525-TIDEAL-LEARNER",
+        "V525-TEMPORAL-CIM"
+      ],
+      "required_adapters": [
+        "stage120_nil_adapter",
+        "gate25_v2_namespace_adapter"
+      ],
+      "blocked_items": [
+        "V525_AMW_ALPHA_BOUNDS wider range"
+      ],
+      "required_tests": [
+        "test_stage122_nil_stability_absorption.py"
+      ],
+      "required_manifests": [
+        "manifests/stage122_manifest.json"
+      ],
+      "required_release_evidence": [
+        "release/current/stage122_release_gate_report.json"
+      ]
+    },
+    {
+      "stage": "stage123",
+      "title": "ASD / Gate28 Absorption",
+      "candidates": [
+        "V545-ASD-GATE28"
+      ],
+      "required_adapters": [
+        "dry_run_repair_adapter",
+        "gate28_secondary_adapter"
+      ],
+      "blocked_items": [
+        "candidate direct merge due packaging"
+      ],
+      "required_tests": [
+        "test_stage123_asd_gate28.py"
+      ],
+      "required_manifests": [
+        "manifests/stage123_manifest.json"
+      ],
+      "required_release_evidence": [
+        "release/current/stage123_release_gate_report.json"
+      ]
+    },
+    {
+      "stage": "stage124",
+      "title": "PNE / Gate29 Absorption",
+      "candidates": [
+        "V555-PNE-GATE29"
+      ],
+      "required_adapters": [
+        "frozen_model_card_adapter",
+        "heuristic_fallback_adapter"
+      ],
+      "blocked_items": [
+        "release-gate runtime training"
+      ],
+      "required_tests": [
+        "test_stage124_pne_gate29.py"
+      ],
+      "required_manifests": [
+        "manifests/stage124_manifest.json"
+      ],
+      "required_release_evidence": [
+        "release/current/stage124_release_gate_report.json"
+      ]
+    },
+    {
+      "stage": "stage125",
+      "title": "Gate25/28/29 Governor",
+      "candidates": [
+        "GOVERNOR-25-28-29"
+      ],
+      "required_adapters": [
+        "multi_gate_arbitration_adapter"
+      ],
+      "blocked_items": [
+        "unabsorbed Gate28/Gate29"
+      ],
+      "required_tests": [
+        "test_stage125_gate_governor.py"
+      ],
+      "required_manifests": [
+        "manifests/stage125_manifest.json"
+      ],
+      "required_release_evidence": [
+        "release/current/stage125_release_gate_report.json"
+      ]
+    },
+    {
+      "stage": "stage126",
+      "title": "Cross-Lineage Intelligence Release",
+      "candidates": [
+        "V525",
+        "V545",
+        "V555"
+      ],
+      "required_adapters": [
+        "clean_packaging_adapter",
+        "cross_lineage_release_manifest"
+      ],
+      "blocked_items": [
+        "any unresolved C121 conflict"
+      ],
+      "required_tests": [
+        "test_stage126_cross_lineage_release.py"
+      ],
+      "required_manifests": [
+        "manifests/stage126_manifest.json"
+      ],
+      "required_release_evidence": [
+        "release/current/stage126_release_gate_report.json"
+      ]
+    }
+  ]
+}

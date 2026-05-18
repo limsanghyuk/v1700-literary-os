@@ -1,0 +1,55 @@
+{
+  "stage": "104.5",
+  "status": "pass",
+  "issues": [],
+  "handoff": {
+    "status": "pass",
+    "path": "release/current/stage104_developer_handoff_report.md"
+  },
+  "local_telemetry": {
+    "status": "pass",
+    "event_count": 4,
+    "raw_manuscript_included": false,
+    "credential_included": false,
+    "provider_payload_included": false,
+    "local_only": true,
+    "issues": [],
+    "event_log": {
+      "status": "pass",
+      "events": [
+        {
+          "event": "open_project",
+          "project_id": "stage104_sample_project",
+          "raw_text": false
+        },
+        {
+          "event": "switch_mode",
+          "mode": "SCENARIO",
+          "raw_text": false
+        },
+        {
+          "event": "approve_revision",
+          "revision_id": "rev-001",
+          "raw_text": false
+        },
+        {
+          "event": "export_feature_only",
+          "export_id": "stage104-beta-export-001",
+          "raw_text": false
+        }
+      ],
+      "event_count": 4,
+      "raw_manuscript_included": false
+    },
+    "safe_error_boundary": {
+      "status": "pass",
+      "redaction_policy": "drop_raw_text_drop_credentials_keep_stage_and_safe_error_code",
+      "raw_manuscript_included": false,
+      "credential_included": false,
+      "provider_payload_included": false,
+      "safe_error_code": "STAGE104_SAFE_BETA_WARNING"
+    }
+  },
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0
+}

@@ -1,0 +1,45 @@
+{
+  "stage": "73.1",
+  "title": "Literary Formula Restoration Manifest",
+  "status": "pass",
+  "formulas": [
+    {
+      "formula_id": "DRSE",
+      "title": "Dynamic Relational Scoring Engine",
+      "survival_status": "LIVE_RUNTIME",
+      "source_paths": ["src/v1700/literary_formulas/drse.py"],
+      "test_paths": ["tests/test_stage73_1_literary_formula_restoration.py"],
+      "gate_paths": ["src/v1700/gates/drse_quality_gate.py"]
+    },
+    {
+      "formula_id": "EmotionalMomentum4D",
+      "title": "Four-axis emotional momentum vector",
+      "survival_status": "LIVE_RUNTIME",
+      "source_paths": ["src/v1700/literary_formulas/emotional_momentum.py"],
+      "test_paths": ["tests/test_stage73_1_literary_formula_restoration.py"]
+    },
+    {
+      "formula_id": "MiseEnSceneCompiler",
+      "title": "DRSE and momentum to surface-safe sensory directives",
+      "survival_status": "LIVE_RUNTIME",
+      "source_paths": ["src/v1700/literary_formulas/mise_en_scene_compiler.py"],
+      "test_paths": ["tests/test_stage73_1_literary_formula_restoration.py"]
+    },
+    {
+      "formula_id": "SceneGraphQueryEngine",
+      "title": "Narrative subgraph to scene focus context",
+      "survival_status": "LIVE_RUNTIME",
+      "source_paths": ["src/v1700/literary_formulas/scene_graph_query.py"],
+      "test_paths": ["tests/test_stage73_1_literary_formula_restoration.py"]
+    },
+    {
+      "formula_id": "LiteraryRefinementLoop",
+      "title": "Conservative critic-to-revision loop",
+      "survival_status": "LIVE_RUNTIME",
+      "source_paths": ["src/v1700/longform/refinement.py"],
+      "test_paths": ["tests/test_stage74_longform_execution_engine.py"]
+    }
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

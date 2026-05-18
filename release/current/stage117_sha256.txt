@@ -1,0 +1,1 @@
+Archive SHA256 is provided by external sidecar after ZIP finalization; per-file hashes are in SHA256SUMS.txt.

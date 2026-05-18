@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "decisions": [
+    {
+      "stage": "97.2",
+      "provider_id": "fixture",
+      "reason": "release_mode_fixture",
+      "narrative_fitness": 0.91,
+      "provider_hint": "quality",
+      "release_mode": true
+    },
+    {
+      "stage": "97.2",
+      "provider_id": "fixture",
+      "reason": "release_mode_fixture",
+      "narrative_fitness": 0.0,
+      "provider_hint": "",
+      "release_mode": true
+    },
+    {
+      "stage": "97.2",
+      "provider_id": "fixture",
+      "reason": "provider_hint",
+      "narrative_fitness": 0.88,
+      "provider_hint": "quality",
+      "release_mode": false
+    }
+  ]
+}

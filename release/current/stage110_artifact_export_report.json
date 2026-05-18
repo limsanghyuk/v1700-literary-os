@@ -1,0 +1,11 @@
+{
+  "stage": "110",
+  "status": "pass",
+  "canonical_package": "V1700_stage110_literary_os_1_0_stable_FIXED.zip",
+  "stable_release_declared": true,
+  "release_evidence": [
+    "release/current/stage110_literary_os_stable_report.json",
+    "release/current/stage110_release_gate_report.json",
+    "release/current/stage110_2_developer_handoff_report.json"
+  ]
+}

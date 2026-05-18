@@ -1,0 +1,149 @@
+{
+  "stage": "119",
+  "baseline_stage": "118",
+  "title": "NIE Adversarial Regression Pack",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage118_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "normal_nil_case_pass": {
+      "status": "pass"
+    },
+    "adversarial_case_index_pass": {
+      "status": "pass"
+    },
+    "adversarial_minimum_case_count_pass": {
+      "status": "pass"
+    },
+    "adversarial_expected_failure_contract_pass": {
+      "status": "pass"
+    },
+    "unexpected_pass_count_zero_pass": {
+      "status": "pass"
+    },
+    "unexpected_block_count_zero_pass": {
+      "status": "pass"
+    },
+    "matched_expectation_pass": {
+      "status": "pass"
+    },
+    "failure_evidence_reproducibility_pass": {
+      "status": "pass"
+    },
+    "mae_reward_negative_block_pass": {
+      "status": "pass"
+    },
+    "physics_reward_bridge_boundary_block_pass": {
+      "status": "pass"
+    },
+    "amw_negative_block_pass": {
+      "status": "pass"
+    },
+    "cim_negative_block_pass": {
+      "status": "pass"
+    },
+    "structural_balance_negative_block_pass": {
+      "status": "pass"
+    },
+    "role_tier_negative_block_pass": {
+      "status": "pass"
+    },
+    "domain_rag_negative_block_pass": {
+      "status": "pass"
+    },
+    "tension_curve_negative_block_pass": {
+      "status": "pass"
+    },
+    "nil_evidence_negative_block_pass": {
+      "status": "pass"
+    },
+    "gate_detection_negative_block_pass": {
+      "status": "pass"
+    },
+    "runtime_invariant_counts_zero_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "physics_reward_bridge_no_llm_pass": {
+      "status": "pass"
+    },
+    "mae_live_provider_zero_pass": {
+      "status": "pass"
+    },
+    "query_classifier_llm_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage119": {
+    "status": "pass",
+    "stage": "119",
+    "baseline_stage": "118",
+    "title": "NIE Adversarial Regression Pack",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "embedding_provider_call_count": 0,
+    "query_classifier_llm_call_count": 0,
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "adversarial_summary": {
+    "normal_case_count": 1,
+    "adversarial_cases_total": 12,
+    "adversarial_cases_matched_expectation": 12,
+    "unexpected_pass_count": 0,
+    "unexpected_block_count": 0,
+    "case_family_counts": {
+      "adaptive_momentum_weights": 2,
+      "character_influence_matrix": 1,
+      "domain_rag_fusion": 2,
+      "gate25_detection": 1,
+      "mae_reward_contract": 1,
+      "narrative_tension_curve": 1,
+      "nil_orchestrator_evidence": 1,
+      "reward_bridge_boundary": 1,
+      "role_tier_assignment": 1,
+      "structural_balance": 1
+    },
+    "pack_dir": "release/current/stage119_nie_adversarial_pack"
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

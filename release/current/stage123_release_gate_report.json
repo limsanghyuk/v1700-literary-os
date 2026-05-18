@@ -1,0 +1,98 @@
+{
+  "stage": "123",
+  "baseline_stage": "122",
+  "title": "ASD / Gate28 Absorption Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage122_baseline_preserved": {
+      "status": "pass"
+    },
+    "stage120_gate25_primary_authority_preserved": {
+      "status": "pass"
+    },
+    "gate28_secondary_quality_gate": {
+      "status": "pass"
+    },
+    "story_doctor_report_pass": {
+      "status": "pass"
+    },
+    "gate28_thresholds_pass": {
+      "status": "pass"
+    },
+    "gate28_negative_case_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_dry_run_only": {
+      "status": "pass"
+    },
+    "direct_v545_merge_blocked": {
+      "status": "pass"
+    },
+    "gate29_not_enabled": {
+      "status": "pass"
+    },
+    "llm_repair_generation_zero": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage123": {
+    "status": "pass",
+    "stage": "123",
+    "baseline_stage": "122",
+    "title": "ASD / Gate28 Absorption",
+    "issues": [],
+    "summary": {
+      "debt_score": 0.4,
+      "arc_score": 0.0,
+      "combined_quality": 0.22000000000000003,
+      "recommendation_count": 2,
+      "high_priority_count": 0,
+      "dry_run_count": 2,
+      "mutation_count": 0
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "story_doctor_llm_call_count": 0,
+    "auto_repair_mutation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "story_doctor_llm_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

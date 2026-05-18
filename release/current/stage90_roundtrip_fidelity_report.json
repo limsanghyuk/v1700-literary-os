@@ -1,0 +1,91 @@
+{
+  "stage": "90",
+  "status": "pass",
+  "edit_count": 4,
+  "applied_count": 4,
+  "before_artifact_count": 5,
+  "after_artifact_count": 5,
+  "changed_artifact_count": 5,
+  "unchanged_artifact_count": 0,
+  "fidelity_score": 10.0,
+  "json_roundtrip_panel_count": 8,
+  "markdown_contains_edit_summary": true,
+  "html_contains_stage90_marker": true,
+  "scene_csv_row_count": 32,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": [],
+  "applied_edits": [
+    {
+      "operation": {
+        "operation_id": "edit_story_premise_stage90",
+        "panel_id": "story_bible",
+        "selector_key": "key",
+        "selector_value": "series_premise",
+        "field": "value",
+        "value": "A Korean longform drama season hardened by Stage90 round-trip Studio edits and export fidelity checks.",
+        "reason": "Prove writer-facing premise edits can round-trip through Studio exports."
+      },
+      "before": "A Korean longform drama season governed by arc, reveal, knowledge, and reader-surface constraints.",
+      "after": "A Korean longform drama season hardened by Stage90 round-trip Studio edits and export fidelity checks.",
+      "status": "applied"
+    },
+    {
+      "operation": {
+        "operation_id": "edit_ep08_quality_note",
+        "panel_id": "episode_board",
+        "selector_key": "episode_id",
+        "selector_value": "EP08",
+        "field": "editorial_roundtrip_note",
+        "value": "Mid-season turn clarified without direct reveal leakage.",
+        "reason": "Prove episode board annotations survive re-export."
+      },
+      "before": null,
+      "after": "Mid-season turn clarified without direct reveal leakage.",
+      "status": "applied"
+    },
+    {
+      "operation": {
+        "operation_id": "edit_scene_afterimage",
+        "panel_id": "scene_card_board",
+        "selector_key": "scene_id",
+        "selector_value": "EP08_SC10",
+        "field": "afterimage_marker",
+        "value": "닫히는 엘리베이터 문틈의 찬기 #90",
+        "reason": "Prove surface scene edits preserve Node2-only contract."
+      },
+      "before": "늦게 접힌 종이 #10",
+      "after": "닫히는 엘리베이터 문틈의 찬기 #90",
+      "status": "applied"
+    },
+    {
+      "operation": {
+        "operation_id": "edit_reveal_budget_note",
+        "panel_id": "reveal_budget_board",
+        "selector_key": "reveal_policy",
+        "selector_value": "foreshadow_only",
+        "field": "roundtrip_policy_note",
+        "value": "Foreshadowing may be strengthened, but direct answer text remains blocked.",
+        "reason": "Prove reveal budget annotations remain policy-bound after export."
+      },
+      "before": null,
+      "after": "Foreshadowing may be strengthened, but direct answer text remains blocked.",
+      "status": "applied"
+    }
+  ],
+  "before_checksums": {
+    "writer_studio_state": "18DFA480B33E418FB925B8C530A46ED3BFCCAAF4CAA3B0C4081C36BCEB44964E",
+    "writer_handoff": "A4D6F32A7ACEBCCECC27AA26251717FA0E019C214991B797C1AEE63021543005",
+    "static_studio_preview": "349C0F5EAFE867924383E34BBF1B973E097542F4FE71652A54E6006F051EC423",
+    "platform_serialization_pack": "6C984BF4F50286C11B4FD71837AF2B633C23E0B60DD7E243510AB6111E3D900A",
+    "scene_review_sheet": "E1C5D1505385E0ED23EC0D80F29BFC9ECA380E2DD632AF2601ACC2DC5DB4B9C3"
+  },
+  "after_checksums": {
+    "writer_studio_state": "B620F7EAB5543E9F473E5F3064167601CA47DD9A5653297C48AB34DC089C8F70",
+    "writer_handoff": "7159BA7CA31069C091BCA203DBBA5AD450300B91FAD45C9486C35E9FB8FF98E4",
+    "static_studio_preview": "9F86B713464E5BC1540B6AFEB75351FA6A899BBE62FECE35C51E20ACF853B3B1",
+    "platform_serialization_pack": "D882C266CACA7349363F2BE180834227218562089574CB13F1921719B0F89104",
+    "scene_review_sheet": "66F794BF60C2B9F2EB2A606D9EA3A808579AC98385ED567D650F93838AFD6E5A"
+  },
+  "claim": "Stage90 proves writer-side Studio edits can be applied, re-exported, and fidelity-audited without external providers or raw reveal access."
+}

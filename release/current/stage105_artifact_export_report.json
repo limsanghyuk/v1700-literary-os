@@ -1,0 +1,9 @@
+{
+  "stage": "105",
+  "status": "pass",
+  "package": "V1700_stage105_multi_provider_creative_arbitration_2_FIXED.zip",
+  "sha256_sidecar": "V1700_stage105_multi_provider_creative_arbitration_2_FIXED.zip.sha256",
+  "filelist": "V1700_stage105_FIXED_filelist.txt",
+  "release_gate": "release/current/stage105_release_gate_report.json",
+  "developer_handoff": "release/current/stage105_developer_handoff_report.md"
+}

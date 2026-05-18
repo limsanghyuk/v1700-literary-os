@@ -1,0 +1,12 @@
+{
+  "stage": "107",
+  "status": "pass",
+  "artifact_files": [
+    "release/current/stage107_longform_production_suite_report.json",
+    "release/current/stage107_release_gate_report.json",
+    "release/current/stage107_developer_handoff_report.md"
+  ],
+  "canonical_package": "V1700_stage107_longform_production_suite_LOGIC_VERIFIED_PATCHED.zip",
+  "sha256_sidecar": "V1700_stage107_longform_production_suite_LOGIC_VERIFIED_PATCHED.zip.sha256",
+  "filelist": "V1700_stage107_LOGIC_VERIFIED_PATCHED_filelist.txt"
+}

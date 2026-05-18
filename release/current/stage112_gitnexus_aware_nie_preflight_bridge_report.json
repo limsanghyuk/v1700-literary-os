@@ -1,0 +1,810 @@
+{
+  "stage": "112",
+  "baseline_stage": "111",
+  "title": "GitNexus-Aware NIE Preflight Bridge",
+  "status": "pass",
+  "issues": [],
+  "preflight": {
+    "stage": "112",
+    "baseline_stage": "111",
+    "title": "GitNexus-Aware NIE Preflight Bridge",
+    "status": "pass",
+    "issues": [],
+    "repo_id": "v1700-literary-os-stage112",
+    "index_fresh": true,
+    "stale_index_detected": false,
+    "gitnexus_sidecar_available": false,
+    "python_fallback_used": true,
+    "queried_symbols": [
+      {
+        "name": "MAEOrchestrator",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage88_ai_agent_benchmark",
+          "stage113_mae_reward_bridge"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "PhysicsCoefficientUpdater",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage96_narrative_optimization",
+          "stage113_reward_bridge"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "PhysicsCoefficientStore",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage96_coefficient_memory",
+          "stage114_amw"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "EmotionalMomentumTracker",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": true,
+        "locations": [
+          "src/v1700/literary_formulas/__init__.py",
+          "src/v1700/literary_formulas/emotional_momentum.py",
+          "src/v1700/longform/engine.py"
+        ],
+        "branchpoints": [
+          "stage73_literary_formulas",
+          "stage114_amw"
+        ],
+        "required_for_stage112": true
+      },
+      {
+        "name": "HybridRetriever",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage53_retrieval_router",
+          "stage116_domain_rag"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "ReaderSimulator",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage88_agent_benchmark",
+          "stage113_mae_reward_bridge"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "CharacterBirthGate",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage51_character_event_time_ledger",
+          "stage115_cim"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "CharacterClusterDetector",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage80_korean_drama_composition",
+          "stage115_cim"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "KnowledgeBoundaryGate",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": false,
+        "locations": [],
+        "branchpoints": [
+          "stage86_arc_reveal_knowledge",
+          "stage115_cim"
+        ],
+        "required_for_stage112": false
+      },
+      {
+        "name": "NarrativeWeightKernel",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": true,
+        "locations": [
+          "src/v1700/narrative_weight_kernel/report.py"
+        ],
+        "branchpoints": [
+          "stage111_1_narrative_weight_kernel",
+          "stage112_preflight"
+        ],
+        "required_for_stage112": true
+      },
+      {
+        "name": "GitNexusPreflightResult",
+        "expected_kind": "class_or_function_or_planned_adapter",
+        "present": true,
+        "locations": [
+          "src/v1700/gates/stage112_release_gate.py",
+          "src/v1700/gitnexus_preflight/__init__.py",
+          "src/v1700/gitnexus_preflight/contracts.py",
+          "src/v1700/gitnexus_preflight/preflight_runner.py"
+        ],
+        "branchpoints": [
+          "stage112_preflight",
+          "release_gate_integration"
+        ],
+        "required_for_stage112": true
+      }
+    ],
+    "impact_depth_1": {
+      "status": "pass",
+      "depth": 1,
+      "nodes": [
+        "stage112_gitnexus_preflight",
+        "stage112_release_gate",
+        "repo_doctor"
+      ],
+      "edges": [
+        "preflight->gate",
+        "gate->main_release_gate",
+        "gate->repo_doctor"
+      ]
+    },
+    "impact_depth_2": {
+      "status": "pass",
+      "depth": 2,
+      "nodes": [
+        "stage111_baseline",
+        "stage95_narrative_physics",
+        "stage96_coefficient_memory",
+        "stage97_longform_endurance",
+        "stage107_production_suite"
+      ],
+      "edges": [
+        "stage111->stage112",
+        "stage112->future_NIE",
+        "NIE->Gate25"
+      ]
+    },
+    "impact_depth_3": {
+      "status": "pass",
+      "depth": 3,
+      "nodes": [
+        "provider_zero",
+        "Node2_boundary",
+        "raw_manuscript_privacy",
+        "clean_packaging",
+        "branchpoint_survival"
+      ],
+      "edges": [
+        "concept_impact->release_block_conditions",
+        "survival_matrix->branchpoint_trace"
+      ]
+    },
+    "detect_changes": {
+      "status": "pass",
+      "changed_paths": [
+        "src/v1700/gitnexus_preflight/**",
+        "src/v1700/stage112/**",
+        "src/v1700/gates/stage112_release_gate.py",
+        "tools/run_stage112_gitnexus_nie_preflight.py",
+        "tools/run_stage112_release_gate.py",
+        "manifests/stage112_manifest.json",
+        "docs/stages/stage112.md"
+      ],
+      "affected_tests": [
+        "tests/test_stage111_v485_absorption_bridge.py",
+        "tests/test_stage112_gitnexus_nie_preflight.py"
+      ],
+      "affected_processes": [
+        "release_gate",
+        "repo_doctor",
+        "clean_packaging",
+        "NIE_preflight"
+      ],
+      "python_fallback_used": true
+    },
+    "concept_impact": {
+      "status": "PASS",
+      "provider_zero_preserved": true,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "reader_only_leakage": 0,
+      "internal_marker_leakage": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "release_gate_integration_required": true,
+      "repo_doctor_integration_required": true,
+      "concepts_checked": [
+        "provider-zero",
+        "Node2 raw reveal boundary",
+        "READER_ONLY leakage",
+        "internal marker leakage",
+        "raw manuscript provider leakage",
+        "credential leakage",
+        "branchpoint lineage",
+        "writer approval guard",
+        "clean packaging"
+      ]
+    },
+    "survival_matrix": {
+      "stage51_character_event_time_ledger": true,
+      "stage52_reveal_budget_memory_guard": true,
+      "stage72_graphnexus_lineage": true,
+      "stage80_korean_drama_composition": true,
+      "stage86_arc_reveal_knowledge": true,
+      "stage95_narrative_physics": true,
+      "stage96_coefficient_memory": true,
+      "stage97_longform_endurance": true,
+      "stage97_1_adversarial_validation": true,
+      "stage107_longform_production_suite": true,
+      "stage111_absorption_candidate_bridge": true,
+      "stage111_1_narrative_weight_kernel": true
+    },
+    "branchpoint_trace": {
+      "MAEOrchestrator": [
+        "stage88_ai_agent_benchmark",
+        "stage113_mae_reward_bridge"
+      ],
+      "PhysicsCoefficientUpdater": [
+        "stage96_narrative_optimization",
+        "stage113_reward_bridge"
+      ],
+      "PhysicsCoefficientStore": [
+        "stage96_coefficient_memory",
+        "stage114_amw"
+      ],
+      "EmotionalMomentumTracker": [
+        "stage73_literary_formulas",
+        "stage114_amw"
+      ],
+      "HybridRetriever": [
+        "stage53_retrieval_router",
+        "stage116_domain_rag"
+      ],
+      "ReaderSimulator": [
+        "stage88_agent_benchmark",
+        "stage113_mae_reward_bridge"
+      ],
+      "CharacterBirthGate": [
+        "stage51_character_event_time_ledger",
+        "stage115_cim"
+      ],
+      "CharacterClusterDetector": [
+        "stage80_korean_drama_composition",
+        "stage115_cim"
+      ],
+      "KnowledgeBoundaryGate": [
+        "stage86_arc_reveal_knowledge",
+        "stage115_cim"
+      ],
+      "NarrativeWeightKernel": [
+        "stage111_1_narrative_weight_kernel",
+        "stage112_preflight"
+      ],
+      "GitNexusPreflightResult": [
+        "stage112_preflight",
+        "release_gate_integration"
+      ]
+    },
+    "shape_check_pass": true,
+    "change_review": {
+      "status": "pass",
+      "risk_level": "LOW",
+      "risks": [],
+      "planned_gaps_for_stage113_plus": [
+        "MAEOrchestrator",
+        "PhysicsCoefficientUpdater",
+        "PhysicsCoefficientStore",
+        "HybridRetriever",
+        "ReaderSimulator",
+        "CharacterBirthGate",
+        "CharacterClusterDetector",
+        "KnowledgeBoundaryGate"
+      ],
+      "decision": "proceed_to_stage112_release_gate"
+    },
+    "release_gate_integration": {
+      "status": "pass",
+      "paths": {
+        "src/v1700/gates/stage112_release_gate.py": true,
+        "tools/run_stage112_release_gate.py": true,
+        "tools/run_stage112_gitnexus_nie_preflight.py": true,
+        "manifests/stage112_manifest.json": true,
+        "docs/stages/stage112.md": true
+      },
+      "gate_registered": true,
+      "missing": []
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "shape_check": {
+      "status": "pass",
+      "missing_keys": [],
+      "bad_types": []
+    },
+    "preflight_parts": {
+      "index": {
+        "status": "pass",
+        "repo_id": "v1700-literary-os-stage112",
+        "active_version": "stage127",
+        "graph_manifest_exists": true,
+        "gitnexus_sidecar_available": false,
+        "python_fallback_required": true,
+        "index_fresh": true
+      },
+      "stale_index": {
+        "status": "pass",
+        "stale_index_detected": false,
+        "sidecar_available": false,
+        "fallback_allowed": true,
+        "reason": "optional_sidecar_absent_python_fallback_required"
+      },
+      "symbol_trace": {
+        "status": "pass",
+        "queried_symbols": [
+          {
+            "name": "MAEOrchestrator",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage88_ai_agent_benchmark",
+              "stage113_mae_reward_bridge"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "PhysicsCoefficientUpdater",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage96_narrative_optimization",
+              "stage113_reward_bridge"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "PhysicsCoefficientStore",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage96_coefficient_memory",
+              "stage114_amw"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "EmotionalMomentumTracker",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": true,
+            "locations": [
+              "src/v1700/literary_formulas/__init__.py",
+              "src/v1700/literary_formulas/emotional_momentum.py",
+              "src/v1700/longform/engine.py"
+            ],
+            "branchpoints": [
+              "stage73_literary_formulas",
+              "stage114_amw"
+            ],
+            "required_for_stage112": true
+          },
+          {
+            "name": "HybridRetriever",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage53_retrieval_router",
+              "stage116_domain_rag"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "ReaderSimulator",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage88_agent_benchmark",
+              "stage113_mae_reward_bridge"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "CharacterBirthGate",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage51_character_event_time_ledger",
+              "stage115_cim"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "CharacterClusterDetector",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage80_korean_drama_composition",
+              "stage115_cim"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "KnowledgeBoundaryGate",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": false,
+            "locations": [],
+            "branchpoints": [
+              "stage86_arc_reveal_knowledge",
+              "stage115_cim"
+            ],
+            "required_for_stage112": false
+          },
+          {
+            "name": "NarrativeWeightKernel",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": true,
+            "locations": [
+              "src/v1700/narrative_weight_kernel/report.py"
+            ],
+            "branchpoints": [
+              "stage111_1_narrative_weight_kernel",
+              "stage112_preflight"
+            ],
+            "required_for_stage112": true
+          },
+          {
+            "name": "GitNexusPreflightResult",
+            "expected_kind": "class_or_function_or_planned_adapter",
+            "present": true,
+            "locations": [
+              "src/v1700/gates/stage112_release_gate.py",
+              "src/v1700/gitnexus_preflight/__init__.py",
+              "src/v1700/gitnexus_preflight/contracts.py",
+              "src/v1700/gitnexus_preflight/preflight_runner.py"
+            ],
+            "branchpoints": [
+              "stage112_preflight",
+              "release_gate_integration"
+            ],
+            "required_for_stage112": true
+          }
+        ],
+        "missing_required_symbols": [],
+        "planned_nie_symbols_missing_but_allowed": [
+          "MAEOrchestrator",
+          "PhysicsCoefficientUpdater",
+          "PhysicsCoefficientStore",
+          "HybridRetriever",
+          "ReaderSimulator",
+          "CharacterBirthGate",
+          "CharacterClusterDetector",
+          "KnowledgeBoundaryGate"
+        ],
+        "branchpoint_trace": {
+          "MAEOrchestrator": [
+            "stage88_ai_agent_benchmark",
+            "stage113_mae_reward_bridge"
+          ],
+          "PhysicsCoefficientUpdater": [
+            "stage96_narrative_optimization",
+            "stage113_reward_bridge"
+          ],
+          "PhysicsCoefficientStore": [
+            "stage96_coefficient_memory",
+            "stage114_amw"
+          ],
+          "EmotionalMomentumTracker": [
+            "stage73_literary_formulas",
+            "stage114_amw"
+          ],
+          "HybridRetriever": [
+            "stage53_retrieval_router",
+            "stage116_domain_rag"
+          ],
+          "ReaderSimulator": [
+            "stage88_agent_benchmark",
+            "stage113_mae_reward_bridge"
+          ],
+          "CharacterBirthGate": [
+            "stage51_character_event_time_ledger",
+            "stage115_cim"
+          ],
+          "CharacterClusterDetector": [
+            "stage80_korean_drama_composition",
+            "stage115_cim"
+          ],
+          "KnowledgeBoundaryGate": [
+            "stage86_arc_reveal_knowledge",
+            "stage115_cim"
+          ],
+          "NarrativeWeightKernel": [
+            "stage111_1_narrative_weight_kernel",
+            "stage112_preflight"
+          ],
+          "GitNexusPreflightResult": [
+            "stage112_preflight",
+            "release_gate_integration"
+          ]
+        }
+      },
+      "fallback": {
+        "status": "PASS",
+        "python_fallback_used": true,
+        "import_edges_total": 2661,
+        "critical_paths_checked": [
+          "src/v1700/gates/release_gate.py",
+          "src/v1700/gates/stage111_release_gate.py",
+          "src/v1700/gates/stage112_release_gate.py",
+          "src/v1700/gitnexus_preflight/preflight_runner.py",
+          "manifests/live_core_manifest.json",
+          "manifests/stage112_manifest.json",
+          "docs/stages/stage112.md"
+        ],
+        "affected_tests": {
+          "gitnexus_preflight": [
+            "tests/test_stage112_gitnexus_nie_preflight.py"
+          ],
+          "stage112_release_gate": [
+            "tests/test_stage112_gitnexus_nie_preflight.py"
+          ],
+          "release_gate": [
+            "tests/test_stage112_gitnexus_nie_preflight.py",
+            "tests/test_stage111_v485_absorption_bridge.py"
+          ],
+          "repo_doctor": [
+            "tests/test_stage112_gitnexus_nie_preflight.py"
+          ]
+        },
+        "manifests_checked": {
+          "manifests/stage112_manifest.json": true,
+          "manifests/stage112_nie_branchpoint_manifest.json": true,
+          "manifests/stage112_gitnexus_nie_preflight_manifest.json": true
+        },
+        "release_evidence_checked": {
+          "release/current/stage112_gitnexus_nie_preflight_report.json": true,
+          "release/current/stage112_release_gate_report.json": true
+        },
+        "orphan_critical_nodes": [],
+        "import_edges_sample": [
+          {
+            "from": "v1700.cli",
+            "to": "__future__"
+          },
+          {
+            "from": "v1700.cli",
+            "to": "argparse"
+          },
+          {
+            "from": "v1700.cli",
+            "to": "json"
+          },
+          {
+            "from": "v1700.cli",
+            "to": "v1700.nodes.node1_architect"
+          },
+          {
+            "from": "v1700.cli",
+            "to": "v1700.nodes.node2_prose_renderer"
+          },
+          {
+            "from": "v1700.cli",
+            "to": "v1700.ir.style_profile"
+          },
+          {
+            "from": "v1700.semantic_cache",
+            "to": "v1700.cache.semantic_cache"
+          },
+          {
+            "from": "v1700.agent_benchmark.__init__",
+            "to": "v1700.agent_benchmark.harness"
+          },
+          {
+            "from": "v1700.agent_benchmark.agents",
+            "to": "__future__"
+          },
+          {
+            "from": "v1700.agent_benchmark.agents",
+            "to": "v1700.agent_benchmark.contracts"
+          },
+          {
+            "from": "v1700.agent_benchmark.contracts",
+            "to": "__future__"
+          },
+          {
+            "from": "v1700.agent_benchmark.contracts",
+            "to": "dataclasses"
+          },
+          {
+            "from": "v1700.agent_benchmark.contracts",
+            "to": "statistics"
+          },
+          {
+            "from": "v1700.agent_benchmark.contracts",
+            "to": "typing"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "__future__"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "hashlib"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "statistics"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "v1700.agent_benchmark.agents"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "v1700.agent_benchmark.contracts"
+          },
+          {
+            "from": "v1700.agent_benchmark.harness",
+            "to": "v1700.episode_scaleup.evidence"
+          }
+        ]
+      },
+      "detect_changes": {
+        "status": "pass",
+        "changed_paths": [
+          "src/v1700/gitnexus_preflight/**",
+          "src/v1700/stage112/**",
+          "src/v1700/gates/stage112_release_gate.py",
+          "tools/run_stage112_gitnexus_nie_preflight.py",
+          "tools/run_stage112_release_gate.py",
+          "manifests/stage112_manifest.json",
+          "docs/stages/stage112.md"
+        ],
+        "affected_tests": [
+          "tests/test_stage111_v485_absorption_bridge.py",
+          "tests/test_stage112_gitnexus_nie_preflight.py"
+        ],
+        "affected_processes": [
+          "release_gate",
+          "repo_doctor",
+          "clean_packaging",
+          "NIE_preflight"
+        ],
+        "python_fallback_used": true
+      },
+      "concept_impact": {
+        "status": "PASS",
+        "provider_zero_preserved": true,
+        "live_provider_call_count_in_release_gate": 0,
+        "node2_raw_reveal_access": 0,
+        "reader_only_leakage": 0,
+        "internal_marker_leakage": 0,
+        "raw_manuscript_provider_leakage": 0,
+        "credential_leakage": 0,
+        "branchpoint_lineage_preserved": true,
+        "release_gate_integration_required": true,
+        "repo_doctor_integration_required": true,
+        "concepts_checked": [
+          "provider-zero",
+          "Node2 raw reveal boundary",
+          "READER_ONLY leakage",
+          "internal marker leakage",
+          "raw manuscript provider leakage",
+          "credential leakage",
+          "branchpoint lineage",
+          "writer approval guard",
+          "clean packaging"
+        ]
+      },
+      "survival_matrix": {
+        "stage51_character_event_time_ledger": true,
+        "stage52_reveal_budget_memory_guard": true,
+        "stage72_graphnexus_lineage": true,
+        "stage80_korean_drama_composition": true,
+        "stage86_arc_reveal_knowledge": true,
+        "stage95_narrative_physics": true,
+        "stage96_coefficient_memory": true,
+        "stage97_longform_endurance": true,
+        "stage97_1_adversarial_validation": true,
+        "stage107_longform_production_suite": true,
+        "stage111_absorption_candidate_bridge": true,
+        "stage111_1_narrative_weight_kernel": true
+      },
+      "survival_status": {
+        "status": "pass",
+        "missing": [],
+        "survival_matrix": {
+          "stage51_character_event_time_ledger": true,
+          "stage52_reveal_budget_memory_guard": true,
+          "stage72_graphnexus_lineage": true,
+          "stage80_korean_drama_composition": true,
+          "stage86_arc_reveal_knowledge": true,
+          "stage95_narrative_physics": true,
+          "stage96_coefficient_memory": true,
+          "stage97_longform_endurance": true,
+          "stage97_1_adversarial_validation": true,
+          "stage107_longform_production_suite": true,
+          "stage111_absorption_candidate_bridge": true,
+          "stage111_1_narrative_weight_kernel": true
+        }
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "paths": {
+          "src/v1700/gates/stage112_release_gate.py": true,
+          "tools/run_stage112_release_gate.py": true,
+          "tools/run_stage112_gitnexus_nie_preflight.py": true,
+          "manifests/stage112_manifest.json": true,
+          "docs/stages/stage112.md": true
+        },
+        "gate_registered": true,
+        "missing": []
+      }
+    },
+    "planned_next_stages": [
+      "Stage113 PhysicsRewardBridge + MAE Reward Wiring",
+      "Stage114 AdaptiveMomentumWeights",
+      "Stage115 CharacterInfluenceMatrix + Structural Balance",
+      "Stage116 Domain-Specific RAG Fusion",
+      "Stage117 NarrativeTensionCurve",
+      "Stage118 NIL Orchestrator",
+      "Stage119 NIE Adversarial Regression Pack",
+      "Stage120 Gate25 NIE v1.0"
+    ]
+  },
+  "release_contract": {
+    "stage": "112",
+    "baseline_stage": "111",
+    "title": "GitNexus-Aware NIE Preflight Bridge",
+    "implementation_mode": "preflight_before_nie",
+    "gitnexus_cli_required": false,
+    "python_fallback_required": true,
+    "live_provider_call_count_in_release_gate": 0,
+    "physics_reward_bridge_llm_call_allowed": false,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_must_be_preserved": true,
+    "gate25_target_stage": "120"
+  },
+  "next_development_order": [
+    "Stage113",
+    "Stage114",
+    "Stage115",
+    "Stage116",
+    "Stage117",
+    "Stage118",
+    "Stage119",
+    "Stage120"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

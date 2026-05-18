@@ -1,0 +1,13 @@
+{
+  "stage": "100",
+  "baseline_stage": "99",
+  "status": "active",
+  "branchpoints": [
+    "BP_STAGE100_RC_PREFLIGHT_LOCK",
+    "BP_STAGE100_DUAL_MODE_EVALUATION",
+    "BP_STAGE100_PROVIDER_CERTIFICATION",
+    "BP_STAGE100_V430_COMPARISON_ONLY",
+    "BP_STAGE100_CLEAN_RC_PACKAGING"
+  ]
+}
+

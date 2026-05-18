@@ -1,0 +1,17 @@
+{
+  "stage": "84",
+  "title": "Claude V370 Runtime Absorption into V1700 Korean Drama OS",
+  "depends_on": [
+    "stage83.1"
+  ],
+  "status": "pass",
+  "required_outputs": [
+    "src/v1700/runtime_absorption/v370_absorption.py",
+    "src/v1700/gates/stage84_release_gate.py",
+    "manifests/v370_feature_map_manifest.json",
+    "manifests/stage84_absorption_decision_matrix.json",
+    "tests/test_stage84_v370_runtime_absorption.py"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0
+}

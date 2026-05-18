@@ -1,0 +1,30 @@
+{
+  "stage": "128",
+  "name": "SharedWorld / SharedCharacter Read-Only Absorption",
+  "baseline_stage": "127",
+  "status": "active",
+  "release_gate": "stage128_release_gate",
+  "absorption_tool": "tools/run_stage128_read_only_absorption.py",
+  "release_gate_tool": "tools/run_stage128_release_gate.py",
+  "docs": "docs/stages/stage128.md",
+  "evidence": [
+    "release/current/stage128_read_only_absorption_report.json",
+    "release/current/stage128_release_gate_report.json",
+    "release/current/stage128_read_only_absorption_pack/"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "cross_project_write": 0,
+    "full_text_exported": false,
+    "shared_character_db_write_enabled": false,
+    "shared_world_db_write_enabled": false,
+    "shared_world_source_of_truth_promotion_allowed": false,
+    "python_fallback_required": true
+  }
+}

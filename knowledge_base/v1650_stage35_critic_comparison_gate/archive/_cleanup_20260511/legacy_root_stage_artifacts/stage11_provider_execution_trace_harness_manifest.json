@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.provider.execution_trace",
+  "stage_origins": [
+    "STAGE11"
+  ],
+  "title": "Provider Execution Trace",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage11_provider_execution_trace_harness_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

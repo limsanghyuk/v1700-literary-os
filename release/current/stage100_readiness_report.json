@@ -1,0 +1,21 @@
+{
+  "stage": "100",
+  "baseline_stage": "99",
+  "rc_version": "1.0rc1",
+  "gitnexus_preflight_status": "pass",
+  "branchpoint_survival_status": "pass",
+  "dual_mode_evaluation_status": "pass",
+  "provider_certification_status": "pass",
+  "release_gate_status": "pass",
+  "stage100_readiness_status": "pass",
+  "status": "pass",
+  "issues": [],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "gitnexus_runtime_dependency_required": false,
+  "python_fallback_required": true
+}

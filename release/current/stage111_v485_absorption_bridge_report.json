@@ -1,0 +1,296 @@
+{
+  "stage": "111",
+  "baseline_stage": "110",
+  "title": "V485 Absorption Candidate Bridge",
+  "status": "pass",
+  "issues": [],
+  "stage111_0_v485_absorption_preflight": {
+    "stage": "111.0",
+    "status": "pass",
+    "checks": {
+      "stage110_baseline_gate_pass": true,
+      "gitnexus_absorption_preflight_pass": true,
+      "branchpoint_survival_pass": true,
+      "active_version_stage111_pass": true,
+      "quarantine_policy_pass": true,
+      "no_v485_direct_imports_pass": true,
+      "provider_zero_release_path_pass": true,
+      "node2_boundary_pass": true,
+      "raw_manuscript_leakage_pass": true,
+      "plugin_disabled_by_default_pass": true
+    },
+    "issues": [],
+    "quarantine_policy": {
+      "status": "pass",
+      "direct_code_import_allowed": false,
+      "metadata_direct_import_allowed": false,
+      "release_gate_replacement_allowed": false,
+      "allowed_absorption_mode": "wrap_only_or_recompiled_contract",
+      "forbidden_direct_imports": [
+        "literary_system.llm_bridge",
+        "tools.run_release_gate",
+        "MANIFEST_V485_COMPLETE"
+      ]
+    },
+    "direct_import_scan": {
+      "status": "pass",
+      "direct_import_hits": []
+    }
+  },
+  "v485_version_drift": {
+    "package_label": "literary_os_v485_COMPLETE.zip",
+    "readme_version": "V430",
+    "pyproject_version": "4.8.5",
+    "manifest_version": "V485",
+    "live_manifest_version": "V481",
+    "release_gate_version": "V480",
+    "drift_detected": true,
+    "release_block": false,
+    "direct_metadata_import_allowed": false,
+    "status": "pass",
+    "v1700_absorption_policy": "metadata_wrapper_required",
+    "source_mode": "reference_profile_no_external_source_required"
+  },
+  "adapter_bridge_probe": {
+    "stage": "111.2",
+    "status": "pass",
+    "provider_call_mode": "FIXTURE",
+    "live_provider_call_count": 0,
+    "raw_manuscript_included": false,
+    "credential_included": false,
+    "raw_response_stored": false,
+    "bridges": [
+      {
+        "bridge_id": "anthropic_bridge",
+        "source_adapter_pattern": "V485 AnthropicAdapter pattern",
+        "target_adapter": "V1700 provider_live_sandbox.anthropic_live_adapter",
+        "provider_call_mode": "FIXTURE",
+        "credential_included": false,
+        "raw_manuscript_included": false,
+        "raw_response_stored": false,
+        "response_normalizer_required": true,
+        "bridge_status": "PASS"
+      },
+      {
+        "bridge_id": "ollama_bridge",
+        "source_adapter_pattern": "V485 OllamaAdapter pattern",
+        "target_adapter": "V1700 provider_live_sandbox.ollama_live_adapter",
+        "provider_call_mode": "FIXTURE",
+        "credential_included": false,
+        "raw_manuscript_included": false,
+        "raw_response_stored": false,
+        "response_normalizer_required": true,
+        "bridge_status": "PASS"
+      },
+      {
+        "bridge_id": "mock_fixture_bridge",
+        "source_adapter_pattern": "V485 MockLLMBridge fallback",
+        "target_adapter": "V1700 seed-aware deterministic fixture",
+        "provider_call_mode": "FIXTURE",
+        "credential_included": false,
+        "raw_manuscript_included": false,
+        "raw_response_stored": false,
+        "response_normalizer_required": true,
+        "bridge_status": "PASS"
+      }
+    ]
+  },
+  "scene_pipeline_bridge": {
+    "stage": "111.3",
+    "status": "pass",
+    "bridge": {
+      "bridge_id": "scene_pipeline_bridge_v485_to_v1700",
+      "source_pipeline": "V485 SceneGenerationPipeline concept",
+      "target_mode": "DRAMA",
+      "provider_call_mode": "FIXTURE",
+      "raw_manuscript_included": false,
+      "raw_response_stored": false,
+      "normalized_scene_count": 3,
+      "writer_decision_required": true,
+      "bridge_status": "PASS"
+    },
+    "flow": [
+      "SceneIntent",
+      "SceneGenerationPlan",
+      "ProviderPromptPacket",
+      "NormalizedSceneDraft",
+      "ReviewQueueItem",
+      "WriterDecision"
+    ],
+    "auto_apply_allowed": false,
+    "writer_approval_required": true
+  },
+  "drama_episode_bridge": {
+    "stage": "111.4",
+    "status": "pass",
+    "episode_bridge": {
+      "episode_plan_id": "stage111_fixture_episode_plan_001",
+      "episode_count": 1,
+      "scene_count": 3,
+      "provider_mode": "FIXTURE",
+      "writer_decision_required": true,
+      "review_queue_items": 3,
+      "export_ready": true,
+      "status": "PASS"
+    },
+    "source_concept": "V485 DramaEpisodeGenerator",
+    "target_v1700_system": "Stage107 Longform Production Suite + Stage108 Editorial Board",
+    "live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "absorption_candidate_matrix": {
+    "stage": "111.5",
+    "status": "pass",
+    "issues": [],
+    "candidates": [
+      {
+        "candidate_id": "drama_episode_generator",
+        "source_component": "DramaEpisodeGenerator",
+        "source_version_label": "V485",
+        "target_v1700_module": "v1700.v485_bridge.drama_episode_bridge",
+        "absorption_status": "WRAP_ONLY",
+        "risk_level": "MEDIUM",
+        "requires_sandbox": true,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Absorb execution flow, not metadata."
+      },
+      {
+        "candidate_id": "scene_generation_pipeline",
+        "source_component": "SceneGenerationPipeline",
+        "source_version_label": "V485",
+        "target_v1700_module": "v1700.v485_bridge.scene_pipeline_bridge",
+        "absorption_status": "WRAP_ONLY",
+        "risk_level": "MEDIUM",
+        "requires_sandbox": true,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Connect to ReviewQueue and WriterDecision."
+      },
+      {
+        "candidate_id": "anthropic_adapter_pattern",
+        "source_component": "AnthropicAdapter",
+        "source_version_label": "V485",
+        "target_v1700_module": "v1700.provider_live_sandbox.anthropic_live_adapter",
+        "absorption_status": "WRAP_ONLY",
+        "risk_level": "HIGH",
+        "requires_sandbox": true,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Live calls remain sandbox-only."
+      },
+      {
+        "candidate_id": "ollama_adapter_pattern",
+        "source_component": "OllamaAdapter",
+        "source_version_label": "V485",
+        "target_v1700_module": "v1700.provider_live_sandbox.ollama_live_adapter",
+        "absorption_status": "WRAP_ONLY",
+        "risk_level": "MEDIUM",
+        "requires_sandbox": true,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Local endpoint through sandbox guard."
+      },
+      {
+        "candidate_id": "generate_5episodes_cli_flow",
+        "source_component": "generate_5episodes.py",
+        "source_version_label": "V485",
+        "target_v1700_module": "tools/run_stage111_sample_episode_bridge.py",
+        "absorption_status": "ACCEPT",
+        "risk_level": "LOW",
+        "requires_sandbox": false,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Accept as V1700 sample runner pattern only."
+      },
+      {
+        "candidate_id": "v485_release_gate",
+        "source_component": "tools/run_release_gate.py",
+        "source_version_label": "V480/V485 drift",
+        "target_v1700_module": "none",
+        "absorption_status": "REJECT",
+        "risk_level": "BLOCK",
+        "requires_sandbox": false,
+        "requires_redaction": false,
+        "requires_release_gate_trace": false,
+        "rationale": "Do not replace V1700 gate."
+      },
+      {
+        "candidate_id": "v485_metadata",
+        "source_component": "README/MANIFEST/live_core_manifest",
+        "source_version_label": "drift",
+        "target_v1700_module": "none",
+        "absorption_status": "REJECT",
+        "risk_level": "BLOCK",
+        "requires_sandbox": false,
+        "requires_redaction": false,
+        "requires_release_gate_trace": false,
+        "rationale": "Do not overwrite V1700 metadata."
+      },
+      {
+        "candidate_id": "v485_raw_live_call_path",
+        "source_component": "direct adapter generate",
+        "source_version_label": "V485",
+        "target_v1700_module": "none",
+        "absorption_status": "BLOCK",
+        "risk_level": "BLOCK",
+        "requires_sandbox": true,
+        "requires_redaction": true,
+        "requires_release_gate_trace": true,
+        "rationale": "Release path direct live call is forbidden."
+      },
+      {
+        "candidate_id": "v485_otel_layer",
+        "source_component": "OpenTelemetry",
+        "source_version_label": "V485",
+        "target_v1700_module": "future observability",
+        "absorption_status": "DEFER",
+        "risk_level": "MEDIUM",
+        "requires_sandbox": false,
+        "requires_redaction": false,
+        "requires_release_gate_trace": true,
+        "rationale": "Optional dependency layer deferred."
+      },
+      {
+        "candidate_id": "v485_fastapi_studio_api",
+        "source_component": "Studio API",
+        "source_version_label": "V485",
+        "target_v1700_module": "future studio API",
+        "absorption_status": "DEFER",
+        "risk_level": "MEDIUM",
+        "requires_sandbox": false,
+        "requires_redaction": false,
+        "requires_release_gate_trace": true,
+        "rationale": "Potential Stage112+ candidate."
+      }
+    ],
+    "direct_merge_allowed": false,
+    "wrap_only_required": true
+  },
+  "release_contract": {
+    "stage": "111",
+    "baseline_stage": "110",
+    "title": "V485 Absorption Candidate Bridge",
+    "absorption_mode": "wrap_only",
+    "direct_v485_code_import_allowed": false,
+    "direct_v485_metadata_import_allowed": false,
+    "release_gate_replacement_allowed": false,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "raw_response_stored": false,
+    "writer_decision_required": true,
+    "python_fallback_required": true,
+    "gitnexus_runtime_dependency_required": false
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "sandbox_live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "raw_response_stored": false,
+  "writer_decision_required": true,
+  "branchpoint_lineage_preserved": true,
+  "release_gate_affected_by_v485": false
+}

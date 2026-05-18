@@ -1,0 +1,56 @@
+{
+  "stage": "92",
+  "title": "Local Multi-Provider Adapter Runtime",
+  "status": "pass",
+  "predecessor": "stage91",
+  "purpose": "Configure Ollama, GPT, Claude, and Gemini adapters for a personal local developer computer while preserving provider_default_calls = 0 during release verification.",
+  "runtime_modules": [
+    "src/v1700/provider_adapters/contracts.py",
+    "src/v1700/provider_adapters/config.py",
+    "src/v1700/provider_adapters/adapters.py",
+    "src/v1700/provider_adapters/router.py",
+    "src/v1700/provider_adapters/studio_bridge.py",
+    "src/v1700/gates/stage92_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage92_multi_adapter_smoke.py",
+    "tools/run_stage92_release_gate.py",
+    "tools/export_stage92_artifacts.py"
+  ],
+  "tests": [
+    "tests/test_stage92_multi_provider_adapter.py"
+  ],
+  "release_gate": "stage92_release_gate",
+  "providers": [
+    "ollama",
+    "gpt",
+    "claude",
+    "gemini"
+  ],
+  "inherited_stages": [
+    "stage91",
+    "stage90",
+    "stage89",
+    "stage88",
+    "stage87",
+    "stage86",
+    "stage85",
+    "stage84",
+    "stage83.1"
+  ],
+  "core_invariants": {
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "gitnexus_optional_sidecar": true,
+    "graphnexus_authority_preserved": true,
+    "stage91_event_replay_preserved": true,
+    "adapter_live_calls_disabled_by_default": true
+  },
+  "acceptance_criteria": [
+    "four providers configured: ollama/gpt/claude/gemini",
+    "release gate performs zero live provider calls",
+    "studio has multi_provider_adapter_panel",
+    "stage92 release gate pass",
+    "main release gate includes stage92"
+  ]
+}

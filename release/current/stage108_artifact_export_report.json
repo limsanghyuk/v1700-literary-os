@@ -1,0 +1,17 @@
+{
+  "stage": "108",
+  "status": "pass",
+  "artifacts": [
+    "release/current/stage108_editorial_board_pack/reviewer_profiles.json",
+    "release/current/stage108_editorial_board_pack/review_packets.json",
+    "release/current/stage108_editorial_board_pack/editorial_scorecards.json",
+    "release/current/stage108_editorial_board_pack/editorial_consensus.json",
+    "release/current/stage108_editorial_board_pack/literary_merit_report.json",
+    "release/current/stage108_editorial_board_pack/scenario_dramaturg_report.json",
+    "release/current/stage108_editorial_board_pack/market_fit_report.json",
+    "release/current/stage108_editorial_board_pack/continuity_audit_report.json",
+    "release/current/stage108_editorial_board_pack/provider_reviewer_bridge_report.json",
+    "release/current/stage108_editorial_board_pack/local_privacy_review_report.json"
+  ],
+  "canonical_package": "V1700_stage108_external_review_editorial_board_FIXED.zip"
+}

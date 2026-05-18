@@ -1,0 +1,170 @@
+{
+  "stage": "122",
+  "baseline_stage": "121",
+  "title": "NIE v2.0 Stability Absorption",
+  "status": "pass",
+  "issues": [],
+  "release_contract": {
+    "stage": "122",
+    "baseline_stage": "121",
+    "title": "NIE v2.0 Stability Absorption",
+    "absorbed_concepts": [
+      "NILStabilityModule",
+      "AgentCalibrator",
+      "TIdealLearner",
+      "TemporalCIMAdapter",
+      "MetaLearnerSkeleton"
+    ],
+    "blocked_concepts": [
+      "Gate28 authority",
+      "Gate29 authority",
+      "runtime model training",
+      "AMW alpha range relaxation",
+      "direct V545/V555 merge"
+    ],
+    "required_outputs": [
+      "manifests/stage122_manifest.json",
+      "manifests/stage122_stability_absorption_manifest.json",
+      "docs/stages/stage122.md",
+      "release/current/stage122_nie_v2_stability_absorption_report.json",
+      "release/current/stage122_release_gate_report.json"
+    ]
+  },
+  "absorption_policy": {
+    "stage120_gate25_primary_authority_preserved": true,
+    "stage121_conflict_matrix_preserved": true,
+    "direct_v545_v555_merge_allowed": false,
+    "v525_alpha_relaxation_adopted": false,
+    "gate28_authority_enabled": false,
+    "gate29_authority_enabled": false,
+    "runtime_model_training_performed": false
+  },
+  "components": {
+    "nil_stability": {
+      "status": "pass",
+      "score": 0.963996,
+      "signals": [
+        {
+          "name": "reward_advantage",
+          "value": 0.2855,
+          "weight": 0.25,
+          "target": 0.25,
+          "tolerance": 0.25,
+          "status": "pass"
+        },
+        {
+          "name": "amw_run_drift",
+          "value": 0.00017,
+          "weight": 0.2,
+          "target": 0.0,
+          "tolerance": 0.1,
+          "status": "pass"
+        },
+        {
+          "name": "triangle_coverage",
+          "value": 10.0,
+          "weight": 0.2,
+          "target": 10.0,
+          "tolerance": 10.0,
+          "status": "pass"
+        },
+        {
+          "name": "rag_intent_coverage",
+          "value": 3.0,
+          "weight": 0.15,
+          "target": 3.0,
+          "tolerance": 3.0,
+          "status": "pass"
+        },
+        {
+          "name": "tension_final_loss",
+          "value": 4.1e-05,
+          "weight": 0.2,
+          "target": 0.0,
+          "tolerance": 0.05,
+          "status": "pass"
+        }
+      ],
+      "issues": []
+    },
+    "agent_calibrator": {
+      "status": "pass",
+      "weights_before": {
+        "reader": 0.35,
+        "writer": 0.25,
+        "editor": 0.25,
+        "cultural": 0.15
+      },
+      "weights_after": {
+        "reader": 0.3501454898157129,
+        "writer": 0.24927255092143552,
+        "editor": 0.25121241513094084,
+        "cultural": 0.14936954413191078
+      },
+      "max_shift": 0.001212,
+      "total_shift": 0.002716,
+      "normalized_sum": 1.0,
+      "issues": []
+    },
+    "t_ideal_learner": {
+      "status": "pass",
+      "coefficients_before": {
+        "base": 0.6,
+        "main_amp": 0.4,
+        "main_phase": -0.5,
+        "micro_amp": 0.2
+      },
+      "coefficients_after": {
+        "base": 0.604397127693021,
+        "main_amp": 0.4,
+        "main_phase": -0.5,
+        "micro_amp": 0.2
+      },
+      "max_shift": 0.004397,
+      "loss_before": 0.110689,
+      "loss_after": 0.110321,
+      "applied": true,
+      "issues": []
+    },
+    "temporal_cim_adapter": {
+      "status": "pass",
+      "episode_count": 3,
+      "mean_volatility": 0.103333,
+      "role_continuity": 0.8,
+      "unstable_roles": [
+        "detective"
+      ],
+      "issues": []
+    },
+    "meta_learner_skeleton": {
+      "status": "pass",
+      "mode": "proposal_only",
+      "proposal_count": 3,
+      "applied_count": 0,
+      "provider_calls": 0,
+      "runtime_training_performed": false,
+      "issues": []
+    }
+  },
+  "stability_score": 0.963996,
+  "agent_calibration_max_shift": 0.001212,
+  "t_ideal_max_shift": 0.004397,
+  "temporal_cim_mean_volatility": 0.103333,
+  "meta_learner_mode": "proposal_only",
+  "next_development_order": [
+    "stage123",
+    "stage124",
+    "stage125",
+    "stage126"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

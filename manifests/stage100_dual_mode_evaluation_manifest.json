@@ -1,0 +1,15 @@
+{
+  "stage": "100.1",
+  "baseline_stage": "100.0",
+  "purpose": "Separate prose-mode and scenario-mode evaluation authority for the RC.",
+  "required_report": "release/current/stage100_dual_mode_evaluation_report.json",
+  "modes": [
+    "PROSE",
+    "SCENARIO"
+  ],
+  "release_blockers": [
+    "dual_mode_evaluator_missing",
+    "prose_scenario_metric_conflation"
+  ]
+}
+

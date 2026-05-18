@@ -1,0 +1,11 @@
+{
+  "stage": "101.0",
+  "purpose": "Probe V430 source availability and build a traced absorption candidate matrix before any runtime promotion.",
+  "required_reports": [
+    "release/current/stage101_0_cross_lineage_preflight_report.json",
+    "release/current/stage101_v430_source_probe_report.json",
+    "release/current/stage101_absorption_candidate_matrix.json"
+  ],
+  "v430_untraced_merge_allowed": false,
+  "source_missing_mode": "fixture_contract_validation"
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "99.1",
+  "baseline_stage": "99.0",
+  "purpose": "Replay credential, provider, raw manuscript, Node2, and internal marker boundaries.",
+  "required_pack": "release/current/stage99_security_pack",
+  "must_remain_zero": [
+    "credential_leakage",
+    "raw_manuscript_provider_leakage",
+    "provider_live_call_count_in_release",
+    "node2_raw_reveal_access",
+    "internal_marker_leakage"
+  ]
+}

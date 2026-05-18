@@ -1,0 +1,330 @@
+{
+  "stage": "107.2",
+  "title": "Longform Production Calendar",
+  "status": "pass",
+  "episode_count": 32,
+  "scene_target_total": 320,
+  "episodes": [
+    {
+      "episode_id": "episode_01",
+      "season_id": "season_01",
+      "episode_index": 1,
+      "target_scene_count": 10,
+      "production_window": "week_01",
+      "narrative_function": "setup",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_02",
+      "season_id": "season_01",
+      "episode_index": 2,
+      "target_scene_count": 10,
+      "production_window": "week_02",
+      "narrative_function": "setup",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_03",
+      "season_id": "season_01",
+      "episode_index": 3,
+      "target_scene_count": 10,
+      "production_window": "week_03",
+      "narrative_function": "setup",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_04",
+      "season_id": "season_01",
+      "episode_index": 4,
+      "target_scene_count": 10,
+      "production_window": "week_04",
+      "narrative_function": "setup",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_05",
+      "season_id": "season_01",
+      "episode_index": 5,
+      "target_scene_count": 10,
+      "production_window": "week_05",
+      "narrative_function": "escalation",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_06",
+      "season_id": "season_01",
+      "episode_index": 6,
+      "target_scene_count": 10,
+      "production_window": "week_06",
+      "narrative_function": "escalation",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_07",
+      "season_id": "season_01",
+      "episode_index": 7,
+      "target_scene_count": 10,
+      "production_window": "week_07",
+      "narrative_function": "escalation",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_08",
+      "season_id": "season_01",
+      "episode_index": 8,
+      "target_scene_count": 10,
+      "production_window": "week_08",
+      "narrative_function": "escalation",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_09",
+      "season_id": "season_01",
+      "episode_index": 9,
+      "target_scene_count": 10,
+      "production_window": "week_09",
+      "narrative_function": "escalation",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_10",
+      "season_id": "season_01",
+      "episode_index": 10,
+      "target_scene_count": 10,
+      "production_window": "week_10",
+      "narrative_function": "escalation",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_11",
+      "season_id": "season_01",
+      "episode_index": 11,
+      "target_scene_count": 10,
+      "production_window": "week_11",
+      "narrative_function": "escalation",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_12",
+      "season_id": "season_01",
+      "episode_index": 12,
+      "target_scene_count": 10,
+      "production_window": "week_12",
+      "narrative_function": "escalation",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_13",
+      "season_id": "season_01",
+      "episode_index": 13,
+      "target_scene_count": 10,
+      "production_window": "week_13",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_14",
+      "season_id": "season_01",
+      "episode_index": 14,
+      "target_scene_count": 10,
+      "production_window": "week_14",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_15",
+      "season_id": "season_01",
+      "episode_index": 15,
+      "target_scene_count": 10,
+      "production_window": "week_15",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_16",
+      "season_id": "season_01",
+      "episode_index": 16,
+      "target_scene_count": 10,
+      "production_window": "week_16",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_17",
+      "season_id": "season_02",
+      "episode_index": 17,
+      "target_scene_count": 10,
+      "production_window": "week_17",
+      "narrative_function": "setup",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_18",
+      "season_id": "season_02",
+      "episode_index": 18,
+      "target_scene_count": 10,
+      "production_window": "week_18",
+      "narrative_function": "setup",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_19",
+      "season_id": "season_02",
+      "episode_index": 19,
+      "target_scene_count": 10,
+      "production_window": "week_19",
+      "narrative_function": "setup",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_20",
+      "season_id": "season_02",
+      "episode_index": 20,
+      "target_scene_count": 10,
+      "production_window": "week_20",
+      "narrative_function": "setup",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_21",
+      "season_id": "season_02",
+      "episode_index": 21,
+      "target_scene_count": 10,
+      "production_window": "week_21",
+      "narrative_function": "escalation",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_22",
+      "season_id": "season_02",
+      "episode_index": 22,
+      "target_scene_count": 10,
+      "production_window": "week_22",
+      "narrative_function": "escalation",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_23",
+      "season_id": "season_02",
+      "episode_index": 23,
+      "target_scene_count": 10,
+      "production_window": "week_23",
+      "narrative_function": "escalation",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_24",
+      "season_id": "season_02",
+      "episode_index": 24,
+      "target_scene_count": 10,
+      "production_window": "week_24",
+      "narrative_function": "escalation",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_25",
+      "season_id": "season_02",
+      "episode_index": 25,
+      "target_scene_count": 10,
+      "production_window": "week_25",
+      "narrative_function": "escalation",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_26",
+      "season_id": "season_02",
+      "episode_index": 26,
+      "target_scene_count": 10,
+      "production_window": "week_26",
+      "narrative_function": "escalation",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_27",
+      "season_id": "season_02",
+      "episode_index": 27,
+      "target_scene_count": 10,
+      "production_window": "week_27",
+      "narrative_function": "escalation",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_28",
+      "season_id": "season_02",
+      "episode_index": 28,
+      "target_scene_count": 10,
+      "production_window": "week_28",
+      "narrative_function": "escalation",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    },
+    {
+      "episode_id": "episode_29",
+      "season_id": "season_02",
+      "episode_index": 29,
+      "target_scene_count": 10,
+      "production_window": "week_29",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.775,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_30",
+      "season_id": "season_02",
+      "episode_index": 30,
+      "target_scene_count": 10,
+      "production_window": "week_30",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.81,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_31",
+      "season_id": "season_02",
+      "episode_index": 31,
+      "target_scene_count": 10,
+      "production_window": "week_31",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.845,
+      "payoff_due_count": 0
+    },
+    {
+      "episode_id": "episode_32",
+      "season_id": "season_02",
+      "episode_index": 32,
+      "target_scene_count": 10,
+      "production_window": "week_32",
+      "narrative_function": "payoff cascade",
+      "attention_budget": 0.74,
+      "payoff_due_count": 1
+    }
+  ],
+  "provider_call_count": 0
+}

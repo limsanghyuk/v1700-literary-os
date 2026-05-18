@@ -1,0 +1,26 @@
+{
+  "stage": "112",
+  "baseline_stage": "111",
+  "title": "GitNexus-Aware NIE Preflight Bridge",
+  "status": "active",
+  "purpose": "Run GitNexus-aware impact, branchpoint survival, concept impact, shape check, and release integration before Stage113~Stage120 Narrative Intelligence Engine development.",
+  "required_reports": [
+    "release/current/stage112_gitnexus_nie_preflight_report.json",
+    "release/current/stage112_gitnexus_aware_nie_preflight_bridge_report.json",
+    "release/current/stage112_release_gate_report.json"
+  ],
+  "required_tools": [
+    "tools/run_stage112_gitnexus_nie_preflight.py",
+    "tools/run_stage112_release_gate.py"
+  ],
+  "required_gates": [
+    "stage112_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "python_fallback_required": true,
+  "gitnexus_sidecar_required": false
+}
+

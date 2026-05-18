@@ -1,0 +1,1060 @@
+{
+  "stage": "105",
+  "baseline_stage": "104",
+  "title": "Multi-Provider Creative Arbitration 2.0",
+  "status": "pass",
+  "issues": [],
+  "stage105_0_creative_arbitration_preflight": {
+    "status": "pass",
+    "baseline_stage": "104",
+    "stage104_gate_status": "pass",
+    "gitnexus_preflight_status": "python_fallback_visible",
+    "branchpoint_survival_status": "pass",
+    "provider_zero": true,
+    "issues": [],
+    "stage": "105.0",
+    "title": "Creative Arbitration Preflight",
+    "checks": {
+      "stage104_baseline_gate_pass": true,
+      "mandatory_predevelopment_visible": true,
+      "branchpoint_survival_pass": true,
+      "provider_zero": true,
+      "node2_boundary": true,
+      "raw_manuscript_leakage": true
+    },
+    "mandatory_predevelopment": {
+      "stage": "predevelopment",
+      "status": "pass",
+      "issues": [],
+      "priority_manifest": "manifests/predevelopment_priority_manifest.json",
+      "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+      "gitnexus": {
+        "installed": false,
+        "status": "fallback_required",
+        "optional_runtime_dependency": true
+      },
+      "invariant_checks": {
+        "provider_default_calls": true,
+        "stage101_gate_pass": true,
+        "active_stage_gate_pass": true,
+        "main_release_gate_pass": true,
+        "branchpoint_lineage_preserved": true,
+        "python_fallback_required": true,
+        "gitnexus_runtime_dependency_required_false": true
+      },
+      "must_check": [
+        "gitnexus_index_freshness",
+        "list_repos",
+        "query",
+        "context",
+        "impact",
+        "detect_changes",
+        "concept_impact",
+        "survival_matrix",
+        "symbol_to_branchpoint_trace",
+        "shape_check",
+        "change_review",
+        "release_gate_integration",
+        "repo_doctor",
+        "clean_zip_packaging"
+      ]
+    }
+  },
+  "stage105_1_provider_role_matrix": {
+    "stage": "105.1",
+    "title": "Provider Creative Role Matrix",
+    "status": "pass",
+    "issues": [],
+    "provider_count": 6,
+    "release_mode": "fixture_only",
+    "live_provider_call_count_in_release": 0,
+    "roles": [
+      {
+        "provider_id": "gpt_reasoning_lane",
+        "provider_kind": "gpt",
+        "assigned_tasks": [
+          "STRUCTURE",
+          "PROSE_SURFACE"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "outline reasoning",
+          "revision synthesis",
+          "constraint following"
+        ]
+      },
+      {
+        "provider_id": "claude_long_context_lane",
+        "provider_kind": "claude",
+        "assigned_tasks": [
+          "DIALOGUE",
+          "PROSE_SURFACE"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "long context",
+          "subtext dialogue",
+          "tone consistency"
+        ]
+      },
+      {
+        "provider_id": "gemini_visual_lane",
+        "provider_kind": "gemini",
+        "assigned_tasks": [
+          "VISUAL",
+          "SCENARIO_BEAT"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "visual beats",
+          "spatial reasoning",
+          "multimodal-ready scene planning"
+        ]
+      },
+      {
+        "provider_id": "ollama_local_privacy_lane",
+        "provider_kind": "ollama",
+        "assigned_tasks": [
+          "LOCAL_PRIVACY",
+          "STRUCTURE"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "local-first drafting",
+          "privacy-preserving fixtures",
+          "offline continuity"
+        ]
+      },
+      {
+        "provider_id": "fixture_release_lane",
+        "provider_kind": "fixture",
+        "assigned_tasks": [
+          "STRUCTURE",
+          "DIALOGUE",
+          "VISUAL",
+          "SCENARIO_BEAT"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "deterministic release evidence",
+          "provider-zero gate execution"
+        ]
+      },
+      {
+        "provider_id": "mock_contract_lane",
+        "provider_kind": "mock",
+        "assigned_tasks": [
+          "PROSE_SURFACE",
+          "LOCAL_PRIVACY"
+        ],
+        "release_mode": "FIXTURE_ONLY",
+        "live_call_allowed_in_release": false,
+        "raw_manuscript_allowed": false,
+        "strengths": [
+          "contract negative testing",
+          "leakage simulation"
+        ]
+      }
+    ]
+  },
+  "stage105_2_candidate_lanes": {
+    "stage": "105.2",
+    "title": "Provider Candidate Lanes",
+    "status": "pass",
+    "issues": [],
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "candidate_id": "cand_structure_gpt_fixture",
+        "provider_id": "gpt_reasoning_lane",
+        "task": "STRUCTURE",
+        "mode": "HYBRID",
+        "payload_kind": "fixture_summary",
+        "score": 8.7,
+        "rationale": "Strong outline synthesis without live provider call.",
+        "contains_raw_manuscript": false,
+        "live_call_count": 0
+      },
+      {
+        "candidate_id": "cand_dialogue_claude_fixture",
+        "provider_id": "claude_long_context_lane",
+        "task": "DIALOGUE",
+        "mode": "PROSE",
+        "payload_kind": "feature_only",
+        "score": 8.9,
+        "rationale": "Subtext and silence cue handling from feature-only context.",
+        "contains_raw_manuscript": false,
+        "live_call_count": 0
+      },
+      {
+        "candidate_id": "cand_visual_gemini_fixture",
+        "provider_id": "gemini_visual_lane",
+        "task": "VISUAL",
+        "mode": "SCENARIO",
+        "payload_kind": "feature_only",
+        "score": 8.8,
+        "rationale": "Visual beat and production-space planning.",
+        "contains_raw_manuscript": false,
+        "live_call_count": 0
+      },
+      {
+        "candidate_id": "cand_local_ollama_fixture",
+        "provider_id": "ollama_local_privacy_lane",
+        "task": "LOCAL_PRIVACY",
+        "mode": "HYBRID",
+        "payload_kind": "fixture_summary",
+        "score": 8.4,
+        "rationale": "Local-first privacy-preserving draft lane.",
+        "contains_raw_manuscript": false,
+        "live_call_count": 0
+      },
+      {
+        "candidate_id": "cand_release_fixture_control",
+        "provider_id": "fixture_release_lane",
+        "task": "SCENARIO_BEAT",
+        "mode": "SCENARIO",
+        "payload_kind": "fixture_summary",
+        "score": 8.6,
+        "rationale": "Deterministic release baseline for scenario beat contracts.",
+        "contains_raw_manuscript": false,
+        "live_call_count": 0
+      }
+    ],
+    "payload_policy": "feature_only_or_fixture_summary",
+    "live_provider_call_count_in_release": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "response_normalization": {
+      "stage": "105.2-normalization",
+      "status": "pass",
+      "issues": [],
+      "response_schema": "CreativeCandidate/v1",
+      "normalized_count": 5,
+      "normalized_candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        }
+      ]
+    }
+  },
+  "stage105_3_creative_arbitration": {
+    "stage": "105.3",
+    "title": "Creative Arbitration",
+    "status": "pass",
+    "issues": [],
+    "candidate_lanes": {
+      "stage": "105.2",
+      "title": "Provider Candidate Lanes",
+      "status": "pass",
+      "issues": [],
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        }
+      ],
+      "payload_policy": "feature_only_or_fixture_summary",
+      "live_provider_call_count_in_release": 0,
+      "raw_manuscript_provider_leakage": 0
+    },
+    "response_normalization": {
+      "stage": "105.2-normalization",
+      "status": "pass",
+      "issues": [],
+      "response_schema": "CreativeCandidate/v1",
+      "normalized_count": 5,
+      "normalized_candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        }
+      ]
+    },
+    "literary_scoring": {
+      "stage": "105.3-scoring",
+      "status": "pass",
+      "scoring_policy": "role_weighted_feature_only",
+      "weighted_candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.9
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 9.05
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.95
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.45
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.6
+        }
+      ]
+    },
+    "arbitration": {
+      "stage": "105.3",
+      "title": "Creative Arbitration Decisions",
+      "status": "pass",
+      "issues": [],
+      "decision_count": 3,
+      "decisions": [
+        {
+          "decision_id": "decision_prose_surface",
+          "mode": "PROSE",
+          "selected_candidate_ids": [
+            "cand_dialogue_claude_fixture",
+            "cand_structure_gpt_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_release_fixture_control",
+            "cand_visual_gemini_fixture"
+          ],
+          "merge_policy": "dialogue_subtext_plus_structure_local_privacy",
+          "final_authority": "V1700_Node3_Critic_Gate",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        },
+        {
+          "decision_id": "decision_scenario_room",
+          "mode": "SCENARIO",
+          "selected_candidate_ids": [
+            "cand_visual_gemini_fixture",
+            "cand_release_fixture_control",
+            "cand_structure_gpt_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_dialogue_claude_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "merge_policy": "visual_beats_plus_fixture_scenario_contract",
+          "final_authority": "V1700_Scenario_Room_Gate",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        },
+        {
+          "decision_id": "decision_hybrid_studio",
+          "mode": "HYBRID",
+          "selected_candidate_ids": [
+            "cand_structure_gpt_fixture",
+            "cand_dialogue_claude_fixture",
+            "cand_visual_gemini_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_release_fixture_control"
+          ],
+          "merge_policy": "role_weighted_multi_lane_with_writer_approval",
+          "final_authority": "V1700_Studio_Beta_Review_Queue",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        }
+      ],
+      "final_authority": "V1700 gates, not providers"
+    }
+  },
+  "stage105_4_release_policy": {
+    "stage": "105.4",
+    "title": "Provider Release Sandbox Policy",
+    "status": "pass",
+    "release_mode_provider": "fixture/mock only",
+    "live_provider_call_count_in_release": 0,
+    "provider_default_calls": 0,
+    "sandbox_opt_in_required_for_live_calls": true,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0,
+    "cost_ledger_status": "pass",
+    "timeout_policy_status": "pass"
+  },
+  "creative_arbitration_ensemble": {
+    "stage": "105",
+    "baseline_stage": "104",
+    "title": "Multi-Provider Creative Arbitration 2.0",
+    "status": "pass",
+    "issues": [],
+    "role_matrix": {
+      "stage": "105.1",
+      "title": "Provider Creative Role Matrix",
+      "status": "pass",
+      "issues": [],
+      "provider_count": 6,
+      "release_mode": "fixture_only",
+      "live_provider_call_count_in_release": 0,
+      "roles": [
+        {
+          "provider_id": "gpt_reasoning_lane",
+          "provider_kind": "gpt",
+          "assigned_tasks": [
+            "STRUCTURE",
+            "PROSE_SURFACE"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "outline reasoning",
+            "revision synthesis",
+            "constraint following"
+          ]
+        },
+        {
+          "provider_id": "claude_long_context_lane",
+          "provider_kind": "claude",
+          "assigned_tasks": [
+            "DIALOGUE",
+            "PROSE_SURFACE"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "long context",
+            "subtext dialogue",
+            "tone consistency"
+          ]
+        },
+        {
+          "provider_id": "gemini_visual_lane",
+          "provider_kind": "gemini",
+          "assigned_tasks": [
+            "VISUAL",
+            "SCENARIO_BEAT"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "visual beats",
+            "spatial reasoning",
+            "multimodal-ready scene planning"
+          ]
+        },
+        {
+          "provider_id": "ollama_local_privacy_lane",
+          "provider_kind": "ollama",
+          "assigned_tasks": [
+            "LOCAL_PRIVACY",
+            "STRUCTURE"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "local-first drafting",
+            "privacy-preserving fixtures",
+            "offline continuity"
+          ]
+        },
+        {
+          "provider_id": "fixture_release_lane",
+          "provider_kind": "fixture",
+          "assigned_tasks": [
+            "STRUCTURE",
+            "DIALOGUE",
+            "VISUAL",
+            "SCENARIO_BEAT"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "deterministic release evidence",
+            "provider-zero gate execution"
+          ]
+        },
+        {
+          "provider_id": "mock_contract_lane",
+          "provider_kind": "mock",
+          "assigned_tasks": [
+            "PROSE_SURFACE",
+            "LOCAL_PRIVACY"
+          ],
+          "release_mode": "FIXTURE_ONLY",
+          "live_call_allowed_in_release": false,
+          "raw_manuscript_allowed": false,
+          "strengths": [
+            "contract negative testing",
+            "leakage simulation"
+          ]
+        }
+      ]
+    },
+    "candidate_lanes": {
+      "stage": "105.2",
+      "title": "Provider Candidate Lanes",
+      "status": "pass",
+      "issues": [],
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0
+        }
+      ],
+      "payload_policy": "feature_only_or_fixture_summary",
+      "live_provider_call_count_in_release": 0,
+      "raw_manuscript_provider_leakage": 0
+    },
+    "response_normalization": {
+      "stage": "105.2-normalization",
+      "status": "pass",
+      "issues": [],
+      "response_schema": "CreativeCandidate/v1",
+      "normalized_count": 5,
+      "normalized_candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1"
+        }
+      ]
+    },
+    "literary_scoring": {
+      "stage": "105.3-scoring",
+      "status": "pass",
+      "scoring_policy": "role_weighted_feature_only",
+      "weighted_candidates": [
+        {
+          "candidate_id": "cand_structure_gpt_fixture",
+          "provider_id": "gpt_reasoning_lane",
+          "task": "STRUCTURE",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.7,
+          "rationale": "Strong outline synthesis without live provider call.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.9
+        },
+        {
+          "candidate_id": "cand_dialogue_claude_fixture",
+          "provider_id": "claude_long_context_lane",
+          "task": "DIALOGUE",
+          "mode": "PROSE",
+          "payload_kind": "feature_only",
+          "score": 8.9,
+          "rationale": "Subtext and silence cue handling from feature-only context.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 9.05
+        },
+        {
+          "candidate_id": "cand_visual_gemini_fixture",
+          "provider_id": "gemini_visual_lane",
+          "task": "VISUAL",
+          "mode": "SCENARIO",
+          "payload_kind": "feature_only",
+          "score": 8.8,
+          "rationale": "Visual beat and production-space planning.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.95
+        },
+        {
+          "candidate_id": "cand_local_ollama_fixture",
+          "provider_id": "ollama_local_privacy_lane",
+          "task": "LOCAL_PRIVACY",
+          "mode": "HYBRID",
+          "payload_kind": "fixture_summary",
+          "score": 8.4,
+          "rationale": "Local-first privacy-preserving draft lane.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.45
+        },
+        {
+          "candidate_id": "cand_release_fixture_control",
+          "provider_id": "fixture_release_lane",
+          "task": "SCENARIO_BEAT",
+          "mode": "SCENARIO",
+          "payload_kind": "fixture_summary",
+          "score": 8.6,
+          "rationale": "Deterministic release baseline for scenario beat contracts.",
+          "contains_raw_manuscript": false,
+          "live_call_count": 0,
+          "normalized": true,
+          "raw_manuscript_removed": true,
+          "response_schema": "CreativeCandidate/v1",
+          "weighted_score": 8.6
+        }
+      ]
+    },
+    "arbitration": {
+      "stage": "105.3",
+      "title": "Creative Arbitration Decisions",
+      "status": "pass",
+      "issues": [],
+      "decision_count": 3,
+      "decisions": [
+        {
+          "decision_id": "decision_prose_surface",
+          "mode": "PROSE",
+          "selected_candidate_ids": [
+            "cand_dialogue_claude_fixture",
+            "cand_structure_gpt_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_release_fixture_control",
+            "cand_visual_gemini_fixture"
+          ],
+          "merge_policy": "dialogue_subtext_plus_structure_local_privacy",
+          "final_authority": "V1700_Node3_Critic_Gate",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        },
+        {
+          "decision_id": "decision_scenario_room",
+          "mode": "SCENARIO",
+          "selected_candidate_ids": [
+            "cand_visual_gemini_fixture",
+            "cand_release_fixture_control",
+            "cand_structure_gpt_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_dialogue_claude_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "merge_policy": "visual_beats_plus_fixture_scenario_contract",
+          "final_authority": "V1700_Scenario_Room_Gate",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        },
+        {
+          "decision_id": "decision_hybrid_studio",
+          "mode": "HYBRID",
+          "selected_candidate_ids": [
+            "cand_structure_gpt_fixture",
+            "cand_dialogue_claude_fixture",
+            "cand_visual_gemini_fixture",
+            "cand_local_ollama_fixture"
+          ],
+          "rejected_candidate_ids": [
+            "cand_release_fixture_control"
+          ],
+          "merge_policy": "role_weighted_multi_lane_with_writer_approval",
+          "final_authority": "V1700_Studio_Beta_Review_Queue",
+          "provider_call_count": 0,
+          "raw_manuscript_leakage": 0,
+          "status": "PASS"
+        }
+      ],
+      "final_authority": "V1700 gates, not providers"
+    },
+    "release_provider_policy": {
+      "stage": "105.4",
+      "title": "Provider Release Sandbox Policy",
+      "status": "pass",
+      "release_mode_provider": "fixture/mock only",
+      "live_provider_call_count_in_release": 0,
+      "provider_default_calls": 0,
+      "sandbox_opt_in_required_for_live_calls": true,
+      "raw_manuscript_provider_leakage": 0,
+      "credential_leakage": 0,
+      "cost_ledger_status": "pass",
+      "timeout_policy_status": "pass"
+    },
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "writer_approval_required": true,
+    "python_fallback_required": true,
+    "gitnexus_runtime_dependency_required": false
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "arbitration_claim": "provider_role_arbitration_policy_not_live_provider_benchmark"
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_stub": true,
+  "concept_id": "foundation.review.human_agent_console",
+  "stage_origins": [
+    "STAGE18"
+  ],
+  "title": "Human/Agent Review Console",
+  "source_path": "archive/_cleanup_20260511/legacy_root_stage_artifacts/stage18_human_review_console_manifest.json",
+  "note": "Stage73 merged workspace evidence placeholder. Original evidence is available in uploaded Google Drive knowledge_base/packages. This stub satisfies reproducible gate packaging and preserves lineage pointer."
+}

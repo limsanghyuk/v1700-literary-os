@@ -1,0 +1,41 @@
+{
+  "stage": "75",
+  "plan": [
+    {
+      "stage": "76",
+      "target": "Stage60 Literary Engine Reabsorption",
+      "sources": [
+        "Stage50",
+        "Stage56",
+        "Stage57",
+        "Stage60"
+      ]
+    },
+    {
+      "stage": "77",
+      "target": "Node2 Rewrite and Reader Surface Restoration",
+      "sources": [
+        "Stage25",
+        "Stage71",
+        "V1840"
+      ]
+    },
+    {
+      "stage": "78",
+      "target": "Drama Execution Engine Reabsorption",
+      "sources": [
+        "Stage39"
+      ]
+    },
+    {
+      "stage": "79",
+      "target": "Full Literary OS Integration",
+      "sources": [
+        "Stage74",
+        "Stage76",
+        "Stage77",
+        "Stage78"
+      ]
+    }
+  ]
+}

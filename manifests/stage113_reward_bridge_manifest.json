@@ -1,0 +1,13 @@
+{
+  "stage": "113",
+  "title": "NIE Reward Signal Bridge Manifest",
+  "adr_alignment": [
+    "ADR-006 style LLM isolation",
+    "ADR-017 MAE reward architecture reference"
+  ],
+  "reward_formula": "R = 0.35*reader + 0.25*writer + 0.25*editor + 0.15*cultural",
+  "baseline_update": "R_baseline = 0.95*R_baseline + 0.05*R",
+  "coefficient_update": "bounded proposal only; no destructive coefficient write in Stage113",
+  "bridge_llm_call_allowed": false,
+  "release_gate_mae_source": "fixture_or_cached_only"
+}

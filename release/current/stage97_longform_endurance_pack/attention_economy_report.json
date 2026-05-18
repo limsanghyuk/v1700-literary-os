@@ -1,0 +1,168 @@
+{
+  "status": "pass",
+  "episode_attention_budgets": [
+    {
+      "episode_id": "EP01",
+      "attention_budget": 1.77,
+      "attention_value": 1.227,
+      "cognitive_load": 0.564,
+      "emotional_reward": 0.472,
+      "curiosity_reward": 0.378,
+      "hook_strength": 0.62,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP02",
+      "attention_budget": 1.78,
+      "attention_value": 1.483,
+      "cognitive_load": 0.549,
+      "emotional_reward": 0.494,
+      "curiosity_reward": 0.406,
+      "hook_strength": 0.63,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP03",
+      "attention_budget": 1.79,
+      "attention_value": 1.381,
+      "cognitive_load": 0.533,
+      "emotional_reward": 0.516,
+      "curiosity_reward": 0.434,
+      "hook_strength": 0.64,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP04",
+      "attention_budget": 1.9,
+      "attention_value": 1.637,
+      "cognitive_load": 0.517,
+      "emotional_reward": 0.537,
+      "curiosity_reward": 0.462,
+      "hook_strength": 0.85,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP05",
+      "attention_budget": 1.81,
+      "attention_value": 1.594,
+      "cognitive_load": 0.502,
+      "emotional_reward": 0.559,
+      "curiosity_reward": 0.491,
+      "hook_strength": 0.66,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP06",
+      "attention_budget": 1.82,
+      "attention_value": 1.492,
+      "cognitive_load": 0.486,
+      "emotional_reward": 0.581,
+      "curiosity_reward": 0.519,
+      "hook_strength": 0.67,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP07",
+      "attention_budget": 1.83,
+      "attention_value": 1.748,
+      "cognitive_load": 0.471,
+      "emotional_reward": 0.603,
+      "curiosity_reward": 0.547,
+      "hook_strength": 0.68,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP08",
+      "attention_budget": 1.94,
+      "attention_value": 2.125,
+      "cognitive_load": 0.455,
+      "emotional_reward": 0.625,
+      "curiosity_reward": 0.695,
+      "hook_strength": 0.89,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP09",
+      "attention_budget": 1.85,
+      "attention_value": 1.902,
+      "cognitive_load": 0.439,
+      "emotional_reward": 0.647,
+      "curiosity_reward": 0.603,
+      "hook_strength": 0.7,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP10",
+      "attention_budget": 1.86,
+      "attention_value": 1.858,
+      "cognitive_load": 0.424,
+      "emotional_reward": 0.669,
+      "curiosity_reward": 0.631,
+      "hook_strength": 0.71,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP11",
+      "attention_budget": 1.87,
+      "attention_value": 2.116,
+      "cognitive_load": 0.408,
+      "emotional_reward": 0.691,
+      "curiosity_reward": 0.659,
+      "hook_strength": 0.72,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP12",
+      "attention_budget": 1.98,
+      "attention_value": 2.013,
+      "cognitive_load": 0.392,
+      "emotional_reward": 0.712,
+      "curiosity_reward": 0.688,
+      "hook_strength": 0.93,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP13",
+      "attention_budget": 1.89,
+      "attention_value": 2.269,
+      "cognitive_load": 0.377,
+      "emotional_reward": 0.734,
+      "curiosity_reward": 0.716,
+      "hook_strength": 0.74,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP14",
+      "attention_budget": 1.9,
+      "attention_value": 2.48,
+      "cognitive_load": 0.407,
+      "emotional_reward": 0.756,
+      "curiosity_reward": 0.744,
+      "hook_strength": 0.75,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP15",
+      "attention_budget": 1.91,
+      "attention_value": 2.123,
+      "cognitive_load": 0.346,
+      "emotional_reward": 0.778,
+      "curiosity_reward": 0.772,
+      "hook_strength": 0.76,
+      "fatigue_risk": 0.0
+    },
+    {
+      "episode_id": "EP16",
+      "attention_budget": 2.02,
+      "attention_value": 2.47,
+      "cognitive_load": 0.36,
+      "emotional_reward": 0.8,
+      "curiosity_reward": 0.92,
+      "hook_strength": 0.97,
+      "fatigue_risk": 0.0
+    }
+  ],
+  "attention_fatigue_risk": 0.0,
+  "low_reward_high_cost_episodes": [],
+  "issues": []
+}

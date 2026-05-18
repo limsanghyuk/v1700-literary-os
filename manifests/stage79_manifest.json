@@ -1,0 +1,26 @@
+{
+  "stage": "79",
+  "title": "Full Literary OS Integration",
+  "canonical_package": "V1700_stage79_full_literary_os_integrated_repository.zip",
+  "basis": "Stage74 canonical baseline + Stage75 branchpoint audit + Stage76 Stage60 reabsorption + Stage77 Node2 rewrite + Stage78 drama execution",
+  "active_repo": "gpt/active/v1700/literary_generator",
+  "status": "release_ready_after_local_verification",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "included_stage_sequence": [
+    "75",
+    "76",
+    "77",
+    "78",
+    "79"
+  ],
+  "verification_commands": [
+    "python -m pytest -q tests",
+    "python tools/run_stage75_release_gate.py",
+    "python tools/run_stage76_release_gate.py",
+    "python tools/run_stage77_release_gate.py",
+    "python tools/run_stage78_release_gate.py",
+    "python tools/run_stage79_release_gate.py",
+    "python tools/run_release_gate.py"
+  ]
+}

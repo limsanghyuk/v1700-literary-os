@@ -1,0 +1,29 @@
+{
+  "stage": "126",
+  "title": "Cross-Lineage Intelligence Release",
+  "baseline_stage": "125",
+  "commands": {
+    "compileall": "pass",
+    "stage126_cross_lineage_release": "pass",
+    "stage126_release_gate": "pass",
+    "main_release_gate": "pass",
+    "repo_doctor": "pass",
+    "stage120_to_stage126_targeted_tests": "45 passed",
+    "pytest_collect_only": "390 tests collected"
+  },
+  "zip_policy": {
+    "FILELIST_txt_inside_zip": true,
+    "SHA256SUMS_txt_inside_zip": true,
+    "cache_files_allowed": false,
+    "backslash_paths_allowed": false
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "pne_runtime_training_count": 0,
+    "auto_repair_mutation_count": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  }
+}

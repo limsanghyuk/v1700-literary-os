@@ -1,0 +1,17 @@
+{
+  "stage": "83",
+  "title": "Commercial Longform Release Candidate",
+  "depends_on": ["stage82"],
+  "purpose": "Package a local-first commercial longform candidate with generated episode files, 30 actual rendered scenes, quality/refinement evidence, and blind critic benchmark evidence.",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "required_outputs": [
+    "sample_longform_project_01/generated_episode_01.md",
+    "sample_longform_project_01/generated_episode_02.md",
+    "sample_longform_project_01/generated_episode_03.md",
+    "sample_longform_project_01/quality_report.json",
+    "sample_longform_project_01/refinement_trace.json",
+    "sample_longform_project_01/blind_eval_report.md",
+    "sample_longform_project_01/commercial_release_manifest.json"
+  ]
+}

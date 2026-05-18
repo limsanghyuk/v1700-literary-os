@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "conflict_count": 6,
+  "blocker_count": 1,
+  "high_count": 3,
+  "conflicts": [
+    {
+      "conflict_id": "C121-001",
+      "subject": "NIE version naming",
+      "trunk_value": "Gate25 NIE v1.0",
+      "candidate_value": "NIE v2.0",
+      "severity": "medium",
+      "decision": "Keep Stage120 naming; register V525 as successor candidate",
+      "required_resolution_stage": "stage121"
+    },
+    {
+      "conflict_id": "C121-002",
+      "subject": "AMW alpha bounds",
+      "trunk_value": "[0.30,0.80]",
+      "candidate_value": "[0.05,0.95]",
+      "severity": "high",
+      "decision": "Keep Stage120 bounds; defer wider range to Stage122 adversarial drift tests",
+      "required_resolution_stage": "stage122"
+    },
+    {
+      "conflict_id": "C121-003",
+      "subject": "Gate25 authority",
+      "trunk_value": "Stage120 Gate25 primary",
+      "candidate_value": "V525 Gate25 candidate",
+      "severity": "high",
+      "decision": "Do not replace primary Gate25; map V525 Gate25 as Gate25-v2 candidate",
+      "required_resolution_stage": "stage122"
+    },
+    {
+      "conflict_id": "C121-004",
+      "subject": "Gate28/Gate29 authority",
+      "trunk_value": "not present in Stage120",
+      "candidate_value": "candidate secondary gates",
+      "severity": "medium",
+      "decision": "Introduce as secondary/advisory until Stage125 governor",
+      "required_resolution_stage": "stage123-stage125"
+    },
+    {
+      "conflict_id": "C121-005",
+      "subject": "Candidate packaging",
+      "trunk_value": "clean ZIP with internal FILELIST/SHA256SUMS",
+      "candidate_value": "candidate archives lack internal FILELIST/SHA256SUMS; V545 has cache",
+      "severity": "blocker",
+      "decision": "Direct merge blocked; extract formulas only",
+      "required_resolution_stage": "stage121"
+    },
+    {
+      "conflict_id": "C121-006",
+      "subject": "PNE runtime learning",
+      "trunk_value": "release gates deterministic fixtures only",
+      "candidate_value": "DebtPredictor can train RandomForest",
+      "severity": "high",
+      "decision": "Training forbidden in release gate; frozen fixture/model-card required",
+      "required_resolution_stage": "stage124"
+    }
+  ],
+  "direct_merge_blocked": true,
+  "resolution_required_before_absorption": [
+    "C121-002",
+    "C121-003",
+    "C121-005",
+    "C121-006"
+  ]
+}

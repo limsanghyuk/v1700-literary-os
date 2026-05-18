@@ -1,0 +1,31 @@
+{
+  "stage": "84",
+  "status": "pass",
+  "decisions": [
+    {
+      "decision": "copy_wholesale_v370",
+      "result": "rejected",
+      "risk": "Would bypass V1700 node authority, hierarchy, gates, and release evidence."
+    },
+    {
+      "decision": "adapter_only",
+      "result": "rejected",
+      "risk": "Would add routing without improving reader-facing prose surface."
+    },
+    {
+      "decision": "surface_runtime_absorption",
+      "result": "selected",
+      "reason": "Absorbs V370 muscle while preserving V1700 Korean drama skeleton and provider-zero contract."
+    },
+    {
+      "decision": "provider_default_calls",
+      "result": "locked_to_zero",
+      "reason": "Commercial candidate remains local-first by default."
+    },
+    {
+      "decision": "node2_raw_reveal_access",
+      "result": "locked_to_zero",
+      "reason": "Node2 may improve surface only and cannot access raw reveal authority."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "100",
+  "baseline_stage": "99",
+  "title": "Literary OS 1.0 Release Candidate",
+  "status": "active",
+  "release_candidate": true,
+  "required_gate": "stage100_release_gate",
+  "required_evidence": [
+    "release/current/stage100_0_rc_preflight_report.json",
+    "release/current/stage100_dual_mode_evaluation_report.json",
+    "release/current/stage100_provider_certification_report.json",
+    "release/current/stage100_v430_comparison_report.json",
+    "release/current/stage100_readiness_report.json",
+    "release/current/stage100_literary_os_rc_report.json",
+    "release/current/stage100_release_gate_report.json"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "gitnexus_runtime_dependency_required": false,
+  "python_fallback_required": true
+}
+

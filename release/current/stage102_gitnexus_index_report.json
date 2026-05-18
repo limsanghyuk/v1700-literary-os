@@ -1,0 +1,23 @@
+{
+  "stage": "102",
+  "status": "pass",
+  "tool": "gitnexus",
+  "version": "1.6.4",
+  "indexed_at": "2026-05-15T18:23:50+09:00",
+  "repository": "C:\\AI_Codex\\codex-work\\gpt\\work\\_latest_stage99_preflight",
+  "runtime_dependency_required": false,
+  "optional_sidecar": true,
+  "python_fallback_required": true,
+  "metrics": {
+    "files": 1173,
+    "nodes": 9448,
+    "edges": 14713,
+    "clusters": 159,
+    "flows": 292
+  },
+  "notes": [
+    "GitNexus was refreshed after Stage102 implementation.",
+    "The index is excluded from the release ZIP as a developer sidecar.",
+    "Stage102 release authority remains GraphNexus/Branchpoint/release-gate based with provider default calls at zero."
+  ]
+}

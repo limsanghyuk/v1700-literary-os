@@ -1,0 +1,32 @@
+{
+  "stage": "stage118",
+  "components": {
+    "NILOrchestrator": "src/v1700/nie/nil/nil_orchestrator.py",
+    "NILLoopReport": "src/v1700/nie/nil/contracts.py",
+    "Stage118Orchestrator": "src/v1700/stage118/orchestrator.py"
+  },
+  "loop_order": [
+    "CharacterInfluenceMatrix",
+    "StructuralBalance",
+    "AdaptiveMomentumWeights",
+    "MAERewardSignal",
+    "PhysicsRewardBridge",
+    "CoefficientUpdateProposal",
+    "DomainSpecificRAGFusion",
+    "NarrativeTensionCurve"
+  ],
+  "consumes_stage_reports": [
+    "stage113",
+    "stage114",
+    "stage115",
+    "stage116",
+    "stage117"
+  ],
+  "forbidden": [
+    "live provider call in release gate",
+    "PhysicsRewardBridge LLM call",
+    "QueryIntentClassifier LLM call",
+    "raw manuscript provider leakage",
+    "Node2 raw reveal access"
+  ]
+}

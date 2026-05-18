@@ -1,0 +1,15 @@
+{
+  "stage": "97.1",
+  "name": "Adversarial Longform Validation Hardening",
+  "baseline_stage": "97",
+  "requires_stage97_fixed": true,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "adversarial_cases_total": 20,
+  "adversarial_cases_matched_expectation": 20,
+  "normal_cases_passed": 1,
+  "blocked_cases_passed": 19,
+  "branchpoint_lineage_preserved": true,
+  "release_gate_status": "pass"
+}

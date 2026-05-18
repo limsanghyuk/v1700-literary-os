@@ -1,0 +1,517 @@
+{
+  "stage": "128",
+  "baseline_stage": "127",
+  "title": "SharedWorld / SharedCharacter Read-Only Absorption",
+  "status": "pass",
+  "issues": [],
+  "read_only_absorption": true,
+  "shared_character_read_only_adapter_pass": true,
+  "shared_world_read_only_adapter_pass": true,
+  "cross_project_write": 0,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "full_text_exported": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "shared_world_source_of_truth_promotion_allowed": false,
+  "direct_v571_merge_performed": false,
+  "stage129_canon_governor_required": true,
+  "branchpoint_lineage_preserved": true,
+  "python_fallback_used": true,
+  "parts": {
+    "shared_character_adapter": {
+      "adapter_name": "SharedCharacterReadOnlyAdapter",
+      "status": "PASS",
+      "read_only": true,
+      "allowed_reads": 2,
+      "blocked_reads": 1,
+      "blocked_writes": 1,
+      "unauthorized_cross_reads": 0,
+      "unauthorized_cross_writes": 0,
+      "raw_text_exported": false,
+      "raw_manuscript_provider_leakage": 0,
+      "evidence": {
+        "records_feature_only": [
+          {
+            "character_id": "char_alpha_mentor",
+            "owner_project_id": "project_alpha",
+            "owner_id": "author_a",
+            "display_name": "Alpha Mentor",
+            "public_domain_flag": false,
+            "license_policy_id": "author_a_private",
+            "surface_traits": [
+              "mentor",
+              "strategic",
+              "recurring"
+            ],
+            "raw_text_redacted": true
+          },
+          {
+            "character_id": "char_beta_guest",
+            "owner_project_id": "project_beta",
+            "owner_id": "author_a",
+            "display_name": "Beta Guest",
+            "public_domain_flag": false,
+            "license_policy_id": "shared_with_author_a_projects",
+            "surface_traits": [
+              "guest",
+              "cross-reference-safe"
+            ],
+            "raw_text_redacted": false
+          },
+          {
+            "character_id": "char_public_legend",
+            "owner_project_id": "public_domain",
+            "owner_id": "public",
+            "display_name": "Public Legend",
+            "public_domain_flag": true,
+            "license_policy_id": "public_domain",
+            "surface_traits": [
+              "legend",
+              "public-domain"
+            ],
+            "raw_text_redacted": false
+          }
+        ],
+        "allowed_requests": [
+          {
+            "source_project_id": "project_beta",
+            "target_project_id": "project_alpha",
+            "resource_id": "char_alpha_mentor",
+            "resource_type": "shared_character",
+            "access_type": "read",
+            "same_owner": true,
+            "license_edge_exists": false,
+            "author_approval_valid": true,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": false,
+            "access_allowed": true,
+            "write_disabled_by_stage128": false
+          },
+          {
+            "source_project_id": "project_gamma",
+            "target_project_id": "public_domain",
+            "resource_id": "char_public_legend",
+            "resource_type": "shared_character",
+            "access_type": "read",
+            "same_owner": false,
+            "license_edge_exists": false,
+            "author_approval_valid": true,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": true,
+            "access_allowed": true,
+            "write_disabled_by_stage128": false
+          }
+        ],
+        "blocked_requests": [
+          {
+            "source_project_id": "project_alpha",
+            "target_project_id": "project_beta",
+            "resource_id": "char_beta_guest",
+            "resource_type": "shared_character",
+            "access_type": "write",
+            "same_owner": true,
+            "license_edge_exists": true,
+            "author_approval_valid": true,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": false,
+            "access_allowed": false,
+            "write_disabled_by_stage128": true
+          },
+          {
+            "source_project_id": "project_delta",
+            "target_project_id": "project_alpha",
+            "resource_id": "char_alpha_mentor",
+            "resource_type": "shared_character",
+            "access_type": "read",
+            "same_owner": false,
+            "license_edge_exists": false,
+            "author_approval_valid": false,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": false,
+            "access_allowed": false,
+            "write_disabled_by_stage128": false
+          }
+        ],
+        "license_edge_required_for_cross_owner_private_character": true,
+        "public_domain_reference_allowed": true
+      }
+    },
+    "shared_world_adapter": {
+      "adapter_name": "SharedWorldReadOnlyAdapter",
+      "status": "PASS",
+      "read_only": true,
+      "allowed_reads": 1,
+      "blocked_reads": 1,
+      "blocked_writes": 0,
+      "unauthorized_cross_reads": 0,
+      "unauthorized_cross_writes": 0,
+      "raw_text_exported": false,
+      "raw_manuscript_provider_leakage": 0,
+      "evidence": {
+        "worlds_feature_only": [
+          {
+            "world_id": "world_alpha_city",
+            "owner_project_id": "project_alpha",
+            "owner_id": "author_a",
+            "display_name": "Alpha City",
+            "world_rule_summary": [
+              "late-night judiciary",
+              "cold-case archive"
+            ],
+            "canon_source_of_truth": false,
+            "raw_text_redacted": true
+          },
+          {
+            "world_id": "world_beta_port",
+            "owner_project_id": "project_beta",
+            "owner_id": "author_a",
+            "display_name": "Beta Port",
+            "world_rule_summary": [
+              "port syndicate",
+              "fog-bound logistics"
+            ],
+            "canon_source_of_truth": false,
+            "raw_text_redacted": false
+          }
+        ],
+        "allowed_requests": [
+          {
+            "source_project_id": "project_beta",
+            "target_project_id": "project_alpha",
+            "resource_id": "world_alpha_city",
+            "resource_type": "shared_world",
+            "access_type": "reference",
+            "same_owner": true,
+            "license_edge_exists": true,
+            "author_approval_valid": true,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": false,
+            "access_allowed": true,
+            "write_disabled_by_stage128": false
+          }
+        ],
+        "blocked_requests": [
+          {
+            "source_project_id": "project_delta",
+            "target_project_id": "project_alpha",
+            "resource_id": "world_alpha_city",
+            "resource_type": "shared_world",
+            "access_type": "adapt",
+            "same_owner": false,
+            "license_edge_exists": false,
+            "author_approval_valid": false,
+            "isolation_policy_allows": true,
+            "resource_scope_permits": true,
+            "public_domain_flag": false,
+            "access_allowed": false,
+            "write_disabled_by_stage128": false
+          }
+        ],
+        "shared_world_is_not_source_of_truth": true,
+        "canon_conflict_assessment": [
+          {
+            "world_id": "world_alpha_city",
+            "timeline_conflict": 0.0,
+            "world_rule_conflict": 0.0,
+            "character_identity_conflict": 0.0,
+            "relationship_conflict": 0.0,
+            "canon_conflict_score": 0.0,
+            "canon_status": "PASS"
+          },
+          {
+            "world_id": "world_beta_port",
+            "timeline_conflict": 0.15,
+            "world_rule_conflict": 0.1,
+            "character_identity_conflict": 0.0,
+            "relationship_conflict": 0.1,
+            "canon_conflict_score": 0.0975,
+            "canon_status": "PASS"
+          },
+          {
+            "world_id": "blocked_canon_collision",
+            "timeline_conflict": 1.0,
+            "world_rule_conflict": 1.0,
+            "character_identity_conflict": 0.5,
+            "relationship_conflict": 0.6,
+            "canon_conflict_score": 0.84,
+            "canon_status": "BLOCK"
+          }
+        ],
+        "stage129_canon_governor_required_for_write_or_truth_promotion": true
+      }
+    },
+    "license_boundary_adapter": {
+      "status": "pass",
+      "stage": "128",
+      "access_formula": "read_only AND (same_owner OR license_edge_exists OR public_domain_flag) AND author_approval_valid AND isolation_policy_allows AND resource_scope_permits",
+      "safe_requests": [
+        {
+          "source_project_id": "project_beta",
+          "target_project_id": "project_alpha",
+          "resource_id": "char_alpha_mentor",
+          "resource_type": "shared_character",
+          "access_type": "read",
+          "same_owner": true,
+          "license_edge_exists": false,
+          "author_approval_valid": true,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": false,
+          "access_allowed": true,
+          "write_disabled_by_stage128": false
+        },
+        {
+          "source_project_id": "project_beta",
+          "target_project_id": "project_alpha",
+          "resource_id": "world_alpha_city",
+          "resource_type": "shared_world",
+          "access_type": "reference",
+          "same_owner": true,
+          "license_edge_exists": true,
+          "author_approval_valid": true,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": false,
+          "access_allowed": true,
+          "write_disabled_by_stage128": false
+        },
+        {
+          "source_project_id": "project_gamma",
+          "target_project_id": "public_domain",
+          "resource_id": "char_public_legend",
+          "resource_type": "shared_character",
+          "access_type": "read",
+          "same_owner": false,
+          "license_edge_exists": false,
+          "author_approval_valid": true,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": true,
+          "access_allowed": true,
+          "write_disabled_by_stage128": false
+        }
+      ],
+      "blocked_probe_requests": [
+        {
+          "source_project_id": "project_alpha",
+          "target_project_id": "project_beta",
+          "resource_id": "char_beta_guest",
+          "resource_type": "shared_character",
+          "access_type": "write",
+          "same_owner": true,
+          "license_edge_exists": true,
+          "author_approval_valid": true,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": false,
+          "access_allowed": false,
+          "write_disabled_by_stage128": true
+        },
+        {
+          "source_project_id": "project_delta",
+          "target_project_id": "project_alpha",
+          "resource_id": "char_alpha_mentor",
+          "resource_type": "shared_character",
+          "access_type": "read",
+          "same_owner": false,
+          "license_edge_exists": false,
+          "author_approval_valid": false,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": false,
+          "access_allowed": false,
+          "write_disabled_by_stage128": false
+        },
+        {
+          "source_project_id": "project_delta",
+          "target_project_id": "project_alpha",
+          "resource_id": "world_alpha_city",
+          "resource_type": "shared_world",
+          "access_type": "adapt",
+          "same_owner": false,
+          "license_edge_exists": false,
+          "author_approval_valid": false,
+          "isolation_policy_allows": true,
+          "resource_scope_permits": true,
+          "public_domain_flag": false,
+          "access_allowed": false,
+          "write_disabled_by_stage128": false
+        }
+      ],
+      "license_edge_missing_but_access_allowed": false,
+      "cross_project_write_allowed": false,
+      "author_approval_required": true,
+      "read_only_absorption": true
+    },
+    "project_isolation_guard": {
+      "status": "pass",
+      "project_memory_namespaces": [
+        "project_alpha",
+        "project_beta",
+        "project_gamma",
+        "project_delta"
+      ],
+      "unauthorized_cross_reads": 0,
+      "unauthorized_cross_writes": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "cross_project_write": 0,
+      "raw_manuscript_sharing": 0,
+      "full_text_exported": false,
+      "namespace_isolation_preserved": true
+    },
+    "canon_conflict_report": {
+      "status": "pass",
+      "canon_conflicts": [
+        {
+          "conflict_id": "canon_safe_001",
+          "world_id": "world_alpha_city",
+          "timeline_conflict": 0.0,
+          "world_rule_conflict": 0.0,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.0,
+          "recommended_action": "allow read-only projection",
+          "canon_conflict_score": 0.0,
+          "status": "PASS"
+        },
+        {
+          "conflict_id": "canon_warn_001",
+          "world_id": "world_beta_port",
+          "timeline_conflict": 0.35,
+          "world_rule_conflict": 0.2,
+          "character_identity_conflict": 0.0,
+          "relationship_conflict": 0.1,
+          "recommended_action": "warn and defer authority to Stage129",
+          "canon_conflict_score": 0.1975,
+          "status": "PASS"
+        },
+        {
+          "conflict_id": "canon_block_001",
+          "world_id": "blocked_canon_collision",
+          "timeline_conflict": 1.0,
+          "world_rule_conflict": 1.0,
+          "character_identity_conflict": 0.5,
+          "relationship_conflict": 0.6,
+          "recommended_action": "block write/truth promotion; require Stage129 Canon Governor",
+          "canon_conflict_score": 0.84,
+          "status": "BLOCK"
+        }
+      ],
+      "blocking_conflicts_detected": 1,
+      "shared_world_source_of_truth_promotion_allowed": false,
+      "stage129_canon_governor_required": true
+    },
+    "gitnexus_preflight": {
+      "status": "pass",
+      "stage": "128",
+      "gitnexus_sidecar_available": true,
+      "python_fallback_used": true,
+      "index_fresh": true,
+      "repo_path": "C:\\AI_Codex\\codex-work\\gpt\\analysis\\stage126_gitnexus_index_20260518",
+      "indexed_at": "2026-05-18T08:44:44.783Z",
+      "stats": {
+        "files": 2121,
+        "nodes": 16918,
+        "edges": 26030,
+        "communities": 271,
+        "processes": 300,
+        "embeddings": 0
+      },
+      "capabilities": {
+        "graph": {
+          "provider": "ladybugdb",
+          "status": "available"
+        },
+        "fts": {
+          "provider": "ladybugdb-fts",
+          "status": "available"
+        },
+        "vectorSearch": {
+          "provider": "exact-scan",
+          "status": "unavailable",
+          "exactScanLimit": 10000,
+          "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+        }
+      },
+      "shape_check": {
+        "status": "pass",
+        "missing": []
+      },
+      "result_normalizer": {
+        "status": "pass",
+        "source": "meta_snapshot+python_fallback"
+      },
+      "concept_impact": {
+        "provider_zero_preserved": true,
+        "node2_boundary_preserved": true,
+        "raw_manuscript_leakage_zero": true,
+        "cross_work_memory_isolation_preserved": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "survival_matrix": {
+        "Stage127_Preflight": true,
+        "Gate25_NIE_primary_authority": true,
+        "Gate28_ASD_secondary_quality": true,
+        "Gate29_PNE_secondary_predictive": true,
+        "Stage125_Governor": true,
+        "Stage126_CrossLineageRelease": true
+      },
+      "symbol_to_branchpoint_trace": {
+        "run_stage128_read_only_absorption": [
+          "shared_character_read_only",
+          "shared_world_read_only",
+          "provider_zero"
+        ],
+        "run_stage128_release_gate": [
+          "release_gate",
+          "repo_doctor",
+          "clean_packaging"
+        ]
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "import_edges_total": 2722,
+        "critical_paths_checked": {
+          "src/v1700/shared_readonly_absorption/contracts.py": true,
+          "src/v1700/shared_readonly_absorption/shared_character_adapter.py": true,
+          "src/v1700/shared_readonly_absorption/shared_world_adapter.py": true,
+          "src/v1700/shared_readonly_absorption/license_boundary.py": true,
+          "src/v1700/stage128/stage128_runner.py": true,
+          "src/v1700/gates/stage128_release_gate.py": true,
+          "tools/run_stage128_read_only_absorption.py": true,
+          "tools/run_stage128_release_gate.py": true,
+          "tests/test_stage128_read_only_absorption.py": true
+        },
+        "manifests_checked": {
+          "manifests/stage128_manifest.json": true,
+          "manifests/stage128_read_only_absorption_manifest.json": true,
+          "manifests/stage128_branchpoint_trace_manifest.json": true
+        },
+        "release_evidence_checked": {
+          "release/current/stage128_read_only_absorption_report.json": true,
+          "release/current/stage128_release_gate_report.json": true,
+          "release/current/stage128_read_only_absorption_pack/shared_character_adapter_report.json": true
+        },
+        "orphan_critical_nodes": [],
+        "affected_tests": [
+          "tests/test_stage128_read_only_absorption.py"
+        ],
+        "affected_processes": [
+          "release_gate",
+          "repo_doctor",
+          "clean_packaging",
+          "shared_read_only_absorption"
+        ]
+      }
+    }
+  }
+}

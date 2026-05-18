@@ -1,0 +1,70 @@
+{
+  "stage": "100.2",
+  "baseline_stage": "100.1",
+  "title": "Multi-Provider Contract Certification",
+  "status": "pass",
+  "issues": [],
+  "providers_certified": 6,
+  "provider_contract_status": "pass",
+  "live_provider_call_count_in_release": 0,
+  "provider_default_calls": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "cost_ledger_status": "pass",
+  "provider_pack": "release/current/stage100_provider_pack",
+  "results": [
+    {
+      "provider_id": "fixture",
+      "provider_kind": "fixture",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "mock",
+      "provider_kind": "mock",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "gpt",
+      "provider_kind": "gpt",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "claude",
+      "provider_kind": "claude",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "gemini",
+      "provider_kind": "gemini",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    },
+    {
+      "provider_id": "ollama",
+      "provider_kind": "ollama",
+      "contract_status": "PASS",
+      "live_call_count_in_release": 0,
+      "response_normalization_status": "pass",
+      "cost_ledger_status": "pass",
+      "raw_manuscript_leakage": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "repoPath": "C:\\AI_Codex\\codex-work\\gpt\\work\\_latest_stage99_preflight",
+  "lastCommit": "",
+  "indexedAt": "2026-05-15T09:47:08.335Z",
+  "stats": {
+    "files": 1225,
+    "nodes": 9793,
+    "edges": 15233,
+    "communities": 162,
+    "processes": 298,
+    "embeddings": 0
+  },
+  "capabilities": {
+    "graph": {
+      "provider": "ladybugdb",
+      "status": "available"
+    },
+    "fts": {
+      "provider": "ladybugdb-fts",
+      "status": "available"
+    },
+    "vectorSearch": {
+      "provider": "exact-scan",
+      "status": "unavailable",
+      "exactScanLimit": 10000,
+      "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "97.2",
+  "name": "Unified Multi-Provider Runtime Governance Layer",
+  "baseline_stage": "97.1",
+  "requires_stage97_1_fixed": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "task_router_llm0": true,
+  "provider_health_live_check_in_release_gate": 0,
+  "branchpoint_lineage_preserved": true,
+  "release_gate_status": "pass"
+}

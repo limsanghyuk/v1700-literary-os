@@ -1,0 +1,178 @@
+{
+  "stage": "93",
+  "status": "pass",
+  "mode": "dry_run_release_safe",
+  "opt_in_required": true,
+  "execution_allowed": false,
+  "configured_provider_count": 4,
+  "credential_audit": {
+    "stage": "93",
+    "status": "pass",
+    "credential_statuses": [
+      {
+        "provider_id": "local_ollama",
+        "provider_kind": "ollama",
+        "requires_secret": false,
+        "api_key_env": null,
+        "env_present": true,
+        "redacted_fingerprint": null,
+        "status": "secret_not_required",
+        "issues": []
+      },
+      {
+        "provider_id": "gpt_openai",
+        "provider_kind": "gpt",
+        "requires_secret": true,
+        "api_key_env": "OPENAI_API_KEY",
+        "env_present": false,
+        "redacted_fingerprint": null,
+        "status": "missing_optional_for_dry_run",
+        "issues": [
+          "secret_env_not_present"
+        ]
+      },
+      {
+        "provider_id": "claude_anthropic",
+        "provider_kind": "claude",
+        "requires_secret": true,
+        "api_key_env": "ANTHROPIC_API_KEY",
+        "env_present": false,
+        "redacted_fingerprint": null,
+        "status": "missing_optional_for_dry_run",
+        "issues": [
+          "secret_env_not_present"
+        ]
+      },
+      {
+        "provider_id": "gemini_google",
+        "provider_kind": "gemini",
+        "requires_secret": true,
+        "api_key_env": "GOOGLE_API_KEY",
+        "env_present": false,
+        "redacted_fingerprint": null,
+        "status": "missing_optional_for_dry_run",
+        "issues": [
+          "secret_env_not_present"
+        ]
+      }
+    ],
+    "secret_value_leaked": false,
+    "plain_secret_preview_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "issues": []
+  },
+  "normalization_report": {
+    "stage": "93",
+    "status": "pass",
+    "normalized_responses": [
+      {
+        "provider_id": "local_ollama",
+        "provider_kind": "ollama",
+        "request_id": "stage93-response-normalization-probe",
+        "normalized_status": "pass",
+        "text_sha256": "86AF3487513A945D64A0D577A589EEA2CCC82BCE2581FF13A7925E2D0AC86B1E",
+        "text_preview": "[local_ollama] dry-run adapter ready for task=response_normalization_probe; no provider call performed.",
+        "finish_reason": "stop",
+        "input_tokens": 12,
+        "output_tokens": 24,
+        "live_call_performed": false,
+        "safety_labels": [],
+        "issues": []
+      },
+      {
+        "provider_id": "gpt_openai",
+        "provider_kind": "gpt",
+        "request_id": "stage93-response-normalization-probe",
+        "normalized_status": "pass",
+        "text_sha256": "640FD239DBC9592FA2B99D59C632A50474331A3C40FB8A26686F2ECFB559A20B",
+        "text_preview": "[gpt_openai] dry-run adapter ready for task=response_normalization_probe; no provider call performed.",
+        "finish_reason": "completed",
+        "input_tokens": 12,
+        "output_tokens": 24,
+        "live_call_performed": false,
+        "safety_labels": [],
+        "issues": []
+      },
+      {
+        "provider_id": "claude_anthropic",
+        "provider_kind": "claude",
+        "request_id": "stage93-response-normalization-probe",
+        "normalized_status": "pass",
+        "text_sha256": "632396F34510BF02C1D2CB5D23D6CB31ECE151F6A9E4ABE9154CF1B1EF9A228C",
+        "text_preview": "[claude_anthropic] dry-run adapter ready for task=response_normalization_probe; no provider call performed.",
+        "finish_reason": "end_turn",
+        "input_tokens": 12,
+        "output_tokens": 24,
+        "live_call_performed": false,
+        "safety_labels": [],
+        "issues": []
+      },
+      {
+        "provider_id": "gemini_google",
+        "provider_kind": "gemini",
+        "request_id": "stage93-response-normalization-probe",
+        "normalized_status": "pass",
+        "text_sha256": "DA2CE15B65B06AC010D5852E710C807927DA4D0499792BCE2A2D44EDE3663AAF",
+        "text_preview": "[gemini_google] dry-run adapter ready for task=response_normalization_probe; no provider call performed.",
+        "finish_reason": "STOP",
+        "input_tokens": 12,
+        "output_tokens": 24,
+        "live_call_performed": false,
+        "safety_labels": [],
+        "issues": []
+      }
+    ],
+    "normalized_provider_count": 4,
+    "live_call_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0,
+    "issues": []
+  },
+  "sandbox_transcript": [
+    {
+      "provider_id": "local_ollama",
+      "provider_kind": "ollama",
+      "status": "dry_run_ready",
+      "live_call_performed": false,
+      "content_sha256": "067B718BE5862964BF8A98D97E805E89045A717D2A0FD866DC89EDB16495A215",
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "gpt_openai",
+      "provider_kind": "gpt",
+      "status": "dry_run_ready",
+      "live_call_performed": false,
+      "content_sha256": "91012CC743A00E4A20D1A7E919DDB32177BD3714A9510C994AA31731278F9719",
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "claude_anthropic",
+      "provider_kind": "claude",
+      "status": "dry_run_ready",
+      "live_call_performed": false,
+      "content_sha256": "29BC1723EC02A96C476FDF6D7125592B0BAD42EB980B53B6F23D6B21A38B6694",
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    },
+    {
+      "provider_id": "gemini_google",
+      "provider_kind": "gemini",
+      "status": "dry_run_ready",
+      "live_call_performed": false,
+      "content_sha256": "BBB1327C267369EE7F3C22DE12146A2DC4073401E040F1BBF1BA5164D2478FC0",
+      "issues": [
+        "live_call_disabled_by_default"
+      ]
+    }
+  ],
+  "live_call_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access_count": 0,
+  "issues": []
+}

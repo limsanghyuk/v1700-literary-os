@@ -1,0 +1,5 @@
+studio_project_report.json
+episode_board_report.json
+revision_queue_report.json
+review_package_report.json
+publishing_package_manifest.json

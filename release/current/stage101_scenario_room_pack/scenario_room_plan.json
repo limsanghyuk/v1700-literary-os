@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "plan": {
+    "series_id": "stage101-scenario-room-fixture",
+    "episode_id": "ep01",
+    "mode": "SCENARIO",
+    "scene_beat_count": 3,
+    "action_movement_count": 2,
+    "dialogue_silence_cue_count": 2,
+    "prop_reveal_cue_count": 2,
+    "reveal_budget_safe": true,
+    "node2_raw_reveal_access": 0,
+    "provider_call_count": 0
+  }
+}

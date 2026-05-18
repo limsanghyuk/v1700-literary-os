@@ -1,0 +1,290 @@
+{
+  "status": "pass",
+  "scene_count": 222,
+  "weak_scene_count": 0,
+  "weak_scene_ratio": 0.0,
+  "removable_scene_candidates": [],
+  "scenes": [
+    {
+      "scene_id": "EP01_SC01",
+      "episode_id": "EP01",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC02",
+      "episode_id": "EP01",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC03",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC04",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC05",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC06",
+      "episode_id": "EP01",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC07",
+      "episode_id": "EP01",
+      "changed_dimensions": 2,
+      "scene_necessity_score": 0.222,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC08",
+      "episode_id": "EP01",
+      "changed_dimensions": 5,
+      "scene_necessity_score": 0.556,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC09",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC10",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC11",
+      "episode_id": "EP01",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP01_SC12",
+      "episode_id": "EP01",
+      "changed_dimensions": 6,
+      "scene_necessity_score": 0.667,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC01",
+      "episode_id": "EP02",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC02",
+      "episode_id": "EP02",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC03",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC04",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC05",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC06",
+      "episode_id": "EP02",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC07",
+      "episode_id": "EP02",
+      "changed_dimensions": 2,
+      "scene_necessity_score": 0.222,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC08",
+      "episode_id": "EP02",
+      "changed_dimensions": 5,
+      "scene_necessity_score": 0.556,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC09",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC10",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC11",
+      "episode_id": "EP02",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP02_SC12",
+      "episode_id": "EP02",
+      "changed_dimensions": 6,
+      "scene_necessity_score": 0.667,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC01",
+      "episode_id": "EP03",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC02",
+      "episode_id": "EP03",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC03",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC04",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC05",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC06",
+      "episode_id": "EP03",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC07",
+      "episode_id": "EP03",
+      "changed_dimensions": 2,
+      "scene_necessity_score": 0.222,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC08",
+      "episode_id": "EP03",
+      "changed_dimensions": 5,
+      "scene_necessity_score": 0.556,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC09",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC10",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC11",
+      "episode_id": "EP03",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP03_SC12",
+      "episode_id": "EP03",
+      "changed_dimensions": 6,
+      "scene_necessity_score": 0.667,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP04_SC01",
+      "episode_id": "EP04",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP04_SC02",
+      "episode_id": "EP04",
+      "changed_dimensions": 4,
+      "scene_necessity_score": 0.444,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP04_SC03",
+      "episode_id": "EP04",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    },
+    {
+      "scene_id": "EP04_SC04",
+      "episode_id": "EP04",
+      "changed_dimensions": 3,
+      "scene_necessity_score": 0.333,
+      "classification": "necessary"
+    }
+  ],
+  "issues": []
+}

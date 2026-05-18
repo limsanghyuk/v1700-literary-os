@@ -1,0 +1,14 @@
+{
+  "stage": "96C",
+  "title": "Provider Ensemble Arbitration",
+  "status": "pass_pending_export",
+  "release_gate_mode": "dry_run_fixture_candidates",
+  "live_provider_call_count": 0,
+  "decision_types": [
+    "SELECT",
+    "REJECT",
+    "MERGE",
+    "REQUEST_REFINEMENT",
+    "BLOCK"
+  ]
+}

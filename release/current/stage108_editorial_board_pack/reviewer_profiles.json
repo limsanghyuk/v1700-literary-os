@@ -1,0 +1,44 @@
+[
+  {
+    "reviewer_id": "rev_literary_critic",
+    "role": "LITERARY_CRITIC",
+    "lens": "literary merit, image density, voice integrity",
+    "weight": 1.15,
+    "provider_lane": "fixture_reviewer"
+  },
+  {
+    "reviewer_id": "rev_dramaturg",
+    "role": "DRAMATURG",
+    "lens": "conflict, scene necessity, dramatic turn",
+    "weight": 1.1,
+    "provider_lane": "fixture_reviewer"
+  },
+  {
+    "reviewer_id": "rev_market_editor",
+    "role": "MARKET_EDITOR",
+    "lens": "commercial readability, hook, positioning",
+    "weight": 1.0,
+    "provider_lane": "fixture_reviewer"
+  },
+  {
+    "reviewer_id": "rev_genre_editor",
+    "role": "GENRE_EDITOR",
+    "lens": "genre promise, thriller tension, payoff setup",
+    "weight": 1.0,
+    "provider_lane": "fixture_reviewer"
+  },
+  {
+    "reviewer_id": "rev_continuity_auditor",
+    "role": "CONTINUITY_AUDITOR",
+    "lens": "longform continuity, character memory, branchpoint survival",
+    "weight": 1.2,
+    "provider_lane": "fixture_reviewer"
+  },
+  {
+    "reviewer_id": "rev_scenario_producer",
+    "role": "SCENARIO_PRODUCER",
+    "lens": "scene beat, production feasibility, visual clarity",
+    "weight": 1.05,
+    "provider_lane": "fixture_reviewer"
+  }
+]

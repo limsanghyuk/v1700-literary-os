@@ -1,0 +1,107 @@
+{
+  "nil_stability": {
+    "status": "pass",
+    "score": 0.963996,
+    "signals": [
+      {
+        "name": "reward_advantage",
+        "value": 0.2855,
+        "weight": 0.25,
+        "target": 0.25,
+        "tolerance": 0.25,
+        "status": "pass"
+      },
+      {
+        "name": "amw_run_drift",
+        "value": 0.00017,
+        "weight": 0.2,
+        "target": 0.0,
+        "tolerance": 0.1,
+        "status": "pass"
+      },
+      {
+        "name": "triangle_coverage",
+        "value": 10.0,
+        "weight": 0.2,
+        "target": 10.0,
+        "tolerance": 10.0,
+        "status": "pass"
+      },
+      {
+        "name": "rag_intent_coverage",
+        "value": 3.0,
+        "weight": 0.15,
+        "target": 3.0,
+        "tolerance": 3.0,
+        "status": "pass"
+      },
+      {
+        "name": "tension_final_loss",
+        "value": 4.1e-05,
+        "weight": 0.2,
+        "target": 0.0,
+        "tolerance": 0.05,
+        "status": "pass"
+      }
+    ],
+    "issues": []
+  },
+  "agent_calibrator": {
+    "status": "pass",
+    "weights_before": {
+      "reader": 0.35,
+      "writer": 0.25,
+      "editor": 0.25,
+      "cultural": 0.15
+    },
+    "weights_after": {
+      "reader": 0.3501454898157129,
+      "writer": 0.24927255092143552,
+      "editor": 0.25121241513094084,
+      "cultural": 0.14936954413191078
+    },
+    "max_shift": 0.001212,
+    "total_shift": 0.002716,
+    "normalized_sum": 1.0,
+    "issues": []
+  },
+  "t_ideal_learner": {
+    "status": "pass",
+    "coefficients_before": {
+      "base": 0.6,
+      "main_amp": 0.4,
+      "main_phase": -0.5,
+      "micro_amp": 0.2
+    },
+    "coefficients_after": {
+      "base": 0.604397127693021,
+      "main_amp": 0.4,
+      "main_phase": -0.5,
+      "micro_amp": 0.2
+    },
+    "max_shift": 0.004397,
+    "loss_before": 0.110689,
+    "loss_after": 0.110321,
+    "applied": true,
+    "issues": []
+  },
+  "temporal_cim_adapter": {
+    "status": "pass",
+    "episode_count": 3,
+    "mean_volatility": 0.103333,
+    "role_continuity": 0.8,
+    "unstable_roles": [
+      "detective"
+    ],
+    "issues": []
+  },
+  "meta_learner_skeleton": {
+    "status": "pass",
+    "mode": "proposal_only",
+    "proposal_count": 3,
+    "applied_count": 0,
+    "provider_calls": 0,
+    "runtime_training_performed": false,
+    "issues": []
+  }
+}

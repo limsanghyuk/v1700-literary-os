@@ -1,0 +1,23 @@
+{
+  "stage": "stage124",
+  "title": "PNE / Gate29 Absorption",
+  "baseline_stage": "stage123",
+  "status": "active",
+  "absorbed_from_reference": "V555 PNE concepts only",
+  "absorbed_components": [
+    "PNECore",
+    "DebtPredictor",
+    "PreemptiveGate",
+    "FeedbackLearner",
+    "Gate29 secondary predictive gate"
+  ],
+  "blocked_components": [
+    "direct V555 package merge",
+    "Gate29 primary authority",
+    "release-gate runtime model training",
+    "mandatory sklearn dependency"
+  ],
+  "release_gate": "release/current/stage124_release_gate_report.json",
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false
+}

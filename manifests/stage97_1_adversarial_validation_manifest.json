@@ -1,0 +1,14 @@
+{
+  "stage": "97.1",
+  "status": "pass",
+  "negative_corpus_total": 19,
+  "negative_corpus_blocked_as_expected": 19,
+  "normal_cases_passed": 1,
+  "coefficient_memory_adapter": "pass",
+  "manuscript_ingest_privacy": "pass",
+  "production_scene_mapping": "pass",
+  "provider_default_calls": 0,
+  "live_provider_call_count": 0,
+  "node2_raw_reveal_access_count": 0,
+  "raw_manuscript_provider_leakage": 0
+}

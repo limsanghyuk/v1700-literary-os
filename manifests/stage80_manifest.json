@@ -1,0 +1,24 @@
+{
+  "stage": "80",
+  "name": "Korean Drama Story & Macro Plot Composition Engine",
+  "canonical_baseline": "stage79",
+  "purpose": "Separate whole story, macro plot, broadcast episode, micro plot, sequence, and scene for Korean drama composition.",
+  "added_modules": [
+    "src/v1700/drama_composition/contracts.py",
+    "src/v1700/drama_composition/engine.py",
+    "src/v1700/drama_composition/gate.py",
+    "src/v1700/gates/stage80_release_gate.py"
+  ],
+  "added_tools": [
+    "tools/run_korean_drama_composition_smoke.py",
+    "tools/run_stage80_release_gate.py"
+  ],
+  "acceptance": {
+    "macro_plot_count_min": 3,
+    "broadcast_episode_count_min": 6,
+    "scene_count_min": 54,
+    "supporting_character_count_min": 4,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access_count": 0
+  }
+}

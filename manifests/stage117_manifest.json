@@ -1,0 +1,32 @@
+{
+  "stage": "stage117",
+  "name": "NarrativeTensionCurve",
+  "baseline_stage": "stage116",
+  "status": "active",
+  "new_packages": [
+    "src/v1700/nie/arc",
+    "src/v1700/stage117"
+  ],
+  "new_gates": [
+    "src/v1700/gates/stage117_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage117_narrative_tension_curve.py",
+    "tools/run_stage117_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage117_narrative_tension_curve.py"
+  ],
+  "release_evidence": [
+    "release/current/stage117_narrative_tension_curve_report.json",
+    "release/current/stage117_release_gate_report.json"
+  ],
+  "invariants": {
+    "narrative_tension_curve_required": true,
+    "coverage_loss_required": true,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  }
+}

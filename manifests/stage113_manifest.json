@@ -1,0 +1,30 @@
+{
+  "stage": "113",
+  "baseline_stage": "112",
+  "title": "PhysicsRewardBridge + MAE Reward Wiring",
+  "status": "pass_pending_gate",
+  "modules": [
+    "src/v1700/nie/reward",
+    "src/v1700/stage113",
+    "src/v1700/gates/stage113_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage113_physics_reward_bridge.py",
+    "tools/run_stage113_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage113_physics_reward_bridge.py"
+  ],
+  "release_evidence": [
+    "release/current/stage113_physics_reward_bridge_report.json",
+    "release/current/stage113_release_gate_report.json"
+  ],
+  "invariants": {
+    "physics_reward_bridge_llm_call_count": 0,
+    "mae_live_provider_call_count_in_release_gate": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0
+  },
+  "next_stage": "Stage114 AdaptiveMomentumWeights"
+}

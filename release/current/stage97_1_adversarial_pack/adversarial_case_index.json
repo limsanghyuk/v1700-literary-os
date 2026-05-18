@@ -1,0 +1,350 @@
+[
+  {
+    "case_id": "ADV-NOR-001",
+    "case_type": "normal_stage97_proof",
+    "source_stage": "97",
+    "mutation_type": "none",
+    "expected_status": "PASS",
+    "expected_block_reason": null,
+    "episode_count": 16,
+    "payload_path": "release/current/stage97_release_gate_report.json",
+    "invariants": {
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "critical_debt_default_count": 0
+    },
+    "payload": {
+      "stage97_gate_status": "pass",
+      "critical_debt_default_count": 0,
+      "provider_call_count": 0,
+      "node2_raw_reveal_access": 0
+    }
+  },
+  {
+    "case_id": "ADV-TOP-001",
+    "case_type": "broken_topology",
+    "source_stage": "97",
+    "mutation_type": "orphan_microplot",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "orphan_microplot_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/topology/orphan_microplot.json",
+    "invariants": {
+      "branchpoint_lineage_preserved": true
+    },
+    "payload": {
+      "orphan_microplot_count": 1,
+      "episode_function_coverage": 1.0
+    }
+  },
+  {
+    "case_id": "ADV-TOP-002",
+    "case_type": "broken_topology",
+    "source_stage": "97",
+    "mutation_type": "episode_function_coverage_missing",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "episode_function_coverage_incomplete",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/topology/missing_episode_function.json",
+    "invariants": {
+      "branchpoint_lineage_preserved": true
+    },
+    "payload": {
+      "orphan_microplot_count": 0,
+      "episode_function_coverage": 0.938
+    }
+  },
+  {
+    "case_id": "ADV-LOD-001",
+    "case_type": "broken_load",
+    "source_stage": "97",
+    "mutation_type": "mid_season_sag",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "mid_season_sag_risk_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/load/mid_season_sag.json",
+    "invariants": {
+      "branchpoint_lineage_preserved": true
+    },
+    "payload": {
+      "mid_season_sag_risk": 0.31,
+      "overloaded_episode_count": 0
+    }
+  },
+  {
+    "case_id": "ADV-PAY-001",
+    "case_type": "broken_payoff",
+    "source_stage": "97",
+    "mutation_type": "critical_payoff_debt_default",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "critical_payoff_debt_defaulted",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/payoff/defaulted_critical_debt.json",
+    "invariants": {
+      "critical_payoff_debt_default": 1
+    },
+    "payload": {
+      "critical_debt_default_count": 1,
+      "finale_new_critical_debt_count": 0
+    }
+  },
+  {
+    "case_id": "ADV-PAY-002",
+    "case_type": "broken_payoff",
+    "source_stage": "97",
+    "mutation_type": "finale_new_critical_debt",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "finale_new_critical_debt_created",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/payoff/finale_new_critical_debt.json",
+    "invariants": {
+      "critical_payoff_debt_default": 0
+    },
+    "payload": {
+      "critical_debt_default_count": 0,
+      "finale_new_critical_debt_count": 1
+    }
+  },
+  {
+    "case_id": "ADV-AGY-001",
+    "case_type": "passive_agency",
+    "source_stage": "97",
+    "mutation_type": "protagonist_passive_episode_chain",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "passive_protagonist_arc_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/agency/passive_protagonist.json",
+    "invariants": {
+      "protagonist_agency_floor": 0.31
+    },
+    "payload": {
+      "protagonist_agency_floor": 0.31,
+      "passive_episode_count": 5,
+      "antagonist_agency_only": false
+    }
+  },
+  {
+    "case_id": "ADV-AGY-002",
+    "case_type": "passive_agency",
+    "source_stage": "97",
+    "mutation_type": "antagonist_only_agency_rise",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "protagonist_agency_collapse_against_antagonist",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/agency/antagonist_only_agency.json",
+    "invariants": {
+      "protagonist_agency_floor": 0.39
+    },
+    "payload": {
+      "protagonist_agency_floor": 0.39,
+      "passive_episode_count": 3,
+      "antagonist_agency_only": true
+    }
+  },
+  {
+    "case_id": "ADV-SCN-001",
+    "case_type": "weak_scene",
+    "source_stage": "97",
+    "mutation_type": "changed_dimensions_below_floor",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "weak_scene_ratio_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/scene/weak_scene_ratio.json",
+    "invariants": {
+      "scene_necessity_floor": 0.92
+    },
+    "payload": {
+      "weak_scene_ratio": 0.19,
+      "atmosphere_scene_without_function": false
+    }
+  },
+  {
+    "case_id": "ADV-SCN-002",
+    "case_type": "weak_scene",
+    "source_stage": "97",
+    "mutation_type": "atmosphere_scene_function_missing",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "atmosphere_scene_function_label_missing",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/scene/atmosphere_unlabeled.json",
+    "invariants": {
+      "scene_necessity_floor": 0.92
+    },
+    "payload": {
+      "weak_scene_ratio": 0.0,
+      "atmosphere_scene_without_function": true
+    }
+  },
+  {
+    "case_id": "ADV-DLG-001",
+    "case_type": "speech_level_violation",
+    "source_stage": "97",
+    "mutation_type": "unmotivated_honorific_shift",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "speech_level_inconsistency_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/dialogue/unmotivated_honorific_shift.json",
+    "invariants": {
+      "korean_dialogue_pragmatics": true
+    },
+    "payload": {
+      "speech_level_inconsistency_count": 4,
+      "explanatory_dialogue_ratio": 0.12
+    }
+  },
+  {
+    "case_id": "ADV-DLG-002",
+    "case_type": "speech_level_violation",
+    "source_stage": "97",
+    "mutation_type": "explanatory_dialogue_overload",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "explanatory_dialogue_ratio_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/dialogue/explanatory_dialogue_overload.json",
+    "invariants": {
+      "korean_dialogue_pragmatics": true
+    },
+    "payload": {
+      "speech_level_inconsistency_count": 0,
+      "explanatory_dialogue_ratio": 0.41
+    }
+  },
+  {
+    "case_id": "ADV-VOC-001",
+    "case_type": "style_drift_violation",
+    "source_stage": "97",
+    "mutation_type": "unexplained_style_drift",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "unexplained_style_drift_above_tolerance",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/voice/unexplained_style_drift.json",
+    "invariants": {
+      "permitted_style_evolution": false
+    },
+    "payload": {
+      "style_drift": 0.37,
+      "permitted_style_evolution": false,
+      "character_voice_collapse": false
+    }
+  },
+  {
+    "case_id": "ADV-VOC-002",
+    "case_type": "style_drift_violation",
+    "source_stage": "97",
+    "mutation_type": "character_voice_collapse",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "character_voice_collapse_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/voice/character_voice_collapse.json",
+    "invariants": {
+      "permitted_style_evolution": false
+    },
+    "payload": {
+      "style_drift": 0.12,
+      "permitted_style_evolution": false,
+      "character_voice_collapse": true
+    }
+  },
+  {
+    "case_id": "ADV-ATT-001",
+    "case_type": "attention_fatigue",
+    "source_stage": "97",
+    "mutation_type": "mid_season_fatigue_spike",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "attention_fatigue_risk_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/attention/mid_season_fatigue.json",
+    "invariants": {
+      "attention_fatigue_risk": 0.68
+    },
+    "payload": {
+      "attention_fatigue_risk": 0.68,
+      "low_reward_high_cost_count": 0
+    }
+  },
+  {
+    "case_id": "ADV-ATT-002",
+    "case_type": "attention_fatigue",
+    "source_stage": "97",
+    "mutation_type": "high_cognitive_low_reward_accumulation",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "low_reward_high_cost_episode_count_above_threshold",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/attention/high_cost_low_reward.json",
+    "invariants": {
+      "attention_fatigue_risk": 0.24
+    },
+    "payload": {
+      "attention_fatigue_risk": 0.24,
+      "low_reward_high_cost_count": 4
+    }
+  },
+  {
+    "case_id": "ADV-SEC-001",
+    "case_type": "security_boundary",
+    "source_stage": "97",
+    "mutation_type": "provider_live_call",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "provider_live_call_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/security/provider_live_call.json",
+    "invariants": {
+      "release_provider_calls": 0
+    },
+    "payload": {
+      "provider_call_count": 1,
+      "node2_raw_reveal_access": 0
+    }
+  },
+  {
+    "case_id": "ADV-SEC-002",
+    "case_type": "security_boundary",
+    "source_stage": "97",
+    "mutation_type": "node2_raw_reveal_access",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "node2_raw_reveal_access_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/security/node2_raw_reveal_access.json",
+    "invariants": {
+      "node2_raw_reveal_access": 0
+    },
+    "payload": {
+      "provider_call_count": 0,
+      "node2_raw_reveal_access": 1
+    }
+  },
+  {
+    "case_id": "ADV-MAN-001",
+    "case_type": "manifest_evidence",
+    "source_stage": "97",
+    "mutation_type": "stale_manifest",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "stale_manifest_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/manifest/stale_manifest.json",
+    "invariants": {
+      "active_version": "stage97.1"
+    },
+    "payload": {
+      "stale_manifest": true,
+      "missing_release_evidence": false
+    }
+  },
+  {
+    "case_id": "ADV-MAN-002",
+    "case_type": "manifest_evidence",
+    "source_stage": "97",
+    "mutation_type": "missing_release_evidence",
+    "expected_status": "BLOCK",
+    "expected_block_reason": "missing_release_evidence_detected",
+    "episode_count": 16,
+    "payload_path": "generated/adversarial/manifest/missing_release_evidence.json",
+    "invariants": {
+      "release_evidence_required": true
+    },
+    "payload": {
+      "stale_manifest": false,
+      "missing_release_evidence": true
+    }
+  }
+]

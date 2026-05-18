@@ -1,0 +1,44 @@
+{
+  "stage": "111.2",
+  "status": "pass",
+  "provider_call_mode": "FIXTURE",
+  "live_provider_call_count": 0,
+  "raw_manuscript_included": false,
+  "credential_included": false,
+  "raw_response_stored": false,
+  "bridges": [
+    {
+      "bridge_id": "anthropic_bridge",
+      "source_adapter_pattern": "V485 AnthropicAdapter pattern",
+      "target_adapter": "V1700 provider_live_sandbox.anthropic_live_adapter",
+      "provider_call_mode": "FIXTURE",
+      "credential_included": false,
+      "raw_manuscript_included": false,
+      "raw_response_stored": false,
+      "response_normalizer_required": true,
+      "bridge_status": "PASS"
+    },
+    {
+      "bridge_id": "ollama_bridge",
+      "source_adapter_pattern": "V485 OllamaAdapter pattern",
+      "target_adapter": "V1700 provider_live_sandbox.ollama_live_adapter",
+      "provider_call_mode": "FIXTURE",
+      "credential_included": false,
+      "raw_manuscript_included": false,
+      "raw_response_stored": false,
+      "response_normalizer_required": true,
+      "bridge_status": "PASS"
+    },
+    {
+      "bridge_id": "mock_fixture_bridge",
+      "source_adapter_pattern": "V485 MockLLMBridge fallback",
+      "target_adapter": "V1700 seed-aware deterministic fixture",
+      "provider_call_mode": "FIXTURE",
+      "credential_included": false,
+      "raw_manuscript_included": false,
+      "raw_response_stored": false,
+      "response_normalizer_required": true,
+      "bridge_status": "PASS"
+    }
+  ]
+}

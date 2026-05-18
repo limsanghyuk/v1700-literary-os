@@ -1,0 +1,22 @@
+{
+  "stage": "123",
+  "title": "ASD / Gate28 Absorption",
+  "status": "pass",
+  "stage123_report_status": "pass",
+  "stage123_release_gate_status": "pass",
+  "main_release_gate_status": "pass",
+  "repo_doctor_status": "pass",
+  "targeted_tests": "34 passed",
+  "pytest_collect_only": "379 tests collected",
+  "full_pytest_note": "A full single pytest run was attempted and exceeded the session time limit after extensive predecessor tests; no Stage123 failure was observed before timeout. Release evidence uses targeted Stage120-123 and repo-doctor tests.",
+  "zip_internal_manifests_required": [
+    "FILELIST.txt",
+    "SHA256SUMS.txt",
+    "release/current/stage123_sha256.txt",
+    "release/current/stage123_filelist.txt"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "story_doctor_llm_call_count": 0,
+  "auto_repair_mutation_count": 0
+}

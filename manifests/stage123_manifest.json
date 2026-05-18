@@ -1,0 +1,20 @@
+{
+  "stage": "stage123",
+  "name": "ASD / Gate28 Absorption",
+  "baseline_stage": "stage122",
+  "status": "active",
+  "purpose": "Absorb V545 ASD and Gate28 concepts as deterministic, provider-zero, dry-run-only secondary quality gate over Stage122.",
+  "primary_authority": "Gate25 remains primary until Stage125 Governor; Gate28 is secondary quality gate only.",
+  "new_gates": [
+    "stage123_asd_gate28_absorption",
+    "stage123_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "zip_internal_manifests_required": [
+    "FILELIST.txt",
+    "SHA256SUMS.txt",
+    "release/current/stage123_sha256.txt",
+    "release/current/stage123_filelist.txt"
+  ]
+}
