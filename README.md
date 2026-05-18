@@ -1,7 +1,19 @@
-# V1700 Literary OS - Stage129
+# V1700 Literary OS - Stage130
 
-> MultiWorkCIM + Cross-Work Canon Governor
+> MultiWork Release
 > Provider-Zero AI longform novel and drama scenario generation system.
+
+## Current Stage
+
+Stage130 seals Stage127~129 into the first clean MultiWork release authority.
+
+The central rule is simple:
+
+- Stage127 preflight and isolation audit remains required.
+- Stage128 SharedWorld / SharedCharacter adapters remain read-only.
+- Stage129 MultiWorkCIM and Cross-Work Canon Governor remain authoritative.
+- Stage130 authorizes only the safe MultiWork operational surface.
+- Cross-project write, raw manuscript sharing, direct V571 trunk merge, canon auto-resolution, Gate26 hard block, active learning, and AutoRepair mutation remain blocked.
 
 ## Quick Start
 
@@ -9,63 +21,52 @@
 pip install -e .
 
 python -m compileall src tools
-python tools/run_stage129_multiwork_cim_governor.py
-python tools/run_stage129_release_gate.py
+python tools/run_stage130_multiwork_release.py
+python tools/run_stage130_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest -q tests/test_stage129_multiwork_cim_governor.py
+python -m pytest -q tests/test_stage127_multiwork_preflight.py tests/test_stage128_read_only_absorption.py tests/test_stage129_multiwork_cim_governor.py tests/test_stage130_multiwork_release.py
 ```
 
-## Current Stage
-
-Stage129 promotes the Stage128 read-only SharedWorld / SharedCharacter absorption into a MultiWork-aware governance layer.
-
-The central rule is simple:
-
-- each work keeps its own local Character Influence Matrix
-- cross-work influence is read-only
-- canon conflicts are reported and blocked, not auto-resolved
-- cross-work canon merge is deferred to Stage130
-- provider calls remain zero in release gates
-
-## Stage129 Core Modules
+## Stage130 Core Modules
 
 ```text
-src/v1700/multiwork_cim/
+src/v1700/multiwork_release/
   contracts.py
-  project_local_cim.py
-  cross_project_influence.py
-  canon_governor.py
-
-src/v1700/stage129/
-  orchestrator.py
+  release_matrix.py
+  operational_surface.py
+  gitnexus_preflight.py
+  release_seal.py
   report.py
 
+src/v1700/stage130/
+  stage130_runner.py
+
 src/v1700/gates/
-  stage129_release_gate.py
+  stage130_release_gate.py
 ```
 
-## Stage129 Release Gate
+## Stage130 Release Gate
 
-The Stage129 gate validates:
+The Stage130 gate validates:
 
-- Stage128 baseline gate pass
-- project-local CIM builder pass
-- cross-project influence read-only pass
-- Cross-Work Canon Governor pass
+- Stage129 baseline gate pass
+- Stage127~129 evidence preserved
+- MultiWork release matrix pass
+- operational surface pass
+- release seal pass
+- direct V571 merge blocked
 - cross-project write blocked
 - unauthorized cross reads/writes = 0
-- license boundary preserved
-- canon conflict block fixture pass
-- canon auto-resolution disabled
-- cross-work canon merge disabled
 - raw manuscript leakage = 0
+- canon auto-resolution disabled
+- SharedWorld source-of-truth promotion disabled
+- Gate26 hard block deferred
 - provider default calls = 0
 - Node2 raw reveal access = 0
 - credential leakage = 0
 - GitNexus/Python fallback preflight pass
 - branchpoint survival pass
-- Stage130 MultiWork Release deferred
 - repo doctor and clean packaging pass
 
 ## Invariants
@@ -78,7 +79,6 @@ The Stage129 gate validates:
   "unauthorized_cross_reads": 0,
   "unauthorized_cross_writes": 0,
   "canon_auto_resolution_count": 0,
-  "cross_work_canon_merge_allowed": false,
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "node2_raw_reveal_access": 0,
@@ -90,29 +90,22 @@ The Stage129 gate validates:
 ## Stage Lineage
 
 ```text
-Stage120  Gate25 NIE v1 Release
-Stage121  Cross-Lineage Formula Reconciliation
-Stage122  NIE v2 Stability Absorption
-Stage123  ASD / Gate28 Absorption
-Stage124  PNE / Gate29 Absorption
-Stage125  Gate25/28/29 Governor
-Stage126  Cross-Lineage Intelligence Release
 Stage127  MultiWork Preflight & Isolation Audit
 Stage128  SharedWorld / SharedCharacter Read-Only Absorption
 Stage129  MultiWorkCIM + Cross-Work Canon Governor
+Stage130  MultiWork Release
 ```
 
 ## Next Direction
 
 ```text
-Stage130 - MultiWork Release
 Stage131 - GIG / Gate26 Advisory Absorption
+Stage132 - Contradiction Classifier + Mystery Exemption
 ```
 
 ## Repository Evidence
 
-- Stage manifest: `manifests/stage129_manifest.json`
+- Stage manifest: `manifests/stage130_manifest.json`
 - Live manifest: `manifests/live_core_manifest.json`
-- Release report: `release/current/stage129_multiwork_cim_governor_report.json`
-- Release gate: `release/current/stage129_release_gate_report.json`
-- Filelist: `V1700_stage129_multiwork_cim_cross_work_canon_governor_filelist.txt`
+- Release report: `release/current/stage130_multiwork_release_report.json`
+- Release gate: `release/current/stage130_release_gate_report.json`
