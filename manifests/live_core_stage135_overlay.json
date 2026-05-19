@@ -1,0 +1,32 @@
+{
+  "overlay_for": "manifests/live_core_manifest.json",
+  "stage": "stage135",
+  "active_version_override": "stage135",
+  "reason": "Stage135 is merged and validated, but the legacy live_core_manifest is long-lived and still records stage133. This overlay records the Stage135 active baseline without destructively replacing the historical manifest.",
+  "required_active_gates": [
+    "stage134_meta_learner_audit",
+    "stage134_release_gate",
+    "stage135_learning_quality_gate",
+    "stage135_release_gate"
+  ],
+  "stage135_invariants": {
+    "learning_candidate_only": true,
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "learning_allowed_count": 0,
+    "training_triggered_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "cross_project_write_allowed": false,
+    "branchpoint_lineage_preserved": true
+  },
+  "official_reports": {
+    "learning_quality_gate": "release/current/stage135_learning_quality_gate_report.json",
+    "release_gate": "release/current/stage135_release_gate_report.json",
+    "asset_manifest": "release/current/stage135_official_asset_manifest.json"
+  },
+  "next_stage": "stage136"
+}
