@@ -1,0 +1,17 @@
+{
+  "stage": "134",
+  "baseline_stage": "133",
+  "status": "pass",
+  "mode": "META_LEARNER_AUDIT_ONLY_NO_TRAINING",
+  "audit_only": true,
+  "aggregate": {
+    "case_count": 5,
+    "observe_count": 4,
+    "review_recommendation_count": 1,
+    "weight_candidate_count": 0,
+    "training_allowed_count": 0,
+    "mutation_allowed_count": 0,
+    "active_learning_allowed_count": 0
+  },
+  "issues": []
+}

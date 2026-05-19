@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "native_gitnexus": {
+    "status": "optional",
+    "note": "Stage134 uses the optional GitNexus sidecar contract and keeps Python fallback plus GraphNexus branchpoint trace as CI-safe authority."
+  },
+  "python_fallback": {
+    "status": "PASS",
+    "reason": "MetaLearner Audit Mode adds no runtime learning surface and inspects Stage133 reports locally."
+  },
+  "concept_impact": {
+    "changed_stage": "stage134",
+    "impacted_branchpoints": [
+      "stage133_narrative_state_tensor_8d",
+      "true_contradiction_writer_review_required",
+      "stage132_mystery_exemption_requires_reveal_lock",
+      "provider_zero",
+      "node2_surface_contract"
+    ]
+  },
+  "survival_matrix": {
+    "provider_zero": true,
+    "node2_boundary": true,
+    "stage133_tensor": true,
+    "stage132_classifier": true,
+    "gate26_advisory_only": true,
+    "meta_learner_audit_only": true,
+    "runtime_training_disabled": true,
+    "canon_auto_resolution_blocked": true,
+    "auto_repair_blocked": true
+  },
+  "symbol_to_branchpoint_trace": {
+    "status": "pass",
+    "symbols": [
+      "src/v1700/meta_learner_audit/audit.py",
+      "src/v1700/gates/stage134_release_gate.py",
+      "tests/test_stage134_meta_learner_audit.py"
+    ]
+  },
+  "shape_check": {"status": "pass", "schema": "stage134_gitnexus_preflight_v1"},
+  "release_gate_integration": {
+    "status": "pass",
+    "stage134_gate_registered": true,
+    "repo_doctor_recognizes_stage134": true
+  },
+  "missing_required_files": []
+}

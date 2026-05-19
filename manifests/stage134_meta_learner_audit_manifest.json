@@ -1,0 +1,19 @@
+{
+  "stage": "stage134",
+  "component": "meta_learner_audit",
+  "status": "implemented",
+  "audit_only": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "auto_repair_mutation_count": 0,
+  "allowed_outputs": [
+    "OBSERVE",
+    "RECOMMEND_REVIEW",
+    "RECOMMEND_WEIGHT_CANDIDATE"
+  ],
+  "required_reports": [
+    "release/current/stage134_meta_learner_audit_pack/meta_learner_audit_report.json",
+    "release/current/stage134_meta_learner_audit_pack/gitnexus_preflight_report.json"
+  ]
+}
