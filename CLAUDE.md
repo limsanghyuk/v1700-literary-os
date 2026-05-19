@@ -1,7 +1,7 @@
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **_latest_stage99_preflight** (9793 symbols, 15233 relationships, 298 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **v1700-literary-os** (17447 symbols, 27243 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -24,10 +24,10 @@ This project is indexed by GitNexus as **_latest_stage99_preflight** (9793 symbo
 
 | Resource | Use for |
 |----------|---------|
-| `gitnexus://repo/_latest_stage99_preflight/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/_latest_stage99_preflight/clusters` | All functional areas |
-| `gitnexus://repo/_latest_stage99_preflight/processes` | All execution flows |
-| `gitnexus://repo/_latest_stage99_preflight/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/v1700-literary-os/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/v1700-literary-os/clusters` | All functional areas |
+| `gitnexus://repo/v1700-literary-os/processes` | All execution flows |
+| `gitnexus://repo/v1700-literary-os/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 
