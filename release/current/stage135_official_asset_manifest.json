@@ -1,0 +1,29 @@
+{
+  "stage": "stage135",
+  "release_tag": "v1700-stage135",
+  "release_target_commit": "9051c36a9007f0b10d5fb0740722304b8b57ba9b",
+  "status": "asset_correction_required",
+  "problem": "The GitHub release page exists, but the visible uploaded assets are still Stage133 assets.",
+  "correct_assets": [
+    {
+      "file": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip",
+      "sha256": "1a19105099454a59b39cb04e919dddd455393fed6058760d9b8aae3273891335",
+      "role": "Stage135 developer release archive with integrated repository handoff artifacts"
+    },
+    {
+      "file": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip.sha256",
+      "role": "SHA256 sidecar"
+    }
+  ],
+  "assets_to_remove_from_release": [
+    "SHA256SUMS_v1.33.0-stage133.txt",
+    "V1700_v1.33.0-stage133_integrated_repository.zip",
+    "V1700_v1.33.0-stage133_integrated_repository.zip.sha256"
+  ],
+  "validated_before_release": {
+    "ci_core_gitnexus_and_ci_preflight": "success",
+    "ci_core_pytest_and_gates_python_3_11": "success",
+    "ci_core_pytest_and_gates_python_3_12": "success",
+    "cd_dry_run_build_release_archive": "success"
+  }
+}
