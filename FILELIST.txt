@@ -6,12 +6,14 @@
 .claude/skills/gitnexus/gitnexus-refactoring/SKILL.md
 .github/workflows/ci-core.yml
 .github/workflows/ci-full.yml
+.github/workflows/release.yml
 .gitignore
 AGENTS.md
 CLAUDE.md
+CONTRIBUTING.md
 FILELIST.txt
 README.md
-SHA256SUMS.txt
+RELEASE_NOTES.md
 V1700_stage111_1_narrative_weight_kernel_filelist.txt
 V1700_stage112_gitnexus_aware_nie_preflight_bridge_filelist.txt
 V1700_stage113_physics_reward_bridge_mae_reward_wiring_filelist.txt
@@ -1847,7 +1849,9 @@ src/v1700/writer_studio/workspace.py
 src/v1700_literary_os.egg-info/PKG-INFO
 src/v1700_literary_os.egg-info/SOURCES.txt
 src/v1700_literary_os.egg-info/dependency_links.txt
+src/v1700_literary_os.egg-info/requires.txt
 src/v1700_literary_os.egg-info/top_level.txt
+tests/conftest.py
 tests/integration/test_node1_node2_node3_pipeline.py
 tests/stage_gates/test_stage72_repo_doctor.py
 tests/stage_gates/test_stage81_release_gate.py
@@ -2097,6 +2101,7 @@ tools/package_stage111_fixed.py
 tools/package_stage99_fixed.py
 tools/run_blind_critic_benchmark.py
 tools/run_branchpoint_registry_audit.py
+tools/run_ci_dependency_preflight.py
 tools/run_commercial_release_candidate.py
 tools/run_core_logic_survival_audit.py
 tools/run_core_logic_survival_recompute.py

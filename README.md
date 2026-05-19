@@ -18,15 +18,24 @@ The central rule is simple:
 ## Quick Start
 
 ```bash
-pip install -e .
+pip install -e ".[dev]"
 
 python -m compileall src tools
+python -m pytest tests/ -q
+python tools/run_ci_dependency_preflight.py
 python tools/run_stage130_multiwork_release.py
 python tools/run_stage130_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest -q tests/test_stage127_multiwork_preflight.py tests/test_stage128_read_only_absorption.py tests/test_stage129_multiwork_cim_governor.py tests/test_stage130_multiwork_release.py
 ```
+
+## GitHub CI/CD
+
+The repository uses GitHub Actions as the shared authority for work across multiple computers.
+
+- `ci-core`: runs on push, pull request, and version tags. It installs `.[dev]`, runs `pytest tests/ -q`, Stage130 release gate, the main release gate, repo doctor, and GitNexus/GraphNexus preflight checks.
+- `ci-full`: scheduled/manual full-lineage verification.
+- `release`: runs on `v1700-stage*` or `v*` tags and publishes an integrated ZIP, SHA256 sidecar, and `SHA256SUMS.txt` snapshot as GitHub Release assets.
 
 ## Stage130 Core Modules
 

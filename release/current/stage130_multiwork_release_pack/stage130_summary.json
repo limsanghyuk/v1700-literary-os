@@ -1,0 +1,19 @@
+{
+  "stage": "130",
+  "baseline_stage": "129",
+  "title": "MultiWork Release",
+  "status": "pass",
+  "issues": [],
+  "multiwork_release_authorized": true,
+  "stage127_to_stage129_evidence_preserved": true,
+  "cross_project_write_allowed": false,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "canon_auto_resolution_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage131_gig_advisory_required": true
+}

@@ -1,0 +1,130 @@
+{
+  "stage": "130",
+  "baseline_stage": "129",
+  "title": "MultiWork Release Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage129_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "release_matrix_pass": {
+      "status": "pass"
+    },
+    "operational_surface_pass": {
+      "status": "pass"
+    },
+    "release_seal_pass": {
+      "status": "pass"
+    },
+    "stage127_to_stage129_evidence_preserved": {
+      "status": "pass"
+    },
+    "multiwork_release_authorized": {
+      "status": "pass"
+    },
+    "stage127_preflight_pass": {
+      "status": "pass"
+    },
+    "stage128_read_only_absorption_pass": {
+      "status": "pass"
+    },
+    "stage129_cim_governor_pass": {
+      "status": "pass"
+    },
+    "direct_v571_merge_blocked": {
+      "status": "pass"
+    },
+    "cross_project_write_blocked": {
+      "status": "pass"
+    },
+    "unauthorized_cross_reads_writes_zero": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "canon_auto_resolution_disabled": {
+      "status": "pass"
+    },
+    "shared_world_source_of_truth_not_promoted": {
+      "status": "pass"
+    },
+    "gate26_hard_block_deferred": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "gitnexus_python_fallback_preflight_pass": {
+      "status": "pass"
+    },
+    "gitnexus_shape_check_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "repo_doctor_active_stage_ready": {
+      "status": "pass"
+    },
+    "clean_zip_packaging_pass": {
+      "status": "pass"
+    },
+    "secret_scan_pass": {
+      "status": "pass"
+    }
+  },
+  "stage130": {
+    "status": "pass",
+    "stage": "130",
+    "baseline_stage": "129",
+    "title": "MultiWork Release",
+    "issues": [],
+    "multiwork_release_authorized": true,
+    "stage127_to_stage129_evidence_preserved": true,
+    "stage127_preflight_pass": true,
+    "stage128_read_only_absorption_pass": true,
+    "stage129_cim_governor_pass": true,
+    "direct_v571_merge_detected": false,
+    "cross_project_write_allowed": false,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "canon_auto_resolution_count": 0,
+    "shared_world_source_of_truth_promoted": false,
+    "gate26_hard_block_enabled": false,
+    "raw_manuscript_provider_leakage": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true,
+    "python_fallback_used": false,
+    "stage131_gig_advisory_required": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "embedding_provider_call_count": 0,
+  "query_classifier_llm_call_count": 0,
+  "physics_reward_bridge_llm_call_count": 0,
+  "mae_live_provider_call_count": 0,
+  "story_doctor_llm_call_count": 0,
+  "pne_provider_call_count": 0,
+  "pne_runtime_training_count": 0,
+  "auto_repair_mutation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

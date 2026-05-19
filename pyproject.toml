@@ -9,6 +9,12 @@ description = "V1700 Stage130 - MultiWork Release"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "tomli>=2; python_version<'3.11'",
+]
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 

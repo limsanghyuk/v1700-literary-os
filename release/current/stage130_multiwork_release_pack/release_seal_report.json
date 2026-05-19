@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "issues": [],
+  "seal": {
+    "status": "pass",
+    "stage": "130",
+    "baseline_stage": "129",
+    "release_authority": "Stage130 MultiWork Release Gate",
+    "stage127_to_stage129_evidence_preserved": true,
+    "multiwork_release_authorized": true,
+    "stage131_gig_advisory_deferred": true,
+    "provider_zero_preserved": true,
+    "node2_boundary_preserved": true,
+    "raw_manuscript_boundary_preserved": true,
+    "branchpoint_lineage_preserved": true
+  }
+}

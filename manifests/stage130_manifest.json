@@ -1,0 +1,10 @@
+{
+  "stage": "stage130",
+  "title": "MultiWork Release",
+  "baseline_stage": "stage129",
+  "status": "implemented",
+  "purpose": "Seal Stage127~129 into the first clean MultiWork release authority.",
+  "release_gate": "release/current/stage130_release_gate_report.json",
+  "evidence": "release/current/stage130_multiwork_release_report.json",
+  "next_stage": "stage131"
+}

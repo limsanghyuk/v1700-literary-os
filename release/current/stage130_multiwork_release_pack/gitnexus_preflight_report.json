@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "gitnexus_cli_available": true,
+  "python_fallback_used": false,
+  "meta_snapshot": {
+    "status": "available",
+    "indexedAt": "2026-05-18T08:44:44.783Z",
+    "stats": {
+      "files": 2121,
+      "nodes": 16918,
+      "edges": 26030,
+      "communities": 271,
+      "processes": 300,
+      "embeddings": 0
+    },
+    "capabilities": {
+      "graph": {
+        "provider": "ladybugdb",
+        "status": "available"
+      },
+      "fts": {
+        "provider": "ladybugdb-fts",
+        "status": "available"
+      },
+      "vectorSearch": {
+        "provider": "exact-scan",
+        "status": "unavailable",
+        "exactScanLimit": 10000,
+        "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+      }
+    }
+  },
+  "shape_check": {
+    "status": "pass",
+    "schema": "stage130_gitnexus_preflight_v1"
+  },
+  "critical_symbols": {
+    "stage130_runner": true,
+    "stage130_release_gate": true,
+    "multiwork_release_report": true,
+    "stage129_predecessor_gate": true
+  },
+  "python_fallback": {
+    "status": "PASS",
+    "import_graph_estimated": true,
+    "changed_stage": "stage130",
+    "affected_paths": [
+      "src/v1700/multiwork_release/",
+      "src/v1700/stage130/",
+      "src/v1700/gates/stage130_release_gate.py",
+      "tools/run_stage130_multiwork_release.py",
+      "tools/run_stage130_release_gate.py",
+      "tests/test_stage130_multiwork_release.py"
+    ],
+    "required_manifests_present": true,
+    "required_evidence_present": true,
+    "orphan_critical_path_detected": false
+  },
+  "survival_matrix": {
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "project_isolation_boundary": true,
+    "shared_read_only_boundary": true,
+    "cross_work_canon_governor": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "release_gate_integration": {
+    "status": "pass",
+    "stage130_gate_registered": true
+  }
+}

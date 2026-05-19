@@ -1,0 +1,28 @@
+{
+  "stage": "stage130",
+  "component": "multiwork_release",
+  "status": "implemented",
+  "enabled_surfaces": [
+    "project_isolation_audit",
+    "shared_character_read_only_adapter",
+    "shared_world_read_only_adapter",
+    "project_local_cim",
+    "cross_project_influence_edges_read_only",
+    "cross_work_canon_governor",
+    "multiwork_release_gate_authority"
+  ],
+  "blocked_surfaces": [
+    "cross_project_write",
+    "raw_manuscript_sharing",
+    "direct_v571_trunk_merge",
+    "canon_auto_resolution",
+    "gate26_hard_block",
+    "active_learning_runtime_mutation"
+  ],
+  "required_reports": [
+    "release/current/stage130_multiwork_release_pack/release_matrix_report.json",
+    "release/current/stage130_multiwork_release_pack/operational_surface_report.json",
+    "release/current/stage130_multiwork_release_pack/release_seal_report.json",
+    "release/current/stage130_multiwork_release_pack/gitnexus_preflight_report.json"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "issues": [],
+  "matrix": {
+    "stage": "130",
+    "baseline_stage": "129",
+    "stage127_preflight_pass": true,
+    "stage128_read_only_absorption_pass": true,
+    "stage129_cim_governor_pass": true,
+    "direct_v571_merge_detected": false,
+    "cross_project_write_allowed": false,
+    "unauthorized_cross_reads": 0,
+    "unauthorized_cross_writes": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "canon_auto_resolution_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "evidence_complete": true
+  },
+  "stage_evidence": [
+    {
+      "stage": "stage127",
+      "title": "MultiWork Preflight & Isolation Audit",
+      "status": "pass",
+      "report_path": "release/current/stage127_multiwork_preflight_report.json",
+      "release_gate_path": "release/current/stage127_release_gate_report.json",
+      "required_for_release": true
+    },
+    {
+      "stage": "stage128",
+      "title": "SharedWorld / SharedCharacter Read-Only Absorption",
+      "status": "pass",
+      "report_path": "release/current/stage128_read_only_absorption_report.json",
+      "release_gate_path": "release/current/stage128_release_gate_report.json",
+      "required_for_release": true
+    },
+    {
+      "stage": "stage129",
+      "title": "MultiWorkCIM + Cross-Work Canon Governor",
+      "status": "pass",
+      "report_path": "release/current/stage129_multiwork_cim_governor_report.json",
+      "release_gate_path": "release/current/stage129_release_gate_report.json",
+      "required_for_release": true
+    }
+  ]
+}

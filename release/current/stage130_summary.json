@@ -1,0 +1,29 @@
+{
+  "stage": "130",
+  "baseline_stage": "129",
+  "title": "MultiWork Release",
+  "status": "pass",
+  "main_report": "release/current/stage130_multiwork_release_report.json",
+  "release_gate_report": "release/current/stage130_release_gate_report.json",
+  "evidence_pack": "release/current/stage130_multiwork_release_pack/",
+  "multiwork_release_authorized": true,
+  "stage127_to_stage129_evidence_preserved": true,
+  "cross_project_write_allowed": false,
+  "raw_manuscript_provider_leakage": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage131 GIG / Gate26 Advisory Absorption",
+    "Stage132 Contradiction Classifier + Mystery Exemption",
+    "Stage133 NarrativeStateTensor 8D Measurement Layer",
+    "Stage134 MetaLearner Audit Mode",
+    "Stage135 Bounded Active MetaLearner",
+    "Stage136 ASD Patch Proposal Mode",
+    "Stage137 Human-Approved Repair Commit",
+    "Stage138 Canonical Formula Registry",
+    "Stage139 AuthorLicense / Project Rights Boundary",
+    "Stage140 Production CI/CD and Release Automation"
+  ]
+}

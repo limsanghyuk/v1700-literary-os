@@ -1,0 +1,197 @@
+{
+  "stage": "130",
+  "baseline_stage": "129",
+  "title": "MultiWork Release",
+  "status": "pass",
+  "issues": [],
+  "multiwork_release_authorized": true,
+  "multiwork_release_mode": "MULTIWORK_RELEASE_READ_ONLY_AUTHORITY",
+  "stage127_to_stage129_evidence_preserved": true,
+  "stage127_preflight_pass": true,
+  "stage128_read_only_absorption_pass": true,
+  "stage129_cim_governor_pass": true,
+  "direct_v571_merge_detected": false,
+  "cross_project_write_allowed": false,
+  "unauthorized_cross_reads": 0,
+  "unauthorized_cross_writes": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "full_text_exported": false,
+  "canon_auto_resolution_count": 0,
+  "shared_world_source_of_truth_promoted": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "python_fallback_used": false,
+  "stage131_gig_advisory_required": true,
+  "gate26_hard_block_enabled": false,
+  "parts": {
+    "release_matrix": {
+      "status": "pass",
+      "issues": [],
+      "matrix": {
+        "stage": "130",
+        "baseline_stage": "129",
+        "stage127_preflight_pass": true,
+        "stage128_read_only_absorption_pass": true,
+        "stage129_cim_governor_pass": true,
+        "direct_v571_merge_detected": false,
+        "cross_project_write_allowed": false,
+        "unauthorized_cross_reads": 0,
+        "unauthorized_cross_writes": 0,
+        "raw_manuscript_cross_project_leakage": 0,
+        "canon_auto_resolution_count": 0,
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0,
+        "evidence_complete": true
+      },
+      "stage_evidence": [
+        {
+          "stage": "stage127",
+          "title": "MultiWork Preflight & Isolation Audit",
+          "status": "pass",
+          "report_path": "release/current/stage127_multiwork_preflight_report.json",
+          "release_gate_path": "release/current/stage127_release_gate_report.json",
+          "required_for_release": true
+        },
+        {
+          "stage": "stage128",
+          "title": "SharedWorld / SharedCharacter Read-Only Absorption",
+          "status": "pass",
+          "report_path": "release/current/stage128_read_only_absorption_report.json",
+          "release_gate_path": "release/current/stage128_release_gate_report.json",
+          "required_for_release": true
+        },
+        {
+          "stage": "stage129",
+          "title": "MultiWorkCIM + Cross-Work Canon Governor",
+          "status": "pass",
+          "report_path": "release/current/stage129_multiwork_cim_governor_report.json",
+          "release_gate_path": "release/current/stage129_release_gate_report.json",
+          "required_for_release": true
+        }
+      ]
+    },
+    "operational_surface": {
+      "status": "pass",
+      "operational_surface": {
+        "release_id": "V1700_STAGE130_MULTIWORK_RELEASE",
+        "mode": "MULTIWORK_RELEASE_READ_ONLY_AUTHORITY",
+        "enabled_surfaces": [
+          "project_isolation_audit",
+          "shared_character_read_only_adapter",
+          "shared_world_read_only_adapter",
+          "project_local_cim",
+          "cross_project_influence_edges_read_only",
+          "cross_work_canon_governor",
+          "multiwork_release_gate_authority"
+        ],
+        "blocked_surfaces": [
+          "cross_project_write",
+          "raw_manuscript_sharing",
+          "direct_v571_trunk_merge",
+          "canon_auto_resolution",
+          "shared_world_source_of_truth_promotion",
+          "gate26_hard_block",
+          "active_learning_runtime_mutation"
+        ],
+        "next_stage": "Stage131 — GIG / Gate26 Advisory Absorption"
+      },
+      "multiwork_release_mode": "MULTIWORK_RELEASE_READ_ONLY_AUTHORITY",
+      "cross_project_write_allowed": false,
+      "raw_manuscript_sharing_allowed": false,
+      "stage131_gig_advisory_deferred": true
+    },
+    "gitnexus_preflight": {
+      "status": "PASS",
+      "gitnexus_cli_available": true,
+      "python_fallback_used": false,
+      "meta_snapshot": {
+        "status": "available",
+        "indexedAt": "2026-05-18T08:44:44.783Z",
+        "stats": {
+          "files": 2121,
+          "nodes": 16918,
+          "edges": 26030,
+          "communities": 271,
+          "processes": 300,
+          "embeddings": 0
+        },
+        "capabilities": {
+          "graph": {
+            "provider": "ladybugdb",
+            "status": "available"
+          },
+          "fts": {
+            "provider": "ladybugdb-fts",
+            "status": "available"
+          },
+          "vectorSearch": {
+            "provider": "exact-scan",
+            "status": "unavailable",
+            "exactScanLimit": 10000,
+            "reason": "LadybugDB VECTOR is disabled on this platform; semantic search uses exact scan when embeddings exist."
+          }
+        }
+      },
+      "shape_check": {
+        "status": "pass",
+        "schema": "stage130_gitnexus_preflight_v1"
+      },
+      "critical_symbols": {
+        "stage130_runner": true,
+        "stage130_release_gate": true,
+        "multiwork_release_report": true,
+        "stage129_predecessor_gate": true
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "import_graph_estimated": true,
+        "changed_stage": "stage130",
+        "affected_paths": [
+          "src/v1700/multiwork_release/",
+          "src/v1700/stage130/",
+          "src/v1700/gates/stage130_release_gate.py",
+          "tools/run_stage130_multiwork_release.py",
+          "tools/run_stage130_release_gate.py",
+          "tests/test_stage130_multiwork_release.py"
+        ],
+        "required_manifests_present": true,
+        "required_evidence_present": true,
+        "orphan_critical_path_detected": false
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "project_isolation_boundary": true,
+        "shared_read_only_boundary": true,
+        "cross_work_canon_governor": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "stage130_gate_registered": true
+      }
+    },
+    "release_seal": {
+      "status": "pass",
+      "issues": [],
+      "seal": {
+        "status": "pass",
+        "stage": "130",
+        "baseline_stage": "129",
+        "release_authority": "Stage130 MultiWork Release Gate",
+        "stage127_to_stage129_evidence_preserved": true,
+        "multiwork_release_authorized": true,
+        "stage131_gig_advisory_deferred": true,
+        "provider_zero_preserved": true,
+        "node2_boundary_preserved": true,
+        "raw_manuscript_boundary_preserved": true,
+        "branchpoint_lineage_preserved": true
+      }
+    }
+  }
+}
