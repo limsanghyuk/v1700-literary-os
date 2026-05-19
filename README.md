@@ -1,23 +1,24 @@
-# V1700 Literary OS - Stage134
+# V1700 Literary OS - Stage135
 
-> MetaLearner Audit Mode
+> LearningQualityGate & Candidate Registry
 > Provider-Zero AI longform novel and drama scenario generation system.
 
 ## Current Stage
 
-Stage134 audits Stage133 NarrativeStateTensor output through a MetaLearner shell that is strictly audit-only. It records review and weight-candidate recommendations without training, mutating canon, updating weights, or activating repair.
+Stage135 is the official active development baseline after Stage134. It converts Stage134 MetaLearner audit output into a deterministic candidate registry while keeping runtime training, active learning, model weight updates, canon mutation, provider calls, and AutoRepair mutation blocked.
 
 The central rule is simple:
 
-- Stage127 preflight and isolation audit remains required.
-- Stage128 SharedWorld / SharedCharacter adapters remain read-only.
-- Stage129 MultiWorkCIM and Cross-Work Canon Governor remain authoritative.
-- Stage130 authorizes only the safe MultiWork operational surface.
-- Stage131 keeps Gate26 advisory-only.
-- Stage132 requires evidence before granting mystery exemption: a reveal lock and payoff budget must exist.
-- Stage133 measures every Stage132 conflict category across eight local-only narrative state dimensions without mutating canon.
-- Stage134 may recommend review or future weight-candidate tracking, but runtime training, active learning, canon auto-resolution, and AutoRepair mutation remain blocked.
-- Cross-project write, raw manuscript sharing, direct V571 trunk merge, canon auto-resolution, Gate26 hard block, active learning, and AutoRepair mutation remain blocked.
+- Stage134 remains audit-only.
+- Stage135 is candidate-only.
+- Review-required cases are routed to `REVIEW_ONLY` and never become training examples.
+- Future learning candidates may be recorded, but no training trigger is allowed.
+- Runtime training remains disabled.
+- Active meta-learning remains disabled.
+- Model weight update count remains zero.
+- Provider calls remain zero.
+- Node2 raw reveal access remains zero.
+- Canon auto-resolution and AutoRepair mutation remain blocked.
 
 ## Quick Start
 
@@ -29,8 +30,8 @@ python -m pytest tests/ -q
 python tools/run_ci_dependency_preflight.py
 python tools/run_stage134_meta_learner_audit.py
 python tools/run_stage134_release_gate.py
-python tools/run_stage133_narrative_state_tensor.py
-python tools/run_stage133_release_gate.py
+python tools/run_stage135_learning_quality_gate.py
+python tools/run_stage135_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
 ```
@@ -39,11 +40,27 @@ python tools/run_stage72_repo_doctor.py
 
 The repository uses GitHub Actions as the shared authority for work across multiple computers.
 
-- `ci-core`: runs on push, pull request, and version tags. It installs `.[dev]`, runs `pytest tests/ -q`, Stage134 release gate, the main release gate, repo doctor, and GitNexus/GraphNexus preflight checks.
-- `ci-full`: scheduled/manual full-lineage verification.
+- `ci-core`: runs on push, pull request, and version tags. It installs `.[dev]`, runs `pytest tests/ -q`, Stage134 baseline checks, Stage135 LearningQualityGate, Stage135 release gate, the main release gate, repo doctor, and GitNexus/GraphNexus preflight checks.
+- `cd-dry-run`: builds a release dry-run archive and SHA256 artifact on PR/push.
 - `release`: runs on `v1700-stage*` or `v*` tags and publishes an integrated ZIP, SHA256 sidecar, and `SHA256SUMS.txt` snapshot as GitHub Release assets.
 
-## Stage134 Core Modules
+## Stage135 Core Modules
+
+```text
+src/v1700/learning_quality_gate/
+  contracts.py
+  gate.py
+  preflight.py
+  report.py
+
+src/v1700/stage135/
+  stage135_runner.py
+
+src/v1700/gates/
+  stage135_release_gate.py
+```
+
+## Stage134 Baseline Modules
 
 ```text
 src/v1700/meta_learner_audit/
@@ -59,44 +76,29 @@ src/v1700/gates/
   stage134_release_gate.py
 ```
 
-## Stage133 Foundation Modules
+## Stage135 Release Gate
 
-```text
-src/v1700/narrative_state_tensor/
-  contracts.py
-  measurement.py
-  preflight.py
-  report.py
+The Stage135 gate validates:
 
-src/v1700/stage133/
-  stage133_runner.py
-
-src/v1700/gates/
-  stage133_release_gate.py
-```
-
-## Stage134 Release Gate
-
-The Stage134 gate validates:
-
-- Stage133 baseline gate pass
-- MetaLearner audit report pass
-- audit-only mode is enforced
-- runtime training disabled
-- active learning disabled
+- Stage134 baseline gate pass
+- LearningQualityGate report pass
+- candidate registry pass
+- candidate-only mode enforced
+- learning allowed count = 0
+- training triggered count = 0
+- active meta-learning disabled
 - model weight update count = 0
 - AutoRepair mutation count = 0
-- review recommendation exists for true contradiction
-- Gate26 remains advisory-only
-- canon auto-resolution blocked
-- cross-project write blocked
+- review-only route exists
 - provider default calls = 0
 - Node2 raw reveal access = 0
 - raw manuscript leakage = 0
 - credential leakage = 0
-- GitNexus/Python fallback preflight pass
+- canon auto-resolution blocked
+- cross-project write blocked
+- Gate26 advisory-only
 - branchpoint survival pass
-- repo doctor active stage ready
+- docs/manifest evidence present
 
 ## Invariants
 
@@ -110,8 +112,8 @@ The Stage134 gate validates:
   "runtime_training_enabled": false,
   "active_meta_learning_enabled": false,
   "model_weight_update_count": 0,
-  "raw_manuscript_provider_leakage": 0,
-  "raw_manuscript_cross_project_leakage": 0,
+  "learning_allowed_count": 0,
+  "training_triggered_count": 0,
   "node2_raw_reveal_access": 0,
   "credential_leakage": 0,
   "branchpoint_lineage_preserved": true
@@ -129,18 +131,23 @@ Stage131  GIG / Gate26 Advisory Absorption
 Stage132  Contradiction Classifier + Mystery Exemption
 Stage133  NarrativeStateTensor 8D Measurement Layer
 Stage134  MetaLearner Audit Mode
+Stage135  LearningQualityGate & Candidate Registry
 ```
 
 ## Next Direction
 
 ```text
-Stage135 - Bounded Active MetaLearner
-Stage136 - ASD Patch Proposal Mode
+Stage136 - SchemaRegistry
+Stage137 - MigrationManager
+Stage138 - LOSDB Storage Contracts
+Stage139 - Corpus Governance Pipeline
+Stage140 - Production Release Automation Closure
 ```
 
 ## Repository Evidence
 
-- Stage manifest: `manifests/stage134_manifest.json`
+- Stage manifest: `manifests/stage135_manifest.json`
 - Live manifest: `manifests/live_core_manifest.json`
-- Release report: `release/current/stage134_meta_learner_audit_report.json`
-- Release gate: `release/current/stage134_release_gate_report.json`
+- Release report: `release/current/stage135_learning_quality_gate_report.json`
+- Release gate: `release/current/stage135_release_gate_report.json`
+- Official asset manifest: `release/current/stage135_official_asset_manifest.json`
