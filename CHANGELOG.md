@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.32.0-stage132
+
+- Added Stage132 Contradiction Classifier + Mystery Exemption.
+- Added deterministic evidence classification for true contradiction, intentional mystery, character misunderstanding, reveal delay, and no-conflict cases.
+- Added mystery exemption audit requiring reveal lock and payoff budget.
+- Preserved writer approval for true contradictions.
+- Kept Gate26 hard block, canon auto-resolution, AutoRepair mutation, cross-project write, provider calls, raw manuscript leakage, and Node2 raw reveal access disabled.
+- Added Stage132 proposal, blueprint, roadmap, stage note, manifests, release evidence, tests, repo doctor wiring, and main release gate integration.
+
 ## v1.31.0-stage131
 
 - Added Stage131 GIG / Gate26 advisory-only absorption.

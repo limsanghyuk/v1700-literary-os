@@ -1,0 +1,249 @@
+{
+  "stage": "132",
+  "baseline_stage": "131",
+  "title": "Contradiction Classifier + Mystery Exemption",
+  "status": "pass",
+  "issues": [],
+  "classifier_mode": "DETERMINISTIC_EVIDENCE_CLASSIFIER",
+  "case_count": 5,
+  "exemption_count": 3,
+  "writer_review_required_count": 1,
+  "stage131_categories_preserved": [
+    "character_misunderstanding",
+    "intentional_mystery",
+    "reveal_delay",
+    "true_contradiction"
+  ],
+  "true_contradiction_review_required": true,
+  "mystery_exemption_requires_reveal_lock": true,
+  "gate26_hard_block_enabled": false,
+  "gate26_hard_block_count": 0,
+  "auto_repair_mutation_count": 0,
+  "canon_auto_resolution_count": 0,
+  "cross_project_write_allowed": false,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "writer_approval_guard": true,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "classifier_matrix": {
+      "status": "pass",
+      "issues": [],
+      "evidence": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "surface_conflict": true,
+          "canon_fact_a": "Work A says the mentor died in 1999.",
+          "canon_fact_b": "Work B says the same mentor appears alive in 2003.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.94,
+          "truth_confidence_b": 0.92,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": ""
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "surface_conflict": true,
+          "canon_fact_a": "The witness says the letter was burned.",
+          "canon_fact_b": "A locked reveal says the letter survived.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.62,
+          "truth_confidence_b": 0.91,
+          "reveal_lock_id": "RL-EP08-LETTER",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": true,
+          "writer_intent_tag": "intentional_mystery"
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "surface_conflict": true,
+          "canon_fact_a": "A character believes the doctor betrayed the team.",
+          "canon_fact_b": "The canon ledger says the doctor protected the team.",
+          "same_canon_scope": false,
+          "truth_confidence_a": 0.55,
+          "truth_confidence_b": 0.9,
+          "reveal_lock_id": "",
+          "pov_boundary": true,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": "character_misunderstanding"
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "surface_conflict": true,
+          "canon_fact_a": "Episode 3 implies the father abandoned the family.",
+          "canon_fact_b": "Episode 9 reveal says the father was coerced.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.67,
+          "truth_confidence_b": 0.88,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": 9,
+          "payoff_budget_reserved": true,
+          "writer_intent_tag": "reveal_delay"
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "surface_conflict": false,
+          "canon_fact_a": "The nurse hides the ring.",
+          "canon_fact_b": "The ring is missing in the next scene.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.91,
+          "truth_confidence_b": 0.91,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": ""
+        }
+      ],
+      "classifications": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "classification": "true_contradiction",
+          "advisory_level": "REVIEW_REQUIRED",
+          "exemption_status": "not_exempted",
+          "recommendation": "route_to_writer_review_queue",
+          "requires_writer_approval": true,
+          "confidence": 0.95,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "classification": "intentional_mystery",
+          "advisory_level": "ALLOW_WITH_LOCK",
+          "exemption_status": "exempted_by_reveal_lock",
+          "recommendation": "preserve_mystery_and_attach_reveal_lock",
+          "requires_writer_approval": false,
+          "confidence": 0.93,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "classification": "character_misunderstanding",
+          "advisory_level": "ALLOW_WITH_POV_TAG",
+          "exemption_status": "exempted_by_pov_boundary",
+          "recommendation": "tag_character_knowledge_boundary",
+          "requires_writer_approval": false,
+          "confidence": 0.91,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "classification": "reveal_delay",
+          "advisory_level": "ALLOW_WITH_REVEAL_BUDGET",
+          "exemption_status": "exempted_by_reveal_schedule",
+          "recommendation": "track_in_episode_reveal_budget",
+          "requires_writer_approval": false,
+          "confidence": 0.9,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "classification": "no_conflict",
+          "advisory_level": "PASS",
+          "exemption_status": "not_needed",
+          "recommendation": "continue_generation",
+          "requires_writer_approval": false,
+          "confidence": 0.99,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        }
+      ],
+      "case_count": 5,
+      "exemption_count": 3,
+      "writer_review_required_count": 1,
+      "hard_block_count": 0,
+      "canon_auto_resolution_count": 0,
+      "auto_repair_mutation_count": 0
+    },
+    "mystery_exemption": {
+      "status": "pass",
+      "issues": [],
+      "mystery_exemption_policy": "requires_reveal_lock_and_payoff_budget",
+      "true_contradiction_policy": "writer_review_required_no_exemption",
+      "safe_exemption_types": [
+        "intentional_mystery",
+        "character_misunderstanding",
+        "reveal_delay"
+      ],
+      "unsafe_actions_enabled": 0
+    },
+    "gitnexus_preflight": {
+      "status": "PASS",
+      "gitnexus_cli_available": true,
+      "native_gitnexus_index_present": false,
+      "python_fallback_used": true,
+      "shape_check": {
+        "status": "pass",
+        "schema": "stage132_gitnexus_preflight_v1"
+      },
+      "critical_symbols": {
+        "stage132_runner": true,
+        "stage132_release_gate": true,
+        "contradiction_classifier": true,
+        "mystery_exemption": true,
+        "stage131_predecessor_gate": true
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "import_graph_estimated": true,
+        "changed_stage": "stage132",
+        "affected_paths": [
+          "src/v1700/contradiction_classifier/",
+          "src/v1700/stage132/",
+          "src/v1700/gates/stage132_release_gate.py",
+          "tools/run_stage132_contradiction_classifier.py",
+          "tools/run_stage132_release_gate.py",
+          "tests/test_stage132_contradiction_classifier.py"
+        ],
+        "required_manifests_present": true,
+        "required_evidence_present": true,
+        "orphan_critical_path_detected": false
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "multiwork_release_authority": true,
+        "stage131_advisory_authority": true,
+        "gate26_hard_block_still_disabled": true,
+        "mystery_exemption_requires_reveal_lock": true,
+        "true_contradiction_writer_review": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "concept_impact": {
+        "provider_zero": "preserved",
+        "node2_boundary": "preserved",
+        "raw_manuscript_leakage": "zero",
+        "gate26": "advisory_classifier_deepened",
+        "mystery": "exemption_requires_reveal_lock_and_payoff_budget",
+        "canon_auto_resolution": "blocked",
+        "cross_project_write": "blocked"
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "stage132_gate_registered": true,
+        "repo_doctor_recognizes_stage132": true
+      },
+      "gitnexus_execution_note": "Stage132 GitNexus native index attempt\n\nDate: 2026-05-19\nRepository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage130_pushclean\n\nProtocol:\nBefore Stage132 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus indexing attempt.\n\nCommand attempted:\nnpx.cmd -y gitnexus@latest status\n\nObserved result:\nThe native GitNexus/NPM path reported an execution error:\nCannot destructure property 'package' of 'node.target' as it is null.\n\nFallback decision:\nStage132 proceeds only through the documented optional-sidecar path:\n- Python fallback preflight\n- GraphNexus release gate\n- Stage131 baseline gate\n- symbol-to-branchpoint trace\n- repo doctor integration\n- provider-zero and Node2 boundary checks\n\nConclusion:\nGitNexus remains optional. The Stage132 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.\n"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "issues": [],
+  "mystery_exemption_policy": "requires_reveal_lock_and_payoff_budget",
+  "true_contradiction_policy": "writer_review_required_no_exemption",
+  "safe_exemption_types": [
+    "intentional_mystery",
+    "character_misunderstanding",
+    "reveal_delay"
+  ],
+  "unsafe_actions_enabled": 0
+}

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage131 - GIG / Gate26 Advisory Absorption
+Current active stage: Stage132 - Contradiction Classifier + Mystery Exemption
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -36,3 +36,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - Stage129 - MultiWorkCIM + Cross-Work Canon Governor
 - [Stage130](stage130.md) - MultiWork Release
 - [Stage131](stage131.md) - GIG / Gate26 Advisory Absorption
+- [Stage132](stage132.md) - Contradiction Classifier + Mystery Exemption

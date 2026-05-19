@@ -1,0 +1,44 @@
+{
+  "stage": "stage132",
+  "baseline_stage": "stage131",
+  "branchpoints": {
+    "provider_zero": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/contradiction_classifier/report.py",
+        "src/v1700/gates/stage132_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage132_contradiction_classifier.py::test_stage132_preserves_provider_zero_and_raw_boundaries"
+      ]
+    },
+    "gate26_advisory_only": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/contradiction_classifier/classifier.py",
+        "src/v1700/contradiction_classifier/mystery_exemption.py"
+      ],
+      "tests": [
+        "tests/test_stage132_contradiction_classifier.py::test_stage132_keeps_gate26_advisory_not_hard_block"
+      ]
+    },
+    "mystery_exemption": {
+      "status": "new_stage132_branchpoint",
+      "symbols": [
+        "src/v1700/contradiction_classifier/mystery_exemption.py"
+      ],
+      "tests": [
+        "tests/test_stage132_contradiction_classifier.py::test_stage132_mystery_exemption_requires_lock_and_budget"
+      ]
+    },
+    "true_contradiction_writer_review": {
+      "status": "preserved_and_deepened",
+      "symbols": [
+        "src/v1700/contradiction_classifier/classifier.py"
+      ],
+      "tests": [
+        "tests/test_stage132_contradiction_classifier.py::test_stage132_distinguishes_true_contradiction_from_exemptions"
+      ]
+    }
+  }
+}

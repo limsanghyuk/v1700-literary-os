@@ -419,9 +419,21 @@
         "reveal delay budget routing"
       ],
       "surviving_runtime_value": "Converts the deferred Gate26/GIG problem into deterministic advisory classification without enabling hard blocks, canon auto-resolution, AutoRepair mutation, cross-project writes, or provider calls."
+    },
+    {
+      "stage_id": "STAGE132",
+      "title": "Contradiction Classifier + Mystery Exemption",
+      "introduced_concepts": [
+        "deterministic evidence classifier",
+        "mystery exemption policy",
+        "reveal lock and payoff budget requirement",
+        "true contradiction writer review guard",
+        "POV and reveal-delay exemptions"
+      ],
+      "surviving_runtime_value": "Deepens Stage131 advisory categories into evidence-based classification while preserving writer authority and blocking hard repair, canon auto-resolution, provider calls, and cross-project writes."
     }
   ],
-  "active_version": "stage131",
+  "active_version": "stage132",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -436,5 +448,10 @@
     "status": "active",
     "baseline_stage": "stage130",
     "purpose": "GIG / Gate26 Advisory Absorption"
+  },
+  "stage132": {
+    "status": "active",
+    "baseline_stage": "stage131",
+    "purpose": "Contradiction Classifier + Mystery Exemption"
   }
 }

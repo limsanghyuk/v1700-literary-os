@@ -42,11 +42,11 @@ jobs:
       - name: Run full pytest suite
         run: python -m pytest tests/ -q
 
-      - name: Run Stage131 advisory gate
-        run: python tools/run_stage131_gig_advisory.py
+      - name: Run Stage132 contradiction classifier
+        run: python tools/run_stage132_contradiction_classifier.py
 
-      - name: Run Stage131 release gate
-        run: python tools/run_stage131_release_gate.py
+      - name: Run Stage132 release gate
+        run: python tools/run_stage132_release_gate.py
 
       - name: Run main release gate
         run: python tools/run_release_gate.py

@@ -1,5 +1,5 @@
 {
-  "active_version": "stage131",
+  "active_version": "stage132",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -165,7 +165,9 @@
     "stage130_multiwork_release",
     "stage130_release_gate",
     "stage131_gig_advisory",
-    "stage131_release_gate"
+    "stage131_release_gate",
+    "stage132_contradiction_classifier",
+    "stage132_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -380,9 +382,11 @@
     "stage131_gig_advisory_absorption": true,
     "stage131_gate26_advisory_only": true,
     "gate26_hard_block_disabled": true,
-    "true_contradiction_writer_review_required": true
+    "true_contradiction_writer_review_required": true,
+    "stage132_contradiction_classifier": true,
+    "stage132_mystery_exemption_requires_reveal_lock": true
   },
-  "canonical_package": "V1700_stage131_gig_gate26_advisory_absorption_integrated_repository.zip",
+  "canonical_package": "V1700_stage132_contradiction_classifier_mystery_exemption_integrated_repository.zip",
   "stage80": {
     "status": "active",
     "purpose": "Korean drama composition hierarchy and macro plot architecture"
@@ -668,8 +672,8 @@
     "baseline_stage": "stage126",
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
-  "canonical_filelist": "V1700_stage131_gig_gate26_advisory_absorption_filelist.txt",
-  "canonical_sha256_sidecar": "V1700_stage131_gig_gate26_advisory_absorption_integrated_repository.zip.sha256",
+  "canonical_filelist": "V1700_stage132_contradiction_classifier_mystery_exemption_filelist.txt",
+  "canonical_sha256_sidecar": "V1700_stage132_contradiction_classifier_mystery_exemption_integrated_repository.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
@@ -688,7 +692,8 @@
   "implemented_capabilities": {
     "stage129_multiwork_cim_cross_work_canon_governor": true,
     "stage130_multiwork_release": true,
-    "stage131_gig_gate26_advisory_absorption": true
+    "stage131_gig_gate26_advisory_absorption": true,
+    "stage132_contradiction_classifier_mystery_exemption": true
   },
   "stage130": {
     "title": "MultiWork Release",
@@ -709,6 +714,20 @@
     "advisory_mode": "GIG_GATE26_ADVISORY_ONLY",
     "gate26_hard_block_enabled": false,
     "canon_auto_resolution_count": 0,
+    "cross_project_write_allowed": false,
+    "writer_approval_required_for_true_contradiction": true
+  },
+  "stage132": {
+    "title": "Contradiction Classifier + Mystery Exemption",
+    "baseline_stage": "stage131",
+    "status": "active",
+    "release_gate": "release/current/stage132_release_gate_report.json",
+    "evidence": "release/current/stage132_contradiction_classifier_report.json",
+    "classifier_mode": "DETERMINISTIC_EVIDENCE_CLASSIFIER",
+    "mystery_exemption_requires_reveal_lock": true,
+    "gate26_hard_block_enabled": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
     "cross_project_write_allowed": false,
     "writer_approval_required_for_true_contradiction": true
   }

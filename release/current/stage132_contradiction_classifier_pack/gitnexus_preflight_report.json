@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "gitnexus_cli_available": true,
+  "native_gitnexus_index_present": false,
+  "python_fallback_used": true,
+  "shape_check": {
+    "status": "pass",
+    "schema": "stage132_gitnexus_preflight_v1"
+  },
+  "critical_symbols": {
+    "stage132_runner": true,
+    "stage132_release_gate": true,
+    "contradiction_classifier": true,
+    "mystery_exemption": true,
+    "stage131_predecessor_gate": true
+  },
+  "python_fallback": {
+    "status": "PASS",
+    "import_graph_estimated": true,
+    "changed_stage": "stage132",
+    "affected_paths": [
+      "src/v1700/contradiction_classifier/",
+      "src/v1700/stage132/",
+      "src/v1700/gates/stage132_release_gate.py",
+      "tools/run_stage132_contradiction_classifier.py",
+      "tools/run_stage132_release_gate.py",
+      "tests/test_stage132_contradiction_classifier.py"
+    ],
+    "required_manifests_present": true,
+    "required_evidence_present": true,
+    "orphan_critical_path_detected": false
+  },
+  "survival_matrix": {
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "multiwork_release_authority": true,
+    "stage131_advisory_authority": true,
+    "gate26_hard_block_still_disabled": true,
+    "mystery_exemption_requires_reveal_lock": true,
+    "true_contradiction_writer_review": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "concept_impact": {
+    "provider_zero": "preserved",
+    "node2_boundary": "preserved",
+    "raw_manuscript_leakage": "zero",
+    "gate26": "advisory_classifier_deepened",
+    "mystery": "exemption_requires_reveal_lock_and_payoff_budget",
+    "canon_auto_resolution": "blocked",
+    "cross_project_write": "blocked"
+  },
+  "release_gate_integration": {
+    "status": "pass",
+    "stage132_gate_registered": true,
+    "repo_doctor_recognizes_stage132": true
+  },
+  "gitnexus_execution_note": "Stage132 GitNexus native index attempt\n\nDate: 2026-05-19\nRepository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage130_pushclean\n\nProtocol:\nBefore Stage132 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus indexing attempt.\n\nCommand attempted:\nnpx.cmd -y gitnexus@latest status\n\nObserved result:\nThe native GitNexus/NPM path reported an execution error:\nCannot destructure property 'package' of 'node.target' as it is null.\n\nFallback decision:\nStage132 proceeds only through the documented optional-sidecar path:\n- Python fallback preflight\n- GraphNexus release gate\n- Stage131 baseline gate\n- symbol-to-branchpoint trace\n- repo doctor integration\n- provider-zero and Node2 boundary checks\n\nConclusion:\nGitNexus remains optional. The Stage132 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.\n"
+}

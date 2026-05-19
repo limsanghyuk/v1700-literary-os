@@ -1,11 +1,11 @@
-# V1700 Literary OS - Stage131
+# V1700 Literary OS - Stage132
 
-> GIG / Gate26 Advisory Absorption
+> Contradiction Classifier + Mystery Exemption
 > Provider-Zero AI longform novel and drama scenario generation system.
 
 ## Current Stage
 
-Stage131 absorbs the deferred GIG / Gate26 problem as an advisory-only governance layer over the Stage130 MultiWork release.
+Stage132 deepens Stage131 advisory categories into a deterministic evidence classifier with explicit mystery exemption rules.
 
 The central rule is simple:
 
@@ -14,6 +14,7 @@ The central rule is simple:
 - Stage129 MultiWorkCIM and Cross-Work Canon Governor remain authoritative.
 - Stage130 authorizes only the safe MultiWork operational surface.
 - Stage131 classifies true contradiction, intentional mystery, character misunderstanding, and reveal delay without enabling a hard block.
+- Stage132 requires evidence before granting mystery exemption: a reveal lock and payoff budget must exist.
 - Cross-project write, raw manuscript sharing, direct V571 trunk merge, canon auto-resolution, Gate26 hard block, active learning, and AutoRepair mutation remain blocked.
 
 ## Quick Start
@@ -24,8 +25,8 @@ pip install -e ".[dev]"
 python -m compileall src tools
 python -m pytest tests/ -q
 python tools/run_ci_dependency_preflight.py
-python tools/run_stage131_gig_advisory.py
-python tools/run_stage131_release_gate.py
+python tools/run_stage132_contradiction_classifier.py
+python tools/run_stage132_release_gate.py
 python tools/run_stage130_multiwork_release.py
 python tools/run_stage130_release_gate.py
 python tools/run_release_gate.py
@@ -36,11 +37,28 @@ python tools/run_stage72_repo_doctor.py
 
 The repository uses GitHub Actions as the shared authority for work across multiple computers.
 
-- `ci-core`: runs on push, pull request, and version tags. It installs `.[dev]`, runs `pytest tests/ -q`, Stage131 release gate, the main release gate, repo doctor, and GitNexus/GraphNexus preflight checks.
+- `ci-core`: runs on push, pull request, and version tags. It installs `.[dev]`, runs `pytest tests/ -q`, Stage132 release gate, the main release gate, repo doctor, and GitNexus/GraphNexus preflight checks.
 - `ci-full`: scheduled/manual full-lineage verification.
 - `release`: runs on `v1700-stage*` or `v*` tags and publishes an integrated ZIP, SHA256 sidecar, and `SHA256SUMS.txt` snapshot as GitHub Release assets.
 
-## Stage131 Core Modules
+## Stage132 Core Modules
+
+```text
+src/v1700/contradiction_classifier/
+  contracts.py
+  classifier.py
+  mystery_exemption.py
+  preflight.py
+  report.py
+
+src/v1700/stage132/
+  stage132_runner.py
+
+src/v1700/gates/
+  stage132_release_gate.py
+```
+
+## Stage131 Foundation Modules
 
 ```text
 src/v1700/gig_advisory/
@@ -75,19 +93,17 @@ src/v1700/gates/
   stage130_release_gate.py
 ```
 
-## Stage131 Release Gate
+## Stage132 Release Gate
 
-The Stage131 gate validates:
+The Stage132 gate validates:
 
-- Stage129 baseline gate pass
-- Stage127~129 evidence preserved
-- MultiWork release matrix pass
-- operational surface pass
-- release seal pass
 - Stage130 baseline gate pass
+- Stage131 baseline gate pass
 - Gate26 remains advisory-only
 - true contradictions require writer review
 - intentional mysteries, character misunderstandings, and reveal delays remain valid narrative categories
+- mystery exemption requires a reveal lock and payoff budget
+- no-conflict cases pass without unnecessary review
 - direct V571 merge blocked
 - cross-project write blocked
 - unauthorized cross reads/writes = 0
@@ -128,18 +144,19 @@ Stage128  SharedWorld / SharedCharacter Read-Only Absorption
 Stage129  MultiWorkCIM + Cross-Work Canon Governor
 Stage130  MultiWork Release
 Stage131  GIG / Gate26 Advisory Absorption
+Stage132  Contradiction Classifier + Mystery Exemption
 ```
 
 ## Next Direction
 
 ```text
-Stage132 - Contradiction Classifier + Mystery Exemption
 Stage133 - NarrativeStateTensor 8D Measurement Layer
+Stage134 - MetaLearner Audit Mode
 ```
 
 ## Repository Evidence
 
-- Stage manifest: `manifests/stage131_manifest.json`
+- Stage manifest: `manifests/stage132_manifest.json`
 - Live manifest: `manifests/live_core_manifest.json`
-- Release report: `release/current/stage131_gig_advisory_report.json`
-- Release gate: `release/current/stage131_release_gate_report.json`
+- Release report: `release/current/stage132_contradiction_classifier_report.json`
+- Release gate: `release/current/stage132_release_gate_report.json`

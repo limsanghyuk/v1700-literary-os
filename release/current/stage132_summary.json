@@ -1,0 +1,27 @@
+{
+  "stage": "132",
+  "baseline_stage": "131",
+  "title": "Contradiction Classifier + Mystery Exemption",
+  "status": "pass",
+  "main_report": "release/current/stage132_contradiction_classifier_report.json",
+  "release_gate_report": "release/current/stage132_release_gate_report.json",
+  "evidence_pack": "release/current/stage132_contradiction_classifier_pack/",
+  "classifier_mode": "DETERMINISTIC_EVIDENCE_CLASSIFIER",
+  "mystery_exemption_requires_reveal_lock": true,
+  "gate26_hard_block_enabled": false,
+  "writer_approval_guard": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage133 NarrativeStateTensor 8D Measurement Layer",
+    "Stage134 MetaLearner Audit Mode",
+    "Stage135 Bounded Active MetaLearner",
+    "Stage136 ASD Patch Proposal Mode",
+    "Stage137 Human-Approved Repair Commit",
+    "Stage138 Canonical Formula Registry",
+    "Stage139 AuthorLicense / Project Rights Boundary",
+    "Stage140 Production CI/CD and Release Automation"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "stage132",
+  "name": "Contradiction Classifier + Mystery Exemption",
+  "mode": "DETERMINISTIC_EVIDENCE_CLASSIFIER",
+  "baseline_stage": "stage131",
+  "classification_types": [
+    "true_contradiction",
+    "intentional_mystery",
+    "character_misunderstanding",
+    "reveal_delay",
+    "no_conflict"
+  ],
+  "mystery_exemption_requires": [
+    "reveal_lock_id",
+    "payoff_budget_reserved"
+  ],
+  "true_contradiction_action": "route_to_writer_review_queue",
+  "gate26_hard_block_enabled": false,
+  "canon_auto_resolution_enabled": false,
+  "auto_repair_enabled": false,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "132",
+  "baseline_stage": "131",
+  "title": "Contradiction Classifier + Mystery Exemption",
+  "status": "pass",
+  "issues": [],
+  "classifier_mode": "DETERMINISTIC_EVIDENCE_CLASSIFIER",
+  "case_count": 5,
+  "exemption_count": 3,
+  "true_contradiction_review_required": true,
+  "mystery_exemption_requires_reveal_lock": true,
+  "gate26_hard_block_enabled": false,
+  "canon_auto_resolution_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "writer_approval_guard": true,
+  "branchpoint_lineage_preserved": true
+}
