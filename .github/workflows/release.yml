@@ -32,10 +32,13 @@ jobs:
         run: |
           python -m compileall -q src tools
           python -m pytest tests/ -q
-          python tools/run_stage133_narrative_state_tensor.py
-          python tools/run_stage133_release_gate.py
+          python tools/run_stage134_meta_learner_audit.py
+          python tools/run_stage134_release_gate.py
+          python tools/run_stage135_learning_quality_gate.py
+          python tools/run_stage135_release_gate.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py
+          python tools/run_ci_dependency_preflight.py
 
       - name: Build release archive and checksums
         shell: bash
@@ -50,6 +53,8 @@ jobs:
           sha256sum "$ZIP_NAME" > "$ZIP_NAME.sha256"
           if [ -f SHA256SUMS.txt ]; then
             cp SHA256SUMS.txt "SHA256SUMS_${SAFE_TAG}.txt"
+          else
+            sha256sum "$ZIP_NAME" > "SHA256SUMS_${SAFE_TAG}.txt"
           fi
           {
             echo "zip_name=$ZIP_NAME"
