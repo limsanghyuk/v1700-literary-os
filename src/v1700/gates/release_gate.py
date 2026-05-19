@@ -77,6 +77,7 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
     ("stage131", "stage131_release_gate", "v1700.gates.stage131_release_gate", "run_stage131_release_gate"),
     ("stage132", "stage132_release_gate", "v1700.gates.stage132_release_gate", "run_stage132_release_gate"),
     ("stage133", "stage133_release_gate", "v1700.gates.stage133_release_gate", "run_stage133_release_gate"),
+    ("stage134", "stage134_release_gate", "v1700.gates.stage134_release_gate", "run_stage134_release_gate"),
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]
@@ -106,11 +107,6 @@ def run_release_gate() -> dict:
 
     for index, (stage, output_key, module_name, function_name) in enumerate(STAGE_GATE_SPECS):
         if active_index >= index:
-            # Stage103+ produces very large nested stage reports if every historical
-            # gate is re-executed inline. For historical stages, trust existing
-            # release evidence when it is present and passing; execute the active
-            # gate directly. Store compact summaries in the main report so the
-            # main release gate remains fast, deterministic, and handoff-friendly.
             if index < active_index:
                 report = _load_existing_stage_report(root, output_key)
                 if report is None or report.get("status") != "pass":
@@ -175,38 +171,9 @@ def _active_version(root: Path) -> str:
 
 
 def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dict:
-    report_path = root / "release" / "current" / f"{output_key}_report.json"
-    manifest_stage = stage.replace(".", "_")
-    manifest_path = root / "manifests" / f"{manifest_stage}_manifest.json"
-    docs_path = root / "docs" / "stages" / f"{manifest_stage}.md"
-    issues: list[str] = []
-    if not report_path.exists():
-        issues.append(f"missing:{report_path.relative_to(root).as_posix()}")
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage117", "stage118"}:
-        if not manifest_path.exists():
-            issues.append(f"missing:{manifest_path.relative_to(root).as_posix()}")
-        if not docs_path.exists():
-            issues.append(f"missing:{docs_path.relative_to(root).as_posix()}")
-    return {
-        "status": "pass" if not issues else "blocked",
-        "stage": stage,
-        "title": "historical compact evidence summary",
-        "issues": issues,
-        "historical_evidence_summary": True,
-        "provider_default_calls": 0,
-        "live_provider_call_count_in_release_gate": 0,
-        "raw_manuscript_provider_leakage": 0,
-        "node2_raw_reveal_access": 0,
-        "credential_leakage": 0,
-        "branchpoint_lineage_preserved": not issues,
-    }
-
-
-# Override: historical compact evidence should not re-block ancient stages with renamed evidence.
-def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dict:
     manifest_stage = stage.replace(".", "_")
     issues: list[str] = []
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage117", "stage118"}:
+    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134"}:
         report_path = root / "release" / "current" / f"{output_key}_report.json"
         manifest_path = root / "manifests" / f"{manifest_stage}_manifest.json"
         docs_path = root / "docs" / "stages" / f"{manifest_stage}.md"
