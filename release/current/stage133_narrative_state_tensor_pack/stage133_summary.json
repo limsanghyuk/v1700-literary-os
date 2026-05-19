@@ -1,0 +1,10 @@
+{
+  "stage": "133",
+  "status": "pass",
+  "dimension_count": 8,
+  "tensor_case_count": 5,
+  "review_required_tensor_count": 1,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,12 +1,12 @@
 {
-  "stage": "stage132",
-  "package": "V1700_stage132_contradiction_classifier_mystery_exemption_integrated_repository.zip",
-  "canonical_package": "V1700_stage132_contradiction_classifier_mystery_exemption_integrated_repository.zip",
-  "sha256": "release/current/stage132_sha256.txt",
-  "sha256_sidecar": "V1700_stage132_contradiction_classifier_mystery_exemption_integrated_repository.zip.sha256",
-  "filelist": "V1700_stage132_contradiction_classifier_mystery_exemption_filelist.txt",
-  "created_by": "stage132_contradiction_classifier",
-  "active_version": "stage132",
-  "patch_report": "release/current/stage132_contradiction_classifier_report.json",
-  "release_gate": "release/current/stage132_release_gate_report.json"
+  "stage": "stage133",
+  "package": "V1700_stage133_narrative_state_tensor_8d_integrated_repository.zip",
+  "canonical_package": "V1700_stage133_narrative_state_tensor_8d_integrated_repository.zip",
+  "sha256": "release/current/stage133_sha256.txt",
+  "sha256_sidecar": "V1700_stage133_narrative_state_tensor_8d_integrated_repository.zip.sha256",
+  "filelist": "V1700_stage133_narrative_state_tensor_8d_filelist.txt",
+  "created_by": "stage133_narrative_state_tensor",
+  "active_version": "stage133",
+  "patch_report": "release/current/stage133_narrative_state_tensor_report.json",
+  "release_gate": "release/current/stage133_release_gate_report.json"
 }

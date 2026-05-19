@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.33.0-stage133
+
+- Added Stage133 NarrativeStateTensor 8D Measurement Layer.
+- Added deterministic local-only tensor measurement for causality, time, reveal budget, agency, emotion, voice, attention, and canon isolation.
+- Routed true contradictions to measured review state instead of auto-repair.
+- Preserved Stage132 mystery exemption semantics when reveal lock and payoff budget exist.
+- Kept Gate26 hard block, canon auto-resolution, AutoRepair mutation, cross-project write, provider calls, raw manuscript leakage, and Node2 raw reveal access disabled.
+- Added Stage133 proposal, blueprint, roadmap, stage note, manifests, release evidence, tests, repo doctor wiring, and main release gate integration.
+
 ## v1.32.0-stage132
 
 - Added Stage132 Contradiction Classifier + Mystery Exemption.

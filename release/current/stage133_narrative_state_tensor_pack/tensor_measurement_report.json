@@ -1,0 +1,128 @@
+{
+  "stage": "133",
+  "baseline_stage": "132",
+  "status": "pass",
+  "dimensions": [
+    "causality_integrity",
+    "temporal_continuity",
+    "reveal_budget_integrity",
+    "character_agency",
+    "emotional_momentum",
+    "voice_stability",
+    "attention_economy",
+    "canon_isolation"
+  ],
+  "tensors": [
+    {
+      "case_id": "CEX-TRUE-001",
+      "classification": "true_contradiction",
+      "dimensions": {
+        "causality_integrity": 0.58,
+        "temporal_continuity": 0.84,
+        "reveal_budget_integrity": 0.62,
+        "character_agency": 0.84,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.84,
+        "attention_economy": 0.72,
+        "canon_isolation": 0.52
+      },
+      "status": "REVIEW_REQUIRED",
+      "lowest_dimension": "canon_isolation",
+      "lowest_score": 0.52,
+      "writer_review_required": true,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-MYST-001",
+      "classification": "intentional_mystery",
+      "dimensions": {
+        "causality_integrity": 0.84,
+        "temporal_continuity": 0.84,
+        "reveal_budget_integrity": 0.94,
+        "character_agency": 0.84,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.84,
+        "attention_economy": 0.91,
+        "canon_isolation": 0.88
+      },
+      "status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "writer_review_required": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-POV-001",
+      "classification": "character_misunderstanding",
+      "dimensions": {
+        "causality_integrity": 0.84,
+        "temporal_continuity": 0.84,
+        "reveal_budget_integrity": 0.84,
+        "character_agency": 0.87,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.88,
+        "attention_economy": 0.84,
+        "canon_isolation": 0.9
+      },
+      "status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "writer_review_required": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-DELAY-001",
+      "classification": "reveal_delay",
+      "dimensions": {
+        "causality_integrity": 0.84,
+        "temporal_continuity": 0.86,
+        "reveal_budget_integrity": 0.89,
+        "character_agency": 0.84,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.84,
+        "attention_economy": 0.88,
+        "canon_isolation": 0.84
+      },
+      "status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "writer_review_required": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-CLEAR-001",
+      "classification": "no_conflict",
+      "dimensions": {
+        "causality_integrity": 0.96,
+        "temporal_continuity": 0.95,
+        "reveal_budget_integrity": 0.84,
+        "character_agency": 0.84,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.84,
+        "attention_economy": 0.84,
+        "canon_isolation": 0.96
+      },
+      "status": "PASS",
+      "lowest_dimension": "reveal_budget_integrity",
+      "lowest_score": 0.84,
+      "writer_review_required": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    }
+  ],
+  "average_vector": {
+    "causality_integrity": 0.812,
+    "temporal_continuity": 0.866,
+    "reveal_budget_integrity": 0.826,
+    "character_agency": 0.846,
+    "emotional_momentum": 0.84,
+    "voice_stability": 0.848,
+    "attention_economy": 0.838,
+    "canon_isolation": 0.82
+  },
+  "issues": []
+}

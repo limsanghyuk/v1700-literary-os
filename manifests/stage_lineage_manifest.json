@@ -431,9 +431,20 @@
         "POV and reveal-delay exemptions"
       ],
       "surviving_runtime_value": "Deepens Stage131 advisory categories into evidence-based classification while preserving writer authority and blocking hard repair, canon auto-resolution, provider calls, and cross-project writes."
+    },
+    {
+      "stage_id": "STAGE133",
+      "title": "NarrativeStateTensor 8D Measurement Layer",
+      "introduced_concepts": [
+        "8D NarrativeStateTensor measurement",
+        "true contradiction review-state tensor",
+        "mystery exemption tensor preservation",
+        "local-only narrative state diagnostics"
+      ],
+      "surviving_runtime_value": "Restores the Stage95 Narrative State Tensor concept as a concrete Stage132 measurement layer without enabling repair, provider calls, or cross-project writes."
     }
   ],
-  "active_version": "stage132",
+  "active_version": "stage133",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -453,5 +464,10 @@
     "status": "active",
     "baseline_stage": "stage131",
     "purpose": "Contradiction Classifier + Mystery Exemption"
+  },
+  "stage133": {
+    "status": "active",
+    "baseline_stage": "stage132",
+    "purpose": "NarrativeStateTensor 8D Measurement Layer"
   }
 }

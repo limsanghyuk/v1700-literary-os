@@ -1,0 +1,41 @@
+{
+  "stage": "stage133",
+  "title": "NarrativeStateTensor 8D Measurement Layer",
+  "baseline_stage": "stage132",
+  "status": "active",
+  "purpose": "Measure Stage132 contradiction classifications through a deterministic local-only 8D narrative state tensor.",
+  "runtime_modules": [
+    "src/v1700/narrative_state_tensor/contracts.py",
+    "src/v1700/narrative_state_tensor/measurement.py",
+    "src/v1700/narrative_state_tensor/preflight.py",
+    "src/v1700/narrative_state_tensor/report.py",
+    "src/v1700/stage133/stage133_runner.py",
+    "src/v1700/gates/stage133_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage133_narrative_state_tensor.py",
+    "tools/run_stage133_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage133_narrative_state_tensor.py"
+  ],
+  "release_evidence": [
+    "release/current/stage133_narrative_state_tensor_report.json",
+    "release/current/stage133_release_gate_report.json",
+    "release/current/stage133_narrative_state_tensor_pack/tensor_measurement_report.json",
+    "release/current/stage133_narrative_state_tensor_pack/stage132_classifier_input_report.json",
+    "release/current/stage133_narrative_state_tensor_pack/gitnexus_preflight_report.json"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "gate26_hard_block_enabled": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0
+  }
+}

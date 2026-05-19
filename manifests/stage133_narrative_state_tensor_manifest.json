@@ -1,0 +1,21 @@
+{
+  "stage": "stage133",
+  "component": "narrative_state_tensor",
+  "dimension_count": 8,
+  "dimensions": [
+    "causality_integrity",
+    "temporal_continuity",
+    "reveal_budget_integrity",
+    "character_agency",
+    "emotional_momentum",
+    "voice_stability",
+    "attention_economy",
+    "canon_isolation"
+  ],
+  "input_authority": "stage132_contradiction_classifier",
+  "measurement_mode": "DETERMINISTIC_8D_LOCAL_ONLY",
+  "mutation_allowed": false,
+  "provider_call_required": false,
+  "writer_review_required_for_true_contradiction": true,
+  "mystery_exemption_requires_reveal_lock": true
+}

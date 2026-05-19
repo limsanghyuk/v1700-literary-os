@@ -14,7 +14,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage98", "stage99", "stage100", "stage101", "stage102", "stage103", "stage104",
     "stage105", "stage106", "stage107", "stage107_5", "stage108", "stage109", "stage110",
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
-    "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132",
+    "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -39,6 +39,7 @@ STAGE_REQUIRED_GATES = {
     "stage130": ["stage130_multiwork_release", "stage130_release_gate"],
     "stage131": ["stage131_gig_advisory", "stage131_release_gate"],
     "stage132": ["stage132_contradiction_classifier", "stage132_release_gate"],
+    "stage133": ["stage133_narrative_state_tensor", "stage133_release_gate"],
 }
 
 STAGE_REQUIRED_FILES = {
@@ -156,6 +157,18 @@ STAGE_REQUIRED_FILES["stage132"] = [
     "release/current/stage132_release_gate_report.json",
 ]
 
+STAGE_REQUIRED_FILES["stage133"] = [
+    "manifests/stage133_manifest.json",
+    "manifests/stage133_narrative_state_tensor_manifest.json",
+    "manifests/stage133_branchpoint_trace_manifest.json",
+    "docs/stages/stage133.md",
+    "docs/architecture/stage133_blueprint.md",
+    "docs/proposals/stage133_proposal.md",
+    "docs/roadmaps/stage133_roadmap.md",
+    "release/current/stage133_narrative_state_tensor_report.json",
+    "release/current/stage133_release_gate_report.json",
+]
+
 def main() -> int:
     issues: list[str] = []
     required = [
@@ -203,6 +216,7 @@ def main() -> int:
         "stage130": "stage129_release_gate",
         "stage131": "stage130_release_gate",
         "stage132": "stage131_release_gate",
+        "stage133": "stage132_release_gate",
     }.get(active)
     if predecessor_gate and predecessor_gate not in gates:
         issues.append(f"{predecessor_gate}_missing")
@@ -241,3 +255,5 @@ if __name__ == "__main__":
 # stage131_release_gate stage131_gig_advisory
 
 # stage132_release_gate stage132_contradiction_classifier
+
+# stage133_release_gate stage133_narrative_state_tensor

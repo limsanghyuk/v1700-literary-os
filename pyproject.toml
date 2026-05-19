@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.32.0"
-description = "V1700 Stage132 - Contradiction Classifier + Mystery Exemption"
+version = "1.33.0"
+description = "V1700 Stage133 - NarrativeStateTensor 8D Measurement Layer"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

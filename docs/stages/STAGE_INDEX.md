@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage132 - Contradiction Classifier + Mystery Exemption
+Current active stage: Stage133 - NarrativeStateTensor 8D Measurement Layer
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -37,3 +37,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage130](stage130.md) - MultiWork Release
 - [Stage131](stage131.md) - GIG / Gate26 Advisory Absorption
 - [Stage132](stage132.md) - Contradiction Classifier + Mystery Exemption
+- [Stage133](stage133.md) - NarrativeStateTensor 8D Measurement Layer

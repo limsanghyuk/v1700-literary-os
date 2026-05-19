@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "native_gitnexus": {
+    "status": "unavailable",
+    "note": "Stage133 GitNexus native index attempt\n\nDate: 2026-05-19\nRepository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage130_pushclean\n\nProtocol:\nBefore Stage133 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus status attempt.\n\nCommand attempted:\nnpx.cmd -y gitnexus@latest status\n\nObserved result:\nThe native GitNexus/NPM path reported an execution error:\nCannot destructure property 'package' of 'node.target' as it is null.\n\nFallback decision:\nStage133 proceeds only through the documented optional-sidecar path:\n- Python fallback preflight\n- GraphNexus release gate\n- Stage132 baseline gate\n- symbol-to-branchpoint trace\n- repo doctor integration\n- provider-zero and Node2 boundary checks\n\nConclusion:\nGitNexus remains optional. The Stage133 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.\n"
+  },
+  "python_fallback": {
+    "status": "PASS",
+    "reason": "GitNexus remains optional; GraphNexus and branchpoint files are inspected locally."
+  },
+  "concept_impact": {
+    "changed_stage": "stage133",
+    "impacted_branchpoints": [
+      "stage95_narrative_state_tensor",
+      "stage132_contradiction_classifier",
+      "true_contradiction_writer_review_required",
+      "stage132_mystery_exemption_requires_reveal_lock",
+      "provider_zero",
+      "node2_surface_contract"
+    ]
+  },
+  "survival_matrix": {
+    "provider_zero": true,
+    "node2_boundary": true,
+    "stage132_classifier": true,
+    "gate26_advisory_only": true,
+    "mystery_exemption": true,
+    "canon_auto_resolution_blocked": true,
+    "auto_repair_blocked": true
+  },
+  "symbol_to_branchpoint_trace": {
+    "status": "pass",
+    "symbols": [
+      "src/v1700/narrative_state_tensor/measurement.py",
+      "src/v1700/gates/stage133_release_gate.py",
+      "tests/test_stage133_narrative_state_tensor.py"
+    ]
+  },
+  "shape_check": {
+    "status": "pass",
+    "schema": "stage133_gitnexus_preflight_v1"
+  },
+  "release_gate_integration": {
+    "status": "pass",
+    "stage133_gate_registered": true,
+    "repo_doctor_recognizes_stage133": true
+  },
+  "missing_required_files": []
+}

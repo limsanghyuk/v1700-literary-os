@@ -1,0 +1,374 @@
+{
+  "stage": "133",
+  "baseline_stage": "132",
+  "title": "NarrativeStateTensor 8D Measurement Layer",
+  "status": "pass",
+  "issues": [],
+  "measurement_mode": "DETERMINISTIC_8D_LOCAL_ONLY",
+  "dimension_count": 8,
+  "dimensions": [
+    "causality_integrity",
+    "temporal_continuity",
+    "reveal_budget_integrity",
+    "character_agency",
+    "emotional_momentum",
+    "voice_stability",
+    "attention_economy",
+    "canon_isolation"
+  ],
+  "tensor_case_count": 5,
+  "review_required_tensor_count": 1,
+  "pass_tensor_count": 4,
+  "average_vector": {
+    "causality_integrity": 0.812,
+    "temporal_continuity": 0.866,
+    "reveal_budget_integrity": 0.826,
+    "character_agency": 0.846,
+    "emotional_momentum": 0.84,
+    "voice_stability": 0.848,
+    "attention_economy": 0.838,
+    "canon_isolation": 0.82
+  },
+  "lowest_observed_dimension": {
+    "case_id": "CEX-TRUE-001",
+    "dimension": "canon_isolation",
+    "score": 0.52,
+    "classification": "true_contradiction"
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "gate26_hard_block_enabled": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "writer_review_required_for_true_contradiction": true,
+  "mystery_exemption_requires_reveal_lock": true,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "classifier_matrix": {
+      "status": "pass",
+      "issues": [],
+      "evidence": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "surface_conflict": true,
+          "canon_fact_a": "Work A says the mentor died in 1999.",
+          "canon_fact_b": "Work B says the same mentor appears alive in 2003.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.94,
+          "truth_confidence_b": 0.92,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": ""
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "surface_conflict": true,
+          "canon_fact_a": "The witness says the letter was burned.",
+          "canon_fact_b": "A locked reveal says the letter survived.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.62,
+          "truth_confidence_b": 0.91,
+          "reveal_lock_id": "RL-EP08-LETTER",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": true,
+          "writer_intent_tag": "intentional_mystery"
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "surface_conflict": true,
+          "canon_fact_a": "A character believes the doctor betrayed the team.",
+          "canon_fact_b": "The canon ledger says the doctor protected the team.",
+          "same_canon_scope": false,
+          "truth_confidence_a": 0.55,
+          "truth_confidence_b": 0.9,
+          "reveal_lock_id": "",
+          "pov_boundary": true,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": "character_misunderstanding"
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "surface_conflict": true,
+          "canon_fact_a": "Episode 3 implies the father abandoned the family.",
+          "canon_fact_b": "Episode 9 reveal says the father was coerced.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.67,
+          "truth_confidence_b": 0.88,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": 9,
+          "payoff_budget_reserved": true,
+          "writer_intent_tag": "reveal_delay"
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "surface_conflict": false,
+          "canon_fact_a": "The nurse hides the ring.",
+          "canon_fact_b": "The ring is missing in the next scene.",
+          "same_canon_scope": true,
+          "truth_confidence_a": 0.91,
+          "truth_confidence_b": 0.91,
+          "reveal_lock_id": "",
+          "pov_boundary": false,
+          "scheduled_reveal_episode": null,
+          "payoff_budget_reserved": false,
+          "writer_intent_tag": ""
+        }
+      ],
+      "classifications": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "classification": "true_contradiction",
+          "advisory_level": "REVIEW_REQUIRED",
+          "exemption_status": "not_exempted",
+          "recommendation": "route_to_writer_review_queue",
+          "requires_writer_approval": true,
+          "confidence": 0.95,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "classification": "intentional_mystery",
+          "advisory_level": "ALLOW_WITH_LOCK",
+          "exemption_status": "exempted_by_reveal_lock",
+          "recommendation": "preserve_mystery_and_attach_reveal_lock",
+          "requires_writer_approval": false,
+          "confidence": 0.93,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "classification": "character_misunderstanding",
+          "advisory_level": "ALLOW_WITH_POV_TAG",
+          "exemption_status": "exempted_by_pov_boundary",
+          "recommendation": "tag_character_knowledge_boundary",
+          "requires_writer_approval": false,
+          "confidence": 0.91,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "classification": "reveal_delay",
+          "advisory_level": "ALLOW_WITH_REVEAL_BUDGET",
+          "exemption_status": "exempted_by_reveal_schedule",
+          "recommendation": "track_in_episode_reveal_budget",
+          "requires_writer_approval": false,
+          "confidence": 0.9,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "classification": "no_conflict",
+          "advisory_level": "PASS",
+          "exemption_status": "not_needed",
+          "recommendation": "continue_generation",
+          "requires_writer_approval": false,
+          "confidence": 0.99,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false,
+          "auto_repair_allowed": false
+        }
+      ],
+      "case_count": 5,
+      "exemption_count": 3,
+      "writer_review_required_count": 1,
+      "hard_block_count": 0,
+      "canon_auto_resolution_count": 0,
+      "auto_repair_mutation_count": 0
+    },
+    "tensor_measurement": {
+      "stage": "133",
+      "baseline_stage": "132",
+      "status": "pass",
+      "dimensions": [
+        "causality_integrity",
+        "temporal_continuity",
+        "reveal_budget_integrity",
+        "character_agency",
+        "emotional_momentum",
+        "voice_stability",
+        "attention_economy",
+        "canon_isolation"
+      ],
+      "tensors": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "classification": "true_contradiction",
+          "dimensions": {
+            "causality_integrity": 0.58,
+            "temporal_continuity": 0.84,
+            "reveal_budget_integrity": 0.62,
+            "character_agency": 0.84,
+            "emotional_momentum": 0.84,
+            "voice_stability": 0.84,
+            "attention_economy": 0.72,
+            "canon_isolation": 0.52
+          },
+          "status": "REVIEW_REQUIRED",
+          "lowest_dimension": "canon_isolation",
+          "lowest_score": 0.52,
+          "writer_review_required": true,
+          "mutation_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "classification": "intentional_mystery",
+          "dimensions": {
+            "causality_integrity": 0.84,
+            "temporal_continuity": 0.84,
+            "reveal_budget_integrity": 0.94,
+            "character_agency": 0.84,
+            "emotional_momentum": 0.84,
+            "voice_stability": 0.84,
+            "attention_economy": 0.91,
+            "canon_isolation": 0.88
+          },
+          "status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "writer_review_required": false,
+          "mutation_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "classification": "character_misunderstanding",
+          "dimensions": {
+            "causality_integrity": 0.84,
+            "temporal_continuity": 0.84,
+            "reveal_budget_integrity": 0.84,
+            "character_agency": 0.87,
+            "emotional_momentum": 0.84,
+            "voice_stability": 0.88,
+            "attention_economy": 0.84,
+            "canon_isolation": 0.9
+          },
+          "status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "writer_review_required": false,
+          "mutation_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "classification": "reveal_delay",
+          "dimensions": {
+            "causality_integrity": 0.84,
+            "temporal_continuity": 0.86,
+            "reveal_budget_integrity": 0.89,
+            "character_agency": 0.84,
+            "emotional_momentum": 0.84,
+            "voice_stability": 0.84,
+            "attention_economy": 0.88,
+            "canon_isolation": 0.84
+          },
+          "status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "writer_review_required": false,
+          "mutation_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "classification": "no_conflict",
+          "dimensions": {
+            "causality_integrity": 0.96,
+            "temporal_continuity": 0.95,
+            "reveal_budget_integrity": 0.84,
+            "character_agency": 0.84,
+            "emotional_momentum": 0.84,
+            "voice_stability": 0.84,
+            "attention_economy": 0.84,
+            "canon_isolation": 0.96
+          },
+          "status": "PASS",
+          "lowest_dimension": "reveal_budget_integrity",
+          "lowest_score": 0.84,
+          "writer_review_required": false,
+          "mutation_allowed": false,
+          "provider_call_required": false
+        }
+      ],
+      "average_vector": {
+        "causality_integrity": 0.812,
+        "temporal_continuity": 0.866,
+        "reveal_budget_integrity": 0.826,
+        "character_agency": 0.846,
+        "emotional_momentum": 0.84,
+        "voice_stability": 0.848,
+        "attention_economy": 0.838,
+        "canon_isolation": 0.82
+      },
+      "issues": []
+    },
+    "gitnexus_preflight": {
+      "status": "pass",
+      "native_gitnexus": {
+        "status": "unavailable",
+        "note": "Stage133 GitNexus native index attempt\n\nDate: 2026-05-19\nRepository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage130_pushclean\n\nProtocol:\nBefore Stage133 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus status attempt.\n\nCommand attempted:\nnpx.cmd -y gitnexus@latest status\n\nObserved result:\nThe native GitNexus/NPM path reported an execution error:\nCannot destructure property 'package' of 'node.target' as it is null.\n\nFallback decision:\nStage133 proceeds only through the documented optional-sidecar path:\n- Python fallback preflight\n- GraphNexus release gate\n- Stage132 baseline gate\n- symbol-to-branchpoint trace\n- repo doctor integration\n- provider-zero and Node2 boundary checks\n\nConclusion:\nGitNexus remains optional. The Stage133 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.\n"
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "reason": "GitNexus remains optional; GraphNexus and branchpoint files are inspected locally."
+      },
+      "concept_impact": {
+        "changed_stage": "stage133",
+        "impacted_branchpoints": [
+          "stage95_narrative_state_tensor",
+          "stage132_contradiction_classifier",
+          "true_contradiction_writer_review_required",
+          "stage132_mystery_exemption_requires_reveal_lock",
+          "provider_zero",
+          "node2_surface_contract"
+        ]
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "stage132_classifier": true,
+        "gate26_advisory_only": true,
+        "mystery_exemption": true,
+        "canon_auto_resolution_blocked": true,
+        "auto_repair_blocked": true
+      },
+      "symbol_to_branchpoint_trace": {
+        "status": "pass",
+        "symbols": [
+          "src/v1700/narrative_state_tensor/measurement.py",
+          "src/v1700/gates/stage133_release_gate.py",
+          "tests/test_stage133_narrative_state_tensor.py"
+        ]
+      },
+      "shape_check": {
+        "status": "pass",
+        "schema": "stage133_gitnexus_preflight_v1"
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "stage133_gate_registered": true,
+        "repo_doctor_recognizes_stage133": true
+      },
+      "missing_required_files": []
+    }
+  }
+}

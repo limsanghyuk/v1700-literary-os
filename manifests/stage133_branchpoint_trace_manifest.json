@@ -1,0 +1,43 @@
+{
+  "stage": "stage133",
+  "baseline_stage": "stage132",
+  "branchpoints": {
+    "provider_zero": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/narrative_state_tensor/report.py",
+        "src/v1700/gates/stage133_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage133_narrative_state_tensor.py::test_stage133_preserves_provider_zero_and_node2_boundaries"
+      ]
+    },
+    "stage132_classifier": {
+      "status": "preserved_and_measured",
+      "symbols": [
+        "src/v1700/narrative_state_tensor/measurement.py"
+      ],
+      "tests": [
+        "tests/test_stage133_narrative_state_tensor.py::test_stage133_tensor_report_passes"
+      ]
+    },
+    "true_contradiction_writer_review": {
+      "status": "preserved_as_review_required_tensor",
+      "symbols": [
+        "src/v1700/narrative_state_tensor/measurement.py"
+      ],
+      "tests": [
+        "tests/test_stage133_narrative_state_tensor.py::test_stage133_routes_true_contradiction_to_review_not_repair"
+      ]
+    },
+    "mystery_exemption": {
+      "status": "preserved_as_pass_tensor_when_locked",
+      "symbols": [
+        "src/v1700/narrative_state_tensor/measurement.py"
+      ],
+      "tests": [
+        "tests/test_stage133_narrative_state_tensor.py::test_stage133_keeps_mystery_exemption_pass_when_locked"
+      ]
+    }
+  }
+}
