@@ -74,6 +74,7 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
     ("stage128", "stage128_release_gate", "v1700.gates.stage128_release_gate", "run_stage128_release_gate"),
     ("stage129", "stage129_release_gate", "v1700.gates.stage129_release_gate", "run_stage129_release_gate"),
     ("stage130", "stage130_release_gate", "v1700.gates.stage130_release_gate", "run_stage130_release_gate"),
+    ("stage131", "stage131_release_gate", "v1700.gates.stage131_release_gate", "run_stage131_release_gate"),
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]
@@ -179,7 +180,7 @@ def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dic
     issues: list[str] = []
     if not report_path.exists():
         issues.append(f"missing:{report_path.relative_to(root).as_posix()}")
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage117", "stage118"}:
+    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage117", "stage118"}:
         if not manifest_path.exists():
             issues.append(f"missing:{manifest_path.relative_to(root).as_posix()}")
         if not docs_path.exists():
@@ -203,7 +204,7 @@ def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dic
 def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dict:
     manifest_stage = stage.replace(".", "_")
     issues: list[str] = []
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage117", "stage118"}:
+    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage117", "stage118"}:
         report_path = root / "release" / "current" / f"{output_key}_report.json"
         manifest_path = root / "manifests" / f"{manifest_stage}_manifest.json"
         docs_path = root / "docs" / "stages" / f"{manifest_stage}.md"

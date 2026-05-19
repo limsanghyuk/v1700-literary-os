@@ -1,0 +1,42 @@
+{
+  "stage": "stage131",
+  "title": "GIG / Gate26 Advisory Absorption",
+  "baseline_stage": "stage130",
+  "status": "active",
+  "purpose": "Absorb the deferred Gate26/GIG problem as advisory-only governance without enabling hard blocks or automatic canon repair.",
+  "runtime_modules": [
+    "src/v1700/gig_advisory/contracts.py",
+    "src/v1700/gig_advisory/classifier.py",
+    "src/v1700/gig_advisory/policy.py",
+    "src/v1700/gig_advisory/preflight.py",
+    "src/v1700/gig_advisory/report.py",
+    "src/v1700/stage131/stage131_runner.py",
+    "src/v1700/gates/stage131_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage131_gig_advisory.py",
+    "tools/run_stage131_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage131_gig_advisory.py"
+  ],
+  "release_evidence": [
+    "release/current/stage131_gig_advisory_report.json",
+    "release/current/stage131_release_gate_report.json",
+    "release/current/stage131_gig_advisory_pack/classifier_report.json",
+    "release/current/stage131_gig_advisory_pack/policy_report.json",
+    "release/current/stage131_gig_advisory_pack/gitnexus_preflight_report.json"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "gate26_hard_block_enabled": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0
+  }
+}

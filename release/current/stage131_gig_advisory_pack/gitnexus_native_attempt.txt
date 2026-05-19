@@ -1,0 +1,26 @@
+Stage131 GitNexus native index attempt
+
+Date: 2026-05-19
+Repository: C:\AI_Codex\codex-work\gpt\github_push\v1700-literary-os_stage130_pushclean
+
+Protocol:
+Before Stage131 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus indexing attempt.
+
+Commands attempted:
+npx.cmd -y gitnexus@latest status
+npx.cmd -y gitnexus@latest analyze --force
+
+Observed result:
+The repository did not produce a local .gitnexus index. The native GitNexus/NPM path reported an execution error:
+Cannot destructure property 'package' of 'node.target' as it is null.
+
+Fallback decision:
+Stage131 proceeds only through the documented optional-sidecar path:
+- Python fallback preflight
+- GraphNexus release gate
+- symbol-to-branchpoint trace
+- repo doctor integration
+- provider-zero and Node2 boundary checks
+
+Conclusion:
+GitNexus remains optional. The Stage131 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.

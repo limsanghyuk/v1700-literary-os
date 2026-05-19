@@ -407,9 +407,21 @@
         "Gate26 advisory deferral"
       ],
       "surviving_runtime_value": "Seals MultiWork preflight, read-only shared absorption, and cross-work canon governor into the first clean MultiWork release authority."
+    },
+    {
+      "stage_id": "STAGE131",
+      "title": "GIG / Gate26 Advisory Absorption",
+      "introduced_concepts": [
+        "Gate26 advisory-only absorption",
+        "true contradiction writer review guard",
+        "intentional mystery exemption",
+        "character misunderstanding POV tag",
+        "reveal delay budget routing"
+      ],
+      "surviving_runtime_value": "Converts the deferred Gate26/GIG problem into deterministic advisory classification without enabling hard blocks, canon auto-resolution, AutoRepair mutation, cross-project writes, or provider calls."
     }
   ],
-  "active_version": "stage130",
+  "active_version": "stage131",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -419,5 +431,10 @@
     "status": "active",
     "baseline_stage": "stage129",
     "purpose": "MultiWork Release"
+  },
+  "stage131": {
+    "status": "active",
+    "baseline_stage": "stage130",
+    "purpose": "GIG / Gate26 Advisory Absorption"
   }
 }

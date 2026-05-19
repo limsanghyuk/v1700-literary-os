@@ -1,0 +1,45 @@
+{
+  "stage": "stage131",
+  "baseline_stage": "stage130",
+  "branchpoints": {
+    "provider_zero": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/gig_advisory/policy.py",
+        "src/v1700/gates/stage131_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage131_gig_advisory.py::test_stage131_preserves_provider_zero_and_raw_boundaries"
+      ]
+    },
+    "node2_boundary": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/gig_advisory/report.py"
+      ],
+      "tests": [
+        "tests/test_stage131_gig_advisory.py::test_stage131_preserves_provider_zero_and_raw_boundaries"
+      ]
+    },
+    "multiwork_release_authority": {
+      "status": "preserved",
+      "symbols": [
+        "src/v1700/gates/stage131_release_gate.py"
+      ],
+      "tests": [
+        "tests/test_stage131_gig_advisory.py::test_stage131_release_gate_passes"
+      ]
+    },
+    "gate26_advisory_only": {
+      "status": "new_stage131_branchpoint",
+      "symbols": [
+        "src/v1700/gig_advisory/classifier.py",
+        "src/v1700/gig_advisory/policy.py"
+      ],
+      "tests": [
+        "tests/test_stage131_gig_advisory.py::test_stage131_keeps_gate26_advisory_not_hard_block",
+        "tests/test_stage131_gig_advisory.py::test_stage131_distinguishes_conflict_types"
+      ]
+    }
+  }
+}

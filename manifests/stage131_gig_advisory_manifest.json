@@ -1,0 +1,22 @@
+{
+  "stage": "stage131",
+  "name": "GIG / Gate26 Advisory Absorption",
+  "mode": "GIG_GATE26_ADVISORY_ONLY",
+  "baseline_stage": "stage130",
+  "gate26_hard_block_enabled": false,
+  "canon_auto_resolution_enabled": false,
+  "auto_repair_enabled": false,
+  "advisory_cases": [
+    "true_contradiction",
+    "intentional_mystery",
+    "character_misunderstanding",
+    "reveal_delay"
+  ],
+  "true_contradiction_action": "route_to_writer_review_queue",
+  "intentional_mystery_action": "preserve_mystery_and_attach_reveal_lock",
+  "character_misunderstanding_action": "tag_character_knowledge_boundary",
+  "reveal_delay_action": "track_in_episode_reveal_budget",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0
+}

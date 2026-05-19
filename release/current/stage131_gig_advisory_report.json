@@ -1,0 +1,152 @@
+{
+  "stage": "131",
+  "baseline_stage": "130",
+  "title": "GIG / Gate26 Advisory Absorption",
+  "status": "pass",
+  "issues": [],
+  "advisory_mode": "GIG_GATE26_ADVISORY_ONLY",
+  "case_count": 4,
+  "true_contradiction_review_required": true,
+  "gate26_hard_block_enabled": false,
+  "gate26_hard_block_count": 0,
+  "auto_repair_mutation_count": 0,
+  "canon_auto_resolution_count": 0,
+  "cross_project_write_allowed": false,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "writer_approval_guard": true,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "classifier": {
+      "status": "pass",
+      "issues": [],
+      "cases": [
+        {
+          "case_id": "GIG-TRUE-001",
+          "conflict_type": "true_contradiction",
+          "description": "Two works assert mutually exclusive canon facts without an in-story explanation.",
+          "advisory_level": "REVIEW_REQUIRED",
+          "recommendation": "route_to_writer_review_queue",
+          "requires_writer_approval": true,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false
+        },
+        {
+          "case_id": "GIG-MYST-001",
+          "conflict_type": "intentional_mystery",
+          "description": "The conflict is deliberately withheld and protected by reveal budget.",
+          "advisory_level": "ALLOW_WITH_LOCK",
+          "recommendation": "preserve_mystery_and_attach_reveal_lock",
+          "requires_writer_approval": false,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false
+        },
+        {
+          "case_id": "GIG-MIS-001",
+          "conflict_type": "character_misunderstanding",
+          "description": "The inconsistency belongs to a character POV gap, not the canonical trunk.",
+          "advisory_level": "ALLOW_WITH_POV_TAG",
+          "recommendation": "tag_character_knowledge_boundary",
+          "requires_writer_approval": false,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false
+        },
+        {
+          "case_id": "GIG-DELAY-001",
+          "conflict_type": "reveal_delay",
+          "description": "The truth exists in canon but is intentionally delayed for longform pacing.",
+          "advisory_level": "ALLOW_WITH_REVEAL_BUDGET",
+          "recommendation": "track_in_episode_reveal_budget",
+          "requires_writer_approval": false,
+          "hard_block_allowed": false,
+          "canon_auto_resolution_allowed": false
+        }
+      ],
+      "case_count": 4,
+      "hard_block_count": 0,
+      "canon_auto_resolution_count": 0,
+      "writer_review_required_count": 1
+    },
+    "policy": {
+      "status": "pass",
+      "issues": [],
+      "policy": {
+        "stage": "131",
+        "baseline_stage": "130",
+        "mode": "GIG_GATE26_ADVISORY_ONLY",
+        "hard_block_enabled": false,
+        "auto_repair_enabled": false,
+        "canon_auto_resolution_enabled": false,
+        "writer_approval_required_for_true_contradiction": true,
+        "provider_default_calls": 0,
+        "live_provider_call_count_in_release_gate": 0
+      },
+      "advisory_only": true,
+      "hard_block_enabled": false,
+      "auto_repair_mutation_count": 0,
+      "canon_auto_resolution_count": 0,
+      "writer_approval_guard": true
+    },
+    "gitnexus_preflight": {
+      "status": "PASS",
+      "gitnexus_cli_available": true,
+      "native_gitnexus_index_present": false,
+      "python_fallback_used": true,
+      "shape_check": {
+        "status": "pass",
+        "schema": "stage131_gitnexus_preflight_v1"
+      },
+      "critical_symbols": {
+        "stage131_runner": true,
+        "stage131_release_gate": true,
+        "gig_advisory_report": true,
+        "gate26_classifier": true,
+        "stage130_predecessor_gate": true
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "import_graph_estimated": true,
+        "changed_stage": "stage131",
+        "affected_paths": [
+          "src/v1700/gig_advisory/",
+          "src/v1700/stage131/",
+          "src/v1700/gates/stage131_release_gate.py",
+          "tools/run_stage131_gig_advisory.py",
+          "tools/run_stage131_release_gate.py",
+          "tests/test_stage131_gig_advisory.py"
+        ],
+        "required_manifests_present": true,
+        "required_evidence_present": true,
+        "orphan_critical_path_detected": false
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "multiwork_release_authority": true,
+        "cross_project_write_blocked": true,
+        "gate26_hard_block_still_disabled": true,
+        "writer_approval_guard": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "concept_impact": {
+        "provider_zero": "preserved",
+        "node2_boundary": "preserved",
+        "raw_manuscript_leakage": "zero",
+        "gate26": "advisory_only",
+        "canon_auto_resolution": "blocked",
+        "cross_project_write": "blocked"
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "stage131_gate_registered": true,
+        "repo_doctor_recognizes_stage131": true
+      },
+      "gitnexus_execution_note": "Stage131 GitNexus native index attempt\n\nDate: 2026-05-19\nRepository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage130_pushclean\n\nProtocol:\nBefore Stage131 implementation, the GitNexus preflight guide required an index freshness check and native GitNexus indexing attempt.\n\nCommands attempted:\nnpx.cmd -y gitnexus@latest status\nnpx.cmd -y gitnexus@latest analyze --force\n\nObserved result:\nThe repository did not produce a local .gitnexus index. The native GitNexus/NPM path reported an execution error:\nCannot destructure property 'package' of 'node.target' as it is null.\n\nFallback decision:\nStage131 proceeds only through the documented optional-sidecar path:\n- Python fallback preflight\n- GraphNexus release gate\n- symbol-to-branchpoint trace\n- repo doctor integration\n- provider-zero and Node2 boundary checks\n\nConclusion:\nGitNexus remains optional. The Stage131 release is valid only because the Python fallback and internal GraphNexus/Branchpoint gates pass.\n\n"
+    }
+  }
+}

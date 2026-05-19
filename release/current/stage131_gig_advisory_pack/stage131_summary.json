@@ -1,0 +1,17 @@
+{
+  "stage": "131",
+  "baseline_stage": "130",
+  "title": "GIG / Gate26 Advisory Absorption",
+  "status": "pass",
+  "issues": [],
+  "advisory_mode": "GIG_GATE26_ADVISORY_ONLY",
+  "case_count": 4,
+  "true_contradiction_review_required": true,
+  "gate26_hard_block_enabled": false,
+  "canon_auto_resolution_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "writer_approval_guard": true,
+  "branchpoint_lineage_preserved": true
+}

@@ -9,11 +9,13 @@
 .github/workflows/release.yml
 .gitignore
 AGENTS.md
+CHANGELOG.md
 CLAUDE.md
 CONTRIBUTING.md
 FILELIST.txt
 README.md
 RELEASE_NOTES.md
+SESSION_INIT.md
 V1700_stage111_1_narrative_weight_kernel_filelist.txt
 V1700_stage112_gitnexus_aware_nie_preflight_bridge_filelist.txt
 V1700_stage113_physics_reward_bridge_mae_reward_wiring_filelist.txt
@@ -25,6 +27,7 @@ docs/architecture/node_authority_boundaries.md
 docs/architecture/runtime_policy.md
 docs/architecture/stage129_blueprint.md
 docs/architecture/stage130_blueprint.md
+docs/architecture/stage131_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -57,11 +60,13 @@ docs/generated/wiki/narrative_wiki.md
 docs/generated/wiki/stage_lineage_wiki.md
 docs/proposals/stage129_proposal.md
 docs/proposals/stage130_proposal.md
+docs/proposals/stage131_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
 docs/reports/stage85_principal_system_engineer_evaluation.md
 docs/reviews/stage72_3_principal_engineer_validation.md
+docs/roadmaps/stage131_roadmap.md
 docs/roadmaps/stage75_to_stage79_completion_roadmap.md
 docs/roadmaps/stage82_blind_critic_evaluation_roadmap.md
 docs/roadmaps/stage83_commercial_release_candidate.md
@@ -84,6 +89,8 @@ docs/runbooks/stage72_3_roadmap.md
 docs/runbooks/stage73_filename_migration.md
 docs/runbooks/stage74_longform_execution.md
 docs/runbooks/workspace_path_policy.md
+docs/sessions/2026-05-19_company_github_strategy.docx
+docs/sessions/2026-05-19_home_session_summary.md
 docs/stage101_cross_lineage_absorption_scenario_room/01_proposal.md
 docs/stage101_cross_lineage_absorption_scenario_room/02_blueprint.md
 docs/stage101_cross_lineage_absorption_scenario_room/03_principal_engineer_review.md
@@ -158,6 +165,7 @@ docs/stages/stage127.md
 docs/stages/stage128.md
 docs/stages/stage129.md
 docs/stages/stage130.md
+docs/stages/stage131.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -212,6 +220,7 @@ docs/stages/stage_001_039_foundation.md
 docs/stages/stage_045_060_productization.md
 docs/stages/stage_050_052_longform_state_guards.md
 docs/stages/stage_061_066_graph_intelligence.md
+docs/workflow/WORKFLOW.md
 examples/node2_rendering_cases/basic_scene_intent.json
 examples/prompts/basic_prompt.txt
 knowledge_base/v1650_stage35_critic_comparison_gate/README_STAGE73_EVIDENCE_RESTORATION.md
@@ -379,6 +388,9 @@ manifests/stage129_multiwork_cim_governor_manifest.json
 manifests/stage130_branchpoint_trace_manifest.json
 manifests/stage130_manifest.json
 manifests/stage130_multiwork_release_manifest.json
+manifests/stage131_branchpoint_trace_manifest.json
+manifests/stage131_gig_advisory_manifest.json
+manifests/stage131_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -850,6 +862,14 @@ release/current/stage130_multiwork_release_pack/stage130_summary.json
 release/current/stage130_multiwork_release_report.json
 release/current/stage130_release_gate_report.json
 release/current/stage130_summary.json
+release/current/stage131_gig_advisory_pack/classifier_report.json
+release/current/stage131_gig_advisory_pack/gitnexus_native_attempt.txt
+release/current/stage131_gig_advisory_pack/gitnexus_preflight_report.json
+release/current/stage131_gig_advisory_pack/policy_report.json
+release/current/stage131_gig_advisory_pack/stage131_summary.json
+release/current/stage131_gig_advisory_report.json
+release/current/stage131_release_gate_report.json
+release/current/stage131_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1190,6 +1210,7 @@ src/v1700/gates/stage127_release_gate.py
 src/v1700/gates/stage128_release_gate.py
 src/v1700/gates/stage129_release_gate.py
 src/v1700/gates/stage130_release_gate.py
+src/v1700/gates/stage131_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -1226,6 +1247,12 @@ src/v1700/gates/stage99_impact_gate.py
 src/v1700/gates/stage99_release_gate.py
 src/v1700/gates/stage99_security_gate.py
 src/v1700/gates/symbol_to_branchpoint_trace_gate.py
+src/v1700/gig_advisory/__init__.py
+src/v1700/gig_advisory/classifier.py
+src/v1700/gig_advisory/contracts.py
+src/v1700/gig_advisory/policy.py
+src/v1700/gig_advisory/preflight.py
+src/v1700/gig_advisory/report.py
 src/v1700/gitnexus_preflight/__init__.py
 src/v1700/gitnexus_preflight/change_review.py
 src/v1700/gitnexus_preflight/concept_impact.py
@@ -1768,6 +1795,8 @@ src/v1700/stage129/__init__.py
 src/v1700/stage129/stage129_runner.py
 src/v1700/stage130/__init__.py
 src/v1700/stage130/stage130_runner.py
+src/v1700/stage131/__init__.py
+src/v1700/stage131/stage131_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -1956,6 +1985,7 @@ tests/test_stage127_multiwork_preflight.py
 tests/test_stage128_read_only_absorption.py
 tests/test_stage129_multiwork_cim_governor.py
 tests/test_stage130_multiwork_release.py
+tests/test_stage131_gig_advisory.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2243,6 +2273,8 @@ tools/run_stage129_multiwork_cim_governor.py
 tools/run_stage129_release_gate.py
 tools/run_stage130_multiwork_release.py
 tools/run_stage130_release_gate.py
+tools/run_stage131_gig_advisory.py
+tools/run_stage131_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "issues": [],
+  "cases": [
+    {
+      "case_id": "GIG-TRUE-001",
+      "conflict_type": "true_contradiction",
+      "description": "Two works assert mutually exclusive canon facts without an in-story explanation.",
+      "advisory_level": "REVIEW_REQUIRED",
+      "recommendation": "route_to_writer_review_queue",
+      "requires_writer_approval": true,
+      "hard_block_allowed": false,
+      "canon_auto_resolution_allowed": false
+    },
+    {
+      "case_id": "GIG-MYST-001",
+      "conflict_type": "intentional_mystery",
+      "description": "The conflict is deliberately withheld and protected by reveal budget.",
+      "advisory_level": "ALLOW_WITH_LOCK",
+      "recommendation": "preserve_mystery_and_attach_reveal_lock",
+      "requires_writer_approval": false,
+      "hard_block_allowed": false,
+      "canon_auto_resolution_allowed": false
+    },
+    {
+      "case_id": "GIG-MIS-001",
+      "conflict_type": "character_misunderstanding",
+      "description": "The inconsistency belongs to a character POV gap, not the canonical trunk.",
+      "advisory_level": "ALLOW_WITH_POV_TAG",
+      "recommendation": "tag_character_knowledge_boundary",
+      "requires_writer_approval": false,
+      "hard_block_allowed": false,
+      "canon_auto_resolution_allowed": false
+    },
+    {
+      "case_id": "GIG-DELAY-001",
+      "conflict_type": "reveal_delay",
+      "description": "The truth exists in canon but is intentionally delayed for longform pacing.",
+      "advisory_level": "ALLOW_WITH_REVEAL_BUDGET",
+      "recommendation": "track_in_episode_reveal_budget",
+      "requires_writer_approval": false,
+      "hard_block_allowed": false,
+      "canon_auto_resolution_allowed": false
+    }
+  ],
+  "case_count": 4,
+  "hard_block_count": 0,
+  "canon_auto_resolution_count": 0,
+  "writer_review_required_count": 1
+}

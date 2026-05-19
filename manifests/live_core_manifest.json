@@ -1,5 +1,5 @@
 {
-  "active_version": "stage130",
+  "active_version": "stage131",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -163,7 +163,9 @@
     "stage129_multiwork_cim_governor",
     "stage129_release_gate",
     "stage130_multiwork_release",
-    "stage130_release_gate"
+    "stage130_release_gate",
+    "stage131_gig_advisory",
+    "stage131_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -375,9 +377,12 @@
     "stage128_shared_world_truth_promotion_deferred": true,
     "stage130_multiwork_release": true,
     "multiwork_release_authority": true,
-    "stage131_gig_advisory_deferred": true
+    "stage131_gig_advisory_absorption": true,
+    "stage131_gate26_advisory_only": true,
+    "gate26_hard_block_disabled": true,
+    "true_contradiction_writer_review_required": true
   },
-  "canonical_package": "V1700_stage129_multiwork_cim_cross_work_canon_governor_integrated_repository.zip",
+  "canonical_package": "V1700_stage131_gig_gate26_advisory_absorption_integrated_repository.zip",
   "stage80": {
     "status": "active",
     "purpose": "Korean drama composition hierarchy and macro plot architecture"
@@ -663,8 +668,8 @@
     "baseline_stage": "stage126",
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
-  "canonical_filelist": "V1700_stage130_multiwork_release_filelist.txt",
-  "canonical_sha256_sidecar": "V1700_stage130_multiwork_release_integrated_repository.zip.sha256",
+  "canonical_filelist": "V1700_stage131_gig_gate26_advisory_absorption_filelist.txt",
+  "canonical_sha256_sidecar": "V1700_stage131_gig_gate26_advisory_absorption_integrated_repository.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
@@ -682,7 +687,8 @@
   },
   "implemented_capabilities": {
     "stage129_multiwork_cim_cross_work_canon_governor": true,
-    "stage130_multiwork_release": true
+    "stage130_multiwork_release": true,
+    "stage131_gig_gate26_advisory_absorption": true
   },
   "stage130": {
     "title": "MultiWork Release",
@@ -693,5 +699,17 @@
     "cross_project_write_allowed": false,
     "canon_auto_resolution_count": 0,
     "stage131_gig_advisory_required": true
+  },
+  "stage131": {
+    "title": "GIG / Gate26 Advisory Absorption",
+    "baseline_stage": "stage130",
+    "status": "active",
+    "release_gate": "release/current/stage131_release_gate_report.json",
+    "evidence": "release/current/stage131_gig_advisory_report.json",
+    "advisory_mode": "GIG_GATE26_ADVISORY_ONLY",
+    "gate26_hard_block_enabled": false,
+    "canon_auto_resolution_count": 0,
+    "cross_project_write_allowed": false,
+    "writer_approval_required_for_true_contradiction": true
   }
 }
