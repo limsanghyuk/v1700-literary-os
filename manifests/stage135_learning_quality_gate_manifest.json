@@ -1,0 +1,16 @@
+{
+  "stage": "stage135",
+  "component": "learning_quality_gate",
+  "status": "implemented",
+  "candidate_only": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "auto_repair_mutation_count": 0,
+  "decisions": [
+    "candidate",
+    "reject",
+    "review_only"
+  ],
+  "evidence_pack": "release/current/stage135_learning_quality_gate_pack/"
+}
