@@ -396,12 +396,28 @@
         "canon conflict score"
       ],
       "surviving_runtime_value": "Keeps Stage128 read-only shared absorption safe while adding deterministic cross-work canon validation before Stage130 MultiWork Release."
+    },
+    {
+      "stage_id": "STAGE130",
+      "title": "MultiWork Release",
+      "introduced_concepts": [
+        "multiwork release authority",
+        "Stage127~129 evidence seal",
+        "safe MultiWork operational surface",
+        "Gate26 advisory deferral"
+      ],
+      "surviving_runtime_value": "Seals MultiWork preflight, read-only shared absorption, and cross-work canon governor into the first clean MultiWork release authority."
     }
   ],
-  "active_version": "stage129",
+  "active_version": "stage130",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
     "purpose": "PNE / Gate29 Absorption"
+  },
+  "stage130": {
+    "status": "active",
+    "baseline_stage": "stage129",
+    "purpose": "MultiWork Release"
   }
 }

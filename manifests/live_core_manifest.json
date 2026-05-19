@@ -1,5 +1,5 @@
 {
-  "active_version": "stage129",
+  "active_version": "stage130",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -161,7 +161,9 @@
     "stage128_read_only_absorption",
     "stage128_release_gate",
     "stage129_multiwork_cim_governor",
-    "stage129_release_gate"
+    "stage129_release_gate",
+    "stage130_multiwork_release",
+    "stage130_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -370,7 +372,10 @@
     "shared_world_canon_conflict_preflight": true,
     "stage128_shared_read_only_absorption": true,
     "stage128_cross_project_write_disabled": true,
-    "stage128_shared_world_truth_promotion_deferred": true
+    "stage128_shared_world_truth_promotion_deferred": true,
+    "stage130_multiwork_release": true,
+    "multiwork_release_authority": true,
+    "stage131_gig_advisory_deferred": true
   },
   "canonical_package": "V1700_stage129_multiwork_cim_cross_work_canon_governor_integrated_repository.zip",
   "stage80": {
@@ -658,8 +663,8 @@
     "baseline_stage": "stage126",
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
-  "canonical_filelist": "V1700_stage129_multiwork_cim_cross_work_canon_governor_filelist.txt",
-  "canonical_sha256_sidecar": "V1700_stage129_multiwork_cim_cross_work_canon_governor_integrated_repository.zip.sha256",
+  "canonical_filelist": "V1700_stage130_multiwork_release_filelist.txt",
+  "canonical_sha256_sidecar": "V1700_stage130_multiwork_release_integrated_repository.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
@@ -676,6 +681,17 @@
     "canon_auto_resolution_count": 0
   },
   "implemented_capabilities": {
-    "stage129_multiwork_cim_cross_work_canon_governor": true
+    "stage129_multiwork_cim_cross_work_canon_governor": true,
+    "stage130_multiwork_release": true
+  },
+  "stage130": {
+    "title": "MultiWork Release",
+    "baseline_stage": "stage129",
+    "status": "active",
+    "release_gate": "release/current/stage130_release_gate_report.json",
+    "evidence": "release/current/stage130_multiwork_release_report.json",
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "stage131_gig_advisory_required": true
   }
 }

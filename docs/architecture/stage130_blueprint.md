@@ -120,16 +120,20 @@ shared_world_source_of_truth_not_promoted
 gate26_hard_block_deferred
 provider_zero_pass
 node2_boundary_pass
-credential_leakage_zero
 gitnexus_python_fallback_preflight_pass
 branchpoint_survival_pass
+docs_manifest_pass
 repo_doctor_active_stage_ready
 clean_zip_packaging_pass
+secret_scan_pass
 ```
 
-## 8. 후속 단계
+## 8. 다음 단계
+
+Stage130 이후 공식 다음 단계는 다음이다.
 
 ```text
 Stage131 — GIG / Gate26 Advisory Absorption
-Stage132 — Contradiction Classifier + Mystery Exemption
 ```
+
+Gate26은 즉시 hard block으로 들어가지 않고 advisory로 들어간다. 진짜 모순, 의도된 미스터리, 인물 오해, reveal delay를 먼저 분리해야 하기 때문이다.

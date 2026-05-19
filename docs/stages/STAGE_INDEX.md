@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage124 — PNE / Gate29 Absorption
+Current active stage: Stage130 — MultiWork Release
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
