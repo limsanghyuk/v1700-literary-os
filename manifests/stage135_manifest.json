@@ -1,0 +1,10 @@
+{
+  "stage": "stage135",
+  "title": "LearningQualityGate & Candidate Registry",
+  "baseline_stage": "stage134",
+  "status": "implemented",
+  "mode": "LEARNING_QUALITY_GATE_CANDIDATE_ONLY",
+  "release_gate": "release/current/stage135_release_gate_report.json",
+  "evidence": "release/current/stage135_learning_quality_gate_report.json",
+  "next_stage": "stage136"
+}
