@@ -42,11 +42,17 @@ jobs:
       - name: Run full pytest suite
         run: python -m pytest tests/ -q
 
-      - name: Run Stage133 narrative state tensor
-        run: python tools/run_stage133_narrative_state_tensor.py
+      - name: Run Stage134 MetaLearner audit baseline
+        run: python tools/run_stage134_meta_learner_audit.py
 
-      - name: Run Stage133 release gate
-        run: python tools/run_stage133_release_gate.py
+      - name: Run Stage134 release gate baseline
+        run: python tools/run_stage134_release_gate.py
+
+      - name: Run Stage135 LearningQualityGate
+        run: python tools/run_stage135_learning_quality_gate.py
+
+      - name: Run Stage135 release gate
+        run: python tools/run_stage135_release_gate.py
 
       - name: Run main release gate
         run: python tools/run_release_gate.py
