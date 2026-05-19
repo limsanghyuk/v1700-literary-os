@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.30.0"
-description = "V1700 Stage130 - MultiWork Release"
+version = "1.32.0"
+description = "V1700 Stage132 - Contradiction Classifier + Mystery Exemption"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 
