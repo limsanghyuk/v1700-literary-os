@@ -1,0 +1,23 @@
+{
+  "review_queue_packets": [
+    {
+      "packet_id": "STAGE138-QUEUE-REVIEW-ONLY",
+      "lane_name": "writer_review_queue",
+      "queue_namespace": "losdb.contract.review_only.queue.v1",
+      "reviewed_case_ids": [
+        "CEX-TRUE-001"
+      ],
+      "governance_profile_ids": [
+        "STAGE138-PROFILE-REVIEW_ONLY_CANDIDATE"
+      ],
+      "depends_on_steps": [
+        "STAGE137-CHECKPOINT-REVIEW-ONLY"
+      ],
+      "audit_event_key": "audit:stage139:writer_review_queue:queue",
+      "stage140_release_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:review-only-lane"
+    }
+  ]
+}

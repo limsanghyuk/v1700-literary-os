@@ -1,0 +1,21 @@
+{
+  "stage": "stage139",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage138_storage_contract_catalog_only",
+      "preserved": true,
+      "evidence": "release/current/stage138_losdb_storage_contracts_report.json"
+    },
+    {
+      "branchpoint_id": "stage139_corpus_governance_pipeline_only",
+      "preserved": true,
+      "evidence": "release/current/stage139_corpus_governance_pipeline_report.json"
+    },
+    {
+      "branchpoint_id": "stage139_stage140_release_ready",
+      "preserved": true,
+      "evidence": "release/current/stage139_release_gate_report.json"
+    }
+  ]
+}

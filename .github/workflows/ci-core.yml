@@ -72,6 +72,12 @@ jobs:
       - name: Run Stage138 release gate
         run: python tools/run_stage138_release_gate.py
 
+      - name: Run Stage139 Corpus Governance Pipeline
+        run: python tools/run_stage139_corpus_governance_pipeline.py
+
+      - name: Run Stage139 release gate
+        run: python tools/run_stage139_release_gate.py
+
       - name: Run main release gate
         run: python tools/run_release_gate.py
 

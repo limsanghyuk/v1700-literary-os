@@ -1,0 +1,22 @@
+{
+  "stage": "139",
+  "baseline_stage": "138",
+  "title": "Corpus Governance Pipeline",
+  "status": "pass",
+  "main_report": "release/current/stage139_corpus_governance_pipeline_report.json",
+  "release_gate_report": "release/current/stage139_release_gate_report.json",
+  "evidence_pack": "release/current/stage139_corpus_governance_pipeline_pack/",
+  "mode": "CORPUS_GOVERNANCE_PIPELINE_DRY_RUN",
+  "corpus_governance_pipeline_only": true,
+  "governance_profile_count": 3,
+  "case_packet_count": 5,
+  "review_queue_packet_count": 1,
+  "stage140_release_ready_count": 9,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage140 Production Release Automation Closure"
+  ]
+}

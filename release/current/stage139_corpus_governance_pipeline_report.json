@@ -1,0 +1,258 @@
+{
+  "stage": "139",
+  "baseline_stage": "138",
+  "title": "Corpus Governance Pipeline & Stage140 Release Readiness",
+  "status": "pass",
+  "issues": [],
+  "mode": "CORPUS_GOVERNANCE_PIPELINE_DRY_RUN",
+  "corpus_governance_pipeline_only": true,
+  "governance_profile_count": 3,
+  "case_packet_count": 5,
+  "review_queue_packet_count": 1,
+  "governed_case_count": 5,
+  "review_required_case_count": 1,
+  "retention_ready_count": 5,
+  "audit_trail_ready_count": 9,
+  "stage140_release_ready_count": 9,
+  "execution_blocked_count": 9,
+  "rollback_ready_count": 9,
+  "policy_binding_count": 5,
+  "unique_profile_count": 3,
+  "total_pipeline_items": 9,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage138_report": {
+      "stage": "138",
+      "status": "pass",
+      "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+      "storage_contract_catalog_only": true,
+      "schema_contract_count": 3,
+      "binding_route_count": 5,
+      "approval_lane_count": 1,
+      "governance_ready_count": 5,
+      "rollback_ready_count": 9,
+      "branchpoint_lineage_preserved": true
+    },
+    "corpus_governance_pipeline": {
+      "stage": "139",
+      "baseline_stage": "138",
+      "status": "pass",
+      "governance_profiles": [
+        {
+          "profile_id": "STAGE138-PROFILE-ACCEPTED_CANDIDATE",
+          "contract_id": "STAGE138-CONTRACT-ACCEPTED_CANDIDATE",
+          "target_namespace": "losdb.contract.accepted_candidate.v1",
+          "governance_channel": "automatic_registry",
+          "retention_class": "accepted_candidate_registry_hold",
+          "evidence_scope": "candidate_registry_governance",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.accepted_candidate.v1:storage-contract"
+        },
+        {
+          "profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "governance_channel": "automatic_registry",
+          "retention_class": "rejected_candidate_registry_hold",
+          "evidence_scope": "candidate_registry_governance",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.rejected_candidate.v1:storage-contract"
+        },
+        {
+          "profile_id": "STAGE138-PROFILE-REVIEW_ONLY_CANDIDATE",
+          "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+          "target_namespace": "losdb.contract.review_only_candidate.v1",
+          "governance_channel": "writer_review_queue",
+          "retention_class": "writer_review_hold",
+          "evidence_scope": "candidate_registry_governance",
+          "requires_human_approval": true,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.review_only_candidate.v1:storage-contract"
+        }
+      ],
+      "case_packets": [
+        {
+          "packet_id": "STAGE138-CASE-CEX-TRUE-001",
+          "case_id": "CEX-TRUE-001",
+          "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+          "governance_profile_id": "STAGE138-PROFILE-REVIEW_ONLY_CANDIDATE",
+          "target_namespace": "losdb.contract.review_only_candidate.v1",
+          "storage_key": "stage138/review_only_candidate/CEX-TRUE-001",
+          "approval_lane": "writer_review_queue",
+          "corpus_status": "review_only",
+          "retention_class": "writer_review_hold",
+          "audit_event_key": "audit:stage139:CEX-TRUE-001:governance",
+          "depends_on_route": "STAGE138-ROUTE-CEX-TRUE-001",
+          "requires_human_approval": true,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-TRUE-001:binding-route"
+        },
+        {
+          "packet_id": "STAGE138-CASE-CEX-MYST-001",
+          "case_id": "CEX-MYST-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "governance_profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-MYST-001",
+          "approval_lane": "automatic_registry",
+          "corpus_status": "rejected_candidate",
+          "retention_class": "rejected_candidate_registry_hold",
+          "audit_event_key": "audit:stage139:CEX-MYST-001:governance",
+          "depends_on_route": "STAGE138-ROUTE-CEX-MYST-001",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-MYST-001:binding-route"
+        },
+        {
+          "packet_id": "STAGE138-CASE-CEX-POV-001",
+          "case_id": "CEX-POV-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "governance_profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-POV-001",
+          "approval_lane": "automatic_registry",
+          "corpus_status": "rejected_candidate",
+          "retention_class": "rejected_candidate_registry_hold",
+          "audit_event_key": "audit:stage139:CEX-POV-001:governance",
+          "depends_on_route": "STAGE138-ROUTE-CEX-POV-001",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-POV-001:binding-route"
+        },
+        {
+          "packet_id": "STAGE138-CASE-CEX-DELAY-001",
+          "case_id": "CEX-DELAY-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "governance_profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-DELAY-001",
+          "approval_lane": "automatic_registry",
+          "corpus_status": "rejected_candidate",
+          "retention_class": "rejected_candidate_registry_hold",
+          "audit_event_key": "audit:stage139:CEX-DELAY-001:governance",
+          "depends_on_route": "STAGE138-ROUTE-CEX-DELAY-001",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-DELAY-001:binding-route"
+        },
+        {
+          "packet_id": "STAGE138-CASE-CEX-CLEAR-001",
+          "case_id": "CEX-CLEAR-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "governance_profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-CLEAR-001",
+          "approval_lane": "automatic_registry",
+          "corpus_status": "rejected_candidate",
+          "retention_class": "rejected_candidate_registry_hold",
+          "audit_event_key": "audit:stage139:CEX-CLEAR-001:governance",
+          "depends_on_route": "STAGE138-ROUTE-CEX-CLEAR-001",
+          "requires_human_approval": false,
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-CLEAR-001:binding-route"
+        }
+      ],
+      "review_queue_packets": [
+        {
+          "packet_id": "STAGE138-QUEUE-REVIEW-ONLY",
+          "lane_name": "writer_review_queue",
+          "queue_namespace": "losdb.contract.review_only.queue.v1",
+          "reviewed_case_ids": [
+            "CEX-TRUE-001"
+          ],
+          "governance_profile_ids": [
+            "STAGE138-PROFILE-REVIEW_ONLY_CANDIDATE"
+          ],
+          "depends_on_steps": [
+            "STAGE137-CHECKPOINT-REVIEW-ONLY"
+          ],
+          "audit_event_key": "audit:stage139:writer_review_queue:queue",
+          "stage140_release_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:review-only-lane"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "governance_profile_count": 3,
+        "case_packet_count": 5,
+        "review_queue_packet_count": 1,
+        "governed_case_count": 5,
+        "review_required_case_count": 1,
+        "retention_ready_count": 5,
+        "audit_trail_ready_count": 9,
+        "stage140_release_ready_count": 9,
+        "execution_blocked_count": 9,
+        "rollback_ready_count": 9,
+        "policy_binding_count": 5,
+        "unique_profile_count": 3
+      }
+    },
+    "preflight": {
+      "status": "pass",
+      "python_fallback": {
+        "status": "PASS"
+      },
+      "native_gitnexus": {
+        "status": "optional"
+      },
+      "concept_impact": {
+        "changed_stage": "stage139",
+        "impacted_branchpoints": [
+          "stage138_storage_contract_catalog_only",
+          "corpus_governance_pipeline_only",
+          "stage140_release_automation_ready",
+          "losdb_write_blocked",
+          "provider_zero",
+          "node2_boundary"
+        ]
+      },
+      "survival_matrix": {
+        "stage138_storage_contract_catalog_only": true,
+        "corpus_governance_pipeline_only": true,
+        "stage140_release_automation_ready": true,
+        "migration_execution_blocked": true,
+        "losdb_write_blocked": true,
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "missing_required_files": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage138 - LOSDB Storage Contracts
+Current active stage: Stage139 - Corpus Governance Pipeline
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -43,3 +43,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage136](stage136.md) - SchemaRegistry
 - [Stage137](stage137.md) - MigrationManager
 - [Stage138](stage138.md) - LOSDB Storage Contracts
+- [Stage139](stage139.md) - Corpus Governance Pipeline

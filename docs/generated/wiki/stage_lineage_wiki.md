@@ -45,6 +45,7 @@
 - STAGE136: SchemaRegistry
 - STAGE137: MigrationManager
 - STAGE138: LOSDB Storage Contracts
+- STAGE139: Corpus Governance Pipeline
 
 Source files:
 - manifests/stage_lineage_manifest.json

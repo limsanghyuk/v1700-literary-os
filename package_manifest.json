@@ -1,14 +1,14 @@
 {
-  "stage": "stage138",
-  "package": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage139",
+  "package": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is the authoritative digest to avoid self-referential package hash drift",
   "filelist": "FILELIST.txt",
-  "created_by": "stage138_losdb_storage_contracts_release",
-  "active_version": "stage138",
-  "patch_report": "release/current/stage138_losdb_storage_contracts_report.json",
-  "release_gate": "release/current/stage138_release_gate_report.json",
-  "asset_manifest": "release/current/stage138_release_asset_manifest.json"
+  "created_by": "stage139_corpus_governance_pipeline_release",
+  "active_version": "stage139",
+  "patch_report": "release/current/stage139_corpus_governance_pipeline_report.json",
+  "release_gate": "release/current/stage139_release_gate_report.json",
+  "asset_manifest": "release/current/stage139_release_asset_manifest.json"
 }

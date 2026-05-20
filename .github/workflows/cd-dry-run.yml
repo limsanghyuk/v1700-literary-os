@@ -31,7 +31,7 @@ jobs:
       - name: Verify release gates
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py -q
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
           python tools/run_stage136_schema_registry.py
@@ -40,24 +40,26 @@ jobs:
           python tools/run_stage137_release_gate.py
           python tools/run_stage138_losdb_storage_contracts.py
           python tools/run_stage138_release_gate.py
+          python tools/run_stage139_corpus_governance_pipeline.py
+          python tools/run_stage139_release_gate.py
           python tools/run_ci_dependency_preflight.py
 
       - name: Build dry-run archive
         shell: bash
         run: |
-          ZIP_NAME="V1700_stage138_losdb_storage_contracts_cd_dry_run_integrated_repository.zip"
+          ZIP_NAME="V1700_stage139_corpus_governance_pipeline_cd_dry_run_integrated_repository.zip"
           zip -r "$ZIP_NAME" . \
             -x ".git/*" ".gitnexus/*" ".venv/*" "venv/*" \
             -x "__pycache__/*" "*.pyc" ".pytest_cache/*" \
             -x "build/*" "dist/*" "*.egg-info/*" "outputs/*"
           sha256sum "$ZIP_NAME" > "$ZIP_NAME.sha256"
-          sha256sum "$ZIP_NAME" > SHA256SUMS_stage138_cd_dry_run.txt
+          sha256sum "$ZIP_NAME" > SHA256SUMS_stage139_cd_dry_run.txt
 
       - name: Upload dry-run release artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: stage138-cd-dry-run-artifacts
+          name: stage139-cd-dry-run-artifacts
           path: |
-            V1700_stage138_losdb_storage_contracts_cd_dry_run_integrated_repository.zip
-            V1700_stage138_losdb_storage_contracts_cd_dry_run_integrated_repository.zip.sha256
-            SHA256SUMS_stage138_cd_dry_run.txt
+            V1700_stage139_corpus_governance_pipeline_cd_dry_run_integrated_repository.zip
+            V1700_stage139_corpus_governance_pipeline_cd_dry_run_integrated_repository.zip.sha256
+            SHA256SUMS_stage139_cd_dry_run.txt

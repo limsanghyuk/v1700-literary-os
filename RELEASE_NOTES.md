@@ -1,14 +1,14 @@
-# V1700 Stage138 - LOSDB Storage Contracts
+# V1700 Stage139 - Corpus Governance Pipeline
 
-Stage138 is the storage-contract layer after Stage137. It converts Stage137 migration planning authority into deterministic LOSDB storage contracts, binding routes, and review approval lanes while keeping migration execution, LOSDB writes, runtime training, active learning, model weight updates, provider calls, canon mutation, and AutoRepair mutation blocked.
+Stage139 is the corpus-governance layer after Stage138. It converts Stage138 storage contract authority into deterministic governance profiles, case packets, and review queue packets while keeping migration execution, LOSDB writes, runtime training, active learning, model weight updates, provider calls, canon mutation, and AutoRepair mutation blocked.
 
 ## Release Highlights
 
-- Stage134 remains audit-only, Stage135 remains candidate-only, Stage136 remains schema-only, Stage137 remains migration-plan-only, and Stage138 remains storage-contract-catalog-only.
-- Every Stage137 binding route is covered by a deterministic Stage138 storage contract route.
-- Review-only records stay attached to a writer approval lane.
-- Rollback metadata is attached to every contract item.
-- Stage139 governance-ready metadata is prepared without enabling writes.
+- Stage134 remains audit-only, Stage135 remains candidate-only, Stage136 remains schema-only, Stage137 remains migration-plan-only, Stage138 remains storage-contract-catalog-only, and Stage139 remains corpus-governance-pipeline-only.
+- Every Stage138 route is covered by a deterministic Stage139 case governance packet.
+- Review-only records stay attached to a writer review queue packet.
+- Retention and audit metadata are attached to every governance item.
+- Stage140 release automation readiness is prepared without enabling writes.
 - Migration execution remains disabled.
 - LOSDB writes remain disabled.
 - Runtime training remains disabled.
@@ -35,6 +35,8 @@ python tools/run_stage137_migration_manager.py
 python tools/run_stage137_release_gate.py
 python tools/run_stage138_losdb_storage_contracts.py
 python tools/run_stage138_release_gate.py
+python tools/run_stage139_corpus_governance_pipeline.py
+python tools/run_stage139_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
 python tools/run_ci_dependency_preflight.py
@@ -42,7 +44,7 @@ python tools/run_ci_dependency_preflight.py
 
 ## Official Artifacts
 
-The official Stage138 handoff assets are:
+The official Stage139 handoff assets are:
 
-- `V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip.sha256`

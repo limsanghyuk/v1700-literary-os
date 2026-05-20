@@ -494,9 +494,20 @@
         "stage139 governance-ready metadata"
       ],
       "surviving_runtime_value": "Creates the deterministic LOSDB storage contract authority required for Stage139 corpus governance while keeping execution and LOSDB writes blocked."
+    },
+    {
+      "stage_id": "STAGE139",
+      "title": "Corpus Governance Pipeline",
+      "introduced_concepts": [
+        "namespace governance profiles",
+        "corpus case packets",
+        "writer review queue packets",
+        "stage140 release-ready metadata"
+      ],
+      "surviving_runtime_value": "Creates the deterministic corpus governance authority required for Stage140 release automation closure while keeping execution and LOSDB writes blocked."
     }
   ],
-  "active_version": "stage138",
+  "active_version": "stage139",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -546,5 +557,10 @@
     "status": "active",
     "baseline_stage": "stage137",
     "purpose": "LOSDB Storage Contracts"
+  },
+  "stage139": {
+    "status": "active",
+    "baseline_stage": "stage138",
+    "purpose": "Corpus Governance Pipeline"
   }
 }

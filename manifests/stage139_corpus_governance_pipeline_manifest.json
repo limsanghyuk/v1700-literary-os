@@ -1,0 +1,12 @@
+{
+  "stage": "stage139",
+  "component": "corpus_governance_pipeline",
+  "status": "implemented",
+  "corpus_governance_pipeline_only": true,
+  "stage140_release_ready": true,
+  "migration_execution_enabled": false,
+  "losdb_write_enabled": false,
+  "rollback_required": true,
+  "writer_review_queue_required": true,
+  "evidence_pack": "release/current/stage139_corpus_governance_pipeline_pack/"
+}
