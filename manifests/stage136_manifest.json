@@ -1,0 +1,10 @@
+{
+  "stage": "stage136",
+  "title": "SchemaRegistry",
+  "baseline_stage": "stage135",
+  "status": "implemented",
+  "mode": "SCHEMA_REGISTRY_DRY_RUN",
+  "release_gate": "release/current/stage136_release_gate_report.json",
+  "evidence": "release/current/stage136_schema_registry_report.json",
+  "next_stage": "stage137"
+}

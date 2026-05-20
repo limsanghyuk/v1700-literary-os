@@ -1,0 +1,15 @@
+{
+  "stage": "stage136",
+  "component": "schema_registry",
+  "status": "implemented",
+  "schema_registry_only": true,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "schema_catalog": [
+    "stage136.accepted_candidate.v1",
+    "stage136.rejected_candidate.v1",
+    "stage136.review_only_candidate.v1"
+  ],
+  "evidence_pack": "release/current/stage136_schema_registry_pack/"
+}

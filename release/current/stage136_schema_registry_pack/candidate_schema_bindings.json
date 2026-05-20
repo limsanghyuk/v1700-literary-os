@@ -1,0 +1,74 @@
+{
+  "bindings": [
+    {
+      "case_id": "CEX-TRUE-001",
+      "decision": "REVIEW_ONLY",
+      "schema_id": "stage136.review_only_candidate.v1",
+      "status": "pass",
+      "schema_valid": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "writer_review_required": true,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false,
+      "issues": []
+    },
+    {
+      "case_id": "CEX-MYST-001",
+      "decision": "REJECT_CANDIDATE",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "status": "pass",
+      "schema_valid": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "writer_review_required": false,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false,
+      "issues": []
+    },
+    {
+      "case_id": "CEX-POV-001",
+      "decision": "REJECT_CANDIDATE",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "status": "pass",
+      "schema_valid": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "writer_review_required": false,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false,
+      "issues": []
+    },
+    {
+      "case_id": "CEX-DELAY-001",
+      "decision": "REJECT_CANDIDATE",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "status": "pass",
+      "schema_valid": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "writer_review_required": false,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false,
+      "issues": []
+    },
+    {
+      "case_id": "CEX-CLEAR-001",
+      "decision": "REJECT_CANDIDATE",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "status": "pass",
+      "schema_valid": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "writer_review_required": false,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false,
+      "issues": []
+    }
+  ]
+}

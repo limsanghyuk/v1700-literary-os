@@ -1,0 +1,25 @@
+{
+  "stage": "136",
+  "baseline_stage": "135",
+  "title": "SchemaRegistry",
+  "status": "pass",
+  "main_report": "release/current/stage136_schema_registry_report.json",
+  "release_gate_report": "release/current/stage136_release_gate_report.json",
+  "evidence_pack": "release/current/stage136_schema_registry_pack/",
+  "mode": "SCHEMA_REGISTRY_DRY_RUN",
+  "schema_registry_only": true,
+  "schema_count": 3,
+  "binding_count": 5,
+  "migration_ready_count": 5,
+  "storage_contract_ready_count": 5,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage137 MigrationManager",
+    "Stage138 LOSDB Storage Contracts",
+    "Stage139 Corpus Governance Pipeline",
+    "Stage140 Production Release Automation Closure"
+  ]
+}

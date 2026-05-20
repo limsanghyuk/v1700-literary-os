@@ -36,6 +36,8 @@ jobs:
           python tools/run_stage134_release_gate.py
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
+          python tools/run_stage136_schema_registry.py
+          python tools/run_stage136_release_gate.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py
           python tools/run_ci_dependency_preflight.py

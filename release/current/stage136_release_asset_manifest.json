@@ -1,0 +1,23 @@
+{
+  "stage": "stage136",
+  "release_tag": "v1700-stage136",
+  "status": "ready_for_release_upload",
+  "problem": "Official Stage136 release assets are built locally and must be uploaded after GitHub Actions validates the release tag.",
+  "correct_assets": [
+    {
+      "file": "V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip",
+      "sha256": "SEE_RELEASE_SIDECAR",
+      "role": "Stage136 developer release archive with integrated repository and validation artifacts"
+    },
+    {
+      "file": "V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip.sha256",
+      "role": "SHA256 sidecar"
+    }
+  ],
+  "sha256_authority": "The .sha256 sidecar is the authoritative digest because the repository package contains its own metadata files.",
+  "validated_before_release": {
+    "ci_core_pytest_and_gates_python_3_11": "required",
+    "ci_core_pytest_and_gates_python_3_12": "required",
+    "cd_dry_run_build_release_archive": "required"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "135",
+  "status": "pass",
+  "mode": "LEARNING_QUALITY_GATE_CANDIDATE_ONLY",
+  "learning_candidate_only": true,
+  "candidate_count": 5,
+  "review_only_count": 1,
+  "learning_allowed_count": 0,
+  "training_triggered_count": 0,
+  "branchpoint_lineage_preserved": true
+}

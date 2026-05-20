@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage133 - NarrativeStateTensor 8D Measurement Layer
+Current active stage: Stage136 - SchemaRegistry
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -38,3 +38,6 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage131](stage131.md) - GIG / Gate26 Advisory Absorption
 - [Stage132](stage132.md) - Contradiction Classifier + Mystery Exemption
 - [Stage133](stage133.md) - NarrativeStateTensor 8D Measurement Layer
+- [Stage134](stage134.md) - MetaLearner Audit Mode
+- [Stage135](stage135.md) - LearningQualityGate & Candidate Registry
+- [Stage136](stage136.md) - SchemaRegistry

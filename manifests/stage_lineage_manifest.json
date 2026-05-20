@@ -442,9 +442,39 @@
         "local-only narrative state diagnostics"
       ],
       "surviving_runtime_value": "Restores the Stage95 Narrative State Tensor concept as a concrete Stage132 measurement layer without enabling repair, provider calls, or cross-project writes."
+    },
+    {
+      "stage_id": "STAGE134",
+      "title": "MetaLearner Audit Mode",
+      "introduced_concepts": [
+        "audit-only meta learner",
+        "bounded recommendation registry",
+        "training-disabled audit evidence"
+      ],
+      "surviving_runtime_value": "Converts Stage133 measurements into deterministic audit observations without allowing runtime learning, weight updates, or repair mutation."
+    },
+    {
+      "stage_id": "STAGE135",
+      "title": "LearningQualityGate & Candidate Registry",
+      "introduced_concepts": [
+        "candidate-only learning gate",
+        "review-only routing",
+        "future offline learning candidate registry"
+      ],
+      "surviving_runtime_value": "Preserves Stage134 audit-only safety while turning audit observations into deterministic candidates with zero training triggers."
+    },
+    {
+      "stage_id": "STAGE136",
+      "title": "SchemaRegistry",
+      "introduced_concepts": [
+        "schema catalog for learning-safe records",
+        "candidate-to-schema binding",
+        "migration-ready metadata without execution"
+      ],
+      "surviving_runtime_value": "Creates the deterministic schema authority required for Stage137 migration planning and Stage138 storage contracts while keeping writes blocked."
     }
   ],
-  "active_version": "stage133",
+  "active_version": "stage136",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -469,5 +499,20 @@
     "status": "active",
     "baseline_stage": "stage132",
     "purpose": "NarrativeStateTensor 8D Measurement Layer"
+  },
+  "stage134": {
+    "status": "active",
+    "baseline_stage": "stage133",
+    "purpose": "MetaLearner Audit Mode"
+  },
+  "stage135": {
+    "status": "active",
+    "baseline_stage": "stage134",
+    "purpose": "LearningQualityGate & Candidate Registry"
+  },
+  "stage136": {
+    "status": "active",
+    "baseline_stage": "stage135",
+    "purpose": "SchemaRegistry"
   }
 }

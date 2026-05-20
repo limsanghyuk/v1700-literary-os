@@ -1,13 +1,14 @@
 {
-  "stage": "stage135",
-  "package": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip",
-  "sha256": "1a19105099454a59b39cb04e919dddd455393fed6058760d9b8aae3273891335",
-  "sha256_sidecar": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip.sha256",
+  "stage": "stage136",
+  "package": "V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip",
+  "sha256": "SEE_RELEASE_SIDECAR",
+  "sha256_sidecar": "V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_authority": "release sidecar file is the authoritative digest to avoid self-referential package hash drift",
   "filelist": "FILELIST.txt",
-  "created_by": "stage135_learning_quality_gate_release",
-  "active_version": "stage135",
-  "patch_report": "release/current/stage135_learning_quality_gate_report.json",
-  "release_gate": "release/current/stage135_release_gate_report.json",
-  "asset_manifest": "release/current/stage135_official_asset_manifest.json"
+  "created_by": "stage136_schema_registry_release",
+  "active_version": "stage136",
+  "patch_report": "release/current/stage136_schema_registry_report.json",
+  "release_gate": "release/current/stage136_release_gate_report.json",
+  "asset_manifest": "release/current/stage136_release_asset_manifest.json"
 }

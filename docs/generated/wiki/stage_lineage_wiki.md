@@ -35,6 +35,14 @@
 - STAGE119: NIE Adversarial Regression Pack
 - STAGE120: Gate25 NIE v1.0 Release
 - STAGE121: Cross-Lineage Formula Reconciliation & Absorption Preflight
+- STAGE129: MultiWorkCIM + Cross-Work Canon Governor
+- STAGE130: MultiWork Release
+- STAGE131: GIG / Gate26 Advisory Absorption
+- STAGE132: Contradiction Classifier + Mystery Exemption
+- STAGE133: NarrativeStateTensor 8D Measurement Layer
+- STAGE134: MetaLearner Audit Mode
+- STAGE135: LearningQualityGate & Candidate Registry
+- STAGE136: SchemaRegistry
 
 Source files:
 - manifests/stage_lineage_manifest.json
