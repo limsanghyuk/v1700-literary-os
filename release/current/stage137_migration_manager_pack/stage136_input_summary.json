@@ -1,0 +1,11 @@
+{
+  "stage": "136",
+  "status": "pass",
+  "mode": "SCHEMA_REGISTRY_DRY_RUN",
+  "schema_registry_only": true,
+  "schema_count": 3,
+  "binding_count": 5,
+  "migration_ready_count": 5,
+  "storage_contract_ready_count": 5,
+  "branchpoint_lineage_preserved": true
+}

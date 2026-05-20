@@ -1,0 +1,10 @@
+{
+  "stage": "stage137",
+  "title": "MigrationManager",
+  "baseline_stage": "stage136",
+  "status": "implemented",
+  "mode": "MIGRATION_MANAGER_PLAN_ONLY",
+  "release_gate": "release/current/stage137_release_gate_report.json",
+  "evidence": "release/current/stage137_migration_manager_report.json",
+  "next_stage": "stage138"
+}

@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -56,6 +56,16 @@ STAGE_REQUIRED_GATES = {
         "stage135_release_gate",
         "stage136_schema_registry",
         "stage136_release_gate",
+    ],
+    "stage137": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage135_learning_quality_gate",
+        "stage135_release_gate",
+        "stage136_schema_registry",
+        "stage136_release_gate",
+        "stage137_migration_manager",
+        "stage137_release_gate",
     ],
 }
 
@@ -167,6 +177,21 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage136_schema_registry_pack/schema_registry.json",
         "release/current/stage136_schema_registry_pack/stage136_preflight_report.json",
     ],
+    "stage137": [
+        "manifests/stage137_manifest.json",
+        "manifests/stage137_migration_manager_manifest.json",
+        "manifests/stage137_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage137_overlay.json",
+        "docs/stages/stage137.md",
+        "docs/architecture/stage137_blueprint.md",
+        "docs/proposals/stage137_proposal.md",
+        "docs/development/stage137_developer_handoff.md",
+        "release/current/stage137_migration_manager_report.json",
+        "release/current/stage137_release_gate_report.json",
+        "release/current/stage137_release_asset_manifest.json",
+        "release/current/stage137_migration_manager_pack/migration_plan.json",
+        "release/current/stage137_migration_manager_pack/stage137_preflight_report.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -194,6 +219,7 @@ PREDECESSOR_GATE = {
     "stage134": "stage133_release_gate",
     "stage135": "stage134_release_gate",
     "stage136": "stage135_release_gate",
+    "stage137": "stage136_release_gate",
 }
 
 

@@ -472,9 +472,20 @@
         "migration-ready metadata without execution"
       ],
       "surviving_runtime_value": "Creates the deterministic schema authority required for Stage137 migration planning and Stage138 storage contracts while keeping writes blocked."
+    },
+    {
+      "stage_id": "STAGE137",
+      "title": "MigrationManager",
+      "introduced_concepts": [
+        "ordered migration plan",
+        "binding coverage steps",
+        "human approval checkpoint",
+        "rollback anchors"
+      ],
+      "surviving_runtime_value": "Creates the deterministic migration planning authority required for Stage138 storage contracts while keeping execution and LOSDB writes blocked."
     }
   ],
-  "active_version": "stage136",
+  "active_version": "stage137",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -514,5 +525,10 @@
     "status": "active",
     "baseline_stage": "stage135",
     "purpose": "SchemaRegistry"
+  },
+  "stage137": {
+    "status": "active",
+    "baseline_stage": "stage136",
+    "purpose": "MigrationManager"
   }
 }

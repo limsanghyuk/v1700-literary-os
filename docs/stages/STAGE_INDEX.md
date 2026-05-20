@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage136 - SchemaRegistry
+Current active stage: Stage137 - MigrationManager
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -41,3 +41,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage134](stage134.md) - MetaLearner Audit Mode
 - [Stage135](stage135.md) - LearningQualityGate & Candidate Registry
 - [Stage136](stage136.md) - SchemaRegistry
+- [Stage137](stage137.md) - MigrationManager

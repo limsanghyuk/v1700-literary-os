@@ -1,0 +1,103 @@
+{
+  "stage": "137",
+  "baseline_stage": "136",
+  "title": "MigrationManager Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage136_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "migration_manager_report_pass": {
+      "status": "pass"
+    },
+    "migration_plan_pass": {
+      "status": "pass"
+    },
+    "plan_only_mode_pass": {
+      "status": "pass"
+    },
+    "ordered_steps_pass": {
+      "status": "pass"
+    },
+    "all_bindings_covered_pass": {
+      "status": "pass"
+    },
+    "schema_steps_present": {
+      "status": "pass"
+    },
+    "review_only_checkpoint_pass": {
+      "status": "pass"
+    },
+    "rollback_ready_metadata_pass": {
+      "status": "pass"
+    },
+    "preflight_pass": {
+      "status": "pass"
+    },
+    "migration_execution_blocked": {
+      "status": "pass"
+    },
+    "losdb_write_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage137": {
+    "status": "pass",
+    "stage": "137",
+    "baseline_stage": "136",
+    "title": "MigrationManager & Dry-Run Migration Plan",
+    "issues": [],
+    "mode": "MIGRATION_MANAGER_PLAN_ONLY",
+    "migration_plan_only": true,
+    "migration_step_count": 9,
+    "schema_step_count": 3,
+    "binding_step_count": 5,
+    "approval_checkpoint_count": 1,
+    "review_only_checkpoint_count": 1,
+    "covered_binding_count": 5,
+    "rollback_ready_count": 9,
+    "execution_blocked_count": 9,
+    "losdb_write_enabled": false,
+    "migration_execution_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 43,
+        "stage_count": 44,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 43,
+          "lineage_node_count": 44,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 817
+        "node_count": 825
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 43,
+        "node_count": 44,
         "stage72_1_present": true
       },
       "warnings": [
@@ -489,9 +489,8 @@
   },
   "stage110_release_gate": {
     "status": "pass",
-    "stage": "110",
-    "baseline_stage": "109",
-    "title": "V1700 Literary OS 1.0 Stable",
+    "stage": "stage110",
+    "title": "historical compact evidence summary",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -830,6 +829,19 @@
     "stage": "136",
     "baseline_stage": "135",
     "title": "SchemaRegistry Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage137_release_gate": {
+    "status": "pass",
+    "stage": "137",
+    "baseline_stage": "136",
+    "title": "MigrationManager Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

@@ -60,6 +60,12 @@ jobs:
       - name: Run Stage136 release gate
         run: python tools/run_stage136_release_gate.py
 
+      - name: Run Stage137 MigrationManager
+        run: python tools/run_stage137_migration_manager.py
+
+      - name: Run Stage137 release gate
+        run: python tools/run_stage137_release_gate.py
+
       - name: Run main release gate
         run: python tools/run_release_gate.py
 

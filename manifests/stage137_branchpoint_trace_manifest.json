@@ -1,0 +1,21 @@
+{
+  "stage": "stage137",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage136_schema_registry_only",
+      "preserved": true,
+      "evidence": "release/current/stage136_schema_registry_report.json"
+    },
+    {
+      "branchpoint_id": "stage137_migration_plan_only",
+      "preserved": true,
+      "evidence": "release/current/stage137_migration_manager_report.json"
+    },
+    {
+      "branchpoint_id": "stage137_human_approval_required_for_execution",
+      "preserved": true,
+      "evidence": "release/current/stage137_release_gate_report.json"
+    }
+  ]
+}

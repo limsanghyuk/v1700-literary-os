@@ -1,0 +1,21 @@
+{
+  "steps": [
+    {
+      "step_id": "STAGE137-CHECKPOINT-REVIEW-ONLY",
+      "order": 9,
+      "scope": "checkpoint",
+      "action": "PLAN_APPROVAL_CHECKPOINT",
+      "target_namespace": "human.review.queue.stage137",
+      "schema_id": null,
+      "case_id": null,
+      "depends_on": [
+        "STAGE137-BINDING-CEX-TRUE-001"
+      ],
+      "requires_human_approval": true,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage137:review-only-checkpoint"
+    }
+  ]
+}
