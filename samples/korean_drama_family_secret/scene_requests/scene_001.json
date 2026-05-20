@@ -1,0 +1,11 @@
+{
+  "scene_id": "scene_001",
+  "project_id": "sample_korean_drama_family_secret",
+  "objective": "Establish the family inheritance question without revealing the final secret.",
+  "characters": ["han_sera", "kim_doyun", "yoon_mira"],
+  "synthetic_only": true,
+  "public_safe_placeholder": true,
+  "provider_calls_allowed": false,
+  "raw_manuscript_included": false,
+  "stage141_e2e_candidate": true
+}
