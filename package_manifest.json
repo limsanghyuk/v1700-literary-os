@@ -1,14 +1,14 @@
 {
-  "stage": "stage139",
-  "package": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage140",
+  "package": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage139_corpus_governance_pipeline_release_integrated_repository_with_artifacts.zip.sha256",
-  "sha256_authority": "release sidecar file is the authoritative digest to avoid self-referential package hash drift",
+  "sha256_sidecar": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage139_corpus_governance_pipeline_release",
-  "active_version": "stage139",
-  "patch_report": "release/current/stage139_corpus_governance_pipeline_report.json",
-  "release_gate": "release/current/stage139_release_gate_report.json",
-  "asset_manifest": "release/current/stage139_release_asset_manifest.json"
+  "created_by": "stage140_release_integrity_product_proof_gate",
+  "active_version": "stage140",
+  "patch_report": "release/current/stage140_release_integrity_report.json",
+  "release_gate": "release/current/stage140_release_gate_report.json",
+  "asset_manifest": "release/current/stage140_release_asset_manifest.json"
 }
