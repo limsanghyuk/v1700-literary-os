@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 45,
+        "stage_count": 46,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 45,
+          "lineage_node_count": 46,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 833
+        "node_count": 841
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 45,
+        "node_count": 46,
         "stage72_1_present": true
       },
       "warnings": [
@@ -489,8 +489,9 @@
   },
   "stage110_release_gate": {
     "status": "pass",
-    "stage": "stage110",
-    "title": "historical compact evidence summary",
+    "stage": "110",
+    "baseline_stage": "109",
+    "title": "V1700 Literary OS 1.0 Stable",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -855,6 +856,19 @@
     "stage": "138",
     "baseline_stage": "137",
     "title": "LOSDB Storage Contracts Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage139_release_gate": {
+    "status": "pass",
+    "stage": "139",
+    "baseline_stage": "138",
+    "title": "Corpus Governance Pipeline Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

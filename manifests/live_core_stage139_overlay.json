@@ -1,0 +1,36 @@
+{
+  "overlay_for": "manifests/live_core_manifest.json",
+  "stage": "stage139",
+  "active_version_override": "stage139",
+  "reason": "Stage139 is the active Corpus Governance Pipeline baseline after Stage138 storage contract validation.",
+  "required_active_gates": [
+    "stage134_meta_learner_audit",
+    "stage134_release_gate",
+    "stage135_learning_quality_gate",
+    "stage135_release_gate",
+    "stage136_schema_registry",
+    "stage136_release_gate",
+    "stage137_migration_manager",
+    "stage137_release_gate",
+    "stage138_losdb_storage_contracts",
+    "stage138_release_gate",
+    "stage139_corpus_governance_pipeline",
+    "stage139_release_gate"
+  ],
+  "stage139_invariants": {
+    "corpus_governance_pipeline_only": true,
+    "stage140_release_ready": true,
+    "migration_execution_enabled": false,
+    "losdb_write_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "official_reports": {
+    "corpus_governance_pipeline": "release/current/stage139_corpus_governance_pipeline_report.json",
+    "release_gate": "release/current/stage139_release_gate_report.json",
+    "asset_manifest": "release/current/stage139_release_asset_manifest.json"
+  },
+  "next_stage": "stage140"
+}

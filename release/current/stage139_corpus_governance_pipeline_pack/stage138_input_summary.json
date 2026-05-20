@@ -1,0 +1,12 @@
+{
+  "stage": "138",
+  "status": "pass",
+  "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+  "storage_contract_catalog_only": true,
+  "schema_contract_count": 3,
+  "binding_route_count": 5,
+  "approval_lane_count": 1,
+  "governance_ready_count": 5,
+  "rollback_ready_count": 9,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,43 @@
+{
+  "profiles": [
+    {
+      "profile_id": "STAGE138-PROFILE-ACCEPTED_CANDIDATE",
+      "contract_id": "STAGE138-CONTRACT-ACCEPTED_CANDIDATE",
+      "target_namespace": "losdb.contract.accepted_candidate.v1",
+      "governance_channel": "automatic_registry",
+      "retention_class": "accepted_candidate_registry_hold",
+      "evidence_scope": "candidate_registry_governance",
+      "requires_human_approval": false,
+      "stage140_release_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:stage136.accepted_candidate.v1:storage-contract"
+    },
+    {
+      "profile_id": "STAGE138-PROFILE-REJECTED_CANDIDATE",
+      "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+      "target_namespace": "losdb.contract.rejected_candidate.v1",
+      "governance_channel": "automatic_registry",
+      "retention_class": "rejected_candidate_registry_hold",
+      "evidence_scope": "candidate_registry_governance",
+      "requires_human_approval": false,
+      "stage140_release_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:stage136.rejected_candidate.v1:storage-contract"
+    },
+    {
+      "profile_id": "STAGE138-PROFILE-REVIEW_ONLY_CANDIDATE",
+      "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+      "target_namespace": "losdb.contract.review_only_candidate.v1",
+      "governance_channel": "writer_review_queue",
+      "retention_class": "writer_review_hold",
+      "evidence_scope": "candidate_registry_governance",
+      "requires_human_approval": true,
+      "stage140_release_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:stage136.review_only_candidate.v1:storage-contract"
+    }
+  ]
+}
