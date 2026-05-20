@@ -2,7 +2,7 @@
   "status": "pass",
   "native_gitnexus": {
     "status": "optional",
-    "note": "Stage134 uses the optional GitNexus sidecar contract and keeps Python fallback plus GraphNexus branchpoint trace as CI-safe authority."
+    "note": "Stage134 uses the established optional GitNexus sidecar contract; Python fallback, GraphNexus, and branchpoint trace remain authoritative in CI when native GitNexus is unavailable."
   },
   "python_fallback": {
     "status": "PASS",
@@ -14,6 +14,8 @@
       "stage133_narrative_state_tensor_8d",
       "true_contradiction_writer_review_required",
       "stage132_mystery_exemption_requires_reveal_lock",
+      "stage123_auto_repair_dry_run_only",
+      "stage124_runtime_training_disabled",
       "provider_zero",
       "node2_surface_contract"
     ]
@@ -37,7 +39,10 @@
       "tests/test_stage134_meta_learner_audit.py"
     ]
   },
-  "shape_check": {"status": "pass", "schema": "stage134_gitnexus_preflight_v1"},
+  "shape_check": {
+    "status": "pass",
+    "schema": "stage134_gitnexus_preflight_v1"
+  },
   "release_gate_integration": {
     "status": "pass",
     "stage134_gate_registered": true,

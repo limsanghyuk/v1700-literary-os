@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 793
+        "node_count": 809
       },
       "narrative_summary": {
         "available": true,
@@ -489,9 +489,8 @@
   },
   "stage110_release_gate": {
     "status": "pass",
-    "stage": "110",
-    "baseline_stage": "109",
-    "title": "V1700 Literary OS 1.0 Stable",
+    "stage": "stage110",
+    "title": "historical compact evidence summary",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -791,6 +790,32 @@
     "stage": "133",
     "baseline_stage": "132",
     "title": "NarrativeStateTensor 8D Measurement Layer Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage134_release_gate": {
+    "status": "pass",
+    "stage": "134",
+    "baseline_stage": "133",
+    "title": "MetaLearner Audit Mode Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage135_release_gate": {
+    "status": "pass",
+    "stage": "135",
+    "baseline_stage": "134",
+    "title": "LearningQualityGate & Candidate Registry Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

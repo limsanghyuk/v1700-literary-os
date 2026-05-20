@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "python_fallback": {
+    "status": "PASS"
+  },
+  "native_gitnexus": {
+    "status": "optional"
+  },
+  "concept_impact": {
+    "changed_stage": "stage135",
+    "impacted_branchpoints": [
+      "stage134_meta_learner_audit_only",
+      "runtime_training_disabled",
+      "provider_zero",
+      "node2_boundary",
+      "auto_repair_blocked",
+      "canon_auto_resolution_blocked"
+    ]
+  },
+  "survival_matrix": {
+    "stage134_audit_only": true,
+    "learning_candidate_only": true,
+    "runtime_training_disabled": true,
+    "active_learning_disabled": true,
+    "model_weight_update_blocked": true,
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "canon_auto_resolution_blocked": true,
+    "auto_repair_blocked": true
+  },
+  "missing_required_files": []
+}

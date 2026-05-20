@@ -2,19 +2,22 @@
 
 ## Status
 
-The `v1700-stage135` GitHub Release exists and points at commit `9051c36a9007f0b10d5fb0740722304b8b57ba9b`.
+The `v1700-stage135` GitHub Release points at commit `9051c36a9007f0b10d5fb0740722304b8b57ba9b`.
 
-The visible Release assets must be corrected because the current asset list still shows Stage133 files.
+The current Release page is closer to correct than the original Stage133 mispublish, but it still does not match the official Stage135 handoff archive:
 
-## Remove these assets
+- the visible assets are workflow-generated generic tag assets
+- the release body still describes Stage133
+
+## Current assets to replace
 
 ```text
-SHA256SUMS_v1.33.0-stage133.txt
-V1700_v1.33.0-stage133_integrated_repository.zip
-V1700_v1.33.0-stage133_integrated_repository.zip.sha256
+SHA256SUMS_v1700-stage135.txt
+V1700_v1700-stage135_integrated_repository.zip
+V1700_v1700-stage135_integrated_repository.zip.sha256
 ```
 
-## Upload these Stage135 assets
+## Official Stage135 assets to upload
 
 ```text
 V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip
@@ -38,4 +41,4 @@ cd-dry-run / build-release-archive-dry-run: success
 
 ## Note
 
-The ChatGPT GitHub connector can create branches, commits, PRs, and merge PRs, but it does not expose a GitHub Release asset upload endpoint. Therefore the asset upload must be done from the GitHub Release edit page or GitHub CLI.
+The repository now records the correct Stage135 release notes and asset metadata, but GitHub Release asset upload still requires the GitHub Release edit page, GitHub CLI, or authenticated API access.

@@ -1,0 +1,82 @@
+{
+  "stage": "135",
+  "baseline_stage": "134",
+  "status": "pass",
+  "candidates": [
+    {
+      "case_id": "CEX-TRUE-001",
+      "source_stage": "stage134",
+      "source_recommendation": "RECOMMEND_REVIEW",
+      "decision": "REVIEW_ONLY",
+      "reason": "human review is required; the case is not eligible for learning ingestion",
+      "gate_verified": true,
+      "writer_review_required": true,
+      "learning_allowed": false,
+      "training_triggered": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-MYST-001",
+      "source_stage": "stage134",
+      "source_recommendation": "OBSERVE",
+      "decision": "REJECT_CANDIDATE",
+      "reason": "stable observation is not useful as a learning candidate",
+      "gate_verified": true,
+      "writer_review_required": false,
+      "learning_allowed": false,
+      "training_triggered": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-POV-001",
+      "source_stage": "stage134",
+      "source_recommendation": "OBSERVE",
+      "decision": "REJECT_CANDIDATE",
+      "reason": "stable observation is not useful as a learning candidate",
+      "gate_verified": true,
+      "writer_review_required": false,
+      "learning_allowed": false,
+      "training_triggered": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-DELAY-001",
+      "source_stage": "stage134",
+      "source_recommendation": "OBSERVE",
+      "decision": "REJECT_CANDIDATE",
+      "reason": "stable observation is not useful as a learning candidate",
+      "gate_verified": true,
+      "writer_review_required": false,
+      "learning_allowed": false,
+      "training_triggered": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-CLEAR-001",
+      "source_stage": "stage134",
+      "source_recommendation": "OBSERVE",
+      "decision": "REJECT_CANDIDATE",
+      "reason": "stable observation is not useful as a learning candidate",
+      "gate_verified": true,
+      "writer_review_required": false,
+      "learning_allowed": false,
+      "training_triggered": false,
+      "mutation_allowed": false,
+      "provider_call_required": false
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "candidate_count": 5,
+    "accepted_candidate_count": 0,
+    "rejected_candidate_count": 4,
+    "review_only_count": 1,
+    "learning_allowed_count": 0,
+    "training_triggered_count": 0,
+    "mutation_allowed_count": 0
+  }
+}

@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134",
+    "stage132", "stage133", "stage134", "stage135",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -43,6 +43,12 @@ STAGE_REQUIRED_GATES = {
     "stage132": ["stage132_contradiction_classifier", "stage132_release_gate"],
     "stage133": ["stage133_narrative_state_tensor", "stage133_release_gate"],
     "stage134": ["stage134_meta_learner_audit", "stage134_release_gate"],
+    "stage135": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage135_learning_quality_gate",
+        "stage135_release_gate",
+    ],
 }
 
 STAGE_REQUIRED_FILES = {
@@ -126,6 +132,18 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage134_meta_learner_audit_report.json",
         "release/current/stage134_release_gate_report.json",
     ],
+    "stage135": [
+        "manifests/stage135_manifest.json",
+        "manifests/stage135_learning_quality_gate_manifest.json",
+        "docs/stages/stage135.md",
+        "docs/architecture/stage135_blueprint.md",
+        "docs/proposals/stage135_proposal.md",
+        "release/current/stage135_learning_quality_gate_report.json",
+        "release/current/stage135_release_gate_report.json",
+        "release/current/stage135_official_asset_manifest.json",
+        "release/current/stage135_learning_quality_gate_pack/candidate_registry.json",
+        "release/current/stage135_learning_quality_gate_pack/stage135_preflight_report.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -151,6 +169,7 @@ PREDECESSOR_GATE = {
     "stage132": "stage131_release_gate",
     "stage133": "stage132_release_gate",
     "stage134": "stage133_release_gate",
+    "stage135": "stage134_release_gate",
 }
 
 

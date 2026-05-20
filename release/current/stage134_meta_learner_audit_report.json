@@ -27,5 +27,161 @@
   "model_weight_update_count": 0,
   "writer_review_required_for_true_contradiction": true,
   "mystery_exemption_requires_reveal_lock": true,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage133_report": {
+      "stage": "133",
+      "status": "pass",
+      "dimension_count": 8,
+      "tensor_case_count": 5,
+      "review_required_tensor_count": 1,
+      "pass_tensor_count": 4,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "canon_auto_resolution_count": 0,
+      "auto_repair_mutation_count": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "meta_learner_audit": {
+      "stage": "134",
+      "baseline_stage": "133",
+      "status": "pass",
+      "mode": "META_LEARNER_AUDIT_ONLY_NO_TRAINING",
+      "cases": [
+        {
+          "case_id": "CEX-TRUE-001",
+          "source_classification": "true_contradiction",
+          "tensor_status": "REVIEW_REQUIRED",
+          "lowest_dimension": "canon_isolation",
+          "lowest_score": 0.52,
+          "recommendation": "RECOMMEND_REVIEW",
+          "rationale": "true contradiction remains human-review only; no auto-repair or training is permitted",
+          "writer_review_required": true,
+          "training_allowed": false,
+          "mutation_allowed": false,
+          "active_learning_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-MYST-001",
+          "source_classification": "intentional_mystery",
+          "tensor_status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "recommendation": "OBSERVE",
+          "rationale": "tensor state is stable; observe only",
+          "writer_review_required": false,
+          "training_allowed": false,
+          "mutation_allowed": false,
+          "active_learning_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-POV-001",
+          "source_classification": "character_misunderstanding",
+          "tensor_status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "recommendation": "OBSERVE",
+          "rationale": "tensor state is stable; observe only",
+          "writer_review_required": false,
+          "training_allowed": false,
+          "mutation_allowed": false,
+          "active_learning_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-DELAY-001",
+          "source_classification": "reveal_delay",
+          "tensor_status": "PASS",
+          "lowest_dimension": "causality_integrity",
+          "lowest_score": 0.84,
+          "recommendation": "OBSERVE",
+          "rationale": "tensor state is stable; observe only",
+          "writer_review_required": false,
+          "training_allowed": false,
+          "mutation_allowed": false,
+          "active_learning_allowed": false,
+          "provider_call_required": false
+        },
+        {
+          "case_id": "CEX-CLEAR-001",
+          "source_classification": "no_conflict",
+          "tensor_status": "PASS",
+          "lowest_dimension": "reveal_budget_integrity",
+          "lowest_score": 0.84,
+          "recommendation": "OBSERVE",
+          "rationale": "tensor state is stable; observe only",
+          "writer_review_required": false,
+          "training_allowed": false,
+          "mutation_allowed": false,
+          "active_learning_allowed": false,
+          "provider_call_required": false
+        }
+      ],
+      "audit_only": true,
+      "issues": [],
+      "aggregate": {
+        "case_count": 5,
+        "observe_count": 4,
+        "review_recommendation_count": 1,
+        "weight_candidate_count": 0,
+        "training_allowed_count": 0,
+        "mutation_allowed_count": 0,
+        "active_learning_allowed_count": 0
+      }
+    },
+    "gitnexus_preflight": {
+      "status": "pass",
+      "native_gitnexus": {
+        "status": "optional",
+        "note": "Stage134 uses the established optional GitNexus sidecar contract; Python fallback, GraphNexus, and branchpoint trace remain authoritative in CI when native GitNexus is unavailable."
+      },
+      "python_fallback": {
+        "status": "PASS",
+        "reason": "MetaLearner Audit Mode adds no runtime learning surface and inspects Stage133 reports locally."
+      },
+      "concept_impact": {
+        "changed_stage": "stage134",
+        "impacted_branchpoints": [
+          "stage133_narrative_state_tensor_8d",
+          "true_contradiction_writer_review_required",
+          "stage132_mystery_exemption_requires_reveal_lock",
+          "stage123_auto_repair_dry_run_only",
+          "stage124_runtime_training_disabled",
+          "provider_zero",
+          "node2_surface_contract"
+        ]
+      },
+      "survival_matrix": {
+        "provider_zero": true,
+        "node2_boundary": true,
+        "stage133_tensor": true,
+        "stage132_classifier": true,
+        "gate26_advisory_only": true,
+        "meta_learner_audit_only": true,
+        "runtime_training_disabled": true,
+        "canon_auto_resolution_blocked": true,
+        "auto_repair_blocked": true
+      },
+      "symbol_to_branchpoint_trace": {
+        "status": "pass",
+        "symbols": [
+          "src/v1700/meta_learner_audit/audit.py",
+          "src/v1700/gates/stage134_release_gate.py",
+          "tests/test_stage134_meta_learner_audit.py"
+        ]
+      },
+      "shape_check": {
+        "status": "pass",
+        "schema": "stage134_gitnexus_preflight_v1"
+      },
+      "release_gate_integration": {
+        "status": "pass",
+        "stage134_gate_registered": true,
+        "repo_doctor_recognizes_stage134": true
+      },
+      "missing_required_files": []
+    }
+  }
 }
