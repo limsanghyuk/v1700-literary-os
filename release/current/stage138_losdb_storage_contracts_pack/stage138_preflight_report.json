@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "python_fallback": {
+    "status": "PASS"
+  },
+  "native_gitnexus": {
+    "status": "optional"
+  },
+  "concept_impact": {
+    "changed_stage": "stage138",
+    "impacted_branchpoints": [
+      "migration_plan_only",
+      "storage_contract_catalog_only",
+      "human_approval_required_for_execution",
+      "stage139_governance_ready",
+      "losdb_write_blocked",
+      "provider_zero",
+      "node2_boundary"
+    ]
+  },
+  "survival_matrix": {
+    "migration_plan_only": true,
+    "storage_contract_catalog_only": true,
+    "human_approval_required_for_execution": true,
+    "stage139_governance_ready": true,
+    "migration_execution_blocked": true,
+    "losdb_write_blocked": true,
+    "provider_zero": true,
+    "node2_boundary": true,
+    "raw_manuscript_leakage_zero": true,
+    "branchpoint_lineage_preserved": true
+  },
+  "missing_required_files": []
+}

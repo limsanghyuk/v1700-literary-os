@@ -57,9 +57,8 @@ def test_stage137_preflight_and_release_gate_pass() -> None:
     assert gate["checks"]["all_bindings_covered_pass"]["status"] == "pass"
 
 
-def test_stage137_is_the_active_release_baseline() -> None:
+def test_stage137_remains_registered_in_release_baseline() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert '"active_version": "stage137"' in manifest
     assert '"stage137_migration_manager"' in manifest
     assert '"stage137_release_gate"' in manifest
 

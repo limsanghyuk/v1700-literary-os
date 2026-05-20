@@ -1,0 +1,18 @@
+{
+  "approval_lanes": [
+    {
+      "lane_id": "STAGE138-LANE-REVIEW-ONLY",
+      "lane_name": "writer_review_queue",
+      "queue_namespace": "losdb.contract.review_only.queue.v1",
+      "depends_on_steps": [
+        "STAGE137-CHECKPOINT-REVIEW-ONLY"
+      ],
+      "reviewed_case_ids": [
+        "CEX-TRUE-001"
+      ],
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:review-only-lane"
+    }
+  ]
+}

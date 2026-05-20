@@ -1,0 +1,69 @@
+{
+  "routes": [
+    {
+      "route_id": "STAGE138-ROUTE-CEX-TRUE-001",
+      "case_id": "CEX-TRUE-001",
+      "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+      "target_namespace": "losdb.contract.review_only_candidate.v1",
+      "storage_key": "stage138/review_only_candidate/CEX-TRUE-001",
+      "depends_on_step": "STAGE137-BINDING-CEX-TRUE-001",
+      "approval_lane": "writer_review_queue",
+      "stage139_governance_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:CEX-TRUE-001:binding-route"
+    },
+    {
+      "route_id": "STAGE138-ROUTE-CEX-MYST-001",
+      "case_id": "CEX-MYST-001",
+      "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+      "target_namespace": "losdb.contract.rejected_candidate.v1",
+      "storage_key": "stage138/rejected_candidate/CEX-MYST-001",
+      "depends_on_step": "STAGE137-BINDING-CEX-MYST-001",
+      "approval_lane": "automatic_registry",
+      "stage139_governance_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:CEX-MYST-001:binding-route"
+    },
+    {
+      "route_id": "STAGE138-ROUTE-CEX-POV-001",
+      "case_id": "CEX-POV-001",
+      "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+      "target_namespace": "losdb.contract.rejected_candidate.v1",
+      "storage_key": "stage138/rejected_candidate/CEX-POV-001",
+      "depends_on_step": "STAGE137-BINDING-CEX-POV-001",
+      "approval_lane": "automatic_registry",
+      "stage139_governance_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:CEX-POV-001:binding-route"
+    },
+    {
+      "route_id": "STAGE138-ROUTE-CEX-DELAY-001",
+      "case_id": "CEX-DELAY-001",
+      "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+      "target_namespace": "losdb.contract.rejected_candidate.v1",
+      "storage_key": "stage138/rejected_candidate/CEX-DELAY-001",
+      "depends_on_step": "STAGE137-BINDING-CEX-DELAY-001",
+      "approval_lane": "automatic_registry",
+      "stage139_governance_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:CEX-DELAY-001:binding-route"
+    },
+    {
+      "route_id": "STAGE138-ROUTE-CEX-CLEAR-001",
+      "case_id": "CEX-CLEAR-001",
+      "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+      "target_namespace": "losdb.contract.rejected_candidate.v1",
+      "storage_key": "stage138/rejected_candidate/CEX-CLEAR-001",
+      "depends_on_step": "STAGE137-BINDING-CEX-CLEAR-001",
+      "approval_lane": "automatic_registry",
+      "stage139_governance_ready": true,
+      "write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage138:CEX-CLEAR-001:binding-route"
+    }
+  ]
+}

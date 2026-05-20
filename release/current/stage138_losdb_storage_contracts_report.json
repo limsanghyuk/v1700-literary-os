@@ -1,0 +1,418 @@
+{
+  "stage": "138",
+  "baseline_stage": "137",
+  "title": "LOSDB Storage Contracts & Governance-Ready Catalog",
+  "status": "pass",
+  "issues": [],
+  "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+  "storage_contract_catalog_only": true,
+  "schema_contract_count": 3,
+  "binding_route_count": 5,
+  "approval_lane_count": 1,
+  "covered_binding_count": 5,
+  "review_lane_route_count": 1,
+  "rollback_ready_count": 9,
+  "write_blocked_count": 9,
+  "governance_ready_count": 5,
+  "dependency_preserved_count": 9,
+  "unique_namespace_count": 3,
+  "unique_contract_count": 3,
+  "total_contract_items": 9,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage136_report": {
+      "stage": "136",
+      "status": "pass",
+      "mode": "SCHEMA_REGISTRY_DRY_RUN",
+      "schema_registry_only": true,
+      "schema_count": 3,
+      "binding_count": 5,
+      "migration_ready_count": 5,
+      "storage_contract_ready_count": 5,
+      "branchpoint_lineage_preserved": true
+    },
+    "stage137_report": {
+      "stage": "137",
+      "status": "pass",
+      "mode": "MIGRATION_MANAGER_PLAN_ONLY",
+      "migration_plan_only": true,
+      "migration_step_count": 9,
+      "covered_binding_count": 5,
+      "approval_checkpoint_count": 1,
+      "rollback_ready_count": 9,
+      "branchpoint_lineage_preserved": true
+    },
+    "storage_contract_catalog": {
+      "stage": "138",
+      "baseline_stage": "137",
+      "status": "pass",
+      "contracts": [
+        {
+          "contract_id": "STAGE138-CONTRACT-ACCEPTED_CANDIDATE",
+          "contract_version": "1.0.0",
+          "schema_id": "stage136.accepted_candidate.v1",
+          "record_kind": "accepted_candidate",
+          "target_namespace": "losdb.contract.accepted_candidate.v1",
+          "target_collection": "accepted_candidate_records",
+          "storage_key_template": "stage138/accepted_candidate/{case_id}",
+          "governance_channel": "automatic_registry",
+          "migration_dependency": "STAGE137-SCHEMA-ACCEPTED_CANDIDATE",
+          "fields": [
+            {
+              "name": "case_id",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "case_id",
+              "index_position": 1,
+              "description": "Deterministic case identifier from Stage135 candidate registry."
+            },
+            {
+              "name": "source_stage",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_stage",
+              "index_position": 2,
+              "description": "Origin stage for the candidate record."
+            },
+            {
+              "name": "source_recommendation",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_recommendation",
+              "index_position": 3,
+              "description": "Original recommendation emitted by the predecessor stage."
+            },
+            {
+              "name": "decision",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "decision",
+              "index_position": 4,
+              "description": "Candidate disposition after Stage135 gate evaluation."
+            },
+            {
+              "name": "gate_verified",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "gate_verified",
+              "index_position": 5,
+              "description": "Whether the predecessor gate verified the source case."
+            },
+            {
+              "name": "writer_review_required",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "writer_review_required",
+              "index_position": 6,
+              "description": "Whether a human writer review must happen before promotion."
+            },
+            {
+              "name": "reason",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "reason",
+              "index_position": 7,
+              "description": "Human-readable rationale preserved for later migration planning."
+            }
+          ],
+          "requires_human_approval": false,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.accepted_candidate.v1:storage-contract"
+        },
+        {
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "contract_version": "1.0.0",
+          "schema_id": "stage136.rejected_candidate.v1",
+          "record_kind": "rejected_candidate",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "target_collection": "rejected_candidate_records",
+          "storage_key_template": "stage138/rejected_candidate/{case_id}",
+          "governance_channel": "automatic_registry",
+          "migration_dependency": "STAGE137-SCHEMA-REJECTED_CANDIDATE",
+          "fields": [
+            {
+              "name": "case_id",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "case_id",
+              "index_position": 1,
+              "description": "Deterministic case identifier from Stage135 candidate registry."
+            },
+            {
+              "name": "source_stage",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_stage",
+              "index_position": 2,
+              "description": "Origin stage for the candidate record."
+            },
+            {
+              "name": "source_recommendation",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_recommendation",
+              "index_position": 3,
+              "description": "Original recommendation emitted by the predecessor stage."
+            },
+            {
+              "name": "decision",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "decision",
+              "index_position": 4,
+              "description": "Candidate disposition after Stage135 gate evaluation."
+            },
+            {
+              "name": "gate_verified",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "gate_verified",
+              "index_position": 5,
+              "description": "Whether the predecessor gate verified the source case."
+            },
+            {
+              "name": "writer_review_required",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "writer_review_required",
+              "index_position": 6,
+              "description": "Whether a human writer review must happen before promotion."
+            },
+            {
+              "name": "reason",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "reason",
+              "index_position": 7,
+              "description": "Human-readable rationale preserved for later migration planning."
+            }
+          ],
+          "requires_human_approval": false,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.rejected_candidate.v1:storage-contract"
+        },
+        {
+          "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+          "contract_version": "1.0.0",
+          "schema_id": "stage136.review_only_candidate.v1",
+          "record_kind": "review_only_candidate",
+          "target_namespace": "losdb.contract.review_only_candidate.v1",
+          "target_collection": "review_only_candidate_records",
+          "storage_key_template": "stage138/review_only_candidate/{case_id}",
+          "governance_channel": "writer_review_queue",
+          "migration_dependency": "STAGE137-SCHEMA-REVIEW_ONLY_CANDIDATE",
+          "fields": [
+            {
+              "name": "case_id",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "case_id",
+              "index_position": 1,
+              "description": "Deterministic case identifier from Stage135 candidate registry."
+            },
+            {
+              "name": "source_stage",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_stage",
+              "index_position": 2,
+              "description": "Origin stage for the candidate record."
+            },
+            {
+              "name": "source_recommendation",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "source_recommendation",
+              "index_position": 3,
+              "description": "Original recommendation emitted by the predecessor stage."
+            },
+            {
+              "name": "decision",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "decision",
+              "index_position": 4,
+              "description": "Candidate disposition after Stage135 gate evaluation."
+            },
+            {
+              "name": "gate_verified",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "gate_verified",
+              "index_position": 5,
+              "description": "Whether the predecessor gate verified the source case."
+            },
+            {
+              "name": "writer_review_required",
+              "field_type": "boolean",
+              "required": true,
+              "storage_column": "writer_review_required",
+              "index_position": 6,
+              "description": "Whether a human writer review must happen before promotion."
+            },
+            {
+              "name": "reason",
+              "field_type": "string",
+              "required": true,
+              "storage_column": "reason",
+              "index_position": 7,
+              "description": "Human-readable rationale preserved for later migration planning."
+            }
+          ],
+          "requires_human_approval": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:stage136.review_only_candidate.v1:storage-contract"
+        }
+      ],
+      "routes": [
+        {
+          "route_id": "STAGE138-ROUTE-CEX-TRUE-001",
+          "case_id": "CEX-TRUE-001",
+          "contract_id": "STAGE138-CONTRACT-REVIEW_ONLY_CANDIDATE",
+          "target_namespace": "losdb.contract.review_only_candidate.v1",
+          "storage_key": "stage138/review_only_candidate/CEX-TRUE-001",
+          "depends_on_step": "STAGE137-BINDING-CEX-TRUE-001",
+          "approval_lane": "writer_review_queue",
+          "stage139_governance_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-TRUE-001:binding-route"
+        },
+        {
+          "route_id": "STAGE138-ROUTE-CEX-MYST-001",
+          "case_id": "CEX-MYST-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-MYST-001",
+          "depends_on_step": "STAGE137-BINDING-CEX-MYST-001",
+          "approval_lane": "automatic_registry",
+          "stage139_governance_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-MYST-001:binding-route"
+        },
+        {
+          "route_id": "STAGE138-ROUTE-CEX-POV-001",
+          "case_id": "CEX-POV-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-POV-001",
+          "depends_on_step": "STAGE137-BINDING-CEX-POV-001",
+          "approval_lane": "automatic_registry",
+          "stage139_governance_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-POV-001:binding-route"
+        },
+        {
+          "route_id": "STAGE138-ROUTE-CEX-DELAY-001",
+          "case_id": "CEX-DELAY-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-DELAY-001",
+          "depends_on_step": "STAGE137-BINDING-CEX-DELAY-001",
+          "approval_lane": "automatic_registry",
+          "stage139_governance_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-DELAY-001:binding-route"
+        },
+        {
+          "route_id": "STAGE138-ROUTE-CEX-CLEAR-001",
+          "case_id": "CEX-CLEAR-001",
+          "contract_id": "STAGE138-CONTRACT-REJECTED_CANDIDATE",
+          "target_namespace": "losdb.contract.rejected_candidate.v1",
+          "storage_key": "stage138/rejected_candidate/CEX-CLEAR-001",
+          "depends_on_step": "STAGE137-BINDING-CEX-CLEAR-001",
+          "approval_lane": "automatic_registry",
+          "stage139_governance_ready": true,
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:CEX-CLEAR-001:binding-route"
+        }
+      ],
+      "approval_lanes": [
+        {
+          "lane_id": "STAGE138-LANE-REVIEW-ONLY",
+          "lane_name": "writer_review_queue",
+          "queue_namespace": "losdb.contract.review_only.queue.v1",
+          "depends_on_steps": [
+            "STAGE137-CHECKPOINT-REVIEW-ONLY"
+          ],
+          "reviewed_case_ids": [
+            "CEX-TRUE-001"
+          ],
+          "write_enabled": false,
+          "provider_call_required": false,
+          "rollback_anchor": "rollback:stage138:review-only-lane"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "schema_contract_count": 3,
+        "binding_route_count": 5,
+        "approval_lane_count": 1,
+        "covered_binding_count": 5,
+        "review_lane_route_count": 1,
+        "rollback_ready_count": 9,
+        "write_blocked_count": 9,
+        "governance_ready_count": 5,
+        "dependency_preserved_count": 9,
+        "unique_namespace_count": 3,
+        "unique_contract_count": 3
+      }
+    },
+    "preflight": {
+      "status": "pass",
+      "python_fallback": {
+        "status": "PASS"
+      },
+      "native_gitnexus": {
+        "status": "optional"
+      },
+      "concept_impact": {
+        "changed_stage": "stage138",
+        "impacted_branchpoints": [
+          "migration_plan_only",
+          "storage_contract_catalog_only",
+          "human_approval_required_for_execution",
+          "stage139_governance_ready",
+          "losdb_write_blocked",
+          "provider_zero",
+          "node2_boundary"
+        ]
+      },
+      "survival_matrix": {
+        "migration_plan_only": true,
+        "storage_contract_catalog_only": true,
+        "human_approval_required_for_execution": true,
+        "stage139_governance_ready": true,
+        "migration_execution_blocked": true,
+        "losdb_write_blocked": true,
+        "provider_zero": true,
+        "node2_boundary": true,
+        "raw_manuscript_leakage_zero": true,
+        "branchpoint_lineage_preserved": true
+      },
+      "missing_required_files": []
+    }
+  }
+}

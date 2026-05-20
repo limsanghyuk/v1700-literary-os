@@ -44,6 +44,7 @@
 - STAGE135: LearningQualityGate & Candidate Registry
 - STAGE136: SchemaRegistry
 - STAGE137: MigrationManager
+- STAGE138: LOSDB Storage Contracts
 
 Source files:
 - manifests/stage_lineage_manifest.json

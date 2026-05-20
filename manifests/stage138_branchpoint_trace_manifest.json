@@ -1,0 +1,21 @@
+{
+  "stage": "stage138",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage137_migration_plan_only",
+      "preserved": true,
+      "evidence": "release/current/stage137_migration_manager_report.json"
+    },
+    {
+      "branchpoint_id": "stage138_storage_contract_catalog_only",
+      "preserved": true,
+      "evidence": "release/current/stage138_losdb_storage_contracts_report.json"
+    },
+    {
+      "branchpoint_id": "stage138_stage139_governance_ready",
+      "preserved": true,
+      "evidence": "release/current/stage138_release_gate_report.json"
+    }
+  ]
+}

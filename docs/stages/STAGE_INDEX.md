@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage137 - MigrationManager
+Current active stage: Stage138 - LOSDB Storage Contracts
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -42,3 +42,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage135](stage135.md) - LearningQualityGate & Candidate Registry
 - [Stage136](stage136.md) - SchemaRegistry
 - [Stage137](stage137.md) - MigrationManager
+- [Stage138](stage138.md) - LOSDB Storage Contracts

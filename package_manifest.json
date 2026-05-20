@@ -1,14 +1,14 @@
 {
-  "stage": "stage137",
-  "package": "V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage138",
+  "package": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is the authoritative digest to avoid self-referential package hash drift",
   "filelist": "FILELIST.txt",
-  "created_by": "stage137_migration_manager_release",
-  "active_version": "stage137",
-  "patch_report": "release/current/stage137_migration_manager_report.json",
-  "release_gate": "release/current/stage137_release_gate_report.json",
-  "asset_manifest": "release/current/stage137_release_asset_manifest.json"
+  "created_by": "stage138_losdb_storage_contracts_release",
+  "active_version": "stage138",
+  "patch_report": "release/current/stage138_losdb_storage_contracts_report.json",
+  "release_gate": "release/current/stage138_release_gate_report.json",
+  "asset_manifest": "release/current/stage138_release_asset_manifest.json"
 }

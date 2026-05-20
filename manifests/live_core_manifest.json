@@ -1,5 +1,5 @@
 {
-  "active_version": "stage137",
+  "active_version": "stage138",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -177,7 +177,9 @@
     "stage136_schema_registry",
     "stage136_release_gate",
     "stage137_migration_manager",
-    "stage137_release_gate"
+    "stage137_release_gate",
+    "stage138_losdb_storage_contracts",
+    "stage138_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -406,6 +408,9 @@
     "schema_registry_only": true,
     "stage137_migration_manager_plan_only": true,
     "migration_plan_only": true,
+    "stage138_storage_contract_catalog_only": true,
+    "storage_contract_catalog_only": true,
+    "stage139_governance_ready": true,
     "runtime_training_disabled": true,
     "active_meta_learning_disabled": true,
     "model_weight_update_count_zero": true,
@@ -416,7 +421,7 @@
     "storage_contract_write_enabled": false,
     "human_approval_required_for_execution": true
   },
-  "canonical_package": "V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
   "stage80": {
     "status": "active",
     "purpose": "Korean drama composition hierarchy and macro plot architecture"
@@ -703,7 +708,7 @@
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
   "canonical_filelist": "FILELIST.txt",
-  "canonical_sha256_sidecar": "V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_sha256_sidecar": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
@@ -843,5 +848,22 @@
     "cross_project_write_allowed": false,
     "official_asset_manifest": "release/current/stage137_release_asset_manifest.json",
     "next_stage": "stage138"
+  },
+  "stage138": {
+    "title": "LOSDB Storage Contracts",
+    "baseline_stage": "stage137",
+    "status": "active",
+    "release_gate": "release/current/stage138_release_gate_report.json",
+    "evidence": "release/current/stage138_losdb_storage_contracts_report.json",
+    "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+    "storage_contract_catalog_only": true,
+    "migration_execution_enabled": false,
+    "losdb_write_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "cross_project_write_allowed": false,
+    "official_asset_manifest": "release/current/stage138_release_asset_manifest.json",
+    "next_stage": "stage139"
   }
 }

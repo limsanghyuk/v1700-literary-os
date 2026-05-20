@@ -483,9 +483,20 @@
         "rollback anchors"
       ],
       "surviving_runtime_value": "Creates the deterministic migration planning authority required for Stage138 storage contracts while keeping execution and LOSDB writes blocked."
+    },
+    {
+      "stage_id": "STAGE138",
+      "title": "LOSDB Storage Contracts",
+      "introduced_concepts": [
+        "namespace contract catalog",
+        "binding storage routes",
+        "writer review approval lane",
+        "stage139 governance-ready metadata"
+      ],
+      "surviving_runtime_value": "Creates the deterministic LOSDB storage contract authority required for Stage139 corpus governance while keeping execution and LOSDB writes blocked."
     }
   ],
-  "active_version": "stage137",
+  "active_version": "stage138",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -530,5 +541,10 @@
     "status": "active",
     "baseline_stage": "stage136",
     "purpose": "MigrationManager"
+  },
+  "stage138": {
+    "status": "active",
+    "baseline_stage": "stage137",
+    "purpose": "LOSDB Storage Contracts"
   }
 }
