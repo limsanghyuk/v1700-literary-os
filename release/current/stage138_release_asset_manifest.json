@@ -1,0 +1,26 @@
+{
+  "stage": "stage138",
+  "release_tag": "v1700-stage138",
+  "status": "ready_for_release_upload",
+  "problem": "Official Stage138 release assets are built locally and must be uploaded after GitHub Actions validates the release tag.",
+  "correct_assets": [
+    {
+      "file": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip",
+      "sha256": "SEE_RELEASE_SIDECAR",
+      "role": "Stage138 developer release archive with integrated repository and LOSDB storage contract artifacts"
+    },
+    {
+      "file": "V1700_stage138_losdb_storage_contracts_release_integrated_repository_with_artifacts.zip.sha256",
+      "role": "SHA256 sidecar"
+    }
+  ],
+  "sha256_authority": "The .sha256 sidecar is the authoritative digest because the repository package contains its own metadata files.",
+  "local_build": {
+    "zip_sha256": "962e30f7aeb052944e23b733e7cfa920db26bb0136339b9cd0a059d451ea5577"
+  },
+  "validated_before_release": {
+    "ci_core_pytest_and_gates_python_3_11": "required",
+    "ci_core_pytest_and_gates_python_3_12": "required",
+    "cd_dry_run_build_release_archive": "required"
+  }
+}

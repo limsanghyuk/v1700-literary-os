@@ -40,6 +40,8 @@ jobs:
           python tools/run_stage136_release_gate.py
           python tools/run_stage137_migration_manager.py
           python tools/run_stage137_release_gate.py
+          python tools/run_stage138_losdb_storage_contracts.py
+          python tools/run_stage138_release_gate.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py
           python tools/run_ci_dependency_preflight.py

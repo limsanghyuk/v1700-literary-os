@@ -1,0 +1,113 @@
+{
+  "stage": "138",
+  "baseline_stage": "137",
+  "title": "LOSDB Storage Contracts Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage137_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "storage_contract_report_pass": {
+      "status": "pass"
+    },
+    "storage_contract_catalog_pass": {
+      "status": "pass"
+    },
+    "contract_mode_pass": {
+      "status": "pass"
+    },
+    "schema_contracts_present": {
+      "status": "pass"
+    },
+    "all_bindings_covered_pass": {
+      "status": "pass"
+    },
+    "approval_lane_preserved_pass": {
+      "status": "pass"
+    },
+    "dependency_preserved_pass": {
+      "status": "pass"
+    },
+    "unique_namespace_pass": {
+      "status": "pass"
+    },
+    "unique_contract_id_pass": {
+      "status": "pass"
+    },
+    "rollback_ready_metadata_pass": {
+      "status": "pass"
+    },
+    "governance_ready_pass": {
+      "status": "pass"
+    },
+    "storage_write_blocked": {
+      "status": "pass"
+    },
+    "migration_execution_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage138": {
+    "status": "pass",
+    "stage": "138",
+    "baseline_stage": "137",
+    "title": "LOSDB Storage Contracts & Governance-Ready Catalog",
+    "issues": [],
+    "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+    "storage_contract_catalog_only": true,
+    "schema_contract_count": 3,
+    "binding_route_count": 5,
+    "approval_lane_count": 1,
+    "covered_binding_count": 5,
+    "review_lane_route_count": 1,
+    "rollback_ready_count": 9,
+    "write_blocked_count": 9,
+    "governance_ready_count": 5,
+    "dependency_preserved_count": 9,
+    "unique_namespace_count": 3,
+    "unique_contract_count": 3,
+    "total_contract_items": 9,
+    "losdb_write_enabled": false,
+    "migration_execution_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "stage138",
+  "component": "losdb_storage_contracts",
+  "status": "implemented",
+  "storage_contract_catalog_only": true,
+  "migration_execution_enabled": false,
+  "losdb_write_enabled": false,
+  "rollback_required": true,
+  "writer_review_lane_required": true,
+  "evidence_pack": "release/current/stage138_losdb_storage_contracts_pack/"
+}

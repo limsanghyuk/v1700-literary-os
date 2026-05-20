@@ -66,6 +66,12 @@ jobs:
       - name: Run Stage137 release gate
         run: python tools/run_stage137_release_gate.py
 
+      - name: Run Stage138 LOSDB Storage Contracts
+        run: python tools/run_stage138_losdb_storage_contracts.py
+
+      - name: Run Stage138 release gate
+        run: python tools/run_stage138_release_gate.py
+
       - name: Run main release gate
         run: python tools/run_release_gate.py
 

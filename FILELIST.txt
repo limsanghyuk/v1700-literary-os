@@ -36,6 +36,7 @@ docs/architecture/stage134_blueprint.md
 docs/architecture/stage135_blueprint.md
 docs/architecture/stage136_blueprint.md
 docs/architecture/stage137_blueprint.md
+docs/architecture/stage138_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -61,6 +62,7 @@ docs/development/stage134_developer_handoff.md
 docs/development/stage135_release_asset_correction.md
 docs/development/stage136_developer_handoff.md
 docs/development/stage137_developer_handoff.md
+docs/development/stage138_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -79,6 +81,7 @@ docs/proposals/stage134_proposal.md
 docs/proposals/stage135_proposal.md
 docs/proposals/stage136_proposal.md
 docs/proposals/stage137_proposal.md
+docs/proposals/stage138_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
@@ -90,6 +93,7 @@ docs/roadmaps/stage133_roadmap.md
 docs/roadmaps/stage134_roadmap.md
 docs/roadmaps/stage136_roadmap.md
 docs/roadmaps/stage137_roadmap.md
+docs/roadmaps/stage138_roadmap.md
 docs/roadmaps/stage75_to_stage79_completion_roadmap.md
 docs/roadmaps/stage82_blind_critic_evaluation_roadmap.md
 docs/roadmaps/stage83_commercial_release_candidate.md
@@ -195,6 +199,7 @@ docs/stages/stage134.md
 docs/stages/stage135.md
 docs/stages/stage136.md
 docs/stages/stage137.md
+docs/stages/stage138.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -305,6 +310,7 @@ manifests/live_core_manifest.json
 manifests/live_core_stage135_overlay.json
 manifests/live_core_stage136_overlay.json
 manifests/live_core_stage137_overlay.json
+manifests/live_core_stage138_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -440,6 +446,9 @@ manifests/stage136_schema_registry_manifest.json
 manifests/stage137_branchpoint_trace_manifest.json
 manifests/stage137_manifest.json
 manifests/stage137_migration_manager_manifest.json
+manifests/stage138_branchpoint_trace_manifest.json
+manifests/stage138_losdb_storage_contracts_manifest.json
+manifests/stage138_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -970,6 +979,16 @@ release/current/stage137_migration_manager_report.json
 release/current/stage137_release_asset_manifest.json
 release/current/stage137_release_gate_report.json
 release/current/stage137_summary.json
+release/current/stage138_losdb_storage_contracts_pack/approval_lane_contracts.json
+release/current/stage138_losdb_storage_contracts_pack/binding_routes.json
+release/current/stage138_losdb_storage_contracts_pack/namespace_contracts.json
+release/current/stage138_losdb_storage_contracts_pack/stage137_input_summary.json
+release/current/stage138_losdb_storage_contracts_pack/stage138_preflight_report.json
+release/current/stage138_losdb_storage_contracts_pack/storage_contract_catalog.json
+release/current/stage138_losdb_storage_contracts_report.json
+release/current/stage138_release_asset_manifest.json
+release/current/stage138_release_gate_report.json
+release/current/stage138_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1323,6 +1342,7 @@ src/v1700/gates/stage134_release_gate.py
 src/v1700/gates/stage135_release_gate.py
 src/v1700/gates/stage136_release_gate.py
 src/v1700/gates/stage137_release_gate.py
+src/v1700/gates/stage138_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -1484,6 +1504,11 @@ src/v1700/longform_production/production_scene_mapping.py
 src/v1700/longform_production/release_policy.py
 src/v1700/longform_production/report.py
 src/v1700/longform_production/suite_orchestrator.py
+src/v1700/losdb_storage_contracts/__init__.py
+src/v1700/losdb_storage_contracts/contracts.py
+src/v1700/losdb_storage_contracts/gate.py
+src/v1700/losdb_storage_contracts/preflight.py
+src/v1700/losdb_storage_contracts/report.py
 src/v1700/manuscript_learning/__init__.py
 src/v1700/manuscript_learning/coefficient_memory.py
 src/v1700/manuscript_learning/contracts.py
@@ -1946,6 +1971,8 @@ src/v1700/stage136/__init__.py
 src/v1700/stage136/stage136_runner.py
 src/v1700/stage137/__init__.py
 src/v1700/stage137/stage137_runner.py
+src/v1700/stage138/__init__.py
+src/v1700/stage138/stage138_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2136,6 +2163,7 @@ tests/test_stage134_meta_learner_audit.py
 tests/test_stage135_learning_quality_gate.py
 tests/test_stage136_schema_registry.py
 tests/test_stage137_migration_manager.py
+tests/test_stage138_losdb_storage_contracts.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2437,6 +2465,8 @@ tools/run_stage136_release_gate.py
 tools/run_stage136_schema_registry.py
 tools/run_stage137_migration_manager.py
 tools/run_stage137_release_gate.py
+tools/run_stage138_losdb_storage_contracts.py
+tools/run_stage138_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

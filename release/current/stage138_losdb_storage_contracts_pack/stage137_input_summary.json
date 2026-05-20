@@ -1,0 +1,11 @@
+{
+  "stage": "137",
+  "status": "pass",
+  "mode": "MIGRATION_MANAGER_PLAN_ONLY",
+  "migration_plan_only": true,
+  "migration_step_count": 9,
+  "covered_binding_count": 5,
+  "approval_checkpoint_count": 1,
+  "rollback_ready_count": 9,
+  "branchpoint_lineage_preserved": true
+}

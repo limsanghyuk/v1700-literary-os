@@ -1,0 +1,10 @@
+{
+  "stage": "stage138",
+  "title": "LOSDB Storage Contracts",
+  "baseline_stage": "stage137",
+  "status": "implemented",
+  "mode": "LOSDB_STORAGE_CONTRACTS_READINESS_ONLY",
+  "release_gate": "release/current/stage138_release_gate_report.json",
+  "evidence": "release/current/stage138_losdb_storage_contracts_report.json",
+  "next_stage": "stage139"
+}
