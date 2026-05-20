@@ -1,0 +1,31 @@
+{
+  "overlay_for": "manifests/live_core_manifest.json",
+  "stage": "stage137",
+  "active_version_override": "stage137",
+  "reason": "Stage137 is the active MigrationManager baseline after Stage136 schema authority validation.",
+  "required_active_gates": [
+    "stage134_meta_learner_audit",
+    "stage134_release_gate",
+    "stage135_learning_quality_gate",
+    "stage135_release_gate",
+    "stage136_schema_registry",
+    "stage136_release_gate",
+    "stage137_migration_manager",
+    "stage137_release_gate"
+  ],
+  "stage137_invariants": {
+    "migration_plan_only": true,
+    "migration_execution_enabled": false,
+    "losdb_write_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "official_reports": {
+    "migration_manager": "release/current/stage137_migration_manager_report.json",
+    "release_gate": "release/current/stage137_release_gate_report.json",
+    "asset_manifest": "release/current/stage137_release_asset_manifest.json"
+  },
+  "next_stage": "stage138"
+}

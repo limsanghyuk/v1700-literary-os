@@ -1,12 +1,14 @@
-# V1700 Stage136 - SchemaRegistry
+# V1700 Stage137 - MigrationManager
 
-Stage136 is the schema-authority layer after Stage135. It converts Stage135 candidate-only output into deterministic schema definitions and validated candidate bindings while keeping LOSDB writes, migration execution, runtime training, active learning, model weight updates, provider calls, canon mutation, and AutoRepair mutation blocked.
+Stage137 is the migration-planning layer after Stage136. It converts Stage136 schema authority into deterministic migration steps, approval checkpoints, and rollback metadata while keeping migration execution, LOSDB writes, runtime training, active learning, model weight updates, provider calls, canon mutation, and AutoRepair mutation blocked.
 
 ## Release Highlights
 
-- Stage134 remains audit-only, Stage135 remains candidate-only, and Stage136 remains schema-only.
-- Every Stage135 candidate binds to a deterministic Stage136 schema.
-- Migration-ready and storage-contract-ready metadata are prepared without executing migrations.
+- Stage134 remains audit-only, Stage135 remains candidate-only, Stage136 remains schema-only, and Stage137 remains migration-plan-only.
+- Every Stage136 binding is covered by a deterministic Stage137 migration step.
+- Review-only records route through a human approval checkpoint.
+- Rollback metadata is attached to every planned step.
+- Migration execution remains disabled.
 - LOSDB writes remain disabled.
 - Runtime training remains disabled.
 - Active meta-learning remains disabled.
@@ -28,6 +30,8 @@ python tools/run_stage135_learning_quality_gate.py
 python tools/run_stage135_release_gate.py
 python tools/run_stage136_schema_registry.py
 python tools/run_stage136_release_gate.py
+python tools/run_stage137_migration_manager.py
+python tools/run_stage137_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
 python tools/run_ci_dependency_preflight.py
@@ -35,7 +39,7 @@ python tools/run_ci_dependency_preflight.py
 
 ## Official Artifacts
 
-The official Stage136 handoff assets are:
+The official Stage137 handoff assets are:
 
-- `V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage136_schema_registry_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage137_migration_manager_release_integrated_repository_with_artifacts.zip.sha256`

@@ -1,0 +1,165 @@
+{
+  "stage": "137",
+  "baseline_stage": "136",
+  "status": "pass",
+  "steps": [
+    {
+      "step_id": "STAGE137-SCHEMA-ACCEPTED_CANDIDATE",
+      "order": 1,
+      "scope": "schema",
+      "action": "FREEZE_SCHEMA_CATALOG",
+      "target_namespace": "losdb.plan.accepted_candidate.v1",
+      "schema_id": "stage136.accepted_candidate.v1",
+      "case_id": null,
+      "depends_on": [],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage136.accepted_candidate.v1:catalog-freeze"
+    },
+    {
+      "step_id": "STAGE137-SCHEMA-REJECTED_CANDIDATE",
+      "order": 2,
+      "scope": "schema",
+      "action": "FREEZE_SCHEMA_CATALOG",
+      "target_namespace": "losdb.plan.rejected_candidate.v1",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "case_id": null,
+      "depends_on": [],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage136.rejected_candidate.v1:catalog-freeze"
+    },
+    {
+      "step_id": "STAGE137-SCHEMA-REVIEW_ONLY_CANDIDATE",
+      "order": 3,
+      "scope": "schema",
+      "action": "FREEZE_SCHEMA_CATALOG",
+      "target_namespace": "losdb.plan.review_only_candidate.v1",
+      "schema_id": "stage136.review_only_candidate.v1",
+      "case_id": null,
+      "depends_on": [],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage136.review_only_candidate.v1:catalog-freeze"
+    },
+    {
+      "step_id": "STAGE137-BINDING-CEX-TRUE-001",
+      "order": 4,
+      "scope": "binding",
+      "action": "PLAN_NAMESPACE_MIGRATION",
+      "target_namespace": "losdb.plan.review_only_candidate.records.v1",
+      "schema_id": "stage136.review_only_candidate.v1",
+      "case_id": "CEX-TRUE-001",
+      "depends_on": [
+        "STAGE137-SCHEMA-REVIEW_ONLY_CANDIDATE"
+      ],
+      "requires_human_approval": true,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:CEX-TRUE-001:binding-plan"
+    },
+    {
+      "step_id": "STAGE137-BINDING-CEX-MYST-001",
+      "order": 5,
+      "scope": "binding",
+      "action": "PLAN_NAMESPACE_MIGRATION",
+      "target_namespace": "losdb.plan.rejected_candidate.records.v1",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "case_id": "CEX-MYST-001",
+      "depends_on": [
+        "STAGE137-SCHEMA-REJECTED_CANDIDATE"
+      ],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:CEX-MYST-001:binding-plan"
+    },
+    {
+      "step_id": "STAGE137-BINDING-CEX-POV-001",
+      "order": 6,
+      "scope": "binding",
+      "action": "PLAN_NAMESPACE_MIGRATION",
+      "target_namespace": "losdb.plan.rejected_candidate.records.v1",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "case_id": "CEX-POV-001",
+      "depends_on": [
+        "STAGE137-SCHEMA-REJECTED_CANDIDATE"
+      ],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:CEX-POV-001:binding-plan"
+    },
+    {
+      "step_id": "STAGE137-BINDING-CEX-DELAY-001",
+      "order": 7,
+      "scope": "binding",
+      "action": "PLAN_NAMESPACE_MIGRATION",
+      "target_namespace": "losdb.plan.rejected_candidate.records.v1",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "case_id": "CEX-DELAY-001",
+      "depends_on": [
+        "STAGE137-SCHEMA-REJECTED_CANDIDATE"
+      ],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:CEX-DELAY-001:binding-plan"
+    },
+    {
+      "step_id": "STAGE137-BINDING-CEX-CLEAR-001",
+      "order": 8,
+      "scope": "binding",
+      "action": "PLAN_NAMESPACE_MIGRATION",
+      "target_namespace": "losdb.plan.rejected_candidate.records.v1",
+      "schema_id": "stage136.rejected_candidate.v1",
+      "case_id": "CEX-CLEAR-001",
+      "depends_on": [
+        "STAGE137-SCHEMA-REJECTED_CANDIDATE"
+      ],
+      "requires_human_approval": false,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:CEX-CLEAR-001:binding-plan"
+    },
+    {
+      "step_id": "STAGE137-CHECKPOINT-REVIEW-ONLY",
+      "order": 9,
+      "scope": "checkpoint",
+      "action": "PLAN_APPROVAL_CHECKPOINT",
+      "target_namespace": "human.review.queue.stage137",
+      "schema_id": null,
+      "case_id": null,
+      "depends_on": [
+        "STAGE137-BINDING-CEX-TRUE-001"
+      ],
+      "requires_human_approval": true,
+      "execution_enabled": false,
+      "losdb_write_enabled": false,
+      "provider_call_required": false,
+      "rollback_anchor": "rollback:stage137:review-only-checkpoint"
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "migration_step_count": 9,
+    "schema_step_count": 3,
+    "binding_step_count": 5,
+    "approval_checkpoint_count": 1,
+    "review_only_checkpoint_count": 1,
+    "covered_binding_count": 5,
+    "rollback_ready_count": 9,
+    "execution_blocked_count": 9
+  }
+}

@@ -43,6 +43,7 @@
 - STAGE134: MetaLearner Audit Mode
 - STAGE135: LearningQualityGate & Candidate Registry
 - STAGE136: SchemaRegistry
+- STAGE137: MigrationManager
 
 Source files:
 - manifests/stage_lineage_manifest.json

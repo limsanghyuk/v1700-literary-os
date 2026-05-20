@@ -1,0 +1,11 @@
+{
+  "stage": "stage137",
+  "component": "migration_manager",
+  "status": "implemented",
+  "migration_plan_only": true,
+  "migration_execution_enabled": false,
+  "losdb_write_enabled": false,
+  "rollback_required": true,
+  "human_approval_checkpoint_required": true,
+  "evidence_pack": "release/current/stage137_migration_manager_pack/"
+}
