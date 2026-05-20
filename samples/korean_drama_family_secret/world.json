@@ -1,0 +1,9 @@
+{
+  "world_id": "synthetic_modern_seoul_family_estate",
+  "project_id": "sample_korean_drama_family_secret",
+  "synthetic_only": true,
+  "public_safe_placeholder": true,
+  "setting": "A fictional modern family estate and small legal office in Seoul",
+  "canon_source_of_truth": "sample_local_only",
+  "provider_calls_allowed": false
+}
