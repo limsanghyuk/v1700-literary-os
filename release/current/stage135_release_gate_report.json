@@ -5,28 +5,73 @@
   "status": "pass",
   "issues": [],
   "checks": {
-    "stage134_baseline_gate_pass": {"status": "pass"},
-    "learning_quality_report_pass": {"status": "pass"},
-    "candidate_registry_pass": {"status": "pass"},
-    "candidate_only_mode_pass": {"status": "pass"},
-    "learning_disabled_pass": {"status": "pass"},
-    "training_not_triggered_pass": {"status": "pass"},
-    "active_learning_disabled_pass": {"status": "pass"},
-    "model_weight_update_blocked": {"status": "pass"},
-    "mutation_blocked_pass": {"status": "pass"},
-    "review_only_route_pass": {"status": "pass"},
-    "preflight_pass": {"status": "pass"},
-    "provider_zero_pass": {"status": "pass"},
-    "node2_boundary_pass": {"status": "pass"},
-    "raw_manuscript_leakage_zero": {"status": "pass"},
-    "credential_leakage_zero_pass": {"status": "pass"},
-    "canon_auto_resolution_blocked": {"status": "pass"},
-    "cross_project_write_blocked": {"status": "pass"},
-    "gate26_advisory_only_pass": {"status": "pass"},
-    "branchpoint_survival_pass": {"status": "pass"},
-    "docs_manifest_pass": {"status": "pass"}
+    "stage134_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "learning_quality_report_pass": {
+      "status": "pass"
+    },
+    "candidate_registry_pass": {
+      "status": "pass"
+    },
+    "candidate_only_mode_pass": {
+      "status": "pass"
+    },
+    "learning_disabled_pass": {
+      "status": "pass"
+    },
+    "training_not_triggered_pass": {
+      "status": "pass"
+    },
+    "active_learning_disabled_pass": {
+      "status": "pass"
+    },
+    "model_weight_update_blocked": {
+      "status": "pass"
+    },
+    "mutation_blocked_pass": {
+      "status": "pass"
+    },
+    "review_only_route_pass": {
+      "status": "pass"
+    },
+    "preflight_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "canon_auto_resolution_blocked": {
+      "status": "pass"
+    },
+    "cross_project_write_blocked": {
+      "status": "pass"
+    },
+    "gate26_advisory_only_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    }
   },
   "stage135": {
+    "status": "pass",
+    "stage": "135",
+    "baseline_stage": "134",
+    "title": "LearningQualityGate & Candidate Registry",
+    "issues": [],
     "mode": "LEARNING_QUALITY_GATE_CANDIDATE_ONLY",
     "learning_candidate_only": true,
     "candidate_count": 5,

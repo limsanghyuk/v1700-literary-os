@@ -3,7 +3,80 @@
   "baseline_stage": "133",
   "status": "pass",
   "mode": "META_LEARNER_AUDIT_ONLY_NO_TRAINING",
+  "cases": [
+    {
+      "case_id": "CEX-TRUE-001",
+      "source_classification": "true_contradiction",
+      "tensor_status": "REVIEW_REQUIRED",
+      "lowest_dimension": "canon_isolation",
+      "lowest_score": 0.52,
+      "recommendation": "RECOMMEND_REVIEW",
+      "rationale": "true contradiction remains human-review only; no auto-repair or training is permitted",
+      "writer_review_required": true,
+      "training_allowed": false,
+      "mutation_allowed": false,
+      "active_learning_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-MYST-001",
+      "source_classification": "intentional_mystery",
+      "tensor_status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "recommendation": "OBSERVE",
+      "rationale": "tensor state is stable; observe only",
+      "writer_review_required": false,
+      "training_allowed": false,
+      "mutation_allowed": false,
+      "active_learning_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-POV-001",
+      "source_classification": "character_misunderstanding",
+      "tensor_status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "recommendation": "OBSERVE",
+      "rationale": "tensor state is stable; observe only",
+      "writer_review_required": false,
+      "training_allowed": false,
+      "mutation_allowed": false,
+      "active_learning_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-DELAY-001",
+      "source_classification": "reveal_delay",
+      "tensor_status": "PASS",
+      "lowest_dimension": "causality_integrity",
+      "lowest_score": 0.84,
+      "recommendation": "OBSERVE",
+      "rationale": "tensor state is stable; observe only",
+      "writer_review_required": false,
+      "training_allowed": false,
+      "mutation_allowed": false,
+      "active_learning_allowed": false,
+      "provider_call_required": false
+    },
+    {
+      "case_id": "CEX-CLEAR-001",
+      "source_classification": "no_conflict",
+      "tensor_status": "PASS",
+      "lowest_dimension": "reveal_budget_integrity",
+      "lowest_score": 0.84,
+      "recommendation": "OBSERVE",
+      "rationale": "tensor state is stable; observe only",
+      "writer_review_required": false,
+      "training_allowed": false,
+      "mutation_allowed": false,
+      "active_learning_allowed": false,
+      "provider_call_required": false
+    }
+  ],
   "audit_only": true,
+  "issues": [],
   "aggregate": {
     "case_count": 5,
     "observe_count": 4,
@@ -12,6 +85,5 @@
     "training_allowed_count": 0,
     "mutation_allowed_count": 0,
     "active_learning_allowed_count": 0
-  },
-  "issues": []
+  }
 }

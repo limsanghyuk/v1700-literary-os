@@ -1,0 +1,12 @@
+{
+  "stage": "134",
+  "status": "pass",
+  "mode": "META_LEARNER_AUDIT_ONLY_NO_TRAINING",
+  "case_count": 5,
+  "review_recommendation_count": 1,
+  "training_allowed_count": 0,
+  "model_weight_update_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true
+}

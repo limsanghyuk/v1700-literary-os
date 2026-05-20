@@ -2,8 +2,13 @@
   "stage": "stage135",
   "release_tag": "v1700-stage135",
   "release_target_commit": "9051c36a9007f0b10d5fb0740722304b8b57ba9b",
-  "status": "asset_correction_required",
-  "problem": "The GitHub release page exists, but the visible uploaded assets are still Stage133 assets.",
+  "status": "official_asset_alignment_required",
+  "problem": "The GitHub release page now contains generic workflow-generated Stage135 tag assets, but it still needs the official Stage135 handoff archive and an updated Stage135 release body.",
+  "current_release_assets": [
+    "SHA256SUMS_v1700-stage135.txt",
+    "V1700_v1700-stage135_integrated_repository.zip",
+    "V1700_v1700-stage135_integrated_repository.zip.sha256"
+  ],
   "correct_assets": [
     {
       "file": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip",
@@ -15,10 +20,10 @@
       "role": "SHA256 sidecar"
     }
   ],
-  "assets_to_remove_from_release": [
-    "SHA256SUMS_v1.33.0-stage133.txt",
-    "V1700_v1.33.0-stage133_integrated_repository.zip",
-    "V1700_v1.33.0-stage133_integrated_repository.zip.sha256"
+  "assets_to_replace_on_release": [
+    "SHA256SUMS_v1700-stage135.txt",
+    "V1700_v1700-stage135_integrated_repository.zip",
+    "V1700_v1700-stage135_integrated_repository.zip.sha256"
   ],
   "validated_before_release": {
     "ci_core_gitnexus_and_ci_preflight": "success",

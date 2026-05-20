@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from v1700.gates.release_gate import run_release_gate
 from v1700.gates.stage135_release_gate import run_stage135_release_gate
 from v1700.learning_quality_gate import run_stage135_learning_quality_gate
 from v1700.learning_quality_gate.gate import LEARNING_QUALITY_MODE, build_candidate_registry
@@ -58,3 +59,14 @@ def test_stage135_preflight_and_release_gate_pass() -> None:
     gate = run_stage135_release_gate(ROOT)
     assert gate["status"] == "pass"
     assert gate["checks"]["candidate_only_mode_pass"]["status"] == "pass"
+
+
+def test_stage135_is_the_active_release_baseline() -> None:
+    manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
+    assert '"active_version": "stage135"' in manifest
+    assert '"stage135_learning_quality_gate"' in manifest
+    assert '"stage135_release_gate"' in manifest
+
+    result = run_release_gate()
+    assert result["status"] == "pass"
+    assert result["stage135_release_gate"]["status"] == "pass"

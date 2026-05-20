@@ -1,5 +1,5 @@
 {
-  "active_version": "stage133",
+  "active_version": "stage135",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -169,7 +169,11 @@
     "stage132_contradiction_classifier",
     "stage132_release_gate",
     "stage133_narrative_state_tensor",
-    "stage133_release_gate"
+    "stage133_release_gate",
+    "stage134_meta_learner_audit",
+    "stage134_release_gate",
+    "stage135_learning_quality_gate",
+    "stage135_release_gate"
   ],
   "excluded_from_runtime": [
     "archive/**",
@@ -389,9 +393,18 @@
     "stage132_mystery_exemption_requires_reveal_lock": true,
     "stage133_narrative_state_tensor_8d": true,
     "stage133_true_contradiction_review_tensor": true,
-    "stage133_mystery_exemption_measurement": true
+    "stage133_mystery_exemption_measurement": true,
+    "stage134_meta_learner_audit_mode": true,
+    "meta_learner_audit_only": true,
+    "stage135_learning_quality_gate_candidate_only": true,
+    "learning_candidate_only": true,
+    "runtime_training_disabled": true,
+    "active_meta_learning_disabled": true,
+    "model_weight_update_count_zero": true,
+    "learning_allowed_count_zero": true,
+    "training_triggered_count_zero": true
   },
-  "canonical_package": "V1700_stage133_narrative_state_tensor_8d_integrated_repository.zip",
+  "canonical_package": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip",
   "stage80": {
     "status": "active",
     "purpose": "Korean drama composition hierarchy and macro plot architecture"
@@ -677,8 +690,8 @@
     "baseline_stage": "stage126",
     "purpose": "Validates V571 MultiWork isolation, license, canon, and GitNexus-aware integration before direct read-only absorption."
   },
-  "canonical_filelist": "V1700_stage133_narrative_state_tensor_8d_filelist.txt",
-  "canonical_sha256_sidecar": "V1700_stage133_narrative_state_tensor_8d_integrated_repository.zip.sha256",
+  "canonical_filelist": "FILELIST.txt",
+  "canonical_sha256_sidecar": "V1700_stage135_learning_quality_gate_release_integrated_repository_with_artifacts.zip.sha256",
   "stage128": {
     "name": "SharedWorld / SharedCharacter Read-Only Absorption",
     "status": "active",
@@ -699,7 +712,9 @@
     "stage130_multiwork_release": true,
     "stage131_gig_gate26_advisory_absorption": true,
     "stage132_contradiction_classifier_mystery_exemption": true,
-    "stage133_narrative_state_tensor_8d": true
+    "stage133_narrative_state_tensor_8d": true,
+    "stage134_meta_learner_audit_mode": true,
+    "stage135_learning_quality_gate_candidate_registry": true
   },
   "stage130": {
     "title": "MultiWork Release",
@@ -750,5 +765,37 @@
     "auto_repair_mutation_count": 0,
     "cross_project_write_allowed": false,
     "writer_approval_required_for_true_contradiction": true
+  },
+  "stage134": {
+    "title": "MetaLearner Audit Mode",
+    "baseline_stage": "stage133",
+    "status": "active",
+    "release_gate": "release/current/stage134_release_gate_report.json",
+    "evidence": "release/current/stage134_meta_learner_audit_report.json",
+    "mode": "META_LEARNER_AUDIT_ONLY_NO_TRAINING",
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "cross_project_write_allowed": false
+  },
+  "stage135": {
+    "title": "LearningQualityGate & Candidate Registry",
+    "baseline_stage": "stage134",
+    "status": "active",
+    "release_gate": "release/current/stage135_release_gate_report.json",
+    "evidence": "release/current/stage135_learning_quality_gate_report.json",
+    "mode": "LEARNING_QUALITY_GATE_CANDIDATE_ONLY",
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "learning_allowed_count": 0,
+    "training_triggered_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "cross_project_write_allowed": false,
+    "official_asset_manifest": "release/current/stage135_official_asset_manifest.json",
+    "next_stage": "stage136"
   }
 }
