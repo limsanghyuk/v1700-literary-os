@@ -54,6 +54,12 @@ jobs:
       - name: Run Stage135 release gate
         run: python tools/run_stage135_release_gate.py
 
+      - name: Run Stage136 SchemaRegistry
+        run: python tools/run_stage136_schema_registry.py
+
+      - name: Run Stage136 release gate
+        run: python tools/run_stage136_release_gate.py
+
       - name: Run main release gate
         run: python tools/run_release_gate.py
 

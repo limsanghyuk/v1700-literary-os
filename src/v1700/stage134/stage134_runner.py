@@ -28,12 +28,12 @@ def run_stage134(root: Path | None = None) -> dict[str, Any]:
         "node2_raw_reveal_access": 0,
         "branchpoint_lineage_preserved": report.get("branchpoint_lineage_preserved", False),
         "next_development_order": [
-            "Stage135 Bounded Active MetaLearner",
-            "Stage136 ASD Patch Proposal Mode",
-            "Stage137 Human-Approved Repair Commit",
-            "Stage138 Canonical Formula Registry",
-            "Stage139 AuthorLicense / Project Rights Boundary",
-            "Stage140 Production CI/CD and Release Automation",
+            "Stage135 LearningQualityGate & Candidate Registry",
+            "Stage136 SchemaRegistry",
+            "Stage137 MigrationManager",
+            "Stage138 LOSDB Storage Contracts",
+            "Stage139 Corpus Governance Pipeline",
+            "Stage140 Production Release Automation Closure",
         ],
     }
     _write_json(root / "release/current/stage134_summary.json", summary)

@@ -1,0 +1,175 @@
+{
+  "schemas": [
+    {
+      "schema_id": "stage136.accepted_candidate.v1",
+      "title": "Stage136 Accepted Candidate Schema",
+      "stage": "136",
+      "version": "1.0.0",
+      "record_kind": "accepted_candidate",
+      "fields": [
+        {
+          "name": "case_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Deterministic case identifier from Stage135 candidate registry."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "string",
+          "required": true,
+          "description": "Origin stage for the candidate record."
+        },
+        {
+          "name": "source_recommendation",
+          "field_type": "string",
+          "required": true,
+          "description": "Original recommendation emitted by the predecessor stage."
+        },
+        {
+          "name": "decision",
+          "field_type": "string",
+          "required": true,
+          "description": "Candidate disposition after Stage135 gate evaluation."
+        },
+        {
+          "name": "gate_verified",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether the predecessor gate verified the source case."
+        },
+        {
+          "name": "writer_review_required",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether a human writer review must happen before promotion."
+        },
+        {
+          "name": "reason",
+          "field_type": "string",
+          "required": true,
+          "description": "Human-readable rationale preserved for later migration planning."
+        }
+      ],
+      "review_required": false,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false
+    },
+    {
+      "schema_id": "stage136.rejected_candidate.v1",
+      "title": "Stage136 Rejected Candidate Schema",
+      "stage": "136",
+      "version": "1.0.0",
+      "record_kind": "rejected_candidate",
+      "fields": [
+        {
+          "name": "case_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Deterministic case identifier from Stage135 candidate registry."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "string",
+          "required": true,
+          "description": "Origin stage for the candidate record."
+        },
+        {
+          "name": "source_recommendation",
+          "field_type": "string",
+          "required": true,
+          "description": "Original recommendation emitted by the predecessor stage."
+        },
+        {
+          "name": "decision",
+          "field_type": "string",
+          "required": true,
+          "description": "Candidate disposition after Stage135 gate evaluation."
+        },
+        {
+          "name": "gate_verified",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether the predecessor gate verified the source case."
+        },
+        {
+          "name": "writer_review_required",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether a human writer review must happen before promotion."
+        },
+        {
+          "name": "reason",
+          "field_type": "string",
+          "required": true,
+          "description": "Human-readable rationale preserved for later migration planning."
+        }
+      ],
+      "review_required": false,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false
+    },
+    {
+      "schema_id": "stage136.review_only_candidate.v1",
+      "title": "Stage136 Review-Only Candidate Schema",
+      "stage": "136",
+      "version": "1.0.0",
+      "record_kind": "review_only_candidate",
+      "fields": [
+        {
+          "name": "case_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Deterministic case identifier from Stage135 candidate registry."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "string",
+          "required": true,
+          "description": "Origin stage for the candidate record."
+        },
+        {
+          "name": "source_recommendation",
+          "field_type": "string",
+          "required": true,
+          "description": "Original recommendation emitted by the predecessor stage."
+        },
+        {
+          "name": "decision",
+          "field_type": "string",
+          "required": true,
+          "description": "Candidate disposition after Stage135 gate evaluation."
+        },
+        {
+          "name": "gate_verified",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether the predecessor gate verified the source case."
+        },
+        {
+          "name": "writer_review_required",
+          "field_type": "boolean",
+          "required": true,
+          "description": "Whether a human writer review must happen before promotion."
+        },
+        {
+          "name": "reason",
+          "field_type": "string",
+          "required": true,
+          "description": "Human-readable rationale preserved for later migration planning."
+        }
+      ],
+      "review_required": true,
+      "migration_ready": true,
+      "storage_contract_ready": true,
+      "losdb_write_enabled": false,
+      "migration_execution_enabled": false,
+      "provider_call_required": false
+    }
+  ]
+}

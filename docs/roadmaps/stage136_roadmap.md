@@ -1,12 +1,4 @@
-# Stage134 Roadmap
-
-## Stage134
-
-MetaLearner Audit Mode.
-
-## Stage135
-
-LearningQualityGate & Candidate Registry.
+# Stage136 Roadmap
 
 ## Stage136
 

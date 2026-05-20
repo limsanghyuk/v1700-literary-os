@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135",
+    "stage132", "stage133", "stage134", "stage135", "stage136",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -48,6 +48,14 @@ STAGE_REQUIRED_GATES = {
         "stage134_release_gate",
         "stage135_learning_quality_gate",
         "stage135_release_gate",
+    ],
+    "stage136": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage135_learning_quality_gate",
+        "stage135_release_gate",
+        "stage136_schema_registry",
+        "stage136_release_gate",
     ],
 }
 
@@ -144,6 +152,21 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage135_learning_quality_gate_pack/candidate_registry.json",
         "release/current/stage135_learning_quality_gate_pack/stage135_preflight_report.json",
     ],
+    "stage136": [
+        "manifests/stage136_manifest.json",
+        "manifests/stage136_schema_registry_manifest.json",
+        "manifests/stage136_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage136_overlay.json",
+        "docs/stages/stage136.md",
+        "docs/architecture/stage136_blueprint.md",
+        "docs/proposals/stage136_proposal.md",
+        "docs/development/stage136_developer_handoff.md",
+        "release/current/stage136_schema_registry_report.json",
+        "release/current/stage136_release_gate_report.json",
+        "release/current/stage136_release_asset_manifest.json",
+        "release/current/stage136_schema_registry_pack/schema_registry.json",
+        "release/current/stage136_schema_registry_pack/stage136_preflight_report.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -170,6 +193,7 @@ PREDECESSOR_GATE = {
     "stage133": "stage132_release_gate",
     "stage134": "stage133_release_gate",
     "stage135": "stage134_release_gate",
+    "stage136": "stage135_release_gate",
 }
 
 

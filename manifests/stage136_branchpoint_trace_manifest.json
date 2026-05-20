@@ -1,0 +1,21 @@
+{
+  "stage": "stage136",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage135_candidate_only",
+      "preserved": true,
+      "evidence": "release/current/stage135_learning_quality_gate_report.json"
+    },
+    {
+      "branchpoint_id": "stage136_schema_registry_only",
+      "preserved": true,
+      "evidence": "release/current/stage136_schema_registry_report.json"
+    },
+    {
+      "branchpoint_id": "stage137_migration_execution_blocked_until_human_review",
+      "preserved": true,
+      "evidence": "release/current/stage136_release_gate_report.json"
+    }
+  ]
+}
