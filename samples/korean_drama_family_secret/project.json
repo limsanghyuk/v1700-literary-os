@@ -1,11 +1,11 @@
 {
   "project_id": "sample_korean_drama_family_secret",
   "title": "Synthetic Family Secret Drama Sample",
-  "stage": "stage140",
+  "stage": "stage141",
   "genre": "korean_drama",
   "synthetic_only": true,
   "public_safe_placeholder": true,
   "provider_calls_allowed": false,
   "raw_manuscript_included": false,
-  "purpose": "Stage140 product proof skeleton for Stage141 prose-generation E2E readiness"
+  "purpose": "Stage141 prose-generation E2E harness sample reused from the Stage140 product proof skeleton"
 }

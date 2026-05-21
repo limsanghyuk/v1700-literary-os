@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage140 - Release Integrity & Product Proof Gate
+Current active stage: Stage141 - Prose Generation E2E Harness
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -45,3 +45,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage138](stage138.md) - LOSDB Storage Contracts
 - [Stage139](stage139.md) - Corpus Governance Pipeline
 - [Stage140](stage140.md) - Release Integrity & Product Proof Gate
+- [Stage141](stage141.md) - Prose Generation E2E Harness

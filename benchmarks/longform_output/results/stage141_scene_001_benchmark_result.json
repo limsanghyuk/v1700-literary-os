@@ -1,0 +1,15 @@
+{
+  "stage": "stage141",
+  "title": "Stage141 Benchmark Result",
+  "status": "pass",
+  "issues": [],
+  "benchmark_id": "stage141_prose_generation_e2e_v1",
+  "min_scene_count": 1,
+  "rendered_scene_count": 1,
+  "reader_surface_average": 8.97,
+  "scene_contract_valid": true,
+  "project_contract_valid": true,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "stage142_benchmark_pack_ready": true
+}

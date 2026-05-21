@@ -1,0 +1,26 @@
+{
+  "scene_id": "scene_001",
+  "scene_goal": "Establish the family inheritance question without revealing the final secret.",
+  "conflict": "변호사는 절차를 이유로 답을 미루고 고모는 침묵으로 압박한다",
+  "emotional_delta": {
+    "from": "불안",
+    "to": "의심"
+  },
+  "must_keep_facts": [
+    "봉인된 상속 편지가 있다.",
+    "가족 저택의 소유권이 흔들릴 수 있다.",
+    "최종 비밀은 아직 공개되지 않는다."
+  ],
+  "forbidden_reveals": [
+    "FINAL_SECRET_CONTENTS",
+    "REAL_HEIR_IDENTITY"
+  ],
+  "timeline_position": "EP1_SCENE1",
+  "character_state_refs": [
+    "han_sera",
+    "kim_doyun",
+    "yoon_mira"
+  ],
+  "dialogue_seed": "지금은 봉인을 풀 수 없어요. 하지만 아무 일도 아니라는 뜻은 아닙니다.",
+  "setting_seed": "늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다."
+}

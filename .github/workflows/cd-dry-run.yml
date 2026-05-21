@@ -31,7 +31,7 @@ jobs:
       - name: Verify release gates
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py -q
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
           python tools/run_stage136_schema_registry.py
@@ -46,24 +46,26 @@ jobs:
           python tools/check_release_asset_integrity.py
           python tools/run_stage140_release_integrity.py
           python tools/run_stage140_release_gate.py
+          python tools/run_stage141_prose_generation_e2e.py
+          python tools/run_stage141_release_gate.py
           python tools/run_ci_dependency_preflight.py
 
       - name: Build dry-run archive
         shell: bash
         run: |
-          ZIP_NAME="V1700_stage140_release_integrity_product_proof_gate_cd_dry_run_integrated_repository.zip"
+          ZIP_NAME="V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip"
           zip -r "$ZIP_NAME" . \
             -x ".git/*" ".gitnexus/*" ".venv/*" "venv/*" \
             -x "__pycache__/*" "*.pyc" ".pytest_cache/*" \
             -x "build/*" "dist/*" "*.egg-info/*" "outputs/*"
           sha256sum "$ZIP_NAME" > "$ZIP_NAME.sha256"
-          sha256sum "$ZIP_NAME" > SHA256SUMS_stage140_cd_dry_run.txt
+          sha256sum "$ZIP_NAME" > SHA256SUMS_stage141_cd_dry_run.txt
 
       - name: Upload dry-run release artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: stage140-cd-dry-run-artifacts
+          name: stage141-cd-dry-run-artifacts
           path: |
-            V1700_stage140_release_integrity_product_proof_gate_cd_dry_run_integrated_repository.zip
-            V1700_stage140_release_integrity_product_proof_gate_cd_dry_run_integrated_repository.zip.sha256
-            SHA256SUMS_stage140_cd_dry_run.txt
+            V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip
+            V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip.sha256
+            SHA256SUMS_stage141_cd_dry_run.txt

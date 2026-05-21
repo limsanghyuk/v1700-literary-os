@@ -505,9 +505,31 @@
         "stage140 release-ready metadata"
       ],
       "surviving_runtime_value": "Creates the deterministic corpus governance authority required for Stage140 release automation closure while keeping execution and LOSDB writes blocked."
+    },
+    {
+      "stage_id": "STAGE140",
+      "title": "Release Integrity & Product Proof Gate",
+      "introduced_concepts": [
+        "metadata consistency authority",
+        "release asset manifest authority",
+        "synthetic sample-project proof contract",
+        "Stage141 readiness marker"
+      ],
+      "surviving_runtime_value": "Creates deterministic release-surface trust and product-proof readiness before live E2E prose evidence."
+    },
+    {
+      "stage_id": "STAGE141",
+      "title": "Prose Generation E2E Harness",
+      "introduced_concepts": [
+        "deterministic sample-project scene intent",
+        "local Node2 render evidence",
+        "Node3 critic validation evidence",
+        "Stage142 benchmark-ready artifact path"
+      ],
+      "surviving_runtime_value": "Proves the local literary runtime can render a public-safe synthetic scene end-to-end without provider calls, writes, or training."
     }
   ],
-  "active_version": "stage140",
+  "active_version": "stage141",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -567,5 +589,10 @@
     "status": "active",
     "baseline_stage": "stage139",
     "purpose": "Release Integrity & Product Proof Gate"
+  },
+  "stage141": {
+    "status": "active",
+    "baseline_stage": "stage140",
+    "purpose": "Prose Generation E2E Harness"
   }
 }

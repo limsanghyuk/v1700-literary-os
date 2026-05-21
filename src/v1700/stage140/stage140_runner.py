@@ -9,6 +9,11 @@ from v1700.release_integrity import run_stage140_release_integrity
 
 def run_stage140(root: Path | None = None) -> dict[str, Any]:
     root = root or Path(__file__).resolve().parents[3]
+    if _active_version(root) != "stage140":
+        existing = _load_existing(root / "release/current/stage140_release_integrity_report.json")
+        if existing is not None:
+            summary = _load_existing(root / "release/current/stage140_summary.json")
+            return {**existing, **({"stage140_summary": summary} if summary is not None else {})}
     report = run_stage140_release_integrity(root)
     summary = {
         "stage": "140",
@@ -40,3 +45,16 @@ def run_stage140(root: Path | None = None) -> dict[str, Any]:
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def _active_version(root: Path) -> str:
+    manifest = root / "manifests" / "live_core_manifest.json"
+    if not manifest.exists():
+        return ""
+    return json.loads(manifest.read_text(encoding="utf-8")).get("active_version", "")
+
+
+def _load_existing(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))

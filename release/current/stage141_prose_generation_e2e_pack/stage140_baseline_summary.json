@@ -1,0 +1,13 @@
+{
+  "stage": "140",
+  "baseline_stage": "139",
+  "status": "pass",
+  "title": "Release Integrity & Product Proof Gate",
+  "issues": [],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage140_release_gate_status": "pass"
+}

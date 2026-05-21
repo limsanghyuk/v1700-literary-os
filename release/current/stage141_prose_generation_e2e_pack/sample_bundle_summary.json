@@ -1,0 +1,8 @@
+{
+  "project_id": "sample_korean_drama_family_secret",
+  "synthetic_only": true,
+  "provider_calls_allowed": false,
+  "character_count": 3,
+  "scene_request_id": "scene_001",
+  "benchmark_id": "stage141_prose_generation_e2e_v1"
+}

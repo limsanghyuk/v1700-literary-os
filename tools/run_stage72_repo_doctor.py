@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -108,6 +108,24 @@ STAGE_REQUIRED_GATES = {
         "stage139_release_gate",
         "stage140_release_integrity",
         "stage140_release_gate",
+    ],
+    "stage141": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage135_learning_quality_gate",
+        "stage135_release_gate",
+        "stage136_schema_registry",
+        "stage136_release_gate",
+        "stage137_migration_manager",
+        "stage137_release_gate",
+        "stage138_losdb_storage_contracts",
+        "stage138_release_gate",
+        "stage139_corpus_governance_pipeline",
+        "stage139_release_gate",
+        "stage140_release_integrity",
+        "stage140_release_gate",
+        "stage141_prose_generation_e2e",
+        "stage141_release_gate",
     ],
 }
 
@@ -281,6 +299,22 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage140_release_integrity_pack/sample_project_contract_report.json",
         "release/current/stage140_release_integrity_pack/benchmark_contract_report.json",
     ],
+    "stage141": [
+        "manifests/stage141_manifest.json",
+        "manifests/stage141_prose_generation_e2e_manifest.json",
+        "manifests/stage141_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage141_overlay.json",
+        "docs/stages/stage141.md",
+        "docs/architecture/stage141_blueprint.md",
+        "docs/proposals/stage141_proposal.md",
+        "docs/development/stage141_developer_handoff.md",
+        "release/current/stage141_prose_generation_e2e_report.json",
+        "release/current/stage141_release_gate_report.json",
+        "release/current/stage141_release_asset_manifest.json",
+        "release/current/stage141_prose_generation_e2e_pack/rendered_scene.json",
+        "release/current/stage141_prose_generation_e2e_pack/benchmark_result.json",
+        "benchmarks/longform_output/results/stage141_scene_001_benchmark_result.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -312,6 +346,7 @@ PREDECESSOR_GATE = {
     "stage138": "stage137_release_gate",
     "stage139": "stage138_release_gate",
     "stage140": "stage139_release_gate",
+    "stage141": "stage140_release_gate",
 }
 
 

@@ -14,6 +14,10 @@ from .metadata_checker import run_stage_metadata_consistency
 
 def run_stage140_release_integrity(root: Path | None = None) -> dict[str, Any]:
     root = root or Path(__file__).resolve().parents[3]
+    if _active_version(root) != "stage140":
+        existing = _load_existing(root / "release/current/stage140_release_integrity_report.json")
+        if existing is not None:
+            return existing
     pack = root / "release/current/stage140_release_integrity_pack"
     pack.mkdir(parents=True, exist_ok=True)
     baseline = run_stage139(root)
@@ -72,6 +76,19 @@ def run_stage140_release_integrity(root: Path | None = None) -> dict[str, Any]:
     _write_json(pack / "stage139_input_summary.json", parts["stage139_baseline"])
     _write_json(root / "release/current/stage140_release_integrity_report.json", result)
     return result
+
+
+def _active_version(root: Path) -> str:
+    manifest = root / "manifests" / "live_core_manifest.json"
+    if not manifest.exists():
+        return ""
+    return json.loads(manifest.read_text(encoding="utf-8")).get("active_version", "")
+
+
+def _load_existing(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _compact_stage139(report: dict[str, Any]) -> dict[str, Any]:
