@@ -19,7 +19,6 @@
   "branchpoint_lineage_preserved": true,
   "next_development_order": [
     "Stage144 Split CI Runtime Strategy",
-    "Stage145 Release Surface Consolidation",
-    "Stage146 User Runtime Packaging"
+    "Roadmap terminal review after Stage144"
   ]
 }

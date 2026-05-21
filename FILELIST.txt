@@ -6,6 +6,7 @@
 .claude/skills/gitnexus/gitnexus-refactoring/SKILL.md
 .github/workflows/cd-dry-run.yml
 .github/workflows/ci-core.yml
+.github/workflows/ci-fast.yml
 .github/workflows/ci-full.yml
 .github/workflows/release.yml
 .gitignore
@@ -48,6 +49,7 @@ docs/architecture/stage140_release_integrity_product_proof_blueprint.md
 docs/architecture/stage141_blueprint.md
 docs/architecture/stage142_blueprint.md
 docs/architecture/stage143_blueprint.md
+docs/architecture/stage144_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -80,6 +82,7 @@ docs/development/stage140_next_chat_handoff.md
 docs/development/stage141_developer_handoff.md
 docs/development/stage142_developer_handoff.md
 docs/development/stage143_developer_handoff.md
+docs/development/stage144_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -104,6 +107,7 @@ docs/proposals/stage140_release_integrity_product_proof_proposal.md
 docs/proposals/stage141_proposal.md
 docs/proposals/stage142_proposal.md
 docs/proposals/stage143_proposal.md
+docs/proposals/stage144_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
@@ -228,6 +232,7 @@ docs/stages/stage140.md
 docs/stages/stage141.md
 docs/stages/stage142.md
 docs/stages/stage143.md
+docs/stages/stage144.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -348,6 +353,7 @@ manifests/live_core_stage140_overlay.json
 manifests/live_core_stage141_overlay.json
 manifests/live_core_stage142_overlay.json
 manifests/live_core_stage143_overlay.json
+manifests/live_core_stage144_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -501,6 +507,9 @@ manifests/stage142_manifest.json
 manifests/stage143_branchpoint_trace_manifest.json
 manifests/stage143_manifest.json
 manifests/stage143_user_cli_api_docs_manifest.json
+manifests/stage144_branchpoint_trace_manifest.json
+manifests/stage144_manifest.json
+manifests/stage144_split_ci_runtime_strategy_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1094,6 +1103,14 @@ release/current/stage143_user_cli_api_docs_pack/sample_render_json.json
 release/current/stage143_user_cli_api_docs_pack/sample_render_text.txt
 release/current/stage143_user_cli_api_docs_pack/user_docs_index.json
 release/current/stage143_user_cli_api_docs_report.json
+release/current/stage144_release_asset_manifest.json
+release/current/stage144_release_gate_report.json
+release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json
+release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json
+release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json
+release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json
+release/current/stage144_split_ci_runtime_strategy_report.json
+release/current/stage144_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1463,6 +1480,7 @@ src/v1700/gates/stage140_release_gate.py
 src/v1700/gates/stage141_release_gate.py
 src/v1700/gates/stage142_release_gate.py
 src/v1700/gates/stage143_release_gate.py
+src/v1700/gates/stage144_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -1949,6 +1967,9 @@ src/v1700/sp3_data_pipeline/dataset_card.py
 src/v1700/sp3_data_pipeline/pii_scrubber.py
 src/v1700/sp3_data_pipeline/synthetic_augmentor.py
 src/v1700/sp3_data_pipeline/trace_quality_filter.py
+src/v1700/split_ci_runtime_strategy/__init__.py
+src/v1700/split_ci_runtime_strategy/contracts.py
+src/v1700/split_ci_runtime_strategy/report.py
 src/v1700/stage100/__init__.py
 src/v1700/stage100/contracts.py
 src/v1700/stage100/dual_mode_evaluator.py
@@ -2120,6 +2141,8 @@ src/v1700/stage142/__init__.py
 src/v1700/stage142/stage142_runner.py
 src/v1700/stage143/__init__.py
 src/v1700/stage143/stage143_runner.py
+src/v1700/stage144/__init__.py
+src/v1700/stage144/stage144_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2319,6 +2342,7 @@ tests/test_stage140_release_integrity.py
 tests/test_stage141_prose_generation_e2e.py
 tests/test_stage142_longform_benchmark_pack.py
 tests/test_stage143_user_cli_api_docs.py
+tests/test_stage144_split_ci_runtime_strategy.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2635,6 +2659,8 @@ tools/run_stage142_longform_benchmark_pack.py
 tools/run_stage142_release_gate.py
 tools/run_stage143_release_gate.py
 tools/run_stage143_user_cli_api_docs.py
+tools/run_stage144_release_gate.py
+tools/run_stage144_split_ci_runtime_strategy.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

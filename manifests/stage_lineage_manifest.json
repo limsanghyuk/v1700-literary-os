@@ -551,7 +551,7 @@
       "surviving_runtime_value": "Publishes a minimum user-facing contract around the local-first runtime without enabling a live API server, provider calls, or write paths."
     }
   ],
-  "active_version": "stage143",
+  "active_version": "stage144",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -626,5 +626,10 @@
     "status": "active",
     "baseline_stage": "stage142",
     "purpose": "User CLI/API Minimum Docs"
+  },
+  "stage144": {
+    "status": "active",
+    "baseline_stage": "stage143",
+    "purpose": "Split CI Runtime Strategy"
   }
 }

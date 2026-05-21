@@ -1,0 +1,407 @@
+{
+  "stage": "144",
+  "baseline_stage": "143",
+  "title": "Split CI Runtime Strategy",
+  "status": "pass",
+  "issues": [],
+  "mode": "SPLIT_CI_RUNTIME_STRATEGY_LOCAL",
+  "workflow_split_only": true,
+  "ci_fast_present": true,
+  "ci_core_present": true,
+  "ci_full_present": true,
+  "cd_dry_run_present": true,
+  "release_workflow_present": true,
+  "workflow_split_complete": true,
+  "runtime_lane_count": 5,
+  "release_surface_ready": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "stage144_roadmap_terminal": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage143_baseline": {
+      "stage": "143",
+      "baseline_stage": "142",
+      "status": "pass",
+      "title": "User CLI/API Minimum Docs Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage143_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage144",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage144",
+          "actual": "stage144",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage144 Split CI Runtime Strategy",
+          "actual": "# V1700 Literary OS - Stage144\n\n> Split CI Runtime Strategy\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Curren",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage144",
+          "actual": "active=stage144; stage=stage144",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage144 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage144_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage144_split_ci_runtime_strategy_report.json\", \"release_gate\": \"release/current/stage144_release_gate_report.json\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.44.0",
+          "actual": "1.44.0",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage144 - Split CI Runtime Strategy",
+          "actual": "V1700 Stage144 - Split CI Runtime Strategy",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage144 Split CI Runtime Strategy",
+          "actual": "# V1700 Stage144 - Split CI Runtime Strategy\n\nStage144 is the CI/runtime split layer after Stage143. It formalizes `ci-fast`, `c",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage144.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage144.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage144_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage144_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage144_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage144_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage144_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage144_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage144_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage144_split_ci_runtime_strategy_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_split_ci_runtime_strategy_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage144_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage144_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage144_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/.github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 22,
+        "pass_count": 22,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage144",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage144",
+          "actual": "stage144",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 8,
+        "pass_count": 8,
+        "blocked_count": 0
+      }
+    },
+    "workflow_inventory": {
+      "stage": "stage144",
+      "title": "Stage144 Workflow Inventory",
+      "status": "pass",
+      "issues": [],
+      "entries": [
+        {
+          "name": "ci_fast",
+          "path": ".github/workflows/ci-fast.yml",
+          "status": "pass"
+        },
+        {
+          "name": "ci_core",
+          "path": ".github/workflows/ci-core.yml",
+          "status": "pass"
+        },
+        {
+          "name": "ci_full",
+          "path": ".github/workflows/ci-full.yml",
+          "status": "pass"
+        },
+        {
+          "name": "cd_dry_run",
+          "path": ".github/workflows/cd-dry-run.yml",
+          "status": "pass"
+        },
+        {
+          "name": "release",
+          "path": ".github/workflows/release.yml",
+          "status": "pass"
+        }
+      ],
+      "ci_fast_present": true,
+      "ci_core_present": true,
+      "ci_full_present": true,
+      "cd_dry_run_present": true,
+      "release_workflow_present": true,
+      "workflow_split_complete": true
+    },
+    "runtime_lane_matrix": {
+      "stage": "stage144",
+      "title": "Stage144 Runtime Lane Matrix",
+      "status": "pass",
+      "issues": [],
+      "lane_count": 5,
+      "lanes": [
+        {
+          "name": "ci-fast",
+          "workflow": ".github/workflows/ci-fast.yml",
+          "purpose": "fast invariants and current-stage smoke",
+          "cadence": "push/pr",
+          "python_version": "3.11",
+          "status": "pass"
+        },
+        {
+          "name": "ci-core",
+          "workflow": ".github/workflows/ci-core.yml",
+          "purpose": "active-lineage pytest and stage gates",
+          "cadence": "push/pr/tag",
+          "python_version": "3.11-3.12",
+          "status": "pass"
+        },
+        {
+          "name": "ci-full",
+          "workflow": ".github/workflows/ci-full.yml",
+          "purpose": "scheduled full pytest sweep",
+          "cadence": "schedule/manual",
+          "python_version": "3.11",
+          "status": "pass"
+        },
+        {
+          "name": "cd-dry-run",
+          "workflow": ".github/workflows/cd-dry-run.yml",
+          "purpose": "package rehearsal and artifact dry-run",
+          "cadence": "push/pr",
+          "python_version": "3.11",
+          "status": "pass"
+        },
+        {
+          "name": "release",
+          "workflow": ".github/workflows/release.yml",
+          "purpose": "official tagged release packaging",
+          "cadence": "tag push",
+          "python_version": "3.11",
+          "status": "pass"
+        }
+      ]
+    },
+    "trigger_summary": {
+      "stage": "stage144",
+      "title": "Stage144 Workflow Trigger Summary",
+      "status": "pass",
+      "issues": [],
+      "checks": {
+        "ci_fast_mentions_stage144": {
+          "status": "pass"
+        },
+        "ci_core_mentions_stage144": {
+          "status": "pass"
+        },
+        "cd_dry_run_mentions_stage144": {
+          "status": "pass"
+        },
+        "release_mentions_stage144": {
+          "status": "pass"
+        },
+        "ci_full_exists": {
+          "status": "pass"
+        }
+      }
+    },
+    "release_surface_contract": {
+      "stage": "stage144",
+      "title": "Stage144 Release Surface Contract",
+      "status": "pass",
+      "issues": [],
+      "canonical_package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+      "sha256_sidecar": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+      "release_surface_ready": true
+    }
+  }
+}

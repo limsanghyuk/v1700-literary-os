@@ -1,0 +1,39 @@
+{
+  "stage": "stage144",
+  "title": "Stage144 Workflow Inventory",
+  "status": "pass",
+  "issues": [],
+  "entries": [
+    {
+      "name": "ci_fast",
+      "path": ".github/workflows/ci-fast.yml",
+      "status": "pass"
+    },
+    {
+      "name": "ci_core",
+      "path": ".github/workflows/ci-core.yml",
+      "status": "pass"
+    },
+    {
+      "name": "ci_full",
+      "path": ".github/workflows/ci-full.yml",
+      "status": "pass"
+    },
+    {
+      "name": "cd_dry_run",
+      "path": ".github/workflows/cd-dry-run.yml",
+      "status": "pass"
+    },
+    {
+      "name": "release",
+      "path": ".github/workflows/release.yml",
+      "status": "pass"
+    }
+  ],
+  "ci_fast_present": true,
+  "ci_core_present": true,
+  "ci_full_present": true,
+  "cd_dry_run_present": true,
+  "release_workflow_present": true,
+  "workflow_split_complete": true
+}

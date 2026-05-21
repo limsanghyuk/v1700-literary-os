@@ -1,5 +1,5 @@
 {
-  "active_version": "stage143",
+  "active_version": "stage144",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -26,10 +26,12 @@
     "stage142_longform_benchmark_pack",
     "stage142_release_gate",
     "stage143_user_cli_api_docs",
-    "stage143_release_gate"
+    "stage143_release_gate",
+    "stage144_split_ci_runtime_strategy",
+    "stage144_release_gate"
   ],
-  "canonical_package": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {"status": "active", "title": "MetaLearner Audit Mode"},
   "stage135": {"status": "active", "title": "LearningQualityGate & Candidate Registry"},
   "stage136": {"status": "active", "title": "SchemaRegistry"},
@@ -67,5 +69,13 @@
     "release_gate": "release/current/stage143_release_gate_report.json",
     "evidence": "release/current/stage143_user_cli_api_docs_report.json",
     "next_stage": "stage144"
+  },
+  "stage144": {
+    "status": "active",
+    "title": "Split CI Runtime Strategy",
+    "baseline_stage": "stage143",
+    "release_gate": "release/current/stage144_release_gate_report.json",
+    "evidence": "release/current/stage144_split_ci_runtime_strategy_report.json",
+    "next_stage": null
   }
 }
