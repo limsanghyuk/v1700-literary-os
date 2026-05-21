@@ -1,14 +1,14 @@
 {
-  "stage": "stage143",
-  "package": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage144",
+  "package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage143_user_cli_api_docs",
-  "active_version": "stage143",
-  "patch_report": "release/current/stage143_user_cli_api_docs_report.json",
-  "release_gate": "release/current/stage143_release_gate_report.json",
-  "asset_manifest": "release/current/stage143_release_asset_manifest.json"
+  "created_by": "stage144_split_ci_runtime_strategy",
+  "active_version": "stage144",
+  "patch_report": "release/current/stage144_split_ci_runtime_strategy_report.json",
+  "release_gate": "release/current/stage144_release_gate_report.json",
+  "asset_manifest": "release/current/stage144_release_asset_manifest.json"
 }

@@ -31,8 +31,7 @@ def run_stage143(root: Path | None = None) -> dict[str, Any]:
         "branchpoint_lineage_preserved": report.get("branchpoint_lineage_preserved", False),
         "next_development_order": [
             "Stage144 Split CI Runtime Strategy",
-            "Stage145 Release Surface Consolidation",
-            "Stage146 User Runtime Packaging",
+            "Roadmap terminal review after Stage144",
         ],
     }
     _write_json(root / "release/current/stage143_summary.json", summary)

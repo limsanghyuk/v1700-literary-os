@@ -1,0 +1,49 @@
+{
+  "stage": "stage144",
+  "title": "Stage144 Runtime Lane Matrix",
+  "status": "pass",
+  "issues": [],
+  "lane_count": 5,
+  "lanes": [
+    {
+      "name": "ci-fast",
+      "workflow": ".github/workflows/ci-fast.yml",
+      "purpose": "fast invariants and current-stage smoke",
+      "cadence": "push/pr",
+      "python_version": "3.11",
+      "status": "pass"
+    },
+    {
+      "name": "ci-core",
+      "workflow": ".github/workflows/ci-core.yml",
+      "purpose": "active-lineage pytest and stage gates",
+      "cadence": "push/pr/tag",
+      "python_version": "3.11-3.12",
+      "status": "pass"
+    },
+    {
+      "name": "ci-full",
+      "workflow": ".github/workflows/ci-full.yml",
+      "purpose": "scheduled full pytest sweep",
+      "cadence": "schedule/manual",
+      "python_version": "3.11",
+      "status": "pass"
+    },
+    {
+      "name": "cd-dry-run",
+      "workflow": ".github/workflows/cd-dry-run.yml",
+      "purpose": "package rehearsal and artifact dry-run",
+      "cadence": "push/pr",
+      "python_version": "3.11",
+      "status": "pass"
+    },
+    {
+      "name": "release",
+      "workflow": ".github/workflows/release.yml",
+      "purpose": "official tagged release packaging",
+      "cadence": "tag push",
+      "python_version": "3.11",
+      "status": "pass"
+    }
+  ]
+}

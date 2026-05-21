@@ -27,6 +27,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage143_user_cli_api_docs_report.json",
         "release_gate_report": "release/current/stage143_release_gate_report.json",
     },
+    "stage144": {
+        "package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage144_split_ci_runtime_strategy_report.json",
+        "release_gate_report": "release/current/stage144_release_gate_report.json",
+    },
 }
 
 

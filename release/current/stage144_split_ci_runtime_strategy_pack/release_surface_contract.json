@@ -1,0 +1,9 @@
+{
+  "stage": "stage144",
+  "title": "Stage144 Release Surface Contract",
+  "status": "pass",
+  "issues": [],
+  "canonical_package": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
+  "sha256_sidecar": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
+  "release_surface_ready": true
+}

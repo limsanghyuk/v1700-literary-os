@@ -88,6 +88,28 @@ TARGETS: dict[str, dict[str, Any]] = {
             "release/current/stage143_user_cli_api_docs_pack/user_docs_index.json",
         ],
     },
+    "stage144": {
+        "label": "Stage144",
+        "version": "1.44.0",
+        "title": "Split CI Runtime Strategy",
+        "required_files": [
+            "docs/stages/stage144.md",
+            "docs/proposals/stage144_proposal.md",
+            "docs/architecture/stage144_blueprint.md",
+            "docs/development/stage144_developer_handoff.md",
+            "manifests/stage144_manifest.json",
+            "manifests/stage144_split_ci_runtime_strategy_manifest.json",
+            "manifests/stage144_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage144_overlay.json",
+            "release/current/stage144_release_asset_manifest.json",
+            "release/current/stage144_split_ci_runtime_strategy_report.json",
+            "release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json",
+            "release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json",
+            "release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json",
+            "release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

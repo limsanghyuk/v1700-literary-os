@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 873
+        "node_count": 879
       },
       "narrative_summary": {
         "available": true,
@@ -921,6 +921,19 @@
     "stage": "143",
     "baseline_stage": "142",
     "title": "User CLI/API Minimum Docs Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage144_release_gate": {
+    "status": "pass",
+    "stage": "144",
+    "baseline_stage": "143",
+    "title": "Split CI Runtime Strategy Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

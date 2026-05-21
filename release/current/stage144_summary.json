@@ -1,0 +1,24 @@
+{
+  "stage": "144",
+  "baseline_stage": "143",
+  "title": "Split CI Runtime Strategy",
+  "status": "pass",
+  "main_report": "release/current/stage144_split_ci_runtime_strategy_report.json",
+  "release_gate_report": "release/current/stage144_release_gate_report.json",
+  "asset_manifest": "release/current/stage144_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage144_split_ci_runtime_strategy_pack/",
+  "mode": "SPLIT_CI_RUNTIME_STRATEGY_LOCAL",
+  "workflow_split_only": true,
+  "workflow_split_complete": true,
+  "runtime_lane_count": 5,
+  "release_surface_ready": true,
+  "stage144_roadmap_terminal": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Roadmap currently ends at Stage144",
+    "Future stages require a new approved proposal set"
+  ]
+}

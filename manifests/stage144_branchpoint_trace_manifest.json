@@ -1,0 +1,13 @@
+{
+  "stage": "stage144",
+  "title": "Stage144 Branchpoint Trace",
+  "status": "active",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage144_ci_runtime_split_terminal",
+      "status": "survived",
+      "source_stage": "stage143",
+      "surviving_runtime_value": "Turns Stage143 readiness into an explicit CI/runtime lane contract with fast, core, full, dry-run, and release responsibilities."
+    }
+  ]
+}

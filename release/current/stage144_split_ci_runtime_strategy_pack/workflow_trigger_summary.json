@@ -1,0 +1,23 @@
+{
+  "stage": "stage144",
+  "title": "Stage144 Workflow Trigger Summary",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "ci_fast_mentions_stage144": {
+      "status": "pass"
+    },
+    "ci_core_mentions_stage144": {
+      "status": "pass"
+    },
+    "cd_dry_run_mentions_stage144": {
+      "status": "pass"
+    },
+    "release_mentions_stage144": {
+      "status": "pass"
+    },
+    "ci_full_exists": {
+      "status": "pass"
+    }
+  }
+}
