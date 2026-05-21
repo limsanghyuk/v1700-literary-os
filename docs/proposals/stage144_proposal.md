@@ -25,3 +25,26 @@ Add a Stage144 workflow contract that:
 - Migration execution remains disabled.
 - Node2 raw reveal access remains zero.
 - Raw manuscript leakage remains zero.
+
+## Implementation Status
+
+As of 2026-05-21, Stage144 is implemented and release-gated.
+
+- `ci-fast`, `ci-core`, `ci-full`, `cd-dry-run`, and `release` are declared as separate workflow lanes.
+- Stage144 command wrappers are self-contained from a fresh checkout and insert `src` into `sys.path`.
+- Stage144 wrappers return a non-zero process status when their report status is not `pass`.
+- Release asset integrity verifies `FILELIST.txt` and `SHA256SUMS.txt` coverage, extra entries, file existence, and current file digests.
+- `SHA256SUMS.txt` is intentionally excluded from `FILELIST.txt` to avoid self-referential checksum drift; the policy is checked by the release asset integrity gate.
+- Workflow contract checks cover required trigger declarations, Stage144 command presence, dry-run package artifacts, and release package/sidecar publication.
+
+## Current Verification
+
+The current Stage144 evidence set is aligned with:
+
+- `python tools/run_stage144_split_ci_runtime_strategy.py`
+- `python tools/run_stage144_release_gate.py`
+- `python tools/check_release_asset_integrity.py`
+- `python -m pytest tests/test_stage144_split_ci_runtime_strategy.py -q`
+- `python -m compileall -q src tools`
+
+The canonical release ZIP and `.sha256` sidecar are produced by the tagged GitHub `release` workflow from `package_manifest.json`.

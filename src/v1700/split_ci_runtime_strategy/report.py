@@ -37,17 +37,6 @@ def run_stage144_split_ci_runtime_strategy(root: Path | None = None) -> dict[str
     _write_json(pack / "workflow_trigger_summary.json", trigger_summary)
     _write_json(pack / "release_surface_contract.json", release_surface_contract)
 
-    _write_json(
-        root / TARGET_REPORT,
-        {
-            "stage": "144",
-            "baseline_stage": "143",
-            "title": "Split CI Runtime Strategy",
-            "status": "building",
-            "issues": [],
-        },
-    )
-
     metadata = run_stage_metadata_consistency(root)
     assets = run_release_asset_integrity(root)
 
@@ -174,6 +163,7 @@ def _build_trigger_summary(root: Path) -> dict[str, Any]:
         "release_mentions_stage144": _file_contains(root, ".github/workflows/release.yml", "run_stage144_split_ci_runtime_strategy.py"),
         "ci_full_exists": (root / ".github/workflows/ci-full.yml").exists(),
     }
+    checks.update(_workflow_contract_checks(root))
     issues = [name for name, passed in checks.items() if not passed]
     return {
         "stage": TARGET_STAGE,
@@ -181,6 +171,52 @@ def _build_trigger_summary(root: Path) -> dict[str, Any]:
         "status": "pass" if not issues else "blocked",
         "issues": issues,
         "checks": {name: {"status": "pass" if passed else "blocked"} for name, passed in checks.items()},
+    }
+
+
+def _workflow_contract_checks(root: Path) -> dict[str, bool]:
+    return {
+        "ci_fast_trigger_contract": _workflow_has_all(root, ".github/workflows/ci-fast.yml", ("push:", "pull_request:", "workflow_dispatch:")),
+        "ci_fast_command_contract": _workflow_has_all(
+            root,
+            ".github/workflows/ci-fast.yml",
+            (
+                "python -m compileall -q src tools",
+                "tests/test_stage144_split_ci_runtime_strategy.py",
+                "python tools/check_release_asset_integrity.py",
+                "python tools/run_stage144_split_ci_runtime_strategy.py",
+                "python tools/run_stage144_release_gate.py",
+            ),
+        ),
+        "ci_core_trigger_contract": _workflow_has_all(root, ".github/workflows/ci-core.yml", ("push:", "pull_request:", "workflow_dispatch:", "v1700-stage*", "v*")),
+        "ci_core_command_contract": _workflow_has_all(
+            root,
+            ".github/workflows/ci-core.yml",
+            (
+                "python -m compileall -q src tools",
+                "tests/test_stage144_split_ci_runtime_strategy.py",
+                "python tools/check_release_asset_integrity.py",
+                "python tools/run_stage144_split_ci_runtime_strategy.py",
+                "python tools/run_stage144_release_gate.py",
+                "python tools/run_release_gate.py",
+                "python tools/run_stage72_repo_doctor.py",
+                "python tools/run_gitnexus_probe.py",
+                "python tools/run_graph_nexus_release_gate.py",
+            ),
+        ),
+        "ci_full_trigger_contract": _workflow_has_all(root, ".github/workflows/ci-full.yml", ("schedule:", "workflow_dispatch:")),
+        "cd_dry_run_trigger_contract": _workflow_has_all(root, ".github/workflows/cd-dry-run.yml", ("push:", "pull_request:", "workflow_dispatch:")),
+        "cd_dry_run_artifact_contract": _workflow_has_all(
+            root,
+            ".github/workflows/cd-dry-run.yml",
+            ("canonical_package", "_cd_dry_run.zip", "SHA256SUMS_cd_dry_run.txt", "actions/upload-artifact@v4"),
+        ),
+        "release_trigger_contract": _workflow_has_all(root, ".github/workflows/release.yml", ("tags:", "v1700-stage*", "v*", "workflow_dispatch:")),
+        "release_artifact_contract": _workflow_has_all(
+            root,
+            ".github/workflows/release.yml",
+            ("canonical_package", "sha256_sidecar", "sha256sum \"$ZIP_NAME\" > \"$SHA_NAME\"", "softprops/action-gh-release@v2"),
+        ),
     }
 
 
@@ -230,6 +266,14 @@ def _path_status(root: Path, rel: str) -> str:
 def _file_contains(root: Path, rel: str, token: str) -> bool:
     path = root / rel
     return path.exists() and token in path.read_text(encoding="utf-8")
+
+
+def _workflow_has_all(root: Path, rel: str, tokens: tuple[str, ...]) -> bool:
+    path = root / rel
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    return all(token in text for token in tokens)
 
 
 def _active_version(root: Path) -> str:

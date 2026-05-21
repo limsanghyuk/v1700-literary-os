@@ -57,154 +57,154 @@
           "status": "pass",
           "expected": "stage144",
           "actual": "stage144",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+          "path": "manifests/live_core_manifest.json"
         },
         {
           "name": "readme_current_stage_matches_live",
           "status": "pass",
           "expected": "Stage144 Split CI Runtime Strategy",
           "actual": "# V1700 Literary OS - Stage144\n\n> Split CI Runtime Strategy\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Curren",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+          "path": "README.md"
         },
         {
           "name": "package_manifest_active_matches_live",
           "status": "pass",
           "expected": "stage144",
           "actual": "active=stage144; stage=stage144",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+          "path": "package_manifest.json"
         },
         {
           "name": "package_manifest_paths_match_stage",
           "status": "pass",
           "expected": "stage144 package paths",
           "actual": "{\"asset_manifest\": \"release/current/stage144_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage144_split_ci_runtime_strategy_report.json\", \"release_gate\": \"release/current/stage144_release_gate_report.json\"}",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+          "path": "package_manifest.json"
         },
         {
           "name": "pyproject_version_matches_stage",
           "status": "pass",
           "expected": "1.44.0",
           "actual": "1.44.0",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+          "path": "pyproject.toml"
         },
         {
           "name": "pyproject_description_matches_stage",
           "status": "pass",
           "expected": "Stage144 - Split CI Runtime Strategy",
           "actual": "V1700 Stage144 - Split CI Runtime Strategy",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+          "path": "pyproject.toml"
         },
         {
           "name": "release_notes_match_stage",
           "status": "pass",
           "expected": "Stage144 Split CI Runtime Strategy",
           "actual": "# V1700 Stage144 - Split CI Runtime Strategy\n\nStage144 is the CI/runtime split layer after Stage143. It formalizes `ci-fast`, `c",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+          "path": "RELEASE_NOTES.md"
         },
         {
           "name": "required_file_present:docs/stages/stage144.md",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage144.md"
+          "path": "docs/stages/stage144.md"
         },
         {
           "name": "required_file_present:docs/proposals/stage144_proposal.md",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage144_proposal.md"
+          "path": "docs/proposals/stage144_proposal.md"
         },
         {
           "name": "required_file_present:docs/architecture/stage144_blueprint.md",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage144_blueprint.md"
+          "path": "docs/architecture/stage144_blueprint.md"
         },
         {
           "name": "required_file_present:docs/development/stage144_developer_handoff.md",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage144_developer_handoff.md"
+          "path": "docs/development/stage144_developer_handoff.md"
         },
         {
           "name": "required_file_present:manifests/stage144_manifest.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_manifest.json"
+          "path": "manifests/stage144_manifest.json"
         },
         {
           "name": "required_file_present:manifests/stage144_split_ci_runtime_strategy_manifest.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_split_ci_runtime_strategy_manifest.json"
+          "path": "manifests/stage144_split_ci_runtime_strategy_manifest.json"
         },
         {
           "name": "required_file_present:manifests/stage144_branchpoint_trace_manifest.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage144_branchpoint_trace_manifest.json"
+          "path": "manifests/stage144_branchpoint_trace_manifest.json"
         },
         {
           "name": "required_file_present:manifests/live_core_stage144_overlay.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage144_overlay.json"
+          "path": "manifests/live_core_stage144_overlay.json"
         },
         {
           "name": "required_file_present:release/current/stage144_release_asset_manifest.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_report.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_report.json"
+          "path": "release/current/stage144_split_ci_runtime_strategy_report.json"
         },
         {
           "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json"
+          "path": "release/current/stage144_split_ci_runtime_strategy_pack/workflow_inventory.json"
         },
         {
           "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json"
+          "path": "release/current/stage144_split_ci_runtime_strategy_pack/runtime_lane_matrix.json"
         },
         {
           "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json"
+          "path": "release/current/stage144_split_ci_runtime_strategy_pack/workflow_trigger_summary.json"
         },
         {
           "name": "required_file_present:release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json"
+          "path": "release/current/stage144_split_ci_runtime_strategy_pack/release_surface_contract.json"
         },
         {
           "name": "required_file_present:.github/workflows/ci-fast.yml",
           "status": "pass",
           "expected": "file exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/.github/workflows/ci-fast.yml"
+          "path": ".github/workflows/ci-fast.yml"
         }
       ],
       "issues": [],
@@ -224,62 +224,118 @@
           "status": "pass",
           "expected": "exists",
           "actual": "exists",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "asset_manifest_stage",
           "status": "pass",
           "expected": "stage144",
           "actual": "stage144",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "canonical_package_name",
           "status": "pass",
           "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
           "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "sha256_sidecar_name",
           "status": "pass",
           "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
           "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "package_manifest_canonical_matches",
           "status": "pass",
           "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
           "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+          "path": "package_manifest.json"
         },
         {
           "name": "package_manifest_sidecar_matches",
           "status": "pass",
           "expected": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
           "actual": "V1700_stage144_split_ci_runtime_strategy_release_integrated_repository_with_artifacts.zip.sha256",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+          "path": "package_manifest.json"
         },
         {
           "name": "filelist_declared",
           "status": "pass",
           "expected": "filelist declared",
           "actual": "FILELIST.txt",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
         },
         {
           "name": "release_sidecar_authoritative",
           "status": "pass",
           "expected": "release sidecar file is authoritative",
           "actual": "release sidecar file is authoritative",
-          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage144_release_asset_manifest.json"
+          "path": "release/current/stage144_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
         }
       ],
       "issues": [],
       "counters": {
-        "check_count": 8,
-        "pass_count": 8,
+        "check_count": 16,
+        "pass_count": 16,
         "blocked_count": 0
       }
     },
@@ -390,6 +446,33 @@
           "status": "pass"
         },
         "ci_full_exists": {
+          "status": "pass"
+        },
+        "ci_fast_trigger_contract": {
+          "status": "pass"
+        },
+        "ci_fast_command_contract": {
+          "status": "pass"
+        },
+        "ci_core_trigger_contract": {
+          "status": "pass"
+        },
+        "ci_core_command_contract": {
+          "status": "pass"
+        },
+        "ci_full_trigger_contract": {
+          "status": "pass"
+        },
+        "cd_dry_run_trigger_contract": {
+          "status": "pass"
+        },
+        "cd_dry_run_artifact_contract": {
+          "status": "pass"
+        },
+        "release_trigger_contract": {
+          "status": "pass"
+        },
+        "release_artifact_contract": {
           "status": "pass"
         }
       }

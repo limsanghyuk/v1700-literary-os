@@ -167,7 +167,14 @@ def _py_value(text: str, name: str) -> str:
 
 
 def _check(name: str, condition: bool, expected: str, actual: str, path: Path) -> IntegrityCheck:
-    return IntegrityCheck(name=name, status="pass" if condition else "blocked", expected=expected, actual=actual, path=path.as_posix())
+    return IntegrityCheck(name=name, status="pass" if condition else "blocked", expected=expected, actual=actual, path=_display_path(path))
+
+
+def _display_path(path: Path) -> str:
+    try:
+        return path.relative_to(Path.cwd()).as_posix()
+    except ValueError:
+        return path.as_posix()
 
 
 def _excerpt(text: str, token: str) -> str:

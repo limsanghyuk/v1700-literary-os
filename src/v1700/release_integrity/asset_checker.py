@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
@@ -83,6 +84,7 @@ def run_release_asset_integrity(root: Path | None = None) -> dict[str, Any]:
         _check("filelist_declared", bool(asset.get("filelist")), "filelist declared", str(asset.get("filelist", "")), asset_path),
         _check("release_sidecar_authoritative", asset.get("sha256_authority") == "release sidecar file is authoritative", "release sidecar file is authoritative", str(asset.get("sha256_authority", "")), asset_path),
     ]
+    checks.extend(_checksum_ledger_checks(root, asset))
     issues = tuple(c.name for c in checks if c.status != "pass")
     return IntegrityReport(
         stage=target_stage,
@@ -98,5 +100,132 @@ def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def _checksum_ledger_checks(root: Path, asset: dict[str, Any]) -> list[IntegrityCheck]:
+    filelist_path = root / str(asset.get("filelist", "FILELIST.txt"))
+    sums_path = root / str(asset.get("sha256_sums", "SHA256SUMS.txt"))
+    checks = [
+        _check("filelist_present", filelist_path.exists(), "exists", "exists" if filelist_path.exists() else "missing", filelist_path),
+        _check("sha256_sums_present", sums_path.exists(), "exists", "exists" if sums_path.exists() else "missing", sums_path),
+    ]
+    if not filelist_path.exists() or not sums_path.exists():
+        return checks
+
+    filelist_entries = _read_lines(filelist_path)
+    sums = _read_sha256_sums(sums_path)
+    digest_exempt = _digest_exempt_entries(asset, filelist_entries)
+    missing = [entry for entry in filelist_entries if entry not in sums]
+    extra = [entry for entry in sums if entry not in set(filelist_entries)]
+    mismatches = []
+    missing_files = []
+    for entry in filelist_entries:
+        path = root / entry
+        if not path.is_file():
+            missing_files.append(entry)
+            continue
+        digest = _stable_file_sha256(path)
+        if entry not in digest_exempt and sums.get(entry) != digest:
+            mismatches.append(entry)
+
+    policy_ok = "SHA256SUMS.txt" not in filelist_entries
+    checks.extend(
+        [
+            _check(
+                "sha256_sums_self_reference_policy",
+                policy_ok,
+                "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+                "excluded" if policy_ok else "listed",
+                filelist_path,
+            ),
+            _check(
+                "filelist_checksum_coverage",
+                not missing,
+                "all FILELIST entries covered by SHA256SUMS",
+                _sample(missing),
+                sums_path,
+            ),
+            _check(
+                "sha256_sums_no_extra_entries",
+                not extra,
+                "no SHA256SUMS entries outside FILELIST",
+                _sample(extra),
+                sums_path,
+            ),
+            _check(
+                "filelist_entries_exist",
+                not missing_files,
+                "all FILELIST entries exist",
+                _sample(missing_files),
+                filelist_path,
+            ),
+            _check(
+                "generated_report_digest_exemption_policy",
+                all(entry in filelist_entries for entry in digest_exempt),
+                "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+                _sample(sorted(digest_exempt - set(filelist_entries))),
+                filelist_path,
+            ),
+            _check(
+                "sha256_sums_content_match",
+                not mismatches,
+                "all SHA256SUMS digests match current normalized file contents",
+                _sample(mismatches),
+                sums_path,
+            ),
+        ]
+    )
+    return checks
+
+
+def _digest_exempt_entries(asset: dict[str, Any], filelist_entries: list[str]) -> set[str]:
+    entries = {
+        str(asset.get("release_report", "")).replace("\\", "/"),
+        str(asset.get("release_gate_report", "")).replace("\\", "/"),
+        "release/current/release_gate_report.json",
+    }
+    entries.update(
+        entry
+        for entry in filelist_entries
+        if entry.startswith("release/current/")
+        and (entry.endswith("_report.json") or entry.endswith("_summary.json"))
+    )
+    return {entry for entry in entries if entry}
+
+
+def _stable_file_sha256(path: Path) -> str:
+    data = path.read_bytes()
+    if b"\0" not in data:
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
+def _read_lines(path: Path) -> list[str]:
+    return [line.strip().replace("\\", "/") for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def _read_sha256_sums(path: Path) -> dict[str, str]:
+    sums: dict[str, str] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        parts = line.strip().split(maxsplit=1)
+        if len(parts) == 2:
+            sums[parts[1].replace("\\", "/")] = parts[0].lower()
+    return sums
+
+
+def _sample(items: list[str]) -> str:
+    if not items:
+        return "none"
+    sample = ", ".join(items[:5])
+    if len(items) > 5:
+        sample += f", ... (+{len(items) - 5})"
+    return sample
+
+
 def _check(name: str, condition: bool, expected: str, actual: str, path: Path) -> IntegrityCheck:
-    return IntegrityCheck(name=name, status="pass" if condition else "blocked", expected=expected, actual=actual, path=path.as_posix())
+    return IntegrityCheck(name=name, status="pass" if condition else "blocked", expected=expected, actual=actual, path=_display_path(path))
+
+
+def _display_path(path: Path) -> str:
+    try:
+        return path.relative_to(Path.cwd()).as_posix()
+    except ValueError:
+        return path.as_posix()
