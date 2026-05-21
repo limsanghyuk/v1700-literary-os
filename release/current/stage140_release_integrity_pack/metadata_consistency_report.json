@@ -1,0 +1,139 @@
+{
+  "stage": "stage140",
+  "title": "Stage Metadata Consistency",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "live_manifest_active_stage",
+      "status": "pass",
+      "expected": "stage140",
+      "actual": "stage140",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+    },
+    {
+      "name": "readme_current_stage_matches_live",
+      "status": "pass",
+      "expected": "Stage140 Release Integrity & Product Proof Gate",
+      "actual": "# V1700 Literary OS - Stage140\n\n> Release Integrity & Product Proof Gate\n> Provider-Zero AI longform novel and drama scenario generation syste",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+    },
+    {
+      "name": "package_manifest_active_matches_live",
+      "status": "pass",
+      "expected": "stage140",
+      "actual": "active=stage140; stage=stage140",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+    },
+    {
+      "name": "package_manifest_paths_match_stage",
+      "status": "pass",
+      "expected": "stage140 package paths",
+      "actual": "{\"asset_manifest\": \"release/current/stage140_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage140_release_integrity_report.json\", \"release_gate\": \"release/current/stage140_release_gate_report.json\"}",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+    },
+    {
+      "name": "pyproject_version_matches_stage",
+      "status": "pass",
+      "expected": "1.40.0",
+      "actual": "1.40.0",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+    },
+    {
+      "name": "pyproject_description_matches_stage",
+      "status": "pass",
+      "expected": "Stage140 - Release Integrity & Product Proof Gate",
+      "actual": "V1700 Stage140 - Release Integrity & Product Proof Gate",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+    },
+    {
+      "name": "release_notes_match_stage",
+      "status": "pass",
+      "expected": "Stage140 Release Integrity & Product Proof Gate",
+      "actual": "# V1700 Stage140 - Release Integrity & Product Proof Gate\n\nStage140 is the release-integrity and product-proof layer after Stage",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+    },
+    {
+      "name": "required_file_present:docs/stages/stage140.md",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage140.md"
+    },
+    {
+      "name": "required_file_present:docs/proposals/stage140_release_integrity_product_proof_proposal.md",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage140_release_integrity_product_proof_proposal.md"
+    },
+    {
+      "name": "required_file_present:docs/architecture/stage140_release_integrity_product_proof_blueprint.md",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage140_release_integrity_product_proof_blueprint.md"
+    },
+    {
+      "name": "required_file_present:docs/development/stage140_developer_handoff.md",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage140_developer_handoff.md"
+    },
+    {
+      "name": "required_file_present:manifests/stage140_manifest.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_manifest.json"
+    },
+    {
+      "name": "required_file_present:manifests/stage140_release_integrity_manifest.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_release_integrity_manifest.json"
+    },
+    {
+      "name": "required_file_present:manifests/stage140_branchpoint_trace_manifest.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_branchpoint_trace_manifest.json"
+    },
+    {
+      "name": "required_file_present:manifests/live_core_stage140_overlay.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage140_overlay.json"
+    },
+    {
+      "name": "required_file_present:release/current/stage140_release_asset_manifest.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "required_file_present:samples/korean_drama_family_secret/project.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "required_file_present:benchmarks/longform_output/expected_metrics.json",
+      "status": "pass",
+      "expected": "file exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "check_count": 18,
+    "pass_count": 18,
+    "blocked_count": 0
+  }
+}

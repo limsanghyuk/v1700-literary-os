@@ -507,7 +507,7 @@
       "surviving_runtime_value": "Creates the deterministic corpus governance authority required for Stage140 release automation closure while keeping execution and LOSDB writes blocked."
     }
   ],
-  "active_version": "stage139",
+  "active_version": "stage140",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -562,5 +562,10 @@
     "status": "active",
     "baseline_stage": "stage138",
     "purpose": "Corpus Governance Pipeline"
+  },
+  "stage140": {
+    "status": "active",
+    "baseline_stage": "stage139",
+    "purpose": "Release Integrity & Product Proof Gate"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "stage": "140",
+  "baseline_stage": "139",
+  "title": "Release Integrity & Product Proof Gate",
+  "status": "pass",
+  "main_report": "release/current/stage140_release_integrity_report.json",
+  "release_gate_report": "release/current/stage140_release_gate_report.json",
+  "evidence_pack": "release/current/stage140_release_integrity_pack/",
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "sample_project_contract_status": "pass",
+  "benchmark_contract_status": "pass",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage141 Prose Generation E2E Harness",
+    "Stage142 Longform Benchmark Pack",
+    "Stage143 User CLI/API Minimum Docs",
+    "Stage144 Split CI Runtime Strategy"
+  ]
+}

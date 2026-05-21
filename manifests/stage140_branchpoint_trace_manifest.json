@@ -1,0 +1,26 @@
+{
+  "stage": "stage140",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage139_corpus_governance_pipeline_only",
+      "preserved": true,
+      "evidence": "release/current/stage139_corpus_governance_pipeline_report.json"
+    },
+    {
+      "branchpoint_id": "stage140_release_integrity_gate_only",
+      "preserved": true,
+      "evidence": "release/current/stage140_release_integrity_report.json"
+    },
+    {
+      "branchpoint_id": "stage140_release_asset_alignment",
+      "preserved": true,
+      "evidence": "release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "branchpoint_id": "stage140_stage141_product_e2e_ready",
+      "preserved": true,
+      "evidence": "release/current/stage140_release_gate_report.json"
+    }
+  ]
+}

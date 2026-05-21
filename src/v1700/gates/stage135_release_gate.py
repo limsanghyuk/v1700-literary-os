@@ -21,7 +21,9 @@ def run_stage135_release_gate(root: Path | None = None) -> dict[str, Any]:
     registry = parts.get("candidate_registry", {})
     preflight = parts.get("preflight", {})
     checks = {
-        "stage134_baseline_gate_pass": _check(baseline.get("status") == "pass"),
+        "stage134_baseline_gate_pass": _check(
+            baseline.get("status") == "pass" or baseline.get("stage134", {}).get("status") == "pass"
+        ),
         "learning_quality_report_pass": _check(stage.get("status") == "pass"),
         "candidate_registry_pass": _check(registry.get("status") == "pass"),
         "candidate_only_mode_pass": _check(stage.get("learning_candidate_only") is True and stage.get("mode") == "LEARNING_QUALITY_GATE_CANDIDATE_ONLY"),

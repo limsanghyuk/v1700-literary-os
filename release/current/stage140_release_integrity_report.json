@@ -1,0 +1,380 @@
+{
+  "stage": "140",
+  "baseline_stage": "139",
+  "title": "Release Integrity & Product Proof Gate",
+  "status": "pass",
+  "issues": [],
+  "release_integrity_gate_only": true,
+  "product_proof_skeleton_only": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "sample_project_contract_status": "pass",
+  "benchmark_contract_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage141_product_e2e_ready": true,
+  "parts": {
+    "stage139_baseline": {
+      "stage": "139",
+      "status": "pass",
+      "mode": "CORPUS_GOVERNANCE_PIPELINE_DRY_RUN",
+      "corpus_governance_pipeline_only": true,
+      "stage140_release_ready_count": 9,
+      "total_pipeline_items": 9,
+      "branchpoint_lineage_preserved": true
+    },
+    "metadata_consistency": {
+      "stage": "stage140",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage140",
+          "actual": "stage140",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage140 Release Integrity & Product Proof Gate",
+          "actual": "# V1700 Literary OS - Stage140\n\n> Release Integrity & Product Proof Gate\n> Provider-Zero AI longform novel and drama scenario generation syste",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage140",
+          "actual": "active=stage140; stage=stage140",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage140 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage140_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage140_release_integrity_report.json\", \"release_gate\": \"release/current/stage140_release_gate_report.json\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.40.0",
+          "actual": "1.40.0",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage140 - Release Integrity & Product Proof Gate",
+          "actual": "V1700 Stage140 - Release Integrity & Product Proof Gate",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage140 Release Integrity & Product Proof Gate",
+          "actual": "# V1700 Stage140 - Release Integrity & Product Proof Gate\n\nStage140 is the release-integrity and product-proof layer after Stage",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage140.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage140.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage140_release_integrity_product_proof_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage140_release_integrity_product_proof_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage140_release_integrity_product_proof_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage140_release_integrity_product_proof_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage140_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage140_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage140_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage140_release_integrity_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_release_integrity_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage140_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage140_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage140_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage140_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage140_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:samples/korean_drama_family_secret/project.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "required_file_present:benchmarks/longform_output/expected_metrics.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 18,
+        "pass_count": 18,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage140",
+      "title": "Stage140 Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage140",
+          "actual": "stage140",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 8,
+        "pass_count": 8,
+        "blocked_count": 0
+      }
+    },
+    "sample_project_contract": {
+      "stage": "stage140",
+      "title": "Synthetic Sample Project Contract",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "project_file_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "project_is_synthetic",
+          "status": "pass",
+          "expected": "synthetic_only=true",
+          "actual": "True",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "project_provider_calls_disabled",
+          "status": "pass",
+          "expected": "provider_calls_allowed=false",
+          "actual": "False",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "characters_present",
+          "status": "pass",
+          "expected": "at least 3 characters",
+          "actual": "3",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/characters.json"
+        },
+        {
+          "name": "world_contract_present",
+          "status": "pass",
+          "expected": "synthetic synthetic world contract",
+          "actual": "{\"synthetic_only\": true, \"world_id\": \"synthetic_modern_seoul_family_estate\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/world.json"
+        },
+        {
+          "name": "plot_outline_public_safe",
+          "status": "pass",
+          "expected": "synthetic public-safe outline",
+          "actual": "# Synthetic Family Secret Drama Sample Outline\n\nThis is a synthetic public-safe placeholder outline for Stage140 product proof. It contains no unpublished sourc",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/plot_outline.md"
+        },
+        {
+          "name": "scene_request_present",
+          "status": "pass",
+          "expected": "scene_id and objective",
+          "actual": "{\"objective\": \"Establish the family inheritance question without revealing the final secret.\", \"scene_id\": \"scene_001\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/scene_requests/scene_001.json"
+        },
+        {
+          "name": "scene_request_provider_zero",
+          "status": "pass",
+          "expected": "provider_calls_allowed=false",
+          "actual": "False",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/scene_requests/scene_001.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 8,
+        "pass_count": 8,
+        "blocked_count": 0
+      }
+    },
+    "benchmark_contract": {
+      "stage": "stage140",
+      "title": "Longform Benchmark Skeleton Contract",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "benchmark_readme_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/README.md"
+        },
+        {
+          "name": "benchmark_declares_stage141_path",
+          "status": "pass",
+          "expected": "README declares Stage141 prose-generation E2E path",
+          "actual": "# Stage140 Longform Output Benchmark Skeleton\n\nThis benchmark pack is a public-safe Stage140 product proof skeleton.\n\nIt prepares the Stage141 prose-generation ",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/README.md"
+        },
+        {
+          "name": "expected_metrics_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+        },
+        {
+          "name": "expected_metrics_synthetic_only",
+          "status": "pass",
+          "expected": "synthetic_only=true",
+          "actual": "True",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+        },
+        {
+          "name": "expected_metrics_provider_zero",
+          "status": "pass",
+          "expected": "provider_calls_allowed=false",
+          "actual": "False",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+        },
+        {
+          "name": "expected_metrics_min_scene_count",
+          "status": "pass",
+          "expected": "min_scene_count >= 1",
+          "actual": "1",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+        },
+        {
+          "name": "results_directory_tracked",
+          "status": "pass",
+          "expected": "results/.gitkeep exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/results/.gitkeep"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 7,
+        "pass_count": 7,
+        "blocked_count": 0
+      }
+    }
+  }
+}

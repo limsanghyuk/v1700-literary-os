@@ -1,0 +1,10 @@
+{
+  "stage": "stage140",
+  "title": "Release Integrity & Product Proof Gate",
+  "baseline_stage": "stage139",
+  "status": "implemented",
+  "mode": "RELEASE_INTEGRITY_AND_PRODUCT_PROOF_DRY_RUN",
+  "release_gate": "release/current/stage140_release_gate_report.json",
+  "evidence": "release/current/stage140_release_integrity_report.json",
+  "next_stage": "stage141"
+}

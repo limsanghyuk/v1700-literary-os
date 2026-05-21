@@ -1,0 +1,69 @@
+{
+  "stage": "stage140",
+  "title": "Synthetic Sample Project Contract",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "project_file_present",
+      "status": "pass",
+      "expected": "exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "project_is_synthetic",
+      "status": "pass",
+      "expected": "synthetic_only=true",
+      "actual": "True",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "project_provider_calls_disabled",
+      "status": "pass",
+      "expected": "provider_calls_allowed=false",
+      "actual": "False",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "characters_present",
+      "status": "pass",
+      "expected": "at least 3 characters",
+      "actual": "3",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/characters.json"
+    },
+    {
+      "name": "world_contract_present",
+      "status": "pass",
+      "expected": "synthetic synthetic world contract",
+      "actual": "{\"synthetic_only\": true, \"world_id\": \"synthetic_modern_seoul_family_estate\"}",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/world.json"
+    },
+    {
+      "name": "plot_outline_public_safe",
+      "status": "pass",
+      "expected": "synthetic public-safe outline",
+      "actual": "# Synthetic Family Secret Drama Sample Outline\n\nThis is a synthetic public-safe placeholder outline for Stage140 product proof. It contains no unpublished sourc",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/plot_outline.md"
+    },
+    {
+      "name": "scene_request_present",
+      "status": "pass",
+      "expected": "scene_id and objective",
+      "actual": "{\"objective\": \"Establish the family inheritance question without revealing the final secret.\", \"scene_id\": \"scene_001\"}",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/scene_requests/scene_001.json"
+    },
+    {
+      "name": "scene_request_provider_zero",
+      "status": "pass",
+      "expected": "provider_calls_allowed=false",
+      "actual": "False",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret/scene_requests/scene_001.json"
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "check_count": 8,
+    "pass_count": 8,
+    "blocked_count": 0
+  }
+}

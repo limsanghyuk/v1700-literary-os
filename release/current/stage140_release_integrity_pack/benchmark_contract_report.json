@@ -1,0 +1,62 @@
+{
+  "stage": "stage140",
+  "title": "Longform Benchmark Skeleton Contract",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "benchmark_readme_present",
+      "status": "pass",
+      "expected": "exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/README.md"
+    },
+    {
+      "name": "benchmark_declares_stage141_path",
+      "status": "pass",
+      "expected": "README declares Stage141 prose-generation E2E path",
+      "actual": "# Stage140 Longform Output Benchmark Skeleton\n\nThis benchmark pack is a public-safe Stage140 product proof skeleton.\n\nIt prepares the Stage141 prose-generation ",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/README.md"
+    },
+    {
+      "name": "expected_metrics_present",
+      "status": "pass",
+      "expected": "exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+    },
+    {
+      "name": "expected_metrics_synthetic_only",
+      "status": "pass",
+      "expected": "synthetic_only=true",
+      "actual": "True",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+    },
+    {
+      "name": "expected_metrics_provider_zero",
+      "status": "pass",
+      "expected": "provider_calls_allowed=false",
+      "actual": "False",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+    },
+    {
+      "name": "expected_metrics_min_scene_count",
+      "status": "pass",
+      "expected": "min_scene_count >= 1",
+      "actual": "1",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/expected_metrics.json"
+    },
+    {
+      "name": "results_directory_tracked",
+      "status": "pass",
+      "expected": "results/.gitkeep exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/results/.gitkeep"
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "check_count": 7,
+    "pass_count": 7,
+    "blocked_count": 0
+  }
+}
