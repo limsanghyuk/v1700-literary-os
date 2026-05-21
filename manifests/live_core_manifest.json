@@ -1,5 +1,5 @@
 {
-  "active_version": "stage140",
+  "active_version": "stage141",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -20,10 +20,12 @@
     "stage139_corpus_governance_pipeline",
     "stage139_release_gate",
     "stage140_release_integrity",
-    "stage140_release_gate"
+    "stage140_release_gate",
+    "stage141_prose_generation_e2e",
+    "stage141_release_gate"
   ],
-  "canonical_package": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage141_prose_generation_e2e_harness_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage141_prose_generation_e2e_harness_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {"status": "active", "title": "MetaLearner Audit Mode"},
   "stage135": {"status": "active", "title": "LearningQualityGate & Candidate Registry"},
   "stage136": {"status": "active", "title": "SchemaRegistry"},
@@ -37,5 +39,13 @@
     "release_gate": "release/current/stage140_release_gate_report.json",
     "evidence": "release/current/stage140_release_integrity_report.json",
     "next_stage": "stage141"
+  },
+  "stage141": {
+    "status": "active",
+    "title": "Prose Generation E2E Harness",
+    "baseline_stage": "stage140",
+    "release_gate": "release/current/stage141_release_gate_report.json",
+    "evidence": "release/current/stage141_prose_generation_e2e_report.json",
+    "next_stage": "stage142"
   }
 }

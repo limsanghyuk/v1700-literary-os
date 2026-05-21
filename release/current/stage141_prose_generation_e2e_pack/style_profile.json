@@ -1,0 +1,19 @@
+{
+  "profile_id": "stage141_prose_generation_e2e_profile",
+  "sentence_rhythm": "short-long-mixed",
+  "metaphor_policy": "rare_specific",
+  "emotion_policy": "indirect_behavioral",
+  "dialogue_policy": "understated_with_subtext",
+  "sensory_axis": [
+    "light",
+    "temperature",
+    "object_texture"
+  ],
+  "anti_elements": [
+    "direct_emotion_label",
+    "summary_exposition",
+    "generic_poetic_phrase",
+    "overexplained_motivation",
+    "screenplay_flat_dialogue"
+  ]
+}

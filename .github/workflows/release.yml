@@ -31,7 +31,7 @@ jobs:
       - name: Verify before release
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/stage_gates/test_stage72_repo_doctor.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/stage_gates/test_stage72_repo_doctor.py -q
           python tools/run_stage134_meta_learner_audit.py
           python tools/run_stage134_release_gate.py
           python tools/run_stage135_learning_quality_gate.py
@@ -48,6 +48,8 @@ jobs:
           python tools/check_release_asset_integrity.py
           python tools/run_stage140_release_integrity.py
           python tools/run_stage140_release_gate.py
+          python tools/run_stage141_prose_generation_e2e.py
+          python tools/run_stage141_release_gate.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py
           python tools/run_ci_dependency_preflight.py

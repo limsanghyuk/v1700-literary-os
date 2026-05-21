@@ -1,0 +1,10 @@
+{
+  "stage": "stage141",
+  "title": "Prose Generation E2E Harness",
+  "baseline_stage": "stage140",
+  "status": "implemented",
+  "mode": "PROSE_GENERATION_E2E_HARNESS_LOCAL",
+  "release_gate": "release/current/stage141_release_gate_report.json",
+  "evidence": "release/current/stage141_prose_generation_e2e_report.json",
+  "next_stage": "stage142"
+}

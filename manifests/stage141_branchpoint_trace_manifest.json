@@ -1,0 +1,26 @@
+{
+  "stage": "stage141",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage140_release_integrity_gate_only",
+      "preserved": true,
+      "evidence": "release/current/stage140_release_gate_report.json"
+    },
+    {
+      "branchpoint_id": "stage141_local_prose_generation_e2e",
+      "preserved": true,
+      "evidence": "release/current/stage141_prose_generation_e2e_report.json"
+    },
+    {
+      "branchpoint_id": "stage141_node3_critic_gate_validation",
+      "preserved": true,
+      "evidence": "release/current/stage141_prose_generation_e2e_pack/critic_gate_report.json"
+    },
+    {
+      "branchpoint_id": "stage141_stage142_benchmark_ready",
+      "preserved": true,
+      "evidence": "benchmarks/longform_output/results/stage141_scene_001_benchmark_result.json"
+    }
+  ]
+}
