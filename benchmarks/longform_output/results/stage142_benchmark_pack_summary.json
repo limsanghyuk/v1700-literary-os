@@ -1,0 +1,20 @@
+{
+  "stage": "stage142",
+  "title": "Stage142 Longform Benchmark Scoreboard",
+  "status": "pass",
+  "issues": [],
+  "benchmark_id": "stage142_longform_benchmark_pack_v1",
+  "benchmark_case_count": 3,
+  "min_case_count": 3,
+  "rendered_scene_count": 3,
+  "reader_surface_average": 8.98,
+  "reader_surface_average_min": 8.5,
+  "reader_surface_min_per_case": 8.0,
+  "lowest_case_average": 8.98,
+  "highest_case_average": 8.98,
+  "mean_case_average": 8.98,
+  "critic_pass_count": 3,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "stage143_user_docs_ready": true
+}

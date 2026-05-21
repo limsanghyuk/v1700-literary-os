@@ -1,0 +1,6 @@
+{
+  "prompt": "A cautious heir notices the ledger notch that everyone else pretends not to see.",
+  "response_format": "rendered_prose_ir",
+  "provider_calls_allowed": false,
+  "runtime_training_enabled": false
+}

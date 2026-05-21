@@ -1,0 +1,114 @@
+{
+  "stage": "142",
+  "baseline_stage": "141",
+  "title": "Longform Benchmark Pack Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage141_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage142_report_pass": {
+      "status": "pass"
+    },
+    "benchmark_pack_mode_pass": {
+      "status": "pass"
+    },
+    "metadata_consistency_pass": {
+      "status": "pass"
+    },
+    "release_asset_integrity_pass": {
+      "status": "pass"
+    },
+    "benchmark_case_count_pass": {
+      "status": "pass"
+    },
+    "rendered_scene_count_pass": {
+      "status": "pass"
+    },
+    "critic_gate_pass": {
+      "status": "pass"
+    },
+    "benchmark_scoreboard_pass": {
+      "status": "pass"
+    },
+    "stage143_user_docs_ready_pass": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "active_meta_learning_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "losdb_write_blocked": {
+      "status": "pass"
+    },
+    "migration_execution_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage142": {
+    "status": "pass",
+    "stage": "142",
+    "baseline_stage": "141",
+    "title": "Longform Benchmark Pack",
+    "issues": [],
+    "mode": "LONGFORM_BENCHMARK_PACK_LOCAL",
+    "longform_benchmark_pack_only": true,
+    "benchmark_case_count": 3,
+    "rendered_scene_count": 3,
+    "critic_gate_pass_count": 3,
+    "benchmark_scoreboard_status": "pass",
+    "metadata_consistency_status": "pass",
+    "release_asset_integrity_status": "pass",
+    "stage143_user_docs_ready": true,
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "losdb_write_enabled": false,
+    "migration_execution_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

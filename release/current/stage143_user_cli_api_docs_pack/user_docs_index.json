@@ -1,0 +1,33 @@
+{
+  "stage": "stage143",
+  "title": "Stage143 User Docs Index",
+  "status": "pass",
+  "issues": [],
+  "documents": [
+    {
+      "name": "cli_quickstart",
+      "status": "pass",
+      "path": "docs/user/cli_quickstart.md",
+      "summary": "Minimum CLI entrypoint, flags, and example outputs."
+    },
+    {
+      "name": "api_minimum",
+      "status": "pass",
+      "path": "docs/user/api_minimum.md",
+      "summary": "Documentation-only API contract for future local surfaces."
+    },
+    {
+      "name": "render_request_example",
+      "status": "pass",
+      "path": "docs/user/examples/render_request.json",
+      "summary": "Public-safe request example."
+    },
+    {
+      "name": "render_response_example",
+      "status": "pass",
+      "path": "docs/user/examples/render_response.json",
+      "summary": "Public-safe response example."
+    }
+  ],
+  "stage144_split_ci_runtime_ready": true
+}

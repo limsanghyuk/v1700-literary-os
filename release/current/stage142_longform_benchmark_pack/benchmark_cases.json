@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "case_id": "scene_001_inheritance_signal",
+      "scene_goal": "Establish the inheritance question with restrained suspicion and public-safe ambiguity.",
+      "conflict": "A legal hesitation delays the answer while the oldest family member counters with guarded politeness.",
+      "dialogue_seed": "Everyone wants the answer tonight, but no one is willing to say the first true sentence out loud.",
+      "timeline_position": "EP1_SCENE1_A",
+      "setting_suffix": "Rain taps the office blinds while the lamp on the archive desk hums softly.",
+      "emotional_from": "unease",
+      "emotional_to": "alert_resolve"
+    },
+    {
+      "case_id": "scene_001_corridor_pressure",
+      "scene_goal": "Intensify corridor pressure around the unsigned document without revealing the secret heir.",
+      "conflict": "A hallway exchange turns sharp when the attorney refuses to confirm the family rumor.",
+      "dialogue_seed": "If the paper matters this much, why did everyone pretend it was ordinary yesterday?",
+      "timeline_position": "EP1_SCENE1_B",
+      "setting_suffix": "The corridor smells faintly of wet wool, old wood, and cooling tea.",
+      "emotional_from": "caution",
+      "emotional_to": "compressed_defiance"
+    },
+    {
+      "case_id": "scene_001_ledger_afterimage",
+      "scene_goal": "Leave a lingering afterimage around the inheritance ledger while preserving all reveal boundaries.",
+      "conflict": "A ledger entry appears harmless, but it rearranges who feels safe enough to speak.",
+      "dialogue_seed": "The number itself is small; the silence around it is what makes the room tilt.",
+      "timeline_position": "EP1_SCENE1_C",
+      "setting_suffix": "A cold draft slips under the study door and stirs the edge of the ledger page.",
+      "emotional_from": "fatigue",
+      "emotional_to": "fragile_focus"
+    }
+  ]
+}

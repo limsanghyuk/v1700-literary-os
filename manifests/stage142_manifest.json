@@ -1,0 +1,10 @@
+{
+  "stage": "stage142",
+  "title": "Longform Benchmark Pack",
+  "baseline_stage": "stage141",
+  "status": "implemented",
+  "mode": "LONGFORM_BENCHMARK_PACK_LOCAL",
+  "release_gate": "release/current/stage142_release_gate_report.json",
+  "evidence": "release/current/stage142_longform_benchmark_pack_report.json",
+  "next_stage": "stage143"
+}

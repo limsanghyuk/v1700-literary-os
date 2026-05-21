@@ -1,0 +1,113 @@
+{
+  "stage": "143",
+  "baseline_stage": "142",
+  "title": "User CLI/API Minimum Docs Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage142_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage143_report_pass": {
+      "status": "pass"
+    },
+    "docs_mode_pass": {
+      "status": "pass"
+    },
+    "metadata_consistency_pass": {
+      "status": "pass"
+    },
+    "release_asset_integrity_pass": {
+      "status": "pass"
+    },
+    "cli_help_available_pass": {
+      "status": "pass"
+    },
+    "cli_json_example_valid_pass": {
+      "status": "pass"
+    },
+    "api_contract_documented_only_pass": {
+      "status": "pass"
+    },
+    "docs_index_pass": {
+      "status": "pass"
+    },
+    "stage144_split_ci_runtime_ready_pass": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "active_meta_learning_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "losdb_write_blocked": {
+      "status": "pass"
+    },
+    "migration_execution_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage143": {
+    "status": "pass",
+    "stage": "143",
+    "baseline_stage": "142",
+    "title": "User CLI/API Minimum Docs",
+    "issues": [],
+    "mode": "USER_CLI_API_MINIMUM_DOCS_LOCAL",
+    "user_cli_api_docs_only": true,
+    "cli_help_available": true,
+    "cli_json_example_valid": true,
+    "api_contract_documented_only": true,
+    "metadata_consistency_status": "pass",
+    "release_asset_integrity_status": "pass",
+    "stage144_split_ci_runtime_ready": true,
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "losdb_write_enabled": false,
+    "migration_execution_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

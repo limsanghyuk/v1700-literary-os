@@ -1,0 +1,26 @@
+{
+  "stage": "stage143",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage142_benchmark_scoreboard_authority",
+      "preserved": true,
+      "evidence": "release/current/stage142_longform_benchmark_pack/benchmark_scoreboard.json"
+    },
+    {
+      "branchpoint_id": "stage143_cli_contract_snapshot",
+      "preserved": true,
+      "evidence": "release/current/stage143_user_cli_api_docs_pack/cli_contract.json"
+    },
+    {
+      "branchpoint_id": "stage143_api_contract_documented_only",
+      "preserved": true,
+      "evidence": "release/current/stage143_user_cli_api_docs_pack/api_contract.json"
+    },
+    {
+      "branchpoint_id": "stage143_stage144_ci_split_ready",
+      "preserved": true,
+      "evidence": "release/current/stage143_user_cli_api_docs_pack/user_docs_index.json"
+    }
+  ]
+}

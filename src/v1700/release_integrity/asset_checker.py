@@ -17,6 +17,16 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage141_prose_generation_e2e_report.json",
         "release_gate_report": "release/current/stage141_release_gate_report.json",
     },
+    "stage142": {
+        "package": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage142_longform_benchmark_pack_report.json",
+        "release_gate_report": "release/current/stage142_release_gate_report.json",
+    },
+    "stage143": {
+        "package": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage143_user_cli_api_docs_report.json",
+        "release_gate_report": "release/current/stage143_release_gate_report.json",
+    },
 }
 
 

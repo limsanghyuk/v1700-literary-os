@@ -1,0 +1,67 @@
+{
+  "rendered_samples": [
+    {
+      "scene_id": "scene_001_inheritance_signal",
+      "final_text": "EP1_SCENE1_A의 장면은 Establish the inheritance question with restrained suspicion and public-safe ambiguity.을 향해 움직인다. 갈등은 A legal hesitation delays the answer while the oldest family member counters with guarded politeness.에 걸려 있었다. unease에서 alert_resolve로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “Everyone wants the answer tonight, but no one is willing to say the first true sentence out loud.” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. Rain taps the office blinds while the lamp on the archive desk hums softly. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "surface_score": {
+        "anti_llm": 10.0,
+        "emotion_accessibility": 8.8,
+        "naturalness": 8.3,
+        "rhythm": 10.0,
+        "dialogue_taste": 8.2,
+        "sensory_afterimage": 8.6,
+        "reader_surface_average": 8.98
+      },
+      "constraint_score": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": [],
+      "case_id": "scene_001_inheritance_signal",
+      "timeline_position": "EP1_SCENE1_A"
+    },
+    {
+      "scene_id": "scene_001_corridor_pressure",
+      "final_text": "그들은 EP1_SCENE1_B에 같은 자리에 있었지만 같은 쪽을 보지 않았다. Intensify corridor pressure around the unsigned document without revealing the secret heir.이라는 목적은 드러나지 않은 채, A hallway exchange turns sharp when the attorney refuses to confirm the family rumor.만 식탁 위에 남았다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “If the paper matters this much, why did everyone pretend it was ordinary yesterday?” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. The corridor smells faintly of wet wool, old wood, and cooling tea. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "surface_score": {
+        "anti_llm": 10.0,
+        "emotion_accessibility": 8.8,
+        "naturalness": 8.3,
+        "rhythm": 10.0,
+        "dialogue_taste": 8.2,
+        "sensory_afterimage": 8.6,
+        "reader_surface_average": 8.98
+      },
+      "constraint_score": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": [],
+      "case_id": "scene_001_corridor_pressure",
+      "timeline_position": "EP1_SCENE1_B"
+    },
+    {
+      "scene_id": "scene_001_ledger_afterimage",
+      "final_text": "EP1_SCENE1_C의 장면은 Leave a lingering afterimage around the inheritance ledger while preserving all reveal boundaries.을 향해 움직인다. 갈등은 A ledger entry appears harmless, but it rearranges who feels safe enough to speak.에 걸려 있었다. fatigue에서 fragile_focus로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “The number itself is small; the silence around it is what makes the room tilt.” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. A cold draft slips under the study door and stirs the edge of the ledger page. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "surface_score": {
+        "anti_llm": 10.0,
+        "emotion_accessibility": 8.8,
+        "naturalness": 8.3,
+        "rhythm": 10.0,
+        "dialogue_taste": 8.2,
+        "sensory_afterimage": 8.6,
+        "reader_surface_average": 8.98
+      },
+      "constraint_score": {
+        "fact_preservation": 10.0,
+        "reveal_preservation": 10.0,
+        "scene_goal_preservation": 9.8
+      },
+      "risk_flags": [],
+      "case_id": "scene_001_ledger_afterimage",
+      "timeline_position": "EP1_SCENE1_C"
+    }
+  ]
+}

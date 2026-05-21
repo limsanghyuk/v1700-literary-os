@@ -1,0 +1,391 @@
+{
+  "stage": "143",
+  "baseline_stage": "142",
+  "title": "User CLI/API Minimum Docs",
+  "status": "pass",
+  "issues": [],
+  "mode": "USER_CLI_API_MINIMUM_DOCS_LOCAL",
+  "user_cli_api_docs_only": true,
+  "cli_help_available": true,
+  "cli_json_example_valid": true,
+  "api_contract_documented_only": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "stage144_split_ci_runtime_ready": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage142_baseline": {
+      "stage": "142",
+      "baseline_stage": "141",
+      "status": "pass",
+      "title": "Longform Benchmark Pack Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage142_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage143",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage143",
+          "actual": "stage143",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage143 User CLI/API Minimum Docs",
+          "actual": "# V1700 Literary OS - Stage143\n\n> User CLI/API Minimum Docs\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Curren",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage143",
+          "actual": "active=stage143; stage=stage143",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage143 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage143_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage143_user_cli_api_docs_report.json\", \"release_gate\": \"release/current/stage143_release_gate_report.json\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.43.0",
+          "actual": "1.43.0",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage143 - User CLI/API Minimum Docs",
+          "actual": "V1700 Stage143 - User CLI/API Minimum Docs",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage143 User CLI/API Minimum Docs",
+          "actual": "# V1700 Stage143 - User CLI/API Minimum Docs\n\nStage143 is the minimum user-documentation layer after Stage142. It converts the b",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage143.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage143.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage143_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage143_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage143_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage143_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage143_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage143_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:docs/user/cli_quickstart.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/user/cli_quickstart.md"
+        },
+        {
+          "name": "required_file_present:docs/user/api_minimum.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/user/api_minimum.md"
+        },
+        {
+          "name": "required_file_present:docs/user/examples/render_request.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/user/examples/render_request.json"
+        },
+        {
+          "name": "required_file_present:docs/user/examples/render_response.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/user/examples/render_response.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage143_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage143_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage143_user_cli_api_docs_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage143_user_cli_api_docs_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage143_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage143_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage143_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage143_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage143_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage143_user_cli_api_docs_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_user_cli_api_docs_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage143_user_cli_api_docs_pack/cli_contract.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_user_cli_api_docs_pack/cli_contract.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage143_user_cli_api_docs_pack/api_contract.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_user_cli_api_docs_pack/api_contract.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage143_user_cli_api_docs_pack/user_docs_index.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_user_cli_api_docs_pack/user_docs_index.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 24,
+        "pass_count": 24,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage143",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage143",
+          "actual": "stage143",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage143_release_asset_manifest.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 8,
+        "pass_count": 8,
+        "blocked_count": 0
+      }
+    },
+    "cli_contract": {
+      "stage": "stage143",
+      "title": "Stage143 CLI Minimum Contract",
+      "status": "pass",
+      "issues": [],
+      "entrypoint": "python -m v1700.cli",
+      "version_string": "V1700 Stage143 - User CLI/API Minimum Docs",
+      "help_available": true,
+      "documented_flags": [
+        "--json",
+        "--version"
+      ],
+      "default_prompt_available": true,
+      "sample_prompt": "A cautious heir notices the ledger notch that everyone else pretends not to see.",
+      "sample_text_output": "D3_NIGHT의 장면은 A cautious heir notices the ledger notch that everyone else pretends not to see.을 향해 움직인다. 갈등은 신뢰와 의심의 충돌에 걸려 있었다. 안도에서 미세한 불신로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 조력자는 대답하지 않았다 “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+      "sample_json_valid": true,
+      "sample_json_output": {
+        "scene_id": "example_scene_001",
+        "final_text": "D3_NIGHT의 장면은 A cautious heir notices the ledger notch that everyone else pretends not to see.을 향해 움직인다. 갈등은 신뢰와 의심의 충돌에 걸려 있었다. 안도에서 미세한 불신로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 조력자는 대답하지 않았다 “아직 말하지 않은 게 있지.” 비가 그친 창문 아래, 컵 하나가 식어 있었다. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 9.4,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.88
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": []
+      }
+    },
+    "api_contract": {
+      "stage": "stage143",
+      "title": "Stage143 API Minimum Contract",
+      "status": "pass",
+      "issues": [],
+      "documented_only": true,
+      "implemented_server": false,
+      "method": "POST",
+      "path": "/v1/render-prose",
+      "request_example": {
+        "prompt": "A cautious heir notices the ledger notch that everyone else pretends not to see.",
+        "response_format": "rendered_prose_ir",
+        "provider_calls_allowed": false,
+        "runtime_training_enabled": false
+      },
+      "response_shape": {
+        "scene_id": "string",
+        "final_text": "string",
+        "surface_score": "object",
+        "constraint_score": "object",
+        "risk_flags": "array"
+      },
+      "public_safe_only": true,
+      "provider_calls_allowed": false,
+      "auth_required": false
+    },
+    "docs_index": {
+      "stage": "stage143",
+      "title": "Stage143 User Docs Index",
+      "status": "pass",
+      "issues": [],
+      "documents": [
+        {
+          "name": "cli_quickstart",
+          "status": "pass",
+          "path": "docs/user/cli_quickstart.md",
+          "summary": "Minimum CLI entrypoint, flags, and example outputs."
+        },
+        {
+          "name": "api_minimum",
+          "status": "pass",
+          "path": "docs/user/api_minimum.md",
+          "summary": "Documentation-only API contract for future local surfaces."
+        },
+        {
+          "name": "render_request_example",
+          "status": "pass",
+          "path": "docs/user/examples/render_request.json",
+          "summary": "Public-safe request example."
+        },
+        {
+          "name": "render_response_example",
+          "status": "pass",
+          "path": "docs/user/examples/render_response.json",
+          "summary": "Public-safe response example."
+        }
+      ],
+      "stage144_split_ci_runtime_ready": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "stage143",
+  "component": "user_cli_api_minimum_docs",
+  "status": "implemented",
+  "user_cli_api_docs_only": true,
+  "cli_help_available": true,
+  "api_contract_documented_only": true,
+  "stage144_split_ci_runtime_ready": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "migration_execution_enabled": false,
+  "losdb_write_enabled": false,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "evidence_pack": "release/current/stage143_user_cli_api_docs_pack/"
+}

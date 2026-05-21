@@ -1,0 +1,11 @@
+{
+  "scene_id": "example_scene_id",
+  "final_text": "Sample public-safe rendered prose appears here.",
+  "surface_score": {
+    "reader_surface_average": 8.8
+  },
+  "constraint_score": {
+    "reveal_preservation": 10.0
+  },
+  "risk_flags": []
+}
