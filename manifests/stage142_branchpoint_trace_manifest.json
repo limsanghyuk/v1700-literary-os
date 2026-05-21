@@ -1,0 +1,26 @@
+{
+  "stage": "stage142",
+  "status": "implemented",
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage141_local_prose_generation_e2e",
+      "preserved": true,
+      "evidence": "release/current/stage141_prose_generation_e2e_report.json"
+    },
+    {
+      "branchpoint_id": "stage142_multi_case_benchmark_pack",
+      "preserved": true,
+      "evidence": "release/current/stage142_longform_benchmark_pack_report.json"
+    },
+    {
+      "branchpoint_id": "stage142_benchmark_scoreboard_authority",
+      "preserved": true,
+      "evidence": "release/current/stage142_longform_benchmark_pack/benchmark_scoreboard.json"
+    },
+    {
+      "branchpoint_id": "stage142_stage143_user_docs_ready",
+      "preserved": true,
+      "evidence": "benchmarks/longform_output/results/stage142_benchmark_pack_summary.json"
+    }
+  ]
+}

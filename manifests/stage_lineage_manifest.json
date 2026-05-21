@@ -527,9 +527,31 @@
         "Stage142 benchmark-ready artifact path"
       ],
       "surviving_runtime_value": "Proves the local literary runtime can render a public-safe synthetic scene end-to-end without provider calls, writes, or training."
+    },
+    {
+      "stage_id": "STAGE142",
+      "title": "Longform Benchmark Pack",
+      "introduced_concepts": [
+        "multi-case benchmark pack",
+        "reader-surface scoreboard authority",
+        "rendered sample bundle",
+        "Stage143 user-doc readiness marker"
+      ],
+      "surviving_runtime_value": "Proves the local literary runtime can sustain deterministic public-safe reader-surface quality across multiple benchmark cases without provider calls, writes, or training."
+    },
+    {
+      "stage_id": "STAGE143",
+      "title": "User CLI/API Minimum Docs",
+      "introduced_concepts": [
+        "CLI help snapshot authority",
+        "documentation-only API minimum contract",
+        "user docs index",
+        "Stage144 split-CI/runtime readiness marker"
+      ],
+      "surviving_runtime_value": "Publishes a minimum user-facing contract around the local-first runtime without enabling a live API server, provider calls, or write paths."
     }
   ],
-  "active_version": "stage141",
+  "active_version": "stage143",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -594,5 +616,15 @@
     "status": "active",
     "baseline_stage": "stage140",
     "purpose": "Prose Generation E2E Harness"
+  },
+  "stage142": {
+    "status": "active",
+    "baseline_stage": "stage141",
+    "purpose": "Longform Benchmark Pack"
+  },
+  "stage143": {
+    "status": "active",
+    "baseline_stage": "stage142",
+    "purpose": "User CLI/API Minimum Docs"
   }
 }

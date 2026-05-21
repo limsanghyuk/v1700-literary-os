@@ -1,0 +1,31 @@
+{
+  "benchmark_case_reports": [
+    {
+      "case_id": "scene_001_inheritance_signal",
+      "scene_id": "scene_001_inheritance_signal",
+      "status": "pass",
+      "reader_surface_average": 8.98,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "risk_flags": []
+    },
+    {
+      "case_id": "scene_001_corridor_pressure",
+      "scene_id": "scene_001_corridor_pressure",
+      "status": "pass",
+      "reader_surface_average": 8.98,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "risk_flags": []
+    },
+    {
+      "case_id": "scene_001_ledger_afterimage",
+      "scene_id": "scene_001_ledger_afterimage",
+      "status": "pass",
+      "reader_surface_average": 8.98,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "risk_flags": []
+    }
+  ]
+}

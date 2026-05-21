@@ -85,6 +85,8 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
     ("stage139", "stage139_release_gate", "v1700.gates.stage139_release_gate", "run_stage139_release_gate"),
     ("stage140", "stage140_release_gate", "v1700.gates.stage140_release_gate", "run_stage140_release_gate"),
     ("stage141", "stage141_release_gate", "v1700.gates.stage141_release_gate", "run_stage141_release_gate"),
+    ("stage142", "stage142_release_gate", "v1700.gates.stage142_release_gate", "run_stage142_release_gate"),
+    ("stage143", "stage143_release_gate", "v1700.gates.stage143_release_gate", "run_stage143_release_gate"),
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]
@@ -180,7 +182,7 @@ def _active_version(root: Path) -> str:
 def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dict:
     manifest_stage = stage.replace(".", "_")
     issues: list[str] = []
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141"}:
+    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143"}:
         report_path = root / "release" / "current" / f"{output_key}_report.json"
         manifest_path = root / "manifests" / f"{manifest_stage}_manifest.json"
         docs_path = root / "docs" / "stages" / f"{manifest_stage}.md"

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage141 - Prose Generation E2E Harness
+Current active stage: Stage143 - User CLI/API Minimum Docs
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -46,3 +46,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage139](stage139.md) - Corpus Governance Pipeline
 - [Stage140](stage140.md) - Release Integrity & Product Proof Gate
 - [Stage141](stage141.md) - Prose Generation E2E Harness
+- [Stage142](stage142.md) - Longform Benchmark Pack
+- [Stage143](stage143.md) - User CLI/API Minimum Docs

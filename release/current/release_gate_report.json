@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 48,
+        "stage_count": 50,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 48,
+          "lineage_node_count": 50,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 860
+        "node_count": 873
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 48,
+        "node_count": 50,
         "stage72_1_present": true
       },
       "warnings": [
@@ -736,8 +736,9 @@
   },
   "stage129_release_gate": {
     "status": "pass",
-    "stage": "stage129",
-    "title": "historical compact evidence summary",
+    "stage": "129",
+    "baseline_stage": "128",
+    "title": "MultiWorkCIM + Cross-Work Canon Governor Release Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -748,8 +749,9 @@
   },
   "stage130_release_gate": {
     "status": "pass",
-    "stage": "stage130",
-    "title": "historical compact evidence summary",
+    "stage": "130",
+    "baseline_stage": "129",
+    "title": "MultiWork Release Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -760,8 +762,9 @@
   },
   "stage131_release_gate": {
     "status": "pass",
-    "stage": "stage131",
-    "title": "historical compact evidence summary",
+    "stage": "131",
+    "baseline_stage": "130",
+    "title": "GIG / Gate26 Advisory Absorption Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -772,8 +775,9 @@
   },
   "stage132_release_gate": {
     "status": "pass",
-    "stage": "stage132",
-    "title": "historical compact evidence summary",
+    "stage": "132",
+    "baseline_stage": "131",
+    "title": "Contradiction Classifier + Mystery Exemption Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -784,8 +788,9 @@
   },
   "stage133_release_gate": {
     "status": "pass",
-    "stage": "stage133",
-    "title": "historical compact evidence summary",
+    "stage": "133",
+    "baseline_stage": "132",
+    "title": "NarrativeStateTensor 8D Measurement Layer Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -796,8 +801,9 @@
   },
   "stage134_release_gate": {
     "status": "pass",
-    "stage": "stage134",
-    "title": "historical compact evidence summary",
+    "stage": "134",
+    "baseline_stage": "133",
+    "title": "MetaLearner Audit Mode Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -889,6 +895,32 @@
     "stage": "141",
     "baseline_stage": "140",
     "title": "Prose Generation E2E Harness Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage142_release_gate": {
+    "status": "pass",
+    "stage": "142",
+    "baseline_stage": "141",
+    "title": "Longform Benchmark Pack Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage143_release_gate": {
+    "status": "pass",
+    "stage": "143",
+    "baseline_stage": "142",
+    "title": "User CLI/API Minimum Docs Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

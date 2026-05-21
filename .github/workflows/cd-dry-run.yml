@@ -31,7 +31,7 @@ jobs:
       - name: Verify release gates
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py -q
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
           python tools/run_stage136_schema_registry.py
@@ -48,24 +48,35 @@ jobs:
           python tools/run_stage140_release_gate.py
           python tools/run_stage141_prose_generation_e2e.py
           python tools/run_stage141_release_gate.py
+          python tools/run_stage142_longform_benchmark_pack.py
+          python tools/run_stage142_release_gate.py
+          python tools/run_stage143_user_cli_api_docs.py
+          python tools/run_stage143_release_gate.py
           python tools/run_ci_dependency_preflight.py
 
       - name: Build dry-run archive
         shell: bash
         run: |
-          ZIP_NAME="V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip"
+          ZIP_NAME="$(python - <<'PY'
+import json
+from pathlib import Path
+package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8"))
+canonical = package["canonical_package"]
+print(canonical[:-4] + "_cd_dry_run.zip" if canonical.endswith(".zip") else canonical + "_cd_dry_run.zip")
+PY
+)"
           zip -r "$ZIP_NAME" . \
             -x ".git/*" ".gitnexus/*" ".venv/*" "venv/*" \
             -x "__pycache__/*" "*.pyc" ".pytest_cache/*" \
             -x "build/*" "dist/*" "*.egg-info/*" "outputs/*"
           sha256sum "$ZIP_NAME" > "$ZIP_NAME.sha256"
-          sha256sum "$ZIP_NAME" > SHA256SUMS_stage141_cd_dry_run.txt
+          sha256sum "$ZIP_NAME" > SHA256SUMS_cd_dry_run.txt
 
       - name: Upload dry-run release artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: stage141-cd-dry-run-artifacts
+          name: current-stage-cd-dry-run-artifacts
           path: |
-            V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip
-            V1700_stage141_prose_generation_e2e_harness_cd_dry_run_integrated_repository.zip.sha256
-            SHA256SUMS_stage141_cd_dry_run.txt
+            *_cd_dry_run.zip
+            *_cd_dry_run.zip.sha256
+            SHA256SUMS_cd_dry_run.txt

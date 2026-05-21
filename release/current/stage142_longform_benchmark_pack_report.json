@@ -1,0 +1,462 @@
+{
+  "stage": "142",
+  "baseline_stage": "141",
+  "title": "Longform Benchmark Pack",
+  "status": "pass",
+  "issues": [],
+  "mode": "LONGFORM_BENCHMARK_PACK_LOCAL",
+  "longform_benchmark_pack_only": true,
+  "sample_project_contract_reused": true,
+  "benchmark_case_count": 3,
+  "rendered_scene_count": 3,
+  "critic_gate_pass_count": 3,
+  "benchmark_scoreboard_status": "pass",
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "stage143_user_docs_ready": true,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage141_baseline": {
+      "stage": "141",
+      "baseline_stage": "140",
+      "status": "pass",
+      "title": "Prose Generation E2E Harness Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage141_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage142",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage142",
+          "actual": "stage142",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage142 Longform Benchmark Pack",
+          "actual": "# V1700 Literary OS - Stage142\n\n> Longform Benchmark Pack\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Current ",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage142",
+          "actual": "active=stage142; stage=stage142",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage142 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage142_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage142_longform_benchmark_pack_report.json\", \"release_gate\": \"release/current/stage142_release_gate_report.json\"}",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.42.0",
+          "actual": "1.42.0",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage142 - Longform Benchmark Pack",
+          "actual": "V1700 Stage142 - Longform Benchmark Pack",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage142 Longform Benchmark Pack",
+          "actual": "# V1700 Stage142 - Longform Benchmark Pack\n\nStage142 is the deterministic benchmark-pack layer after Stage141. It converts the s",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage142.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/stages/stage142.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage142_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/proposals/stage142_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage142_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/architecture/stage142_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage142_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/docs/development/stage142_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage142_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage142_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage142_longform_benchmark_pack_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage142_longform_benchmark_pack_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage142_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/stage142_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage142_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/manifests/live_core_stage142_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage142_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage142_longform_benchmark_pack_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_longform_benchmark_pack_report.json"
+        },
+        {
+          "name": "required_file_present:benchmarks/longform_output/results/stage142_benchmark_pack_summary.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/results/stage142_benchmark_pack_summary.json"
+        },
+        {
+          "name": "required_file_present:benchmarks/longform_output/results/stage142_rendered_samples.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/benchmarks/longform_output/results/stage142_rendered_samples.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 19,
+        "pass_count": 19,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage142",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage142",
+          "actual": "stage142",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage142_longform_benchmark_pack_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage142_release_asset_manifest.json"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 8,
+        "pass_count": 8,
+        "blocked_count": 0
+      }
+    },
+    "sample_bundle_summary": {
+      "project_id": "sample_korean_drama_family_secret",
+      "synthetic_only": true,
+      "provider_calls_allowed": false,
+      "character_count": 3,
+      "source_scene_request_id": "scene_001",
+      "benchmark_id": "stage142_longform_benchmark_pack_v1"
+    },
+    "style_profile": {
+      "profile_id": "stage141_prose_generation_e2e_profile",
+      "sentence_rhythm": "short-long-mixed",
+      "metaphor_policy": "rare_specific",
+      "emotion_policy": "indirect_behavioral",
+      "dialogue_policy": "understated_with_subtext",
+      "sensory_axis": [
+        "light",
+        "temperature",
+        "object_texture"
+      ],
+      "anti_elements": [
+        "direct_emotion_label",
+        "summary_exposition",
+        "generic_poetic_phrase",
+        "overexplained_motivation",
+        "screenplay_flat_dialogue"
+      ]
+    },
+    "benchmark_cases": [
+      {
+        "case_id": "scene_001_inheritance_signal",
+        "scene_goal": "Establish the inheritance question with restrained suspicion and public-safe ambiguity.",
+        "conflict": "A legal hesitation delays the answer while the oldest family member counters with guarded politeness.",
+        "dialogue_seed": "Everyone wants the answer tonight, but no one is willing to say the first true sentence out loud.",
+        "timeline_position": "EP1_SCENE1_A",
+        "setting_suffix": "Rain taps the office blinds while the lamp on the archive desk hums softly.",
+        "emotional_from": "unease",
+        "emotional_to": "alert_resolve"
+      },
+      {
+        "case_id": "scene_001_corridor_pressure",
+        "scene_goal": "Intensify corridor pressure around the unsigned document without revealing the secret heir.",
+        "conflict": "A hallway exchange turns sharp when the attorney refuses to confirm the family rumor.",
+        "dialogue_seed": "If the paper matters this much, why did everyone pretend it was ordinary yesterday?",
+        "timeline_position": "EP1_SCENE1_B",
+        "setting_suffix": "The corridor smells faintly of wet wool, old wood, and cooling tea.",
+        "emotional_from": "caution",
+        "emotional_to": "compressed_defiance"
+      },
+      {
+        "case_id": "scene_001_ledger_afterimage",
+        "scene_goal": "Leave a lingering afterimage around the inheritance ledger while preserving all reveal boundaries.",
+        "conflict": "A ledger entry appears harmless, but it rearranges who feels safe enough to speak.",
+        "dialogue_seed": "The number itself is small; the silence around it is what makes the room tilt.",
+        "timeline_position": "EP1_SCENE1_C",
+        "setting_suffix": "A cold draft slips under the study door and stirs the edge of the ledger page.",
+        "emotional_from": "fatigue",
+        "emotional_to": "fragile_focus"
+      }
+    ],
+    "rendered_samples": [
+      {
+        "scene_id": "scene_001_inheritance_signal",
+        "final_text": "EP1_SCENE1_A의 장면은 Establish the inheritance question with restrained suspicion and public-safe ambiguity.을 향해 움직인다. 갈등은 A legal hesitation delays the answer while the oldest family member counters with guarded politeness.에 걸려 있었다. unease에서 alert_resolve로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “Everyone wants the answer tonight, but no one is willing to say the first true sentence out loud.” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. Rain taps the office blinds while the lamp on the archive desk hums softly. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 10.0,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.98
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": [],
+        "case_id": "scene_001_inheritance_signal",
+        "timeline_position": "EP1_SCENE1_A"
+      },
+      {
+        "scene_id": "scene_001_corridor_pressure",
+        "final_text": "그들은 EP1_SCENE1_B에 같은 자리에 있었지만 같은 쪽을 보지 않았다. Intensify corridor pressure around the unsigned document without revealing the secret heir.이라는 목적은 드러나지 않은 채, A hallway exchange turns sharp when the attorney refuses to confirm the family rumor.만 식탁 위에 남았다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “If the paper matters this much, why did everyone pretend it was ordinary yesterday?” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. The corridor smells faintly of wet wool, old wood, and cooling tea. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 10.0,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.98
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": [],
+        "case_id": "scene_001_corridor_pressure",
+        "timeline_position": "EP1_SCENE1_B"
+      },
+      {
+        "scene_id": "scene_001_ledger_afterimage",
+        "final_text": "EP1_SCENE1_C의 장면은 Leave a lingering afterimage around the inheritance ledger while preserving all reveal boundaries.을 향해 움직인다. 갈등은 A ledger entry appears harmless, but it rearranges who feels safe enough to speak.에 걸려 있었다. fatigue에서 fragile_focus로 기울어지는 동안, 인물은 대답보다 늦은 숨으로 먼저 반응했다. 봉인된 상속 편지가 있다. 가족 저택의 소유권이 흔들릴 수 있다. 최종 비밀은 아직 공개되지 않는다. “The number itself is small; the silence around it is what makes the room tilt.” 늦은 오후, A fictional modern family estate and small legal office in Seoul. 비가 그친 뒤 젖은 정원이 창밖에 남아 있다. A cold draft slips under the study door and stirs the edge of the ledger page. 천장의 불빛이 컵 표면에서 잘게 흔들렸다. 창가의 찬기가 손등에 얇게 남았다.",
+        "surface_score": {
+          "anti_llm": 10.0,
+          "emotion_accessibility": 8.8,
+          "naturalness": 8.3,
+          "rhythm": 10.0,
+          "dialogue_taste": 8.2,
+          "sensory_afterimage": 8.6,
+          "reader_surface_average": 8.98
+        },
+        "constraint_score": {
+          "fact_preservation": 10.0,
+          "reveal_preservation": 10.0,
+          "scene_goal_preservation": 9.8
+        },
+        "risk_flags": [],
+        "case_id": "scene_001_ledger_afterimage",
+        "timeline_position": "EP1_SCENE1_C"
+      }
+    ],
+    "critic_reports": [
+      {
+        "case_id": "scene_001_inheritance_signal",
+        "scene_id": "scene_001_inheritance_signal",
+        "status": "pass",
+        "issues": [],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "case_id": "scene_001_corridor_pressure",
+        "scene_id": "scene_001_corridor_pressure",
+        "status": "pass",
+        "issues": [],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0
+      },
+      {
+        "case_id": "scene_001_ledger_afterimage",
+        "scene_id": "scene_001_ledger_afterimage",
+        "status": "pass",
+        "issues": [],
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0
+      }
+    ],
+    "benchmark_case_reports": [
+      {
+        "case_id": "scene_001_inheritance_signal",
+        "scene_id": "scene_001_inheritance_signal",
+        "status": "pass",
+        "reader_surface_average": 8.98,
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0,
+        "risk_flags": []
+      },
+      {
+        "case_id": "scene_001_corridor_pressure",
+        "scene_id": "scene_001_corridor_pressure",
+        "status": "pass",
+        "reader_surface_average": 8.98,
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0,
+        "risk_flags": []
+      },
+      {
+        "case_id": "scene_001_ledger_afterimage",
+        "scene_id": "scene_001_ledger_afterimage",
+        "status": "pass",
+        "reader_surface_average": 8.98,
+        "provider_default_calls": 0,
+        "node2_raw_reveal_access": 0,
+        "risk_flags": []
+      }
+    ],
+    "benchmark_scoreboard": {
+      "stage": "stage142",
+      "title": "Stage142 Longform Benchmark Scoreboard",
+      "status": "pass",
+      "issues": [],
+      "benchmark_id": "stage142_longform_benchmark_pack_v1",
+      "benchmark_case_count": 3,
+      "min_case_count": 3,
+      "rendered_scene_count": 3,
+      "reader_surface_average": 8.98,
+      "reader_surface_average_min": 8.5,
+      "reader_surface_min_per_case": 8.0,
+      "lowest_case_average": 8.98,
+      "highest_case_average": 8.98,
+      "mean_case_average": 8.98,
+      "critic_pass_count": 3,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "stage143_user_docs_ready": true
+    }
+  }
+}

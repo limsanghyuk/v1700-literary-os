@@ -31,7 +31,7 @@ jobs:
       - name: Verify before release
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/stage_gates/test_stage72_repo_doctor.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/stage_gates/test_stage72_repo_doctor.py -q
           python tools/run_stage134_meta_learner_audit.py
           python tools/run_stage134_release_gate.py
           python tools/run_stage135_learning_quality_gate.py
@@ -50,6 +50,10 @@ jobs:
           python tools/run_stage140_release_gate.py
           python tools/run_stage141_prose_generation_e2e.py
           python tools/run_stage141_release_gate.py
+          python tools/run_stage142_longform_benchmark_pack.py
+          python tools/run_stage142_release_gate.py
+          python tools/run_stage143_user_cli_api_docs.py
+          python tools/run_stage143_release_gate.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py
           python tools/run_ci_dependency_preflight.py
@@ -57,23 +61,25 @@ jobs:
       - name: Build release archive and checksums
         shell: bash
         run: |
-          TAG_NAME="${GITHUB_REF_NAME:-manual}"
-          SAFE_TAG="$(echo "$TAG_NAME" | tr '/:' '__')"
-          ZIP_NAME="V1700_${SAFE_TAG}_integrated_repository.zip"
+          readarray -t PACKAGE_LINES < <(python - <<'PY'
+import json
+from pathlib import Path
+package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8"))
+print(package["canonical_package"])
+print(package["sha256_sidecar"])
+PY
+)
+          ZIP_NAME="${PACKAGE_LINES[0]}"
+          SHA_NAME="${PACKAGE_LINES[1]}"
           zip -r "$ZIP_NAME" . \
             -x ".git/*" ".gitnexus/*" ".venv/*" "venv/*" \
             -x "__pycache__/*" "*.pyc" ".pytest_cache/*" \
             -x "build/*" "dist/*" "*.egg-info/*" "outputs/*"
-          sha256sum "$ZIP_NAME" > "$ZIP_NAME.sha256"
-          if [ -f SHA256SUMS.txt ]; then
-            cp SHA256SUMS.txt "SHA256SUMS_${SAFE_TAG}.txt"
-          else
-            sha256sum "$ZIP_NAME" > "SHA256SUMS_${SAFE_TAG}.txt"
-          fi
+          sha256sum "$ZIP_NAME" > "$SHA_NAME"
+          sha256sum "$ZIP_NAME" > SHA256SUMS.txt
           {
             echo "zip_name=$ZIP_NAME"
-            echo "sha_name=$ZIP_NAME.sha256"
-            echo "safe_tag=$SAFE_TAG"
+            echo "sha_name=$SHA_NAME"
           } >> "$GITHUB_ENV"
 
       - name: Publish GitHub Release
@@ -84,4 +90,4 @@ jobs:
           files: |
             ${{ env.zip_name }}
             ${{ env.sha_name }}
-            SHA256SUMS_${{ env.safe_tag }}.txt
+            SHA256SUMS.txt

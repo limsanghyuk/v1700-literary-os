@@ -1,0 +1,26 @@
+{
+  "stage": "stage143",
+  "title": "Stage143 API Minimum Contract",
+  "status": "pass",
+  "issues": [],
+  "documented_only": true,
+  "implemented_server": false,
+  "method": "POST",
+  "path": "/v1/render-prose",
+  "request_example": {
+    "prompt": "A cautious heir notices the ledger notch that everyone else pretends not to see.",
+    "response_format": "rendered_prose_ir",
+    "provider_calls_allowed": false,
+    "runtime_training_enabled": false
+  },
+  "response_shape": {
+    "scene_id": "string",
+    "final_text": "string",
+    "surface_score": "object",
+    "constraint_score": "object",
+    "risk_flags": "array"
+  },
+  "public_safe_only": true,
+  "provider_calls_allowed": false,
+  "auth_required": false
+}

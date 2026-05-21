@@ -1,12 +1,16 @@
 {
-  "stage": "stage141",
-  "benchmark_id": "stage141_prose_generation_e2e_v1",
+  "stage": "stage142",
+  "benchmark_id": "stage142_longform_benchmark_pack_v1",
   "synthetic_only": true,
   "provider_calls_allowed": false,
   "raw_manuscript_included": false,
   "min_scene_count": 1,
   "stage141_e2e_ready": true,
   "stage142_benchmark_pack_ready": true,
+  "stage142_min_case_count": 3,
+  "reader_surface_average_min": 8.5,
+  "reader_surface_min_per_case": 8.0,
+  "stage143_user_docs_ready": true,
   "expected_metrics": {
     "scene_contract_valid": true,
     "project_contract_valid": true,

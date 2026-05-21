@@ -1,5 +1,5 @@
 {
-  "active_version": "stage141",
+  "active_version": "stage143",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -22,10 +22,14 @@
     "stage140_release_integrity",
     "stage140_release_gate",
     "stage141_prose_generation_e2e",
-    "stage141_release_gate"
+    "stage141_release_gate",
+    "stage142_longform_benchmark_pack",
+    "stage142_release_gate",
+    "stage143_user_cli_api_docs",
+    "stage143_release_gate"
   ],
-  "canonical_package": "V1700_stage141_prose_generation_e2e_harness_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage141_prose_generation_e2e_harness_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage143_user_cli_api_minimum_docs_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {"status": "active", "title": "MetaLearner Audit Mode"},
   "stage135": {"status": "active", "title": "LearningQualityGate & Candidate Registry"},
   "stage136": {"status": "active", "title": "SchemaRegistry"},
@@ -47,5 +51,21 @@
     "release_gate": "release/current/stage141_release_gate_report.json",
     "evidence": "release/current/stage141_prose_generation_e2e_report.json",
     "next_stage": "stage142"
+  },
+  "stage142": {
+    "status": "active",
+    "title": "Longform Benchmark Pack",
+    "baseline_stage": "stage141",
+    "release_gate": "release/current/stage142_release_gate_report.json",
+    "evidence": "release/current/stage142_longform_benchmark_pack_report.json",
+    "next_stage": "stage143"
+  },
+  "stage143": {
+    "status": "active",
+    "title": "User CLI/API Minimum Docs",
+    "baseline_stage": "stage142",
+    "release_gate": "release/current/stage143_release_gate_report.json",
+    "evidence": "release/current/stage143_user_cli_api_docs_report.json",
+    "next_stage": "stage144"
   }
 }
