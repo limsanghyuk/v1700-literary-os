@@ -18,6 +18,33 @@
     },
     "ci_full_exists": {
       "status": "pass"
+    },
+    "ci_fast_trigger_contract": {
+      "status": "pass"
+    },
+    "ci_fast_command_contract": {
+      "status": "pass"
+    },
+    "ci_core_trigger_contract": {
+      "status": "pass"
+    },
+    "ci_core_command_contract": {
+      "status": "pass"
+    },
+    "ci_full_trigger_contract": {
+      "status": "pass"
+    },
+    "cd_dry_run_trigger_contract": {
+      "status": "pass"
+    },
+    "cd_dry_run_artifact_contract": {
+      "status": "pass"
+    },
+    "release_trigger_contract": {
+      "status": "pass"
+    },
+    "release_artifact_contract": {
+      "status": "pass"
     }
   }
 }

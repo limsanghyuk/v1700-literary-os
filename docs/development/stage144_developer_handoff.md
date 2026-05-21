@@ -27,5 +27,14 @@ Stage144 closes the Stage140-144 roadmap by implementing the split CI/runtime st
 2. Confirm metadata consistency and release asset integrity pass.
 3. Confirm `ci-fast`, `ci-core`, `ci-full`, `cd-dry-run`, and `release` all exist and mention Stage144 tooling where required.
 4. Refresh `FILELIST.txt` and `SHA256SUMS.txt`.
-5. Build the integrated release ZIP, `.sha256`, `SHA256SUMS.txt`, and refresh `FILELIST.txt`.
-6. Push the branch, open the PR, verify Actions, merge, tag, and release.
+5. Push the branch, open the PR, verify Actions, and merge only after the Stage144 gates pass.
+6. Create the Stage144 tag/release; the tagged `release` workflow builds the integrated release ZIP and `.sha256` sidecar from `package_manifest.json`.
+
+## 2026-05-21 Integrity Notes
+
+- `SHA256SUMS.txt` is excluded from `FILELIST.txt` to avoid self-referential checksum drift.
+- Release asset integrity checks the exclusion policy, checksum coverage, extra checksum entries, listed file existence, and current digest matches.
+- Generated `release/current/**/*_report.json` and `release/current/**/*_summary.json` files are still listed, but are exempt from content-digest blocking during gate execution because the gate commands rewrite them.
+- Text-file checksum entries are based on LF-normalized bytes so Windows and Linux checkouts share the same ledger.
+- Stage144 command wrappers must be runnable without setting `PYTHONPATH`.
+- Stage144 command wrappers must return non-zero if the emitted report is blocked.

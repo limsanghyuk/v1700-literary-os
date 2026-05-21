@@ -13,7 +13,7 @@
     "issues": [],
     "gitnexus": {
       "installed": true,
-      "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.CMD",
+      "command": "C:\\Users\\inyoung pharm\\AppData\\Roaming\\npm\\gitnexus.CMD",
       "optional_runtime_dependency": false,
       "fallback_available": true,
       "error": ""

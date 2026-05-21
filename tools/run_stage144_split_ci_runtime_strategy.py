@@ -1,16 +1,25 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from v1700.stage144 import run_stage144
 
 
-def main() -> None:
-    root = Path(__file__).resolve().parents[1]
-    result = run_stage144(root)
+def main() -> int:
+    result = run_stage144(ROOT)
     print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0 if result.get("status") == "pass" else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
