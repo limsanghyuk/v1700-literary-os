@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage139 - Corpus Governance Pipeline
+Current active stage: Stage140 - Release Integrity & Product Proof Gate
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -44,3 +44,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage137](stage137.md) - MigrationManager
 - [Stage138](stage138.md) - LOSDB Storage Contracts
 - [Stage139](stage139.md) - Corpus Governance Pipeline
+- [Stage140](stage140.md) - Release Integrity & Product Proof Gate

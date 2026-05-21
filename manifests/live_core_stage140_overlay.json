@@ -1,0 +1,41 @@
+{
+  "overlay_for": "manifests/live_core_manifest.json",
+  "stage": "stage140",
+  "active_version_override": "stage140",
+  "reason": "Stage140 is the active Release Integrity & Product Proof Gate baseline after Stage139 corpus governance validation.",
+  "required_active_gates": [
+    "stage134_meta_learner_audit",
+    "stage134_release_gate",
+    "stage135_learning_quality_gate",
+    "stage135_release_gate",
+    "stage136_schema_registry",
+    "stage136_release_gate",
+    "stage137_migration_manager",
+    "stage137_release_gate",
+    "stage138_losdb_storage_contracts",
+    "stage138_release_gate",
+    "stage139_corpus_governance_pipeline",
+    "stage139_release_gate",
+    "stage140_release_integrity",
+    "stage140_release_gate"
+  ],
+  "stage140_invariants": {
+    "release_integrity_gate_only": true,
+    "product_proof_skeleton_only": true,
+    "stage141_product_e2e_ready": true,
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "migration_execution_enabled": false,
+    "losdb_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "official_reports": {
+    "release_integrity": "release/current/stage140_release_integrity_report.json",
+    "release_gate": "release/current/stage140_release_gate_report.json",
+    "asset_manifest": "release/current/stage140_release_asset_manifest.json"
+  },
+  "next_stage": "stage141"
+}

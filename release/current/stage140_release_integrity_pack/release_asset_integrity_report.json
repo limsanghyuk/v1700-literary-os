@@ -1,0 +1,69 @@
+{
+  "stage": "stage140",
+  "title": "Stage140 Release Asset Integrity",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "asset_manifest_present",
+      "status": "pass",
+      "expected": "exists",
+      "actual": "exists",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "asset_manifest_stage",
+      "status": "pass",
+      "expected": "stage140",
+      "actual": "stage140",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "canonical_package_name",
+      "status": "pass",
+      "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+      "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "sha256_sidecar_name",
+      "status": "pass",
+      "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+      "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "package_manifest_canonical_matches",
+      "status": "pass",
+      "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+      "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+    },
+    {
+      "name": "package_manifest_sidecar_matches",
+      "status": "pass",
+      "expected": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+      "actual": "V1700_stage140_release_integrity_product_proof_gate_release_integrated_repository_with_artifacts.zip.sha256",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/package_manifest.json"
+    },
+    {
+      "name": "filelist_declared",
+      "status": "pass",
+      "expected": "filelist declared",
+      "actual": "FILELIST.txt",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    },
+    {
+      "name": "release_sidecar_authoritative",
+      "status": "pass",
+      "expected": "release sidecar file is authoritative",
+      "actual": "release sidecar file is authoritative",
+      "path": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/release/current/stage140_release_asset_manifest.json"
+    }
+  ],
+  "issues": [],
+  "counters": {
+    "check_count": 8,
+    "pass_count": 8,
+    "blocked_count": 0
+  }
+}

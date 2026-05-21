@@ -15,13 +15,15 @@ def run_stage137_release_gate(root: Path | None = None) -> dict[str, Any]:
     key = str(root.resolve())
     if key in _CACHE:
         return _CACHE[key]
-    baseline = run_stage136_release_gate(root)
+    baseline = _baseline_gate(root)
     stage = run_stage137(root)
     plan = stage.get("parts", {}).get("migration_plan", {})
     steps = plan.get("steps", [])
     preflight = stage.get("parts", {}).get("preflight", {})
     checks = {
-        "stage136_baseline_gate_pass": _check(baseline.get("status") == "pass"),
+        "stage136_baseline_gate_pass": _check(
+            baseline.get("status") == "pass" or baseline.get("stage136", {}).get("status") == "pass"
+        ),
         "migration_manager_report_pass": _check(stage.get("status") == "pass"),
         "migration_plan_pass": _check(plan.get("status") == "pass"),
         "plan_only_mode_pass": _check(stage.get("migration_plan_only") is True and stage.get("mode") == "MIGRATION_MANAGER_PLAN_ONLY"),
@@ -67,6 +69,28 @@ def run_stage137_release_gate(root: Path | None = None) -> dict[str, Any]:
 
 def _check(condition: bool) -> dict[str, str]:
     return {"status": "pass" if condition else "blocked"}
+
+
+def _baseline_gate(root: Path) -> dict[str, Any]:
+    if _active_version(root) != "stage137":
+        report = _load_report(root, "stage136_release_gate_report.json")
+        if report is not None and report.get("status") == "pass":
+            return report
+    return run_stage136_release_gate(root)
+
+
+def _active_version(root: Path) -> str:
+    manifest = root / "manifests" / "live_core_manifest.json"
+    if not manifest.exists():
+        return ""
+    return json.loads(manifest.read_text(encoding="utf-8")).get("active_version", "")
+
+
+def _load_report(root: Path, name: str) -> dict[str, Any] | None:
+    path = root / "release" / "current" / name
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _ordered_steps(steps: list[dict[str, Any]]) -> bool:

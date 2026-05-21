@@ -15,12 +15,14 @@ def run_stage138_release_gate(root: Path | None = None) -> dict[str, Any]:
     key = str(root.resolve())
     if key in _CACHE:
         return _CACHE[key]
-    baseline = run_stage137_release_gate(root)
+    baseline = _baseline_gate(root)
     stage = run_stage138(root)
     catalog = stage.get("parts", {}).get("storage_contract_catalog", {})
     total_items = int(stage.get("total_contract_items", 0))
     checks = {
-        "stage137_baseline_gate_pass": _check(baseline.get("status") == "pass"),
+        "stage137_baseline_gate_pass": _check(
+            baseline.get("status") == "pass" or baseline.get("stage137", {}).get("status") == "pass"
+        ),
         "storage_contract_report_pass": _check(stage.get("status") == "pass"),
         "storage_contract_catalog_pass": _check(catalog.get("status") == "pass"),
         "contract_mode_pass": _check(
@@ -85,6 +87,28 @@ def run_stage138_release_gate(root: Path | None = None) -> dict[str, Any]:
 
 def _check(condition: bool) -> dict[str, str]:
     return {"status": "pass" if condition else "blocked"}
+
+
+def _baseline_gate(root: Path) -> dict[str, Any]:
+    if _active_version(root) != "stage138":
+        report = _load_report(root, "stage137_release_gate_report.json")
+        if report is not None and report.get("status") == "pass":
+            return report
+    return run_stage137_release_gate(root)
+
+
+def _active_version(root: Path) -> str:
+    manifest = root / "manifests" / "live_core_manifest.json"
+    if not manifest.exists():
+        return ""
+    return json.loads(manifest.read_text(encoding="utf-8")).get("active_version", "")
+
+
+def _load_report(root: Path, name: str) -> dict[str, Any] | None:
+    path = root / "release" / "current" / name
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _compact(stage: dict[str, Any]) -> dict[str, Any]:

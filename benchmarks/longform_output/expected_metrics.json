@@ -1,0 +1,15 @@
+{
+  "stage": "stage140",
+  "benchmark_id": "longform_output_skeleton_v1",
+  "synthetic_only": true,
+  "provider_calls_allowed": false,
+  "raw_manuscript_included": false,
+  "min_scene_count": 1,
+  "stage141_e2e_ready": true,
+  "expected_metrics": {
+    "scene_contract_valid": true,
+    "project_contract_valid": true,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

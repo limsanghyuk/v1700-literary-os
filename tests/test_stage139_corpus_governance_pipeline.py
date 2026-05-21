@@ -58,9 +58,8 @@ def test_stage139_preflight_and_release_gate_pass() -> None:
     assert gate["checks"]["stage140_release_ready_pass"]["status"] == "pass"
 
 
-def test_stage139_is_the_active_release_baseline() -> None:
+def test_stage139_release_evidence_remains_available() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert '"active_version": "stage139"' in manifest
     assert '"stage139_corpus_governance_pipeline"' in manifest
     assert '"stage139_release_gate"' in manifest
 

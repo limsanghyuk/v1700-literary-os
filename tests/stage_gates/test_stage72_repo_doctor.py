@@ -2,12 +2,13 @@ import json
 from pathlib import Path
 
 STAGE101_AND_PRIOR = {"stage83.1", "stage84", "stage85", "stage86", "stage87", "stage88", "stage89", "stage90", "stage91", "stage92", "stage93", "stage94", "stage95", "stage96", "stage97", "stage97.1", "stage97.2", "stage98", "stage99", "stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage107_5", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139"}
+KNOWN_ACTIVE_STAGES = STAGE101_AND_PRIOR | {"stage140"}
 
 
 def test_stage72_manifests_exist_and_point_to_live_core():
     root = Path(__file__).resolve().parents[2]
     manifest = json.loads((root / "manifests/live_core_manifest.json").read_text(encoding="utf-8"))
-    assert manifest["active_version"] in {"stage72", "stage72.1", "stage72.2", "stage72.3", "stage73", "stage73.1", "stage74", "stage75", "stage76", "stage77", "stage78", "stage79", "stage80", "stage81", "stage81.1", "stage82", "stage83", *STAGE101_AND_PRIOR}
+    assert manifest["active_version"] in {"stage72", "stage72.1", "stage72.2", "stage72.3", "stage73", "stage73.1", "stage74", "stage75", "stage76", "stage77", "stage78", "stage79", "stage80", "stage81", "stage81.1", "stage82", "stage83", *KNOWN_ACTIVE_STAGES}
     assert (root / manifest["runtime_entrypoint"]).exists()
     if manifest["active_version"] == "stage72.1":
         assert "graph_nexus_release_gate" in manifest["active_gates"]
@@ -313,3 +314,15 @@ def test_stage139_release_gate_registered_when_active():
         assert "stage138_release_gate" in gates
         assert "stage139_corpus_governance_pipeline" in gates
         assert "stage139_release_gate" in gates
+
+
+def test_stage140_release_gate_registered_when_active():
+    import json
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[2]
+    manifest = json.loads((root / "manifests/live_core_manifest.json").read_text(encoding="utf-8"))
+    if manifest["active_version"] == "stage140":
+        gates = manifest.get("active_gates", [])
+        assert "stage139_release_gate" in gates
+        assert "stage140_release_integrity" in gates
+        assert "stage140_release_gate" in gates
