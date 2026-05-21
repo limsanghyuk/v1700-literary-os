@@ -61,14 +61,7 @@ jobs:
       - name: Build release archive and checksums
         shell: bash
         run: |
-          readarray -t PACKAGE_LINES < <(python - <<'PY'
-import json
-from pathlib import Path
-package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8"))
-print(package["canonical_package"])
-print(package["sha256_sidecar"])
-PY
-)
+          readarray -t PACKAGE_LINES < <(python -c 'import json; from pathlib import Path; package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8")); print(package["canonical_package"]); print(package["sha256_sidecar"])')
           ZIP_NAME="${PACKAGE_LINES[0]}"
           SHA_NAME="${PACKAGE_LINES[1]}"
           zip -r "$ZIP_NAME" . \

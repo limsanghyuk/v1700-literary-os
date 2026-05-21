@@ -57,14 +57,7 @@ jobs:
       - name: Build dry-run archive
         shell: bash
         run: |
-          ZIP_NAME="$(python - <<'PY'
-import json
-from pathlib import Path
-package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8"))
-canonical = package["canonical_package"]
-print(canonical[:-4] + "_cd_dry_run.zip" if canonical.endswith(".zip") else canonical + "_cd_dry_run.zip")
-PY
-)"
+          ZIP_NAME="$(python -c 'import json; from pathlib import Path; package = json.loads(Path("package_manifest.json").read_text(encoding="utf-8")); canonical = package["canonical_package"]; print(canonical[:-4] + "_cd_dry_run.zip" if canonical.endswith(".zip") else canonical + "_cd_dry_run.zip")')"
           zip -r "$ZIP_NAME" . \
             -x ".git/*" ".gitnexus/*" ".venv/*" "venv/*" \
             -x "__pycache__/*" "*.pyc" ".pytest_cache/*" \
