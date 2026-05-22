@@ -1,0 +1,51 @@
+{
+  "stage": "stage145",
+  "title": "Stage145 Constitution Invariants",
+  "status": "pass",
+  "issues": [],
+  "all_enforced": true,
+  "entries": [
+    {
+      "name": "provider_zero",
+      "description": "Default runtime and release gates must not trigger provider calls.",
+      "enforced": true,
+      "enforcement": "release gate + runtime smoke"
+    },
+    {
+      "name": "no_runtime_training",
+      "description": "Runtime training execution stays disabled in Page01.",
+      "enforced": true,
+      "enforcement": "stage145 report + release gate"
+    },
+    {
+      "name": "no_model_weight_update",
+      "description": "Model weight updates remain disabled.",
+      "enforced": true,
+      "enforcement": "stage145 report + release gate"
+    },
+    {
+      "name": "no_auto_memory_write",
+      "description": "Narrative state and memory writes require later human-approved gates.",
+      "enforced": true,
+      "enforcement": "body constitution policy"
+    },
+    {
+      "name": "no_auto_repair_apply",
+      "description": "Repair stays proposal-only until approval policy exists.",
+      "enforced": true,
+      "enforcement": "stage145 proposal + later critic gate"
+    },
+    {
+      "name": "node2_surface_only",
+      "description": "Node2 may see only reader-surface packets and not hidden reveals or private memory.",
+      "enforced": true,
+      "enforcement": "Stage148 boundary contract"
+    },
+    {
+      "name": "human_approval_required",
+      "description": "Canon mutation, memory write, learning promotion, and release publish require explicit approval contracts.",
+      "enforced": true,
+      "enforcement": "Page01 constitution"
+    }
+  ]
+}

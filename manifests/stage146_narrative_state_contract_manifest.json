@@ -1,0 +1,24 @@
+{
+  "stage": "stage146",
+  "title": "Narrative State Contract",
+  "pack": "release/current/stage146_narrative_state_contract_pack/",
+  "documents": [
+    "docs/stages/stage146.md",
+    "docs/proposals/stage146_narrative_state_contract_proposal.md",
+    "docs/architecture/stage146_narrative_state_contract_blueprint.md",
+    "docs/development/stage146_developer_handoff.md"
+  ],
+  "pack_files": [
+    "release/current/stage146_narrative_state_contract_pack/state_shape_catalog.json",
+    "release/current/stage146_narrative_state_contract_pack/state_hierarchy.json",
+    "release/current/stage146_narrative_state_contract_pack/continuity_rulebook.json",
+    "release/current/stage146_narrative_state_contract_pack/reveal_boundary_matrix.json",
+    "release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json"
+  ],
+  "reports": [
+    "release/current/stage146_narrative_state_contract_report.json",
+    "release/current/stage146_release_gate_report.json",
+    "release/current/stage146_release_asset_manifest.json"
+  ],
+  "next_stage": "stage147"
+}

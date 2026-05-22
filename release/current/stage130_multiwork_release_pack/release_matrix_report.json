@@ -1,12 +1,14 @@
 {
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage129_cim_governor_not_pass"
+  ],
   "matrix": {
     "stage": "130",
     "baseline_stage": "129",
     "stage127_preflight_pass": true,
     "stage128_read_only_absorption_pass": true,
-    "stage129_cim_governor_pass": true,
+    "stage129_cim_governor_pass": false,
     "direct_v571_merge_detected": false,
     "cross_project_write_allowed": false,
     "unauthorized_cross_reads": 0,
@@ -37,7 +39,7 @@
     {
       "stage": "stage129",
       "title": "MultiWorkCIM + Cross-Work Canon Governor",
-      "status": "pass",
+      "status": "blocked",
       "report_path": "release/current/stage129_multiwork_cim_governor_report.json",
       "release_gate_path": "release/current/stage129_release_gate_report.json",
       "required_for_release": true

@@ -1,0 +1,26 @@
+{
+  "stage": "145",
+  "baseline_stage": "144",
+  "title": "Body Constitution",
+  "status": "pass",
+  "main_report": "release/current/stage145_body_constitution_report.json",
+  "release_gate_report": "release/current/stage145_release_gate_report.json",
+  "asset_manifest": "release/current/stage145_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage145_body_constitution_pack/",
+  "mode": "BODY_CONSTITUTION_PROPOSAL_LOCAL",
+  "body_constitution_only": true,
+  "formula_policy": "TRUNK_ABSORBED_REFERENCE_DEFERRED",
+  "formula_policy_complete": true,
+  "body_layer_count": 7,
+  "stage150_memory_body_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage146 Narrative State Contract",
+    "Stage147 Project Manifest Body",
+    "Stage148 Node Boundary Constitution",
+    "Stage149 Body Constitution Release Gate"
+  ]
+}

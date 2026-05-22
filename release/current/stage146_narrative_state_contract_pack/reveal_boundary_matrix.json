@@ -1,0 +1,58 @@
+{
+  "stage": "stage146",
+  "title": "Stage146 Reveal Boundary Matrix",
+  "status": "pass",
+  "issues": [],
+  "coverage_complete": true,
+  "entries": [
+    {
+      "state_name": "SeriesState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_summary_only",
+      "node3_access": "critic_summary_only",
+      "rationale": "Series metadata can be summarized but not fully exposed to Node2."
+    },
+    {
+      "state_name": "EpisodeState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_summary_only",
+      "node3_access": "critic_summary_only",
+      "rationale": "Episode planning remains authoritative outside reader-facing prose."
+    },
+    {
+      "state_name": "SceneState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_safe_scene_packet",
+      "node3_access": "critic_surface_plus_flags",
+      "rationale": "Scene state is rendered through Node2-safe packets only."
+    },
+    {
+      "state_name": "CharacterState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_traits_only",
+      "node3_access": "critic_relationship_summary",
+      "rationale": "Private goals and hidden beliefs stay out of Node2."
+    },
+    {
+      "state_name": "WorldState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_world_facts_only",
+      "node3_access": "critic_world_consistency_summary",
+      "rationale": "World internals are summarized for reader output."
+    },
+    {
+      "state_name": "RevealState",
+      "node1_access": "full_contract",
+      "node2_access": "node2_raw_reveal_access_zero",
+      "node3_access": "critic_reveal_guard_summary",
+      "rationale": "Reveal state is never handed raw to Node2."
+    },
+    {
+      "state_name": "ContinuityState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_continuity_summary",
+      "node3_access": "critic_continuity_packet",
+      "rationale": "Continuity risks remain review artifacts, not Node2 input."
+    }
+  ]
+}

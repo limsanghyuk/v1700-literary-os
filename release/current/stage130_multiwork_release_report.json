@@ -2,14 +2,17 @@
   "stage": "130",
   "baseline_stage": "129",
   "title": "MultiWork Release",
-  "status": "pass",
-  "issues": [],
-  "multiwork_release_authorized": true,
+  "status": "blocked",
+  "issues": [
+    "release_matrix_blocked",
+    "release_seal_blocked"
+  ],
+  "multiwork_release_authorized": false,
   "multiwork_release_mode": "MULTIWORK_RELEASE_READ_ONLY_AUTHORITY",
   "stage127_to_stage129_evidence_preserved": true,
   "stage127_preflight_pass": true,
   "stage128_read_only_absorption_pass": true,
-  "stage129_cim_governor_pass": true,
+  "stage129_cim_governor_pass": false,
   "direct_v571_merge_detected": false,
   "cross_project_write_allowed": false,
   "unauthorized_cross_reads": 0,
@@ -29,14 +32,16 @@
   "gate26_hard_block_enabled": false,
   "parts": {
     "release_matrix": {
-      "status": "pass",
-      "issues": [],
+      "status": "blocked",
+      "issues": [
+        "stage129_cim_governor_not_pass"
+      ],
       "matrix": {
         "stage": "130",
         "baseline_stage": "129",
         "stage127_preflight_pass": true,
         "stage128_read_only_absorption_pass": true,
-        "stage129_cim_governor_pass": true,
+        "stage129_cim_governor_pass": false,
         "direct_v571_merge_detected": false,
         "cross_project_write_allowed": false,
         "unauthorized_cross_reads": 0,
@@ -67,7 +72,7 @@
         {
           "stage": "stage129",
           "title": "MultiWorkCIM + Cross-Work Canon Governor",
-          "status": "pass",
+          "status": "blocked",
           "report_path": "release/current/stage129_multiwork_cim_governor_report.json",
           "release_gate_path": "release/current/stage129_release_gate_report.json",
           "required_for_release": true
@@ -177,15 +182,17 @@
       }
     },
     "release_seal": {
-      "status": "pass",
-      "issues": [],
+      "status": "blocked",
+      "issues": [
+        "release_matrix_blocked"
+      ],
       "seal": {
-        "status": "pass",
+        "status": "blocked",
         "stage": "130",
         "baseline_stage": "129",
         "release_authority": "Stage130 MultiWork Release Gate",
         "stage127_to_stage129_evidence_preserved": true,
-        "multiwork_release_authorized": true,
+        "multiwork_release_authorized": false,
         "stage131_gig_advisory_deferred": true,
         "provider_zero_preserved": true,
         "node2_boundary_preserved": true,

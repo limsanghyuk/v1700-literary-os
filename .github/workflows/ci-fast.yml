@@ -32,7 +32,7 @@ jobs:
         run: python -m compileall -q src tools
 
       - name: Run fast current-stage pytest
-        run: python -m pytest tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py -q
+        run: python -m pytest tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py -q
 
       - name: Run mandatory predevelopment check
         run: python tools/run_mandatory_predevelopment_check.py
@@ -47,3 +47,15 @@ jobs:
 
       - name: Run Stage144 release gate
         run: python tools/run_stage144_release_gate.py
+
+      - name: Run Stage145 body constitution
+        run: python tools/run_stage145_body_constitution.py
+
+      - name: Run Stage145 release gate
+        run: python tools/run_stage145_body_constitution_gate.py
+
+      - name: Run Stage146 narrative state contract
+        run: python tools/run_stage146_narrative_state_contract.py
+
+      - name: Run Stage146 release gate
+        run: python tools/run_stage146_release_gate.py

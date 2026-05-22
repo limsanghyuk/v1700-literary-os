@@ -1,0 +1,51 @@
+{
+  "stage": "stage146",
+  "title": "Stage146 State Hierarchy",
+  "status": "pass",
+  "issues": [],
+  "edge_count": 7,
+  "edges": [
+    {
+      "parent": "SeriesState",
+      "child": "EpisodeState",
+      "cardinality": "1:n",
+      "authority": "series defines canonical episode order"
+    },
+    {
+      "parent": "EpisodeState",
+      "child": "SceneState",
+      "cardinality": "1:n",
+      "authority": "episode defines canonical scene order"
+    },
+    {
+      "parent": "SeriesState",
+      "child": "CharacterState",
+      "cardinality": "1:n",
+      "authority": "series roster owns character identity"
+    },
+    {
+      "parent": "SeriesState",
+      "child": "WorldState",
+      "cardinality": "1:1",
+      "authority": "series sets world authority"
+    },
+    {
+      "parent": "SceneState",
+      "child": "RevealState",
+      "cardinality": "1:n",
+      "authority": "scene reveal slots must remain explicitly scoped"
+    },
+    {
+      "parent": "EpisodeState",
+      "child": "ContinuityState",
+      "cardinality": "1:1",
+      "authority": "episode continuity packet records promises and risks"
+    },
+    {
+      "parent": "CharacterState",
+      "child": "RevealState",
+      "cardinality": "n:n",
+      "authority": "knowledge holders are constrained by reveal packets"
+    }
+  ]
+}

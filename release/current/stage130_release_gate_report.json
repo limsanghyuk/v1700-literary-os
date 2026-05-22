@@ -2,26 +2,32 @@
   "stage": "130",
   "baseline_stage": "129",
   "title": "MultiWork Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage129_baseline_gate_pass",
+    "release_matrix_pass",
+    "release_seal_pass",
+    "multiwork_release_authorized",
+    "stage129_cim_governor_pass"
+  ],
   "checks": {
     "stage129_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "release_matrix_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "operational_surface_pass": {
       "status": "pass"
     },
     "release_seal_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "stage127_to_stage129_evidence_preserved": {
       "status": "pass"
     },
     "multiwork_release_authorized": {
-      "status": "pass"
+      "status": "blocked"
     },
     "stage127_preflight_pass": {
       "status": "pass"
@@ -30,7 +36,7 @@
       "status": "pass"
     },
     "stage129_cim_governor_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "direct_v571_merge_blocked": {
       "status": "pass"
@@ -85,16 +91,19 @@
     }
   },
   "stage130": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "130",
     "baseline_stage": "129",
     "title": "MultiWork Release",
-    "issues": [],
-    "multiwork_release_authorized": true,
+    "issues": [
+      "release_matrix_blocked",
+      "release_seal_blocked"
+    ],
+    "multiwork_release_authorized": false,
     "stage127_to_stage129_evidence_preserved": true,
     "stage127_preflight_pass": true,
     "stage128_read_only_absorption_pass": true,
-    "stage129_cim_governor_pass": true,
+    "stage129_cim_governor_pass": false,
     "direct_v571_merge_detected": false,
     "cross_project_write_allowed": false,
     "unauthorized_cross_reads": 0,
@@ -126,5 +135,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

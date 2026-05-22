@@ -2,11 +2,13 @@
   "stage": "132",
   "baseline_stage": "131",
   "title": "Contradiction Classifier + Mystery Exemption Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage131_baseline_gate_pass"
+  ],
   "checks": {
     "stage131_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "classifier_matrix_pass": {
       "status": "pass"
@@ -97,5 +99,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

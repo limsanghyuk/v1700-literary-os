@@ -2,7 +2,7 @@
   "stage": "129",
   "baseline_stage": "128",
   "title": "MultiWorkCIM + Cross-Work Canon Governor",
-  "status": "pass",
+  "status": "blocked",
   "main_report": "release/current/stage129_multiwork_cim_governor_report.json",
   "release_gate_report": "release/current/stage129_release_gate_report.json",
   "evidence_pack": "release/current/stage129_multiwork_cim_governor_pack/",
@@ -14,7 +14,7 @@
   "provider_default_calls": 0,
   "live_provider_call_count_in_release_gate": 0,
   "node2_raw_reveal_access": 0,
-  "branchpoint_lineage_preserved": true,
+  "branchpoint_lineage_preserved": false,
   "next_development_order": [
     "Stage130 MultiWork Release",
     "Stage131 GIG / Gate26 Advisory Absorption",

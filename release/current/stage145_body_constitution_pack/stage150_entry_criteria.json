@@ -1,0 +1,39 @@
+{
+  "stage": "stage145",
+  "title": "Stage145 Stage150 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "stage150_memory_body_ready": true,
+  "entries": [
+    {
+      "name": "stage145_constitution_report_pass",
+      "description": "Body constitution report is reproducible and provider-zero.",
+      "required": true,
+      "source_stage": "stage145"
+    },
+    {
+      "name": "stage146_state_contract_pass",
+      "description": "Narrative state contract defines canonical state objects.",
+      "required": true,
+      "source_stage": "stage146"
+    },
+    {
+      "name": "stage147_project_manifest_pass",
+      "description": "Project manifests load, validate, and preserve policy boundaries.",
+      "required": true,
+      "source_stage": "stage147"
+    },
+    {
+      "name": "stage148_node_boundary_pass",
+      "description": "Node1/Node2/Node3 authority boundaries are enforced.",
+      "required": true,
+      "source_stage": "stage148"
+    },
+    {
+      "name": "stage149_release_gate_pass",
+      "description": "Body constitution release gate blocks Stage150 until Page01 evidence passes.",
+      "required": true,
+      "source_stage": "stage149"
+    }
+  ]
+}

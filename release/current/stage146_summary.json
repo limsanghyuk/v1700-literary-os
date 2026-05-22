@@ -1,0 +1,27 @@
+{
+  "stage": "146",
+  "baseline_stage": "145",
+  "title": "Narrative State Contract",
+  "status": "pass",
+  "main_report": "release/current/stage146_narrative_state_contract_report.json",
+  "release_gate_report": "release/current/stage146_release_gate_report.json",
+  "asset_manifest": "release/current/stage146_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage146_narrative_state_contract_pack/",
+  "mode": "NARRATIVE_STATE_CONTRACT_LOCAL",
+  "narrative_state_contract_only": true,
+  "canonical_state_object_count": 7,
+  "hierarchy_edge_count": 7,
+  "continuity_rule_count": 6,
+  "reveal_boundary_complete": true,
+  "project_manifest_body_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage147 Project Manifest Body",
+    "Stage148 Node Boundary Constitution",
+    "Stage149 Body Constitution Release Gate",
+    "Stage150 Memory Body"
+  ]
+}

@@ -1,13 +1,15 @@
 {
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "release_matrix_blocked"
+  ],
   "seal": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "130",
     "baseline_stage": "129",
     "release_authority": "Stage130 MultiWork Release Gate",
     "stage127_to_stage129_evidence_preserved": true,
-    "multiwork_release_authorized": true,
+    "multiwork_release_authorized": false,
     "stage131_gig_advisory_deferred": true,
     "provider_zero_preserved": true,
     "node2_boundary_preserved": true,

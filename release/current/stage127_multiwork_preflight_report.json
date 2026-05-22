@@ -49,6 +49,19 @@
           ]
         },
         {
+          "path": "docs/architecture/stage131_blueprint.md",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "docs/generated/wiki/stage_lineage_wiki.md",
+          "terms": [
+            "MultiWork",
+            "MultiWorkCIM"
+          ]
+        },
+        {
           "path": "docs/proposals/stage129_proposal.md",
           "terms": [
             "MultiWork",
@@ -59,6 +72,18 @@
           "path": "docs/proposals/stage130_proposal.md",
           "terms": [
             "MultiWork"
+          ]
+        },
+        {
+          "path": "docs/proposals/stage131_proposal.md",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "docs/sessions/2026-05-19_home_session_summary.md",
+          "terms": [
+            "V571"
           ]
         },
         {
@@ -102,16 +127,7 @@
           "path": "docs/stages/STAGE_INDEX.md",
           "terms": [
             "MultiWork",
-            "MultiWorkCIM",
-            "shared character"
-          ]
-        },
-        {
-          "path": "manifests/live_core_manifest.json",
-          "terms": [
-            "MultiWork",
-            "MultiWorkCIM",
-            "V571"
+            "MultiWorkCIM"
           ]
         },
         {
@@ -179,6 +195,12 @@
           "terms": [
             "MultiWork",
             "V571"
+          ]
+        },
+        {
+          "path": "manifests/stage131_branchpoint_trace_manifest.json",
+          "terms": [
+            "MultiWork"
           ]
         },
         {
@@ -298,6 +320,25 @@
           ]
         },
         {
+          "path": "release/current/stage131_gig_advisory_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage132_contradiction_classifier_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage145_body_constitution_report.json",
+          "terms": [
+            "MultiWork",
+            "shared world"
+          ]
+        },
+        {
           "path": "release/current/stage127_multiwork_preflight_pack/absorption_plan.json",
           "terms": [
             "MultiWork",
@@ -395,13 +436,32 @@
           ]
         },
         {
+          "path": "release/current/stage131_gig_advisory_pack/gitnexus_preflight_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage132_contradiction_classifier_pack/gitnexus_preflight_report.json",
+          "terms": [
+            "MultiWork"
+          ]
+        },
+        {
+          "path": "release/current/stage145_body_constitution_pack/formula_classification.json",
+          "terms": [
+            "MultiWork",
+            "shared world"
+          ]
+        },
+        {
           "path": "release/current/stage99_gitnexus_pack/impact_nodes.json",
           "terms": [
             "MultiWork"
           ]
         }
       ],
-      "candidate_reference_count": 49,
+      "candidate_reference_count": 59,
       "direct_v571_merge_detected": false,
       "direct_merge_paths_present": [],
       "scan_terms": [
@@ -715,7 +775,7 @@
     "python_fallback": {
       "status": "PASS",
       "python_fallback_used": true,
-      "import_edges_total": 2815,
+      "import_edges_total": 3335,
       "import_edges_sample": [
         {
           "from": "v1700.cli",
@@ -731,15 +791,15 @@
         },
         {
           "from": "v1700.cli",
+          "to": "v1700.ir.style_profile"
+        },
+        {
+          "from": "v1700.cli",
           "to": "v1700.nodes.node1_architect"
         },
         {
           "from": "v1700.cli",
           "to": "v1700.nodes.node2_prose_renderer"
-        },
-        {
-          "from": "v1700.cli",
-          "to": "v1700.ir.style_profile"
         },
         {
           "from": "v1700.semantic_cache",

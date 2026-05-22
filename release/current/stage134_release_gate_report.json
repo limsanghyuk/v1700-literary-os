@@ -2,11 +2,13 @@
   "stage": "134",
   "baseline_stage": "133",
   "title": "MetaLearner Audit Mode Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage133_baseline_gate_pass"
+  ],
   "checks": {
     "stage133_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "audit_report_pass": {
       "status": "pass"
@@ -100,5 +102,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

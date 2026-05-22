@@ -2,8 +2,10 @@
   "stage": "129",
   "baseline_stage": "128",
   "title": "MultiWorkCIM + Cross-Work Canon Governor",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "gitnexus_preflight_blocked"
+  ],
   "project_local_cim_preserved": true,
   "multiwork_cim_formula": "MultiWorkCIM = CIM_project_local + CrossProjectInfluenceEdges(read_only)",
   "project_local_cim_count": 3,
@@ -24,7 +26,7 @@
   "live_provider_call_count_in_release_gate": 0,
   "node2_raw_reveal_access": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true,
+  "branchpoint_lineage_preserved": false,
   "python_fallback_used": false,
   "stage130_multiwork_release_required": true,
   "parts": {
@@ -221,7 +223,7 @@
       "issues": []
     },
     "gitnexus_preflight": {
-      "status": "PASS",
+      "status": "BLOCK",
       "gitnexus_available": true,
       "python_fallback_used": false,
       "python_fallback": {
@@ -242,8 +244,8 @@
         "provider_zero": true,
         "node2_boundary": true,
         "raw_manuscript_leakage_zero": true,
-        "stage128_read_only_absorption_survives": true,
-        "stage129_release_gate_integrated": true
+        "stage128_read_only_absorption_survives": false,
+        "stage129_release_gate_integrated": false
       },
       "concept_impact": {
         "provider_zero": "preserved",
@@ -264,7 +266,9 @@
           "branchpoint_survival"
         ]
       },
-      "issues": []
+      "issues": [
+        "branchpoint_survival_failed"
+      ]
     }
   }
 }

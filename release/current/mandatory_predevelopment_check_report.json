@@ -6,9 +6,9 @@
   "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
   "gitnexus": {
     "installed": true,
-    "status": "fallback_required",
+    "status": "pass",
     "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
-    "output_excerpt": "Repository not indexed.\nRun: gitnexus analyze\n",
+    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage136\nIndexed: 2026. 5. 22. PM 12:22:31\nIndexed commit: c2ed7a1\nCurrent commit: c2ed7a1\nStatus: ✅ up-to-date\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {

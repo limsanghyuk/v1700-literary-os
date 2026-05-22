@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.44.0"
-description = "V1700 Stage144 - Split CI Runtime Strategy"
+version = "1.46.0"
+description = "V1700 Stage146 - Narrative State Contract"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

@@ -2,8 +2,10 @@
   "stage": "129",
   "baseline_stage": "128",
   "title": "MultiWorkCIM + Cross-Work Canon Governor Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "branchpoint_survival_pass"
+  ],
   "checks": {
     "stage128_baseline_gate_pass": {
       "status": "pass"
@@ -57,7 +59,7 @@
       "status": "pass"
     },
     "branchpoint_survival_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "stage130_multiwork_release_deferred": {
       "status": "pass"
@@ -76,11 +78,13 @@
     }
   },
   "stage129": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "129",
     "baseline_stage": "128",
     "title": "MultiWorkCIM + Cross-Work Canon Governor",
-    "issues": [],
+    "issues": [
+      "gitnexus_preflight_blocked"
+    ],
     "project_local_cim_preserved": true,
     "cross_project_read_only_edges": 2,
     "cross_project_write_edges": 1,
@@ -96,7 +100,7 @@
     "live_provider_call_count_in_release_gate": 0,
     "node2_raw_reveal_access": 0,
     "credential_leakage": 0,
-    "branchpoint_lineage_preserved": true,
+    "branchpoint_lineage_preserved": false,
     "python_fallback_used": false,
     "stage130_multiwork_release_required": true
   },
@@ -114,5 +118,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

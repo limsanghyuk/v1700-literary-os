@@ -1,0 +1,10 @@
+{
+  "stage": "stage145",
+  "title": "Body Constitution",
+  "baseline_stage": "stage144",
+  "status": "implemented",
+  "mode": "BODY_CONSTITUTION_PROPOSAL_LOCAL",
+  "release_gate": "release/current/stage145_release_gate_report.json",
+  "evidence": "release/current/stage145_body_constitution_report.json",
+  "next_stage": "stage146"
+}

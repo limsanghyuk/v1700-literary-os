@@ -189,8 +189,8 @@
     "gitnexus_preflight": {
       "status": "PASS",
       "gitnexus_cli_available": true,
-      "native_gitnexus_index_present": false,
-      "python_fallback_used": true,
+      "native_gitnexus_index_present": true,
+      "python_fallback_used": false,
       "shape_check": {
         "status": "pass",
         "schema": "stage132_gitnexus_preflight_v1"

@@ -1,0 +1,16 @@
+{
+  "stage": "stage146",
+  "title": "Stage146 Stage147+ Entry Signals",
+  "status": "pass",
+  "issues": [],
+  "project_manifest_body_ready": true,
+  "node_boundary_constitution_ready": true,
+  "stage149_gate_ready": true,
+  "stage150_memory_body_ready": true,
+  "signals": [
+    "SeriesState, EpisodeState, and SceneState contracts are canonical.",
+    "CharacterState and WorldState expose stable manifest-facing fields.",
+    "RevealState and ContinuityState preserve provider-zero and Node2 boundaries.",
+    "Stage147 may bind project manifests to these contracts without enabling writes."
+  ]
+}
