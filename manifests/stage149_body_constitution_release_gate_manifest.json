@@ -1,0 +1,24 @@
+{
+  "stage": "stage149",
+  "title": "Body Constitution Release Gate",
+  "pack": "release/current/stage149_body_constitution_release_gate_pack/",
+  "documents": [
+    "docs/stages/stage149.md",
+    "docs/proposals/stage149_body_constitution_release_gate_proposal.md",
+    "docs/architecture/stage149_body_constitution_release_gate_blueprint.md",
+    "docs/development/stage149_developer_handoff.md"
+  ],
+  "pack_files": [
+    "release/current/stage149_body_constitution_release_gate_pack/body_constitution_gate_matrix.json",
+    "release/current/stage149_body_constitution_release_gate_pack/page01_constitution_seal.json",
+    "release/current/stage149_body_constitution_release_gate_pack/stage150_readiness_matrix.json",
+    "release/current/stage149_body_constitution_release_gate_pack/release_blocker_registry.json",
+    "release/current/stage149_body_constitution_release_gate_pack/lineage_evidence_index.json"
+  ],
+  "reports": [
+    "release/current/stage149_body_constitution_release_gate_report.json",
+    "release/current/stage149_release_gate_report.json",
+    "release/current/stage149_release_asset_manifest.json"
+  ],
+  "next_stage": "stage150"
+}

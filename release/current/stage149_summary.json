@@ -1,0 +1,27 @@
+{
+  "stage": "149",
+  "baseline_stage": "148",
+  "title": "Body Constitution Release Gate",
+  "status": "pass",
+  "main_report": "release/current/stage149_body_constitution_release_gate_report.json",
+  "release_gate_report": "release/current/stage149_release_gate_report.json",
+  "asset_manifest": "release/current/stage149_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage149_body_constitution_release_gate_pack/",
+  "mode": "BODY_CONSTITUTION_RELEASE_GATE_LOCAL",
+  "body_constitution_release_gate_only": true,
+  "gate_rule_count": 8,
+  "sealed_page01": true,
+  "page01_constitution_frozen": true,
+  "stage150_memory_body_ready": true,
+  "release_blocker_count": 8,
+  "blocked_capability_count": 8,
+  "lineage_evidence_complete": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage150 Memory Body",
+    "Stage151 Memory Retrieval Body"
+  ]
+}

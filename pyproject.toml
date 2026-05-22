@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.47.0"
-description = "V1700 Stage147 - Project Manifest Body"
+version = "1.49.0"
+description = "V1700 Stage149 - Body Constitution Release Gate"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

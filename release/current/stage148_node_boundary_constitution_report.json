@@ -1,0 +1,630 @@
+{
+  "stage": "148",
+  "baseline_stage": "147",
+  "title": "Node Boundary Constitution",
+  "status": "pass",
+  "issues": [],
+  "mode": "NODE_BOUNDARY_CONSTITUTION_LOCAL",
+  "node_boundary_constitution_only": true,
+  "authority_rule_count": 7,
+  "route_count": 6,
+  "projection_rule_count": 7,
+  "node2_surface_only_enforced": true,
+  "node3_critic_scope_defined": true,
+  "stage149_gate_ready": true,
+  "stage150_memory_body_ready": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage147_baseline": {
+      "stage": "147",
+      "baseline_stage": "146",
+      "status": "pass",
+      "title": "Project Manifest Body Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage147_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage148",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage148",
+          "actual": "stage148",
+          "path": "manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage148 Node Boundary Constitution",
+          "actual": "# V1700 Literary OS - Stage148\n\n> Node Boundary Constitution\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Curre",
+          "path": "README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage148",
+          "actual": "active=stage148; stage=stage148",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage148 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage148_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage148_node_boundary_constitution_report.json\", \"release_gate\": \"release/current/stage148_release_gate_report.json\"}",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.48.0",
+          "actual": "1.48.0",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage148 - Node Boundary Constitution",
+          "actual": "V1700 Stage148 - Node Boundary Constitution",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage148 Node Boundary Constitution",
+          "actual": "# V1700 Stage148 - Node Boundary Constitution\n\nStage148 turns the post-Stage147 manifest body into an explicit node authority co",
+          "path": "RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage148.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/stages/stage148.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage148_node_boundary_constitution_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/proposals/stage148_node_boundary_constitution_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage148_node_boundary_constitution_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/architecture/stage148_node_boundary_constitution_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage148_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/development/stage148_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage148_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage148_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage148_node_boundary_constitution_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage148_node_boundary_constitution_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage148_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage148_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage148_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/live_core_stage148_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_pack/packet_route_map.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_pack/packet_route_map.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": ".github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 23,
+        "pass_count": 23,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage148",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage148",
+          "actual": "stage148",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage148_node_boundary_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "release/current/stage148_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 16,
+        "pass_count": 16,
+        "blocked_count": 0
+      }
+    },
+    "node_authority_matrix": {
+      "stage": "stage148",
+      "title": "Stage148 Node Authority Matrix",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 7,
+      "coverage_complete": true,
+      "rules": [
+        {
+          "state_name": "SeriesState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_summary_only",
+          "node3_access": "critic_summary_only",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Series authority stays whole in Node1 while Node2 and Node3 consume condensed framing."
+        },
+        {
+          "state_name": "EpisodeState",
+          "node1_access": "full_contract",
+          "node2_access": "episode_premise_only",
+          "node3_access": "critic_episode_summary",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Episode ordering and continuity anchors remain outside reader-facing prose."
+        },
+        {
+          "state_name": "SceneState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_safe_scene_packet",
+          "node3_access": "critic_surface_plus_flags",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "SceneState is the primary Node2 render contract but still stays packetized."
+        },
+        {
+          "state_name": "CharacterState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_traits_only",
+          "node3_access": "critic_relationship_summary",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Character private goals and hidden beliefs stay out of Node2."
+        },
+        {
+          "state_name": "WorldState",
+          "node1_access": "full_contract",
+          "node2_access": "public_world_facts_only",
+          "node3_access": "critic_world_consistency_summary",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "World rules are summarized for prose while critic sees consistency cues."
+        },
+        {
+          "state_name": "RevealState",
+          "node1_access": "full_contract",
+          "node2_access": "node2_surface_projection_only",
+          "node3_access": "critic_reveal_guard_summary",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/validators.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "RevealState remains the hard authority boundary for Node2 raw access zero."
+        },
+        {
+          "state_name": "ContinuityState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_continuity_summary",
+          "node3_access": "critic_continuity_packet",
+          "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+          "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Continuity risk data remains structured for critic review, not direct prose authority."
+        }
+      ]
+    },
+    "packet_route_map": {
+      "stage": "stage148",
+      "title": "Stage148 Packet Route Map",
+      "status": "pass",
+      "issues": [],
+      "route_count": 6,
+      "route_order_complete": true,
+      "routes": [
+        {
+          "route_name": "series_to_node1",
+          "source_packet": "SeriesState",
+          "target_node": "Node1Architect",
+          "delivery_form": "planning_context",
+          "blocked_content": "raw hidden reveal payloads",
+          "module_anchor": "src/v1700/nodes/node1_architect/__init__.py",
+          "rationale": "Node1 may plan from series identity and premise authority."
+        },
+        {
+          "route_name": "scene_to_node1",
+          "source_packet": "SceneState",
+          "target_node": "Node1Architect",
+          "delivery_form": "scene_intent_seed",
+          "blocked_content": "raw manuscript text",
+          "module_anchor": "src/v1700/nodes/node1_architect/__init__.py",
+          "rationale": "Node1 builds deterministic scene intent from canonical scene packets."
+        },
+        {
+          "route_name": "scene_to_node2",
+          "source_packet": "SceneState",
+          "target_node": "Node2ProseCompiler",
+          "delivery_form": "surface_safe_scene_packet",
+          "blocked_content": "private memory and hidden belief vectors",
+          "module_anchor": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+          "rationale": "Node2 receives only surface-safe scene packets for rendering."
+        },
+        {
+          "route_name": "reveal_to_node2",
+          "source_packet": "RevealState",
+          "target_node": "Node2ProseCompiler",
+          "delivery_form": "node2_surface_projection",
+          "blocked_content": "unlock condition internals and raw reveal content",
+          "module_anchor": "src/v1700/nodes/node2_prose_renderer/validators.py",
+          "rationale": "RevealState reaches Node2 only through explicit surface projections."
+        },
+        {
+          "route_name": "continuity_to_node3",
+          "source_packet": "ContinuityState",
+          "target_node": "Node3CriticGate",
+          "delivery_form": "critic_continuity_packet",
+          "blocked_content": "mutation authority",
+          "module_anchor": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Node3 critic may inspect continuity risks without gaining write authority."
+        },
+        {
+          "route_name": "rendered_surface_to_node3",
+          "source_packet": "RenderedProseIR",
+          "target_node": "Node3CriticGate",
+          "delivery_form": "rendered_surface_and_constraint_scores",
+          "blocked_content": "provider output or hidden raw reveals",
+          "module_anchor": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+          "rationale": "Node3 validates Node2 output against surface and constraint thresholds."
+        }
+      ]
+    },
+    "surface_projection_registry": {
+      "stage": "stage148",
+      "title": "Stage148 Surface Projection Registry",
+      "status": "pass",
+      "issues": [],
+      "projection_count": 7,
+      "coverage_complete": true,
+      "entries": [
+        {
+          "state_name": "SeriesState",
+          "source_field": "purpose",
+          "node2_projection": "series_premise_surface",
+          "node3_projection": "critic_series_anchor",
+          "blocked_to_node2": "timeline_anchor",
+          "rationale": "Node2 receives only the public series premise."
+        },
+        {
+          "state_name": "EpisodeState",
+          "source_field": "premise",
+          "node2_projection": "episode_premise_surface",
+          "node3_projection": "critic_episode_brief",
+          "blocked_to_node2": "scene_order",
+          "rationale": "Episode ordering stays outside direct prose access."
+        },
+        {
+          "state_name": "SceneState",
+          "source_field": "surface_constraints",
+          "node2_projection": "scene_surface_constraints",
+          "node3_projection": "critic_scene_constraint_flags",
+          "blocked_to_node2": "private continuity debug fields",
+          "rationale": "Scene constraints are already surface-safe and may flow to Node2."
+        },
+        {
+          "state_name": "CharacterState",
+          "source_field": "role",
+          "node2_projection": "character_surface_traits",
+          "node3_projection": "critic_character_relationship_summary",
+          "blocked_to_node2": "knowledge_boundary",
+          "rationale": "Node2 gets only reader-facing traits and roles."
+        },
+        {
+          "state_name": "WorldState",
+          "source_field": "public_facts",
+          "node2_projection": "world_surface_facts",
+          "node3_projection": "critic_world_rule_summary",
+          "blocked_to_node2": "rule_constraints",
+          "rationale": "World internals are summarized to public facts for Node2."
+        },
+        {
+          "state_name": "RevealState",
+          "source_field": "node2_surface_projection",
+          "node2_projection": "reveal_surface_projection",
+          "node3_projection": "critic_reveal_guard_summary",
+          "blocked_to_node2": "unlock_condition",
+          "rationale": "Reveal projection is the only Node2-safe reveal surface."
+        },
+        {
+          "state_name": "ContinuityState",
+          "source_field": "open_threads",
+          "node2_projection": "continuity_surface_watchlist",
+          "node3_projection": "critic_continuity_packet",
+          "blocked_to_node2": "contradiction_watchlist",
+          "rationale": "Node2 sees only a reader-safe continuity watchlist."
+        }
+      ]
+    },
+    "boundary_enforcement_summary": {
+      "stage": "stage148",
+      "title": "Stage148 Boundary Enforcement Summary",
+      "status": "pass",
+      "issues": [],
+      "all_enforced": true,
+      "node2_surface_only_enforced": true,
+      "node3_critic_scope_defined": true,
+      "controls": [
+        {
+          "name": "stage147_canonical_bundle_present",
+          "description": "Stage147 canonical manifest bundle must remain present and passing.",
+          "enforced": true,
+          "evidence": "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json"
+        },
+        {
+          "name": "node1_full_contract_access_defined",
+          "description": "Node1 must retain full-contract access for planning authority.",
+          "enforced": true,
+          "evidence": "src/v1700/nodes/node1_architect/__init__.py"
+        },
+        {
+          "name": "node2_surface_only_defined",
+          "description": "Node2 must never receive full-contract or raw reveal payloads.",
+          "enforced": true,
+          "evidence": "src/v1700/nodes/node2_prose_renderer/compiler.py"
+        },
+        {
+          "name": "node3_critic_scope_defined",
+          "description": "Node3 must receive structured critic summaries instead of mutation authority.",
+          "enforced": true,
+          "evidence": "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+        },
+        {
+          "name": "reveal_surface_projection_preserved",
+          "description": "RevealState must keep hidden visibility and expose a non-empty Node2 surface projection only.",
+          "enforced": true,
+          "evidence": "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json"
+        },
+        {
+          "name": "projection_registry_blocks_hidden_fields",
+          "description": "Surface projection registry must name blocked fields for every packet.",
+          "enforced": true,
+          "evidence": "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json"
+        },
+        {
+          "name": "route_modules_exist",
+          "description": "Referenced node modules must exist in the repository.",
+          "enforced": true,
+          "evidence": "src/v1700/nodes/"
+        },
+        {
+          "name": "provider_zero_and_write_zero_preserved",
+          "description": "Stage148 must preserve provider-zero and write-zero invariants.",
+          "enforced": true,
+          "evidence": "stage147 + stage148 reports"
+        }
+      ]
+    },
+    "stage149_entry_signals": {
+      "stage": "stage148",
+      "title": "Stage148 Stage149+ Entry Signals",
+      "status": "pass",
+      "issues": [],
+      "stage149_gate_ready": true,
+      "stage150_memory_body_ready": true,
+      "signals": [
+        "Node1/Node2/Node3 authority lanes are now bound to the Stage146 state contracts and Stage147 manifest packets.",
+        "RevealState reaches Node2 only through surface projections while Node3 keeps critic-only summaries.",
+        "Stage149 may now seal the Page01 body constitution with a release gate built on explicit node-boundary evidence."
+      ]
+    }
+  }
+}

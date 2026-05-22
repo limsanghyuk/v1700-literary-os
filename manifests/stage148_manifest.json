@@ -1,0 +1,10 @@
+{
+  "stage": "stage148",
+  "title": "Node Boundary Constitution",
+  "baseline_stage": "stage147",
+  "status": "implemented",
+  "mode": "NODE_BOUNDARY_CONSTITUTION_LOCAL",
+  "release_gate": "release/current/stage148_release_gate_report.json",
+  "evidence": "release/current/stage148_node_boundary_constitution_report.json",
+  "next_stage": "stage149"
+}

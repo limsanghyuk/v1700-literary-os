@@ -1,0 +1,66 @@
+{
+  "stage": "stage149",
+  "title": "Stage149 Body Constitution Gate Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 8,
+  "all_rules_passed": true,
+  "rules": [
+    {
+      "name": "stage145_constitution_gate_pass",
+      "description": "Stage145 body constitution must remain the constitutional root of Page01.",
+      "passed": true,
+      "source_stage": "stage145",
+      "evidence": "release/current/stage145_release_gate_report.json"
+    },
+    {
+      "name": "stage146_state_contract_gate_pass",
+      "description": "Stage146 narrative state contract must remain canonical and passing.",
+      "passed": true,
+      "source_stage": "stage146",
+      "evidence": "release/current/stage146_release_gate_report.json"
+    },
+    {
+      "name": "stage147_manifest_body_gate_pass",
+      "description": "Stage147 manifest body must remain the bound packet authority.",
+      "passed": true,
+      "source_stage": "stage147",
+      "evidence": "release/current/stage147_release_gate_report.json"
+    },
+    {
+      "name": "stage148_node_boundary_gate_pass",
+      "description": "Stage148 node boundary constitution must remain the immediate baseline.",
+      "passed": true,
+      "source_stage": "stage148",
+      "evidence": "release/current/stage148_release_gate_report.json"
+    },
+    {
+      "name": "stage148_entry_signal_pass",
+      "description": "Stage148 must explicitly declare Stage149 gate readiness.",
+      "passed": true,
+      "source_stage": "stage148",
+      "evidence": "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json"
+    },
+    {
+      "name": "provider_zero_preserved",
+      "description": "Page01 sealing must preserve provider-zero across the constitution chain.",
+      "passed": true,
+      "source_stage": "stage145-stage148",
+      "evidence": "release/current/stage145_body_constitution_report.json"
+    },
+    {
+      "name": "node2_boundary_preserved",
+      "description": "Page01 sealing must preserve Node2 raw reveal access = 0.",
+      "passed": true,
+      "source_stage": "stage145-stage148",
+      "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+    },
+    {
+      "name": "branchpoint_lineage_preserved",
+      "description": "All Page01 stages must preserve branchpoint lineage evidence.",
+      "passed": true,
+      "source_stage": "stage145-stage148",
+      "evidence": "manifests/stage149_branchpoint_trace_manifest.json"
+    }
+  ]
+}

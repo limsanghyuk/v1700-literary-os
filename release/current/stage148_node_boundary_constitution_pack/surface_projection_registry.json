@@ -1,0 +1,66 @@
+{
+  "stage": "stage148",
+  "title": "Stage148 Surface Projection Registry",
+  "status": "pass",
+  "issues": [],
+  "projection_count": 7,
+  "coverage_complete": true,
+  "entries": [
+    {
+      "state_name": "SeriesState",
+      "source_field": "purpose",
+      "node2_projection": "series_premise_surface",
+      "node3_projection": "critic_series_anchor",
+      "blocked_to_node2": "timeline_anchor",
+      "rationale": "Node2 receives only the public series premise."
+    },
+    {
+      "state_name": "EpisodeState",
+      "source_field": "premise",
+      "node2_projection": "episode_premise_surface",
+      "node3_projection": "critic_episode_brief",
+      "blocked_to_node2": "scene_order",
+      "rationale": "Episode ordering stays outside direct prose access."
+    },
+    {
+      "state_name": "SceneState",
+      "source_field": "surface_constraints",
+      "node2_projection": "scene_surface_constraints",
+      "node3_projection": "critic_scene_constraint_flags",
+      "blocked_to_node2": "private continuity debug fields",
+      "rationale": "Scene constraints are already surface-safe and may flow to Node2."
+    },
+    {
+      "state_name": "CharacterState",
+      "source_field": "role",
+      "node2_projection": "character_surface_traits",
+      "node3_projection": "critic_character_relationship_summary",
+      "blocked_to_node2": "knowledge_boundary",
+      "rationale": "Node2 gets only reader-facing traits and roles."
+    },
+    {
+      "state_name": "WorldState",
+      "source_field": "public_facts",
+      "node2_projection": "world_surface_facts",
+      "node3_projection": "critic_world_rule_summary",
+      "blocked_to_node2": "rule_constraints",
+      "rationale": "World internals are summarized to public facts for Node2."
+    },
+    {
+      "state_name": "RevealState",
+      "source_field": "node2_surface_projection",
+      "node2_projection": "reveal_surface_projection",
+      "node3_projection": "critic_reveal_guard_summary",
+      "blocked_to_node2": "unlock_condition",
+      "rationale": "Reveal projection is the only Node2-safe reveal surface."
+    },
+    {
+      "state_name": "ContinuityState",
+      "source_field": "open_threads",
+      "node2_projection": "continuity_surface_watchlist",
+      "node3_projection": "critic_continuity_packet",
+      "blocked_to_node2": "contradiction_watchlist",
+      "rationale": "Node2 sees only a reader-safe continuity watchlist."
+    }
+  ]
+}

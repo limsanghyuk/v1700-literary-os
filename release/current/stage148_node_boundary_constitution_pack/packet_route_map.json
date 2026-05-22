@@ -1,0 +1,64 @@
+{
+  "stage": "stage148",
+  "title": "Stage148 Packet Route Map",
+  "status": "pass",
+  "issues": [],
+  "route_count": 6,
+  "route_order_complete": true,
+  "routes": [
+    {
+      "route_name": "series_to_node1",
+      "source_packet": "SeriesState",
+      "target_node": "Node1Architect",
+      "delivery_form": "planning_context",
+      "blocked_content": "raw hidden reveal payloads",
+      "module_anchor": "src/v1700/nodes/node1_architect/__init__.py",
+      "rationale": "Node1 may plan from series identity and premise authority."
+    },
+    {
+      "route_name": "scene_to_node1",
+      "source_packet": "SceneState",
+      "target_node": "Node1Architect",
+      "delivery_form": "scene_intent_seed",
+      "blocked_content": "raw manuscript text",
+      "module_anchor": "src/v1700/nodes/node1_architect/__init__.py",
+      "rationale": "Node1 builds deterministic scene intent from canonical scene packets."
+    },
+    {
+      "route_name": "scene_to_node2",
+      "source_packet": "SceneState",
+      "target_node": "Node2ProseCompiler",
+      "delivery_form": "surface_safe_scene_packet",
+      "blocked_content": "private memory and hidden belief vectors",
+      "module_anchor": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "rationale": "Node2 receives only surface-safe scene packets for rendering."
+    },
+    {
+      "route_name": "reveal_to_node2",
+      "source_packet": "RevealState",
+      "target_node": "Node2ProseCompiler",
+      "delivery_form": "node2_surface_projection",
+      "blocked_content": "unlock condition internals and raw reveal content",
+      "module_anchor": "src/v1700/nodes/node2_prose_renderer/validators.py",
+      "rationale": "RevealState reaches Node2 only through explicit surface projections."
+    },
+    {
+      "route_name": "continuity_to_node3",
+      "source_packet": "ContinuityState",
+      "target_node": "Node3CriticGate",
+      "delivery_form": "critic_continuity_packet",
+      "blocked_content": "mutation authority",
+      "module_anchor": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Node3 critic may inspect continuity risks without gaining write authority."
+    },
+    {
+      "route_name": "rendered_surface_to_node3",
+      "source_packet": "RenderedProseIR",
+      "target_node": "Node3CriticGate",
+      "delivery_form": "rendered_surface_and_constraint_scores",
+      "blocked_content": "provider output or hidden raw reveals",
+      "module_anchor": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Node3 validates Node2 output against surface and constraint thresholds."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage147 - Project Manifest Body
+Current active stage: Stage149 - Body Constitution Release Gate
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -52,3 +52,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage145](stage145.md) - Body Constitution
 - [Stage146](stage146.md) - Narrative State Contract
 - [Stage147](stage147.md) - Project Manifest Body
+- [Stage148](stage148.md) - Node Boundary Constitution
+- [Stage149](stage149.md) - Body Constitution Release Gate

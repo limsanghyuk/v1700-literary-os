@@ -1,0 +1,24 @@
+{
+  "stage": "stage148",
+  "title": "Node Boundary Constitution",
+  "pack": "release/current/stage148_node_boundary_constitution_pack/",
+  "documents": [
+    "docs/stages/stage148.md",
+    "docs/proposals/stage148_node_boundary_constitution_proposal.md",
+    "docs/architecture/stage148_node_boundary_constitution_blueprint.md",
+    "docs/development/stage148_developer_handoff.md"
+  ],
+  "pack_files": [
+    "release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json",
+    "release/current/stage148_node_boundary_constitution_pack/packet_route_map.json",
+    "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json",
+    "release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json",
+    "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json"
+  ],
+  "reports": [
+    "release/current/stage148_node_boundary_constitution_report.json",
+    "release/current/stage148_release_gate_report.json",
+    "release/current/stage148_release_asset_manifest.json"
+  ],
+  "next_stage": "stage149"
+}
