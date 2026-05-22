@@ -571,9 +571,20 @@
         "Stage150 memory-body entry criteria"
       ],
       "surviving_runtime_value": "Defines the constitutional layer that later memory, generation, quality, corpus, learning, and agent bodies must obey."
+    },
+    {
+      "stage_id": "STAGE146",
+      "title": "Narrative State Contract",
+      "introduced_concepts": [
+        "canonical narrative state objects",
+        "series episode scene hierarchy",
+        "continuity rulebook",
+        "reveal boundary matrix"
+      ],
+      "surviving_runtime_value": "Fixes the canonical narrative state layer that later manifest, memory, generation, and gate bodies must reference."
     }
   ],
-  "active_version": "stage145",
+  "active_version": "stage146",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -658,5 +669,10 @@
     "status": "active",
     "baseline_stage": "stage144",
     "purpose": "Body Constitution"
+  },
+  "stage146": {
+    "status": "active",
+    "baseline_stage": "stage145",
+    "purpose": "Narrative State Contract"
   }
 }

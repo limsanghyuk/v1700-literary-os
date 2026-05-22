@@ -38,6 +38,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage145_body_constitution_report.json",
         "release_gate_report": "release/current/stage145_release_gate_report.json",
     },
+    "stage146": {
+        "package": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage146_narrative_state_contract_report.json",
+        "release_gate_report": "release/current/stage146_release_gate_report.json",
+    },
 }
 
 

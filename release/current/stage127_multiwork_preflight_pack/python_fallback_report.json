@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "python_fallback_used": true,
-  "import_edges_total": 2815,
+  "import_edges_total": 3335,
   "import_edges_sample": [
     {
       "from": "v1700.cli",
@@ -17,15 +17,15 @@
     },
     {
       "from": "v1700.cli",
+      "to": "v1700.ir.style_profile"
+    },
+    {
+      "from": "v1700.cli",
       "to": "v1700.nodes.node1_architect"
     },
     {
       "from": "v1700.cli",
       "to": "v1700.nodes.node2_prose_renderer"
-    },
-    {
-      "from": "v1700.cli",
-      "to": "v1700.ir.style_profile"
     },
     {
       "from": "v1700.semantic_cache",

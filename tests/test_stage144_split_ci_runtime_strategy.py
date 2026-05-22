@@ -40,7 +40,7 @@ def test_stage144_reuses_stage143_baseline_and_passes_gate() -> None:
 
 def test_stage144_is_the_active_release_baseline() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert '"active_version": "stage144"' in manifest or '"active_version": "stage145"' in manifest
+    assert '"active_version": "stage144"' in manifest or '"active_version": "stage145"' in manifest or '"active_version": "stage146"' in manifest
     assert '"stage144_split_ci_runtime_strategy"' in manifest
     assert '"stage144_release_gate"' in manifest
 

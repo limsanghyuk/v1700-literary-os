@@ -2,9 +2,12 @@
   "stage": "130",
   "baseline_stage": "129",
   "title": "MultiWork Release",
-  "status": "pass",
-  "issues": [],
-  "multiwork_release_authorized": true,
+  "status": "blocked",
+  "issues": [
+    "release_matrix_blocked",
+    "release_seal_blocked"
+  ],
+  "multiwork_release_authorized": false,
   "stage127_to_stage129_evidence_preserved": true,
   "cross_project_write_allowed": false,
   "unauthorized_cross_reads": 0,

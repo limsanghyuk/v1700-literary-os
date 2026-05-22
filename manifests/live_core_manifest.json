@@ -1,5 +1,5 @@
 {
-  "active_version": "stage145",
+  "active_version": "stage146",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -30,10 +30,12 @@
     "stage144_split_ci_runtime_strategy",
     "stage144_release_gate",
     "stage145_body_constitution",
-    "stage145_release_gate"
+    "stage145_release_gate",
+    "stage146_narrative_state_contract",
+    "stage146_release_gate"
   ],
-  "canonical_package": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {"status": "active", "title": "MetaLearner Audit Mode"},
   "stage135": {"status": "active", "title": "LearningQualityGate & Candidate Registry"},
   "stage136": {"status": "active", "title": "SchemaRegistry"},
@@ -87,5 +89,13 @@
     "release_gate": "release/current/stage145_release_gate_report.json",
     "evidence": "release/current/stage145_body_constitution_report.json",
     "next_stage": "stage146"
+  },
+  "stage146": {
+    "status": "active",
+    "title": "Narrative State Contract",
+    "baseline_stage": "stage145",
+    "release_gate": "release/current/stage146_release_gate_report.json",
+    "evidence": "release/current/stage146_narrative_state_contract_report.json",
+    "next_stage": "stage147"
   }
 }

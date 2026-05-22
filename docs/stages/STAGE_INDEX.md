@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage145 - Body Constitution
+Current active stage: Stage146 - Narrative State Contract
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -50,3 +50,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage143](stage143.md) - User CLI/API Minimum Docs
 - [Stage144](stage144.md) - Split CI Runtime Strategy
 - [Stage145](stage145.md) - Body Constitution
+- [Stage146](stage146.md) - Narrative State Contract

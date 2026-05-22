@@ -132,6 +132,29 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage146": {
+        "label": "Stage146",
+        "version": "1.46.0",
+        "title": "Narrative State Contract",
+        "required_files": [
+            "docs/stages/stage146.md",
+            "docs/proposals/stage146_narrative_state_contract_proposal.md",
+            "docs/architecture/stage146_narrative_state_contract_blueprint.md",
+            "docs/development/stage146_developer_handoff.md",
+            "manifests/stage146_manifest.json",
+            "manifests/stage146_narrative_state_contract_manifest.json",
+            "manifests/stage146_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage146_overlay.json",
+            "release/current/stage146_release_asset_manifest.json",
+            "release/current/stage146_narrative_state_contract_report.json",
+            "release/current/stage146_narrative_state_contract_pack/state_shape_catalog.json",
+            "release/current/stage146_narrative_state_contract_pack/state_hierarchy.json",
+            "release/current/stage146_narrative_state_contract_pack/continuity_rulebook.json",
+            "release/current/stage146_narrative_state_contract_pack/reveal_boundary_matrix.json",
+            "release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

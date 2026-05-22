@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "BLOCK",
   "gitnexus_available": true,
   "python_fallback_used": false,
   "python_fallback": {
@@ -20,8 +20,8 @@
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
-    "stage128_read_only_absorption_survives": true,
-    "stage129_release_gate_integrated": true
+    "stage128_read_only_absorption_survives": false,
+    "stage129_release_gate_integrated": false
   },
   "concept_impact": {
     "provider_zero": "preserved",
@@ -42,5 +42,7 @@
       "branchpoint_survival"
     ]
   },
-  "issues": []
+  "issues": [
+    "branchpoint_survival_failed"
+  ]
 }

@@ -40,9 +40,9 @@ def test_stage145_reuses_stage144_baseline_and_passes_gate() -> None:
     assert gate["checks"]["stage150_entry_criteria_pass"]["status"] == "pass"
 
 
-def test_stage145_is_the_active_release_baseline() -> None:
+def test_stage145_remains_registered_in_the_active_release_chain() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert '"active_version": "stage145"' in manifest
+    assert '"active_version": "stage145"' in manifest or '"active_version": "stage146"' in manifest
     assert '"stage145_body_constitution"' in manifest
     assert '"stage145_release_gate"' in manifest
 

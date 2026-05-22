@@ -1,0 +1,46 @@
+{
+  "stage": "stage146",
+  "title": "Stage146 Continuity Rulebook",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "all_enforced": true,
+  "rules": [
+    {
+      "name": "chronology_preserved",
+      "description": "Timeline anchors must never move implicitly between scenes.",
+      "enforced": true,
+      "evidence": "continuity state contract"
+    },
+    {
+      "name": "character_knowledge_preserved",
+      "description": "Character knowledge cannot exceed reveal-authorized boundaries.",
+      "enforced": true,
+      "evidence": "character + reveal state"
+    },
+    {
+      "name": "world_rule_preserved",
+      "description": "Setting rules remain stable across all episodes.",
+      "enforced": true,
+      "evidence": "world state contract"
+    },
+    {
+      "name": "promise_tracking_preserved",
+      "description": "Open and resolved threads must remain explicitly declared.",
+      "enforced": true,
+      "evidence": "continuity state contract"
+    },
+    {
+      "name": "repair_manual_only",
+      "description": "Continuity fixes remain human-approved and are not auto-applied.",
+      "enforced": true,
+      "evidence": "stage145 constitution"
+    },
+    {
+      "name": "provider_zero_preserved",
+      "description": "No continuity step may trigger live provider calls.",
+      "enforced": true,
+      "evidence": "release gate invariants"
+    }
+  ]
+}

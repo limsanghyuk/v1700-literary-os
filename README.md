@@ -1,13 +1,13 @@
-# V1700 Literary OS - Stage145
+# V1700 Literary OS - Stage146
 
-> Body Constitution
+> Narrative State Contract
 > Provider-Zero AI longform novel and drama scenario generation system.
 
 ## Current Stage
 
-Stage145 is the official active development baseline after Stage144. It starts the V1700 narrative body line by defining the constitutional authority for body layers, formula classification, invariants, and the Stage150 memory-body entry criteria.
+Stage146 is the official active development baseline after Stage145. It turns the Page01 body constitution into canonical narrative state objects for series, episode, scene, character, world, reveal, and continuity layers.
 
-Stage145 is not a memory or generation feature release. It hardens the Page01 contract before Stage146 Narrative State Contract, Stage147 Project Manifest Body, Stage148 Node Boundary Constitution, and Stage149 Body Constitution Release Gate.
+Stage146 is not a memory or generation feature release. It hardens the Page01 contract before Stage147 Project Manifest Body, Stage148 Node Boundary Constitution, Stage149 Body Constitution Release Gate, and Stage150 Memory Body.
 
 ## Quick Start
 
@@ -15,7 +15,7 @@ Stage145 is not a memory or generation feature release. It hardens the Page01 co
 pip install -e ".[dev]"
 
 python -m compileall -q src tools
-python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/stage_gates/test_stage72_repo_doctor.py -q
+python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/stage_gates/test_stage72_repo_doctor.py -q
 python tools/run_ci_dependency_preflight.py
 python tools/run_stage134_meta_learner_audit.py
 python tools/run_stage134_release_gate.py
@@ -43,6 +43,8 @@ python tools/run_stage144_split_ci_runtime_strategy.py
 python tools/run_stage144_release_gate.py
 python tools/run_stage145_body_constitution.py
 python tools/run_stage145_body_constitution_gate.py
+python tools/run_stage146_narrative_state_contract.py
+python tools/run_stage146_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
 ```
@@ -57,30 +59,34 @@ The repository uses GitHub Actions as the shared authority for work across multi
 - `cd-dry-run`: builds a release dry-run archive and SHA256 artifact on PR/push.
 - `release`: runs on `v1700-stage*` or `v*` tags and publishes an integrated ZIP, SHA256 sidecar, and `SHA256SUMS.txt` snapshot as GitHub Release assets.
 
-## Stage145 Core Modules
+## Stage146 Core Modules
 
 ```text
-src/v1700/body_constitution/
+src/v1700/narrative_state/
   contracts.py
+  series_state.py
+  episode_state.py
+  scene_state.py
   report.py
 
-src/v1700/stage145/
-  stage145_runner.py
+src/v1700/stage146/
+  stage146_runner.py
 
 src/v1700/gates/
-  stage145_release_gate.py
+  stage146_release_gate.py
 ```
 
-## Stage145 Release Gate
+## Stage146 Release Gate
 
-The Stage145 gate validates:
+The Stage146 gate validates:
 
-- Stage144 baseline gate pass
+- Stage145 baseline gate pass
 - README, pyproject, live manifest, package manifest, release notes, and asset manifest consistency
-- formula classification policy coverage
-- constitution invariants
-- body layer map
-- Stage150 entry criteria declaration
+- seven canonical state contracts
+- series/episode/scene hierarchy
+- continuity rulebook
+- reveal boundary matrix
+- Stage147 and Stage150 readiness declarations
 - provider default calls = 0
 - runtime training disabled
 - Node2 raw reveal access = 0
@@ -103,21 +109,22 @@ Stage142  Longform Benchmark Pack
 Stage143  User CLI/API Minimum Docs
 Stage144  Split CI Runtime Strategy
 Stage145  Body Constitution
+Stage146  Narrative State Contract
 ```
 
 ## Next Direction
 
 ```text
-Stage146  Narrative State Contract
 Stage147  Project Manifest Body
 Stage148  Node Boundary Constitution
 Stage149  Body Constitution Release Gate
+Stage150  Memory Body
 ```
 
 ## Repository Evidence
 
-- Stage manifest: `manifests/stage145_manifest.json`
+- Stage manifest: `manifests/stage146_manifest.json`
 - Live manifest: `manifests/live_core_manifest.json`
-- Release report: `release/current/stage145_body_constitution_report.json`
-- Release gate: `release/current/stage145_release_gate_report.json`
-- Official asset manifest: `release/current/stage145_release_asset_manifest.json`
+- Release report: `release/current/stage146_narrative_state_contract_report.json`
+- Release gate: `release/current/stage146_release_gate_report.json`
+- Official asset manifest: `release/current/stage146_release_asset_manifest.json`

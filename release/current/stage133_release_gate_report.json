@@ -2,11 +2,13 @@
   "stage": "133",
   "baseline_stage": "132",
   "title": "NarrativeStateTensor 8D Measurement Layer Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage132_baseline_gate_pass"
+  ],
   "checks": {
     "stage132_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "tensor_measurement_pass": {
       "status": "pass"
@@ -103,5 +105,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

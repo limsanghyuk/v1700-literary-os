@@ -1,0 +1,367 @@
+{
+  "stage": "stage146",
+  "title": "Stage146 State Shape Catalog",
+  "status": "pass",
+  "issues": [],
+  "contract_count": 7,
+  "coverage_complete": true,
+  "contracts": [
+    {
+      "name": "SeriesState",
+      "scope": "series",
+      "purpose": "Defines project-level continuity and identity anchors for the entire series.",
+      "write_policy": "read_only_contract_until_stage150_memory_body",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "series_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable identifier for the series.",
+          "source_of_truth": "project manifest"
+        },
+        {
+          "name": "title",
+          "field_type": "string",
+          "required": true,
+          "description": "Human-readable series title.",
+          "source_of_truth": "project manifest"
+        },
+        {
+          "name": "format",
+          "field_type": "string",
+          "required": true,
+          "description": "Story format such as drama or novel.",
+          "source_of_truth": "project manifest"
+        },
+        {
+          "name": "theme_brief",
+          "field_type": "string",
+          "required": true,
+          "description": "Concise thematic spine for the work.",
+          "source_of_truth": "project manifest"
+        },
+        {
+          "name": "episode_order",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Canonical ordered episode identifiers.",
+          "source_of_truth": "episode manifests"
+        },
+        {
+          "name": "timeline_anchor",
+          "field_type": "string",
+          "required": true,
+          "description": "Default chronology anchor for continuity checks.",
+          "source_of_truth": "series continuity packet"
+        }
+      ]
+    },
+    {
+      "name": "EpisodeState",
+      "scope": "episode",
+      "purpose": "Defines the canonical state envelope for a single episode or chapter.",
+      "write_policy": "read_only_contract_until_stage147_project_manifest_body",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "episode_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable episode identifier.",
+          "source_of_truth": "episode manifest"
+        },
+        {
+          "name": "series_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Parent series identifier.",
+          "source_of_truth": "series state"
+        },
+        {
+          "name": "order_index",
+          "field_type": "integer",
+          "required": true,
+          "description": "Canonical sequence number.",
+          "source_of_truth": "episode manifest"
+        },
+        {
+          "name": "premise",
+          "field_type": "string",
+          "required": true,
+          "description": "Episode-level dramatic premise.",
+          "source_of_truth": "episode planning packet"
+        },
+        {
+          "name": "scene_order",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Approved ordered scene identifiers.",
+          "source_of_truth": "scene packet set"
+        },
+        {
+          "name": "continuity_anchor",
+          "field_type": "string",
+          "required": true,
+          "description": "Primary continuity checkpoint for the episode.",
+          "source_of_truth": "continuity packet"
+        }
+      ]
+    },
+    {
+      "name": "SceneState",
+      "scope": "scene",
+      "purpose": "Defines the smallest canonical narrative unit that generation and criticism will consume later.",
+      "write_policy": "read_only_contract_until_generation_layer_is_gated",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "scene_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable scene identifier.",
+          "source_of_truth": "scene packet"
+        },
+        {
+          "name": "episode_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Parent episode identifier.",
+          "source_of_truth": "episode state"
+        },
+        {
+          "name": "location_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Canonical location reference.",
+          "source_of_truth": "world state"
+        },
+        {
+          "name": "participants",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Character identifiers present in the scene.",
+          "source_of_truth": "character roster"
+        },
+        {
+          "name": "objective",
+          "field_type": "string",
+          "required": true,
+          "description": "Immediate dramatic objective of the scene.",
+          "source_of_truth": "scene packet"
+        },
+        {
+          "name": "surface_constraints",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Reader-surface rules for prose rendering.",
+          "source_of_truth": "node2 boundary policy"
+        }
+      ]
+    },
+    {
+      "name": "CharacterState",
+      "scope": "character",
+      "purpose": "Captures the canonical public state of a character without enabling hidden-memory mutation.",
+      "write_policy": "read_only_contract_until_human_approval_layer",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "character_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable character identifier.",
+          "source_of_truth": "character roster"
+        },
+        {
+          "name": "display_name",
+          "field_type": "string",
+          "required": true,
+          "description": "Reader-facing character name.",
+          "source_of_truth": "character roster"
+        },
+        {
+          "name": "role",
+          "field_type": "string",
+          "required": true,
+          "description": "Narrative role within the work.",
+          "source_of_truth": "character roster"
+        },
+        {
+          "name": "goal_vector",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Current explicit goals and motivations.",
+          "source_of_truth": "series/episode planning packet"
+        },
+        {
+          "name": "relationship_edges",
+          "field_type": "list[object]",
+          "required": true,
+          "description": "Declared relationships to other characters.",
+          "source_of_truth": "relationship ledger"
+        },
+        {
+          "name": "knowledge_boundary",
+          "field_type": "string",
+          "required": true,
+          "description": "What the character can know within approved reveals.",
+          "source_of_truth": "reveal contract"
+        }
+      ]
+    },
+    {
+      "name": "WorldState",
+      "scope": "world",
+      "purpose": "Defines the stable setting, institutions, and rule anchors that prose must preserve.",
+      "write_policy": "read_only_contract_until_project_manifest_body",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "world_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable world identifier.",
+          "source_of_truth": "world packet"
+        },
+        {
+          "name": "era",
+          "field_type": "string",
+          "required": true,
+          "description": "Temporal setting or historical layer.",
+          "source_of_truth": "world packet"
+        },
+        {
+          "name": "locations",
+          "field_type": "list[object]",
+          "required": true,
+          "description": "Canonical locations available to scenes.",
+          "source_of_truth": "world packet"
+        },
+        {
+          "name": "institutions",
+          "field_type": "list[object]",
+          "required": true,
+          "description": "Organizations and families with continuity value.",
+          "source_of_truth": "world packet"
+        },
+        {
+          "name": "rule_constraints",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Setting rules that scenes must not violate.",
+          "source_of_truth": "world packet"
+        },
+        {
+          "name": "public_facts",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Surface-safe facts available to reader-facing output.",
+          "source_of_truth": "world packet"
+        }
+      ]
+    },
+    {
+      "name": "RevealState",
+      "scope": "reveal",
+      "purpose": "Controls reveal visibility and knowledge budgets without exposing raw hidden state to Node2.",
+      "write_policy": "read_only_contract_until_human_approval_layer",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "reveal_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable reveal identifier.",
+          "source_of_truth": "reveal packet"
+        },
+        {
+          "name": "owner_scope",
+          "field_type": "string",
+          "required": true,
+          "description": "Series, episode, or scene ownership.",
+          "source_of_truth": "reveal packet"
+        },
+        {
+          "name": "visibility_level",
+          "field_type": "string",
+          "required": true,
+          "description": "Allowed visibility such as hidden, critic_only, or reader_surface.",
+          "source_of_truth": "reveal packet"
+        },
+        {
+          "name": "knowledge_holders",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Characters or system lanes allowed to know the reveal.",
+          "source_of_truth": "reveal packet"
+        },
+        {
+          "name": "unlock_condition",
+          "field_type": "string",
+          "required": true,
+          "description": "Approved condition for future reveal progression.",
+          "source_of_truth": "reveal packet"
+        },
+        {
+          "name": "node2_surface_projection",
+          "field_type": "string",
+          "required": true,
+          "description": "Surface-safe projection available to Node2.",
+          "source_of_truth": "node boundary policy"
+        }
+      ]
+    },
+    {
+      "name": "ContinuityState",
+      "scope": "continuity",
+      "purpose": "Declares cross-scene and cross-episode continuity checkpoints without auto-repair authority.",
+      "write_policy": "read_only_contract_until_stage149_gate_allows_memory_entry",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "continuity_id",
+          "field_type": "string",
+          "required": true,
+          "description": "Stable continuity packet identifier.",
+          "source_of_truth": "continuity packet"
+        },
+        {
+          "name": "timeline_position",
+          "field_type": "string",
+          "required": true,
+          "description": "Normalized chronology position.",
+          "source_of_truth": "continuity packet"
+        },
+        {
+          "name": "open_threads",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Outstanding promises that later scenes must respect.",
+          "source_of_truth": "continuity packet"
+        },
+        {
+          "name": "resolved_threads",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Promises already closed with evidence.",
+          "source_of_truth": "continuity packet"
+        },
+        {
+          "name": "contradiction_watchlist",
+          "field_type": "list[string]",
+          "required": true,
+          "description": "Known continuity risks requiring human review.",
+          "source_of_truth": "contradiction classifier"
+        },
+        {
+          "name": "repair_policy",
+          "field_type": "string",
+          "required": true,
+          "description": "Documents that repair stays manual and approval-first.",
+          "source_of_truth": "stage145 constitution"
+        }
+      ]
+    }
+  ]
+}

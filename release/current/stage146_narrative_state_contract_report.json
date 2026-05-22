@@ -1,0 +1,887 @@
+{
+  "stage": "146",
+  "baseline_stage": "145",
+  "title": "Narrative State Contract",
+  "status": "pass",
+  "issues": [],
+  "mode": "NARRATIVE_STATE_CONTRACT_LOCAL",
+  "narrative_state_contract_only": true,
+  "canonical_state_object_count": 7,
+  "hierarchy_edge_count": 7,
+  "continuity_rule_count": 6,
+  "reveal_boundary_complete": true,
+  "project_manifest_body_ready": true,
+  "node_boundary_constitution_ready": true,
+  "stage149_gate_ready": true,
+  "stage150_memory_body_ready": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage145_baseline": {
+      "stage": "145",
+      "baseline_stage": "144",
+      "status": "pass",
+      "title": "Body Constitution Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage145_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage146",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage146",
+          "actual": "stage146",
+          "path": "manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage146 Narrative State Contract",
+          "actual": "# V1700 Literary OS - Stage146\n\n> Narrative State Contract\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Current",
+          "path": "README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage146",
+          "actual": "active=stage146; stage=stage146",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage146 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage146_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage146_narrative_state_contract_report.json\", \"release_gate\": \"release/current/stage146_release_gate_report.json\"}",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.46.0",
+          "actual": "1.46.0",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage146 - Narrative State Contract",
+          "actual": "V1700 Stage146 - Narrative State Contract",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage146 Narrative State Contract",
+          "actual": "# V1700 Stage146 - Narrative State Contract\n\nStage146 turns the post-Stage145 body constitution into canonical narrative state c",
+          "path": "RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage146.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/stages/stage146.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage146_narrative_state_contract_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/proposals/stage146_narrative_state_contract_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage146_narrative_state_contract_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/architecture/stage146_narrative_state_contract_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage146_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/development/stage146_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage146_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage146_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage146_narrative_state_contract_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage146_narrative_state_contract_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage146_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage146_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage146_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/live_core_stage146_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_pack/state_shape_catalog.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_pack/state_shape_catalog.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_pack/state_hierarchy.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_pack/state_hierarchy.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_pack/continuity_rulebook.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_pack/continuity_rulebook.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_pack/reveal_boundary_matrix.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_pack/reveal_boundary_matrix.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": ".github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 23,
+        "pass_count": 23,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage146",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage146",
+          "actual": "stage146",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage146_narrative_state_contract_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "release/current/stage146_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 16,
+        "pass_count": 16,
+        "blocked_count": 0
+      }
+    },
+    "state_shape_catalog": {
+      "stage": "stage146",
+      "title": "Stage146 State Shape Catalog",
+      "status": "pass",
+      "issues": [],
+      "contract_count": 7,
+      "coverage_complete": true,
+      "contracts": [
+        {
+          "name": "SeriesState",
+          "scope": "series",
+          "purpose": "Defines project-level continuity and identity anchors for the entire series.",
+          "write_policy": "read_only_contract_until_stage150_memory_body",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "series_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable identifier for the series.",
+              "source_of_truth": "project manifest"
+            },
+            {
+              "name": "title",
+              "field_type": "string",
+              "required": true,
+              "description": "Human-readable series title.",
+              "source_of_truth": "project manifest"
+            },
+            {
+              "name": "format",
+              "field_type": "string",
+              "required": true,
+              "description": "Story format such as drama or novel.",
+              "source_of_truth": "project manifest"
+            },
+            {
+              "name": "theme_brief",
+              "field_type": "string",
+              "required": true,
+              "description": "Concise thematic spine for the work.",
+              "source_of_truth": "project manifest"
+            },
+            {
+              "name": "episode_order",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Canonical ordered episode identifiers.",
+              "source_of_truth": "episode manifests"
+            },
+            {
+              "name": "timeline_anchor",
+              "field_type": "string",
+              "required": true,
+              "description": "Default chronology anchor for continuity checks.",
+              "source_of_truth": "series continuity packet"
+            }
+          ]
+        },
+        {
+          "name": "EpisodeState",
+          "scope": "episode",
+          "purpose": "Defines the canonical state envelope for a single episode or chapter.",
+          "write_policy": "read_only_contract_until_stage147_project_manifest_body",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "episode_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable episode identifier.",
+              "source_of_truth": "episode manifest"
+            },
+            {
+              "name": "series_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Parent series identifier.",
+              "source_of_truth": "series state"
+            },
+            {
+              "name": "order_index",
+              "field_type": "integer",
+              "required": true,
+              "description": "Canonical sequence number.",
+              "source_of_truth": "episode manifest"
+            },
+            {
+              "name": "premise",
+              "field_type": "string",
+              "required": true,
+              "description": "Episode-level dramatic premise.",
+              "source_of_truth": "episode planning packet"
+            },
+            {
+              "name": "scene_order",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Approved ordered scene identifiers.",
+              "source_of_truth": "scene packet set"
+            },
+            {
+              "name": "continuity_anchor",
+              "field_type": "string",
+              "required": true,
+              "description": "Primary continuity checkpoint for the episode.",
+              "source_of_truth": "continuity packet"
+            }
+          ]
+        },
+        {
+          "name": "SceneState",
+          "scope": "scene",
+          "purpose": "Defines the smallest canonical narrative unit that generation and criticism will consume later.",
+          "write_policy": "read_only_contract_until_generation_layer_is_gated",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "scene_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable scene identifier.",
+              "source_of_truth": "scene packet"
+            },
+            {
+              "name": "episode_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Parent episode identifier.",
+              "source_of_truth": "episode state"
+            },
+            {
+              "name": "location_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Canonical location reference.",
+              "source_of_truth": "world state"
+            },
+            {
+              "name": "participants",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Character identifiers present in the scene.",
+              "source_of_truth": "character roster"
+            },
+            {
+              "name": "objective",
+              "field_type": "string",
+              "required": true,
+              "description": "Immediate dramatic objective of the scene.",
+              "source_of_truth": "scene packet"
+            },
+            {
+              "name": "surface_constraints",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Reader-surface rules for prose rendering.",
+              "source_of_truth": "node2 boundary policy"
+            }
+          ]
+        },
+        {
+          "name": "CharacterState",
+          "scope": "character",
+          "purpose": "Captures the canonical public state of a character without enabling hidden-memory mutation.",
+          "write_policy": "read_only_contract_until_human_approval_layer",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "character_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable character identifier.",
+              "source_of_truth": "character roster"
+            },
+            {
+              "name": "display_name",
+              "field_type": "string",
+              "required": true,
+              "description": "Reader-facing character name.",
+              "source_of_truth": "character roster"
+            },
+            {
+              "name": "role",
+              "field_type": "string",
+              "required": true,
+              "description": "Narrative role within the work.",
+              "source_of_truth": "character roster"
+            },
+            {
+              "name": "goal_vector",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Current explicit goals and motivations.",
+              "source_of_truth": "series/episode planning packet"
+            },
+            {
+              "name": "relationship_edges",
+              "field_type": "list[object]",
+              "required": true,
+              "description": "Declared relationships to other characters.",
+              "source_of_truth": "relationship ledger"
+            },
+            {
+              "name": "knowledge_boundary",
+              "field_type": "string",
+              "required": true,
+              "description": "What the character can know within approved reveals.",
+              "source_of_truth": "reveal contract"
+            }
+          ]
+        },
+        {
+          "name": "WorldState",
+          "scope": "world",
+          "purpose": "Defines the stable setting, institutions, and rule anchors that prose must preserve.",
+          "write_policy": "read_only_contract_until_project_manifest_body",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "world_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable world identifier.",
+              "source_of_truth": "world packet"
+            },
+            {
+              "name": "era",
+              "field_type": "string",
+              "required": true,
+              "description": "Temporal setting or historical layer.",
+              "source_of_truth": "world packet"
+            },
+            {
+              "name": "locations",
+              "field_type": "list[object]",
+              "required": true,
+              "description": "Canonical locations available to scenes.",
+              "source_of_truth": "world packet"
+            },
+            {
+              "name": "institutions",
+              "field_type": "list[object]",
+              "required": true,
+              "description": "Organizations and families with continuity value.",
+              "source_of_truth": "world packet"
+            },
+            {
+              "name": "rule_constraints",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Setting rules that scenes must not violate.",
+              "source_of_truth": "world packet"
+            },
+            {
+              "name": "public_facts",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Surface-safe facts available to reader-facing output.",
+              "source_of_truth": "world packet"
+            }
+          ]
+        },
+        {
+          "name": "RevealState",
+          "scope": "reveal",
+          "purpose": "Controls reveal visibility and knowledge budgets without exposing raw hidden state to Node2.",
+          "write_policy": "read_only_contract_until_human_approval_layer",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "reveal_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable reveal identifier.",
+              "source_of_truth": "reveal packet"
+            },
+            {
+              "name": "owner_scope",
+              "field_type": "string",
+              "required": true,
+              "description": "Series, episode, or scene ownership.",
+              "source_of_truth": "reveal packet"
+            },
+            {
+              "name": "visibility_level",
+              "field_type": "string",
+              "required": true,
+              "description": "Allowed visibility such as hidden, critic_only, or reader_surface.",
+              "source_of_truth": "reveal packet"
+            },
+            {
+              "name": "knowledge_holders",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Characters or system lanes allowed to know the reveal.",
+              "source_of_truth": "reveal packet"
+            },
+            {
+              "name": "unlock_condition",
+              "field_type": "string",
+              "required": true,
+              "description": "Approved condition for future reveal progression.",
+              "source_of_truth": "reveal packet"
+            },
+            {
+              "name": "node2_surface_projection",
+              "field_type": "string",
+              "required": true,
+              "description": "Surface-safe projection available to Node2.",
+              "source_of_truth": "node boundary policy"
+            }
+          ]
+        },
+        {
+          "name": "ContinuityState",
+          "scope": "continuity",
+          "purpose": "Declares cross-scene and cross-episode continuity checkpoints without auto-repair authority.",
+          "write_policy": "read_only_contract_until_stage149_gate_allows_memory_entry",
+          "field_count": 6,
+          "fields": [
+            {
+              "name": "continuity_id",
+              "field_type": "string",
+              "required": true,
+              "description": "Stable continuity packet identifier.",
+              "source_of_truth": "continuity packet"
+            },
+            {
+              "name": "timeline_position",
+              "field_type": "string",
+              "required": true,
+              "description": "Normalized chronology position.",
+              "source_of_truth": "continuity packet"
+            },
+            {
+              "name": "open_threads",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Outstanding promises that later scenes must respect.",
+              "source_of_truth": "continuity packet"
+            },
+            {
+              "name": "resolved_threads",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Promises already closed with evidence.",
+              "source_of_truth": "continuity packet"
+            },
+            {
+              "name": "contradiction_watchlist",
+              "field_type": "list[string]",
+              "required": true,
+              "description": "Known continuity risks requiring human review.",
+              "source_of_truth": "contradiction classifier"
+            },
+            {
+              "name": "repair_policy",
+              "field_type": "string",
+              "required": true,
+              "description": "Documents that repair stays manual and approval-first.",
+              "source_of_truth": "stage145 constitution"
+            }
+          ]
+        }
+      ]
+    },
+    "state_hierarchy": {
+      "stage": "stage146",
+      "title": "Stage146 State Hierarchy",
+      "status": "pass",
+      "issues": [],
+      "edge_count": 7,
+      "edges": [
+        {
+          "parent": "SeriesState",
+          "child": "EpisodeState",
+          "cardinality": "1:n",
+          "authority": "series defines canonical episode order"
+        },
+        {
+          "parent": "EpisodeState",
+          "child": "SceneState",
+          "cardinality": "1:n",
+          "authority": "episode defines canonical scene order"
+        },
+        {
+          "parent": "SeriesState",
+          "child": "CharacterState",
+          "cardinality": "1:n",
+          "authority": "series roster owns character identity"
+        },
+        {
+          "parent": "SeriesState",
+          "child": "WorldState",
+          "cardinality": "1:1",
+          "authority": "series sets world authority"
+        },
+        {
+          "parent": "SceneState",
+          "child": "RevealState",
+          "cardinality": "1:n",
+          "authority": "scene reveal slots must remain explicitly scoped"
+        },
+        {
+          "parent": "EpisodeState",
+          "child": "ContinuityState",
+          "cardinality": "1:1",
+          "authority": "episode continuity packet records promises and risks"
+        },
+        {
+          "parent": "CharacterState",
+          "child": "RevealState",
+          "cardinality": "n:n",
+          "authority": "knowledge holders are constrained by reveal packets"
+        }
+      ]
+    },
+    "continuity_rulebook": {
+      "stage": "stage146",
+      "title": "Stage146 Continuity Rulebook",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 6,
+      "all_enforced": true,
+      "rules": [
+        {
+          "name": "chronology_preserved",
+          "description": "Timeline anchors must never move implicitly between scenes.",
+          "enforced": true,
+          "evidence": "continuity state contract"
+        },
+        {
+          "name": "character_knowledge_preserved",
+          "description": "Character knowledge cannot exceed reveal-authorized boundaries.",
+          "enforced": true,
+          "evidence": "character + reveal state"
+        },
+        {
+          "name": "world_rule_preserved",
+          "description": "Setting rules remain stable across all episodes.",
+          "enforced": true,
+          "evidence": "world state contract"
+        },
+        {
+          "name": "promise_tracking_preserved",
+          "description": "Open and resolved threads must remain explicitly declared.",
+          "enforced": true,
+          "evidence": "continuity state contract"
+        },
+        {
+          "name": "repair_manual_only",
+          "description": "Continuity fixes remain human-approved and are not auto-applied.",
+          "enforced": true,
+          "evidence": "stage145 constitution"
+        },
+        {
+          "name": "provider_zero_preserved",
+          "description": "No continuity step may trigger live provider calls.",
+          "enforced": true,
+          "evidence": "release gate invariants"
+        }
+      ]
+    },
+    "reveal_boundary_matrix": {
+      "stage": "stage146",
+      "title": "Stage146 Reveal Boundary Matrix",
+      "status": "pass",
+      "issues": [],
+      "coverage_complete": true,
+      "entries": [
+        {
+          "state_name": "SeriesState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_summary_only",
+          "node3_access": "critic_summary_only",
+          "rationale": "Series metadata can be summarized but not fully exposed to Node2."
+        },
+        {
+          "state_name": "EpisodeState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_summary_only",
+          "node3_access": "critic_summary_only",
+          "rationale": "Episode planning remains authoritative outside reader-facing prose."
+        },
+        {
+          "state_name": "SceneState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_safe_scene_packet",
+          "node3_access": "critic_surface_plus_flags",
+          "rationale": "Scene state is rendered through Node2-safe packets only."
+        },
+        {
+          "state_name": "CharacterState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_traits_only",
+          "node3_access": "critic_relationship_summary",
+          "rationale": "Private goals and hidden beliefs stay out of Node2."
+        },
+        {
+          "state_name": "WorldState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_world_facts_only",
+          "node3_access": "critic_world_consistency_summary",
+          "rationale": "World internals are summarized for reader output."
+        },
+        {
+          "state_name": "RevealState",
+          "node1_access": "full_contract",
+          "node2_access": "node2_raw_reveal_access_zero",
+          "node3_access": "critic_reveal_guard_summary",
+          "rationale": "Reveal state is never handed raw to Node2."
+        },
+        {
+          "state_name": "ContinuityState",
+          "node1_access": "full_contract",
+          "node2_access": "surface_continuity_summary",
+          "node3_access": "critic_continuity_packet",
+          "rationale": "Continuity risks remain review artifacts, not Node2 input."
+        }
+      ]
+    },
+    "stage147_entry_signals": {
+      "stage": "stage146",
+      "title": "Stage146 Stage147+ Entry Signals",
+      "status": "pass",
+      "issues": [],
+      "project_manifest_body_ready": true,
+      "node_boundary_constitution_ready": true,
+      "stage149_gate_ready": true,
+      "stage150_memory_body_ready": true,
+      "signals": [
+        "SeriesState, EpisodeState, and SceneState contracts are canonical.",
+        "CharacterState and WorldState expose stable manifest-facing fields.",
+        "RevealState and ContinuityState preserve provider-zero and Node2 boundaries.",
+        "Stage147 may bind project manifests to these contracts without enabling writes."
+      ]
+    }
+  }
+}
