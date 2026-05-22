@@ -1,0 +1,59 @@
+{
+  "stage": "stage149",
+  "title": "Stage149 Release Blocker Registry",
+  "status": "pass",
+  "issues": [],
+  "registered_blocker_count": 8,
+  "blocked_capability_count": 8,
+  "all_blocked": true,
+  "entries": [
+    {
+      "name": "provider_calls",
+      "description": "Provider calls must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+    },
+    {
+      "name": "runtime_training",
+      "description": "Runtime training must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage145_body_constitution_report.json"
+    },
+    {
+      "name": "model_weight_update",
+      "description": "Model weight updates must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage145_body_constitution_report.json"
+    },
+    {
+      "name": "losdb_write",
+      "description": "LOSDB writes must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+    },
+    {
+      "name": "migration_execution",
+      "description": "Migration execution must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage146_narrative_state_contract_report.json"
+    },
+    {
+      "name": "node2_raw_reveal_access",
+      "description": "Node2 raw reveal access must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+    },
+    {
+      "name": "canon_auto_resolution",
+      "description": "Automatic canon mutation must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage145_body_constitution_report.json"
+    },
+    {
+      "name": "auto_repair_mutation",
+      "description": "Automatic repair mutation must remain blocked in Page01.",
+      "blocked": true,
+      "evidence": "release/current/stage145_body_constitution_report.json"
+    }
+  ]
+}

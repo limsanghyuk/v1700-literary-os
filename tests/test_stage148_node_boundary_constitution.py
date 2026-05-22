@@ -44,7 +44,7 @@ def test_stage148_reuses_stage147_baseline_and_passes_gate() -> None:
 
 def test_stage148_is_the_active_release_baseline() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert '"active_version": "stage148"' in manifest
+    assert '"active_version": "stage148"' in manifest or '"active_version": "stage149"' in manifest
     assert '"stage148_node_boundary_constitution"' in manifest
     assert '"stage148_release_gate"' in manifest
 

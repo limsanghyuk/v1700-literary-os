@@ -1,0 +1,41 @@
+{
+  "stage": "stage149",
+  "title": "Stage149 Lineage Evidence Index",
+  "status": "pass",
+  "issues": [],
+  "coverage_complete": true,
+  "entries": [
+    {
+      "stage": "stage145",
+      "title": "Body Constitution",
+      "report_path": "release/current/stage145_body_constitution_report.json",
+      "manifest_path": "manifests/stage145_manifest.json",
+      "docs_path": "docs/stages/stage145.md",
+      "present": true
+    },
+    {
+      "stage": "stage146",
+      "title": "Narrative State Contract",
+      "report_path": "release/current/stage146_narrative_state_contract_report.json",
+      "manifest_path": "manifests/stage146_manifest.json",
+      "docs_path": "docs/stages/stage146.md",
+      "present": true
+    },
+    {
+      "stage": "stage147",
+      "title": "Project Manifest Body",
+      "report_path": "release/current/stage147_project_manifest_body_report.json",
+      "manifest_path": "manifests/stage147_manifest.json",
+      "docs_path": "docs/stages/stage147.md",
+      "present": true
+    },
+    {
+      "stage": "stage148",
+      "title": "Node Boundary Constitution",
+      "report_path": "release/current/stage148_node_boundary_constitution_report.json",
+      "manifest_path": "manifests/stage148_manifest.json",
+      "docs_path": "docs/stages/stage148.md",
+      "present": true
+    }
+  ]
+}

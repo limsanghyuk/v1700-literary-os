@@ -1,0 +1,574 @@
+{
+  "stage": "149",
+  "baseline_stage": "148",
+  "title": "Body Constitution Release Gate",
+  "status": "pass",
+  "issues": [],
+  "mode": "BODY_CONSTITUTION_RELEASE_GATE_LOCAL",
+  "body_constitution_release_gate_only": true,
+  "gate_rule_count": 8,
+  "sealed_page01": true,
+  "page01_constitution_frozen": true,
+  "stage150_memory_body_ready": true,
+  "release_blocker_count": 8,
+  "blocked_capability_count": 8,
+  "lineage_evidence_complete": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage148_baseline": {
+      "stage": "148",
+      "baseline_stage": "147",
+      "status": "pass",
+      "title": "Node Boundary Constitution Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage148_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage149",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage149",
+          "actual": "stage149",
+          "path": "manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage149 Body Constitution Release Gate",
+          "actual": "# V1700 Literary OS - Stage149\n\n> Body Constitution Release Gate\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## C",
+          "path": "README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage149",
+          "actual": "active=stage149; stage=stage149",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage149 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage149_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage149_body_constitution_release_gate_report.json\", \"release_gate\": \"release/current/stage149_release_gate_report.json\"}",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.49.0",
+          "actual": "1.49.0",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage149 - Body Constitution Release Gate",
+          "actual": "V1700 Stage149 - Body Constitution Release Gate",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage149 Body Constitution Release Gate",
+          "actual": "# V1700 Stage149 - Body Constitution Release Gate\n\nStage149 seals the full Page01 constitution chain. It does not add memory exe",
+          "path": "RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage149.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/stages/stage149.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage149_body_constitution_release_gate_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/proposals/stage149_body_constitution_release_gate_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage149_body_constitution_release_gate_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/architecture/stage149_body_constitution_release_gate_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage149_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/development/stage149_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage149_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage149_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage149_body_constitution_release_gate_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage149_body_constitution_release_gate_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage149_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage149_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage149_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/live_core_stage149_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_pack/body_constitution_gate_matrix.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_pack/body_constitution_gate_matrix.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_pack/page01_constitution_seal.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_pack/page01_constitution_seal.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_pack/stage150_readiness_matrix.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_pack/stage150_readiness_matrix.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_pack/release_blocker_registry.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_pack/release_blocker_registry.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage149_body_constitution_release_gate_pack/lineage_evidence_index.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage149_body_constitution_release_gate_pack/lineage_evidence_index.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": ".github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 23,
+        "pass_count": 23,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage149",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage149",
+          "actual": "stage149",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "release/current/stage149_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 16,
+        "pass_count": 16,
+        "blocked_count": 0
+      }
+    },
+    "body_constitution_gate_matrix": {
+      "stage": "stage149",
+      "title": "Stage149 Body Constitution Gate Matrix",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 8,
+      "all_rules_passed": true,
+      "rules": [
+        {
+          "name": "stage145_constitution_gate_pass",
+          "description": "Stage145 body constitution must remain the constitutional root of Page01.",
+          "passed": true,
+          "source_stage": "stage145",
+          "evidence": "release/current/stage145_release_gate_report.json"
+        },
+        {
+          "name": "stage146_state_contract_gate_pass",
+          "description": "Stage146 narrative state contract must remain canonical and passing.",
+          "passed": true,
+          "source_stage": "stage146",
+          "evidence": "release/current/stage146_release_gate_report.json"
+        },
+        {
+          "name": "stage147_manifest_body_gate_pass",
+          "description": "Stage147 manifest body must remain the bound packet authority.",
+          "passed": true,
+          "source_stage": "stage147",
+          "evidence": "release/current/stage147_release_gate_report.json"
+        },
+        {
+          "name": "stage148_node_boundary_gate_pass",
+          "description": "Stage148 node boundary constitution must remain the immediate baseline.",
+          "passed": true,
+          "source_stage": "stage148",
+          "evidence": "release/current/stage148_release_gate_report.json"
+        },
+        {
+          "name": "stage148_entry_signal_pass",
+          "description": "Stage148 must explicitly declare Stage149 gate readiness.",
+          "passed": true,
+          "source_stage": "stage148",
+          "evidence": "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json"
+        },
+        {
+          "name": "provider_zero_preserved",
+          "description": "Page01 sealing must preserve provider-zero across the constitution chain.",
+          "passed": true,
+          "source_stage": "stage145-stage148",
+          "evidence": "release/current/stage145_body_constitution_report.json"
+        },
+        {
+          "name": "node2_boundary_preserved",
+          "description": "Page01 sealing must preserve Node2 raw reveal access = 0.",
+          "passed": true,
+          "source_stage": "stage145-stage148",
+          "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+        },
+        {
+          "name": "branchpoint_lineage_preserved",
+          "description": "All Page01 stages must preserve branchpoint lineage evidence.",
+          "passed": true,
+          "source_stage": "stage145-stage148",
+          "evidence": "manifests/stage149_branchpoint_trace_manifest.json"
+        }
+      ]
+    },
+    "page01_constitution_seal": {
+      "stage": "stage149",
+      "title": "Stage149 Page01 Constitution Seal",
+      "status": "pass",
+      "issues": [],
+      "sealed_page01": true,
+      "page01_constitution_frozen": true,
+      "seal_status": "SEALED",
+      "seal_authority": "Stage149 release gate",
+      "seal_inputs": [
+        "release/current/stage145_body_constitution_pack/stage150_entry_criteria.json",
+        "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json",
+        "release/current/stage149_body_constitution_release_gate_pack/body_constitution_gate_matrix.json"
+      ],
+      "next_stage": "stage150",
+      "signals": [
+        "Page01 constitutional layers Stage145 through Stage148 are passing and sealed.",
+        "Stage150 Memory Body may begin only from this sealed constitution baseline.",
+        "No provider calls, write paths, or raw reveal access are enabled by the seal."
+      ]
+    },
+    "stage150_readiness_matrix": {
+      "stage": "stage149",
+      "title": "Stage149 Stage150 Readiness Matrix",
+      "status": "pass",
+      "issues": [],
+      "stage150_memory_body_ready": true,
+      "checks": [
+        {
+          "name": "stage145_149_constitution_chain_pass",
+          "description": "The full Page01 constitution chain must pass before Stage150 starts.",
+          "ready": true,
+          "upstream": "stage145-stage149"
+        },
+        {
+          "name": "page01_seal_present",
+          "description": "Stage149 must seal Page01 before Memory Body may start.",
+          "ready": true,
+          "upstream": "stage149"
+        },
+        {
+          "name": "stage149_entry_required_by_stage145",
+          "description": "Stage145 entry criteria must still explicitly require the Stage149 release gate.",
+          "ready": true,
+          "upstream": "stage145"
+        },
+        {
+          "name": "provider_zero_preserved",
+          "description": "Stage150 must inherit provider-zero from the sealed Page01 chain.",
+          "ready": true,
+          "upstream": "stage145-stage149"
+        },
+        {
+          "name": "node2_boundary_preserved",
+          "description": "Stage150 must inherit Node2 raw reveal zero from the sealed Page01 chain.",
+          "ready": true,
+          "upstream": "stage148-stage149"
+        }
+      ]
+    },
+    "release_blocker_registry": {
+      "stage": "stage149",
+      "title": "Stage149 Release Blocker Registry",
+      "status": "pass",
+      "issues": [],
+      "registered_blocker_count": 8,
+      "blocked_capability_count": 8,
+      "all_blocked": true,
+      "entries": [
+        {
+          "name": "provider_calls",
+          "description": "Provider calls must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+        },
+        {
+          "name": "runtime_training",
+          "description": "Runtime training must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage145_body_constitution_report.json"
+        },
+        {
+          "name": "model_weight_update",
+          "description": "Model weight updates must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage145_body_constitution_report.json"
+        },
+        {
+          "name": "losdb_write",
+          "description": "LOSDB writes must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+        },
+        {
+          "name": "migration_execution",
+          "description": "Migration execution must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage146_narrative_state_contract_report.json"
+        },
+        {
+          "name": "node2_raw_reveal_access",
+          "description": "Node2 raw reveal access must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage148_node_boundary_constitution_report.json"
+        },
+        {
+          "name": "canon_auto_resolution",
+          "description": "Automatic canon mutation must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage145_body_constitution_report.json"
+        },
+        {
+          "name": "auto_repair_mutation",
+          "description": "Automatic repair mutation must remain blocked in Page01.",
+          "blocked": true,
+          "evidence": "release/current/stage145_body_constitution_report.json"
+        }
+      ]
+    },
+    "lineage_evidence_index": {
+      "stage": "stage149",
+      "title": "Stage149 Lineage Evidence Index",
+      "status": "pass",
+      "issues": [],
+      "coverage_complete": true,
+      "entries": [
+        {
+          "stage": "stage145",
+          "title": "Body Constitution",
+          "report_path": "release/current/stage145_body_constitution_report.json",
+          "manifest_path": "manifests/stage145_manifest.json",
+          "docs_path": "docs/stages/stage145.md",
+          "present": true
+        },
+        {
+          "stage": "stage146",
+          "title": "Narrative State Contract",
+          "report_path": "release/current/stage146_narrative_state_contract_report.json",
+          "manifest_path": "manifests/stage146_manifest.json",
+          "docs_path": "docs/stages/stage146.md",
+          "present": true
+        },
+        {
+          "stage": "stage147",
+          "title": "Project Manifest Body",
+          "report_path": "release/current/stage147_project_manifest_body_report.json",
+          "manifest_path": "manifests/stage147_manifest.json",
+          "docs_path": "docs/stages/stage147.md",
+          "present": true
+        },
+        {
+          "stage": "stage148",
+          "title": "Node Boundary Constitution",
+          "report_path": "release/current/stage148_node_boundary_constitution_report.json",
+          "manifest_path": "manifests/stage148_manifest.json",
+          "docs_path": "docs/stages/stage148.md",
+          "present": true
+        }
+      ]
+    }
+  }
+}

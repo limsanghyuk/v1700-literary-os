@@ -53,6 +53,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage148_node_boundary_constitution_report.json",
         "release_gate_report": "release/current/stage148_release_gate_report.json",
     },
+    "stage149": {
+        "package": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage149_body_constitution_release_gate_report.json",
+        "release_gate_report": "release/current/stage149_release_gate_report.json",
+    },
 }
 
 

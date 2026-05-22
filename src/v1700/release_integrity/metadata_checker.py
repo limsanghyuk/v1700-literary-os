@@ -202,6 +202,29 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage149": {
+        "label": "Stage149",
+        "version": "1.49.0",
+        "title": "Body Constitution Release Gate",
+        "required_files": [
+            "docs/stages/stage149.md",
+            "docs/proposals/stage149_body_constitution_release_gate_proposal.md",
+            "docs/architecture/stage149_body_constitution_release_gate_blueprint.md",
+            "docs/development/stage149_developer_handoff.md",
+            "manifests/stage149_manifest.json",
+            "manifests/stage149_body_constitution_release_gate_manifest.json",
+            "manifests/stage149_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage149_overlay.json",
+            "release/current/stage149_release_asset_manifest.json",
+            "release/current/stage149_body_constitution_release_gate_report.json",
+            "release/current/stage149_body_constitution_release_gate_pack/body_constitution_gate_matrix.json",
+            "release/current/stage149_body_constitution_release_gate_pack/page01_constitution_seal.json",
+            "release/current/stage149_body_constitution_release_gate_pack/stage150_readiness_matrix.json",
+            "release/current/stage149_body_constitution_release_gate_pack/release_blocker_registry.json",
+            "release/current/stage149_body_constitution_release_gate_pack/lineage_evidence_index.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

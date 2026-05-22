@@ -584,7 +584,7 @@
       "surviving_runtime_value": "Fixes the canonical narrative state layer that later manifest, memory, generation, and gate bodies must reference."
     }
   ],
-  "active_version": "stage148",
+  "active_version": "stage149",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -684,5 +684,10 @@
     "status": "active",
     "baseline_stage": "stage147",
     "purpose": "Node Boundary Constitution"
+  },
+  "stage149": {
+    "status": "active",
+    "baseline_stage": "stage148",
+    "purpose": "Body Constitution Release Gate"
   }
 }
