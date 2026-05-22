@@ -1,0 +1,18 @@
+{
+  "stage": "stage145",
+  "branchpoint_from": "stage144",
+  "branchpoint_to": "stage145",
+  "surviving_invariants": [
+    "provider_zero",
+    "no_runtime_training",
+    "no_model_weight_update",
+    "no_auto_memory_write",
+    "no_auto_repair_apply",
+    "node2_surface_only",
+    "human_approval_required"
+  ],
+  "evidence": [
+    "release/current/stage145_body_constitution_report.json",
+    "release/current/stage145_release_gate_report.json"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "stage": "stage145",
+  "title": "Stage145 Formula Classification",
+  "status": "pass",
+  "issues": [],
+  "classification_statuses": [
+    "ABSORBED",
+    "DEFERRED",
+    "REFERENCE",
+    "TRUNK"
+  ],
+  "coverage_complete": true,
+  "entries": [
+    {
+      "name": "DRSE State Transition",
+      "family": "narrative_state",
+      "status": "TRUNK",
+      "first_stage": "stage145",
+      "rationale": "Core V1700 state semantics should be constitution-level authority.",
+      "notes": ""
+    },
+    {
+      "name": "NarrativeStateTensor 8D/10D",
+      "family": "narrative_state",
+      "status": "REFERENCE",
+      "first_stage": "stage146",
+      "rationale": "Tensor candidates inform state contracts but should not become runtime authority in Page01.",
+      "notes": ""
+    },
+    {
+      "name": "Temporal Decay",
+      "family": "memory_body",
+      "status": "ABSORBED",
+      "first_stage": "stage150",
+      "rationale": "Memory drift logic is accepted for V1700 but starts in the memory body.",
+      "notes": ""
+    },
+    {
+      "name": "BM25 / RRF Retrieval",
+      "family": "retrieval",
+      "status": "ABSORBED",
+      "first_stage": "stage150",
+      "rationale": "Cross-memory query semantics are approved for later read-only retrieval.",
+      "notes": ""
+    },
+    {
+      "name": "Fourier Narrative Tension Curve",
+      "family": "quality_body",
+      "status": "REFERENCE",
+      "first_stage": "stage160",
+      "rationale": "Useful for benchmark scoring after generation exists.",
+      "notes": ""
+    },
+    {
+      "name": "Narrative Fitness Score",
+      "family": "quality_body",
+      "status": "ABSORBED",
+      "first_stage": "stage160",
+      "rationale": "Adopted as a future benchmark axis instead of immediate runtime logic.",
+      "notes": ""
+    },
+    {
+      "name": "AMW Emotional Momentum",
+      "family": "style_body",
+      "status": "REFERENCE",
+      "first_stage": "stage170",
+      "rationale": "Relevant for style drift checks after benchmark governance exists.",
+      "notes": ""
+    },
+    {
+      "name": "LoRA Promotion Policy",
+      "family": "learning_body",
+      "status": "DEFERRED",
+      "first_stage": "stage172",
+      "rationale": "Training and promotion stay disabled until the learning body is gated.",
+      "notes": ""
+    },
+    {
+      "name": "ASD Repair Pipeline",
+      "family": "repair_policy",
+      "status": "DEFERRED",
+      "first_stage": "stage158",
+      "rationale": "Repair remains proposal-only until human approval gates exist.",
+      "notes": ""
+    },
+    {
+      "name": "MultiWork Shared World",
+      "family": "multiwork_body",
+      "status": "REFERENCE",
+      "first_stage": "stage165",
+      "rationale": "Shared-world absorption is deferred beyond the constitution page.",
+      "notes": ""
+    }
+  ]
+}

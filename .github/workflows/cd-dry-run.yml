@@ -31,7 +31,7 @@ jobs:
       - name: Verify release gates
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py -q
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
           python tools/run_stage136_schema_registry.py
@@ -54,6 +54,8 @@ jobs:
           python tools/run_stage143_release_gate.py
           python tools/run_stage144_split_ci_runtime_strategy.py
           python tools/run_stage144_release_gate.py
+          python tools/run_stage145_body_constitution.py
+          python tools/run_stage145_body_constitution_gate.py
           python tools/run_ci_dependency_preflight.py
 
       - name: Build dry-run archive

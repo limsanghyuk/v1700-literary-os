@@ -1,0 +1,578 @@
+{
+  "stage": "145",
+  "baseline_stage": "144",
+  "title": "Body Constitution",
+  "status": "pass",
+  "issues": [],
+  "mode": "BODY_CONSTITUTION_PROPOSAL_LOCAL",
+  "body_constitution_only": true,
+  "formula_policy": "TRUNK_ABSORBED_REFERENCE_DEFERRED",
+  "formula_policy_complete": true,
+  "constitution_invariants_complete": true,
+  "body_layer_count": 7,
+  "narrative_state_contract_ready": true,
+  "project_manifest_body_ready": true,
+  "node_boundary_constitution_ready": true,
+  "stage150_memory_body_ready": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage144_baseline": {
+      "stage": "144",
+      "baseline_stage": "143",
+      "status": "pass",
+      "title": "Split CI Runtime Strategy Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage144_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage145",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage145",
+          "actual": "stage145",
+          "path": "manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage145 Body Constitution",
+          "actual": "# V1700 Literary OS - Stage145\n\n> Body Constitution\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Current Stage\n",
+          "path": "README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage145",
+          "actual": "active=stage145; stage=stage145",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage145 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage145_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage145_body_constitution_report.json\", \"release_gate\": \"release/current/stage145_release_gate_report.json\"}",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.45.0",
+          "actual": "1.45.0",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage145 - Body Constitution",
+          "actual": "V1700 Stage145 - Body Constitution",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage145 Body Constitution",
+          "actual": "# V1700 Stage145 - Body Constitution\n\nStage145 starts the post-Stage144 narrative body line. It defines the Page01 constitutiona",
+          "path": "RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage145.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/stages/stage145.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage145_body_constitution_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/proposals/stage145_body_constitution_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage145_body_constitution_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/architecture/stage145_body_constitution_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage145_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/development/stage145_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage145_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage145_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage145_body_constitution_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage145_body_constitution_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage145_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage145_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage145_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/live_core_stage145_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_body_constitution_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_body_constitution_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_body_constitution_pack/formula_classification.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_body_constitution_pack/formula_classification.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_body_constitution_pack/constitution_invariants.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_body_constitution_pack/constitution_invariants.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_body_constitution_pack/body_layer_map.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_body_constitution_pack/body_layer_map.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage145_body_constitution_pack/stage150_entry_criteria.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage145_body_constitution_pack/stage150_entry_criteria.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": ".github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 22,
+        "pass_count": 22,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage145",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage145",
+          "actual": "stage145",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "release/current/stage145_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 16,
+        "pass_count": 16,
+        "blocked_count": 0
+      }
+    },
+    "formula_classification": {
+      "stage": "stage145",
+      "title": "Stage145 Formula Classification",
+      "status": "pass",
+      "issues": [],
+      "classification_statuses": [
+        "ABSORBED",
+        "DEFERRED",
+        "REFERENCE",
+        "TRUNK"
+      ],
+      "coverage_complete": true,
+      "entries": [
+        {
+          "name": "DRSE State Transition",
+          "family": "narrative_state",
+          "status": "TRUNK",
+          "first_stage": "stage145",
+          "rationale": "Core V1700 state semantics should be constitution-level authority.",
+          "notes": ""
+        },
+        {
+          "name": "NarrativeStateTensor 8D/10D",
+          "family": "narrative_state",
+          "status": "REFERENCE",
+          "first_stage": "stage146",
+          "rationale": "Tensor candidates inform state contracts but should not become runtime authority in Page01.",
+          "notes": ""
+        },
+        {
+          "name": "Temporal Decay",
+          "family": "memory_body",
+          "status": "ABSORBED",
+          "first_stage": "stage150",
+          "rationale": "Memory drift logic is accepted for V1700 but starts in the memory body.",
+          "notes": ""
+        },
+        {
+          "name": "BM25 / RRF Retrieval",
+          "family": "retrieval",
+          "status": "ABSORBED",
+          "first_stage": "stage150",
+          "rationale": "Cross-memory query semantics are approved for later read-only retrieval.",
+          "notes": ""
+        },
+        {
+          "name": "Fourier Narrative Tension Curve",
+          "family": "quality_body",
+          "status": "REFERENCE",
+          "first_stage": "stage160",
+          "rationale": "Useful for benchmark scoring after generation exists.",
+          "notes": ""
+        },
+        {
+          "name": "Narrative Fitness Score",
+          "family": "quality_body",
+          "status": "ABSORBED",
+          "first_stage": "stage160",
+          "rationale": "Adopted as a future benchmark axis instead of immediate runtime logic.",
+          "notes": ""
+        },
+        {
+          "name": "AMW Emotional Momentum",
+          "family": "style_body",
+          "status": "REFERENCE",
+          "first_stage": "stage170",
+          "rationale": "Relevant for style drift checks after benchmark governance exists.",
+          "notes": ""
+        },
+        {
+          "name": "LoRA Promotion Policy",
+          "family": "learning_body",
+          "status": "DEFERRED",
+          "first_stage": "stage172",
+          "rationale": "Training and promotion stay disabled until the learning body is gated.",
+          "notes": ""
+        },
+        {
+          "name": "ASD Repair Pipeline",
+          "family": "repair_policy",
+          "status": "DEFERRED",
+          "first_stage": "stage158",
+          "rationale": "Repair remains proposal-only until human approval gates exist.",
+          "notes": ""
+        },
+        {
+          "name": "MultiWork Shared World",
+          "family": "multiwork_body",
+          "status": "REFERENCE",
+          "first_stage": "stage165",
+          "rationale": "Shared-world absorption is deferred beyond the constitution page.",
+          "notes": ""
+        }
+      ]
+    },
+    "constitution_invariants": {
+      "stage": "stage145",
+      "title": "Stage145 Constitution Invariants",
+      "status": "pass",
+      "issues": [],
+      "all_enforced": true,
+      "entries": [
+        {
+          "name": "provider_zero",
+          "description": "Default runtime and release gates must not trigger provider calls.",
+          "enforced": true,
+          "enforcement": "release gate + runtime smoke"
+        },
+        {
+          "name": "no_runtime_training",
+          "description": "Runtime training execution stays disabled in Page01.",
+          "enforced": true,
+          "enforcement": "stage145 report + release gate"
+        },
+        {
+          "name": "no_model_weight_update",
+          "description": "Model weight updates remain disabled.",
+          "enforced": true,
+          "enforcement": "stage145 report + release gate"
+        },
+        {
+          "name": "no_auto_memory_write",
+          "description": "Narrative state and memory writes require later human-approved gates.",
+          "enforced": true,
+          "enforcement": "body constitution policy"
+        },
+        {
+          "name": "no_auto_repair_apply",
+          "description": "Repair stays proposal-only until approval policy exists.",
+          "enforced": true,
+          "enforcement": "stage145 proposal + later critic gate"
+        },
+        {
+          "name": "node2_surface_only",
+          "description": "Node2 may see only reader-surface packets and not hidden reveals or private memory.",
+          "enforced": true,
+          "enforcement": "Stage148 boundary contract"
+        },
+        {
+          "name": "human_approval_required",
+          "description": "Canon mutation, memory write, learning promotion, and release publish require explicit approval contracts.",
+          "enforced": true,
+          "enforcement": "Page01 constitution"
+        }
+      ]
+    },
+    "body_layer_map": {
+      "stage": "stage145",
+      "title": "Stage145 Body Layer Map",
+      "status": "pass",
+      "issues": [],
+      "layer_count": 7,
+      "entries": [
+        {
+          "name": "1700 Body Layer",
+          "purpose": "Defines the high-level constitutional identity of the V1700 narrative body.",
+          "first_stage": "stage145",
+          "next_stage": "stage146"
+        },
+        {
+          "name": "Narrative State Layer",
+          "purpose": "Defines canonical state objects for series, episodes, scenes, characters, world, reveals, and continuity.",
+          "first_stage": "stage146",
+          "next_stage": "stage147"
+        },
+        {
+          "name": "Memory Layer",
+          "purpose": "Stores and retrieves read-only project memory before any automated mutation is allowed.",
+          "first_stage": "stage150",
+          "next_stage": "stage151"
+        },
+        {
+          "name": "Generation Layer",
+          "purpose": "Compiles scene and episode intents into surface-safe generation packets.",
+          "first_stage": "stage155",
+          "next_stage": "stage157"
+        },
+        {
+          "name": "Gate Layer",
+          "purpose": "Turns reports and evidence into promotion or release decisions.",
+          "first_stage": "stage149",
+          "next_stage": "stage174"
+        },
+        {
+          "name": "Learning Candidate Layer",
+          "purpose": "Tracks candidate artifacts and style profiles without enabling training execution.",
+          "first_stage": "stage170",
+          "next_stage": "stage174"
+        },
+        {
+          "name": "Human Approval Layer",
+          "purpose": "Controls canon mutation, memory write, learning promotion, and release publish authority.",
+          "first_stage": "stage145",
+          "next_stage": "stage178"
+        }
+      ]
+    },
+    "stage150_entry_criteria": {
+      "stage": "stage145",
+      "title": "Stage145 Stage150 Entry Criteria",
+      "status": "pass",
+      "issues": [],
+      "stage150_memory_body_ready": true,
+      "entries": [
+        {
+          "name": "stage145_constitution_report_pass",
+          "description": "Body constitution report is reproducible and provider-zero.",
+          "required": true,
+          "source_stage": "stage145"
+        },
+        {
+          "name": "stage146_state_contract_pass",
+          "description": "Narrative state contract defines canonical state objects.",
+          "required": true,
+          "source_stage": "stage146"
+        },
+        {
+          "name": "stage147_project_manifest_pass",
+          "description": "Project manifests load, validate, and preserve policy boundaries.",
+          "required": true,
+          "source_stage": "stage147"
+        },
+        {
+          "name": "stage148_node_boundary_pass",
+          "description": "Node1/Node2/Node3 authority boundaries are enforced.",
+          "required": true,
+          "source_stage": "stage148"
+        },
+        {
+          "name": "stage149_release_gate_pass",
+          "description": "Body constitution release gate blocks Stage150 until Page01 evidence passes.",
+          "required": true,
+          "source_stage": "stage149"
+        }
+      ]
+    }
+  }
+}

@@ -110,6 +110,28 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage145": {
+        "label": "Stage145",
+        "version": "1.45.0",
+        "title": "Body Constitution",
+        "required_files": [
+            "docs/stages/stage145.md",
+            "docs/proposals/stage145_body_constitution_proposal.md",
+            "docs/architecture/stage145_body_constitution_blueprint.md",
+            "docs/development/stage145_developer_handoff.md",
+            "manifests/stage145_manifest.json",
+            "manifests/stage145_body_constitution_manifest.json",
+            "manifests/stage145_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage145_overlay.json",
+            "release/current/stage145_release_asset_manifest.json",
+            "release/current/stage145_body_constitution_report.json",
+            "release/current/stage145_body_constitution_pack/formula_classification.json",
+            "release/current/stage145_body_constitution_pack/constitution_invariants.json",
+            "release/current/stage145_body_constitution_pack/body_layer_map.json",
+            "release/current/stage145_body_constitution_pack/stage150_entry_criteria.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

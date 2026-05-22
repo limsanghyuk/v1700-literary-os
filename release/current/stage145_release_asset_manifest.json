@@ -1,0 +1,17 @@
+{
+  "stage": "stage145",
+  "active_version": "stage145",
+  "canonical_package": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip",
+  "sha256_sidecar": "V1700_stage145_body_constitution_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_authority": "release sidecar file is authoritative",
+  "filelist": "FILELIST.txt",
+  "sha256_sums": "SHA256SUMS.txt",
+  "release_report": "release/current/stage145_body_constitution_report.json",
+  "release_gate_report": "release/current/stage145_release_gate_report.json",
+  "package_manifest": "package_manifest.json",
+  "product_proof_sample": "samples/korean_drama_family_secret/project.json",
+  "benchmark_contract": "benchmarks/longform_output/expected_metrics.json",
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0
+}

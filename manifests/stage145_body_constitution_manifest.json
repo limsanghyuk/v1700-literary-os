@@ -1,0 +1,23 @@
+{
+  "stage": "stage145",
+  "title": "Body Constitution",
+  "pack": "release/current/stage145_body_constitution_pack/",
+  "documents": [
+    "docs/stages/stage145.md",
+    "docs/proposals/stage145_body_constitution_proposal.md",
+    "docs/architecture/stage145_body_constitution_blueprint.md",
+    "docs/development/stage145_developer_handoff.md"
+  ],
+  "pack_files": [
+    "release/current/stage145_body_constitution_pack/formula_classification.json",
+    "release/current/stage145_body_constitution_pack/constitution_invariants.json",
+    "release/current/stage145_body_constitution_pack/body_layer_map.json",
+    "release/current/stage145_body_constitution_pack/stage150_entry_criteria.json"
+  ],
+  "reports": [
+    "release/current/stage145_body_constitution_report.json",
+    "release/current/stage145_release_gate_report.json",
+    "release/current/stage145_release_asset_manifest.json"
+  ],
+  "next_stage": "stage146"
+}

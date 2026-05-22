@@ -40,7 +40,7 @@ jobs:
         run: python -m compileall -q src tools
 
       - name: Run active-lineage pytest suite
-        run: python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/stage_gates/test_stage72_repo_doctor.py -q
+        run: python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/stage_gates/test_stage72_repo_doctor.py -q
 
       - name: Run Stage134 MetaLearner audit baseline
         run: python tools/run_stage134_meta_learner_audit.py
@@ -113,6 +113,12 @@ jobs:
 
       - name: Run Stage144 release gate
         run: python tools/run_stage144_release_gate.py
+
+      - name: Run Stage145 Body Constitution
+        run: python tools/run_stage145_body_constitution.py
+
+      - name: Run Stage145 release gate
+        run: python tools/run_stage145_body_constitution_gate.py
 
       - name: Run main release gate
         run: python tools/run_release_gate.py

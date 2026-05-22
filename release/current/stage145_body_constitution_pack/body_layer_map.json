@@ -1,0 +1,51 @@
+{
+  "stage": "stage145",
+  "title": "Stage145 Body Layer Map",
+  "status": "pass",
+  "issues": [],
+  "layer_count": 7,
+  "entries": [
+    {
+      "name": "1700 Body Layer",
+      "purpose": "Defines the high-level constitutional identity of the V1700 narrative body.",
+      "first_stage": "stage145",
+      "next_stage": "stage146"
+    },
+    {
+      "name": "Narrative State Layer",
+      "purpose": "Defines canonical state objects for series, episodes, scenes, characters, world, reveals, and continuity.",
+      "first_stage": "stage146",
+      "next_stage": "stage147"
+    },
+    {
+      "name": "Memory Layer",
+      "purpose": "Stores and retrieves read-only project memory before any automated mutation is allowed.",
+      "first_stage": "stage150",
+      "next_stage": "stage151"
+    },
+    {
+      "name": "Generation Layer",
+      "purpose": "Compiles scene and episode intents into surface-safe generation packets.",
+      "first_stage": "stage155",
+      "next_stage": "stage157"
+    },
+    {
+      "name": "Gate Layer",
+      "purpose": "Turns reports and evidence into promotion or release decisions.",
+      "first_stage": "stage149",
+      "next_stage": "stage174"
+    },
+    {
+      "name": "Learning Candidate Layer",
+      "purpose": "Tracks candidate artifacts and style profiles without enabling training execution.",
+      "first_stage": "stage170",
+      "next_stage": "stage174"
+    },
+    {
+      "name": "Human Approval Layer",
+      "purpose": "Controls canon mutation, memory write, learning promotion, and release publish authority.",
+      "first_stage": "stage145",
+      "next_stage": "stage178"
+    }
+  ]
+}

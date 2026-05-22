@@ -549,9 +549,31 @@
         "Stage144 split-CI/runtime readiness marker"
       ],
       "surviving_runtime_value": "Publishes a minimum user-facing contract around the local-first runtime without enabling a live API server, provider calls, or write paths."
+    },
+    {
+      "stage_id": "STAGE144",
+      "title": "Split CI Runtime Strategy",
+      "introduced_concepts": [
+        "ci-fast lane authority",
+        "workflow-split runtime matrix",
+        "release-surface contract",
+        "Stage145 body constitution readiness marker"
+      ],
+      "surviving_runtime_value": "Separates fast, core, full, dry-run, and release workflows while preserving provider-zero and write-zero constraints."
+    },
+    {
+      "stage_id": "STAGE145",
+      "title": "Body Constitution",
+      "introduced_concepts": [
+        "body layer constitution",
+        "formula classification policy",
+        "approval-first invariant authority",
+        "Stage150 memory-body entry criteria"
+      ],
+      "surviving_runtime_value": "Defines the constitutional layer that later memory, generation, quality, corpus, learning, and agent bodies must obey."
     }
   ],
-  "active_version": "stage144",
+  "active_version": "stage145",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -631,5 +653,10 @@
     "status": "active",
     "baseline_stage": "stage143",
     "purpose": "Split CI Runtime Strategy"
+  },
+  "stage145": {
+    "status": "active",
+    "baseline_stage": "stage144",
+    "purpose": "Body Constitution"
   }
 }

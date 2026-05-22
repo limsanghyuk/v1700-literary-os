@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage144 - Split CI Runtime Strategy
+Current active stage: Stage145 - Body Constitution
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -49,3 +49,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage142](stage142.md) - Longform Benchmark Pack
 - [Stage143](stage143.md) - User CLI/API Minimum Docs
 - [Stage144](stage144.md) - Split CI Runtime Strategy
+- [Stage145](stage145.md) - Body Constitution
