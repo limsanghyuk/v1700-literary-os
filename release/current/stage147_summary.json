@@ -1,0 +1,27 @@
+{
+  "stage": "147",
+  "baseline_stage": "146",
+  "title": "Project Manifest Body",
+  "status": "pass",
+  "main_report": "release/current/stage147_project_manifest_body_report.json",
+  "release_gate_report": "release/current/stage147_release_gate_report.json",
+  "asset_manifest": "release/current/stage147_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage147_project_manifest_body_pack/",
+  "mode": "PROJECT_MANIFEST_BODY_LOCAL",
+  "project_manifest_body_only": true,
+  "manifest_section_count": 5,
+  "canonical_packet_count": 7,
+  "state_binding_count": 7,
+  "policy_boundary_complete": true,
+  "load_order_complete": true,
+  "node_boundary_constitution_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage148 Node Boundary Constitution",
+    "Stage149 Body Constitution Release Gate",
+    "Stage150 Memory Body"
+  ]
+}

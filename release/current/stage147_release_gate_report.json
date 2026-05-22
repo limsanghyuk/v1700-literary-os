@@ -1,0 +1,129 @@
+{
+  "stage": "147",
+  "baseline_stage": "146",
+  "title": "Project Manifest Body Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage146_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage147_report_pass": {
+      "status": "pass"
+    },
+    "project_manifest_body_mode_pass": {
+      "status": "pass"
+    },
+    "metadata_consistency_pass": {
+      "status": "pass"
+    },
+    "release_asset_integrity_pass": {
+      "status": "pass"
+    },
+    "canonical_manifest_bundle_pass": {
+      "status": "pass"
+    },
+    "project_manifest_catalog_pass": {
+      "status": "pass"
+    },
+    "manifest_state_bindings_pass": {
+      "status": "pass"
+    },
+    "manifest_policy_boundary_pass": {
+      "status": "pass"
+    },
+    "manifest_load_order_pass": {
+      "status": "pass"
+    },
+    "node_boundary_constitution_ready_pass": {
+      "status": "pass"
+    },
+    "stage149_gate_ready_pass": {
+      "status": "pass"
+    },
+    "stage150_memory_body_ready_pass": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "active_meta_learning_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "losdb_write_blocked": {
+      "status": "pass"
+    },
+    "migration_execution_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    },
+    "stage148_signals_pass": {
+      "status": "pass"
+    }
+  },
+  "stage147": {
+    "status": "pass",
+    "stage": "147",
+    "baseline_stage": "146",
+    "title": "Project Manifest Body",
+    "issues": [],
+    "mode": "PROJECT_MANIFEST_BODY_LOCAL",
+    "project_manifest_body_only": true,
+    "manifest_section_count": 5,
+    "canonical_packet_count": 7,
+    "state_binding_count": 7,
+    "policy_boundary_complete": true,
+    "load_order_complete": true,
+    "node_boundary_constitution_ready": true,
+    "stage149_gate_ready": true,
+    "stage150_memory_body_ready": true,
+    "metadata_consistency_status": "pass",
+    "release_asset_integrity_status": "pass",
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "losdb_write_enabled": false,
+    "migration_execution_enabled": false,
+    "storage_contract_write_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "cross_project_write_allowed": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true
+}

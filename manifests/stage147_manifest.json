@@ -1,0 +1,10 @@
+{
+  "stage": "stage147",
+  "title": "Project Manifest Body",
+  "baseline_stage": "stage146",
+  "status": "implemented",
+  "mode": "PROJECT_MANIFEST_BODY_LOCAL",
+  "release_gate": "release/current/stage147_release_gate_report.json",
+  "evidence": "release/current/stage147_project_manifest_body_report.json",
+  "next_stage": "stage148"
+}

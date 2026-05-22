@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -246,6 +246,36 @@ STAGE_REQUIRED_GATES = {
         "stage145_release_gate",
         "stage146_narrative_state_contract",
         "stage146_release_gate",
+    ],
+    "stage147": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage135_learning_quality_gate",
+        "stage135_release_gate",
+        "stage136_schema_registry",
+        "stage136_release_gate",
+        "stage137_migration_manager",
+        "stage137_release_gate",
+        "stage138_losdb_storage_contracts",
+        "stage138_release_gate",
+        "stage139_corpus_governance_pipeline",
+        "stage139_release_gate",
+        "stage140_release_integrity",
+        "stage140_release_gate",
+        "stage141_prose_generation_e2e",
+        "stage141_release_gate",
+        "stage142_longform_benchmark_pack",
+        "stage142_release_gate",
+        "stage143_user_cli_api_docs",
+        "stage143_release_gate",
+        "stage144_split_ci_runtime_strategy",
+        "stage144_release_gate",
+        "stage145_body_constitution",
+        "stage145_release_gate",
+        "stage146_narrative_state_contract",
+        "stage146_release_gate",
+        "stage147_project_manifest_body",
+        "stage147_release_gate",
     ],
 }
 
@@ -525,6 +555,25 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage146_narrative_state_contract_pack/reveal_boundary_matrix.json",
         "release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json",
     ],
+    "stage147": [
+        "manifests/stage147_manifest.json",
+        "manifests/stage147_project_manifest_body_manifest.json",
+        "manifests/stage147_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage147_overlay.json",
+        "docs/stages/stage147.md",
+        "docs/architecture/stage147_project_manifest_body_blueprint.md",
+        "docs/proposals/stage147_project_manifest_body_proposal.md",
+        "docs/development/stage147_developer_handoff.md",
+        "release/current/stage147_project_manifest_body_report.json",
+        "release/current/stage147_release_gate_report.json",
+        "release/current/stage147_release_asset_manifest.json",
+        "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json",
+        "release/current/stage147_project_manifest_body_pack/project_manifest_catalog.json",
+        "release/current/stage147_project_manifest_body_pack/manifest_state_bindings.json",
+        "release/current/stage147_project_manifest_body_pack/manifest_policy_boundary.json",
+        "release/current/stage147_project_manifest_body_pack/manifest_load_order.json",
+        "release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -562,6 +611,7 @@ PREDECESSOR_GATE = {
     "stage144": "stage143_release_gate",
     "stage145": "stage144_release_gate",
     "stage146": "stage145_release_gate",
+    "stage147": "stage146_release_gate",
 }
 
 

@@ -185,8 +185,7 @@
     {
       "path": "release/current/release_gate_report.json",
       "terms": [
-        "MultiWork",
-        "MultiWorkCIM"
+        "MultiWork"
       ]
     },
     {

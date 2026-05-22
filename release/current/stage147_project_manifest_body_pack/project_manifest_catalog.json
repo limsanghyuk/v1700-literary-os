@@ -1,0 +1,77 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Project Manifest Catalog",
+  "status": "pass",
+  "issues": [],
+  "section_count": 5,
+  "canonical_packet_count": 7,
+  "sections": [
+    {
+      "name": "project_manifest",
+      "source_path": "samples/korean_drama_family_secret/project.json",
+      "target_state": "SeriesState",
+      "required_fields": [
+        "project_id",
+        "title",
+        "genre",
+        "purpose"
+      ],
+      "read_only": true,
+      "synthetic_only": true,
+      "public_safe_only": true,
+      "notes": "Series identity comes from the sample project manifest."
+    },
+    {
+      "name": "character_roster",
+      "source_path": "samples/korean_drama_family_secret/characters.json",
+      "target_state": "CharacterState",
+      "required_fields": [
+        "project_id",
+        "characters"
+      ],
+      "read_only": true,
+      "synthetic_only": true,
+      "public_safe_only": true,
+      "notes": "Character roster remains synthetic and public-safe."
+    },
+    {
+      "name": "world_packet",
+      "source_path": "samples/korean_drama_family_secret/world.json",
+      "target_state": "WorldState",
+      "required_fields": [
+        "world_id",
+        "project_id",
+        "setting"
+      ],
+      "read_only": true,
+      "synthetic_only": true,
+      "public_safe_only": true,
+      "notes": "World anchors remain reader-safe and local-only."
+    },
+    {
+      "name": "plot_outline",
+      "source_path": "samples/korean_drama_family_secret/plot_outline.md",
+      "target_state": "EpisodeState",
+      "required_fields": [],
+      "read_only": true,
+      "synthetic_only": true,
+      "public_safe_only": true,
+      "notes": "Plot outline informs the episode premise but does not carry raw manuscript authority."
+    },
+    {
+      "name": "scene_request_scene_001",
+      "source_path": "samples/korean_drama_family_secret/scene_requests/scene_001.json",
+      "target_state": "SceneState",
+      "required_fields": [
+        "scene_id",
+        "project_id",
+        "objective",
+        "characters"
+      ],
+      "read_only": true,
+      "synthetic_only": true,
+      "public_safe_only": true,
+      "notes": "Scene request defines the first canonical scene packet."
+    }
+  ]
+}

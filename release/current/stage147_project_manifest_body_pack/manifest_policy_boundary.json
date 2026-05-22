@@ -1,0 +1,45 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Manifest Policy Boundary",
+  "status": "pass",
+  "issues": [],
+  "all_enforced": true,
+  "controls": [
+    {
+      "name": "synthetic_only_project",
+      "description": "Project manifest must remain synthetic only.",
+      "enforced": true,
+      "evidence": "samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "public_safe_project",
+      "description": "Project manifest must remain public-safe placeholder content.",
+      "enforced": true,
+      "evidence": "samples/korean_drama_family_secret/project.json"
+    },
+    {
+      "name": "provider_calls_blocked",
+      "description": "Project, world, and scene sources must not allow provider calls.",
+      "enforced": true,
+      "evidence": "project/world/scene provider flags"
+    },
+    {
+      "name": "raw_manuscript_blocked",
+      "description": "Raw manuscript inclusion must remain blocked.",
+      "enforced": true,
+      "evidence": "project + scene manifest flags"
+    },
+    {
+      "name": "character_roster_synthetic_only",
+      "description": "Character roster must remain synthetic only.",
+      "enforced": true,
+      "evidence": "samples/korean_drama_family_secret/characters.json"
+    },
+    {
+      "name": "node2_reveal_boundary_preserved",
+      "description": "Manifest bundle must not expose raw reveals to Node2.",
+      "enforced": true,
+      "evidence": "canonical manifest bundle reveal_state"
+    }
+  ]
+}
