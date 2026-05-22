@@ -1,0 +1,120 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Manifest State Bindings",
+  "status": "pass",
+  "issues": [],
+  "binding_count": 7,
+  "coverage_complete": true,
+  "bindings": [
+    {
+      "manifest_section": "project_manifest",
+      "state_contract": "SeriesState",
+      "binding_scope": "series",
+      "bound_fields": [
+        "project_id",
+        "title",
+        "genre",
+        "purpose"
+      ],
+      "derived_fields": [
+        "episode_order",
+        "timeline_anchor"
+      ],
+      "write_policy": "read_only_contract_until_stage150_memory_body"
+    },
+    {
+      "manifest_section": "plot_outline",
+      "state_contract": "EpisodeState",
+      "binding_scope": "episode",
+      "bound_fields": [],
+      "derived_fields": [
+        "episode_id",
+        "order_index",
+        "premise",
+        "scene_order",
+        "continuity_anchor"
+      ],
+      "write_policy": "read_only_contract_until_stage147_project_manifest_body"
+    },
+    {
+      "manifest_section": "scene_request_scene_001",
+      "state_contract": "SceneState",
+      "binding_scope": "scene",
+      "bound_fields": [
+        "scene_id",
+        "objective",
+        "characters"
+      ],
+      "derived_fields": [
+        "episode_id",
+        "location_id",
+        "surface_constraints"
+      ],
+      "write_policy": "read_only_contract_until_generation_layer_is_gated"
+    },
+    {
+      "manifest_section": "character_roster",
+      "state_contract": "CharacterState",
+      "binding_scope": "character",
+      "bound_fields": [
+        "character_id",
+        "name",
+        "role"
+      ],
+      "derived_fields": [
+        "display_name",
+        "goal_vector",
+        "relationship_edges",
+        "knowledge_boundary"
+      ],
+      "write_policy": "read_only_contract_until_human_approval_layer"
+    },
+    {
+      "manifest_section": "world_packet",
+      "state_contract": "WorldState",
+      "binding_scope": "world",
+      "bound_fields": [
+        "world_id",
+        "setting"
+      ],
+      "derived_fields": [
+        "era",
+        "locations",
+        "institutions",
+        "rule_constraints",
+        "public_facts"
+      ],
+      "write_policy": "read_only_contract_until_project_manifest_body"
+    },
+    {
+      "manifest_section": "scene_request_scene_001",
+      "state_contract": "RevealState",
+      "binding_scope": "reveal",
+      "bound_fields": [],
+      "derived_fields": [
+        "reveal_id",
+        "owner_scope",
+        "visibility_level",
+        "knowledge_holders",
+        "unlock_condition",
+        "node2_surface_projection"
+      ],
+      "write_policy": "read_only_contract_until_human_approval_layer"
+    },
+    {
+      "manifest_section": "project_manifest",
+      "state_contract": "ContinuityState",
+      "binding_scope": "continuity",
+      "bound_fields": [],
+      "derived_fields": [
+        "continuity_id",
+        "timeline_position",
+        "open_threads",
+        "resolved_threads",
+        "contradiction_watchlist",
+        "repair_policy"
+      ],
+      "write_policy": "read_only_contract_until_stage149_gate_allows_memory_entry"
+    }
+  ]
+}

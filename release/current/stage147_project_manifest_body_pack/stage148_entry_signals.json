@@ -1,0 +1,14 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Stage148+ Entry Signals",
+  "status": "pass",
+  "issues": [],
+  "node_boundary_constitution_ready": true,
+  "stage149_gate_ready": true,
+  "stage150_memory_body_ready": true,
+  "signals": [
+    "Canonical manifest packets now exist for series, episode, scene, character, world, reveal, and continuity state.",
+    "Manifest sources remain synthetic, public-safe, provider-zero, and raw-manuscript-free.",
+    "Stage148 may enforce Node1/Node2/Node3 boundary routing on top of these manifest packets."
+  ]
+}

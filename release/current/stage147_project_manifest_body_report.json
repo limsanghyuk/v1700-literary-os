@@ -1,0 +1,860 @@
+{
+  "stage": "147",
+  "baseline_stage": "146",
+  "title": "Project Manifest Body",
+  "status": "pass",
+  "issues": [],
+  "mode": "PROJECT_MANIFEST_BODY_LOCAL",
+  "project_manifest_body_only": true,
+  "manifest_section_count": 5,
+  "canonical_packet_count": 7,
+  "state_binding_count": 7,
+  "policy_boundary_complete": true,
+  "load_order_complete": true,
+  "node_boundary_constitution_ready": true,
+  "stage149_gate_ready": true,
+  "stage150_memory_body_ready": true,
+  "metadata_consistency_status": "pass",
+  "release_asset_integrity_status": "pass",
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "losdb_write_enabled": false,
+  "migration_execution_enabled": false,
+  "storage_contract_write_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "cross_project_write_allowed": false,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage146_baseline": {
+      "stage": "146",
+      "baseline_stage": "145",
+      "status": "pass",
+      "title": "Narrative State Contract Gate",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "stage146_release_gate_status": "pass"
+    },
+    "metadata_consistency": {
+      "stage": "stage147",
+      "title": "Stage Metadata Consistency",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "live_manifest_active_stage",
+          "status": "pass",
+          "expected": "stage147",
+          "actual": "stage147",
+          "path": "manifests/live_core_manifest.json"
+        },
+        {
+          "name": "readme_current_stage_matches_live",
+          "status": "pass",
+          "expected": "Stage147 Project Manifest Body",
+          "actual": "# V1700 Literary OS - Stage147\n\n> Project Manifest Body\n> Provider-Zero AI longform novel and drama scenario generation system.\n\n## Current St",
+          "path": "README.md"
+        },
+        {
+          "name": "package_manifest_active_matches_live",
+          "status": "pass",
+          "expected": "stage147",
+          "actual": "active=stage147; stage=stage147",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_paths_match_stage",
+          "status": "pass",
+          "expected": "stage147 package paths",
+          "actual": "{\"asset_manifest\": \"release/current/stage147_release_asset_manifest.json\", \"canonical_package\": \"V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip\", \"patch_report\": \"release/current/stage147_project_manifest_body_report.json\", \"release_gate\": \"release/current/stage147_release_gate_report.json\"}",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "pyproject_version_matches_stage",
+          "status": "pass",
+          "expected": "1.47.0",
+          "actual": "1.47.0",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "pyproject_description_matches_stage",
+          "status": "pass",
+          "expected": "Stage147 - Project Manifest Body",
+          "actual": "V1700 Stage147 - Project Manifest Body",
+          "path": "pyproject.toml"
+        },
+        {
+          "name": "release_notes_match_stage",
+          "status": "pass",
+          "expected": "Stage147 Project Manifest Body",
+          "actual": "# V1700 Stage147 - Project Manifest Body\n\nStage147 turns the post-Stage146 state contracts into a canonical project manifest bod",
+          "path": "RELEASE_NOTES.md"
+        },
+        {
+          "name": "required_file_present:docs/stages/stage147.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/stages/stage147.md"
+        },
+        {
+          "name": "required_file_present:docs/proposals/stage147_project_manifest_body_proposal.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/proposals/stage147_project_manifest_body_proposal.md"
+        },
+        {
+          "name": "required_file_present:docs/architecture/stage147_project_manifest_body_blueprint.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/architecture/stage147_project_manifest_body_blueprint.md"
+        },
+        {
+          "name": "required_file_present:docs/development/stage147_developer_handoff.md",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "docs/development/stage147_developer_handoff.md"
+        },
+        {
+          "name": "required_file_present:manifests/stage147_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage147_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage147_project_manifest_body_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage147_project_manifest_body_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/stage147_branchpoint_trace_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/stage147_branchpoint_trace_manifest.json"
+        },
+        {
+          "name": "required_file_present:manifests/live_core_stage147_overlay.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "manifests/live_core_stage147_overlay.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_release_asset_manifest.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_report.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_report.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/project_manifest_catalog.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/project_manifest_catalog.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/manifest_state_bindings.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/manifest_state_bindings.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/manifest_policy_boundary.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/manifest_policy_boundary.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/manifest_load_order.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/manifest_load_order.json"
+        },
+        {
+          "name": "required_file_present:release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": "release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json"
+        },
+        {
+          "name": "required_file_present:.github/workflows/ci-fast.yml",
+          "status": "pass",
+          "expected": "file exists",
+          "actual": "exists",
+          "path": ".github/workflows/ci-fast.yml"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 24,
+        "pass_count": 24,
+        "blocked_count": 0
+      }
+    },
+    "release_asset_integrity": {
+      "stage": "stage147",
+      "title": "Current Stage Release Asset Integrity",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "asset_manifest_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "asset_manifest_stage",
+          "status": "pass",
+          "expected": "stage147",
+          "actual": "stage147",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "canonical_package_name",
+          "status": "pass",
+          "expected": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "sha256_sidecar_name",
+          "status": "pass",
+          "expected": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "package_manifest_canonical_matches",
+          "status": "pass",
+          "expected": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip",
+          "actual": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "package_manifest_sidecar_matches",
+          "status": "pass",
+          "expected": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip.sha256",
+          "actual": "V1700_stage147_project_manifest_body_release_integrated_repository_with_artifacts.zip.sha256",
+          "path": "package_manifest.json"
+        },
+        {
+          "name": "filelist_declared",
+          "status": "pass",
+          "expected": "filelist declared",
+          "actual": "FILELIST.txt",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "release_sidecar_authoritative",
+          "status": "pass",
+          "expected": "release sidecar file is authoritative",
+          "actual": "release sidecar file is authoritative",
+          "path": "release/current/stage147_release_asset_manifest.json"
+        },
+        {
+          "name": "filelist_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_present",
+          "status": "pass",
+          "expected": "exists",
+          "actual": "exists",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_self_reference_policy",
+          "status": "pass",
+          "expected": "SHA256SUMS.txt is excluded from FILELIST to avoid self-referential checksum drift",
+          "actual": "excluded",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "filelist_checksum_coverage",
+          "status": "pass",
+          "expected": "all FILELIST entries covered by SHA256SUMS",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "sha256_sums_no_extra_entries",
+          "status": "pass",
+          "expected": "no SHA256SUMS entries outside FILELIST",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        },
+        {
+          "name": "filelist_entries_exist",
+          "status": "pass",
+          "expected": "all FILELIST entries exist",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "generated_report_digest_exemption_policy",
+          "status": "pass",
+          "expected": "mutable generated reports remain listed but are not content-digest blocking during gate execution",
+          "actual": "none",
+          "path": "FILELIST.txt"
+        },
+        {
+          "name": "sha256_sums_content_match",
+          "status": "pass",
+          "expected": "all SHA256SUMS digests match current normalized file contents",
+          "actual": "none",
+          "path": "SHA256SUMS.txt"
+        }
+      ],
+      "issues": [],
+      "counters": {
+        "check_count": 16,
+        "pass_count": 16,
+        "blocked_count": 0
+      }
+    },
+    "canonical_manifest_bundle": {
+      "stage": "stage147",
+      "title": "Stage147 Canonical Manifest Bundle",
+      "status": "pass",
+      "issues": [],
+      "packet_count": 7,
+      "coverage_complete": true,
+      "series_state": {
+        "series_id": "sample_korean_drama_family_secret",
+        "title": "Synthetic Family Secret Drama Sample",
+        "format": "korean_drama",
+        "theme_brief": "Stage141 prose-generation E2E harness sample reused from the Stage140 product proof skeleton",
+        "episode_order": [
+          "episode_001"
+        ],
+        "timeline_anchor": "synthetic_modern_seoul_present_day"
+      },
+      "episode_state": {
+        "episode_id": "episode_001",
+        "series_id": "sample_korean_drama_family_secret",
+        "order_index": 1,
+        "premise": "Establish the family inheritance question without revealing the final secret.",
+        "scene_order": [
+          "scene_001"
+        ],
+        "continuity_anchor": "family_inheritance_question_open"
+      },
+      "scene_state": {
+        "scene_id": "scene_001",
+        "episode_id": "episode_001",
+        "location_id": "synthetic_modern_seoul_family_estate",
+        "participants": [
+          "han_sera",
+          "kim_doyun",
+          "yoon_mira"
+        ],
+        "objective": "Establish the family inheritance question without revealing the final secret.",
+        "surface_constraints": [
+          "synthetic_only",
+          "public_safe_placeholder",
+          "provider_calls_allowed_false",
+          "raw_manuscript_included_false",
+          "final_secret_not_revealed"
+        ]
+      },
+      "character_state": {
+        "characters": [
+          {
+            "character_id": "han_sera",
+            "display_name": "Han Sera",
+            "role": "eldest_daughter",
+            "goal_vector": [
+              "protect_family",
+              "learn_truth",
+              "keep_surface_composure"
+            ],
+            "relationship_edges": [
+              {
+                "target": "kim_doyun",
+                "relation": "trusts_as_legal_ally"
+              },
+              {
+                "target": "yoon_mira",
+                "relation": "uncertain_family_tension"
+              }
+            ],
+            "knowledge_boundary": "surface_only_until_reveal_contract"
+          },
+          {
+            "character_id": "kim_doyun",
+            "display_name": "Kim Doyun",
+            "role": "family_lawyer",
+            "goal_vector": [
+              "manage_inheritance_process",
+              "contain_public_risk"
+            ],
+            "relationship_edges": [
+              {
+                "target": "han_sera",
+                "relation": "professional_confidant"
+              },
+              {
+                "target": "yoon_mira",
+                "relation": "legal_caution"
+              }
+            ],
+            "knowledge_boundary": "surface_only_until_reveal_contract"
+          },
+          {
+            "character_id": "yoon_mira",
+            "display_name": "Yoon Mira",
+            "role": "estranged_aunt",
+            "goal_vector": [
+              "reenter_family",
+              "pressure_hidden_history"
+            ],
+            "relationship_edges": [
+              {
+                "target": "han_sera",
+                "relation": "estranged_aunt_niece"
+              },
+              {
+                "target": "kim_doyun",
+                "relation": "wary_observer"
+              }
+            ],
+            "knowledge_boundary": "surface_only_until_reveal_contract"
+          }
+        ]
+      },
+      "world_state": {
+        "world_id": "synthetic_modern_seoul_family_estate",
+        "era": "modern_day",
+        "locations": [
+          {
+            "location_id": "family_estate",
+            "label": "Family Estate",
+            "public_safe": true
+          },
+          {
+            "location_id": "legal_office",
+            "label": "Small Legal Office",
+            "public_safe": true
+          }
+        ],
+        "institutions": [
+          {
+            "institution_id": "han_family",
+            "type": "family",
+            "public_safe": true
+          },
+          {
+            "institution_id": "inheritance_law_office",
+            "type": "legal",
+            "public_safe": true
+          }
+        ],
+        "rule_constraints": [
+          "synthetic_only",
+          "sample_local_only",
+          "provider_calls_allowed_false",
+          "raw_manuscript_included_false"
+        ],
+        "public_facts": [
+          "A fictional modern family estate and small legal office in Seoul",
+          "A family inheritance dispute drives the opening tension.",
+          "The final secret remains hidden from reader-facing output."
+        ]
+      },
+      "reveal_state": {
+        "reveal_id": "inheritance_secret_core",
+        "owner_scope": "episode_001",
+        "visibility_level": "hidden",
+        "knowledge_holders": [
+          "critic_lane_only",
+          "human_approval_lane_only"
+        ],
+        "unlock_condition": "manual approval after future gate progression",
+        "node2_surface_projection": "A mystery exists, but the final secret is withheld."
+      },
+      "continuity_state": {
+        "continuity_id": "continuity_episode_001",
+        "timeline_position": "episode_001_scene_001_opening",
+        "open_threads": [
+          "Who inherits the estate?",
+          "Why did the estranged aunt return now?"
+        ],
+        "resolved_threads": [],
+        "contradiction_watchlist": [
+          "Do not reveal the final secret in Stage147 manifest packets.",
+          "Keep all scene packets synthetic and provider-zero."
+        ],
+        "repair_policy": "manual_only_human_approval_required"
+      },
+      "source_summary": {
+        "sample_root": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret",
+        "project_id": "sample_korean_drama_family_secret",
+        "character_count": 3,
+        "scene_count": 1,
+        "episode_count": 1,
+        "plot_outline_excerpt": "# Synthetic Family Secret Drama Sample Outline"
+      }
+    },
+    "project_manifest_catalog": {
+      "stage": "stage147",
+      "title": "Stage147 Project Manifest Catalog",
+      "status": "pass",
+      "issues": [],
+      "section_count": 5,
+      "canonical_packet_count": 7,
+      "sections": [
+        {
+          "name": "project_manifest",
+          "source_path": "samples/korean_drama_family_secret/project.json",
+          "target_state": "SeriesState",
+          "required_fields": [
+            "project_id",
+            "title",
+            "genre",
+            "purpose"
+          ],
+          "read_only": true,
+          "synthetic_only": true,
+          "public_safe_only": true,
+          "notes": "Series identity comes from the sample project manifest."
+        },
+        {
+          "name": "character_roster",
+          "source_path": "samples/korean_drama_family_secret/characters.json",
+          "target_state": "CharacterState",
+          "required_fields": [
+            "project_id",
+            "characters"
+          ],
+          "read_only": true,
+          "synthetic_only": true,
+          "public_safe_only": true,
+          "notes": "Character roster remains synthetic and public-safe."
+        },
+        {
+          "name": "world_packet",
+          "source_path": "samples/korean_drama_family_secret/world.json",
+          "target_state": "WorldState",
+          "required_fields": [
+            "world_id",
+            "project_id",
+            "setting"
+          ],
+          "read_only": true,
+          "synthetic_only": true,
+          "public_safe_only": true,
+          "notes": "World anchors remain reader-safe and local-only."
+        },
+        {
+          "name": "plot_outline",
+          "source_path": "samples/korean_drama_family_secret/plot_outline.md",
+          "target_state": "EpisodeState",
+          "required_fields": [],
+          "read_only": true,
+          "synthetic_only": true,
+          "public_safe_only": true,
+          "notes": "Plot outline informs the episode premise but does not carry raw manuscript authority."
+        },
+        {
+          "name": "scene_request_scene_001",
+          "source_path": "samples/korean_drama_family_secret/scene_requests/scene_001.json",
+          "target_state": "SceneState",
+          "required_fields": [
+            "scene_id",
+            "project_id",
+            "objective",
+            "characters"
+          ],
+          "read_only": true,
+          "synthetic_only": true,
+          "public_safe_only": true,
+          "notes": "Scene request defines the first canonical scene packet."
+        }
+      ]
+    },
+    "manifest_state_bindings": {
+      "stage": "stage147",
+      "title": "Stage147 Manifest State Bindings",
+      "status": "pass",
+      "issues": [],
+      "binding_count": 7,
+      "coverage_complete": true,
+      "bindings": [
+        {
+          "manifest_section": "project_manifest",
+          "state_contract": "SeriesState",
+          "binding_scope": "series",
+          "bound_fields": [
+            "project_id",
+            "title",
+            "genre",
+            "purpose"
+          ],
+          "derived_fields": [
+            "episode_order",
+            "timeline_anchor"
+          ],
+          "write_policy": "read_only_contract_until_stage150_memory_body"
+        },
+        {
+          "manifest_section": "plot_outline",
+          "state_contract": "EpisodeState",
+          "binding_scope": "episode",
+          "bound_fields": [],
+          "derived_fields": [
+            "episode_id",
+            "order_index",
+            "premise",
+            "scene_order",
+            "continuity_anchor"
+          ],
+          "write_policy": "read_only_contract_until_stage147_project_manifest_body"
+        },
+        {
+          "manifest_section": "scene_request_scene_001",
+          "state_contract": "SceneState",
+          "binding_scope": "scene",
+          "bound_fields": [
+            "scene_id",
+            "objective",
+            "characters"
+          ],
+          "derived_fields": [
+            "episode_id",
+            "location_id",
+            "surface_constraints"
+          ],
+          "write_policy": "read_only_contract_until_generation_layer_is_gated"
+        },
+        {
+          "manifest_section": "character_roster",
+          "state_contract": "CharacterState",
+          "binding_scope": "character",
+          "bound_fields": [
+            "character_id",
+            "name",
+            "role"
+          ],
+          "derived_fields": [
+            "display_name",
+            "goal_vector",
+            "relationship_edges",
+            "knowledge_boundary"
+          ],
+          "write_policy": "read_only_contract_until_human_approval_layer"
+        },
+        {
+          "manifest_section": "world_packet",
+          "state_contract": "WorldState",
+          "binding_scope": "world",
+          "bound_fields": [
+            "world_id",
+            "setting"
+          ],
+          "derived_fields": [
+            "era",
+            "locations",
+            "institutions",
+            "rule_constraints",
+            "public_facts"
+          ],
+          "write_policy": "read_only_contract_until_project_manifest_body"
+        },
+        {
+          "manifest_section": "scene_request_scene_001",
+          "state_contract": "RevealState",
+          "binding_scope": "reveal",
+          "bound_fields": [],
+          "derived_fields": [
+            "reveal_id",
+            "owner_scope",
+            "visibility_level",
+            "knowledge_holders",
+            "unlock_condition",
+            "node2_surface_projection"
+          ],
+          "write_policy": "read_only_contract_until_human_approval_layer"
+        },
+        {
+          "manifest_section": "project_manifest",
+          "state_contract": "ContinuityState",
+          "binding_scope": "continuity",
+          "bound_fields": [],
+          "derived_fields": [
+            "continuity_id",
+            "timeline_position",
+            "open_threads",
+            "resolved_threads",
+            "contradiction_watchlist",
+            "repair_policy"
+          ],
+          "write_policy": "read_only_contract_until_stage149_gate_allows_memory_entry"
+        }
+      ]
+    },
+    "manifest_policy_boundary": {
+      "stage": "stage147",
+      "title": "Stage147 Manifest Policy Boundary",
+      "status": "pass",
+      "issues": [],
+      "all_enforced": true,
+      "controls": [
+        {
+          "name": "synthetic_only_project",
+          "description": "Project manifest must remain synthetic only.",
+          "enforced": true,
+          "evidence": "samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "public_safe_project",
+          "description": "Project manifest must remain public-safe placeholder content.",
+          "enforced": true,
+          "evidence": "samples/korean_drama_family_secret/project.json"
+        },
+        {
+          "name": "provider_calls_blocked",
+          "description": "Project, world, and scene sources must not allow provider calls.",
+          "enforced": true,
+          "evidence": "project/world/scene provider flags"
+        },
+        {
+          "name": "raw_manuscript_blocked",
+          "description": "Raw manuscript inclusion must remain blocked.",
+          "enforced": true,
+          "evidence": "project + scene manifest flags"
+        },
+        {
+          "name": "character_roster_synthetic_only",
+          "description": "Character roster must remain synthetic only.",
+          "enforced": true,
+          "evidence": "samples/korean_drama_family_secret/characters.json"
+        },
+        {
+          "name": "node2_reveal_boundary_preserved",
+          "description": "Manifest bundle must not expose raw reveals to Node2.",
+          "enforced": true,
+          "evidence": "canonical manifest bundle reveal_state"
+        }
+      ]
+    },
+    "manifest_load_order": {
+      "stage": "stage147",
+      "title": "Stage147 Manifest Load Order",
+      "status": "pass",
+      "issues": [],
+      "order_complete": true,
+      "steps": [
+        {
+          "order_index": 1,
+          "name": "load_project_manifest",
+          "depends_on": [],
+          "output": "series_state",
+          "rationale": "Project identity must exist before any derived packet."
+        },
+        {
+          "order_index": 2,
+          "name": "load_world_packet",
+          "depends_on": [
+            "load_project_manifest"
+          ],
+          "output": "world_state",
+          "rationale": "World anchors define valid location and rule references."
+        },
+        {
+          "order_index": 3,
+          "name": "load_character_roster",
+          "depends_on": [
+            "load_project_manifest"
+          ],
+          "output": "character_state",
+          "rationale": "Character packets depend on the project identity."
+        },
+        {
+          "order_index": 4,
+          "name": "load_scene_request",
+          "depends_on": [
+            "load_project_manifest",
+            "load_world_packet",
+            "load_character_roster"
+          ],
+          "output": "scene_state",
+          "rationale": "Scene packets require project, world, and character anchors."
+        },
+        {
+          "order_index": 5,
+          "name": "derive_episode_and_continuity",
+          "depends_on": [
+            "load_project_manifest",
+            "load_scene_request"
+          ],
+          "output": "episode_state + continuity_state",
+          "rationale": "Episode and continuity packets are derived after scene intent is known."
+        },
+        {
+          "order_index": 6,
+          "name": "derive_reveal_projection",
+          "depends_on": [
+            "load_scene_request",
+            "derive_episode_and_continuity"
+          ],
+          "output": "reveal_state",
+          "rationale": "Reveal projection depends on scene intent and continuity policy."
+        }
+      ]
+    },
+    "stage148_entry_signals": {
+      "stage": "stage147",
+      "title": "Stage147 Stage148+ Entry Signals",
+      "status": "pass",
+      "issues": [],
+      "node_boundary_constitution_ready": true,
+      "stage149_gate_ready": true,
+      "stage150_memory_body_ready": true,
+      "signals": [
+        "Canonical manifest packets now exist for series, episode, scene, character, world, reveal, and continuity state.",
+        "Manifest sources remain synthetic, public-safe, provider-zero, and raw-manuscript-free.",
+        "Stage148 may enforce Node1/Node2/Node3 boundary routing on top of these manifest packets."
+      ]
+    }
+  }
+}

@@ -674,5 +674,10 @@
     "status": "active",
     "baseline_stage": "stage145",
     "purpose": "Narrative State Contract"
+  },
+  "stage147": {
+    "status": "active",
+    "baseline_stage": "stage146",
+    "purpose": "Project Manifest Body"
   }
 }

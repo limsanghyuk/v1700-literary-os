@@ -1,0 +1,183 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Canonical Manifest Bundle",
+  "status": "pass",
+  "issues": [],
+  "packet_count": 7,
+  "coverage_complete": true,
+  "series_state": {
+    "series_id": "sample_korean_drama_family_secret",
+    "title": "Synthetic Family Secret Drama Sample",
+    "format": "korean_drama",
+    "theme_brief": "Stage141 prose-generation E2E harness sample reused from the Stage140 product proof skeleton",
+    "episode_order": [
+      "episode_001"
+    ],
+    "timeline_anchor": "synthetic_modern_seoul_present_day"
+  },
+  "episode_state": {
+    "episode_id": "episode_001",
+    "series_id": "sample_korean_drama_family_secret",
+    "order_index": 1,
+    "premise": "Establish the family inheritance question without revealing the final secret.",
+    "scene_order": [
+      "scene_001"
+    ],
+    "continuity_anchor": "family_inheritance_question_open"
+  },
+  "scene_state": {
+    "scene_id": "scene_001",
+    "episode_id": "episode_001",
+    "location_id": "synthetic_modern_seoul_family_estate",
+    "participants": [
+      "han_sera",
+      "kim_doyun",
+      "yoon_mira"
+    ],
+    "objective": "Establish the family inheritance question without revealing the final secret.",
+    "surface_constraints": [
+      "synthetic_only",
+      "public_safe_placeholder",
+      "provider_calls_allowed_false",
+      "raw_manuscript_included_false",
+      "final_secret_not_revealed"
+    ]
+  },
+  "character_state": {
+    "characters": [
+      {
+        "character_id": "han_sera",
+        "display_name": "Han Sera",
+        "role": "eldest_daughter",
+        "goal_vector": [
+          "protect_family",
+          "learn_truth",
+          "keep_surface_composure"
+        ],
+        "relationship_edges": [
+          {
+            "target": "kim_doyun",
+            "relation": "trusts_as_legal_ally"
+          },
+          {
+            "target": "yoon_mira",
+            "relation": "uncertain_family_tension"
+          }
+        ],
+        "knowledge_boundary": "surface_only_until_reveal_contract"
+      },
+      {
+        "character_id": "kim_doyun",
+        "display_name": "Kim Doyun",
+        "role": "family_lawyer",
+        "goal_vector": [
+          "manage_inheritance_process",
+          "contain_public_risk"
+        ],
+        "relationship_edges": [
+          {
+            "target": "han_sera",
+            "relation": "professional_confidant"
+          },
+          {
+            "target": "yoon_mira",
+            "relation": "legal_caution"
+          }
+        ],
+        "knowledge_boundary": "surface_only_until_reveal_contract"
+      },
+      {
+        "character_id": "yoon_mira",
+        "display_name": "Yoon Mira",
+        "role": "estranged_aunt",
+        "goal_vector": [
+          "reenter_family",
+          "pressure_hidden_history"
+        ],
+        "relationship_edges": [
+          {
+            "target": "han_sera",
+            "relation": "estranged_aunt_niece"
+          },
+          {
+            "target": "kim_doyun",
+            "relation": "wary_observer"
+          }
+        ],
+        "knowledge_boundary": "surface_only_until_reveal_contract"
+      }
+    ]
+  },
+  "world_state": {
+    "world_id": "synthetic_modern_seoul_family_estate",
+    "era": "modern_day",
+    "locations": [
+      {
+        "location_id": "family_estate",
+        "label": "Family Estate",
+        "public_safe": true
+      },
+      {
+        "location_id": "legal_office",
+        "label": "Small Legal Office",
+        "public_safe": true
+      }
+    ],
+    "institutions": [
+      {
+        "institution_id": "han_family",
+        "type": "family",
+        "public_safe": true
+      },
+      {
+        "institution_id": "inheritance_law_office",
+        "type": "legal",
+        "public_safe": true
+      }
+    ],
+    "rule_constraints": [
+      "synthetic_only",
+      "sample_local_only",
+      "provider_calls_allowed_false",
+      "raw_manuscript_included_false"
+    ],
+    "public_facts": [
+      "A fictional modern family estate and small legal office in Seoul",
+      "A family inheritance dispute drives the opening tension.",
+      "The final secret remains hidden from reader-facing output."
+    ]
+  },
+  "reveal_state": {
+    "reveal_id": "inheritance_secret_core",
+    "owner_scope": "episode_001",
+    "visibility_level": "hidden",
+    "knowledge_holders": [
+      "critic_lane_only",
+      "human_approval_lane_only"
+    ],
+    "unlock_condition": "manual approval after future gate progression",
+    "node2_surface_projection": "A mystery exists, but the final secret is withheld."
+  },
+  "continuity_state": {
+    "continuity_id": "continuity_episode_001",
+    "timeline_position": "episode_001_scene_001_opening",
+    "open_threads": [
+      "Who inherits the estate?",
+      "Why did the estranged aunt return now?"
+    ],
+    "resolved_threads": [],
+    "contradiction_watchlist": [
+      "Do not reveal the final secret in Stage147 manifest packets.",
+      "Keep all scene packets synthetic and provider-zero."
+    ],
+    "repair_policy": "manual_only_human_approval_required"
+  },
+  "source_summary": {
+    "sample_root": "C:/AI_Codex/codex-work/gpt/github_push/v1700-literary-os_stage136/samples/korean_drama_family_secret",
+    "project_id": "sample_korean_drama_family_secret",
+    "character_count": 3,
+    "scene_count": 1,
+    "episode_count": 1,
+    "plot_outline_excerpt": "# Synthetic Family Secret Drama Sample Outline"
+  }
+}

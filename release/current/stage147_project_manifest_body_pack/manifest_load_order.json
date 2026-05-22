@@ -1,0 +1,65 @@
+{
+  "stage": "stage147",
+  "title": "Stage147 Manifest Load Order",
+  "status": "pass",
+  "issues": [],
+  "order_complete": true,
+  "steps": [
+    {
+      "order_index": 1,
+      "name": "load_project_manifest",
+      "depends_on": [],
+      "output": "series_state",
+      "rationale": "Project identity must exist before any derived packet."
+    },
+    {
+      "order_index": 2,
+      "name": "load_world_packet",
+      "depends_on": [
+        "load_project_manifest"
+      ],
+      "output": "world_state",
+      "rationale": "World anchors define valid location and rule references."
+    },
+    {
+      "order_index": 3,
+      "name": "load_character_roster",
+      "depends_on": [
+        "load_project_manifest"
+      ],
+      "output": "character_state",
+      "rationale": "Character packets depend on the project identity."
+    },
+    {
+      "order_index": 4,
+      "name": "load_scene_request",
+      "depends_on": [
+        "load_project_manifest",
+        "load_world_packet",
+        "load_character_roster"
+      ],
+      "output": "scene_state",
+      "rationale": "Scene packets require project, world, and character anchors."
+    },
+    {
+      "order_index": 5,
+      "name": "derive_episode_and_continuity",
+      "depends_on": [
+        "load_project_manifest",
+        "load_scene_request"
+      ],
+      "output": "episode_state + continuity_state",
+      "rationale": "Episode and continuity packets are derived after scene intent is known."
+    },
+    {
+      "order_index": 6,
+      "name": "derive_reveal_projection",
+      "depends_on": [
+        "load_scene_request",
+        "derive_episode_and_continuity"
+      ],
+      "output": "reveal_state",
+      "rationale": "Reveal projection depends on scene intent and continuity policy."
+    }
+  ]
+}

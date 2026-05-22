@@ -1,0 +1,18 @@
+{
+  "stage": "stage147",
+  "title": "Project Manifest Body Branchpoint Trace",
+  "baseline_stage": "stage146",
+  "branchpoint_lineage_preserved": true,
+  "source_stage_signals": [
+    "release/current/stage146_narrative_state_contract_pack/stage147_entry_signals.json"
+  ],
+  "materialized_outputs": [
+    "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json",
+    "release/current/stage147_project_manifest_body_pack/project_manifest_catalog.json",
+    "release/current/stage147_project_manifest_body_pack/manifest_state_bindings.json",
+    "release/current/stage147_project_manifest_body_pack/manifest_policy_boundary.json",
+    "release/current/stage147_project_manifest_body_pack/manifest_load_order.json",
+    "release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json"
+  ],
+  "next_stage": "stage148"
+}

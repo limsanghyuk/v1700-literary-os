@@ -155,6 +155,30 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage147": {
+        "label": "Stage147",
+        "version": "1.47.0",
+        "title": "Project Manifest Body",
+        "required_files": [
+            "docs/stages/stage147.md",
+            "docs/proposals/stage147_project_manifest_body_proposal.md",
+            "docs/architecture/stage147_project_manifest_body_blueprint.md",
+            "docs/development/stage147_developer_handoff.md",
+            "manifests/stage147_manifest.json",
+            "manifests/stage147_project_manifest_body_manifest.json",
+            "manifests/stage147_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage147_overlay.json",
+            "release/current/stage147_release_asset_manifest.json",
+            "release/current/stage147_project_manifest_body_report.json",
+            "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json",
+            "release/current/stage147_project_manifest_body_pack/project_manifest_catalog.json",
+            "release/current/stage147_project_manifest_body_pack/manifest_state_bindings.json",
+            "release/current/stage147_project_manifest_body_pack/manifest_policy_boundary.json",
+            "release/current/stage147_project_manifest_body_pack/manifest_load_order.json",
+            "release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 
