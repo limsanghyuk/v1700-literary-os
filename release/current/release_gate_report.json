@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 901
+        "node_count": 907
       },
       "narrative_summary": {
         "available": true,
@@ -967,6 +967,19 @@
     "stage": "147",
     "baseline_stage": "146",
     "title": "Project Manifest Body Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage148_release_gate": {
+    "status": "pass",
+    "stage": "148",
+    "baseline_stage": "147",
+    "title": "Node Boundary Constitution Gate",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

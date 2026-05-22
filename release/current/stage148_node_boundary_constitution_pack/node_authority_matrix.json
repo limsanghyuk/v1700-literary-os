@@ -1,0 +1,80 @@
+{
+  "stage": "stage148",
+  "title": "Stage148 Node Authority Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 7,
+  "coverage_complete": true,
+  "rules": [
+    {
+      "state_name": "SeriesState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_summary_only",
+      "node3_access": "critic_summary_only",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Series authority stays whole in Node1 while Node2 and Node3 consume condensed framing."
+    },
+    {
+      "state_name": "EpisodeState",
+      "node1_access": "full_contract",
+      "node2_access": "episode_premise_only",
+      "node3_access": "critic_episode_summary",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Episode ordering and continuity anchors remain outside reader-facing prose."
+    },
+    {
+      "state_name": "SceneState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_safe_scene_packet",
+      "node3_access": "critic_surface_plus_flags",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "SceneState is the primary Node2 render contract but still stays packetized."
+    },
+    {
+      "state_name": "CharacterState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_traits_only",
+      "node3_access": "critic_relationship_summary",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Character private goals and hidden beliefs stay out of Node2."
+    },
+    {
+      "state_name": "WorldState",
+      "node1_access": "full_contract",
+      "node2_access": "public_world_facts_only",
+      "node3_access": "critic_world_consistency_summary",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "World rules are summarized for prose while critic sees consistency cues."
+    },
+    {
+      "state_name": "RevealState",
+      "node1_access": "full_contract",
+      "node2_access": "node2_surface_projection_only",
+      "node3_access": "critic_reveal_guard_summary",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/validators.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "RevealState remains the hard authority boundary for Node2 raw access zero."
+    },
+    {
+      "state_name": "ContinuityState",
+      "node1_access": "full_contract",
+      "node2_access": "surface_continuity_summary",
+      "node3_access": "critic_continuity_packet",
+      "node1_module": "src/v1700/nodes/node1_architect/__init__.py",
+      "node2_module": "src/v1700/nodes/node2_prose_renderer/compiler.py",
+      "node3_module": "src/v1700/nodes/node3_critic_gate/constraint_validator.py",
+      "rationale": "Continuity risk data remains structured for critic review, not direct prose authority."
+    }
+  ]
+}

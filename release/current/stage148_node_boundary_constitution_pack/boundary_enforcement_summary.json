@@ -1,0 +1,59 @@
+{
+  "stage": "stage148",
+  "title": "Stage148 Boundary Enforcement Summary",
+  "status": "pass",
+  "issues": [],
+  "all_enforced": true,
+  "node2_surface_only_enforced": true,
+  "node3_critic_scope_defined": true,
+  "controls": [
+    {
+      "name": "stage147_canonical_bundle_present",
+      "description": "Stage147 canonical manifest bundle must remain present and passing.",
+      "enforced": true,
+      "evidence": "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json"
+    },
+    {
+      "name": "node1_full_contract_access_defined",
+      "description": "Node1 must retain full-contract access for planning authority.",
+      "enforced": true,
+      "evidence": "src/v1700/nodes/node1_architect/__init__.py"
+    },
+    {
+      "name": "node2_surface_only_defined",
+      "description": "Node2 must never receive full-contract or raw reveal payloads.",
+      "enforced": true,
+      "evidence": "src/v1700/nodes/node2_prose_renderer/compiler.py"
+    },
+    {
+      "name": "node3_critic_scope_defined",
+      "description": "Node3 must receive structured critic summaries instead of mutation authority.",
+      "enforced": true,
+      "evidence": "src/v1700/nodes/node3_critic_gate/constraint_validator.py"
+    },
+    {
+      "name": "reveal_surface_projection_preserved",
+      "description": "RevealState must keep hidden visibility and expose a non-empty Node2 surface projection only.",
+      "enforced": true,
+      "evidence": "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json"
+    },
+    {
+      "name": "projection_registry_blocks_hidden_fields",
+      "description": "Surface projection registry must name blocked fields for every packet.",
+      "enforced": true,
+      "evidence": "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json"
+    },
+    {
+      "name": "route_modules_exist",
+      "description": "Referenced node modules must exist in the repository.",
+      "enforced": true,
+      "evidence": "src/v1700/nodes/"
+    },
+    {
+      "name": "provider_zero_and_write_zero_preserved",
+      "description": "Stage148 must preserve provider-zero and write-zero invariants.",
+      "enforced": true,
+      "evidence": "stage147 + stage148 reports"
+    }
+  ]
+}

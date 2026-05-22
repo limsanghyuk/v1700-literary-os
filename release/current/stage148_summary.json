@@ -1,0 +1,26 @@
+{
+  "stage": "148",
+  "baseline_stage": "147",
+  "title": "Node Boundary Constitution",
+  "status": "pass",
+  "main_report": "release/current/stage148_node_boundary_constitution_report.json",
+  "release_gate_report": "release/current/stage148_release_gate_report.json",
+  "asset_manifest": "release/current/stage148_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage148_node_boundary_constitution_pack/",
+  "mode": "NODE_BOUNDARY_CONSTITUTION_LOCAL",
+  "node_boundary_constitution_only": true,
+  "authority_rule_count": 7,
+  "route_count": 6,
+  "projection_rule_count": 7,
+  "node2_surface_only_enforced": true,
+  "node3_critic_scope_defined": true,
+  "stage149_gate_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "branchpoint_lineage_preserved": true,
+  "next_development_order": [
+    "Stage149 Body Constitution Release Gate",
+    "Stage150 Memory Body"
+  ]
+}

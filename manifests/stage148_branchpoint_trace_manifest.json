@@ -1,0 +1,19 @@
+{
+  "stage": "stage148",
+  "title": "Node Boundary Constitution Branchpoint Trace",
+  "baseline_stage": "stage147",
+  "branchpoint_lineage_preserved": true,
+  "trace_inputs": [
+    "release/current/stage147_project_manifest_body_pack/canonical_manifest_bundle.json",
+    "release/current/stage147_project_manifest_body_pack/manifest_load_order.json",
+    "release/current/stage147_project_manifest_body_pack/stage148_entry_signals.json"
+  ],
+  "trace_outputs": [
+    "release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json",
+    "release/current/stage148_node_boundary_constitution_pack/packet_route_map.json",
+    "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json",
+    "release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json",
+    "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json"
+  ],
+  "next_stage": "stage149"
+}

@@ -179,6 +179,29 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage148": {
+        "label": "Stage148",
+        "version": "1.48.0",
+        "title": "Node Boundary Constitution",
+        "required_files": [
+            "docs/stages/stage148.md",
+            "docs/proposals/stage148_node_boundary_constitution_proposal.md",
+            "docs/architecture/stage148_node_boundary_constitution_blueprint.md",
+            "docs/development/stage148_developer_handoff.md",
+            "manifests/stage148_manifest.json",
+            "manifests/stage148_node_boundary_constitution_manifest.json",
+            "manifests/stage148_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage148_overlay.json",
+            "release/current/stage148_release_asset_manifest.json",
+            "release/current/stage148_node_boundary_constitution_report.json",
+            "release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json",
+            "release/current/stage148_node_boundary_constitution_pack/packet_route_map.json",
+            "release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json",
+            "release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json",
+            "release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

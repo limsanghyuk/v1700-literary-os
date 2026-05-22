@@ -53,6 +53,7 @@ docs/architecture/stage144_blueprint.md
 docs/architecture/stage145_body_constitution_blueprint.md
 docs/architecture/stage146_narrative_state_contract_blueprint.md
 docs/architecture/stage147_project_manifest_body_blueprint.md
+docs/architecture/stage148_node_boundary_constitution_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -89,6 +90,7 @@ docs/development/stage144_developer_handoff.md
 docs/development/stage145_developer_handoff.md
 docs/development/stage146_developer_handoff.md
 docs/development/stage147_developer_handoff.md
+docs/development/stage148_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -117,6 +119,7 @@ docs/proposals/stage144_proposal.md
 docs/proposals/stage145_body_constitution_proposal.md
 docs/proposals/stage146_narrative_state_contract_proposal.md
 docs/proposals/stage147_project_manifest_body_proposal.md
+docs/proposals/stage148_node_boundary_constitution_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
@@ -245,6 +248,7 @@ docs/stages/stage144.md
 docs/stages/stage145.md
 docs/stages/stage146.md
 docs/stages/stage147.md
+docs/stages/stage148.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -369,6 +373,7 @@ manifests/live_core_stage144_overlay.json
 manifests/live_core_stage145_overlay.json
 manifests/live_core_stage146_overlay.json
 manifests/live_core_stage147_overlay.json
+manifests/live_core_stage148_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -534,6 +539,9 @@ manifests/stage146_narrative_state_contract_manifest.json
 manifests/stage147_branchpoint_trace_manifest.json
 manifests/stage147_manifest.json
 manifests/stage147_project_manifest_body_manifest.json
+manifests/stage148_branchpoint_trace_manifest.json
+manifests/stage148_manifest.json
+manifests/stage148_node_boundary_constitution_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1162,6 +1170,15 @@ release/current/stage147_project_manifest_body_report.json
 release/current/stage147_release_asset_manifest.json
 release/current/stage147_release_gate_report.json
 release/current/stage147_summary.json
+release/current/stage148_node_boundary_constitution_pack/boundary_enforcement_summary.json
+release/current/stage148_node_boundary_constitution_pack/node_authority_matrix.json
+release/current/stage148_node_boundary_constitution_pack/packet_route_map.json
+release/current/stage148_node_boundary_constitution_pack/stage149_entry_signals.json
+release/current/stage148_node_boundary_constitution_pack/surface_projection_registry.json
+release/current/stage148_node_boundary_constitution_report.json
+release/current/stage148_release_asset_manifest.json
+release/current/stage148_release_gate_report.json
+release/current/stage148_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1538,6 +1555,7 @@ src/v1700/gates/stage144_release_gate.py
 src/v1700/gates/stage145_release_gate.py
 src/v1700/gates/stage146_release_gate.py
 src/v1700/gates/stage147_release_gate.py
+src/v1700/gates/stage148_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -1863,6 +1881,9 @@ src/v1700/nie/stability/meta_learner.py
 src/v1700/nie/stability/nil_stability.py
 src/v1700/nie/stability/t_ideal_learner.py
 src/v1700/nie/stability/temporal_cim.py
+src/v1700/node_boundary_constitution/__init__.py
+src/v1700/node_boundary_constitution/contracts.py
+src/v1700/node_boundary_constitution/report.py
 src/v1700/nodes/__init__.py
 src/v1700/nodes/node1_architect/__init__.py
 src/v1700/nodes/node2_prose_renderer/__init__.py
@@ -2216,6 +2237,8 @@ src/v1700/stage146/__init__.py
 src/v1700/stage146/stage146_runner.py
 src/v1700/stage147/__init__.py
 src/v1700/stage147/stage147_runner.py
+src/v1700/stage148/__init__.py
+src/v1700/stage148/stage148_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2419,6 +2442,7 @@ tests/test_stage144_split_ci_runtime_strategy.py
 tests/test_stage145_body_constitution.py
 tests/test_stage146_narrative_state_contract.py
 tests/test_stage147_project_manifest_body.py
+tests/test_stage148_node_boundary_constitution.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2743,6 +2767,8 @@ tools/run_stage146_narrative_state_contract.py
 tools/run_stage146_release_gate.py
 tools/run_stage147_project_manifest_body.py
 tools/run_stage147_release_gate.py
+tools/run_stage148_node_boundary_constitution.py
+tools/run_stage148_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py
