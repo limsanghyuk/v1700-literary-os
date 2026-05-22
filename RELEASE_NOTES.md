@@ -1,50 +1,32 @@
-# V1700 Stage149 - Body Constitution Release Gate
+# V1700 Stage150 - Memory Contract
 
-Stage149 seals the full Page01 constitution chain. It does not add memory execution, generation execution, or learning execution. Instead it proves that Stage145 through Stage148 still align, still preserve provider-zero and Node2 surface-only constraints, and are now frozen as the baseline for Stage150 Memory Body.
+Stage150 begins Page02, the Narrative Memory Body, by defining memory contracts without enabling runtime memory execution.
 
 ## Highlights
 
-- Stage134 remains audit-only, Stage135 remains candidate-only, Stage136 remains schema-only, Stage137 remains migration-plan-only, Stage138 remains storage-contract-catalog-only, Stage139 remains corpus-governance-pipeline-only, Stage140 remains release-integrity-gate-only, Stage141 remains local-E2E-only, Stage142 remains benchmark-pack-only, Stage143 remains docs-only, Stage144 remains workflow-split-only, Stage145 remains constitution-only, Stage146 remains state-contract-only, Stage147 remains manifest-body-only, Stage148 remains node-boundary-only, and Stage149 remains release-gate-only.
-- README, pyproject, package manifest, live manifest, and release notes are checked for deterministic Stage149 alignment.
-- Release asset declarations are verified against the canonical Stage149 package contract.
-- Page01 is now sealed with a constitution gate matrix, a constitution seal, a Stage150 readiness matrix, a blocker registry, and a lineage evidence index.
+- Stage149 remains the sealed Page01 baseline.
+- Stage150 defines memory record contracts, memory boundary policy, write policy, and Node2 projection policy.
+- Memory write remains disabled.
+- Runtime storage and query execution remain disabled.
+- Provider calls remain zero.
+- Node2 raw reveal access remains zero.
 
 ## Validation Commands
 
 ```bash
 python -m compileall -q src tools
-python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/test_stage147_project_manifest_body.py tests/test_stage148_node_boundary_constitution.py tests/test_stage149_body_constitution_release_gate.py tests/stage_gates/test_stage72_repo_doctor.py -q
 python tools/run_mandatory_predevelopment_check.py
-python tools/check_stage_metadata_consistency.py
-python tools/check_release_asset_integrity.py
-python tools/run_stage140_release_integrity.py
-python tools/run_stage140_release_gate.py
-python tools/run_stage141_prose_generation_e2e.py
-python tools/run_stage141_release_gate.py
-python tools/run_stage142_longform_benchmark_pack.py
-python tools/run_stage142_release_gate.py
-python tools/run_stage143_user_cli_api_docs.py
-python tools/run_stage143_release_gate.py
-python tools/run_stage144_split_ci_runtime_strategy.py
-python tools/run_stage144_release_gate.py
-python tools/run_stage145_body_constitution.py
-python tools/run_stage145_body_constitution_gate.py
-python tools/run_stage146_narrative_state_contract.py
-python tools/run_stage146_release_gate.py
-python tools/run_stage147_project_manifest_body.py
-python tools/run_stage147_release_gate.py
-python tools/run_stage148_node_boundary_constitution.py
-python tools/run_stage148_release_gate.py
-python tools/run_stage149_body_constitution_release_gate.py
 python tools/run_stage149_release_gate.py
+python tools/run_stage150_memory_contract.py
+python tools/run_stage150_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python tools/run_ci_dependency_preflight.py
+python -m pytest tests/test_stage150_memory_contract.py -q
 ```
 
 ## Official Release Assets
 
-The official Stage149 handoff assets are:
+The official Stage150 handoff assets are:
 
-- `V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage150_memory_contract_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage150_memory_contract_release_integrated_repository_with_artifacts.zip.sha256`

@@ -1,0 +1,14 @@
+{
+  "stage": "150",
+  "baseline_stage": "149",
+  "title": "Memory Contract",
+  "status": "pass",
+  "issues": [],
+  "bootstrap_report": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

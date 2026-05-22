@@ -1,0 +1,12 @@
+{
+  "stage": "stage150",
+  "title": "Memory Contract Branchpoint Trace",
+  "baseline_stage": "stage149",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage149 Page01 constitution seal",
+    "Stage150 memory contract preflight",
+    "Stage150 memory boundary policy",
+    "Stage150 Node2 projection policy"
+  ]
+}

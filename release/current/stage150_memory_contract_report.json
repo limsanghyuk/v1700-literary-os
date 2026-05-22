@@ -1,0 +1,20 @@
+{
+  "stage": "150",
+  "baseline_stage": "149",
+  "title": "Memory Contract",
+  "status": "pass",
+  "issues": [],
+  "mode": "MEMORY_CONTRACT_LOCAL_ONLY",
+  "memory_contract_only": true,
+  "storage_runtime_enabled": false,
+  "query_runtime_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage151_local_read_only_memory_store_ready": true
+}

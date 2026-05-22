@@ -1,0 +1,23 @@
+{
+  "stage": "stage150",
+  "title": "Memory Contract",
+  "contracts": [
+    "ProjectMemoryEnvelope",
+    "MemoryRecordBase",
+    "CharacterMemoryRecord",
+    "EpisodeMemoryRecord",
+    "SceneMemoryRecord",
+    "WorldMemoryRecord",
+    "EventMemoryRecord",
+    "RevealMemoryRecord",
+    "ContinuityMemoryRecord",
+    "PayoffMemoryRecord"
+  ],
+  "policy": {
+    "memory_write_enabled": false,
+    "storage_runtime_enabled": false,
+    "query_runtime_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}
