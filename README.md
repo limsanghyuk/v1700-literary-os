@@ -1,13 +1,14 @@
-# V1700 Literary OS - Stage151
 
-> Local Read-Only Memory Store
+# V1700 Literary OS - Stage152
+
+> Deterministic Local Query / Ranking
 > Provider-Zero AI longform novel and drama scenario generation system.
 
 ## Current Stage
 
-Stage151 is the official Page02 Narrative Memory Body stage after Stage150. It materializes the Stage150 Memory Contract as a deterministic local read-only memory fixture store.
+Stage152 is the official Page02 Narrative Memory Body query stage after Stage151. It exposes deterministic local query and ranking over the read-only memory store.
 
-Stage151 is read-only. It does not enable memory writes, vector DB, live provider RAG, query ranking, canon mutation, runtime training, or auto-repair apply.
+Stage152 does not enable live provider RAG, vector DB runtime dependencies, memory write, canon mutation, runtime training, or auto-repair apply.
 
 ## Quick Start
 
@@ -16,65 +17,43 @@ pip install -e ".[dev]"
 
 python -m compileall -q src tools
 python tools/run_mandatory_predevelopment_check.py
-python tools/run_stage150_release_gate.py
-python tools/run_stage151_local_read_only_memory_store.py
+python tools/check_stage_metadata_consistency.py
+python tools/check_release_asset_integrity.py
 python tools/run_stage151_release_gate.py
+python tools/run_stage152_memory_query_interface.py
+python tools/run_stage152_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage151_local_read_only_memory_store.py -q
+python -m pytest tests/test_stage150_memory_contract.py tests/test_stage151_local_read_only_memory_store.py tests/test_stage152_memory_query_interface.py -q
 ```
 
-## Stage151 Core Modules
+## Stage152 Core Modules
 
 ```text
-src/v1700/local_memory_store/
+src/v1700/memory_query_interface/
   contracts.py
-  loader.py
+  query.py
   report.py
 
-src/v1700/stage151/
-  stage151_runner.py
+src/v1700/stage152/
+  stage152_runner.py
 
 src/v1700/gates/
-  stage151_release_gate.py
+  stage152_release_gate.py
 ```
-
-## Stage151 Release Gate
-
-The Stage151 gate validates:
-
-- Stage150 baseline gate pass
-- local JSONL store spec pass
-- record validation pass
-- deterministic checksum index pass
-- read-only access policy pass
-- Node2 projection index pass
-- provider default calls = 0
-- Node2 raw reveal access = 0
-- memory/store write disabled
-- query runtime deferred
-- runtime training disabled
-- branchpoint survival pass
 
 ## Stage Lineage
 
 ```text
-Stage149  Body Constitution Release Gate
 Stage150  Memory Contract
 Stage151  Local Read-Only Memory Store
-```
-
-## Next Direction
-
-```text
 Stage152  Deterministic Local Query / Ranking
-Stage153  Memory Health & Leakage Boundary
 ```
 
 ## Repository Evidence
 
-- Stage manifest: `manifests/stage151_manifest.json`
+- Stage manifest: `manifests/stage152_manifest.json`
 - Live manifest: `manifests/live_core_manifest.json`
-- Release report: `release/current/stage151_local_read_only_memory_store_report.json`
-- Release gate: `release/current/stage151_release_gate_report.json`
-- Official asset manifest: `release/current/stage151_release_asset_manifest.json`
+- Release report: `release/current/stage152_memory_query_interface_report.json`
+- Release gate: `release/current/stage152_release_gate_report.json`
+- Official asset manifest: `release/current/stage152_release_asset_manifest.json`

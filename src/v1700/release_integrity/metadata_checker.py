@@ -274,6 +274,31 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage152": {
+        "label": "Stage152",
+        "version": "1.52.0",
+        "title": "Deterministic Local Query / Ranking",
+        "required_files": [
+            "docs/stages/stage152.md",
+            "docs/proposals/stage152_memory_query_interface_proposal.md",
+            "docs/architecture/stage152_memory_query_interface_blueprint.md",
+            "docs/development/stage152_developer_handoff.md",
+            "manifests/stage152_manifest.json",
+            "manifests/stage152_memory_query_interface_manifest.json",
+            "manifests/stage152_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage152_overlay.json",
+            "release/current/stage152_release_asset_manifest.json",
+            "release/current/stage152_memory_query_interface_report.json",
+            "release/current/stage152_release_gate_report.json",
+            "release/current/stage152_memory_query_interface_pack/query_api_catalog.json",
+            "release/current/stage152_memory_query_interface_pack/query_policy.json",
+            "release/current/stage152_memory_query_interface_pack/intent_query_result.json",
+            "release/current/stage152_memory_query_interface_pack/type_query_results.json",
+            "release/current/stage152_memory_query_interface_pack/ranking_report.json",
+            "release/current/stage152_memory_query_interface_pack/node2_projection_report.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

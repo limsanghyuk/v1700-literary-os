@@ -1,0 +1,121 @@
+{
+  "stage": "152",
+  "baseline_stage": "151",
+  "title": "Deterministic Local Query / Ranking",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage151_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage152_report_pass": {
+      "status": "pass"
+    },
+    "query_api_catalog_pass": {
+      "status": "pass"
+    },
+    "query_policy_pass": {
+      "status": "pass"
+    },
+    "intent_query_pass": {
+      "status": "pass"
+    },
+    "type_query_pass": {
+      "status": "pass"
+    },
+    "ranking_pass": {
+      "status": "pass"
+    },
+    "node2_projection_pass": {
+      "status": "pass"
+    },
+    "local_deterministic_query_enabled": {
+      "status": "pass"
+    },
+    "query_write_blocked": {
+      "status": "pass"
+    },
+    "store_write_blocked": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "canon_auto_resolution_zero": {
+      "status": "pass"
+    },
+    "auto_repair_mutation_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage152": {
+    "status": "pass",
+    "stage": "152",
+    "baseline_stage": "151",
+    "title": "Deterministic Local Query / Ranking",
+    "issues": [],
+    "mode": "DETERMINISTIC_LOCAL_MEMORY_QUERY",
+    "query_runtime_enabled": true,
+    "ranking_runtime_enabled": true,
+    "query_write_enabled": false,
+    "memory_write_enabled": false,
+    "store_write_enabled": false,
+    "candidate_count": 3,
+    "ranked_candidate_count": 3,
+    "node2_projected_count": 3,
+    "node2_blocked_projection_count": 1,
+    "stage153_memory_health_monitor_ready": true,
+    "vector_db_runtime_dependency": false,
+    "live_provider_rag_enabled": false,
+    "runtime_training_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "hidden_reveal_projection_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "memory_write_enabled": false,
+  "query_write_enabled": false,
+  "store_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

@@ -2,14 +2,11 @@
   "stage": "115",
   "baseline_stage": "114",
   "title": "CharacterInfluenceMatrix + Structural Balance",
-  "status": "blocked",
-  "issues": [
-    "stage114_baseline_gate_pass",
-    "clean_zip_packaging_pass"
-  ],
+  "status": "pass",
+  "issues": [],
   "checks": {
     "stage114_baseline_gate_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "cim_contract_pass": {
       "status": "pass"
@@ -54,7 +51,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -109,5 +106,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": false
+  "branchpoint_lineage_preserved": true
 }

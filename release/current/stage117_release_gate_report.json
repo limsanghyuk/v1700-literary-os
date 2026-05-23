@@ -2,14 +2,11 @@
   "stage": "117",
   "baseline_stage": "116",
   "title": "NarrativeTensionCurve",
-  "status": "blocked",
-  "issues": [
-    "stage116_baseline_gate_pass",
-    "clean_zip_packaging_pass"
-  ],
+  "status": "pass",
+  "issues": [],
   "checks": {
     "stage116_baseline_gate_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "narrative_tension_curve_contract_pass": {
       "status": "pass"
@@ -60,7 +57,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -112,5 +109,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": false
+  "branchpoint_lineage_preserved": true
 }

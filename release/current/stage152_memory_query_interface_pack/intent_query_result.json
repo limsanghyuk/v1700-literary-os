@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "request": {
+    "project_id": "sample_project_stage151",
+    "query": "family secret continuity",
+    "record_types": [
+      "character",
+      "continuity",
+      "reveal"
+    ],
+    "node": "node1",
+    "limit": 5
+  },
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "record_id": "mem-character-001",
+      "record_type": "character",
+      "project_id": "sample_project_stage151",
+      "source_state_id": "character:minseo",
+      "boundary_level": "READER_SURFACE",
+      "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+      "score": 13.6,
+      "rank": 1,
+      "node2_projection": "surface_safe",
+      "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+    },
+    {
+      "record_id": "mem-continuity-001",
+      "record_type": "continuity",
+      "project_id": "sample_project_stage151",
+      "source_state_id": "continuity:inheritance-thread",
+      "boundary_level": "READER_SURFACE",
+      "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+      "score": 3.766667,
+      "rank": 2,
+      "node2_projection": "surface_safe",
+      "checksum": "16464949e9bc3b98eb429eb09a05739b5f87091a9b678f68f90f93b76c4c6fc1"
+    },
+    {
+      "record_id": "mem-reveal-001",
+      "record_type": "reveal",
+      "project_id": "sample_project_stage151",
+      "source_state_id": "reveal:birth-secret",
+      "boundary_level": "HIDDEN_REVEAL",
+      "summary": "Reveal memory records metadata only; hidden reveal payload is not stored here.",
+      "score": 0.0,
+      "rank": 3,
+      "node2_projection": "blocked",
+      "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+    }
+  ],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0
+}

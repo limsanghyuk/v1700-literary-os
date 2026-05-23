@@ -3,21 +3,65 @@
   "baseline_stage": "107.5",
   "title": "External Review & Editorial Board Mode",
   "status": "pass",
-  "reviewer_count": 6,
-  "packet_count": 4,
-  "scorecard_count": 24,
-  "average_score": 9.04,
-  "blocker_count": 0,
-  "warn_count": 0,
-  "release_gate_affected": false,
-  "provider_default_calls": 0,
-  "live_provider_call_count_in_release_gate": 0,
-  "sandbox_live_provider_call_count": 0,
-  "raw_manuscript_provider_leakage": 0,
-  "node2_raw_reveal_access": 0,
-  "credential_leakage": 0,
-  "raw_response_stored": false,
-  "editorial_consensus": {
+  "stage108_0_preflight": {
+    "stage": "108.0",
+    "status": "pass",
+    "checks": {
+      "stage107_5_baseline_gate_pass": true,
+      "gitnexus_protocol_fallback_pass": true,
+      "release_path_isolation_pass": true,
+      "provider_zero_release_path_pass": true,
+      "raw_manuscript_leakage_guard_pass": true,
+      "branchpoint_survival_pass": true
+    },
+    "issues": []
+  },
+  "stage108_1_editorial_board": {
+    "stage": "108",
+    "baseline_stage": "107.5",
+    "title": "External Review & Editorial Board Mode",
+    "status": "pass",
+    "reviewer_count": 6,
+    "packet_count": 4,
+    "scorecard_count": 24,
+    "average_score": 9.04,
+    "blocker_count": 0,
+    "warn_count": 0,
+    "release_gate_affected": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "sandbox_live_provider_call_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "raw_response_stored": false,
+    "editorial_consensus": {
+      "status": "pass",
+      "average_score": 9.04,
+      "blocker_count": 0,
+      "warn_count": 0,
+      "reviewer_count": 6,
+      "packet_count": 4,
+      "recommendations": [
+        "Use Stage108 board as deterministic editorial contract before live provider review.",
+        "Keep sandbox live outputs out of release/current; store only hashes and score excerpts.",
+        "Promote provider-specific reviewers only after Stage107.5 opt-in benchmark evidence exists."
+      ]
+    },
+    "artifacts": [
+      "release/current/stage108_editorial_board_pack/continuity_audit_report.json",
+      "release/current/stage108_editorial_board_pack/editorial_consensus.json",
+      "release/current/stage108_editorial_board_pack/editorial_scorecards.json",
+      "release/current/stage108_editorial_board_pack/literary_merit_report.json",
+      "release/current/stage108_editorial_board_pack/local_privacy_review_report.json",
+      "release/current/stage108_editorial_board_pack/market_fit_report.json",
+      "release/current/stage108_editorial_board_pack/provider_reviewer_bridge_report.json",
+      "release/current/stage108_editorial_board_pack/review_packets.json",
+      "release/current/stage108_editorial_board_pack/reviewer_profiles.json",
+      "release/current/stage108_editorial_board_pack/scenario_dramaturg_report.json"
+    ]
+  },
+  "stage108_2_consensus": {
     "status": "pass",
     "average_score": 9.04,
     "blocker_count": 0,
@@ -30,16 +74,13 @@
       "Promote provider-specific reviewers only after Stage107.5 opt-in benchmark evidence exists."
     ]
   },
-  "artifacts": [
-    "release/current/stage108_editorial_board_pack/continuity_audit_report.json",
-    "release/current/stage108_editorial_board_pack/editorial_consensus.json",
-    "release/current/stage108_editorial_board_pack/editorial_scorecards.json",
-    "release/current/stage108_editorial_board_pack/literary_merit_report.json",
-    "release/current/stage108_editorial_board_pack/local_privacy_review_report.json",
-    "release/current/stage108_editorial_board_pack/market_fit_report.json",
-    "release/current/stage108_editorial_board_pack/provider_reviewer_bridge_report.json",
-    "release/current/stage108_editorial_board_pack/reviewer_profiles.json",
-    "release/current/stage108_editorial_board_pack/review_packets.json",
-    "release/current/stage108_editorial_board_pack/scenario_dramaturg_report.json"
-  ]
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "sandbox_live_provider_call_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "node2_raw_reveal_access": 0,
+  "credential_leakage": 0,
+  "raw_response_stored": false,
+  "release_gate_affected": false,
+  "branchpoint_lineage_preserved": true
 }

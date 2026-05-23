@@ -21,7 +21,7 @@
     "block_reason": "physics_reward_bridge_llm_call_nonzero",
     "triggered_gate": "physics_reward_bridge_no_llm_gate",
     "severity": "CRITICAL_BLOCK",
-    "evidence_path": "C:/AI_Codex/codex-work/gpt/work/stage144_github_main/release/current/stage119_nie_adversarial_pack/NIE-ADV-002.json",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-002.json",
     "provider_call_count": 0,
     "physics_reward_bridge_llm_call_count": 1,
     "mae_live_provider_call_count": 0,

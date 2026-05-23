@@ -8,8 +8,6 @@
     "release_matrix_pass",
     "release_seal_pass",
     "multiwork_release_authorized",
-    "stage127_preflight_pass",
-    "stage128_read_only_absorption_pass",
     "stage129_cim_governor_pass"
   ],
   "checks": {
@@ -32,10 +30,10 @@
       "status": "blocked"
     },
     "stage127_preflight_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "stage128_read_only_absorption_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "stage129_cim_governor_pass": {
       "status": "blocked"
@@ -103,8 +101,8 @@
     ],
     "multiwork_release_authorized": false,
     "stage127_to_stage129_evidence_preserved": true,
-    "stage127_preflight_pass": false,
-    "stage128_read_only_absorption_pass": false,
+    "stage127_preflight_pass": true,
+    "stage128_read_only_absorption_pass": true,
     "stage129_cim_governor_pass": false,
     "direct_v571_merge_detected": false,
     "cross_project_write_allowed": false,

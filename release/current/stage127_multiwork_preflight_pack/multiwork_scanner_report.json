@@ -27,6 +27,13 @@
       ]
     },
     {
+      "path": "docs/generated/wiki/stage_lineage_wiki.md",
+      "terms": [
+        "MultiWork",
+        "MultiWorkCIM"
+      ]
+    },
+    {
       "path": "docs/proposals/stage129_proposal.md",
       "terms": [
         "MultiWork",
@@ -90,13 +97,6 @@
     },
     {
       "path": "docs/stages/STAGE_INDEX.md",
-      "terms": [
-        "MultiWork",
-        "MultiWorkCIM"
-      ]
-    },
-    {
-      "path": "docs/generated/wiki/stage_lineage_wiki.md",
       "terms": [
         "MultiWork",
         "MultiWorkCIM"
@@ -180,6 +180,12 @@
       "terms": [
         "MultiWork",
         "MultiWorkCIM"
+      ]
+    },
+    {
+      "path": "release/current/release_gate_report.json",
+      "terms": [
+        "MultiWork"
       ]
     },
     {
@@ -426,7 +432,7 @@
       ]
     }
   ],
-  "candidate_reference_count": 58,
+  "candidate_reference_count": 59,
   "direct_v571_merge_detected": false,
   "direct_merge_paths_present": [],
   "scan_terms": [

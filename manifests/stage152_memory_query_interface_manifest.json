@@ -1,0 +1,31 @@
+{
+  "stage": "stage152",
+  "title": "Memory Query Interface",
+  "apis": [
+    "find_project_memory",
+    "find_characters",
+    "find_episodes",
+    "find_scenes",
+    "find_events",
+    "find_reveals",
+    "find_payoffs",
+    "query_by_intent",
+    "rank_memory_candidates",
+    "project_for_node2"
+  ],
+  "scoring": [
+    "lexical_term_overlap",
+    "field_priority",
+    "temporal_metadata",
+    "simple_rank_fusion",
+    "boundary_safe_penalty"
+  ],
+  "policy": {
+    "query_write_enabled": false,
+    "memory_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "vector_db_runtime_dependency": false,
+    "live_provider_rag_enabled": false
+  }
+}

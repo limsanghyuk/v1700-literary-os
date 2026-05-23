@@ -57,6 +57,7 @@ docs/architecture/stage148_node_boundary_constitution_blueprint.md
 docs/architecture/stage149_body_constitution_release_gate_blueprint.md
 docs/architecture/stage150_memory_contract_blueprint.md
 docs/architecture/stage151_local_read_only_memory_store_blueprint.md
+docs/architecture/stage152_memory_query_interface_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -98,6 +99,7 @@ docs/development/stage149_developer_handoff.md
 docs/development/stage149_integrity_repair.md
 docs/development/stage150_developer_handoff.md
 docs/development/stage151_developer_handoff.md
+docs/development/stage152_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -130,6 +132,7 @@ docs/proposals/stage148_node_boundary_constitution_proposal.md
 docs/proposals/stage149_body_constitution_release_gate_proposal.md
 docs/proposals/stage150_memory_contract_proposal.md
 docs/proposals/stage151_local_read_only_memory_store_proposal.md
+docs/proposals/stage152_memory_query_interface_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
@@ -262,6 +265,7 @@ docs/stages/stage148.md
 docs/stages/stage149.md
 docs/stages/stage150.md
 docs/stages/stage151.md
+docs/stages/stage152.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -390,6 +394,7 @@ manifests/live_core_stage148_overlay.json
 manifests/live_core_stage149_overlay.json
 manifests/live_core_stage150_overlay.json
 manifests/live_core_stage151_overlay.json
+manifests/live_core_stage152_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -567,6 +572,9 @@ manifests/stage150_memory_contract_manifest.json
 manifests/stage151_branchpoint_trace_manifest.json
 manifests/stage151_local_read_only_memory_store_manifest.json
 manifests/stage151_manifest.json
+manifests/stage152_branchpoint_trace_manifest.json
+manifests/stage152_manifest.json
+manifests/stage152_memory_query_interface_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1232,6 +1240,16 @@ release/current/stage151_local_read_only_memory_store_report.json
 release/current/stage151_release_asset_manifest.json
 release/current/stage151_release_gate_report.json
 release/current/stage151_summary.json
+release/current/stage152_memory_query_interface_pack/intent_query_result.json
+release/current/stage152_memory_query_interface_pack/node2_projection_report.json
+release/current/stage152_memory_query_interface_pack/query_api_catalog.json
+release/current/stage152_memory_query_interface_pack/query_policy.json
+release/current/stage152_memory_query_interface_pack/ranking_report.json
+release/current/stage152_memory_query_interface_pack/type_query_results.json
+release/current/stage152_memory_query_interface_report.json
+release/current/stage152_release_asset_manifest.json
+release/current/stage152_release_gate_report.json
+release/current/stage152_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1616,6 +1634,7 @@ src/v1700/gates/stage148_release_gate.py
 src/v1700/gates/stage149_release_gate.py
 src/v1700/gates/stage150_release_gate.py
 src/v1700/gates/stage151_release_gate.py
+src/v1700/gates/stage152_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -1801,6 +1820,10 @@ src/v1700/manuscript_learning/scene_feature_extractor.py
 src/v1700/memory_body_contract/__init__.py
 src/v1700/memory_body_contract/contracts.py
 src/v1700/memory_body_contract/report.py
+src/v1700/memory_query_interface/__init__.py
+src/v1700/memory_query_interface/contracts.py
+src/v1700/memory_query_interface/query.py
+src/v1700/memory_query_interface/report.py
 src/v1700/meta_learner_audit/__init__.py
 src/v1700/meta_learner_audit/audit.py
 src/v1700/meta_learner_audit/contracts.py
@@ -2312,6 +2335,8 @@ src/v1700/stage150/__init__.py
 src/v1700/stage150/stage150_runner.py
 src/v1700/stage151/__init__.py
 src/v1700/stage151/stage151_runner.py
+src/v1700/stage152/__init__.py
+src/v1700/stage152/stage152_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2524,6 +2549,7 @@ tests/test_stage148_node_boundary_constitution.py
 tests/test_stage149_body_constitution_release_gate.py
 tests/test_stage150_memory_contract.py
 tests/test_stage151_local_read_only_memory_store.py
+tests/test_stage152_memory_query_interface.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2856,6 +2882,8 @@ tools/run_stage150_memory_contract.py
 tools/run_stage150_release_gate.py
 tools/run_stage151_local_read_only_memory_store.py
 tools/run_stage151_release_gate.py
+tools/run_stage152_memory_query_interface.py
+tools/run_stage152_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

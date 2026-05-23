@@ -44,7 +44,7 @@
       {
         "provider_id": "openai",
         "credential_env": "OPENAI_API_KEY",
-        "present": true,
+        "present": false,
         "value_recorded": false
       },
       {

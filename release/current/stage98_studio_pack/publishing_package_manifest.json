@@ -11,7 +11,7 @@
     "includes_full_text": false,
     "includes_feature_reports": true,
     "includes_release_evidence": true,
-    "package_manifest_path": "release\\current\\stage98_studio_pack\\publishing_package_manifest.json"
+    "package_manifest_path": "release/current/stage98_studio_pack/publishing_package_manifest.json"
   },
   "unresolved_block_count": 0,
   "raw_manuscript_provider_leakage": 0,

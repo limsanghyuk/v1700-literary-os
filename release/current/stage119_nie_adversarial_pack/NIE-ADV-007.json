@@ -29,7 +29,7 @@
     "block_reason": "role_tier_orphan_character",
     "triggered_gate": "role_tier_assignment_gate",
     "severity": "BLOCK",
-    "evidence_path": "C:/AI_Codex/codex-work/gpt/work/stage144_github_main/release/current/stage119_nie_adversarial_pack/NIE-ADV-007.json",
+    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-007.json",
     "provider_call_count": 0,
     "physics_reward_bridge_llm_call_count": 0,
     "mae_live_provider_call_count": 0,

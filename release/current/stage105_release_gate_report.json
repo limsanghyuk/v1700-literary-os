@@ -2,11 +2,8 @@
   "stage": "105",
   "baseline_stage": "104",
   "title": "Multi-Provider Creative Arbitration 2.0",
-  "status": "blocked",
-  "issues": [
-    "main_release_gate_pass",
-    "clean_zip_packaging_pass"
-  ],
+  "status": "pass",
+  "issues": [],
   "checks": {
     "stage104_baseline_gate_pass": {
       "status": "pass"
@@ -57,10 +54,10 @@
       "status": "pass"
     },
     "main_release_gate_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "blocked"
+      "status": "pass"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -108,10 +105,8 @@
         "priority_manifest": "manifests/predevelopment_priority_manifest.json",
         "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
         "gitnexus": {
-          "installed": true,
+          "installed": false,
           "status": "fallback_required",
-          "command": "C:\\Users\\inyoung pharm\\AppData\\Roaming\\npm\\gitnexus.cmd",
-          "output_excerpt": "Repository not indexed.\nRun: gitnexus analyze\n",
           "optional_runtime_dependency": true
         },
         "invariant_checks": {
@@ -1148,5 +1143,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": false
+  "branchpoint_lineage_preserved": true
 }

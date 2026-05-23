@@ -1,17 +1,15 @@
 {
-  "status": "blocked",
+  "status": "pass",
   "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
   "primary_gate": "Gate25",
   "secondary_gates": [
     "Gate28",
     "Gate29"
   ],
-  "blocked_by": [
-    "gate25_primary_pass"
-  ],
+  "blocked_by": [],
   "warnings": [],
   "checks": {
-    "gate25_primary_pass": false,
+    "gate25_primary_pass": true,
     "gate28_secondary_quality_pass": true,
     "gate29_secondary_predictive_expected_behavior": true,
     "gate28_not_primary": true,
@@ -28,17 +26,9 @@
       "gate_id": "Gate25",
       "stage": "120",
       "mode": "primary",
-      "status": "blocked",
+      "status": "pass",
       "report_path": "release/current/stage120_gate25_nie_v1_report.json",
-      "issues": [
-        "stage113_release_gate_not_pass",
-        "stage114_release_gate_not_pass",
-        "stage115_release_gate_not_pass",
-        "stage116_release_gate_not_pass",
-        "stage117_release_gate_not_pass",
-        "stage118_release_gate_not_pass",
-        "stage119_release_gate_not_pass"
-      ],
+      "issues": [],
       "metrics": {
         "component_count": 0,
         "provider_default_calls": 0,

@@ -1,34 +1,33 @@
-# V1700 Stage151 - Local Read-Only Memory Store
 
-Stage151 continues Page02, the Narrative Memory Body, by materializing Stage150 contracts into a deterministic local read-only memory store fixture.
+# V1700 Stage152 - Deterministic Local Query / Ranking
+
+Stage152 adds a deterministic local memory query interface over the Stage151 read-only JSONL memory store.
 
 ## Highlights
 
-- Stage150 remains the memory contract baseline.
-- Stage151 adds a local JSONL memory fixture store.
-- Records are validated against required Stage150 fields.
-- Deterministic checksums are verified and indexed.
-- Store access remains read-only.
-- Query and ranking runtime remain deferred to Stage152.
+- Stage151 remains the sealed read-only local memory store baseline.
+- Stage152 exposes the required Page02 query APIs.
+- Ranking is deterministic and local-only.
+- Node2 projection remains surface-safe.
 - Provider calls remain zero.
-- Node2 raw reveal access remains zero.
+- Memory writes remain disabled.
 
 ## Validation Commands
 
 ```bash
 python -m compileall -q src tools
 python tools/run_mandatory_predevelopment_check.py
-python tools/run_stage150_release_gate.py
-python tools/run_stage151_local_read_only_memory_store.py
+python tools/check_stage_metadata_consistency.py
+python tools/check_release_asset_integrity.py
 python tools/run_stage151_release_gate.py
+python tools/run_stage152_memory_query_interface.py
+python tools/run_stage152_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage151_local_read_only_memory_store.py -q
+python -m pytest tests/test_stage150_memory_contract.py tests/test_stage151_local_read_only_memory_store.py tests/test_stage152_memory_query_interface.py -q
 ```
 
 ## Official Release Assets
 
-The official Stage151 handoff assets are:
-
-- `V1700_stage151_local_read_only_memory_store_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage151_local_read_only_memory_store_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip.sha256`

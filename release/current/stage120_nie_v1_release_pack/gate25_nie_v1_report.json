@@ -2,16 +2,8 @@
   "stage": "120",
   "baseline_stage": "119",
   "title": "Gate25 NIE v1.0 Release",
-  "status": "blocked",
-  "issues": [
-    "stage113_release_gate_not_pass",
-    "stage114_release_gate_not_pass",
-    "stage115_release_gate_not_pass",
-    "stage116_release_gate_not_pass",
-    "stage117_release_gate_not_pass",
-    "stage118_release_gate_not_pass",
-    "stage119_release_gate_not_pass"
-  ],
+  "status": "pass",
+  "issues": [],
   "release_contract": {
     "stage": "120",
     "baseline_stage": "119",
@@ -57,99 +49,79 @@
     "physics_reward_bridge": {
       "stage": "stage113",
       "report_path": "release/current/stage113_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "adaptive_momentum_weights": {
       "stage": "stage114",
       "report_path": "release/current/stage114_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage113_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "character_influence_matrix": {
       "stage": "stage115",
       "report_path": "release/current/stage115_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage114_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "domain_specific_rag_fusion": {
       "stage": "stage116",
       "report_path": "release/current/stage116_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage115_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "narrative_tension_curve": {
       "stage": "stage117",
       "report_path": "release/current/stage117_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage116_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "nil_orchestrator": {
       "stage": "stage118",
       "report_path": "release/current/stage118_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage117_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     },
     "nie_adversarial_regression": {
       "stage": "stage119",
       "report_path": "release/current/stage119_release_gate_report.json",
-      "status": "blocked",
-      "issues": [
-        "stage118_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_zero": true,
       "node2_boundary": true,
       "raw_manuscript_leakage_zero": true,
       "credential_leakage_zero": true,
-      "branchpoint_lineage_preserved": false
+      "branchpoint_lineage_preserved": true
     }
   },
   "stage_reports": {
@@ -172,10 +144,8 @@
       "stage": "113",
       "baseline_stage": "112",
       "title": "PhysicsRewardBridge + MAE Reward Wiring",
-      "status": "blocked",
-      "issues": [
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "physics_reward_bridge_llm_call_count": 0,
@@ -183,18 +153,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage113_release_gate_report.json"
     },
     "stage114": {
       "stage": "114",
       "baseline_stage": "113",
       "title": "AdaptiveMomentumWeights",
-      "status": "blocked",
-      "issues": [
-        "stage113_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "physics_reward_bridge_llm_call_count": 0,
@@ -202,18 +169,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage114_release_gate_report.json"
     },
     "stage115": {
       "stage": "115",
       "baseline_stage": "114",
       "title": "CharacterInfluenceMatrix + Structural Balance",
-      "status": "blocked",
-      "issues": [
-        "stage114_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "physics_reward_bridge_llm_call_count": 0,
@@ -221,18 +185,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage115_release_gate_report.json"
     },
     "stage116": {
       "stage": "116",
       "baseline_stage": "115",
       "title": "Domain-Specific RAG Fusion",
-      "status": "blocked",
-      "issues": [
-        "stage115_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "embedding_provider_call_count": 0,
@@ -242,18 +203,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage116_release_gate_report.json"
     },
     "stage117": {
       "stage": "117",
       "baseline_stage": "116",
       "title": "NarrativeTensionCurve",
-      "status": "blocked",
-      "issues": [
-        "stage116_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "embedding_provider_call_count": 0,
@@ -263,18 +221,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage117_release_gate_report.json"
     },
     "stage118": {
       "stage": "118",
       "baseline_stage": "117",
       "title": "NIL Orchestrator",
-      "status": "blocked",
-      "issues": [
-        "stage117_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "embedding_provider_call_count": 0,
@@ -284,18 +239,15 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage118_release_gate_report.json"
     },
     "stage119": {
       "stage": "119",
       "baseline_stage": "118",
       "title": "NIE Adversarial Regression Pack",
-      "status": "blocked",
-      "issues": [
-        "stage118_baseline_gate_pass",
-        "clean_zip_packaging_pass"
-      ],
+      "status": "pass",
+      "issues": [],
       "provider_default_calls": 0,
       "live_provider_call_count_in_release_gate": 0,
       "embedding_provider_call_count": 0,
@@ -305,22 +257,22 @@
       "node2_raw_reveal_access": 0,
       "raw_manuscript_provider_leakage": 0,
       "credential_leakage": 0,
-      "branchpoint_lineage_preserved": false,
+      "branchpoint_lineage_preserved": true,
       "report_path": "release/current/stage119_release_gate_report.json"
     }
   },
   "gate25_checks": {
     "gitnexus_preflight_pass": true,
-    "mae_reward_contract_pass": false,
+    "mae_reward_contract_pass": true,
     "physics_reward_bridge_no_llm_pass": true,
-    "amw_alpha_bounds_pass": false,
-    "amw_drift_guard_pass": false,
-    "cim_asymmetric_matrix_pass": false,
-    "structural_balance_pass": false,
-    "domain_rag_classifier_pass": false,
-    "narrative_tension_curve_pass": false,
-    "nil_orchestrator_report_pass": false,
-    "nie_adversarial_pack_pass": false,
+    "amw_alpha_bounds_pass": true,
+    "amw_drift_guard_pass": true,
+    "cim_asymmetric_matrix_pass": true,
+    "structural_balance_pass": true,
+    "domain_rag_classifier_pass": true,
+    "narrative_tension_curve_pass": true,
+    "nil_orchestrator_report_pass": true,
+    "nie_adversarial_pack_pass": true,
     "provider_zero_pass": true,
     "node2_boundary_pass": true,
     "raw_manuscript_leakage_zero_pass": true,
@@ -346,5 +298,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": false
+  "branchpoint_lineage_preserved": true
 }

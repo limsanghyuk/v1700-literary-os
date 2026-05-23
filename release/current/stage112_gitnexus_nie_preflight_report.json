@@ -2,10 +2,8 @@
   "stage": "112",
   "baseline_stage": "111",
   "title": "GitNexus-Aware NIE Preflight Bridge",
-  "status": "blocked",
-  "issues": [
-    "missing_integration:live_core_manifest.stage112_gates"
-  ],
+  "status": "pass",
+  "issues": [],
   "repo_id": "v1700-literary-os-stage112",
   "index_fresh": true,
   "stale_index_detected": false,
@@ -50,8 +48,8 @@
       "expected_kind": "class_or_function_or_planned_adapter",
       "present": true,
       "locations": [
-        "src/v1700/literary_formulas/emotional_momentum.py",
         "src/v1700/literary_formulas/__init__.py",
+        "src/v1700/literary_formulas/emotional_momentum.py",
         "src/v1700/longform/engine.py"
       ],
       "branchpoints": [
@@ -134,9 +132,9 @@
       "present": true,
       "locations": [
         "src/v1700/gates/stage112_release_gate.py",
+        "src/v1700/gitnexus_preflight/__init__.py",
         "src/v1700/gitnexus_preflight/contracts.py",
-        "src/v1700/gitnexus_preflight/preflight_runner.py",
-        "src/v1700/gitnexus_preflight/__init__.py"
+        "src/v1700/gitnexus_preflight/preflight_runner.py"
       ],
       "branchpoints": [
         "stage112_preflight",
@@ -315,7 +313,7 @@
     "decision": "proceed_to_stage112_release_gate"
   },
   "release_gate_integration": {
-    "status": "blocked",
+    "status": "pass",
     "paths": {
       "src/v1700/gates/stage112_release_gate.py": true,
       "tools/run_stage112_release_gate.py": true,
@@ -323,10 +321,8 @@
       "manifests/stage112_manifest.json": true,
       "docs/stages/stage112.md": true
     },
-    "gate_registered": false,
-    "missing": [
-      "live_core_manifest.stage112_gates"
-    ]
+    "gate_registered": true,
+    "missing": []
   },
   "provider_default_calls": 0,
   "live_provider_call_count_in_release_gate": 0,
@@ -342,7 +338,7 @@
     "index": {
       "status": "pass",
       "repo_id": "v1700-literary-os-stage112",
-      "active_version": "stage150",
+      "active_version": "stage127",
       "graph_manifest_exists": true,
       "gitnexus_sidecar_available": false,
       "python_fallback_required": true,
@@ -396,8 +392,8 @@
           "expected_kind": "class_or_function_or_planned_adapter",
           "present": true,
           "locations": [
-            "src/v1700/literary_formulas/emotional_momentum.py",
             "src/v1700/literary_formulas/__init__.py",
+            "src/v1700/literary_formulas/emotional_momentum.py",
             "src/v1700/longform/engine.py"
           ],
           "branchpoints": [
@@ -480,9 +476,9 @@
           "present": true,
           "locations": [
             "src/v1700/gates/stage112_release_gate.py",
+            "src/v1700/gitnexus_preflight/__init__.py",
             "src/v1700/gitnexus_preflight/contracts.py",
-            "src/v1700/gitnexus_preflight/preflight_runner.py",
-            "src/v1700/gitnexus_preflight/__init__.py"
+            "src/v1700/gitnexus_preflight/preflight_runner.py"
           ],
           "branchpoints": [
             "stage112_preflight",
@@ -552,7 +548,7 @@
     "fallback": {
       "status": "PASS",
       "python_fallback_used": true,
-      "import_edges_total": 3435,
+      "import_edges_total": 2661,
       "critical_paths_checked": [
         "src/v1700/gates/release_gate.py",
         "src/v1700/gates/stage111_release_gate.py",
@@ -602,10 +598,6 @@
         },
         {
           "from": "v1700.cli",
-          "to": "v1700.ir.style_profile"
-        },
-        {
-          "from": "v1700.cli",
           "to": "v1700.nodes.node1_architect"
         },
         {
@@ -613,8 +605,16 @@
           "to": "v1700.nodes.node2_prose_renderer"
         },
         {
+          "from": "v1700.cli",
+          "to": "v1700.ir.style_profile"
+        },
+        {
           "from": "v1700.semantic_cache",
           "to": "v1700.cache.semantic_cache"
+        },
+        {
+          "from": "v1700.agent_benchmark.__init__",
+          "to": "v1700.agent_benchmark.harness"
         },
         {
           "from": "v1700.agent_benchmark.agents",
@@ -663,10 +663,6 @@
         {
           "from": "v1700.agent_benchmark.harness",
           "to": "v1700.episode_scaleup.evidence"
-        },
-        {
-          "from": "v1700.agent_benchmark.__init__",
-          "to": "v1700.agent_benchmark.harness"
         }
       ]
     },
@@ -750,7 +746,7 @@
       }
     },
     "release_gate_integration": {
-      "status": "blocked",
+      "status": "pass",
       "paths": {
         "src/v1700/gates/stage112_release_gate.py": true,
         "tools/run_stage112_release_gate.py": true,
@@ -758,10 +754,8 @@
         "manifests/stage112_manifest.json": true,
         "docs/stages/stage112.md": true
       },
-      "gate_registered": false,
-      "missing": [
-        "live_core_manifest.stage112_gates"
-      ]
+      "gate_registered": true,
+      "missing": []
     }
   },
   "planned_next_stages": [

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.51.0"
-description = "V1700 Stage151 - Local Read-Only Memory Store"
+version = "1.52.0"
+description = "V1700 Stage152 - Deterministic Local Query / Ranking"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

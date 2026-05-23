@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "issues": [],
+  "projected_count": 3,
+  "blocked_projection_count": 1,
+  "entries": [
+    {
+      "record_id": "mem-character-001",
+      "record_type": "character",
+      "source_state_id": "character:minseo",
+      "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+      "node2_projection": "surface_safe",
+      "rank": 1,
+      "score": 13.6
+    },
+    {
+      "record_id": "mem-continuity-001",
+      "record_type": "continuity",
+      "source_state_id": "continuity:inheritance-thread",
+      "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+      "node2_projection": "surface_safe",
+      "rank": 2,
+      "score": 3.766667
+    },
+    {
+      "record_id": "mem-reveal-001",
+      "record_type": "reveal",
+      "source_state_id": "reveal:birth-secret",
+      "summary": "BLOCKED_BY_NODE2_BOUNDARY",
+      "node2_projection": "blocked",
+      "rank": 3,
+      "score": 0.0
+    }
+  ],
+  "node2_raw_reveal_access": 0
+}

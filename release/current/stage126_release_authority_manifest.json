@@ -1,7 +1,7 @@
 {
   "stage": "126",
   "baseline_stage": "125",
-  "status": "blocked",
+  "status": "pass",
   "release_authority": "Gate25 primary + Gate28/Gate29 secondary under Stage125 Governor",
   "authority_stack": {
     "Gate25": "primary_nie_release_authority",

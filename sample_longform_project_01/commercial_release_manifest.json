@@ -4,13 +4,13 @@
   "prompt": "낮은 위치의 인물이 제도, 추방, 귀환을 통과하며 자기 역할을 완성하는 한국 드라마",
   "project_dir": "sample_longform_project_01",
   "episode_files": [
-    "sample_longform_project_01\\generated_episode_01.md",
-    "sample_longform_project_01\\generated_episode_02.md",
-    "sample_longform_project_01\\generated_episode_03.md"
+    "sample_longform_project_01/generated_episode_01.md",
+    "sample_longform_project_01/generated_episode_02.md",
+    "sample_longform_project_01/generated_episode_03.md"
   ],
-  "quality_report": "sample_longform_project_01\\quality_report.json",
-  "refinement_trace": "sample_longform_project_01\\refinement_trace.json",
-  "blind_eval_report": "sample_longform_project_01\\blind_eval_report.md",
+  "quality_report": "sample_longform_project_01/quality_report.json",
+  "refinement_trace": "sample_longform_project_01/refinement_trace.json",
+  "blind_eval_report": "sample_longform_project_01/blind_eval_report.md",
   "episode_count": 3,
   "actual_rendered_scene_count": 30,
   "episode_scene_counts": {
