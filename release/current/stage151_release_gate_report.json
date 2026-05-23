@@ -1,0 +1,118 @@
+{
+  "stage": "151",
+  "baseline_stage": "150",
+  "title": "Local Read-Only Memory Store",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage150_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage151_report_pass": {
+      "status": "pass"
+    },
+    "local_store_mode_pass": {
+      "status": "pass"
+    },
+    "store_spec_pass": {
+      "status": "pass"
+    },
+    "record_validation_pass": {
+      "status": "pass"
+    },
+    "checksum_index_pass": {
+      "status": "pass"
+    },
+    "read_only_access_policy_pass": {
+      "status": "pass"
+    },
+    "node2_projection_index_pass": {
+      "status": "pass"
+    },
+    "memory_write_blocked": {
+      "status": "pass"
+    },
+    "query_runtime_deferred": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "canon_auto_resolution_zero": {
+      "status": "pass"
+    },
+    "auto_repair_mutation_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage151": {
+    "status": "pass",
+    "stage": "151",
+    "baseline_stage": "150",
+    "title": "Local Read-Only Memory Store",
+    "issues": [],
+    "mode": "LOCAL_READ_ONLY_MEMORY_STORE",
+    "read_only_store_enabled": true,
+    "store_write_enabled": false,
+    "record_count": 6,
+    "checksum_index_count": 6,
+    "node2_blocked_projection_count": 2,
+    "stage152_deterministic_query_ready": true,
+    "query_runtime_enabled": false,
+    "ranking_runtime_enabled": false,
+    "vector_db_runtime_dependency": false,
+    "live_provider_rag_enabled": false,
+    "memory_write_enabled": false,
+    "runtime_training_enabled": false,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "hidden_reveal_projection_count": 0,
+    "private_note_projection_count": 0,
+    "write_handle_projection_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "memory_write_enabled": false,
+  "store_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

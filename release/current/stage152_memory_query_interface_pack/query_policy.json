@@ -1,0 +1,39 @@
+{
+  "stage": "stage152",
+  "title": "Stage152 Query Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "local_only",
+      "description": "Queries read Stage151 local JSONL records only.",
+      "passed": true,
+      "evidence": "release/current/stage152_memory_query_interface_report.json"
+    },
+    {
+      "name": "deterministic_scoring",
+      "description": "Ranking uses lexical overlap, field priority, temporal metadata, simple rank fusion, and boundary penalty.",
+      "passed": true,
+      "evidence": "release/current/stage152_memory_query_interface_report.json"
+    },
+    {
+      "name": "provider_zero",
+      "description": "No provider call is allowed for query or ranking.",
+      "passed": true,
+      "evidence": "release/current/stage152_memory_query_interface_report.json"
+    },
+    {
+      "name": "write_blocked",
+      "description": "Query APIs cannot write or mutate memory records.",
+      "passed": true,
+      "evidence": "release/current/stage152_memory_query_interface_report.json"
+    },
+    {
+      "name": "node2_surface_projection",
+      "description": "Node2 projection strips hidden/private/write/learning/raw payloads.",
+      "passed": true,
+      "evidence": "release/current/stage152_memory_query_interface_report.json"
+    }
+  ]
+}

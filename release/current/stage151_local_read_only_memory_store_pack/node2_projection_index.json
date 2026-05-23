@@ -1,0 +1,46 @@
+{
+  "stage": "stage151",
+  "title": "Stage151 Node2 Projection Index",
+  "status": "pass",
+  "issues": [],
+  "entry_count": 6,
+  "blocked_projection_count": 2,
+  "entries": [
+    {
+      "record_id": "mem-character-001",
+      "boundary_level": "READER_SURFACE",
+      "node2_projection": "surface_safe",
+      "raw_payload_included": false
+    },
+    {
+      "record_id": "mem-episode-001",
+      "boundary_level": "READER_SURFACE",
+      "node2_projection": "surface_safe",
+      "raw_payload_included": false
+    },
+    {
+      "record_id": "mem-scene-001",
+      "boundary_level": "PUBLIC_SURFACE",
+      "node2_projection": "surface_safe",
+      "raw_payload_included": false
+    },
+    {
+      "record_id": "mem-reveal-001",
+      "boundary_level": "HIDDEN_REVEAL",
+      "node2_projection": "blocked",
+      "raw_payload_included": false
+    },
+    {
+      "record_id": "mem-continuity-001",
+      "boundary_level": "READER_SURFACE",
+      "node2_projection": "surface_safe",
+      "raw_payload_included": false
+    },
+    {
+      "record_id": "mem-payoff-001",
+      "boundary_level": "PLANNER_PRIVATE",
+      "node2_projection": "blocked",
+      "raw_payload_included": false
+    }
+  ]
+}

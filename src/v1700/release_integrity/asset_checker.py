@@ -58,6 +58,21 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage149_body_constitution_release_gate_report.json",
         "release_gate_report": "release/current/stage149_release_gate_report.json",
     },
+    "stage150": {
+        "package": "V1700_stage150_memory_contract_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage150_memory_contract_report.json",
+        "release_gate_report": "release/current/stage150_release_gate_report.json",
+    },
+    "stage151": {
+        "package": "V1700_stage151_local_read_only_memory_store_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage151_local_read_only_memory_store_report.json",
+        "release_gate_report": "release/current/stage151_release_gate_report.json",
+    },
+    "stage152": {
+        "package": "V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage152_memory_query_interface_report.json",
+        "release_gate_report": "release/current/stage152_release_gate_report.json",
+    },
 }
 
 

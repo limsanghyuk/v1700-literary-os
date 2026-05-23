@@ -1,0 +1,41 @@
+{
+  "stage": "stage151",
+  "title": "Stage151 Read-Only Access Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 4,
+  "rules": [
+    {
+      "name": "local_file_read_allowed",
+      "description": "Stage151 may read deterministic local JSONL fixtures.",
+      "read_allowed": true,
+      "write_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+    },
+    {
+      "name": "store_write_blocked",
+      "description": "Stage151 must not write memory records.",
+      "read_allowed": true,
+      "write_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+    },
+    {
+      "name": "record_mutation_blocked",
+      "description": "Loaded records must not be mutated by the store.",
+      "read_allowed": true,
+      "write_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+    },
+    {
+      "name": "query_runtime_deferred",
+      "description": "Ranking and query runtime remain deferred to Stage152.",
+      "read_allowed": true,
+      "write_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+    }
+  ]
+}

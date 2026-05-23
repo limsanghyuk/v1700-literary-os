@@ -1,14 +1,14 @@
 {
-  "stage": "stage149",
-  "package": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage152",
+  "package": "V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage152_memory_query_interface_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage149_body_constitution_release_gate",
-  "active_version": "stage149",
-  "patch_report": "release/current/stage149_body_constitution_release_gate_report.json",
-  "release_gate": "release/current/stage149_release_gate_report.json",
-  "asset_manifest": "release/current/stage149_release_asset_manifest.json"
+  "created_by": "stage152_memory_query_interface",
+  "active_version": "stage152",
+  "patch_report": "release/current/stage152_memory_query_interface_report.json",
+  "release_gate": "release/current/stage152_release_gate_report.json",
+  "asset_manifest": "release/current/stage152_release_asset_manifest.json"
 }

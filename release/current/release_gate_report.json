@@ -13,7 +13,7 @@
     "issues": [],
     "gitnexus": {
       "installed": true,
-      "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.CMD",
+      "command": "C:\\Users\\inyoung pharm\\AppData\\Roaming\\npm\\gitnexus.CMD",
       "optional_runtime_dependency": false,
       "fallback_available": true,
       "error": ""
@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 53,
+        "stage_count": 54,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 53,
+          "lineage_node_count": 54,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 913
+        "node_count": 933
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 53,
+        "node_count": 54,
         "stage72_1_present": true
       },
       "warnings": [
@@ -993,6 +993,45 @@
     "stage": "149",
     "baseline_stage": "148",
     "title": "Body Constitution Release Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage150_release_gate": {
+    "status": "pass",
+    "stage": "150",
+    "baseline_stage": "149",
+    "title": "Memory Contract",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage151_release_gate": {
+    "status": "pass",
+    "stage": "151",
+    "baseline_stage": "150",
+    "title": "Local Read-Only Memory Store",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage152_release_gate": {
+    "status": "pass",
+    "stage": "152",
+    "baseline_stage": "151",
+    "title": "Deterministic Local Query / Ranking",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

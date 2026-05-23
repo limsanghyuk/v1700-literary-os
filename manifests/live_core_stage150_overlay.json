@@ -1,0 +1,12 @@
+{
+  "active_version": "stage150",
+  "overlay_stage": "stage150",
+  "title": "Memory Contract",
+  "baseline_stage": "stage149",
+  "release_gate": "release/current/stage150_release_gate_report.json",
+  "evidence": "release/current/stage150_memory_contract_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false
+}

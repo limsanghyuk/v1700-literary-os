@@ -1,0 +1,25 @@
+{
+  "stage": "152",
+  "baseline_stage": "151",
+  "title": "Deterministic Local Query / Ranking",
+  "status": "pass",
+  "main_report": "release/current/stage152_memory_query_interface_report.json",
+  "release_gate_report": "release/current/stage152_release_gate_report.json",
+  "asset_manifest": "release/current/stage152_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage152_memory_query_interface_pack/",
+  "mode": "DETERMINISTIC_LOCAL_MEMORY_QUERY",
+  "query_runtime_enabled": true,
+  "ranking_runtime_enabled": true,
+  "query_write_enabled": false,
+  "candidate_count": 3,
+  "stage153_memory_health_monitor_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage153 Memory Health & Leakage Boundary",
+    "Stage154 Page02 Release Seal"
+  ]
+}

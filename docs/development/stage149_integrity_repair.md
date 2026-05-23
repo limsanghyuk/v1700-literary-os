@@ -2,10 +2,10 @@
 
 This note records the pre-Stage150 integrity patch.
 
-Changed in this branch:
+Changed before Stage150:
 
-- `manifests/live_core_manifest.json` now restores `core_invariants`.
-- `manifests/live_core_manifest.json` now restores the historical `stage112` integration entry.
+- `manifests/live_core_manifest.json` restores `core_invariants`.
+- `manifests/live_core_manifest.json` restores the historical `stage112` integration entry.
 
 Follow-up for local release packaging:
 

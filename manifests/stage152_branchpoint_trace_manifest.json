@@ -1,0 +1,13 @@
+{
+  "stage": "stage152",
+  "title": "Memory Query Interface Branchpoint Trace",
+  "baseline_stage": "stage151",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage149 Page01 constitution seal",
+    "Stage150 memory contract",
+    "Stage151 read-only memory store",
+    "Stage152 deterministic query/ranking",
+    "Stage152 Node2 projection policy"
+  ]
+}

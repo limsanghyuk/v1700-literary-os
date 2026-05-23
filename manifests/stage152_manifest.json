@@ -1,0 +1,11 @@
+{
+  "stage": "stage152",
+  "title": "Deterministic Local Query / Ranking",
+  "baseline_stage": "stage151",
+  "page": "Page02 Narrative Memory Body",
+  "status": "active",
+  "runner": "tools/run_stage152_memory_query_interface.py",
+  "release_gate": "tools/run_stage152_release_gate.py",
+  "evidence": "release/current/stage152_memory_query_interface_report.json",
+  "next_stage": "stage153"
+}

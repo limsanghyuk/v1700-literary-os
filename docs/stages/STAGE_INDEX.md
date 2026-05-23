@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage149 - Body Constitution Release Gate
+Current active stage: Stage152 - Deterministic Local Query / Ranking
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -54,3 +54,9 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage147](stage147.md) - Project Manifest Body
 - [Stage148](stage148.md) - Node Boundary Constitution
 - [Stage149](stage149.md) - Body Constitution Release Gate
+
+- [Stage150 — Memory Contract](stage150.md)
+
+- [Stage151 — Local Read-Only Memory Store](stage151.md)
+
+- [Stage152](stage152.md) - Deterministic Local Query / Ranking

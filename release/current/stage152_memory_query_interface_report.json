@@ -1,0 +1,496 @@
+{
+  "stage": "152",
+  "baseline_stage": "151",
+  "title": "Deterministic Local Query / Ranking",
+  "status": "pass",
+  "issues": [],
+  "mode": "DETERMINISTIC_LOCAL_MEMORY_QUERY",
+  "page": "Page02 Narrative Memory Body",
+  "query_runtime_enabled": true,
+  "ranking_runtime_enabled": true,
+  "query_write_enabled": false,
+  "memory_write_enabled": false,
+  "store_write_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "hidden_reveal_projection_count": 0,
+  "private_note_projection_count": 0,
+  "write_handle_projection_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage153_memory_health_monitor_ready": true,
+  "api_count": 10,
+  "candidate_count": 3,
+  "ranked_candidate_count": 3,
+  "node2_projected_count": 3,
+  "node2_blocked_projection_count": 1,
+  "parts": {
+    "stage151_release_gate": {
+      "status": "pass",
+      "stage": "151",
+      "baseline_stage": "150",
+      "title": "Local Read-Only Memory Store",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "memory_write_enabled": false,
+      "store_write_enabled": false,
+      "runtime_training_enabled": false
+    },
+    "query_api_catalog": {
+      "stage": "stage152",
+      "title": "Stage152 Query API Catalog",
+      "status": "pass",
+      "issues": [],
+      "api_count": 10,
+      "apis": [
+        "find_project_memory",
+        "find_characters",
+        "find_episodes",
+        "find_scenes",
+        "find_events",
+        "find_reveals",
+        "find_payoffs",
+        "query_by_intent",
+        "rank_memory_candidates",
+        "project_for_node2"
+      ]
+    },
+    "query_policy": {
+      "stage": "stage152",
+      "title": "Stage152 Query Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 5,
+      "rules": [
+        {
+          "name": "local_only",
+          "description": "Queries read Stage151 local JSONL records only.",
+          "passed": true,
+          "evidence": "release/current/stage152_memory_query_interface_report.json"
+        },
+        {
+          "name": "deterministic_scoring",
+          "description": "Ranking uses lexical overlap, field priority, temporal metadata, simple rank fusion, and boundary penalty.",
+          "passed": true,
+          "evidence": "release/current/stage152_memory_query_interface_report.json"
+        },
+        {
+          "name": "provider_zero",
+          "description": "No provider call is allowed for query or ranking.",
+          "passed": true,
+          "evidence": "release/current/stage152_memory_query_interface_report.json"
+        },
+        {
+          "name": "write_blocked",
+          "description": "Query APIs cannot write or mutate memory records.",
+          "passed": true,
+          "evidence": "release/current/stage152_memory_query_interface_report.json"
+        },
+        {
+          "name": "node2_surface_projection",
+          "description": "Node2 projection strips hidden/private/write/learning/raw payloads.",
+          "passed": true,
+          "evidence": "release/current/stage152_memory_query_interface_report.json"
+        }
+      ]
+    },
+    "intent_query_result": {
+      "status": "pass",
+      "request": {
+        "project_id": "sample_project_stage151",
+        "query": "family secret continuity",
+        "record_types": [
+          "character",
+          "continuity",
+          "reveal"
+        ],
+        "node": "node1",
+        "limit": 5
+      },
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "record_id": "mem-character-001",
+          "record_type": "character",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "character:minseo",
+          "boundary_level": "READER_SURFACE",
+          "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+          "score": 13.6,
+          "rank": 1,
+          "node2_projection": "surface_safe",
+          "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+        },
+        {
+          "record_id": "mem-continuity-001",
+          "record_type": "continuity",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "continuity:inheritance-thread",
+          "boundary_level": "READER_SURFACE",
+          "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+          "score": 3.766667,
+          "rank": 2,
+          "node2_projection": "surface_safe",
+          "checksum": "16464949e9bc3b98eb429eb09a05739b5f87091a9b678f68f90f93b76c4c6fc1"
+        },
+        {
+          "record_id": "mem-reveal-001",
+          "record_type": "reveal",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "reveal:birth-secret",
+          "boundary_level": "HIDDEN_REVEAL",
+          "summary": "Reveal memory records metadata only; hidden reveal payload is not stored here.",
+          "score": 0.0,
+          "rank": 3,
+          "node2_projection": "blocked",
+          "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+        }
+      ],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0
+    },
+    "type_query_results": {
+      "stage": "stage152",
+      "title": "Stage152 Type Query Results",
+      "status": "pass",
+      "issues": [],
+      "results": {
+        "project": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "memory",
+            "record_types": [],
+            "node": "node1",
+            "limit": 10
+          },
+          "candidate_count": 6,
+          "candidates": [
+            {
+              "record_id": "mem-episode-001",
+              "record_type": "episode",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "episode:pilot",
+              "boundary_level": "READER_SURFACE",
+              "summary": "Pilot episode memory links the inheritance conflict to continuity obligations.",
+              "score": 12.6,
+              "rank": 1,
+              "node2_projection": "surface_safe",
+              "checksum": "50b85f33fe47cc314c6c9cae2513e6ce21a52596fd33703e874f6f087cfa6e76"
+            },
+            {
+              "record_id": "mem-scene-001",
+              "record_type": "scene",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "scene:pilot:001",
+              "boundary_level": "PUBLIC_SURFACE",
+              "summary": "Opening scene memory is safe for Node2 surface projection.",
+              "score": 11.6,
+              "rank": 2,
+              "node2_projection": "surface_safe",
+              "checksum": "5f1f2ced776fb0171c7a57b768df057d01f044ac3355a3a6dacd2a63ea5d41e1"
+            },
+            {
+              "record_id": "mem-continuity-001",
+              "record_type": "continuity",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "continuity:inheritance-thread",
+              "boundary_level": "READER_SURFACE",
+              "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+              "score": 11.1,
+              "rank": 3,
+              "node2_projection": "surface_safe",
+              "checksum": "16464949e9bc3b98eb429eb09a05739b5f87091a9b678f68f90f93b76c4c6fc1"
+            },
+            {
+              "record_id": "mem-payoff-001",
+              "record_type": "payoff",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "payoff:episode-004",
+              "boundary_level": "PLANNER_PRIVATE",
+              "summary": "Payoff memory is planner-private and blocked from Node2 raw projection.",
+              "score": 10.35,
+              "rank": 4,
+              "node2_projection": "blocked",
+              "checksum": "5a49dd74dd571ceaa441aedd2b66c98453dee3378b50bd5d453c3757721d47b2"
+            },
+            {
+              "record_id": "mem-reveal-001",
+              "record_type": "reveal",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "reveal:birth-secret",
+              "boundary_level": "HIDDEN_REVEAL",
+              "summary": "Reveal memory records metadata only; hidden reveal payload is not stored here.",
+              "score": 10.35,
+              "rank": 5,
+              "node2_projection": "blocked",
+              "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+            },
+            {
+              "record_id": "mem-character-001",
+              "record_type": "character",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "character:minseo",
+              "boundary_level": "READER_SURFACE",
+              "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+              "score": 0.1,
+              "rank": 6,
+              "node2_projection": "surface_safe",
+              "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        },
+        "characters": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "Minseo secret",
+            "record_types": [
+              "character"
+            ],
+            "node": "node1",
+            "limit": 5
+          },
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "record_id": "mem-character-001",
+              "record_type": "character",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "character:minseo",
+              "boundary_level": "READER_SURFACE",
+              "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+              "score": 13.6,
+              "rank": 1,
+              "node2_projection": "surface_safe",
+              "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        },
+        "episodes": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "pilot inheritance",
+            "record_types": [
+              "episode"
+            ],
+            "node": "node1",
+            "limit": 5
+          },
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "record_id": "mem-episode-001",
+              "record_type": "episode",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "episode:pilot",
+              "boundary_level": "READER_SURFACE",
+              "summary": "Pilot episode memory links the inheritance conflict to continuity obligations.",
+              "score": 12.6,
+              "rank": 1,
+              "node2_projection": "surface_safe",
+              "checksum": "50b85f33fe47cc314c6c9cae2513e6ce21a52596fd33703e874f6f087cfa6e76"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        },
+        "scenes": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "opening scene",
+            "record_types": [
+              "scene"
+            ],
+            "node": "node1",
+            "limit": 5
+          },
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "record_id": "mem-scene-001",
+              "record_type": "scene",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "scene:pilot:001",
+              "boundary_level": "PUBLIC_SURFACE",
+              "summary": "Opening scene memory is safe for Node2 surface projection.",
+              "score": 11.6,
+              "rank": 1,
+              "node2_projection": "surface_safe",
+              "checksum": "5f1f2ced776fb0171c7a57b768df057d01f044ac3355a3a6dacd2a63ea5d41e1"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        },
+        "reveals": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "birth secret",
+            "record_types": [
+              "reveal"
+            ],
+            "node": "node1",
+            "limit": 5
+          },
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "record_id": "mem-reveal-001",
+              "record_type": "reveal",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "reveal:birth-secret",
+              "boundary_level": "HIDDEN_REVEAL",
+              "summary": "Reveal memory records metadata only; hidden reveal payload is not stored here.",
+              "score": 0.0,
+              "rank": 1,
+              "node2_projection": "blocked",
+              "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        },
+        "payoffs": {
+          "status": "pass",
+          "request": {
+            "project_id": "sample_project_stage151",
+            "query": "episode payoff",
+            "record_types": [
+              "payoff"
+            ],
+            "node": "node1",
+            "limit": 5
+          },
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "record_id": "mem-payoff-001",
+              "record_type": "payoff",
+              "project_id": "sample_project_stage151",
+              "source_state_id": "payoff:episode-004",
+              "boundary_level": "PLANNER_PRIVATE",
+              "summary": "Payoff memory is planner-private and blocked from Node2 raw projection.",
+              "score": 5.1,
+              "rank": 1,
+              "node2_projection": "blocked",
+              "checksum": "5a49dd74dd571ceaa441aedd2b66c98453dee3378b50bd5d453c3757721d47b2"
+            }
+          ],
+          "provider_default_calls": 0,
+          "live_provider_call_count_in_release_gate": 0
+        }
+      }
+    },
+    "ranking_report": {
+      "stage": "stage152",
+      "title": "Stage152 Deterministic Ranking Report",
+      "status": "pass",
+      "issues": [],
+      "ranked_candidate_count": 3,
+      "scoring_features": [
+        "lexical_term_overlap",
+        "field_priority",
+        "temporal_metadata",
+        "simple_rank_fusion",
+        "boundary_safe_penalty"
+      ],
+      "candidates": [
+        {
+          "record_id": "mem-character-001",
+          "record_type": "character",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "character:minseo",
+          "boundary_level": "READER_SURFACE",
+          "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+          "score": 13.6,
+          "rank": 1,
+          "node2_projection": "surface_safe",
+          "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+        },
+        {
+          "record_id": "mem-continuity-001",
+          "record_type": "continuity",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "continuity:inheritance-thread",
+          "boundary_level": "READER_SURFACE",
+          "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+          "score": 3.766667,
+          "rank": 2,
+          "node2_projection": "surface_safe",
+          "checksum": "16464949e9bc3b98eb429eb09a05739b5f87091a9b678f68f90f93b76c4c6fc1"
+        },
+        {
+          "record_id": "mem-reveal-001",
+          "record_type": "reveal",
+          "project_id": "sample_project_stage151",
+          "source_state_id": "reveal:birth-secret",
+          "boundary_level": "HIDDEN_REVEAL",
+          "summary": "Reveal memory records metadata only; hidden reveal payload is not stored here.",
+          "score": 0.0,
+          "rank": 3,
+          "node2_projection": "blocked",
+          "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+        }
+      ]
+    },
+    "node2_projection_report": {
+      "status": "pass",
+      "issues": [],
+      "projected_count": 3,
+      "blocked_projection_count": 1,
+      "entries": [
+        {
+          "record_id": "mem-character-001",
+          "record_type": "character",
+          "source_state_id": "character:minseo",
+          "summary": "Minseo carries a family secret but exposes only reader-safe continuity.",
+          "node2_projection": "surface_safe",
+          "rank": 1,
+          "score": 13.6
+        },
+        {
+          "record_id": "mem-continuity-001",
+          "record_type": "continuity",
+          "source_state_id": "continuity:inheritance-thread",
+          "summary": "Continuity memory preserves obligation identifiers and deterministic checksums.",
+          "node2_projection": "surface_safe",
+          "rank": 2,
+          "score": 3.766667
+        },
+        {
+          "record_id": "mem-reveal-001",
+          "record_type": "reveal",
+          "source_state_id": "reveal:birth-secret",
+          "summary": "BLOCKED_BY_NODE2_BOUNDARY",
+          "node2_projection": "blocked",
+          "rank": 3,
+          "score": 0.0
+        }
+      ],
+      "node2_raw_reveal_access": 0
+    }
+  }
+}

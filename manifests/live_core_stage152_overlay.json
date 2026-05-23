@@ -1,0 +1,13 @@
+{
+  "active_version": "stage152",
+  "overlay_stage": "stage152",
+  "title": "Deterministic Local Query / Ranking",
+  "baseline_stage": "stage151",
+  "release_gate": "release/current/stage152_release_gate_report.json",
+  "evidence": "release/current/stage152_memory_query_interface_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "query_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false
+}

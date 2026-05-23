@@ -1,0 +1,49 @@
+{
+  "stage": "stage150",
+  "title": "Stage150 Memory Write Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "memory_write_default_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "human_approval_required": true,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "sql_graph_write_execution_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "human_approval_required": true,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "canon_mutation_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "human_approval_required": true,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "runtime_training_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "human_approval_required": true,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "auto_repair_apply_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "human_approval_required": true,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    }
+  ]
+}

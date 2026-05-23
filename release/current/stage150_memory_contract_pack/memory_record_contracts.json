@@ -1,0 +1,819 @@
+{
+  "stage": "stage150",
+  "title": "Stage150 Memory Record Contracts",
+  "status": "pass",
+  "issues": [],
+  "contract_count": 10,
+  "contracts": [
+    {
+      "name": "ProjectMemoryEnvelope",
+      "record_type": "project_envelope",
+      "purpose": "Groups local project memory records under Page01 identity and boundary rules.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "MemoryRecordBase",
+      "record_type": "base",
+      "purpose": "Defines the common deterministic memory record shape.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "CharacterMemoryRecord",
+      "record_type": "character",
+      "purpose": "Captures character-facing memory without raw private notes.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "EpisodeMemoryRecord",
+      "record_type": "episode",
+      "purpose": "Captures episode state memory inherited from Stage146.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "SceneMemoryRecord",
+      "record_type": "scene",
+      "purpose": "Captures scene state memory inherited from Stage146.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "WorldMemoryRecord",
+      "record_type": "world",
+      "purpose": "Captures world state memory with boundary-aware projection.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "EventMemoryRecord",
+      "record_type": "event",
+      "purpose": "Captures event continuity memory.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "RevealMemoryRecord",
+      "record_type": "reveal",
+      "purpose": "Captures reveal metadata without exposing hidden payload to Node2.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "ContinuityMemoryRecord",
+      "record_type": "continuity",
+      "purpose": "Captures continuity commitments and checksums.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    },
+    {
+      "name": "PayoffMemoryRecord",
+      "record_type": "payoff",
+      "purpose": "Captures payoff obligations as memory contracts, not mutation commands.",
+      "source_authority": "Page01 sealed constitution",
+      "write_policy": "DISABLED_BY_DEFAULT",
+      "node2_projection": "SURFACE_ONLY",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "record_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic record identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Stage147."
+        },
+        {
+          "name": "record_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed memory category."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage that produced the source state."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "State binding from Page01 narrative contracts."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Visibility policy for memory use."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for projection."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature-only provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write policy is disabled by default in Stage150."
+        }
+      ]
+    }
+  ]
+}

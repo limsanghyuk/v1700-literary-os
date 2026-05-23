@@ -1,0 +1,11 @@
+{
+  "stage": "stage150",
+  "title": "Memory Contract",
+  "baseline_stage": "stage149",
+  "page": "Page02 Narrative Memory Body",
+  "status": "active",
+  "runner": "tools/run_stage150_memory_contract.py",
+  "release_gate": "tools/run_stage150_release_gate.py",
+  "evidence": "release/current/stage150_memory_contract_report.json",
+  "next_stage": "stage151"
+}

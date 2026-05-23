@@ -1,0 +1,11 @@
+{
+  "stage": "stage151",
+  "title": "Local Read-Only Memory Store",
+  "baseline_stage": "stage150",
+  "page": "Page02 Narrative Memory Body",
+  "status": "active",
+  "runner": "tools/run_stage151_local_read_only_memory_store.py",
+  "release_gate": "tools/run_stage151_release_gate.py",
+  "evidence": "release/current/stage151_local_read_only_memory_store_report.json",
+  "next_stage": "stage152"
+}

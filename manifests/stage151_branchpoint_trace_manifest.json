@@ -1,0 +1,12 @@
+{
+  "stage": "stage151",
+  "title": "Local Read-Only Memory Store Branchpoint Trace",
+  "baseline_stage": "stage150",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage150 memory contract",
+    "Stage151 local JSONL fixture store",
+    "Stage151 checksum index",
+    "Stage151 Node2 projection index"
+  ]
+}
