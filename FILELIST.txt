@@ -10,6 +10,10 @@
 .github/workflows/ci-full.yml
 .github/workflows/release.yml
 .gitignore
+.pytest_cache/.gitignore
+.pytest_cache/CACHEDIR.TAG
+.pytest_cache/README.md
+.pytest_cache/v/cache/nodeids
 AGENTS.md
 CHANGELOG.md
 CLAUDE.md
@@ -170,6 +174,7 @@ docs/runbooks/stage74_longform_execution.md
 docs/runbooks/workspace_path_policy.md
 docs/sessions/2026-05-19_company_github_strategy.docx
 docs/sessions/2026-05-19_home_session_summary.md
+docs/sessions/2026-05-23_home_session_summary.md
 docs/stage101_cross_lineage_absorption_scenario_room/01_proposal.md
 docs/stage101_cross_lineage_absorption_scenario_room/02_blueprint.md
 docs/stage101_cross_lineage_absorption_scenario_room/03_principal_engineer_review.md

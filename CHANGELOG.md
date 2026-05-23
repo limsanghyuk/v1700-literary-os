@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.52.0-stage152
+
+- Added Stage152 Deterministic Local Query / Ranking over the read-only JSONL memory store.
+- Implemented core memory query interface APIs (`find_project_memory`, `find_characters`, `find_episodes`, `find_scenes`, `find_events`, `find_reveals`, `find_payoffs`, `query_by_intent`, `rank_memory_candidates`, `project_for_node2`).
+- Added local deterministic ranking algorithms: lexical term overlap, field priority, temporal metadata, simple rank fusion, boundary-safe penalty.
+- Kept live provider RAG, vector DB runtime dependencies, memory write, canon mutation, runtime training, and auto-repair apply disabled.
+- Added Stage152 proposal, blueprint, manifests, release evidence, tests, repo doctor wiring, and main release gate integration.
+
+## v1.51.0-stage151
+
+- Added Stage151 Local Read-Only Memory Store.
+- Implemented the read-only memory store loader and JSONL schema validation mechanism.
+- Added Stage151 manifests, live core overlay, lineage traces, release evidence, and local store tests.
+
+## v1.50.0-stage150
+
+- Added Stage150 Memory Contract representing the core memory structure definitions and dataclasses.
+- Defined memory records, project boundary policy, memory write policies, and Node2 projection policies.
+
 ## v1.33.0-stage133
 
 - Added Stage133 NarrativeStateTensor 8D Measurement Layer.
