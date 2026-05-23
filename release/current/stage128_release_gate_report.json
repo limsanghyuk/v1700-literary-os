@@ -2,11 +2,13 @@
   "stage": "128",
   "baseline_stage": "127",
   "title": "SharedWorld / SharedCharacter Read-Only Absorption Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage127_baseline_gate_pass"
+  ],
   "checks": {
     "stage127_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "shared_character_read_only_adapter_pass": {
       "status": "pass"
@@ -100,5 +102,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

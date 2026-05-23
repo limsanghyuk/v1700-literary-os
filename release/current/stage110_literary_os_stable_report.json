@@ -2,8 +2,10 @@
   "stage": "110",
   "baseline_stage": "109",
   "title": "V1700 Literary OS 1.0 Stable",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "freeze_blocked"
+  ],
   "stage110_0_stable_preflight": {
     "stage": "110.0",
     "status": "pass",
@@ -22,19 +24,24 @@
   },
   "stage110_1_stable_freeze": {
     "stage": "110.1",
-    "status": "pass",
+    "status": "blocked",
     "checks": {
-      "active_version_stage110_pass": true,
-      "stage110_release_gate_registered_pass": true,
+      "active_version_stage110_pass": false,
+      "stage110_release_gate_registered_pass": false,
       "release_gate_integration_pass": true,
       "repo_doctor_known_stage_pass": true,
-      "readme_stage110_pass": true,
+      "readme_stage110_pass": false,
       "stage_index_stage110_pass": true,
-      "package_manifest_stage110_pass": true,
+      "package_manifest_stage110_pass": false,
       "clean_packaging_policy_pass": true,
       "stable_docs_pass": true
     },
-    "issues": []
+    "issues": [
+      "active_version_stage110_pass",
+      "stage110_release_gate_registered_pass",
+      "readme_stage110_pass",
+      "package_manifest_stage110_pass"
+    ]
   },
   "stage110_2_developer_handoff": {
     "stage": "110.2",

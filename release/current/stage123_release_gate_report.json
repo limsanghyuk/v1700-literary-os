@@ -2,8 +2,10 @@
   "stage": "123",
   "baseline_stage": "122",
   "title": "ASD / Gate28 Absorption Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage122_baseline_preserved": {
       "status": "pass"
@@ -54,7 +56,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -94,5 +96,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

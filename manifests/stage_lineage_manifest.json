@@ -582,9 +582,21 @@
         "reveal boundary matrix"
       ],
       "surviving_runtime_value": "Fixes the canonical narrative state layer that later manifest, memory, generation, and gate bodies must reference."
+    },
+    {
+      "stage_id": "STAGE150",
+      "title": "Memory Contract",
+      "introduced_concepts": [
+        "Page02 memory body entry",
+        "memory record contracts",
+        "memory boundary policy",
+        "Node2 projection policy",
+        "write-disabled memory policy"
+      ],
+      "surviving_runtime_value": "Defines deterministic memory contracts while keeping provider calls, memory writes, raw reveal access, runtime training, and mutation disabled."
     }
   ],
-  "active_version": "stage149",
+  "active_version": "stage150",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -689,5 +701,11 @@
     "status": "active",
     "baseline_stage": "stage148",
     "purpose": "Body Constitution Release Gate"
+  },
+  "stage150": {
+    "status": "active",
+    "title": "Memory Contract",
+    "baseline_stage": "stage149",
+    "next_stage": "stage151"
   }
 }

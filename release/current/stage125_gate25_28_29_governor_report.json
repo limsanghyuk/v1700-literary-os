@@ -2,8 +2,10 @@
   "stage": "125",
   "baseline_stage": "124",
   "title": "Gate25/28/29 Governor",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "gate25_primary_pass"
+  ],
   "release_contract": {
     "stage": "125",
     "baseline_stage": "124",
@@ -36,17 +38,19 @@
   },
   "governor_report_path": "release/current/stage125_gate25_28_29_governor_report.json",
   "governor_decision": {
-    "status": "pass",
+    "status": "blocked",
     "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
     "primary_gate": "Gate25",
     "secondary_gates": [
       "Gate28",
       "Gate29"
     ],
-    "blocked_by": [],
+    "blocked_by": [
+      "gate25_primary_pass"
+    ],
     "warnings": [],
     "checks": {
-      "gate25_primary_pass": true,
+      "gate25_primary_pass": false,
       "gate28_secondary_quality_pass": true,
       "gate29_secondary_predictive_expected_behavior": true,
       "gate28_not_primary": true,
@@ -63,9 +67,17 @@
         "gate_id": "Gate25",
         "stage": "120",
         "mode": "primary",
-        "status": "pass",
+        "status": "blocked",
         "report_path": "release/current/stage120_gate25_nie_v1_report.json",
-        "issues": [],
+        "issues": [
+          "stage113_release_gate_not_pass",
+          "stage114_release_gate_not_pass",
+          "stage115_release_gate_not_pass",
+          "stage116_release_gate_not_pass",
+          "stage117_release_gate_not_pass",
+          "stage118_release_gate_not_pass",
+          "stage119_release_gate_not_pass"
+        ],
         "metrics": {
           "component_count": 0,
           "provider_default_calls": 0,
@@ -120,8 +132,10 @@
       "Gate29"
     ],
     "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
-    "blocked_by": [],
-    "gate25_status": "pass",
+    "blocked_by": [
+      "gate25_primary_pass"
+    ],
+    "gate25_status": "blocked",
     "gate28_status": "pass",
     "gate29_status": "pass"
   },
@@ -154,5 +168,5 @@
   "mae_live_provider_call_count": 0,
   "story_doctor_llm_call_count": 0,
   "pne_provider_call_count": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

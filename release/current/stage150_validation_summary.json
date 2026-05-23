@@ -1,0 +1,86 @@
+{
+  "stage": "stage150",
+  "title": "Stage150 Memory Contract Validation Summary",
+  "status": "pass",
+  "generated_at": "2026-05-22T15:20:34Z",
+  "commands": [
+    {
+      "command": "python -m compileall -q src tools",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_mandatory_predevelopment_check.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_stage149_release_gate.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_stage150_memory_contract.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_stage150_release_gate.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/check_stage_metadata_consistency.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/check_release_asset_integrity.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_release_gate.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python tools/run_stage72_repo_doctor.py",
+      "status": "pass"
+    },
+    {
+      "command": "PYTHONPATH=src python -m pytest tests/test_stage150_memory_contract.py -q",
+      "status": "pass",
+      "details": "2 passed"
+    }
+  ],
+  "reports": {
+    "release/current/mandatory_predevelopment_check_report.json": {
+      "status": "pass",
+      "issues": []
+    },
+    "release/current/stage149_release_gate_report.json": {
+      "status": "pass",
+      "issues": []
+    },
+    "release/current/stage150_memory_contract_report.json": {
+      "status": "pass",
+      "issues": []
+    },
+    "release/current/stage150_release_gate_report.json": {
+      "status": "pass",
+      "issues": []
+    },
+    "release/current/release_gate_report.json": {
+      "status": "pass",
+      "issues": []
+    }
+  },
+  "invariants": {
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "memory_write_enabled": false,
+    "runtime_training_enabled": false,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "credential_leakage": 0
+  },
+  "notes": [
+    "GitNexus remains optional; Python fallback is authoritative in this environment.",
+    "Stage150 is contract-only and does not enable memory write, storage runtime, query runtime, provider RAG, training, or mutation."
+  ]
+}

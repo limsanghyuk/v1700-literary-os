@@ -225,6 +225,30 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage150": {
+        "label": "Stage150",
+        "version": "1.50.0",
+        "title": "Memory Contract",
+        "required_files": [
+            "docs/stages/stage150.md",
+            "docs/proposals/stage150_memory_contract_proposal.md",
+            "docs/architecture/stage150_memory_contract_blueprint.md",
+            "docs/development/stage150_developer_handoff.md",
+            "manifests/stage150_manifest.json",
+            "manifests/stage150_memory_contract_manifest.json",
+            "manifests/stage150_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage150_overlay.json",
+            "release/current/stage150_release_asset_manifest.json",
+            "release/current/stage150_memory_contract_report.json",
+            "release/current/stage150_release_gate_report.json",
+            "release/current/stage150_memory_contract_pack/preflight15_matrix.json",
+            "release/current/stage150_memory_contract_pack/memory_record_contracts.json",
+            "release/current/stage150_memory_contract_pack/memory_boundary_policy.json",
+            "release/current/stage150_memory_contract_pack/memory_write_policy.json",
+            "release/current/stage150_memory_contract_pack/node2_projection_policy.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 

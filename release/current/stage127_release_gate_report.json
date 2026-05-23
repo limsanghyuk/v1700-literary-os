@@ -2,11 +2,13 @@
   "stage": "127",
   "baseline_stage": "126",
   "title": "MultiWork Preflight & Isolation Audit Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage126_trunk_integrity_preserved"
+  ],
   "checks": {
     "stage126_trunk_integrity_preserved": {
-      "status": "pass"
+      "status": "blocked"
     },
     "v571_multiwork_structure_scanned": {
       "status": "pass"
@@ -103,5 +105,5 @@
   "raw_manuscript_provider_leakage": 0,
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

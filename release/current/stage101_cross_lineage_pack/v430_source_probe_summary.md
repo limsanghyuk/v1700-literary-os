@@ -1,5 +1,5 @@
 # Stage101 V430 Source Probe
 
-- source status: MISSING
-- absorption mode: fixture_contract_validation
+- source status: AVAILABLE
+- absorption mode: gitnexus_impact_then_contract_adapter
 - untraced merge: False

@@ -1,14 +1,16 @@
 {
   "stage": "99.1",
   "baseline_stage": "99.0",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "package_secret_scan"
+  ],
   "credential_audit_status": "pass",
   "raw_manuscript_leakage_simulation_status": "pass",
   "provider_live_call_replay_status": "pass",
   "node2_boundary_replay_status": "pass",
   "internal_marker_leakage_scan_status": "pass",
-  "package_secret_scan_status": "pass",
+  "package_secret_scan_status": "blocked",
   "credential_leakage": 0,
   "raw_manuscript_provider_leakage": 0,
   "provider_live_call_count_in_release": 0,

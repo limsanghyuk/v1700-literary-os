@@ -479,7 +479,7 @@
       },
       "python_fallback": {
         "status": "PASS",
-        "import_edges_total": 3414,
+        "import_edges_total": 3435,
         "critical_paths_checked": {
           "src/v1700/shared_readonly_absorption/contracts.py": true,
           "src/v1700/shared_readonly_absorption/shared_character_adapter.py": true,

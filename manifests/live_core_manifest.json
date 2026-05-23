@@ -1,18 +1,8 @@
 {
-  "active_version": "stage149",
+  "active_version": "stage150",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
-  "core_invariants": {
-    "gitnexus_optional_only": true,
-    "python_fallback_available": true,
-    "graph_nexus_operational_tools": true,
-    "provider_default_calls": 0,
-    "node2_raw_reveal_access_count": 0,
-    "runtime_training_enabled": false,
-    "model_weight_update_count": 0,
-    "losdb_write_enabled": false
-  },
   "active_gates": [
     "runtime_smoke",
     "release_gate",
@@ -48,31 +38,123 @@
     "stage148_node_boundary_constitution",
     "stage148_release_gate",
     "stage149_body_constitution_release_gate",
-    "stage149_release_gate"
+    "stage149_release_gate",
+    "stage150_memory_contract",
+    "stage150_release_gate"
   ],
-  "canonical_package": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage149_body_constitution_release_gate_release_integrated_repository_with_artifacts.zip.sha256",
-  "stage112": {
-    "title": "GitNexus-Aware NIE Preflight Bridge",
-    "status": "historical",
-    "stage112_gitnexus_nie_preflight": "release/current/stage112_gitnexus_nie_preflight_report.json",
-    "stage112_release_gate": "release/current/stage112_release_gate_report.json",
-    "gates": ["stage112_gitnexus_nie_preflight", "stage112_release_gate"]
+  "canonical_package": "V1700_stage150_memory_contract_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage150_memory_contract_release_integrated_repository_with_artifacts.zip.sha256",
+  "stage134": {
+    "status": "active",
+    "title": "MetaLearner Audit Mode"
   },
-  "stage134": {"status": "active", "title": "MetaLearner Audit Mode"},
-  "stage135": {"status": "active", "title": "LearningQualityGate & Candidate Registry"},
-  "stage136": {"status": "active", "title": "SchemaRegistry"},
-  "stage137": {"status": "active", "title": "MigrationManager"},
-  "stage138": {"status": "active", "title": "LOSDB Storage Contracts"},
-  "stage139": {"status": "active", "title": "Corpus Governance Pipeline", "next_stage": "stage140"},
-  "stage140": {"status": "active", "title": "Release Integrity & Product Proof Gate", "baseline_stage": "stage139", "release_gate": "release/current/stage140_release_gate_report.json", "evidence": "release/current/stage140_release_integrity_report.json", "next_stage": "stage141"},
-  "stage141": {"status": "active", "title": "Prose Generation E2E Harness", "baseline_stage": "stage140", "release_gate": "release/current/stage141_release_gate_report.json", "evidence": "release/current/stage141_prose_generation_e2e_report.json", "next_stage": "stage142"},
-  "stage142": {"status": "active", "title": "Longform Benchmark Pack", "baseline_stage": "stage141", "release_gate": "release/current/stage142_release_gate_report.json", "evidence": "release/current/stage142_longform_benchmark_pack_report.json", "next_stage": "stage143"},
-  "stage143": {"status": "active", "title": "User CLI/API Minimum Docs", "baseline_stage": "stage142", "release_gate": "release/current/stage143_release_gate_report.json", "evidence": "release/current/stage143_user_cli_api_docs_report.json", "next_stage": "stage144"},
-  "stage144": {"status": "active", "title": "Split CI Runtime Strategy", "baseline_stage": "stage143", "release_gate": "release/current/stage144_release_gate_report.json", "evidence": "release/current/stage144_split_ci_runtime_strategy_report.json", "next_stage": "stage145"},
-  "stage145": {"status": "active", "title": "Body Constitution", "baseline_stage": "stage144", "release_gate": "release/current/stage145_release_gate_report.json", "evidence": "release/current/stage145_body_constitution_report.json", "next_stage": "stage146"},
-  "stage146": {"status": "active", "title": "Narrative State Contract", "baseline_stage": "stage145", "release_gate": "release/current/stage146_release_gate_report.json", "evidence": "release/current/stage146_narrative_state_contract_report.json", "next_stage": "stage147"},
-  "stage147": {"status": "active", "title": "Project Manifest Body", "baseline_stage": "stage146", "release_gate": "release/current/stage147_release_gate_report.json", "evidence": "release/current/stage147_project_manifest_body_report.json", "next_stage": "stage148"},
-  "stage148": {"status": "active", "title": "Node Boundary Constitution", "baseline_stage": "stage147", "release_gate": "release/current/stage148_release_gate_report.json", "evidence": "release/current/stage148_node_boundary_constitution_report.json", "next_stage": "stage149"},
-  "stage149": {"status": "active", "title": "Body Constitution Release Gate", "baseline_stage": "stage148", "release_gate": "release/current/stage149_release_gate_report.json", "evidence": "release/current/stage149_body_constitution_release_gate_report.json", "next_stage": "stage150"}
+  "stage135": {
+    "status": "active",
+    "title": "LearningQualityGate & Candidate Registry"
+  },
+  "stage136": {
+    "status": "active",
+    "title": "SchemaRegistry"
+  },
+  "stage137": {
+    "status": "active",
+    "title": "MigrationManager"
+  },
+  "stage138": {
+    "status": "active",
+    "title": "LOSDB Storage Contracts"
+  },
+  "stage139": {
+    "status": "active",
+    "title": "Corpus Governance Pipeline",
+    "next_stage": "stage140"
+  },
+  "stage140": {
+    "status": "active",
+    "title": "Release Integrity & Product Proof Gate",
+    "baseline_stage": "stage139",
+    "release_gate": "release/current/stage140_release_gate_report.json",
+    "evidence": "release/current/stage140_release_integrity_report.json",
+    "next_stage": "stage141"
+  },
+  "stage141": {
+    "status": "active",
+    "title": "Prose Generation E2E Harness",
+    "baseline_stage": "stage140",
+    "release_gate": "release/current/stage141_release_gate_report.json",
+    "evidence": "release/current/stage141_prose_generation_e2e_report.json",
+    "next_stage": "stage142"
+  },
+  "stage142": {
+    "status": "active",
+    "title": "Longform Benchmark Pack",
+    "baseline_stage": "stage141",
+    "release_gate": "release/current/stage142_release_gate_report.json",
+    "evidence": "release/current/stage142_longform_benchmark_pack_report.json",
+    "next_stage": "stage143"
+  },
+  "stage143": {
+    "status": "active",
+    "title": "User CLI/API Minimum Docs",
+    "baseline_stage": "stage142",
+    "release_gate": "release/current/stage143_release_gate_report.json",
+    "evidence": "release/current/stage143_user_cli_api_docs_report.json",
+    "next_stage": "stage144"
+  },
+  "stage144": {
+    "status": "active",
+    "title": "Split CI Runtime Strategy",
+    "baseline_stage": "stage143",
+    "release_gate": "release/current/stage144_release_gate_report.json",
+    "evidence": "release/current/stage144_split_ci_runtime_strategy_report.json",
+    "next_stage": "stage145"
+  },
+  "stage145": {
+    "status": "active",
+    "title": "Body Constitution",
+    "baseline_stage": "stage144",
+    "release_gate": "release/current/stage145_release_gate_report.json",
+    "evidence": "release/current/stage145_body_constitution_report.json",
+    "next_stage": "stage146"
+  },
+  "stage146": {
+    "status": "active",
+    "title": "Narrative State Contract",
+    "baseline_stage": "stage145",
+    "release_gate": "release/current/stage146_release_gate_report.json",
+    "evidence": "release/current/stage146_narrative_state_contract_report.json",
+    "next_stage": "stage147"
+  },
+  "stage147": {
+    "status": "active",
+    "title": "Project Manifest Body",
+    "baseline_stage": "stage146",
+    "release_gate": "release/current/stage147_release_gate_report.json",
+    "evidence": "release/current/stage147_project_manifest_body_report.json",
+    "next_stage": "stage148"
+  },
+  "stage148": {
+    "status": "active",
+    "title": "Node Boundary Constitution",
+    "baseline_stage": "stage147",
+    "release_gate": "release/current/stage148_release_gate_report.json",
+    "evidence": "release/current/stage148_node_boundary_constitution_report.json",
+    "next_stage": "stage149"
+  },
+  "stage149": {
+    "status": "active",
+    "title": "Body Constitution Release Gate",
+    "baseline_stage": "stage148",
+    "release_gate": "release/current/stage149_release_gate_report.json",
+    "evidence": "release/current/stage149_body_constitution_release_gate_report.json",
+    "next_stage": "stage150"
+  },
+  "stage150": {
+    "status": "active",
+    "title": "Memory Contract",
+    "baseline_stage": "stage149",
+    "release_gate": "release/current/stage150_release_gate_report.json",
+    "evidence": "release/current/stage150_memory_contract_report.json",
+    "next_stage": "stage151"
+  }
 }

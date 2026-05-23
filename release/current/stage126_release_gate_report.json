@@ -2,8 +2,10 @@
   "stage": "126",
   "baseline_stage": "125",
   "title": "Cross-Lineage Intelligence Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage125_baseline_preserved": {
       "status": "pass"
@@ -54,18 +56,21 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
     }
   },
   "stage126": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "126",
     "baseline_stage": "125",
     "title": "Cross-Lineage Intelligence Release",
-    "issues": [],
+    "issues": [
+      "stage120_report_not_pass:blocked",
+      "stage125_report_not_pass:blocked"
+    ],
     "summary": {
       "sealed_lineage": [
         "120",
@@ -82,7 +87,10 @@
         "Gate29": "secondary_pne_predictive_gate",
         "Governor": "deterministic_gate25_28_29_arbitration"
       },
-      "blocked_by": []
+      "blocked_by": [
+        "stage120_report_not_pass:blocked",
+        "stage125_report_not_pass:blocked"
+      ]
     },
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
@@ -92,7 +100,7 @@
     "raw_manuscript_provider_leakage": 0,
     "node2_raw_reveal_access": 0,
     "credential_leakage": 0,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "provider_default_calls": 0,
   "live_provider_call_count_in_release_gate": 0,
@@ -107,5 +115,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

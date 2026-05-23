@@ -11,7 +11,7 @@
         "provider_kind": "fixture",
         "call_count": 1,
         "total_tokens": 0,
-        "total_latency_ms": 0.0040559998524258845,
+        "total_latency_ms": 0.0013999997463542968,
         "estimated_cost_usd": 0.0
       }
     }

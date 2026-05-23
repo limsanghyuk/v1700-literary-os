@@ -1,0 +1,63 @@
+{
+  "stage": "stage150",
+  "title": "Stage150 Memory Boundary Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "public_surface",
+      "boundary_level": "PUBLIC_SURFACE",
+      "node1_access": "read",
+      "node2_access": "read",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "reader_surface",
+      "boundary_level": "READER_SURFACE",
+      "node1_access": "read",
+      "node2_access": "read",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "planner_private",
+      "boundary_level": "PLANNER_PRIVATE",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "hidden_reveal",
+      "boundary_level": "HIDDEN_REVEAL",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "private_note",
+      "boundary_level": "PRIVATE_NOTE",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "write_handle",
+      "boundary_level": "WRITE_HANDLE",
+      "node1_access": "blocked",
+      "node2_access": "blocked",
+      "node3_access": "blocked",
+      "enforced": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    }
+  ]
+}

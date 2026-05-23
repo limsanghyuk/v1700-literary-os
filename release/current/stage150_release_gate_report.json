@@ -4,10 +4,109 @@
   "title": "Memory Contract",
   "status": "pass",
   "issues": [],
-  "bootstrap_report": true,
+  "checks": {
+    "stage149_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage150_report_pass": {
+      "status": "pass"
+    },
+    "preflight15_pass": {
+      "status": "pass"
+    },
+    "memory_contract_mode_pass": {
+      "status": "pass"
+    },
+    "record_contracts_pass": {
+      "status": "pass"
+    },
+    "boundary_policy_pass": {
+      "status": "pass"
+    },
+    "write_policy_disabled_pass": {
+      "status": "pass"
+    },
+    "node2_projection_policy_pass": {
+      "status": "pass"
+    },
+    "storage_runtime_disabled": {
+      "status": "pass"
+    },
+    "query_runtime_disabled": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "canon_auto_resolution_zero": {
+      "status": "pass"
+    },
+    "auto_repair_mutation_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage150": {
+    "status": "pass",
+    "stage": "150",
+    "baseline_stage": "149",
+    "title": "Memory Contract",
+    "issues": [],
+    "mode": "MEMORY_CONTRACT_LOCAL_ONLY",
+    "memory_contract_only": true,
+    "contract_count": 10,
+    "boundary_rule_count": 6,
+    "write_policy_rule_count": 5,
+    "node2_projection_rule_count": 6,
+    "stage151_local_read_only_memory_store_ready": true,
+    "storage_runtime_enabled": false,
+    "query_runtime_enabled": false,
+    "memory_write_enabled": false,
+    "runtime_training_enabled": false,
+    "active_meta_learning_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "hidden_reveal_projection_count": 0,
+    "private_note_projection_count": 0,
+    "write_handle_projection_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
   "provider_default_calls": 0,
   "live_provider_call_count_in_release_gate": 0,
   "node2_raw_reveal_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
   "memory_write_enabled": false,
   "runtime_training_enabled": false,
   "branchpoint_lineage_preserved": true
