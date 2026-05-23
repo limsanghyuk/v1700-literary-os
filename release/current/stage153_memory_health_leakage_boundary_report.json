@@ -1,0 +1,378 @@
+{
+  "stage": "153",
+  "baseline_stage": "152",
+  "title": "Memory Health & Leakage Boundary",
+  "status": "pass",
+  "issues": [],
+  "mode": "MEMORY_HEALTH_LEAKAGE_BOUNDARY_LOCAL",
+  "page": "Page02 Narrative Memory Body",
+  "health_monitor_enabled": true,
+  "leakage_boundary_enabled": true,
+  "query_runtime_enabled": true,
+  "ranking_runtime_enabled": true,
+  "query_write_enabled": false,
+  "memory_write_enabled": false,
+  "store_write_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "hidden_reveal_projection_count": 0,
+  "private_note_projection_count": 0,
+  "write_handle_projection_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "boundary_violation_count": 0,
+  "health_check_count": 6,
+  "health_pass_count": 6,
+  "leakage_rule_count": 11,
+  "node2_matrix_entry_count": 4,
+  "query_probe_count": 3,
+  "branchpoint_lineage_preserved": true,
+  "stage154_page02_release_seal_ready": true,
+  "parts": {
+    "stage152_release_gate": {
+      "status": "pass",
+      "stage": "152",
+      "baseline_stage": "151",
+      "title": "Deterministic Local Query / Ranking",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "record_health_report": {
+      "stage": "stage153",
+      "title": "Stage153 Record Health Report",
+      "status": "pass",
+      "issues": [],
+      "record_count": 6,
+      "check_count": 6,
+      "pass_count": 6,
+      "checks": [
+        {
+          "name": "record_count_present",
+          "description": "Stage153 must inspect the Stage151 local memory records.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "required_fields_present",
+          "description": "All memory records must retain the Stage150 base fields.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "checksum_integrity_pass",
+          "description": "All memory records must match deterministic checksums.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "duplicate_record_ids_absent",
+          "description": "Memory record identifiers must remain unique.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "write_policy_disabled",
+          "description": "Every memory record must keep writes disabled by default.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "hidden_payload_absent",
+          "description": "Store rows cannot contain hidden/private/write/raw payload columns.",
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        }
+      ],
+      "validation": {
+        "status": "pass",
+        "issues": [],
+        "record_count": 6,
+        "required_fields": [
+          "record_id",
+          "project_id",
+          "record_type",
+          "source_stage",
+          "source_state_id",
+          "visibility",
+          "boundary_level",
+          "created_from",
+          "checksum",
+          "write_policy"
+        ],
+        "missing_required_fields": [],
+        "checksum_mismatches": [],
+        "write_policy_enabled": [],
+        "duplicate_record_ids": [],
+        "hidden_payload_leaks": []
+      }
+    },
+    "leakage_boundary_scan": {
+      "stage": "stage153",
+      "title": "Stage153 Leakage Boundary Scan",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 11,
+      "total_leak_count": 0,
+      "rules": [
+        {
+          "name": "hidden_reveal_payload_absent",
+          "forbidden_pattern": "hidden_reveal_payload",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "private_note_absent",
+          "forbidden_pattern": "private_note",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "write_handle_absent",
+          "forbidden_pattern": "write_handle",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "canon_mutation_command_absent",
+          "forbidden_pattern": "canon_mutation_command",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "learning_payload_absent",
+          "forbidden_pattern": "learning_payload",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "raw_manuscript_payload_absent",
+          "forbidden_pattern": "raw_manuscript_payload",
+          "scope": "memory_record_keys",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "credential_pattern_absent:api[_-]?key",
+          "forbidden_pattern": "api[_-]?key",
+          "scope": "memory_record_values",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "credential_pattern_absent:secret[_-]?key",
+          "forbidden_pattern": "secret[_-]?key",
+          "scope": "memory_record_values",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "credential_pattern_absent:token",
+          "forbidden_pattern": "token",
+          "scope": "memory_record_values",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "credential_pattern_absent:password",
+          "forbidden_pattern": "password",
+          "scope": "memory_record_values",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        },
+        {
+          "name": "credential_pattern_absent:-----BEGIN",
+          "forbidden_pattern": "-----BEGIN",
+          "scope": "memory_record_values",
+          "leak_count": 0,
+          "passed": true,
+          "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+        }
+      ],
+      "raw_text_hits": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0
+    },
+    "node2_leakage_matrix": {
+      "stage": "stage153",
+      "title": "Stage153 Node2 Leakage Matrix",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 4,
+      "violation_count": 0,
+      "entries": [
+        {
+          "boundary_level": "HIDDEN_REVEAL",
+          "record_count": 1,
+          "node2_access": "blocked",
+          "expected_node2_access": "blocked",
+          "passed": true
+        },
+        {
+          "boundary_level": "PLANNER_PRIVATE",
+          "record_count": 1,
+          "node2_access": "blocked",
+          "expected_node2_access": "blocked",
+          "passed": true
+        },
+        {
+          "boundary_level": "PUBLIC_SURFACE",
+          "record_count": 1,
+          "node2_access": "surface_safe",
+          "expected_node2_access": "surface_safe",
+          "passed": true
+        },
+        {
+          "boundary_level": "READER_SURFACE",
+          "record_count": 3,
+          "node2_access": "surface_safe",
+          "expected_node2_access": "surface_safe",
+          "passed": true
+        }
+      ],
+      "node2_raw_reveal_access": 0,
+      "hidden_reveal_projection_count": 0,
+      "private_note_projection_count": 0,
+      "write_handle_projection_count": 0
+    },
+    "query_boundary_probe": {
+      "stage": "stage153",
+      "title": "Stage153 Query Boundary Probe",
+      "status": "pass",
+      "issues": [],
+      "probe_count": 3,
+      "candidate_count": 18,
+      "node2_projected_count": 18,
+      "blocked_projection_count": 6,
+      "node2_raw_reveal_access": 0,
+      "probes": [
+        {
+          "name": "hidden_reveal_query_probe",
+          "probe_query": "birth secret hidden reveal",
+          "candidate_count": 6,
+          "node2_projection_count": 6,
+          "blocked_projection_count": 2,
+          "raw_reveal_access": 0,
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "planner_private_query_probe",
+          "probe_query": "episode payoff planner private",
+          "candidate_count": 6,
+          "node2_projection_count": 6,
+          "blocked_projection_count": 2,
+          "raw_reveal_access": 0,
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "reader_surface_query_probe",
+          "probe_query": "Minseo continuity",
+          "candidate_count": 6,
+          "node2_projection_count": 6,
+          "blocked_projection_count": 2,
+          "raw_reveal_access": 0,
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        }
+      ]
+    },
+    "health_policy": {
+      "stage": "stage153",
+      "title": "Stage153 Health Policy",
+      "status": "pass",
+      "issues": [],
+      "check_count": 5,
+      "checks": [
+        {
+          "name": "local_health_only",
+          "description": "Health checks inspect local records and generated reports only.",
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "no_provider_rag",
+          "description": "Health checks cannot call providers or live RAG.",
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "no_mutation_apply",
+          "description": "Health checks cannot mutate canon, memory records, or repair state.",
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "no_vector_dependency",
+          "description": "Health checks do not require vector databases.",
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        },
+        {
+          "name": "node2_boundary_enforced",
+          "description": "Node2 remains surface-only and raw reveal access stays zero.",
+          "passed": true,
+          "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+        }
+      ],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "memory_write_enabled": false,
+      "auto_repair_mutation_count": 0
+    },
+    "regression_snapshot": {
+      "stage": "stage153",
+      "title": "Stage153 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "record_count": 6,
+      "record_type_counts": {
+        "character": 1,
+        "episode": 1,
+        "scene": 1,
+        "reveal": 1,
+        "continuity": 1,
+        "payoff": 1
+      },
+      "boundary_counts": {
+        "READER_SURFACE": 3,
+        "PUBLIC_SURFACE": 1,
+        "HIDDEN_REVEAL": 1,
+        "PLANNER_PRIVATE": 1
+      },
+      "node2_matrix_entry_count": 4,
+      "query_probe_count": 3,
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0
+    }
+  }
+}

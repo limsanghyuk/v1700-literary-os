@@ -1,0 +1,25 @@
+{
+  "stage": "stage153",
+  "title": "Stage153 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "record_count": 6,
+  "record_type_counts": {
+    "character": 1,
+    "episode": 1,
+    "scene": 1,
+    "reveal": 1,
+    "continuity": 1,
+    "payoff": 1
+  },
+  "boundary_counts": {
+    "READER_SURFACE": 3,
+    "PUBLIC_SURFACE": 1,
+    "HIDDEN_REVEAL": 1,
+    "PLANNER_PRIVATE": 1
+  },
+  "node2_matrix_entry_count": 4,
+  "query_probe_count": 3,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0
+}

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.52.0"
-description = "V1700 Stage152 - Deterministic Local Query / Ranking"
+version = "1.53.0"
+description = "V1700 Stage153 - Memory Health & Leakage Boundary"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

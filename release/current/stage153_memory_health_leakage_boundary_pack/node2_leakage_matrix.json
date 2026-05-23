@@ -1,0 +1,42 @@
+{
+  "stage": "stage153",
+  "title": "Stage153 Node2 Leakage Matrix",
+  "status": "pass",
+  "issues": [],
+  "entry_count": 4,
+  "violation_count": 0,
+  "entries": [
+    {
+      "boundary_level": "HIDDEN_REVEAL",
+      "record_count": 1,
+      "node2_access": "blocked",
+      "expected_node2_access": "blocked",
+      "passed": true
+    },
+    {
+      "boundary_level": "PLANNER_PRIVATE",
+      "record_count": 1,
+      "node2_access": "blocked",
+      "expected_node2_access": "blocked",
+      "passed": true
+    },
+    {
+      "boundary_level": "PUBLIC_SURFACE",
+      "record_count": 1,
+      "node2_access": "surface_safe",
+      "expected_node2_access": "surface_safe",
+      "passed": true
+    },
+    {
+      "boundary_level": "READER_SURFACE",
+      "record_count": 3,
+      "node2_access": "surface_safe",
+      "expected_node2_access": "surface_safe",
+      "passed": true
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "hidden_reveal_projection_count": 0,
+  "private_note_projection_count": 0,
+  "write_handle_projection_count": 0
+}

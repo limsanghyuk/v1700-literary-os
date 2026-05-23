@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.53.0-stage153
+
+- Added Stage153 Memory Health & Leakage Boundary.
+- Implemented local memory health and record verification rules (inspecting duplicate keys, null values, malformed JSONL, invalid continuity, private reveal leakage, planner private notes, write handles, canon mutations, learning payloads, and credential tokens).
+- Implemented Node2 leakage boundaries enforcing surface-safe access rules for hidden reveals and planner private notes.
+- Added query boundary probes (hidden reveal probe, planner private probe, reader surface probe).
+- Kept external RAG, vector DB runtime dependency, canon mutation, memory write, auto-repair, and training disabled (Provider-Zero).
+- Added Stage153 proposal, blueprint, manifests, release evidence, tests, repo doctor wiring, and main release gate integration.
+
 ## v1.52.0-stage152
 
 - Added Stage152 Deterministic Local Query / Ranking over the read-only JSONL memory store.

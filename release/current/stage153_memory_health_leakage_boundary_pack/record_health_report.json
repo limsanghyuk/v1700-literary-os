@@ -1,0 +1,69 @@
+{
+  "stage": "stage153",
+  "title": "Stage153 Record Health Report",
+  "status": "pass",
+  "issues": [],
+  "record_count": 6,
+  "check_count": 6,
+  "pass_count": 6,
+  "checks": [
+    {
+      "name": "record_count_present",
+      "description": "Stage153 must inspect the Stage151 local memory records.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "required_fields_present",
+      "description": "All memory records must retain the Stage150 base fields.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "checksum_integrity_pass",
+      "description": "All memory records must match deterministic checksums.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "duplicate_record_ids_absent",
+      "description": "Memory record identifiers must remain unique.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "write_policy_disabled",
+      "description": "Every memory record must keep writes disabled by default.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "hidden_payload_absent",
+      "description": "Store rows cannot contain hidden/private/write/raw payload columns.",
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    }
+  ],
+  "validation": {
+    "status": "pass",
+    "issues": [],
+    "record_count": 6,
+    "required_fields": [
+      "record_id",
+      "project_id",
+      "record_type",
+      "source_stage",
+      "source_state_id",
+      "visibility",
+      "boundary_level",
+      "created_from",
+      "checksum",
+      "write_policy"
+    ],
+    "missing_required_fields": [],
+    "checksum_mismatches": [],
+    "write_policy_enabled": [],
+    "duplicate_record_ids": [],
+    "hidden_payload_leaks": []
+  }
+}

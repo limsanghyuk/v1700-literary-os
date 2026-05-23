@@ -1,0 +1,101 @@
+{
+  "stage": "stage153",
+  "title": "Stage153 Leakage Boundary Scan",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 11,
+  "total_leak_count": 0,
+  "rules": [
+    {
+      "name": "hidden_reveal_payload_absent",
+      "forbidden_pattern": "hidden_reveal_payload",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "private_note_absent",
+      "forbidden_pattern": "private_note",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "write_handle_absent",
+      "forbidden_pattern": "write_handle",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "canon_mutation_command_absent",
+      "forbidden_pattern": "canon_mutation_command",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "learning_payload_absent",
+      "forbidden_pattern": "learning_payload",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "raw_manuscript_payload_absent",
+      "forbidden_pattern": "raw_manuscript_payload",
+      "scope": "memory_record_keys",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "credential_pattern_absent:api[_-]?key",
+      "forbidden_pattern": "api[_-]?key",
+      "scope": "memory_record_values",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "credential_pattern_absent:secret[_-]?key",
+      "forbidden_pattern": "secret[_-]?key",
+      "scope": "memory_record_values",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "credential_pattern_absent:token",
+      "forbidden_pattern": "token",
+      "scope": "memory_record_values",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "credential_pattern_absent:password",
+      "forbidden_pattern": "password",
+      "scope": "memory_record_values",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    },
+    {
+      "name": "credential_pattern_absent:-----BEGIN",
+      "forbidden_pattern": "-----BEGIN",
+      "scope": "memory_record_values",
+      "leak_count": 0,
+      "passed": true,
+      "evidence": "samples/stage151_memory_store/project_memory_records.jsonl"
+    }
+  ],
+  "raw_text_hits": [],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0
+}
