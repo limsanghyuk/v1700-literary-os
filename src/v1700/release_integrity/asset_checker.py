@@ -73,6 +73,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage152_memory_query_interface_report.json",
         "release_gate_report": "release/current/stage152_release_gate_report.json",
     },
+    "stage153": {
+        "package": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage153_memory_health_leakage_boundary_report.json",
+        "release_gate_report": "release/current/stage153_release_gate_report.json",
+    },
 }
 
 

@@ -1,11 +1,8 @@
 {
   "status": "pass",
-  "source_status": "AVAILABLE",
-  "source_available": true,
-  "source_paths": [
-    "C:\\AI_Codex\\codex-work\\claude\\literary_os_v430_COMPLETE_MERGED.zip",
-    "C:\\AI_Codex\\codex-work\\claude\\literary_os_v430_final.zip"
-  ],
-  "absorption_mode": "gitnexus_impact_then_contract_adapter",
+  "source_status": "MISSING",
+  "source_available": false,
+  "source_paths": [],
+  "absorption_mode": "fixture_contract_validation",
   "v430_untraced_merge": false
 }

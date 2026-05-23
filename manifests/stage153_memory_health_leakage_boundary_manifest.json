@@ -1,0 +1,22 @@
+{
+  "stage": "stage153",
+  "title": "Memory Health & Leakage Boundary",
+  "reports": [
+    "record_health_report",
+    "leakage_boundary_scan",
+    "node2_leakage_matrix",
+    "query_boundary_probe",
+    "health_policy",
+    "regression_snapshot"
+  ],
+  "policy": {
+    "health_monitor_enabled": true,
+    "leakage_boundary_enabled": true,
+    "memory_write_enabled": false,
+    "query_write_enabled": false,
+    "store_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0
+  }
+}

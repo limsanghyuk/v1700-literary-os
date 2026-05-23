@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -429,6 +429,20 @@ STAGE_REQUIRED_GATES = {
         "stage152_memory_query_interface",
         "stage152_release_gate",
     ],
+    "stage153": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage145_body_constitution",
+        "stage145_release_gate",
+        "stage150_memory_contract",
+        "stage150_release_gate",
+        "stage151_local_read_only_memory_store",
+        "stage151_release_gate",
+        "stage152_memory_query_interface",
+        "stage152_release_gate",
+        "stage153_memory_health_leakage_boundary",
+        "stage153_release_gate",
+    ],
 }
 
 STAGE_REQUIRED_FILES = {
@@ -818,6 +832,25 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage152_memory_query_interface_pack/ranking_report.json",
         "release/current/stage152_memory_query_interface_pack/node2_projection_report.json",
     ],
+    "stage153": [
+        "manifests/stage153_manifest.json",
+        "manifests/stage153_memory_health_leakage_boundary_manifest.json",
+        "manifests/stage153_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage153_overlay.json",
+        "docs/stages/stage153.md",
+        "docs/architecture/stage153_memory_health_leakage_boundary_blueprint.md",
+        "docs/proposals/stage153_memory_health_leakage_boundary_proposal.md",
+        "docs/development/stage153_developer_handoff.md",
+        "release/current/stage153_memory_health_leakage_boundary_report.json",
+        "release/current/stage153_release_gate_report.json",
+        "release/current/stage153_release_asset_manifest.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/record_health_report.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/leakage_boundary_scan.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/node2_leakage_matrix.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/query_boundary_probe.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/health_policy.json",
+        "release/current/stage153_memory_health_leakage_boundary_pack/regression_snapshot.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -861,6 +894,7 @@ PREDECESSOR_GATE = {
     "stage150": "stage149_release_gate",
     "stage151": "stage150_release_gate",
     "stage152": "stage151_release_gate",
+    "stage153": "stage152_release_gate",
 }
 
 

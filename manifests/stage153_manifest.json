@@ -1,0 +1,11 @@
+{
+  "stage": "stage153",
+  "title": "Memory Health & Leakage Boundary",
+  "baseline_stage": "stage152",
+  "page": "Page02 Narrative Memory Body",
+  "status": "active",
+  "runner": "tools/run_stage153_memory_health_leakage_boundary.py",
+  "release_gate": "tools/run_stage153_release_gate.py",
+  "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json",
+  "next_stage": "stage154"
+}

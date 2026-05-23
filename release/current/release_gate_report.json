@@ -12,11 +12,11 @@
     "status": "pass",
     "issues": [],
     "gitnexus": {
-      "installed": true,
-      "command": "C:\\Users\\inyoung pharm\\AppData\\Roaming\\npm\\gitnexus.CMD",
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
       "optional_runtime_dependency": false,
       "fallback_available": true,
-      "error": ""
+      "error": "gitnexus binary not installed; npx path is available for optional use"
     },
     "gitnexus_optional_only": true,
     "python_fallback_available": true,
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 933
+        "node_count": 939
       },
       "narrative_summary": {
         "available": true,
@@ -1032,6 +1032,19 @@
     "stage": "152",
     "baseline_stage": "151",
     "title": "Deterministic Local Query / Ranking",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage153_release_gate": {
+    "status": "pass",
+    "stage": "153",
+    "baseline_stage": "152",
+    "title": "Memory Health & Leakage Boundary",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

@@ -3,13 +3,13 @@
   "baseline_stage": "100",
   "title": "V430 Absorption Candidate Matrix",
   "status": "pass",
-  "source_status": "AVAILABLE",
-  "absorption_mode": "gitnexus_impact_then_contract_adapter",
+  "source_status": "MISSING",
+  "absorption_mode": "fixture_contract_validation",
   "v430_untraced_merge": false,
   "candidates": [
     {
       "candidate_id": "V430_SCENARIO_ROOM_PIPELINE",
-      "source_status": "AVAILABLE",
+      "source_status": "MISSING",
       "value_area": "SCENARIO_ROOM",
       "v1700_overlap": "Stage98 Studio Workflow + Stage100 Scenario Evaluation",
       "branchpoint_risk": "MEDIUM",
@@ -25,7 +25,7 @@
     },
     {
       "candidate_id": "V430_INVESTIGATIVE_ACTION_BEATS",
-      "source_status": "AVAILABLE",
+      "source_status": "MISSING",
       "value_area": "INVESTIGATION_ACTION",
       "v1700_overlap": "Stage97 agency conservation + Stage100 scenario scoring",
       "branchpoint_risk": "LOW",
@@ -40,7 +40,7 @@
     },
     {
       "candidate_id": "V430_DIALOGUE_SILENCE_CUE",
-      "source_status": "AVAILABLE",
+      "source_status": "MISSING",
       "value_area": "DIALOGUE_SILENCE",
       "v1700_overlap": "Stage97 dialogue pragmatics + Node2 surface-only boundary",
       "branchpoint_risk": "MEDIUM",
@@ -55,7 +55,7 @@
     },
     {
       "candidate_id": "V430_PROP_LED_REVEAL",
-      "source_status": "AVAILABLE",
+      "source_status": "MISSING",
       "value_area": "PROP_REVEAL",
       "v1700_overlap": "Stage86 EpisodeRevealBudget + Stage97 payoff debt",
       "branchpoint_risk": "MEDIUM",
@@ -70,7 +70,7 @@
     },
     {
       "candidate_id": "V430_PRODUCT_PIPELINE_API",
-      "source_status": "AVAILABLE",
+      "source_status": "MISSING",
       "value_area": "PRODUCT_PIPELINE",
       "v1700_overlap": "Stage89-98 Studio and publishing package",
       "branchpoint_risk": "MEDIUM",

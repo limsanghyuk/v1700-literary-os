@@ -1,0 +1,13 @@
+{
+  "stage": "stage153",
+  "title": "Memory Health & Leakage Boundary Branchpoint Trace",
+  "baseline_stage": "stage152",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage152 deterministic local query",
+    "Stage153 record health report",
+    "Stage153 leakage boundary scan",
+    "Stage153 Node2 leakage matrix",
+    "Stage153 query boundary probe"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "stage": "stage153",
+  "title": "Stage153 Query Boundary Probe",
+  "status": "pass",
+  "issues": [],
+  "probe_count": 3,
+  "candidate_count": 18,
+  "node2_projected_count": 18,
+  "blocked_projection_count": 6,
+  "node2_raw_reveal_access": 0,
+  "probes": [
+    {
+      "name": "hidden_reveal_query_probe",
+      "probe_query": "birth secret hidden reveal",
+      "candidate_count": 6,
+      "node2_projection_count": 6,
+      "blocked_projection_count": 2,
+      "raw_reveal_access": 0,
+      "passed": true,
+      "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+    },
+    {
+      "name": "planner_private_query_probe",
+      "probe_query": "episode payoff planner private",
+      "candidate_count": 6,
+      "node2_projection_count": 6,
+      "blocked_projection_count": 2,
+      "raw_reveal_access": 0,
+      "passed": true,
+      "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+    },
+    {
+      "name": "reader_surface_query_probe",
+      "probe_query": "Minseo continuity",
+      "candidate_count": 6,
+      "node2_projection_count": 6,
+      "blocked_projection_count": 2,
+      "raw_reveal_access": 0,
+      "passed": true,
+      "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json"
+    }
+  ]
+}

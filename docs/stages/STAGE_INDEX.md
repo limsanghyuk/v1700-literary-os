@@ -60,3 +60,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage151 — Local Read-Only Memory Store](stage151.md)
 
 - [Stage152](stage152.md) - Deterministic Local Query / Ranking
+
+- [Stage153 — Memory Health & Leakage Boundary](stage153.md)

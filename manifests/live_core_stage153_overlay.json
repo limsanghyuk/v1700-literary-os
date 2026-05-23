@@ -1,0 +1,13 @@
+{
+  "active_version": "stage153",
+  "overlay_stage": "stage153",
+  "title": "Memory Health & Leakage Boundary",
+  "baseline_stage": "stage152",
+  "release_gate": "release/current/stage153_release_gate_report.json",
+  "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "boundary_violation_count": 0
+}

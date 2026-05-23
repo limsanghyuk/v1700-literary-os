@@ -596,7 +596,7 @@
       "surviving_runtime_value": "Defines deterministic memory contracts while keeping provider calls, memory writes, raw reveal access, runtime training, and mutation disabled."
     }
   ],
-  "active_version": "stage150",
+  "active_version": "stage153",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -713,5 +713,11 @@
     "baseline_stage": "stage150",
     "purpose": "Local Read-Only Memory Store",
     "next_stage": "stage152"
+  },
+  "stage153": {
+    "status": "active",
+    "title": "Memory Health & Leakage Boundary",
+    "baseline_stage": "stage152",
+    "next_stage": "stage154"
   }
 }
