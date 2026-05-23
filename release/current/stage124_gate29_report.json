@@ -99,7 +99,7 @@
         ],
         "high_risk": [],
         "max_probability": 0.525,
-        "sklearn_available": true,
+        "sklearn_available": false,
         "runtime_training_enabled": false
       }
     },
@@ -285,7 +285,7 @@
           "arc_inversion"
         ],
         "max_probability": 0.945,
-        "sklearn_available": true,
+        "sklearn_available": false,
         "runtime_training_enabled": false
       }
     },

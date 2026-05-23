@@ -46,6 +46,14 @@
 - STAGE137: MigrationManager
 - STAGE138: LOSDB Storage Contracts
 - STAGE139: Corpus Governance Pipeline
+- STAGE140: Release Integrity & Product Proof Gate
+- STAGE141: Prose Generation E2E Harness
+- STAGE142: Longform Benchmark Pack
+- STAGE143: User CLI/API Minimum Docs
+- STAGE144: Split CI Runtime Strategy
+- STAGE145: Body Constitution
+- STAGE146: Narrative State Contract
+- STAGE150: Memory Contract
 
 Source files:
 - manifests/stage_lineage_manifest.json

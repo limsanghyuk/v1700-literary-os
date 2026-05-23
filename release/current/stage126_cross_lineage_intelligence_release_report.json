@@ -1,5 +1,5 @@
 {
-  "status": "pass",
+  "status": "blocked",
   "title": "Cross-Lineage Intelligence Release",
   "baseline_stage": "125",
   "release_stage": "126",
@@ -9,7 +9,7 @@
       "stage": "120",
       "title": "Gate25 NIE v1.0",
       "report_path": "release/current/stage120_gate25_nie_v1_report.json",
-      "status": "pass",
+      "status": "blocked",
       "authority_mode": "primary_gate",
       "absorbed_capabilities": [
         "Gate25 NIE v1.0",
@@ -132,7 +132,7 @@
       "stage": "125",
       "title": "Gate25/28/29 Governor",
       "report_path": "release/current/stage125_gate25_28_29_governor_report.json",
-      "status": "pass",
+      "status": "blocked",
       "authority_mode": "governor",
       "absorbed_capabilities": [
         "Gate25/28/29 Governor",
@@ -157,7 +157,10 @@
       }
     }
   ],
-  "blocked_by": [],
+  "blocked_by": [
+    "stage120_report_not_pass:blocked",
+    "stage125_report_not_pass:blocked"
+  ],
   "warnings": [],
   "checks": {
     "stage125_baseline_preserved": true,
@@ -246,6 +249,9 @@
       "Gate29": "secondary_pne_predictive_gate",
       "Governor": "deterministic_gate25_28_29_arbitration"
     },
-    "blocked_by": []
+    "blocked_by": [
+      "stage120_report_not_pass:blocked",
+      "stage125_report_not_pass:blocked"
+    ]
   }
 }

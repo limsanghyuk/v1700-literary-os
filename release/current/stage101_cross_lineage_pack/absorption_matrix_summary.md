@@ -1,5 +1,5 @@
 # Stage101 Absorption Matrix
 
-- absorption mode: fixture_contract_validation
+- absorption mode: gitnexus_impact_then_contract_adapter
 - candidates: 5
 - trace status: pass

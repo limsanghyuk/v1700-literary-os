@@ -2,8 +2,12 @@
   "stage": "110",
   "baseline_stage": "109",
   "title": "V1700 Literary OS 1.0 Stable",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "readme_active_stage_consistency_pass",
+    "package_manifest_canonical_reference_pass",
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage109_baseline_gate_pass": {
       "status": "pass"
@@ -39,20 +43,20 @@
       "status": "pass"
     },
     "readme_active_stage_consistency_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "package_manifest_canonical_reference_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
     }
   },
   "stage110": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "110",
     "baseline_stage": "109",
     "title": "V1700 Literary OS 1.0 Stable",
@@ -69,7 +73,7 @@
   "raw_manuscript_provider_leakage": 0,
   "node2_raw_reveal_access": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true,
-  "stable_lineage_frozen": true,
-  "release_status": "stable"
+  "branchpoint_lineage_preserved": false,
+  "stable_lineage_frozen": false,
+  "release_status": "blocked"
 }

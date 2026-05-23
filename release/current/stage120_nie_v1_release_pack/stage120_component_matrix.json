@@ -13,78 +13,98 @@
   "physics_reward_bridge": {
     "stage": "stage113",
     "report_path": "release/current/stage113_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "adaptive_momentum_weights": {
     "stage": "stage114",
     "report_path": "release/current/stage114_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage113_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "character_influence_matrix": {
     "stage": "stage115",
     "report_path": "release/current/stage115_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage114_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "domain_specific_rag_fusion": {
     "stage": "stage116",
     "report_path": "release/current/stage116_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage115_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "narrative_tension_curve": {
     "stage": "stage117",
     "report_path": "release/current/stage117_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage116_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "nil_orchestrator": {
     "stage": "stage118",
     "report_path": "release/current/stage118_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage117_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "nie_adversarial_regression": {
     "stage": "stage119",
     "report_path": "release/current/stage119_release_gate_report.json",
-    "status": "pass",
-    "issues": [],
+    "status": "blocked",
+    "issues": [
+      "stage118_baseline_gate_pass",
+      "clean_zip_packaging_pass"
+    ],
     "provider_zero": true,
     "node2_boundary": true,
     "raw_manuscript_leakage_zero": true,
     "credential_leakage_zero": true,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   }
 }

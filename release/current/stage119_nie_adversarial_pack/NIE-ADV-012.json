@@ -22,7 +22,7 @@
     "block_reason": "gate_detection_failed",
     "triggered_gate": "gate25_detection_gate",
     "severity": "CRITICAL_BLOCK",
-    "evidence_path": "/mnt/data/stage127_work/release/current/stage119_nie_adversarial_pack/NIE-ADV-012.json",
+    "evidence_path": "C:/AI_Codex/codex-work/gpt/work/stage144_github_main/release/current/stage119_nie_adversarial_pack/NIE-ADV-012.json",
     "provider_call_count": 0,
     "physics_reward_bridge_llm_call_count": 0,
     "mae_live_provider_call_count": 0,

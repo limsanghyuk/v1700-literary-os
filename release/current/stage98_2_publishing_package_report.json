@@ -15,7 +15,7 @@
     "includes_full_text": false,
     "includes_feature_reports": true,
     "includes_release_evidence": true,
-    "package_manifest_path": "release/current/stage98_studio_pack/publishing_package_manifest.json"
+    "package_manifest_path": "release\\current\\stage98_studio_pack\\publishing_package_manifest.json"
   },
   "unresolved_block_items": 0,
   "includes_full_text": false,
@@ -30,5 +30,5 @@
   "internal_marker_leakage": 0,
   "full_text_exported": false,
   "branchpoint_lineage_preserved": true,
-  "studio_pack": "release/current/stage98_studio_pack"
+  "studio_pack": "release\\current\\stage98_studio_pack"
 }

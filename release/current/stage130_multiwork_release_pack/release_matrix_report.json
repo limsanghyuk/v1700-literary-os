@@ -1,13 +1,15 @@
 {
   "status": "blocked",
   "issues": [
+    "stage127_preflight_not_pass",
+    "stage128_read_only_absorption_not_pass",
     "stage129_cim_governor_not_pass"
   ],
   "matrix": {
     "stage": "130",
     "baseline_stage": "129",
-    "stage127_preflight_pass": true,
-    "stage128_read_only_absorption_pass": true,
+    "stage127_preflight_pass": false,
+    "stage128_read_only_absorption_pass": false,
     "stage129_cim_governor_pass": false,
     "direct_v571_merge_detected": false,
     "cross_project_write_allowed": false,
@@ -23,7 +25,7 @@
     {
       "stage": "stage127",
       "title": "MultiWork Preflight & Isolation Audit",
-      "status": "pass",
+      "status": "blocked",
       "report_path": "release/current/stage127_multiwork_preflight_report.json",
       "release_gate_path": "release/current/stage127_release_gate_report.json",
       "required_for_release": true
@@ -31,7 +33,7 @@
     {
       "stage": "stage128",
       "title": "SharedWorld / SharedCharacter Read-Only Absorption",
-      "status": "pass",
+      "status": "blocked",
       "report_path": "release/current/stage128_read_only_absorption_report.json",
       "release_gate_path": "release/current/stage128_release_gate_report.json",
       "required_for_release": true

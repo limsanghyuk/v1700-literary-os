@@ -4,11 +4,12 @@
   "title": "MultiWorkCIM + Cross-Work Canon Governor Release Gate",
   "status": "blocked",
   "issues": [
+    "stage128_baseline_gate_pass",
     "branchpoint_survival_pass"
   ],
   "checks": {
     "stage128_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "project_local_cim_builder_pass": {
       "status": "pass"

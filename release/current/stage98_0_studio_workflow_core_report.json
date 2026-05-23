@@ -12,5 +12,5 @@
   "node2_raw_reveal_access": 0,
   "full_text_exported": false,
   "branchpoint_lineage_preserved": true,
-  "studio_pack": "release/current/stage98_studio_pack"
+  "studio_pack": "release\\current\\stage98_studio_pack"
 }

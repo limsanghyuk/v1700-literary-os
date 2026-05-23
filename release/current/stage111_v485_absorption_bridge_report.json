@@ -2,16 +2,18 @@
   "stage": "111",
   "baseline_stage": "110",
   "title": "V485 Absorption Candidate Bridge",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "preflight"
+  ],
   "stage111_0_v485_absorption_preflight": {
     "stage": "111.0",
-    "status": "pass",
+    "status": "blocked",
     "checks": {
-      "stage110_baseline_gate_pass": true,
+      "stage110_baseline_gate_pass": false,
       "gitnexus_absorption_preflight_pass": true,
       "branchpoint_survival_pass": true,
-      "active_version_stage111_pass": true,
+      "active_version_stage111_pass": false,
       "quarantine_policy_pass": true,
       "no_v485_direct_imports_pass": true,
       "provider_zero_release_path_pass": true,
@@ -19,7 +21,10 @@
       "raw_manuscript_leakage_pass": true,
       "plugin_disabled_by_default_pass": true
     },
-    "issues": [],
+    "issues": [
+      "stage110_baseline_gate_pass",
+      "active_version_stage111_pass"
+    ],
     "quarantine_policy": {
       "status": "pass",
       "direct_code_import_allowed": false,

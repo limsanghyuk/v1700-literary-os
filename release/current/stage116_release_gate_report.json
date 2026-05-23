@@ -2,11 +2,14 @@
   "stage": "116",
   "baseline_stage": "115",
   "title": "Domain-Specific RAG Fusion",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage115_baseline_gate_pass",
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage115_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "rag_fusion_contract_pass": {
       "status": "pass"
@@ -51,7 +54,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -153,5 +156,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

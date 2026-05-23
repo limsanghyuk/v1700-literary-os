@@ -2,8 +2,10 @@
   "stage": "107.5",
   "baseline_stage": "107",
   "title": "Provider Live Sandbox Adapter Verification",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage107_baseline_gate_pass": {
       "status": "pass"
@@ -42,7 +44,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -68,6 +70,6 @@
   "raw_manuscript_provider_leakage": 0,
   "node2_raw_reveal_access": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true,
+  "branchpoint_lineage_preserved": false,
   "release_gate_affected": false
 }

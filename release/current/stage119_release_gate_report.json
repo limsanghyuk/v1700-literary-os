@@ -2,11 +2,14 @@
   "stage": "119",
   "baseline_stage": "118",
   "title": "NIE Adversarial Regression Pack",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "stage118_baseline_gate_pass",
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage118_baseline_gate_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "normal_nil_case_pass": {
       "status": "pass"
@@ -93,7 +96,7 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
@@ -145,5 +148,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

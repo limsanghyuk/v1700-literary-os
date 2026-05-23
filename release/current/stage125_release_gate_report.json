@@ -2,8 +2,11 @@
   "stage": "125",
   "baseline_stage": "124",
   "title": "Gate25/28/29 Governor Release Gate",
-  "status": "pass",
-  "issues": [],
+  "status": "blocked",
+  "issues": [
+    "governor_decision_pass",
+    "clean_zip_packaging_pass"
+  ],
   "checks": {
     "stage124_baseline_preserved": {
       "status": "pass"
@@ -18,7 +21,7 @@
       "status": "pass"
     },
     "governor_decision_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "gate28_not_primary": {
       "status": "pass"
@@ -54,18 +57,20 @@
       "status": "pass"
     },
     "clean_zip_packaging_pass": {
-      "status": "pass"
+      "status": "blocked"
     },
     "secret_scan_pass": {
       "status": "pass"
     }
   },
   "stage125": {
-    "status": "pass",
+    "status": "blocked",
     "stage": "125",
     "baseline_stage": "124",
     "title": "Gate25/28/29 Governor",
-    "issues": [],
+    "issues": [
+      "gate25_primary_pass"
+    ],
     "summary": {
       "primary_gate": "Gate25",
       "secondary_gates": [
@@ -73,8 +78,10 @@
         "Gate29"
       ],
       "authority_mode": "Gate25_primary_with_Gate28_Gate29_secondary_governor",
-      "blocked_by": [],
-      "gate25_status": "pass",
+      "blocked_by": [
+        "gate25_primary_pass"
+      ],
+      "gate25_status": "blocked",
       "gate28_status": "pass",
       "gate29_status": "pass"
     },
@@ -86,7 +93,7 @@
     "raw_manuscript_provider_leakage": 0,
     "node2_raw_reveal_access": 0,
     "credential_leakage": 0,
-    "branchpoint_lineage_preserved": true
+    "branchpoint_lineage_preserved": false
   },
   "provider_default_calls": 0,
   "live_provider_call_count_in_release_gate": 0,
@@ -101,5 +108,5 @@
   "node2_raw_reveal_access": 0,
   "raw_manuscript_provider_leakage": 0,
   "credential_leakage": 0,
-  "branchpoint_lineage_preserved": true
+  "branchpoint_lineage_preserved": false
 }

@@ -1,16 +1,21 @@
 {
   "stage": "110.1",
-  "status": "pass",
+  "status": "blocked",
   "checks": {
-    "active_version_stage110_pass": true,
-    "stage110_release_gate_registered_pass": true,
+    "active_version_stage110_pass": false,
+    "stage110_release_gate_registered_pass": false,
     "release_gate_integration_pass": true,
     "repo_doctor_known_stage_pass": true,
-    "readme_stage110_pass": true,
+    "readme_stage110_pass": false,
     "stage_index_stage110_pass": true,
-    "package_manifest_stage110_pass": true,
+    "package_manifest_stage110_pass": false,
     "clean_packaging_policy_pass": true,
     "stable_docs_pass": true
   },
-  "issues": []
+  "issues": [
+    "active_version_stage110_pass",
+    "stage110_release_gate_registered_pass",
+    "readme_stage110_pass",
+    "package_manifest_stage110_pass"
+  ]
 }

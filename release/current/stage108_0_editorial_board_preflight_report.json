@@ -1,13 +1,15 @@
 {
   "stage": "108.0",
-  "status": "pass",
+  "status": "blocked",
   "checks": {
-    "stage107_5_baseline_gate_pass": true,
+    "stage107_5_baseline_gate_pass": false,
     "gitnexus_protocol_fallback_pass": true,
     "release_path_isolation_pass": true,
     "provider_zero_release_path_pass": true,
     "raw_manuscript_leakage_guard_pass": true,
     "branchpoint_survival_pass": true
   },
-  "issues": []
+  "issues": [
+    "stage107_5_baseline_gate_pass"
+  ]
 }
