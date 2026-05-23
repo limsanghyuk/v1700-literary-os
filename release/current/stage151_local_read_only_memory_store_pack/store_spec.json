@@ -1,0 +1,14 @@
+{
+  "stage": "stage151",
+  "title": "Stage151 Local Memory Store Spec",
+  "status": "pass",
+  "issues": [],
+  "spec": {
+    "name": "Stage151ProjectMemoryJsonlStore",
+    "path": "samples/stage151_memory_store/project_memory_records.jsonl",
+    "format": "jsonl",
+    "mode": "read_only",
+    "source_contract": "Stage150 Memory Contract",
+    "write_enabled": false
+  }
+}

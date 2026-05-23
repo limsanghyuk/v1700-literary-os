@@ -1,38 +1,44 @@
 {
-  "stage": "150",
-  "baseline_stage": "149",
-  "title": "Memory Contract",
+  "stage": "151",
+  "baseline_stage": "150",
+  "title": "Local Read-Only Memory Store",
   "status": "pass",
   "issues": [],
   "checks": {
-    "stage149_baseline_gate_pass": {
+    "stage150_baseline_gate_pass": {
       "status": "pass"
     },
-    "stage150_report_pass": {
+    "stage151_report_pass": {
       "status": "pass"
     },
-    "preflight15_pass": {
+    "local_store_mode_pass": {
       "status": "pass"
     },
-    "memory_contract_mode_pass": {
+    "store_spec_pass": {
       "status": "pass"
     },
-    "record_contracts_pass": {
+    "record_validation_pass": {
       "status": "pass"
     },
-    "boundary_policy_pass": {
+    "checksum_index_pass": {
       "status": "pass"
     },
-    "write_policy_disabled_pass": {
+    "read_only_access_policy_pass": {
       "status": "pass"
     },
-    "node2_projection_policy_pass": {
+    "node2_projection_index_pass": {
       "status": "pass"
     },
-    "storage_runtime_disabled": {
+    "memory_write_blocked": {
       "status": "pass"
     },
-    "query_runtime_disabled": {
+    "query_runtime_deferred": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
       "status": "pass"
     },
     "runtime_training_blocked": {
@@ -69,27 +75,25 @@
       "status": "pass"
     }
   },
-  "stage150": {
+  "stage151": {
     "status": "pass",
-    "stage": "150",
-    "baseline_stage": "149",
-    "title": "Memory Contract",
+    "stage": "151",
+    "baseline_stage": "150",
+    "title": "Local Read-Only Memory Store",
     "issues": [],
-    "mode": "MEMORY_CONTRACT_LOCAL_ONLY",
-    "memory_contract_only": true,
-    "contract_count": 10,
-    "boundary_rule_count": 6,
-    "write_policy_rule_count": 5,
-    "node2_projection_rule_count": 6,
-    "stage151_local_read_only_memory_store_ready": true,
-    "storage_runtime_enabled": false,
+    "mode": "LOCAL_READ_ONLY_MEMORY_STORE",
+    "read_only_store_enabled": true,
+    "store_write_enabled": false,
+    "record_count": 6,
+    "checksum_index_count": 6,
+    "node2_blocked_projection_count": 2,
+    "stage152_deterministic_query_ready": true,
     "query_runtime_enabled": false,
+    "ranking_runtime_enabled": false,
+    "vector_db_runtime_dependency": false,
+    "live_provider_rag_enabled": false,
     "memory_write_enabled": false,
     "runtime_training_enabled": false,
-    "active_meta_learning_enabled": false,
-    "model_weight_update_count": 0,
-    "canon_auto_resolution_count": 0,
-    "auto_repair_mutation_count": 0,
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
     "node2_raw_reveal_access": 0,
@@ -108,6 +112,7 @@
   "raw_manuscript_cross_project_leakage": 0,
   "credential_leakage": 0,
   "memory_write_enabled": false,
+  "store_write_enabled": false,
   "runtime_training_enabled": false,
   "branchpoint_lineage_preserved": true
 }

@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "issues": [],
+  "record_count": 6,
+  "required_fields": [
+    "record_id",
+    "project_id",
+    "record_type",
+    "source_stage",
+    "source_state_id",
+    "visibility",
+    "boundary_level",
+    "created_from",
+    "checksum",
+    "write_policy"
+  ],
+  "missing_required_fields": [],
+  "checksum_mismatches": [],
+  "write_policy_enabled": [],
+  "duplicate_record_ids": [],
+  "hidden_payload_leaks": []
+}

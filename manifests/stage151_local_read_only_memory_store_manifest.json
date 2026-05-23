@@ -1,0 +1,22 @@
+{
+  "stage": "stage151",
+  "title": "Local Read-Only Memory Store",
+  "store": "samples/stage151_memory_store/project_memory_records.jsonl",
+  "format": "jsonl",
+  "mode": "read_only",
+  "record_types": [
+    "character",
+    "episode",
+    "scene",
+    "reveal",
+    "continuity",
+    "payoff"
+  ],
+  "policy": {
+    "memory_write_enabled": false,
+    "store_write_enabled": false,
+    "query_runtime_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

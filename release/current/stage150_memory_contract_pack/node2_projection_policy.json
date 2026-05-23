@@ -1,0 +1,51 @@
+{
+  "stage": "stage150",
+  "title": "Stage150 Node2 Projection Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "hidden_reveal_payload_blocked",
+      "description": "Node2 cannot receive hidden reveal payloads.",
+      "forbidden_payload": "hidden_reveal_payload",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "private_note_blocked",
+      "description": "Node2 cannot receive private notes.",
+      "forbidden_payload": "private_note",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "write_handle_blocked",
+      "description": "Node2 cannot receive write handles.",
+      "forbidden_payload": "write_handle",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "canon_mutation_command_blocked",
+      "description": "Node2 cannot receive canon mutation commands.",
+      "forbidden_payload": "canon_mutation_command",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "learning_payload_blocked",
+      "description": "Node2 cannot receive learning payloads.",
+      "forbidden_payload": "learning_payload",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    },
+    {
+      "name": "raw_manuscript_payload_blocked",
+      "description": "Node2 cannot receive raw manuscript payloads.",
+      "forbidden_payload": "raw_manuscript_payload",
+      "blocked": true,
+      "evidence": "release/current/stage150_memory_contract_report.json"
+    }
+  ]
+}

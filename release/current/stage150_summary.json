@@ -1,0 +1,26 @@
+{
+  "stage": "150",
+  "baseline_stage": "149",
+  "title": "Memory Contract",
+  "status": "pass",
+  "main_report": "release/current/stage150_memory_contract_report.json",
+  "release_gate_report": "release/current/stage150_release_gate_report.json",
+  "asset_manifest": "release/current/stage150_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage150_memory_contract_pack/",
+  "mode": "MEMORY_CONTRACT_LOCAL_ONLY",
+  "memory_contract_only": true,
+  "contract_count": 10,
+  "boundary_rule_count": 6,
+  "write_policy_rule_count": 5,
+  "node2_projection_rule_count": 6,
+  "stage151_local_read_only_memory_store_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage151 Local Read-Only Memory Store",
+    "Stage152 Memory Query Interface"
+  ]
+}

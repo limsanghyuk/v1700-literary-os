@@ -1,0 +1,234 @@
+{
+  "stage": "151",
+  "baseline_stage": "150",
+  "title": "Local Read-Only Memory Store",
+  "status": "pass",
+  "issues": [],
+  "mode": "LOCAL_READ_ONLY_MEMORY_STORE",
+  "page": "Page02 Narrative Memory Body",
+  "store_contract_only": false,
+  "local_store_enabled": true,
+  "read_only_store_enabled": true,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "query_runtime_enabled": false,
+  "ranking_runtime_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "hidden_reveal_projection_count": 0,
+  "private_note_projection_count": 0,
+  "write_handle_projection_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage152_deterministic_query_ready": true,
+  "record_count": 6,
+  "checksum_index_count": 6,
+  "node2_blocked_projection_count": 2,
+  "parts": {
+    "stage150_release_gate": {
+      "status": "pass",
+      "stage": "150",
+      "baseline_stage": "149",
+      "title": "Memory Contract",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true,
+      "memory_write_enabled": false,
+      "runtime_training_enabled": false
+    },
+    "store_spec": {
+      "stage": "stage151",
+      "title": "Stage151 Local Memory Store Spec",
+      "status": "pass",
+      "issues": [],
+      "spec": {
+        "name": "Stage151ProjectMemoryJsonlStore",
+        "path": "samples/stage151_memory_store/project_memory_records.jsonl",
+        "format": "jsonl",
+        "mode": "read_only",
+        "source_contract": "Stage150 Memory Contract",
+        "write_enabled": false
+      }
+    },
+    "record_validation_report": {
+      "status": "pass",
+      "issues": [],
+      "record_count": 6,
+      "required_fields": [
+        "record_id",
+        "project_id",
+        "record_type",
+        "source_stage",
+        "source_state_id",
+        "visibility",
+        "boundary_level",
+        "created_from",
+        "checksum",
+        "write_policy"
+      ],
+      "missing_required_fields": [],
+      "checksum_mismatches": [],
+      "write_policy_enabled": [],
+      "duplicate_record_ids": [],
+      "hidden_payload_leaks": []
+    },
+    "checksum_index": {
+      "stage": "stage151",
+      "title": "Stage151 Checksum Index",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 6,
+      "entries": [
+        {
+          "record_id": "mem-character-001",
+          "record_type": "character",
+          "source_state_id": "character:minseo",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "checksum": "66b46c3c3671ea1eb32de29df5ccfb97279268febdb6c76dd4e1475bd6bf9ced"
+        },
+        {
+          "record_id": "mem-episode-001",
+          "record_type": "episode",
+          "source_state_id": "episode:pilot",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "checksum": "50b85f33fe47cc314c6c9cae2513e6ce21a52596fd33703e874f6f087cfa6e76"
+        },
+        {
+          "record_id": "mem-scene-001",
+          "record_type": "scene",
+          "source_state_id": "scene:pilot:001",
+          "boundary_level": "PUBLIC_SURFACE",
+          "node2_projection": "surface_safe",
+          "checksum": "5f1f2ced776fb0171c7a57b768df057d01f044ac3355a3a6dacd2a63ea5d41e1"
+        },
+        {
+          "record_id": "mem-reveal-001",
+          "record_type": "reveal",
+          "source_state_id": "reveal:birth-secret",
+          "boundary_level": "HIDDEN_REVEAL",
+          "node2_projection": "blocked",
+          "checksum": "3092ad0b1c69ea45d692f4b30ca9a218d3e3c7e348360009e6c6cd5b0887ab6f"
+        },
+        {
+          "record_id": "mem-continuity-001",
+          "record_type": "continuity",
+          "source_state_id": "continuity:inheritance-thread",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "checksum": "16464949e9bc3b98eb429eb09a05739b5f87091a9b678f68f90f93b76c4c6fc1"
+        },
+        {
+          "record_id": "mem-payoff-001",
+          "record_type": "payoff",
+          "source_state_id": "payoff:episode-004",
+          "boundary_level": "PLANNER_PRIVATE",
+          "node2_projection": "blocked",
+          "checksum": "5a49dd74dd571ceaa441aedd2b66c98453dee3378b50bd5d453c3757721d47b2"
+        }
+      ]
+    },
+    "read_only_access_policy": {
+      "stage": "stage151",
+      "title": "Stage151 Read-Only Access Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 4,
+      "rules": [
+        {
+          "name": "local_file_read_allowed",
+          "description": "Stage151 may read deterministic local JSONL fixtures.",
+          "read_allowed": true,
+          "write_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+        },
+        {
+          "name": "store_write_blocked",
+          "description": "Stage151 must not write memory records.",
+          "read_allowed": true,
+          "write_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+        },
+        {
+          "name": "record_mutation_blocked",
+          "description": "Loaded records must not be mutated by the store.",
+          "read_allowed": true,
+          "write_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+        },
+        {
+          "name": "query_runtime_deferred",
+          "description": "Ranking and query runtime remain deferred to Stage152.",
+          "read_allowed": true,
+          "write_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage151_local_read_only_memory_store_report.json"
+        }
+      ]
+    },
+    "node2_projection_index": {
+      "stage": "stage151",
+      "title": "Stage151 Node2 Projection Index",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 6,
+      "blocked_projection_count": 2,
+      "entries": [
+        {
+          "record_id": "mem-character-001",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "raw_payload_included": false
+        },
+        {
+          "record_id": "mem-episode-001",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "raw_payload_included": false
+        },
+        {
+          "record_id": "mem-scene-001",
+          "boundary_level": "PUBLIC_SURFACE",
+          "node2_projection": "surface_safe",
+          "raw_payload_included": false
+        },
+        {
+          "record_id": "mem-reveal-001",
+          "boundary_level": "HIDDEN_REVEAL",
+          "node2_projection": "blocked",
+          "raw_payload_included": false
+        },
+        {
+          "record_id": "mem-continuity-001",
+          "boundary_level": "READER_SURFACE",
+          "node2_projection": "surface_safe",
+          "raw_payload_included": false
+        },
+        {
+          "record_id": "mem-payoff-001",
+          "boundary_level": "PLANNER_PRIVATE",
+          "node2_projection": "blocked",
+          "raw_payload_included": false
+        }
+      ]
+    }
+  }
+}

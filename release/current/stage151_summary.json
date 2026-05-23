@@ -1,0 +1,25 @@
+{
+  "stage": "151",
+  "baseline_stage": "150",
+  "title": "Local Read-Only Memory Store",
+  "status": "pass",
+  "main_report": "release/current/stage151_local_read_only_memory_store_report.json",
+  "release_gate_report": "release/current/stage151_release_gate_report.json",
+  "asset_manifest": "release/current/stage151_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage151_local_read_only_memory_store_pack/",
+  "mode": "LOCAL_READ_ONLY_MEMORY_STORE",
+  "read_only_store_enabled": true,
+  "store_write_enabled": false,
+  "record_count": 6,
+  "checksum_index_count": 6,
+  "stage152_deterministic_query_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage152 Deterministic Local Query / Ranking",
+    "Stage153 Memory Health & Leakage Boundary"
+  ]
+}
