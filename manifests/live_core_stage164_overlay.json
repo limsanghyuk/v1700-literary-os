@@ -1,0 +1,13 @@
+{
+  "stage": "stage164",
+  "title": "Surface Draft Dry-Run Renderer",
+  "status": "active",
+  "baseline_stage": "stage163",
+  "next_stage": "stage165",
+  "page": "Page04 Rendering Body",
+  "active_version": "stage164",
+  "canonical_package": "V1700_stage164_surface_draft_dry_run_renderer_release_integrated_repository_with_artifacts.zip",
+  "release_gate": "release/current/stage164_release_gate_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0
+}

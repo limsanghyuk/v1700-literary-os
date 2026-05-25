@@ -1,0 +1,145 @@
+{
+  "stage": "163",
+  "baseline_stage": "162",
+  "title": "Deterministic Render Plan Builder",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage162_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage163_report_pass": {
+      "status": "pass"
+    },
+    "deterministic_render_plan_mode_pass": {
+      "status": "pass"
+    },
+    "render_plan_nodes_pass": {
+      "status": "pass"
+    },
+    "render_plan_edges_pass": {
+      "status": "pass"
+    },
+    "render_order_pass": {
+      "status": "pass"
+    },
+    "render_plan_integrity_pass": {
+      "status": "pass"
+    },
+    "deterministic_checksum_pass": {
+      "status": "pass"
+    },
+    "node2_render_plan_projection_pass": {
+      "status": "pass"
+    },
+    "render_plan_policy_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "runtime_render_disabled": {
+      "status": "pass"
+    },
+    "provider_generation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_store_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage163": {
+    "status": "pass",
+    "stage": "163",
+    "baseline_stage": "162",
+    "title": "Deterministic Render Plan Builder",
+    "issues": [],
+    "mode": "DETERMINISTIC_RENDER_PLAN_BUILDER_LOCAL_ONLY",
+    "node_count": 6,
+    "edge_count": 5,
+    "critical_path_length": 6,
+    "render_plan_checksum": "90234a4357d73376c10e7cec3f074d02910ba333331054a9832325f9aa949d49",
+    "render_order_count": 6,
+    "stage164_surface_draft_dry_run_renderer_ready": true,
+    "render_packet_store_inherited": true,
+    "rendering_runtime_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_generation_enabled": false,
+    "runtime_execution_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "render_write_enabled": false,
+    "store_write_enabled": false,
+    "render_plan_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "render_plan_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "stage166",
+  "title": "Stage166 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "targeted_regression": [
+    "tests/test_stage161_rendering_contract.py",
+    "tests/test_stage162_local_render_packet_store.py",
+    "tests/test_stage163_deterministic_render_plan_builder.py",
+    "tests/test_stage164_surface_draft_dry_run_renderer.py",
+    "tests/test_stage165_render_quality_boundary_preflight.py",
+    "tests/test_stage166_page04_release_seal.py"
+  ],
+  "forbidden_cache_entries": 0,
+  "forbidden_cache_entry_sample": [],
+  "workspace_forbidden_cache_entries": 0,
+  "workspace_forbidden_cache_entry_sample": [],
+  "strict_tree_scan_enabled": false,
+  "provider_default_calls": 0,
+  "write_operation_count": 0
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "stage165",
+  "title": "Stage165 Render Quality Scorecard",
+  "status": "pass",
+  "issues": [],
+  "quality_score": 1.0,
+  "quality_threshold": 0.92,
+  "draft_unit_count": 6,
+  "avg_words_per_unit": 14.0,
+  "min_words_per_unit": 14,
+  "render_types": [
+    "beat_surface",
+    "chapter_bridge_surface",
+    "dialogue_surface",
+    "scene_surface",
+    "stage_direction_surface",
+    "synopsis_surface"
+  ],
+  "surface_channels": [
+    "drama",
+    "novel",
+    "synopsis"
+  ]
+}

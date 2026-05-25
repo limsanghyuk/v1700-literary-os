@@ -1,0 +1,21 @@
+{
+  "stage": "stage165",
+  "title": "Render Quality and Boundary Preflight",
+  "status": "active",
+  "baseline_stage": "stage164",
+  "next_stage": "stage166",
+  "page": "Page04 Rendering Body",
+  "release_report": "release/current/stage165_render_quality_boundary_preflight_report.json",
+  "release_gate": "release/current/stage165_release_gate_report.json",
+  "branchpoint_lineage_preserved": true,
+  "upstream": [
+    "stage161",
+    "stage162",
+    "stage163",
+    "stage164"
+  ],
+  "downstream": [
+    "stage166"
+  ],
+  "provider_default_calls": 0
+}

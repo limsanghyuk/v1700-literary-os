@@ -1,0 +1,2248 @@
+{
+  "stage": "166",
+  "baseline_stage": "165",
+  "title": "Page04 Release Seal",
+  "status": "pass",
+  "issues": [],
+  "mode": "PAGE04_RELEASE_SEAL_LOCAL",
+  "page": "Page04 Rendering Body",
+  "page04_release_seal_only": true,
+  "page04_sealed": true,
+  "page04_stage_count": 6,
+  "page04_total_stage_count": 6,
+  "page04_upstream_stage_count": 5,
+  "page04_stage_chain_pass": true,
+  "page04_artifact_index_complete": true,
+  "page04_invariant_freeze_pass": true,
+  "page04_nexus_connectivity_pass": true,
+  "page04_release_checksum": "c6d8f362a4e8f6d984ec3d4468552158542bce8836dc0fd3dc770b0bfcc495c7",
+  "stage167_evaluation_contract_ready": true,
+  "next_stage": "stage167",
+  "next_stage_title": "Evaluation Contract",
+  "next_page": "Page05 Evaluation Body",
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "provider_execution_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "surface_draft_write_enabled": false,
+  "quality_gate_write_enabled": false,
+  "memory_write_enabled": false,
+  "store_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "page04_stage_chain": {
+      "stage": "stage166",
+      "title": "Page04 Upstream Stage Chain",
+      "status": "pass",
+      "issues": [],
+      "stage_count": 5,
+      "sealed_count": 5,
+      "stages": [
+        {
+          "stage": "161",
+          "title": "Rendering Contract",
+          "report_path": "release/current/stage161_rendering_contract_report.json",
+          "gate_path": "release/current/stage161_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "162",
+          "title": "Local Render Packet Store",
+          "report_path": "release/current/stage162_local_render_packet_store_report.json",
+          "gate_path": "release/current/stage162_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "163",
+          "title": "Deterministic Render Plan Builder",
+          "report_path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "gate_path": "release/current/stage163_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "164",
+          "title": "Surface Draft Dry-Run Renderer",
+          "report_path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "gate_path": "release/current/stage164_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "165",
+          "title": "Render Quality and Boundary Preflight",
+          "report_path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "gate_path": "release/current/stage165_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        }
+      ]
+    },
+    "page04_release_seal_matrix": {
+      "stage": "stage166",
+      "title": "Page04 Release Seal Matrix",
+      "status": "pass",
+      "issues": [],
+      "sealed_page04": true,
+      "check_count": 8,
+      "checks": [
+        {
+          "name": "upstream_stage_chain_complete",
+          "status": "pass",
+          "evidence": "page04_stage_chain",
+          "description": "Stage161 through Stage165 all pass before Stage166 seals Page04."
+        },
+        {
+          "name": "rendering_contract_sealed",
+          "status": "pass",
+          "evidence": "stage161_release_gate",
+          "description": "Rendering contract is sealed."
+        },
+        {
+          "name": "render_packet_store_sealed",
+          "status": "pass",
+          "evidence": "stage162_release_gate",
+          "description": "Local render packet store is sealed."
+        },
+        {
+          "name": "render_plan_builder_sealed",
+          "status": "pass",
+          "evidence": "stage163_release_gate",
+          "description": "Deterministic render plan builder is sealed."
+        },
+        {
+          "name": "surface_dry_run_renderer_sealed",
+          "status": "pass",
+          "evidence": "stage164_release_gate",
+          "description": "Surface draft dry-run renderer is sealed."
+        },
+        {
+          "name": "render_quality_boundary_sealed",
+          "status": "pass",
+          "evidence": "stage165_release_gate",
+          "description": "Render quality and boundary preflight is sealed."
+        },
+        {
+          "name": "page04_total_stage_count_confirmed",
+          "status": "pass",
+          "evidence": "release/current/stage166_page04_release_seal_report.json",
+          "description": "Page04 spans Stage161 through Stage166."
+        },
+        {
+          "name": "no_generation_privilege_expanded",
+          "status": "pass",
+          "evidence": "release/current/stage166_page04_release_seal_report.json",
+          "description": "Page04 enables no live provider generation, runtime rendering, writes, mutation, training, or publication workflow."
+        }
+      ]
+    },
+    "page04_invariant_freeze": {
+      "stage": "stage166",
+      "title": "Page04 Invariant Freeze",
+      "status": "pass",
+      "issues": [],
+      "frozen": [
+        {
+          "name": "provider_default_calls",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "live_provider_call_count_in_release_gate",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "provider_generation_count",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "runtime_execution_count",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "write_operation_count",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "node2_raw_reveal_access",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "boundary_violation_count",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "raw_manuscript_provider_leakage",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "raw_manuscript_cross_project_leakage",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "credential_leakage",
+          "frozen_value": 0,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "rendering_runtime_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "generation_runtime_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "provider_generation_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "runtime_execution_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "memory_write_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "runtime_training_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "render_write_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "quality_gate_write_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        },
+        {
+          "name": "canon_mutation_enabled",
+          "frozen_value": false,
+          "evidence": "page04_upstream_reports_and_gates"
+        }
+      ],
+      "evidence_source_count": 10,
+      "evidence_check_count": 190,
+      "evidence_matrix": [
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage161_report",
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage161_gate",
+          "path": "release/current/stage161_release_gate_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage162_report",
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage162_gate",
+          "path": "release/current/stage162_release_gate_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage163_report",
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage163_gate",
+          "path": "release/current/stage163_release_gate_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage164_report",
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage164_gate",
+          "path": "release/current/stage164_release_gate_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": null,
+          "status": "skipped",
+          "reason": "optional_missing"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_report",
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "provider_generation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "rendering_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "provider_generation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "render_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "quality_gate_write_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        },
+        {
+          "source": "stage165_gate",
+          "path": "release/current/stage165_release_gate_report.json",
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "status": "pass",
+          "reason": "match"
+        }
+      ],
+      "provider_zero": true,
+      "write_zero": true,
+      "generation_zero": true,
+      "node2_boundary_zero": true
+    },
+    "page04_nexus_connectivity_matrix": {
+      "stage": "stage166",
+      "title": "Page04 Nexus Connectivity Matrix",
+      "status": "pass",
+      "issues": [],
+      "required_count": 19,
+      "missing_count": 0,
+      "connected_files": [
+        "src/v1700/page04_release_seal/contracts.py",
+        "src/v1700/page04_release_seal/report.py",
+        "src/v1700/stage166/stage166_runner.py",
+        "src/v1700/gates/stage166_release_gate.py",
+        "tools/run_stage166_page04_release_seal.py",
+        "tools/run_stage166_release_gate.py",
+        "tests/test_stage166_page04_release_seal.py",
+        "docs/stages/stage166.md",
+        "docs/proposals/stage166_page04_release_seal_proposal.md",
+        "docs/architecture/stage166_page04_release_seal_blueprint.md",
+        "docs/development/stage166_developer_handoff.md",
+        "docs/architecture/page04_rendering_body_blueprint.md",
+        "docs/proposals/page04_rendering_body_proposal.md",
+        "docs/development/page04_handoff.md",
+        "manifests/stage166_manifest.json",
+        "manifests/stage166_page04_release_seal_manifest.json",
+        "manifests/stage166_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage166_overlay.json",
+        "release/current/stage166_release_asset_manifest.json"
+      ],
+      "python_fallback_required": true,
+      "gitnexus_runtime_dependency_required": false
+    },
+    "page04_transition_criteria": {
+      "stage": "stage166",
+      "title": "Page04 Transition Criteria",
+      "status": "pass",
+      "issues": [],
+      "next_stage": "stage167",
+      "next_stage_title": "Evaluation Contract",
+      "next_page": "Page05 Evaluation Body",
+      "criteria": [
+        {
+          "name": "page04_stage_chain_pass",
+          "status": "pass",
+          "next_page": "Page05 Evaluation Body",
+          "evidence": "page04_stage_chain"
+        },
+        {
+          "name": "page04_invariant_freeze_pass",
+          "status": "pass",
+          "next_page": "Page05 Evaluation Body",
+          "evidence": "page04_invariant_freeze"
+        },
+        {
+          "name": "page04_connectivity_pass",
+          "status": "pass",
+          "next_page": "Page05 Evaluation Body",
+          "evidence": "page04_nexus_connectivity_matrix"
+        },
+        {
+          "name": "page04_regression_snapshot_pass",
+          "status": "pass",
+          "next_page": "Page05 Evaluation Body",
+          "evidence": "regression_snapshot"
+        },
+        {
+          "name": "stage167_evaluation_contract_ready",
+          "status": "pass",
+          "next_page": "Page05 Evaluation Body",
+          "evidence": "release/current/stage166_page04_release_seal_report.json"
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage166",
+      "title": "Stage166 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "targeted_regression": [
+        "tests/test_stage161_rendering_contract.py",
+        "tests/test_stage162_local_render_packet_store.py",
+        "tests/test_stage163_deterministic_render_plan_builder.py",
+        "tests/test_stage164_surface_draft_dry_run_renderer.py",
+        "tests/test_stage165_render_quality_boundary_preflight.py",
+        "tests/test_stage166_page04_release_seal.py"
+      ],
+      "forbidden_cache_entries": 0,
+      "forbidden_cache_entry_sample": [],
+      "workspace_forbidden_cache_entries": 0,
+      "workspace_forbidden_cache_entry_sample": [],
+      "strict_tree_scan_enabled": false,
+      "provider_default_calls": 0,
+      "write_operation_count": 0
+    },
+    "page04_artifact_index": {
+      "stage": "stage166",
+      "title": "Page04 Artifact Index",
+      "status": "pass",
+      "issues": [],
+      "asset_count": 21,
+      "missing_count": 0,
+      "assets": [
+        {
+          "path": "release/current/stage161_rendering_contract_report.json",
+          "required": true,
+          "category": "stage161_report",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage161_release_gate_report.json",
+          "required": true,
+          "category": "stage161_gate",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage162_local_render_packet_store_report.json",
+          "required": true,
+          "category": "stage162_report",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage162_release_gate_report.json",
+          "required": true,
+          "category": "stage162_gate",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+          "required": true,
+          "category": "stage163_report",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage163_release_gate_report.json",
+          "required": true,
+          "category": "stage163_gate",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+          "required": true,
+          "category": "stage164_report",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage164_release_gate_report.json",
+          "required": true,
+          "category": "stage164_gate",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+          "required": true,
+          "category": "stage165_report",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage165_release_gate_report.json",
+          "required": true,
+          "category": "stage165_gate",
+          "exists": true,
+          "generated_by_stage166": false
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_artifact_index.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_invariant_freeze.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_nexus_connectivity_matrix.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_release_seal.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_release_seal_matrix.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_stage_chain.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/page04_transition_criteria.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_pack/regression_snapshot.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_page04_release_seal_report.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_release_gate_report.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        },
+        {
+          "path": "release/current/stage166_summary.json",
+          "required": true,
+          "category": "stage166_generated",
+          "exists": true,
+          "generated_by_stage166": true
+        }
+      ]
+    },
+    "page04_release_seal": {
+      "stage": "stage166",
+      "title": "Page04 Release Seal",
+      "status": "pass",
+      "issues": [],
+      "page04_sealed": true,
+      "page04_release_checksum": "c6d8f362a4e8f6d984ec3d4468552158542bce8836dc0fd3dc770b0bfcc495c7",
+      "sealed_stage_range": "Stage161~Stage166",
+      "next_stage": "stage167",
+      "next_stage_title": "Evaluation Contract",
+      "next_page": "Page05 Evaluation Body"
+    }
+  }
+}

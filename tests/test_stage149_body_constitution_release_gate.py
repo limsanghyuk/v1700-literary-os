@@ -42,10 +42,7 @@ def test_stage149_reuses_stage148_baseline_and_passes_gate() -> None:
 
 def test_stage149_is_the_active_release_baseline() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    assert any(
-        f'"active_version": "stage{stage}"' in manifest
-        for stage in (149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161)
-    )
+    assert '"active_version": "stage149"' in manifest
     assert '"stage149_body_constitution_release_gate"' in manifest
     assert '"stage149_release_gate"' in manifest
 

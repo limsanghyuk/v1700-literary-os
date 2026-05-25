@@ -1,0 +1,19 @@
+{
+  "stage": "stage165",
+  "title": "Stage165 Blocked Render Operation Registry",
+  "status": "pass",
+  "issues": [],
+  "blocked_operations": [
+    "live_provider_generation",
+    "runtime_surface_render",
+    "render_output_write",
+    "surface_draft_mutation",
+    "canon_mutation",
+    "runtime_training",
+    "auto_repair_apply",
+    "hidden_payload_projection"
+  ],
+  "provider_generation_count": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0
+}

@@ -1,0 +1,11 @@
+{
+  "active_version": "stage166",
+  "active_gates": [
+    "stage166_page04_release_seal",
+    "stage166_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "branchpoint_lineage_preserved": true
+}

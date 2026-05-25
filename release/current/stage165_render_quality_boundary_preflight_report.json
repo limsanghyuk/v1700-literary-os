@@ -1,0 +1,256 @@
+{
+  "stage": "165",
+  "baseline_stage": "164",
+  "title": "Render Quality and Boundary Preflight",
+  "status": "pass",
+  "issues": [],
+  "mode": "RENDER_QUALITY_BOUNDARY_PREFLIGHT_LOCAL_ONLY",
+  "page": "Page04 Rendering Body",
+  "quality_score": 1.0,
+  "quality_threshold": 0.92,
+  "draft_unit_count": 6,
+  "trace_step_count": 6,
+  "render_type_count": 6,
+  "quality_boundary_checksum": "d0743ce2f2c27bb533907a0f954c089dceb239e0e2a3606874b9341f7a56fa1a",
+  "source_surface_draft_checksum": "89007a78e9bdb40188fe32d1c5ef8671723fc9123a0baaf08bd3990d590d4a98",
+  "stage166_page04_release_seal_ready": true,
+  "stage164_inherited": true,
+  "render_quality_preflight_enabled": true,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "provider_execution_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "quality_gate_write_enabled": false,
+  "surface_draft_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage164_release_gate": {
+      "status": "pass",
+      "stage": "164",
+      "baseline_stage": "163",
+      "title": "Surface Draft Dry-Run Renderer",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "provider_generation_count": 0,
+      "runtime_execution_count": 0,
+      "write_operation_count": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "quality_metric_matrix": {
+      "stage": "stage165",
+      "title": "Stage165 Quality Metric Matrix",
+      "status": "pass",
+      "issues": [],
+      "metrics": [
+        {
+          "name": "surface_draft_units_present",
+          "status": "pass",
+          "score": 6.0,
+          "threshold": 1.0,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "trace_alignment",
+          "status": "pass",
+          "score": 1.0,
+          "threshold": 1.0,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "minimum_surface_length",
+          "status": "pass",
+          "score": 14.0,
+          "threshold": 3.0,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "render_type_coverage",
+          "status": "pass",
+          "score": 6.0,
+          "threshold": 3.0,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "quality_score",
+          "status": "pass",
+          "score": 1.0,
+          "threshold": 0.92,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        }
+      ],
+      "quality_boundary_checksum": "d0743ce2f2c27bb533907a0f954c089dceb239e0e2a3606874b9341f7a56fa1a"
+    },
+    "boundary_preflight_matrix": {
+      "stage": "stage165",
+      "title": "Stage165 Boundary Preflight Matrix",
+      "status": "pass",
+      "issues": [],
+      "rules": [
+        {
+          "name": "provider_generation_blocked",
+          "status": "pass",
+          "provider_generation_allowed": false,
+          "runtime_render_allowed": false,
+          "write_allowed": false,
+          "hidden_payload_allowed": false,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "runtime_render_blocked",
+          "status": "pass",
+          "provider_generation_allowed": false,
+          "runtime_render_allowed": false,
+          "write_allowed": false,
+          "hidden_payload_allowed": false,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "render_write_blocked",
+          "status": "pass",
+          "provider_generation_allowed": false,
+          "runtime_render_allowed": false,
+          "write_allowed": false,
+          "hidden_payload_allowed": false,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "hidden_render_payload_blocked",
+          "status": "pass",
+          "provider_generation_allowed": false,
+          "runtime_render_allowed": false,
+          "write_allowed": false,
+          "hidden_payload_allowed": false,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        },
+        {
+          "name": "raw_manuscript_payload_blocked",
+          "status": "pass",
+          "provider_generation_allowed": false,
+          "runtime_render_allowed": false,
+          "write_allowed": false,
+          "hidden_payload_allowed": false,
+          "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+        }
+      ],
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0
+    },
+    "render_quality_scorecard": {
+      "stage": "stage165",
+      "title": "Stage165 Render Quality Scorecard",
+      "status": "pass",
+      "issues": [],
+      "quality_score": 1.0,
+      "quality_threshold": 0.92,
+      "draft_unit_count": 6,
+      "avg_words_per_unit": 14.0,
+      "min_words_per_unit": 14,
+      "render_types": [
+        "beat_surface",
+        "chapter_bridge_surface",
+        "dialogue_surface",
+        "scene_surface",
+        "stage_direction_surface",
+        "synopsis_surface"
+      ],
+      "surface_channels": [
+        "drama",
+        "novel",
+        "synopsis"
+      ]
+    },
+    "node2_quality_projection_matrix": {
+      "stage": "stage165",
+      "title": "Stage165 Node2 Quality Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "node2_surface_quality_summary_allowed": true,
+      "hidden_payload_blocked": true,
+      "provider_payload_blocked": true,
+      "write_handle_blocked": true,
+      "node2_raw_reveal_access": 0,
+      "node2_hidden_render_payload_access": 0,
+      "boundary_violation_count": 0
+    },
+    "blocked_render_operation_registry": {
+      "stage": "stage165",
+      "title": "Stage165 Blocked Render Operation Registry",
+      "status": "pass",
+      "issues": [],
+      "blocked_operations": [
+        "live_provider_generation",
+        "runtime_surface_render",
+        "render_output_write",
+        "surface_draft_mutation",
+        "canon_mutation",
+        "runtime_training",
+        "auto_repair_apply",
+        "hidden_payload_projection"
+      ],
+      "provider_generation_count": 0,
+      "runtime_execution_count": 0,
+      "write_operation_count": 0
+    },
+    "stage166_entry_criteria": {
+      "stage": "stage165",
+      "title": "Stage166 Entry Criteria",
+      "status": "pass",
+      "issues": [],
+      "criteria": {
+        "stage165_report_pass": true,
+        "quality_score_threshold_pass": true,
+        "draft_unit_count_nonzero": true,
+        "trace_count_matches_units": true,
+        "provider_generation_disabled": true,
+        "runtime_render_disabled": true,
+        "render_write_disabled": true,
+        "node2_boundary_clean": true,
+        "quality_boundary_checksum_present": true
+      }
+    },
+    "regression_snapshot": {
+      "stage": "stage165",
+      "title": "Stage165 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "provider_generation_count": 0,
+      "runtime_execution_count": 0,
+      "write_operation_count": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "quality_boundary_checksum": "d0743ce2f2c27bb533907a0f954c089dceb239e0e2a3606874b9341f7a56fa1a"
+    }
+  }
+}

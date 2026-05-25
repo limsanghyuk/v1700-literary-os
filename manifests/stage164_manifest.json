@@ -1,0 +1,10 @@
+{
+  "stage": "stage164",
+  "title": "Surface Draft Dry-Run Renderer",
+  "status": "active",
+  "baseline_stage": "stage163",
+  "next_stage": "stage165",
+  "page": "Page04 Rendering Body",
+  "release_report": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+  "release_gate": "release/current/stage164_release_gate_report.json"
+}

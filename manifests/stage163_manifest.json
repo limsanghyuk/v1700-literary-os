@@ -1,0 +1,22 @@
+{
+  "stage": "stage163",
+  "title": "Deterministic Render Plan Builder",
+  "status": "active",
+  "baseline_stage": "stage162",
+  "page": "Page04 Rendering Body",
+  "source_modules": [
+    "src/v1700/render_plan_builder/",
+    "src/v1700/stage163/",
+    "src/v1700/gates/stage163_release_gate.py"
+  ],
+  "tools": [
+    "tools/run_stage163_deterministic_render_plan_builder.py",
+    "tools/run_stage163_release_gate.py"
+  ],
+  "tests": [
+    "tests/test_stage163_deterministic_render_plan_builder.py"
+  ],
+  "release_report": "release/current/stage163_deterministic_render_plan_builder_report.json",
+  "release_gate": "release/current/stage163_release_gate_report.json",
+  "next_stage": "stage164"
+}

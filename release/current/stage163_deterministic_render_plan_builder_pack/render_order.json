@@ -1,0 +1,15 @@
+{
+  "stage": "stage163",
+  "title": "Stage163 Deterministic Render Order",
+  "status": "pass",
+  "issues": [],
+  "order_count": 6,
+  "render_order": [
+    "render_packet:synopsis_surface:001",
+    "render_packet:scene_surface:001",
+    "render_packet:beat_surface:001",
+    "render_packet:chapter_bridge_surface:001",
+    "render_packet:dialogue_surface:001",
+    "render_packet:stage_direction_surface:001"
+  ]
+}

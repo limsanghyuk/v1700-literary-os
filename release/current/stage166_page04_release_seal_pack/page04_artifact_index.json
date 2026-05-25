@@ -1,0 +1,157 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Artifact Index",
+  "status": "pass",
+  "issues": [],
+  "asset_count": 21,
+  "missing_count": 0,
+  "assets": [
+    {
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "required": true,
+      "category": "stage161_report",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage161_release_gate_report.json",
+      "required": true,
+      "category": "stage161_gate",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "required": true,
+      "category": "stage162_report",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage162_release_gate_report.json",
+      "required": true,
+      "category": "stage162_gate",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "required": true,
+      "category": "stage163_report",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage163_release_gate_report.json",
+      "required": true,
+      "category": "stage163_gate",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "required": true,
+      "category": "stage164_report",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage164_release_gate_report.json",
+      "required": true,
+      "category": "stage164_gate",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "required": true,
+      "category": "stage165_report",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage165_release_gate_report.json",
+      "required": true,
+      "category": "stage165_gate",
+      "exists": true,
+      "generated_by_stage166": false
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_artifact_index.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_invariant_freeze.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_nexus_connectivity_matrix.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_release_seal.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_release_seal_matrix.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_stage_chain.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/page04_transition_criteria.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_pack/regression_snapshot.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_page04_release_seal_report.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_release_gate_report.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    },
+    {
+      "path": "release/current/stage166_summary.json",
+      "required": true,
+      "category": "stage166_generated",
+      "exists": true,
+      "generated_by_stage166": true
+    }
+  ]
+}

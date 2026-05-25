@@ -1,0 +1,42 @@
+{
+  "stage": "stage163",
+  "title": "Stage163 Node2 Render Plan Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rules": [
+    {
+      "name": "node2_render_plan_summary_only",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_generation_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "hidden_render_payload_blocked",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_generation_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "provider_generation_payload_blocked",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_generation_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "write_handle_blocked",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_generation_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0
+}

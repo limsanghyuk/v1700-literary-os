@@ -1,0 +1,55 @@
+{
+  "stage": "stage165",
+  "title": "Stage165 Boundary Preflight Matrix",
+  "status": "pass",
+  "issues": [],
+  "rules": [
+    {
+      "name": "provider_generation_blocked",
+      "status": "pass",
+      "provider_generation_allowed": false,
+      "runtime_render_allowed": false,
+      "write_allowed": false,
+      "hidden_payload_allowed": false,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "runtime_render_blocked",
+      "status": "pass",
+      "provider_generation_allowed": false,
+      "runtime_render_allowed": false,
+      "write_allowed": false,
+      "hidden_payload_allowed": false,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "render_write_blocked",
+      "status": "pass",
+      "provider_generation_allowed": false,
+      "runtime_render_allowed": false,
+      "write_allowed": false,
+      "hidden_payload_allowed": false,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "hidden_render_payload_blocked",
+      "status": "pass",
+      "provider_generation_allowed": false,
+      "runtime_render_allowed": false,
+      "write_allowed": false,
+      "hidden_payload_allowed": false,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "raw_manuscript_payload_blocked",
+      "status": "pass",
+      "provider_generation_allowed": false,
+      "runtime_render_allowed": false,
+      "write_allowed": false,
+      "hidden_payload_allowed": false,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0
+}

@@ -1,5 +1,42 @@
 # Changelog
 
+## v1.66.0-stage166
+
+- Added Stage166 Page04 Release Seal.
+- Sealed Page04 Rendering Body across Stage161 through Stage166.
+- Added Page04 artifact index, invariant freeze, Nexus connectivity matrix, transition criteria, release seal checksum, and Stage167 readiness.
+- Kept provider-zero, write-zero, runtime-rendering-zero, training-zero, and Node2 raw reveal zero.
+
+## v1.65.0-stage165
+
+- Added Stage165 Render Quality and Boundary Preflight.
+- Added deterministic quality metric matrix, boundary preflight matrix, render quality scorecard, Node2 quality projection matrix, blocked render operation registry, and Stage166 entry criteria.
+- Kept provider generation, runtime rendering, writes, canon mutation, runtime training, and hidden payload projection disabled.
+
+
+## v1.64.0-stage164
+
+- Added Stage164 Surface Draft Dry-Run Renderer.
+- Converted deterministic render plan nodes into surface-safe draft units and replayable dry-run trace evidence.
+- Added surface boundary snapshot, Node2 surface projection matrix, side-effect-free rendering policy, checksum, and Stage165 entry criteria.
+- Kept provider generation, runtime rendering, writes, canon mutation, runtime training, and hidden reveal projection disabled.
+
+
+## v1.63.0-stage163
+
+- Added Stage163 Deterministic Render Plan Builder.
+- Compiled Stage162 render packets into deterministic render plan nodes, sequence edges, render order, integrity evidence, and checksum.
+- Kept provider generation, runtime rendering, writes, canon mutation, runtime training, and hidden reveal projection disabled.
+
+
+## v1.62.0-stage162
+
+- Added Stage162 Local Render Packet Store.
+- Added read-only JSONL render packet fixture, checksum validation, lineage matrix, Node2 render packet projection, and release gate integration.
+- Applied V1.1 preflight authority to Stage162 package and validation.
+- Kept provider generation, runtime rendering, writes, canon mutation, runtime training, and hidden reveal projection disabled.
+
+
 ## v1.61.0-stage161
 
 - Added Stage161 Rendering Contract as the Page04 Rendering Body entry stage.

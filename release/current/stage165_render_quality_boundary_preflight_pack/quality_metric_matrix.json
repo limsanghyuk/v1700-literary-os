@@ -1,0 +1,44 @@
+{
+  "stage": "stage165",
+  "title": "Stage165 Quality Metric Matrix",
+  "status": "pass",
+  "issues": [],
+  "metrics": [
+    {
+      "name": "surface_draft_units_present",
+      "status": "pass",
+      "score": 6.0,
+      "threshold": 1.0,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "trace_alignment",
+      "status": "pass",
+      "score": 1.0,
+      "threshold": 1.0,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "minimum_surface_length",
+      "status": "pass",
+      "score": 14.0,
+      "threshold": 3.0,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "render_type_coverage",
+      "status": "pass",
+      "score": 6.0,
+      "threshold": 3.0,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    },
+    {
+      "name": "quality_score",
+      "status": "pass",
+      "score": 1.0,
+      "threshold": 0.92,
+      "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json"
+    }
+  ],
+  "quality_boundary_checksum": "d0743ce2f2c27bb533907a0f954c089dceb239e0e2a3606874b9341f7a56fa1a"
+}

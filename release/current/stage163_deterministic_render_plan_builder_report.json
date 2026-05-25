@@ -1,0 +1,340 @@
+{
+  "stage": "163",
+  "baseline_stage": "162",
+  "title": "Deterministic Render Plan Builder",
+  "status": "pass",
+  "issues": [],
+  "mode": "DETERMINISTIC_RENDER_PLAN_BUILDER_LOCAL_ONLY",
+  "page": "Page04 Rendering Body",
+  "source_store_path": "samples/stage162_render_packet_store/render_packets.jsonl",
+  "node_count": 6,
+  "edge_count": 5,
+  "critical_path_length": 6,
+  "render_plan_checksum": "90234a4357d73376c10e7cec3f074d02910ba333331054a9832325f9aa949d49",
+  "render_order_count": 6,
+  "deterministic_render_plan_enabled": true,
+  "stage164_surface_draft_dry_run_renderer_ready": true,
+  "render_packet_store_inherited": true,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "provider_execution_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "render_plan_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage162_release_gate": {
+      "status": "pass",
+      "stage": "162",
+      "baseline_stage": "161",
+      "title": "Local Render Packet Store",
+      "issues": [],
+      "rendering_runtime_enabled": false,
+      "generation_runtime_enabled": false,
+      "provider_generation_enabled": false,
+      "runtime_execution_enabled": false,
+      "memory_write_enabled": false,
+      "render_write_enabled": false,
+      "store_write_enabled": false,
+      "runtime_training_enabled": false,
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "render_plan_nodes": {
+      "stage": "stage163",
+      "title": "Stage163 Render Plan Nodes",
+      "status": "pass",
+      "issues": [],
+      "node_count": 6,
+      "nodes": [
+        {
+          "node_id": "render_plan_node_render_packet:synopsis_surface:001",
+          "render_packet_id": "render_packet:synopsis_surface:001",
+          "render_type": "synopsis_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "synopsis",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "a65c087c6547f2a88a027f259eecc9a5a7aec932244b865249db40d2720fdb57",
+          "level": 0,
+          "node2_projection_summary": "Node2 may see summary for synopsis_surface only; no hidden or provider payload."
+        },
+        {
+          "node_id": "render_plan_node_render_packet:scene_surface:001",
+          "render_packet_id": "render_packet:scene_surface:001",
+          "render_type": "scene_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "novel",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "6c67db12bb33b6ae65ffa79854cf08b292f483a9872a2d5a302672bd4e4d784e",
+          "level": 1,
+          "node2_projection_summary": "Node2 may see summary for scene_surface only; no hidden or provider payload."
+        },
+        {
+          "node_id": "render_plan_node_render_packet:beat_surface:001",
+          "render_packet_id": "render_packet:beat_surface:001",
+          "render_type": "beat_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "novel",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "1082b9ccdedd8762e39438f7d5b306d3530cd39b927df37a00e6d65d6fd37002",
+          "level": 2,
+          "node2_projection_summary": "Node2 may see summary for beat_surface only; no hidden or provider payload."
+        },
+        {
+          "node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+          "render_packet_id": "render_packet:chapter_bridge_surface:001",
+          "render_type": "chapter_bridge_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "novel",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "24aa384081aedf442e2fcb94056370fad8c1747bf3bf93a8ba4c088f8212da4d",
+          "level": 3,
+          "node2_projection_summary": "Node2 may see summary for chapter_bridge_surface only; no hidden or provider payload."
+        },
+        {
+          "node_id": "render_plan_node_render_packet:dialogue_surface:001",
+          "render_packet_id": "render_packet:dialogue_surface:001",
+          "render_type": "dialogue_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "drama",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "6023266ad8e827bb243e5bedd5384d7a299b3c79d5a8e2506b7356aa02b050e9",
+          "level": 4,
+          "node2_projection_summary": "Node2 may see summary for dialogue_surface only; no hidden or provider payload."
+        },
+        {
+          "node_id": "render_plan_node_render_packet:stage_direction_surface:001",
+          "render_packet_id": "render_packet:stage_direction_surface:001",
+          "render_type": "stage_direction_surface",
+          "project_id": "korean_drama_family_secret",
+          "surface_channel": "drama",
+          "boundary_level": "NODE2_SURFACE_SAFE",
+          "visibility": "surface_safe",
+          "render_mode": "DRY_RUN_RENDER_ONLY",
+          "checksum": "71cddcf81cac038ec0b07728dc9c953310afb698544cf11c485965415954f359",
+          "level": 5,
+          "node2_projection_summary": "Node2 may see summary for stage_direction_surface only; no hidden or provider payload."
+        }
+      ]
+    },
+    "render_plan_edges": {
+      "stage": "stage163",
+      "title": "Stage163 Render Plan Edges",
+      "status": "pass",
+      "issues": [],
+      "edge_count": 5,
+      "edges": [
+        {
+          "edge_id": "render_plan_edge_render_packet:synopsis_surface:001_to_render_packet:scene_surface:001",
+          "from_node_id": "render_plan_node_render_packet:synopsis_surface:001",
+          "to_node_id": "render_plan_node_render_packet:scene_surface:001",
+          "dependency_type": "deterministic_render_sequence"
+        },
+        {
+          "edge_id": "render_plan_edge_render_packet:scene_surface:001_to_render_packet:beat_surface:001",
+          "from_node_id": "render_plan_node_render_packet:scene_surface:001",
+          "to_node_id": "render_plan_node_render_packet:beat_surface:001",
+          "dependency_type": "deterministic_render_sequence"
+        },
+        {
+          "edge_id": "render_plan_edge_render_packet:beat_surface:001_to_render_packet:chapter_bridge_surface:001",
+          "from_node_id": "render_plan_node_render_packet:beat_surface:001",
+          "to_node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+          "dependency_type": "deterministic_render_sequence"
+        },
+        {
+          "edge_id": "render_plan_edge_render_packet:chapter_bridge_surface:001_to_render_packet:dialogue_surface:001",
+          "from_node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+          "to_node_id": "render_plan_node_render_packet:dialogue_surface:001",
+          "dependency_type": "deterministic_render_sequence"
+        },
+        {
+          "edge_id": "render_plan_edge_render_packet:dialogue_surface:001_to_render_packet:stage_direction_surface:001",
+          "from_node_id": "render_plan_node_render_packet:dialogue_surface:001",
+          "to_node_id": "render_plan_node_render_packet:stage_direction_surface:001",
+          "dependency_type": "deterministic_render_sequence"
+        }
+      ]
+    },
+    "render_order": {
+      "stage": "stage163",
+      "title": "Stage163 Deterministic Render Order",
+      "status": "pass",
+      "issues": [],
+      "order_count": 6,
+      "render_order": [
+        "render_packet:synopsis_surface:001",
+        "render_packet:scene_surface:001",
+        "render_packet:beat_surface:001",
+        "render_packet:chapter_bridge_surface:001",
+        "render_packet:dialogue_surface:001",
+        "render_packet:stage_direction_surface:001"
+      ]
+    },
+    "render_plan_integrity": {
+      "stage": "stage163",
+      "title": "Stage163 Render Plan Integrity",
+      "status": "pass",
+      "issues": [],
+      "node_count": 6,
+      "edge_count": 5,
+      "critical_path_length": 6
+    },
+    "deterministic_render_plan_checksum": {
+      "stage": "stage163",
+      "title": "Stage163 Deterministic Render Plan Checksum",
+      "status": "pass",
+      "issues": [],
+      "render_plan_checksum": "90234a4357d73376c10e7cec3f074d02910ba333331054a9832325f9aa949d49"
+    },
+    "node2_render_plan_projection_matrix": {
+      "stage": "stage163",
+      "title": "Stage163 Node2 Render Plan Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "rules": [
+        {
+          "name": "node2_render_plan_summary_only",
+          "node2_surface_allowed": true,
+          "hidden_render_payload_blocked": true,
+          "provider_generation_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "hidden_render_payload_blocked",
+          "node2_surface_allowed": true,
+          "hidden_render_payload_blocked": true,
+          "provider_generation_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "provider_generation_payload_blocked",
+          "node2_surface_allowed": true,
+          "hidden_render_payload_blocked": true,
+          "provider_generation_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "write_handle_blocked",
+          "node2_surface_allowed": true,
+          "hidden_render_payload_blocked": true,
+          "provider_generation_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        }
+      ],
+      "node2_raw_reveal_access": 0,
+      "node2_hidden_render_payload_access": 0
+    },
+    "render_plan_policy": {
+      "stage": "stage163",
+      "title": "Stage163 Render Plan Policy",
+      "status": "pass",
+      "issues": [],
+      "rules": [
+        {
+          "name": "deterministic_render_plan_builder",
+          "deterministic": true,
+          "dry_run_only": true,
+          "runtime_render_allowed": false,
+          "provider_generation_allowed": false,
+          "write_allowed": false,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "runtime_render_disabled",
+          "deterministic": true,
+          "dry_run_only": true,
+          "runtime_render_allowed": false,
+          "provider_generation_allowed": false,
+          "write_allowed": false,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "provider_generation_disabled",
+          "deterministic": true,
+          "dry_run_only": true,
+          "runtime_render_allowed": false,
+          "provider_generation_allowed": false,
+          "write_allowed": false,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "render_plan_write_disabled",
+          "deterministic": true,
+          "dry_run_only": true,
+          "runtime_render_allowed": false,
+          "provider_generation_allowed": false,
+          "write_allowed": false,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        },
+        {
+          "name": "canon_mutation_disabled",
+          "deterministic": true,
+          "dry_run_only": true,
+          "runtime_render_allowed": false,
+          "provider_generation_allowed": false,
+          "write_allowed": false,
+          "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage163",
+      "title": "Stage163 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "node_count": 6,
+      "edge_count": 5,
+      "render_order_count": 6,
+      "checksum_prefix": "90234a4357d73376",
+      "runtime_execution_count": 0,
+      "provider_generation_count": 0,
+      "write_operation_count": 0
+    }
+  }
+}
