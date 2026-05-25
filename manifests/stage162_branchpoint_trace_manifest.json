@@ -1,0 +1,12 @@
+{
+  "stage": "stage162",
+  "baseline_stage": "stage161",
+  "branchpoint_lineage_preserved": true,
+  "traced_symbols": [
+    "v1700.local_render_packet_store",
+    "v1700.stage162",
+    "v1700.gates.stage162_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0
+}

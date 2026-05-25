@@ -1,0 +1,352 @@
+--- original/src/v1700/page04_release_seal/report.py	2026-05-25 12:36:52.581689830 +0000
++++ full/src/v1700/page04_release_seal/report.py	2026-05-25 12:26:55.789393037 +0000
+@@ -46,6 +46,31 @@
+     f"{PACK_DIR}/regression_snapshot.json",
+ }
+ 
++CORE_PAGE04_INVARIANTS: dict[str, int | bool] = {
++    "provider_default_calls": 0,
++    "live_provider_call_count_in_release_gate": 0,
++    "provider_generation_count": 0,
++    "runtime_execution_count": 0,
++    "write_operation_count": 0,
++    "node2_raw_reveal_access": 0,
++    "boundary_violation_count": 0,
++    "raw_manuscript_provider_leakage": 0,
++    "raw_manuscript_cross_project_leakage": 0,
++    "credential_leakage": 0,
++    "rendering_runtime_enabled": False,
++    "generation_runtime_enabled": False,
++    "provider_generation_enabled": False,
++    "runtime_execution_enabled": False,
++    "memory_write_enabled": False,
++    "runtime_training_enabled": False,
++}
++
++OPTIONAL_PAGE04_INVARIANTS: dict[str, int | bool] = {
++    "render_write_enabled": False,
++    "quality_gate_write_enabled": False,
++    "canon_mutation_enabled": False,
++}
++
+ 
+ def run_stage166_page04_release_seal(root: Path | None = None) -> dict[str, Any]:
+     root = root or Path(__file__).resolve().parents[3]
+@@ -66,7 +91,7 @@
+ 
+     stage_chain = _build_stage_chain(root, gates)
+     release_matrix = _build_release_seal_matrix(stage_chain)
+-    invariant_freeze = _build_invariant_freeze(root, gates[-1])
++    invariant_freeze = _build_invariant_freeze(root, gates)
+     connectivity = _build_nexus_connectivity_matrix(root)
+     transition = _build_transition_criteria(root, stage_chain, invariant_freeze, connectivity)
+     regression = _build_regression_snapshot(root)
+@@ -184,37 +209,107 @@
+     return {"stage": TARGET_STAGE, "title": "Page04 Release Seal Matrix", "status": "pass" if not issues else "blocked", "issues": issues, "sealed_page04": not issues, "check_count": len(checks), "checks": [check.to_dict() for check in checks]}
+ 
+ 
+-def _build_invariant_freeze(root: Path, stage165_gate: dict[str, Any]) -> dict[str, Any]:
+-    invariants: tuple[Page04InvariantFreeze, ...] = (
+-        Page04InvariantFreeze("provider_default_calls", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("live_provider_call_count_in_release_gate", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("provider_generation_count", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("runtime_execution_count", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("write_operation_count", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("node2_raw_reveal_access", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("boundary_violation_count", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("raw_manuscript_provider_leakage", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("raw_manuscript_cross_project_leakage", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("credential_leakage", 0, "stage165_release_gate"),
+-        Page04InvariantFreeze("rendering_runtime_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("generation_runtime_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("provider_generation_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("runtime_execution_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("render_write_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("quality_gate_write_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("memory_write_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("canon_mutation_enabled", False, "stage165_release_gate"),
+-        Page04InvariantFreeze("runtime_training_enabled", False, "stage165_release_gate"),
++def _build_invariant_freeze(root: Path, gates: tuple[dict[str, Any], ...]) -> dict[str, Any]:
++    """Freeze Page04 safety invariants across every upstream report and gate.
++
++    Stage166 is a page-level seal, so it must not trust only the most recent
++    Stage165 report. Any Stage161~Stage165 evidence drift should block the seal
++    even when the historical report still says ``status: pass``.
++    """
++    invariants: tuple[Page04InvariantFreeze, ...] = tuple(
++        Page04InvariantFreeze(name, expected, "page04_upstream_reports_and_gates")
++        for name, expected in {**CORE_PAGE04_INVARIANTS, **OPTIONAL_PAGE04_INVARIANTS}.items()
+     )
+-    report = _load_json(root / "release/current/stage165_render_quality_boundary_preflight_report.json") or {}
++    sources = _upstream_evidence_sources(root, gates)
+     issues: list[str] = []
+-    for invariant in invariants:
+-        for evidence_name, payload in (("stage165_gate", stage165_gate), ("stage165_report", report)):
+-            if invariant.name not in payload:
+-                issues.append(f"{evidence_name}_invariant_missing:{invariant.name}")
+-            elif payload.get(invariant.name) != invariant.frozen_value:
+-                issues.append(f"{evidence_name}_invariant_drift:{invariant.name}")
+-    return {"stage": TARGET_STAGE, "title": "Page04 Invariant Freeze", "status": "pass" if not issues else "blocked", "issues": issues, "frozen": [item.to_dict() for item in invariants], "provider_zero": True, "write_zero": True, "generation_zero": True, "node2_boundary_zero": True}
++    evidence_matrix: list[dict[str, Any]] = []
++
++    for source_name, source_path, payload in sources:
++        for invariant_name, expected in CORE_PAGE04_INVARIANTS.items():
++            if invariant_name not in payload:
++                issues.append(f"{source_name}_invariant_missing:{invariant_name}")
++                evidence_matrix.append(
++                    {
++                        "source": source_name,
++                        "path": source_path,
++                        "name": invariant_name,
++                        "expected": expected,
++                        "observed": None,
++                        "status": "blocked",
++                        "reason": "missing",
++                    }
++                )
++                continue
++            observed = payload.get(invariant_name)
++            status = "pass" if observed == expected else "blocked"
++            if status != "pass":
++                issues.append(f"{source_name}_invariant_drift:{invariant_name}")
++            evidence_matrix.append(
++                {
++                    "source": source_name,
++                    "path": source_path,
++                    "name": invariant_name,
++                    "expected": expected,
++                    "observed": observed,
++                    "status": status,
++                    "reason": "match" if status == "pass" else "drift",
++                }
++            )
++
++        for invariant_name, expected in OPTIONAL_PAGE04_INVARIANTS.items():
++            if invariant_name not in payload:
++                evidence_matrix.append(
++                    {
++                        "source": source_name,
++                        "path": source_path,
++                        "name": invariant_name,
++                        "expected": expected,
++                        "observed": None,
++                        "status": "skipped",
++                        "reason": "optional_missing",
++                    }
++                )
++                continue
++            observed = payload.get(invariant_name)
++            status = "pass" if observed == expected else "blocked"
++            if status != "pass":
++                issues.append(f"{source_name}_optional_invariant_drift:{invariant_name}")
++            evidence_matrix.append(
++                {
++                    "source": source_name,
++                    "path": source_path,
++                    "name": invariant_name,
++                    "expected": expected,
++                    "observed": observed,
++                    "status": status,
++                    "reason": "match" if status == "pass" else "drift",
++                }
++            )
++
++    return {
++        "stage": TARGET_STAGE,
++        "title": "Page04 Invariant Freeze",
++        "status": "pass" if not issues else "blocked",
++        "issues": issues,
++        "frozen": [item.to_dict() for item in invariants],
++        "evidence_source_count": len(sources),
++        "evidence_check_count": len(evidence_matrix),
++        "evidence_matrix": evidence_matrix,
++        "provider_zero": not issues,
++        "write_zero": not issues,
++        "generation_zero": not issues,
++        "node2_boundary_zero": not issues,
++    }
++
++
++def _upstream_evidence_sources(root: Path, gates: tuple[dict[str, Any], ...]) -> list[tuple[str, str, dict[str, Any]]]:
++    sources: list[tuple[str, str, dict[str, Any]]] = []
++    for (stage, _title, report_path, gate_path), gate in zip(PAGE04_UPSTREAM_STAGES, gates):
++        report_payload = _load_json(root / report_path) or {}
++        gate_payload = _load_json(root / gate_path) or gate or {}
++        sources.append((f"stage{stage}_report", report_path, report_payload))
++        sources.append((f"stage{stage}_gate", gate_path, gate_payload))
++    return sources
+ 
+ 
+ def _build_nexus_connectivity_matrix(root: Path) -> dict[str, Any]:
+--- original/src/v1700/gates/stage166_release_gate.py	2026-05-25 12:36:52.282909948 +0000
++++ full/src/v1700/gates/stage166_release_gate.py	2026-05-25 12:26:55.790291806 +0000
+@@ -7,15 +7,8 @@
+ from v1700.gates.stage165_release_gate import run_stage165_release_gate
+ from v1700.page04_release_seal import run_stage166_page04_release_seal
+ 
+-_CACHE: dict[str, dict[str, Any]] = {}
+-
+-
+ def run_stage166_release_gate(root: Path | None = None) -> dict[str, Any]:
+     root = root or Path(__file__).resolve().parents[3]
+-    key = str(root.resolve())
+-    if key in _CACHE:
+-        return _CACHE[key]
+-
+     baseline = _baseline_gate(root)
+     stage = run_stage166_page04_release_seal(root)
+     checks = {
+@@ -66,7 +59,6 @@
+     out = root / "release/current/stage166_release_gate_report.json"
+     out.parent.mkdir(parents=True, exist_ok=True)
+     out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+-    _CACHE[key] = result
+     return result
+ 
+ 
+--- original/tests/test_stage166_page04_release_seal.py	2026-05-25 12:36:52.640699508 +0000
++++ full/tests/test_stage166_page04_release_seal.py	2026-05-25 12:31:05.761182219 +0000
+@@ -8,6 +8,26 @@
+ from v1700.gates.stage166_release_gate import run_stage166_release_gate
+ 
+ ROOT = Path(__file__).resolve().parents[1]
++COPY_IGNORE = shutil.ignore_patterns(
++    ".git",
++    "__pycache__",
++    ".pytest_cache",
++    "*.pyc",
++    "*.zip",
++    "stage8*.json",
++    "stage9*.json",
++    "stage10*.json",
++    "stage11*.json",
++    "stage12*.json",
++    "stage13*.json",
++    "stage14*.json",
++    "stage15*.json",
++    "stage160*.json",
++)
++
++
++def _copy_repo_to(sandbox: Path) -> None:
++    shutil.copytree(ROOT, sandbox, ignore=COPY_IGNORE)
+ 
+ 
+ def _force_stage166(root: Path) -> None:
+@@ -78,8 +98,7 @@
+ 
+ def test_stage166_blocks_missing_historical_artifact(tmp_path: Path) -> None:
+     sandbox = tmp_path / "repo"
+-    ignore = shutil.ignore_patterns(".git", "__pycache__", ".pytest_cache", "*.pyc")
+-    shutil.copytree(ROOT, sandbox, ignore=ignore)
++    _copy_repo_to(sandbox)
+     _force_stage166(sandbox)
+     missing = sandbox / "release/current/stage165_release_gate_report.json"
+     missing.unlink()
+@@ -90,8 +109,7 @@
+ 
+ def test_stage166_blocks_stage165_invariant_drift(tmp_path: Path) -> None:
+     sandbox = tmp_path / "repo"
+-    ignore = shutil.ignore_patterns(".git", "__pycache__", ".pytest_cache", "*.pyc")
+-    shutil.copytree(ROOT, sandbox, ignore=ignore)
++    _copy_repo_to(sandbox)
+     _force_stage166(sandbox)
+ 
+     report_path = sandbox / "release/current/stage165_render_quality_boundary_preflight_report.json"
+@@ -102,3 +120,55 @@
+     result = run_stage166_page04_release_seal(sandbox)
+     assert result["status"] == "blocked"
+     assert any("stage165_report_invariant_drift:provider_generation_enabled" in issue for issue in result["issues"])
++
++
++
++def test_stage166_blocks_any_upstream_gate_invariant_drift(tmp_path: Path) -> None:
++    sandbox = tmp_path / "repo"
++    _copy_repo_to(sandbox)
++    _force_stage166(sandbox)
++
++    report_path = sandbox / "release/current/stage164_release_gate_report.json"
++    report = json.loads(report_path.read_text(encoding="utf-8"))
++    report["provider_generation_enabled"] = True
++    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++
++    result = run_stage166_page04_release_seal(sandbox)
++    assert result["status"] == "blocked"
++    assert any("stage164_gate_invariant_drift:provider_generation_enabled" in issue for issue in result["issues"])
++
++
++def test_stage166_blocks_any_upstream_report_invariant_drift(tmp_path: Path) -> None:
++    sandbox = tmp_path / "repo"
++    _copy_repo_to(sandbox)
++    _force_stage166(sandbox)
++
++    report_path = sandbox / "release/current/stage162_local_render_packet_store_report.json"
++    report = json.loads(report_path.read_text(encoding="utf-8"))
++    report["write_operation_count"] = 1
++    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++
++    result = run_stage166_page04_release_seal(sandbox)
++    assert result["status"] == "blocked"
++    assert any("stage162_report_invariant_drift:write_operation_count" in issue for issue in result["issues"])
++
++
++def test_stage166_release_gate_rechecks_after_evidence_change(tmp_path: Path) -> None:
++    sandbox = tmp_path / "repo"
++    _copy_repo_to(sandbox)
++    _force_stage166(sandbox)
++
++    first = run_stage166_release_gate(sandbox)
++    assert first["status"] == "pass"
++
++    report_path = sandbox / "release/current/stage165_render_quality_boundary_preflight_report.json"
++    report = json.loads(report_path.read_text(encoding="utf-8"))
++    report["provider_generation_enabled"] = True
++    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++
++    second = run_stage166_release_gate(sandbox)
++    assert second["status"] == "blocked"
++    assert any(
++        "page04_invariant_freeze:stage165_report_invariant_drift:provider_generation_enabled" in issue
++        for issue in second["stage166"]["issues"]
++    )
+--- original/SHA256SUMS.txt	2026-05-25 12:36:49.789767055 +0000
++++ full/SHA256SUMS.txt	2026-05-25 12:35:01.605791535 +0000
+@@ -1533,9 +1533,9 @@
+ d57cf3b1b9eaff36a6d0c3ca2d0f37944abed8b3d776fb5d7c7191cab856e660  release/current/stage165_render_quality_boundary_preflight_pack/stage166_entry_criteria.json
+ 11ebd92471e33f5887931d3cdbe1db260d0346af873f951356312337991087f9  release/current/stage165_render_quality_boundary_preflight_report.json
+ 994d9b9460ee5a8f5285fc54e9c231d4c437c3e4d6a24cb90dc4d1243b6416c5  release/current/stage166_page04_release_seal_pack/page04_artifact_index.json
+-2d50b9e41c5d021fc430a765f5d922712953f8ea389cb074186d16180fc9b06f  release/current/stage166_page04_release_seal_pack/page04_invariant_freeze.json
++3b82a3e0c6c3e91fd3ded3677314e3a62a8890182e9b210af545d928347c7847  release/current/stage166_page04_release_seal_pack/page04_invariant_freeze.json
+ 14b5b698f7cc06ef4cd5b0b098a14f45c16245ef833f5e655accb107b0398c71  release/current/stage166_page04_release_seal_pack/page04_nexus_connectivity_matrix.json
+-d5e93b10fe41d210f4c13dcedb4b2052ecb0aa30081cde1865b68b0a6a5121c5  release/current/stage166_page04_release_seal_pack/page04_release_seal.json
++47ecaa6a38aaf25282aae96588d8b1c07e4d08822adf7e343c6d4aa7220c1c8f  release/current/stage166_page04_release_seal_pack/page04_release_seal.json
+ b4ff9371d38d3f2628bdcbd8e2b72464bc58a7cf65a1850337fa63106252e7c4  release/current/stage166_page04_release_seal_pack/page04_release_seal_matrix.json
+ 2d60886d55d493cf8e7ec878b0c1d8c79e9d6b55bfbb338d7590dbcfe4320596  release/current/stage166_page04_release_seal_pack/page04_stage_chain.json
+ 9989a60862af8f9fbedcec8c1eef86e50cbee0fc896147cafe23e43cb70069f9  release/current/stage166_page04_release_seal_pack/page04_transition_criteria.json
+@@ -1955,7 +1955,7 @@
+ 4da9ba2732fb0e5564f2c3f820e16593d13bd54943790b177934f5a54e924773  src/v1700/gates/stage163_release_gate.py
+ 59dc96bdd142c781d6990d1ee7b831a22dda2ba6b1396d993d9b106671205da0  src/v1700/gates/stage164_release_gate.py
+ 4c546a306fd8cfc56c25437f3f9e78e430574a1ac71d4012d70a3ac590132b42  src/v1700/gates/stage165_release_gate.py
+-697205744b4415fbb5ded6adda1d8d2c6b453f70a08f7e0ba53185fbdbe0fc32  src/v1700/gates/stage166_release_gate.py
++2c5ee99249eb06f94542019afa617ad9afadfa4c36ec20fdc36192fb62718456  src/v1700/gates/stage166_release_gate.py
+ 2cbadcfa364cc32566eec54a377cc655ddfa825fd349ed8ce2662391bb027e2c  src/v1700/gates/stage72_2_release_gate.py
+ cdff695347f5b3f7d1d6d21d67e1eab7b424b624d6a6cd6e5e033c08cca9b0b5  src/v1700/gates/stage72_3_release_gate.py
+ fbe4571c96b3f1ebbe5ccfca9864215aa58e65a1b82ebf9fed0d8cff86233b60  src/v1700/gates/stage73_1_release_gate.py
+@@ -2334,7 +2334,7 @@
+ a7d8f3b62f46603a8c66fcec592e6a9389804a78f4e1e3a0e923d4eb78d93300  src/v1700/page03_release_seal/report.py
+ a7a5ef74239081f91110f1fcf815c3f2f1c85aaf247502dce6fbba2c1a53759f  src/v1700/page04_release_seal/__init__.py
+ 83d9277d8d72ab6c955b8cc340d4b3a0574657e19a65cf3344f87aef29634844  src/v1700/page04_release_seal/contracts.py
+-0a1ff04bcd855ca4cf0260c691703cf3de25ea6cfb33ae255d15b3b94e6989b9  src/v1700/page04_release_seal/report.py
++913430308261503693280e80bed31c5628717273d56b2f357acd2e968125356a  src/v1700/page04_release_seal/report.py
+ 3ab9f639ef5aa54b0fb90307ff417fd3dab27adb6ce505fafcad4f08edc5ebfe  src/v1700/plan_graph_builder/__init__.py
+ e1d82aac210238b6059081198dd57f218a3df85f580df60afd612c4069bf2820  src/v1700/plan_graph_builder/builder.py
+ 6a71103542bc42abbd2f578ff481bd5ad30863208dad325cbb58f83845b5c923  src/v1700/plan_graph_builder/contracts.py
+@@ -2951,7 +2951,7 @@
+ bfd96a147cde1ab133bb55e3114d7f6e1f9592ffc43d802dd80f4599607b4a16  tests/test_stage163_deterministic_render_plan_builder.py
+ d11a00434deb52d81574f25c6903fb11d57c8ceb7cc26b13fca83a515dca06a5  tests/test_stage164_surface_draft_dry_run_renderer.py
+ 61c35a08d736178fa40fb42085bce28625e4115c715153a3b7c69d1cbdce7075  tests/test_stage165_render_quality_boundary_preflight.py
+-fc3d2d354a31bba957eed31f7f919a558ae3dcac343a87166403f1f14a28db33  tests/test_stage166_page04_release_seal.py
++52934ad8fe5b1ea51c127d4bffa35c85fa51673b6fb4b499b26be37133b38526  tests/test_stage166_page04_release_seal.py
+ f742a8c55bf5a6b14e3e259b6db529a44dede021461bcdb1bbf05dcb2cc6ac8e  tests/test_stage72_1_gitnexus_optional_sidecar.py
+ ff20f0b8dda6d19654060f9507321ae484ba57acd1c6f839460a752681067bd9  tests/test_stage72_1_graph_nexus_release_gate.py
+ e4341777023b5ca5c3fd6d7c65c6ad619d14af07d45af643d4c6edc1211f9e74  tests/test_stage72_1_graph_nexus_three_graphs.py

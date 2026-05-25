@@ -1,0 +1,140 @@
+{
+  "stage": "162",
+  "baseline_stage": "161",
+  "title": "Local Render Packet Store",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage161_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage162_report_pass": {
+      "status": "pass"
+    },
+    "render_packet_store_mode_pass": {
+      "status": "pass"
+    },
+    "render_packet_catalog_pass": {
+      "status": "pass"
+    },
+    "render_packet_schema_validation_pass": {
+      "status": "pass"
+    },
+    "render_packet_checksum_index_pass": {
+      "status": "pass"
+    },
+    "read_only_render_access_policy_pass": {
+      "status": "pass"
+    },
+    "node2_render_projection_pass": {
+      "status": "pass"
+    },
+    "render_packet_lineage_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "rendering_runtime_disabled": {
+      "status": "pass"
+    },
+    "provider_generation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_execution_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage162": {
+    "status": "pass",
+    "stage": "162",
+    "baseline_stage": "161",
+    "title": "Local Render Packet Store",
+    "issues": [],
+    "mode": "LOCAL_RENDER_PACKET_STORE_READ_ONLY",
+    "render_packet_count": 6,
+    "checksum_count": 6,
+    "read_only_store_enabled": true,
+    "render_packet_store_enabled": true,
+    "rendering_contract_inherited": true,
+    "stage163_render_plan_builder_ready": true,
+    "rendering_runtime_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_generation_enabled": false,
+    "runtime_execution_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "render_write_enabled": false,
+    "store_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

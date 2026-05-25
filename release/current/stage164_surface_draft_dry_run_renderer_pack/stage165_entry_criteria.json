@@ -1,0 +1,16 @@
+{
+  "stage": "stage164",
+  "title": "Stage165 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "criteria": {
+    "stage164_report_pass": true,
+    "surface_draft_units_present": true,
+    "dry_run_trace_present": true,
+    "provider_generation_disabled": true,
+    "runtime_render_disabled": true,
+    "write_operations_blocked": true,
+    "node2_surface_only": true
+  },
+  "next_stage": "stage165_render_quality_boundary_preflight"
+}

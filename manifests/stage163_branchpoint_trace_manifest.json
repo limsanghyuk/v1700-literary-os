@@ -1,0 +1,14 @@
+{
+  "stage": "stage163",
+  "baseline_stage": "stage162",
+  "branchpoint_lineage_preserved": true,
+  "branchpoint": "Page04 Rendering Body -> Deterministic Render Plan Builder",
+  "forbidden_expansions": [
+    "provider_generation",
+    "runtime_rendering",
+    "render_write",
+    "canon_mutation",
+    "runtime_training",
+    "hidden_reveal_projection"
+  ]
+}

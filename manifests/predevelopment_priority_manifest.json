@@ -1,14 +1,7 @@
 {
   "priority": 0,
-  "name": "Mandatory Pre-Development Protocol",
+  "name": "Mandatory Pre-Development Protocol V1.1",
   "status": "active",
-  "applies_before": [
-    "proposal",
-    "blueprint",
-    "roadmap",
-    "implementation",
-    "release_packaging"
-  ],
   "canonical_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
   "workflow_documents": [
     "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
@@ -16,32 +9,22 @@
     "docs/workflow/WORKFLOW.md"
   ],
   "source_documents": [
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\00_GitNexus_Development_Preflight_Guide.docx",
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\01_PreDevelopment_Mandatory_Checklist_GitNexus_GraphNexus_Branchpoint.docx",
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\PREFLIGHT_PRIORITY_MANIFEST.json",
     "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/PREFLIGHT_GUIDE_v1.1.md",
     "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/WORKFLOW.md",
     "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/BRANCH_STRATEGY.md"
   ],
   "must_check": [
-    "session_start_sync",
-    "gitnexus_index_freshness",
-    "list_repos",
-    "query",
-    "context",
-    "impact",
-    "detect_changes",
-    "concept_impact",
-    "survival_matrix",
-    "symbol_to_branchpoint_trace",
-    "shape_check",
-    "change_review",
+    "github_main_state",
+    "latest_stage_tag",
+    "mandatory_predevelopment_check",
+    "gitnexus_or_python_fallback",
+    "proposal_blueprint",
     "release_gate_integration",
     "repo_doctor",
+    "metadata_consistency",
+    "release_asset_integrity",
     "clean_zip_packaging",
-    "branch_pr_release_authority",
-    "release_assets_triplet",
-    "session_end_push"
+    "release_assets_triplet"
   ],
   "invariants": {
     "provider_default_calls": 0,
@@ -56,7 +39,5 @@
     "gitnexus_runtime_dependency_required": false,
     "github_main_green_required": true,
     "release_assets_triplet_required": true
-  },
-  "stage101_status": "applied",
-  "workflow_upgrade_status": "v1_1_stage160_applied"
+  }
 }

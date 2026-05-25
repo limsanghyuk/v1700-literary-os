@@ -1,0 +1,12 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Release Seal",
+  "status": "pass",
+  "issues": [],
+  "page04_sealed": true,
+  "page04_release_checksum": "c6d8f362a4e8f6d984ec3d4468552158542bce8836dc0fd3dc770b0bfcc495c7",
+  "sealed_stage_range": "Stage161~Stage166",
+  "next_stage": "stage167",
+  "next_stage_title": "Evaluation Contract",
+  "next_page": "Page05 Evaluation Body"
+}

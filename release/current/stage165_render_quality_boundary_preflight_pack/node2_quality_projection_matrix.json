@@ -1,0 +1,13 @@
+{
+  "stage": "stage165",
+  "title": "Stage165 Node2 Quality Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "node2_surface_quality_summary_allowed": true,
+  "hidden_payload_blocked": true,
+  "provider_payload_blocked": true,
+  "write_handle_blocked": true,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0,
+  "boundary_violation_count": 0
+}

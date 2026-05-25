@@ -12,11 +12,11 @@
     "status": "pass",
     "issues": [],
     "gitnexus": {
-      "installed": true,
-      "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.CMD",
+      "installed": false,
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
       "optional_runtime_dependency": false,
       "fallback_available": true,
-      "error": ""
+      "error": "gitnexus binary not installed; npx path is available for optional use"
     },
     "gitnexus_optional_only": true,
     "python_fallback_available": true,
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 985
+        "node_count": 1025
       },
       "narrative_summary": {
         "available": true,
@@ -1136,6 +1136,84 @@
     "stage": "160",
     "baseline_stage": "159",
     "title": "Page03 Release Seal",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage161_release_gate": {
+    "status": "pass",
+    "stage": "161",
+    "baseline_stage": "160",
+    "title": "Rendering Contract",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage162_release_gate": {
+    "status": "pass",
+    "stage": "162",
+    "baseline_stage": "161",
+    "title": "Local Render Packet Store",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage163_release_gate": {
+    "status": "pass",
+    "stage": "163",
+    "baseline_stage": "162",
+    "title": "Deterministic Render Plan Builder",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage164_release_gate": {
+    "status": "pass",
+    "stage": "164",
+    "baseline_stage": "163",
+    "title": "Surface Draft Dry-Run Renderer",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage165_release_gate": {
+    "status": "pass",
+    "stage": "165",
+    "baseline_stage": "164",
+    "title": "Render Quality and Boundary Preflight",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage166_release_gate": {
+    "status": "pass",
+    "stage": "166",
+    "baseline_stage": "165",
+    "title": "Page04 Release Seal",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

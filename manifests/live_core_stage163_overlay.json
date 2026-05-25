@@ -1,0 +1,10 @@
+{
+  "active_version": "stage163",
+  "adds": [
+    "stage163_deterministic_render_plan_builder",
+    "stage163_release_gate"
+  ],
+  "baseline_stage": "stage162",
+  "next_stage": "stage164",
+  "canonical_package": "V1700_stage163_deterministic_render_plan_builder_release_integrated_repository_with_artifacts.zip"
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "stage163",
+  "active_version": "stage163",
+  "canonical_package": "V1700_stage163_deterministic_render_plan_builder_release_integrated_repository_with_artifacts.zip",
+  "sha256_sidecar": "V1700_stage163_deterministic_render_plan_builder_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_authority": "release sidecar file is authoritative",
+  "filelist": "FILELIST.txt",
+  "sha256_sums": "SHA256SUMS.txt",
+  "release_report": "release/current/stage163_deterministic_render_plan_builder_report.json",
+  "release_gate_report": "release/current/stage163_release_gate_report.json",
+  "package_manifest": "package_manifest.json"
+}

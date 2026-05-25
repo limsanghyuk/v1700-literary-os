@@ -2,48 +2,45 @@
   "stage": "predevelopment",
   "status": "pass",
   "issues": [],
+  "active_version": "stage166",
   "priority_manifest": "manifests/predevelopment_priority_manifest.json",
   "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
   "workflow_documents": [
-    "docs/workflow/WORKFLOW.md",
+    "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
     "docs/workflow/BRANCH_STRATEGY.md",
-    "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md"
+    "docs/workflow/WORKFLOW.md"
   ],
   "gitnexus": {
     "installed": true,
-    "status": "pass",
-    "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
-    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage160_clean\nIndexed: 2026. 5. 25. PM 3:12:11\nIndexed commit: 3280938\nCurrent commit: 3280938\nStatus: ✅ up-to-date\n",
+    "status": "fallback_required",
+    "command": "C:\\Users\\inyoung pharm\\AppData\\Roaming\\npm\\gitnexus.cmd",
+    "output_excerpt": "Repository not indexed.\nRun: gitnexus analyze\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {
     "provider_default_calls": true,
-    "stage101_gate_pass": true,
     "active_stage_gate_pass": true,
     "main_release_gate_pass": true,
     "branchpoint_lineage_preserved": true,
     "python_fallback_required": true,
-    "gitnexus_runtime_dependency_required_false": true
+    "gitnexus_runtime_dependency_required_false": true,
+    "github_main_green_required": true,
+    "release_assets_triplet_required": true,
+    "release_zip_declared": true,
+    "release_sidecar_declared": true,
+    "sha256sums_present": true
   },
   "must_check": [
-    "session_start_sync",
-    "gitnexus_index_freshness",
-    "list_repos",
-    "query",
-    "context",
-    "impact",
-    "detect_changes",
-    "concept_impact",
-    "survival_matrix",
-    "symbol_to_branchpoint_trace",
-    "shape_check",
-    "change_review",
+    "github_main_state",
+    "latest_stage_tag",
+    "mandatory_predevelopment_check",
+    "gitnexus_or_python_fallback",
+    "proposal_blueprint",
     "release_gate_integration",
     "repo_doctor",
+    "metadata_consistency",
+    "release_asset_integrity",
     "clean_zip_packaging",
-    "branch_pr_release_authority",
-    "release_assets_triplet",
-    "session_end_push"
-  ],
-  "workflow_upgrade_status": "v1_1_stage160_applied"
+    "release_assets_triplet"
+  ]
 }

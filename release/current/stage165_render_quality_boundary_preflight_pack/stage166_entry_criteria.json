@@ -1,0 +1,17 @@
+{
+  "stage": "stage165",
+  "title": "Stage166 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "criteria": {
+    "stage165_report_pass": true,
+    "quality_score_threshold_pass": true,
+    "draft_unit_count_nonzero": true,
+    "trace_count_matches_units": true,
+    "provider_generation_disabled": true,
+    "runtime_render_disabled": true,
+    "render_write_disabled": true,
+    "node2_boundary_clean": true,
+    "quality_boundary_checksum_present": true
+  }
+}

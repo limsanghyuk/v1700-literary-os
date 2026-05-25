@@ -1,0 +1,93 @@
+{
+  "stage": "stage164",
+  "title": "Stage164 Surface Draft Units",
+  "status": "pass",
+  "issues": [],
+  "draft_unit_count": 6,
+  "units": [
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:synopsis_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:synopsis_surface:001",
+      "render_packet_id": "render_packet:synopsis_surface:001",
+      "render_type": "synopsis_surface",
+      "surface_channel": "synopsis",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[00|synopsis|synopsis_surface] render_packet:synopsis_surface:001: Node2 may see summary for synopsis_surface only; no hidden or provider payload.",
+      "checksum": "a8c77de77daab7474da023e423552037f4e62c59b9ea293d0aa4610185331515",
+      "order_index": 0,
+      "node2_projection_summary": "surface_draft_summary:render_packet:synopsis_surface:001:[00|synopsis|synopsis_surface] render_packet:synopsis_surface:001: Node2 may see summary for syn"
+    },
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:scene_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:scene_surface:001",
+      "render_packet_id": "render_packet:scene_surface:001",
+      "render_type": "scene_surface",
+      "surface_channel": "novel",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[01|novel|scene_surface] render_packet:scene_surface:001: Node2 may see summary for scene_surface only; no hidden or provider payload.",
+      "checksum": "ded8c782b70fb26d3a5969382e6b30191e1dc8f7fa39fcd90733c85187a6008e",
+      "order_index": 1,
+      "node2_projection_summary": "surface_draft_summary:render_packet:scene_surface:001:[01|novel|scene_surface] render_packet:scene_surface:001: Node2 may see summary for scene_surfac"
+    },
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:beat_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:beat_surface:001",
+      "render_packet_id": "render_packet:beat_surface:001",
+      "render_type": "beat_surface",
+      "surface_channel": "novel",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[02|novel|beat_surface] render_packet:beat_surface:001: Node2 may see summary for beat_surface only; no hidden or provider payload.",
+      "checksum": "33b064543cf5c2a353a788ad218a838f7c23bfd036ed249fb45189abf75540d5",
+      "order_index": 2,
+      "node2_projection_summary": "surface_draft_summary:render_packet:beat_surface:001:[02|novel|beat_surface] render_packet:beat_surface:001: Node2 may see summary for beat_surface o"
+    },
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:chapter_bridge_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+      "render_packet_id": "render_packet:chapter_bridge_surface:001",
+      "render_type": "chapter_bridge_surface",
+      "surface_channel": "novel",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[03|novel|chapter_bridge_surface] render_packet:chapter_bridge_surface:001: Node2 may see summary for chapter_bridge_surface only; no hidden or provider payload.",
+      "checksum": "9ed17c6a1d759c834b4422c9d271f4f1d605c139f25fee3a5e1f23b24cd563fb",
+      "order_index": 3,
+      "node2_projection_summary": "surface_draft_summary:render_packet:chapter_bridge_surface:001:[03|novel|chapter_bridge_surface] render_packet:chapter_bridge_surface:001: Node2 may see summar"
+    },
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:dialogue_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:dialogue_surface:001",
+      "render_packet_id": "render_packet:dialogue_surface:001",
+      "render_type": "dialogue_surface",
+      "surface_channel": "drama",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[04|drama|dialogue_surface] render_packet:dialogue_surface:001: Node2 may see summary for dialogue_surface only; no hidden or provider payload.",
+      "checksum": "ab1e02aa2778f3546e50eb65a77f6e94cb9c9836cbfe32ccdd2df0de71cc0326",
+      "order_index": 4,
+      "node2_projection_summary": "surface_draft_summary:render_packet:dialogue_surface:001:[04|drama|dialogue_surface] render_packet:dialogue_surface:001: Node2 may see summary for dialog"
+    },
+    {
+      "draft_unit_id": "surface_draft_unit_render_packet:stage_direction_surface:001",
+      "render_plan_node_id": "render_plan_node_render_packet:stage_direction_surface:001",
+      "render_packet_id": "render_packet:stage_direction_surface:001",
+      "render_type": "stage_direction_surface",
+      "surface_channel": "drama",
+      "project_id": "korean_drama_family_secret",
+      "boundary_level": "NODE2_SURFACE_SAFE",
+      "visibility": "surface_safe",
+      "draft_text": "[05|drama|stage_direction_surface] render_packet:stage_direction_surface:001: Node2 may see summary for stage_direction_surface only; no hidden or provider payload.",
+      "checksum": "5aceb67a37378fbd36a15e9017ea8f89d43ed5ebc4d451de0e8f07598216eda2",
+      "order_index": 5,
+      "node2_projection_summary": "surface_draft_summary:render_packet:stage_direction_surface:001:[05|drama|stage_direction_surface] render_packet:stage_direction_surface:001: Node2 may see summ"
+    }
+  ]
+}

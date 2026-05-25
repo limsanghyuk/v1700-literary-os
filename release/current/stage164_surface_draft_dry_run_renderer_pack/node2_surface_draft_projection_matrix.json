@@ -1,0 +1,26 @@
+{
+  "stage": "stage164",
+  "title": "Stage164 Node2 Surface Draft Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rules": [
+    {
+      "name": "node2_surface_draft_summary_only",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "provider_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "name": "raw_manuscript_payload_blocked",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "provider_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0
+}

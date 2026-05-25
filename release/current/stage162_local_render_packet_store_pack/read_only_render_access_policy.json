@@ -1,0 +1,49 @@
+{
+  "stage": "stage162",
+  "title": "Stage162 Read-Only Render Access Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "jsonl_render_store_read_only",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_generation_allowed": false,
+      "render_mutation_allowed": false,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "runtime_render_append_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_generation_allowed": false,
+      "render_mutation_allowed": false,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "render_packet_mutation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_generation_allowed": false,
+      "render_mutation_allowed": false,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "provider_generation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_generation_allowed": false,
+      "render_mutation_allowed": false,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "canon_mutation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_generation_allowed": false,
+      "render_mutation_allowed": false,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    }
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "stage": "161",
+  "baseline_stage": "160",
+  "title": "Rendering Contract",
+  "status": "pass",
+  "issues": [],
+  "mode": "RENDERING_CONTRACT_LOCAL_ONLY",
+  "page": "Page04 Rendering Body",
+  "rendering_contract_only": true,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "provider_execution_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_render_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "page03_seal_inherited": true,
+  "stage162_local_render_packet_store_ready": true,
+  "contract_count": 6,
+  "boundary_rule_count": 7,
+  "write_policy_rule_count": 5,
+  "node2_projection_rule_count": 5,
+  "parts": {
+    "stage160_release_gate": {
+      "status": "pass",
+      "stage": "160",
+      "baseline_stage": "159",
+      "title": "Page03 Release Seal",
+      "issues": [],
+      "page03_sealed": true,
+      "stage161_rendering_contract_ready": true,
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "page04_readiness_matrix": {
+      "stage": "stage161",
+      "title": "Page04 Readiness Matrix",
+      "status": "pass",
+      "issues": [],
+      "check_count": 7,
+      "checks": [
+        {
+          "name": "page03_release_seal_pass",
+          "status": "pass",
+          "evidence": "release/current/stage160_release_gate_report.json",
+          "description": "Stage160 must seal Page03 before Page04 begins."
+        },
+        {
+          "name": "page04_proposal_present",
+          "status": "pass",
+          "evidence": "docs/proposals/page04_rendering_body_proposal.md",
+          "description": "Page04 proposal is present."
+        },
+        {
+          "name": "page04_blueprint_present",
+          "status": "pass",
+          "evidence": "docs/architecture/page04_rendering_body_blueprint.md",
+          "description": "Page04 blueprint is present."
+        },
+        {
+          "name": "page04_handoff_present",
+          "status": "pass",
+          "evidence": "docs/development/page04_handoff.md",
+          "description": "Page04 handoff is present."
+        },
+        {
+          "name": "rendering_runtime_disabled",
+          "status": "pass",
+          "evidence": "release/current/stage161_rendering_contract_report.json",
+          "description": "Stage161 defines rendering contracts only and cannot execute provider generation."
+        },
+        {
+          "name": "provider_zero_inherited",
+          "status": "pass",
+          "evidence": "release/current/stage161_rendering_contract_report.json",
+          "description": "Provider calls remain zero."
+        },
+        {
+          "name": "write_zero_inherited",
+          "status": "pass",
+          "evidence": "release/current/stage161_rendering_contract_report.json",
+          "description": "Writes and mutation remain disabled."
+        }
+      ]
+    },
+    "rendering_contracts": {
+      "stage": "stage161",
+      "title": "Stage161 Rendering Contracts",
+      "status": "pass",
+      "issues": [],
+      "contract_count": 6,
+      "contracts": [
+        {
+          "name": "RenderingIntentContract",
+          "render_type": "intent",
+          "purpose": "Defines the safe rendering intent input for Page04 compilation.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        },
+        {
+          "name": "RenderingContractBase",
+          "render_type": "base",
+          "purpose": "Defines common deterministic rendering contract shape.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        },
+        {
+          "name": "SceneSurfaceRenderContract",
+          "render_type": "scene_surface",
+          "purpose": "Plans scene surface rendering without provider generation.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        },
+        {
+          "name": "DialogueSurfaceRenderContract",
+          "render_type": "dialogue_surface",
+          "purpose": "Plans dialogue surface obligations without final prose execution.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        },
+        {
+          "name": "DramaBeatRenderContract",
+          "render_type": "drama_beat",
+          "purpose": "Plans drama beat rendering surfaces from Page03 traces.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        },
+        {
+          "name": "SynopsisRenderContract",
+          "render_type": "synopsis",
+          "purpose": "Plans surface-safe synopsis rendering contracts.",
+          "source_authority": "Page01+Page02+Page03 sealed evidence",
+          "render_mode": "CONTRACT_ONLY",
+          "generation_policy": "DISABLED",
+          "node2_projection": "SURFACE_SUMMARY_ONLY",
+          "fields": [
+            {
+              "name": "render_contract_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stable deterministic rendering contract identifier."
+            },
+            {
+              "name": "project_id",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Owning project identity inherited from Page01 through Page03."
+            },
+            {
+              "name": "render_type",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Typed rendering contract category."
+            },
+            {
+              "name": "source_execution_packet_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Page03 execution packets used as source evidence."
+            },
+            {
+              "name": "source_trace_ids",
+              "type": "tuple[str, ...]",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Stage159 dry-run trace references, not runtime execution output."
+            },
+            {
+              "name": "source_stage",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage authority that produced the rendering contract."
+            },
+            {
+              "name": "surface_channel",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Novel, drama, synopsis, or other surface channel label."
+            },
+            {
+              "name": "visibility",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Rendering visibility policy."
+            },
+            {
+              "name": "boundary_level",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node boundary level for rendering."
+            },
+            {
+              "name": "render_mode",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Stage161 is CONTRACT_ONLY and DRY_RUN_RENDER_READY only."
+            },
+            {
+              "name": "created_from",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Provenance summary, not raw manuscript text."
+            },
+            {
+              "name": "checksum",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Deterministic checksum for reproducibility."
+            },
+            {
+              "name": "write_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "surface_safe",
+              "description": "Write and mutation policy remain disabled."
+            },
+            {
+              "name": "node2_projection_policy",
+              "type": "str",
+              "required": true,
+              "visibility": "boundary_checked",
+              "description": "Node2 receives only safe rendering summaries."
+            }
+          ]
+        }
+      ]
+    },
+    "rendering_boundary_policy": {
+      "stage": "stage161",
+      "title": "Stage161 Rendering Boundary Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 7,
+      "rules": [
+        {
+          "name": "public_render_summary",
+          "boundary_level": "PUBLIC_SURFACE",
+          "node1_access": "read",
+          "node2_access": "read",
+          "node3_access": "read",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "reader_safe_surface_label",
+          "boundary_level": "READER_SURFACE",
+          "node1_access": "read",
+          "node2_access": "read",
+          "node3_access": "read",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "planner_private_render_note",
+          "boundary_level": "PLANNER_PRIVATE",
+          "node1_access": "read",
+          "node2_access": "blocked",
+          "node3_access": "read",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "hidden_reveal_render_payload",
+          "boundary_level": "HIDDEN_REVEAL",
+          "node1_access": "read",
+          "node2_access": "blocked",
+          "node3_access": "read",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "private_style_instruction",
+          "boundary_level": "PRIVATE_NOTE",
+          "node1_access": "read",
+          "node2_access": "blocked",
+          "node3_access": "read",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "render_write_handle",
+          "boundary_level": "WRITE_HANDLE",
+          "node1_access": "blocked",
+          "node2_access": "blocked",
+          "node3_access": "blocked",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "provider_generation_handle",
+          "boundary_level": "PROVIDER_HANDLE",
+          "node1_access": "blocked",
+          "node2_access": "blocked",
+          "node3_access": "blocked",
+          "enforced": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        }
+      ]
+    },
+    "rendering_write_policy": {
+      "stage": "stage161",
+      "title": "Stage161 Rendering Write Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 5,
+      "rules": [
+        {
+          "name": "render_contract_definition",
+          "default_enabled": false,
+          "future_policy_only": true,
+          "generation_runtime_allowed": false,
+          "runtime_write_allowed": false,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "local_render_packet_store_future",
+          "default_enabled": false,
+          "future_policy_only": true,
+          "generation_runtime_allowed": false,
+          "runtime_write_allowed": false,
+          "evidence": "stage162"
+        },
+        {
+          "name": "provider_generation_runtime",
+          "default_enabled": false,
+          "future_policy_only": true,
+          "generation_runtime_allowed": false,
+          "runtime_write_allowed": false,
+          "evidence": "future_page_policy"
+        },
+        {
+          "name": "final_prose_publication",
+          "default_enabled": false,
+          "future_policy_only": true,
+          "generation_runtime_allowed": false,
+          "runtime_write_allowed": false,
+          "evidence": "future_page_policy"
+        },
+        {
+          "name": "canon_mutation",
+          "default_enabled": false,
+          "future_policy_only": false,
+          "generation_runtime_allowed": false,
+          "runtime_write_allowed": false,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        }
+      ]
+    },
+    "node2_rendering_projection_policy": {
+      "stage": "stage161",
+      "title": "Stage161 Node2 Rendering Projection Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 5,
+      "rules": [
+        {
+          "name": "render_contract_summary",
+          "allowed_surface": "contract_id + render_type + surface_channel",
+          "forbidden_payload": "hidden_reveal_payload",
+          "blocked": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "surface_draft_label",
+          "allowed_surface": "surface label only",
+          "forbidden_payload": "private_style_instruction",
+          "blocked": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "trace_reference_summary",
+          "allowed_surface": "trace ids and safe order",
+          "forbidden_payload": "trace_private_note",
+          "blocked": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "provider_generation_handle",
+          "allowed_surface": "none",
+          "forbidden_payload": "provider handle",
+          "blocked": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        },
+        {
+          "name": "raw_manuscript_payload",
+          "allowed_surface": "none",
+          "forbidden_payload": "raw manuscript",
+          "blocked": true,
+          "evidence": "release/current/stage161_rendering_contract_report.json"
+        }
+      ]
+    }
+  }
+}

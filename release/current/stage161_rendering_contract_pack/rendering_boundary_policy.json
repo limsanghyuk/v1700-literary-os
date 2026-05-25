@@ -1,0 +1,72 @@
+{
+  "stage": "stage161",
+  "title": "Stage161 Rendering Boundary Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 7,
+  "rules": [
+    {
+      "name": "public_render_summary",
+      "boundary_level": "PUBLIC_SURFACE",
+      "node1_access": "read",
+      "node2_access": "read",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "reader_safe_surface_label",
+      "boundary_level": "READER_SURFACE",
+      "node1_access": "read",
+      "node2_access": "read",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "planner_private_render_note",
+      "boundary_level": "PLANNER_PRIVATE",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "hidden_reveal_render_payload",
+      "boundary_level": "HIDDEN_REVEAL",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "private_style_instruction",
+      "boundary_level": "PRIVATE_NOTE",
+      "node1_access": "read",
+      "node2_access": "blocked",
+      "node3_access": "read",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "render_write_handle",
+      "boundary_level": "WRITE_HANDLE",
+      "node1_access": "blocked",
+      "node2_access": "blocked",
+      "node3_access": "blocked",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "provider_generation_handle",
+      "boundary_level": "PROVIDER_HANDLE",
+      "node1_access": "blocked",
+      "node2_access": "blocked",
+      "node3_access": "blocked",
+      "enforced": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    }
+  ]
+}

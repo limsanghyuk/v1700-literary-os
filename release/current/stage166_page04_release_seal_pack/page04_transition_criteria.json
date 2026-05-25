@@ -1,0 +1,41 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Transition Criteria",
+  "status": "pass",
+  "issues": [],
+  "next_stage": "stage167",
+  "next_stage_title": "Evaluation Contract",
+  "next_page": "Page05 Evaluation Body",
+  "criteria": [
+    {
+      "name": "page04_stage_chain_pass",
+      "status": "pass",
+      "next_page": "Page05 Evaluation Body",
+      "evidence": "page04_stage_chain"
+    },
+    {
+      "name": "page04_invariant_freeze_pass",
+      "status": "pass",
+      "next_page": "Page05 Evaluation Body",
+      "evidence": "page04_invariant_freeze"
+    },
+    {
+      "name": "page04_connectivity_pass",
+      "status": "pass",
+      "next_page": "Page05 Evaluation Body",
+      "evidence": "page04_nexus_connectivity_matrix"
+    },
+    {
+      "name": "page04_regression_snapshot_pass",
+      "status": "pass",
+      "next_page": "Page05 Evaluation Body",
+      "evidence": "regression_snapshot"
+    },
+    {
+      "name": "stage167_evaluation_contract_ready",
+      "status": "pass",
+      "next_page": "Page05 Evaluation Body",
+      "evidence": "release/current/stage166_page04_release_seal_report.json"
+    }
+  ]
+}

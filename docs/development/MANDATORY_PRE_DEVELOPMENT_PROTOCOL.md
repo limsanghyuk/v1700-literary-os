@@ -14,12 +14,6 @@ The following documents are authoritative and must be treated as one linked poli
 - `docs/workflow/WORKFLOW.md`
 - `manifests/predevelopment_priority_manifest.json`
 
-The external design source that motivated this upgrade is:
-
-- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/PREFLIGHT_GUIDE_v1.1.md`
-- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/WORKFLOW.md`
-- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/BRANCH_STRATEGY.md`
-
 ## Priority
 
 This document has priority over any stage-specific proposal or implementation note. A new Stage is not complete unless its logic is connected to:
@@ -44,11 +38,7 @@ Before touching code or docs, every session must perform the following:
 6. Refresh GitNexus, or record Python fallback as the active authority.
 ```
 
-No implementation starts before these checks are complete.
-
 ## Fixed Preflight Sequence
-
-Every future Stage or repair branch must follow this order.
 
 ```text
 1. Read the canonical workflow documents.
@@ -69,8 +59,6 @@ Every future Stage or repair branch must follow this order.
 ```
 
 ## Branch And Release Rule
-
-V1700 adopts the `V1.1` branch and release authority model with Stage naming:
 
 - work starts from `main`
 - each task uses a dedicated branch
@@ -94,37 +82,3 @@ V1700 adopts the `V1.1` branch and release authority model with Stage naming:
 - `gitnexus_runtime_dependency_required = false`
 - `github_main_green_required = true`
 - `release_assets_triplet_required = true`
-
-## Completion Rule
-
-A Stage is not complete until all of the following are true:
-
-- stage gate report is `pass`
-- main release gate report is `pass`
-- repo doctor report is `pass`
-- manifests and markdown documents are aligned to the active Stage
-- package manifest and checksum sidecar point to the canonical release package
-- branch is pushed
-- PR is reviewed or prepared
-- merge, tag, release, and release assets are consistent when the task includes release closure
-
-## Session End Rule
-
-Before ending a session, complete the following:
-
-```text
-1. Save the session summary in docs/sessions/ when the work meaningfully changes architecture or workflow.
-2. Commit proposal, blueprint, changelog, and workflow updates together with implementation when they are part of the same Stage change.
-3. Push the branch.
-4. Record what the next session must do.
-```
-
-## Historical Note
-
-Stage101 established the original protection model. This upgraded protocol keeps that lineage intact while extending it with the V1.1 workflow concepts:
-
-- session start and finish discipline
-- GitHub-as-authority branch workflow
-- explicit PR and release closure
-- GitNexus freshness as a required preflight concern
-- Stage-aware release asset and checksum authority

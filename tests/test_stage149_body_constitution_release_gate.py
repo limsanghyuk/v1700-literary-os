@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from v1700.gates.release_gate import run_release_gate
@@ -43,9 +42,7 @@ def test_stage149_reuses_stage148_baseline_and_passes_gate() -> None:
 
 def test_stage149_is_the_active_release_baseline() -> None:
     manifest = (ROOT / "manifests" / "live_core_manifest.json").read_text(encoding="utf-8")
-    active_version = json.loads(manifest)["active_version"]
-    assert active_version.startswith("stage")
-    assert int(active_version.removeprefix("stage")) >= 149
+    assert '"active_version": "stage149"' in manifest
     assert '"stage149_body_constitution_release_gate"' in manifest
     assert '"stage149_release_gate"' in manifest
 

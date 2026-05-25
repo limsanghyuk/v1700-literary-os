@@ -1,0 +1,30 @@
+{
+  "stage": "stage162",
+  "title": "Stage162 Render Packet Store Catalog",
+  "status": "pass",
+  "issues": [],
+  "store_path": "samples/stage162_render_packet_store/render_packets.jsonl",
+  "store_exists": true,
+  "render_packet_count": 6,
+  "render_packet_ids": [
+    "render_packet:scene_surface:001",
+    "render_packet:dialogue_surface:001",
+    "render_packet:synopsis_surface:001",
+    "render_packet:beat_surface:001",
+    "render_packet:stage_direction_surface:001",
+    "render_packet:chapter_bridge_surface:001"
+  ],
+  "render_types": [
+    "beat_surface",
+    "chapter_bridge_surface",
+    "dialogue_surface",
+    "scene_surface",
+    "stage_direction_surface",
+    "synopsis_surface"
+  ],
+  "surface_channels": [
+    "drama",
+    "novel",
+    "synopsis"
+  ]
+}

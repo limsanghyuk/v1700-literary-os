@@ -1,0 +1,12 @@
+{
+  "stage": "stage161",
+  "title": "Rendering Contract Branchpoint Trace",
+  "baseline_stage": "stage160",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage160 Page03 release seal",
+    "Stage161 Page04 readiness matrix",
+    "Stage161 rendering boundary policy",
+    "Stage161 Node2 rendering projection policy"
+  ]
+}
