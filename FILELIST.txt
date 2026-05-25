@@ -212,6 +212,7 @@ docs/runbooks/stage74_longform_execution.md
 docs/runbooks/workspace_path_policy.md
 docs/sessions/2026-05-19_company_github_strategy.docx
 docs/sessions/2026-05-19_home_session_summary.md
+docs/sessions/2026-05-25_workflow_v11_stage_preflight_upgrade.md
 docs/stage101_cross_lineage_absorption_scenario_room/01_proposal.md
 docs/stage101_cross_lineage_absorption_scenario_room/02_blueprint.md
 docs/stage101_cross_lineage_absorption_scenario_room/03_principal_engineer_review.md
@@ -374,8 +375,10 @@ docs/user/api_minimum.md
 docs/user/cli_quickstart.md
 docs/user/examples/render_request.json
 docs/user/examples/render_response.json
+docs/workflow/BRANCH_STRATEGY.md
 docs/workflow/PREFLIGHT_GUIDE_gpt_stage156.md
 docs/workflow/PREFLIGHT_GUIDE_gpt_stage158.md
+docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md
 docs/workflow/WORKFLOW.md
 examples/node2_rendering_cases/basic_scene_intent.json
 examples/prompts/basic_prompt.txt

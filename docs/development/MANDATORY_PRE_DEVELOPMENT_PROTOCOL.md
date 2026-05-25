@@ -1,28 +1,84 @@
 # Mandatory Pre-Development Protocol
 
-This protocol must be read and applied before every V1700 proposal, blueprint, roadmap, implementation, release gate change, and release package.
+This protocol is mandatory before every V1700 proposal, blueprint, roadmap, implementation, gate change, release packaging task, and post-release integrity repair.
 
-It is derived from the priority guide folder:
+It upgrades the original V1700 predevelopment policy with the `literary-os` workflow `V1.1` approach and translates that approach into V1700 Stage rules.
 
-- `C:\AI_Codex\codex-work\gpt\docs\00_개발전_필수_가이드\00_GitNexus_Development_Preflight_Guide.docx`
-- `C:\AI_Codex\codex-work\gpt\docs\00_개발전_필수_가이드\01_PreDevelopment_Mandatory_Checklist_GitNexus_GraphNexus_Branchpoint.docx`
-- `C:\AI_Codex\codex-work\gpt\docs\00_개발전_필수_가이드\PREFLIGHT_PRIORITY_MANIFEST.json`
+## Canonical Documents
+
+The following documents are authoritative and must be treated as one linked policy set:
+
+- `docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md`
+- `docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md`
+- `docs/workflow/BRANCH_STRATEGY.md`
+- `docs/workflow/WORKFLOW.md`
+- `manifests/predevelopment_priority_manifest.json`
+
+The external design source that motivated this upgrade is:
+
+- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/PREFLIGHT_GUIDE_v1.1.md`
+- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/WORKFLOW.md`
+- `https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/BRANCH_STRATEGY.md`
 
 ## Priority
 
-This document has priority over stage-specific proposal documents. A new Stage may not be treated as complete unless its new logic is connected to tests, manifests, release evidence, branchpoint trace, release gate, repo doctor, and clean packaging.
+This document has priority over any stage-specific proposal or implementation note. A new Stage is not complete unless its logic is connected to:
 
-## Required Preflight
+- proposal and blueprint documents
+- manifests and lineage records
+- tests and stage gate evidence
+- release gate and repo doctor recognition
+- GitNexus or documented fallback analysis
+- clean package, checksum, and release assets
 
-Before development:
+## Session Start Rule
 
-- Confirm GitNexus index freshness or record that Python fallback is authoritative.
-- Check repository list / context / impact for the symbols or Stage being changed.
-- Check GraphNexus authority: CodeGraph, NarrativeGraph, StageLineageGraph.
-- Check BranchpointLogicGraph survival and symbol-to-branchpoint trace.
-- Check concept impact and change review expectations.
-- Check that release gate and repo doctor will recognize the new Stage.
-- Check clean ZIP packaging policy before final handoff.
+Before touching code or docs, every session must perform the following:
+
+```text
+1. Pull or verify the latest remote state from GitHub.
+2. Confirm current main, latest relevant Stage tag, and active working branch.
+3. Read the latest session note in docs/sessions/ when relevant.
+4. Read this protocol and the Stage-specific proposal and blueprint.
+5. Run the mandatory predevelopment check.
+6. Refresh GitNexus, or record Python fallback as the active authority.
+```
+
+No implementation starts before these checks are complete.
+
+## Fixed Preflight Sequence
+
+Every future Stage or repair branch must follow this order.
+
+```text
+1. Read the canonical workflow documents.
+2. Confirm GitHub main, tags, and local branch state.
+3. Run `python tools/run_mandatory_predevelopment_check.py`.
+4. Run `gitnexus.cmd status`; if stale or missing, run `gitnexus.cmd analyze --force`.
+5. Inspect target symbols, processes, and branchpoint lineage.
+6. Review concept impact on provider-zero, write-zero, privacy-zero, and Stage lineage.
+7. Confirm proposal and blueprint exist or create/update them first.
+8. Define or update contracts, manifests, tests, release evidence, and branchpoint trace.
+9. Implement in small steps.
+10. Run the stage-specific gate.
+11. Run `python tools/run_release_gate.py`.
+12. Run `python tools/run_stage72_repo_doctor.py`.
+13. Run the relevant pytest pack.
+14. Re-index GitNexus after material code changes.
+15. Build the clean ZIP, sidecar SHA256, and verify re-extraction before handoff or release.
+```
+
+## Branch And Release Rule
+
+V1700 adopts the `V1.1` branch and release authority model with Stage naming:
+
+- work starts from `main`
+- each task uses a dedicated branch
+- the branch is pushed before review
+- GitHub Actions must be green before merge
+- merge to `main` happens before tag and release
+- official release authority is `commit + tag + release assets`
+- official release assets are `ZIP + .sha256 + SHA256SUMS.txt`
 
 ## Non-Negotiable Invariants
 
@@ -36,33 +92,39 @@ Before development:
 - `branchpoint_lineage_preserved = true`
 - `python_fallback_required = true`
 - `gitnexus_runtime_dependency_required = false`
+- `github_main_green_required = true`
+- `release_assets_triplet_required = true`
 
-## Development Rule
+## Completion Rule
 
-Every future Stage must follow this order:
+A Stage is not complete until all of the following are true:
+
+- stage gate report is `pass`
+- main release gate report is `pass`
+- repo doctor report is `pass`
+- manifests and markdown documents are aligned to the active Stage
+- package manifest and checksum sidecar point to the canonical release package
+- branch is pushed
+- PR is reviewed or prepared
+- merge, tag, release, and release assets are consistent when the task includes release closure
+
+## Session End Rule
+
+Before ending a session, complete the following:
 
 ```text
-1. Read mandatory pre-development protocol.
-2. Run or refresh GitNexus / fallback preflight.
-3. Write proposal and blueprint.
-4. Define contracts, manifests, tests, release evidence, and branchpoint trace.
-5. Implement in small steps.
-6. Run stage-specific gate.
-7. Run main release gate.
-8. Run repo doctor.
-9. Run tests.
-10. Re-index GitNexus when code changes materially.
-11. Package clean ZIP.
-12. Re-extract ZIP and validate again.
+1. Save the session summary in docs/sessions/ when the work meaningfully changes architecture or workflow.
+2. Commit proposal, blueprint, changelog, and workflow updates together with implementation when they are part of the same Stage change.
+3. Push the branch.
+4. Record what the next session must do.
 ```
 
-## Stage101 Application
+## Historical Note
 
-Stage101 applied this protocol by:
+Stage101 established the original protection model. This upgraded protocol keeps that lineage intact while extending it with the V1.1 workflow concepts:
 
-- Keeping Stage100 as the baseline gate.
-- Blocking untraced V430 runtime merge.
-- Recompiling scenario-room concepts as V1700-owned contracts.
-- Adding Stage101 manifests, tests, release evidence, branchpoint trace, and release gate.
-- Preserving provider-zero, Node2 boundary, and raw manuscript privacy.
-- Refreshing GitNexus as an optional sidecar after implementation.
+- session start and finish discipline
+- GitHub-as-authority branch workflow
+- explicit PR and release closure
+- GitNexus freshness as a required preflight concern
+- Stage-aware release asset and checksum authority
