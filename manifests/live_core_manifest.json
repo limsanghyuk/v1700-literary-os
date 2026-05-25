@@ -1,5 +1,5 @@
 {
-  "active_version": "stage158",
+  "active_version": "stage159",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -56,10 +56,12 @@
     "stage157_deterministic_plan_graph_builder",
     "stage157_release_gate",
     "stage158_dependency_conflict_preflight",
-    "stage158_release_gate"
+    "stage158_release_gate",
+    "stage159_execution_dry_run_trace",
+    "stage159_release_gate"
   ],
-  "canonical_package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage159_execution_dry_run_trace_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage159_execution_dry_run_trace_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -236,5 +238,13 @@
     "release_gate": "release/current/stage158_release_gate_report.json",
     "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
     "next_stage": "stage159"
+  },
+  "stage159": {
+    "status": "active",
+    "title": "Execution Dry-Run Trace",
+    "baseline_stage": "stage158",
+    "release_gate": "release/current/stage159_release_gate_report.json",
+    "evidence": "release/current/stage159_execution_dry_run_trace_report.json",
+    "next_stage": "stage160"
   }
 }

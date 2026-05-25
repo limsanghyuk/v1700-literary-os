@@ -1,0 +1,11 @@
+{
+  "stage": "stage159",
+  "title": "Stage159 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "trace_step_count": 6,
+  "trace_checksum": "bc9951a6592c6b9643ac9b0af635ae943a13a1b981cb92aff0d62f629c21171b",
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "write_operation_count": 0
+}

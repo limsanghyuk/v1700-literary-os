@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.59.0-stage159
+
+- Added Stage159 Execution Dry-Run Trace.
+- Added deterministic trace steps, replay ledger, side-effect-free policy, Node2 trace projection matrix, trace integrity snapshot, and Stage160 entry criteria.
+- Kept runtime execution, provider execution, writes, canon mutation, runtime training, and auto-repair disabled.
+
+
 ## v1.58.0-stage158
 
 - Added Stage158 Dependency and Conflict Preflight.

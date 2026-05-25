@@ -24,6 +24,7 @@ STAGE156_COMPLETION_REPORT.md
 STAGE156_FULL_REGRESSION_REPORT.md
 STAGE157_COMPLETION_REPORT.md
 STAGE158_COMPLETION_REPORT.md
+STAGE159_COMPLETION_REPORT.md
 V1700_stage111_1_narrative_weight_kernel_filelist.txt
 V1700_stage112_gitnexus_aware_nie_preflight_bridge_filelist.txt
 V1700_stage113_physics_reward_bridge_mae_reward_wiring_filelist.txt
@@ -71,6 +72,7 @@ docs/architecture/stage155_execution_contract_blueprint.md
 docs/architecture/stage156_local_execution_packet_store_blueprint.md
 docs/architecture/stage157_deterministic_plan_graph_builder_blueprint.md
 docs/architecture/stage158_dependency_conflict_preflight_blueprint.md
+docs/architecture/stage159_execution_dry_run_trace_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -120,6 +122,7 @@ docs/development/stage155_developer_handoff.md
 docs/development/stage156_developer_handoff.md
 docs/development/stage157_developer_handoff.md
 docs/development/stage158_developer_handoff.md
+docs/development/stage159_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -160,6 +163,7 @@ docs/proposals/stage155_execution_contract_proposal.md
 docs/proposals/stage156_local_execution_packet_store_proposal.md
 docs/proposals/stage157_deterministic_plan_graph_builder_proposal.md
 docs/proposals/stage158_dependency_conflict_preflight_proposal.md
+docs/proposals/stage159_execution_dry_run_trace_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
@@ -305,6 +309,7 @@ docs/stages/stage155.md
 docs/stages/stage156.md
 docs/stages/stage157.md
 docs/stages/stage158.md
+docs/stages/stage159.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -442,6 +447,7 @@ manifests/live_core_stage155_overlay.json
 manifests/live_core_stage156_overlay.json
 manifests/live_core_stage157_overlay.json
 manifests/live_core_stage158_overlay.json
+manifests/live_core_stage159_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -640,6 +646,9 @@ manifests/stage157_manifest.json
 manifests/stage158_branchpoint_trace_manifest.json
 manifests/stage158_dependency_conflict_preflight_manifest.json
 manifests/stage158_manifest.json
+manifests/stage159_branchpoint_trace_manifest.json
+manifests/stage159_execution_dry_run_trace_manifest.json
+manifests/stage159_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1379,6 +1388,18 @@ release/current/stage158_dependency_conflict_preflight_report.json
 release/current/stage158_release_asset_manifest.json
 release/current/stage158_release_gate_report.json
 release/current/stage158_summary.json
+release/current/stage159_execution_dry_run_trace_pack/dry_run_trace_steps.json
+release/current/stage159_execution_dry_run_trace_pack/node2_trace_projection_matrix.json
+release/current/stage159_execution_dry_run_trace_pack/preflight_step15_connectivity_matrix.json
+release/current/stage159_execution_dry_run_trace_pack/regression_snapshot.json
+release/current/stage159_execution_dry_run_trace_pack/side_effect_free_policy.json
+release/current/stage159_execution_dry_run_trace_pack/stage160_entry_criteria.json
+release/current/stage159_execution_dry_run_trace_pack/trace_integrity_snapshot.json
+release/current/stage159_execution_dry_run_trace_pack/trace_replay_ledger.json
+release/current/stage159_execution_dry_run_trace_report.json
+release/current/stage159_release_asset_manifest.json
+release/current/stage159_release_gate_report.json
+release/current/stage159_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1704,6 +1725,10 @@ src/v1700/episode_scaleup/evidence.py
 src/v1700/execution_body_contract/__init__.py
 src/v1700/execution_body_contract/contracts.py
 src/v1700/execution_body_contract/report.py
+src/v1700/execution_dry_run_trace/__init__.py
+src/v1700/execution_dry_run_trace/contracts.py
+src/v1700/execution_dry_run_trace/report.py
+src/v1700/execution_dry_run_trace/tracer.py
 src/v1700/gates/__init__.py
 src/v1700/gates/drse_quality_gate.py
 src/v1700/gates/gate24.py
@@ -1778,6 +1803,7 @@ src/v1700/gates/stage155_release_gate.py
 src/v1700/gates/stage156_release_gate.py
 src/v1700/gates/stage157_release_gate.py
 src/v1700/gates/stage158_release_gate.py
+src/v1700/gates/stage159_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -2506,6 +2532,8 @@ src/v1700/stage157/__init__.py
 src/v1700/stage157/stage157_runner.py
 src/v1700/stage158/__init__.py
 src/v1700/stage158/stage158_runner.py
+src/v1700/stage159/__init__.py
+src/v1700/stage159/stage159_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2725,6 +2753,7 @@ tests/test_stage155_execution_contract.py
 tests/test_stage156_local_execution_packet_store.py
 tests/test_stage157_deterministic_plan_graph_builder.py
 tests/test_stage158_dependency_conflict_preflight.py
+tests/test_stage159_execution_dry_run_trace.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -3071,6 +3100,8 @@ tools/run_stage157_deterministic_plan_graph_builder.py
 tools/run_stage157_release_gate.py
 tools/run_stage158_dependency_conflict_preflight.py
 tools/run_stage158_release_gate.py
+tools/run_stage159_execution_dry_run_trace.py
+tools/run_stage159_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

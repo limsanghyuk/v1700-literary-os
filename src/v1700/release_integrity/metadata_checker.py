@@ -456,6 +456,32 @@ TARGETS: dict[str, dict[str, Any]] = {
             "release/current/stage158_dependency_conflict_preflight_pack/regression_snapshot.json",
         ],
     },
+    "stage159": {
+        "label": "Stage159",
+        "version": "1.59.0",
+        "title": "Execution Dry-Run Trace",
+        "required_files": [
+            "docs/stages/stage159.md",
+            "docs/proposals/stage159_execution_dry_run_trace_proposal.md",
+            "docs/architecture/stage159_execution_dry_run_trace_blueprint.md",
+            "docs/development/stage159_developer_handoff.md",
+            "manifests/stage159_manifest.json",
+            "manifests/stage159_execution_dry_run_trace_manifest.json",
+            "manifests/stage159_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage159_overlay.json",
+            "release/current/stage159_release_asset_manifest.json",
+            "release/current/stage159_execution_dry_run_trace_report.json",
+            "release/current/stage159_release_gate_report.json",
+            "release/current/stage159_execution_dry_run_trace_pack/dry_run_trace_steps.json",
+            "release/current/stage159_execution_dry_run_trace_pack/trace_replay_ledger.json",
+            "release/current/stage159_execution_dry_run_trace_pack/side_effect_free_policy.json",
+            "release/current/stage159_execution_dry_run_trace_pack/node2_trace_projection_matrix.json",
+            "release/current/stage159_execution_dry_run_trace_pack/trace_integrity_snapshot.json",
+            "release/current/stage159_execution_dry_run_trace_pack/preflight_step15_connectivity_matrix.json",
+            "release/current/stage159_execution_dry_run_trace_pack/stage160_entry_criteria.json",
+            "release/current/stage159_execution_dry_run_trace_pack/regression_snapshot.json",
+        ],
+    },
 }
 
 
