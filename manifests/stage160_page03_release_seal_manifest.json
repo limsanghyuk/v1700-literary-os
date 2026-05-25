@@ -1,0 +1,13 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Release Seal",
+  "sealed_stage_range": "stage155-stage160",
+  "page03_sealed": true,
+  "next_stage": "stage161",
+  "policy": {
+    "provider_default_calls": 0,
+    "runtime_execution_enabled": false,
+    "memory_write_enabled": false,
+    "node2_raw_reveal_access": 0
+  }
+}

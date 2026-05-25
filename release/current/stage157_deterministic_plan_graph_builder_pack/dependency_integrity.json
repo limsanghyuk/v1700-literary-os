@@ -1,0 +1,25 @@
+{
+  "stage": "stage157",
+  "title": "Dependency Integrity",
+  "status": "pass",
+  "issues": [],
+  "dependency_map": {
+    "exec_pkt_character_surface": [
+      "exec_pkt_project_bootstrap"
+    ],
+    "exec_pkt_episode_order": [
+      "exec_pkt_project_bootstrap"
+    ],
+    "exec_pkt_payoff_trace": [
+      "exec_pkt_reveal_guard"
+    ],
+    "exec_pkt_project_bootstrap": [],
+    "exec_pkt_reveal_guard": [
+      "exec_pkt_scene_plan"
+    ],
+    "exec_pkt_scene_plan": [
+      "exec_pkt_character_surface",
+      "exec_pkt_episode_order"
+    ]
+  }
+}

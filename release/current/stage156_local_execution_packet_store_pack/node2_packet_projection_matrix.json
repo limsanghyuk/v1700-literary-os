@@ -1,0 +1,57 @@
+{
+  "stage": "stage156",
+  "title": "Stage156 Node2 Packet Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "node2_projection_exec_pkt_project_bootstrap",
+      "packet_type": "project_bootstrap",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "node2_projection_exec_pkt_character_surface",
+      "packet_type": "character_surface",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "node2_projection_exec_pkt_episode_order",
+      "packet_type": "episode_order",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "node2_projection_exec_pkt_scene_plan",
+      "packet_type": "scene_plan",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "node2_projection_exec_pkt_reveal_guard",
+      "packet_type": "reveal_guard",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "node2_projection_exec_pkt_payoff_trace",
+      "packet_type": "payoff_trace",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    }
+  ]
+}

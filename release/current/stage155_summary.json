@@ -1,0 +1,27 @@
+{
+  "stage": "155",
+  "baseline_stage": "154",
+  "title": "Execution Contract",
+  "status": "pass",
+  "main_report": "release/current/stage155_execution_contract_report.json",
+  "release_gate_report": "release/current/stage155_release_gate_report.json",
+  "asset_manifest": "release/current/stage155_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage155_execution_contract_pack/",
+  "mode": "EXECUTION_CONTRACT_LOCAL_ONLY",
+  "execution_contract_only": true,
+  "page02_seal_inherited": true,
+  "stage156_local_execution_packet_store_ready": true,
+  "contract_count": 6,
+  "boundary_rule_count": 7,
+  "write_policy_rule_count": 6,
+  "node2_projection_rule_count": 6,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "runtime_execution_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage156 Local Execution Packet Store"
+  ]
+}

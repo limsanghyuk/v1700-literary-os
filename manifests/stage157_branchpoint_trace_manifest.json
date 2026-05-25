@@ -1,0 +1,13 @@
+{
+  "stage": "stage157",
+  "title": "Deterministic Plan Graph Builder Branchpoint Trace",
+  "baseline_stage": "stage156",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage155 execution contract",
+    "Stage156 local execution packet store",
+    "Stage157 deterministic plan graph nodes",
+    "Stage157 dependency integrity",
+    "Stage157 Node2 plan projection matrix"
+  ]
+}

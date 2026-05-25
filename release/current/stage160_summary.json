@@ -1,0 +1,21 @@
+{
+  "stage": "160",
+  "baseline_stage": "159",
+  "title": "Page03 Release Seal",
+  "status": "pass",
+  "main_report": "release/current/stage160_page03_release_seal_report.json",
+  "release_gate_report": "release/current/stage160_release_gate_report.json",
+  "asset_manifest": "release/current/stage160_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage160_page03_release_seal_pack/",
+  "page03_sealed": true,
+  "page03_total_stage_count": 6,
+  "stage161_rendering_contract_ready": true,
+  "page03_release_checksum": "f2bf9106966573c87de0b89e04aa1451e3628df3d1c88e4754141193e1deb2c0",
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "next_development_order": [
+    "Stage161 Rendering Contract"
+  ]
+}

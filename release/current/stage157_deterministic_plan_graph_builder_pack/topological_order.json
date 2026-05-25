@@ -1,0 +1,16 @@
+{
+  "stage": "stage157",
+  "title": "Deterministic Topological Order",
+  "status": "pass",
+  "issues": [],
+  "order_count": 6,
+  "topological_order": [
+    "exec_pkt_project_bootstrap",
+    "exec_pkt_character_surface",
+    "exec_pkt_episode_order",
+    "exec_pkt_scene_plan",
+    "exec_pkt_reveal_guard",
+    "exec_pkt_payoff_trace"
+  ],
+  "critical_path_length": 5
+}

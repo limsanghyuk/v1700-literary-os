@@ -1,0 +1,21 @@
+{
+  "stage": "stage158",
+  "title": "Dependency and Conflict Preflight",
+  "components": [
+    "dependency_order_preflight",
+    "conflict_matrix",
+    "packet_boundary_preflight",
+    "blocked_operation_registry",
+    "node2_conflict_projection_matrix",
+    "graph_integrity_snapshot",
+    "preflight_step15_connectivity_matrix",
+    "regression_snapshot"
+  ],
+  "policy": {
+    "provider_default_calls": 0,
+    "runtime_execution_enabled": false,
+    "preflight_write_enabled": false,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0
+  }
+}

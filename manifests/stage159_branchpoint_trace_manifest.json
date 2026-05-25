@@ -1,0 +1,11 @@
+{
+  "stage": "stage159",
+  "baseline_stage": "stage158",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage157 plan graph checksum",
+    "Stage158 dependency conflict preflight checksum",
+    "Stage159 dry-run trace checksum",
+    "Stage160 entry criteria"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "active_version": "stage155",
+  "overlay_stage": "stage155",
+  "title": "Execution Contract",
+  "baseline_stage": "stage154",
+  "release_gate": "release/current/stage155_release_gate_report.json",
+  "evidence": "release/current/stage155_execution_contract_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "runtime_execution_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false
+}

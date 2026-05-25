@@ -1,0 +1,20 @@
+{
+  "stage": "stage155",
+  "title": "Execution Contract",
+  "contracts": [
+    "ExecutionIntentContract",
+    "ExecutionPacketBase",
+    "SceneExecutionPacket",
+    "RevealExecutionPacket",
+    "ContinuityExecutionPacket",
+    "PayoffExecutionPacket"
+  ],
+  "policy": {
+    "runtime_execution_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "execution_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "154",
+  "baseline_stage": "153",
+  "title": "Page02 Release Seal",
+  "status": "pass",
+  "main_report": "release/current/stage154_page02_release_seal_report.json",
+  "release_gate_report": "release/current/stage154_release_gate_report.json",
+  "asset_manifest": "release/current/stage154_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage154_page02_release_seal_pack/",
+  "mode": "PAGE02_RELEASE_SEAL_LOCAL",
+  "page02_sealed": true,
+  "page02_stage_count": 5,
+  "page02_total_stage_count": 5,
+  "page02_upstream_stage_count": 4,
+  "stage155_entry_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage155 Page03 Entry Planning"
+  ]
+}

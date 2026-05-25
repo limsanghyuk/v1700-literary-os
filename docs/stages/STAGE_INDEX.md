@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage152 - Deterministic Local Query / Ranking
+Current active stage: Stage157 - Deterministic Plan Graph Builder
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -62,3 +62,13 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage152](stage152.md) - Deterministic Local Query / Ranking
 
 - [Stage153 — Memory Health & Leakage Boundary](stage153.md)
+
+- [Stage154 — Page02 Release Seal](stage154.md)
+
+- [Stage155 — Execution Contract](stage155.md)
+
+
+- [Stage156 — Local Execution Packet Store](stage156.md)
+
+
+- [Stage157 — Deterministic Plan Graph Builder](stage157.md)

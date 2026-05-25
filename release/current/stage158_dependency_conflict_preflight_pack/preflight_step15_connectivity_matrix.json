@@ -1,0 +1,57 @@
+{
+  "stage": "stage158",
+  "title": "Preflight Step15 Connectivity Matrix",
+  "status": "pass",
+  "issues": [],
+  "check_count": 8,
+  "checks": [
+    {
+      "name": "stage158_package",
+      "path": "src/v1700/dependency_conflict_preflight/__init__.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_runner",
+      "path": "src/v1700/stage158/stage158_runner.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_gate",
+      "path": "src/v1700/gates/stage158_release_gate.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_tool",
+      "path": "tools/run_stage158_dependency_conflict_preflight.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_gate_tool",
+      "path": "tools/run_stage158_release_gate.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_test",
+      "path": "tests/test_stage158_dependency_conflict_preflight.py",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_manifest",
+      "path": "manifests/stage158_manifest.json",
+      "required": true,
+      "exists": true
+    },
+    {
+      "name": "stage158_docs",
+      "path": "docs/stages/stage158.md",
+      "required": true,
+      "exists": true
+    }
+  ]
+}

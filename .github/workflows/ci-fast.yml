@@ -32,7 +32,7 @@ jobs:
         run: python -m compileall -q src tools
 
       - name: Run fast current-stage pytest
-        run: python -m pytest tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/test_stage147_project_manifest_body.py tests/test_stage148_node_boundary_constitution.py tests/test_stage149_body_constitution_release_gate.py -q
+        run: python -m pytest tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/test_stage147_project_manifest_body.py tests/test_stage148_node_boundary_constitution.py tests/test_stage149_body_constitution_release_gate.py tests/test_stage150_memory_contract.py tests/test_stage151_local_read_only_memory_store.py tests/test_stage152_memory_query_interface.py tests/test_stage153_memory_health_leakage_boundary.py tests/test_stage154_page02_release_seal.py tests/test_stage155_execution_contract.py tests/test_stage156_local_execution_packet_store.py tests/test_stage157_deterministic_plan_graph_builder.py tests/test_stage158_dependency_conflict_preflight.py tests/test_stage159_execution_dry_run_trace.py tests/test_stage160_page03_release_seal.py -q
 
       - name: Run mandatory predevelopment check
         run: python tools/run_mandatory_predevelopment_check.py
@@ -77,3 +77,69 @@ jobs:
 
       - name: Run Stage149 release gate
         run: python tools/run_stage149_release_gate.py
+
+      - name: Run Stage150 memory contract
+        run: python tools/run_stage150_memory_contract.py
+
+      - name: Run Stage150 release gate
+        run: python tools/run_stage150_release_gate.py
+
+      - name: Run Stage151 local read-only memory store
+        run: python tools/run_stage151_local_read_only_memory_store.py
+
+      - name: Run Stage151 release gate
+        run: python tools/run_stage151_release_gate.py
+
+      - name: Run Stage152 memory query interface
+        run: python tools/run_stage152_memory_query_interface.py
+
+      - name: Run Stage152 release gate
+        run: python tools/run_stage152_release_gate.py
+
+      - name: Run Stage153 memory health leakage boundary
+        run: python tools/run_stage153_memory_health_leakage_boundary.py
+
+      - name: Run Stage153 release gate
+        run: python tools/run_stage153_release_gate.py
+
+      - name: Run Stage154 page02 release seal
+        run: python tools/run_stage154_page02_release_seal.py
+
+      - name: Run Stage154 release gate
+        run: python tools/run_stage154_release_gate.py
+
+      - name: Run Stage155 execution contract
+        run: python tools/run_stage155_execution_contract.py
+
+      - name: Run Stage155 release gate
+        run: python tools/run_stage155_release_gate.py
+
+      - name: Run Stage156 local execution packet store
+        run: python tools/run_stage156_local_execution_packet_store.py
+
+      - name: Run Stage156 release gate
+        run: python tools/run_stage156_release_gate.py
+
+      - name: Run Stage157 deterministic plan graph builder
+        run: python tools/run_stage157_deterministic_plan_graph_builder.py
+
+      - name: Run Stage157 release gate
+        run: python tools/run_stage157_release_gate.py
+
+      - name: Run Stage158 dependency conflict preflight
+        run: python tools/run_stage158_dependency_conflict_preflight.py
+
+      - name: Run Stage158 release gate
+        run: python tools/run_stage158_release_gate.py
+
+      - name: Run Stage159 execution dry-run trace
+        run: python tools/run_stage159_execution_dry_run_trace.py
+
+      - name: Run Stage159 release gate
+        run: python tools/run_stage159_release_gate.py
+
+      - name: Run Stage160 page03 release seal
+        run: python tools/run_stage160_page03_release_seal.py
+
+      - name: Run Stage160 release gate
+        run: python tools/run_stage160_release_gate.py

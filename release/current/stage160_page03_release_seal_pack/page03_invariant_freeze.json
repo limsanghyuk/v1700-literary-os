@@ -1,0 +1,288 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Invariant Freeze",
+  "status": "pass",
+  "issues": [],
+  "freeze_count": 23,
+  "observed_count": 23,
+  "frozen": [
+    {
+      "name": "provider_default_calls",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "live_provider_call_count_in_release_gate",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "runtime_execution_count",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "provider_execution_count",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "write_operation_count",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "node2_raw_reveal_access",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "boundary_violation_count",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "raw_manuscript_provider_leakage",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "raw_manuscript_cross_project_leakage",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "credential_leakage",
+      "frozen_value": 0,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "runtime_execution_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "generation_runtime_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "provider_execution_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "execution_write_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "memory_write_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "store_write_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "graph_write_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "preflight_write_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "canon_mutation_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "auto_repair_apply_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "runtime_training_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_release_gate"
+    },
+    {
+      "name": "vector_db_runtime_dependency",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    },
+    {
+      "name": "live_provider_rag_enabled",
+      "frozen_value": false,
+      "evidence": "stage159_execution_dry_run_trace_report"
+    }
+  ],
+  "evidence": [
+    {
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "provider_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "provider_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "execution_write_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "store_write_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "graph_write_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "preflight_write_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "auto_repair_apply_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_release_gate",
+      "status": "pass"
+    },
+    {
+      "name": "vector_db_runtime_dependency",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    },
+    {
+      "name": "live_provider_rag_enabled",
+      "expected": false,
+      "observed": false,
+      "source": "stage159_execution_dry_run_trace_report",
+      "status": "pass"
+    }
+  ]
+}

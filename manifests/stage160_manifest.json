@@ -1,0 +1,11 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Release Seal",
+  "baseline_stage": "stage159",
+  "page": "Page03 Execution Body",
+  "status": "active",
+  "runner": "tools/run_stage160_page03_release_seal.py",
+  "release_gate": "tools/run_stage160_release_gate.py",
+  "evidence": "release/current/stage160_page03_release_seal_report.json",
+  "next_stage": "stage161"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Release Seal Branchpoint Trace",
+  "baseline_stage": "stage159",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage155 Execution Contract",
+    "Stage156 Packet Store",
+    "Stage157 Plan Graph",
+    "Stage158 Conflict Preflight",
+    "Stage159 Dry-Run Trace",
+    "Stage160 Page03 Release Seal"
+  ]
+}

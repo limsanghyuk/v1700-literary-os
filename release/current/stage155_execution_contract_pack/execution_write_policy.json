@@ -1,0 +1,57 @@
+{
+  "stage": "stage155",
+  "title": "Stage155 Execution Write Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "runtime_execution_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "execution_packet_write_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "memory_write_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "canon_mutation_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "provider_execution_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "auto_repair_apply_disabled",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "runtime_execution_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    }
+  ]
+}

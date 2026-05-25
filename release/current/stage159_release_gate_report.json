@@ -1,0 +1,141 @@
+{
+  "stage": "159",
+  "baseline_stage": "158",
+  "title": "Execution Dry-Run Trace",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage158_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage159_report_pass": {
+      "status": "pass"
+    },
+    "dry_run_trace_mode_pass": {
+      "status": "pass"
+    },
+    "dry_run_trace_steps_pass": {
+      "status": "pass"
+    },
+    "trace_replay_ledger_pass": {
+      "status": "pass"
+    },
+    "side_effect_free_policy_pass": {
+      "status": "pass"
+    },
+    "node2_trace_projection_pass": {
+      "status": "pass"
+    },
+    "trace_integrity_snapshot_pass": {
+      "status": "pass"
+    },
+    "preflight_step15_connectivity_pass": {
+      "status": "pass"
+    },
+    "stage160_entry_criteria_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "provider_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_store_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage159": {
+    "status": "pass",
+    "stage": "159",
+    "baseline_stage": "158",
+    "title": "Execution Dry-Run Trace",
+    "issues": [],
+    "mode": "EXECUTION_DRY_RUN_TRACE_LOCAL_ONLY",
+    "trace_step_count": 6,
+    "trace_checksum": "bc9951a6592c6b9643ac9b0af635ae943a13a1b981cb92aff0d62f629c21171b",
+    "stage160_page03_release_seal_ready": true,
+    "runtime_execution_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "execution_write_enabled": false,
+    "store_write_enabled": false,
+    "graph_write_enabled": false,
+    "preflight_write_enabled": false,
+    "dry_run_write_enabled": false,
+    "side_effect_free_dry_run": true,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "runtime_execution_count": 0,
+    "provider_execution_count": 0,
+    "write_operation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "runtime_execution_enabled": false,
+  "dry_run_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,53 @@
+{
+  "stage": "stage158",
+  "title": "Node2 Conflict Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "row_count": 6,
+  "matrix": [
+    {
+      "packet_id": "exec_pkt_character_surface",
+      "node_id": "plan_node_exec_pkt_character_surface",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "packet_id": "exec_pkt_episode_order",
+      "node_id": "plan_node_exec_pkt_episode_order",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "packet_id": "exec_pkt_payoff_trace",
+      "node_id": "plan_node_exec_pkt_payoff_trace",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "packet_id": "exec_pkt_project_bootstrap",
+      "node_id": "plan_node_exec_pkt_project_bootstrap",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "packet_id": "exec_pkt_reveal_guard",
+      "node_id": "plan_node_exec_pkt_reveal_guard",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "packet_id": "exec_pkt_scene_plan",
+      "node_id": "plan_node_exec_pkt_scene_plan",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0
+}

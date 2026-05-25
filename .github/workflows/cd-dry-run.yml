@@ -31,7 +31,7 @@ jobs:
       - name: Verify release gates
         run: |
           python -m compileall -q src tools
-          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/test_stage147_project_manifest_body.py tests/test_stage148_node_boundary_constitution.py tests/test_stage149_body_constitution_release_gate.py -q
+          python -m pytest tests/test_stage135_learning_quality_gate.py tests/test_stage136_schema_registry.py tests/test_stage137_migration_manager.py tests/test_stage138_losdb_storage_contracts.py tests/test_stage139_corpus_governance_pipeline.py tests/test_stage140_release_integrity.py tests/test_stage141_prose_generation_e2e.py tests/test_stage142_longform_benchmark_pack.py tests/test_stage143_user_cli_api_docs.py tests/test_stage144_split_ci_runtime_strategy.py tests/test_stage145_body_constitution.py tests/test_stage146_narrative_state_contract.py tests/test_stage147_project_manifest_body.py tests/test_stage148_node_boundary_constitution.py tests/test_stage149_body_constitution_release_gate.py tests/test_stage150_memory_contract.py tests/test_stage151_local_read_only_memory_store.py tests/test_stage152_memory_query_interface.py tests/test_stage153_memory_health_leakage_boundary.py tests/test_stage154_page02_release_seal.py tests/test_stage155_execution_contract.py tests/test_stage156_local_execution_packet_store.py tests/test_stage157_deterministic_plan_graph_builder.py tests/test_stage158_dependency_conflict_preflight.py tests/test_stage159_execution_dry_run_trace.py tests/test_stage160_page03_release_seal.py -q
           python tools/run_stage135_learning_quality_gate.py
           python tools/run_stage135_release_gate.py
           python tools/run_stage136_schema_registry.py
@@ -64,6 +64,28 @@ jobs:
           python tools/run_stage148_release_gate.py
           python tools/run_stage149_body_constitution_release_gate.py
           python tools/run_stage149_release_gate.py
+          python tools/run_stage150_memory_contract.py
+          python tools/run_stage150_release_gate.py
+          python tools/run_stage151_local_read_only_memory_store.py
+          python tools/run_stage151_release_gate.py
+          python tools/run_stage152_memory_query_interface.py
+          python tools/run_stage152_release_gate.py
+          python tools/run_stage153_memory_health_leakage_boundary.py
+          python tools/run_stage153_release_gate.py
+          python tools/run_stage154_page02_release_seal.py
+          python tools/run_stage154_release_gate.py
+          python tools/run_stage155_execution_contract.py
+          python tools/run_stage155_release_gate.py
+          python tools/run_stage156_local_execution_packet_store.py
+          python tools/run_stage156_release_gate.py
+          python tools/run_stage157_deterministic_plan_graph_builder.py
+          python tools/run_stage157_release_gate.py
+          python tools/run_stage158_dependency_conflict_preflight.py
+          python tools/run_stage158_release_gate.py
+          python tools/run_stage159_execution_dry_run_trace.py
+          python tools/run_stage159_release_gate.py
+          python tools/run_stage160_page03_release_seal.py
+          python tools/run_stage160_release_gate.py
           python tools/run_ci_dependency_preflight.py
 
       - name: Build dry-run archive

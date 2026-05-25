@@ -1,0 +1,25 @@
+{
+  "stage": "stage156",
+  "title": "Stage156 Packet Store Catalog",
+  "status": "pass",
+  "issues": [],
+  "store_path": "samples/stage156_execution_packet_store/execution_packets.jsonl",
+  "store_exists": true,
+  "packet_count": 6,
+  "packet_ids": [
+    "exec_pkt_project_bootstrap",
+    "exec_pkt_character_surface",
+    "exec_pkt_episode_order",
+    "exec_pkt_scene_plan",
+    "exec_pkt_reveal_guard",
+    "exec_pkt_payoff_trace"
+  ],
+  "packet_types": [
+    "character_surface",
+    "episode_order",
+    "payoff_trace",
+    "project_bootstrap",
+    "reveal_guard",
+    "scene_plan"
+  ]
+}

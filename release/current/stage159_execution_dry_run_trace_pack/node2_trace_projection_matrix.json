@@ -1,0 +1,53 @@
+{
+  "stage": "stage159",
+  "title": "Node2 Trace Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "row_count": 6,
+  "matrix": [
+    {
+      "trace_id": "dry_run_step_000_exec_pkt_project_bootstrap",
+      "packet_id": "exec_pkt_project_bootstrap",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "trace_id": "dry_run_step_001_exec_pkt_character_surface",
+      "packet_id": "exec_pkt_character_surface",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "trace_id": "dry_run_step_002_exec_pkt_episode_order",
+      "packet_id": "exec_pkt_episode_order",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "trace_id": "dry_run_step_003_exec_pkt_scene_plan",
+      "packet_id": "exec_pkt_scene_plan",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "trace_id": "dry_run_step_004_exec_pkt_reveal_guard",
+      "packet_id": "exec_pkt_reveal_guard",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    },
+    {
+      "trace_id": "dry_run_step_005_exec_pkt_payoff_trace",
+      "packet_id": "exec_pkt_payoff_trace",
+      "node2_surface_allowed": true,
+      "forbidden_token_hits": [],
+      "status": "pass"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0
+}

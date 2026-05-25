@@ -1,0 +1,39 @@
+{
+  "stage": "stage159",
+  "title": "Trace Replay Ledger",
+  "status": "pass",
+  "issues": [],
+  "record_count": 6,
+  "records": [
+    {
+      "trace_id": "dry_run_step_000_exec_pkt_project_bootstrap",
+      "packet_id": "exec_pkt_project_bootstrap",
+      "checksum": "22d1f689579b0e00c17c61c88bf91d0f02df9e1b016bd537496197518e37f69c"
+    },
+    {
+      "trace_id": "dry_run_step_001_exec_pkt_character_surface",
+      "packet_id": "exec_pkt_character_surface",
+      "checksum": "f1565fc2fbe41e20ff253e80c12600a699c6cef63b3ca9f40f7ff601a24e1c98"
+    },
+    {
+      "trace_id": "dry_run_step_002_exec_pkt_episode_order",
+      "packet_id": "exec_pkt_episode_order",
+      "checksum": "bfe37048300b6ca9a6aa5ee30c50e14500f81460ff93a43303e148d3fba9fe60"
+    },
+    {
+      "trace_id": "dry_run_step_003_exec_pkt_scene_plan",
+      "packet_id": "exec_pkt_scene_plan",
+      "checksum": "6f208744bd13632efc56277c9eae301636960b7b83c0070d5fd553bb5023c878"
+    },
+    {
+      "trace_id": "dry_run_step_004_exec_pkt_reveal_guard",
+      "packet_id": "exec_pkt_reveal_guard",
+      "checksum": "ff8ab9f269cb9597c8fae613aade5c5941e90adadd84b65ad39c92dfcc3d4fba"
+    },
+    {
+      "trace_id": "dry_run_step_005_exec_pkt_payoff_trace",
+      "packet_id": "exec_pkt_payoff_trace",
+      "checksum": "f0eeace73726c822193ef11893e6c26f13f7db0e71757d1f21e36be8d6f80159"
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "stage": "stage153",
-  "package": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage160",
+  "package": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage153_memory_health_leakage_boundary",
-  "active_version": "stage153",
-  "patch_report": "release/current/stage153_memory_health_leakage_boundary_report.json",
-  "release_gate": "release/current/stage153_release_gate_report.json",
-  "asset_manifest": "release/current/stage153_release_asset_manifest.json"
+  "created_by": "stage160_page03_release_seal",
+  "active_version": "stage160",
+  "patch_report": "release/current/stage160_page03_release_seal_report.json",
+  "release_gate": "release/current/stage160_release_gate_report.json",
+  "asset_manifest": "release/current/stage160_release_asset_manifest.json"
 }

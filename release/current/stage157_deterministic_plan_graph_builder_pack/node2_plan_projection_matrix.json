@@ -1,0 +1,43 @@
+{
+  "stage": "stage157",
+  "title": "Node2 Plan Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 4,
+  "rules": [
+    {
+      "name": "surface_summary_only",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "provider_payload_blocked": true,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "hidden_execution_payload_blocked",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "provider_payload_blocked": true,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "write_handle_blocked",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "provider_payload_blocked": true,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "provider_payload_blocked",
+      "node2_surface_allowed": true,
+      "hidden_payload_blocked": true,
+      "write_handle_blocked": true,
+      "provider_payload_blocked": true,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    }
+  ],
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0
+}

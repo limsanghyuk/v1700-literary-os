@@ -1,0 +1,18 @@
+{
+  "stage": "160",
+  "title": "Stage160 Regression Repair Report",
+  "status": "pass",
+  "issues": [],
+  "finding": "Invariant freeze skipped missing Stage159 invariants when they were absent from the gate summary.",
+  "fix": "Resolve each frozen invariant against both Stage159 release gate and Stage159 execution dry-run report; block missing or drifting invariants.",
+  "tests_added": [
+    "test_stage160_blocks_missing_stage159_invariant_evidence",
+    "test_stage160_blocks_stage159_invariant_drift"
+  ],
+  "validation": {
+    "stage160_report": "pass",
+    "stage160_release_gate": "pass",
+    "stage160_pytest": "8 passed",
+    "page03_targeted_regression": "36 passed"
+  }
+}

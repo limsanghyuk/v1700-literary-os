@@ -1,0 +1,12 @@
+{
+  "active_version": "stage160",
+  "overlay_stage": "stage160",
+  "title": "Page03 Release Seal",
+  "baseline_stage": "stage159",
+  "release_gate": "release/current/stage160_release_gate_report.json",
+  "evidence": "release/current/stage160_page03_release_seal_report.json",
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0
+}

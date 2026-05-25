@@ -1,0 +1,246 @@
+{
+  "stage": "156",
+  "baseline_stage": "155",
+  "title": "Local Execution Packet Store",
+  "status": "pass",
+  "issues": [],
+  "mode": "LOCAL_EXECUTION_PACKET_STORE_READ_ONLY",
+  "page": "Page03 Execution Body",
+  "store_path": "samples/stage156_execution_packet_store/execution_packets.jsonl",
+  "packet_count": 6,
+  "checksum_count": 6,
+  "read_only_store_enabled": true,
+  "runtime_execution_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_execution_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "store_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "page03_execution_contract_inherited": true,
+  "stage157_plan_graph_builder_ready": true,
+  "parts": {
+    "stage155_release_gate": {
+      "status": "pass",
+      "stage": "155",
+      "baseline_stage": "154",
+      "title": "Execution Contract",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "packet_store_catalog": {
+      "stage": "stage156",
+      "title": "Stage156 Packet Store Catalog",
+      "status": "pass",
+      "issues": [],
+      "store_path": "samples/stage156_execution_packet_store/execution_packets.jsonl",
+      "store_exists": true,
+      "packet_count": 6,
+      "packet_ids": [
+        "exec_pkt_project_bootstrap",
+        "exec_pkt_character_surface",
+        "exec_pkt_episode_order",
+        "exec_pkt_scene_plan",
+        "exec_pkt_reveal_guard",
+        "exec_pkt_payoff_trace"
+      ],
+      "packet_types": [
+        "character_surface",
+        "episode_order",
+        "payoff_trace",
+        "project_bootstrap",
+        "reveal_guard",
+        "scene_plan"
+      ]
+    },
+    "packet_schema_validation": {
+      "stage": "stage156",
+      "title": "Stage156 Packet Schema Validation",
+      "status": "pass",
+      "issues": [],
+      "validated_packet_count": 6
+    },
+    "packet_checksum_index": {
+      "stage": "stage156",
+      "title": "Stage156 Packet Checksum Index",
+      "status": "pass",
+      "issues": [],
+      "checksum_count": 6,
+      "checksums": [
+        {
+          "packet_id": "exec_pkt_project_bootstrap",
+          "checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d",
+          "expected_checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d"
+        },
+        {
+          "packet_id": "exec_pkt_character_surface",
+          "checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444",
+          "expected_checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444"
+        },
+        {
+          "packet_id": "exec_pkt_episode_order",
+          "checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532",
+          "expected_checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532"
+        },
+        {
+          "packet_id": "exec_pkt_scene_plan",
+          "checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478",
+          "expected_checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478"
+        },
+        {
+          "packet_id": "exec_pkt_reveal_guard",
+          "checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0",
+          "expected_checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0"
+        },
+        {
+          "packet_id": "exec_pkt_payoff_trace",
+          "checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576",
+          "expected_checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576"
+        }
+      ]
+    },
+    "read_only_access_policy": {
+      "stage": "stage156",
+      "title": "Stage156 Read-Only Access Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 5,
+      "rules": [
+        {
+          "name": "jsonl_store_read_only",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "provider_execution_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "runtime_append_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "provider_execution_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "packet_mutation_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "provider_execution_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "provider_execution_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "provider_execution_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "canon_mutation_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "provider_execution_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        }
+      ]
+    },
+    "node2_packet_projection_matrix": {
+      "stage": "stage156",
+      "title": "Stage156 Node2 Packet Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 6,
+      "rules": [
+        {
+          "name": "node2_projection_exec_pkt_project_bootstrap",
+          "packet_type": "project_bootstrap",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "node2_projection_exec_pkt_character_surface",
+          "packet_type": "character_surface",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "node2_projection_exec_pkt_episode_order",
+          "packet_type": "episode_order",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "node2_projection_exec_pkt_scene_plan",
+          "packet_type": "scene_plan",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "node2_projection_exec_pkt_reveal_guard",
+          "packet_type": "reveal_guard",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        },
+        {
+          "name": "node2_projection_exec_pkt_payoff_trace",
+          "packet_type": "payoff_trace",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage156",
+      "title": "Stage156 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "store_write_enabled": false,
+      "runtime_execution_enabled": false,
+      "runtime_training_enabled": false
+    }
+  }
+}

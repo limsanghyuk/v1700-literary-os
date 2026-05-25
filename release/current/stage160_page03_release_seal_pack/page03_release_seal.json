@@ -1,0 +1,11 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Release Seal",
+  "status": "pass",
+  "issues": [],
+  "page03_sealed": true,
+  "page03_release_checksum": "f2bf9106966573c87de0b89e04aa1451e3628df3d1c88e4754141193e1deb2c0",
+  "sealed_stage_range": "stage155-stage160",
+  "next_stage": "stage161",
+  "next_page": "Page04 Rendering Body"
+}
