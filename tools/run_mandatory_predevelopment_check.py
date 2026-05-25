@@ -94,6 +94,8 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
         "branchpoint_lineage_preserved": bool(invariants.get("branchpoint_lineage_preserved")),
         "python_fallback_required": bool(invariants.get("python_fallback_required")),
         "gitnexus_runtime_dependency_required_false": invariants.get("gitnexus_runtime_dependency_required") is False,
+        "github_main_green_required": invariants.get("github_main_green_required") is True,
+        "release_assets_triplet_required": invariants.get("release_assets_triplet_required") is True,
     }
     gitnexus = _gitnexus_status(root)
     status = "pass" if not missing and all(invariant_checks.values()) else "blocked"

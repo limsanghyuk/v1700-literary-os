@@ -18,4 +18,6 @@ def test_mandatory_predevelopment_check_passes_for_stage101_repository():
     assert report["invariant_checks"]["active_stage_gate_pass"] is True
     assert report["invariant_checks"]["main_release_gate_pass"] is True
     assert report["invariant_checks"]["gitnexus_runtime_dependency_required_false"] is True
+    assert report["invariant_checks"]["github_main_green_required"] is True
+    assert report["invariant_checks"]["release_assets_triplet_required"] is True
     assert report["workflow_upgrade_status"] == "v1_1_stage160_applied"
