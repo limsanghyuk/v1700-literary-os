@@ -1,24 +1,16 @@
-# V1700 Literary OS - Stage156
+# Stage156 — Local Execution Packet Store
 
-> Local Execution Packet Store
+Stage156 stores Stage155 execution packets in a deterministic local read-only JSONL store.
 
-## Goal
+## Evidence
 
-Stage156 provides local read-only storage for execution packets.
+- `release/current/stage156_local_execution_packet_store_report.json`
+- `release/current/stage156_release_gate_report.json`
+- `release/current/stage156_local_execution_packet_store_pack/`
 
-## What Stage156 Adds
+## Gate
 
-- JSONL packet fixture storage
-- checksum indexing
-- read-only loading and schema validation
-
-## Invariants
-
-- No store writes
-- No packet mutation
-- No provider calls
-- No runtime training
-
-## Roadmap Status
-
-Stage156 keeps Page03 packet storage local and deterministic.
+```bash
+python tools/run_stage156_local_execution_packet_store.py
+python tools/run_stage156_release_gate.py
+```

@@ -1,24 +1,16 @@
-# V1700 Literary OS - Stage158
+# Stage158 — Dependency and Conflict Preflight
 
-> Dependency and Conflict Preflight
+Stage158 validates the dependency and conflict safety of the Stage157 deterministic plan graph.
 
-## Goal
+## Evidence
 
-Stage158 detects contradictions, missing prerequisites, boundary conflicts, and unsafe plan requests before execution.
+- `release/current/stage158_dependency_conflict_preflight_report.json`
+- `release/current/stage158_release_gate_report.json`
+- `release/current/stage158_dependency_conflict_preflight_pack/`
 
-## What Stage158 Adds
+## Gate
 
-- conflict registry
-- prerequisite matrix
-- boundary conflict reporting
-- execution blocker registry
-
-## Invariants
-
-- Report-only conflict handling
-- No automatic repair apply
-- No canon mutation
-
-## Roadmap Status
-
-Stage158 keeps execution planning deterministic and reviewable.
+```bash
+python tools/run_stage158_dependency_conflict_preflight.py
+python tools/run_stage158_release_gate.py
+```

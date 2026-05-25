@@ -1,24 +1,16 @@
-# V1700 Literary OS - Stage157
+# Stage157 — Deterministic Plan Graph Builder
 
-> Deterministic Plan Graph Builder
+Stage157 compiles Stage156 local execution packets into a deterministic plan graph.
 
-## Goal
+## Evidence
 
-Stage157 builds deterministic execution dependency graphs.
+- `release/current/stage157_deterministic_plan_graph_builder_report.json`
+- `release/current/stage157_release_gate_report.json`
+- `release/current/stage157_deterministic_plan_graph_builder_pack/`
 
-## What Stage157 Adds
+## Gate
 
-- plan node cataloging
-- edge and dependency registry
-- topological ordering checks
-- blocked-cycle reporting
-
-## Invariants
-
-- Deterministic ordering only
-- No hidden reveal projection to Node2
-- No runtime execution
-
-## Roadmap Status
-
-Stage157 turns packet inputs into graph-shaped execution order.
+```bash
+python tools/run_stage157_deterministic_plan_graph_builder.py
+python tools/run_stage157_release_gate.py
+```

@@ -1,25 +1,11 @@
-# V1700 Literary OS - Stage159
+# Stage159 — Execution Dry-Run Trace
 
-> Execution Dry-Run Trace
+Stage159 is the Page03 dry-run trace stage.
 
-## Goal
+It produces deterministic trace steps from the sealed Page03 execution graph and conflict preflight, then verifies that the plan can be replayed as a side-effect-free trace.
 
-Stage159 simulates execution order without performing generation or writes.
+## Evidence
 
-## What Stage159 Adds
-
-- dry-run trace logging
-- packet execution ordering
-- skipped and blocked step tracking
-- reproducibility checksums
-
-## Invariants
-
-- Dry-run only
-- No provider calls
-- No writes
-- Deterministic trace
-
-## Roadmap Status
-
-Stage159 verifies that Page03 execution remains reproducible.
+- `release/current/stage159_execution_dry_run_trace_report.json`
+- `release/current/stage159_release_gate_report.json`
+- `release/current/stage159_execution_dry_run_trace_pack/`

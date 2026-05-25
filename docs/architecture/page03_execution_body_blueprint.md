@@ -69,8 +69,7 @@ node2_projection_policy
 
 ## Boundary policy
 
-* Node2 may receive only surface-safe packet summaries, plan order, public dependency labels, and blocked-state summaries.
-* Node2 must not receive hidden reveal payloads, private notes, raw manuscript payloads, write handles, memory mutation handles, or provider execution handles.
+Node2 may receive only surface-safe packet summaries, plan order, public dependency labels, and blocked-state summaries. Node2 must not receive hidden reveal payloads, private notes, raw manuscript payloads, write handles, memory mutation handles, or provider execution handles.
 
 ## Page03 completion criteria
 

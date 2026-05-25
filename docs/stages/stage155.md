@@ -1,25 +1,18 @@
-# V1700 Literary OS - Stage155
+# Stage155 — Execution Contract
 
-> Execution Contract
+Stage155 begins Page03 Execution Body.
 
-## Goal
+It defines deterministic execution intent and packet contracts while keeping execution runtime, generation, provider execution, writes, canon mutation, runtime training, and auto-repair disabled.
 
-Stage155 defines typed execution packet contracts for Page03 without enabling runtime execution.
+## Evidence
 
-## What Stage155 Adds
+- `release/current/stage155_execution_contract_report.json`
+- `release/current/stage155_release_gate_report.json`
+- `release/current/stage155_execution_contract_pack/`
 
-- typed execution packet boundaries
-- read-only execution policy fields
-- Node2-safe projection rules for execution summaries
+## Gate
 
-## Invariants
-
-- No provider calls
-- No execution runtime
-- No memory writes
-- No canon mutation
-- No Node2 hidden reveal access
-
-## Roadmap Status
-
-Stage155 begins the Page03 execution compiler chain.
+```bash
+python tools/run_stage155_execution_contract.py
+python tools/run_stage155_release_gate.py
+```
