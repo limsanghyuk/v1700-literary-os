@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.gitnexus/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+outputs/
+release/history/
+archive/historical_stage_artifacts/
+archive/historical_packages/
+*.zip
+.DS_Store
