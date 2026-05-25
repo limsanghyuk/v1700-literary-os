@@ -508,6 +508,32 @@ TARGETS: dict[str, dict[str, Any]] = {
             "release/current/stage160_page03_release_seal_pack/regression_snapshot.json",
         ],
     },
+    "stage161": {
+        "label": "Stage161",
+        "version": "1.61.0",
+        "title": "Rendering Contract",
+        "required_files": [
+            "docs/stages/stage161.md",
+            "docs/proposals/stage161_rendering_contract_proposal.md",
+            "docs/architecture/stage161_rendering_contract_blueprint.md",
+            "docs/development/stage161_developer_handoff.md",
+            "docs/proposals/page04_rendering_body_proposal.md",
+            "docs/architecture/page04_rendering_body_blueprint.md",
+            "docs/development/page04_handoff.md",
+            "manifests/stage161_manifest.json",
+            "manifests/stage161_rendering_contract_manifest.json",
+            "manifests/stage161_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage161_overlay.json",
+            "release/current/stage161_release_asset_manifest.json",
+            "release/current/stage161_rendering_contract_report.json",
+            "release/current/stage161_release_gate_report.json",
+            "release/current/stage161_rendering_contract_pack/page04_readiness_matrix.json",
+            "release/current/stage161_rendering_contract_pack/rendering_contracts.json",
+            "release/current/stage161_rendering_contract_pack/rendering_boundary_policy.json",
+            "release/current/stage161_rendering_contract_pack/rendering_write_policy.json",
+            "release/current/stage161_rendering_contract_pack/node2_rendering_projection_policy.json",
+        ],
+    },
 }
 
 

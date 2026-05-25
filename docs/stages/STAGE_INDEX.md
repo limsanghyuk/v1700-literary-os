@@ -72,3 +72,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 
 
 - [Stage157 — Deterministic Plan Graph Builder](stage157.md)
+
+- [Stage161 — Rendering Contract](stage161.md)

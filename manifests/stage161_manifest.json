@@ -1,0 +1,11 @@
+{
+  "stage": "stage161",
+  "title": "Rendering Contract",
+  "baseline_stage": "stage160",
+  "page": "Page04 Rendering Body",
+  "status": "active",
+  "runner": "tools/run_stage161_rendering_contract.py",
+  "release_gate": "tools/run_stage161_release_gate.py",
+  "evidence": "release/current/stage161_rendering_contract_report.json",
+  "next_stage": "stage162"
+}

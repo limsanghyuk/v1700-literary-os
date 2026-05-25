@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.61.0-stage161
+
+- Added Stage161 Rendering Contract as the Page04 Rendering Body entry stage.
+- Defined render contract shapes, rendering boundary policy, write policy, and Node2 rendering projection policy.
+- Kept provider generation, live rendering runtime, writes, canon mutation, runtime training, and auto-repair disabled.
+
+
 ## v1.60.0-stage160
 
 - Added Stage160 Page03 Release Seal.
