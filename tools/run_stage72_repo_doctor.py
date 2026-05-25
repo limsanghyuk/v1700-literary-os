@@ -499,6 +499,27 @@ STAGE_REQUIRED_GATES = {
     ],
 }
 
+STAGE_REQUIRED_GATES["stage157"] = [
+    *STAGE_REQUIRED_GATES["stage156"],
+    "stage157_deterministic_plan_graph_builder",
+    "stage157_release_gate",
+]
+STAGE_REQUIRED_GATES["stage158"] = [
+    *STAGE_REQUIRED_GATES["stage157"],
+    "stage158_dependency_conflict_preflight",
+    "stage158_release_gate",
+]
+STAGE_REQUIRED_GATES["stage159"] = [
+    *STAGE_REQUIRED_GATES["stage158"],
+    "stage159_execution_dry_run_trace",
+    "stage159_release_gate",
+]
+STAGE_REQUIRED_GATES["stage160"] = [
+    *STAGE_REQUIRED_GATES["stage159"],
+    "stage160_page03_release_seal",
+    "stage160_release_gate",
+]
+
 STAGE_REQUIRED_FILES = {
     "stage127": [
         "manifests/stage127_manifest.json",
@@ -986,6 +1007,69 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage157_deterministic_plan_graph_builder_pack/node2_plan_projection_matrix.json",
         "release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_policy.json",
         "release/current/stage157_deterministic_plan_graph_builder_pack/regression_snapshot.json",
+    ],
+    "stage158": [
+        "manifests/stage158_manifest.json",
+        "manifests/stage158_dependency_conflict_preflight_manifest.json",
+        "manifests/stage158_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage158_overlay.json",
+        "docs/stages/stage158.md",
+        "docs/architecture/stage158_dependency_conflict_preflight_blueprint.md",
+        "docs/proposals/stage158_dependency_conflict_preflight_proposal.md",
+        "docs/development/stage158_developer_handoff.md",
+        "release/current/stage158_dependency_conflict_preflight_report.json",
+        "release/current/stage158_release_gate_report.json",
+        "release/current/stage158_release_asset_manifest.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/blocked_operation_registry.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/conflict_matrix.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/dependency_order_preflight.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/graph_integrity_snapshot.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/node2_conflict_projection_matrix.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/packet_boundary_preflight.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/preflight_step15_connectivity_matrix.json",
+        "release/current/stage158_dependency_conflict_preflight_pack/regression_snapshot.json",
+    ],
+    "stage159": [
+        "manifests/stage159_manifest.json",
+        "manifests/stage159_execution_dry_run_trace_manifest.json",
+        "manifests/stage159_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage159_overlay.json",
+        "docs/stages/stage159.md",
+        "docs/architecture/stage159_execution_dry_run_trace_blueprint.md",
+        "docs/proposals/stage159_execution_dry_run_trace_proposal.md",
+        "docs/development/stage159_developer_handoff.md",
+        "release/current/stage159_execution_dry_run_trace_report.json",
+        "release/current/stage159_release_gate_report.json",
+        "release/current/stage159_release_asset_manifest.json",
+        "release/current/stage159_execution_dry_run_trace_pack/dry_run_trace_steps.json",
+        "release/current/stage159_execution_dry_run_trace_pack/node2_trace_projection_matrix.json",
+        "release/current/stage159_execution_dry_run_trace_pack/preflight_step15_connectivity_matrix.json",
+        "release/current/stage159_execution_dry_run_trace_pack/regression_snapshot.json",
+        "release/current/stage159_execution_dry_run_trace_pack/side_effect_free_policy.json",
+        "release/current/stage159_execution_dry_run_trace_pack/stage160_entry_criteria.json",
+        "release/current/stage159_execution_dry_run_trace_pack/trace_integrity_snapshot.json",
+        "release/current/stage159_execution_dry_run_trace_pack/trace_replay_ledger.json",
+    ],
+    "stage160": [
+        "manifests/stage160_manifest.json",
+        "manifests/stage160_page03_release_seal_manifest.json",
+        "manifests/stage160_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage160_overlay.json",
+        "docs/stages/stage160.md",
+        "docs/architecture/stage160_page03_release_seal_blueprint.md",
+        "docs/proposals/stage160_page03_release_seal_proposal.md",
+        "docs/development/stage160_developer_handoff.md",
+        "release/current/stage160_page03_release_seal_report.json",
+        "release/current/stage160_release_gate_report.json",
+        "release/current/stage160_release_asset_manifest.json",
+        "release/current/stage160_page03_release_seal_pack/page03_artifact_index.json",
+        "release/current/stage160_page03_release_seal_pack/page03_invariant_freeze.json",
+        "release/current/stage160_page03_release_seal_pack/page03_nexus_connectivity_matrix.json",
+        "release/current/stage160_page03_release_seal_pack/page03_release_seal.json",
+        "release/current/stage160_page03_release_seal_pack/page03_release_seal_matrix.json",
+        "release/current/stage160_page03_release_seal_pack/page03_stage_chain.json",
+        "release/current/stage160_page03_release_seal_pack/page03_transition_criteria.json",
+        "release/current/stage160_page03_release_seal_pack/regression_snapshot.json",
     ],
 }
 

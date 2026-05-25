@@ -25,6 +25,7 @@ REQUIRED_FIELDS = (
 FORBIDDEN_NODE2_TOKENS = (
     "hidden_reveal_payload",
     "private_note",
+    "provider_payload",
     "write_handle",
     "canon_mutation_command",
     "learning_payload",
