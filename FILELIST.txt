@@ -22,6 +22,7 @@ STAGE153_COMPLETION_REPORT.md
 STAGE155_COMPLETION_REPORT.md
 STAGE156_COMPLETION_REPORT.md
 STAGE156_FULL_REGRESSION_REPORT.md
+STAGE157_COMPLETION_REPORT.md
 V1700_stage111_1_narrative_weight_kernel_filelist.txt
 V1700_stage112_gitnexus_aware_nie_preflight_bridge_filelist.txt
 V1700_stage113_physics_reward_bridge_mae_reward_wiring_filelist.txt
@@ -67,6 +68,7 @@ docs/architecture/stage153_memory_health_leakage_boundary_blueprint.md
 docs/architecture/stage154_page02_release_seal_blueprint.md
 docs/architecture/stage155_execution_contract_blueprint.md
 docs/architecture/stage156_local_execution_packet_store_blueprint.md
+docs/architecture/stage157_deterministic_plan_graph_builder_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -114,6 +116,7 @@ docs/development/stage153_developer_handoff.md
 docs/development/stage154_developer_handoff.md
 docs/development/stage155_developer_handoff.md
 docs/development/stage156_developer_handoff.md
+docs/development/stage157_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -152,12 +155,14 @@ docs/proposals/stage153_memory_health_leakage_boundary_proposal.md
 docs/proposals/stage154_page02_release_seal_proposal.md
 docs/proposals/stage155_execution_contract_proposal.md
 docs/proposals/stage156_local_execution_packet_store_proposal.md
+docs/proposals/stage157_deterministic_plan_graph_builder_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
 docs/reports/stage154_integrity_repair_report.md
 docs/reports/stage155_regression_repair_report.md
 docs/reports/stage156_full_regression_report.md
+docs/reports/stage157_completion_report.md
 docs/reports/stage85_principal_system_engineer_evaluation.md
 docs/reviews/stage72_3_principal_engineer_validation.md
 docs/roadmaps/seven_page_architecture.md
@@ -293,6 +298,7 @@ docs/stages/stage153.md
 docs/stages/stage154.md
 docs/stages/stage155.md
 docs/stages/stage156.md
+docs/stages/stage157.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -427,6 +433,7 @@ manifests/live_core_stage153_overlay.json
 manifests/live_core_stage154_overlay.json
 manifests/live_core_stage155_overlay.json
 manifests/live_core_stage156_overlay.json
+manifests/live_core_stage157_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -619,6 +626,9 @@ manifests/stage155_manifest.json
 manifests/stage156_branchpoint_trace_manifest.json
 manifests/stage156_local_execution_packet_store_manifest.json
 manifests/stage156_manifest.json
+manifests/stage157_branchpoint_trace_manifest.json
+manifests/stage157_deterministic_plan_graph_builder_manifest.json
+manifests/stage157_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1334,6 +1344,18 @@ release/current/stage156_local_execution_packet_store_report.json
 release/current/stage156_release_asset_manifest.json
 release/current/stage156_release_gate_report.json
 release/current/stage156_summary.json
+release/current/stage157_deterministic_plan_graph_builder_pack/dependency_integrity.json
+release/current/stage157_deterministic_plan_graph_builder_pack/deterministic_graph_checksum.json
+release/current/stage157_deterministic_plan_graph_builder_pack/node2_plan_projection_matrix.json
+release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_edges.json
+release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_nodes.json
+release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_policy.json
+release/current/stage157_deterministic_plan_graph_builder_pack/regression_snapshot.json
+release/current/stage157_deterministic_plan_graph_builder_pack/topological_order.json
+release/current/stage157_deterministic_plan_graph_builder_report.json
+release/current/stage157_release_asset_manifest.json
+release/current/stage157_release_gate_report.json
+release/current/stage157_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1727,6 +1749,7 @@ src/v1700/gates/stage153_release_gate.py
 src/v1700/gates/stage154_release_gate.py
 src/v1700/gates/stage155_release_gate.py
 src/v1700/gates/stage156_release_gate.py
+src/v1700/gates/stage157_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -2096,6 +2119,10 @@ src/v1700/observability/tracing.py
 src/v1700/page02_release_seal/__init__.py
 src/v1700/page02_release_seal/contracts.py
 src/v1700/page02_release_seal/report.py
+src/v1700/plan_graph_builder/__init__.py
+src/v1700/plan_graph_builder/builder.py
+src/v1700/plan_graph_builder/contracts.py
+src/v1700/plan_graph_builder/report.py
 src/v1700/plugin_marketplace/__init__.py
 src/v1700/plugin_marketplace/contracts.py
 src/v1700/plugin_marketplace/marketplace_index.py
@@ -2447,6 +2474,8 @@ src/v1700/stage155/__init__.py
 src/v1700/stage155/stage155_runner.py
 src/v1700/stage156/__init__.py
 src/v1700/stage156/stage156_runner.py
+src/v1700/stage157/__init__.py
+src/v1700/stage157/stage157_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2664,6 +2693,7 @@ tests/test_stage153_memory_health_leakage_boundary.py
 tests/test_stage154_page02_release_seal.py
 tests/test_stage155_execution_contract.py
 tests/test_stage156_local_execution_packet_store.py
+tests/test_stage157_deterministic_plan_graph_builder.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -3006,6 +3036,8 @@ tools/run_stage155_execution_contract.py
 tools/run_stage155_release_gate.py
 tools/run_stage156_local_execution_packet_store.py
 tools/run_stage156_release_gate.py
+tools/run_stage157_deterministic_plan_graph_builder.py
+tools/run_stage157_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

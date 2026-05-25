@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage155 - Execution Contract
+Current active stage: Stage157 - Deterministic Plan Graph Builder
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -69,3 +69,6 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 
 
 - [Stage156 — Local Execution Packet Store](stage156.md)
+
+
+- [Stage157 — Deterministic Plan Graph Builder](stage157.md)

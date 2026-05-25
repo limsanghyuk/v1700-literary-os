@@ -78,6 +78,12 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage153_memory_health_leakage_boundary_report.json",
         "release_gate_report": "release/current/stage153_release_gate_report.json",
     },
+
+    "stage157": {
+        "package": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+        "release_gate_report": "release/current/stage157_release_gate_report.json",
+    },
     "stage154": {
         "package": "V1700_stage154_page02_release_seal_release_integrated_repository_with_artifacts.zip",
         "release_report": "release/current/stage154_page02_release_seal_report.json",

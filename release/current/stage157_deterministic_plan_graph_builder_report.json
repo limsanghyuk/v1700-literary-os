@@ -1,0 +1,325 @@
+{
+  "stage": "157",
+  "baseline_stage": "156",
+  "title": "Deterministic Plan Graph Builder",
+  "status": "pass",
+  "issues": [],
+  "mode": "DETERMINISTIC_PLAN_GRAPH_BUILDER_LOCAL_ONLY",
+  "page": "Page03 Execution Body",
+  "source_store_path": "samples/stage156_execution_packet_store/execution_packets.jsonl",
+  "node_count": 6,
+  "edge_count": 6,
+  "critical_path_length": 5,
+  "graph_checksum": "bc05b48836609af722587112a1db7fba24e8dab60cd38201211affe07995c035",
+  "topological_order_count": 6,
+  "deterministic_graph_enabled": true,
+  "runtime_execution_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_execution_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "store_write_enabled": false,
+  "graph_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "page03_execution_packet_store_inherited": true,
+  "stage158_dependency_conflict_preflight_ready": true,
+  "parts": {
+    "stage156_release_gate": {
+      "status": "pass",
+      "stage": "156",
+      "baseline_stage": "155",
+      "title": "Local Execution Packet Store",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "plan_graph_nodes": {
+      "stage": "stage157",
+      "title": "Plan Graph Nodes",
+      "status": "pass",
+      "issues": [],
+      "node_count": 6,
+      "nodes": [
+        {
+          "node_id": "plan_node_exec_pkt_project_bootstrap",
+          "packet_id": "exec_pkt_project_bootstrap",
+          "packet_type": "project_bootstrap",
+          "project_id": "sample_project_01",
+          "boundary_level": "READER_SURFACE",
+          "visibility": "surface_safe",
+          "checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d",
+          "level": 0,
+          "node2_projection_summary": "Project execution packet opens Page03 dry-run planning. Node2 receives only summary metadata."
+        },
+        {
+          "node_id": "plan_node_exec_pkt_character_surface",
+          "packet_id": "exec_pkt_character_surface",
+          "packet_type": "character_surface",
+          "project_id": "sample_project_01",
+          "boundary_level": "READER_SURFACE",
+          "visibility": "surface_safe",
+          "checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444",
+          "level": 1,
+          "node2_projection_summary": "Character-facing execution packet for safe surface planning. Node2 receives only summary metadata."
+        },
+        {
+          "node_id": "plan_node_exec_pkt_episode_order",
+          "packet_id": "exec_pkt_episode_order",
+          "packet_type": "episode_order",
+          "project_id": "sample_project_01",
+          "boundary_level": "READER_SURFACE",
+          "visibility": "surface_safe",
+          "checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532",
+          "level": 1,
+          "node2_projection_summary": "Episode ordering packet with deterministic dependencies. Node2 receives only summary metadata."
+        },
+        {
+          "node_id": "plan_node_exec_pkt_scene_plan",
+          "packet_id": "exec_pkt_scene_plan",
+          "packet_type": "scene_plan",
+          "project_id": "sample_project_01",
+          "boundary_level": "READER_SURFACE",
+          "visibility": "surface_safe",
+          "checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478",
+          "level": 2,
+          "node2_projection_summary": "Scene planning packet with surface-safe projection. Node2 receives only summary metadata."
+        },
+        {
+          "node_id": "plan_node_exec_pkt_reveal_guard",
+          "packet_id": "exec_pkt_reveal_guard",
+          "packet_type": "reveal_guard",
+          "project_id": "sample_project_01",
+          "boundary_level": "HIDDEN_REVEAL_GUARD",
+          "visibility": "guarded_metadata_only",
+          "checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0",
+          "level": 3,
+          "node2_projection_summary": "Reveal guard packet blocks hidden payload projection. Node2 receives only summary metadata."
+        },
+        {
+          "node_id": "plan_node_exec_pkt_payoff_trace",
+          "packet_id": "exec_pkt_payoff_trace",
+          "packet_type": "payoff_trace",
+          "project_id": "sample_project_01",
+          "boundary_level": "READER_SURFACE",
+          "visibility": "surface_safe",
+          "checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576",
+          "level": 4,
+          "node2_projection_summary": "Payoff trace packet captures dry-run obligations only. Node2 receives only summary metadata."
+        }
+      ]
+    },
+    "plan_graph_edges": {
+      "stage": "stage157",
+      "title": "Plan Graph Edges",
+      "status": "pass",
+      "issues": [],
+      "edge_count": 6,
+      "edges": [
+        {
+          "edge_id": "plan_edge_exec_pkt_character_surface_to_exec_pkt_scene_plan",
+          "from_node_id": "plan_node_exec_pkt_character_surface",
+          "to_node_id": "plan_node_exec_pkt_scene_plan",
+          "dependency_type": "packet_dependency"
+        },
+        {
+          "edge_id": "plan_edge_exec_pkt_episode_order_to_exec_pkt_scene_plan",
+          "from_node_id": "plan_node_exec_pkt_episode_order",
+          "to_node_id": "plan_node_exec_pkt_scene_plan",
+          "dependency_type": "packet_dependency"
+        },
+        {
+          "edge_id": "plan_edge_exec_pkt_project_bootstrap_to_exec_pkt_character_surface",
+          "from_node_id": "plan_node_exec_pkt_project_bootstrap",
+          "to_node_id": "plan_node_exec_pkt_character_surface",
+          "dependency_type": "packet_dependency"
+        },
+        {
+          "edge_id": "plan_edge_exec_pkt_project_bootstrap_to_exec_pkt_episode_order",
+          "from_node_id": "plan_node_exec_pkt_project_bootstrap",
+          "to_node_id": "plan_node_exec_pkt_episode_order",
+          "dependency_type": "packet_dependency"
+        },
+        {
+          "edge_id": "plan_edge_exec_pkt_reveal_guard_to_exec_pkt_payoff_trace",
+          "from_node_id": "plan_node_exec_pkt_reveal_guard",
+          "to_node_id": "plan_node_exec_pkt_payoff_trace",
+          "dependency_type": "packet_dependency"
+        },
+        {
+          "edge_id": "plan_edge_exec_pkt_scene_plan_to_exec_pkt_reveal_guard",
+          "from_node_id": "plan_node_exec_pkt_scene_plan",
+          "to_node_id": "plan_node_exec_pkt_reveal_guard",
+          "dependency_type": "packet_dependency"
+        }
+      ]
+    },
+    "topological_order": {
+      "stage": "stage157",
+      "title": "Deterministic Topological Order",
+      "status": "pass",
+      "issues": [],
+      "order_count": 6,
+      "topological_order": [
+        "exec_pkt_project_bootstrap",
+        "exec_pkt_character_surface",
+        "exec_pkt_episode_order",
+        "exec_pkt_scene_plan",
+        "exec_pkt_reveal_guard",
+        "exec_pkt_payoff_trace"
+      ],
+      "critical_path_length": 5
+    },
+    "dependency_integrity": {
+      "stage": "stage157",
+      "title": "Dependency Integrity",
+      "status": "pass",
+      "issues": [],
+      "dependency_map": {
+        "exec_pkt_character_surface": [
+          "exec_pkt_project_bootstrap"
+        ],
+        "exec_pkt_episode_order": [
+          "exec_pkt_project_bootstrap"
+        ],
+        "exec_pkt_payoff_trace": [
+          "exec_pkt_reveal_guard"
+        ],
+        "exec_pkt_project_bootstrap": [],
+        "exec_pkt_reveal_guard": [
+          "exec_pkt_scene_plan"
+        ],
+        "exec_pkt_scene_plan": [
+          "exec_pkt_character_surface",
+          "exec_pkt_episode_order"
+        ]
+      }
+    },
+    "deterministic_graph_checksum": {
+      "stage": "stage157",
+      "title": "Deterministic Graph Checksum",
+      "status": "pass",
+      "issues": [],
+      "graph_checksum": "bc05b48836609af722587112a1db7fba24e8dab60cd38201211affe07995c035"
+    },
+    "node2_plan_projection_matrix": {
+      "stage": "stage157",
+      "title": "Node2 Plan Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 4,
+      "rules": [
+        {
+          "name": "surface_summary_only",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "provider_payload_blocked": true,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "hidden_execution_payload_blocked",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "provider_payload_blocked": true,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "write_handle_blocked",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "provider_payload_blocked": true,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "provider_payload_blocked",
+          "node2_surface_allowed": true,
+          "hidden_payload_blocked": true,
+          "write_handle_blocked": true,
+          "provider_payload_blocked": true,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        }
+      ],
+      "node2_raw_reveal_access": 0,
+      "node2_hidden_execution_payload_access": 0
+    },
+    "plan_graph_policy": {
+      "stage": "stage157",
+      "title": "Plan Graph Policy",
+      "status": "pass",
+      "issues": [],
+      "policy_count": 4,
+      "policies": [
+        {
+          "name": "deterministic_builder_only",
+          "deterministic": true,
+          "runtime_execution_allowed": false,
+          "write_allowed": false,
+          "provider_allowed": false,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "runtime_execution_disabled",
+          "deterministic": true,
+          "runtime_execution_allowed": false,
+          "write_allowed": false,
+          "provider_allowed": false,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "graph_write_disabled",
+          "deterministic": true,
+          "runtime_execution_allowed": false,
+          "write_allowed": false,
+          "provider_allowed": false,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        },
+        {
+          "name": "provider_execution_disabled",
+          "deterministic": true,
+          "runtime_execution_allowed": false,
+          "write_allowed": false,
+          "provider_allowed": false,
+          "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage157",
+      "title": "Stage157 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "runtime_execution_enabled": false,
+      "graph_write_enabled": false,
+      "runtime_training_enabled": false
+    }
+  }
+}

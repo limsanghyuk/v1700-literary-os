@@ -1,0 +1,41 @@
+{
+  "stage": "stage157",
+  "title": "Plan Graph Policy",
+  "status": "pass",
+  "issues": [],
+  "policy_count": 4,
+  "policies": [
+    {
+      "name": "deterministic_builder_only",
+      "deterministic": true,
+      "runtime_execution_allowed": false,
+      "write_allowed": false,
+      "provider_allowed": false,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "runtime_execution_disabled",
+      "deterministic": true,
+      "runtime_execution_allowed": false,
+      "write_allowed": false,
+      "provider_allowed": false,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "graph_write_disabled",
+      "deterministic": true,
+      "runtime_execution_allowed": false,
+      "write_allowed": false,
+      "provider_allowed": false,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    },
+    {
+      "name": "provider_execution_disabled",
+      "deterministic": true,
+      "runtime_execution_allowed": false,
+      "write_allowed": false,
+      "provider_allowed": false,
+      "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json"
+    }
+  ]
+}

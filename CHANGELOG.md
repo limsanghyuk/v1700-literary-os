@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.57.0-stage157
+
+- Added Stage157 Deterministic Plan Graph Builder.
+- Compiled Stage156 execution packets into deterministic plan graph nodes, edges, topological order, dependency integrity, and graph checksum.
+- Added cycle and missing-dependency blockers while keeping execution, writes, provider calls, training, and mutation disabled.
+
+
 ## v1.56.0-stage156
 
 - Added Stage156 Local Execution Packet Store.

@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -966,6 +966,27 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage156_local_execution_packet_store_pack/node2_packet_projection_matrix.json",
         "release/current/stage156_local_execution_packet_store_pack/regression_snapshot.json",
     ],
+    "stage157": [
+        "manifests/stage157_manifest.json",
+        "manifests/stage157_deterministic_plan_graph_builder_manifest.json",
+        "manifests/stage157_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage157_overlay.json",
+        "docs/stages/stage157.md",
+        "docs/architecture/stage157_deterministic_plan_graph_builder_blueprint.md",
+        "docs/proposals/stage157_deterministic_plan_graph_builder_proposal.md",
+        "docs/development/stage157_developer_handoff.md",
+        "release/current/stage157_deterministic_plan_graph_builder_report.json",
+        "release/current/stage157_release_gate_report.json",
+        "release/current/stage157_release_asset_manifest.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_nodes.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_edges.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/topological_order.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/dependency_integrity.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/deterministic_graph_checksum.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/node2_plan_projection_matrix.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/plan_graph_policy.json",
+        "release/current/stage157_deterministic_plan_graph_builder_pack/regression_snapshot.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -1013,6 +1034,7 @@ PREDECESSOR_GATE = {
     "stage154": "stage153_release_gate",
     "stage155": "stage154_release_gate",
     "stage156": "stage155_release_gate",
+    "stage157": "stage156_release_gate",
 }
 
 

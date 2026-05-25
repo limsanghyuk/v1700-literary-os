@@ -1,40 +1,27 @@
-# V1700 Stage156 - Local Execution Packet Store
+# V1700 Stage157 - Deterministic Plan Graph Builder
 
-Stage156 begins Page03 Execution Body by defining deterministic execution packet contracts over the sealed Page01 constitution and sealed Page02 memory body.
+Stage157 compiles Stage156 local execution packets into a deterministic plan graph.
 
 ## Highlights
 
-- Page02 Release Seal remains the baseline.
-- Page03 design documents and seven-page roadmap are included.
-- Execution intent and packet contracts are defined.
-- Runtime execution and provider execution remain disabled.
-- Memory writes, canon mutation, runtime training, and auto-repair remain disabled.
-- Node2 receives only surface-safe execution summaries.
+- Stage156 remains the read-only packet store baseline.
+- Stage157 builds deterministic nodes, edges, topological order, dependency integrity, and graph checksum.
+- Missing dependencies, cycles, and Node2 forbidden projections are blocked.
+- Runtime execution, graph writes, provider calls, memory writes, training, and mutation remain disabled.
 
 ## Validation Commands
 
 ```bash
 python -m compileall -q src tools
-python tools/run_mandatory_predevelopment_check.py
-python tools/check_stage_metadata_consistency.py
-python tools/check_release_asset_integrity.py
-python tools/run_stage154_release_gate.py
-python tools/run_stage156_execution_contract.py
 python tools/run_stage156_release_gate.py
+python tools/run_stage157_deterministic_plan_graph_builder.py
+python tools/run_stage157_release_gate.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage156_execution_contract.py -q
+python -m pytest tests/test_stage157_deterministic_plan_graph_builder.py -q
 ```
 
 ## Official Release Assets
 
-- `V1700_stage156_execution_contract_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage156_execution_contract_release_integrated_repository_with_artifacts.zip.sha256`
-
-
-## Stage156 Validation
-
-```bash
-python tools/run_stage156_local_execution_packet_store.py
-python tools/run_stage156_release_gate.py
-```
+- `V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip.sha256`

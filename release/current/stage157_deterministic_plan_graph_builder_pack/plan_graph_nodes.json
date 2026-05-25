@@ -1,0 +1,75 @@
+{
+  "stage": "stage157",
+  "title": "Plan Graph Nodes",
+  "status": "pass",
+  "issues": [],
+  "node_count": 6,
+  "nodes": [
+    {
+      "node_id": "plan_node_exec_pkt_project_bootstrap",
+      "packet_id": "exec_pkt_project_bootstrap",
+      "packet_type": "project_bootstrap",
+      "project_id": "sample_project_01",
+      "boundary_level": "READER_SURFACE",
+      "visibility": "surface_safe",
+      "checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d",
+      "level": 0,
+      "node2_projection_summary": "Project execution packet opens Page03 dry-run planning. Node2 receives only summary metadata."
+    },
+    {
+      "node_id": "plan_node_exec_pkt_character_surface",
+      "packet_id": "exec_pkt_character_surface",
+      "packet_type": "character_surface",
+      "project_id": "sample_project_01",
+      "boundary_level": "READER_SURFACE",
+      "visibility": "surface_safe",
+      "checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444",
+      "level": 1,
+      "node2_projection_summary": "Character-facing execution packet for safe surface planning. Node2 receives only summary metadata."
+    },
+    {
+      "node_id": "plan_node_exec_pkt_episode_order",
+      "packet_id": "exec_pkt_episode_order",
+      "packet_type": "episode_order",
+      "project_id": "sample_project_01",
+      "boundary_level": "READER_SURFACE",
+      "visibility": "surface_safe",
+      "checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532",
+      "level": 1,
+      "node2_projection_summary": "Episode ordering packet with deterministic dependencies. Node2 receives only summary metadata."
+    },
+    {
+      "node_id": "plan_node_exec_pkt_scene_plan",
+      "packet_id": "exec_pkt_scene_plan",
+      "packet_type": "scene_plan",
+      "project_id": "sample_project_01",
+      "boundary_level": "READER_SURFACE",
+      "visibility": "surface_safe",
+      "checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478",
+      "level": 2,
+      "node2_projection_summary": "Scene planning packet with surface-safe projection. Node2 receives only summary metadata."
+    },
+    {
+      "node_id": "plan_node_exec_pkt_reveal_guard",
+      "packet_id": "exec_pkt_reveal_guard",
+      "packet_type": "reveal_guard",
+      "project_id": "sample_project_01",
+      "boundary_level": "HIDDEN_REVEAL_GUARD",
+      "visibility": "guarded_metadata_only",
+      "checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0",
+      "level": 3,
+      "node2_projection_summary": "Reveal guard packet blocks hidden payload projection. Node2 receives only summary metadata."
+    },
+    {
+      "node_id": "plan_node_exec_pkt_payoff_trace",
+      "packet_id": "exec_pkt_payoff_trace",
+      "packet_type": "payoff_trace",
+      "project_id": "sample_project_01",
+      "boundary_level": "READER_SURFACE",
+      "visibility": "surface_safe",
+      "checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576",
+      "level": 4,
+      "node2_projection_summary": "Payoff trace packet captures dry-run obligations only. Node2 receives only summary metadata."
+    }
+  ]
+}
