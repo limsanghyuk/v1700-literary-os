@@ -1,0 +1,49 @@
+{
+  "stage": "stage161",
+  "title": "Stage161 Rendering Write Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "render_contract_definition",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "generation_runtime_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "local_render_packet_store_future",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "generation_runtime_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "stage162"
+    },
+    {
+      "name": "provider_generation_runtime",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "generation_runtime_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "future_page_policy"
+    },
+    {
+      "name": "final_prose_publication",
+      "default_enabled": false,
+      "future_policy_only": true,
+      "generation_runtime_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "future_page_policy"
+    },
+    {
+      "name": "canon_mutation",
+      "default_enabled": false,
+      "future_policy_only": false,
+      "generation_runtime_allowed": false,
+      "runtime_write_allowed": false,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    }
+  ]
+}

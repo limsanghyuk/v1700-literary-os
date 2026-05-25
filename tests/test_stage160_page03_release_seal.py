@@ -9,6 +9,15 @@ from v1700.gates.stage160_release_gate import run_stage160_release_gate
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def _force_stage160(root: Path) -> None:
+    import json
+    manifest = root / "manifests/live_core_manifest.json"
+    payload = json.loads(manifest.read_text(encoding="utf-8"))
+    payload["active_version"] = "stage160"
+    manifest.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+
 def test_stage160_report_passes() -> None:
     result = run_stage160_page03_release_seal(ROOT)
     assert result["status"] == "pass"
@@ -69,6 +78,7 @@ def test_stage160_blocks_missing_historical_artifact(tmp_path: Path) -> None:
     sandbox = tmp_path / "repo"
     ignore = shutil.ignore_patterns(".git", "__pycache__", ".pytest_cache", "*.pyc")
     shutil.copytree(ROOT, sandbox, ignore=ignore)
+    _force_stage160(sandbox)
     missing = sandbox / "release/current/stage159_release_gate_report.json"
     missing.unlink()
     report = run_stage160_page03_release_seal(sandbox)
@@ -80,6 +90,8 @@ def test_stage160_blocks_missing_stage159_invariant_evidence(tmp_path: Path) -> 
     sandbox = tmp_path / "repo"
     ignore = shutil.ignore_patterns(".git", "__pycache__", ".pytest_cache", "*.pyc")
     shutil.copytree(ROOT, sandbox, ignore=ignore)
+
+    _force_stage160(sandbox)
 
     import json
     report_path = sandbox / "release/current/stage159_execution_dry_run_trace_report.json"
@@ -100,6 +112,7 @@ def test_stage160_blocks_stage159_invariant_drift(tmp_path: Path) -> None:
     sandbox = tmp_path / "repo"
     ignore = shutil.ignore_patterns(".git", "__pycache__", ".pytest_cache", "*.pyc")
     shutil.copytree(ROOT, sandbox, ignore=ignore)
+    _force_stage160(sandbox)
 
     import json
     report_path = sandbox / "release/current/stage159_execution_dry_run_trace_report.json"

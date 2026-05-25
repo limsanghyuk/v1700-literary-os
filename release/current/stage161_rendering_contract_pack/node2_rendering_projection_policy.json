@@ -1,0 +1,44 @@
+{
+  "stage": "stage161",
+  "title": "Stage161 Node2 Rendering Projection Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "render_contract_summary",
+      "allowed_surface": "contract_id + render_type + surface_channel",
+      "forbidden_payload": "hidden_reveal_payload",
+      "blocked": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "surface_draft_label",
+      "allowed_surface": "surface label only",
+      "forbidden_payload": "private_style_instruction",
+      "blocked": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "trace_reference_summary",
+      "allowed_surface": "trace ids and safe order",
+      "forbidden_payload": "trace_private_note",
+      "blocked": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "provider_generation_handle",
+      "allowed_surface": "none",
+      "forbidden_payload": "provider handle",
+      "blocked": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    },
+    {
+      "name": "raw_manuscript_payload",
+      "allowed_surface": "none",
+      "forbidden_payload": "raw manuscript",
+      "blocked": true,
+      "evidence": "release/current/stage161_rendering_contract_report.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "active_version": "stage161",
+  "overlay_stage": "stage161",
+  "title": "Rendering Contract",
+  "baseline_stage": "stage160",
+  "release_gate": "release/current/stage161_release_gate_report.json",
+  "evidence": "release/current/stage161_rendering_contract_report.json",
+  "provider_default_calls": 0,
+  "provider_generation_enabled": false,
+  "render_write_enabled": false,
+  "node2_raw_reveal_access": 0
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "stage161",
+  "title": "Rendering Contract",
+  "contracts": [
+    "RenderingIntentContract",
+    "RenderingContractBase",
+    "SceneSurfaceRenderContract",
+    "DialogueSurfaceRenderContract",
+    "DramaBeatRenderContract",
+    "SynopsisRenderContract"
+  ],
+  "policy": {
+    "rendering_runtime_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_generation_enabled": false,
+    "render_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}
