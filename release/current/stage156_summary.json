@@ -1,0 +1,25 @@
+{
+  "stage": "156",
+  "baseline_stage": "155",
+  "title": "Local Execution Packet Store",
+  "status": "pass",
+  "main_report": "release/current/stage156_local_execution_packet_store_report.json",
+  "release_gate_report": "release/current/stage156_release_gate_report.json",
+  "asset_manifest": "release/current/stage156_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage156_local_execution_packet_store_pack/",
+  "mode": "LOCAL_EXECUTION_PACKET_STORE_READ_ONLY",
+  "packet_count": 6,
+  "checksum_count": 6,
+  "page03_execution_contract_inherited": true,
+  "stage157_plan_graph_builder_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "runtime_execution_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "next_development_order": [
+    "Stage157 Deterministic Plan Graph Builder"
+  ]
+}

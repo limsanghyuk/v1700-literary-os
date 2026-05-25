@@ -1,0 +1,12 @@
+{
+  "stage": "stage156",
+  "title": "Execution Packet Store Branchpoint Trace",
+  "baseline_stage": "stage155",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage155 Execution Contract",
+    "Stage156 local packet store",
+    "Stage156 checksum index",
+    "Stage156 Node2 projection matrix"
+  ]
+}

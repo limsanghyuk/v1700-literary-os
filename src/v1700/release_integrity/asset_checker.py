@@ -88,6 +88,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage155_execution_contract_report.json",
         "release_gate_report": "release/current/stage155_release_gate_report.json",
     },
+    "stage156": {
+        "package": "V1700_stage156_local_execution_packet_store_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage156_local_execution_packet_store_report.json",
+        "release_gate_report": "release/current/stage156_release_gate_report.json",
+    },
 }
 
 

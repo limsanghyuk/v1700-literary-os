@@ -1,0 +1,49 @@
+{
+  "stage": "stage156",
+  "title": "Stage156 Read-Only Access Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "jsonl_store_read_only",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_execution_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "runtime_append_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_execution_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "packet_mutation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_execution_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "provider_execution_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_execution_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    },
+    {
+      "name": "canon_mutation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "provider_execution_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage156_local_execution_packet_store_report.json"
+    }
+  ]
+}

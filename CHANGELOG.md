@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.56.0-stage156
+
+- Added Stage156 Local Execution Packet Store.
+- Implemented read-only JSONL execution packet fixture, checksum validation, Node2-safe projection matrix, and release gate integration.
+- Adapted Claude-Native GitNexus preflight Step 15 into GPT Stage156 preflight supplement.
+
+
 ## v1.55.0-stage155
 
 - Added Stage155 Execution Contract as the Page03 Execution Body entry stage.

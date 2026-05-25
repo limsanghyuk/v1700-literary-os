@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -477,6 +477,26 @@ STAGE_REQUIRED_GATES = {
         "stage155_execution_contract",
         "stage155_release_gate",
     ],
+    "stage156": [
+        "stage134_meta_learner_audit",
+        "stage134_release_gate",
+        "stage145_body_constitution",
+        "stage145_release_gate",
+        "stage150_memory_contract",
+        "stage150_release_gate",
+        "stage151_local_read_only_memory_store",
+        "stage151_release_gate",
+        "stage152_memory_query_interface",
+        "stage152_release_gate",
+        "stage153_memory_health_leakage_boundary",
+        "stage153_release_gate",
+        "stage154_page02_release_seal",
+        "stage154_release_gate",
+        "stage155_execution_contract",
+        "stage155_release_gate",
+        "stage156_local_execution_packet_store",
+        "stage156_release_gate",
+    ],
 }
 
 STAGE_REQUIRED_FILES = {
@@ -926,6 +946,26 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage155_execution_contract_pack/execution_write_policy.json",
         "release/current/stage155_execution_contract_pack/node2_execution_projection_policy.json",
     ],
+    "stage156": [
+        "manifests/stage156_manifest.json",
+        "manifests/stage156_local_execution_packet_store_manifest.json",
+        "manifests/stage156_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage156_overlay.json",
+        "docs/stages/stage156.md",
+        "docs/architecture/stage156_local_execution_packet_store_blueprint.md",
+        "docs/proposals/stage156_local_execution_packet_store_proposal.md",
+        "docs/development/stage156_developer_handoff.md",
+        "docs/workflow/PREFLIGHT_GUIDE_gpt_stage156.md",
+        "release/current/stage156_local_execution_packet_store_report.json",
+        "release/current/stage156_release_gate_report.json",
+        "release/current/stage156_release_asset_manifest.json",
+        "release/current/stage156_local_execution_packet_store_pack/packet_store_catalog.json",
+        "release/current/stage156_local_execution_packet_store_pack/packet_schema_validation.json",
+        "release/current/stage156_local_execution_packet_store_pack/packet_checksum_index.json",
+        "release/current/stage156_local_execution_packet_store_pack/read_only_access_policy.json",
+        "release/current/stage156_local_execution_packet_store_pack/node2_packet_projection_matrix.json",
+        "release/current/stage156_local_execution_packet_store_pack/regression_snapshot.json",
+    ],
 }
 
 PREDECESSOR_GATE = {
@@ -972,6 +1012,7 @@ PREDECESSOR_GATE = {
     "stage153": "stage152_release_gate",
     "stage154": "stage153_release_gate",
     "stage155": "stage154_release_gate",
+    "stage156": "stage155_release_gate",
 }
 
 

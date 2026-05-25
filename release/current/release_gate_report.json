@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 951
+        "node_count": 958
       },
       "narrative_summary": {
         "available": true,
@@ -1071,6 +1071,19 @@
     "stage": "155",
     "baseline_stage": "154",
     "title": "Execution Contract",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage156_release_gate": {
+    "status": "pass",
+    "stage": "156",
+    "baseline_stage": "155",
+    "title": "Local Execution Packet Store",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

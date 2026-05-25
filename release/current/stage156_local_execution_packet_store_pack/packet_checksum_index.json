@@ -1,0 +1,39 @@
+{
+  "stage": "stage156",
+  "title": "Stage156 Packet Checksum Index",
+  "status": "pass",
+  "issues": [],
+  "checksum_count": 6,
+  "checksums": [
+    {
+      "packet_id": "exec_pkt_project_bootstrap",
+      "checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d",
+      "expected_checksum": "4655cc5963bf79ebb735001fc9ab7feb37a65fa0f4cd3eb5f9f69ac18a7ed50d"
+    },
+    {
+      "packet_id": "exec_pkt_character_surface",
+      "checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444",
+      "expected_checksum": "d5fe641ac7b4becbba5f7f9d241e202ea2a231dec25cec59700d960cfbb53444"
+    },
+    {
+      "packet_id": "exec_pkt_episode_order",
+      "checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532",
+      "expected_checksum": "e5d5033f256f02fd3130670cbbddc03ee6f688bd35b3047fe79ed90c68ca2532"
+    },
+    {
+      "packet_id": "exec_pkt_scene_plan",
+      "checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478",
+      "expected_checksum": "0b490433d0ef69bd67f6f50748d8fdf08bf56c200bfe407a8f9a47bd7299c478"
+    },
+    {
+      "packet_id": "exec_pkt_reveal_guard",
+      "checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0",
+      "expected_checksum": "50ad1a951f48d3d01f029a3b8f83658b8fd0644020baab50e93d0b11938348a0"
+    },
+    {
+      "packet_id": "exec_pkt_payoff_trace",
+      "checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576",
+      "expected_checksum": "6f5578e308f10b741780a1d4e2c45a5355ff9dfe33fab181da59db2a9f88e576"
+    }
+  ]
+}
