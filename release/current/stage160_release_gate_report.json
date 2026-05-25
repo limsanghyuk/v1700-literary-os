@@ -1,0 +1,43 @@
+{
+  "stage": "160",
+  "baseline_stage": "159",
+  "title": "Page03 Release Seal Gate",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "release_seal_report_pass": {
+      "status": "pass"
+    },
+    "stage155_159_docs_present": {
+      "status": "pass"
+    },
+    "stage160_pack_present": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "write_zero_pass": {
+      "status": "pass"
+    },
+    "node2_surface_only_pass": {
+      "status": "pass"
+    },
+    "sha256_sidecar_ready": {
+      "status": "pass"
+    }
+  },
+  "evidence": [
+    "docs/stages/stage154.md",
+    "docs/stages/stage155.md",
+    "docs/stages/stage156.md",
+    "docs/stages/stage157.md",
+    "docs/stages/stage158.md",
+    "docs/stages/stage159.md",
+    "docs/stages/stage160.md",
+    "release/current/stage160_page03_release_seal_pack/evidence_index.json",
+    "release/current/stage160_page03_release_seal_pack/execution_safety_matrix.json",
+    "release/current/stage160_page03_release_seal_pack/page04_readiness_matrix.json",
+    "release/current/stage160_page03_release_seal_pack/stage160_summary.md"
+  ]
+}

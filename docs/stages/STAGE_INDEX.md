@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage152 - Deterministic Local Query / Ranking
+Current active stage: Stage153 - Memory Health & Leakage Boundary
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -54,11 +54,14 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage147](stage147.md) - Project Manifest Body
 - [Stage148](stage148.md) - Node Boundary Constitution
 - [Stage149](stage149.md) - Body Constitution Release Gate
-
-- [Stage150 — Memory Contract](stage150.md)
-
-- [Stage151 — Local Read-Only Memory Store](stage151.md)
-
+- [Stage150](stage150.md) - Memory Contract
+- [Stage151](stage151.md) - Local Read-Only Memory Store
 - [Stage152](stage152.md) - Deterministic Local Query / Ranking
-
-- [Stage153 — Memory Health & Leakage Boundary](stage153.md)
+- [Stage153](stage153.md) - Memory Health & Leakage Boundary
+- [Stage154](stage154.md) - Page02 Release Seal
+- [Stage155](stage155.md) - Execution Contract
+- [Stage156](stage156.md) - Local Execution Packet Store
+- [Stage157](stage157.md) - Deterministic Plan Graph Builder
+- [Stage158](stage158.md) - Dependency and Conflict Preflight
+- [Stage159](stage159.md) - Execution Dry-Run Trace
+- [Stage160](stage160.md) - Page03 Release Seal
