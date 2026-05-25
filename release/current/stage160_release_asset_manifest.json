@@ -1,0 +1,16 @@
+{
+  "stage": "stage160",
+  "active_version": "stage160",
+  "canonical_package": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip",
+  "sha256_sidecar": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_authority": "release sidecar file is authoritative",
+  "filelist": "FILELIST.txt",
+  "sha256_sums": "SHA256SUMS.txt",
+  "release_report": "release/current/stage160_page03_release_seal_report.json",
+  "release_gate_report": "release/current/stage160_release_gate_report.json",
+  "package_manifest": "package_manifest.json",
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0
+}

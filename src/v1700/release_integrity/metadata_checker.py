@@ -482,6 +482,32 @@ TARGETS: dict[str, dict[str, Any]] = {
             "release/current/stage159_execution_dry_run_trace_pack/regression_snapshot.json",
         ],
     },
+    "stage160": {
+        "label": "Stage160",
+        "version": "1.60.0",
+        "title": "Page03 Release Seal",
+        "required_files": [
+            "docs/stages/stage160.md",
+            "docs/proposals/stage160_page03_release_seal_proposal.md",
+            "docs/architecture/stage160_page03_release_seal_blueprint.md",
+            "docs/development/stage160_developer_handoff.md",
+            "manifests/stage160_manifest.json",
+            "manifests/stage160_page03_release_seal_manifest.json",
+            "manifests/stage160_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage160_overlay.json",
+            "release/current/stage160_release_asset_manifest.json",
+            "release/current/stage160_page03_release_seal_report.json",
+            "release/current/stage160_release_gate_report.json",
+            "release/current/stage160_page03_release_seal_pack/page03_stage_chain.json",
+            "release/current/stage160_page03_release_seal_pack/page03_release_seal_matrix.json",
+            "release/current/stage160_page03_release_seal_pack/page03_artifact_index.json",
+            "release/current/stage160_page03_release_seal_pack/page03_invariant_freeze.json",
+            "release/current/stage160_page03_release_seal_pack/page03_nexus_connectivity_matrix.json",
+            "release/current/stage160_page03_release_seal_pack/page03_transition_criteria.json",
+            "release/current/stage160_page03_release_seal_pack/page03_release_seal.json",
+            "release/current/stage160_page03_release_seal_pack/regression_snapshot.json",
+        ],
+    },
 }
 
 

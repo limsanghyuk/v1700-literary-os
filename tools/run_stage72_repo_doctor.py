@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -1037,6 +1037,7 @@ PREDECESSOR_GATE = {
     "stage157": "stage156_release_gate",
     "stage158": "stage157_release_gate",
     "stage159": "stage158_release_gate",
+    "stage160": "stage159_release_gate",
 }
 
 

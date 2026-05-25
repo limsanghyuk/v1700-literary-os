@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.60.0-stage160
+
+- Added Stage160 Page03 Release Seal.
+- Sealed Page03 Execution Body across Stage155 through Stage160.
+- Added Page03 artifact index, invariant freeze, Nexus connectivity matrix, transition criteria, release seal checksum, and Stage161 readiness.
+- Kept provider-zero, write-zero, runtime-execution-zero, training-zero, and Node2 raw reveal zero.
+
 ## v1.59.0-stage159
 
 - Added Stage159 Execution Dry-Run Trace.

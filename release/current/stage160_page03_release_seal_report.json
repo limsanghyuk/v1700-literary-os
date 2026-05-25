@@ -1,0 +1,882 @@
+{
+  "stage": "160",
+  "baseline_stage": "159",
+  "title": "Page03 Release Seal",
+  "status": "pass",
+  "issues": [],
+  "mode": "PAGE03_RELEASE_SEAL_LOCAL",
+  "page": "Page03 Execution Body",
+  "page03_release_seal_only": true,
+  "page03_sealed": true,
+  "page03_stage_count": 6,
+  "page03_total_stage_count": 6,
+  "page03_upstream_stage_count": 5,
+  "page03_stage_chain_pass": true,
+  "page03_artifact_index_complete": true,
+  "page03_invariant_freeze_pass": true,
+  "page03_nexus_connectivity_pass": true,
+  "page03_release_checksum": "f2bf9106966573c87de0b89e04aa1451e3628df3d1c88e4754141193e1deb2c0",
+  "stage161_rendering_contract_ready": true,
+  "runtime_execution_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_execution_enabled": false,
+  "execution_write_enabled": false,
+  "dry_run_write_enabled": false,
+  "memory_write_enabled": false,
+  "store_write_enabled": false,
+  "graph_write_enabled": false,
+  "preflight_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "runtime_execution_count": 0,
+  "provider_execution_count": 0,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "page03_stage_chain": {
+      "stage": "stage160",
+      "title": "Page03 Upstream Stage Chain",
+      "status": "pass",
+      "issues": [],
+      "stage_count": 5,
+      "sealed_count": 5,
+      "stages": [
+        {
+          "stage": "155",
+          "title": "Execution Contract",
+          "report_path": "release/current/stage155_execution_contract_report.json",
+          "gate_path": "release/current/stage155_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "156",
+          "title": "Local Execution Packet Store",
+          "report_path": "release/current/stage156_local_execution_packet_store_report.json",
+          "gate_path": "release/current/stage156_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "157",
+          "title": "Deterministic Plan Graph Builder",
+          "report_path": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+          "gate_path": "release/current/stage157_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "158",
+          "title": "Dependency and Conflict Preflight",
+          "report_path": "release/current/stage158_dependency_conflict_preflight_report.json",
+          "gate_path": "release/current/stage158_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        },
+        {
+          "stage": "159",
+          "title": "Execution Dry-Run Trace",
+          "report_path": "release/current/stage159_execution_dry_run_trace_report.json",
+          "gate_path": "release/current/stage159_release_gate_report.json",
+          "status": "pass",
+          "sealed": true
+        }
+      ]
+    },
+    "page03_release_seal_matrix": {
+      "stage": "stage160",
+      "title": "Page03 Release Seal Matrix",
+      "status": "pass",
+      "issues": [],
+      "sealed_page03": true,
+      "check_count": 8,
+      "checks": [
+        {
+          "name": "upstream_stage_chain_complete",
+          "status": "pass",
+          "evidence": "page03_stage_chain",
+          "description": "Stage155 through Stage159 all pass before Stage160 seals Page03."
+        },
+        {
+          "name": "execution_contract_sealed",
+          "status": "pass",
+          "evidence": "stage155_release_gate",
+          "description": "Execution contract is sealed."
+        },
+        {
+          "name": "packet_store_sealed",
+          "status": "pass",
+          "evidence": "stage156_release_gate",
+          "description": "Local execution packet store is sealed."
+        },
+        {
+          "name": "plan_graph_sealed",
+          "status": "pass",
+          "evidence": "stage157_release_gate",
+          "description": "Deterministic plan graph builder is sealed."
+        },
+        {
+          "name": "conflict_preflight_sealed",
+          "status": "pass",
+          "evidence": "stage158_release_gate",
+          "description": "Dependency and conflict preflight is sealed."
+        },
+        {
+          "name": "dry_run_trace_sealed",
+          "status": "pass",
+          "evidence": "stage159_release_gate",
+          "description": "Execution dry-run trace is sealed."
+        },
+        {
+          "name": "page03_total_stage_count_confirmed",
+          "status": "pass",
+          "evidence": "release/current/stage160_page03_release_seal_report.json",
+          "description": "Page03 spans Stage155 through Stage160."
+        },
+        {
+          "name": "no_runtime_execution_privilege_expanded",
+          "status": "pass",
+          "evidence": "release/current/stage160_page03_release_seal_report.json",
+          "description": "Page03 enables no provider, write, mutation, training, rendering, or final prose generation runtime."
+        }
+      ]
+    },
+    "page03_invariant_freeze": {
+      "stage": "stage160",
+      "title": "Page03 Invariant Freeze",
+      "status": "pass",
+      "issues": [],
+      "freeze_count": 23,
+      "observed_count": 23,
+      "frozen": [
+        {
+          "name": "provider_default_calls",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "live_provider_call_count_in_release_gate",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "runtime_execution_count",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "provider_execution_count",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "write_operation_count",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "node2_raw_reveal_access",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "boundary_violation_count",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "raw_manuscript_provider_leakage",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "raw_manuscript_cross_project_leakage",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "credential_leakage",
+          "frozen_value": 0,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "runtime_execution_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "generation_runtime_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "provider_execution_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "execution_write_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "memory_write_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "store_write_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "graph_write_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "preflight_write_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "canon_mutation_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "auto_repair_apply_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "runtime_training_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_release_gate"
+        },
+        {
+          "name": "vector_db_runtime_dependency",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        },
+        {
+          "name": "live_provider_rag_enabled",
+          "frozen_value": false,
+          "evidence": "stage159_execution_dry_run_trace_report"
+        }
+      ],
+      "evidence": [
+        {
+          "name": "provider_default_calls",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "runtime_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "provider_execution_count",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "write_operation_count",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "node2_raw_reveal_access",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "boundary_violation_count",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "credential_leakage",
+          "expected": 0,
+          "observed": 0,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "runtime_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "generation_runtime_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "provider_execution_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "execution_write_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "memory_write_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "store_write_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "graph_write_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "preflight_write_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "canon_mutation_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "auto_repair_apply_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "runtime_training_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_release_gate",
+          "status": "pass"
+        },
+        {
+          "name": "vector_db_runtime_dependency",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        },
+        {
+          "name": "live_provider_rag_enabled",
+          "expected": false,
+          "observed": false,
+          "source": "stage159_execution_dry_run_trace_report",
+          "status": "pass"
+        }
+      ]
+    },
+    "page03_nexus_connectivity_matrix": {
+      "stage": "stage160",
+      "title": "Page03 Nexus Connectivity Matrix",
+      "status": "pass",
+      "issues": [],
+      "check_count": 19,
+      "checks": [
+        {
+          "path": "src/v1700/page03_release_seal/__init__.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "src/v1700/page03_release_seal/contracts.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "src/v1700/page03_release_seal/report.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "src/v1700/stage160/__init__.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "src/v1700/stage160/stage160_runner.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "src/v1700/gates/stage160_release_gate.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "tools/run_stage160_page03_release_seal.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "tools/run_stage160_release_gate.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "tests/test_stage160_page03_release_seal.py",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "docs/stages/stage160.md",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "docs/proposals/stage160_page03_release_seal_proposal.md",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "docs/architecture/stage160_page03_release_seal_blueprint.md",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "docs/development/stage160_developer_handoff.md",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "manifests/stage160_manifest.json",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "manifests/stage160_page03_release_seal_manifest.json",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "manifests/stage160_branchpoint_trace_manifest.json",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "manifests/live_core_stage160_overlay.json",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_report.json",
+          "exists": true,
+          "required": true
+        },
+        {
+          "path": "release/current/stage160_release_gate_report.json",
+          "exists": true,
+          "required": true
+        }
+      ],
+      "step15_rule_5_survival_matrix": "pass",
+      "step15_rule_6_orphan_module_detection": "pass",
+      "step15_rule_7_new_module_connectivity": "pass",
+      "step15_rule_8_cycle_detection": "pass"
+    },
+    "page03_transition_criteria": {
+      "stage": "stage160",
+      "title": "Stage161 Transition Criteria",
+      "status": "pass",
+      "issues": [],
+      "next_stage": "stage161",
+      "next_stage_title": "Rendering Contract",
+      "next_page": "Page04 Rendering Body",
+      "criteria_count": 5,
+      "criteria": [
+        {
+          "name": "page03_stage_chain_sealed",
+          "status": "pass",
+          "next_page": "Page04 Rendering Body",
+          "evidence": "page03_stage_chain"
+        },
+        {
+          "name": "page03_invariants_frozen",
+          "status": "pass",
+          "next_page": "Page04 Rendering Body",
+          "evidence": "page03_invariant_freeze"
+        },
+        {
+          "name": "page03_connectivity_complete",
+          "status": "pass",
+          "next_page": "Page04 Rendering Body",
+          "evidence": "page03_nexus_connectivity_matrix"
+        },
+        {
+          "name": "rendering_contract_only_next",
+          "status": "pass",
+          "next_page": "Stage161 Rendering Contract",
+          "evidence": "release/current/stage160_page03_release_seal_report.json"
+        },
+        {
+          "name": "no_final_prose_generation_yet",
+          "status": "pass",
+          "next_page": "Stage161 Rendering Contract",
+          "evidence": "release/current/stage160_page03_release_seal_report.json"
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage160",
+      "title": "Page03 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "targeted_page03_test_count": 6,
+      "tests": [
+        "tests/test_stage155_execution_contract.py",
+        "tests/test_stage156_local_execution_packet_store.py",
+        "tests/test_stage157_deterministic_plan_graph_builder.py",
+        "tests/test_stage158_dependency_conflict_preflight.py",
+        "tests/test_stage159_execution_dry_run_trace.py",
+        "tests/test_stage160_page03_release_seal.py"
+      ],
+      "provider_default_calls": 0,
+      "runtime_execution_count": 0,
+      "write_operation_count": 0
+    },
+    "page03_artifact_index": {
+      "stage": "stage160",
+      "title": "Page03 Artifact Index",
+      "status": "pass",
+      "issues": [],
+      "asset_count": 35,
+      "missing_count": 0,
+      "generated_by_stage160_count": 11,
+      "assets": [
+        {
+          "path": "docs/stages/stage155.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/stages/stage156.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/stages/stage157.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/stages/stage158.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/stages/stage159.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/stages/stage160.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/proposals/stage160_page03_release_seal_proposal.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/architecture/stage160_page03_release_seal_blueprint.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "docs/development/stage160_developer_handoff.md",
+          "required": true,
+          "category": "docs",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage155_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage156_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage157_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage158_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage159_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage160_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage160_page03_release_seal_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/stage160_branchpoint_trace_manifest.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "manifests/live_core_stage160_overlay.json",
+          "required": true,
+          "category": "manifests",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage155_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage156_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage157_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage158_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage159_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_release_gate_report.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_release_asset_manifest.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": false
+        },
+        {
+          "path": "release/current/stage160_summary.json",
+          "required": true,
+          "category": "release",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_stage_chain.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_release_seal_matrix.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_artifact_index.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_invariant_freeze.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_nexus_connectivity_matrix.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_transition_criteria.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/page03_release_seal.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        },
+        {
+          "path": "release/current/stage160_page03_release_seal_pack/regression_snapshot.json",
+          "required": true,
+          "category": "pack",
+          "exists": true,
+          "generated_by_stage160": true
+        }
+      ]
+    },
+    "page03_release_seal": {
+      "stage": "stage160",
+      "title": "Page03 Release Seal",
+      "status": "pass",
+      "issues": [],
+      "page03_sealed": true,
+      "page03_release_checksum": "f2bf9106966573c87de0b89e04aa1451e3628df3d1c88e4754141193e1deb2c0",
+      "sealed_stage_range": "stage155-stage160",
+      "next_stage": "stage161",
+      "next_page": "Page04 Rendering Body"
+    }
+  }
+}

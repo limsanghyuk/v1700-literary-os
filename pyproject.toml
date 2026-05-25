@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.59.0"
-description = "V1700 Stage159 - Execution Dry-Run Trace"
+version = "1.60.0"
+description = "V1700 Stage160 - Page03 Release Seal"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 
