@@ -30,7 +30,7 @@
         "status": "pass",
         "goal": "Stage72.1 GraphNexus restoration",
         "missing_stages": [],
-        "stage_count": 54,
+        "stage_count": 55,
         "graph_intelligence_lineage_present": true
       },
       "impact": {
@@ -43,7 +43,7 @@
             "src/v1700/nodes/node2_prose_renderer/compiler.py"
           ],
           "narrative_node_count": 2,
-          "lineage_node_count": 54,
+          "lineage_node_count": 55,
           "risks": [
             "node2_surface_contract_must_hold",
             "forbidden_reveal_projection_required"
@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 939
+        "node_count": 945
       },
       "narrative_summary": {
         "available": true,
@@ -108,7 +108,7 @@
       },
       "lineage_summary": {
         "available": true,
-        "node_count": 54,
+        "node_count": 55,
         "stage72_1_present": true
       },
       "warnings": [
@@ -1045,6 +1045,19 @@
     "stage": "153",
     "baseline_stage": "152",
     "title": "Memory Health & Leakage Boundary",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage154_release_gate": {
+    "status": "pass",
+    "stage": "154",
+    "baseline_stage": "153",
+    "title": "Page02 Release Seal",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

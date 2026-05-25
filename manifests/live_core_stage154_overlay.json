@@ -1,0 +1,13 @@
+{
+  "active_version": "stage154",
+  "overlay_stage": "stage154",
+  "title": "Page02 Release Seal",
+  "baseline_stage": "stage153",
+  "release_gate": "release/current/stage154_release_gate_report.json",
+  "evidence": "release/current/stage154_page02_release_seal_report.json",
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "page02_sealed": true,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false
+}

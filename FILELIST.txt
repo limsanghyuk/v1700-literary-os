@@ -10,10 +10,6 @@
 .github/workflows/ci-full.yml
 .github/workflows/release.yml
 .gitignore
-.pytest_cache/.gitignore
-.pytest_cache/CACHEDIR.TAG
-.pytest_cache/README.md
-.pytest_cache/v/cache/nodeids
 AGENTS.md
 CHANGELOG.md
 CLAUDE.md
@@ -64,6 +60,7 @@ docs/architecture/stage150_memory_contract_blueprint.md
 docs/architecture/stage151_local_read_only_memory_store_blueprint.md
 docs/architecture/stage152_memory_query_interface_blueprint.md
 docs/architecture/stage153_memory_health_leakage_boundary_blueprint.md
+docs/architecture/stage154_page02_release_seal_blueprint.md
 docs/architecture/stage72_2_gitnexus_capability_absorption_blueprint.md
 docs/architecture/stage72_3_foundation_lineage_recovery_blueprint.md
 docs/architecture/system_overview.md
@@ -107,6 +104,7 @@ docs/development/stage150_developer_handoff.md
 docs/development/stage151_developer_handoff.md
 docs/development/stage152_developer_handoff.md
 docs/development/stage153_developer_handoff.md
+docs/development/stage154_developer_handoff.md
 docs/external/claude_v370_absorption_inventory.md
 docs/generated/skills/foundation_lineage_skill.md
 docs/generated/skills/node_skill_node2_surface_safety.md
@@ -141,9 +139,11 @@ docs/proposals/stage150_memory_contract_proposal.md
 docs/proposals/stage151_local_read_only_memory_store_proposal.md
 docs/proposals/stage152_memory_query_interface_proposal.md
 docs/proposals/stage153_memory_health_leakage_boundary_proposal.md
+docs/proposals/stage154_page02_release_seal_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
+docs/reports/stage154_integrity_repair_report.md
 docs/reports/stage85_principal_system_engineer_evaluation.md
 docs/reviews/stage72_3_principal_engineer_validation.md
 docs/roadmaps/stage131_roadmap.md
@@ -178,7 +178,6 @@ docs/runbooks/stage74_longform_execution.md
 docs/runbooks/workspace_path_policy.md
 docs/sessions/2026-05-19_company_github_strategy.docx
 docs/sessions/2026-05-19_home_session_summary.md
-docs/sessions/2026-05-23_home_session_summary.md
 docs/stage101_cross_lineage_absorption_scenario_room/01_proposal.md
 docs/stage101_cross_lineage_absorption_scenario_room/02_blueprint.md
 docs/stage101_cross_lineage_absorption_scenario_room/03_principal_engineer_review.md
@@ -276,6 +275,7 @@ docs/stages/stage150.md
 docs/stages/stage151.md
 docs/stages/stage152.md
 docs/stages/stage153.md
+docs/stages/stage154.md
 docs/stages/stage40.md
 docs/stages/stage41.md
 docs/stages/stage70.md
@@ -406,6 +406,7 @@ manifests/live_core_stage150_overlay.json
 manifests/live_core_stage151_overlay.json
 manifests/live_core_stage152_overlay.json
 manifests/live_core_stage153_overlay.json
+manifests/live_core_stage154_overlay.json
 manifests/missing_legacy_logic_manifest.json
 manifests/missing_required_logic_manifest.json
 manifests/narrative_weight_kernel_manifest.json
@@ -589,6 +590,9 @@ manifests/stage152_memory_query_interface_manifest.json
 manifests/stage153_branchpoint_trace_manifest.json
 manifests/stage153_manifest.json
 manifests/stage153_memory_health_leakage_boundary_manifest.json
+manifests/stage154_branchpoint_trace_manifest.json
+manifests/stage154_manifest.json
+manifests/stage154_page02_release_seal_manifest.json
 manifests/stage72_1_manifest.json
 manifests/stage72_2_manifest.json
 manifests/stage72_2_plan_manifest.json
@@ -1274,6 +1278,17 @@ release/current/stage153_memory_health_leakage_boundary_report.json
 release/current/stage153_release_asset_manifest.json
 release/current/stage153_release_gate_report.json
 release/current/stage153_summary.json
+release/current/stage154_integrity_repair_report.json
+release/current/stage154_page02_release_seal_pack/page02_artifact_index.json
+release/current/stage154_page02_release_seal_pack/page02_blocker_registry.json
+release/current/stage154_page02_release_seal_pack/page02_boundary_freeze.json
+release/current/stage154_page02_release_seal_pack/page02_lineage_evidence_index.json
+release/current/stage154_page02_release_seal_pack/page02_release_seal_matrix.json
+release/current/stage154_page02_release_seal_pack/page02_stage_chain.json
+release/current/stage154_page02_release_seal_report.json
+release/current/stage154_release_asset_manifest.json
+release/current/stage154_release_gate_report.json
+release/current/stage154_summary.json
 release/current/stage72_1_developer_handoff_report.md
 release/current/stage72_1_graph_nexus_detect_changes_report.json
 release/current/stage72_1_graphnexus_restoration_report.json
@@ -1660,6 +1675,7 @@ src/v1700/gates/stage150_release_gate.py
 src/v1700/gates/stage151_release_gate.py
 src/v1700/gates/stage152_release_gate.py
 src/v1700/gates/stage153_release_gate.py
+src/v1700/gates/stage154_release_gate.py
 src/v1700/gates/stage72_2_release_gate.py
 src/v1700/gates/stage72_3_release_gate.py
 src/v1700/gates/stage73_1_release_gate.py
@@ -2022,6 +2038,9 @@ src/v1700/nodes/node3_critic_gate/__init__.py
 src/v1700/nodes/node3_critic_gate/constraint_validator.py
 src/v1700/observability/__init__.py
 src/v1700/observability/tracing.py
+src/v1700/page02_release_seal/__init__.py
+src/v1700/page02_release_seal/contracts.py
+src/v1700/page02_release_seal/report.py
 src/v1700/plugin_marketplace/__init__.py
 src/v1700/plugin_marketplace/contracts.py
 src/v1700/plugin_marketplace/marketplace_index.py
@@ -2367,6 +2386,8 @@ src/v1700/stage152/__init__.py
 src/v1700/stage152/stage152_runner.py
 src/v1700/stage153/__init__.py
 src/v1700/stage153/stage153_runner.py
+src/v1700/stage154/__init__.py
+src/v1700/stage154/stage154_runner.py
 src/v1700/stage96/__init__.py
 src/v1700/stage96/orchestrator.py
 src/v1700/stage96/release_contract.py
@@ -2581,6 +2602,7 @@ tests/test_stage150_memory_contract.py
 tests/test_stage151_local_read_only_memory_store.py
 tests/test_stage152_memory_query_interface.py
 tests/test_stage153_memory_health_leakage_boundary.py
+tests/test_stage154_page02_release_seal.py
 tests/test_stage72_1_gitnexus_optional_sidecar.py
 tests/test_stage72_1_graph_nexus_release_gate.py
 tests/test_stage72_1_graph_nexus_three_graphs.py
@@ -2917,6 +2939,8 @@ tools/run_stage152_memory_query_interface.py
 tools/run_stage152_release_gate.py
 tools/run_stage153_memory_health_leakage_boundary.py
 tools/run_stage153_release_gate.py
+tools/run_stage154_page02_release_seal.py
+tools/run_stage154_release_gate.py
 tools/run_stage72_2_release_gate.py
 tools/run_stage72_3_release_gate.py
 tools/run_stage72_repo_doctor.py

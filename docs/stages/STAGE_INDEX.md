@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage152 - Deterministic Local Query / Ranking
+Current active stage: Stage154 - Page02 Release Seal
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -62,3 +62,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage152](stage152.md) - Deterministic Local Query / Ranking
 
 - [Stage153 — Memory Health & Leakage Boundary](stage153.md)
+
+- [Stage154 — Page02 Release Seal](stage154.md)

@@ -323,6 +323,31 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage154": {
+        "label": "Stage154",
+        "version": "1.54.0",
+        "title": "Page02 Release Seal",
+        "required_files": [
+            "docs/stages/stage154.md",
+            "docs/proposals/stage154_page02_release_seal_proposal.md",
+            "docs/architecture/stage154_page02_release_seal_blueprint.md",
+            "docs/development/stage154_developer_handoff.md",
+            "manifests/stage154_manifest.json",
+            "manifests/stage154_page02_release_seal_manifest.json",
+            "manifests/stage154_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage154_overlay.json",
+            "release/current/stage154_release_asset_manifest.json",
+            "release/current/stage154_page02_release_seal_report.json",
+            "release/current/stage154_release_gate_report.json",
+            "release/current/stage154_page02_release_seal_pack/page02_stage_chain.json",
+            "release/current/stage154_page02_release_seal_pack/page02_release_seal_matrix.json",
+            "release/current/stage154_page02_release_seal_pack/page02_blocker_registry.json",
+            "release/current/stage154_page02_release_seal_pack/page02_artifact_index.json",
+            "release/current/stage154_page02_release_seal_pack/page02_lineage_evidence_index.json",
+            "release/current/stage154_page02_release_seal_pack/page02_boundary_freeze.json",
+            ".github/workflows/ci-fast.yml",
+        ],
+    },
 }
 
 
