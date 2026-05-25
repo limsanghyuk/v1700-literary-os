@@ -2644,11 +2644,6 @@ src/v1700/writer_studio/persistence.py
 src/v1700/writer_studio/review_queue.py
 src/v1700/writer_studio/roundtrip.py
 src/v1700/writer_studio/workspace.py
-src/v1700_literary_os.egg-info/PKG-INFO
-src/v1700_literary_os.egg-info/SOURCES.txt
-src/v1700_literary_os.egg-info/dependency_links.txt
-src/v1700_literary_os.egg-info/requires.txt
-src/v1700_literary_os.egg-info/top_level.txt
 tests/conftest.py
 tests/integration/test_node1_node2_node3_pipeline.py
 tests/stage_gates/test_stage72_repo_doctor.py
