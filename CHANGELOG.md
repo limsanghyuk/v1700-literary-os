@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.55.0-stage155
+
+- Added Stage155 Execution Contract as the Page03 Execution Body entry stage.
+- Added Page03 design documents and seven-page architecture roadmap.
+- Defined deterministic execution packet contracts, boundary policy, write policy, and Node2 projection policy.
+- Kept provider execution, runtime execution, memory write, canon mutation, runtime training, and auto-repair disabled.
+
 ## v1.54.0-stage154
 
 - Added Stage154 Page02 Release Seal.

@@ -1,0 +1,11 @@
+{
+  "stage": "stage155",
+  "title": "Execution Contract",
+  "baseline_stage": "stage154",
+  "page": "Page03 Execution Body",
+  "status": "active",
+  "runner": "tools/run_stage155_execution_contract.py",
+  "release_gate": "tools/run_stage155_release_gate.py",
+  "evidence": "release/current/stage155_execution_contract_report.json",
+  "next_stage": "stage156"
+}

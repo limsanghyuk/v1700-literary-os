@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage154 - Page02 Release Seal
+Current active stage: Stage155 - Execution Contract
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -64,3 +64,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage153 — Memory Health & Leakage Boundary](stage153.md)
 
 - [Stage154 — Page02 Release Seal](stage154.md)
+
+- [Stage155 — Execution Contract](stage155.md)

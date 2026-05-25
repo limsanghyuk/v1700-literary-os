@@ -1,5 +1,5 @@
 {
-  "active_version": "stage154",
+  "active_version": "stage155",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -48,10 +48,12 @@
     "stage153_memory_health_leakage_boundary",
     "stage153_release_gate",
     "stage154_page02_release_seal",
-    "stage154_release_gate"
+    "stage154_release_gate",
+    "stage155_execution_contract",
+    "stage155_release_gate"
   ],
-  "canonical_package": "V1700_stage154_page02_release_seal_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage154_page02_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage155_execution_contract_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage155_execution_contract_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -196,5 +198,13 @@
     "release_gate": "release/current/stage154_release_gate_report.json",
     "evidence": "release/current/stage154_page02_release_seal_report.json",
     "next_stage": "stage155"
+  },
+  "stage155": {
+    "status": "active",
+    "title": "Execution Contract",
+    "baseline_stage": "stage154",
+    "release_gate": "release/current/stage155_release_gate_report.json",
+    "evidence": "release/current/stage155_execution_contract_report.json",
+    "next_stage": "stage156"
   }
 }

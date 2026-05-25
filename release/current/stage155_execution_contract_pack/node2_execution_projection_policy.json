@@ -1,0 +1,51 @@
+{
+  "stage": "stage155",
+  "title": "Stage155 Node2 Execution Projection Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "packet_summary_allowed",
+      "allowed_surface": "packet id, type, public label",
+      "forbidden_payload": "hidden_reveal_payload",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "plan_order_allowed",
+      "allowed_surface": "deterministic order labels",
+      "forbidden_payload": "private_dependency_payload",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "blocked_state_summary_allowed",
+      "allowed_surface": "blocked reason labels",
+      "forbidden_payload": "write_handle",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "provider_execution_handle_blocked",
+      "allowed_surface": "none",
+      "forbidden_payload": "provider_execution_handle",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "raw_manuscript_payload_blocked",
+      "allowed_surface": "none",
+      "forbidden_payload": "raw_manuscript_payload",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    },
+    {
+      "name": "learning_payload_blocked",
+      "allowed_surface": "none",
+      "forbidden_payload": "learning_payload",
+      "blocked": true,
+      "evidence": "release/current/stage155_execution_contract_report.json"
+    }
+  ]
+}

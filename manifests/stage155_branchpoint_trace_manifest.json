@@ -1,0 +1,12 @@
+{
+  "stage": "stage155",
+  "title": "Execution Contract Branchpoint Trace",
+  "baseline_stage": "stage154",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage154 Page02 release seal",
+    "Page03 execution body proposal",
+    "Stage155 execution packet contracts",
+    "Stage155 boundary and write policy"
+  ]
+}
