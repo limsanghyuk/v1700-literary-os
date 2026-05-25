@@ -119,6 +119,31 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage161_rendering_contract_report.json",
         "release_gate_report": "release/current/stage161_release_gate_report.json",
     },
+    "stage162": {
+        "package": "V1700_stage162_local_render_packet_store_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage162_local_render_packet_store_report.json",
+        "release_gate_report": "release/current/stage162_release_gate_report.json",
+    },
+    "stage163": {
+        "package": "V1700_stage163_deterministic_render_plan_builder_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage163_deterministic_render_plan_builder_report.json",
+        "release_gate_report": "release/current/stage163_release_gate_report.json",
+    },
+    "stage164": {
+        "package": "V1700_stage164_surface_draft_dry_run_renderer_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+        "release_gate_report": "release/current/stage164_release_gate_report.json",
+    },
+    "stage165": {
+        "package": "V1700_stage165_render_quality_boundary_preflight_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage165_render_quality_boundary_preflight_report.json",
+        "release_gate_report": "release/current/stage165_release_gate_report.json",
+    },
+    "stage166": {
+        "package": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip",
+        "release_report": "release/current/stage166_page04_release_seal_report.json",
+        "release_gate_report": "release/current/stage166_release_gate_report.json",
+    },
 }
 
 

@@ -1,5 +1,5 @@
 {
-  "active_version": "stage161",
+  "active_version": "stage166",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -62,10 +62,20 @@
     "stage160_page03_release_seal",
     "stage160_release_gate",
     "stage161_rendering_contract",
-    "stage161_release_gate"
+    "stage161_release_gate",
+    "stage162_local_render_packet_store",
+    "stage162_release_gate",
+    "stage163_deterministic_render_plan_builder",
+    "stage163_release_gate",
+    "stage164_surface_draft_dry_run_renderer",
+    "stage164_release_gate",
+    "stage165_render_quality_boundary_preflight",
+    "stage165_release_gate",
+    "stage166_page04_release_seal",
+    "stage166_release_gate"
   ],
-  "canonical_package": "V1700_stage161_rendering_contract_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage161_rendering_contract_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -266,5 +276,37 @@
     "release_gate": "release/current/stage161_release_gate_report.json",
     "evidence": "release/current/stage161_rendering_contract_report.json",
     "next_stage": "stage162"
+  },
+  "stage162": {
+    "status": "active",
+    "title": "Local Render Packet Store",
+    "baseline_stage": "stage161",
+    "release_gate": "release/current/stage162_release_gate_report.json",
+    "evidence": "release/current/stage162_local_render_packet_store_report.json",
+    "next_stage": "stage163"
+  },
+  "stage163": {
+    "status": "active",
+    "title": "Deterministic Render Plan Builder",
+    "baseline_stage": "stage162",
+    "release_gate": "release/current/stage163_release_gate_report.json",
+    "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json",
+    "next_stage": "stage164"
+  },
+  "stage164": {
+    "status": "active",
+    "title": "Surface Draft Dry-Run Renderer",
+    "baseline_stage": "stage163",
+    "release_gate": "release/current/stage164_release_gate_report.json",
+    "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+    "next_stage": "stage165"
+  },
+  "stage165": {
+    "status": "active",
+    "title": "Render Quality and Boundary Preflight",
+    "baseline_stage": "stage164",
+    "release_gate": "release/current/stage165_release_gate_report.json",
+    "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json",
+    "next_stage": "stage166"
   }
 }

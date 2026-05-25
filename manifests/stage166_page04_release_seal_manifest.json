@@ -1,0 +1,11 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Release Seal",
+  "page": "Page04 Rendering Body",
+  "sealed_range": "Stage161~Stage166",
+  "next_stage": "stage167",
+  "next_page": "Page05 Evaluation Body",
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0
+}

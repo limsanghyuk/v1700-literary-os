@@ -1,0 +1,39 @@
+{
+  "stage": "stage163",
+  "title": "Stage163 Render Plan Edges",
+  "status": "pass",
+  "issues": [],
+  "edge_count": 5,
+  "edges": [
+    {
+      "edge_id": "render_plan_edge_render_packet:synopsis_surface:001_to_render_packet:scene_surface:001",
+      "from_node_id": "render_plan_node_render_packet:synopsis_surface:001",
+      "to_node_id": "render_plan_node_render_packet:scene_surface:001",
+      "dependency_type": "deterministic_render_sequence"
+    },
+    {
+      "edge_id": "render_plan_edge_render_packet:scene_surface:001_to_render_packet:beat_surface:001",
+      "from_node_id": "render_plan_node_render_packet:scene_surface:001",
+      "to_node_id": "render_plan_node_render_packet:beat_surface:001",
+      "dependency_type": "deterministic_render_sequence"
+    },
+    {
+      "edge_id": "render_plan_edge_render_packet:beat_surface:001_to_render_packet:chapter_bridge_surface:001",
+      "from_node_id": "render_plan_node_render_packet:beat_surface:001",
+      "to_node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+      "dependency_type": "deterministic_render_sequence"
+    },
+    {
+      "edge_id": "render_plan_edge_render_packet:chapter_bridge_surface:001_to_render_packet:dialogue_surface:001",
+      "from_node_id": "render_plan_node_render_packet:chapter_bridge_surface:001",
+      "to_node_id": "render_plan_node_render_packet:dialogue_surface:001",
+      "dependency_type": "deterministic_render_sequence"
+    },
+    {
+      "edge_id": "render_plan_edge_render_packet:dialogue_surface:001_to_render_packet:stage_direction_surface:001",
+      "from_node_id": "render_plan_node_render_packet:dialogue_surface:001",
+      "to_node_id": "render_plan_node_render_packet:stage_direction_surface:001",
+      "dependency_type": "deterministic_render_sequence"
+    }
+  ]
+}

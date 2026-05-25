@@ -1,0 +1,10 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Release Seal",
+  "status": "active",
+  "baseline_stage": "stage165",
+  "next_stage": "stage167",
+  "page": "Page04 Rendering Body",
+  "release_report": "release/current/stage166_page04_release_seal_report.json",
+  "release_gate": "release/current/stage166_release_gate_report.json"
+}

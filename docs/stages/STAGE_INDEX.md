@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: Stage157 - Deterministic Plan Graph Builder
+Current active stage: stage163 - Deterministic Plan Graph Builder
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -74,3 +74,11 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage157 — Deterministic Plan Graph Builder](stage157.md)
 
 - [Stage161 — Rendering Contract](stage161.md)
+
+- [Stage162 — Local Render Packet Store](stage162.md)
+
+- Stage163 — Deterministic Render Plan Builder
+
+- [Stage164 — Surface Draft Dry-Run Renderer](stage164.md)
+
+- [Stage165 — Render Quality and Boundary Preflight](stage165.md)

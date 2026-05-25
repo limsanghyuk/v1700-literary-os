@@ -1,0 +1,66 @@
+{
+  "stage": "stage164",
+  "title": "Stage164 Dry-Run Render Trace",
+  "status": "pass",
+  "issues": [],
+  "trace_step_count": 6,
+  "trace_steps": [
+    {
+      "step_id": "dry_run_render_step_000",
+      "draft_unit_id": "surface_draft_unit_render_packet:synopsis_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "step_id": "dry_run_render_step_001",
+      "draft_unit_id": "surface_draft_unit_render_packet:scene_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "step_id": "dry_run_render_step_002",
+      "draft_unit_id": "surface_draft_unit_render_packet:beat_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "step_id": "dry_run_render_step_003",
+      "draft_unit_id": "surface_draft_unit_render_packet:chapter_bridge_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "step_id": "dry_run_render_step_004",
+      "draft_unit_id": "surface_draft_unit_render_packet:dialogue_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    },
+    {
+      "step_id": "dry_run_render_step_005",
+      "draft_unit_id": "surface_draft_unit_render_packet:stage_direction_surface:001",
+      "action": "compose_surface_draft_unit_without_provider_or_write",
+      "deterministic": true,
+      "provider_call_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json"
+    }
+  ],
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0
+}

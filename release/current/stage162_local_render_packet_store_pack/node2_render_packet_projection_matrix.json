@@ -1,0 +1,63 @@
+{
+  "stage": "stage162",
+  "title": "Stage162 Node2 Render Packet Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "node2_render_projection_render_packet:scene_surface:001",
+      "render_type": "scene_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "node2_render_projection_render_packet:dialogue_surface:001",
+      "render_type": "dialogue_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "node2_render_projection_render_packet:synopsis_surface:001",
+      "render_type": "synopsis_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "node2_render_projection_render_packet:beat_surface:001",
+      "render_type": "beat_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "node2_render_projection_render_packet:stage_direction_surface:001",
+      "render_type": "stage_direction_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    },
+    {
+      "name": "node2_render_projection_render_packet:chapter_bridge_surface:001",
+      "render_type": "chapter_bridge_surface",
+      "node2_surface_allowed": true,
+      "hidden_render_payload_blocked": true,
+      "provider_handle_blocked": true,
+      "write_handle_blocked": true,
+      "evidence": "release/current/stage162_local_render_packet_store_report.json"
+    }
+  ]
+}

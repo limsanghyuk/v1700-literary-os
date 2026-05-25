@@ -1,0 +1,75 @@
+{
+  "stage": "stage162",
+  "title": "Stage162 Render Packet Lineage Matrix",
+  "status": "pass",
+  "issues": [],
+  "entry_count": 6,
+  "entries": [
+    {
+      "render_packet_id": "render_packet:scene_surface:001",
+      "source_rendering_contract_id": "render_contract:scene_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:scene_outline:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:001"
+      ],
+      "lineage_preserved": true
+    },
+    {
+      "render_packet_id": "render_packet:dialogue_surface:001",
+      "source_rendering_contract_id": "render_contract:dialogue_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:dialogue_beats:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:002"
+      ],
+      "lineage_preserved": true
+    },
+    {
+      "render_packet_id": "render_packet:synopsis_surface:001",
+      "source_rendering_contract_id": "render_contract:synopsis_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:synopsis:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:003"
+      ],
+      "lineage_preserved": true
+    },
+    {
+      "render_packet_id": "render_packet:beat_surface:001",
+      "source_rendering_contract_id": "render_contract:beat_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:beat_plan:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:004"
+      ],
+      "lineage_preserved": true
+    },
+    {
+      "render_packet_id": "render_packet:stage_direction_surface:001",
+      "source_rendering_contract_id": "render_contract:stage_direction_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:stage_direction:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:005"
+      ],
+      "lineage_preserved": true
+    },
+    {
+      "render_packet_id": "render_packet:chapter_bridge_surface:001",
+      "source_rendering_contract_id": "render_contract:chapter_bridge_surface",
+      "source_execution_packet_ids": [
+        "execution_packet:chapter_bridge:001"
+      ],
+      "source_trace_ids": [
+        "trace:dry_run:006"
+      ],
+      "lineage_preserved": true
+    }
+  ]
+}

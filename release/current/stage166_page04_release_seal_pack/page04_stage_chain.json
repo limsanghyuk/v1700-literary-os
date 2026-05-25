@@ -1,0 +1,50 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Upstream Stage Chain",
+  "status": "pass",
+  "issues": [],
+  "stage_count": 5,
+  "sealed_count": 5,
+  "stages": [
+    {
+      "stage": "161",
+      "title": "Rendering Contract",
+      "report_path": "release/current/stage161_rendering_contract_report.json",
+      "gate_path": "release/current/stage161_release_gate_report.json",
+      "status": "pass",
+      "sealed": true
+    },
+    {
+      "stage": "162",
+      "title": "Local Render Packet Store",
+      "report_path": "release/current/stage162_local_render_packet_store_report.json",
+      "gate_path": "release/current/stage162_release_gate_report.json",
+      "status": "pass",
+      "sealed": true
+    },
+    {
+      "stage": "163",
+      "title": "Deterministic Render Plan Builder",
+      "report_path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "gate_path": "release/current/stage163_release_gate_report.json",
+      "status": "pass",
+      "sealed": true
+    },
+    {
+      "stage": "164",
+      "title": "Surface Draft Dry-Run Renderer",
+      "report_path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "gate_path": "release/current/stage164_release_gate_report.json",
+      "status": "pass",
+      "sealed": true
+    },
+    {
+      "stage": "165",
+      "title": "Render Quality and Boundary Preflight",
+      "report_path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "gate_path": "release/current/stage165_release_gate_report.json",
+      "status": "pass",
+      "sealed": true
+    }
+  ]
+}

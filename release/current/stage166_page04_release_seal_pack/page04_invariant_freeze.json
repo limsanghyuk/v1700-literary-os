@@ -1,0 +1,1821 @@
+{
+  "stage": "stage166",
+  "title": "Page04 Invariant Freeze",
+  "status": "pass",
+  "issues": [],
+  "frozen": [
+    {
+      "name": "provider_default_calls",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "live_provider_call_count_in_release_gate",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "provider_generation_count",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "runtime_execution_count",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "write_operation_count",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "node2_raw_reveal_access",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "boundary_violation_count",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "raw_manuscript_provider_leakage",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "raw_manuscript_cross_project_leakage",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "credential_leakage",
+      "frozen_value": 0,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "rendering_runtime_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "generation_runtime_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "provider_generation_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "runtime_execution_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "memory_write_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "runtime_training_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "render_write_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "quality_gate_write_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    },
+    {
+      "name": "canon_mutation_enabled",
+      "frozen_value": false,
+      "evidence": "page04_upstream_reports_and_gates"
+    }
+  ],
+  "evidence_source_count": 10,
+  "evidence_check_count": 190,
+  "evidence_matrix": [
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage161_report",
+      "path": "release/current/stage161_rendering_contract_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage161_gate",
+      "path": "release/current/stage161_release_gate_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage162_report",
+      "path": "release/current/stage162_local_render_packet_store_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage162_gate",
+      "path": "release/current/stage162_release_gate_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage163_report",
+      "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage163_gate",
+      "path": "release/current/stage163_release_gate_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage164_report",
+      "path": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage164_gate",
+      "path": "release/current/stage164_release_gate_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": null,
+      "status": "skipped",
+      "reason": "optional_missing"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_report",
+      "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "provider_default_calls",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "live_provider_call_count_in_release_gate",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "provider_generation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "runtime_execution_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "write_operation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "node2_raw_reveal_access",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "boundary_violation_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "raw_manuscript_provider_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "raw_manuscript_cross_project_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "credential_leakage",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "rendering_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "generation_runtime_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "provider_generation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "runtime_execution_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "memory_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "runtime_training_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "render_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "quality_gate_write_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    },
+    {
+      "source": "stage165_gate",
+      "path": "release/current/stage165_release_gate_report.json",
+      "name": "canon_mutation_enabled",
+      "expected": false,
+      "observed": false,
+      "status": "pass",
+      "reason": "match"
+    }
+  ],
+  "provider_zero": true,
+  "write_zero": true,
+  "generation_zero": true,
+  "node2_boundary_zero": true
+}

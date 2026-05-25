@@ -1,0 +1,24 @@
+{
+  "stage": "stage163",
+  "name": "deterministic_render_plan_builder",
+  "status": "active",
+  "input": "samples/stage162_render_packet_store/render_packets.jsonl",
+  "outputs": [
+    "release/current/stage163_deterministic_render_plan_builder_pack/render_plan_nodes.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/render_plan_edges.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/render_order.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/render_plan_integrity.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/deterministic_render_plan_checksum.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/node2_render_plan_projection_matrix.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/render_plan_policy.json",
+    "release/current/stage163_deterministic_render_plan_builder_pack/regression_snapshot.json"
+  ],
+  "invariants": {
+    "provider_default_calls": 0,
+    "provider_generation_count": 0,
+    "runtime_execution_count": 0,
+    "write_operation_count": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "stage": "165",
+  "baseline_stage": "164",
+  "title": "Render Quality and Boundary Preflight",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage164_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage165_report_pass": {
+      "status": "pass"
+    },
+    "render_quality_preflight_mode_pass": {
+      "status": "pass"
+    },
+    "quality_metric_matrix_pass": {
+      "status": "pass"
+    },
+    "boundary_preflight_matrix_pass": {
+      "status": "pass"
+    },
+    "render_quality_scorecard_pass": {
+      "status": "pass"
+    },
+    "node2_quality_projection_pass": {
+      "status": "pass"
+    },
+    "blocked_render_operation_registry_pass": {
+      "status": "pass"
+    },
+    "stage166_entry_criteria_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "runtime_render_disabled": {
+      "status": "pass"
+    },
+    "provider_generation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_store_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage165": {
+    "status": "pass",
+    "stage": "165",
+    "baseline_stage": "164",
+    "title": "Render Quality and Boundary Preflight",
+    "issues": [],
+    "mode": "RENDER_QUALITY_BOUNDARY_PREFLIGHT_LOCAL_ONLY",
+    "quality_score": 1.0,
+    "quality_threshold": 0.92,
+    "draft_unit_count": 6,
+    "trace_step_count": 6,
+    "quality_boundary_checksum": "d0743ce2f2c27bb533907a0f954c089dceb239e0e2a3606874b9341f7a56fa1a",
+    "stage166_page04_release_seal_ready": true,
+    "stage164_inherited": true,
+    "rendering_runtime_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_generation_enabled": false,
+    "runtime_execution_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "render_write_enabled": false,
+    "quality_gate_write_enabled": false,
+    "store_write_enabled": false,
+    "surface_draft_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "rendering_runtime_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_generation_enabled": false,
+  "runtime_execution_enabled": false,
+  "render_write_enabled": false,
+  "quality_gate_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

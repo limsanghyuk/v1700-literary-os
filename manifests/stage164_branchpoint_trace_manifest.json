@@ -1,0 +1,18 @@
+{
+  "stage": "stage164",
+  "title": "Surface Draft Dry-Run Renderer",
+  "status": "active",
+  "baseline_stage": "stage163",
+  "next_stage": "stage165",
+  "page": "Page04 Rendering Body",
+  "branchpoint_lineage_preserved": true,
+  "upstream": [
+    "stage161",
+    "stage162",
+    "stage163"
+  ],
+  "downstream": [
+    "stage165"
+  ],
+  "provider_default_calls": 0
+}

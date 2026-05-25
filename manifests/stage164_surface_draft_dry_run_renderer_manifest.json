@@ -1,0 +1,11 @@
+{
+  "stage": "stage164",
+  "title": "Surface Draft Dry-Run Renderer",
+  "status": "active",
+  "baseline_stage": "stage163",
+  "next_stage": "stage165",
+  "page": "Page04 Rendering Body",
+  "module": "src/v1700/surface_draft_dry_run_renderer",
+  "tool": "tools/run_stage164_surface_draft_dry_run_renderer.py",
+  "test": "tests/test_stage164_surface_draft_dry_run_renderer.py"
+}

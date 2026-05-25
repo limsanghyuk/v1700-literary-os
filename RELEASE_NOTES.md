@@ -1,29 +1,15 @@
-# V1700 Stage161 - Rendering Contract
+# V1700 Stage166 - Page04 Release Seal
 
-Stage161 begins Page04, the Rendering Body, by defining rendering contracts without enabling provider generation.
+Stage166 seals Page04, the Rendering Body.
 
 ## Highlights
 
-- Stage160 Page03 Release Seal remains the baseline.
-- Rendering intent and rendering contract shapes are defined.
-- Node2 receives only surface-safe rendering summaries.
-- Provider generation, live generation runtime, writes, canon mutation, runtime training, and auto-repair remain disabled.
-
-## Validation Commands
-
-```bash
-python -m compileall -q src tools
-python tools/run_stage160_release_gate.py
-python tools/run_stage161_rendering_contract.py
-python tools/run_stage161_release_gate.py
-python tools/check_stage_metadata_consistency.py
-python tools/check_release_asset_integrity.py
-python tools/run_release_gate.py
-python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage161_rendering_contract.py -q
-```
+- Stage161 through Stage165 are verified as a single sealed Page04 release unit.
+- Page04 artifact index, invariant freeze, connectivity matrix, and transition criteria are generated.
+- Provider generation, runtime rendering, writes, canon mutation, and runtime training remain disabled.
 
 ## Official Release Assets
 
-- `V1700_stage161_rendering_contract_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage161_rendering_contract_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip`
+- `V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip.sha256`
+- `SHA256SUMS.txt`

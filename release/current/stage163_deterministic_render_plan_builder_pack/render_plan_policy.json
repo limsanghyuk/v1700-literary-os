@@ -1,0 +1,53 @@
+{
+  "stage": "stage163",
+  "title": "Stage163 Render Plan Policy",
+  "status": "pass",
+  "issues": [],
+  "rules": [
+    {
+      "name": "deterministic_render_plan_builder",
+      "deterministic": true,
+      "dry_run_only": true,
+      "runtime_render_allowed": false,
+      "provider_generation_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "runtime_render_disabled",
+      "deterministic": true,
+      "dry_run_only": true,
+      "runtime_render_allowed": false,
+      "provider_generation_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "provider_generation_disabled",
+      "deterministic": true,
+      "dry_run_only": true,
+      "runtime_render_allowed": false,
+      "provider_generation_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "render_plan_write_disabled",
+      "deterministic": true,
+      "dry_run_only": true,
+      "runtime_render_allowed": false,
+      "provider_generation_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    },
+    {
+      "name": "canon_mutation_disabled",
+      "deterministic": true,
+      "dry_run_only": true,
+      "runtime_render_allowed": false,
+      "provider_generation_allowed": false,
+      "write_allowed": false,
+      "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json"
+    }
+  ]
+}
