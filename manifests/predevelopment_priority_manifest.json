@@ -10,12 +10,21 @@
     "release_packaging"
   ],
   "canonical_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+  "workflow_documents": [
+    "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+    "docs/workflow/BRANCH_STRATEGY.md",
+    "docs/workflow/WORKFLOW.md"
+  ],
   "source_documents": [
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\00_GitNexus_Development_Preflight_Guide.docx",
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\01_PreDevelopment_Mandatory_Checklist_GitNexus_GraphNexus_Branchpoint.docx",
-    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_개발전_필수_가이드\\PREFLIGHT_PRIORITY_MANIFEST.json"
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_媛쒕컻???꾩닔_媛?대뱶\\00_GitNexus_Development_Preflight_Guide.docx",
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_媛쒕컻???꾩닔_媛?대뱶\\01_PreDevelopment_Mandatory_Checklist_GitNexus_GraphNexus_Branchpoint.docx",
+    "C:\\AI_Codex\\codex-work\\gpt\\docs\\00_媛쒕컻???꾩닔_媛?대뱶\\PREFLIGHT_PRIORITY_MANIFEST.json",
+    "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/PREFLIGHT_GUIDE_v1.1.md",
+    "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/WORKFLOW.md",
+    "https://github.com/limsanghyuk/literary-os/blob/main/docs/workflow/BRANCH_STRATEGY.md"
   ],
   "must_check": [
+    "session_start_sync",
     "gitnexus_index_freshness",
     "list_repos",
     "query",
@@ -29,7 +38,10 @@
     "change_review",
     "release_gate_integration",
     "repo_doctor",
-    "clean_zip_packaging"
+    "clean_zip_packaging",
+    "branch_pr_release_authority",
+    "release_assets_triplet",
+    "session_end_push"
   ],
   "invariants": {
     "provider_default_calls": 0,
@@ -41,7 +53,10 @@
     "credential_leakage": 0,
     "branchpoint_lineage_preserved": true,
     "python_fallback_required": true,
-    "gitnexus_runtime_dependency_required": false
+    "gitnexus_runtime_dependency_required": false,
+    "github_main_green_required": true,
+    "release_assets_triplet_required": true
   },
-  "stage101_status": "applied"
+  "stage101_status": "applied",
+  "workflow_upgrade_status": "v1_1_stage160_applied"
 }

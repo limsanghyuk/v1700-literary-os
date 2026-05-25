@@ -53,6 +53,9 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     manifest_path = root / "manifests" / "predevelopment_priority_manifest.json"
     live_manifest_path = root / "manifests" / "live_core_manifest.json"
+    workflow_guide_path = root / "docs" / "workflow" / "WORKFLOW.md"
+    branch_strategy_path = root / "docs" / "workflow" / "BRANCH_STRATEGY.md"
+    preflight_guide_path = root / "docs" / "workflow" / "PREFLIGHT_GUIDE_v1.1_STAGE160.md"
     live_manifest = _read_json(live_manifest_path) if live_manifest_path.exists() else {}
     active_version = str(live_manifest.get("active_version", "stage101"))
     active_stage_token = active_version.replace("stage", "stage")
@@ -63,6 +66,9 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
     required_files = [
         manifest_path,
         root / "docs" / "development" / "MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+        workflow_guide_path,
+        branch_strategy_path,
+        preflight_guide_path,
         root / "docs" / "stage101_cross_lineage_absorption_scenario_room" / "01_proposal.md",
         root / "docs" / "stage101_cross_lineage_absorption_scenario_room" / "02_blueprint.md",
         root / "docs" / "stage101_cross_lineage_absorption_scenario_room" / "03_principal_engineer_review.md",
@@ -101,9 +107,15 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
         "issues": missing + [name for name, ok in invariant_checks.items() if not ok],
         "priority_manifest": manifest_path.relative_to(root).as_posix(),
         "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+        "workflow_documents": [
+            workflow_guide_path.relative_to(root).as_posix(),
+            branch_strategy_path.relative_to(root).as_posix(),
+            preflight_guide_path.relative_to(root).as_posix(),
+        ],
         "gitnexus": gitnexus,
         "invariant_checks": invariant_checks,
         "must_check": priority_manifest.get("must_check", []),
+        "workflow_upgrade_status": priority_manifest.get("workflow_upgrade_status", "legacy"),
     }
     out = root / "release" / "current" / "mandatory_predevelopment_check_report.json"
     out.parent.mkdir(parents=True, exist_ok=True)
