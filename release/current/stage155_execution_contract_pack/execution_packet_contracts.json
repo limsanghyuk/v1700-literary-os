@@ -1,0 +1,669 @@
+{
+  "stage": "stage155",
+  "title": "Stage155 Execution Packet Contracts",
+  "status": "pass",
+  "issues": [],
+  "contract_count": 6,
+  "contracts": [
+    {
+      "name": "ExecutionIntentContract",
+      "packet_type": "intent",
+      "purpose": "Defines the safe intent input for Page03 compilation.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    },
+    {
+      "name": "ExecutionPacketBase",
+      "packet_type": "base",
+      "purpose": "Defines the common deterministic execution packet shape.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    },
+    {
+      "name": "SceneExecutionPacket",
+      "packet_type": "scene",
+      "purpose": "Plans scene execution without rendering prose.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    },
+    {
+      "name": "RevealExecutionPacket",
+      "packet_type": "reveal",
+      "purpose": "Plans reveal handling without exposing hidden payloads to Node2.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    },
+    {
+      "name": "ContinuityExecutionPacket",
+      "packet_type": "continuity",
+      "purpose": "Plans continuity obligations from Page02 memory.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    },
+    {
+      "name": "PayoffExecutionPacket",
+      "packet_type": "payoff",
+      "purpose": "Plans payoff obligations as dry-run-safe execution packets.",
+      "source_authority": "Page01+Page02 sealed evidence",
+      "execution_mode": "CONTRACT_ONLY",
+      "write_policy": "DISABLED",
+      "node2_projection": "SURFACE_SUMMARY_ONLY",
+      "field_count": 14,
+      "fields": [
+        {
+          "name": "packet_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stable deterministic packet identifier."
+        },
+        {
+          "name": "project_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Owning project identity inherited from Page01 and Page02."
+        },
+        {
+          "name": "packet_type",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Typed execution packet category."
+        },
+        {
+          "name": "source_memory_record_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Page02 memory records used as source evidence."
+        },
+        {
+          "name": "source_stage",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Source stage that produced the authority."
+        },
+        {
+          "name": "source_state_id",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Page01 state binding for the packet."
+        },
+        {
+          "name": "visibility",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Packet visibility policy."
+        },
+        {
+          "name": "boundary_level",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node boundary level for execution planning."
+        },
+        {
+          "name": "dependency_ids",
+          "field_type": "tuple[str, ...]",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic packet dependencies."
+        },
+        {
+          "name": "execution_mode",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Stage155 is CONTRACT_ONLY and DRY_RUN_READY only."
+        },
+        {
+          "name": "created_from",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Feature provenance, not raw manuscript text."
+        },
+        {
+          "name": "checksum",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Deterministic checksum for reproducibility."
+        },
+        {
+          "name": "write_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "surface_safe",
+          "description": "Write and mutation policy are disabled."
+        },
+        {
+          "name": "node2_projection_policy",
+          "field_type": "str",
+          "required": true,
+          "visibility": "boundary_checked",
+          "description": "Node2 receives only safe packet summaries."
+        }
+      ]
+    }
+  ]
+}

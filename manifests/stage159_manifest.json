@@ -1,0 +1,11 @@
+{
+  "stage": "stage159",
+  "title": "Execution Dry-Run Trace",
+  "baseline_stage": "stage158",
+  "page": "Page03 Execution Body",
+  "status": "active",
+  "runner": "tools/run_stage159_execution_dry_run_trace.py",
+  "release_gate": "tools/run_stage159_release_gate.py",
+  "evidence": "release/current/stage159_execution_dry_run_trace_report.json",
+  "next_stage": "stage160"
+}

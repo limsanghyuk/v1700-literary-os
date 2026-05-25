@@ -1,0 +1,49 @@
+{
+  "stage": "stage158",
+  "title": "Conflict Matrix",
+  "status": "pass",
+  "issues": [],
+  "conflict_count": 0,
+  "matrix": [
+    {
+      "name": "provider_execution_conflict",
+      "left_packet_type": "provider_execution",
+      "right_packet_type": "*",
+      "blocked": true,
+      "reason": "Provider execution cannot appear in Page03 preflight.",
+      "left_present": false,
+      "right_present": true,
+      "status": "pass"
+    },
+    {
+      "name": "memory_write_conflict",
+      "left_packet_type": "memory_write",
+      "right_packet_type": "*",
+      "blocked": true,
+      "reason": "Memory write cannot appear in Page03 preflight.",
+      "left_present": false,
+      "right_present": true,
+      "status": "pass"
+    },
+    {
+      "name": "canon_mutation_conflict",
+      "left_packet_type": "canon_mutation",
+      "right_packet_type": "*",
+      "blocked": true,
+      "reason": "Canon mutation cannot appear in Page03 preflight.",
+      "left_present": false,
+      "right_present": true,
+      "status": "pass"
+    },
+    {
+      "name": "runtime_training_conflict",
+      "left_packet_type": "runtime_training",
+      "right_packet_type": "*",
+      "blocked": true,
+      "reason": "Runtime training cannot appear in Page03 preflight.",
+      "left_present": false,
+      "right_present": true,
+      "status": "pass"
+    }
+  ]
+}

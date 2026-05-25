@@ -1,0 +1,11 @@
+{
+  "stage": "stage157",
+  "title": "Deterministic Plan Graph Builder",
+  "baseline_stage": "stage156",
+  "page": "Page03 Execution Body",
+  "status": "active",
+  "runner": "tools/run_stage157_deterministic_plan_graph_builder.py",
+  "release_gate": "tools/run_stage157_release_gate.py",
+  "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+  "next_stage": "stage158"
+}

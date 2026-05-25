@@ -1,0 +1,51 @@
+{
+  "stage": "stage158",
+  "title": "Packet Boundary Preflight",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "surface_or_guarded_boundary",
+      "packet_id": "exec_pkt_character_surface",
+      "boundary_level": "READER_SURFACE",
+      "status": "pass",
+      "reason": "boundary is preflight-safe"
+    },
+    {
+      "name": "surface_or_guarded_boundary",
+      "packet_id": "exec_pkt_episode_order",
+      "boundary_level": "READER_SURFACE",
+      "status": "pass",
+      "reason": "boundary is preflight-safe"
+    },
+    {
+      "name": "surface_or_guarded_boundary",
+      "packet_id": "exec_pkt_payoff_trace",
+      "boundary_level": "READER_SURFACE",
+      "status": "pass",
+      "reason": "boundary is preflight-safe"
+    },
+    {
+      "name": "surface_or_guarded_boundary",
+      "packet_id": "exec_pkt_project_bootstrap",
+      "boundary_level": "READER_SURFACE",
+      "status": "pass",
+      "reason": "boundary is preflight-safe"
+    },
+    {
+      "name": "hidden_guard_dependency_order",
+      "packet_id": "exec_pkt_reveal_guard",
+      "boundary_level": "HIDDEN_REVEAL_GUARD",
+      "status": "pass",
+      "reason": "guard dependencies precede hidden guard"
+    },
+    {
+      "name": "surface_or_guarded_boundary",
+      "packet_id": "exec_pkt_scene_plan",
+      "boundary_level": "READER_SURFACE",
+      "status": "pass",
+      "reason": "boundary is preflight-safe"
+    }
+  ]
+}

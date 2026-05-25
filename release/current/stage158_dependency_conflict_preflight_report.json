@@ -1,0 +1,393 @@
+{
+  "stage": "158",
+  "baseline_stage": "157",
+  "title": "Dependency and Conflict Preflight",
+  "status": "pass",
+  "issues": [],
+  "mode": "DEPENDENCY_CONFLICT_PREFLIGHT_LOCAL_ONLY",
+  "page": "Page03 Execution Body",
+  "source_stage157_report": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+  "packet_count": 6,
+  "dependency_count": 6,
+  "conflict_count": 0,
+  "boundary_violation_count": 0,
+  "preflight_checksum": "575035d8c052cab9c4429ac6b5dbef8b97cd5a99a7897c4452bb976af9588d82",
+  "runtime_execution_enabled": false,
+  "generation_runtime_enabled": false,
+  "provider_execution_enabled": false,
+  "memory_write_enabled": false,
+  "execution_write_enabled": false,
+  "store_write_enabled": false,
+  "graph_write_enabled": false,
+  "preflight_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "vector_db_runtime_dependency": false,
+  "live_provider_rag_enabled": false,
+  "runtime_training_enabled": false,
+  "active_meta_learning_enabled": false,
+  "model_weight_update_count": 0,
+  "canon_auto_resolution_count": 0,
+  "auto_repair_mutation_count": 0,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "node2_hidden_execution_payload_access": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage159_execution_dry_run_trace_ready": true,
+  "parts": {
+    "stage157_release_gate": {
+      "status": "pass",
+      "stage": "157",
+      "baseline_stage": "156",
+      "title": "Deterministic Plan Graph Builder",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "dependency_order_preflight": {
+      "stage": "stage158",
+      "title": "Dependency Order Preflight",
+      "status": "pass",
+      "issues": [],
+      "finding_count": 6,
+      "findings": [
+        {
+          "packet_id": "exec_pkt_character_surface",
+          "dependency_id": "exec_pkt_project_bootstrap",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        },
+        {
+          "packet_id": "exec_pkt_episode_order",
+          "dependency_id": "exec_pkt_project_bootstrap",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        },
+        {
+          "packet_id": "exec_pkt_payoff_trace",
+          "dependency_id": "exec_pkt_reveal_guard",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        },
+        {
+          "packet_id": "exec_pkt_reveal_guard",
+          "dependency_id": "exec_pkt_scene_plan",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        },
+        {
+          "packet_id": "exec_pkt_scene_plan",
+          "dependency_id": "exec_pkt_character_surface",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        },
+        {
+          "packet_id": "exec_pkt_scene_plan",
+          "dependency_id": "exec_pkt_episode_order",
+          "status": "pass",
+          "reason": "dependency_precedes_packet"
+        }
+      ]
+    },
+    "conflict_matrix": {
+      "stage": "stage158",
+      "title": "Conflict Matrix",
+      "status": "pass",
+      "issues": [],
+      "conflict_count": 0,
+      "matrix": [
+        {
+          "name": "provider_execution_conflict",
+          "left_packet_type": "provider_execution",
+          "right_packet_type": "*",
+          "blocked": true,
+          "reason": "Provider execution cannot appear in Page03 preflight.",
+          "left_present": false,
+          "right_present": true,
+          "status": "pass"
+        },
+        {
+          "name": "memory_write_conflict",
+          "left_packet_type": "memory_write",
+          "right_packet_type": "*",
+          "blocked": true,
+          "reason": "Memory write cannot appear in Page03 preflight.",
+          "left_present": false,
+          "right_present": true,
+          "status": "pass"
+        },
+        {
+          "name": "canon_mutation_conflict",
+          "left_packet_type": "canon_mutation",
+          "right_packet_type": "*",
+          "blocked": true,
+          "reason": "Canon mutation cannot appear in Page03 preflight.",
+          "left_present": false,
+          "right_present": true,
+          "status": "pass"
+        },
+        {
+          "name": "runtime_training_conflict",
+          "left_packet_type": "runtime_training",
+          "right_packet_type": "*",
+          "blocked": true,
+          "reason": "Runtime training cannot appear in Page03 preflight.",
+          "left_present": false,
+          "right_present": true,
+          "status": "pass"
+        }
+      ]
+    },
+    "packet_boundary_preflight": {
+      "stage": "stage158",
+      "title": "Packet Boundary Preflight",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 6,
+      "rules": [
+        {
+          "name": "surface_or_guarded_boundary",
+          "packet_id": "exec_pkt_character_surface",
+          "boundary_level": "READER_SURFACE",
+          "status": "pass",
+          "reason": "boundary is preflight-safe"
+        },
+        {
+          "name": "surface_or_guarded_boundary",
+          "packet_id": "exec_pkt_episode_order",
+          "boundary_level": "READER_SURFACE",
+          "status": "pass",
+          "reason": "boundary is preflight-safe"
+        },
+        {
+          "name": "surface_or_guarded_boundary",
+          "packet_id": "exec_pkt_payoff_trace",
+          "boundary_level": "READER_SURFACE",
+          "status": "pass",
+          "reason": "boundary is preflight-safe"
+        },
+        {
+          "name": "surface_or_guarded_boundary",
+          "packet_id": "exec_pkt_project_bootstrap",
+          "boundary_level": "READER_SURFACE",
+          "status": "pass",
+          "reason": "boundary is preflight-safe"
+        },
+        {
+          "name": "hidden_guard_dependency_order",
+          "packet_id": "exec_pkt_reveal_guard",
+          "boundary_level": "HIDDEN_REVEAL_GUARD",
+          "status": "pass",
+          "reason": "guard dependencies precede hidden guard"
+        },
+        {
+          "name": "surface_or_guarded_boundary",
+          "packet_id": "exec_pkt_scene_plan",
+          "boundary_level": "READER_SURFACE",
+          "status": "pass",
+          "reason": "boundary is preflight-safe"
+        }
+      ]
+    },
+    "blocked_operation_registry": {
+      "stage": "stage158",
+      "title": "Blocked Operation Registry",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 8,
+      "rules": [
+        {
+          "name": "runtime_execution",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "provider_execution",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "memory_write",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "execution_write",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "graph_write",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "canon_mutation",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "auto_repair_apply",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        },
+        {
+          "name": "runtime_training",
+          "enabled": false,
+          "must_remain_disabled": true,
+          "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+        }
+      ]
+    },
+    "node2_conflict_projection_matrix": {
+      "stage": "stage158",
+      "title": "Node2 Conflict Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "row_count": 6,
+      "matrix": [
+        {
+          "packet_id": "exec_pkt_character_surface",
+          "node_id": "plan_node_exec_pkt_character_surface",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        },
+        {
+          "packet_id": "exec_pkt_episode_order",
+          "node_id": "plan_node_exec_pkt_episode_order",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        },
+        {
+          "packet_id": "exec_pkt_payoff_trace",
+          "node_id": "plan_node_exec_pkt_payoff_trace",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        },
+        {
+          "packet_id": "exec_pkt_project_bootstrap",
+          "node_id": "plan_node_exec_pkt_project_bootstrap",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        },
+        {
+          "packet_id": "exec_pkt_reveal_guard",
+          "node_id": "plan_node_exec_pkt_reveal_guard",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        },
+        {
+          "packet_id": "exec_pkt_scene_plan",
+          "node_id": "plan_node_exec_pkt_scene_plan",
+          "node2_surface_allowed": true,
+          "forbidden_token_hits": [],
+          "status": "pass"
+        }
+      ],
+      "node2_raw_reveal_access": 0,
+      "node2_hidden_execution_payload_access": 0
+    },
+    "graph_integrity_snapshot": {
+      "stage": "stage158",
+      "title": "Graph Integrity Snapshot",
+      "status": "pass",
+      "issues": [],
+      "source_graph_checksum": "bc05b48836609af722587112a1db7fba24e8dab60cd38201211affe07995c035",
+      "preflight_checksum": "575035d8c052cab9c4429ac6b5dbef8b97cd5a99a7897c4452bb976af9588d82",
+      "packet_count": 6,
+      "dependency_count": 6
+    },
+    "preflight_step15_connectivity_matrix": {
+      "stage": "stage158",
+      "title": "Preflight Step15 Connectivity Matrix",
+      "status": "pass",
+      "issues": [],
+      "check_count": 8,
+      "checks": [
+        {
+          "name": "stage158_package",
+          "path": "src/v1700/dependency_conflict_preflight/__init__.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_runner",
+          "path": "src/v1700/stage158/stage158_runner.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_gate",
+          "path": "src/v1700/gates/stage158_release_gate.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_tool",
+          "path": "tools/run_stage158_dependency_conflict_preflight.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_gate_tool",
+          "path": "tools/run_stage158_release_gate.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_test",
+          "path": "tests/test_stage158_dependency_conflict_preflight.py",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_manifest",
+          "path": "manifests/stage158_manifest.json",
+          "required": true,
+          "exists": true
+        },
+        {
+          "name": "stage158_docs",
+          "path": "docs/stages/stage158.md",
+          "required": true,
+          "exists": true
+        }
+      ]
+    },
+    "regression_snapshot": {
+      "stage": "stage158",
+      "title": "Stage158 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "runtime_execution_enabled": false,
+      "preflight_write_enabled": false,
+      "runtime_training_enabled": false
+    }
+  }
+}

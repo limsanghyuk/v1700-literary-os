@@ -1,0 +1,57 @@
+{
+  "stage": "stage158",
+  "title": "Blocked Operation Registry",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 8,
+  "rules": [
+    {
+      "name": "runtime_execution",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "provider_execution",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "memory_write",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "execution_write",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "graph_write",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "canon_mutation",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "auto_repair_apply",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    },
+    {
+      "name": "runtime_training",
+      "enabled": false,
+      "must_remain_disabled": true,
+      "evidence": "release/current/stage158_dependency_conflict_preflight_report.json"
+    }
+  ]
+}

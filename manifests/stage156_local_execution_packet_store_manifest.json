@@ -1,0 +1,13 @@
+{
+  "stage": "stage156",
+  "title": "Local Execution Packet Store",
+  "store": "samples/stage156_execution_packet_store/execution_packets.jsonl",
+  "policy": {
+    "read_only_store_enabled": true,
+    "runtime_execution_enabled": false,
+    "store_write_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  },
+  "packet_count": 6
+}

@@ -1,0 +1,139 @@
+{
+  "stage": "157",
+  "baseline_stage": "156",
+  "title": "Deterministic Plan Graph Builder",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage156_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage157_report_pass": {
+      "status": "pass"
+    },
+    "deterministic_plan_graph_mode_pass": {
+      "status": "pass"
+    },
+    "plan_graph_nodes_pass": {
+      "status": "pass"
+    },
+    "plan_graph_edges_pass": {
+      "status": "pass"
+    },
+    "topological_order_pass": {
+      "status": "pass"
+    },
+    "dependency_integrity_pass": {
+      "status": "pass"
+    },
+    "deterministic_checksum_pass": {
+      "status": "pass"
+    },
+    "node2_plan_projection_pass": {
+      "status": "pass"
+    },
+    "plan_graph_policy_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "provider_execution_disabled": {
+      "status": "pass"
+    },
+    "memory_store_graph_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage157": {
+    "status": "pass",
+    "stage": "157",
+    "baseline_stage": "156",
+    "title": "Deterministic Plan Graph Builder",
+    "issues": [],
+    "mode": "DETERMINISTIC_PLAN_GRAPH_BUILDER_LOCAL_ONLY",
+    "node_count": 6,
+    "edge_count": 6,
+    "critical_path_length": 5,
+    "graph_checksum": "bc05b48836609af722587112a1db7fba24e8dab60cd38201211affe07995c035",
+    "topological_order_count": 6,
+    "page03_execution_packet_store_inherited": true,
+    "stage158_dependency_conflict_preflight_ready": true,
+    "runtime_execution_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "execution_write_enabled": false,
+    "store_write_enabled": false,
+    "graph_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "runtime_execution_enabled": false,
+  "graph_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

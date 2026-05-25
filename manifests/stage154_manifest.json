@@ -1,0 +1,11 @@
+{
+  "stage": "stage154",
+  "title": "Page02 Release Seal",
+  "baseline_stage": "stage153",
+  "page": "Page02 Narrative Memory Body",
+  "status": "active",
+  "runner": "tools/run_stage154_page02_release_seal.py",
+  "release_gate": "tools/run_stage154_release_gate.py",
+  "evidence": "release/current/stage154_page02_release_seal_report.json",
+  "next_stage": "stage155"
+}

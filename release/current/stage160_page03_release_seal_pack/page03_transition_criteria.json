@@ -1,0 +1,42 @@
+{
+  "stage": "stage160",
+  "title": "Stage161 Transition Criteria",
+  "status": "pass",
+  "issues": [],
+  "next_stage": "stage161",
+  "next_stage_title": "Rendering Contract",
+  "next_page": "Page04 Rendering Body",
+  "criteria_count": 5,
+  "criteria": [
+    {
+      "name": "page03_stage_chain_sealed",
+      "status": "pass",
+      "next_page": "Page04 Rendering Body",
+      "evidence": "page03_stage_chain"
+    },
+    {
+      "name": "page03_invariants_frozen",
+      "status": "pass",
+      "next_page": "Page04 Rendering Body",
+      "evidence": "page03_invariant_freeze"
+    },
+    {
+      "name": "page03_connectivity_complete",
+      "status": "pass",
+      "next_page": "Page04 Rendering Body",
+      "evidence": "page03_nexus_connectivity_matrix"
+    },
+    {
+      "name": "rendering_contract_only_next",
+      "status": "pass",
+      "next_page": "Stage161 Rendering Contract",
+      "evidence": "release/current/stage160_page03_release_seal_report.json"
+    },
+    {
+      "name": "no_final_prose_generation_yet",
+      "status": "pass",
+      "next_page": "Stage161 Rendering Contract",
+      "evidence": "release/current/stage160_page03_release_seal_report.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "stage158",
+  "title": "Dependency Conflict Branchpoint Trace",
+  "baseline_stage": "stage157",
+  "branchpoint_lineage_preserved": true,
+  "traces": [
+    "Stage157 deterministic plan graph",
+    "Stage158 dependency order preflight",
+    "Stage158 conflict matrix",
+    "Stage158 Step15 connectivity matrix"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "stage159",
+  "title": "Execution Dry-Run Trace",
+  "trace_components": [
+    "dry_run_trace_steps",
+    "trace_replay_ledger",
+    "side_effect_free_policy",
+    "node2_trace_projection_matrix",
+    "trace_integrity_snapshot",
+    "stage160_entry_criteria"
+  ],
+  "policy": {
+    "runtime_execution_enabled": false,
+    "provider_execution_enabled": false,
+    "write_operation_count": 0,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0
+  }
+}

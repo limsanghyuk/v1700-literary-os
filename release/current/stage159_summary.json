@@ -1,0 +1,21 @@
+{
+  "stage": "159",
+  "baseline_stage": "158",
+  "title": "Execution Dry-Run Trace",
+  "status": "pass",
+  "main_report": "release/current/stage159_execution_dry_run_trace_report.json",
+  "release_gate_report": "release/current/stage159_release_gate_report.json",
+  "asset_manifest": "release/current/stage159_release_asset_manifest.json",
+  "evidence_pack": "release/current/stage159_execution_dry_run_trace_pack/",
+  "trace_step_count": 6,
+  "trace_checksum": "bc9951a6592c6b9643ac9b0af635ae943a13a1b981cb92aff0d62f629c21171b",
+  "stage160_page03_release_seal_ready": true,
+  "runtime_execution_enabled": false,
+  "provider_execution_enabled": false,
+  "write_operation_count": 0,
+  "provider_default_calls": 0,
+  "node2_raw_reveal_access": 0,
+  "next_development_order": [
+    "Stage160 Page03 Release Seal"
+  ]
+}

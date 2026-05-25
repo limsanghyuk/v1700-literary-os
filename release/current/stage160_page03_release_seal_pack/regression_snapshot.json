@@ -1,0 +1,18 @@
+{
+  "stage": "stage160",
+  "title": "Page03 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "targeted_page03_test_count": 6,
+  "tests": [
+    "tests/test_stage155_execution_contract.py",
+    "tests/test_stage156_local_execution_packet_store.py",
+    "tests/test_stage157_deterministic_plan_graph_builder.py",
+    "tests/test_stage158_dependency_conflict_preflight.py",
+    "tests/test_stage159_execution_dry_run_trace.py",
+    "tests/test_stage160_page03_release_seal.py"
+  ],
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0
+}

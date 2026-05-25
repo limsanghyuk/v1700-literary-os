@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.53.0"
-description = "V1700 Stage153 - Memory Health & Leakage Boundary"
+version = "1.60.0"
+description = "V1700 Stage160 - Page03 Release Seal"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

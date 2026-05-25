@@ -78,6 +78,42 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage153_memory_health_leakage_boundary_report.json",
         "release_gate_report": "release/current/stage153_release_gate_report.json",
     },
+
+    "stage157": {
+        "package": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+        "release_gate_report": "release/current/stage157_release_gate_report.json",
+    },
+    "stage154": {
+        "package": "V1700_stage154_page02_release_seal_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage154_page02_release_seal_report.json",
+        "release_gate_report": "release/current/stage154_release_gate_report.json",
+    },
+    "stage155": {
+        "package": "V1700_stage155_execution_contract_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage155_execution_contract_report.json",
+        "release_gate_report": "release/current/stage155_release_gate_report.json",
+    },
+    "stage156": {
+        "package": "V1700_stage156_local_execution_packet_store_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage156_local_execution_packet_store_report.json",
+        "release_gate_report": "release/current/stage156_release_gate_report.json",
+    },
+    "stage158": {
+        "package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage158_dependency_conflict_preflight_report.json",
+        "release_gate_report": "release/current/stage158_release_gate_report.json",
+    },
+    "stage159": {
+        "package": "V1700_stage159_execution_dry_run_trace_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage159_execution_dry_run_trace_report.json",
+        "release_gate_report": "release/current/stage159_release_gate_report.json",
+    },
+    "stage160": {
+        "package": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage160_page03_release_seal_report.json",
+        "release_gate_report": "release/current/stage160_release_gate_report.json",
+    },
 }
 
 

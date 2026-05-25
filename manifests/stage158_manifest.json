@@ -1,0 +1,11 @@
+{
+  "stage": "stage158",
+  "title": "Dependency and Conflict Preflight",
+  "baseline_stage": "stage157",
+  "page": "Page03 Execution Body",
+  "status": "active",
+  "runner": "tools/run_stage158_dependency_conflict_preflight.py",
+  "release_gate": "tools/run_stage158_release_gate.py",
+  "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
+  "next_stage": "stage159"
+}

@@ -1,0 +1,45 @@
+{
+  "stage": "stage157",
+  "title": "Plan Graph Edges",
+  "status": "pass",
+  "issues": [],
+  "edge_count": 6,
+  "edges": [
+    {
+      "edge_id": "plan_edge_exec_pkt_character_surface_to_exec_pkt_scene_plan",
+      "from_node_id": "plan_node_exec_pkt_character_surface",
+      "to_node_id": "plan_node_exec_pkt_scene_plan",
+      "dependency_type": "packet_dependency"
+    },
+    {
+      "edge_id": "plan_edge_exec_pkt_episode_order_to_exec_pkt_scene_plan",
+      "from_node_id": "plan_node_exec_pkt_episode_order",
+      "to_node_id": "plan_node_exec_pkt_scene_plan",
+      "dependency_type": "packet_dependency"
+    },
+    {
+      "edge_id": "plan_edge_exec_pkt_project_bootstrap_to_exec_pkt_character_surface",
+      "from_node_id": "plan_node_exec_pkt_project_bootstrap",
+      "to_node_id": "plan_node_exec_pkt_character_surface",
+      "dependency_type": "packet_dependency"
+    },
+    {
+      "edge_id": "plan_edge_exec_pkt_project_bootstrap_to_exec_pkt_episode_order",
+      "from_node_id": "plan_node_exec_pkt_project_bootstrap",
+      "to_node_id": "plan_node_exec_pkt_episode_order",
+      "dependency_type": "packet_dependency"
+    },
+    {
+      "edge_id": "plan_edge_exec_pkt_reveal_guard_to_exec_pkt_payoff_trace",
+      "from_node_id": "plan_node_exec_pkt_reveal_guard",
+      "to_node_id": "plan_node_exec_pkt_payoff_trace",
+      "dependency_type": "packet_dependency"
+    },
+    {
+      "edge_id": "plan_edge_exec_pkt_scene_plan_to_exec_pkt_reveal_guard",
+      "from_node_id": "plan_node_exec_pkt_scene_plan",
+      "to_node_id": "plan_node_exec_pkt_reveal_guard",
+      "dependency_type": "packet_dependency"
+    }
+  ]
+}

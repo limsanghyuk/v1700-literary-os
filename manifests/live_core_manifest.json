@@ -1,5 +1,5 @@
 {
-  "active_version": "stage153",
+  "active_version": "stage160",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -46,10 +46,24 @@
     "stage152_memory_query_interface",
     "stage152_release_gate",
     "stage153_memory_health_leakage_boundary",
-    "stage153_release_gate"
+    "stage153_release_gate",
+    "stage154_page02_release_seal",
+    "stage154_release_gate",
+    "stage155_execution_contract",
+    "stage155_release_gate",
+    "stage156_local_execution_packet_store",
+    "stage156_release_gate",
+    "stage157_deterministic_plan_graph_builder",
+    "stage157_release_gate",
+    "stage158_dependency_conflict_preflight",
+    "stage158_release_gate",
+    "stage159_execution_dry_run_trace",
+    "stage159_release_gate",
+    "stage160_page03_release_seal",
+    "stage160_release_gate"
   ],
-  "canonical_package": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage153_memory_health_leakage_boundary_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage160_page03_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -186,5 +200,61 @@
     "release_gate": "release/current/stage153_release_gate_report.json",
     "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json",
     "next_stage": "stage154"
+  },
+  "stage154": {
+    "status": "active",
+    "title": "Page02 Release Seal",
+    "baseline_stage": "stage153",
+    "release_gate": "release/current/stage154_release_gate_report.json",
+    "evidence": "release/current/stage154_page02_release_seal_report.json",
+    "next_stage": "stage155"
+  },
+  "stage155": {
+    "status": "active",
+    "title": "Execution Contract",
+    "baseline_stage": "stage154",
+    "release_gate": "release/current/stage155_release_gate_report.json",
+    "evidence": "release/current/stage155_execution_contract_report.json",
+    "next_stage": "stage156"
+  },
+  "stage156": {
+    "status": "active",
+    "title": "Local Execution Packet Store",
+    "baseline_stage": "stage155",
+    "release_gate": "release/current/stage156_release_gate_report.json",
+    "evidence": "release/current/stage156_local_execution_packet_store_report.json",
+    "next_stage": "stage157"
+  },
+  "stage157": {
+    "status": "active",
+    "title": "Deterministic Plan Graph Builder",
+    "baseline_stage": "stage156",
+    "release_gate": "release/current/stage157_release_gate_report.json",
+    "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json",
+    "next_stage": "stage158"
+  },
+  "stage158": {
+    "status": "active",
+    "title": "Dependency and Conflict Preflight",
+    "baseline_stage": "stage157",
+    "release_gate": "release/current/stage158_release_gate_report.json",
+    "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
+    "next_stage": "stage159"
+  },
+  "stage159": {
+    "status": "active",
+    "title": "Execution Dry-Run Trace",
+    "baseline_stage": "stage158",
+    "release_gate": "release/current/stage159_release_gate_report.json",
+    "evidence": "release/current/stage159_execution_dry_run_trace_report.json",
+    "next_stage": "stage160"
+  },
+  "stage160": {
+    "status": "active",
+    "title": "Page03 Release Seal",
+    "baseline_stage": "stage159",
+    "release_gate": "release/current/stage160_release_gate_report.json",
+    "evidence": "release/current/stage160_page03_release_seal_report.json",
+    "next_stage": "stage161"
   }
 }
