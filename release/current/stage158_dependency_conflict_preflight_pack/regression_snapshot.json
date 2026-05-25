@@ -1,0 +1,13 @@
+{
+  "stage": "stage158",
+  "title": "Stage158 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "runtime_execution_enabled": false,
+  "preflight_write_enabled": false,
+  "runtime_training_enabled": false
+}

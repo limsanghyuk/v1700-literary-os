@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.58.0-stage158
+
+- Added Stage158 Dependency and Conflict Preflight.
+- Added deterministic dependency order validation, conflict matrix, boundary preflight, blocked operation registry, Node2 projection matrix, graph integrity snapshot, and Step15 connectivity matrix.
+- Kept provider execution, runtime execution, memory write, graph write, canon mutation, runtime training, and auto-repair disabled.
+
+
 ## v1.57.0-stage157
 
 - Added Stage157 Deterministic Plan Graph Builder.

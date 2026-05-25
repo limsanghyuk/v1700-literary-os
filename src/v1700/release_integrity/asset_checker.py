@@ -99,6 +99,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage156_local_execution_packet_store_report.json",
         "release_gate_report": "release/current/stage156_release_gate_report.json",
     },
+    "stage158": {
+        "package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage158_dependency_conflict_preflight_report.json",
+        "release_gate_report": "release/current/stage158_release_gate_report.json",
+    },
 }
 
 

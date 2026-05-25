@@ -1,0 +1,142 @@
+{
+  "stage": "158",
+  "baseline_stage": "157",
+  "title": "Dependency and Conflict Preflight",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage157_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage158_report_pass": {
+      "status": "pass"
+    },
+    "dependency_conflict_preflight_mode_pass": {
+      "status": "pass"
+    },
+    "dependency_order_preflight_pass": {
+      "status": "pass"
+    },
+    "conflict_matrix_pass": {
+      "status": "pass"
+    },
+    "packet_boundary_preflight_pass": {
+      "status": "pass"
+    },
+    "blocked_operation_registry_pass": {
+      "status": "pass"
+    },
+    "node2_conflict_projection_pass": {
+      "status": "pass"
+    },
+    "graph_integrity_snapshot_pass": {
+      "status": "pass"
+    },
+    "preflight_step15_connectivity_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "provider_execution_disabled": {
+      "status": "pass"
+    },
+    "preflight_write_blocked": {
+      "status": "pass"
+    },
+    "memory_store_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "auto_repair_blocked": {
+      "status": "pass"
+    },
+    "vector_db_runtime_dependency_blocked": {
+      "status": "pass"
+    },
+    "live_provider_rag_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "model_weight_update_zero": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage158": {
+    "status": "pass",
+    "stage": "158",
+    "baseline_stage": "157",
+    "title": "Dependency and Conflict Preflight",
+    "issues": [],
+    "mode": "DEPENDENCY_CONFLICT_PREFLIGHT_LOCAL_ONLY",
+    "packet_count": 6,
+    "dependency_count": 6,
+    "conflict_count": 0,
+    "boundary_violation_count": 0,
+    "preflight_checksum": "575035d8c052cab9c4429ac6b5dbef8b97cd5a99a7897c4452bb976af9588d82",
+    "stage159_execution_dry_run_trace_ready": true,
+    "runtime_execution_enabled": false,
+    "generation_runtime_enabled": false,
+    "provider_execution_enabled": false,
+    "memory_write_enabled": false,
+    "execution_write_enabled": false,
+    "store_write_enabled": false,
+    "graph_write_enabled": false,
+    "preflight_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "runtime_training_enabled": false,
+    "model_weight_update_count": 0,
+    "canon_auto_resolution_count": 0,
+    "auto_repair_mutation_count": 0,
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "raw_manuscript_cross_project_leakage": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "runtime_execution_enabled": false,
+  "preflight_write_enabled": false,
+  "graph_write_enabled": false,
+  "store_write_enabled": false,
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

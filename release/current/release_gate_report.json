@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 965
+        "node_count": 972
       },
       "narrative_summary": {
         "available": true,
@@ -1097,6 +1097,19 @@
     "stage": "157",
     "baseline_stage": "156",
     "title": "Deterministic Plan Graph Builder",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage158_release_gate": {
+    "status": "pass",
+    "stage": "158",
+    "baseline_stage": "157",
+    "title": "Dependency and Conflict Preflight",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

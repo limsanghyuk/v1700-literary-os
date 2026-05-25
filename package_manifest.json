@@ -1,14 +1,14 @@
 {
-  "stage": "stage157",
-  "package": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip",
+  "stage": "stage158",
+  "package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage157_deterministic_plan_graph_builder",
-  "active_version": "stage157",
-  "patch_report": "release/current/stage157_deterministic_plan_graph_builder_report.json",
-  "release_gate": "release/current/stage157_release_gate_report.json",
-  "asset_manifest": "release/current/stage157_release_asset_manifest.json"
+  "created_by": "stage158_dependency_conflict_preflight",
+  "active_version": "stage158",
+  "patch_report": "release/current/stage158_dependency_conflict_preflight_report.json",
+  "release_gate": "release/current/stage158_release_gate_report.json",
+  "asset_manifest": "release/current/stage158_release_asset_manifest.json"
 }

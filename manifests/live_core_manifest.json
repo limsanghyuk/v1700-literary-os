@@ -1,5 +1,5 @@
 {
-  "active_version": "stage157",
+  "active_version": "stage158",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -54,10 +54,12 @@
     "stage156_local_execution_packet_store",
     "stage156_release_gate",
     "stage157_deterministic_plan_graph_builder",
-    "stage157_release_gate"
+    "stage157_release_gate",
+    "stage158_dependency_conflict_preflight",
+    "stage158_release_gate"
   ],
-  "canonical_package": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -226,5 +228,13 @@
     "release_gate": "release/current/stage157_release_gate_report.json",
     "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json",
     "next_stage": "stage158"
+  },
+  "stage158": {
+    "status": "active",
+    "title": "Dependency and Conflict Preflight",
+    "baseline_stage": "stage157",
+    "release_gate": "release/current/stage158_release_gate_report.json",
+    "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
+    "next_stage": "stage159"
   }
 }

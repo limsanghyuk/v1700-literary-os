@@ -430,6 +430,32 @@ TARGETS: dict[str, dict[str, Any]] = {
             ".github/workflows/ci-fast.yml",
         ],
     },
+    "stage158": {
+        "label": "Stage158",
+        "version": "1.58.0",
+        "title": "Dependency and Conflict Preflight",
+        "required_files": [
+            "docs/stages/stage158.md",
+            "docs/proposals/stage158_dependency_conflict_preflight_proposal.md",
+            "docs/architecture/stage158_dependency_conflict_preflight_blueprint.md",
+            "docs/development/stage158_developer_handoff.md",
+            "manifests/stage158_manifest.json",
+            "manifests/stage158_dependency_conflict_preflight_manifest.json",
+            "manifests/stage158_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage158_overlay.json",
+            "release/current/stage158_release_asset_manifest.json",
+            "release/current/stage158_dependency_conflict_preflight_report.json",
+            "release/current/stage158_release_gate_report.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/dependency_order_preflight.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/conflict_matrix.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/packet_boundary_preflight.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/blocked_operation_registry.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/node2_conflict_projection_matrix.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/graph_integrity_snapshot.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/preflight_step15_connectivity_matrix.json",
+            "release/current/stage158_dependency_conflict_preflight_pack/regression_snapshot.json",
+        ],
+    },
 }
 
 

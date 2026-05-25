@@ -1,0 +1,45 @@
+{
+  "stage": "stage158",
+  "title": "Dependency Order Preflight",
+  "status": "pass",
+  "issues": [],
+  "finding_count": 6,
+  "findings": [
+    {
+      "packet_id": "exec_pkt_character_surface",
+      "dependency_id": "exec_pkt_project_bootstrap",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    },
+    {
+      "packet_id": "exec_pkt_episode_order",
+      "dependency_id": "exec_pkt_project_bootstrap",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    },
+    {
+      "packet_id": "exec_pkt_payoff_trace",
+      "dependency_id": "exec_pkt_reveal_guard",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    },
+    {
+      "packet_id": "exec_pkt_reveal_guard",
+      "dependency_id": "exec_pkt_scene_plan",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    },
+    {
+      "packet_id": "exec_pkt_scene_plan",
+      "dependency_id": "exec_pkt_character_surface",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    },
+    {
+      "packet_id": "exec_pkt_scene_plan",
+      "dependency_id": "exec_pkt_episode_order",
+      "status": "pass",
+      "reason": "dependency_precedes_packet"
+    }
+  ]
+}

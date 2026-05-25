@@ -1,0 +1,13 @@
+{
+  "active_version": "stage158",
+  "overlay_stage": "stage158",
+  "title": "Dependency and Conflict Preflight",
+  "baseline_stage": "stage157",
+  "release_gate": "release/current/stage158_release_gate_report.json",
+  "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
+  "provider_default_calls": 0,
+  "runtime_execution_enabled": false,
+  "preflight_write_enabled": false,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0
+}

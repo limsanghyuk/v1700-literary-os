@@ -1,27 +1,30 @@
-# V1700 Stage157 - Deterministic Plan Graph Builder
+# V1700 Stage158 - Dependency and Conflict Preflight
 
-Stage157 compiles Stage156 local execution packets into a deterministic plan graph.
+Stage158 adds deterministic dependency and conflict preflight validation for Page03 execution plans.
 
 ## Highlights
 
-- Stage156 remains the read-only packet store baseline.
-- Stage157 builds deterministic nodes, edges, topological order, dependency integrity, and graph checksum.
-- Missing dependencies, cycles, and Node2 forbidden projections are blocked.
-- Runtime execution, graph writes, provider calls, memory writes, training, and mutation remain disabled.
+- Stage157 remains the deterministic plan graph baseline.
+- Dependency order is checked against topological order.
+- Forbidden packet types and blocked operations remain disabled.
+- Node2 projection safety remains surface-only.
+- Preflight Step15 connectivity principles are applied to Stage158 evidence.
 
 ## Validation Commands
 
 ```bash
 python -m compileall -q src tools
-python tools/run_stage156_release_gate.py
-python tools/run_stage157_deterministic_plan_graph_builder.py
 python tools/run_stage157_release_gate.py
+python tools/run_stage158_dependency_conflict_preflight.py
+python tools/run_stage158_release_gate.py
+python tools/check_stage_metadata_consistency.py
+python tools/check_release_asset_integrity.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage157_deterministic_plan_graph_builder.py -q
+python -m pytest tests/test_stage158_dependency_conflict_preflight.py -q
 ```
 
 ## Official Release Assets
 
-- `V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage157_deterministic_plan_graph_builder_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage158_dependency_conflict_preflight_release_integrated_repository_with_artifacts.zip.sha256`
