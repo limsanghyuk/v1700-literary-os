@@ -4,6 +4,7 @@
 .claude/skills/gitnexus/gitnexus-guide/SKILL.md
 .claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md
 .claude/skills/gitnexus/gitnexus-refactoring/SKILL.md
+.gitignore
 AGENTS.md
 CHANGELOG.md
 CLAUDE.md
@@ -47,6 +48,8 @@ benchmarks/longform_output/results/stage142_rendered_samples.json
 docs/architecture/node_authority_boundaries.md
 docs/architecture/page03_execution_body_blueprint.md
 docs/architecture/page04_rendering_body_blueprint.md
+docs/architecture/page05_evaluation_body_blueprint.md
+docs/architecture/page06_governance_body_blueprint.md
 docs/architecture/runtime_policy.md
 docs/architecture/stage129_blueprint.md
 docs/architecture/stage130_blueprint.md
@@ -109,6 +112,8 @@ docs/concepts/style_genome.md
 docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md
 docs/development/page03_developer_handoff.md
 docs/development/page04_handoff.md
+docs/development/page05_developer_handoff.md
+docs/development/page06_developer_handoff.md
 docs/development/stage134_developer_handoff.md
 docs/development/stage135_release_asset_correction.md
 docs/development/stage136_developer_handoff.md
@@ -155,6 +160,8 @@ docs/generated/wiki/narrative_wiki.md
 docs/generated/wiki/stage_lineage_wiki.md
 docs/proposals/page03_execution_body_proposal.md
 docs/proposals/page04_rendering_body_proposal.md
+docs/proposals/page05_evaluation_body_proposal.md
+docs/proposals/page06_governance_body_proposal.md
 docs/proposals/stage129_proposal.md
 docs/proposals/stage130_proposal.md
 docs/proposals/stage131_proposal.md
@@ -196,6 +203,7 @@ docs/proposals/stage166_page04_release_seal_proposal.md
 docs/proposals/stage72_3_pre_stage40_lineage_recovery_proposal.md
 docs/proposals/stage72_3_three_expert_council_proposal.md
 docs/releases/STAGE84_RELEASE_REPORT.md
+docs/reports/page05_page06_three_expert_consensus.md
 docs/reports/stage154_integrity_repair_report.md
 docs/reports/stage155_regression_repair_report.md
 docs/reports/stage156_full_regression_report.md
@@ -207,8 +215,10 @@ docs/reports/stage162_completion_report.md
 docs/reports/stage163_completion_report.md
 docs/reports/stage164_completion_report.md
 docs/reports/stage166_completion_report.md
+docs/reports/stage166_full_suite_validation_notes.md
 docs/reports/stage85_principal_system_engineer_evaluation.md
 docs/reviews/stage72_3_principal_engineer_validation.md
+docs/roadmaps/page05_page06_detailed_evolution_plan.md
 docs/roadmaps/seven_page_architecture.md
 docs/roadmaps/stage131_roadmap.md
 docs/roadmaps/stage132_roadmap.md
@@ -410,8 +420,10 @@ docs/user/api_minimum.md
 docs/user/cli_quickstart.md
 docs/user/examples/render_request.json
 docs/user/examples/render_response.json
+docs/workflow/BRANCH_STRATEGY.md
 docs/workflow/PREFLIGHT_GUIDE_gpt_stage156.md
 docs/workflow/PREFLIGHT_GUIDE_gpt_stage158.md
+docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md
 docs/workflow/WORKFLOW.md
 examples/node2_rendering_cases/basic_scene_intent.json
 examples/prompts/basic_prompt.txt

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: stage163 - Deterministic Plan Graph Builder
+Current active stage: stage166 - Page04 Release Seal
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -77,8 +77,10 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 
 - [Stage162 — Local Render Packet Store](stage162.md)
 
-- Stage163 — Deterministic Render Plan Builder
+- [Stage163 — Deterministic Render Plan Builder](stage163.md)
 
 - [Stage164 — Surface Draft Dry-Run Renderer](stage164.md)
 
 - [Stage165 — Render Quality and Boundary Preflight](stage165.md)
+
+- [Stage166 — Page04 Release Seal](stage166.md)

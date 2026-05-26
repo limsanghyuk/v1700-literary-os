@@ -30,4 +30,11 @@ src/v1700/gates/
 
 ## Next
 
-Stage167 — Evaluation Contract.
+Stage167 - Evaluation Contract.
+
+Page05 and Page06 design authority is documented in:
+
+- `docs/proposals/page05_evaluation_body_proposal.md`
+- `docs/architecture/page05_evaluation_body_blueprint.md`
+- `docs/proposals/page06_governance_body_proposal.md`
+- `docs/architecture/page06_governance_body_blueprint.md`

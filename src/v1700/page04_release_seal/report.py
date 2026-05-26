@@ -396,7 +396,8 @@ def _build_regression_snapshot(root: Path) -> dict[str, Any]:
 
 
 def _is_forbidden_cache_entry(entry: str) -> bool:
-    normalized = f"/{entry.strip().replace('\\\\', '/')}"
+    normalized_entry = entry.strip().replace("\\", "/")
+    normalized = f"/{normalized_entry}"
     forbidden_markers = ("/__pycache__/", "/.pytest_cache/", "/.mypy_cache/", "/.ruff_cache/")
     forbidden_suffixes = (".pyc", ".pyo")
     return any(marker in normalized for marker in forbidden_markers) or normalized.endswith(forbidden_suffixes)
