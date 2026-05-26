@@ -1,0 +1,39 @@
+{
+  "stage": "stage170",
+  "title": "Stage171 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "stage171_evaluation_boundary_leakage_preflight_ready": true,
+  "checks": {
+    "stage169_release_gate_pass": {
+      "status": "pass"
+    },
+    "safe_fixture_pass": {
+      "status": "pass"
+    },
+    "negative_fixture_blocks": {
+      "status": "pass"
+    },
+    "fixture_coverage_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "fixture_determinism_pass": {
+      "status": "pass"
+    },
+    "boundary_negative_fixture_pass": {
+      "status": "pass"
+    },
+    "provider_default_calls_zero": {
+      "status": "pass"
+    },
+    "write_operations_zero": {
+      "status": "pass"
+    },
+    "node2_raw_reveal_access_zero": {
+      "status": "pass"
+    }
+  }
+}

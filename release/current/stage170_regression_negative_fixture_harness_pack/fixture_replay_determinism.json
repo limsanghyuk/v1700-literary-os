@@ -1,0 +1,18 @@
+{
+  "stage": "stage170",
+  "title": "Stage170 Fixture Replay Determinism",
+  "status": "pass",
+  "issues": [],
+  "replay_count": 2,
+  "checksums": [
+    "ecec20f5db2909ac7c632d979c76da263c270cad82c5c4113e25f1142ce6609e",
+    "928dbdc5150a8c0044774afeaeeb5820a774152338bb70baeb7ee9b24c5932f0",
+    "613d3c8687620854f832969ec014661ef7a2b081f3016578173790bb02920312",
+    "92ffa27e685fa6a69382fc083e1b12ced08864e7260a41f0c5adb9d6272647a2",
+    "587f4b16ee4e5e374bff2d00c654ab75488f485f353a9da584beddbcc9be80a4",
+    "1f9715a3a33c16803528dc19769e5bc700a60f54dbbedeff1946155408a30bb7",
+    "5bac3ebacc7fc45e8fe6fab8a0672d13eed5f44de0fb67e8aa3a1821f9556470",
+    "56dbe82455043c81506f48e5e74aad3f99ddbcec21bc67fad1165eb2d234df8e",
+    "55dc6af43f65fb899f45afbdcea822f33d6c43a780caa427c4f035a5c503381d"
+  ]
+}

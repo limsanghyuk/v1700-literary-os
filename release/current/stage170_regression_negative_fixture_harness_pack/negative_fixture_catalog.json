@@ -1,0 +1,79 @@
+{
+  "stage": "stage170",
+  "title": "Stage170 Negative Fixture Catalog",
+  "status": "pass",
+  "issues": [],
+  "fixture_count": 9,
+  "fixtures": [
+    {
+      "fixture_id": "safe_baseline_fixture",
+      "channel": "safe",
+      "expected_status": "pass",
+      "expected_reasons": []
+    },
+    {
+      "fixture_id": "quality_drop_fixture",
+      "channel": "quality",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "quality_score_below_threshold"
+      ]
+    },
+    {
+      "fixture_id": "continuity_break_fixture",
+      "channel": "continuity",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "continuity_hard_violation"
+      ]
+    },
+    {
+      "fixture_id": "raw_reveal_leak_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ]
+    },
+    {
+      "fixture_id": "hidden_memory_projection_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ]
+    },
+    {
+      "fixture_id": "provider_call_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ]
+    },
+    {
+      "fixture_id": "mutation_command_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ]
+    },
+    {
+      "fixture_id": "stale_stage166_evidence_fixture",
+      "channel": "regression",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "continuity_hard_violation"
+      ]
+    },
+    {
+      "fixture_id": "checksum_drift_fixture",
+      "channel": "regression",
+      "expected_status": "blocked",
+      "expected_reasons": [
+        "packet_checksum_drift"
+      ]
+    }
+  ]
+}

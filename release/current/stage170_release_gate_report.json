@@ -1,0 +1,123 @@
+{
+  "stage": "170",
+  "baseline_stage": "169",
+  "title": "Regression and Negative Fixture Harness",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage169_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage170_report_pass": {
+      "status": "pass"
+    },
+    "regression_harness_mode_pass": {
+      "status": "pass"
+    },
+    "fixture_catalog_pass": {
+      "status": "pass"
+    },
+    "safe_fixture_pass": {
+      "status": "pass"
+    },
+    "negative_fixture_blocks_pass": {
+      "status": "pass"
+    },
+    "fixture_coverage_pass": {
+      "status": "pass"
+    },
+    "regression_snapshot_pass": {
+      "status": "pass"
+    },
+    "fixture_determinism_pass": {
+      "status": "pass"
+    },
+    "boundary_negative_fixture_pass": {
+      "status": "pass"
+    },
+    "stage171_entry_ready": {
+      "status": "pass"
+    },
+    "provider_evaluation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage170": {
+    "status": "pass",
+    "stage": "170",
+    "baseline_stage": "169",
+    "title": "Regression and Negative Fixture Harness",
+    "issues": [],
+    "mode": "DETERMINISTIC_LOCAL_REGRESSION_HARNESS_ONLY",
+    "fixture_count": 9,
+    "negative_fixture_count": 8,
+    "safe_fixture_pass": true,
+    "negative_fixture_blocks": true,
+    "regression_snapshot_pass": true,
+    "fixture_coverage_pass": true,
+    "boundary_fixture_pass": true,
+    "determinism_channel_pass": true,
+    "stage171_boundary_preflight_ready": true,
+    "provider_evaluation_enabled": false,
+    "evaluation_write_enabled": false,
+    "memory_write_enabled": false,
+    "cross_project_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "runtime_training_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

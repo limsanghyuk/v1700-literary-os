@@ -1,0 +1,185 @@
+{
+  "stage": "stage170",
+  "title": "Stage170 Negative Fixture Results",
+  "status": "pass",
+  "issues": [],
+  "fixture_count": 9,
+  "negative_fixture_count": 8,
+  "safe_fixture_pass": true,
+  "negative_fixture_blocks": true,
+  "entries": [
+    {
+      "fixture_id": "safe_baseline_fixture",
+      "channel": "safe",
+      "expected_status": "pass",
+      "actual_status": "pass",
+      "expected_reasons": [],
+      "actual_reasons": [],
+      "expectation_status": "pass",
+      "quality_score": 1.0,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 0,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "ecec20f5db2909ac7c632d979c76da263c270cad82c5c4113e25f1142ce6609e"
+    },
+    {
+      "fixture_id": "quality_drop_fixture",
+      "channel": "quality",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "quality_score_below_threshold"
+      ],
+      "actual_reasons": [
+        "continuity_hard_violation",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.0,
+      "continuity_violation_index": 1.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 0,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "928dbdc5150a8c0044774afeaeeb5820a774152338bb70baeb7ee9b24c5932f0"
+    },
+    {
+      "fixture_id": "continuity_break_fixture",
+      "channel": "continuity",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "continuity_hard_violation"
+      ],
+      "actual_reasons": [
+        "continuity_hard_violation"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.9625,
+      "continuity_violation_index": 1.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 0,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "613d3c8687620854f832969ec014661ef7a2b081f3016578173790bb02920312"
+    },
+    {
+      "fixture_id": "raw_reveal_leak_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ],
+      "actual_reasons": [
+        "boundary_violation_detected",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.78,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 1,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "92ffa27e685fa6a69382fc083e1b12ced08864e7260a41f0c5adb9d6272647a2"
+    },
+    {
+      "fixture_id": "hidden_memory_projection_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ],
+      "actual_reasons": [
+        "boundary_violation_detected",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.78,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 1,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "587f4b16ee4e5e374bff2d00c654ab75488f485f353a9da584beddbcc9be80a4"
+    },
+    {
+      "fixture_id": "provider_call_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ],
+      "actual_reasons": [
+        "boundary_violation_detected",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.78,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 1,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "1f9715a3a33c16803528dc19769e5bc700a60f54dbbedeff1946155408a30bb7"
+    },
+    {
+      "fixture_id": "mutation_command_fixture",
+      "channel": "boundary",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "boundary_violation_detected"
+      ],
+      "actual_reasons": [
+        "boundary_violation_detected",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.78,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 1,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "5bac3ebacc7fc45e8fe6fab8a0672d13eed5f44de0fb67e8aa3a1821f9556470"
+    },
+    {
+      "fixture_id": "stale_stage166_evidence_fixture",
+      "channel": "regression",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "continuity_hard_violation"
+      ],
+      "actual_reasons": [
+        "continuity_hard_violation",
+        "quality_score_below_threshold"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 0.0,
+      "continuity_violation_index": 1.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 0,
+      "packet_checksum_drift": false,
+      "deterministic_checksum": "56dbe82455043c81506f48e5e74aad3f99ddbcec21bc67fad1165eb2d234df8e"
+    },
+    {
+      "fixture_id": "checksum_drift_fixture",
+      "channel": "regression",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "expected_reasons": [
+        "packet_checksum_drift"
+      ],
+      "actual_reasons": [
+        "packet_checksum_drift"
+      ],
+      "expectation_status": "pass",
+      "quality_score": 1.0,
+      "continuity_violation_index": 0.0,
+      "regression_delta_index": 0.0,
+      "boundary_violation_count": 0,
+      "packet_checksum_drift": true,
+      "deterministic_checksum": "55dc6af43f65fb899f45afbdcea822f33d6c43a780caa427c4f035a5c503381d"
+    }
+  ]
+}

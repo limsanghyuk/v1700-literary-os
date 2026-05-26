@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.70.0-stage170
+
+- Added Stage170 Regression and Negative Fixture Harness.
+- Added deterministic safe and negative fixture catalog, fixture results, coverage matrix, regression snapshot, replay determinism, boundary negative fixture matrix, and Stage171 entry criteria.
+- Preserved provider-zero, write-zero, Node2 raw reveal zero, runtime-training-disabled, and mutation-disabled invariants.
+
 ## v1.69.0-stage169
 
 - Added Stage169 Deterministic Quality and Continuity Evaluator.

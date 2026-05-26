@@ -1,5 +1,5 @@
 {
-  "active_version": "stage169",
+  "active_version": "stage170",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -78,10 +78,12 @@
     "stage168_local_evaluation_packet_store",
     "stage168_release_gate",
     "stage169_deterministic_quality_continuity_evaluator",
-    "stage169_release_gate"
+    "stage169_release_gate",
+    "stage170_regression_negative_fixture_harness",
+    "stage170_release_gate"
   ],
-  "canonical_package": "V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -347,6 +349,14 @@
       "release_gate": "release/current/stage169_release_gate_report.json",
       "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
       "next_stage": "stage170"
+    },
+    "stage170": {
+      "status": "active",
+      "title": "Regression and Negative Fixture Harness",
+      "baseline_stage": "stage169",
+      "release_gate": "release/current/stage170_release_gate_report.json",
+      "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
+      "next_stage": "stage171"
     }
   },
   "stage169": {
@@ -356,5 +366,13 @@
     "release_gate": "release/current/stage169_release_gate_report.json",
     "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
     "next_stage": "stage170"
+  },
+  "stage170": {
+    "status": "active",
+    "title": "Regression and Negative Fixture Harness",
+    "baseline_stage": "stage169",
+    "release_gate": "release/current/stage170_release_gate_report.json",
+    "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
+    "next_stage": "stage171"
   }
 }
