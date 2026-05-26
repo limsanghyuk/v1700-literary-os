@@ -1,0 +1,21 @@
+{
+  "stage": "stage170",
+  "title": "Stage170 Fixture Coverage Matrix",
+  "status": "pass",
+  "issues": [],
+  "required_channels": [
+    "boundary",
+    "continuity",
+    "quality",
+    "regression",
+    "safe"
+  ],
+  "covered_channels": [
+    "boundary",
+    "continuity",
+    "quality",
+    "regression",
+    "safe"
+  ],
+  "fixture_count": 9
+}

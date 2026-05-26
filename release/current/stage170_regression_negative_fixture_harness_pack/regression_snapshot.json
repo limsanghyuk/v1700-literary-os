@@ -1,0 +1,13 @@
+{
+  "stage": "stage170",
+  "title": "Stage170 Regression Snapshot",
+  "status": "pass",
+  "issues": [],
+  "snapshot": {
+    "stage169_gate_status": "pass",
+    "stage169_report_sha256": "cdf068bda5b251b9baf9d570009cdbd15b7c14952e05c04590185f098d516a76",
+    "stage169_gate_sha256": "19b23516f0c55b9343b2847450e1337245416cb4b137379653914c7e05a0ea59",
+    "fixture_result_checksum": "66e3af042851f4375237b20d8c3c43d4795ce01b0de233154db71dabda0f1555"
+  },
+  "snapshot_checksum": "d0b270821a8e2712c76510c65e4f400f75860c00661772301b12b32bf1b40fa1"
+}

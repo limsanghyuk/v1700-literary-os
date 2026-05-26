@@ -1,6 +1,4 @@
-# V1700 Stage169 - Deterministic Quality and Continuity Evaluator
-
-Stage169 continues Page05, the Evaluation Body.
+# V1700 Stage170 - Regression and Negative Fixture Harness
 
 ## Highlights
 
@@ -10,6 +8,10 @@ Stage169 continues Page05, the Evaluation Body.
 
 ## Official Release Assets
 
-- `V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip.sha256`
 - `SHA256SUMS.txt`
+
+## Next
+
+Next: Stage171 Evaluation Boundary and Leakage Preflight.

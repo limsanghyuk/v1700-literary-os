@@ -1,10 +1,7 @@
 from __future__ import annotations
 
 import json
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from v1700.gates.stage169_release_gate import run_stage169_release_gate
 

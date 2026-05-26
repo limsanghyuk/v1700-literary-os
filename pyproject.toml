@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.69.0"
-description = "Stage169 - Deterministic Quality and Continuity Evaluator"
+version = "1.70.0"
+description = "Stage170 - Regression and Negative Fixture Harness"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

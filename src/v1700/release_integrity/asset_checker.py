@@ -159,6 +159,12 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
         "release_gate_report": "release/current/stage169_release_gate_report.json",
     },
+
+    "stage170": {
+        "package": "V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+        "release_gate_report": "release/current/stage170_release_gate_report.json",
+    },
 }
 
 

@@ -73,3 +73,6 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage166](stage166.md) - Page04 Release Seal
 - [Stage167](stage167.md) - Evaluation Contract
 - [Stage168](stage168.md) - Local Evaluation Packet Store
+
+- [Stage169](stage169.md) - Deterministic Quality and Continuity Evaluator
+- [Stage170](stage170.md) - Regression and Negative Fixture Harness

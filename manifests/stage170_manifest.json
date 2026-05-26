@@ -1,0 +1,11 @@
+{
+  "stage": "stage170",
+  "title": "Regression and Negative Fixture Harness",
+  "baseline_stage": "stage169",
+  "page": "Page05 Evaluation Body",
+  "status": "active",
+  "runner": "tools/run_stage170_regression_negative_fixture_harness.py",
+  "release_gate": "tools/run_stage170_release_gate.py",
+  "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
+  "next_stage": "stage171"
+}
