@@ -5,9 +5,9 @@
   "forbidden_cache_entry_sample": [],
   "invariant_freeze_checksum": "f9974018a54716f96b59ddaa8afb16e907326185758b1efb8afdc6ee9f5abd83",
   "issues": [],
-  "snapshot_checksum": "17f67f4160fca9c8a6bd502889d61ca420ef754778cbe7ec32854adf8dad7bb3",
+  "snapshot_checksum": "9ab61eb63215e6a5fdc1d5dfdfd78172e78d8bf987822fefe4b5b64b82b58e19",
   "stage": "stage172",
-  "stage_chain_checksum": "6891371a9d2bcb0de59d90cac4efe2f8ebaa0abcfc807c52cd21be42ba175f35",
+  "stage_chain_checksum": "6a8c42ef3adeb4f94d6d79a7cfd5ddca62877c0d49122a55cda18830a9294dac",
   "status": "pass",
   "title": "Page05 Regression Snapshot"
 }
