@@ -1,5 +1,11 @@
 # Changelog
 
+## Workflow Restoration (Stage172.3 Authority)
+
+- Restored `.github/workflows/ci-fast.yml`, `ci-core.yml`, `cd-dry-run.yml`, and `release.yml`.
+- Aligned GitHub Actions with the Stage167 through Stage172 Page05 validation chain.
+- Reintroduced automated compile, pytest, release gate, repo doctor, dry-run packaging, and release asset publication checks for Stage172.3 authority.
+
 ## v1.72.0-stage172
 
 - Added Stage172 Page05 Release Seal.

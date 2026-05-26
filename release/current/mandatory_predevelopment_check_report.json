@@ -11,8 +11,10 @@
     "docs/workflow/WORKFLOW.md"
   ],
   "gitnexus": {
-    "installed": false,
-    "status": "fallback_required",
+    "installed": true,
+    "status": "pass",
+    "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
+    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_stage172_workflow_clean\nIndexed: 2026. 5. 26. PM 7:30:21\nIndexed commit: 7acb7e4\nCurrent commit: 7acb7e4\nStatus: ✅ up-to-date\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {
