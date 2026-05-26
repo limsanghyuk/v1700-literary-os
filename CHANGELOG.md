@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.72.0-stage172
+
+- Added Stage172 Page05 Release Seal.
+- Sealed Page05 Evaluation Body across Stage167 through Stage172.
+- Added Page05 artifact index, invariant freeze, evaluation evidence matrix, transition criteria, release seal checksum, and regression snapshot.
+- Kept provider-zero, write-zero, evaluation-write-zero, training-zero, and Node2 raw reveal zero.
+
 ## v1.71.0-stage171
 
 - Added Stage171 Evaluation Boundary and Leakage Preflight.

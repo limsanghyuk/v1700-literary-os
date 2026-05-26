@@ -1,0 +1,41 @@
+{
+  "criteria": [
+    {
+      "criterion": "page05_stage_chain_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "page05_invariant_freeze_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "quality_channel_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "continuity_channel_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "regression_channel_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "boundary_channel_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "determinism_channel_pass",
+      "status": "pass"
+    },
+    {
+      "criterion": "regression_snapshot_pass",
+      "status": "pass"
+    }
+  ],
+  "issues": [],
+  "stage": "stage172",
+  "stage173_governance_contract_ready": true,
+  "status": "pass",
+  "title": "Stage173 Governance Contract Entry Criteria"
+}

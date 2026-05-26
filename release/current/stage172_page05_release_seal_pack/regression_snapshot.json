@@ -1,0 +1,13 @@
+{
+  "evaluation_evidence_checksum": "0a656d84aa6139273657556b3ee5796318b88529205b854c03b85eb78b984c40",
+  "filelist_entry_count": 3560,
+  "forbidden_cache_entries": 0,
+  "forbidden_cache_entry_sample": [],
+  "invariant_freeze_checksum": "f9974018a54716f96b59ddaa8afb16e907326185758b1efb8afdc6ee9f5abd83",
+  "issues": [],
+  "snapshot_checksum": "8c6e320edc8517bb21e209c9b30b070508e50311f49c2b9a8a85362da613e9a2",
+  "stage": "stage172",
+  "stage_chain_checksum": "70be432894cf7008c70e1e7471bf259716aef8f30e19c7d27268921fb53ffe98",
+  "status": "pass",
+  "title": "Page05 Regression Snapshot"
+}

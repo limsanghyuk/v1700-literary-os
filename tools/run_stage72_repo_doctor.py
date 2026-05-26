@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -1261,6 +1261,31 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage171_evaluation_boundary_leakage_preflight_pack/leakage_zero_snapshot.json",
         "release/current/stage171_evaluation_boundary_leakage_preflight_pack/stage172_entry_criteria.json",
     ],
+
+    "stage172": [
+        "manifests/stage172_manifest.json",
+        "manifests/stage172_page05_release_seal_manifest.json",
+        "manifests/stage172_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage172_overlay.json",
+        "docs/stages/stage172.md",
+        "docs/architecture/stage172_page05_release_seal_blueprint.md",
+        "docs/proposals/stage172_page05_release_seal_proposal.md",
+        "docs/development/stage172_developer_handoff.md",
+        "docs/architecture/page05_evaluation_body_blueprint.md",
+        "docs/proposals/page05_evaluation_body_proposal.md",
+        "docs/development/page05_developer_handoff.md",
+        "release/current/stage172_page05_release_seal_report.json",
+        "release/current/stage172_release_gate_report.json",
+        "release/current/stage172_release_asset_manifest.json",
+        "release/current/stage172_page05_release_seal_pack/page05_stage_chain.json",
+        "release/current/stage172_page05_release_seal_pack/page05_release_seal_matrix.json",
+        "release/current/stage172_page05_release_seal_pack/page05_artifact_index.json",
+        "release/current/stage172_page05_release_seal_pack/page05_invariant_freeze.json",
+        "release/current/stage172_page05_release_seal_pack/page05_evaluation_evidence_matrix.json",
+        "release/current/stage172_page05_release_seal_pack/page05_transition_criteria.json",
+        "release/current/stage172_page05_release_seal_pack/page05_release_seal.json",
+        "release/current/stage172_page05_release_seal_pack/regression_snapshot.json",
+    ],
     "stage164": [
         "manifests/stage164_manifest.json",
         "manifests/stage164_surface_draft_dry_run_renderer_manifest.json",
@@ -1368,6 +1393,7 @@ PREDECESSOR_GATE = {
     "stage169": "stage168_release_gate",
     "stage170": "stage169_release_gate",
     "stage171": "stage170_release_gate",
+    "stage172": "stage171_release_gate",
 }
 
 

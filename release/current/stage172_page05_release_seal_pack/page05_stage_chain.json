@@ -1,0 +1,71 @@
+{
+  "issues": [],
+  "matrix_checksum": "70be432894cf7008c70e1e7471bf259716aef8f30e19c7d27268921fb53ffe98",
+  "sealed_count": 5,
+  "stage": "stage172",
+  "stage_count": 5,
+  "stages": [
+    {
+      "gate_path": "release/current/stage167_release_gate_report.json",
+      "gate_sha256": "1cc50da2f2403528372999d5ffab022401a36f303d38bb6740e2469813501079",
+      "gate_status": "pass",
+      "report_path": "release/current/stage167_evaluation_contract_report.json",
+      "report_sha256": "8936f9999e02c22f4d1ee600ef00d50e2e1c8b60f841c7a645c304390c5b03d3",
+      "report_status": "pass",
+      "sealed": true,
+      "stage": "167",
+      "status": "pass",
+      "title": "Evaluation Contract"
+    },
+    {
+      "gate_path": "release/current/stage168_release_gate_report.json",
+      "gate_sha256": "3ce81d8838b513a0aec569a1b831d8a99c8d6d9b154ee3ddd2d47d4618f702e9",
+      "gate_status": "pass",
+      "report_path": "release/current/stage168_local_evaluation_packet_store_report.json",
+      "report_sha256": "be23ea251ca4987c879b30d541b1fbb1548a2479f3c6b84bc587ec3e35101595",
+      "report_status": "pass",
+      "sealed": true,
+      "stage": "168",
+      "status": "pass",
+      "title": "Local Evaluation Packet Store"
+    },
+    {
+      "gate_path": "release/current/stage169_release_gate_report.json",
+      "gate_sha256": "19b23516f0c55b9343b2847450e1337245416cb4b137379653914c7e05a0ea59",
+      "gate_status": "pass",
+      "report_path": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+      "report_sha256": "cdf068bda5b251b9baf9d570009cdbd15b7c14952e05c04590185f098d516a76",
+      "report_status": "pass",
+      "sealed": true,
+      "stage": "169",
+      "status": "pass",
+      "title": "Deterministic Quality and Continuity Evaluator"
+    },
+    {
+      "gate_path": "release/current/stage170_release_gate_report.json",
+      "gate_sha256": "d1460e85303f950abc19d71674d1b94bbadbad4f1ce42f331a5f38ca6bb7ec0e",
+      "gate_status": "pass",
+      "report_path": "release/current/stage170_regression_negative_fixture_harness_report.json",
+      "report_sha256": "1768adb2ce8f03cac5f9791b429095cf6dcbc9e6c677a34bf95a2943a5ecd980",
+      "report_status": "pass",
+      "sealed": true,
+      "stage": "170",
+      "status": "pass",
+      "title": "Regression and Negative Fixture Harness"
+    },
+    {
+      "gate_path": "release/current/stage171_release_gate_report.json",
+      "gate_sha256": "db947b3fce4735096facccca50072de28737df9b517dd883601660002cccfc85",
+      "gate_status": "pass",
+      "report_path": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+      "report_sha256": "e9fee33d11acc9c862f362d163dc409bc471a624bbc86693442001d1bad9d909",
+      "report_status": "pass",
+      "sealed": true,
+      "stage": "171",
+      "status": "pass",
+      "title": "Evaluation Boundary and Leakage Preflight"
+    }
+  ],
+  "status": "pass",
+  "title": "Page05 Upstream Stage Chain"
+}
