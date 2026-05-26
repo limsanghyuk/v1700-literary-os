@@ -115,15 +115,10 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]
-_RELEASE_GATE_CACHE: dict[str, dict] = {}
-
 
 def run_release_gate() -> dict:
     root = Path(__file__).resolve().parents[3]
     active_version = _active_version(root)
-    cache_key = active_version
-    if cache_key in _RELEASE_GATE_CACHE:
-        return _RELEASE_GATE_CACHE[cache_key]
 
     smoke = run_runtime_smoke()
     issues = list(smoke.get("issues", []))
@@ -159,7 +154,6 @@ def run_release_gate() -> dict:
         "graph_nexus_release_gate": graph_nexus,
         **stage_reports,
     }
-    _RELEASE_GATE_CACHE[cache_key] = result
     return result
 
 

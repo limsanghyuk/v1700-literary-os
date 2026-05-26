@@ -78,8 +78,8 @@
     "stage168_local_evaluation_packet_store",
     "stage168_release_gate"
   ],
-  "canonical_package": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"

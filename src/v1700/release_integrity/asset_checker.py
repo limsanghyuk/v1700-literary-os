@@ -150,7 +150,7 @@ ASSET_TARGETS = {
         "release_gate_report": "release/current/stage167_release_gate_report.json",
     },
     "stage168": {
-        "package": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip",
+        "package": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip",
         "release_report": "release/current/stage168_local_evaluation_packet_store_report.json",
         "release_gate_report": "release/current/stage168_release_gate_report.json",
     },
@@ -243,7 +243,7 @@ def _checksum_ledger_checks(root: Path, asset: dict[str, Any]) -> list[Integrity
         if not path.is_file():
             missing_files.append(entry)
             continue
-        digest = _stable_file_sha256(path)
+        digest = _raw_file_sha256(path)
         if entry not in digest_exempt and sums.get(entry) != digest:
             mismatches.append(entry)
 
@@ -288,7 +288,7 @@ def _checksum_ledger_checks(root: Path, asset: dict[str, Any]) -> list[Integrity
             _check(
                 "sha256_sums_content_match",
                 not mismatches,
-                "all SHA256SUMS digests match current normalized file contents",
+                "all SHA256SUMS digests match current raw file contents",
                 _sample(mismatches),
                 sums_path,
             ),
@@ -312,11 +312,8 @@ def _digest_exempt_entries(asset: dict[str, Any], filelist_entries: list[str]) -
     return {entry for entry in entries if entry}
 
 
-def _stable_file_sha256(path: Path) -> str:
-    data = path.read_bytes()
-    if b"\0" not in data:
-        data = data.replace(b"\r\n", b"\n")
-    return hashlib.sha256(data).hexdigest()
+def _raw_file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def _read_lines(path: Path) -> list[str]:

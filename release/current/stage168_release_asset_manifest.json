@@ -1,8 +1,8 @@
 {
   "stage": "stage168",
   "active_version": "stage168",
-  "canonical_package": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip",
-  "sha256_sidecar": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip",
+  "sha256_sidecar": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
   "sha256_sums": "SHA256SUMS.txt",
