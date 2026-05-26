@@ -83,8 +83,8 @@
     "stage172_release_gate"
   ],
   "active_version": "stage172",
-  "canonical_package": "V1700_stage172_1_page05_release_seal_integrity_hotfix_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage172_1_page05_release_seal_integrity_hotfix_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip.sha256",
   "current_stage": "stage172",
   "current_title": "Page05 Release Seal",
   "next_stage": "stage173",

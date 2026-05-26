@@ -62,12 +62,33 @@ CORE_PAGE05_INVARIANTS: dict[str, int | bool] = {
 }
 
 
-def run_stage172_page05_release_seal(root: Path | None = None) -> dict[str, Any]:
+def run_stage172_page05_release_seal(root: Path | None = None, mode: str = "active") -> dict[str, Any]:
     root = root or Path(__file__).resolve().parents[3]
-    if _active_version(root) != TARGET_STAGE:
+    active_version = _active_version(root)
+    if active_version != TARGET_STAGE:
         existing = _load_json(root / TARGET_REPORT)
-        if existing is not None:
+        if mode == "historical" and existing is not None:
             return existing
+        return {
+            "stage": "172",
+            "baseline_stage": "171",
+            "title": "Page05 Release Seal",
+            "status": "blocked",
+            "issues": [f"active_version_mismatch:{active_version or 'missing'}"],
+            "mode": "PAGE05_RELEASE_SEAL_ACTIVE",
+            "page": "Page05 Evaluation Body",
+            "page05_release_seal_only": True,
+            "page05_sealed": False,
+            "page05_stage_count": PAGE05_TOTAL_STAGE_COUNT,
+            "page05_total_stage_count": PAGE05_TOTAL_STAGE_COUNT,
+            "stage173_governance_contract_ready": False,
+            "next_stage": "stage173",
+            "next_stage_title": "Governance Contract",
+            "next_page": "Page06 Governance Body",
+            "provider_default_calls": 0,
+            "node2_raw_reveal_access": 0,
+            "branchpoint_lineage_preserved": False,
+        }
 
     gates = (
         _gate_or_existing(root, "stage167_release_gate_report.json", run_stage167_release_gate),
@@ -245,9 +266,9 @@ def _build_evaluation_evidence_matrix(root: Path) -> dict[str, Any]:
     stage170 = _load_json(root / "release/current/stage170_regression_negative_fixture_harness_report.json") or {}
     stage171 = _load_json(root / "release/current/stage171_evaluation_boundary_leakage_preflight_report.json") or {}
     checks = [
-        ("quality_channel_pass", stage169.get("quality_channel_pass") is True or stage169.get("evaluator_quality_pass") is True or stage169.get("status") == "pass"),
-        ("continuity_channel_pass", stage169.get("continuity_channel_pass") is True or stage169.get("evaluator_continuity_pass") is True or stage169.get("status") == "pass"),
-        ("determinism_channel_pass", stage169.get("determinism_channel_pass") is True or stage170.get("determinism_channel_pass") is True),
+        ("quality_channel_pass", stage169.get("quality_channel_pass") is True),
+        ("continuity_channel_pass", stage169.get("continuity_channel_pass") is True),
+        ("determinism_channel_pass", stage169.get("determinism_channel_pass") is True and stage170.get("determinism_channel_pass") is True),
         ("regression_channel_pass", stage170.get("regression_snapshot_pass") is True and stage170.get("negative_fixture_blocks") is True),
         ("boundary_channel_pass", stage171.get("boundary_invariant_freeze_pass") is True and stage171.get("leakage_zero_snapshot_pass") is True and stage171.get("node2_surface_projection_scan_pass") is True),
         ("stage172_entry_ready", stage171.get("stage172_page05_release_seal_ready") is True),

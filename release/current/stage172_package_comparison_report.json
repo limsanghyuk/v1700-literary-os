@@ -1,0 +1,28 @@
+{
+  "file_count_delta": 1,
+  "forbidden_cache_entries": 0,
+  "logic_hardening": [
+    "active_version_mismatch_blocks_even_with_existing_stage172_report",
+    "quality_channel_requires_explicit_true_not_status_pass_fallback",
+    "continuity_channel_requires_explicit_true_not_status_pass_fallback",
+    "determinism_requires_stage169_and_stage170_explicit_true"
+  ],
+  "manifest_delta": 0,
+  "new_package_name": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+  "new_package_sha256": "SEE_RELEASE_SIDECAR",
+  "new_stage_files_added": [
+    "release/current/stage172_preflight_execution_report.json"
+  ],
+  "previous_package_name": "V1700_stage172_1_page05_release_seal_integrity_hotfix_repository_with_artifacts.zip",
+  "previous_package_sha256": "c8665e1263b99251a4b4f56c86b65306669f6f50cb12d92b73e9cfd3102beb8a",
+  "python_file_count_delta": 0,
+  "raw_sha256sums_check": "pass",
+  "release_current_delta": 1,
+  "stage": "stage172",
+  "status": "pass",
+  "test_file_count_delta": 0,
+  "title": "Stage172.2 Package Comparison Report",
+  "unexpected_files_added": [],
+  "unexpected_files_removed": [],
+  "zip_reextract_check": "pass"
+}

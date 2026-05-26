@@ -159,3 +159,62 @@ def test_stage172_does_not_self_heal_blocked_upstream_gate(tmp_path: Path) -> No
     assert result["status"] == "blocked"
     assert stage171["gate_status"] == "blocked"
     assert "page05_stage_chain_blocked" in result["issues"]
+
+
+def test_stage172_blocks_inactive_active_version_even_with_existing_report(tmp_path: Path) -> None:
+    scratch = tmp_path / "repo"
+    scratch.mkdir()
+    for rel in [
+        "manifests/live_core_manifest.json",
+        "release/current/stage172_page05_release_seal_report.json",
+    ]:
+        src = ROOT / rel
+        dst = scratch / rel
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(src.read_bytes())
+    live = json.loads((scratch / "manifests/live_core_manifest.json").read_text(encoding="utf-8"))
+    live["active_version"] = "stage171"
+    (scratch / "manifests/live_core_manifest.json").write_text(json.dumps(live), encoding="utf-8")
+
+    result = run_stage172_page05_release_seal(scratch)
+
+    assert result["status"] == "blocked"
+    assert result["page05_sealed"] is False
+    assert any(issue.startswith("active_version_mismatch") for issue in result["issues"])
+
+
+def test_stage172_blocks_quality_channel_false_even_if_stage169_status_pass(tmp_path: Path) -> None:
+    scratch = tmp_path / "repo"
+    scratch.mkdir()
+    for rel in [
+        "manifests/live_core_manifest.json",
+        "FILELIST.txt",
+        "release/current/stage167_evaluation_contract_report.json",
+        "release/current/stage167_release_gate_report.json",
+        "release/current/stage168_local_evaluation_packet_store_report.json",
+        "release/current/stage168_release_gate_report.json",
+        "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+        "release/current/stage169_release_gate_report.json",
+        "release/current/stage170_regression_negative_fixture_harness_report.json",
+        "release/current/stage170_release_gate_report.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+        "release/current/stage171_release_gate_report.json",
+    ]:
+        src = ROOT / rel
+        dst = scratch / rel
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(src.read_bytes())
+    live = json.loads((scratch / "manifests/live_core_manifest.json").read_text(encoding="utf-8"))
+    live["active_version"] = "stage172"
+    (scratch / "manifests/live_core_manifest.json").write_text(json.dumps(live), encoding="utf-8")
+    path = scratch / "release/current/stage169_deterministic_quality_continuity_evaluator_report.json"
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    payload["status"] = "pass"
+    payload["quality_channel_pass"] = False
+    path.write_text(json.dumps(payload), encoding="utf-8")
+
+    result = run_stage172_page05_release_seal(scratch)
+
+    assert result["status"] == "blocked"
+    assert "page05_evaluation_evidence_matrix_blocked" in result["issues"]
+    assert "page05_evaluation_evidence_matrix:quality_channel_pass" in result["issues"]
