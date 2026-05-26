@@ -64,6 +64,11 @@ jobs:
       - name: Run Page05 pytest and repo doctor suite
         run: python -m pytest tests/test_stage167_evaluation_contract.py tests/test_stage168_local_evaluation_packet_store.py tests/test_stage169_deterministic_quality_continuity_evaluator.py tests/test_stage170_regression_negative_fixture_harness.py tests/test_stage171_evaluation_boundary_leakage_preflight.py tests/test_stage172_page05_release_seal.py tests/stage_gates/test_stage72_repo_doctor.py -q
 
+      - name: Check metadata and asset integrity
+        run: |
+          python tools/check_stage_metadata_consistency.py
+          python tools/check_release_asset_integrity.py
+
       - name: Run Stage167 to Stage172 release chain
         run: |
           python tools/run_stage167_evaluation_contract.py
@@ -79,9 +84,7 @@ jobs:
           python tools/run_stage172_page05_release_seal.py
           python tools/run_stage172_release_gate.py
 
-      - name: Run authority gates
+      - name: Run release gate and repo doctor
         run: |
-          python tools/check_stage_metadata_consistency.py
-          python tools/check_release_asset_integrity.py
           python tools/run_release_gate.py
           python tools/run_stage72_repo_doctor.py

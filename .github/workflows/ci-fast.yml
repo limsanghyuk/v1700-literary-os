@@ -34,13 +34,13 @@ jobs:
       - name: Run Page05 active pytest suite
         run: python -m pytest tests/test_stage167_evaluation_contract.py tests/test_stage168_local_evaluation_packet_store.py tests/test_stage169_deterministic_quality_continuity_evaluator.py tests/test_stage170_regression_negative_fixture_harness.py tests/test_stage171_evaluation_boundary_leakage_preflight.py tests/test_stage172_page05_release_seal.py -q
 
-      - name: Run mandatory predevelopment check
-        run: python tools/run_mandatory_predevelopment_check.py
-
       - name: Check metadata and asset integrity
         run: |
           python tools/check_stage_metadata_consistency.py
           python tools/check_release_asset_integrity.py
+
+      - name: Run mandatory predevelopment check
+        run: python tools/run_mandatory_predevelopment_check.py
 
       - name: Run Stage167 to Stage172 sequence
         run: |
