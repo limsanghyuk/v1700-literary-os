@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -1237,6 +1237,30 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage170_regression_negative_fixture_harness_pack/boundary_negative_fixture_matrix.json",
         "release/current/stage170_regression_negative_fixture_harness_pack/stage171_entry_criteria.json",
     ],
+
+    "stage171": [
+        "manifests/stage171_manifest.json",
+        "manifests/stage171_evaluation_boundary_leakage_preflight_manifest.json",
+        "manifests/stage171_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage171_overlay.json",
+        "docs/stages/stage171.md",
+        "docs/architecture/stage171_evaluation_boundary_leakage_preflight_blueprint.md",
+        "docs/proposals/stage171_evaluation_boundary_leakage_preflight_proposal.md",
+        "docs/development/stage171_developer_handoff.md",
+        "docs/architecture/page05_evaluation_body_blueprint.md",
+        "docs/proposals/page05_evaluation_body_proposal.md",
+        "docs/development/page05_developer_handoff.md",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+        "release/current/stage171_release_gate_report.json",
+        "release/current/stage171_release_asset_manifest.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/inherited_stage_gate_matrix.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/boundary_invariant_matrix.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/node2_surface_projection_scan.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/forbidden_operation_registry.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/controlled_negative_fixture_quarantine.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/leakage_zero_snapshot.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_pack/stage172_entry_criteria.json",
+    ],
     "stage164": [
         "manifests/stage164_manifest.json",
         "manifests/stage164_surface_draft_dry_run_renderer_manifest.json",
@@ -1343,6 +1367,7 @@ PREDECESSOR_GATE = {
     "stage168": "stage167_release_gate",
     "stage169": "stage168_release_gate",
     "stage170": "stage169_release_gate",
+    "stage171": "stage170_release_gate",
 }
 
 

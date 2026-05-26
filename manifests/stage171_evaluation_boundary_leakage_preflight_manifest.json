@@ -1,0 +1,14 @@
+{
+  "stage": "stage171",
+  "title": "Evaluation Boundary and Leakage Preflight",
+  "purpose": "Verify evaluation boundary, leakage-zero, Node2 surface-only projection, forbidden operation registry, and controlled fixture quarantine before Page05 seal.",
+  "inputs": [
+    "release/current/stage170_release_gate_report.json",
+    "release/current/stage170_regression_negative_fixture_harness_report.json"
+  ],
+  "outputs": [
+    "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+    "release/current/stage171_release_gate_report.json"
+  ],
+  "next_stage": "stage172"
+}

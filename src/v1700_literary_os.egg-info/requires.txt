@@ -1,6 +1,0 @@
-
-[dev]
-pytest>=8
-
-[dev:python_version < "3.11"]
-tomli>=2

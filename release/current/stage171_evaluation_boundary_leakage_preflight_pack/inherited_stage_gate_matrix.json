@@ -1,0 +1,34 @@
+{
+  "stage": "stage171",
+  "title": "Stage171 Inherited Stage Gate Matrix",
+  "status": "pass",
+  "issues": [],
+  "entries": [
+    {
+      "stage": "stage167",
+      "report": "release/current/stage167_release_gate_report.json",
+      "status": "pass",
+      "sha256": "1cc50da2f2403528372999d5ffab022401a36f303d38bb6740e2469813501079"
+    },
+    {
+      "stage": "stage168",
+      "report": "release/current/stage168_release_gate_report.json",
+      "status": "pass",
+      "sha256": "3ce81d8838b513a0aec569a1b831d8a99c8d6d9b154ee3ddd2d47d4618f702e9"
+    },
+    {
+      "stage": "stage169",
+      "report": "release/current/stage169_release_gate_report.json",
+      "status": "pass",
+      "sha256": "19b23516f0c55b9343b2847450e1337245416cb4b137379653914c7e05a0ea59"
+    },
+    {
+      "stage": "stage170",
+      "report": "release/current/stage170_release_gate_report.json",
+      "status": "pass",
+      "sha256": "d1460e85303f950abc19d71674d1b94bbadbad4f1ce42f331a5f38ca6bb7ec0e"
+    }
+  ],
+  "chain_pass": true,
+  "matrix_checksum": "058c3e28b3f0afa2e568b387e0067a2327ff1e223c22facab3a4fcac1914c920"
+}

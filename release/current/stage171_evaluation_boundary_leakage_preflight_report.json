@@ -1,0 +1,1296 @@
+{
+  "stage": "171",
+  "baseline_stage": "170",
+  "title": "Evaluation Boundary and Leakage Preflight",
+  "status": "pass",
+  "issues": [],
+  "mode": "DETERMINISTIC_LOCAL_BOUNDARY_PREFLIGHT_ONLY",
+  "page": "Page05 Evaluation Body",
+  "stage170_regression_harness_inherited": true,
+  "boundary_invariant_freeze_pass": true,
+  "node2_surface_projection_scan_pass": true,
+  "controlled_negative_fixture_quarantine_pass": true,
+  "leakage_zero_snapshot_pass": true,
+  "stage172_page05_release_seal_ready": true,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "provider_generation_count": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "runtime_training_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "provider_generation_enabled": false,
+  "generation_runtime_enabled": false,
+  "runtime_execution_enabled": false,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage170_release_gate": {
+      "status": "pass",
+      "stage": "170",
+      "baseline_stage": "169",
+      "title": "Regression and Negative Fixture Harness",
+      "issues": [],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "inherited_stage_gate_matrix": {
+      "stage": "stage171",
+      "title": "Stage171 Inherited Stage Gate Matrix",
+      "status": "pass",
+      "issues": [],
+      "entries": [
+        {
+          "stage": "stage167",
+          "report": "release/current/stage167_release_gate_report.json",
+          "status": "pass",
+          "sha256": "1cc50da2f2403528372999d5ffab022401a36f303d38bb6740e2469813501079"
+        },
+        {
+          "stage": "stage168",
+          "report": "release/current/stage168_release_gate_report.json",
+          "status": "pass",
+          "sha256": "3ce81d8838b513a0aec569a1b831d8a99c8d6d9b154ee3ddd2d47d4618f702e9"
+        },
+        {
+          "stage": "stage169",
+          "report": "release/current/stage169_release_gate_report.json",
+          "status": "pass",
+          "sha256": "19b23516f0c55b9343b2847450e1337245416cb4b137379653914c7e05a0ea59"
+        },
+        {
+          "stage": "stage170",
+          "report": "release/current/stage170_release_gate_report.json",
+          "status": "pass",
+          "sha256": "d1460e85303f950abc19d71674d1b94bbadbad4f1ce42f331a5f38ca6bb7ec0e"
+        }
+      ],
+      "chain_pass": true,
+      "matrix_checksum": "058c3e28b3f0afa2e568b387e0067a2327ff1e223c22facab3a4fcac1914c920"
+    },
+    "boundary_invariant_matrix": {
+      "stage": "stage171",
+      "title": "Stage171 Boundary Invariant Matrix",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 138,
+      "checked_report_count": 8,
+      "entries": [
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_release_gate_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_release_gate_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_release_gate_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_release_gate_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "canon_mutation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "auto_repair_apply_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "provider_generation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "generation_runtime_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage167_evaluation_contract_report.json",
+          "invariant": "runtime_execution_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "canon_mutation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "auto_repair_apply_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "provider_generation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "generation_runtime_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage168_local_evaluation_packet_store_report.json",
+          "invariant": "runtime_execution_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "canon_mutation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "auto_repair_apply_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "provider_generation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "generation_runtime_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+          "invariant": "runtime_execution_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "provider_default_calls",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "live_provider_call_count_in_release_gate",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "provider_generation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "runtime_execution_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "write_operation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "node2_raw_reveal_access",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "boundary_violation_count",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "raw_manuscript_provider_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "raw_manuscript_cross_project_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "credential_leakage",
+          "expected": 0,
+          "actual": 0,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "provider_evaluation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "evaluation_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "memory_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "cross_project_write_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "canon_mutation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "runtime_training_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "auto_repair_apply_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "provider_generation_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "generation_runtime_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        },
+        {
+          "report": "release/current/stage170_regression_negative_fixture_harness_report.json",
+          "invariant": "runtime_execution_enabled",
+          "expected": false,
+          "actual": false,
+          "status": "pass"
+        }
+      ],
+      "matrix_checksum": "8582d3387f8a22ab33815cedc73355d1469e18b2c66ff5634dd5d42426bce047"
+    },
+    "node2_surface_projection_scan": {
+      "stage": "stage171",
+      "title": "Stage171 Node2 Surface Projection Scan",
+      "status": "pass",
+      "issues": [],
+      "scanned_path_count": 2,
+      "entries": [
+        {
+          "path": "release/current/stage169_deterministic_quality_continuity_evaluator_pack/node2_evaluation_projection_verdict.json",
+          "status": "pass",
+          "token_hit_count": 0,
+          "token_hits": [],
+          "node2_raw_reveal_access": 0,
+          "surface_only": true
+        },
+        {
+          "path": "release/current/stage168_local_evaluation_packet_store_pack/node2_evaluation_packet_projection_matrix.json",
+          "status": "pass",
+          "token_hit_count": 0,
+          "token_hits": [],
+          "node2_raw_reveal_access": 0,
+          "surface_only": true
+        }
+      ]
+    },
+    "forbidden_operation_registry": {
+      "stage": "stage171",
+      "title": "Stage171 Forbidden Operation Registry",
+      "status": "pass",
+      "issues": [],
+      "entries": [
+        {
+          "operation_id": "provider_evaluation",
+          "invariant_key": "provider_evaluation_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "provider_generation",
+          "invariant_key": "provider_generation_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "runtime_execution",
+          "invariant_key": "runtime_execution_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "evaluation_write",
+          "invariant_key": "evaluation_write_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "memory_write",
+          "invariant_key": "memory_write_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "cross_project_write",
+          "invariant_key": "cross_project_write_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "canon_mutation",
+          "invariant_key": "canon_mutation_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "runtime_training",
+          "invariant_key": "runtime_training_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        },
+        {
+          "operation_id": "auto_repair_apply",
+          "invariant_key": "auto_repair_apply_enabled",
+          "required_state": "disabled",
+          "status": "pass"
+        }
+      ]
+    },
+    "controlled_negative_fixture_quarantine": {
+      "stage": "stage171",
+      "title": "Stage171 Controlled Negative Fixture Quarantine",
+      "status": "pass",
+      "issues": [],
+      "controlled_fixture_artifact_count": 3,
+      "entries": [
+        {
+          "path": "release/current/stage170_regression_negative_fixture_harness_pack/negative_fixture_catalog.json",
+          "status": "quarantined_controlled_fixture",
+          "token_hit_count": 3,
+          "token_hits_sample": [
+            {
+              "path": "$.fixtures[3].fixture_id",
+              "token": "raw_reveal"
+            },
+            {
+              "path": "$.fixtures[4].fixture_id",
+              "token": "hidden_memory"
+            },
+            {
+              "path": "$.fixtures[6].fixture_id",
+              "token": "mutation_command"
+            }
+          ],
+          "surface_projection_artifact": false,
+          "counts_as_leakage": false,
+          "sha256": "03d488a85e3f2aa9a4804c3fa57a3d89ab93e50bd3e2a195c7696d8fe58411ac"
+        },
+        {
+          "path": "release/current/stage170_regression_negative_fixture_harness_pack/negative_fixture_results.json",
+          "status": "quarantined_controlled_fixture",
+          "token_hit_count": 3,
+          "token_hits_sample": [
+            {
+              "path": "$.entries[3].fixture_id",
+              "token": "raw_reveal"
+            },
+            {
+              "path": "$.entries[4].fixture_id",
+              "token": "hidden_memory"
+            },
+            {
+              "path": "$.entries[6].fixture_id",
+              "token": "mutation_command"
+            }
+          ],
+          "surface_projection_artifact": false,
+          "counts_as_leakage": false,
+          "sha256": "cb4b2ff88bbb4711562953c68de4066c9f9a0da5911c53bcad1876e3573ac51e"
+        },
+        {
+          "path": "release/current/stage170_regression_negative_fixture_harness_pack/boundary_negative_fixture_matrix.json",
+          "status": "quarantined_controlled_fixture",
+          "token_hit_count": 3,
+          "token_hits_sample": [
+            {
+              "path": "$.entries[0].fixture_id",
+              "token": "raw_reveal"
+            },
+            {
+              "path": "$.entries[1].fixture_id",
+              "token": "hidden_memory"
+            },
+            {
+              "path": "$.entries[3].fixture_id",
+              "token": "mutation_command"
+            }
+          ],
+          "surface_projection_artifact": false,
+          "counts_as_leakage": false,
+          "sha256": "888060dbe52f5674c5e72f94391982d5168b5192d3dcb8e7ca0acc130036672c"
+        }
+      ],
+      "quarantine_checksum": "f11c988304f8f6a1a76bedd3d8f2a2734ee1cab547bb4fd14c02bde4186cfe2d"
+    },
+    "leakage_zero_snapshot": {
+      "stage": "stage171",
+      "title": "Stage171 Leakage Zero Snapshot",
+      "status": "pass",
+      "issues": [],
+      "checks": {
+        "inherited_stage_chain_pass": {
+          "status": "pass"
+        },
+        "boundary_invariant_freeze_pass": {
+          "status": "pass"
+        },
+        "node2_surface_projection_scan_pass": {
+          "status": "pass"
+        },
+        "forbidden_operation_registry_pass": {
+          "status": "pass"
+        },
+        "controlled_negative_fixture_quarantine_pass": {
+          "status": "pass"
+        },
+        "provider_default_calls_zero": {
+          "status": "pass"
+        },
+        "node2_raw_reveal_access_zero": {
+          "status": "pass"
+        },
+        "credential_leakage_zero": {
+          "status": "pass"
+        },
+        "raw_manuscript_leakage_zero": {
+          "status": "pass"
+        }
+      },
+      "snapshot_checksum": "2dbe6be514e5e097ef0447a106fbfcfb21f3990fa4a8830c276f8c420333257d"
+    },
+    "stage172_entry_criteria": {
+      "stage": "stage171",
+      "title": "Stage172 Entry Criteria",
+      "status": "pass",
+      "issues": [],
+      "stage172_page05_release_seal_ready": true,
+      "checks": {
+        "stage170_release_gate_pass": {
+          "status": "pass"
+        },
+        "boundary_invariant_freeze_pass": {
+          "status": "pass"
+        },
+        "node2_surface_projection_scan_pass": {
+          "status": "pass"
+        },
+        "forbidden_operation_registry_pass": {
+          "status": "pass"
+        },
+        "controlled_negative_fixture_quarantine_pass": {
+          "status": "pass"
+        },
+        "leakage_zero_snapshot_pass": {
+          "status": "pass"
+        },
+        "provider_default_calls_zero": {
+          "status": "pass"
+        },
+        "write_operations_zero": {
+          "status": "pass"
+        },
+        "node2_raw_reveal_access_zero": {
+          "status": "pass"
+        }
+      }
+    }
+  }
+}

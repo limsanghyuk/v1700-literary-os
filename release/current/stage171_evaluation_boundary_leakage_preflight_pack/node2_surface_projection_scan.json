@@ -1,0 +1,25 @@
+{
+  "stage": "stage171",
+  "title": "Stage171 Node2 Surface Projection Scan",
+  "status": "pass",
+  "issues": [],
+  "scanned_path_count": 2,
+  "entries": [
+    {
+      "path": "release/current/stage169_deterministic_quality_continuity_evaluator_pack/node2_evaluation_projection_verdict.json",
+      "status": "pass",
+      "token_hit_count": 0,
+      "token_hits": [],
+      "node2_raw_reveal_access": 0,
+      "surface_only": true
+    },
+    {
+      "path": "release/current/stage168_local_evaluation_packet_store_pack/node2_evaluation_packet_projection_matrix.json",
+      "status": "pass",
+      "token_hit_count": 0,
+      "token_hits": [],
+      "node2_raw_reveal_access": 0,
+      "surface_only": true
+    }
+  ]
+}

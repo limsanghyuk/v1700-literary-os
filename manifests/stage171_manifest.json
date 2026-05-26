@@ -1,0 +1,11 @@
+{
+  "stage": "stage171",
+  "title": "Evaluation Boundary and Leakage Preflight",
+  "baseline_stage": "stage170",
+  "page": "Page05 Evaluation Body",
+  "status": "active",
+  "runner": "tools/run_stage171_evaluation_boundary_leakage_preflight.py",
+  "release_gate": "tools/run_stage171_release_gate.py",
+  "evidence": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+  "next_stage": "stage172"
+}

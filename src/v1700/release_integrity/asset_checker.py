@@ -165,6 +165,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage170_regression_negative_fixture_harness_report.json",
         "release_gate_report": "release/current/stage170_release_gate_report.json",
     },
+    "stage171": {
+        "package": "V1700_stage171_evaluation_boundary_leakage_preflight_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+        "release_gate_report": "release/current/stage171_release_gate_report.json",
+    },
 }
 
 

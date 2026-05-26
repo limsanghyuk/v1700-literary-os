@@ -1,17 +1,18 @@
-# V1700 Stage170 - Regression and Negative Fixture Harness
+# V1700 Stage171 - Evaluation Boundary and Leakage Preflight
+
+Stage171 verifies the Page05 evaluation boundary before the Page05 release seal.
 
 ## Highlights
 
-- Deterministic local quality and continuity scorecards are generated from Stage168 evaluation packets.
-- Boundary override, regression delta, Node2 projection, and determinism matrices are emitted as release evidence.
-- Provider evaluation, provider generation, writes, canon mutation, runtime training, and hidden payload projection remain disabled.
+- Adds inherited Stage167~170 gate matrix.
+- Adds boundary invariant matrix.
+- Adds Node2 surface projection scan.
+- Adds forbidden operation registry.
+- Adds controlled negative fixture quarantine.
+- Adds leakage-zero snapshot and Stage172 entry criteria.
+- Keeps provider calls, runtime execution, writes, memory write, canon mutation, runtime training, and auto-repair apply disabled.
 
 ## Official Release Assets
 
-- `V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage170_regression_negative_fixture_harness_release_integrated_repository_with_artifacts.zip.sha256`
-- `SHA256SUMS.txt`
-
-## Next
-
-Next: Stage171 Evaluation Boundary and Leakage Preflight.
+- `V1700_stage171_evaluation_boundary_leakage_preflight_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage171_evaluation_boundary_leakage_preflight_release_integrated_repository_with_artifacts.zip.sha256`

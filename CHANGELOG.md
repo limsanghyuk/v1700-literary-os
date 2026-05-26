@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.71.0-stage171
+
+- Added Stage171 Evaluation Boundary and Leakage Preflight.
+- Added inherited gate matrix, boundary invariant matrix, Node2 surface scan, forbidden operation registry, controlled negative fixture quarantine, leakage-zero snapshot, and Stage172 entry criteria.
+- Kept provider-zero, write-zero, runtime-training-zero, Node2 raw reveal zero, and mutation-disabled invariants.
+
 ## v1.70.0-stage170
 
 - Added Stage170 Regression and Negative Fixture Harness.
