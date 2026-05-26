@@ -1,0 +1,27 @@
+{
+  "active_version": "stage172",
+  "baseline_package": "V1700_stage172_1_page05_release_seal_integrity_hotfix_repository_with_artifacts.zip",
+  "baseline_package_sha256": "c8665e1263b99251a4b4f56c86b65306669f6f50cb12d92b73e9cfd3102beb8a",
+  "blueprint_document": "docs/architecture/stage172_page05_release_seal_blueprint.md",
+  "expected_next_stage": "stage173",
+  "gitnexus": {
+    "installed": false,
+    "optional_runtime_dependency": true,
+    "status": "fallback_required"
+  },
+  "inherited_invariants": {
+    "canon_mutation_enabled": false,
+    "memory_write_enabled": false,
+    "node2_raw_reveal_access": 0,
+    "provider_default_calls": 0,
+    "runtime_training_enabled": false
+  },
+  "mandatory_predevelopment_check_result": "pass",
+  "preflight_guide_read": true,
+  "proposal_document": "docs/proposals/stage172_page05_release_seal_proposal.md",
+  "repository_ref": "local_stage172_1_reaudit_workspace",
+  "stage": "stage172",
+  "stage_manifest": "manifests/stage172_manifest.json",
+  "status": "pass",
+  "title": "Stage172.2 Preflight Execution Report"
+}

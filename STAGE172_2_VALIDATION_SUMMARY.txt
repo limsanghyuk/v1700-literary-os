@@ -1,0 +1,24 @@
+Stage172.2 Validation Summary
+
+compileall src/tools/tests: pass
+mandatory predevelopment check: pass
+metadata consistency: pass
+release asset integrity: pass
+Stage172 page05 release seal: pass
+Stage172 release gate: pass
+main release gate: pass
+Stage167~172 targeted pytest: 39 passed
+sha256sum -c SHA256SUMS.txt: pass
+ZIP forbidden cache entries: 0
+ZIP re-extract sha256sum: pass
+ZIP re-extract metadata consistency: pass
+ZIP re-extract release asset integrity: pass
+ZIP re-extract Stage172 release gate: pass
+ZIP re-extract main release gate: pass
+ZIP re-extract Stage172 pytest: 9 passed
+
+Fixed issues:
+- active-version mismatch fallback blocked
+- quality/continuity channel status fallback removed
+- determinism requires explicit Stage169 and Stage170 evidence
+- Stage172 preflight execution and package comparison reports added
