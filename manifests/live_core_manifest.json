@@ -1,8 +1,4 @@
 {
-  "active_version": "stage171",
-  "runtime_entrypoint": "src/v1700/cli.py",
-  "runtime_profile": "v1700_literary_os_1_0_stable",
-  "provider_default_calls": 0,
   "active_gates": [
     "runtime_smoke",
     "release_gate",
@@ -80,10 +76,21 @@
     "stage169_deterministic_quality_continuity_evaluator",
     "stage169_release_gate",
     "stage170_regression_negative_fixture_harness",
-    "stage170_release_gate"
+    "stage170_release_gate",
+    "stage171_evaluation_boundary_leakage_preflight",
+    "stage171_release_gate",
+    "stage172_page05_release_seal",
+    "stage172_release_gate"
   ],
-  "canonical_package": "V1700_stage171_evaluation_boundary_leakage_preflight_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage171_evaluation_boundary_leakage_preflight_release_integrated_repository_with_artifacts.zip.sha256",
+  "active_version": "stage172",
+  "canonical_package": "V1700_stage172_page05_release_seal_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage172_page05_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
+  "current_stage": "stage171",
+  "current_title": "Evaluation Boundary and Leakage Preflight",
+  "next_stage": "stage172",
+  "provider_default_calls": 0,
+  "runtime_entrypoint": "src/v1700/cli.py",
+  "runtime_profile": "v1700_literary_os_1_0_stable",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -105,293 +112,290 @@
     "title": "LOSDB Storage Contracts"
   },
   "stage139": {
+    "next_stage": "stage140",
     "status": "active",
-    "title": "Corpus Governance Pipeline",
-    "next_stage": "stage140"
+    "title": "Corpus Governance Pipeline"
   },
   "stage140": {
-    "status": "active",
-    "title": "Release Integrity & Product Proof Gate",
     "baseline_stage": "stage139",
-    "release_gate": "release/current/stage140_release_gate_report.json",
     "evidence": "release/current/stage140_release_integrity_report.json",
-    "next_stage": "stage141"
+    "next_stage": "stage141",
+    "release_gate": "release/current/stage140_release_gate_report.json",
+    "status": "active",
+    "title": "Release Integrity & Product Proof Gate"
   },
   "stage141": {
-    "status": "active",
-    "title": "Prose Generation E2E Harness",
     "baseline_stage": "stage140",
-    "release_gate": "release/current/stage141_release_gate_report.json",
     "evidence": "release/current/stage141_prose_generation_e2e_report.json",
-    "next_stage": "stage142"
+    "next_stage": "stage142",
+    "release_gate": "release/current/stage141_release_gate_report.json",
+    "status": "active",
+    "title": "Prose Generation E2E Harness"
   },
   "stage142": {
-    "status": "active",
-    "title": "Longform Benchmark Pack",
     "baseline_stage": "stage141",
-    "release_gate": "release/current/stage142_release_gate_report.json",
     "evidence": "release/current/stage142_longform_benchmark_pack_report.json",
-    "next_stage": "stage143"
+    "next_stage": "stage143",
+    "release_gate": "release/current/stage142_release_gate_report.json",
+    "status": "active",
+    "title": "Longform Benchmark Pack"
   },
   "stage143": {
-    "status": "active",
-    "title": "User CLI/API Minimum Docs",
     "baseline_stage": "stage142",
-    "release_gate": "release/current/stage143_release_gate_report.json",
     "evidence": "release/current/stage143_user_cli_api_docs_report.json",
-    "next_stage": "stage144"
+    "next_stage": "stage144",
+    "release_gate": "release/current/stage143_release_gate_report.json",
+    "status": "active",
+    "title": "User CLI/API Minimum Docs"
   },
   "stage144": {
-    "status": "active",
-    "title": "Split CI Runtime Strategy",
     "baseline_stage": "stage143",
-    "release_gate": "release/current/stage144_release_gate_report.json",
     "evidence": "release/current/stage144_split_ci_runtime_strategy_report.json",
-    "next_stage": "stage145"
+    "next_stage": "stage145",
+    "release_gate": "release/current/stage144_release_gate_report.json",
+    "status": "active",
+    "title": "Split CI Runtime Strategy"
   },
   "stage145": {
-    "status": "active",
-    "title": "Body Constitution",
     "baseline_stage": "stage144",
-    "release_gate": "release/current/stage145_release_gate_report.json",
     "evidence": "release/current/stage145_body_constitution_report.json",
-    "next_stage": "stage146"
+    "next_stage": "stage146",
+    "release_gate": "release/current/stage145_release_gate_report.json",
+    "status": "active",
+    "title": "Body Constitution"
   },
   "stage146": {
-    "status": "active",
-    "title": "Narrative State Contract",
     "baseline_stage": "stage145",
-    "release_gate": "release/current/stage146_release_gate_report.json",
     "evidence": "release/current/stage146_narrative_state_contract_report.json",
-    "next_stage": "stage147"
+    "next_stage": "stage147",
+    "release_gate": "release/current/stage146_release_gate_report.json",
+    "status": "active",
+    "title": "Narrative State Contract"
   },
   "stage147": {
-    "status": "active",
-    "title": "Project Manifest Body",
     "baseline_stage": "stage146",
-    "release_gate": "release/current/stage147_release_gate_report.json",
     "evidence": "release/current/stage147_project_manifest_body_report.json",
-    "next_stage": "stage148"
+    "next_stage": "stage148",
+    "release_gate": "release/current/stage147_release_gate_report.json",
+    "status": "active",
+    "title": "Project Manifest Body"
   },
   "stage148": {
-    "status": "active",
-    "title": "Node Boundary Constitution",
     "baseline_stage": "stage147",
-    "release_gate": "release/current/stage148_release_gate_report.json",
     "evidence": "release/current/stage148_node_boundary_constitution_report.json",
-    "next_stage": "stage149"
+    "next_stage": "stage149",
+    "release_gate": "release/current/stage148_release_gate_report.json",
+    "status": "active",
+    "title": "Node Boundary Constitution"
   },
   "stage149": {
-    "status": "active",
-    "title": "Body Constitution Release Gate",
     "baseline_stage": "stage148",
-    "release_gate": "release/current/stage149_release_gate_report.json",
     "evidence": "release/current/stage149_body_constitution_release_gate_report.json",
-    "next_stage": "stage150"
+    "next_stage": "stage150",
+    "release_gate": "release/current/stage149_release_gate_report.json",
+    "status": "active",
+    "title": "Body Constitution Release Gate"
   },
   "stage150": {
-    "status": "active",
-    "title": "Memory Contract",
     "baseline_stage": "stage149",
-    "release_gate": "release/current/stage150_release_gate_report.json",
     "evidence": "release/current/stage150_memory_contract_report.json",
-    "next_stage": "stage151"
+    "next_stage": "stage151",
+    "release_gate": "release/current/stage150_release_gate_report.json",
+    "status": "active",
+    "title": "Memory Contract"
   },
   "stage151": {
-    "status": "active",
-    "title": "Local Read-Only Memory Store",
     "baseline_stage": "stage150",
-    "release_gate": "release/current/stage151_release_gate_report.json",
     "evidence": "release/current/stage151_local_read_only_memory_store_report.json",
-    "next_stage": "stage152"
+    "next_stage": "stage152",
+    "release_gate": "release/current/stage151_release_gate_report.json",
+    "status": "active",
+    "title": "Local Read-Only Memory Store"
   },
   "stage152": {
-    "status": "active",
-    "title": "Deterministic Local Query / Ranking",
     "baseline_stage": "stage151",
-    "release_gate": "release/current/stage152_release_gate_report.json",
     "evidence": "release/current/stage152_memory_query_interface_report.json",
-    "next_stage": "stage153"
+    "next_stage": "stage153",
+    "release_gate": "release/current/stage152_release_gate_report.json",
+    "status": "active",
+    "title": "Deterministic Local Query / Ranking"
   },
   "stage153": {
-    "status": "active",
-    "title": "Memory Health & Leakage Boundary",
     "baseline_stage": "stage152",
-    "release_gate": "release/current/stage153_release_gate_report.json",
     "evidence": "release/current/stage153_memory_health_leakage_boundary_report.json",
-    "next_stage": "stage154"
+    "next_stage": "stage154",
+    "release_gate": "release/current/stage153_release_gate_report.json",
+    "status": "active",
+    "title": "Memory Health & Leakage Boundary"
   },
   "stage154": {
-    "status": "active",
-    "title": "Page02 Release Seal",
     "baseline_stage": "stage153",
-    "release_gate": "release/current/stage154_release_gate_report.json",
     "evidence": "release/current/stage154_page02_release_seal_report.json",
-    "next_stage": "stage155"
+    "next_stage": "stage155",
+    "release_gate": "release/current/stage154_release_gate_report.json",
+    "status": "active",
+    "title": "Page02 Release Seal"
   },
   "stage155": {
-    "status": "active",
-    "title": "Execution Contract",
     "baseline_stage": "stage154",
-    "release_gate": "release/current/stage155_release_gate_report.json",
     "evidence": "release/current/stage155_execution_contract_report.json",
-    "next_stage": "stage156"
+    "next_stage": "stage156",
+    "release_gate": "release/current/stage155_release_gate_report.json",
+    "status": "active",
+    "title": "Execution Contract"
   },
   "stage156": {
-    "status": "active",
-    "title": "Local Execution Packet Store",
     "baseline_stage": "stage155",
-    "release_gate": "release/current/stage156_release_gate_report.json",
     "evidence": "release/current/stage156_local_execution_packet_store_report.json",
-    "next_stage": "stage157"
+    "next_stage": "stage157",
+    "release_gate": "release/current/stage156_release_gate_report.json",
+    "status": "active",
+    "title": "Local Execution Packet Store"
   },
   "stage157": {
-    "status": "active",
-    "title": "Deterministic Plan Graph Builder",
     "baseline_stage": "stage156",
-    "release_gate": "release/current/stage157_release_gate_report.json",
     "evidence": "release/current/stage157_deterministic_plan_graph_builder_report.json",
-    "next_stage": "stage158"
+    "next_stage": "stage158",
+    "release_gate": "release/current/stage157_release_gate_report.json",
+    "status": "active",
+    "title": "Deterministic Plan Graph Builder"
   },
   "stage158": {
-    "status": "active",
-    "title": "Dependency and Conflict Preflight",
     "baseline_stage": "stage157",
-    "release_gate": "release/current/stage158_release_gate_report.json",
     "evidence": "release/current/stage158_dependency_conflict_preflight_report.json",
-    "next_stage": "stage159"
+    "next_stage": "stage159",
+    "release_gate": "release/current/stage158_release_gate_report.json",
+    "status": "active",
+    "title": "Dependency and Conflict Preflight"
   },
   "stage159": {
-    "status": "active",
-    "title": "Execution Dry-Run Trace",
     "baseline_stage": "stage158",
-    "release_gate": "release/current/stage159_release_gate_report.json",
     "evidence": "release/current/stage159_execution_dry_run_trace_report.json",
-    "next_stage": "stage160"
+    "next_stage": "stage160",
+    "release_gate": "release/current/stage159_release_gate_report.json",
+    "status": "active",
+    "title": "Execution Dry-Run Trace"
   },
   "stage160": {
-    "status": "active",
-    "title": "Page03 Release Seal",
     "baseline_stage": "stage159",
-    "release_gate": "release/current/stage160_release_gate_report.json",
     "evidence": "release/current/stage160_page03_release_seal_report.json",
-    "next_stage": "stage161"
+    "next_stage": "stage161",
+    "release_gate": "release/current/stage160_release_gate_report.json",
+    "status": "active",
+    "title": "Page03 Release Seal"
   },
   "stage161": {
-    "status": "active",
-    "title": "Rendering Contract",
     "baseline_stage": "stage160",
-    "release_gate": "release/current/stage161_release_gate_report.json",
     "evidence": "release/current/stage161_rendering_contract_report.json",
-    "next_stage": "stage162"
+    "next_stage": "stage162",
+    "release_gate": "release/current/stage161_release_gate_report.json",
+    "status": "active",
+    "title": "Rendering Contract"
   },
   "stage162": {
-    "status": "active",
-    "title": "Local Render Packet Store",
     "baseline_stage": "stage161",
-    "release_gate": "release/current/stage162_release_gate_report.json",
     "evidence": "release/current/stage162_local_render_packet_store_report.json",
-    "next_stage": "stage163"
+    "next_stage": "stage163",
+    "release_gate": "release/current/stage162_release_gate_report.json",
+    "status": "active",
+    "title": "Local Render Packet Store"
   },
   "stage163": {
-    "status": "active",
-    "title": "Deterministic Render Plan Builder",
     "baseline_stage": "stage162",
-    "release_gate": "release/current/stage163_release_gate_report.json",
     "evidence": "release/current/stage163_deterministic_render_plan_builder_report.json",
-    "next_stage": "stage164"
+    "next_stage": "stage164",
+    "release_gate": "release/current/stage163_release_gate_report.json",
+    "status": "active",
+    "title": "Deterministic Render Plan Builder"
   },
   "stage164": {
-    "status": "active",
-    "title": "Surface Draft Dry-Run Renderer",
     "baseline_stage": "stage163",
-    "release_gate": "release/current/stage164_release_gate_report.json",
     "evidence": "release/current/stage164_surface_draft_dry_run_renderer_report.json",
-    "next_stage": "stage165"
+    "next_stage": "stage165",
+    "release_gate": "release/current/stage164_release_gate_report.json",
+    "status": "active",
+    "title": "Surface Draft Dry-Run Renderer"
   },
   "stage165": {
-    "status": "active",
-    "title": "Render Quality and Boundary Preflight",
     "baseline_stage": "stage164",
-    "release_gate": "release/current/stage165_release_gate_report.json",
     "evidence": "release/current/stage165_render_quality_boundary_preflight_report.json",
-    "next_stage": "stage166"
+    "next_stage": "stage166",
+    "release_gate": "release/current/stage165_release_gate_report.json",
+    "status": "active",
+    "title": "Render Quality and Boundary Preflight"
   },
   "stage166": {
-    "status": "active",
-    "title": "Page04 Release Seal",
     "baseline_stage": "stage165",
-    "release_gate": "release/current/stage166_release_gate_report.json",
     "evidence": "release/current/stage166_page04_release_seal_report.json",
-    "next_stage": "stage167"
+    "next_stage": "stage167",
+    "release_gate": "release/current/stage166_release_gate_report.json",
+    "status": "active",
+    "title": "Page04 Release Seal"
   },
   "stage167": {
-    "status": "active",
-    "title": "Evaluation Contract",
     "baseline_stage": "stage166",
-    "release_gate": "release/current/stage167_release_gate_report.json",
     "evidence": "release/current/stage167_evaluation_contract_report.json",
-    "next_stage": "stage168"
+    "next_stage": "stage168",
+    "release_gate": "release/current/stage167_release_gate_report.json",
+    "status": "active",
+    "title": "Evaluation Contract"
   },
   "stage168": {
-    "status": "active",
-    "title": "Local Evaluation Packet Store",
     "baseline_stage": "stage167",
-    "release_gate": "release/current/stage168_release_gate_report.json",
     "evidence": "release/current/stage168_local_evaluation_packet_store_report.json",
-    "next_stage": "stage169"
+    "next_stage": "stage169",
+    "release_gate": "release/current/stage168_release_gate_report.json",
+    "status": "active",
+    "title": "Local Evaluation Packet Store"
+  },
+  "stage169": {
+    "baseline_stage": "stage168",
+    "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+    "next_stage": "stage170",
+    "release_gate": "release/current/stage169_release_gate_report.json",
+    "status": "active",
+    "title": "Deterministic Quality and Continuity Evaluator"
+  },
+  "stage170": {
+    "baseline_stage": "stage169",
+    "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
+    "next_stage": "stage171",
+    "release_gate": "release/current/stage170_release_gate_report.json",
+    "status": "active",
+    "title": "Regression and Negative Fixture Harness"
+  },
+  "stage171": {
+    "baseline_stage": "stage170",
+    "evidence": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+    "next_stage": "stage172",
+    "release_gate": "release/current/stage171_release_gate_report.json",
+    "status": "active",
+    "title": "Evaluation Boundary and Leakage Preflight"
   },
   "stages": {
     "stage169": {
-      "status": "active",
-      "title": "Deterministic Quality and Continuity Evaluator",
       "baseline_stage": "stage168",
-      "release_gate": "release/current/stage169_release_gate_report.json",
       "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
-      "next_stage": "stage170"
+      "next_stage": "stage170",
+      "release_gate": "release/current/stage169_release_gate_report.json",
+      "status": "active",
+      "title": "Deterministic Quality and Continuity Evaluator"
     },
     "stage170": {
-      "status": "active",
-      "title": "Regression and Negative Fixture Harness",
       "baseline_stage": "stage169",
-      "release_gate": "release/current/stage170_release_gate_report.json",
       "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
-      "next_stage": "stage171"
+      "next_stage": "stage171",
+      "release_gate": "release/current/stage170_release_gate_report.json",
+      "status": "active",
+      "title": "Regression and Negative Fixture Harness"
     },
     "stage171": {
-      "status": "active",
-      "title": "Evaluation Boundary and Leakage Preflight",
       "baseline_stage": "stage170",
-      "release_gate": "release/current/stage171_release_gate_report.json",
       "evidence": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
-      "next_stage": "stage172"
+      "next_stage": "stage172",
+      "release_gate": "release/current/stage171_release_gate_report.json",
+      "status": "active",
+      "title": "Evaluation Boundary and Leakage Preflight"
     }
-  },
-  "stage169": {
-    "status": "active",
-    "title": "Deterministic Quality and Continuity Evaluator",
-    "baseline_stage": "stage168",
-    "release_gate": "release/current/stage169_release_gate_report.json",
-    "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
-    "next_stage": "stage170"
-  },
-  "stage170": {
-    "status": "active",
-    "title": "Regression and Negative Fixture Harness",
-    "baseline_stage": "stage169",
-    "release_gate": "release/current/stage170_release_gate_report.json",
-    "evidence": "release/current/stage170_regression_negative_fixture_harness_report.json",
-    "next_stage": "stage171"
-  },
-  "current_stage": "stage171",
-  "current_title": "Evaluation Boundary and Leakage Preflight",
-  "next_stage": "stage172",
-  "stage171": {
-    "status": "active",
-    "title": "Evaluation Boundary and Leakage Preflight",
-    "baseline_stage": "stage170",
-    "release_gate": "release/current/stage171_release_gate_report.json",
-    "evidence": "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
-    "next_stage": "stage172"
   }
 }

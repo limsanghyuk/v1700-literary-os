@@ -1,0 +1,122 @@
+{
+  "boundary_channel_pass": true,
+  "continuity_channel_pass": true,
+  "determinism_channel_pass": true,
+  "entries": [
+    {
+      "channel": "quality_channel_pass",
+      "status": "pass"
+    },
+    {
+      "channel": "continuity_channel_pass",
+      "status": "pass"
+    },
+    {
+      "channel": "determinism_channel_pass",
+      "status": "pass"
+    },
+    {
+      "channel": "regression_channel_pass",
+      "status": "pass"
+    },
+    {
+      "channel": "boundary_channel_pass",
+      "status": "pass"
+    },
+    {
+      "channel": "stage172_entry_ready",
+      "status": "pass"
+    }
+  ],
+  "issues": [],
+  "matrix_checksum": "0a656d84aa6139273657556b3ee5796318b88529205b854c03b85eb78b984c40",
+  "quality_channel_pass": true,
+  "regression_channel_pass": true,
+  "source_reports": {
+    "stage169": {
+      "auto_repair_apply_enabled": false,
+      "baseline_stage": "168",
+      "boundary_channel_pass": true,
+      "boundary_violation_count": 0,
+      "branchpoint_lineage_preserved": true,
+      "canon_mutation_enabled": false,
+      "continuity_channel_pass": true,
+      "credential_leakage": 0,
+      "cross_project_write_enabled": false,
+      "determinism_channel_pass": true,
+      "evaluation_write_enabled": false,
+      "issues": [],
+      "live_provider_call_count_in_release_gate": 0,
+      "memory_write_enabled": false,
+      "mode": "DETERMINISTIC_LOCAL_EVALUATOR_ONLY",
+      "node2_raw_reveal_access": 0,
+      "page": "Page05 Evaluation Body",
+      "provider_default_calls": 0,
+      "provider_evaluation_enabled": false,
+      "provider_generation_count": 0,
+      "quality_channel_pass": true,
+      "regression_channel_pass": true,
+      "runtime_execution_count": 0,
+      "runtime_training_enabled": false,
+      "stage": "169",
+      "status": "pass",
+      "title": "Deterministic Quality and Continuity Evaluator",
+      "write_operation_count": 0
+    },
+    "stage170": {
+      "auto_repair_apply_enabled": false,
+      "baseline_stage": "169",
+      "boundary_violation_count": 0,
+      "branchpoint_lineage_preserved": true,
+      "canon_mutation_enabled": false,
+      "credential_leakage": 0,
+      "cross_project_write_enabled": false,
+      "determinism_channel_pass": true,
+      "evaluation_write_enabled": false,
+      "issues": [],
+      "live_provider_call_count_in_release_gate": 0,
+      "memory_write_enabled": false,
+      "mode": "DETERMINISTIC_LOCAL_REGRESSION_HARNESS_ONLY",
+      "node2_raw_reveal_access": 0,
+      "page": "Page05 Evaluation Body",
+      "provider_default_calls": 0,
+      "provider_evaluation_enabled": false,
+      "provider_generation_count": 0,
+      "runtime_execution_count": 0,
+      "runtime_training_enabled": false,
+      "stage": "170",
+      "status": "pass",
+      "title": "Regression and Negative Fixture Harness",
+      "write_operation_count": 0
+    },
+    "stage171": {
+      "auto_repair_apply_enabled": false,
+      "baseline_stage": "170",
+      "boundary_violation_count": 0,
+      "branchpoint_lineage_preserved": true,
+      "canon_mutation_enabled": false,
+      "credential_leakage": 0,
+      "cross_project_write_enabled": false,
+      "evaluation_write_enabled": false,
+      "issues": [],
+      "live_provider_call_count_in_release_gate": 0,
+      "memory_write_enabled": false,
+      "mode": "DETERMINISTIC_LOCAL_BOUNDARY_PREFLIGHT_ONLY",
+      "node2_raw_reveal_access": 0,
+      "page": "Page05 Evaluation Body",
+      "provider_default_calls": 0,
+      "provider_evaluation_enabled": false,
+      "provider_generation_count": 0,
+      "runtime_execution_count": 0,
+      "runtime_training_enabled": false,
+      "stage": "171",
+      "status": "pass",
+      "title": "Evaluation Boundary and Leakage Preflight",
+      "write_operation_count": 0
+    }
+  },
+  "stage": "stage172",
+  "stage172_entry_ready": true,
+  "status": "pass",
+  "title": "Page05 Evaluation Evidence Matrix"
+}

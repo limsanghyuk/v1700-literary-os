@@ -1,0 +1,14 @@
+{
+  "baseline_stage": "stage171",
+  "canon_mutation_enabled": false,
+  "memory_write_enabled": false,
+  "next_stage": "stage173",
+  "next_stage_title": "Governance Contract",
+  "node2_raw_reveal_access": 0,
+  "page": "Page05 Evaluation Body",
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "stage": "stage172",
+  "title": "Page05 Release Seal",
+  "version": "1.72.0"
+}
