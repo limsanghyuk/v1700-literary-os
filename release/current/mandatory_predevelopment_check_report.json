@@ -11,8 +11,10 @@
     "docs/workflow/WORKFLOW.md"
   ],
   "gitnexus": {
-    "installed": false,
+    "installed": true,
     "status": "fallback_required",
+    "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
+    "output_excerpt": "Repository not indexed.\nRun: gitnexus analyze\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {
