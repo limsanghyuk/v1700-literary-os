@@ -1,15 +1,15 @@
-# V1700 Stage166 - Page04 Release Seal
+# V1700 Stage167 - Evaluation Contract
 
-Stage166 seals Page04, the Rendering Body.
+Stage167 starts Page05, the Evaluation Body.
 
 ## Highlights
 
-- Stage161 through Stage165 are verified as a single sealed Page04 release unit.
-- Page04 artifact index, invariant freeze, connectivity matrix, and transition criteria are generated.
-- Provider generation, runtime rendering, writes, canon mutation, and runtime training remain disabled.
+- Typed evaluation contracts, rubrics, thresholds, and authority policy are generated from sealed Page04 evidence.
+- Metric weights are deterministic and validated to sum to 1.0.
+- Provider evaluation, writes, canon mutation, runtime training, and hidden-reveal overrides remain disabled.
 
 ## Official Release Assets
 
-- `V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip`
-- `V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip.sha256`
+- `V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip.sha256`
 - `SHA256SUMS.txt`

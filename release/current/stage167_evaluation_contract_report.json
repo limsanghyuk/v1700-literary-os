@@ -1,0 +1,389 @@
+{
+  "stage": "167",
+  "baseline_stage": "166",
+  "title": "Evaluation Contract",
+  "status": "pass",
+  "issues": [],
+  "mode": "EVALUATION_CONTRACT_LOCAL_ONLY",
+  "page": "Page05 Evaluation Body",
+  "evaluation_contract_only": true,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "render_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "runtime_training_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "provider_generation_enabled": false,
+  "generation_runtime_enabled": false,
+  "runtime_execution_enabled": false,
+  "provider_default_calls": 0,
+  "provider_generation_count": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "stage166_page04_seal_inherited": true,
+  "stage168_packet_store_ready": true,
+  "contract_count": 12,
+  "subject_count": 1,
+  "rubric_count": 1,
+  "metric_count": 8,
+  "rubric_weight_total": 1.0,
+  "rubric_weights_valid": true,
+  "thresholds_explicit": true,
+  "boundary_override_defined": true,
+  "authority_policy_locked": true,
+  "parts": {
+    "stage166_release_gate": {
+      "status": "pass",
+      "stage": "166",
+      "baseline_stage": "165",
+      "title": "Page04 Release Seal",
+      "issues": [],
+      "page04_sealed": true,
+      "stage167_evaluation_contract_ready": true,
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "page05_readiness_matrix": {
+      "stage": "stage167",
+      "title": "Page05 Readiness Matrix",
+      "status": "pass",
+      "issues": [],
+      "check_count": 7,
+      "checks": [
+        {
+          "name": "page04_release_seal_pass",
+          "status": "pass",
+          "evidence": "release/current/stage166_release_gate_report.json",
+          "description": "Stage166 must seal Page04 before Page05 starts."
+        },
+        {
+          "name": "page05_proposal_present",
+          "status": "pass",
+          "evidence": "docs/proposals/page05_evaluation_body_proposal.md",
+          "description": "Page05 proposal is present."
+        },
+        {
+          "name": "page05_blueprint_present",
+          "status": "pass",
+          "evidence": "docs/architecture/page05_evaluation_body_blueprint.md",
+          "description": "Page05 blueprint is present."
+        },
+        {
+          "name": "page05_handoff_present",
+          "status": "pass",
+          "evidence": "docs/development/page05_developer_handoff.md",
+          "description": "Page05 handoff is present."
+        },
+        {
+          "name": "provider_evaluation_disabled",
+          "status": "pass",
+          "evidence": "release/current/stage167_evaluation_contract_report.json",
+          "description": "Provider evaluation is disabled by default."
+        },
+        {
+          "name": "write_paths_disabled",
+          "status": "pass",
+          "evidence": "release/current/stage167_evaluation_contract_report.json",
+          "description": "Evaluation writes, memory writes, and cross-project writes remain disabled."
+        },
+        {
+          "name": "boundary_override_reserved",
+          "status": "pass",
+          "evidence": "release/current/stage167_evaluation_contract_report.json",
+          "description": "Boundary violations remain non-overridable."
+        }
+      ]
+    },
+    "evaluation_contract_catalog": {
+      "stage": "stage167",
+      "title": "Stage167 Evaluation Contract Catalog",
+      "status": "pass",
+      "issues": [],
+      "contract_count": 12,
+      "subject_count": 1,
+      "objects": {
+        "EvaluationArtifactEnvelope": {
+          "artifact_id": "eval_artifact_surface_draft",
+          "project_id": "korean_drama_family_secret",
+          "source_stage": "stage166",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "artifact_type": "surface_draft",
+          "visibility": "surface",
+          "checksum": "sha256:8bd0d9a3d1073e7c09805118bad01a74ba5ed6998d2bcabcb1d2e8149430b5d4",
+          "created_from": "sealed_page04_artifact",
+          "provider_calls": 0,
+          "write_policy": "read_only"
+        },
+        "EvaluationSubject": {
+          "subject_id": "page05_surface_subject",
+          "subject_type": "surface_draft_bundle",
+          "lineage_anchor": "stage166_page04_release_seal",
+          "visibility_policy": "NODE2_SURFACE_ONLY",
+          "read_only": true,
+          "evidence_refs": [
+            {
+              "ref_id": "page04_release_seal",
+              "source_stage": "stage166",
+              "source_path": "release/current/stage166_page04_release_seal_report.json",
+              "required": true,
+              "read_only": true
+            },
+            {
+              "ref_id": "render_quality_scorecard",
+              "source_stage": "stage165",
+              "source_path": "release/current/stage165_render_quality_boundary_preflight_pack/render_quality_scorecard.json",
+              "required": true,
+              "read_only": true
+            },
+            {
+              "ref_id": "surface_draft_trace",
+              "source_stage": "stage164",
+              "source_path": "release/current/stage164_surface_draft_dry_run_renderer_pack/dry_run_render_trace.json",
+              "required": true,
+              "read_only": true
+            }
+          ]
+        },
+        "EvaluationRubric": {
+          "defined_in": "evaluation_rubric_catalog"
+        },
+        "EvaluationMetric": {
+          "defined_in": "evaluation_rubric_catalog"
+        },
+        "EvaluationThresholdPolicy": {
+          "defined_in": "evaluation_rubric_catalog"
+        },
+        "QualityCriterion": {
+          "defined_in": "evaluation_boundary_policy"
+        },
+        "ContinuityCriterion": {
+          "defined_in": "evaluation_boundary_policy"
+        },
+        "RegressionCriterion": {
+          "defined_in": "evaluation_boundary_policy"
+        },
+        "BoundaryCriterion": {
+          "defined_in": "evaluation_boundary_policy"
+        },
+        "EvaluationVerdict": {
+          "status_space": [
+            "PASS",
+            "BLOCK"
+          ]
+        },
+        "EvaluationEvidenceRef": {
+          "ref_id": "page04_release_seal",
+          "source_stage": "stage166",
+          "source_path": "release/current/stage166_page04_release_seal_report.json",
+          "required": true,
+          "read_only": true
+        },
+        "EvaluationAuthorityPolicy": {
+          "defined_in": "evaluation_authority_policy"
+        }
+      }
+    },
+    "evaluation_rubric_catalog": {
+      "stage": "stage167",
+      "title": "Stage167 Evaluation Rubric Catalog",
+      "status": "pass",
+      "issues": [],
+      "rubric_count": 1,
+      "metric_count": 8,
+      "weight_sum": 1.0,
+      "weight_sum_valid": true,
+      "thresholds_explicit": true,
+      "boundary_override_defined": true,
+      "rubrics": [
+        {
+          "rubric_id": "page05_default_surface_rubric",
+          "rubric_version": "1.0",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "metric_group": "quality",
+              "weight": 0.15,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": false
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "metric_group": "continuity",
+              "weight": 0.15,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": true
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "metric_group": "continuity",
+              "weight": 0.14,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": true
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "metric_group": "continuity",
+              "weight": 0.12,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": true
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "metric_group": "boundary",
+              "weight": 0.12,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": true
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "metric_group": "quality",
+              "weight": 0.12,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": false
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "metric_group": "regression",
+              "weight": 0.1,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": false
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "metric_group": "boundary",
+              "weight": 0.1,
+              "range_min": 0.0,
+              "range_max": 1.0,
+              "deterministic": true,
+              "boundary_sensitive": true
+            }
+          ],
+          "threshold_policy": {
+            "quality_threshold": 0.8,
+            "regression_delta_threshold": 0.05,
+            "continuity_hard_fail_allowed": 0,
+            "boundary_violation_allowed": 0,
+            "determinism_required": true,
+            "boundary_override": "BLOCK_ALWAYS"
+          },
+          "provider_evaluation_enabled": false
+        }
+      ]
+    },
+    "evaluation_boundary_policy": {
+      "stage": "stage167",
+      "title": "Stage167 Evaluation Boundary Policy",
+      "status": "pass",
+      "issues": [],
+      "quality_criteria": [
+        {
+          "criterion_id": "surface_structure_threshold",
+          "metric_id": "surface_structure_score",
+          "pass_rule": ">= 0.80"
+        },
+        {
+          "criterion_id": "payoff_alignment_threshold",
+          "metric_id": "payoff_alignment_score",
+          "pass_rule": ">= 0.75"
+        }
+      ],
+      "continuity_criteria": [
+        {
+          "criterion_id": "character_continuity_hard_fail",
+          "continuity_axis": "character_consistency",
+          "hard_fail_on_violation": true
+        },
+        {
+          "criterion_id": "world_continuity_hard_fail",
+          "continuity_axis": "world_consistency",
+          "hard_fail_on_violation": true
+        }
+      ],
+      "regression_criteria": [
+        {
+          "criterion_id": "render_packet_drift_guard",
+          "baseline_source": "stage166_artifact_index",
+          "max_allowed_delta": 0.05
+        }
+      ],
+      "boundary_criteria": [
+        {
+          "criterion_id": "raw_reveal_payload_block",
+          "blocked_payload": "raw_reveal_payload",
+          "overridable": false
+        },
+        {
+          "criterion_id": "provider_call_block",
+          "blocked_payload": "provider_call",
+          "overridable": false
+        },
+        {
+          "criterion_id": "mutation_command_block",
+          "blocked_payload": "mutation_command",
+          "overridable": false
+        },
+        {
+          "criterion_id": "hidden_memory_projection_block",
+          "blocked_payload": "hidden_memory_projection",
+          "overridable": false
+        }
+      ],
+      "boundary_criteria_non_overridable": true
+    },
+    "evaluation_authority_policy": {
+      "stage": "stage167",
+      "title": "Stage167 Evaluation Authority Policy",
+      "status": "pass",
+      "issues": [],
+      "policy": {
+        "provider_evaluation_enabled": false,
+        "evaluation_write_enabled": false,
+        "memory_write_enabled": false,
+        "canon_mutation_enabled": false,
+        "runtime_training_enabled": false,
+        "auto_repair_apply_enabled": false,
+        "cross_project_write_enabled": false,
+        "node2_surface_only": true,
+        "boundary_criteria_non_overridable": true
+      }
+    },
+    "stage168_entry_criteria": {
+      "stage": "stage167",
+      "title": "Stage168 Entry Criteria",
+      "status": "pass",
+      "issues": [],
+      "contract_schema_valid": "pass",
+      "rubric_weights_valid": "pass",
+      "provider_evaluation_enabled": "blocked",
+      "boundary_override_defined": "pass",
+      "stage168_packet_store_ready": "pass",
+      "next_stage": "stage168"
+    }
+  }
+}

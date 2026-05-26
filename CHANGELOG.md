@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.67.0-stage167
+
+- Added Stage167 Evaluation Contract as the Page05 Evaluation Body entry stage.
+- Defined evaluation artifact, subject, rubric, threshold, boundary, verdict, and authority contracts.
+- Added deterministic rubric weight validation, non-overridable boundary policy, and Stage168 entry criteria.
+- Kept provider evaluation, write paths, canon mutation, runtime training, and Node2 raw reveal access disabled.
+
 ## v1.66.1-stage166-hotfix
 
 - Fixed the Stage166 Page04 release seal report builder so the release gate can run without a Python syntax error.

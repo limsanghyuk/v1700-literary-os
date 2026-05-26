@@ -1,0 +1,12 @@
+{
+  "stage": "stage167",
+  "title": "Stage168 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "contract_schema_valid": "pass",
+  "rubric_weights_valid": "pass",
+  "provider_evaluation_enabled": "blocked",
+  "boundary_override_defined": "pass",
+  "stage168_packet_store_ready": "pass",
+  "next_stage": "stage168"
+}

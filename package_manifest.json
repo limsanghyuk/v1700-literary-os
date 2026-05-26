@@ -1,14 +1,14 @@
 {
-  "stage": "stage166",
-  "package": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip",
-  "canonical_package": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip",
+  "stage": "stage167",
+  "package": "V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip",
   "sha256": "SEE_RELEASE_SIDECAR",
-  "sha256_sidecar": "V1700_stage166_page04_release_seal_triple_validated_hardened_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip.sha256",
   "sha256_authority": "release sidecar file is authoritative",
   "filelist": "FILELIST.txt",
-  "created_by": "stage166_page04_release_seal",
-  "active_version": "stage166",
-  "patch_report": "release/current/stage166_page04_release_seal_report.json",
-  "release_gate": "release/current/stage166_release_gate_report.json",
-  "asset_manifest": "release/current/stage166_release_asset_manifest.json"
+  "created_by": "stage167_evaluation_contract",
+  "active_version": "stage167",
+  "patch_report": "release/current/stage167_evaluation_contract_report.json",
+  "release_gate": "release/current/stage167_release_gate_report.json",
+  "asset_manifest": "release/current/stage167_release_asset_manifest.json"
 }

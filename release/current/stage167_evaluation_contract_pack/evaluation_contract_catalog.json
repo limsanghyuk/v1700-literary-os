@@ -1,0 +1,89 @@
+{
+  "stage": "stage167",
+  "title": "Stage167 Evaluation Contract Catalog",
+  "status": "pass",
+  "issues": [],
+  "contract_count": 12,
+  "subject_count": 1,
+  "objects": {
+    "EvaluationArtifactEnvelope": {
+      "artifact_id": "eval_artifact_surface_draft",
+      "project_id": "korean_drama_family_secret",
+      "source_stage": "stage166",
+      "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+      "artifact_type": "surface_draft",
+      "visibility": "surface",
+      "checksum": "sha256:8bd0d9a3d1073e7c09805118bad01a74ba5ed6998d2bcabcb1d2e8149430b5d4",
+      "created_from": "sealed_page04_artifact",
+      "provider_calls": 0,
+      "write_policy": "read_only"
+    },
+    "EvaluationSubject": {
+      "subject_id": "page05_surface_subject",
+      "subject_type": "surface_draft_bundle",
+      "lineage_anchor": "stage166_page04_release_seal",
+      "visibility_policy": "NODE2_SURFACE_ONLY",
+      "read_only": true,
+      "evidence_refs": [
+        {
+          "ref_id": "page04_release_seal",
+          "source_stage": "stage166",
+          "source_path": "release/current/stage166_page04_release_seal_report.json",
+          "required": true,
+          "read_only": true
+        },
+        {
+          "ref_id": "render_quality_scorecard",
+          "source_stage": "stage165",
+          "source_path": "release/current/stage165_render_quality_boundary_preflight_pack/render_quality_scorecard.json",
+          "required": true,
+          "read_only": true
+        },
+        {
+          "ref_id": "surface_draft_trace",
+          "source_stage": "stage164",
+          "source_path": "release/current/stage164_surface_draft_dry_run_renderer_pack/dry_run_render_trace.json",
+          "required": true,
+          "read_only": true
+        }
+      ]
+    },
+    "EvaluationRubric": {
+      "defined_in": "evaluation_rubric_catalog"
+    },
+    "EvaluationMetric": {
+      "defined_in": "evaluation_rubric_catalog"
+    },
+    "EvaluationThresholdPolicy": {
+      "defined_in": "evaluation_rubric_catalog"
+    },
+    "QualityCriterion": {
+      "defined_in": "evaluation_boundary_policy"
+    },
+    "ContinuityCriterion": {
+      "defined_in": "evaluation_boundary_policy"
+    },
+    "RegressionCriterion": {
+      "defined_in": "evaluation_boundary_policy"
+    },
+    "BoundaryCriterion": {
+      "defined_in": "evaluation_boundary_policy"
+    },
+    "EvaluationVerdict": {
+      "status_space": [
+        "PASS",
+        "BLOCK"
+      ]
+    },
+    "EvaluationEvidenceRef": {
+      "ref_id": "page04_release_seal",
+      "source_stage": "stage166",
+      "source_path": "release/current/stage166_page04_release_seal_report.json",
+      "required": true,
+      "read_only": true
+    },
+    "EvaluationAuthorityPolicy": {
+      "defined_in": "evaluation_authority_policy"
+    }
+  }
+}
