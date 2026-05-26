@@ -12,11 +12,11 @@
     "status": "pass",
     "issues": [],
     "gitnexus": {
-      "installed": false,
-      "command": "/opt/nvm/versions/node/v22.16.0/bin/npx -y gitnexus@latest",
+      "installed": true,
+      "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.CMD",
       "optional_runtime_dependency": false,
       "fallback_available": true,
-      "error": "gitnexus binary not installed; npx path is available for optional use"
+      "error": ""
     },
     "gitnexus_optional_only": true,
     "python_fallback_available": true,

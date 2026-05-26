@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.66.1-stage166-hotfix
+
+- Fixed the Stage166 Page04 release seal report builder so the release gate can run without a Python syntax error.
+- Regenerated `FILELIST.txt` and `SHA256SUMS.txt` to match the current tracked repository state and workflow authority docs.
+- Added Page05 Evaluation Body and Page06 Governance Body proposals, blueprints, handoff notes, consensus report, and detailed evolution plan.
+
 ## v1.66.0-stage166
 
 - Added Stage166 Page04 Release Seal.
