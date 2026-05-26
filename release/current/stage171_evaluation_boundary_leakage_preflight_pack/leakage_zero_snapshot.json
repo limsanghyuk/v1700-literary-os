@@ -1,0 +1,36 @@
+{
+  "stage": "stage171",
+  "title": "Stage171 Leakage Zero Snapshot",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "inherited_stage_chain_pass": {
+      "status": "pass"
+    },
+    "boundary_invariant_freeze_pass": {
+      "status": "pass"
+    },
+    "node2_surface_projection_scan_pass": {
+      "status": "pass"
+    },
+    "forbidden_operation_registry_pass": {
+      "status": "pass"
+    },
+    "controlled_negative_fixture_quarantine_pass": {
+      "status": "pass"
+    },
+    "provider_default_calls_zero": {
+      "status": "pass"
+    },
+    "node2_raw_reveal_access_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    }
+  },
+  "snapshot_checksum": "2dbe6be514e5e097ef0447a106fbfcfb21f3990fa4a8830c276f8c420333257d"
+}

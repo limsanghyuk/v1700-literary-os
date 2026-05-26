@@ -1,0 +1,62 @@
+{
+  "stage": "stage171",
+  "title": "Stage171 Forbidden Operation Registry",
+  "status": "pass",
+  "issues": [],
+  "entries": [
+    {
+      "operation_id": "provider_evaluation",
+      "invariant_key": "provider_evaluation_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "provider_generation",
+      "invariant_key": "provider_generation_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "runtime_execution",
+      "invariant_key": "runtime_execution_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "evaluation_write",
+      "invariant_key": "evaluation_write_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "memory_write",
+      "invariant_key": "memory_write_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "cross_project_write",
+      "invariant_key": "cross_project_write_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "canon_mutation",
+      "invariant_key": "canon_mutation_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "runtime_training",
+      "invariant_key": "runtime_training_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    },
+    {
+      "operation_id": "auto_repair_apply",
+      "invariant_key": "auto_repair_apply_enabled",
+      "required_state": "disabled",
+      "status": "pass"
+    }
+  ]
+}

@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: v1700-literary-os
-Version: 1.48.0
-Summary: V1700 Stage148 - Node Boundary Constitution
-Author: V1700 Project
-Requires-Python: >=3.10
-Provides-Extra: dev
-Requires-Dist: pytest>=8; extra == "dev"
-Requires-Dist: tomli>=2; python_version < "3.11" and extra == "dev"

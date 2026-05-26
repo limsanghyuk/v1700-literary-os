@@ -1,0 +1,76 @@
+{
+  "stage": "stage171",
+  "title": "Stage171 Controlled Negative Fixture Quarantine",
+  "status": "pass",
+  "issues": [],
+  "controlled_fixture_artifact_count": 3,
+  "entries": [
+    {
+      "path": "release/current/stage170_regression_negative_fixture_harness_pack/negative_fixture_catalog.json",
+      "status": "quarantined_controlled_fixture",
+      "token_hit_count": 3,
+      "token_hits_sample": [
+        {
+          "path": "$.fixtures[3].fixture_id",
+          "token": "raw_reveal"
+        },
+        {
+          "path": "$.fixtures[4].fixture_id",
+          "token": "hidden_memory"
+        },
+        {
+          "path": "$.fixtures[6].fixture_id",
+          "token": "mutation_command"
+        }
+      ],
+      "surface_projection_artifact": false,
+      "counts_as_leakage": false,
+      "sha256": "03d488a85e3f2aa9a4804c3fa57a3d89ab93e50bd3e2a195c7696d8fe58411ac"
+    },
+    {
+      "path": "release/current/stage170_regression_negative_fixture_harness_pack/negative_fixture_results.json",
+      "status": "quarantined_controlled_fixture",
+      "token_hit_count": 3,
+      "token_hits_sample": [
+        {
+          "path": "$.entries[3].fixture_id",
+          "token": "raw_reveal"
+        },
+        {
+          "path": "$.entries[4].fixture_id",
+          "token": "hidden_memory"
+        },
+        {
+          "path": "$.entries[6].fixture_id",
+          "token": "mutation_command"
+        }
+      ],
+      "surface_projection_artifact": false,
+      "counts_as_leakage": false,
+      "sha256": "cb4b2ff88bbb4711562953c68de4066c9f9a0da5911c53bcad1876e3573ac51e"
+    },
+    {
+      "path": "release/current/stage170_regression_negative_fixture_harness_pack/boundary_negative_fixture_matrix.json",
+      "status": "quarantined_controlled_fixture",
+      "token_hit_count": 3,
+      "token_hits_sample": [
+        {
+          "path": "$.entries[0].fixture_id",
+          "token": "raw_reveal"
+        },
+        {
+          "path": "$.entries[1].fixture_id",
+          "token": "hidden_memory"
+        },
+        {
+          "path": "$.entries[3].fixture_id",
+          "token": "mutation_command"
+        }
+      ],
+      "surface_projection_artifact": false,
+      "counts_as_leakage": false,
+      "sha256": "888060dbe52f5674c5e72f94391982d5168b5192d3dcb8e7ca0acc130036672c"
+    }
+  ],
+  "quarantine_checksum": "f11c988304f8f6a1a76bedd3d8f2a2734ee1cab547bb4fd14c02bde4186cfe2d"
+}
