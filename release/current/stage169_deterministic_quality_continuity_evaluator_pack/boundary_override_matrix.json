@@ -1,0 +1,41 @@
+{
+  "stage": "stage169",
+  "title": "Stage169 Boundary Override Matrix",
+  "status": "pass",
+  "issues": [],
+  "boundary_violation_count": 0,
+  "boundary_override": "BLOCK_ALWAYS",
+  "score_can_override_boundary": false,
+  "entries": [
+    {
+      "evaluation_packet_id": "eval_packet_001",
+      "boundary_violation_count": 0,
+      "findings": []
+    },
+    {
+      "evaluation_packet_id": "eval_packet_002",
+      "boundary_violation_count": 0,
+      "findings": []
+    },
+    {
+      "evaluation_packet_id": "eval_packet_003",
+      "boundary_violation_count": 0,
+      "findings": []
+    },
+    {
+      "evaluation_packet_id": "eval_packet_004",
+      "boundary_violation_count": 0,
+      "findings": []
+    },
+    {
+      "evaluation_packet_id": "eval_packet_005",
+      "boundary_violation_count": 0,
+      "findings": []
+    },
+    {
+      "evaluation_packet_id": "eval_packet_006",
+      "boundary_violation_count": 0,
+      "findings": []
+    }
+  ]
+}

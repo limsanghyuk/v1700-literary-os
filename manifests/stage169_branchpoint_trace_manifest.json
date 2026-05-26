@@ -1,0 +1,9 @@
+{
+  "stage": "stage169",
+  "baseline_stage": "stage168",
+  "branchpoint_lineage_preserved": true,
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0
+}

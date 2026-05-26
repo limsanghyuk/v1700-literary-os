@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.69.0-stage169
+
+- Added Stage169 Deterministic Quality and Continuity Evaluator.
+- Added deterministic metric matrix, quality/continuity scorecard, boundary override matrix, regression delta matrix, Node2 projection verdict, determinism matrix, and Stage170 entry criteria.
+- Kept provider evaluation, provider generation, writes, canon mutation, runtime training, and hidden payload projection disabled.
+
 ## v1.68.0-stage168
 
 - Added Stage168 Local Evaluation Packet Store as the second Page05 Evaluation Body stage.

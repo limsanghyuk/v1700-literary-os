@@ -1,0 +1,18 @@
+{
+  "stage": "stage169",
+  "title": "Deterministic Quality and Continuity Evaluator",
+  "page": "Page05 Evaluation Body",
+  "required_components": [
+    "EvaluationMetricValue",
+    "ContinuityFinding",
+    "BoundaryFinding",
+    "EvaluationScorecard",
+    "DeterministicEvaluator",
+    "BoundaryOverrideMatrix",
+    "RegressionDeltaMatrix"
+  ],
+  "deterministic_local_only": true,
+  "provider_evaluation_enabled": false,
+  "stage170_regression_harness_ready": true,
+  "next_stage": "stage170"
+}

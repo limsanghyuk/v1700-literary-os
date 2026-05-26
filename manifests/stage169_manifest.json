@@ -1,0 +1,11 @@
+{
+  "stage": "stage169",
+  "title": "Deterministic Quality and Continuity Evaluator",
+  "baseline_stage": "stage168",
+  "page": "Page05 Evaluation Body",
+  "status": "active",
+  "runner": "tools/run_stage169_deterministic_quality_continuity_evaluator.py",
+  "release_gate": "tools/run_stage169_release_gate.py",
+  "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+  "next_stage": "stage170"
+}

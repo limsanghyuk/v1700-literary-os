@@ -1,5 +1,5 @@
 {
-  "active_version": "stage168",
+  "active_version": "stage169",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -76,10 +76,12 @@
     "stage167_evaluation_contract",
     "stage167_release_gate",
     "stage168_local_evaluation_packet_store",
-    "stage168_release_gate"
+    "stage168_release_gate",
+    "stage169_deterministic_quality_continuity_evaluator",
+    "stage169_release_gate"
   ],
-  "canonical_package": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage168_1_local_evaluation_packet_store_byte_integrity_hotfix_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -336,5 +338,23 @@
     "release_gate": "release/current/stage168_release_gate_report.json",
     "evidence": "release/current/stage168_local_evaluation_packet_store_report.json",
     "next_stage": "stage169"
+  },
+  "stages": {
+    "stage169": {
+      "status": "active",
+      "title": "Deterministic Quality and Continuity Evaluator",
+      "baseline_stage": "stage168",
+      "release_gate": "release/current/stage169_release_gate_report.json",
+      "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+      "next_stage": "stage170"
+    }
+  },
+  "stage169": {
+    "status": "active",
+    "title": "Deterministic Quality and Continuity Evaluator",
+    "baseline_stage": "stage168",
+    "release_gate": "release/current/stage169_release_gate_report.json",
+    "evidence": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+    "next_stage": "stage170"
   }
 }
