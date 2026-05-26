@@ -1,0 +1,1213 @@
+{
+  "stage": "169",
+  "baseline_stage": "168",
+  "title": "Deterministic Quality and Continuity Evaluator",
+  "status": "pass",
+  "issues": [],
+  "mode": "DETERMINISTIC_LOCAL_EVALUATOR_ONLY",
+  "page": "Page05 Evaluation Body",
+  "evaluation_packet_count": 6,
+  "scorecard_count": 6,
+  "quality_channel_pass": true,
+  "continuity_channel_pass": true,
+  "regression_channel_pass": true,
+  "boundary_channel_pass": true,
+  "determinism_channel_pass": true,
+  "stage168_packet_store_inherited": true,
+  "stage170_regression_harness_ready": true,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "runtime_training_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "provider_generation_enabled": false,
+  "generation_runtime_enabled": false,
+  "runtime_execution_enabled": false,
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "provider_generation_count": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage168_release_gate": {
+      "status": "pass",
+      "stage": "168",
+      "baseline_stage": "167",
+      "title": "Local Evaluation Packet Store",
+      "issues": [],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "evaluation_metric_matrix": {
+      "stage": "stage169",
+      "title": "Stage169 Evaluation Metric Matrix",
+      "status": "pass",
+      "issues": [],
+      "metric_count": 8,
+      "packet_count": 6,
+      "matrix": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ]
+        }
+      ]
+    },
+    "quality_continuity_scorecard": {
+      "stage": "stage169",
+      "title": "Stage169 Quality and Continuity Scorecard",
+      "status": "pass",
+      "issues": [],
+      "quality_threshold": 0.8,
+      "scorecard_count": 6,
+      "scorecards": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "78e2da25365861315d4fa5da4db42e203f2104993bf62a0b5f73adedf6ecd3c8",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "b7a3a94617fb249ed731c0335103a58862d06991939c5e0a29b4a32068b40335",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "973c08fa9e80a9fbecce9dd72be2339821b527bccb5c3c415914e510926f08de",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "98e0b735fc7c08c876b9391c7e426ec399ce14708c8cffa5ec206edb36715a68",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "051e979988ea68847a38406aea987d59328ca81518b3f5fe5c14faffd3d3e3aa",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "quality_score": 1.0,
+          "continuity_violation_index": 0.0,
+          "regression_delta_index": 0.0,
+          "boundary_violation_count": 0,
+          "deterministic_checksum": "6662aef2c01ca8ad254b533fa5265e2c64923e747fcf8535bc15fe219b9d0906",
+          "status": "pass",
+          "block_reasons": [],
+          "metrics": [
+            {
+              "metric_id": "surface_structure_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "scene_continuity_score",
+              "normalized_value": 1.0,
+              "weight": 0.15,
+              "weighted_value": 0.15,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "character_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.14,
+              "weighted_value": 0.14,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "world_consistency_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "reveal_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "payoff_alignment_score",
+              "normalized_value": 1.0,
+              "weight": 0.12,
+              "weighted_value": 0.12,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "render_packet_adherence_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            },
+            {
+              "metric_id": "node2_surface_safety_score",
+              "normalized_value": 1.0,
+              "weight": 0.1,
+              "weighted_value": 0.1,
+              "source": "deterministic_packet_heuristic"
+            }
+          ],
+          "continuity_findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ],
+          "boundary_findings": []
+        }
+      ]
+    },
+    "continuity_violation_matrix": {
+      "stage": "stage169",
+      "title": "Stage169 Continuity Violation Matrix",
+      "status": "pass",
+      "issues": [],
+      "hard_violation_count": 0,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "continuity_violation_index": 0.0,
+          "findings": [
+            {
+              "finding_id": "continuity_refs_resolved",
+              "axis": "stage_reference",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "required_stage_refs"
+            },
+            {
+              "finding_id": "continuity_source_stage",
+              "axis": "lineage",
+              "severity": "none",
+              "hard_violation": false,
+              "evidence": "source_stage"
+            }
+          ]
+        }
+      ]
+    },
+    "boundary_override_matrix": {
+      "stage": "stage169",
+      "title": "Stage169 Boundary Override Matrix",
+      "status": "pass",
+      "issues": [],
+      "boundary_violation_count": 0,
+      "boundary_override": "BLOCK_ALWAYS",
+      "score_can_override_boundary": false,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "boundary_violation_count": 0,
+          "findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "boundary_violation_count": 0,
+          "findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "boundary_violation_count": 0,
+          "findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "boundary_violation_count": 0,
+          "findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "boundary_violation_count": 0,
+          "findings": []
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "boundary_violation_count": 0,
+          "findings": []
+        }
+      ]
+    },
+    "regression_delta_matrix": {
+      "stage": "stage169",
+      "title": "Stage169 Regression Delta Matrix",
+      "status": "pass",
+      "issues": [],
+      "regression_delta_threshold": 0.05,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "regression_delta_index": 0.0
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "regression_delta_index": 0.0
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "regression_delta_index": 0.0
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "regression_delta_index": 0.0
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "regression_delta_index": 0.0
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "regression_delta_index": 0.0
+        }
+      ]
+    },
+    "node2_evaluation_projection_verdict": {
+      "stage": "stage169",
+      "title": "Stage169 Node2 Evaluation Projection Verdict",
+      "status": "pass",
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "surface_only": true,
+      "hidden_payload_projected": false,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "surface_projection_safe": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "surface_projection_safe": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "surface_projection_safe": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "surface_projection_safe": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "surface_projection_safe": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "surface_projection_safe": true
+        }
+      ]
+    },
+    "determinism_matrix": {
+      "stage": "stage169",
+      "title": "Stage169 Determinism Matrix",
+      "status": "pass",
+      "issues": [],
+      "replay_count": 6,
+      "checksums": [
+        "78e2da25365861315d4fa5da4db42e203f2104993bf62a0b5f73adedf6ecd3c8",
+        "b7a3a94617fb249ed731c0335103a58862d06991939c5e0a29b4a32068b40335",
+        "973c08fa9e80a9fbecce9dd72be2339821b527bccb5c3c415914e510926f08de",
+        "98e0b735fc7c08c876b9391c7e426ec399ce14708c8cffa5ec206edb36715a68",
+        "051e979988ea68847a38406aea987d59328ca81518b3f5fe5c14faffd3d3e3aa",
+        "6662aef2c01ca8ad254b533fa5265e2c64923e747fcf8535bc15fe219b9d0906"
+      ]
+    },
+    "stage170_entry_criteria": {
+      "stage": "stage169",
+      "title": "Stage170 Entry Criteria",
+      "status": "pass",
+      "issues": [],
+      "stage170_regression_negative_fixture_harness_ready": true,
+      "quality_channel_pass": true,
+      "continuity_channel_pass": true,
+      "boundary_channel_pass": true,
+      "determinism_channel_pass": true
+    }
+  }
+}

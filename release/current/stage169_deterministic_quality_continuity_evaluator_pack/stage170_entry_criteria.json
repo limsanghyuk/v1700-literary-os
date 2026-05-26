@@ -1,0 +1,11 @@
+{
+  "stage": "stage169",
+  "title": "Stage170 Entry Criteria",
+  "status": "pass",
+  "issues": [],
+  "stage170_regression_negative_fixture_harness_ready": true,
+  "quality_channel_pass": true,
+  "continuity_channel_pass": true,
+  "boundary_channel_pass": true,
+  "determinism_channel_pass": true
+}

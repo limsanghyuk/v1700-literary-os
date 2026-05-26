@@ -1,0 +1,35 @@
+{
+  "stage": "stage169",
+  "title": "Stage169 Node2 Evaluation Projection Verdict",
+  "status": "pass",
+  "issues": [],
+  "node2_raw_reveal_access": 0,
+  "surface_only": true,
+  "hidden_payload_projected": false,
+  "entries": [
+    {
+      "evaluation_packet_id": "eval_packet_001",
+      "surface_projection_safe": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_002",
+      "surface_projection_safe": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_003",
+      "surface_projection_safe": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_004",
+      "surface_projection_safe": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_005",
+      "surface_projection_safe": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_006",
+      "surface_projection_safe": true
+    }
+  ]
+}

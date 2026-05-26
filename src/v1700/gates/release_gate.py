@@ -112,6 +112,7 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
     ("stage166", "stage166_release_gate", "v1700.gates.stage166_release_gate", "run_stage166_release_gate"),
     ("stage167", "stage167_release_gate", "v1700.gates.stage167_release_gate", "run_stage167_release_gate"),
     ("stage168", "stage168_release_gate", "v1700.gates.stage168_release_gate", "run_stage168_release_gate"),
+    ("stage169", "stage169_release_gate", "v1700.gates.stage169_release_gate", "run_stage169_release_gate"),
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]

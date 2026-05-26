@@ -154,6 +154,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage168_local_evaluation_packet_store_report.json",
         "release_gate_report": "release/current/stage168_release_gate_report.json",
     },
+    "stage169": {
+        "package": "V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+        "release_gate_report": "release/current/stage169_release_gate_report.json",
+    },
 }
 
 

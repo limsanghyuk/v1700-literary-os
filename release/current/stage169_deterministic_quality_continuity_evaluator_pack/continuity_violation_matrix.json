@@ -1,0 +1,129 @@
+{
+  "stage": "stage169",
+  "title": "Stage169 Continuity Violation Matrix",
+  "status": "pass",
+  "issues": [],
+  "hard_violation_count": 0,
+  "entries": [
+    {
+      "evaluation_packet_id": "eval_packet_001",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    },
+    {
+      "evaluation_packet_id": "eval_packet_002",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    },
+    {
+      "evaluation_packet_id": "eval_packet_003",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    },
+    {
+      "evaluation_packet_id": "eval_packet_004",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    },
+    {
+      "evaluation_packet_id": "eval_packet_005",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    },
+    {
+      "evaluation_packet_id": "eval_packet_006",
+      "continuity_violation_index": 0.0,
+      "findings": [
+        {
+          "finding_id": "continuity_refs_resolved",
+          "axis": "stage_reference",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "required_stage_refs"
+        },
+        {
+          "finding_id": "continuity_source_stage",
+          "axis": "lineage",
+          "severity": "none",
+          "hard_violation": false,
+          "evidence": "source_stage"
+        }
+      ]
+    }
+  ]
+}

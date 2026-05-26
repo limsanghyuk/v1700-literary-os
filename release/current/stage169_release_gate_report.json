@@ -1,0 +1,122 @@
+{
+  "stage": "169",
+  "baseline_stage": "168",
+  "title": "Deterministic Quality and Continuity Evaluator",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage168_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage169_report_pass": {
+      "status": "pass"
+    },
+    "deterministic_evaluator_mode_pass": {
+      "status": "pass"
+    },
+    "evaluation_metric_matrix_pass": {
+      "status": "pass"
+    },
+    "quality_channel_pass": {
+      "status": "pass"
+    },
+    "continuity_channel_pass": {
+      "status": "pass"
+    },
+    "regression_channel_pass": {
+      "status": "pass"
+    },
+    "boundary_override_pass": {
+      "status": "pass"
+    },
+    "node2_projection_pass": {
+      "status": "pass"
+    },
+    "determinism_channel_pass": {
+      "status": "pass"
+    },
+    "stage170_entry_ready": {
+      "status": "pass"
+    },
+    "provider_evaluation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage169": {
+    "status": "pass",
+    "stage": "169",
+    "baseline_stage": "168",
+    "title": "Deterministic Quality and Continuity Evaluator",
+    "issues": [],
+    "mode": "DETERMINISTIC_LOCAL_EVALUATOR_ONLY",
+    "evaluation_packet_count": 6,
+    "scorecard_count": 6,
+    "quality_channel_pass": true,
+    "continuity_channel_pass": true,
+    "regression_channel_pass": true,
+    "boundary_channel_pass": true,
+    "determinism_channel_pass": true,
+    "stage170_regression_harness_ready": true,
+    "provider_evaluation_enabled": false,
+    "evaluation_write_enabled": false,
+    "memory_write_enabled": false,
+    "cross_project_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "runtime_training_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

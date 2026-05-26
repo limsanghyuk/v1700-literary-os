@@ -87,6 +87,7 @@ def test_main_release_gate_rechecks_without_process_cache(monkeypatch) -> None:
 
     monkeypatch.setattr(release_gate, "STAGE_GATE_SPECS", (("stage168", "stage168_release_gate", "fake", "fake"),))
     monkeypatch.setattr(release_gate, "STAGE_ORDER", ["stage168"])
+    monkeypatch.setattr(release_gate, "_active_version", lambda root: "stage168")
     monkeypatch.setattr(release_gate, "run_runtime_smoke", fake_runtime_smoke)
     monkeypatch.setattr(release_gate, "run_graph_nexus_release_gate", fake_graph_gate)
     monkeypatch.setattr(release_gate, "_load_runner", fake_load_runner)

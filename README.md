@@ -1,48 +1,31 @@
-# V1700 Literary OS - Stage168
+# V1700 Literary OS - Stage169
 
-> Local Evaluation Packet Store
+> Deterministic Quality and Continuity Evaluator
 
-Stage168 continues Page05 Evaluation Body after Stage167 Evaluation Contract and stores deterministic evaluation packets in local read-only form.
+Stage169 continues Page05 Evaluation Body after Stage168 Local Evaluation Packet Store. It evaluates local read-only evaluation packets with deterministic quality, continuity, regression, boundary, Node2 projection, and determinism checks.
 
 ## Quick Start
 
 ```bash
 python -m compileall -q src tools
-python tools/run_stage166_release_gate.py
-python tools/run_stage167_release_gate.py
-python tools/run_stage168_local_evaluation_packet_store.py
 python tools/run_stage168_release_gate.py
+python tools/run_stage169_deterministic_quality_continuity_evaluator.py
+python tools/run_stage169_release_gate.py
+python tools/check_stage_metadata_consistency.py
+python tools/check_release_asset_integrity.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage168_local_evaluation_packet_store.py -q
+python -m pytest tests/test_stage167_evaluation_contract.py tests/test_stage168_local_evaluation_packet_store.py tests/test_stage169_deterministic_quality_continuity_evaluator.py -q
 ```
 
-## Stage168 Core Modules
+## Current Stage
 
 ```text
-src/v1700/evaluation_packet_store/
-  contracts.py
-  loader.py
-  report.py
-src/v1700/stage168/
-  stage168_runner.py
-src/v1700/gates/
-  stage168_release_gate.py
-```
-
-## Previous Stage
-
-```text
-src/v1700/evaluation_body_contract/
-  contracts.py
-  report.py
+Stage167  Evaluation Contract
+Stage168  Local Evaluation Packet Store
+Stage169  Deterministic Quality and Continuity Evaluator
 ```
 
 ## Next
 
-Stage169 - Deterministic Quality and Continuity Evaluator.
-
-Page05 design authority is documented in:
-
-- `docs/proposals/page05_evaluation_body_proposal.md`
-- `docs/architecture/page05_evaluation_body_blueprint.md`
+Stage170 - Regression and Negative Fixture Harness.

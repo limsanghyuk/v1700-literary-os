@@ -1,15 +1,15 @@
-# V1700 Stage168 - Local Evaluation Packet Store
+# V1700 Stage169 - Deterministic Quality and Continuity Evaluator
 
-Stage168 continues Page05, the Evaluation Body.
+Stage169 continues Page05, the Evaluation Body.
 
 ## Highlights
 
-- Deterministic read-only JSONL evaluation packets are loaded and indexed.
-- Stage166 sealed evidence references are resolved and packet IDs/checksums are validated.
-- Provider evaluation, writes, canon mutation, runtime training, and hidden-reveal projection remain disabled.
+- Deterministic local quality and continuity scorecards are generated from Stage168 evaluation packets.
+- Boundary override, regression delta, Node2 projection, and determinism matrices are emitted as release evidence.
+- Provider evaluation, provider generation, writes, canon mutation, runtime training, and hidden payload projection remain disabled.
 
 ## Official Release Assets
 
-- `V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage169_deterministic_quality_continuity_evaluator_release_integrated_repository_with_artifacts.zip.sha256`
 - `SHA256SUMS.txt`
