@@ -607,7 +607,7 @@
       "surviving_runtime_value": "Seals Narrative Memory Body without adding provider, write, vector, training, or mutation runtime privileges."
     }
   ],
-  "active_version": "stage153",
+  "active_version": "stage167",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -730,5 +730,89 @@
     "title": "Memory Health & Leakage Boundary",
     "baseline_stage": "stage152",
     "next_stage": "stage154"
+  },
+  "stage154": {
+    "status": "active",
+    "baseline_stage": "stage153",
+    "purpose": "Page02 Release Seal",
+    "next_stage": "stage155"
+  },
+  "stage155": {
+    "status": "active",
+    "baseline_stage": "stage154",
+    "purpose": "Execution Contract",
+    "next_stage": "stage156"
+  },
+  "stage156": {
+    "status": "active",
+    "baseline_stage": "stage155",
+    "purpose": "Local Execution Packet Store",
+    "next_stage": "stage157"
+  },
+  "stage157": {
+    "status": "active",
+    "baseline_stage": "stage156",
+    "purpose": "Deterministic Plan Graph Builder",
+    "next_stage": "stage158"
+  },
+  "stage158": {
+    "status": "active",
+    "baseline_stage": "stage157",
+    "purpose": "Dependency and Conflict Preflight",
+    "next_stage": "stage159"
+  },
+  "stage159": {
+    "status": "active",
+    "baseline_stage": "stage158",
+    "purpose": "Execution Dry-Run Trace",
+    "next_stage": "stage160"
+  },
+  "stage160": {
+    "status": "active",
+    "baseline_stage": "stage159",
+    "purpose": "Page03 Release Seal",
+    "next_stage": "stage161"
+  },
+  "stage161": {
+    "status": "active",
+    "baseline_stage": "stage160",
+    "purpose": "Rendering Contract",
+    "next_stage": "stage162"
+  },
+  "stage162": {
+    "status": "active",
+    "baseline_stage": "stage161",
+    "purpose": "Local Render Packet Store",
+    "next_stage": "stage163"
+  },
+  "stage163": {
+    "status": "active",
+    "baseline_stage": "stage162",
+    "purpose": "Deterministic Render Plan Builder",
+    "next_stage": "stage164"
+  },
+  "stage164": {
+    "status": "active",
+    "baseline_stage": "stage163",
+    "purpose": "Surface Draft Dry-Run Renderer",
+    "next_stage": "stage165"
+  },
+  "stage165": {
+    "status": "active",
+    "baseline_stage": "stage164",
+    "purpose": "Render Quality and Boundary Preflight",
+    "next_stage": "stage166"
+  },
+  "stage166": {
+    "status": "active",
+    "baseline_stage": "stage165",
+    "purpose": "Page04 Release Seal",
+    "next_stage": "stage167"
+  },
+  "stage167": {
+    "status": "active",
+    "baseline_stage": "stage166",
+    "purpose": "Evaluation Contract",
+    "next_stage": "stage168"
   }
 }

@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -496,6 +496,22 @@ STAGE_REQUIRED_GATES = {
         "stage155_release_gate",
         "stage156_local_execution_packet_store",
         "stage156_release_gate",
+    ],
+    "stage167": [
+        "stage161_rendering_contract",
+        "stage161_release_gate",
+        "stage162_local_render_packet_store",
+        "stage162_release_gate",
+        "stage163_deterministic_render_plan_builder",
+        "stage163_release_gate",
+        "stage164_surface_draft_dry_run_renderer",
+        "stage164_release_gate",
+        "stage165_render_quality_boundary_preflight",
+        "stage165_release_gate",
+        "stage166_page04_release_seal",
+        "stage166_release_gate",
+        "stage167_evaluation_contract",
+        "stage167_release_gate",
     ],
 }
 
@@ -1084,6 +1100,28 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage166_page04_release_seal_pack/page04_release_seal.json",
         "release/current/stage166_page04_release_seal_pack/regression_snapshot.json",
     ],
+    "stage167": [
+        "manifests/stage167_manifest.json",
+        "manifests/stage167_evaluation_contract_manifest.json",
+        "manifests/stage167_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage167_overlay.json",
+        "docs/stages/stage167.md",
+        "docs/architecture/stage167_evaluation_contract_blueprint.md",
+        "docs/proposals/stage167_evaluation_contract_proposal.md",
+        "docs/development/stage167_developer_handoff.md",
+        "docs/architecture/page05_evaluation_body_blueprint.md",
+        "docs/proposals/page05_evaluation_body_proposal.md",
+        "docs/development/page05_developer_handoff.md",
+        "release/current/stage167_evaluation_contract_report.json",
+        "release/current/stage167_release_gate_report.json",
+        "release/current/stage167_release_asset_manifest.json",
+        "release/current/stage167_evaluation_contract_pack/page05_readiness_matrix.json",
+        "release/current/stage167_evaluation_contract_pack/evaluation_contract_catalog.json",
+        "release/current/stage167_evaluation_contract_pack/evaluation_rubric_catalog.json",
+        "release/current/stage167_evaluation_contract_pack/evaluation_boundary_policy.json",
+        "release/current/stage167_evaluation_contract_pack/evaluation_authority_policy.json",
+        "release/current/stage167_evaluation_contract_pack/stage168_entry_criteria.json",
+    ],
     "stage164": [
         "manifests/stage164_manifest.json",
         "manifests/stage164_surface_draft_dry_run_renderer_manifest.json",
@@ -1184,6 +1222,9 @@ PREDECESSOR_GATE = {
     "stage162": "stage161_release_gate",
     "stage163": "stage162_release_gate",
     "stage164": "stage163_release_gate",
+    "stage165": "stage164_release_gate",
+    "stage166": "stage165_release_gate",
+    "stage167": "stage166_release_gate",
 }
 
 

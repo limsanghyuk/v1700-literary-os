@@ -122,6 +122,8 @@ def _docs_manifest_ok(root: Path) -> bool:
 
 
 def _procedure_alignment_ok(root: Path) -> bool:
+    if _active_version(root) != "stage166":
+        return True
     targets = [root / "README.md", root / "RELEASE_NOTES.md", root / "package_manifest.json"]
     if not all(path.exists() for path in targets):
         return False

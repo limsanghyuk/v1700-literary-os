@@ -1,0 +1,17 @@
+{
+  "stage": "stage167",
+  "title": "Stage167 Evaluation Authority Policy",
+  "status": "pass",
+  "issues": [],
+  "policy": {
+    "provider_evaluation_enabled": false,
+    "evaluation_write_enabled": false,
+    "memory_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "runtime_training_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "cross_project_write_enabled": false,
+    "node2_surface_only": true,
+    "boundary_criteria_non_overridable": true
+  }
+}

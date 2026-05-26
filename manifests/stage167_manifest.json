@@ -1,0 +1,12 @@
+{
+  "stage": "stage167",
+  "title": "Evaluation Contract",
+  "baseline_stage": "stage166",
+  "page": "Page05 Evaluation Body",
+  "status": "active",
+  "runner": "tools/run_stage167_evaluation_contract.py",
+  "release_gate": "tools/run_stage167_release_gate.py",
+  "evidence": "release/current/stage167_evaluation_contract_report.json",
+  "next_stage": "stage168"
+}
+

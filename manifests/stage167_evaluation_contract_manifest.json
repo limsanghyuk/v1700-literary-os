@@ -1,0 +1,33 @@
+{
+  "stage": "stage167",
+  "title": "Evaluation Contract",
+  "page": "Page05 Evaluation Body",
+  "required_objects": [
+    "EvaluationArtifactEnvelope",
+    "EvaluationSubject",
+    "EvaluationRubric",
+    "EvaluationMetric",
+    "EvaluationThresholdPolicy",
+    "QualityCriterion",
+    "ContinuityCriterion",
+    "RegressionCriterion",
+    "BoundaryCriterion",
+    "EvaluationVerdict",
+    "EvaluationEvidenceRef",
+    "EvaluationAuthorityPolicy"
+  ],
+  "metric_families": [
+    "surface_structure_score",
+    "scene_continuity_score",
+    "character_consistency_score",
+    "world_consistency_score",
+    "reveal_safety_score",
+    "payoff_alignment_score",
+    "render_packet_adherence_score",
+    "node2_surface_safety_score"
+  ],
+  "provider_evaluation_enabled": false,
+  "boundary_criteria_non_overridable": true,
+  "next_stage": "stage168"
+}
+

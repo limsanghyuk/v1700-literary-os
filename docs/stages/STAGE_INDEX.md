@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: stage166 - Page04 Release Seal
+Current active stage: stage167 - Evaluation Contract
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -54,33 +54,21 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage147](stage147.md) - Project Manifest Body
 - [Stage148](stage148.md) - Node Boundary Constitution
 - [Stage149](stage149.md) - Body Constitution Release Gate
-
-- [Stage150 — Memory Contract](stage150.md)
-
-- [Stage151 — Local Read-Only Memory Store](stage151.md)
-
+- [Stage150](stage150.md) - Memory Contract
+- [Stage151](stage151.md) - Local Read-Only Memory Store
 - [Stage152](stage152.md) - Deterministic Local Query / Ranking
-
-- [Stage153 — Memory Health & Leakage Boundary](stage153.md)
-
-- [Stage154 — Page02 Release Seal](stage154.md)
-
-- [Stage155 — Execution Contract](stage155.md)
-
-
-- [Stage156 — Local Execution Packet Store](stage156.md)
-
-
-- [Stage157 — Deterministic Plan Graph Builder](stage157.md)
-
-- [Stage161 — Rendering Contract](stage161.md)
-
-- [Stage162 — Local Render Packet Store](stage162.md)
-
-- [Stage163 — Deterministic Render Plan Builder](stage163.md)
-
-- [Stage164 — Surface Draft Dry-Run Renderer](stage164.md)
-
-- [Stage165 — Render Quality and Boundary Preflight](stage165.md)
-
-- [Stage166 — Page04 Release Seal](stage166.md)
+- [Stage153](stage153.md) - Memory Health & Leakage Boundary
+- [Stage154](stage154.md) - Page02 Release Seal
+- [Stage155](stage155.md) - Execution Contract
+- [Stage156](stage156.md) - Local Execution Packet Store
+- [Stage157](stage157.md) - Deterministic Plan Graph Builder
+- [Stage158](stage158.md) - Dependency and Conflict Preflight
+- [Stage159](stage159.md) - Execution Dry-Run Trace
+- [Stage160](stage160.md) - Page03 Release Seal
+- [Stage161](stage161.md) - Rendering Contract
+- [Stage162](stage162.md) - Local Render Packet Store
+- [Stage163](stage163.md) - Deterministic Render Plan Builder
+- [Stage164](stage164.md) - Surface Draft Dry-Run Renderer
+- [Stage165](stage165.md) - Render Quality and Boundary Preflight
+- [Stage166](stage166.md) - Page04 Release Seal
+- [Stage167](stage167.md) - Evaluation Contract

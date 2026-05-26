@@ -1,0 +1,60 @@
+{
+  "stage": "stage167",
+  "title": "Stage167 Evaluation Boundary Policy",
+  "status": "pass",
+  "issues": [],
+  "quality_criteria": [
+    {
+      "criterion_id": "surface_structure_threshold",
+      "metric_id": "surface_structure_score",
+      "pass_rule": ">= 0.80"
+    },
+    {
+      "criterion_id": "payoff_alignment_threshold",
+      "metric_id": "payoff_alignment_score",
+      "pass_rule": ">= 0.75"
+    }
+  ],
+  "continuity_criteria": [
+    {
+      "criterion_id": "character_continuity_hard_fail",
+      "continuity_axis": "character_consistency",
+      "hard_fail_on_violation": true
+    },
+    {
+      "criterion_id": "world_continuity_hard_fail",
+      "continuity_axis": "world_consistency",
+      "hard_fail_on_violation": true
+    }
+  ],
+  "regression_criteria": [
+    {
+      "criterion_id": "render_packet_drift_guard",
+      "baseline_source": "stage166_artifact_index",
+      "max_allowed_delta": 0.05
+    }
+  ],
+  "boundary_criteria": [
+    {
+      "criterion_id": "raw_reveal_payload_block",
+      "blocked_payload": "raw_reveal_payload",
+      "overridable": false
+    },
+    {
+      "criterion_id": "provider_call_block",
+      "blocked_payload": "provider_call",
+      "overridable": false
+    },
+    {
+      "criterion_id": "mutation_command_block",
+      "blocked_payload": "mutation_command",
+      "overridable": false
+    },
+    {
+      "criterion_id": "hidden_memory_projection_block",
+      "blocked_payload": "hidden_memory_projection",
+      "overridable": false
+    }
+  ],
+  "boundary_criteria_non_overridable": true
+}

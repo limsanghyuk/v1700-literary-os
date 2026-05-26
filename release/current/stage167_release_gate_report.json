@@ -1,0 +1,123 @@
+{
+  "stage": "167",
+  "baseline_stage": "166",
+  "title": "Evaluation Contract",
+  "status": "pass",
+  "issues": [],
+  "checks": {
+    "stage166_baseline_gate_pass": {
+      "status": "pass"
+    },
+    "stage167_report_pass": {
+      "status": "pass"
+    },
+    "evaluation_contract_mode_pass": {
+      "status": "pass"
+    },
+    "page05_readiness_pass": {
+      "status": "pass"
+    },
+    "evaluation_contract_catalog_pass": {
+      "status": "pass"
+    },
+    "evaluation_rubric_catalog_pass": {
+      "status": "pass"
+    },
+    "thresholds_explicit_pass": {
+      "status": "pass"
+    },
+    "evaluation_boundary_policy_pass": {
+      "status": "pass"
+    },
+    "evaluation_authority_policy_pass": {
+      "status": "pass"
+    },
+    "stage168_entry_criteria_pass": {
+      "status": "pass"
+    },
+    "provider_evaluation_disabled": {
+      "status": "pass"
+    },
+    "runtime_execution_disabled": {
+      "status": "pass"
+    },
+    "write_operations_blocked": {
+      "status": "pass"
+    },
+    "memory_write_blocked": {
+      "status": "pass"
+    },
+    "canon_mutation_blocked": {
+      "status": "pass"
+    },
+    "runtime_training_blocked": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "raw_manuscript_leakage_zero": {
+      "status": "pass"
+    },
+    "credential_leakage_zero_pass": {
+      "status": "pass"
+    },
+    "branchpoint_survival_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    }
+  },
+  "stage167": {
+    "status": "pass",
+    "stage": "167",
+    "baseline_stage": "166",
+    "title": "Evaluation Contract",
+    "issues": [],
+    "mode": "EVALUATION_CONTRACT_LOCAL_ONLY",
+    "evaluation_contract_only": true,
+    "stage166_page04_seal_inherited": true,
+    "stage168_packet_store_ready": true,
+    "contract_count": 12,
+    "subject_count": 1,
+    "rubric_count": 1,
+    "metric_count": 8,
+    "rubric_weight_total": 1.0,
+    "rubric_weights_valid": true,
+    "thresholds_explicit": true,
+    "boundary_override_defined": true,
+    "authority_policy_locked": true,
+    "provider_evaluation_enabled": false,
+    "evaluation_write_enabled": false,
+    "memory_write_enabled": false,
+    "cross_project_write_enabled": false,
+    "canon_mutation_enabled": false,
+    "runtime_training_enabled": false,
+    "auto_repair_apply_enabled": false,
+    "provider_default_calls": 0,
+    "node2_raw_reveal_access": 0,
+    "boundary_violation_count": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "provider_default_calls": 0,
+  "live_provider_call_count_in_release_gate": 0,
+  "runtime_execution_count": 0,
+  "provider_generation_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "runtime_training_enabled": false,
+  "branchpoint_lineage_preserved": true
+}

@@ -1,0 +1,101 @@
+{
+  "stage": "stage167",
+  "title": "Stage167 Evaluation Rubric Catalog",
+  "status": "pass",
+  "issues": [],
+  "rubric_count": 1,
+  "metric_count": 8,
+  "weight_sum": 1.0,
+  "weight_sum_valid": true,
+  "thresholds_explicit": true,
+  "boundary_override_defined": true,
+  "rubrics": [
+    {
+      "rubric_id": "page05_default_surface_rubric",
+      "rubric_version": "1.0",
+      "metrics": [
+        {
+          "metric_id": "surface_structure_score",
+          "metric_group": "quality",
+          "weight": 0.15,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": false
+        },
+        {
+          "metric_id": "scene_continuity_score",
+          "metric_group": "continuity",
+          "weight": 0.15,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": true
+        },
+        {
+          "metric_id": "character_consistency_score",
+          "metric_group": "continuity",
+          "weight": 0.14,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": true
+        },
+        {
+          "metric_id": "world_consistency_score",
+          "metric_group": "continuity",
+          "weight": 0.12,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": true
+        },
+        {
+          "metric_id": "reveal_safety_score",
+          "metric_group": "boundary",
+          "weight": 0.12,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": true
+        },
+        {
+          "metric_id": "payoff_alignment_score",
+          "metric_group": "quality",
+          "weight": 0.12,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": false
+        },
+        {
+          "metric_id": "render_packet_adherence_score",
+          "metric_group": "regression",
+          "weight": 0.1,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": false
+        },
+        {
+          "metric_id": "node2_surface_safety_score",
+          "metric_group": "boundary",
+          "weight": 0.1,
+          "range_min": 0.0,
+          "range_max": 1.0,
+          "deterministic": true,
+          "boundary_sensitive": true
+        }
+      ],
+      "threshold_policy": {
+        "quality_threshold": 0.8,
+        "regression_delta_threshold": 0.05,
+        "continuity_hard_fail_allowed": 0,
+        "boundary_violation_allowed": 0,
+        "determinism_required": true,
+        "boundary_override": "BLOCK_ALWAYS"
+      },
+      "provider_evaluation_enabled": false
+    }
+  ]
+}
