@@ -1,0 +1,12 @@
+{
+  "stage": "stage168",
+  "title": "Local Evaluation Packet Store",
+  "baseline_stage": "stage167",
+  "page": "Page05 Evaluation Body",
+  "status": "active",
+  "runner": "tools/run_stage168_local_evaluation_packet_store.py",
+  "release_gate": "tools/run_stage168_release_gate.py",
+  "evidence": "release/current/stage168_local_evaluation_packet_store_report.json",
+  "next_stage": "stage169"
+}
+

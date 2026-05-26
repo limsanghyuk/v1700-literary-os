@@ -1,0 +1,23 @@
+{
+  "stage": "stage168",
+  "title": "Stage168 Evaluation Packet Store Catalog",
+  "status": "pass",
+  "issues": [],
+  "store_path": "samples/stage168_evaluation_packet_store/evaluation_packets.jsonl",
+  "store_exists": true,
+  "evaluation_packet_count": 6,
+  "evaluation_packet_ids": [
+    "eval_packet_001",
+    "eval_packet_002",
+    "eval_packet_003",
+    "eval_packet_004",
+    "eval_packet_005",
+    "eval_packet_006"
+  ],
+  "subject_ids": [
+    "page05_surface_subject"
+  ],
+  "rubric_ids": [
+    "page05_default_surface_rubric"
+  ]
+}

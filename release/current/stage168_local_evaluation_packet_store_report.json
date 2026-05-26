@@ -1,0 +1,447 @@
+{
+  "stage": "168",
+  "baseline_stage": "167",
+  "title": "Local Evaluation Packet Store",
+  "status": "pass",
+  "issues": [],
+  "mode": "LOCAL_EVALUATION_PACKET_STORE_READ_ONLY",
+  "page": "Page05 Evaluation Body",
+  "store_path": "samples/stage168_evaluation_packet_store/evaluation_packets.jsonl",
+  "evaluation_packet_count": 6,
+  "checksum_count": 6,
+  "packet_store_read_only": true,
+  "evaluation_packet_store_enabled": true,
+  "stage167_contract_inherited": true,
+  "stage166_refs_resolvable": true,
+  "load_order_deterministic": true,
+  "stage169_evaluator_ready": true,
+  "provider_evaluation_enabled": false,
+  "evaluation_write_enabled": false,
+  "memory_write_enabled": false,
+  "cross_project_write_enabled": false,
+  "canon_mutation_enabled": false,
+  "runtime_training_enabled": false,
+  "auto_repair_apply_enabled": false,
+  "provider_generation_enabled": false,
+  "generation_runtime_enabled": false,
+  "runtime_execution_enabled": false,
+  "provider_default_calls": 0,
+  "provider_generation_count": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "node2_raw_reveal_access": 0,
+  "boundary_violation_count": 0,
+  "raw_manuscript_provider_leakage": 0,
+  "raw_manuscript_cross_project_leakage": 0,
+  "credential_leakage": 0,
+  "branchpoint_lineage_preserved": true,
+  "parts": {
+    "stage167_release_gate": {
+      "status": "pass",
+      "stage": "167",
+      "baseline_stage": "166",
+      "title": "Evaluation Contract",
+      "issues": [],
+      "provider_default_calls": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "raw_manuscript_provider_leakage": 0,
+      "raw_manuscript_cross_project_leakage": 0,
+      "credential_leakage": 0,
+      "branchpoint_lineage_preserved": true
+    },
+    "evaluation_packet_store_catalog": {
+      "stage": "stage168",
+      "title": "Stage168 Evaluation Packet Store Catalog",
+      "status": "pass",
+      "issues": [],
+      "store_path": "samples/stage168_evaluation_packet_store/evaluation_packets.jsonl",
+      "store_exists": true,
+      "evaluation_packet_count": 6,
+      "evaluation_packet_ids": [
+        "eval_packet_001",
+        "eval_packet_002",
+        "eval_packet_003",
+        "eval_packet_004",
+        "eval_packet_005",
+        "eval_packet_006"
+      ],
+      "subject_ids": [
+        "page05_surface_subject"
+      ],
+      "rubric_ids": [
+        "page05_default_surface_rubric"
+      ]
+    },
+    "evaluation_packet_schema_validation": {
+      "stage": "stage168",
+      "title": "Stage168 Evaluation Packet Schema Validation",
+      "status": "pass",
+      "issues": [],
+      "validated_evaluation_packet_count": 6
+    },
+    "evaluation_packet_checksum_index": {
+      "stage": "stage168",
+      "title": "Stage168 Evaluation Packet Checksum Index",
+      "status": "pass",
+      "issues": [],
+      "checksum_count": 6,
+      "checksums": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "checksum": "639d44d5cafa765c42efefc5461981dc4bffba6fb3302b896d36024b3e7bdb72",
+          "expected_checksum": "639d44d5cafa765c42efefc5461981dc4bffba6fb3302b896d36024b3e7bdb72"
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "checksum": "9c0855f1dfbc02ab13a3d97d4707221e53e982fe9037d7c2da38af700077ac30",
+          "expected_checksum": "9c0855f1dfbc02ab13a3d97d4707221e53e982fe9037d7c2da38af700077ac30"
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "checksum": "275e17d929e6b3990401ba0a63d4cce5abb1e1495a76d21b28698f99e6a46adf",
+          "expected_checksum": "275e17d929e6b3990401ba0a63d4cce5abb1e1495a76d21b28698f99e6a46adf"
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "checksum": "80606184da02473be384078bdf02b922d9eb5ff150361e18b926a406c094ca3c",
+          "expected_checksum": "80606184da02473be384078bdf02b922d9eb5ff150361e18b926a406c094ca3c"
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "checksum": "5c8965b8f9fc26df2d1de6dc7ed515091bff16375ce95242268fc9ee87b28bbd",
+          "expected_checksum": "5c8965b8f9fc26df2d1de6dc7ed515091bff16375ce95242268fc9ee87b28bbd"
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "checksum": "12d6fb7e46c22234763ceec5d6473ed037971a665ce76924291844669993a1b3",
+          "expected_checksum": "12d6fb7e46c22234763ceec5d6473ed037971a665ce76924291844669993a1b3"
+        }
+      ]
+    },
+    "evaluation_packet_duplicate_detector": {
+      "stage": "stage168",
+      "title": "Stage168 Evaluation Packet Duplicate Detector",
+      "status": "pass",
+      "issues": [],
+      "duplicate_count": 0
+    },
+    "read_only_evaluation_access_policy": {
+      "stage": "stage168",
+      "title": "Stage168 Read-Only Evaluation Access Policy",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 5,
+      "rules": [
+        {
+          "name": "jsonl_evaluation_store_read_only",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "cross_project_write_allowed": false,
+          "provider_evaluation_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "runtime_evaluation_append_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "cross_project_write_allowed": false,
+          "provider_evaluation_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "evaluation_writeback_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "cross_project_write_allowed": false,
+          "provider_evaluation_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "provider_evaluation_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "cross_project_write_allowed": false,
+          "provider_evaluation_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "mutation_disabled",
+          "read_only": true,
+          "runtime_write_allowed": false,
+          "cross_project_write_allowed": false,
+          "provider_evaluation_allowed": false,
+          "mutation_allowed": false,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        }
+      ]
+    },
+    "evaluation_subject_resolver": {
+      "stage": "stage168",
+      "title": "Stage168 Evaluation Subject Resolver",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 6,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "subject_id": "page05_surface_subject",
+          "rubric_id": "page05_default_surface_rubric",
+          "resolved": true
+        }
+      ]
+    },
+    "stage166_evidence_resolver": {
+      "stage": "stage168",
+      "title": "Stage168 Stage166 Evidence Resolver",
+      "status": "pass",
+      "issues": [],
+      "entry_count": 6,
+      "entries": [
+        {
+          "evaluation_packet_id": "eval_packet_001",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage166_page04_release_seal_report.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage166_page04_release_seal_pack/page04_artifact_index.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage166_page04_release_seal_pack/regression_snapshot.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_002",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage165_render_quality_boundary_preflight_report.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage165_render_quality_boundary_preflight_pack/render_quality_scorecard.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_003",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage163_deterministic_render_plan_builder_report.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage163_deterministic_render_plan_builder_pack/render_plan_integrity.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_004",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage162_local_render_packet_store_report.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage162_local_render_packet_store_pack/render_packet_lineage_matrix.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_005",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage166_page04_release_seal_pack/page04_transition_criteria.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage165_render_quality_boundary_preflight_pack/boundary_preflight_matrix.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        },
+        {
+          "evaluation_packet_id": "eval_packet_006",
+          "source_artifact_ref": "release/current/stage166_page04_release_seal_report.json",
+          "source_artifact_exists": true,
+          "required_stage_refs": [
+            {
+              "path": "release/current/stage161_rendering_contract_report.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage161_rendering_contract_pack/rendering_contracts.json",
+              "exists": true
+            },
+            {
+              "path": "release/current/stage167_evaluation_contract_report.json",
+              "exists": true
+            }
+          ]
+        }
+      ]
+    },
+    "node2_evaluation_packet_projection_matrix": {
+      "stage": "stage168",
+      "title": "Stage168 Node2 Evaluation Packet Projection Matrix",
+      "status": "pass",
+      "issues": [],
+      "rule_count": 6,
+      "rules": [
+        {
+          "name": "node2_evaluation_projection_eval_packet_001",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "node2_evaluation_projection_eval_packet_002",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "node2_evaluation_projection_eval_packet_003",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "node2_evaluation_projection_eval_packet_004",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "node2_evaluation_projection_eval_packet_005",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        },
+        {
+          "name": "node2_evaluation_projection_eval_packet_006",
+          "subject_id": "page05_surface_subject",
+          "node2_surface_allowed": true,
+          "hidden_reveal_blocked": true,
+          "provider_handle_blocked": true,
+          "mutation_handle_blocked": true,
+          "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+        }
+      ]
+    },
+    "deterministic_load_order": {
+      "stage": "stage168",
+      "title": "Stage168 Deterministic Load Order",
+      "status": "pass",
+      "issues": [],
+      "load_order": [
+        "eval_packet_001",
+        "eval_packet_002",
+        "eval_packet_003",
+        "eval_packet_004",
+        "eval_packet_005",
+        "eval_packet_006"
+      ],
+      "deterministic": true
+    },
+    "regression_snapshot": {
+      "stage": "stage168",
+      "title": "Stage168 Regression Snapshot",
+      "status": "pass",
+      "issues": [],
+      "provider_default_calls": 0,
+      "live_provider_call_count_in_release_gate": 0,
+      "node2_raw_reveal_access": 0,
+      "boundary_violation_count": 0,
+      "evaluation_write_enabled": false,
+      "memory_write_enabled": false,
+      "runtime_training_enabled": false
+    }
+  }
+}

@@ -607,7 +607,7 @@
       "surviving_runtime_value": "Seals Narrative Memory Body without adding provider, write, vector, training, or mutation runtime privileges."
     }
   ],
-  "active_version": "stage167",
+  "active_version": "stage168",
   "stage124": {
     "status": "active",
     "baseline_stage": "stage123",
@@ -814,5 +814,11 @@
     "baseline_stage": "stage166",
     "purpose": "Evaluation Contract",
     "next_stage": "stage168"
+  },
+  "stage168": {
+    "status": "active",
+    "baseline_stage": "stage167",
+    "purpose": "Local Evaluation Packet Store",
+    "next_stage": "stage169"
   }
 }

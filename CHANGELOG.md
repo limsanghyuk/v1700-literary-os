@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.68.0-stage168
+
+- Added Stage168 Local Evaluation Packet Store as the second Page05 Evaluation Body stage.
+- Added deterministic JSONL evaluation packet fixture, checksum validation, duplicate detection, subject resolution, and Stage166 evidence resolution.
+- Added read-only evaluation access policy, Node2-safe packet projection, and deterministic load order evidence.
+- Kept provider evaluation, write paths, canon mutation, runtime training, and Node2 raw reveal access disabled.
+
 ## v1.67.0-stage167
 
 - Added Stage167 Evaluation Contract as the Page05 Evaluation Body entry stage.

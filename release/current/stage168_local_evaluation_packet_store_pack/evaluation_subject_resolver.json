@@ -1,0 +1,45 @@
+{
+  "stage": "stage168",
+  "title": "Stage168 Evaluation Subject Resolver",
+  "status": "pass",
+  "issues": [],
+  "entry_count": 6,
+  "entries": [
+    {
+      "evaluation_packet_id": "eval_packet_001",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_002",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_003",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_004",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_005",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    },
+    {
+      "evaluation_packet_id": "eval_packet_006",
+      "subject_id": "page05_surface_subject",
+      "rubric_id": "page05_default_surface_rubric",
+      "resolved": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "stage168",
+  "title": "Stage168 Deterministic Load Order",
+  "status": "pass",
+  "issues": [],
+  "load_order": [
+    "eval_packet_001",
+    "eval_packet_002",
+    "eval_packet_003",
+    "eval_packet_004",
+    "eval_packet_005",
+    "eval_packet_006"
+  ],
+  "deterministic": true
+}

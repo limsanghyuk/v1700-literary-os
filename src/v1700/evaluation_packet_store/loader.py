@@ -1,0 +1,136 @@
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+from typing import Any
+
+REQUIRED_FIELDS = (
+    "evaluation_packet_id",
+    "project_id",
+    "subject_id",
+    "rubric_id",
+    "source_stage",
+    "source_artifact_ref",
+    "required_stage_refs",
+    "source_trace_refs",
+    "evaluation_mode",
+    "visibility",
+    "packet_summary",
+    "node2_projection_summary",
+    "checksum",
+    "write_policy",
+)
+
+FORBIDDEN_NODE2_TOKENS = (
+    "raw_reveal_payload",
+    "hidden_memory_projection",
+    "private_note",
+    "provider handle",
+    "provider_handle",
+    "mutation_command",
+    "canon_mutation",
+    "learning_payload",
+    "raw_manuscript",
+    "credential",
+)
+
+
+def canonical_evaluation_packet_payload(packet: dict[str, Any]) -> dict[str, Any]:
+    payload = dict(packet)
+    payload.pop("checksum", None)
+    return payload
+
+
+def compute_evaluation_packet_checksum(packet: dict[str, Any]) -> str:
+    body = json.dumps(canonical_evaluation_packet_payload(packet), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+
+def load_evaluation_packets(path: Path) -> list[dict[str, Any]]:
+    packets: list[dict[str, Any]] = []
+    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        if not line.strip():
+            continue
+        try:
+            packet = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"invalid_jsonl_line:{line_no}:{exc.msg}") from exc
+        if not isinstance(packet, dict):
+            raise ValueError(f"invalid_evaluation_packet_shape:{line_no}")
+        packets.append(packet)
+    return packets
+
+
+def validate_evaluation_packet_store(path: Path, root: Path) -> dict[str, Any]:
+    issues: list[str] = []
+    if not path.exists():
+        return {
+            "status": "blocked",
+            "issues": [f"missing_store:{path.as_posix()}"],
+            "packet_count": 0,
+            "packets": [],
+            "checksum_index": [],
+            "evidence_resolution": [],
+        }
+
+    packets = load_evaluation_packets(path)
+    seen: set[str] = set()
+    checksum_index: list[dict[str, str]] = []
+    evidence_resolution: list[dict[str, Any]] = []
+
+    for index, packet in enumerate(packets, start=1):
+        missing = [field for field in REQUIRED_FIELDS if field not in packet]
+        if missing:
+            issues.append(f"evaluation_packet_{index}_missing:{','.join(missing)}")
+            continue
+        packet_id = str(packet["evaluation_packet_id"])
+        if packet_id in seen:
+            issues.append(f"duplicate_evaluation_packet_id:{packet_id}")
+        seen.add(packet_id)
+        expected = compute_evaluation_packet_checksum(packet)
+        if packet.get("checksum") != expected:
+            issues.append(f"checksum_mismatch:{packet_id}")
+        if packet.get("write_policy") != "READ_ONLY_DISABLED_WRITE":
+            issues.append(f"write_policy_not_disabled:{packet_id}")
+        if packet.get("evaluation_mode") != "LOCAL_EVALUATION_ONLY":
+            issues.append(f"evaluation_mode_not_local_only:{packet_id}")
+        for field_name in ("node2_projection_summary", "packet_summary"):
+            surface = json.dumps(packet.get(field_name, ""), ensure_ascii=False).lower()
+            for token in FORBIDDEN_NODE2_TOKENS:
+                if token in surface:
+                    issues.append(f"forbidden_token:{packet_id}:{field_name}:{token}")
+        required_refs = [str(ref) for ref in packet.get("required_stage_refs", [])]
+        resolved = []
+        for ref in required_refs:
+            exists = (root / ref).exists()
+            if not exists:
+                issues.append(f"missing_stage_ref:{packet_id}:{ref}")
+            resolved.append({"path": ref, "exists": exists})
+        evidence_resolution.append(
+            {
+                "evaluation_packet_id": packet_id,
+                "source_artifact_ref": str(packet.get("source_artifact_ref", "")),
+                "source_artifact_exists": (root / str(packet.get("source_artifact_ref", ""))).exists(),
+                "required_stage_refs": resolved,
+            }
+        )
+        if not (root / str(packet.get("source_artifact_ref", ""))).exists():
+            issues.append(f"missing_source_artifact_ref:{packet_id}")
+        checksum_index.append(
+            {
+                "evaluation_packet_id": packet_id,
+                "checksum": str(packet.get("checksum", "")),
+                "expected_checksum": expected,
+            }
+        )
+
+    return {
+        "status": "pass" if not issues else "blocked",
+        "issues": issues,
+        "packet_count": len(packets),
+        "packets": packets,
+        "checksum_index": checksum_index,
+        "evidence_resolution": evidence_resolution,
+    }
+

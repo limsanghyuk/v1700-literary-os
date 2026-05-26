@@ -1,0 +1,54 @@
+{
+  "stage": "stage168",
+  "title": "Stage168 Read-Only Evaluation Access Policy",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 5,
+  "rules": [
+    {
+      "name": "jsonl_evaluation_store_read_only",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "cross_project_write_allowed": false,
+      "provider_evaluation_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "runtime_evaluation_append_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "cross_project_write_allowed": false,
+      "provider_evaluation_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "evaluation_writeback_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "cross_project_write_allowed": false,
+      "provider_evaluation_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "provider_evaluation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "cross_project_write_allowed": false,
+      "provider_evaluation_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "mutation_disabled",
+      "read_only": true,
+      "runtime_write_allowed": false,
+      "cross_project_write_allowed": false,
+      "provider_evaluation_allowed": false,
+      "mutation_allowed": false,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    }
+  ]
+}

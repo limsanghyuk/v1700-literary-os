@@ -1,0 +1,19 @@
+{
+  "stage": "stage168",
+  "title": "Local Evaluation Packet Store",
+  "page": "Page05 Evaluation Body",
+  "required_components": [
+    "JsonEvaluationPacketStore",
+    "EvaluationPacketIndex",
+    "EvaluationPacketLoadResult",
+    "EvaluationPacketDuplicateDetector",
+    "EvaluationPacketReadOnlyGuard",
+    "EvaluationSubjectResolver",
+    "Stage166EvidenceResolver"
+  ],
+  "packet_store_read_only": true,
+  "stage166_refs_resolvable": true,
+  "load_order_deterministic": true,
+  "next_stage": "stage169"
+}
+

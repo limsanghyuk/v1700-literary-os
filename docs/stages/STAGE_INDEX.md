@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: stage167 - Evaluation Contract
+Current active stage: stage168 - Local Evaluation Packet Store
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -72,3 +72,4 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage165](stage165.md) - Render Quality and Boundary Preflight
 - [Stage166](stage166.md) - Page04 Release Seal
 - [Stage167](stage167.md) - Evaluation Contract
+- [Stage168](stage168.md) - Local Evaluation Packet Store
