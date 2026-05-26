@@ -1,0 +1,12 @@
+{
+  "active_version": "stage168",
+  "active_gates": [
+    "stage168_local_evaluation_packet_store",
+    "stage168_release_gate"
+  ],
+  "provider_default_calls": 0,
+  "runtime_execution_count": 0,
+  "write_operation_count": 0,
+  "branchpoint_lineage_preserved": true
+}
+

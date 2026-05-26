@@ -1,5 +1,5 @@
 {
-  "active_version": "stage167",
+  "active_version": "stage168",
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
   "provider_default_calls": 0,
@@ -74,10 +74,12 @@
     "stage166_page04_release_seal",
     "stage166_release_gate",
     "stage167_evaluation_contract",
-    "stage167_release_gate"
+    "stage167_release_gate",
+    "stage168_local_evaluation_packet_store",
+    "stage168_release_gate"
   ],
-  "canonical_package": "V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage167_evaluation_contract_release_integrated_repository_with_artifacts.zip.sha256",
+  "canonical_package": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage168_local_evaluation_packet_store_release_integrated_repository_with_artifacts.zip.sha256",
   "stage134": {
     "status": "active",
     "title": "MetaLearner Audit Mode"
@@ -326,5 +328,13 @@
     "release_gate": "release/current/stage167_release_gate_report.json",
     "evidence": "release/current/stage167_evaluation_contract_report.json",
     "next_stage": "stage168"
+  },
+  "stage168": {
+    "status": "active",
+    "title": "Local Evaluation Packet Store",
+    "baseline_stage": "stage167",
+    "release_gate": "release/current/stage168_release_gate_report.json",
+    "evidence": "release/current/stage168_local_evaluation_packet_store_report.json",
+    "next_stage": "stage169"
   }
 }

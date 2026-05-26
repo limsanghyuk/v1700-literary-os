@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "v1700-literary-os"
-version = "1.67.0"
-description = "Stage167 - Evaluation Contract"
+version = "1.68.0"
+description = "Stage168 - Local Evaluation Packet Store"
 requires-python = ">=3.10"
 authors = [{name = "V1700 Project"}]
 

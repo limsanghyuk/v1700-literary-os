@@ -1,0 +1,63 @@
+{
+  "stage": "stage168",
+  "title": "Stage168 Node2 Evaluation Packet Projection Matrix",
+  "status": "pass",
+  "issues": [],
+  "rule_count": 6,
+  "rules": [
+    {
+      "name": "node2_evaluation_projection_eval_packet_001",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "node2_evaluation_projection_eval_packet_002",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "node2_evaluation_projection_eval_packet_003",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "node2_evaluation_projection_eval_packet_004",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "node2_evaluation_projection_eval_packet_005",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    },
+    {
+      "name": "node2_evaluation_projection_eval_packet_006",
+      "subject_id": "page05_surface_subject",
+      "node2_surface_allowed": true,
+      "hidden_reveal_blocked": true,
+      "provider_handle_blocked": true,
+      "mutation_handle_blocked": true,
+      "evidence": "release/current/stage168_local_evaluation_packet_store_report.json"
+    }
+  ]
+}
