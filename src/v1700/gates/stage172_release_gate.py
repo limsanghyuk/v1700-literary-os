@@ -28,6 +28,8 @@ def run_stage172_release_gate(root: Path | None = None) -> dict[str, Any]:
         "training_mutation_disabled_pass": _check(stage.get("runtime_training_enabled") is False and stage.get("canon_mutation_enabled") is False and stage.get("auto_repair_apply_enabled") is False),
         "branchpoint_survival_pass": _check(stage.get("branchpoint_lineage_preserved") is True),
         "docs_manifest_pass": _check(_docs_manifest_ok(root)),
+        "preflight_execution_report_pass": _check(_preflight_execution_report_ok(root)),
+        "package_comparison_report_pass": _check(_package_comparison_report_ok(root)),
         "procedure_alignment_pass": _check(_procedure_alignment_ok(root)),
     }
     issues = [name for name, value in checks.items() if value["status"] != "pass"]
@@ -124,6 +126,8 @@ def _docs_manifest_ok(root: Path) -> bool:
         "release/current/stage172_release_asset_manifest.json",
         "release/current/stage172_page05_release_seal_report.json",
         "release/current/stage172_release_gate_report.json",
+        "release/current/stage172_preflight_execution_report.json",
+        "release/current/stage172_package_comparison_report.json",
         "release/current/stage172_page05_release_seal_pack/page05_stage_chain.json",
         "release/current/stage172_page05_release_seal_pack/page05_release_seal_matrix.json",
         "release/current/stage172_page05_release_seal_pack/page05_artifact_index.json",
@@ -134,6 +138,50 @@ def _docs_manifest_ok(root: Path) -> bool:
         "release/current/stage172_page05_release_seal_pack/regression_snapshot.json",
     ]
     return all((root / rel).exists() or rel in generated for rel in required)
+
+
+def _preflight_execution_report_ok(root: Path) -> bool:
+    report = _load_report(root, "stage172_preflight_execution_report.json")
+    if not isinstance(report, dict):
+        return False
+    required = {
+        "stage": "stage172",
+        "status": "pass",
+        "preflight_guide_read": True,
+        "mandatory_predevelopment_check_result": "pass",
+        "expected_next_stage": "stage173",
+    }
+    if any(report.get(key) != value for key, value in required.items()):
+        return False
+    if not report.get("baseline_package") or not report.get("baseline_package_sha256"):
+        return False
+    gitnexus = report.get("gitnexus")
+    return isinstance(gitnexus, dict) and bool(gitnexus.get("status"))
+
+
+def _package_comparison_report_ok(root: Path) -> bool:
+    report = _load_report(root, "stage172_package_comparison_report.json")
+    if not isinstance(report, dict):
+        return False
+    required = {
+        "stage": "stage172",
+        "status": "pass",
+        "raw_sha256sums_check": "pass",
+        "zip_reextract_check": "pass",
+        "forbidden_cache_entries": 0,
+    }
+    if any(report.get(key) != value for key, value in required.items()):
+        return False
+    for key in ("previous_package_name", "previous_package_sha256", "new_package_name", "new_package_sha256_sidecar"):
+        if not report.get(key):
+            return False
+    if report.get("new_package_sha256") in (None, "SEE_RELEASE_SIDECAR"):
+        return False
+    if report.get("new_package_sha256") != "external_sidecar_authoritative":
+        # The final ZIP digest is self-referential if embedded before packaging;
+        # the sidecar is the authoritative final digest.
+        return False
+    return True
 
 
 def _procedure_alignment_ok(root: Path) -> bool:

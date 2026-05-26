@@ -28,6 +28,8 @@ CURRENT_STAGE_GENERATED_ASSETS = {
     TARGET_REPORT,
     "release/current/stage172_release_gate_report.json",
     "release/current/stage172_summary.json",
+    "release/current/stage172_preflight_execution_report.json",
+    "release/current/stage172_package_comparison_report.json",
     f"{PACK_DIR}/page05_stage_chain.json",
     f"{PACK_DIR}/page05_release_seal_matrix.json",
     f"{PACK_DIR}/page05_artifact_index.json",
@@ -373,6 +375,8 @@ def _expected_artifacts() -> set[str]:
         "release/current/stage172_page05_release_seal_report.json",
         "release/current/stage172_release_gate_report.json",
         "release/current/stage172_summary.json",
+    "release/current/stage172_preflight_execution_report.json",
+    "release/current/stage172_package_comparison_report.json",
     }
     pack = {f"{PACK_DIR}/{name}.json" for name in ("page05_stage_chain", "page05_release_seal_matrix", "page05_artifact_index", "page05_invariant_freeze", "page05_evaluation_evidence_matrix", "page05_transition_criteria", "page05_release_seal", "regression_snapshot")}
     return docs | manifests | release | pack

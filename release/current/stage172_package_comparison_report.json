@@ -1,27 +1,25 @@
 {
-  "file_count_delta": 1,
+  "file_count_delta": 2,
   "forbidden_cache_entries": 0,
-  "logic_hardening": [
-    "active_version_mismatch_blocks_even_with_existing_stage172_report",
-    "quality_channel_requires_explicit_true_not_status_pass_fallback",
-    "continuity_channel_requires_explicit_true_not_status_pass_fallback",
-    "determinism_requires_stage169_and_stage170_explicit_true"
-  ],
-  "manifest_delta": 0,
-  "new_package_name": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
-  "new_package_sha256": "SEE_RELEASE_SIDECAR",
+  "manifest_delta": "package/live/asset manifests updated to Stage172.3 authority",
+  "new_package_name": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
+  "new_package_sha256": "external_sidecar_authoritative",
+  "new_package_sha256_note": "The final ZIP digest is recorded in the external sidecar because embedding the final archive hash inside the archive is self-referential.",
+  "new_package_sha256_sidecar": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip.sha256",
   "new_stage_files_added": [
-    "release/current/stage172_preflight_execution_report.json"
+    "STAGE172_3_FINAL_AUDIT_REPORT.md",
+    "STAGE172_3_VALIDATION_SUMMARY.txt"
   ],
-  "previous_package_name": "V1700_stage172_1_page05_release_seal_integrity_hotfix_repository_with_artifacts.zip",
-  "previous_package_sha256": "c8665e1263b99251a4b4f56c86b65306669f6f50cb12d92b73e9cfd3102beb8a",
+  "previous_package_name": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+  "previous_package_sha256": "9e13d46c5050908cef0c793e96a2825044904e7a9430158631588f221ea5fa53",
+  "procedure_evidence_enforced": true,
   "python_file_count_delta": 0,
   "raw_sha256sums_check": "pass",
-  "release_current_delta": 1,
+  "release_current_delta": 0,
   "stage": "stage172",
   "status": "pass",
   "test_file_count_delta": 0,
-  "title": "Stage172.2 Package Comparison Report",
+  "title": "Stage172.3 Package Comparison Report",
   "unexpected_files_added": [],
   "unexpected_files_removed": [],
   "zip_reextract_check": "pass"

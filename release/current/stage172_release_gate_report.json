@@ -27,10 +27,16 @@
     "node2_boundary_pass": {
       "status": "pass"
     },
+    "package_comparison_report_pass": {
+      "status": "pass"
+    },
     "page05_release_seal_pass": {
       "status": "pass"
     },
     "page05_stage_count_pass": {
+      "status": "pass"
+    },
+    "preflight_execution_report_pass": {
       "status": "pass"
     },
     "procedure_alignment_pass": {
@@ -95,7 +101,7 @@
     "memory_write_enabled": false,
     "mode": "PAGE05_RELEASE_SEAL_LOCAL",
     "node2_raw_reveal_access": 0,
-    "page05_release_checksum": "cb177ebd124a5130f7ca49ea9845acc73f3ca7bad7affd98306157ed06da4c70",
+    "page05_release_checksum": "bee9f7fe4829a01623c8e05c1cf82e9226496f76deba0f807451cd54358d96ab",
     "page05_sealed": true,
     "page05_total_stage_count": 6,
     "provider_default_calls": 0,

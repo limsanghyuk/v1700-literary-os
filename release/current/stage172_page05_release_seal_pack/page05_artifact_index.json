@@ -1,5 +1,5 @@
 {
-  "artifact_count": 23,
+  "artifact_count": 25,
   "entries": [
     {
       "exists": true,
@@ -58,8 +58,13 @@
     },
     {
       "exists": true,
+      "path": "release/current/stage172_package_comparison_report.json",
+      "sha256": "ac5be365d06dbe225712eb4b7ac3b0f60b28d9996ee8e9de8c917cb9308a880c"
+    },
+    {
+      "exists": true,
       "path": "release/current/stage172_page05_release_seal_pack/page05_artifact_index.json",
-      "sha256": "5623bbf173d971a805163e43052b685275f1716aa749ce9f033049bae6f07e45"
+      "sha256": "59531ce4cba4c976dc2e1573c0a443ed716cd3f81b7f06ddd03cdd5cb1691062"
     },
     {
       "exists": true,
@@ -74,7 +79,7 @@
     {
       "exists": true,
       "path": "release/current/stage172_page05_release_seal_pack/page05_release_seal.json",
-      "sha256": "2858cd1323b14a9f0e5a54b1a7bd37b94da45a75fe18a6efaa31b99a7c8fbedd"
+      "sha256": "e72c234ae73b3c4e546532f79f4d72fe930bf66777f61b56ab5cc8a80bdbc338"
     },
     {
       "exists": true,
@@ -94,30 +99,35 @@
     {
       "exists": true,
       "path": "release/current/stage172_page05_release_seal_pack/regression_snapshot.json",
-      "sha256": "ea5be377561a6ccc1805f120c7ba76b85db26360f529786515dee5edbb275ccb"
+      "sha256": "b746189901062cb65f78c0f0acc235c83f70ede7d897a083cc6522cf29fec174"
     },
     {
       "exists": true,
       "path": "release/current/stage172_page05_release_seal_report.json",
-      "sha256": "f22504548cf6d33b2bd209e84ad895c424cb2ef0d1cc4bb73ae20d281d77505e"
+      "sha256": "1cb94c1dfeb9424cfa117db41ba5a0154b0487423b471c95a037a1b950785db3"
+    },
+    {
+      "exists": true,
+      "path": "release/current/stage172_preflight_execution_report.json",
+      "sha256": "90ef7f1ac394055f1a6d959657743c8a4383e53e295161e6f47f55dda0598895"
     },
     {
       "exists": true,
       "path": "release/current/stage172_release_asset_manifest.json",
-      "sha256": "a8d9dfb18ea9913f6a0ca1b6a309c8c4dc54533b3437e69a0da4e9ecf287e9b6"
+      "sha256": "9672817026ecb1d4d1cff93629de2742f93dcb7599935a0870eb751985a786d5"
     },
     {
       "exists": true,
       "path": "release/current/stage172_release_gate_report.json",
-      "sha256": "670a5a8b12cc8be6b4c9ea90635b6c642865ca27444b5112f51a8c9a4c3a4cfa"
+      "sha256": "7f092ae44f0cab0102387dbd3de89a081538283caef7c796d8cf8d2ac5fe14e2"
     },
     {
       "exists": true,
       "path": "release/current/stage172_summary.json",
-      "sha256": "9ccf3af9a391fdbdf87dd190aeee4c10fe698e1ac472310cb7876f4682a798fb"
+      "sha256": "8a512c933744565cc630a6839c88be9a47c62c0d525aa11a39470496d28a23c7"
     }
   ],
-  "index_checksum": "8cc94f97a22d55b0992085e626fb037e11f115341e164494f142b21009f2ff62",
+  "index_checksum": "891d1d01b25fccc0d969f30cba69e8004996b4d21e3d1475dc76e2429c14955b",
   "issues": [],
   "stage": "stage172",
   "status": "pass",
