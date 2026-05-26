@@ -1,15 +1,19 @@
 {
   "stage": "99.0",
   "baseline_stage": "98",
-  "status": "pass",
-  "nodes_total": 1415,
+  "status": "blocked",
+  "nodes_total": 2224,
   "edges_total": 32,
   "critical_nodes_total": 38,
   "orphan_nodes": [],
   "broken_edges": [],
-  "stale_manifests": [],
+  "stale_manifests": [
+    "manifests/live_core_manifest.json"
+  ],
   "untraced_new_logic": [],
   "branchpoint_survival_status": "pass",
-  "release_blockers": [],
+  "release_blockers": [
+    "stale_manifest"
+  ],
   "gitnexus_pack": "release/current/stage99_gitnexus_pack"
 }

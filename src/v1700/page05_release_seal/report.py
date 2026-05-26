@@ -370,7 +370,11 @@ def _upstream_evidence_sources(root: Path, gates: tuple[dict[str, Any], ...]) ->
 def _gate_or_existing(root: Path, report_name: str, runner) -> dict[str, Any]:
     path = root / "release/current" / report_name
     existing = _load_json(path)
-    if isinstance(existing, dict) and existing.get("status") == "pass":
+    if isinstance(existing, dict):
+        # Stage172 is a Page05 seal. Upstream Stage167~171 reports are sealed
+        # evidence and must not be silently regenerated if they are blocked,
+        # stale, or adversarially modified. Returning the current evidence lets
+        # the Page05 stage-chain matrix fail closed instead of self-healing.
         return existing
     return runner(root)
 
