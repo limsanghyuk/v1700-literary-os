@@ -119,3 +119,43 @@ def test_stage172_artifact_index_is_complete() -> None:
     index = result["parts"]["page05_artifact_index"]
     assert index["status"] == "pass"
     assert index["artifact_count"] >= 20
+
+
+def test_stage172_does_not_self_heal_blocked_upstream_gate(tmp_path: Path) -> None:
+    scratch = tmp_path / "repo"
+    scratch.mkdir()
+    for rel in [
+        "manifests/live_core_manifest.json",
+        "FILELIST.txt",
+        "release/current/stage167_evaluation_contract_report.json",
+        "release/current/stage167_release_gate_report.json",
+        "release/current/stage168_local_evaluation_packet_store_report.json",
+        "release/current/stage168_release_gate_report.json",
+        "release/current/stage169_deterministic_quality_continuity_evaluator_report.json",
+        "release/current/stage169_release_gate_report.json",
+        "release/current/stage170_regression_negative_fixture_harness_report.json",
+        "release/current/stage170_release_gate_report.json",
+        "release/current/stage171_evaluation_boundary_leakage_preflight_report.json",
+        "release/current/stage171_release_gate_report.json",
+    ]:
+        src = ROOT / rel
+        dst = scratch / rel
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(src.read_bytes())
+    live = json.loads((scratch / "manifests/live_core_manifest.json").read_text(encoding="utf-8"))
+    live["active_version"] = "stage172"
+    (scratch / "manifests/live_core_manifest.json").write_text(json.dumps(live), encoding="utf-8")
+
+    gate_path = scratch / "release/current/stage171_release_gate_report.json"
+    gate = json.loads(gate_path.read_text(encoding="utf-8"))
+    gate["status"] = "blocked"
+    gate["issues"] = ["adversarial_stage171_block"]
+    gate_path.write_text(json.dumps(gate), encoding="utf-8")
+
+    result = run_stage172_page05_release_seal(scratch)
+    stage_chain = result["parts"]["page05_stage_chain"]
+    stage171 = [entry for entry in stage_chain["stages"] if entry["stage"] == "171"][0]
+
+    assert result["status"] == "blocked"
+    assert stage171["gate_status"] == "blocked"
+    assert "page05_stage_chain_blocked" in result["issues"]
