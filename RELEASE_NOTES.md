@@ -24,5 +24,5 @@ python -m pytest tests/test_stage167_evaluation_contract.py tests/test_stage168_
 
 ## Official Release Assets
 
-- `V1700_stage172_page05_release_seal_release_integrated_repository_with_artifacts.zip`
-- `V1700_stage172_page05_release_seal_release_integrated_repository_with_artifacts.zip.sha256`
+- `V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip`
+- `V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip.sha256`

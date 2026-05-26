@@ -1,16 +1,18 @@
 {
   "active_version": "stage172",
   "asset_manifest": "release/current/stage172_release_asset_manifest.json",
-  "canonical_package": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+  "canonical_package": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
   "created_by": "stage172_page05_release_seal",
   "filelist": "FILELIST.txt",
   "next_stage": "stage173",
-  "package": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+  "package": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
+  "package_comparison_report": "release/current/stage172_package_comparison_report.json",
   "patch_report": "release/current/stage172_page05_release_seal_report.json",
+  "preflight_execution_report": "release/current/stage172_preflight_execution_report.json",
   "release_gate": "release/current/stage172_release_gate_report.json",
   "sha256": "SEE_RELEASE_SIDECAR",
   "sha256_authority": "release sidecar file is authoritative",
-  "sha256_sidecar": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip.sha256",
+  "sha256_sidecar": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip.sha256",
   "stage": "stage172",
   "title": "Page05 Release Seal"
 }

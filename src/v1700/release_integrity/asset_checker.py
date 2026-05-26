@@ -171,7 +171,7 @@ ASSET_TARGETS = {
         "release_gate_report": "release/current/stage171_release_gate_report.json",
     },
     "stage172": {
-        "package": "V1700_stage172_2_page05_release_seal_logic_integrity_hardening_repository_with_artifacts.zip",
+        "package": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
         "release_report": "release/current/stage172_page05_release_seal_report.json",
         "release_gate_report": "release/current/stage172_release_gate_report.json",
     },

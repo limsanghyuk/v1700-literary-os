@@ -218,3 +218,38 @@ def test_stage172_blocks_quality_channel_false_even_if_stage169_status_pass(tmp_
     assert result["status"] == "blocked"
     assert "page05_evaluation_evidence_matrix_blocked" in result["issues"]
     assert "page05_evaluation_evidence_matrix:quality_channel_pass" in result["issues"]
+
+
+def test_stage172_procedure_reports_are_required() -> None:
+    from v1700.gates.stage172_release_gate import _package_comparison_report_ok, _preflight_execution_report_ok
+
+    assert _preflight_execution_report_ok(ROOT) is True
+    assert _package_comparison_report_ok(ROOT) is True
+
+
+def test_stage172_package_comparison_blocks_placeholder_checksum(tmp_path: Path) -> None:
+    from v1700.gates.stage172_release_gate import _package_comparison_report_ok
+
+    scratch = tmp_path / "repo"
+    (scratch / "release/current").mkdir(parents=True)
+    src = ROOT / "release/current/stage172_package_comparison_report.json"
+    dst = scratch / "release/current/stage172_package_comparison_report.json"
+    payload = json.loads(src.read_text(encoding="utf-8"))
+    payload["new_package_sha256"] = "SEE_RELEASE_SIDECAR"
+    dst.write_text(json.dumps(payload), encoding="utf-8")
+
+    assert _package_comparison_report_ok(scratch) is False
+
+
+def test_stage172_preflight_report_blocks_missing_gitnexus_status(tmp_path: Path) -> None:
+    from v1700.gates.stage172_release_gate import _preflight_execution_report_ok
+
+    scratch = tmp_path / "repo"
+    (scratch / "release/current").mkdir(parents=True)
+    src = ROOT / "release/current/stage172_preflight_execution_report.json"
+    dst = scratch / "release/current/stage172_preflight_execution_report.json"
+    payload = json.loads(src.read_text(encoding="utf-8"))
+    payload["gitnexus"] = {}
+    dst.write_text(json.dumps(payload), encoding="utf-8")
+
+    assert _preflight_execution_report_ok(scratch) is False
