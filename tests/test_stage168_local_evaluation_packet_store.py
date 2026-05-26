@@ -64,3 +64,37 @@ def test_stage168_missing_stage166_reference_blocks(tmp_path: Path) -> None:
     assert validation["status"] == "blocked"
     assert any("missing_stage_ref" in issue for issue in validation["issues"])
 
+
+
+
+def test_main_release_gate_rechecks_without_process_cache(monkeypatch) -> None:
+    from v1700.gates import release_gate
+
+    state = {"blocked": False}
+
+    def fake_runtime_smoke():
+        return {"status": "pass", "issues": [], "external_provider_calls": 0}
+
+    def fake_graph_gate(root):
+        return {"status": "pass", "issues": []}
+
+    def fake_load_runner(module_name, function_name):
+        def runner(root):
+            if state["blocked"]:
+                return {"status": "blocked", "issues": ["simulated_stage168_block"]}
+            return {"status": "pass", "issues": []}
+        return runner
+
+    monkeypatch.setattr(release_gate, "STAGE_GATE_SPECS", (("stage168", "stage168_release_gate", "fake", "fake"),))
+    monkeypatch.setattr(release_gate, "STAGE_ORDER", ["stage168"])
+    monkeypatch.setattr(release_gate, "run_runtime_smoke", fake_runtime_smoke)
+    monkeypatch.setattr(release_gate, "run_graph_nexus_release_gate", fake_graph_gate)
+    monkeypatch.setattr(release_gate, "_load_runner", fake_load_runner)
+
+    first = release_gate.run_release_gate()
+    assert first["status"] == "pass"
+
+    state["blocked"] = True
+    second = release_gate.run_release_gate()
+    assert second["status"] == "blocked"
+    assert "stage168_release_gate_blocked" in second["issues"]
