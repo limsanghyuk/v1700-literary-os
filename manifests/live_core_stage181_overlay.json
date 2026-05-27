@@ -1,0 +1,8 @@
+{
+  "active_version": "stage181",
+  "canonical_package": "V1700_stage181_migration_plan_compiler_release_integrated_repository_with_artifacts.zip",
+  "current_stage": "stage181",
+  "current_title": "Migration Plan Compiler",
+  "next_stage": "stage182",
+  "next_title": "Upgrade Simulation and Compatibility Sandbox"
+}

@@ -1,0 +1,87 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "181",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_evolution_decision": "DEFER",
+  "evolution_write_enabled": false,
+  "gitnexus_preflight_analysis_pass": true,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "UPGRADE_SIMULATION_AND_COMPATIBILITY_SANDBOX_LOCAL_ONLY",
+  "next_stage": "stage183",
+  "next_stage_title": "Future Absorption and Deprecation Planner",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page07 Evolution Body",
+  "parts": {
+    "compatibility_simulation_matrix": {
+      "compatibility_blockers_recorded": true,
+      "issues": [],
+      "simulations": [
+        "manifest_compatibility",
+        "release_gate_compatibility",
+        "historical_test_lane",
+        "package_integrity",
+        "workflow_compatibility",
+        "rollback_rehearsal"
+      ],
+      "stage": "stage182",
+      "status": "pass",
+      "title": "Compatibility Simulation Matrix"
+    },
+    "previous_gate": {
+      "baseline_stage": "180",
+      "branchpoint_lineage_preserved": true,
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "181",
+      "status": "pass",
+      "title": "Migration Plan Compiler"
+    },
+    "rollback_rehearsal_snapshot": {
+      "issues": [],
+      "live_state_mutated": false,
+      "rollback_rehearsal_pass": true,
+      "stage": "stage182",
+      "status": "pass",
+      "title": "Rollback Rehearsal Snapshot"
+    },
+    "stage183_entry_criteria": {
+      "issues": [],
+      "stage": "stage182",
+      "stage183_absorption_planning_ready": true,
+      "status": "pass",
+      "title": "Stage183 Entry Criteria"
+    },
+    "upgrade_simulation_sandbox": {
+      "issues": [],
+      "provider_default_calls": 0,
+      "simulation_runtime_side_effects": 0,
+      "stage": "stage182",
+      "status": "pass",
+      "title": "Upgrade Simulation Sandbox",
+      "write_operation_count": 0
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "182",
+  "stage182_checksum": "5370127cc564a35039cfc9989ae36aaa7cd2dcdc4f43b81a0798c105451f1f41",
+  "status": "pass",
+  "title": "Upgrade Simulation and Compatibility Sandbox",
+  "write_operation_count": 0
+}

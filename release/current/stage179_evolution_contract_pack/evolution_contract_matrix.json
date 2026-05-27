@@ -1,0 +1,11 @@
+{
+  "default_evolution_decision": "DEFER",
+  "issues": [],
+  "page06_governance_evidence_required": true,
+  "provider_runtime_allowed": false,
+  "stage": "stage179",
+  "status": "pass",
+  "title": "Evolution Contract Matrix",
+  "training_runtime_allowed": false,
+  "write_runtime_allowed": false
+}

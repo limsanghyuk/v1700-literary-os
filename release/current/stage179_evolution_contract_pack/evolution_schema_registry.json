@@ -1,0 +1,18 @@
+{
+  "issues": [],
+  "records": [
+    "EvolutionCandidate",
+    "EvolutionScope",
+    "GovernanceEvidenceRef",
+    "MigrationTarget",
+    "CompatibilitySnapshot",
+    "DriftRecord",
+    "UpgradeConstraint",
+    "DeprecationCandidate",
+    "RollbackRequirement",
+    "EvolutionVerdict"
+  ],
+  "stage": "stage179",
+  "status": "pass",
+  "title": "Evolution Schema Registry"
+}

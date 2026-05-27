@@ -1,0 +1,21 @@
+{
+  "file_count_delta": "recorded_in_final_completion_report",
+  "forbidden_cache_entries": 0,
+  "manifest_delta": "stage manifests and live overlay updated",
+  "new_package_name": "V1700_stage183_future_absorption_deprecation_planner_release_integrated_repository_with_artifacts.zip",
+  "new_package_sha256": "external_sidecar_authoritative",
+  "new_package_sha256_sidecar": "V1700_stage183_future_absorption_deprecation_planner_release_integrated_repository_with_artifacts.zip.sha256",
+  "previous_package_name": "V1700_stage182_upgrade_simulation_compatibility_sandbox_release_integrated_repository_with_artifacts.zip",
+  "previous_package_sha256": "external_sidecar_or_prior_report_authoritative",
+  "procedure_evidence_enforced": true,
+  "python_file_count_delta": "recorded_in_final_completion_report",
+  "raw_sha256sums_check": "pass",
+  "release_current_delta": "stage reports and gate evidence added",
+  "stage": "stage183",
+  "status": "pass",
+  "test_file_count_delta": "recorded_in_final_completion_report",
+  "title": "Stage183 Package Comparison Report",
+  "unexpected_files_added": [],
+  "unexpected_files_removed": [],
+  "zip_reextract_check": "pass"
+}

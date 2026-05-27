@@ -1,0 +1,8 @@
+{
+  "active_version": "stage180",
+  "canonical_package": "V1700_stage180_architecture_drift_self_audit_release_integrated_repository_with_artifacts.zip",
+  "current_stage": "stage180",
+  "current_title": "Architecture Drift and Long-Horizon Self-Audit",
+  "next_stage": "stage181",
+  "next_title": "Migration Plan Compiler"
+}

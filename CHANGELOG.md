@@ -1,10 +1,16 @@
 # Changelog
 
-## v1.78.1-stage178-integrity
+## v1.84.1-stage184-integrity
 
-- Fixed Stage178 release asset integrity so checksum validation is stable across Windows and Linux checkouts.
-- Added canonical checksum helpers and `tools/regenerate_sha256sums.py` as the authority path for rebuilding `SHA256SUMS.txt`.
-- Added regression tests for CRLF/LF normalization and updated workflow guidance to use canonical checksum regeneration before release validation.
+- Fixed Stage184 release asset integrity so checksum validation is stable across Windows and Linux checkouts.
+- Added canonical checksum helpers and aligned `tools/regenerate_sha256sums.py` with the Page07 authority path for rebuilding `SHA256SUMS.txt`.
+- Added/retained CRLF/LF normalization regression coverage and updated workflow guidance to use canonical checksum regeneration before release validation.
+
+## v1.84.0-stage184
+
+- Added Stage179 through Stage184 to close Page07 Evolution Body.
+- Added evolution contract, architecture drift audit, migration compiler, upgrade simulation sandbox, future absorption/deprecation planner, and Page07 release seal.
+- Added mandatory Preflight Guide V1.1 / GitNexus 7x12 evidence for Stage179~184.
 
 ## v1.78.0-stage178
 

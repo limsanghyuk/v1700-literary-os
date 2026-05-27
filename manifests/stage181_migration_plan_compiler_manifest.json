@@ -1,0 +1,13 @@
+{
+  "baseline_stage": "stage180",
+  "gitnexus_7x12_required": true,
+  "manifest_type": "migration_plan_compiler",
+  "next_stage": "stage182",
+  "node2_raw_reveal_access": 0,
+  "page": "Page07 Evolution Body",
+  "preflight_guide_v1_1_required": true,
+  "provider_default_calls": 0,
+  "stage": "stage181",
+  "status": "active",
+  "title": "Migration Plan Compiler"
+}

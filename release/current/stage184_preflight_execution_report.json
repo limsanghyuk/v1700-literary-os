@@ -1,0 +1,19 @@
+{
+  "baseline_package": "V1700_stage183_future_absorption_deprecation_planner_release_integrated_repository_with_artifacts.zip",
+  "expected_next_stage": "stage185",
+  "gitnexus": {
+    "installed": false,
+    "optional_runtime_dependency": true,
+    "status": "python_fallback_used"
+  },
+  "mandatory_predevelopment_check_result": "pass",
+  "mandatory_protocol_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+  "package_comparison_required": true,
+  "preflight_guide_document": "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+  "preflight_guide_read": true,
+  "repository_ref": "local_stage179_184_workspace",
+  "stage": "stage184",
+  "status": "pass",
+  "title": "Stage184 Preflight Execution Report",
+  "zip_reextract_required": true
+}

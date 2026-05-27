@@ -1,0 +1,86 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "180",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_evolution_decision": "DEFER",
+  "evolution_write_enabled": false,
+  "gitnexus_preflight_analysis_pass": true,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "MIGRATION_PLAN_COMPILER_LOCAL_ONLY",
+  "next_stage": "stage182",
+  "next_stage_title": "Upgrade Simulation and Compatibility Sandbox",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page07 Evolution Body",
+  "parts": {
+    "migration_dependency_graph": {
+      "graph_deterministic": true,
+      "issues": [],
+      "rollback_edges_present": true,
+      "stage": "stage181",
+      "status": "pass",
+      "title": "Migration Dependency Graph"
+    },
+    "migration_plan_registry": {
+      "automatic_mutation_enabled": false,
+      "automatic_release_promotion_enabled": false,
+      "issues": [],
+      "migration_is_plan_only": true,
+      "stage": "stage181",
+      "status": "pass",
+      "title": "Migration Plan Registry"
+    },
+    "migration_risk_scorecard": {
+      "issues": [],
+      "risk_dimensions": [
+        "lineage",
+        "manifest",
+        "release_gate",
+        "package",
+        "rollback"
+      ],
+      "sensitive_change_policy_refs_present": true,
+      "stage": "stage181",
+      "status": "pass",
+      "title": "Migration Risk Scorecard"
+    },
+    "previous_gate": {
+      "baseline_stage": "179",
+      "branchpoint_lineage_preserved": true,
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "180",
+      "status": "pass",
+      "title": "Architecture Drift and Long-Horizon Self-Audit"
+    },
+    "stage182_entry_criteria": {
+      "issues": [],
+      "stage": "stage181",
+      "stage182_upgrade_simulation_ready": true,
+      "status": "pass",
+      "title": "Stage182 Entry Criteria"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "181",
+  "stage181_checksum": "ab20385d3aab35e9a2dd6b23cfdbcb9ff66f16784e86662e8c745613ad2c7136",
+  "status": "pass",
+  "title": "Migration Plan Compiler",
+  "write_operation_count": 0
+}

@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "page_boundary_drift",
+    "stage_lineage_drift",
+    "manifest_drift",
+    "release_evidence_drift",
+    "workflow_drift",
+    "test_policy_drift",
+    "gitnexus_fallback_lineage_drift"
+  ],
+  "critical_lineage_gap_count": 0,
+  "issues": [],
+  "stage": "stage180",
+  "status": "pass",
+  "title": "Architecture Drift Matrix"
+}

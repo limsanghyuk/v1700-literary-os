@@ -1,0 +1,14 @@
+{
+  "issues": [],
+  "risk_dimensions": [
+    "lineage",
+    "manifest",
+    "release_gate",
+    "package",
+    "rollback"
+  ],
+  "sensitive_change_policy_refs_present": true,
+  "stage": "stage181",
+  "status": "pass",
+  "title": "Migration Risk Scorecard"
+}

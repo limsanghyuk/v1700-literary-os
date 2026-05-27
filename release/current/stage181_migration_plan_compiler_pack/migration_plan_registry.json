@@ -1,0 +1,9 @@
+{
+  "automatic_mutation_enabled": false,
+  "automatic_release_promotion_enabled": false,
+  "issues": [],
+  "migration_is_plan_only": true,
+  "stage": "stage181",
+  "status": "pass",
+  "title": "Migration Plan Registry"
+}

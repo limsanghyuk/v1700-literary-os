@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 1089
+        "node_count": 1119
       },
       "narrative_summary": {
         "available": true,
@@ -1365,6 +1365,78 @@
     "stage": "178",
     "baseline_stage": "177",
     "title": "Page06 Release Seal",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage179_release_gate": {
+    "status": "pass",
+    "stage": "179",
+    "baseline_stage": "178",
+    "title": "Evolution Contract",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage180_release_gate": {
+    "status": "pass",
+    "stage": "180",
+    "baseline_stage": "179",
+    "title": "Architecture Drift and Long-Horizon Self-Audit",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage181_release_gate": {
+    "status": "pass",
+    "stage": "181",
+    "baseline_stage": "180",
+    "title": "Migration Plan Compiler",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage182_release_gate": {
+    "status": "pass",
+    "stage": "182",
+    "baseline_stage": "181",
+    "title": "Upgrade Simulation and Compatibility Sandbox",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage183_release_gate": {
+    "status": "pass",
+    "stage": "183",
+    "baseline_stage": "182",
+    "title": "Future Absorption and Deprecation Planner",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage184_release_gate": {
+    "status": "pass",
+    "stage": "184",
+    "baseline_stage": "183",
+    "title": "Page07 Release Seal",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
