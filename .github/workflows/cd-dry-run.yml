@@ -12,4 +12,6 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install -e ".[dev]"
-      - run: python tools/run_stage173_release_gate.py
+      - run: python tools/run_stage178_page06_release_seal.py
+      - run: python tools/run_stage178_release_gate.py
+      - run: python tools/check_release_asset_integrity.py
