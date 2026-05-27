@@ -1,0 +1,12 @@
+{
+  "issues": [],
+  "required_for": [
+    "release_promotion",
+    "policy_change",
+    "rollback_execution"
+  ],
+  "schema_version": "1.0",
+  "stage": "stage174",
+  "status": "pass",
+  "title": "Approval Ledger Schema"
+}

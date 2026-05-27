@@ -1,0 +1,122 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "173",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "gitnexus_preflight_analysis_pass": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "RELEASE_POLICY_AND_REGISTRY_LOCAL_ONLY",
+  "next_stage": "stage175",
+  "next_stage_title": "Project Boundary Governor",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page06 Governance Body",
+  "parts": {
+    "approval_ledger": {
+      "issues": [],
+      "required_for": [
+        "release_promotion",
+        "policy_change",
+        "rollback_execution"
+      ],
+      "schema_version": "1.0",
+      "stage": "stage174",
+      "status": "pass",
+      "title": "Approval Ledger Schema"
+    },
+    "authority_registry": {
+      "issues": [],
+      "scopes": [
+        "release_review",
+        "policy_registry",
+        "approval_ledger",
+        "rollback_reference"
+      ],
+      "stage": "stage174",
+      "status": "pass",
+      "title": "Authority Registry",
+      "write_authority_enabled": false
+    },
+    "policy_conflict_detector": {
+      "ambiguous_policy_blocks": true,
+      "deny_overrides_allow": true,
+      "issues": [],
+      "stage": "stage174",
+      "status": "pass",
+      "title": "Policy Conflict Detector"
+    },
+    "previous_gate": {
+      "baseline_stage": "172",
+      "branchpoint_lineage_preserved": true,
+      "default_authority_decision": "DENY",
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "173",
+      "status": "pass",
+      "title": "Governance Contract"
+    },
+    "release_policy_registry": {
+      "automatic_promotion_enabled": false,
+      "default_decision": "DENY",
+      "issues": [],
+      "policies": [
+        {
+          "effect": "DENY",
+          "policy_id": "deny_unknown_request",
+          "precedence": 10
+        },
+        {
+          "effect": "DENY",
+          "policy_id": "require_page05_evidence",
+          "precedence": 20
+        },
+        {
+          "effect": "DEFER",
+          "policy_id": "human_approval_for_sensitive_change",
+          "precedence": 30
+        },
+        {
+          "effect": "ALLOW",
+          "policy_id": "allow_read_only_release_review",
+          "precedence": 90
+        }
+      ],
+      "stage": "stage174",
+      "status": "pass",
+      "title": "Release Policy Registry"
+    },
+    "stage175_entry_criteria": {
+      "issues": [],
+      "stage": "stage174",
+      "stage175_project_boundary_governor_ready": true,
+      "status": "pass",
+      "title": "Stage175 Entry Criteria"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "project_write_enabled": false,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "174",
+  "stage174_checksum": "32aec3949717cb57df2680b4b7ea886bfb19395506cffbe0d2a68a35d4e1ffc9",
+  "stage175_project_boundary_governor_ready": true,
+  "status": "pass",
+  "title": "Release Policy and Registry",
+  "write_operation_count": 0
+}

@@ -1,0 +1,91 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "174",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "gitnexus_preflight_analysis_pass": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "PROJECT_BOUNDARY_GOVERNOR_LOCAL_ONLY",
+  "next_stage": "stage176",
+  "next_stage_title": "Lineage Review Gate",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page06 Governance Body",
+  "parts": {
+    "cross_project_access_matrix": {
+      "allowed_operations": [
+        "read_only_reference"
+      ],
+      "blocked_operations": [
+        "write",
+        "hidden_payload_transfer",
+        "canon_mutation"
+      ],
+      "issues": [],
+      "stage": "stage175",
+      "status": "pass",
+      "title": "Cross Project Access Matrix"
+    },
+    "multiwork_leakage_scan": {
+      "cross_project_write_enabled": false,
+      "hidden_payload_transfer_blocked": true,
+      "issues": [],
+      "stage": "stage175",
+      "status": "pass",
+      "title": "MultiWork Leakage Scan"
+    },
+    "previous_gate": {
+      "baseline_stage": "173",
+      "branchpoint_lineage_preserved": true,
+      "default_authority_decision": "DENY",
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "174",
+      "status": "pass",
+      "title": "Release Policy and Registry"
+    },
+    "project_isolation_policy": {
+      "default_decision": "DENY",
+      "explicit_permission_required": true,
+      "issues": [],
+      "stage": "stage175",
+      "status": "pass",
+      "title": "Project Isolation Policy",
+      "write_propagation_enabled": false
+    },
+    "stage176_entry_criteria": {
+      "issues": [],
+      "project_boundary_pass": true,
+      "stage": "stage175",
+      "stage176_lineage_review_gate_ready": true,
+      "status": "pass",
+      "title": "Boundary Verdict"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "project_write_enabled": false,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "175",
+  "stage175_checksum": "a4e41ebcd79f5f502c8e2d8d97732a12f8500b0d9756bb331490f3f6e8e51873",
+  "stage176_lineage_review_gate_ready": true,
+  "status": "pass",
+  "title": "Project Boundary Governor",
+  "write_operation_count": 0
+}

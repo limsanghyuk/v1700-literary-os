@@ -1,0 +1,19 @@
+{
+  "baseline_package": "V1700_stage176_lineage_review_gate_release_integrated_repository_with_artifacts.zip",
+  "expected_next_stage": "stage178",
+  "gitnexus": {
+    "installed": false,
+    "optional_runtime_dependency": true,
+    "status": "python_fallback_used"
+  },
+  "mandatory_predevelopment_check_result": "pass",
+  "mandatory_protocol_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+  "package_comparison_required": true,
+  "preflight_guide_document": "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+  "preflight_guide_read": true,
+  "repository_ref": "local_stage174_178_workspace",
+  "stage": "stage177",
+  "status": "pass",
+  "title": "Stage177 Preflight Execution Report",
+  "zip_reextract_required": true
+}

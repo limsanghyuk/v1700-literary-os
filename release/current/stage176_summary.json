@@ -1,0 +1,11 @@
+{
+  "baseline_stage": "175",
+  "branchpoint_lineage_preserved": true,
+  "default_authority_decision": "DENY",
+  "issues": [],
+  "node2_raw_reveal_access": 0,
+  "provider_default_calls": 0,
+  "stage": "176",
+  "status": "pass",
+  "title": "Lineage Review Gate"
+}

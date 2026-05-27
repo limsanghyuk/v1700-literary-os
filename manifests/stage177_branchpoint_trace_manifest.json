@@ -1,0 +1,12 @@
+{
+  "baseline_stage": "stage176",
+  "branchpoint_lineage_preserved": true,
+  "gitnexus_7x12_required": true,
+  "next_stage": "stage178",
+  "node2_raw_reveal_access": 0,
+  "preflight_guide_v1_1_required": true,
+  "provider_default_calls": 0,
+  "stage": "stage177",
+  "status": "active",
+  "title": "Operational Safety and Rollback Governance"
+}

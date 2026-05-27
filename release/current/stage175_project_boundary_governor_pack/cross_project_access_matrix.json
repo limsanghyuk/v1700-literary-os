@@ -1,0 +1,14 @@
+{
+  "allowed_operations": [
+    "read_only_reference"
+  ],
+  "blocked_operations": [
+    "write",
+    "hidden_payload_transfer",
+    "canon_mutation"
+  ],
+  "issues": [],
+  "stage": "stage175",
+  "status": "pass",
+  "title": "Cross Project Access Matrix"
+}

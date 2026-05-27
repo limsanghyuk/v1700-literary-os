@@ -1,0 +1,17 @@
+{
+  "baseline_stage": "172",
+  "branchpoint_lineage_preserved": true,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "governance_contract_only": true,
+  "issues": [],
+  "mode": "GOVERNANCE_CONTRACT_LOCAL_ONLY",
+  "node2_raw_reveal_access": 0,
+  "page": "Page06 Governance Body",
+  "provider_default_calls": 0,
+  "stage": "173",
+  "stage172_page05_seal_inherited": true,
+  "stage174_release_policy_registry_ready": true,
+  "status": "pass",
+  "title": "Governance Contract"
+}

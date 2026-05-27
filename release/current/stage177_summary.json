@@ -1,0 +1,11 @@
+{
+  "baseline_stage": "176",
+  "branchpoint_lineage_preserved": true,
+  "default_authority_decision": "DENY",
+  "issues": [],
+  "node2_raw_reveal_access": 0,
+  "provider_default_calls": 0,
+  "stage": "177",
+  "status": "pass",
+  "title": "Operational Safety and Rollback Governance"
+}

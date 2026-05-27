@@ -1,0 +1,136 @@
+{
+  "evidence_files": [
+    "release/current/stage173_preflight_execution_report.json",
+    "release/current/stage173_package_comparison_report.json",
+    "release/current/stage173_governance_contract_report.json",
+    "release/current/stage173_release_gate_report.json"
+  ],
+  "fallback_reason": "gitnexus runtime was unavailable in this environment; Python structural fallback was used and recorded",
+  "gitnexus_runtime_available": false,
+  "issues": [],
+  "must_apply_before_development": true,
+  "runtime": "python_fallback",
+  "seven_key_perspectives": [
+    {
+      "analysis": "Stage172.3 Page05 seal, Stage167-172 evaluation chain, branchpoint lineage, prior Stage166 preflight rules",
+      "applied_to_stage173": true,
+      "id": "legacy_lineage",
+      "status": "pass"
+    },
+    {
+      "analysis": "Stage172 release gate -> Stage173 contract -> Stage174 readiness; docs/manifests/release evidence connectivity",
+      "applied_to_stage173": true,
+      "id": "connectivity",
+      "status": "pass"
+    },
+    {
+      "analysis": "Graph/Nexus-style symbol surface: governance_contract, stage173 runner, release gate, tools, tests, manifests",
+      "applied_to_stage173": true,
+      "id": "neural_graph",
+      "status": "pass"
+    },
+    {
+      "analysis": "Impact of Stage173 on active_version, package authority, release gates, repo doctor, Stage174 entry criteria",
+      "applied_to_stage173": true,
+      "id": "impact",
+      "status": "pass"
+    },
+    {
+      "analysis": "provider-zero, write-zero, Node2 raw reveal zero, training/mutation disabled",
+      "applied_to_stage173": true,
+      "id": "boundary_invariants",
+      "status": "pass"
+    },
+    {
+      "analysis": "preflight report, package comparison report, governance contract report, release gate report, asset manifest",
+      "applied_to_stage173": true,
+      "id": "release_evidence",
+      "status": "pass"
+    },
+    {
+      "analysis": "raw SHA256SUMS, ZIP re-extraction, forbidden cache scan, sidecar authority",
+      "applied_to_stage173": true,
+      "id": "package_integrity",
+      "status": "pass"
+    }
+  ],
+  "seven_key_perspectives_count": 7,
+  "stage": "stage173",
+  "status": "pass",
+  "title": "Stage173 GitNexus Preflight Analysis Report",
+  "twelve_design_development_items": [
+    {
+      "applied_to_stage173": true,
+      "artifact": "docs/proposals/stage173_governance_contract_proposal.md",
+      "id": "proposal_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "docs/architecture/stage173_governance_contract_blueprint.md",
+      "id": "blueprint_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "docs/proposals/page06_governance_body_proposal.md and docs/architecture/page06_governance_body_blueprint.md",
+      "id": "page06_design_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "manifests/stage173_manifest.json and live_core_manifest.json",
+      "id": "manifest_alignment",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "src/v1700/governance_contract/ and src/v1700/stage173/",
+      "id": "source_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "src/v1700/gates/stage173_release_gate.py",
+      "id": "gate_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "tools/run_stage173_governance_contract.py and tools/run_stage173_release_gate.py",
+      "id": "tool_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "tests/test_stage173_governance_contract.py",
+      "id": "test_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "release/current/stage173_* reports and pack",
+      "id": "release_evidence_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "package_manifest.json and stage173_release_asset_manifest.json",
+      "id": "package_authority",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "stage173_preflight_execution_report.json and stage173_package_comparison_report.json",
+      "id": "preflight_and_comparison",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage173": true,
+      "artifact": "Stage174 Release Policy and Registry readiness",
+      "id": "next_stage_handoff",
+      "status": "pass"
+    }
+  ],
+  "twelve_design_development_items_count": 12
+}

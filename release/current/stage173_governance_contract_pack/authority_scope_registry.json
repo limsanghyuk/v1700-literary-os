@@ -1,0 +1,34 @@
+{
+  "authority_scope_count": 4,
+  "automatic_promotion_enabled": false,
+  "canon_mutation_enabled": false,
+  "cross_project_write_enabled": false,
+  "issues": [],
+  "memory_write_enabled": false,
+  "runtime_training_enabled": false,
+  "scopes": [
+    {
+      "automatic_execution_enabled": false,
+      "default_decision": "DENY",
+      "scope": "release"
+    },
+    {
+      "default_decision": "DENY",
+      "scope": "project_boundary",
+      "write_enabled": false
+    },
+    {
+      "default_decision": "DEFER",
+      "scope": "lineage_review",
+      "source_evidence_required": true
+    },
+    {
+      "default_decision": "DEFER",
+      "rollback_required": true,
+      "scope": "operational"
+    }
+  ],
+  "stage": "stage173",
+  "status": "pass",
+  "title": "Stage173 Authority Scope Registry"
+}

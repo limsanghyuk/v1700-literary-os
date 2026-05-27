@@ -1,0 +1,30 @@
+{
+  "automatic_promotion_enabled": false,
+  "default_decision": "DENY",
+  "issues": [],
+  "policies": [
+    {
+      "effect": "DENY",
+      "policy_id": "deny_unknown_request",
+      "precedence": 10
+    },
+    {
+      "effect": "DENY",
+      "policy_id": "require_page05_evidence",
+      "precedence": 20
+    },
+    {
+      "effect": "DEFER",
+      "policy_id": "human_approval_for_sensitive_change",
+      "precedence": 30
+    },
+    {
+      "effect": "ALLOW",
+      "policy_id": "allow_read_only_release_review",
+      "precedence": 90
+    }
+  ],
+  "stage": "stage174",
+  "status": "pass",
+  "title": "Release Policy Registry"
+}

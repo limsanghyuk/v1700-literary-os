@@ -80,15 +80,27 @@
     "stage171_evaluation_boundary_leakage_preflight",
     "stage171_release_gate",
     "stage172_page05_release_seal",
-    "stage172_release_gate"
+    "stage172_release_gate",
+    "stage173_governance_contract",
+    "stage173_release_gate",
+    "stage174_release_policy_registry",
+    "stage174_release_gate",
+    "stage175_project_boundary_governor",
+    "stage175_release_gate",
+    "stage176_lineage_review_gate",
+    "stage176_release_gate",
+    "stage177_operational_safety_rollback_governance",
+    "stage177_release_gate",
+    "stage178_page06_release_seal",
+    "stage178_release_gate"
   ],
-  "active_version": "stage172",
-  "canonical_package": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip.sha256",
-  "current_stage": "stage172",
-  "current_title": "Page05 Release Seal",
-  "next_stage": "stage173",
-  "next_title": "Governance Contract",
+  "active_version": "stage178",
+  "canonical_package": "V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
+  "current_stage": "stage178",
+  "current_title": "Page06 Release Seal",
+  "next_stage": "stage179",
+  "next_title": "Evolution Body",
   "provider_default_calls": 0,
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
@@ -372,6 +384,54 @@
     "release_gate": "release/current/stage171_release_gate_report.json",
     "status": "active",
     "title": "Evaluation Boundary and Leakage Preflight"
+  },
+  "stage173": {
+    "baseline_stage": "stage172",
+    "evidence": "release/current/stage173_governance_contract_report.json",
+    "next_stage": "stage174",
+    "release_gate": "release/current/stage173_release_gate_report.json",
+    "status": "active",
+    "title": "Governance Contract"
+  },
+  "stage174": {
+    "baseline_stage": "stage173",
+    "evidence": "release/current/stage174_release_policy_registry_report.json",
+    "next_stage": "stage175",
+    "release_gate": "release/current/stage174_release_gate_report.json",
+    "status": "active",
+    "title": "Release Policy and Registry"
+  },
+  "stage175": {
+    "baseline_stage": "stage174",
+    "evidence": "release/current/stage175_project_boundary_governor_report.json",
+    "next_stage": "stage176",
+    "release_gate": "release/current/stage175_release_gate_report.json",
+    "status": "active",
+    "title": "Project Boundary Governor"
+  },
+  "stage176": {
+    "baseline_stage": "stage175",
+    "evidence": "release/current/stage176_lineage_review_gate_report.json",
+    "next_stage": "stage177",
+    "release_gate": "release/current/stage176_release_gate_report.json",
+    "status": "active",
+    "title": "Lineage Review Gate"
+  },
+  "stage177": {
+    "baseline_stage": "stage176",
+    "evidence": "release/current/stage177_operational_safety_rollback_governance_report.json",
+    "next_stage": "stage178",
+    "release_gate": "release/current/stage177_release_gate_report.json",
+    "status": "active",
+    "title": "Operational Safety and Rollback Governance"
+  },
+  "stage178": {
+    "baseline_stage": "stage177",
+    "evidence": "release/current/stage178_page06_release_seal_report.json",
+    "next_stage": "stage179",
+    "release_gate": "release/current/stage178_release_gate_report.json",
+    "status": "active",
+    "title": "Page06 Release Seal"
   },
   "stages": {
     "stage169": {

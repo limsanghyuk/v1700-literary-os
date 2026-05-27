@@ -1,0 +1,307 @@
+{
+  "approval_evidence_schema_valid": true,
+  "approval_requirement_count": 6,
+  "authority_scope_count": 4,
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "172",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "contract_count": 13,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "governance_contract_checksum": "f9c002a930321e5578f9f77cc480fb1c8293edaaafa0e6477e4a7db492ececbc",
+  "governance_contract_only": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "GOVERNANCE_CONTRACT_LOCAL_ONLY",
+  "next_stage": "stage174",
+  "next_stage_title": "Release Policy and Registry",
+  "node2_raw_reveal_access": 0,
+  "page": "Page06 Governance Body",
+  "parts": {
+    "approval_requirement_matrix": {
+      "approval_requirement_count": 6,
+      "issues": [],
+      "requirements": [
+        {
+          "approval_required": true,
+          "authority": "release_promotion",
+          "execution_enabled": false
+        },
+        {
+          "approval_required": true,
+          "authority": "manuscript_change",
+          "execution_enabled": false
+        },
+        {
+          "approval_required": true,
+          "authority": "memory_change",
+          "execution_enabled": false
+        },
+        {
+          "approval_required": true,
+          "authority": "canon_change",
+          "execution_enabled": false
+        },
+        {
+          "approval_required": true,
+          "authority": "training_data_change",
+          "execution_enabled": false
+        },
+        {
+          "approval_required": true,
+          "authority": "cross_project_data",
+          "execution_enabled": false
+        }
+      ],
+      "sensitive_authority_requires_approval": true,
+      "stage": "stage173",
+      "status": "pass",
+      "title": "Stage173 Approval Requirement Matrix"
+    },
+    "authority_scope_registry": {
+      "authority_scope_count": 4,
+      "automatic_promotion_enabled": false,
+      "canon_mutation_enabled": false,
+      "cross_project_write_enabled": false,
+      "issues": [],
+      "memory_write_enabled": false,
+      "runtime_training_enabled": false,
+      "scopes": [
+        {
+          "automatic_execution_enabled": false,
+          "default_decision": "DENY",
+          "scope": "release"
+        },
+        {
+          "default_decision": "DENY",
+          "scope": "project_boundary",
+          "write_enabled": false
+        },
+        {
+          "default_decision": "DEFER",
+          "scope": "lineage_review",
+          "source_evidence_required": true
+        },
+        {
+          "default_decision": "DEFER",
+          "rollback_required": true,
+          "scope": "operational"
+        }
+      ],
+      "stage": "stage173",
+      "status": "pass",
+      "title": "Stage173 Authority Scope Registry"
+    },
+    "governance_contract_catalog": {
+      "contract_count": 13,
+      "issues": [],
+      "objects": {
+        "ApprovalEvidenceRef": {
+          "required": true,
+          "source": "sealed_evidence"
+        },
+        "ApprovalRequirement": {
+          "sensitive_authority_requires_approval": true
+        },
+        "AuthorityScope": {
+          "default_scope": "none",
+          "explicit_scope_required": true
+        },
+        "CrossProjectAuthority": {
+          "default_decision": "DENY",
+          "read_only_by_policy": true
+        },
+        "GovernanceAuthorityEnvelope": {
+          "authority_id": "stage173_governance_authority_envelope",
+          "authority_scope": "release|project_boundary|lineage_review|operational",
+          "default_decision": "DENY",
+          "provider_runtime_allowed": false,
+          "requires_approval_evidence": true,
+          "source_stage": "stage172",
+          "training_runtime_allowed": false,
+          "write_runtime_allowed": false
+        },
+        "GovernanceDecision": {
+          "status_space": [
+            "ALLOW",
+            "DENY",
+            "DEFER"
+          ],
+          "unknown_request": "DENY"
+        },
+        "LineageReviewAuthority": {
+          "rollback_requirement_required": true,
+          "source_evidence_required": true
+        },
+        "MutationAuthority": {
+          "default_decision": "DENY",
+          "requires_approval_evidence": true
+        },
+        "OperationalSafetyAuthority": {
+          "rollback_plan_required": true
+        },
+        "PolicyPrecedence": {
+          "deny_overrides_allow": true,
+          "tie_break": "policy_id"
+        },
+        "PolicyRule": {
+          "required_fields": [
+            "policy_id",
+            "policy_type",
+            "precedence",
+            "effect",
+            "condition_ref"
+          ]
+        },
+        "ReleaseAuthority": {
+          "automatic_promotion_enabled": false,
+          "stage172_evidence_required": true
+        },
+        "RollbackAuthority": {
+          "rollback_evidence_required": true
+        }
+      },
+      "stage": "stage173",
+      "status": "pass",
+      "title": "Stage173 Governance Contract Catalog"
+    },
+    "page06_readiness_matrix": {
+      "check_count": 8,
+      "checks": {
+        "package_comparison_pass": {
+          "status": "pass"
+        },
+        "page05_sealed": {
+          "status": "pass"
+        },
+        "page06_blueprint_present": {
+          "status": "pass"
+        },
+        "page06_handoff_present": {
+          "status": "pass"
+        },
+        "page06_proposal_present": {
+          "status": "pass"
+        },
+        "preflight_evidence_pass": {
+          "status": "pass"
+        },
+        "stage172_release_gate_pass": {
+          "status": "pass"
+        },
+        "stage173_governance_ready": {
+          "status": "pass"
+        }
+      },
+      "issues": [],
+      "stage": "stage173",
+      "stage172_page05_seal_inherited": true,
+      "status": "pass",
+      "title": "Page06 Readiness Matrix"
+    },
+    "policy_precedence_matrix": {
+      "default_decision": "DENY",
+      "deny_overrides_allow": true,
+      "issues": [],
+      "policies": [
+        {
+          "deny_overrides_allow": true,
+          "effect": "DENY",
+          "policy_id": "security_boundary_policy",
+          "precedence": 10
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DENY",
+          "policy_id": "source_boundary_policy",
+          "precedence": 20
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DENY",
+          "policy_id": "author_scope_policy",
+          "precedence": 30
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DENY",
+          "policy_id": "node_boundary_policy",
+          "precedence": 40
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DEFER",
+          "policy_id": "release_policy",
+          "precedence": 50
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DEFER",
+          "policy_id": "lineage_review_policy",
+          "precedence": 60
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "DEFER",
+          "policy_id": "operational_policy",
+          "precedence": 70
+        },
+        {
+          "deny_overrides_allow": true,
+          "effect": "ALLOW",
+          "policy_id": "advisory_policy",
+          "precedence": 80
+        }
+      ],
+      "policy_rule_count": 8,
+      "stage": "stage173",
+      "status": "pass",
+      "title": "Stage173 Policy Precedence Matrix",
+      "unknown_request_decision": "DENY"
+    },
+    "stage172_release_gate": {
+      "baseline_stage": "171",
+      "branchpoint_lineage_preserved": true,
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "page05_sealed": true,
+      "provider_default_calls": 0,
+      "stage": "172",
+      "stage173_governance_contract_ready": true,
+      "status": "pass",
+      "title": "Page05 Release Seal"
+    },
+    "stage174_entry_criteria": {
+      "issues": [],
+      "required_next_stage": "stage174",
+      "required_next_title": "Release Policy and Registry",
+      "stage": "stage173",
+      "stage174_release_policy_registry_ready": true,
+      "status": "pass",
+      "title": "Stage174 Entry Criteria"
+    }
+  },
+  "policy_precedence_defined": true,
+  "policy_rule_count": 8,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "sensitive_authority_requires_approval": true,
+  "stage": "173",
+  "stage172_page05_seal_inherited": true,
+  "stage174_release_policy_registry_ready": true,
+  "status": "pass",
+  "title": "Governance Contract",
+  "unknown_request_decision": "DENY",
+  "write_operation_count": 0
+}

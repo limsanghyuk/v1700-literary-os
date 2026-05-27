@@ -1,0 +1,12 @@
+{
+  "baseline_stage": "stage174",
+  "gitnexus_7x12_required": true,
+  "manifest_type": "project_boundary_governor",
+  "next_stage": "stage176",
+  "node2_raw_reveal_access": 0,
+  "preflight_guide_v1_1_required": true,
+  "provider_default_calls": 0,
+  "stage": "stage175",
+  "status": "active",
+  "title": "Project Boundary Governor"
+}

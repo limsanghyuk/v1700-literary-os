@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172", "stage173", "stage174", "stage175", "stage176", "stage177", "stage178",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -1286,6 +1286,30 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage172_page05_release_seal_pack/page05_release_seal.json",
         "release/current/stage172_page05_release_seal_pack/regression_snapshot.json",
     ],
+    "stage173": [
+        "manifests/stage173_manifest.json",
+        "manifests/stage173_governance_contract_manifest.json",
+        "manifests/stage173_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage173_overlay.json",
+        "docs/stages/stage173.md",
+        "docs/architecture/stage173_governance_contract_blueprint.md",
+        "docs/proposals/stage173_governance_contract_proposal.md",
+        "docs/development/stage173_developer_handoff.md",
+        "docs/architecture/page06_governance_body_blueprint.md",
+        "docs/proposals/page06_governance_body_proposal.md",
+        "docs/development/page06_developer_handoff.md",
+        "release/current/stage173_governance_contract_report.json",
+        "release/current/stage173_release_gate_report.json",
+        "release/current/stage173_release_asset_manifest.json",
+        "release/current/stage173_preflight_execution_report.json",
+        "release/current/stage173_package_comparison_report.json",
+        "release/current/stage173_governance_contract_pack/page06_readiness_matrix.json",
+        "release/current/stage173_governance_contract_pack/governance_contract_catalog.json",
+        "release/current/stage173_governance_contract_pack/policy_precedence_matrix.json",
+        "release/current/stage173_governance_contract_pack/authority_scope_registry.json",
+        "release/current/stage173_governance_contract_pack/approval_requirement_matrix.json",
+        "release/current/stage173_governance_contract_pack/stage174_entry_criteria.json",
+    ],
     "stage164": [
         "manifests/stage164_manifest.json",
         "manifests/stage164_surface_draft_dry_run_renderer_manifest.json",
@@ -1332,6 +1356,13 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage161_rendering_contract_pack/node2_rendering_projection_policy.json",
     ],
 }
+STAGE_REQUIRED_GATES.update({
+    "stage174": ["stage174_release_policy_registry", "stage174_release_gate"],
+    "stage175": ["stage175_project_boundary_governor", "stage175_release_gate"],
+    "stage176": ["stage176_lineage_review_gate", "stage176_release_gate"],
+    "stage177": ["stage177_operational_safety_rollback_governance", "stage177_release_gate"],
+    "stage178": ["stage178_page06_release_seal", "stage178_release_gate"],
+})
 
 PREDECESSOR_GATE = {
     "stage113": "stage112_release_gate",
@@ -1394,6 +1425,12 @@ PREDECESSOR_GATE = {
     "stage170": "stage169_release_gate",
     "stage171": "stage170_release_gate",
     "stage172": "stage171_release_gate",
+    "stage173": "stage172_release_gate",
+    "stage174": "stage173_release_gate",
+    "stage175": "stage174_release_gate",
+    "stage176": "stage175_release_gate",
+    "stage177": "stage176_release_gate",
+    "stage178": "stage177_release_gate",
 }
 
 

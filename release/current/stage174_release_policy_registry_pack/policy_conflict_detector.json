@@ -1,0 +1,8 @@
+{
+  "ambiguous_policy_blocks": true,
+  "deny_overrides_allow": true,
+  "issues": [],
+  "stage": "stage174",
+  "status": "pass",
+  "title": "Policy Conflict Detector"
+}

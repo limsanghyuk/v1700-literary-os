@@ -1,0 +1,8 @@
+{
+  "issues": [],
+  "rollback_evidence_required": true,
+  "rollback_plan_required": true,
+  "stage": "stage177",
+  "status": "pass",
+  "title": "Rollback Readiness Matrix"
+}

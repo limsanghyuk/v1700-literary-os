@@ -24,7 +24,7 @@
   "page05_evaluation_evidence_pass": true,
   "page05_invariant_freeze_pass": true,
   "page05_regression_snapshot_pass": true,
-  "page05_release_checksum": "993348fe384762dbd5943af8f08034b2b8c263dbd541f5108875221947e881c2",
+  "page05_release_checksum": "06834561cfc92771cc36f943756963a2e05ddc66d9bab1e1d4c1cc3a82ddf0b6",
   "page05_release_seal_only": true,
   "page05_sealed": true,
   "page05_stage_chain_pass": true,
@@ -38,7 +38,7 @@
         {
           "exists": true,
           "path": "docs/architecture/page05_evaluation_body_blueprint.md",
-          "sha256": "2bc7236f59701642e704d346a65d38f30438dbcae4868af9db15a2fcae37d3b6"
+          "sha256": "6e5f1cf8bb86d6773d83b5fa3a853d2e4f973a2682082d116b32ae1e6791ce62"
         },
         {
           "exists": true,
@@ -48,7 +48,7 @@
         {
           "exists": true,
           "path": "docs/development/page05_developer_handoff.md",
-          "sha256": "38ba4d3943bf84bc22fc7c5923be93387d51772b5bcf3f5f37121f5f092e4674"
+          "sha256": "bd19b174f45b7452760180ed14b38db8e59c9cdcca45f4a4cde97f1803d9632e"
         },
         {
           "exists": true,
@@ -58,7 +58,7 @@
         {
           "exists": true,
           "path": "docs/proposals/page05_evaluation_body_proposal.md",
-          "sha256": "f9f9ef910e3a8e5c433f580ef4168760be897e1b9e0ee160b731487a1155539c"
+          "sha256": "661a927d149d3d31300c8be863bf6c39ad0881ba675e88853da5b4c6fad0f645"
         },
         {
           "exists": true,
@@ -98,47 +98,47 @@
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_artifact_index.json",
-          "sha256": "ef18d206f913c5988ed55e8d8fb2cbe2bbf9b904db42e987e7b0ff068de9f0a7"
+          "sha256": "f70ec54e62ef6c92c126b540938e5f8eb9a31b40fe13080a2879406a7f1945e6"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_evaluation_evidence_matrix.json",
-          "sha256": "3ceeb70f9fffc6923186edbfcdb9b5b924f34b45a95c0c4e7aa53b335219e6de"
+          "sha256": "b58c275586c8ee1547b5b227bb74f106219b45ce391aeb5bb1dce11e0340e831"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_invariant_freeze.json",
-          "sha256": "ad1f929282f3cf3310f47c8a01100712ae7a818fe6ae88583b84c2594fb351e6"
+          "sha256": "86071d4d581664c0d6ca92fa5e138f7eb1be2dd5d66a9c6d1514718cf7e5d062"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_release_seal.json",
-          "sha256": "c862db7dc48f144bc6a8fd5d47175222d3ddbb4710ced709094958a0f8f1034f"
+          "sha256": "7aba8367d8ba958bc42b3d084db4b7b4d5eca4780cc39aa5dcbac66709d5b0f7"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_release_seal_matrix.json",
-          "sha256": "2e1bd93ef2fd53e61dbbf4f8da823734ca3f9ba3071732ca189f54f7f1edf11d"
+          "sha256": "37236b8bccbae9e3864dc5522de13cec87d21e85fcdbade4fa0d51a8f548d9cb"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_stage_chain.json",
-          "sha256": "358955c34c8dc942c46f151cc72e0ed9bb8022a820ea91fd64618cae5a2a79bc"
+          "sha256": "c7aca1e0c45da1f1f24d8106b805050631ca5d16cd1c825d432c8ff85f82e6d3"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/page05_transition_criteria.json",
-          "sha256": "cf6c68a89f00c6223855fcf0c6ae1457c2e497220bf27723cd2e8336170d3dc0"
+          "sha256": "8649fa96b1d437bc33d3affeffbb92686ea2bb41b8d430975be2641fbc9dc5bf"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_pack/regression_snapshot.json",
-          "sha256": "efbf85f76082848cf085f1582ccd2960924b6394b1b99ed7f2d455d6770bee6b"
+          "sha256": "21947d86698b4c225b570f49142793b6b4f21aef10541cc09ce17227ae7f5586"
         },
         {
           "exists": true,
           "path": "release/current/stage172_page05_release_seal_report.json",
-          "sha256": "f0f5b0bd6d3f9aa5d6e5635cfa703b17c52f7844aeaf874cbbe523ab688ffd48"
+          "sha256": "754585a3143c2327fe24fe2604c95fac0438091d2a7c785ef00d843947862677"
         },
         {
           "exists": true,
@@ -153,15 +153,15 @@
         {
           "exists": true,
           "path": "release/current/stage172_release_gate_report.json",
-          "sha256": "299291eef1cab3195020649d5a0a4261e39b77dd4865fadd35936ece2c226d55"
+          "sha256": "7f092ae44f0cab0102387dbd3de89a081538283caef7c796d8cf8d2ac5fe14e2"
         },
         {
           "exists": true,
           "path": "release/current/stage172_summary.json",
-          "sha256": "28e8a8978f295158e42ff755f4fd9ccaec1d14bb62cfaaebe647382d69d9d758"
+          "sha256": "10aa862df6a60ac75b1fc8a22da195f08af0c662cc46f357f956f8fa4a5386d6"
         }
       ],
-      "index_checksum": "1cf6e5b2f1996e0ef17bac12726d6df3d970ddefde0ec8e9527f31bf65a67e9e",
+      "index_checksum": "3231192cbb502c028dcbd36385bb282e031fa48b58e5ccbc77a8c04e7635d41f",
       "issues": [],
       "stage": "stage172",
       "status": "pass",
@@ -2103,7 +2103,7 @@
     },
     "page05_release_seal": {
       "issues": [],
-      "page05_release_checksum": "993348fe384762dbd5943af8f08034b2b8c263dbd541f5108875221947e881c2",
+      "page05_release_checksum": "06834561cfc92771cc36f943756963a2e05ddc66d9bab1e1d4c1cc3a82ddf0b6",
       "page05_sealed": true,
       "stage": "stage172",
       "status": "pass",
@@ -2160,17 +2160,17 @@
     },
     "page05_stage_chain": {
       "issues": [],
-      "matrix_checksum": "6a8c42ef3adeb4f94d6d79a7cfd5ddca62877c0d49122a55cda18830a9294dac",
+      "matrix_checksum": "70be432894cf7008c70e1e7471bf259716aef8f30e19c7d27268921fb53ffe98",
       "sealed_count": 5,
       "stage": "stage172",
       "stage_count": 5,
       "stages": [
         {
           "gate_path": "release/current/stage167_release_gate_report.json",
-          "gate_sha256": "19a07fd46ff837c8d5850a73f17b4c67d331e3df572ae1663a4cc603b11d0114",
+          "gate_sha256": "1cc50da2f2403528372999d5ffab022401a36f303d38bb6740e2469813501079",
           "gate_status": "pass",
           "report_path": "release/current/stage167_evaluation_contract_report.json",
-          "report_sha256": "465589aea2e305971b1bf9ee818cebfb162c0d860dff740553164537b4606849",
+          "report_sha256": "8936f9999e02c22f4d1ee600ef00d50e2e1c8b60f841c7a645c304390c5b03d3",
           "report_status": "pass",
           "sealed": true,
           "stage": "167",
@@ -2272,14 +2272,14 @@
     },
     "regression_snapshot": {
       "evaluation_evidence_checksum": "0a656d84aa6139273657556b3ee5796318b88529205b854c03b85eb78b984c40",
-      "filelist_entry_count": 3571,
+      "filelist_entry_count": 3567,
       "forbidden_cache_entries": 0,
       "forbidden_cache_entry_sample": [],
       "invariant_freeze_checksum": "f9974018a54716f96b59ddaa8afb16e907326185758b1efb8afdc6ee9f5abd83",
       "issues": [],
-      "snapshot_checksum": "9ab61eb63215e6a5fdc1d5dfdfd78172e78d8bf987822fefe4b5b64b82b58e19",
+      "snapshot_checksum": "811bee9b91082dfa649964d9980a12c1bb572cd04388db258cdfdc52f18b0671",
       "stage": "stage172",
-      "stage_chain_checksum": "6a8c42ef3adeb4f94d6d79a7cfd5ddca62877c0d49122a55cda18830a9294dac",
+      "stage_chain_checksum": "70be432894cf7008c70e1e7471bf259716aef8f30e19c7d27268921fb53ffe98",
       "status": "pass",
       "title": "Page05 Regression Snapshot"
     }

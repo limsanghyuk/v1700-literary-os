@@ -1,0 +1,94 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "175",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "gitnexus_preflight_analysis_pass": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "LINEAGE_REVIEW_GATE_LOCAL_ONLY",
+  "next_stage": "stage177",
+  "next_stage_title": "Operational Safety and Rollback Governance",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page06 Governance Body",
+  "parts": {
+    "formula_status_decision_matrix": {
+      "allowed_statuses": [
+        "TRUNK",
+        "ABSORBED",
+        "REFERENCE",
+        "DEFERRED",
+        "REJECTED"
+      ],
+      "issues": [],
+      "runtime_risk_defaults_to_deferred": true,
+      "stage": "stage176",
+      "status": "pass",
+      "title": "Formula Status Decision Matrix"
+    },
+    "lineage_review_candidate_registry": {
+      "boundary_review_required": true,
+      "issues": [],
+      "source_evidence_required": true,
+      "stage": "stage176",
+      "status": "pass",
+      "title": "Lineage Review Candidate Registry"
+    },
+    "previous_gate": {
+      "baseline_stage": "174",
+      "branchpoint_lineage_preserved": true,
+      "default_authority_decision": "DENY",
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "175",
+      "status": "pass",
+      "title": "Project Boundary Governor"
+    },
+    "risk_scorecard": {
+      "issues": [],
+      "risk_dimensions": [
+        "source",
+        "license",
+        "determinism",
+        "boundary",
+        "rollback"
+      ],
+      "stage": "stage176",
+      "status": "pass",
+      "title": "Risk Scorecard"
+    },
+    "stage177_entry_criteria": {
+      "issues": [],
+      "stage": "stage176",
+      "stage177_operational_safety_ready": true,
+      "status": "pass",
+      "title": "Stage177 Entry Criteria"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "project_write_enabled": false,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "176",
+  "stage176_checksum": "26ca8bca96cf60144a918c1b1dd632885bd5ab75451a6bb518fec93f74219706",
+  "stage177_operational_safety_and_rollback_governance_ready": true,
+  "status": "pass",
+  "title": "Lineage Review Gate",
+  "write_operation_count": 0
+}
