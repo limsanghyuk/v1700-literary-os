@@ -55,7 +55,8 @@ Before touching code or docs, every session must perform the following:
 12. Run `python tools/run_stage72_repo_doctor.py`.
 13. Run the relevant pytest pack.
 14. Re-index GitNexus after material code changes.
-15. Build the clean ZIP, sidecar SHA256, and verify re-extraction before handoff or release.
+15. Regenerate `SHA256SUMS.txt` through `python tools/regenerate_sha256sums.py` so checksum authority stays platform-neutral.
+16. Build the clean ZIP, sidecar SHA256, and verify re-extraction before handoff or release.
 ```
 
 ## Branch And Release Rule

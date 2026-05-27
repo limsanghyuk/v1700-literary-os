@@ -339,7 +339,7 @@ def _checksum_ledger_checks(root: Path, asset: dict[str, Any]) -> list[Integrity
             _check(
                 "sha256_sums_content_match",
                 not mismatches,
-                "all SHA256SUMS digests match current raw file contents",
+                "all SHA256SUMS digests match current canonical file contents",
                 _sample(mismatches),
                 sums_path,
             ),
@@ -363,8 +363,23 @@ def _digest_exempt_entries(asset: dict[str, Any], filelist_entries: list[str]) -
     return {entry for entry in entries if entry}
 
 
+def canonical_file_sha256(path: Path) -> str:
+    return hashlib.sha256(_canonical_file_bytes(path)).hexdigest()
+
+
 def _raw_file_sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    return canonical_file_sha256(path)
+
+
+def _canonical_file_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    if b"\x00" in data:
+        return data
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data
+    return text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
 
 
 def _read_lines(path: Path) -> list[str]:
@@ -378,6 +393,14 @@ def _read_sha256_sums(path: Path) -> dict[str, str]:
         if len(parts) == 2:
             sums[parts[1].replace("\\", "/")] = parts[0].lower()
     return sums
+
+
+def build_sha256_sums_lines(root: Path, filelist_path: Path) -> list[str]:
+    lines = []
+    for entry in _read_lines(filelist_path):
+        digest = canonical_file_sha256(root / entry)
+        lines.append(f"{digest}  {entry}")
+    return lines
 
 
 def _sample(items: list[str]) -> str:

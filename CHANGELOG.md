@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.78.1-stage178-integrity
+
+- Fixed Stage178 release asset integrity so checksum validation is stable across Windows and Linux checkouts.
+- Added canonical checksum helpers and `tools/regenerate_sha256sums.py` as the authority path for rebuilding `SHA256SUMS.txt`.
+- Added regression tests for CRLF/LF normalization and updated workflow guidance to use canonical checksum regeneration before release validation.
+
 ## v1.78.0-stage178
 
 - Added Stage174 through Stage178 to close Page06 Governance Body.
