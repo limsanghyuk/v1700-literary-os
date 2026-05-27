@@ -175,6 +175,36 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage172_page05_release_seal_report.json",
         "release_gate_report": "release/current/stage172_release_gate_report.json",
     },
+    "stage173": {
+        "package": "V1700_stage173_1_governance_contract_gitnexus_preflight_hardening_repository_with_artifacts.zip",
+        "release_report": "release/current/stage173_governance_contract_report.json",
+        "release_gate_report": "release/current/stage173_release_gate_report.json",
+    },
+    "stage174": {
+        "package": "V1700_stage174_release_policy_registry_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage174_release_policy_registry_report.json",
+        "release_gate_report": "release/current/stage174_release_gate_report.json",
+    },
+    "stage175": {
+        "package": "V1700_stage175_project_boundary_governor_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage175_project_boundary_governor_report.json",
+        "release_gate_report": "release/current/stage175_release_gate_report.json",
+    },
+    "stage176": {
+        "package": "V1700_stage176_lineage_review_gate_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage176_lineage_review_gate_report.json",
+        "release_gate_report": "release/current/stage176_release_gate_report.json",
+    },
+    "stage177": {
+        "package": "V1700_stage177_operational_safety_rollback_governance_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage177_operational_safety_rollback_governance_report.json",
+        "release_gate_report": "release/current/stage177_release_gate_report.json",
+    },
+    "stage178": {
+        "package": "V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage178_page06_release_seal_report.json",
+        "release_gate_report": "release/current/stage178_release_gate_report.json",
+    },
 }
 
 

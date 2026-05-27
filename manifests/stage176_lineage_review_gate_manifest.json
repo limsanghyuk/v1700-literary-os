@@ -1,0 +1,12 @@
+{
+  "baseline_stage": "stage175",
+  "gitnexus_7x12_required": true,
+  "manifest_type": "lineage_review_gate",
+  "next_stage": "stage177",
+  "node2_raw_reveal_access": 0,
+  "preflight_guide_v1_1_required": true,
+  "provider_default_calls": 0,
+  "stage": "stage176",
+  "status": "active",
+  "title": "Lineage Review Gate"
+}

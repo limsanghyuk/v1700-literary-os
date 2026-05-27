@@ -1,0 +1,13 @@
+{
+  "issues": [],
+  "scopes": [
+    "release_review",
+    "policy_registry",
+    "approval_ledger",
+    "rollback_reference"
+  ],
+  "stage": "stage174",
+  "status": "pass",
+  "title": "Authority Registry",
+  "write_authority_enabled": false
+}

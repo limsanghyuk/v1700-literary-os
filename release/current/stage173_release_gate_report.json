@@ -1,0 +1,104 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "172",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "checks": {
+    "approval_requirement_pass": {
+      "status": "pass"
+    },
+    "authority_registry_pass": {
+      "status": "pass"
+    },
+    "baseline_stage172_gate_pass": {
+      "status": "pass"
+    },
+    "default_deny_pass": {
+      "status": "pass"
+    },
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "gitnexus_preflight_analysis_pass": {
+      "status": "pass"
+    },
+    "governance_contract_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "package_comparison_report_pass": {
+      "status": "pass"
+    },
+    "page05_sealed_pass": {
+      "status": "pass"
+    },
+    "policy_precedence_pass": {
+      "status": "pass"
+    },
+    "preflight_execution_report_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "stage174_ready_pass": {
+      "status": "pass"
+    },
+    "training_mutation_disabled_pass": {
+      "status": "pass"
+    },
+    "unknown_request_denies_pass": {
+      "status": "pass"
+    },
+    "write_zero_pass": {
+      "status": "pass"
+    }
+  },
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "node2_raw_reveal_access": 0,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "173",
+  "stage173": {
+    "baseline_stage": "172",
+    "branchpoint_lineage_preserved": true,
+    "contract_count": 13,
+    "default_authority_decision": "DENY",
+    "deny_by_default": true,
+    "governance_contract_only": true,
+    "issues": [],
+    "mode": "GOVERNANCE_CONTRACT_LOCAL_ONLY",
+    "node2_raw_reveal_access": 0,
+    "policy_precedence_defined": true,
+    "policy_rule_count": 8,
+    "provider_default_calls": 0,
+    "sensitive_authority_requires_approval": true,
+    "stage": "173",
+    "stage172_page05_seal_inherited": true,
+    "stage174_release_policy_registry_ready": true,
+    "status": "pass",
+    "title": "Governance Contract"
+  },
+  "stage174_release_policy_registry_ready": true,
+  "status": "pass",
+  "title": "Governance Contract",
+  "write_operation_count": 0
+}

@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 1059
+        "node_count": 1089
       },
       "narrative_summary": {
         "available": true,
@@ -1296,6 +1296,78 @@
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,
     "raw_manuscript_provider_leakage": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage173_release_gate": {
+    "status": "pass",
+    "stage": "173",
+    "baseline_stage": "172",
+    "title": "Governance Contract",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage174_release_gate": {
+    "status": "pass",
+    "stage": "174",
+    "baseline_stage": "173",
+    "title": "Release Policy and Registry",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage175_release_gate": {
+    "status": "pass",
+    "stage": "175",
+    "baseline_stage": "174",
+    "title": "Project Boundary Governor",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage176_release_gate": {
+    "status": "pass",
+    "stage": "176",
+    "baseline_stage": "175",
+    "title": "Lineage Review Gate",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage177_release_gate": {
+    "status": "pass",
+    "stage": "177",
+    "baseline_stage": "176",
+    "title": "Operational Safety and Rollback Governance",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage178_release_gate": {
+    "status": "pass",
+    "stage": "178",
+    "baseline_stage": "177",
+    "title": "Page06 Release Seal",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
     "node2_raw_reveal_access": 0,
     "credential_leakage": 0,
     "branchpoint_lineage_preserved": true

@@ -1,0 +1,14 @@
+{
+  "allowed_statuses": [
+    "TRUNK",
+    "ABSORBED",
+    "REFERENCE",
+    "DEFERRED",
+    "REJECTED"
+  ],
+  "issues": [],
+  "runtime_risk_defaults_to_deferred": true,
+  "stage": "stage176",
+  "status": "pass",
+  "title": "Formula Status Decision Matrix"
+}

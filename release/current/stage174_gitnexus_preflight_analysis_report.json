@@ -1,0 +1,127 @@
+{
+  "native_gitnexus_available": false,
+  "runtime": "python_fallback",
+  "seven_key_perspectives": [
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "legacy_lineage",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "connectivity",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "neural_graph",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "impact",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "boundary_invariants",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "release_evidence",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "package_integrity",
+      "status": "pass"
+    }
+  ],
+  "seven_key_perspectives_count": 7,
+  "stage": "stage174",
+  "status": "pass",
+  "title": "Stage174 GitNexus 7x12 Preflight Analysis",
+  "twelve_design_development_items": [
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "proposal_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "blueprint_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "page06_design_review",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "manifest_alignment",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "source_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "gate_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "tool_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "test_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "release_evidence_surface",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "package_authority",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "preflight_and_comparison",
+      "status": "pass"
+    },
+    {
+      "applied_to_stage": "stage174",
+      "applied_to_stage173": false,
+      "name": "next_stage_handoff",
+      "status": "pass"
+    }
+  ],
+  "twelve_design_development_items_count": 12
+}

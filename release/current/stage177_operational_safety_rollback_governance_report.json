@@ -1,0 +1,82 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "176",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "deny_by_default": true,
+  "gitnexus_preflight_analysis_pass": true,
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "OPERATIONAL_SAFETY_AND_ROLLBACK_GOVERNANCE_LOCAL_ONLY",
+  "next_stage": "stage178",
+  "next_stage_title": "Page06 Release Seal",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page06 Governance Body",
+  "parts": {
+    "incident_record_schema": {
+      "immutable_evidence_entries": true,
+      "issues": [],
+      "stage": "stage177",
+      "status": "pass",
+      "title": "Incident Record Schema"
+    },
+    "previous_gate": {
+      "baseline_stage": "175",
+      "branchpoint_lineage_preserved": true,
+      "default_authority_decision": "DENY",
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "176",
+      "status": "pass",
+      "title": "Lineage Review Gate"
+    },
+    "release_freeze_policy": {
+      "can_block_future_stages": true,
+      "deployment_execution_enabled": false,
+      "issues": [],
+      "stage": "stage177",
+      "status": "pass",
+      "title": "Release Freeze Policy"
+    },
+    "rollback_readiness_matrix": {
+      "issues": [],
+      "rollback_evidence_required": true,
+      "rollback_plan_required": true,
+      "stage": "stage177",
+      "status": "pass",
+      "title": "Rollback Readiness Matrix"
+    },
+    "stage178_entry_criteria": {
+      "issues": [],
+      "stage": "stage177",
+      "stage178_page06_release_seal_ready": true,
+      "status": "pass",
+      "title": "Stage178 Entry Criteria"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "project_write_enabled": false,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "177",
+  "stage177_checksum": "f74319904008090b32b9500a91857932232d1422343ed123f342e571bde412e4",
+  "stage178_page06_release_seal_ready": true,
+  "status": "pass",
+  "title": "Operational Safety and Rollback Governance",
+  "write_operation_count": 0
+}

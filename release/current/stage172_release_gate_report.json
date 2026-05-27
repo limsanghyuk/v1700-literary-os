@@ -101,7 +101,7 @@
     "memory_write_enabled": false,
     "mode": "PAGE05_RELEASE_SEAL_LOCAL",
     "node2_raw_reveal_access": 0,
-    "page05_release_checksum": "993348fe384762dbd5943af8f08034b2b8c263dbd541f5108875221947e881c2",
+    "page05_release_checksum": "e936125d785a191cdcc2903481637a4435da4ffc04bc8c73413def87ae72e730",
     "page05_sealed": true,
     "page05_total_stage_count": 6,
     "provider_default_calls": 0,

@@ -1,28 +1,26 @@
-# V1700 Stage172 - Page05 Release Seal
+# V1700 Stage178 - Page06 Release Seal
 
-Stage172 closes Page05 Evaluation Body.
+Stage178 closes Page06 Governance Body.
 
 ## Highlights
 
-- Seals Stage167 through Stage171.
-- Adds Page05 stage chain, release seal matrix, artifact index, invariant freeze, evaluation evidence matrix, transition criteria, release seal checksum, and regression snapshot.
-- Keeps provider evaluation, provider generation, runtime execution, writes, canon mutation, runtime training, and auto-repair disabled.
-
-## Validation Commands
-
-```bash
-python -m compileall -q src tools
-python tools/run_stage171_release_gate.py
-python tools/run_stage172_page05_release_seal.py
-python tools/run_stage172_release_gate.py
-python tools/check_stage_metadata_consistency.py
-python tools/check_release_asset_integrity.py
-python tools/run_release_gate.py
-python tools/run_stage72_repo_doctor.py
-python -m pytest tests/test_stage167_evaluation_contract.py tests/test_stage168_local_evaluation_packet_store.py tests/test_stage169_deterministic_quality_continuity_evaluator.py tests/test_stage170_regression_negative_fixture_harness.py tests/test_stage171_evaluation_boundary_leakage_preflight.py tests/test_stage172_page05_release_seal.py -q
-```
+- Added Stage174 Release Policy and Registry.
+- Added Stage175 Project Boundary Governor.
+- Added Stage176 Lineage Review Gate.
+- Added Stage177 Operational Safety and Rollback Governance.
+- Added Stage178 Page06 Release Seal.
+- Enforced Preflight Guide V1.1 and GitNexus 7x12 evidence for every Stage174~178 stage.
+- Preserved provider-zero, write-zero, Node2 raw reveal zero, runtime-training disabled, canon-mutation disabled, and auto-repair disabled invariants.
 
 ## Official Release Assets
 
-- `V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip`
-- `V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip.sha256`
+- `V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip`
+- `V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip.sha256`
+
+## Page06 Stage Command Surface
+
+- stage174: `run_stage174_release_policy_registry.py`, `run_stage174_release_gate.py`
+- stage175: `run_stage175_project_boundary_governor.py`, `run_stage175_release_gate.py`
+- stage176: `run_stage176_lineage_review_gate.py`, `run_stage176_release_gate.py`
+- stage177: `run_stage177_operational_safety_rollback_governance.py`, `run_stage177_release_gate.py`
+- stage178: `run_stage178_page06_release_seal.py`, `run_stage178_release_gate.py`

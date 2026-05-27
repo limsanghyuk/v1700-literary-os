@@ -1,0 +1,29 @@
+{
+  "active_version": "stage173",
+  "baseline_package": "V1700_stage172_3_page05_release_seal_third_validation_hardening_repository_with_artifacts.zip",
+  "baseline_package_sha256": "a8488c76c32f7ecd3fc3b6ffb7ff713ef8b0a439ab4d80b4df2c353af8ce26b8",
+  "blueprint_document": "docs/architecture/stage173_governance_contract_blueprint.md",
+  "expected_next_stage": "stage174",
+  "gitnexus": {
+    "installed": false,
+    "optional_runtime_dependency": true,
+    "status": "fallback_required"
+  },
+  "gitnexus_7x12_analysis_applied": true,
+  "gitnexus_analysis_report": "release/current/stage173_gitnexus_preflight_analysis_report.json",
+  "gitnexus_seven_key_perspectives_count": 7,
+  "gitnexus_structural_fallback_analysis": "pass",
+  "gitnexus_twelve_design_development_items_count": 12,
+  "mandatory_predevelopment_check_result": "pass",
+  "mandatory_protocol_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
+  "package_comparison_required": true,
+  "preflight_guide_document": "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+  "preflight_guide_read": true,
+  "proposal_document": "docs/proposals/stage173_governance_contract_proposal.md",
+  "repository_ref": "stage173_local_governance_contract_workspace",
+  "stage": "stage173",
+  "stage_manifest": "manifests/stage173_manifest.json",
+  "status": "pass",
+  "title": "Stage173 Preflight Execution Report",
+  "zip_reextract_required": true
+}

@@ -1,0 +1,73 @@
+{
+  "contract_count": 13,
+  "issues": [],
+  "objects": {
+    "ApprovalEvidenceRef": {
+      "required": true,
+      "source": "sealed_evidence"
+    },
+    "ApprovalRequirement": {
+      "sensitive_authority_requires_approval": true
+    },
+    "AuthorityScope": {
+      "default_scope": "none",
+      "explicit_scope_required": true
+    },
+    "CrossProjectAuthority": {
+      "default_decision": "DENY",
+      "read_only_by_policy": true
+    },
+    "GovernanceAuthorityEnvelope": {
+      "authority_id": "stage173_governance_authority_envelope",
+      "authority_scope": "release|project_boundary|lineage_review|operational",
+      "default_decision": "DENY",
+      "provider_runtime_allowed": false,
+      "requires_approval_evidence": true,
+      "source_stage": "stage172",
+      "training_runtime_allowed": false,
+      "write_runtime_allowed": false
+    },
+    "GovernanceDecision": {
+      "status_space": [
+        "ALLOW",
+        "DENY",
+        "DEFER"
+      ],
+      "unknown_request": "DENY"
+    },
+    "LineageReviewAuthority": {
+      "rollback_requirement_required": true,
+      "source_evidence_required": true
+    },
+    "MutationAuthority": {
+      "default_decision": "DENY",
+      "requires_approval_evidence": true
+    },
+    "OperationalSafetyAuthority": {
+      "rollback_plan_required": true
+    },
+    "PolicyPrecedence": {
+      "deny_overrides_allow": true,
+      "tie_break": "policy_id"
+    },
+    "PolicyRule": {
+      "required_fields": [
+        "policy_id",
+        "policy_type",
+        "precedence",
+        "effect",
+        "condition_ref"
+      ]
+    },
+    "ReleaseAuthority": {
+      "automatic_promotion_enabled": false,
+      "stage172_evidence_required": true
+    },
+    "RollbackAuthority": {
+      "rollback_evidence_required": true
+    }
+  },
+  "stage": "stage173",
+  "status": "pass",
+  "title": "Stage173 Governance Contract Catalog"
+}

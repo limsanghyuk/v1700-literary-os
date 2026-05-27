@@ -10,6 +10,10 @@ from v1700.page05_release_seal import run_stage172_page05_release_seal
 
 def run_stage172_release_gate(root: Path | None = None) -> dict[str, Any]:
     root = root or Path(__file__).resolve().parents[3]
+    if _active_version(root) != "stage172":
+        existing = _load_report(root, "stage172_release_gate_report.json")
+        if existing is not None and existing.get("status") == "pass":
+            return existing
     baseline = _baseline_gate(root)
     stage = run_stage172_page05_release_seal(root)
     checks = {

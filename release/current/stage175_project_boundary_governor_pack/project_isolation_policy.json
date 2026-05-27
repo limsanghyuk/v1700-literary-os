@@ -1,0 +1,9 @@
+{
+  "default_decision": "DENY",
+  "explicit_permission_required": true,
+  "issues": [],
+  "stage": "stage175",
+  "status": "pass",
+  "title": "Project Isolation Policy",
+  "write_propagation_enabled": false
+}

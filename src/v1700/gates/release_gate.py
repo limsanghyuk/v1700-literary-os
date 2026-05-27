@@ -116,6 +116,12 @@ STAGE_GATE_SPECS: tuple[tuple[str, str, str, str], ...] = (
     ("stage170", "stage170_release_gate", "v1700.gates.stage170_release_gate", "run_stage170_release_gate"),
     ("stage171", "stage171_release_gate", "v1700.gates.stage171_release_gate", "run_stage171_release_gate"),
     ("stage172", "stage172_release_gate", "v1700.gates.stage172_release_gate", "run_stage172_release_gate"),
+    ("stage173", "stage173_release_gate", "v1700.gates.stage173_release_gate", "run_stage173_release_gate"),
+    ("stage174", "stage174_release_gate", "v1700.gates.stage174_release_gate", "run_stage174_release_gate"),
+    ("stage175", "stage175_release_gate", "v1700.gates.stage175_release_gate", "run_stage175_release_gate"),
+    ("stage176", "stage176_release_gate", "v1700.gates.stage176_release_gate", "run_stage176_release_gate"),
+    ("stage177", "stage177_release_gate", "v1700.gates.stage177_release_gate", "run_stage177_release_gate"),
+    ("stage178", "stage178_release_gate", "v1700.gates.stage178_release_gate", "run_stage178_release_gate"),
 )
 
 STAGE_ORDER = [spec[0] for spec in STAGE_GATE_SPECS]
@@ -205,7 +211,7 @@ def _active_version(root: Path) -> str:
 def _historical_evidence_summary(root: Path, stage: str, output_key: str) -> dict:
     manifest_stage = stage.replace(".", "_")
     issues: list[str] = []
-    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172"}:
+    if stage in {"stage100", "stage101", "stage102", "stage103", "stage104", "stage105", "stage106", "stage107", "stage108", "stage109", "stage110", "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117", "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124", "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131", "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172", "stage173", "stage174", "stage175", "stage176", "stage177"}:
         report_path = root / "release" / "current" / f"{output_key}_report.json"
         manifest_path = root / "manifests" / f"{manifest_stage}_manifest.json"
         docs_path = root / "docs" / "stages" / f"{manifest_stage}.md"

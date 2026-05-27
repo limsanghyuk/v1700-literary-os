@@ -1,0 +1,17 @@
+{
+  "baseline_stage": "stage172",
+  "canon_mutation_enabled": false,
+  "contract_module": "src/v1700/governance_contract/report.py",
+  "memory_write_enabled": false,
+  "next_stage": "stage174",
+  "next_title": "Release Policy and Registry",
+  "node2_raw_reveal_access": 0,
+  "page": "Page06 Governance Body",
+  "provider_default_calls": 0,
+  "release_gate": "release/current/stage173_release_gate_report.json",
+  "release_report": "release/current/stage173_governance_contract_report.json",
+  "runtime_training_enabled": false,
+  "stage": "stage173",
+  "status": "active",
+  "title": "Governance Contract"
+}

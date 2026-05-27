@@ -1,0 +1,40 @@
+{
+  "approval_requirement_count": 6,
+  "issues": [],
+  "requirements": [
+    {
+      "approval_required": true,
+      "authority": "release_promotion",
+      "execution_enabled": false
+    },
+    {
+      "approval_required": true,
+      "authority": "manuscript_change",
+      "execution_enabled": false
+    },
+    {
+      "approval_required": true,
+      "authority": "memory_change",
+      "execution_enabled": false
+    },
+    {
+      "approval_required": true,
+      "authority": "canon_change",
+      "execution_enabled": false
+    },
+    {
+      "approval_required": true,
+      "authority": "training_data_change",
+      "execution_enabled": false
+    },
+    {
+      "approval_required": true,
+      "authority": "cross_project_data",
+      "execution_enabled": false
+    }
+  ],
+  "sensitive_authority_requires_approval": true,
+  "stage": "stage173",
+  "status": "pass",
+  "title": "Stage173 Approval Requirement Matrix"
+}

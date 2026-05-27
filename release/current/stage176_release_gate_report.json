@@ -1,0 +1,62 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "175",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "checks": {
+    "docs_manifest_pass": {
+      "status": "pass"
+    },
+    "gitnexus_preflight_analysis_pass": {
+      "status": "pass"
+    },
+    "node2_boundary_pass": {
+      "status": "pass"
+    },
+    "package_comparison_report_pass": {
+      "status": "pass"
+    },
+    "preflight_execution_report_pass": {
+      "status": "pass"
+    },
+    "previous_stage_gate_pass": {
+      "status": "pass"
+    },
+    "procedure_alignment_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "stage176_lineage_review_gate_pass": {
+      "status": "pass"
+    },
+    "training_mutation_disabled_pass": {
+      "status": "pass"
+    },
+    "write_zero_pass": {
+      "status": "pass"
+    }
+  },
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_authority_decision": "DENY",
+  "governance_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "node2_raw_reveal_access": 0,
+  "project_write_enabled": false,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "176",
+  "status": "pass",
+  "title": "Lineage Review Gate",
+  "write_operation_count": 0
+}

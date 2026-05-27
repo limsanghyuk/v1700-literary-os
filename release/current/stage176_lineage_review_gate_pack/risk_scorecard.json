@@ -1,0 +1,13 @@
+{
+  "issues": [],
+  "risk_dimensions": [
+    "source",
+    "license",
+    "determinism",
+    "boundary",
+    "rollback"
+  ],
+  "stage": "stage176",
+  "status": "pass",
+  "title": "Risk Scorecard"
+}

@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: stage168 - Local Evaluation Packet Store
+Current active stage: stage173 - Governance Contract
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -78,3 +78,5 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage170](stage170.md) - Regression and Negative Fixture Harness
 
 - [Stage172 — Page05 Release Seal](stage172.md)
+
+- [Stage173](stage173.md) - Governance Contract

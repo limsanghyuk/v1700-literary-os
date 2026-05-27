@@ -1,0 +1,60 @@
+{
+  "default_decision": "DENY",
+  "deny_overrides_allow": true,
+  "issues": [],
+  "policies": [
+    {
+      "deny_overrides_allow": true,
+      "effect": "DENY",
+      "policy_id": "security_boundary_policy",
+      "precedence": 10
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DENY",
+      "policy_id": "source_boundary_policy",
+      "precedence": 20
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DENY",
+      "policy_id": "author_scope_policy",
+      "precedence": 30
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DENY",
+      "policy_id": "node_boundary_policy",
+      "precedence": 40
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DEFER",
+      "policy_id": "release_policy",
+      "precedence": 50
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DEFER",
+      "policy_id": "lineage_review_policy",
+      "precedence": 60
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "DEFER",
+      "policy_id": "operational_policy",
+      "precedence": 70
+    },
+    {
+      "deny_overrides_allow": true,
+      "effect": "ALLOW",
+      "policy_id": "advisory_policy",
+      "precedence": 80
+    }
+  ],
+  "policy_rule_count": 8,
+  "stage": "stage173",
+  "status": "pass",
+  "title": "Stage173 Policy Precedence Matrix",
+  "unknown_request_decision": "DENY"
+}

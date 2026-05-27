@@ -1,0 +1,8 @@
+{
+  "cross_project_write_enabled": false,
+  "hidden_payload_transfer_blocked": true,
+  "issues": [],
+  "stage": "stage175",
+  "status": "pass",
+  "title": "MultiWork Leakage Scan"
+}

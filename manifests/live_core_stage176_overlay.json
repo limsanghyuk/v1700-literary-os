@@ -1,0 +1,8 @@
+{
+  "active_version": "stage176",
+  "canonical_package": "V1700_stage176_lineage_review_gate_release_integrated_repository_with_artifacts.zip",
+  "current_stage": "stage176",
+  "current_title": "Lineage Review Gate",
+  "next_stage": "stage177",
+  "next_title": "Operational Safety and Rollback Governance"
+}

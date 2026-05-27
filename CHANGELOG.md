@@ -1,11 +1,16 @@
 # Changelog
 
-## Workflow Restoration (Stage172.3 Authority)
+## v1.78.0-stage178
 
-- Restored `.github/workflows/ci-fast.yml`, `ci-core.yml`, `cd-dry-run.yml`, and `release.yml`.
-- Aligned GitHub Actions with the Stage167 through Stage172 Page05 validation chain.
-- Reintroduced automated compile, pytest, release gate, repo doctor, dry-run packaging, and release asset publication checks for Stage172.3 authority.
-- Reordered authority checks so checksum validation runs before mutable Stage172 report regeneration inside CI jobs.
+- Added Stage174 through Stage178 to close Page06 Governance Body.
+- Added release policy registry, project boundary governor, lineage review gate, operational safety rollback governance, and Page06 release seal.
+- Added mandatory Preflight Guide V1.1 / GitNexus 7x12 evidence for Stage174~178.
+
+## v1.73.0-stage173
+
+- Added Stage173 Governance Contract as the Page06 Governance Body entry stage.
+- Defined default-deny governance authority, policy precedence, authority scope registry, approval requirements, and Stage174 readiness.
+- Kept provider-zero, write-zero, Node2 raw reveal zero, training disabled, mutation disabled, and automatic promotion disabled.
 
 ## v1.72.0-stage172
 
