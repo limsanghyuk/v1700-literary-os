@@ -12,9 +12,9 @@
   ],
   "gitnexus": {
     "installed": true,
-    "status": "fallback_required",
+    "status": "pass",
     "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
-    "output_excerpt": "Repository not indexed.\nRun: gitnexus analyze\n",
+    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page06_officialize\nIndexed: 2026. 5. 27. PM 1:43:29\nIndexed commit: 18fed07\nCurrent commit: 18fed07\nStatus: ✅ up-to-date\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {

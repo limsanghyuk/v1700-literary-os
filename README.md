@@ -22,7 +22,8 @@ python tools/check_release_asset_integrity.py
 python tools/run_release_gate.py
 python tools/run_stage72_repo_doctor.py
 python -m pytest tests/test_stage174_release_policy_registry.py tests/test_stage175_project_boundary_governor.py tests/test_stage176_lineage_review_gate.py tests/test_stage177_operational_safety_rollback_governance.py tests/test_stage178_page06_release_seal.py -q
-sha256sum -c SHA256SUMS.txt
+python tools/regenerate_sha256sums.py
+python tools/check_release_asset_integrity.py
 ```
 
 ## Stage Lineage
