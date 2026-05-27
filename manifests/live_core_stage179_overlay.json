@@ -1,0 +1,8 @@
+{
+  "active_version": "stage179",
+  "canonical_package": "V1700_stage179_evolution_contract_release_integrated_repository_with_artifacts.zip",
+  "current_stage": "stage179",
+  "current_title": "Evolution Contract",
+  "next_stage": "stage180",
+  "next_title": "Architecture Drift and Long-Horizon Self-Audit"
+}

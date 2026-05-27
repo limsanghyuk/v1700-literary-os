@@ -1,0 +1,86 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "179",
+  "boundary_violation_count": 0,
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "default_evolution_decision": "DEFER",
+  "evolution_write_enabled": false,
+  "gitnexus_preflight_analysis_pass": true,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "mode": "ARCHITECTURE_DRIFT_AND_LONG_HORIZON_SELF_AUDIT_LOCAL_ONLY",
+  "next_stage": "stage181",
+  "next_stage_title": "Migration Plan Compiler",
+  "node2_raw_reveal_access": 0,
+  "package_comparison_report_pass": true,
+  "page": "Page07 Evolution Body",
+  "parts": {
+    "architecture_drift_matrix": {
+      "checks": [
+        "page_boundary_drift",
+        "stage_lineage_drift",
+        "manifest_drift",
+        "release_evidence_drift",
+        "workflow_drift",
+        "test_policy_drift",
+        "gitnexus_fallback_lineage_drift"
+      ],
+      "critical_lineage_gap_count": 0,
+      "issues": [],
+      "stage": "stage180",
+      "status": "pass",
+      "title": "Architecture Drift Matrix"
+    },
+    "long_horizon_self_audit_ledger": {
+      "audit_horizon": "long_horizon",
+      "issues": [],
+      "release_evidence_drift_blockers": 0,
+      "stage": "stage180",
+      "status": "pass",
+      "title": "Long-Horizon Self-Audit Ledger"
+    },
+    "page_boundary_stability_verdict": {
+      "issues": [],
+      "page07_does_not_execute_mutation": true,
+      "stage": "stage180",
+      "status": "pass",
+      "title": "Page Boundary Stability Verdict"
+    },
+    "previous_gate": {
+      "baseline_stage": "178",
+      "branchpoint_lineage_preserved": true,
+      "issues": [],
+      "node2_raw_reveal_access": 0,
+      "provider_default_calls": 0,
+      "stage": "179",
+      "status": "pass",
+      "title": "Evolution Contract"
+    },
+    "stage181_entry_criteria": {
+      "issues": [],
+      "stage": "stage180",
+      "stage181_migration_plan_ready": true,
+      "status": "pass",
+      "title": "Stage181 Entry Criteria"
+    }
+  },
+  "preflight_execution_report_pass": true,
+  "previous_stage_gate_inherited": true,
+  "previous_stage_report_inherited": true,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "180",
+  "stage180_checksum": "38ef71ae13c4e12bac9b939ebb4d30566f23cf267cea7fafc6a81920ca3522ef",
+  "status": "pass",
+  "title": "Architecture Drift and Long-Horizon Self-Audit",
+  "write_operation_count": 0
+}

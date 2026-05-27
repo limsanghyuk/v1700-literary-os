@@ -1,0 +1,8 @@
+{
+  "audit_horizon": "long_horizon",
+  "issues": [],
+  "release_evidence_drift_blockers": 0,
+  "stage": "stage180",
+  "status": "pass",
+  "title": "Long-Horizon Self-Audit Ledger"
+}

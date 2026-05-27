@@ -1,0 +1,13 @@
+{
+  "baseline_stage": "stage181",
+  "gitnexus_7x12_required": true,
+  "manifest_type": "upgrade_simulation_compatibility_sandbox",
+  "next_stage": "stage183",
+  "node2_raw_reveal_access": 0,
+  "page": "Page07 Evolution Body",
+  "preflight_guide_v1_1_required": true,
+  "provider_default_calls": 0,
+  "stage": "stage182",
+  "status": "active",
+  "title": "Upgrade Simulation and Compatibility Sandbox"
+}

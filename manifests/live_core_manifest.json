@@ -92,15 +92,27 @@
     "stage177_operational_safety_rollback_governance",
     "stage177_release_gate",
     "stage178_page06_release_seal",
-    "stage178_release_gate"
+    "stage178_release_gate",
+    "stage179_evolution_contract",
+    "stage179_release_gate",
+    "stage180_architecture_drift_self_audit",
+    "stage180_release_gate",
+    "stage181_migration_plan_compiler",
+    "stage181_release_gate",
+    "stage182_upgrade_simulation_compatibility_sandbox",
+    "stage182_release_gate",
+    "stage183_future_absorption_deprecation_planner",
+    "stage183_release_gate",
+    "stage184_page07_release_seal",
+    "stage184_release_gate"
   ],
-  "active_version": "stage178",
-  "canonical_package": "V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage178_page06_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
-  "current_stage": "stage178",
-  "current_title": "Page06 Release Seal",
-  "next_stage": "stage179",
-  "next_title": "Evolution Body",
+  "active_version": "stage184",
+  "canonical_package": "V1700_stage184_page07_release_seal_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage184_page07_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
+  "current_stage": "stage184",
+  "current_title": "Page07 Release Seal",
+  "next_stage": "stage185",
+  "next_title": "Post-Page07 Expansion Reserve",
   "provider_default_calls": 0,
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
@@ -432,6 +444,54 @@
     "release_gate": "release/current/stage178_release_gate_report.json",
     "status": "active",
     "title": "Page06 Release Seal"
+  },
+  "stage179": {
+    "baseline_stage": "stage178",
+    "evidence": "release/current/stage179_evolution_contract_report.json",
+    "next_stage": "stage180",
+    "release_gate": "release/current/stage179_release_gate_report.json",
+    "status": "active",
+    "title": "Evolution Contract"
+  },
+  "stage180": {
+    "baseline_stage": "stage179",
+    "evidence": "release/current/stage180_architecture_drift_self_audit_report.json",
+    "next_stage": "stage181",
+    "release_gate": "release/current/stage180_release_gate_report.json",
+    "status": "active",
+    "title": "Architecture Drift and Long-Horizon Self-Audit"
+  },
+  "stage181": {
+    "baseline_stage": "stage180",
+    "evidence": "release/current/stage181_migration_plan_compiler_report.json",
+    "next_stage": "stage182",
+    "release_gate": "release/current/stage181_release_gate_report.json",
+    "status": "active",
+    "title": "Migration Plan Compiler"
+  },
+  "stage182": {
+    "baseline_stage": "stage181",
+    "evidence": "release/current/stage182_upgrade_simulation_compatibility_sandbox_report.json",
+    "next_stage": "stage183",
+    "release_gate": "release/current/stage182_release_gate_report.json",
+    "status": "active",
+    "title": "Upgrade Simulation and Compatibility Sandbox"
+  },
+  "stage183": {
+    "baseline_stage": "stage182",
+    "evidence": "release/current/stage183_future_absorption_deprecation_planner_report.json",
+    "next_stage": "stage184",
+    "release_gate": "release/current/stage183_release_gate_report.json",
+    "status": "active",
+    "title": "Future Absorption and Deprecation Planner"
+  },
+  "stage184": {
+    "baseline_stage": "stage183",
+    "evidence": "release/current/stage184_page07_release_seal_report.json",
+    "next_stage": "stage185",
+    "release_gate": "release/current/stage184_release_gate_report.json",
+    "status": "active",
+    "title": "Page07 Release Seal"
   },
   "stages": {
     "stage169": {

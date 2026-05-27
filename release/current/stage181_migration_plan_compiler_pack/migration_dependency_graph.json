@@ -1,0 +1,8 @@
+{
+  "graph_deterministic": true,
+  "issues": [],
+  "rollback_edges_present": true,
+  "stage": "stage181",
+  "status": "pass",
+  "title": "Migration Dependency Graph"
+}

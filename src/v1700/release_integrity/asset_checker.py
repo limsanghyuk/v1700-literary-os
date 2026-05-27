@@ -205,6 +205,36 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage178_page06_release_seal_report.json",
         "release_gate_report": "release/current/stage178_release_gate_report.json",
     },
+    "stage179": {
+        "package": "V1700_stage179_evolution_contract_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage179_evolution_contract_report.json",
+        "release_gate_report": "release/current/stage179_release_gate_report.json",
+    },
+    "stage180": {
+        "package": "V1700_stage180_architecture_drift_self_audit_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage180_architecture_drift_self_audit_report.json",
+        "release_gate_report": "release/current/stage180_release_gate_report.json",
+    },
+    "stage181": {
+        "package": "V1700_stage181_migration_plan_compiler_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage181_migration_plan_compiler_report.json",
+        "release_gate_report": "release/current/stage181_release_gate_report.json",
+    },
+    "stage182": {
+        "package": "V1700_stage182_upgrade_simulation_compatibility_sandbox_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage182_upgrade_simulation_compatibility_sandbox_report.json",
+        "release_gate_report": "release/current/stage182_release_gate_report.json",
+    },
+    "stage183": {
+        "package": "V1700_stage183_future_absorption_deprecation_planner_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage183_future_absorption_deprecation_planner_report.json",
+        "release_gate_report": "release/current/stage183_release_gate_report.json",
+    },
+    "stage184": {
+        "package": "V1700_stage184_page07_release_seal_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage184_page07_release_seal_report.json",
+        "release_gate_report": "release/current/stage184_release_gate_report.json",
+    },
 }
 
 
