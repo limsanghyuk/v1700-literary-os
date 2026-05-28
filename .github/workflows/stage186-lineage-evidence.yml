@@ -1,0 +1,56 @@
+name: stage186-lineage-evidence
+
+on:
+  pull_request:
+    branches:
+      - roadmap-page08-page17-commercial-absorption
+  workflow_dispatch:
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Create Stage186 evidence folder
+        run: mkdir -p release/current
+      - name: Check repository lineage files
+        run: |
+          test -f docs/lineage/v1700_branchpoint_map.md
+          test -f manifests/stage186_branchpoint_manifest.json
+          test -f manifests/stage186_symbol_to_branchpoint_connectivity.json
+          test -f manifests/stage186_orphan_legacy_symbol_report.json
+          test -f manifests/stage186_successor_trace_matrix.json
+      - name: Probe GitNexus availability
+        continue-on-error: true
+        run: |
+          if command -v gitnexus >/dev/null 2>&1; then
+            gitnexus --help > release/current/stage186_gitnexus_probe.txt
+          elif command -v gitnexus.cmd >/dev/null 2>&1; then
+            gitnexus.cmd --help > release/current/stage186_gitnexus_probe.txt
+          else
+            echo "GITNEXUS_NOT_AVAILABLE" > release/current/stage186_gitnexus_probe.txt
+          fi
+      - name: Write Stage186 workflow report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          probe = Path('release/current/stage186_gitnexus_probe.txt').read_text(encoding='utf-8')
+          available = 'GITNEXUS_NOT_AVAILABLE' not in probe
+          report = {
+              'stage': 186,
+              'workflow': 'stage186-lineage-evidence',
+              'gitnexus_available_on_runner': available,
+              'status': 'GITNEXUS_AVAILABLE' if available else 'GITNEXUS_NOT_AVAILABLE_ON_RUNNER',
+              'required_for_page08_seal': True
+          }
+          Path('release/current/stage186_github_actions_lineage_evidence_report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage186-lineage-evidence
+          path: release/current/stage186_*
+          if-no-files-found: warn
