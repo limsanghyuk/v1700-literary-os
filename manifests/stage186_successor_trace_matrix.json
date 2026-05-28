@@ -1,0 +1,23 @@
+{
+  "stage": 186,
+  "artifact": "successor_trace_matrix",
+  "status": "IMPLEMENTATION_SEED",
+  "generated_at": "2026-05-28",
+  "successor_traces": [
+    {
+      "branchpoint_id": "page01_stage145_149_constitution_chain",
+      "required_successors": ["Page09", "Page10", "Page11", "Page12", "Page13", "Page14", "Page15", "Page16", "Page17"],
+      "must_inherit": ["Provider-Zero default", "Node2 surface safety"]
+    },
+    {
+      "branchpoint_id": "stage185_8d_advisory_absorption_local_known",
+      "required_successors": ["Page12"],
+      "must_inherit": ["8D values advisory", "8D evidence integrity gated", "Stage185 local-known is not hub-closed"]
+    },
+    {
+      "branchpoint_id": "uploaded_codex_ide_absorption_addendum",
+      "required_successors": ["Page09", "Page10", "Page11", "Page12", "Page13", "Page15", "Page17"],
+      "must_inherit": ["uploaded Stage186~195 numbers are remapped", "Codex-first policy follows Page08"]
+    }
+  ]
+}
