@@ -13,9 +13,9 @@
   ],
   "gitnexus": {
     "installed": true,
-    "status": "pass",
+    "status": "fallback_required",
     "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
-    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\nIndexed: 2026. 5. 28. PM 7:03:47\nIndexed commit: 90396dd\nCurrent commit: 90396dd\nStatus: ✅ up-to-date\n",
+    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\nIndexed: 2026. 5. 28. PM 7:03:47\nIndexed commit: 90396dd\nCurrent commit: c59f9d2\nStatus: ⚠️ stale (re-run gitnexus analyze)\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {

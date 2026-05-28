@@ -8,11 +8,12 @@
     "output_excerpt": ""
   },
   "branch": "workflow-v11-gpt-preflight-stage184",
-  "head": "90396dd9bd8510397ad22c513f58e8a61b580793",
+  "head": "c59f9d2fa388a59a001352c552a7ea304563ecb2",
   "origin_main": "b46f92824ad9db36afe1b3291a821c79ef64d8af",
   "latest_stage_tag": "v1700-stage184",
   "latest_session_note": "docs/sessions/2026-05-28_workflow_v11_gpt_stage_authority_upgrade.md",
-  "git_status": "## workflow-v11-gpt-preflight-stage184...origin/workflow-v11-gpt-preflight-stage184",
+  "git_status": "## workflow-v11-gpt-preflight-stage184...origin/workflow-v11-gpt-preflight-stage184\n M release/current/mandatory_predevelopment_check_report.json\n M tests/test_precommit_guard.py\n M tools/run_precommit_guard.py\n M tools/session_end.py\n M tools/session_start.py",
+  "worktree_clean": false,
   "mandatory_predevelopment": {
     "status": "pass",
     "issues": []

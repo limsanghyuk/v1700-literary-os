@@ -33,6 +33,11 @@ def _git_value(root: Path, args: list[str], fallback: str = "") -> str:
     return output.splitlines()[0].strip() if code == 0 and output else fallback
 
 
+def _git_output(root: Path, args: list[str], fallback: str = "") -> str:
+    code, output = _run_git(root, args)
+    return output if code == 0 else fallback
+
+
 def _latest_stage_tag(root: Path) -> str:
     code, output = _run_git(root, ["tag", "--list", "v1700-stage*", "--sort=-version:refname"])
     if code != 0 or not output:
@@ -67,7 +72,7 @@ def run_session_start(root: Path | None = None, fetch_remote: bool = True, write
     head = _git_value(root, ["rev-parse", "HEAD"])
     origin_main = _git_value(root, ["rev-parse", "origin/main"])
     latest_tag = _latest_stage_tag(root)
-    status_short = _git_value(root, ["status", "--short", "--branch"])
+    status_short = _git_output(root, ["status", "--short", "--branch"])
     latest_session_note = _latest_session_note(root)
     mandatory = run_mandatory_predevelopment_check(root, write_report=write_report)
 
@@ -96,6 +101,7 @@ def run_session_start(root: Path | None = None, fetch_remote: bool = True, write
         "latest_stage_tag": latest_tag,
         "latest_session_note": latest_session_note,
         "git_status": status_short,
+        "worktree_clean": len(status_short.splitlines()) <= 1,
         "mandatory_predevelopment": {
             "status": mandatory.get("status"),
             "issues": mandatory.get("issues", []),

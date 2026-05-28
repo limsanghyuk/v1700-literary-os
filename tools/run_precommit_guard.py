@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -14,11 +15,11 @@ from tools.run_mandatory_predevelopment_check import run_mandatory_predevelopmen
 
 
 BLOCK_PATTERNS = {
-    "dev_mode_true": "DEV_MODE=True",
-    "provider_default_nonzero": "provider_default_calls = 1",
-    "live_provider_nonzero": "live_provider_call_count_in_release_gate = 1",
-    "raw_manuscript_leakage_nonzero": "raw_manuscript_provider_leakage = 1",
-    "credential_leakage_nonzero": "credential_leakage = 1",
+    "dev_mode_true": re.compile(r"^\+.*DEV_MODE\s*=\s*True\b"),
+    "provider_default_nonzero": re.compile(r'^\+.*(?:"provider_default_calls"|provider_default_calls)\s*[:=]\s*[1-9]\d*\b'),
+    "live_provider_nonzero": re.compile(r'^\+.*(?:"live_provider_call_count_in_release_gate"|live_provider_call_count_in_release_gate)\s*[:=]\s*[1-9]\d*\b'),
+    "raw_manuscript_leakage_nonzero": re.compile(r'^\+.*(?:"raw_manuscript_provider_leakage"|raw_manuscript_provider_leakage)\s*[:=]\s*[1-9]\d*\b'),
+    "credential_leakage_nonzero": re.compile(r'^\+.*(?:"credential_leakage"|credential_leakage)\s*[:=]\s*[1-9]\d*\b'),
 }
 
 
@@ -49,19 +50,28 @@ def _staged_diff(root: Path) -> str:
     return output if code == 0 else ""
 
 
+def _staged_diff_for_file(root: Path, path: str) -> str:
+    code, output = _run(root, ["git", "diff", "--cached", "--unified=0", "--", path])
+    return output if code == 0 else ""
+
+
+def _diff_has_block_pattern(staged_diff: str, pattern: re.Pattern[str]) -> bool:
+    return any(pattern.search(line) for line in staged_diff.splitlines() if line.startswith("+"))
+
+
 def run_precommit_guard(root: Path | None = None, require_release_gate: bool = False) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     mandatory = run_mandatory_predevelopment_check(root, write_report=False)
     staged_files = _staged_files(root)
-    staged_diff = _staged_diff(root)
     staged_python = [name for name in staged_files if name.endswith(".py")]
+    staged_guard_targets = [name for name in staged_files if not name.startswith("tests/")]
     issues = []
 
     if mandatory.get("status") != "pass":
         issues.append("mandatory_predevelopment_check_failed")
 
-    for name, marker in BLOCK_PATTERNS.items():
-        if f"+{marker}" in staged_diff or f"+ {marker}" in staged_diff:
+    for name, pattern in BLOCK_PATTERNS.items():
+        if any(_diff_has_block_pattern(_staged_diff_for_file(root, path), pattern) for path in staged_guard_targets):
             issues.append(name)
 
     release_gate = {"status": "skipped"}

@@ -1,9 +1,10 @@
 {
   "stage": "session_end",
-  "status": "pass",
+  "status": "attention",
   "branch": "workflow-v11-gpt-preflight-stage184",
-  "head": "b46f92824ad9db36afe1b3291a821c79ef64d8af",
-  "git_status": "## workflow-v11-gpt-preflight-stage184",
+  "head": "c59f9d2fa388a59a001352c552a7ea304563ecb2",
+  "git_status": "## workflow-v11-gpt-preflight-stage184...origin/workflow-v11-gpt-preflight-stage184\n M release/current/mandatory_predevelopment_check_report.json\n M release/current/session_start_report.json\n M tests/test_precommit_guard.py\n M tools/run_precommit_guard.py\n M tools/session_end.py\n M tools/session_start.py",
+  "worktree_clean": false,
   "required_closure": [
     "Update docs or session note when authority changed.",
     "Commit and push the branch when the work unit is complete.",
