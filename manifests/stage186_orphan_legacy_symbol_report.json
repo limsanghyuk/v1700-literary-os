@@ -1,0 +1,15 @@
+{
+  "stage": 186,
+  "artifact": "orphan_legacy_symbol_report",
+  "status": "GITNEXUS_REQUIRED_PENDING",
+  "generated_at": "2026-05-28",
+  "orphan_legacy_symbols": [],
+  "policy": {
+    "page08_seal_requires_resolution_or_explicit_successor_trace": true,
+    "orphan_symbol_definition": "A legacy symbol, manifest, gate, runner, or release artifact with no branchpoint owner or successor trace."
+  },
+  "notes": [
+    "This seed file must be replaced or updated after GitNexus connectivity analysis.",
+    "The absence of listed orphan symbols here is not evidence that none exist."
+  ]
+}
