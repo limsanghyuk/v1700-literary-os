@@ -1,0 +1,24 @@
+{
+  "page": "Page08",
+  "title": "Lineage / Hub / Formula Authority",
+  "status": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK",
+  "generated_at": "2026-05-29",
+  "stage_range": "Stage186~190",
+  "stage_status": {
+    "Stage186": "PASS_WITH_GITNEXUS_PENDING",
+    "Stage187": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
+    "Stage188": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
+    "Stage189": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
+    "Stage190": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK"
+  },
+  "page09_entry_allowed": false,
+  "required_before_page09": [
+    "Run docs/development/page08_pre_page09_local_execution_guide.md",
+    "Update Stage186 connectivity artifacts with GitNexus or approved fallback output",
+    "Regenerate Stage190 Page08 Release Seal report"
+  ],
+  "notes": [
+    "This report intentionally prevents Page09 entry until local connectivity evidence is applied.",
+    "PR #57 may remain draft until these local results are committed."
+  ]
+}
