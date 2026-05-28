@@ -33,6 +33,13 @@ def _git_value(root: Path, args: list[str], fallback: str = "") -> str:
     return output.splitlines()[0].strip() if code == 0 and output else fallback
 
 
+def _latest_stage_tag(root: Path) -> str:
+    code, output = _run_git(root, ["tag", "--list", "v1700-stage*", "--sort=-version:refname"])
+    if code != 0 or not output:
+        return ""
+    return output.splitlines()[0].strip()
+
+
 def _latest_session_note(root: Path) -> str:
     sessions_dir = root / "docs" / "sessions"
     if not sessions_dir.exists():
@@ -59,7 +66,7 @@ def run_session_start(root: Path | None = None, fetch_remote: bool = True, write
     branch = _git_value(root, ["rev-parse", "--abbrev-ref", "HEAD"], "DETACHED_HEAD")
     head = _git_value(root, ["rev-parse", "HEAD"])
     origin_main = _git_value(root, ["rev-parse", "origin/main"])
-    latest_tag = _git_value(root, ["describe", "--tags", "--abbrev=0", "--match", "v1700-stage*"])
+    latest_tag = _latest_stage_tag(root)
     status_short = _git_value(root, ["status", "--short", "--branch"])
     latest_session_note = _latest_session_note(root)
     mandatory = run_mandatory_predevelopment_check(root, write_report=write_report)
