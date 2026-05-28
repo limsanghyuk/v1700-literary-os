@@ -11,4 +11,7 @@ def test_mandatory_predevelopment_check_passes() -> None:
     assert result["status"] == "pass"
     assert result["invariant_checks"]["github_main_green_required"] is True
     assert result["invariant_checks"]["release_assets_triplet_required"] is True
-    assert "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md" in result["workflow_documents"]
+    assert result["invariant_checks"]["session_start_tool_present"] is True
+    assert result["invariant_checks"]["session_end_tool_present"] is True
+    assert result["invariant_checks"]["hook_installers_present"] is True
+    assert "docs/workflow/PREFLIGHT_GUIDE_v1.1_GPT_STAGE.md" in result["workflow_documents"]

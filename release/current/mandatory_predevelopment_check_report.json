@@ -6,15 +6,16 @@
   "priority_manifest": "manifests/predevelopment_priority_manifest.json",
   "mandatory_protocol": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
   "workflow_documents": [
-    "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+    "docs/workflow/PREFLIGHT_GUIDE_v1.1_GPT_STAGE.md",
+    "docs/workflow/SESSION_PROTOCOL.md",
     "docs/workflow/BRANCH_STRATEGY.md",
     "docs/workflow/WORKFLOW.md"
   ],
   "gitnexus": {
     "installed": true,
-    "status": "pass",
+    "status": "fallback_required",
     "command": "C:\\Users\\User\\AppData\\Roaming\\npm\\gitnexus.cmd",
-    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\nIndexed: 2026. 5. 27. PM 2:12:01\nIndexed commit: 00523d6\nCurrent commit: 00523d6\nStatus: ✅ up-to-date\n",
+    "output_excerpt": "Repository: C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\nIndexed: 2026. 5. 28. PM 7:03:47\nIndexed commit: 90396dd\nCurrent commit: c59f9d2\nStatus: ⚠️ stale (re-run gitnexus analyze)\n",
     "optional_runtime_dependency": true
   },
   "invariant_checks": {
@@ -28,11 +29,25 @@
     "release_assets_triplet_required": true,
     "release_zip_declared": true,
     "release_sidecar_declared": true,
-    "sha256sums_present": true
+    "sha256sums_present": true,
+    "session_start_required": true,
+    "session_end_required": true,
+    "hook_install_available": true,
+    "session_start_tool_present": true,
+    "session_end_tool_present": true,
+    "hook_installers_present": true,
+    "workflow_source_documents_recorded": true,
+    "sessions_directory_present": true,
+    "readme_mentions_session_start": true,
+    "contributing_mentions_session_start": true,
+    "contributing_mentions_stage_branch_pattern": true
   },
   "must_check": [
     "github_main_state",
     "latest_stage_tag",
+    "session_start_tool",
+    "session_end_tool",
+    "hook_installers",
     "mandatory_predevelopment_check",
     "gitnexus_or_python_fallback",
     "proposal_blueprint",

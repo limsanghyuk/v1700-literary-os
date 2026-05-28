@@ -12,6 +12,8 @@ Stage184 is seal-only. It does not enable provider generation, runtime execution
 ## Quick Start
 
 ```bash
+python tools/install_predevelopment_hooks.py
+python tools/session_start.py
 python -m compileall -q src tools tests
 python tools/run_mandatory_predevelopment_check.py
 python tools/run_stage183_release_gate.py
@@ -25,6 +27,8 @@ python -m pytest tests/test_stage179_evolution_contract.py tests/test_stage180_a
 python tools/regenerate_sha256sums.py
 python tools/check_release_asset_integrity.py
 ```
+
+`python tools/session_start.py` is mandatory before planning, proposal work, blueprint work, Stage implementation, integrity repair, or release-authority closure.
 
 ## Stage Lineage
 

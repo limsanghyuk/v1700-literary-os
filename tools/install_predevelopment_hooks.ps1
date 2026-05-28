@@ -1,0 +1,1 @@
+python tools/install_predevelopment_hooks.py

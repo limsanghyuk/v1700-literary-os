@@ -25,7 +25,7 @@ def _gitnexus_status(root: Path) -> dict:
     return {"installed": result.returncode == 0, "status": "pass" if result.returncode == 0 and "up-to-date" in output.lower() else "fallback_required", "command": command, "output_excerpt": output[:1000], "optional_runtime_dependency": True}
 
 
-def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
+def run_mandatory_predevelopment_check(root: Path | None = None, write_report: bool = True) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     manifest_path = root / "manifests" / "predevelopment_priority_manifest.json"
     live_manifest_path = root / "manifests" / "live_core_manifest.json"
@@ -35,6 +35,17 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
     main_gate_path = root / "release" / "current" / "release_gate_report.json"
     package_manifest_path = root / "package_manifest.json"
     sha_path = root / "SHA256SUMS.txt"
+    session_start_tool = root / "tools" / "session_start.py"
+    session_end_tool = root / "tools" / "session_end.py"
+    hook_installers = [
+        root / "tools" / "install_predevelopment_hooks.py",
+        root / "tools" / "install_predevelopment_hooks.ps1",
+        root / "tools" / "install_predevelopment_hooks.sh",
+        root / "tools" / "run_precommit_guard.py",
+    ]
+    sessions_dir = root / "docs" / "sessions"
+    contributing_path = root / "CONTRIBUTING.md"
+    readme_path = root / "README.md"
 
     priority_manifest = _read_json(manifest_path) if manifest_path.exists() else {}
     workflow_documents = priority_manifest.get("workflow_documents", [])
@@ -46,6 +57,12 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
         main_gate_path,
         package_manifest_path,
         sha_path,
+        session_start_tool,
+        session_end_tool,
+        sessions_dir,
+        contributing_path,
+        readme_path,
+        *hook_installers,
         *[root / rel for rel in workflow_documents],
     ]
     missing = [path.relative_to(root).as_posix() for path in required_files if not path.exists()]
@@ -57,6 +74,9 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
 
     canonical_package = str(package_manifest.get("canonical_package") or package_manifest.get("package") or live_manifest.get("canonical_package", ""))
     sidecar = str(package_manifest.get("sha256_sidecar") or live_manifest.get("canonical_sha256_sidecar", f"{canonical_package}.sha256"))
+    readme_text = readme_path.read_text(encoding="utf-8") if readme_path.exists() else ""
+    contributing_text = contributing_path.read_text(encoding="utf-8") if contributing_path.exists() else ""
+    source_documents = priority_manifest.get("source_documents", [])
 
     invariant_checks = {
         "provider_default_calls": live_manifest.get("provider_default_calls") == invariants.get("provider_default_calls", 0),
@@ -70,6 +90,17 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
         "release_zip_declared": canonical_package.endswith(".zip"),
         "release_sidecar_declared": sidecar.endswith(".sha256"),
         "sha256sums_present": sha_path.exists(),
+        "session_start_required": invariants.get("session_start_required") is True,
+        "session_end_required": invariants.get("session_end_required") is True,
+        "hook_install_available": invariants.get("hook_install_available") is True,
+        "session_start_tool_present": session_start_tool.exists(),
+        "session_end_tool_present": session_end_tool.exists(),
+        "hook_installers_present": all(path.exists() for path in hook_installers),
+        "workflow_source_documents_recorded": len(source_documents) >= 3,
+        "sessions_directory_present": sessions_dir.exists(),
+        "readme_mentions_session_start": "python tools/session_start.py" in readme_text,
+        "contributing_mentions_session_start": "python tools/session_start.py" in contributing_text,
+        "contributing_mentions_stage_branch_pattern": "stageNNN-topic" in contributing_text,
     }
     gitnexus = _gitnexus_status(root)
     status = "pass" if not missing and all(invariant_checks.values()) else "blocked"
@@ -88,9 +119,10 @@ def run_mandatory_predevelopment_check(root: Path | None = None) -> dict:
         "invariant_checks": invariant_checks,
         "must_check": priority_manifest.get("must_check", []),
     }
-    out = root / "release" / "current" / "mandatory_predevelopment_check_report.json"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if write_report:
+        out = root / "release" / "current" / "mandatory_predevelopment_check_report.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return payload
 
 
