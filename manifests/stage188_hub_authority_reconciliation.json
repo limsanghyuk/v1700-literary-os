@@ -1,0 +1,56 @@
+{
+  "stage": 188,
+  "page": "Page08",
+  "title": "Hub Authority Reconciliation",
+  "status": "IMPLEMENTED_RECONCILIATION_SEED",
+  "created_at": "2026-05-29",
+  "authority_categories": [
+    "HUB_OFFICIAL",
+    "LOCAL_KNOWN",
+    "PLANNED",
+    "SUPERSEDED_WITH_TRACE",
+    "DEPRECATED_WITH_REASON"
+  ],
+  "hub_official_authority": {
+    "latest_confirmed_page": "Page07",
+    "latest_confirmed_stage": "Stage184",
+    "description": "Stage184 Page07 Release Seal is treated as the latest confirmed hub official authority known to this roadmap branch.",
+    "evidence": [
+      "PR #54 officialized Stage184 Page07 Release Seal",
+      "PR #55 upgraded GPT preflight workflow authority",
+      "PR #56 defines Page08~Page17 roadmap authority as planning/design authority"
+    ]
+  },
+  "local_known_authority": {
+    "Stage185": {
+      "name": "NarrativeStateTensor 8D Advisory Absorption",
+      "status": "LOCAL_KNOWN",
+      "hub_closure": false,
+      "inherited_policy": [
+        "8D literary values are advisory",
+        "8D evidence integrity is gated"
+      ]
+    }
+  },
+  "planned_authority": {
+    "Page08_Page17": {
+      "status": "PLANNED",
+      "scope": "Commercial Absorption & Writer Studio Evolution Roadmap",
+      "first_page": "Page08",
+      "last_page": "Page17",
+      "first_stage": 186,
+      "last_stage": 240
+    },
+    "Page08": {
+      "status": "PLANNED_IMPLEMENTATION_IN_PROGRESS",
+      "scope": "Lineage / Hub / Formula Authority",
+      "stage_range": "Stage186~190"
+    }
+  },
+  "reconciliation_rules": [
+    "Local-known evidence must not be promoted to hub-official authority without branch, PR, Actions, merge, tag or release closure evidence.",
+    "Planning authority must not be treated as release seal authority.",
+    "Stage186~190 may establish Page08 implementation authority but cannot close Stage185 hub authority.",
+    "Page09 cannot begin until Page08 seal and local GitNexus or approved fallback evidence are present."
+  ]
+}
