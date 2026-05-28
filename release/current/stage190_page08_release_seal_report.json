@@ -1,0 +1,35 @@
+{
+  "stage": 190,
+  "page": "Page08",
+  "title": "Page08 Release Seal",
+  "status": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK",
+  "generated_at": "2026-05-29",
+  "completed_stage_reports": [
+    "release/current/stage186_branchpoint_map_report.json",
+    "release/current/stage187_inheritance_contract_gate_report.json",
+    "release/current/stage188_hub_authority_reconciliation_report.json",
+    "release/current/stage189_formula_logic_ledger_report.json"
+  ],
+  "completed_manifests": [
+    "manifests/stage186_branchpoint_manifest.json",
+    "manifests/stage187_inheritance_contract.json",
+    "manifests/stage188_hub_authority_reconciliation.json",
+    "manifests/stage189_formula_logic_ledger_v2.json",
+    "manifests/stage189_formula_status_matrix.json"
+  ],
+  "page08_implementation_state": "Stage186~Stage189 seed implementation complete",
+  "page08_seal_state": "not sealed",
+  "blocking_items": [
+    {
+      "id": "gitnexus_lineage_connectivity",
+      "description": "Run local GitNexus or approved fallback analysis and update Stage186 connectivity artifacts.",
+      "required_before": "Page09 entry"
+    }
+  ],
+  "page09_entry_allowed": false,
+  "local_execution_guide": "docs/development/page08_pre_page09_local_execution_guide.md",
+  "warnings": [
+    "Page08 is implementation-complete as a scaffold and seed authority layer, but not release-sealed.",
+    "Page09 must not begin until local GitNexus or approved fallback evidence is applied and Stage190 is regenerated."
+  ]
+}
