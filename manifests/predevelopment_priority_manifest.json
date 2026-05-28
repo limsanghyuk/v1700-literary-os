@@ -1,10 +1,11 @@
 {
   "priority": 0,
-  "name": "Mandatory Pre-Development Protocol V1.1",
+  "name": "Mandatory GPT Stage Pre-Development Protocol V1.2",
   "status": "active",
   "canonical_document": "docs/development/MANDATORY_PRE_DEVELOPMENT_PROTOCOL.md",
   "workflow_documents": [
-    "docs/workflow/PREFLIGHT_GUIDE_v1.1_STAGE160.md",
+    "docs/workflow/PREFLIGHT_GUIDE_v1.1_GPT_STAGE.md",
+    "docs/workflow/SESSION_PROTOCOL.md",
     "docs/workflow/BRANCH_STRATEGY.md",
     "docs/workflow/WORKFLOW.md"
   ],
@@ -16,6 +17,9 @@
   "must_check": [
     "github_main_state",
     "latest_stage_tag",
+    "session_start_tool",
+    "session_end_tool",
+    "hook_installers",
     "mandatory_predevelopment_check",
     "gitnexus_or_python_fallback",
     "proposal_blueprint",
@@ -38,6 +42,9 @@
     "python_fallback_required": true,
     "gitnexus_runtime_dependency_required": false,
     "github_main_green_required": true,
-    "release_assets_triplet_required": true
+    "release_assets_triplet_required": true,
+    "session_start_required": true,
+    "session_end_required": true,
+    "hook_install_available": true
   }
 }

@@ -21,4 +21,4 @@ jobs:
       - run: python tools/check_release_asset_integrity.py
       - run: python tools/run_stage184_release_gate.py
       - run: python tools/run_release_gate.py
-      - run: python -m pytest tests/test_release_asset_integrity.py tests/test_stage179_evolution_contract.py tests/test_stage180_architecture_drift_self_audit.py tests/test_stage181_migration_plan_compiler.py tests/test_stage182_upgrade_simulation_compatibility_sandbox.py tests/test_stage183_future_absorption_deprecation_planner.py tests/test_stage184_page07_release_seal.py tests/stage_gates/test_stage72_repo_doctor.py -q
+      - run: python -m pytest tests/test_mandatory_predevelopment_check.py tests/test_session_start.py tests/test_precommit_guard.py tests/test_release_asset_integrity.py tests/test_stage179_evolution_contract.py tests/test_stage180_architecture_drift_self_audit.py tests/test_stage181_migration_plan_compiler.py tests/test_stage182_upgrade_simulation_compatibility_sandbox.py tests/test_stage183_future_absorption_deprecation_planner.py tests/test_stage184_page07_release_seal.py tests/stage_gates/test_stage72_repo_doctor.py -q

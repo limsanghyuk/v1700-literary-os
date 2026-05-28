@@ -1,0 +1,25 @@
+{
+  "stage": "session_start",
+  "status": "pass",
+  "issues": [],
+  "fetch": {
+    "status": "pass",
+    "command": "git fetch origin --tags --prune",
+    "output_excerpt": ""
+  },
+  "branch": "workflow-v11-gpt-preflight-stage184",
+  "head": "b46f92824ad9db36afe1b3291a821c79ef64d8af",
+  "origin_main": "b46f92824ad9db36afe1b3291a821c79ef64d8af",
+  "latest_stage_tag": "v1700-stage184",
+  "latest_session_note": "docs/sessions/2026-05-28_workflow_v11_gpt_stage_authority_upgrade.md",
+  "git_status": "## workflow-v11-gpt-preflight-stage184",
+  "mandatory_predevelopment": {
+    "status": "pass",
+    "issues": []
+  },
+  "required_next_steps": [
+    "Read the target proposal and blueprint.",
+    "Confirm stage-specific gate coverage before implementation.",
+    "Refresh GitNexus if the index is stale or missing."
+  ]
+}
