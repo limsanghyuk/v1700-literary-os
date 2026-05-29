@@ -1,0 +1,294 @@
+{
+  "stage": 186,
+  "artifact": "symbol_to_branchpoint_connectivity",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "generated_at": "2026-05-29",
+  "gitnexus": {
+    "required_for_page08_seal": true,
+    "available_at_commit_time": true,
+    "commands_run": [
+      "gitnexus.cmd analyze --force",
+      "gitnexus.cmd status"
+    ],
+    "index_summary": {
+      "indexed_at": "2026-05-29T13:17:12+09:00",
+      "indexed_commit": "d83e22d",
+      "current_commit": "d83e22d",
+      "status": "up-to-date",
+      "nodes": 26640,
+      "edges": 40513,
+      "clusters": 501,
+      "flows": 300,
+      "skipped_large_files": 28
+    },
+    "source_mode": "full_page08_branch_index_then_stage186_evidence_record"
+  },
+  "connectivity_records": [
+    {
+      "branchpoint_id": "stage24_1_roadmap_metadata_hardening",
+      "source_stage_or_page": "V1650 Stage24.1",
+      "branchpoint_status": "CORE",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json",
+        "release/current/stage186_branchpoint_map_report.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "v1632_selective_legacy_restoration",
+      "source_stage_or_page": "V1632",
+      "branchpoint_status": "LEGACY",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "stage95_native_narrative_physics_engine",
+      "source_stage_or_page": "Stage95",
+      "branchpoint_status": "CORE",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage95.md",
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "stage97_1_adversarial_longform_validation_hardening",
+      "source_stage_or_page": "Stage97.1",
+      "branchpoint_status": "CORE",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage97_1.md",
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "stage120_126_gate_governor_cross_lineage_release",
+      "source_stage_or_page": "Stage120~126",
+      "branchpoint_status": "CORE",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage121.md",
+        "docs/stages/stage123.md",
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "stage127_140_multiwork_gig_formula_learning_planning",
+      "source_stage_or_page": "Stage127~140",
+      "branchpoint_status": "GATED",
+      "authority_scope": "legacy_documented",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage127.md",
+        "docs/stages/stage140.md",
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage186_branchpoint_manifest.json"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page01_stage145_149_constitution_chain",
+      "source_stage_or_page": "Page01 / Stage145~149",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage145.md",
+        "docs/stages/stage149.md",
+        "manifests/stage149_branchpoint_trace_manifest.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page02_stage150_154_memory_body",
+      "source_stage_or_page": "Page02 / Stage150~154",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage150.md",
+        "docs/stages/stage154.md",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page03_stage155_160_execution_body",
+      "source_stage_or_page": "Page03 / Stage155~160",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage155.md",
+        "docs/stages/stage160.md",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page04_stage161_166_rendering_body",
+      "source_stage_or_page": "Page04 / Stage161~166",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage161.md",
+        "docs/stages/stage166.md",
+        "manifests/stage166_branchpoint_trace_manifest.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page05_stage167_172_evaluation_body",
+      "source_stage_or_page": "Page05 / Stage167~172",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage167.md",
+        "docs/stages/stage172.md",
+        "manifests/stage172_branchpoint_trace_manifest.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page06_stage173_178_governance_body",
+      "source_stage_or_page": "Page06 / Stage173~178",
+      "branchpoint_status": "CORE",
+      "authority_scope": "documented_lineage",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage173.md",
+        "docs/stages/stage178.md",
+        "manifests/stage173_branchpoint_trace_manifest.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "page07_stage179_184_evolution_body",
+      "source_stage_or_page": "Page07 / Stage179~184",
+      "branchpoint_status": "CORE",
+      "authority_scope": "HUB_OFFICIAL_KNOWN",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/stages/stage179.md",
+        "docs/stages/stage184.md",
+        "release/current/stage184_page07_release_seal_report.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "stage185_8d_advisory_absorption_local_known",
+      "source_stage_or_page": "Stage185 local-known line",
+      "branchpoint_status": "ADVISORY",
+      "authority_scope": "LOCAL_KNOWN_NOT_HUB_CLOSED",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/lineage/v1700_branchpoint_map.md",
+        "manifests/stage188_hub_authority_reconciliation.json",
+        "release/current/stage188_hub_authority_reconciliation_report.json"
+      ],
+      "connectivity_status": "CONNECTED_LOCAL_KNOWN_ADVISORY",
+      "notes": [
+        "Stage185 remains local-known and intentionally not hub-closed."
+      ]
+    },
+    {
+      "branchpoint_id": "page08_page17_commercial_absorption_roadmap",
+      "source_stage_or_page": "Page08~Page17 roadmap PR #56",
+      "branchpoint_status": "PLANNED",
+      "authority_scope": "PLANNING_AUTHORITY",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/roadmaps/page08_page17_commercial_absorption_writer_studio_roadmap.md",
+        "manifests/page08_page17_roadmap_manifest.json",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    },
+    {
+      "branchpoint_id": "uploaded_codex_ide_absorption_addendum",
+      "source_stage_or_page": "Uploaded proposal addendum",
+      "branchpoint_status": "PLANNED",
+      "authority_scope": "PLANNING_AUTHORITY",
+      "successor_trace_required": true,
+      "matched_repository_paths": [
+        "docs/roadmaps/page08_page17_codex_ide_absorption_addendum.md",
+        "docs/lineage/v1700_branchpoint_map.md"
+      ],
+      "connectivity_status": "CONNECTED",
+      "notes": [
+        "Connectivity is recorded through Page08 branchpoint ownership artifacts after successful full-repository GitNexus indexing."
+      ]
+    }
+  ],
+  "notes": [
+    "The full Page08 branch was indexed with GitNexus, and the resulting lineage ownership was recorded as Stage186 evidence.",
+    "Stage186 owns branchpoint and connectivity evidence for the entire Stage186~190 Page08 seed branch."
+  ],
+  "repository_scope": "stage186-page08-branchpoint-map full repository state"
+}

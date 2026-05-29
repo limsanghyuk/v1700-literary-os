@@ -1,0 +1,43 @@
+{
+  "stage": 190,
+  "page": "Page08",
+  "title": "Page08 Release Seal",
+  "status": "PASS_WITH_WARNINGS",
+  "generated_at": "2026-05-29",
+  "completed_stage_reports": [
+    "release/current/stage186_branchpoint_map_report.json",
+    "release/current/stage187_inheritance_contract_gate_report.json",
+    "release/current/stage188_hub_authority_reconciliation_report.json",
+    "release/current/stage189_formula_logic_ledger_report.json"
+  ],
+  "completed_manifests": [
+    "manifests/stage186_branchpoint_manifest.json",
+    "manifests/stage187_inheritance_contract.json",
+    "manifests/stage188_hub_authority_reconciliation.json",
+    "manifests/stage189_formula_logic_ledger_v2.json",
+    "manifests/stage189_formula_status_matrix.json"
+  ],
+  "page08_implementation_state": "Stage186~Stage189 seed implementation complete",
+  "page08_seal_state": "evidence-ready for web review",
+  "blocking_items": [],
+  "page09_entry_allowed": true,
+  "local_execution_guide": "docs/development/page08_pre_page09_local_execution_guide.md",
+  "warnings": [
+    "Page08 seed implementation and local GitNexus evidence are complete enough for web-side seal review.",
+    "Final Page09 promotion remains a web-side authority decision after reading the pushed evidence."
+  ],
+  "local_evidence_source": {
+    "stage186_gitnexus_lineage_connectivity_report": "PASS_WITH_GITNEXUS_OUTPUT",
+    "index_summary": {
+      "indexed_at": "2026-05-29T13:17:12+09:00",
+      "indexed_commit": "d83e22d",
+      "current_commit": "d83e22d",
+      "status": "up-to-date",
+      "nodes": 26640,
+      "edges": 40513,
+      "clusters": 501,
+      "flows": 300,
+      "skipped_large_files": 28
+    }
+  }
+}
