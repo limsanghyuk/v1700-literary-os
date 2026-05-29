@@ -1,8 +1,8 @@
 {
   "stage": 186,
   "title": "Branchpoint Map Builder",
-  "status": "PASS_WITH_GITNEXUS_PENDING",
-  "generated_at": "2026-05-28",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "generated_at": "2026-05-29",
   "branchpoint_count": 16,
   "core_count": 11,
   "gated_count": 1,
@@ -12,11 +12,11 @@
   "deprecated_count": 0,
   "replaced_with_trace_count": 0,
   "gitnexus_required_for_page08_seal": true,
-  "gitnexus_status": "PENDING_REQUIRED_EVIDENCE",
+  "gitnexus_status": "PASS_WITH_GITNEXUS_OUTPUT",
   "failures": [],
   "warnings": [
-    "GitNexus connectivity evidence is pending and must be supplied before Page08 release seal.",
-    "Stage185 is intentionally recorded as LOCAL_KNOWN_NOT_HUB_CLOSED."
+    "Stage185 remains intentionally recorded as LOCAL_KNOWN_NOT_HUB_CLOSED.",
+    "dev_protocol_v3.0 and workflow/preflight_guide_v1.1 still require canonical hub-path confirmation if they are to become repository authority documents."
   ],
   "outputs": [
     "docs/lineage/v1700_branchpoint_map.md",
@@ -24,5 +24,16 @@
     "manifests/stage186_symbol_to_branchpoint_connectivity.json",
     "manifests/stage186_orphan_legacy_symbol_report.json",
     "manifests/stage186_successor_trace_matrix.json"
-  ]
+  ],
+  "gitnexus_index_summary": {
+    "indexed_at": "2026-05-29T13:17:12+09:00",
+    "indexed_commit": "d83e22d",
+    "current_commit": "d83e22d",
+    "status": "up-to-date",
+    "nodes": 26640,
+    "edges": 40513,
+    "clusters": 501,
+    "flows": 300,
+    "skipped_large_files": 28
+  }
 }

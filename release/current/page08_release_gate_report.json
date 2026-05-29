@@ -1,24 +1,22 @@
 {
   "page": "Page08",
   "title": "Lineage / Hub / Formula Authority",
-  "status": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK",
+  "status": "PASS_WITH_WARNINGS",
   "generated_at": "2026-05-29",
   "stage_range": "Stage186~190",
   "stage_status": {
-    "Stage186": "PASS_WITH_GITNEXUS_PENDING",
-    "Stage187": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
-    "Stage188": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
-    "Stage189": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
-    "Stage190": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK"
+    "Stage186": "PASS_WITH_GITNEXUS_OUTPUT",
+    "Stage187": "PASS_WITH_GITNEXUS_OUTPUT",
+    "Stage188": "PASS_WITH_GITNEXUS_OUTPUT",
+    "Stage189": "PASS_WITH_GITNEXUS_OUTPUT",
+    "Stage190": "PASS_WITH_WARNINGS"
   },
-  "page09_entry_allowed": false,
+  "page09_entry_allowed": true,
   "required_before_page09": [
-    "Run docs/development/page08_pre_page09_local_execution_guide.md",
-    "Update Stage186 connectivity artifacts with GitNexus or approved fallback output",
-    "Regenerate Stage190 Page08 Release Seal report"
+    "Web project must review the pushed Stage186 lineage evidence and Stage190/Page08 reports before promoting Page09."
   ],
   "notes": [
-    "This report intentionally prevents Page09 entry until local connectivity evidence is applied.",
-    "PR #57 may remain draft until these local results are committed."
+    "Local GitNexus indexing and Stage186 evidence regeneration are complete for the full Page08 branch state.",
+    "Page09 is no longer blocked by missing local lineage evidence; final promotion is reserved for web-side review."
   ]
 }

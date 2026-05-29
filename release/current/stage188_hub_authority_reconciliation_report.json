@@ -1,7 +1,7 @@
 {
   "stage": 188,
   "title": "Hub Authority Reconciliation",
-  "status": "PASS_WITH_PAGE08_GITNEXUS_PENDING",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
   "generated_at": "2026-05-29",
   "hub_official_latest_stage": "Stage184",
   "local_known_latest_stage": "Stage185",
@@ -11,6 +11,6 @@
   "failures": [],
   "warnings": [
     "Stage185 remains local-known and not hub-official in this reconciliation.",
-    "Page08 cannot be treated as sealed until Stage190 and local GitNexus or approved fallback evidence are present."
+    "Page08 seal is now evidence-ready for web-side review rather than blocked on missing local lineage connectivity."
   ]
 }

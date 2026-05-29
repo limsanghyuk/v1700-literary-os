@@ -1,8 +1,8 @@
 {
   "stage": 186,
   "artifact": "orphan_legacy_symbol_report",
-  "status": "GITNEXUS_REQUIRED_PENDING",
-  "generated_at": "2026-05-28",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "generated_at": "2026-05-29",
   "orphan_legacy_symbols": [],
   "policy": {
     "page08_seal_requires_resolution_or_explicit_successor_trace": true,
@@ -11,5 +11,25 @@
   "notes": [
     "This seed file must be replaced or updated after GitNexus connectivity analysis.",
     "The absence of listed orphan symbols here is not evidence that none exist."
-  ]
+  ],
+  "gitnexus_index_summary": {
+    "indexed_at": "2026-05-29T13:17:12+09:00",
+    "indexed_commit": "d83e22d",
+    "current_commit": "d83e22d",
+    "status": "up-to-date",
+    "nodes": 26640,
+    "edges": 40513,
+    "clusters": 501,
+    "flows": 300,
+    "skipped_large_files": 28
+  },
+  "review_scope": "stage186-page08-branchpoint-map full repository state",
+  "findings": {
+    "orphan_count": 0,
+    "local_known_non_orphan_count": 1,
+    "notes": [
+      "No orphan legacy symbol was identified at the branchpoint-owner evidence level after full-repository indexing.",
+      "Stage185 is intentionally local-known and advisory, and is therefore tracked as a non-orphan local-known branchpoint rather than a sealed hub authority."
+    ]
+  }
 }

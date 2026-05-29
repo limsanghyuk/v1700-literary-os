@@ -2,7 +2,7 @@
   "stage": 190,
   "page": "Page08",
   "title": "Page08 Release Seal",
-  "status": "BLOCKED_PENDING_LOCAL_GITNEXUS_OR_APPROVED_FALLBACK",
+  "status": "PASS_WITH_WARNINGS",
   "generated_at": "2026-05-29",
   "completed_stage_reports": [
     "release/current/stage186_branchpoint_map_report.json",
@@ -18,18 +18,26 @@
     "manifests/stage189_formula_status_matrix.json"
   ],
   "page08_implementation_state": "Stage186~Stage189 seed implementation complete",
-  "page08_seal_state": "not sealed",
-  "blocking_items": [
-    {
-      "id": "gitnexus_lineage_connectivity",
-      "description": "Run local GitNexus or approved fallback analysis and update Stage186 connectivity artifacts.",
-      "required_before": "Page09 entry"
-    }
-  ],
-  "page09_entry_allowed": false,
+  "page08_seal_state": "evidence-ready for web review",
+  "blocking_items": [],
+  "page09_entry_allowed": true,
   "local_execution_guide": "docs/development/page08_pre_page09_local_execution_guide.md",
   "warnings": [
-    "Page08 is implementation-complete as a scaffold and seed authority layer, but not release-sealed.",
-    "Page09 must not begin until local GitNexus or approved fallback evidence is applied and Stage190 is regenerated."
-  ]
+    "Page08 seed implementation and local GitNexus evidence are complete enough for web-side seal review.",
+    "Final Page09 promotion remains a web-side authority decision after reading the pushed evidence."
+  ],
+  "local_evidence_source": {
+    "stage186_gitnexus_lineage_connectivity_report": "PASS_WITH_GITNEXUS_OUTPUT",
+    "index_summary": {
+      "indexed_at": "2026-05-29T13:17:12+09:00",
+      "indexed_commit": "d83e22d",
+      "current_commit": "d83e22d",
+      "status": "up-to-date",
+      "nodes": 26640,
+      "edges": 40513,
+      "clusters": 501,
+      "flows": 300,
+      "skipped_large_files": 28
+    }
+  }
 }
