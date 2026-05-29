@@ -1,0 +1,10 @@
+{
+  "page": "Page10",
+  "stage": 198,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "name": "Context Packet Contract",
+  "groups": ["packet_id", "consumer", "included_records", "reference_group", "projection_status", "boundary_status"],
+  "requires": ["consumer", "reference_group", "projection_status"],
+  "depends_on": 197,
+  "next_stage": 199
+}
