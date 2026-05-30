@@ -1,0 +1,22 @@
+{
+  "page": "Page11",
+  "stage": 202,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Chapter Scene Beat Node Contract",
+  "depends_on": [201],
+  "record_groups": [
+    "chapter_node",
+    "scene_node",
+    "beat_node",
+    "parent_ref",
+    "order_index",
+    "source_packet_ref",
+    "surface_state"
+  ],
+  "rules": [
+    "node_parent_ref_required",
+    "order_index_required",
+    "source_packet_ref_required"
+  ],
+  "next_stage": 203
+}
