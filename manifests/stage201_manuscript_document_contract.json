@@ -1,0 +1,22 @@
+{
+  "page": "Page11",
+  "stage": 201,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Manuscript Document Contract",
+  "depends_on": ["Page10", "Page11 proposal", "Page11 blueprint"],
+  "record_groups": [
+    "document_id",
+    "project_id",
+    "chapter_index",
+    "scene_index",
+    "source_packet_ref",
+    "surface_state",
+    "revision_ref"
+  ],
+  "rules": [
+    "document_surface_is_not_final_authority",
+    "source_packet_ref_required",
+    "revision_ref_required"
+  ],
+  "next_stage": 202
+}
