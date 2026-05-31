@@ -1,0 +1,23 @@
+{
+  "page": "Page14",
+  "stage": 223,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Work Boundary Rule and Page15 Handoff Contract",
+  "depends_on": [219, 220, 221, 222],
+  "record_groups": [
+    "rule_id",
+    "work_ref",
+    "permitted_link_types",
+    "restricted_link_types",
+    "local_authority_policy",
+    "handoff_target"
+  ],
+  "rules": [
+    "rule_id_required",
+    "work_ref_required",
+    "local_authority_policy_required",
+    "handoff_target_required"
+  ],
+  "handoff": ["Page15"],
+  "next_stage": 224
+}
