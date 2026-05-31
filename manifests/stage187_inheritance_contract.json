@@ -1,0 +1,61 @@
+{
+  "stage": 187,
+  "page": "Page08",
+  "title": "Inheritance Contract Gate",
+  "status": "IMPLEMENTED_CONTRACT_SEED",
+  "created_at": "2026-05-29",
+  "applies_to": "Page09~Page17 and all later successor stages",
+  "required_declaration_fields": [
+    "must_inherit",
+    "may_extend",
+    "must_not_override",
+    "may_deprecate_only_with_successor_trace"
+  ],
+  "global_must_inherit": [
+    "Provider-Zero remains default unless provider sandbox policy explicitly permits a candidate path",
+    "Node2 remains surface-safe",
+    "memory write requires an explicit write contract",
+    "canon mutation requires an approved mutation path",
+    "runtime learning requires audit and rollback",
+    "ASD mutation requires patch proposal, author approval, reversible patch, and signed repair commit",
+    "8D literary values remain advisory while evidence integrity is gated",
+    "GIG begins as advisory contradiction intelligence",
+    "project isolation precedes MultiWork sharing",
+    "license boundary precedes cross-project access",
+    "uploaded Codex / Narrative IDE Stage186~195 concepts are remapped into Page10~Page13 and later pages"
+  ],
+  "future_page_requirements": {
+    "Page09": {
+      "must_inherit": ["Page08 branchpoint map", "Page08 inheritance contract", "Codex-first policy after Page08"],
+      "must_not_override": ["Page08 seal preconditions", "commercial absorption cannot bypass lineage authority"]
+    },
+    "Page10": {
+      "must_inherit": ["Page02 memory boundary", "Page08 branchpoint map"],
+      "must_not_override": ["Story Repository cannot bypass context provenance or safe projection"]
+    },
+    "Page11": {
+      "must_inherit": ["Page04 rendering dry-run boundary", "author approval before write"],
+      "must_not_override": ["draft candidate is not committed manuscript"]
+    },
+    "Page12": {
+      "must_inherit": ["Stage185 8D advisory principle", "Page05 evaluation separation"],
+      "must_not_override": ["8D value cannot become hard literary quality gate without later promotion record"]
+    },
+    "Page13": {
+      "must_inherit": ["ASD non-mutating lineage", "writer approval before merge"],
+      "must_not_override": ["StoryPatch cannot update main story state before approval"]
+    },
+    "Page14": {
+      "must_inherit": ["project isolation before sharing", "license boundary before cross-project access"],
+      "must_not_override": ["shared world or character store cannot write into project state by default"]
+    },
+    "Page17": {
+      "must_inherit": ["audit-first learning", "rollbackable personalization", "plugin capability declaration"],
+      "must_not_override": ["runtime learning cannot change behavior without audit evidence"]
+    }
+  },
+  "page08_local_pre_page09_requirement": {
+    "gitnexus_or_approved_fallback_evidence_required": true,
+    "guide": "docs/development/page08_pre_page09_local_execution_guide.md"
+  }
+}

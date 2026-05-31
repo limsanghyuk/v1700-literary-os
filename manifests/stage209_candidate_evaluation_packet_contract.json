@@ -1,0 +1,22 @@
+{
+  "page": "Page12",
+  "stage": 209,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Candidate Evaluation Packet Contract",
+  "depends_on": [207, 208],
+  "record_groups": [
+    "candidate_ref",
+    "scene_ref",
+    "source_packet_ref",
+    "feature_record_refs",
+    "advisory_note",
+    "risk_note",
+    "evidence_bundle_ref"
+  ],
+  "rules": [
+    "candidate_ref_required",
+    "source_packet_ref_required",
+    "feature_record_refs_required"
+  ],
+  "next_stage": 210
+}

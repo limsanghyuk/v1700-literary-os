@@ -1,0 +1,21 @@
+{
+  "page": "Page12",
+  "stage": 211,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Narrative Gate Result Contract",
+  "depends_on": [207, 208, 209, 210],
+  "record_groups": [
+    "gate_id",
+    "target_ref",
+    "check_set",
+    "result",
+    "advisory_only",
+    "evidence_bundle_ref"
+  ],
+  "rules": [
+    "target_ref_required",
+    "evidence_bundle_ref_required",
+    "advisory_only_required"
+  ],
+  "next_stage": 212
+}

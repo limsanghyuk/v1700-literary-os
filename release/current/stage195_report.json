@@ -1,0 +1,8 @@
+{
+  "page": "Page10",
+  "stage": 195,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "evidence": "structured_contract_present",
+  "gitnexus": "pending_for_page10_final_evidence",
+  "notes": ["Page08 and Page09 authority inherited", "local GitNexus not available at this pass"]
+}

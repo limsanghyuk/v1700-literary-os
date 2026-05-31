@@ -1,0 +1,22 @@
+{
+  "page": "Page11",
+  "stage": 203,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Revision Snapshot and Comment Layer Contract",
+  "depends_on": [201, 202],
+  "record_groups": [
+    "snapshot_id",
+    "target_unit_ref",
+    "comment_thread",
+    "anchor_ref",
+    "author_note",
+    "created_at",
+    "previous_snapshot_ref"
+  ],
+  "rules": [
+    "anchor_ref_required",
+    "snapshot_id_required",
+    "previous_snapshot_ref_optional"
+  ],
+  "next_stage": 204
+}
