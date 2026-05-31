@@ -1,0 +1,23 @@
+{
+  "page": "Page14",
+  "stage": 222,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Cross Work Link and Continuity Bridge Contract",
+  "depends_on": [219, 220, 221],
+  "record_groups": [
+    "link_id",
+    "source_work_ref",
+    "target_work_ref",
+    "link_type",
+    "bridge_note",
+    "evidence_ref",
+    "boundary_status"
+  ],
+  "rules": [
+    "source_work_ref_required",
+    "target_work_ref_required",
+    "evidence_ref_required",
+    "boundary_status_required"
+  ],
+  "next_stage": 223
+}
