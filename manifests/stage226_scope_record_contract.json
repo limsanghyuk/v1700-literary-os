@@ -1,0 +1,22 @@
+{
+  "page": "Page15",
+  "stage": 226,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Scope Record Contract",
+  "depends_on": [225],
+  "record_groups": [
+    "scope_id",
+    "session_id",
+    "work_ref",
+    "allowed_sections",
+    "restricted_sections",
+    "closure_rule"
+  ],
+  "rules": [
+    "scope_id_required",
+    "session_id_required",
+    "work_ref_required",
+    "closure_rule_required"
+  ],
+  "next_stage": 227
+}
