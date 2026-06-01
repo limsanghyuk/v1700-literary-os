@@ -1,0 +1,45 @@
+{
+  "version_id": "stage224",
+  "scope": "Page14 Stage219~224 full repository state with inherited Page10~Page13 lineage checks",
+  "page": "Page14",
+  "branch": "roadmap-page08-page17-commercial-absorption",
+  "indexed_at": "2026-06-01T10:26:11+09:00",
+  "indexed_commit": "19841e72f6ea96c0d5c460efde420cea85ee3fb9",
+  "current_commit_at_index_time": "19841e72f6ea96c0d5c460efde420cea85ee3fb9",
+  "gitnexus_status": "up-to-date",
+  "gitnexus_available": true,
+  "commands_run": [
+    "python tools/session_start.py",
+    "python tools/run_mandatory_predevelopment_check.py",
+    "python tools/check_stage_metadata_consistency.py",
+    "python tools/check_release_asset_integrity.py",
+    "python tools/run_release_gate.py",
+    "python tools/run_stage72_repo_doctor.py",
+    "gitnexus.cmd analyze --force",
+    "gitnexus.cmd status"
+  ],
+  "graph_summary": {
+    "nodes": 26790,
+    "edges": 40660,
+    "clusters": 504,
+    "flows": 300,
+    "skipped_large_files": 28
+  },
+  "preflight": {
+    "session_start": "PASS",
+    "mandatory_predevelopment_check": "PASS",
+    "stage_metadata_consistency": "PASS",
+    "release_asset_integrity": "PASS",
+    "release_gate": "PASS",
+    "repo_doctor": "PASS"
+  },
+  "overall_result": "PASS_WITH_WARNINGS",
+  "warnings": [
+    "Page13 GitNexus evidence is still pending.",
+    "Page12 GitNexus evidence is still pending.",
+    "Page11 GitNexus evidence is still pending.",
+    "Page10 GitNexus evidence is still pending.",
+    "Stage185 remains local-known and not hub official."
+  ],
+  "failures": []
+}

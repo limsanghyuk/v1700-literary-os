@@ -1,0 +1,12 @@
+{
+  "version_id": "stage224",
+  "scope": "Page14 Stage219~224",
+  "orphan_count": 0,
+  "orphan_symbols": [],
+  "unresolved_items": [],
+  "decision": "PASS_WITH_WARNINGS",
+  "notes": [
+    "No orphan Page14 lineage artifact was found among the required Stage219~224 contracts and the Page10~Page14 gate chain.",
+    "Stage185 remains local-known and advisory, but it is tracked as an upstream warning rather than an orphan in this branch state."
+  ]
+}
