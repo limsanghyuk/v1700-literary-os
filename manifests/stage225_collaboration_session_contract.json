@@ -1,0 +1,22 @@
+{
+  "page": "Page15",
+  "stage": 225,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Collaboration Session Contract",
+  "depends_on": ["Page14", "Page15 proposal", "Page15 blueprint"],
+  "record_groups": [
+    "session_id",
+    "work_ref",
+    "reviewer_scope_ref",
+    "share_envelope_ref",
+    "visibility_projection_ref",
+    "audit_ref"
+  ],
+  "rules": [
+    "session_id_required",
+    "work_ref_required",
+    "reviewer_scope_ref_required",
+    "audit_ref_required"
+  ],
+  "next_stage": 226
+}
