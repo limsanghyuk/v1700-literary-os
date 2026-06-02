@@ -1,0 +1,22 @@
+{
+  "page": "Page15",
+  "stage": 228,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Comment Exchange and Review Input Record Contract",
+  "depends_on": [225, 226, 227],
+  "record_groups": [
+    "comment_exchange_id",
+    "share_envelope_id",
+    "reviewer_scope_id",
+    "target_unit_ref",
+    "comment_payload_ref",
+    "review_input_status"
+  ],
+  "rules": [
+    "comment_exchange_id_required",
+    "share_envelope_id_required",
+    "target_unit_ref_required",
+    "review_input_status_required"
+  ],
+  "next_stage": 229
+}
