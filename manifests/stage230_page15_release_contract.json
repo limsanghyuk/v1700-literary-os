@@ -1,0 +1,28 @@
+{
+  "page": "Page15",
+  "stage": 230,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Page15 Release Seal Contract",
+  "depends_on": [225, 226, 227, 228, 229],
+  "required_documents": [
+    "docs/proposals/page15_collaboration_review_share_proposal.md",
+    "docs/architecture/page15_blueprint.md",
+    "docs/architecture/page15_gate_alignment_note.md"
+  ],
+  "required_manifests": [
+    "manifests/stage225_collaboration_session_contract.json",
+    "manifests/stage226_reviewer_scope_contract.json",
+    "manifests/stage227_share_envelope_contract.json",
+    "manifests/stage228_comment_exchange_contract.json",
+    "manifests/stage229_collaboration_audit_handoff_contract.json"
+  ],
+  "release_gate_rules": [
+    "stage225_to_stage230_order_required",
+    "page14_dependency_required",
+    "upstream_warnings_carried_forward",
+    "review_projection_must_be_read_only",
+    "comment_input_must_not_be_canonical_state",
+    "page16_handoff_declared_without_page16_implementation"
+  ],
+  "next_page": "Page16"
+}
