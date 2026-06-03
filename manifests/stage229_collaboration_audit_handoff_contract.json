@@ -1,0 +1,25 @@
+{
+  "page": "Page15",
+  "stage": 229,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Collaboration Audit and Page16 Handoff Contract",
+  "depends_on": [225, 226, 227, 228],
+  "record_groups": [
+    "collaboration_audit_id",
+    "collaboration_session_id",
+    "share_envelope_id",
+    "comment_exchange_id",
+    "permission_decision_ref",
+    "visibility_projection_ref",
+    "page16_handoff_target"
+  ],
+  "rules": [
+    "collaboration_audit_id_required",
+    "session_scope_required",
+    "share_and_comment_trace_required",
+    "page16_handoff_target_required",
+    "no_page16_export_execution"
+  ],
+  "handoff": ["Page16"],
+  "next_stage": 230
+}
