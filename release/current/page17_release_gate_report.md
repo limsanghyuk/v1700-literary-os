@@ -26,6 +26,8 @@ Page17 is accepted as fallback-backed scaffold based on:
 - Stage235 GitNexus evidence report
 - Stage236~242 manifests
 - Stage236~242 summaries
+- Stage242 integrity marker
+- Page17 GitNexus guide
 
 ## Integrity decision
 
@@ -40,6 +42,20 @@ Learning audit and rollback records are required.
 Personalization boundary record is required.
 Studio coordination scope is required.
 RC evidence records are required.
+Stage242 now declares required documents, upstream evidence, manifests, summaries, gate files, and verification algorithm.
+
+## Stage242 verification algorithm
+
+- check required documents exist
+- check upstream evidence exists
+- check Stage236~241 manifests exist
+- check Stage236~242 summaries exist
+- check Page17 gate files exist
+- check Stage236 to Stage242 order
+- check Stage235 status is PASS_WITH_GITNEXUS_OUTPUT
+- check Page10~Page13 warnings remain visible
+- check Stage185 warning remains visible
+- keep Page17 pending until Stage242 evidence is committed
 
 ## Carry-forward warnings
 
