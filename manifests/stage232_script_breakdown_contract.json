@@ -1,0 +1,29 @@
+{
+  "page": "Page16",
+  "stage": 232,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Script Breakdown Packet Contract",
+  "depends_on": [231],
+  "record_groups": [
+    "breakdown_packet_id",
+    "screenplay_render_id",
+    "source_work_ref",
+    "breakdown_element_refs",
+    "permitted_scope",
+    "provenance_refs",
+    "authority_policy"
+  ],
+  "rules": [
+    "breakdown_packet_id_required",
+    "screenplay_render_id_required",
+    "breakdown_element_refs_required",
+    "permitted_scope_required",
+    "provenance_refs_required",
+    "authority_policy_must_be_advisory"
+  ],
+  "blocking_failures": [
+    "production_packet_treated_as_final_authority_without_approval",
+    "breakdown_includes_protected_story_data_outside_permitted_scope"
+  ],
+  "next_stage": 233
+}
