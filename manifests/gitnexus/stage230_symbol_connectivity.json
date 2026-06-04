@@ -1,0 +1,160 @@
+{
+  "version_id": "stage230",
+  "scope": "Page15 Stage225~230 full repository state with inherited Page10~Page14 lineage",
+  "records": [
+    {
+      "owner": "Page10",
+      "artifact": "release/current/page10_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page11",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Page11 release gate explicitly inherits Page10 dependency."
+      ]
+    },
+    {
+      "owner": "Page11",
+      "artifact": "release/current/page11_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page12",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Page12 release gate explicitly inherits Page11 dependency."
+      ]
+    },
+    {
+      "owner": "Page12",
+      "artifact": "release/current/page12_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Page13 release gate explicitly inherits Page12 dependency."
+      ]
+    },
+    {
+      "owner": "Page13",
+      "artifact": "release/current/page13_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Page14 release gate explicitly inherits Page13 dependency."
+      ]
+    },
+    {
+      "owner": "Page14",
+      "artifact": "release/current/page14_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage224",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Page15 release gate explicitly inherits Page14 dependency and Stage224 GitNexus evidence."
+      ]
+    },
+    {
+      "owner": "Stage224",
+      "artifact": "release/current/stage224_gitnexus_evidence_report.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage225",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Stage224 GitNexus evidence is recorded as the upstream authority for Page15."
+      ]
+    },
+    {
+      "owner": "Stage225",
+      "artifact": "manifests/stage225_collaboration_session_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage226",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Stage225 is preserved as the first Page15 contract."
+      ]
+    },
+    {
+      "owner": "Stage226",
+      "artifact": "manifests/stage226_reviewer_scope_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage227",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Reviewer scope remains part of the Page15 structured contract chain."
+      ]
+    },
+    {
+      "owner": "Stage227",
+      "artifact": "manifests/stage227_share_envelope_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage228",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "Share envelope stays read-only and does not replace canonical story state."
+      ]
+    },
+    {
+      "owner": "Stage228",
+      "artifact": "manifests/stage228_comment_exchange_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage229",
+        "Page15",
+        "Stage230"
+      ],
+      "notes": [
+        "External comments remain review inputs and are not canonical story state."
+      ]
+    },
+    {
+      "owner": "Stage229",
+      "artifact": "manifests/stage229_collaboration_audit_handoff_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage230",
+        "Page16"
+      ],
+      "notes": [
+        "Page16 is declared only as handoff; no Page16 implementation files are present in the current branch state."
+      ]
+    },
+    {
+      "owner": "Stage230",
+      "artifact": "manifests/stage230_page15_release_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page15",
+        "Page16"
+      ],
+      "notes": [
+        "Stage230 seals Page15 while preserving Page16 as next-page handoff only."
+      ]
+    }
+  ]
+}

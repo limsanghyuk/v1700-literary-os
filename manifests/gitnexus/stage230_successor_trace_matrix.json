@@ -1,0 +1,121 @@
+{
+  "version_id": "stage230",
+  "scope": "Page10~Page15 successor trace matrix",
+  "successor_traces": [
+    {
+      "from": "Page10",
+      "to": "Page11",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/page10_release_gate_report.md",
+        "release/current/page11_release_gate_report.md"
+      ]
+    },
+    {
+      "from": "Page11",
+      "to": "Page12",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/page11_release_gate_report.md",
+        "release/current/page12_release_gate_report.md"
+      ]
+    },
+    {
+      "from": "Page12",
+      "to": "Page13",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/page12_release_gate_report.md",
+        "release/current/page13_release_gate_report.md"
+      ]
+    },
+    {
+      "from": "Page13",
+      "to": "Page14",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/page13_release_gate_report.md",
+        "release/current/page14_release_gate_report.md"
+      ]
+    },
+    {
+      "from": "Page14",
+      "to": "Page15",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/page14_release_gate_report.md",
+        "release/current/page15_release_gate_report.md",
+        "release/current/stage224_gitnexus_evidence_report.json"
+      ]
+    },
+    {
+      "from": "Stage224",
+      "to": "Stage225",
+      "status": "CONNECTED",
+      "evidence": [
+        "release/current/stage224_gitnexus_evidence_report.json",
+        "manifests/stage225_collaboration_session_contract.json"
+      ]
+    },
+    {
+      "from": "Stage225",
+      "to": "Stage226",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage225_collaboration_session_contract.json",
+        "manifests/stage226_reviewer_scope_contract.json"
+      ]
+    },
+    {
+      "from": "Stage226",
+      "to": "Stage227",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage226_reviewer_scope_contract.json",
+        "manifests/stage227_share_envelope_contract.json"
+      ]
+    },
+    {
+      "from": "Stage227",
+      "to": "Stage228",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage227_share_envelope_contract.json",
+        "manifests/stage228_comment_exchange_contract.json"
+      ]
+    },
+    {
+      "from": "Stage228",
+      "to": "Stage229",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage228_comment_exchange_contract.json",
+        "manifests/stage229_collaboration_audit_handoff_contract.json"
+      ]
+    },
+    {
+      "from": "Stage229",
+      "to": "Stage230",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage229_collaboration_audit_handoff_contract.json",
+        "manifests/stage230_page15_release_contract.json",
+        "release/current/stage230_summary.md",
+        "release/current/page15_release_gate_report.md"
+      ]
+    },
+    {
+      "from": "Stage230",
+      "to": "Page16",
+      "status": "CONNECTED",
+      "evidence": [
+        "manifests/stage230_page15_release_contract.json",
+        "docs/proposals/page15_collaboration_review_share_proposal.md",
+        "release/current/page15_release_gate_report.md"
+      ],
+      "notes": [
+        "Page16 is declared only as handoff; implementation files are intentionally absent in the current branch state."
+      ]
+    }
+  ]
+}

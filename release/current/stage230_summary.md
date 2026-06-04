@@ -2,7 +2,7 @@
 
 Page: Page15
 Stage: Stage230
-Result: PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS
+Result: PASS_WITH_GITNEXUS_OUTPUT
 
 Completed scope:
 - Stage225 Collaboration Session Contract
@@ -12,16 +12,21 @@ Completed scope:
 - Stage229 Collaboration Audit and Page16 Handoff Contract
 - Stage230 Page15 Release Seal Contract
 - Page15 release gate report
+- Stage230 GitNexus evidence report
 
 Integrity result:
 - Stage225 to Stage230 order is present.
+- Page14 to Page15 trace is connected in the current branch state.
 - Page14 dependency is explicit.
+- Stage224 to Stage230 successor trace is connected.
 - Stage224 GitNexus evidence is recorded upstream.
+- Stage230 GitNexus index recorded 26833 nodes, 40705 edges, 502 clusters, and 300 flows.
 - Page10~Page13 warning inheritance is preserved.
+- Review-share views remain projections.
+- External comments remain review inputs and are not canonical story state.
 - Page16 handoff is declared.
 - Page16 implementation is not included in Page15.
 
 Carry-forward warnings:
 - Page10~Page13 still need their own GitNexus evidence refresh.
-- Page15 still needs local GitNexus validation before promotion to PASS_WITH_GITNEXUS_OUTPUT.
 - Stage185 remains local-known and not hub official.
