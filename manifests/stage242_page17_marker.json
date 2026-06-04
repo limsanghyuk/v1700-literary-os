@@ -9,6 +9,10 @@
     "docs/proposals/page17_plugin_learning_product_rc_proposal.md",
     "docs/architecture/page17_plugin_learning_product_rc_blueprint.md"
   ],
+  "required_upstream_evidence": [
+    "release/current/page16_release_gate_report.md",
+    "release/current/stage235_gitnexus_evidence_report.json"
+  ],
   "required_manifests": [
     "manifests/stage236_plugin_manifest_capability_contract.json",
     "manifests/stage237_plugin_sandbox_fixture_gate_contract.json",
@@ -17,12 +21,43 @@
     "manifests/stage240_studio_coordination_policy_contract.json",
     "manifests/stage241_product_freeze_writer_studio_rc_contract.json"
   ],
+  "required_summaries": [
+    "release/current/stage236_summary.md",
+    "release/current/stage237_summary.md",
+    "release/current/stage238_summary.md",
+    "release/current/stage239_summary.md",
+    "release/current/stage240_summary.md",
+    "release/current/stage241_summary.md",
+    "release/current/stage242_summary.md"
+  ],
+  "required_page17_gate_files": [
+    "release/current/page17_release_gate_report.md",
+    "docs/development/page17_gitnexus_guide.md"
+  ],
   "rules": [
     "stage_order_required",
     "page16_dependency_required",
     "stage235_evidence_required",
     "warnings_carried_forward",
+    "plugin_manifest_and_capability_required",
+    "sandbox_fixture_required",
+    "learning_audit_required",
+    "personalization_boundary_required",
+    "studio_scope_required",
+    "rc_evidence_required",
     "gitnexus_required_before_promotion"
+  ],
+  "verification_algorithm": [
+    "check_required_documents_exist",
+    "check_required_upstream_evidence_exist",
+    "check_required_manifests_exist",
+    "check_required_summaries_exist",
+    "check_page17_gate_files_exist",
+    "check_stage_sequence_236_to_242",
+    "check_stage235_status_is_pass_with_gitnexus_output",
+    "check_page10_to_page13_warnings_are_visible",
+    "check_stage185_warning_is_visible",
+    "keep_page17_pending_until_stage242_evidence_is_committed"
   ],
   "next_phase": "authority_review"
 }
