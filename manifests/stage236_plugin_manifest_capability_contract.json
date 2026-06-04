@@ -1,0 +1,32 @@
+{
+  "page": "Page17",
+  "stage": 236,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Plugin Manifest and Capability Declaration Contract",
+  "depends_on": ["Page16", 235],
+  "record_groups": [
+    "plugin_manifest_id",
+    "capability_declaration_id",
+    "plugin_identity_ref",
+    "declared_capability_refs",
+    "allowed_surface_refs",
+    "fixture_pack_ref",
+    "security_boundary_ref",
+    "provenance_refs"
+  ],
+  "rules": [
+    "plugin_manifest_id_required",
+    "capability_declaration_id_required",
+    "plugin_identity_ref_required",
+    "declared_capability_refs_required",
+    "allowed_surface_refs_required",
+    "provenance_refs_required",
+    "capability_must_be_declared_before_use"
+  ],
+  "blocking_failures": [
+    "plugin_without_manifest",
+    "capability_without_declaration",
+    "missing_provenance_refs"
+  ],
+  "next_stage": 237
+}
