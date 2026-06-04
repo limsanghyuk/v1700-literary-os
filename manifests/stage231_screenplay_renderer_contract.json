@@ -1,0 +1,30 @@
+{
+  "page": "Page16",
+  "stage": 231,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Screenplay Format Renderer Contract",
+  "depends_on": ["Page15", 230],
+  "record_groups": [
+    "screenplay_render_id",
+    "source_work_ref",
+    "source_stage_ref",
+    "script_format_profile_ref",
+    "screenplay_packet_ref",
+    "provenance_refs",
+    "mutation_policy"
+  ],
+  "rules": [
+    "screenplay_render_id_required",
+    "source_work_ref_required",
+    "source_stage_ref_required",
+    "script_format_profile_ref_required",
+    "provenance_refs_required",
+    "mutation_policy_must_be_projection_only"
+  ],
+  "blocking_failures": [
+    "screenplay_export_mutates_manuscript",
+    "format_output_missing_source_stage",
+    "format_output_missing_provenance"
+  ],
+  "next_stage": 232
+}
