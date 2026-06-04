@@ -34,7 +34,7 @@ Page14 to Page15 trace is connected in the current branch state.
 Page14 dependency is declared.
 Stage224 to Stage230 successor trace is connected.
 Stage224 GitNexus evidence is recorded upstream and inherited locally.
-Page10 to Page13 warnings are carried forward.
+Page10 to Page12 warnings are carried forward.
 Stage230 GitNexus index recorded 26833 nodes, 40705 edges, 502 clusters, and 300 flows.
 Review-share views remain projections.
 External comments remain review inputs and are not canonical story state.
@@ -47,11 +47,10 @@ Page15 remains the collaboration and review-share boundary and does not implemen
 - Page10 GitNexus evidence refresh remains pending.
 - Page11 GitNexus evidence refresh remains pending.
 - Page12 GitNexus evidence refresh remains pending.
-- Page13 GitNexus evidence refresh remains pending.
 - Stage185 remains local-known and not hub official.
-- Future promotion should replace upstream Page10~Page13 fallback evidence with fresh GitNexus evidence.
+- Future promotion should replace upstream Page10~Page12 fallback evidence with fresh GitNexus evidence.
 
 ## Next page
 
 Page16 design and implementation may continue.
-Page16 implementation should inherit upstream Page10~Page13 GitNexus warnings unless those pages are refreshed first.
+Page16 implementation should inherit upstream Page10~Page12 GitNexus warnings unless those pages are refreshed first.

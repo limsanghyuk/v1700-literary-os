@@ -40,14 +40,13 @@ Page14 remains a multi-work coordination layer and does not implement Page15.
 
 ## Carry-forward warnings
 
-- Page13 GitNexus evidence is pending.
 - Page12 GitNexus evidence is pending.
 - Page11 GitNexus evidence is pending.
 - Page10 GitNexus evidence is pending.
 - Stage185 remains local-known and not hub official.
-- Future promotion should replace upstream Page10~Page13 fallback evidence with fresh GitNexus evidence.
+- Future promotion should replace upstream Page10~Page12 fallback evidence with fresh GitNexus evidence.
 
 ## Next page
 
 Page15 design may continue.
-Page15 implementation should inherit upstream Page10~Page13 GitNexus warnings unless those pages are refreshed first.
+Page15 implementation should inherit upstream Page10~Page12 GitNexus warnings unless those pages are refreshed first.

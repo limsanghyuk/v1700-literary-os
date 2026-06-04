@@ -30,11 +30,11 @@ Page14 remains a multi-work coordination layer and does not implement Page15.
 
 ## Carry-forward warnings
 
-- Page10 to Page13 still need their own GitNexus evidence refresh.
+- Page10 to Page12 still need their own GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.
 
 ## Decision
 
 No blocking defect was found in Stage224.
 Page15 design may start.
-Page15 implementation may proceed only while inheriting upstream GitNexus warnings.
+Page15 implementation may proceed only while inheriting upstream Page10~Page12 GitNexus warnings.

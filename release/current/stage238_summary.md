@@ -13,7 +13,7 @@ Decision:
 - Review status is required before any later promotion.
 
 Warnings:
-- Page10~Page13 need GitNexus evidence refresh.
+- Page10~Page12 need GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.
 - Page17 needs local GitNexus validation before promotion.
 

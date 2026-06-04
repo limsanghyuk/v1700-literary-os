@@ -15,6 +15,6 @@ Integrity result:
 
 Carry-forward warnings:
 - GitNexus evidence remains pending.
-- Upstream Page10~Page13 GitNexus refresh warnings remain visible.
+- Upstream Page10~Page12 GitNexus refresh warnings remain visible.
 
 Next: Stage228

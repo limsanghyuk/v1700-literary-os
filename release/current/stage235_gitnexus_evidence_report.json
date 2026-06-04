@@ -21,7 +21,6 @@
   "page_gate_to_update": "release/current/page16_release_gate_report.md",
   "decision": "Page16 may advance with warnings",
   "warnings": [
-    "Page13 GitNexus evidence is still pending.",
     "Page12 GitNexus evidence is still pending.",
     "Page11 GitNexus evidence is still pending.",
     "Page10 GitNexus evidence is still pending.",

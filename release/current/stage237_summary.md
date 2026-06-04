@@ -14,7 +14,7 @@ Decision:
 - Fixture failures cannot be promoted as pass.
 
 Warnings:
-- Page10~Page13 need GitNexus evidence refresh.
+- Page10~Page12 need GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.
 - Page17 needs local GitNexus validation before promotion.
 

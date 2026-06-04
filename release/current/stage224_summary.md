@@ -23,5 +23,5 @@ Integrity result:
 - Page14 remains a multi-work coordination layer and does not implement Page15.
 
 Carry-forward warnings:
-- Page10~Page13 still need their own GitNexus evidence refresh.
+- Page10~Page12 still need their own GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.

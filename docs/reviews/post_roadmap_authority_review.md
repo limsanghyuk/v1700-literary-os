@@ -56,7 +56,6 @@ The following warnings remain valid and must not be hidden:
 - Page10 GitNexus evidence refresh remains pending.
 - Page11 GitNexus evidence refresh remains pending.
 - Page12 GitNexus evidence refresh remains pending.
-- Page13 GitNexus evidence refresh remains pending.
 - Stage185 remains local-known and not hub official.
 
 Decision: PASS_WITH_WARNINGS
@@ -69,13 +68,13 @@ Decision: PASS
 
 ### 5. Release authority readiness
 
-A clean release may not be declared until the project explicitly decides how to handle Page10~Page13 GitNexus refresh and Stage185 hub-official status.
+A clean release may not be declared until the project explicitly decides how to handle Page10~Page12 GitNexus refresh and Stage185 hub-official status.
 
 Decision: HOLD_FOR_AUTHORITY_DECISION
 
 ## Required decisions before final release authority
 
-1. Refresh Page10~Page13 GitNexus evidence or preserve warnings as known upstream warnings.
+1. Refresh Page10~Page12 GitNexus evidence or preserve warnings as known upstream warnings.
 2. Decide whether Stage185 becomes hub-official or remains local-known advisory evidence.
 3. Decide whether to produce a clean package, checksum set, tag, and release note for the Page08~Page17 roadmap closure.
 4. Decide whether a new roadmap should begin at Page18 or remain in authority review.

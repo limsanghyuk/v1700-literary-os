@@ -1,0 +1,117 @@
+{
+  "version_id": "stage218",
+  "scope": "Page13 Stage213~218 full repository state with inherited Page10~Page12 lineage",
+  "records": [
+    {
+      "owner": "Page10",
+      "artifact": "release/current/page10_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page11",
+        "Stage218",
+        "Page13"
+      ],
+      "notes": [
+        "Page11 release gate explicitly inherits Page10 dependency."
+      ]
+    },
+    {
+      "owner": "Page11",
+      "artifact": "release/current/page11_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page12",
+        "Stage218",
+        "Page13"
+      ],
+      "notes": [
+        "Page12 release gate explicitly inherits Page11 dependency."
+      ]
+    },
+    {
+      "owner": "Page12",
+      "artifact": "release/current/page12_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage218"
+      ],
+      "notes": [
+        "Page13 release gate explicitly inherits Page12 dependency."
+      ]
+    },
+    {
+      "owner": "Stage213",
+      "artifact": "manifests/stage213_proposal_record_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage218"
+      ],
+      "notes": [
+        "Stage218 summary and Page13 release gate list Stage213 as the first Page13 contract."
+      ]
+    },
+    {
+      "owner": "Stage214",
+      "artifact": "manifests/stage214_target_mapping_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage218"
+      ],
+      "notes": [
+        "Stage214 is preserved in the Page13 contract chain."
+      ]
+    },
+    {
+      "owner": "Stage215",
+      "artifact": "manifests/stage215_review_object_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage218"
+      ],
+      "notes": [
+        "Stage215 is preserved in the Page13 contract chain."
+      ]
+    },
+    {
+      "owner": "Stage216",
+      "artifact": "manifests/stage216_boundary_record_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage218"
+      ],
+      "notes": [
+        "Stage216 review boundary record remains a Page13-local contract."
+      ]
+    },
+    {
+      "owner": "Stage217",
+      "artifact": "manifests/stage217_safety_audit_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage218",
+        "Page14"
+      ],
+      "notes": [
+        "Page14 is declared only as handoff; no Page14 implementation files are present in this branch state."
+      ]
+    },
+    {
+      "owner": "Page13",
+      "artifact": "release/current/page13_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage218",
+        "Page12",
+        "Page14"
+      ],
+      "notes": [
+        "Page13 remains a review boundary layer and does not implement Page14."
+      ]
+    }
+  ]
+}

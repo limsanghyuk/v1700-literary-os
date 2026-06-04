@@ -37,7 +37,7 @@ Page16 to Page17 trace is connected in the current branch state.
 Page16 dependency is declared.
 Stage235 to Stage242 successor trace is connected.
 Stage235 GitNexus evidence is recorded upstream and inherited locally.
-Page10 to Page13 warnings are carried forward.
+Page10 to Page12 warnings are carried forward.
 Stage185 warning is carried forward.
 Stage242 GitNexus index recorded 26880 nodes, 40760 edges, 494 clusters, and 300 flows.
 Plugin capability declaration is required.
@@ -59,7 +59,7 @@ No Page18 or Stage243+ implementation is included in Page17.
 - check Page17 gate files exist
 - check Stage236 to Stage242 order
 - check Stage235 status is PASS_WITH_GITNEXUS_OUTPUT
-- check Page10~Page13 warnings remain visible
+- check Page10~Page12 warnings remain visible
 - check Stage185 warning remains visible
 - Stage242 evidence is now committed
 
@@ -68,9 +68,8 @@ No Page18 or Stage243+ implementation is included in Page17.
 - Page10 GitNexus evidence refresh remains pending.
 - Page11 GitNexus evidence refresh remains pending.
 - Page12 GitNexus evidence refresh remains pending.
-- Page13 GitNexus evidence refresh remains pending.
 - Stage185 remains local-known and not hub official.
-- Future promotion should replace upstream Page10~Page13 fallback evidence with fresh GitNexus evidence.
+- Future promotion should replace upstream Page10~Page12 fallback evidence with fresh GitNexus evidence.
 
 ## Next phase
 

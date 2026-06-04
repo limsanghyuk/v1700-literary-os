@@ -33,12 +33,12 @@ Verification algorithm:
 - check Page17 gate files exist
 - check Stage236 to Stage242 order
 - check Stage235 status is PASS_WITH_GITNEXUS_OUTPUT
-- check Page10~Page13 warnings remain visible
+- check Page10~Page12 warnings remain visible
 - check Stage185 warning remains visible
 - Stage242 evidence is now committed
 
 Warnings:
-- Page10~Page13 need GitNexus evidence refresh.
+- Page10~Page12 need GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.
 
 Next: post-roadmap authority review after Page17 GitNexus evidence is pushed.

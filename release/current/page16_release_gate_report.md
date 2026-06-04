@@ -32,7 +32,7 @@ Page15 to Page16 trace is connected in the current branch state.
 Page15 dependency is declared.
 Stage230 to Stage235 successor trace is connected.
 Stage230 GitNexus evidence is recorded upstream and inherited locally.
-Page10 to Page13 warnings are carried forward.
+Page10 to Page12 warnings are carried forward.
 Stage235 GitNexus index recorded 26857 nodes, 40731 edges, 500 clusters, and 300 flows.
 Screenplay output remains a deterministic projection.
 Production bridge packets remain advisory unless a future approval contract promotes them.
@@ -45,12 +45,11 @@ Page16 remains the screenplay and production bridge boundary and does not implem
 - Page10 GitNexus evidence refresh remains pending.
 - Page11 GitNexus evidence refresh remains pending.
 - Page12 GitNexus evidence refresh remains pending.
-- Page13 GitNexus evidence refresh remains pending.
 - Stage185 remains local-known and not hub official.
 - Page17 draft stage numbers must be realigned before Page17 implementation.
-- Future promotion should replace upstream Page10~Page13 fallback evidence with fresh GitNexus evidence.
+- Future promotion should replace upstream Page10~Page12 fallback evidence with fresh GitNexus evidence.
 
 ## Next page
 
 Page17 design may continue after Page17 stage-number realignment.
-Page17 implementation should inherit upstream Page10~Page13 GitNexus warnings unless those pages are refreshed first.
+Page17 implementation should inherit upstream Page10~Page12 GitNexus warnings unless those pages are refreshed first.

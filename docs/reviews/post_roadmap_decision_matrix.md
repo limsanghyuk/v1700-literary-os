@@ -11,7 +11,6 @@ Scope: V1700 Page08~Page17
 | Page10 GitNexus refresh | Pending | Refresh / preserve warning | Refresh before clean release |
 | Page11 GitNexus refresh | Pending | Refresh / preserve warning | Refresh before clean release |
 | Page12 GitNexus refresh | Pending | Refresh / preserve warning | Refresh before clean release |
-| Page13 GitNexus refresh | Pending | Refresh / preserve warning | Refresh before clean release |
 | Stage185 status | local-known, not hub official | Promote / preserve as warning | Preserve unless source evidence is pushed |
 | Page18 | Not defined | Open / defer | Defer until authority review closes |
 | Stage243+ | Not defined | Open / defer | Defer until authority review closes |
@@ -27,14 +26,14 @@ Pros:
 - Preserves current Page17 PASS_WITH_GITNEXUS_OUTPUT.
 
 Cons:
-- Page10~Page13 warnings remain inside the release.
+- Page10~Page12 warnings remain inside the release.
 - Stage185 status remains unresolved.
 
 Risk: medium.
 
 Decision: not preferred.
 
-### Strategy B — Refresh Page10~Page13 before clean release
+### Strategy B — Refresh Page10~Page12 before clean release
 
 Pros:
 - Strongest lineage integrity.
@@ -81,4 +80,4 @@ Decision: preferred immediately.
 Do not open Page18 yet.
 Do not create Stage243 yet.
 Keep the repository in post-roadmap authority review.
-Next practical task: Page10~Page13 GitNexus refresh planning or clean release warning policy decision.
+Next practical task: Page10~Page12 GitNexus refresh planning or clean release warning policy decision.

@@ -13,7 +13,7 @@ Decision:
 - Schedule outputs remain advisory.
 
 Warnings:
-- Page10~Page13 need GitNexus evidence refresh.
+- Page10~Page12 need GitNexus evidence refresh.
 - Page16 needs local GitNexus validation before promotion.
 
 Next: Stage235

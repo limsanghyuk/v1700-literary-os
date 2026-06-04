@@ -14,5 +14,5 @@ Integrity result:
 - Page16 export or production bridge is not implemented.
 
 Carry-forward warnings:
-- Page10~Page13 still need GitNexus evidence refresh.
+- Page10~Page12 still need GitNexus evidence refresh.
 - Page15 needs local GitNexus validation before promotion.

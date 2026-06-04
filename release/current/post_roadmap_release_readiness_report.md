@@ -25,13 +25,12 @@ The repository is not yet ready for an unconditional clean release because the f
 - Page10 GitNexus evidence refresh remains pending.
 - Page11 GitNexus evidence refresh remains pending.
 - Page12 GitNexus evidence refresh remains pending.
-- Page13 GitNexus evidence refresh remains pending.
 - Stage185 remains local-known and not hub official.
 
 ## Allowed next actions
 
 - Review Page08~Page17 authority closure.
-- Decide Page10~Page13 GitNexus refresh policy.
+- Decide Page10~Page12 GitNexus refresh policy.
 - Decide Stage185 hub-official policy.
 - Prepare clean package plan after warning policy is resolved.
 - Prepare release note draft after authority decision.
@@ -41,14 +40,14 @@ The repository is not yet ready for an unconditional clean release because the f
 - Do not open Page18 before authority review closes.
 - Do not create Stage243 before authority review closes.
 - Do not claim warning-free release status.
-- Do not hide Page10~Page13 pending warnings.
+- Do not hide Page10~Page12 pending warnings.
 - Do not promote Stage185 as hub official without pushed evidence.
 
 ## Recommended next local task
 
 Local Codex should either:
 
-1. refresh GitNexus evidence for Page10~Page13, or
+1. refresh GitNexus evidence for Page10~Page12, or
 2. produce an explicit warning-preservation release policy.
 
 The preferred path is option 1 before any clean release, tag, or final package authority.

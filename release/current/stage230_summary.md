@@ -21,12 +21,12 @@ Integrity result:
 - Stage224 to Stage230 successor trace is connected.
 - Stage224 GitNexus evidence is recorded upstream.
 - Stage230 GitNexus index recorded 26833 nodes, 40705 edges, 502 clusters, and 300 flows.
-- Page10~Page13 warning inheritance is preserved.
+- Page10~Page12 warning inheritance is preserved.
 - Review-share views remain projections.
 - External comments remain review inputs and are not canonical story state.
 - Page16 handoff is declared.
 - Page16 implementation is not included in Page15.
 
 Carry-forward warnings:
-- Page10~Page13 still need their own GitNexus evidence refresh.
+- Page10~Page12 still need their own GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.
