@@ -1,0 +1,12 @@
+{
+  "version_id": "stage242",
+  "scope": "Page17 Stage236~242",
+  "orphan_count": 0,
+  "orphan_symbols": [],
+  "unresolved_items": [],
+  "decision": "PASS_WITH_WARNINGS",
+  "notes": [
+    "No orphan Page17 lineage artifact was found among the required Stage236~242 contracts, the upstream Page16 GitNexus evidence, and the Page10~Page17 gate chain.",
+    "Stage185 remains local-known and advisory, but it is tracked as an upstream warning rather than an orphan in this branch state."
+  ]
+}

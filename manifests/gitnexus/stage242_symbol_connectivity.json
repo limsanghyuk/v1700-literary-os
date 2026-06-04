@@ -1,0 +1,173 @@
+{
+  "version_id": "stage242",
+  "scope": "Page17 Stage236~242 full repository state with inherited Page10~Page16 lineage",
+  "records": [
+    {
+      "owner": "Page10",
+      "artifact": "release/current/page10_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page11",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Page11 release gate explicitly inherits Page10 dependency."
+      ]
+    },
+    {
+      "owner": "Page11",
+      "artifact": "release/current/page11_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page12",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Page12 release gate explicitly inherits Page11 dependency."
+      ]
+    },
+    {
+      "owner": "Page12",
+      "artifact": "release/current/page12_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Page13 release gate explicitly inherits Page12 dependency."
+      ]
+    },
+    {
+      "owner": "Page13",
+      "artifact": "release/current/page13_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Page14 release gate explicitly inherits Page13 dependency."
+      ]
+    },
+    {
+      "owner": "Page16",
+      "artifact": "release/current/page16_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage235",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Page17 release gate explicitly inherits Page16 dependency and Stage235 GitNexus evidence."
+      ]
+    },
+    {
+      "owner": "Stage235",
+      "artifact": "release/current/stage235_gitnexus_evidence_report.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage236",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Stage235 GitNexus evidence is recorded as the upstream authority for Page17."
+      ]
+    },
+    {
+      "owner": "Stage236",
+      "artifact": "manifests/stage236_plugin_manifest_capability_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage237",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Stage236 is preserved as the first Page17 contract."
+      ]
+    },
+    {
+      "owner": "Stage237",
+      "artifact": "manifests/stage237_plugin_sandbox_fixture_gate_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage238",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Sandbox and fixture gating remains part of the Page17 structured contract chain."
+      ]
+    },
+    {
+      "owner": "Stage238",
+      "artifact": "manifests/stage238_learning_audit_mode_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage239",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Learning audit mode remains bounded and reviewable."
+      ]
+    },
+    {
+      "owner": "Stage239",
+      "artifact": "manifests/stage239_bounded_personalization_profile_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage240",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Personalization remains bounded and does not override upstream authority."
+      ]
+    },
+    {
+      "owner": "Stage240",
+      "artifact": "manifests/stage240_studio_coordination_policy_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage241",
+        "Page17",
+        "Stage242"
+      ],
+      "notes": [
+        "Studio coordination remains policy-bounded within Page17."
+      ]
+    },
+    {
+      "owner": "Stage241",
+      "artifact": "manifests/stage241_product_freeze_writer_studio_rc_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage242",
+        "Page17"
+      ],
+      "notes": [
+        "Product freeze and RC records remain within the Page17 release-candidate boundary."
+      ]
+    },
+    {
+      "owner": "Stage242",
+      "artifact": "manifests/stage242_page17_marker.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page17",
+        "post-roadmap authority review"
+      ],
+      "notes": [
+        "Stage242 closes Page17 via marker authority and routes only to post-roadmap review."
+      ]
+    }
+  ]
+}
