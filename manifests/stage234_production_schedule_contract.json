@@ -1,0 +1,31 @@
+{
+  "page": "Page16",
+  "stage": 234,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Production Schedule Draft Contract",
+  "depends_on": [231, 232, 233],
+  "record_groups": [
+    "production_schedule_draft_id",
+    "source_work_ref",
+    "script_breakdown_packet_id",
+    "scene_element_tag_refs",
+    "shot_list_packet_refs",
+    "schedule_assumption_refs",
+    "approval_policy",
+    "provenance_refs"
+  ],
+  "rules": [
+    "production_schedule_draft_id_required",
+    "source_work_ref_required",
+    "script_breakdown_packet_id_required",
+    "approval_policy_required",
+    "provenance_refs_required",
+    "schedule_must_not_override_story_authority"
+  ],
+  "advisory_outputs": [
+    "production_complexity_warning",
+    "missing_location_note",
+    "schedule_assumption_note"
+  ],
+  "next_stage": 235
+}
