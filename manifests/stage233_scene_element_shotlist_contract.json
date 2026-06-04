@@ -1,0 +1,32 @@
+{
+  "page": "Page16",
+  "stage": 233,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Scene Element Tagger and Shot List Packet Contract",
+  "depends_on": [231, 232],
+  "record_groups": [
+    "scene_element_tag_id",
+    "shot_list_packet_id",
+    "source_scene_ref",
+    "breakdown_packet_id",
+    "tag_type",
+    "shot_list_item_refs",
+    "provenance_refs",
+    "completeness_notes"
+  ],
+  "rules": [
+    "scene_element_tag_id_required",
+    "shot_list_packet_id_required",
+    "source_scene_ref_required",
+    "breakdown_packet_id_required",
+    "tag_type_required",
+    "provenance_refs_required"
+  ],
+  "advisory_outputs": [
+    "scene_length_warning",
+    "missing_location_note",
+    "shot_list_completeness_note",
+    "storyboard_incompleteness_note"
+  ],
+  "next_stage": 234
+}
