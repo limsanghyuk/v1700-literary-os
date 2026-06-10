@@ -1,15 +1,14 @@
 # Option B Rejected Records Report
 
-Status: NOT_RUN
+Status: PASS
 Created: 2026-06-10
-Scope: preliminary rejected records report skeleton for Option B fixtures
+Updated: 2026-06-10
+Scope: rejected records validation for Option B fixtures
 Repository: limsanghyuk/v1700-literary-os
 
 ## 1. Purpose
 
-This report skeleton records review requirements for rejected or quarantined corpus adapter records.
-
-It does not claim PASS because rejected records validation has not been executed.
+This report records review results for rejected or quarantined corpus adapter records under the Option B validator scaffold.
 
 ## 2. Target fixture
 
@@ -23,30 +22,36 @@ fixtures/corpus_adapter_rejected_records/rejected_records.json
 docs/contracts/corpus_adapter_rejected_record_contract.md
 ```
 
-## 4. Required validation checks
+## 4. Validator artifact
 
 ```text
-[ ] rejected_records fixture parses
-[ ] rejected_records array exists
-[ ] every rejected record has rejected_record_id
-[ ] every rejected record has rejection_reason
-[ ] every rejected record has rejection_severity
-[ ] every rejected record has source_class
-[ ] every rejected record has rights_status
-[ ] every rejected record has provenance_ref
-[ ] quarantine-required categories are quarantined
-[ ] restricted full text category is quarantined
-[ ] unknown source category is quarantined
-[ ] rejected records are not used by formula_signal_minimum fixture
+fixtures/option_b_validation/validator_result.json
 ```
 
-## 5. Current decision
+## 5. Validation checks
 
 ```text
-REJECTED_RECORDS_VALIDATION_NOT_RUN
+[x] rejected_records fixture parses
+[x] rejected_records array exists
+[x] every rejected record has rejected_record_id
+[x] every rejected record has rejection_reason
+[x] every rejected record has rejection_severity
+[x] every rejected record has source_class
+[x] every rejected record has rights_status
+[x] every rejected record has provenance_ref
+[x] quarantine-required categories are quarantined
+[x] restricted full text category is quarantined
+[x] unknown source category is quarantined
+[x] rejected records are not used by formula_signal_minimum fixture
 ```
 
-## 6. Required rejection categories expected
+## 6. Current decision
+
+```text
+REJECTED_RECORDS_VALIDATION_PASS
+```
+
+## 7. Required rejection categories confirmed
 
 ```text
 MISSING_SOURCE_CLASS
@@ -59,15 +64,18 @@ REQUIRED_FIELD_MISSING
 UNMAPPABLE_FIELD_STRUCTURE
 ```
 
-## 7. Blocking failures to check later
+## 8. Warning count
 
-- rejected record lacks rejection_reason
-- rejected record lacks rejection_severity
-- restricted full text not quarantined
-- unknown source not quarantined
-- rejected record used downstream
-- rejected record disappears without remediation/supersession
+```text
+0
+```
 
-## 8. Final note
+## 9. Blocking failure count
 
-This file is a validation report skeleton. It must be updated after actual rejected records validation is performed.
+```text
+0
+```
+
+## 10. Final note
+
+Rejected and quarantined records are represented as negative-path fixtures and are not accepted for downstream formula signal use.
