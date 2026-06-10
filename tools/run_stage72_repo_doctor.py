@@ -16,7 +16,7 @@ KNOWN_ACTIVE_VERSIONS = {
     "stage111", "stage112", "stage113", "stage114", "stage115", "stage116", "stage117",
     "stage118", "stage119", "stage120", "stage121", "stage122", "stage123", "stage124",
     "stage125", "stage126", "stage127", "stage128", "stage129", "stage130", "stage131",
-    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172", "stage173", "stage174", "stage175", "stage176", "stage177", "stage178", "stage179", "stage180", "stage181", "stage182", "stage183", "stage184",
+    "stage132", "stage133", "stage134", "stage135", "stage136", "stage137", "stage138", "stage139", "stage140", "stage141", "stage142", "stage143", "stage144", "stage145", "stage146", "stage147", "stage148", "stage149", "stage150", "stage151", "stage152", "stage153", "stage154", "stage155", "stage156", "stage157", "stage158", "stage159", "stage160", "stage161", "stage162", "stage163", "stage164", "stage165", "stage166", "stage167", "stage168", "stage169", "stage170", "stage171", "stage172", "stage173", "stage174", "stage175", "stage176", "stage177", "stage178", "stage179", "stage180", "stage181", "stage182", "stage183", "stage184", "stage242",
 }
 
 STAGE_REQUIRED_GATES = {
@@ -1355,6 +1355,24 @@ STAGE_REQUIRED_FILES = {
         "release/current/stage161_rendering_contract_pack/rendering_write_policy.json",
         "release/current/stage161_rendering_contract_pack/node2_rendering_projection_policy.json",
     ],
+    "stage242": [
+        "manifests/stage242_manifest.json",
+        "manifests/stage242_page17_release_manifest.json",
+        "manifests/stage242_branchpoint_trace_manifest.json",
+        "manifests/live_core_stage242_overlay.json",
+        "docs/stages/stage242.md",
+        "docs/development/stage242_developer_handoff.md",
+        "docs/proposals/page17_plugin_learning_product_rc_proposal.md",
+        "docs/architecture/page17_plugin_learning_product_rc_blueprint.md",
+        "release/current/page17_release_gate_report.md",
+        "release/current/stage242_gitnexus_evidence_report.json",
+        "release/current/stage242_page17_release_report.json",
+        "release/current/stage242_release_gate_report.json",
+        "release/current/stage242_release_asset_manifest.json",
+        "release/current/stage242_preflight_execution_report.json",
+        "release/current/stage242_package_comparison_report.json",
+        "release/current/post_roadmap_release_readiness_report.md",
+    ],
 }
 STAGE_REQUIRED_GATES.update({
     "stage174": ["stage174_release_policy_registry", "stage174_release_gate"],
@@ -1368,6 +1386,7 @@ STAGE_REQUIRED_GATES.update({
     "stage182": ["stage182_upgrade_simulation_compatibility_sandbox", "stage182_release_gate"],
     "stage183": ["stage183_future_absorption_deprecation_planner", "stage183_release_gate"],
     "stage184": ["stage184_page07_release_seal", "stage184_release_gate"],
+    "stage242": ["stage242_page17_authority_closure", "stage242_release_gate"],
 })
 
 PREDECESSOR_GATE = {
@@ -1443,6 +1462,7 @@ PREDECESSOR_GATE = {
     "stage182": "stage181_release_gate",
     "stage183": "stage182_release_gate",
     "stage184": "stage183_release_gate",
+    "stage242": "stage184_release_gate",
 }
 
 

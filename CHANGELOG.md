@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.42.0-stage242
+
+- Officialized Stage242 as the current hub authority for the Page08~Page17 roadmap closure.
+- Added Stage242 authority manifests, release reports, release gate, metadata alignment, workflow alignment, and release asset manifest.
+- Preserved the warning-bearing authority posture for Page10~Page12 GitNexus refresh and Stage185 local-known status.
+
 ## v1.84.1-stage184-integrity
 
 - Fixed Stage184 release asset integrity so checksum validation is stable across Windows and Linux checkouts.

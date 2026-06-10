@@ -2,13 +2,13 @@
 
 Page: Page17
 Branch: roadmap-page08-page17-commercial-absorption
-Indexed commit: `d84c9850cc09ead64d6c94998ac05f13a2d1ff14`
+Indexed commit: `a4f9d082f95589dd70673b72c2dd8580c269f2e6`
 Status: `up-to-date`
 
 Graph summary:
-- Nodes: 26880
-- Edges: 40760
-- Clusters: 494
+- Nodes: 26998
+- Edges: 40891
+- Clusters: 502
 - Flows: 300
 - Skipped large files: 28
 
@@ -20,5 +20,5 @@ Connectivity conclusions:
 - No Page18 or Stage243+ implementation files are present in the current branch state.
 
 Carry-forward warnings:
-- Page10 to Page13 still need their own GitNexus evidence refresh.
+- Page10 to Page12 still need their own GitNexus evidence refresh.
 - Stage185 remains local-known and not hub official.

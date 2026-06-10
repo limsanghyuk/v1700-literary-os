@@ -99,7 +99,7 @@
       "code_summary": {
         "available": true,
         "source": "python_fallback",
-        "node_count": 1119
+        "node_count": 1120
       },
       "narrative_summary": {
         "available": true,
@@ -1437,6 +1437,18 @@
     "stage": "184",
     "baseline_stage": "183",
     "title": "Page07 Release Seal",
+    "issues": [],
+    "provider_default_calls": 0,
+    "live_provider_call_count_in_release_gate": 0,
+    "node2_raw_reveal_access": 0,
+    "credential_leakage": 0,
+    "branchpoint_lineage_preserved": true
+  },
+  "stage242_release_gate": {
+    "status": "pass",
+    "stage": "242",
+    "baseline_stage": "235",
+    "title": "Page17 Authority Closure",
     "issues": [],
     "provider_default_calls": 0,
     "live_provider_call_count_in_release_gate": 0,

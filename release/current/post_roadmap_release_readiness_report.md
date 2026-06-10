@@ -1,6 +1,6 @@
 # Post-Roadmap Release Readiness Report
 
-Status: HOLD_FOR_AUTHORITY_DECISION
+Status: READY_FOR_WARNING_PRESERVING_AUTHORITY_RELEASE
 Created: 2026-06-04
 Scope: V1700 Page08~Page17
 
@@ -8,7 +8,7 @@ Scope: V1700 Page08~Page17
 
 - Page17: PASS_WITH_GITNEXUS_OUTPUT
 - Stage242: PASS_WITH_GITNEXUS_OUTPUT
-- Page17 GitNexus graph: 26880 nodes / 40760 edges / 494 clusters / 300 flows
+- Page17 GitNexus graph: 26998 nodes / 40891 edges / 502 clusters / 300 flows
 - Orphan count: 0
 - Page16 -> Page17 trace: connected
 - Stage235 -> Stage242 trace: connected
@@ -18,7 +18,7 @@ Scope: V1700 Page08~Page17
 
 ## Release readiness decision
 
-The repository is ready for post-roadmap authority review.
+The repository is ready for a warning-preserving Stage242 authority release and for continued post-roadmap authority review.
 
 The repository is not yet ready for an unconditional clean release because the following warnings remain:
 
@@ -29,7 +29,7 @@ The repository is not yet ready for an unconditional clean release because the f
 
 ## Allowed next actions
 
-- Review Page08~Page17 authority closure.
+- Maintain Stage242 as the current warning-preserving hub authority.
 - Decide Page10~Page12 GitNexus refresh policy.
 - Decide Stage185 hub-official policy.
 - Prepare clean package plan after warning policy is resolved.
@@ -50,4 +50,4 @@ Local Codex should either:
 1. refresh GitNexus evidence for Page10~Page12, or
 2. produce an explicit warning-preservation release policy.
 
-The preferred path is option 1 before any clean release, tag, or final package authority.
+The preferred path is option 1 before any future clean release refresh, but Stage242 may remain the official warning-preserving authority baseline in the meantime.

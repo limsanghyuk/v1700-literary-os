@@ -1,0 +1,15 @@
+{
+  "active_version": "stage242",
+  "canonical_package": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip",
+  "filelist": "FILELIST.txt",
+  "live_provider_call_count_in_release_gate": 0,
+  "node2_raw_reveal_access": 0,
+  "package_manifest": "package_manifest.json",
+  "provider_default_calls": 0,
+  "release_gate_report": "release/current/stage242_release_gate_report.json",
+  "release_report": "release/current/stage242_page17_release_report.json",
+  "sha256_authority": "release sidecar file is authoritative",
+  "sha256_sidecar": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip.sha256",
+  "sha256_sums": "SHA256SUMS.txt",
+  "stage": "stage242"
+}

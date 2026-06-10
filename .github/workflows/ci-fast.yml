@@ -19,4 +19,4 @@ jobs:
       - run: python tools/session_start.py
       - run: python tools/run_mandatory_predevelopment_check.py
       - run: python tools/regenerate_sha256sums.py
-      - run: python tools/run_stage184_release_gate.py
+      - run: python tools/run_stage242_release_gate.py

@@ -1,7 +1,7 @@
 {
   "page": "Page17",
   "stage": 242,
-  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
   "name": "Page17 Marker",
   "depends_on": [236, 237, 238, 239, 240, 241],
   "required_documents": [
@@ -57,7 +57,7 @@
     "check_stage235_status_is_pass_with_gitnexus_output",
     "check_page10_to_page13_warnings_are_visible",
     "check_stage185_warning_is_visible",
-    "keep_page17_pending_until_stage242_evidence_is_committed"
+    "confirm_stage242_evidence_is_committed"
   ],
   "next_phase": "authority_review"
 }

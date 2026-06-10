@@ -1,6 +1,6 @@
 # Stage Index
 
-Current active stage: stage173 - Governance Contract
+Current active stage: stage242 - Page17 Authority Closure
 
 Stage72 preserves the development lineage as concise knowledge, while the active runtime lives under `src/v1700`.
 
@@ -73,10 +73,21 @@ Stage72 preserves the development lineage as concise knowledge, while the active
 - [Stage166](stage166.md) - Page04 Release Seal
 - [Stage167](stage167.md) - Evaluation Contract
 - [Stage168](stage168.md) - Local Evaluation Packet Store
-
 - [Stage169](stage169.md) - Deterministic Quality and Continuity Evaluator
 - [Stage170](stage170.md) - Regression and Negative Fixture Harness
-
-- [Stage172 — Page05 Release Seal](stage172.md)
-
+- [Stage172](stage172.md) - Page05 Release Seal
 - [Stage173](stage173.md) - Governance Contract
+- [Stage174](stage174.md) - Release Policy and Registry
+- [Stage175](stage175.md) - Project Boundary Governor
+- [Stage176](stage176.md) - Lineage Review Gate
+- [Stage177](stage177.md) - Operational Safety and Rollback Governance
+- [Stage178](stage178.md) - Page06 Release Seal
+- [Stage179](stage179.md) - Evolution Contract
+- [Stage180](stage180.md) - Architecture Drift and Long-Horizon Self-Audit
+- [Stage181](stage181.md) - Migration Plan Compiler
+- [Stage182](stage182.md) - Upgrade Simulation and Compatibility Sandbox
+- [Stage183](stage183.md) - Future Absorption and Deprecation Planner
+- [Stage184](stage184.md) - Page07 Release Seal
+- [Stage242](stage242.md) - Page17 Authority Closure
+
+Page08~Page17 implementation detail remains anchored in the roadmap, page release gates, GitNexus evidence reports, and post-roadmap authority review documents.

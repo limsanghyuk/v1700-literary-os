@@ -3,13 +3,13 @@
   "page": "Page17",
   "status": "PASS_WITH_GITNEXUS_OUTPUT",
   "source_folder": "release/gitnexus/stage242",
-  "indexed_commit": "d84c9850cc09ead64d6c94998ac05f13a2d1ff14",
-  "current_commit_at_index_time": "d84c9850cc09ead64d6c94998ac05f13a2d1ff14",
+  "indexed_commit": "a4f9d082f95589dd70673b72c2dd8580c269f2e6",
+  "current_commit_at_index_time": "a4f9d082f95589dd70673b72c2dd8580c269f2e6",
   "gitnexus_status": "up-to-date",
   "graph_summary": {
-    "nodes": 26880,
-    "edges": 40760,
-    "clusters": 494,
+    "nodes": 26998,
+    "edges": 40891,
+    "clusters": 502,
     "flows": 300,
     "skipped_large_files": 28
   },
@@ -26,5 +26,6 @@
     "Page11 GitNexus evidence is still pending.",
     "Page10 GitNexus evidence is still pending.",
     "Stage185 remains local-known and not hub official."
-  ]
+  ],
+  "indexed_at": "2026-06-10T16:41:20+09:00"
 }

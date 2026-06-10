@@ -1111,6 +1111,27 @@ TARGETS: dict[str, dict[str, Any]] = {
             "release/current/stage184_package_comparison_report.json"
 ],
     },
+    "stage242": {
+        "label": "Stage242",
+        "version": "2.42.0",
+        "title": "Page17 Authority Closure",
+        "required_files": [
+            "docs/stages/stage242.md",
+            "docs/development/stage242_developer_handoff.md",
+            "docs/proposals/page17_plugin_learning_product_rc_proposal.md",
+            "docs/architecture/page17_plugin_learning_product_rc_blueprint.md",
+            "manifests/stage242_manifest.json",
+            "manifests/stage242_page17_release_manifest.json",
+            "manifests/stage242_branchpoint_trace_manifest.json",
+            "manifests/live_core_stage242_overlay.json",
+            "release/current/stage242_release_asset_manifest.json",
+            "release/current/stage242_preflight_execution_report.json",
+            "release/current/stage242_package_comparison_report.json",
+            "release/current/stage242_page17_release_report.json",
+            "release/current/stage242_gitnexus_evidence_report.json",
+            "release/current/page17_release_gate_report.md"
+        ],
+    },
 }
 
 

@@ -1,0 +1,13 @@
+{
+  "baseline_stage": "stage235",
+  "gitnexus_evidence_report": "release/current/stage242_gitnexus_evidence_report.json",
+  "next_stage": "post-roadmap-authority-review",
+  "node2_raw_reveal_access": 0,
+  "page": "Page17 Plugin / Learning / Studio / RC Boundary",
+  "provider_default_calls": 0,
+  "roadmap_scope": "Page08~Page17",
+  "stage": "stage242",
+  "status": "active",
+  "title": "Page17 Authority Closure",
+  "warning_preserving_release": true
+}

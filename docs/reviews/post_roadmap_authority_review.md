@@ -1,13 +1,13 @@
 # Post-Roadmap Authority Review
 
-Status: review draft
+Status: warning-preserving authority release accepted
 Created: 2026-06-04
 Scope: V1700 Page08~Page17
 Branch: roadmap-page08-page17-commercial-absorption
 
 ## Purpose
 
-This review evaluates the repository after the Page08~Page17 roadmap reached Page17 / Stage242 with GitNexus evidence.
+This review evaluates the repository after the Page08~Page17 roadmap reached Page17 / Stage242 with GitNexus evidence and the hub officialized Stage242 as the current authority release.
 
 This document does not open Page18, does not create Stage243, and does not promote any unresolved upstream warning.
 
@@ -68,7 +68,7 @@ Decision: PASS
 
 ### 5. Release authority readiness
 
-A clean release may not be declared until the project explicitly decides how to handle Page10~Page12 GitNexus refresh and Stage185 hub-official status.
+A clean release may not be declared until the project explicitly decides how to handle Page10~Page12 GitNexus refresh and Stage185 hub-official status. A warning-preserving Stage242 authority release is acceptable before that decision.
 
 Decision: HOLD_FOR_AUTHORITY_DECISION
 
@@ -76,7 +76,7 @@ Decision: HOLD_FOR_AUTHORITY_DECISION
 
 1. Refresh Page10~Page12 GitNexus evidence or preserve warnings as known upstream warnings.
 2. Decide whether Stage185 becomes hub-official or remains local-known advisory evidence.
-3. Decide whether to produce a clean package, checksum set, tag, and release note for the Page08~Page17 roadmap closure.
+3. Preserve the Stage242 warning-bearing authority release until Page10~Page12 refresh policy and Stage185 hub-official policy are resolved.
 4. Decide whether a new roadmap should begin at Page18 or remain in authority review.
 
 ## Recommended next action
