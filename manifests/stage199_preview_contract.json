@@ -1,0 +1,10 @@
+{
+  "page": "Page10",
+  "stage": 199,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "name": "Preview Contract",
+  "groups": ["preview_id", "consumer", "packet_id", "text_view", "projection_status", "reference_group"],
+  "requires": ["packet_id", "projection_status", "reference_group"],
+  "depends_on": 198,
+  "next_stage": 200
+}

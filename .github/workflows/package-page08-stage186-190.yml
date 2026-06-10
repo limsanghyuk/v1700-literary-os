@@ -1,0 +1,24 @@
+name: package-page08-stage186-190
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - roadmap-page08-page17-commercial-absorption
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build package
+        run: |
+          mkdir -p /tmp/v1700_page08_stage186_190
+          rsync -a --exclude='.git' ./ /tmp/v1700_page08_stage186_190/
+          cd /tmp
+          zip -r v1700_page08_stage186_190_integrated_repository.zip v1700_page08_stage186_190
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v1700_page08_stage186_190_integrated_repository
+          path: /tmp/v1700_page08_stage186_190_integrated_repository.zip
+          if-no-files-found: error

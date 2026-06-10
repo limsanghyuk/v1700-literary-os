@@ -1,0 +1,22 @@
+{
+  "page": "Page13",
+  "stage": 217,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Safety Audit Record Contract",
+  "depends_on": [213, 214, 215, 216],
+  "record_groups": [
+    "safety_id",
+    "boundary_id",
+    "proposal_id",
+    "audit_note",
+    "reversal_note",
+    "evidence_refs"
+  ],
+  "rules": [
+    "boundary_id_required",
+    "proposal_id_required",
+    "audit_note_required",
+    "evidence_refs_required"
+  ],
+  "next_stage": 218
+}

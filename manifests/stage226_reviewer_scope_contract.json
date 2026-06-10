@@ -1,0 +1,22 @@
+{
+  "page": "Page15",
+  "stage": 226,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Reviewer Scope and Permission Rule Contract",
+  "depends_on": [225],
+  "record_groups": [
+    "reviewer_scope_id",
+    "reviewer_ref",
+    "work_ref",
+    "allowed_view_refs",
+    "permission_rule_ref",
+    "closure_rule"
+  ],
+  "rules": [
+    "reviewer_scope_id_required",
+    "work_ref_required",
+    "permission_rule_ref_required",
+    "closure_rule_required"
+  ],
+  "next_stage": 227
+}

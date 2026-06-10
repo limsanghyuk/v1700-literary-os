@@ -1,0 +1,23 @@
+{
+  "page": "Page11",
+  "stage": 205,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Candidate Evidence Report Contract",
+  "depends_on": [201, 202, 203, 204],
+  "record_groups": [
+    "evidence_id",
+    "candidate_id",
+    "target_unit_ref",
+    "source_packet_ref",
+    "coverage_note",
+    "risk_note",
+    "handoff_target"
+  ],
+  "rules": [
+    "candidate_id_required",
+    "source_packet_ref_required",
+    "handoff_target_required"
+  ],
+  "handoff": ["Page12", "Page13"],
+  "next_stage": 206
+}

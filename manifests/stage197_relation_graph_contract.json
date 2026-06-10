@@ -1,0 +1,10 @@
+{
+  "page": "Page10",
+  "stage": 197,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "name": "Timeline Alias Relation Contract",
+  "groups": ["mention_record", "alias_index", "relation_edge", "time_scope", "reference_group", "confidence_note"],
+  "requires": ["reference_group", "relation_edge"],
+  "depends_on": 196,
+  "next_stage": 198
+}

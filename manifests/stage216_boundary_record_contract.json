@@ -1,0 +1,22 @@
+{
+  "page": "Page13",
+  "stage": 216,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Boundary Record Contract",
+  "depends_on": [213, 214, 215],
+  "record_groups": [
+    "boundary_id",
+    "review_id",
+    "proposal_id",
+    "boundary_status",
+    "reason_note",
+    "evidence_refs"
+  ],
+  "rules": [
+    "review_id_required",
+    "proposal_id_required",
+    "boundary_status_required",
+    "evidence_refs_required"
+  ],
+  "next_stage": 217
+}

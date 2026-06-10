@@ -1,0 +1,15 @@
+{
+  "baseline_stage": "stage235",
+  "canonical_package": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip",
+  "manifest_type": "page17_authority_closure",
+  "next_stage": "post-roadmap-authority-review",
+  "node2_raw_reveal_access": 0,
+  "page": "Page17 Plugin / Learning / Studio / RC Boundary",
+  "provider_default_calls": 0,
+  "release_gate": "release/current/stage242_release_gate_report.json",
+  "release_report": "release/current/stage242_page17_release_report.json",
+  "stage": "stage242",
+  "status": "active",
+  "title": "Page17 Authority Closure",
+  "warning_preserving_release": true
+}

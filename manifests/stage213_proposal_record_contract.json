@@ -1,0 +1,22 @@
+{
+  "page": "Page13",
+  "stage": 213,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Proposal Record Contract",
+  "depends_on": ["Page12", "Page13 blueprint"],
+  "record_groups": [
+    "proposal_id",
+    "source_candidate_ref",
+    "source_evidence_ref",
+    "target_unit_ref",
+    "summary_note",
+    "boundary_status"
+  ],
+  "rules": [
+    "source_candidate_ref_required",
+    "source_evidence_ref_required",
+    "target_unit_ref_required",
+    "boundary_status_required"
+  ],
+  "next_stage": 214
+}

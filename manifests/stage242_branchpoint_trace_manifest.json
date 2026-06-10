@@ -1,0 +1,14 @@
+{
+  "baseline_stage": "stage235",
+  "branchpoint_lineage_preserved": true,
+  "next_stage": "post-roadmap-authority-review",
+  "node2_raw_reveal_access": 0,
+  "orphan_count": 0,
+  "page": "Page17 Plugin / Learning / Studio / RC Boundary",
+  "provider_default_calls": 0,
+  "roadmap_terminal_page": "Page17",
+  "stage": "stage242",
+  "stage235_to_stage242_trace_connected": true,
+  "status": "active",
+  "title": "Page17 Authority Closure"
+}

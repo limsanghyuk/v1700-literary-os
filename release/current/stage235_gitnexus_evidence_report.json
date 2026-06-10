@@ -1,0 +1,30 @@
+{
+  "version_id": "stage235",
+  "page": "Page16",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "source_folder": "release/gitnexus/stage235",
+  "indexed_commit": "a6b97410c59c934677d2dda8ddc5c735128fe9e3",
+  "current_commit_at_index_time": "a6b97410c59c934677d2dda8ddc5c735128fe9e3",
+  "gitnexus_status": "up-to-date",
+  "graph_summary": {
+    "nodes": 26857,
+    "edges": 40731,
+    "clusters": 500,
+    "flows": 300,
+    "skipped_large_files": 28
+  },
+  "orphan_count": 0,
+  "required_traces_present": true,
+  "page15_to_page16_trace_connected": true,
+  "stage230_to_stage235_trace_connected": true,
+  "page17_implementation_detected": false,
+  "page_gate_to_update": "release/current/page16_release_gate_report.md",
+  "decision": "Page16 may advance with warnings",
+  "warnings": [
+    "Page12 GitNexus evidence is still pending.",
+    "Page11 GitNexus evidence is still pending.",
+    "Page10 GitNexus evidence is still pending.",
+    "Stage185 remains local-known and not hub official.",
+    "Page17 draft stage numbers must be realigned before Page17 implementation."
+  ]
+}

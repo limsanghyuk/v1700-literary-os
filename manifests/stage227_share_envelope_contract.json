@@ -1,0 +1,22 @@
+{
+  "page": "Page15",
+  "stage": 227,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Share Envelope and Visibility Projection Contract",
+  "depends_on": [225, 226],
+  "record_groups": [
+    "share_envelope_id",
+    "reviewer_scope_id",
+    "work_ref",
+    "visibility_projection_ref",
+    "source_packet_refs",
+    "closure_rule"
+  ],
+  "rules": [
+    "share_envelope_id_required",
+    "reviewer_scope_id_required",
+    "visibility_projection_ref_required",
+    "closure_rule_required"
+  ],
+  "next_stage": 228
+}

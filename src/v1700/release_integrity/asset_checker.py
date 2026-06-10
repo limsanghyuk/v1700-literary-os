@@ -235,6 +235,11 @@ ASSET_TARGETS = {
         "release_report": "release/current/stage184_page07_release_seal_report.json",
         "release_gate_report": "release/current/stage184_release_gate_report.json",
     },
+    "stage242": {
+        "package": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip",
+        "release_report": "release/current/stage242_page17_release_report.json",
+        "release_gate_report": "release/current/stage242_release_gate_report.json",
+    },
 }
 
 

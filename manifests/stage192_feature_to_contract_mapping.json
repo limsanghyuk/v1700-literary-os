@@ -1,0 +1,40 @@
+{
+  "stage": 192,
+  "page": "Page09",
+  "title": "Feature-to-Contract Mapping",
+  "status": "PASS",
+  "created_at": "2026-05-29",
+  "default_rule": "unmapped_feature_not_implementable",
+  "execution_modes": [
+    "DOCUMENT_ONLY",
+    "READ_ONLY_ANALYSIS",
+    "ADVISORY_REPORT",
+    "SANDBOX_CANDIDATE",
+    "AUTHOR_APPROVED_COMMIT",
+    "EXPORT_ONLY",
+    "PLUGIN_SANDBOX",
+    "LEARNING_AUDIT_ONLY"
+  ],
+  "mappings": [
+    {"feature": "story_repository", "contract": "StoryRepositoryContract", "mode": "READ_ONLY_ANALYSIS", "page": "Page10"},
+    {"feature": "story_bible", "contract": "StoryBibleContract", "mode": "DOCUMENT_ONLY", "page": "Page10"},
+    {"feature": "codex_entity_registry", "contract": "EntityRegistryContract", "mode": "READ_ONLY_ANALYSIS", "page": "Page10"},
+    {"feature": "context_preview", "contract": "ContextPacketContract", "mode": "READ_ONLY_ANALYSIS", "page": "Page10"},
+    {"feature": "prompt_preview", "contract": "PromptPreviewContract", "mode": "READ_ONLY_ANALYSIS", "page": "Page10"},
+    {"feature": "writer_surface", "contract": "WriterSurfaceContract", "mode": "DOCUMENT_ONLY", "page": "Page11"},
+    {"feature": "draft_candidate", "contract": "DraftCandidateContract", "mode": "SANDBOX_CANDIDATE", "page": "Page11"},
+    {"feature": "developmental_evaluation", "contract": "DevelopmentalReportContract", "mode": "ADVISORY_REPORT", "page": "Page12"},
+    {"feature": "eat8d_feature_extraction", "contract": "EAT8DFeatureContract", "mode": "ADVISORY_REPORT", "page": "Page12"},
+    {"feature": "narrative_gate_runner", "contract": "NarrativeGateContract", "mode": "ADVISORY_REPORT", "page": "Page12"},
+    {"feature": "story_patch", "contract": "StoryPatchContract", "mode": "AUTHOR_APPROVED_COMMIT", "page": "Page13"},
+    {"feature": "narrative_pr", "contract": "NarrativePRContract", "mode": "AUTHOR_APPROVED_COMMIT", "page": "Page13"},
+    {"feature": "human_review_approval", "contract": "ApprovalTokenContract", "mode": "AUTHOR_APPROVED_COMMIT", "page": "Page13"},
+    {"feature": "multiwork_series", "contract": "MultiWorkContract", "mode": "READ_ONLY_ANALYSIS", "page": "Page14"},
+    {"feature": "collaboration_review", "contract": "ReviewShareContract", "mode": "DOCUMENT_ONLY", "page": "Page15"},
+    {"feature": "screenplay_export", "contract": "ScreenplayExportContract", "mode": "EXPORT_ONLY", "page": "Page16"},
+    {"feature": "production_bridge", "contract": "ProductionBridgeContract", "mode": "EXPORT_ONLY", "page": "Page16"},
+    {"feature": "plugin_system", "contract": "PluginCapabilityContract", "mode": "PLUGIN_SANDBOX", "page": "Page17"},
+    {"feature": "learning_personalization", "contract": "LearningAuditContract", "mode": "LEARNING_AUDIT_ONLY", "page": "Page17"},
+    {"feature": "multi_agent_creative_studio", "contract": "MultiAgentStudioContract", "mode": "PLUGIN_SANDBOX", "page": "Page17"}
+  ]
+}

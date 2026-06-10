@@ -1,0 +1,24 @@
+{
+  "page": "Page10",
+  "stage": 195,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "name": "Project and Bible Packet Contract",
+  "groups": [
+    "project_identity",
+    "material_set",
+    "stage_authority",
+    "warning_list",
+    "world_rules",
+    "character_seeds",
+    "conflict_seeds",
+    "style_profile",
+    "reveal_policy",
+    "reference_group"
+  ],
+  "requires": [
+    "reference_group",
+    "stage_authority",
+    "warning_list"
+  ],
+  "next_stage": 196
+}

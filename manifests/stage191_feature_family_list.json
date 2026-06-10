@@ -1,0 +1,25 @@
+{
+  "stage": 191,
+  "features": [
+    {"id": "story_repository", "class": "CORE_ROADMAP", "page": "Page10"},
+    {"id": "story_bible", "class": "CORE_ROADMAP", "page": "Page10"},
+    {"id": "codex_entity_registry", "class": "CORE_ROADMAP", "page": "Page10"},
+    {"id": "context_preview", "class": "CORE_ROADMAP", "page": "Page10"},
+    {"id": "prompt_preview", "class": "CORE_ROADMAP", "page": "Page10"},
+    {"id": "writer_surface", "class": "PRODUCT_SURFACE", "page": "Page11"},
+    {"id": "draft_candidate", "class": "GATED_CAPABILITY", "page": "Page11"},
+    {"id": "developmental_evaluation", "class": "ADVISORY_SURFACE", "page": "Page12"},
+    {"id": "eat8d_feature_extraction", "class": "CORE_ROADMAP", "page": "Page12"},
+    {"id": "narrative_gate_runner", "class": "GATED_CAPABILITY", "page": "Page12"},
+    {"id": "story_patch", "class": "GATED_CAPABILITY", "page": "Page13"},
+    {"id": "narrative_pr", "class": "GATED_CAPABILITY", "page": "Page13"},
+    {"id": "human_review_approval", "class": "GATED_CAPABILITY", "page": "Page13"},
+    {"id": "multiwork_series", "class": "GATED_CAPABILITY", "page": "Page14"},
+    {"id": "collaboration_review", "class": "PRODUCT_SURFACE", "page": "Page15"},
+    {"id": "screenplay_export", "class": "PRODUCT_SURFACE", "page": "Page16"},
+    {"id": "production_bridge", "class": "FUTURE_EXTENSION", "page": "Page16"},
+    {"id": "plugin_system", "class": "FUTURE_EXTENSION", "page": "Page17"},
+    {"id": "learning_personalization", "class": "FUTURE_EXTENSION", "page": "Page17"},
+    {"id": "multi_agent_creative_studio", "class": "FUTURE_EXTENSION", "page": "Page17"}
+  ]
+}

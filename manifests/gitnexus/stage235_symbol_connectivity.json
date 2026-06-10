@@ -1,0 +1,148 @@
+{
+  "version_id": "stage235",
+  "scope": "Page16 Stage231~235 full repository state with inherited Page10~Page15 lineage",
+  "records": [
+    {
+      "owner": "Page10",
+      "artifact": "release/current/page10_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page11",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Page11 release gate explicitly inherits Page10 dependency."
+      ]
+    },
+    {
+      "owner": "Page11",
+      "artifact": "release/current/page11_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page12",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Page12 release gate explicitly inherits Page11 dependency."
+      ]
+    },
+    {
+      "owner": "Page12",
+      "artifact": "release/current/page12_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Page13 release gate explicitly inherits Page12 dependency."
+      ]
+    },
+    {
+      "owner": "Page13",
+      "artifact": "release/current/page13_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Page14 release gate explicitly inherits Page13 dependency."
+      ]
+    },
+    {
+      "owner": "Page15",
+      "artifact": "release/current/page15_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage230",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Page16 release gate explicitly inherits Page15 dependency and Stage230 GitNexus evidence."
+      ]
+    },
+    {
+      "owner": "Stage230",
+      "artifact": "release/current/stage230_gitnexus_evidence_report.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage231",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Stage230 GitNexus evidence is recorded as the upstream authority for Page16."
+      ]
+    },
+    {
+      "owner": "Stage231",
+      "artifact": "manifests/stage231_screenplay_renderer_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage232",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Stage231 is preserved as the first Page16 contract."
+      ]
+    },
+    {
+      "owner": "Stage232",
+      "artifact": "manifests/stage232_script_breakdown_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage233",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Script breakdown remains part of the Page16 structured contract chain."
+      ]
+    },
+    {
+      "owner": "Stage233",
+      "artifact": "manifests/stage233_scene_element_shotlist_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage234",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Scene element tagging and shot list packets stay advisory and deterministic."
+      ]
+    },
+    {
+      "owner": "Stage234",
+      "artifact": "manifests/stage234_production_schedule_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage235",
+        "Page16",
+        "Stage235"
+      ],
+      "notes": [
+        "Production schedule remains advisory and does not become final authority."
+      ]
+    },
+    {
+      "owner": "Stage235",
+      "artifact": "manifests/stage235_page16_release_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page16",
+        "Page17"
+      ],
+      "notes": [
+        "Stage235 seals Page16 while preserving Page17 as next-page handoff only."
+      ]
+    }
+  ]
+}

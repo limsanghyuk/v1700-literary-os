@@ -1,0 +1,33 @@
+{
+  "page": "Page17",
+  "stage": 240,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Studio Coordination Policy Contract",
+  "depends_on": [236, 237, 238, 239],
+  "record_groups": [
+    "studio_policy_id",
+    "participant_scope_id",
+    "role_refs",
+    "capability_refs",
+    "surface_refs",
+    "fixture_refs",
+    "review_ref",
+    "handoff_ref"
+  ],
+  "rules": [
+    "studio_policy_id_required",
+    "participant_scope_id_required",
+    "role_refs_required",
+    "capability_refs_required",
+    "surface_refs_required",
+    "fixture_refs_required",
+    "review_ref_required"
+  ],
+  "blocking_failures": [
+    "participant_scope_missing",
+    "surface_ref_missing",
+    "fixture_ref_missing",
+    "review_ref_missing"
+  ],
+  "next_stage": 241
+}

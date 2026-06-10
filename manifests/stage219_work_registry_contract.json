@@ -1,0 +1,21 @@
+{
+  "page": "Page14",
+  "stage": 219,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Work Registry Contract",
+  "depends_on": ["Page13", "Page14 proposal", "Page14 blueprint"],
+  "record_groups": [
+    "work_id",
+    "title",
+    "work_type",
+    "local_authority_ref",
+    "series_ref",
+    "boundary_rule_ref"
+  ],
+  "rules": [
+    "work_id_required",
+    "local_authority_ref_required",
+    "boundary_rule_ref_required"
+  ],
+  "next_stage": 220
+}

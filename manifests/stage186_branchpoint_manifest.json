@@ -1,0 +1,297 @@
+{
+  "stage": 186,
+  "page": "Page08",
+  "title": "Branchpoint Map Builder",
+  "status": "IMPLEMENTATION_SEED",
+  "created_at": "2026-05-28",
+  "purpose": "Record major V1700 branchpoints and prepare inheritance authority before Page09~Page17 development.",
+  "gitnexus_required_for_page08_seal": true,
+  "branchpoints": [
+    {
+      "branchpoint_id": "stage24_1_roadmap_metadata_hardening",
+      "source_stage_or_page": "V1650 Stage24.1",
+      "status": "CORE",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "future work resumes from repository artifacts and metadata rather than memory-only chat state"
+      ],
+      "successor_requirements": [
+        "future roadmap stages must keep manifest and release metadata authority"
+      ],
+      "forbidden_regressions": [
+        "declare stage completion without repository artifact or metadata evidence"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "v1632_selective_legacy_restoration",
+      "source_stage_or_page": "V1632",
+      "status": "LEGACY",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "legacy systems are selectively restored or mapped rather than silently discarded"
+      ],
+      "successor_requirements": [
+        "future replacement must explain what is inherited, replaced, or deprecated"
+      ],
+      "forbidden_regressions": [
+        "delete old logic without successor trace"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "stage95_native_narrative_physics_engine",
+      "source_stage_or_page": "Stage95",
+      "status": "CORE",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "native narrative physics remains an ancestor of later literary-state logic"
+      ],
+      "successor_requirements": [
+        "future evaluation and rendering pages must preserve narrative-state continuity"
+      ],
+      "forbidden_regressions": [
+        "replace narrative physics with prompt-only generation without lineage mapping"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "stage97_1_adversarial_longform_validation_hardening",
+      "source_stage_or_page": "Stage97.1",
+      "status": "CORE",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "branchpoint survival must be checked before studio progression",
+        "adversarial broken-proof evidence must not be skipped"
+      ],
+      "successor_requirements": [
+        "future writer-studio pages must not bypass adversarial validation lineage"
+      ],
+      "forbidden_regressions": [
+        "remove adversarial negative corpus requirement without successor trace"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "stage120_126_gate_governor_cross_lineage_release",
+      "source_stage_or_page": "Stage120~126",
+      "status": "CORE",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "Gate25/28/29 governance and cross-lineage release authority must survive"
+      ],
+      "successor_requirements": [
+        "future gates must declare relationship to inherited gate governor authority"
+      ],
+      "forbidden_regressions": [
+        "introduce new gate that bypasses inherited gate governor lineage"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "stage127_140_multiwork_gig_formula_learning_planning",
+      "source_stage_or_page": "Stage127~140",
+      "status": "GATED",
+      "authority_scope": "legacy_documented",
+      "core_invariants": [
+        "MultiWork, GIG, formula registry, and learning plans require gated activation"
+      ],
+      "successor_requirements": [
+        "future activation requires isolation, advisory-first graph intelligence, and audit-first learning"
+      ],
+      "forbidden_regressions": [
+        "activate MultiWork sharing before project isolation",
+        "activate learning before audit and rollback"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page01_stage145_149_constitution_chain",
+      "source_stage_or_page": "Page01 / Stage145~149",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "Provider-Zero remains default",
+        "Node2 remains surface-safe",
+        "raw reveal access remains blocked unless successor policy explicitly changes it"
+      ],
+      "successor_requirements": [
+        "all future pages inherit Provider-Zero default and Node2 surface safety"
+      ],
+      "forbidden_regressions": [
+        "allow provider calls without sandbox policy",
+        "allow Node2 raw reveal access"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page02_stage150_154_memory_body",
+      "source_stage_or_page": "Page02 / Stage150~154",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "memory remains contract-first, read-first, local-first, and surface-projected"
+      ],
+      "successor_requirements": [
+        "Story Repository and Codex work must not bypass memory boundary discipline"
+      ],
+      "forbidden_regressions": [
+        "enable memory write without explicit write contract",
+        "replace memory body with unbounded live RAG without successor trace"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page03_stage155_160_execution_body",
+      "source_stage_or_page": "Page03 / Stage155~160",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "execution remains deterministic and dry-run safe until approved mutation path exists"
+      ],
+      "successor_requirements": [
+        "Narrative Agent execution must inherit deterministic evidence and dry-run discipline"
+      ],
+      "forbidden_regressions": [
+        "execute agent mutation without sandbox and approval"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page04_stage161_166_rendering_body",
+      "source_stage_or_page": "Page04 / Stage161~166",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "rendering body remains surface-draft and boundary-aware until approved successors exist"
+      ],
+      "successor_requirements": [
+        "Draft Candidate and IDE surfaces must distinguish candidate rendering from committed manuscript"
+      ],
+      "forbidden_regressions": [
+        "treat rendered candidate as committed manuscript without approval"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page05_stage167_172_evaluation_body",
+      "source_stage_or_page": "Page05 / Stage167~172",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "evaluation outputs must preserve advisory vs blocking separation where applicable"
+      ],
+      "successor_requirements": [
+        "Page12 must not promote literary advisory values into hard gates without evidence and policy"
+      ],
+      "forbidden_regressions": [
+        "hard-block literary outcome solely from 8D value"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page06_stage173_178_governance_body",
+      "source_stage_or_page": "Page06 / Stage173~178",
+      "status": "CORE",
+      "authority_scope": "documented_lineage",
+      "core_invariants": [
+        "governance body controls authority, override, default-deny, and boundary inheritance"
+      ],
+      "successor_requirements": [
+        "future override or approval workflows must declare governance inheritance"
+      ],
+      "forbidden_regressions": [
+        "introduce approval path without governance authority trace"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page07_stage179_184_evolution_body",
+      "source_stage_or_page": "Page07 / Stage179~184",
+      "status": "CORE",
+      "authority_scope": "HUB_OFFICIAL_KNOWN",
+      "core_invariants": [
+        "evolution body controls absorption, deprecation, migration, compatibility, and release seal authority"
+      ],
+      "successor_requirements": [
+        "Page08~Page17 roadmap must inherit evolution body absorption and deprecation discipline"
+      ],
+      "forbidden_regressions": [
+        "absorb commercial feature without deprecation and successor policy"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "stage185_8d_advisory_absorption_local_known",
+      "source_stage_or_page": "Stage185 local-known line",
+      "status": "ADVISORY",
+      "authority_scope": "LOCAL_KNOWN_NOT_HUB_CLOSED",
+      "core_invariants": [
+        "8D literary values remain advisory",
+        "8D evidence integrity is gated"
+      ],
+      "successor_requirements": [
+        "Page12 may add EAT8D feature extraction but must preserve advisory status unless a later promotion record exists"
+      ],
+      "forbidden_regressions": [
+        "mark Stage185 as hub-official without hub closure evidence",
+        "use 8D value as hard literary quality gate"
+      ],
+      "evidence_files": [],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "page08_page17_commercial_absorption_roadmap",
+      "source_stage_or_page": "Page08~Page17 roadmap PR #56",
+      "status": "PLANNED",
+      "authority_scope": "PLANNING_AUTHORITY",
+      "core_invariants": [
+        "13 logical phases are organized into 10 design pages",
+        "Page08 must precede Page09 commercial absorption"
+      ],
+      "successor_requirements": [
+        "Stage186 must begin with branchpoint and connectivity mapping"
+      ],
+      "forbidden_regressions": [
+        "start Page09 before Page08 authority closure"
+      ],
+      "evidence_files": [
+        "docs/roadmaps/page08_page17_commercial_absorption_writer_studio_roadmap.md",
+        "manifests/page08_page17_roadmap_manifest.json"
+      ],
+      "successor_trace_required": true
+    },
+    {
+      "branchpoint_id": "uploaded_codex_ide_absorption_addendum",
+      "source_stage_or_page": "Uploaded proposal addendum",
+      "status": "PLANNED",
+      "authority_scope": "PLANNING_AUTHORITY",
+      "core_invariants": [
+        "Codex-style Narrative Agent concepts are remapped into Page10~Page13 rather than direct Stage186~195 reuse"
+      ],
+      "successor_requirements": [
+        "Page09 must encode Codex-first policy after Page08 closes"
+      ],
+      "forbidden_regressions": [
+        "reuse uploaded Stage186~195 numbering as active roadmap numbering"
+      ],
+      "evidence_files": [
+        "docs/roadmaps/page08_page17_codex_ide_absorption_addendum.md"
+      ],
+      "successor_trace_required": true
+    }
+  ]
+}

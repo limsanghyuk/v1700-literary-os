@@ -1,0 +1,32 @@
+{
+  "page": "Page17",
+  "stage": 239,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Bounded Personalization Profile Contract",
+  "depends_on": [238],
+  "record_groups": [
+    "author_preference_profile_id",
+    "personalization_boundary_rule_id",
+    "source_audit_ref",
+    "allowed_preference_scope_refs",
+    "reviewable_profile_snapshot_ref",
+    "rollback_record_ref",
+    "visibility_policy_ref"
+  ],
+  "rules": [
+    "author_preference_profile_id_required",
+    "personalization_boundary_rule_id_required",
+    "source_audit_ref_required",
+    "allowed_preference_scope_refs_required",
+    "reviewable_profile_snapshot_ref_required",
+    "rollback_record_ref_required",
+    "visibility_policy_ref_required"
+  ],
+  "blocking_failures": [
+    "personalization_without_boundary_rule",
+    "profile_without_source_audit",
+    "profile_without_rollback_record",
+    "hidden_preference_update"
+  ],
+  "next_stage": 240
+}

@@ -1,0 +1,20 @@
+{
+  "stage": 191,
+  "page": "Page09",
+  "title": "Commercial Feature Taxonomy",
+  "status": "PASS",
+  "created_at": "2026-05-29",
+  "inherits_page08": true,
+  "page08_gitnexus_status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "orphan_legacy_symbols": 0,
+  "classification_values": [
+    "CORE_ROADMAP",
+    "GATED_CAPABILITY",
+    "ADVISORY_SURFACE",
+    "PRODUCT_SURFACE",
+    "FUTURE_EXTENSION",
+    "REJECTED_OR_DEFERRED"
+  ],
+  "feature_list_path": "manifests/stage191_feature_family_list.json",
+  "next_stage": "Stage192 Feature-to-Contract Mapping"
+}

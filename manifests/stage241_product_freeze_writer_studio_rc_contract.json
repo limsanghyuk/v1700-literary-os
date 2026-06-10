@@ -1,0 +1,35 @@
+{
+  "page": "Page17",
+  "stage": 241,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Product Security / Regression Freeze and Writer Studio RC Contract",
+  "depends_on": [236, 237, 238, 239, 240],
+  "record_groups": [
+    "product_security_freeze_report_id",
+    "regression_freeze_report_id",
+    "writer_studio_rc_manifest_id",
+    "release_evidence_refs",
+    "fixture_result_refs",
+    "risk_register_ref",
+    "approval_status",
+    "rollback_plan_ref"
+  ],
+  "rules": [
+    "product_security_freeze_report_id_required",
+    "regression_freeze_report_id_required",
+    "writer_studio_rc_manifest_id_required",
+    "release_evidence_refs_required",
+    "fixture_result_refs_required",
+    "risk_register_ref_required",
+    "approval_status_required",
+    "rollback_plan_ref_required"
+  ],
+  "blocking_failures": [
+    "security_freeze_missing",
+    "regression_freeze_missing",
+    "rc_manifest_missing",
+    "release_evidence_missing",
+    "rollback_plan_missing"
+  ],
+  "next_stage": 242
+}

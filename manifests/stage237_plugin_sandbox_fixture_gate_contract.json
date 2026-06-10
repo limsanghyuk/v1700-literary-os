@@ -1,0 +1,33 @@
+{
+  "page": "Page17",
+  "stage": 237,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Plugin Sandbox, Fixture Pack, and Plugin Gate Contract",
+  "depends_on": [236],
+  "record_groups": [
+    "plugin_sandbox_id",
+    "plugin_manifest_id",
+    "fixture_pack_id",
+    "plugin_gate_id",
+    "allowed_io_policy_ref",
+    "sandbox_runtime_policy_ref",
+    "fixture_result_refs",
+    "gate_decision"
+  ],
+  "rules": [
+    "plugin_sandbox_id_required",
+    "plugin_manifest_id_required",
+    "fixture_pack_id_required",
+    "plugin_gate_id_required",
+    "allowed_io_policy_ref_required",
+    "sandbox_runtime_policy_ref_required",
+    "gate_decision_required"
+  ],
+  "blocking_failures": [
+    "plugin_execution_without_sandbox",
+    "plugin_gate_without_fixture_pack",
+    "undeclared_io_surface",
+    "fixture_failure_promoted_as_pass"
+  ],
+  "next_stage": 238
+}

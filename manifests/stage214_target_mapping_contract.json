@@ -1,0 +1,22 @@
+{
+  "page": "Page13",
+  "stage": 214,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Target Mapping Contract",
+  "depends_on": [213],
+  "record_groups": [
+    "mapping_id",
+    "proposal_id",
+    "target_unit_ref",
+    "target_scope",
+    "source_packet_ref",
+    "evidence_ref"
+  ],
+  "rules": [
+    "proposal_id_required",
+    "target_unit_ref_required",
+    "source_packet_ref_required",
+    "evidence_ref_required"
+  ],
+  "next_stage": 215
+}

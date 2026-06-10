@@ -1,0 +1,22 @@
+{
+  "page": "Page14",
+  "stage": 221,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Shared World Record Contract",
+  "depends_on": [219, 220],
+  "record_groups": [
+    "world_id",
+    "participating_work_refs",
+    "shared_lore_refs",
+    "boundary_status",
+    "source_refs",
+    "local_authority_note"
+  ],
+  "rules": [
+    "world_id_required",
+    "participating_work_refs_required",
+    "boundary_status_required",
+    "local_authority_note_required"
+  ],
+  "next_stage": 222
+}

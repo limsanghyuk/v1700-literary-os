@@ -1,0 +1,32 @@
+{
+  "page": "Page17",
+  "stage": 238,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Learning Audit Mode Contract",
+  "depends_on": [236, 237],
+  "record_groups": [
+    "learning_audit_id",
+    "source_signal_ref",
+    "coefficient_diff_ref",
+    "deterministic_seed_ref",
+    "rollback_record_ref",
+    "audit_log_ref",
+    "review_status"
+  ],
+  "rules": [
+    "learning_audit_id_required",
+    "source_signal_ref_required",
+    "coefficient_diff_ref_required",
+    "deterministic_seed_ref_required",
+    "rollback_record_ref_required",
+    "audit_log_ref_required",
+    "review_status_required"
+  ],
+  "blocking_failures": [
+    "missing_audit_log",
+    "missing_coefficient_diff",
+    "missing_deterministic_seed",
+    "missing_rollback_record"
+  ],
+  "next_stage": 239
+}

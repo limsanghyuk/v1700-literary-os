@@ -1,0 +1,10 @@
+{
+  "page": "Page10",
+  "stage": 196,
+  "status": "PASS_WITH_APPROVED_FALLBACK",
+  "name": "Entity Registry Contract",
+  "groups": ["entity_id", "entity_type", "canonical_label", "alias_group", "visibility_scope", "reference_group", "notes"],
+  "requires": ["entity_id", "entity_type", "reference_group"],
+  "depends_on": 195,
+  "next_stage": 197
+}

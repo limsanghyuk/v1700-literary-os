@@ -1,0 +1,21 @@
+{
+  "page": "Page14",
+  "stage": 220,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Series Index and Season Arc Map Contract",
+  "depends_on": [219],
+  "record_groups": [
+    "series_id",
+    "work_refs",
+    "season_refs",
+    "order_rule",
+    "continuity_policy",
+    "arc_map_ref"
+  ],
+  "rules": [
+    "series_id_required",
+    "work_refs_required",
+    "order_rule_required"
+  ],
+  "next_stage": 221
+}

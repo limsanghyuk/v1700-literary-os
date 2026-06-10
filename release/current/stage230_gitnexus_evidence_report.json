@@ -1,0 +1,29 @@
+{
+  "version_id": "stage230",
+  "page": "Page15",
+  "status": "PASS_WITH_GITNEXUS_OUTPUT",
+  "source_folder": "release/gitnexus/stage230",
+  "indexed_commit": "02cd498ae97feb03d68f535a6fd6e3a99177ca5f",
+  "current_commit_at_index_time": "02cd498ae97feb03d68f535a6fd6e3a99177ca5f",
+  "gitnexus_status": "up-to-date",
+  "graph_summary": {
+    "nodes": 26833,
+    "edges": 40705,
+    "clusters": 502,
+    "flows": 300,
+    "skipped_large_files": 28
+  },
+  "orphan_count": 0,
+  "required_traces_present": true,
+  "page14_to_page15_trace_connected": true,
+  "stage224_to_stage230_trace_connected": true,
+  "page16_implementation_detected": false,
+  "page_gate_to_update": "release/current/page15_release_gate_report.md",
+  "decision": "Page15 may advance with warnings",
+  "warnings": [
+    "Page12 GitNexus evidence is still pending.",
+    "Page11 GitNexus evidence is still pending.",
+    "Page10 GitNexus evidence is still pending.",
+    "Stage185 remains local-known and not hub official."
+  ]
+}

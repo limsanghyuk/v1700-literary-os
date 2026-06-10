@@ -1,0 +1,22 @@
+{
+  "page": "Page12",
+  "stage": 207,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "EAT8D Feature Record Contract",
+  "depends_on": ["Page10", "Page11", "Page12 proposal", "Page12 blueprint"],
+  "record_groups": [
+    "feature_id",
+    "target_ref",
+    "dimension",
+    "value",
+    "confidence",
+    "evidence_ref",
+    "advisory_status"
+  ],
+  "rules": [
+    "evidence_ref_required",
+    "target_ref_required",
+    "advisory_status_required"
+  ],
+  "next_stage": 208
+}

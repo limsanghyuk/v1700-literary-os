@@ -1,0 +1,21 @@
+{
+  "page": "Page12",
+  "stage": 210,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Continuity Advisory Record Contract",
+  "depends_on": [207, 208, 209],
+  "record_groups": [
+    "record_id",
+    "target_ref",
+    "continuity_note",
+    "risk_note",
+    "evidence_ref",
+    "advisory_status"
+  ],
+  "rules": [
+    "target_ref_required",
+    "evidence_ref_required",
+    "advisory_status_required"
+  ],
+  "next_stage": 211
+}

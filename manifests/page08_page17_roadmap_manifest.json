@@ -1,0 +1,232 @@
+{
+  "manifest_id": "page08_page17_commercial_absorption_writer_studio_roadmap",
+  "roadmap_name": "V1700 Page08~Page17 Commercial Absorption & Writer Studio Evolution Roadmap",
+  "created_at": "2026-05-28",
+  "status": "planning_authority_with_codex_ide_absorption_addendum",
+  "baseline_authority": {
+    "hub": "Stage184 Page07 Release Seal officialized on hub",
+    "local_known_next": "Stage185 NarrativeStateTensor 8D Advisory Absorption local evidence",
+    "note": "This roadmap is not a Stage185 hub closure and not a release seal."
+  },
+  "implementation_range": {
+    "first_stage": 186,
+    "last_stage": 240,
+    "first_page": "Page08",
+    "last_page": "Page17"
+  },
+  "structure": {
+    "logical_phases": 13,
+    "design_pages": 10,
+    "stage_sequence": "Stage186~Stage240"
+  },
+  "absorbed_uploaded_proposal": {
+    "decision": "absorbed_as_addendum",
+    "stage_numbers_used_directly": false,
+    "reason": "Page08 lineage, hub, and Formula / Logic authority must precede Codex / Narrative IDE implementation.",
+    "addendum_path": "docs/roadmaps/page08_page17_codex_ide_absorption_addendum.md",
+    "blueprint_draft_path": "docs/roadmaps/page08_page17_page_blueprint_drafts.md"
+  },
+  "default_inheritance_rules": [
+    "Provider-Zero remains default",
+    "Node2 remains surface-safe",
+    "Memory writes require explicit write contract",
+    "Canon mutation requires approved mutation path",
+    "Runtime learning requires audit and rollback",
+    "ASD mutation requires patch proposal, author approval, reversible patch, and signed repair commit",
+    "8D remains advisory",
+    "GIG begins advisory",
+    "Project isolation precedes MultiWork sharing",
+    "License boundary precedes cross-project access"
+  ],
+  "logical_phases": [
+    {"id": 0, "name": "Lineage Branchpoint Audit & Inheritance Contract"},
+    {"id": 1, "name": "Hub Authority Reconciliation"},
+    {"id": 2, "name": "Formula / Logic Ledger v2"},
+    {"id": 3, "name": "Commercial Absorption Constitution"},
+    {"id": 4, "name": "Project / Story Bible / Entity Registry"},
+    {"id": 5, "name": "Context Preview & Reveal Boundary Gate"},
+    {"id": 6, "name": "Writer Manuscript Surface"},
+    {"id": 7, "name": "Draft Candidate Sandbox"},
+    {"id": 8, "name": "Developmental Evaluation & Beta Reader Pack"},
+    {"id": 9, "name": "Graph Intelligence & Contradiction Advisory"},
+    {"id": 10, "name": "Human-Approved Repair Commit"},
+    {"id": 11, "name": "MultiWork / Series Studio OS"},
+    {"id": 12, "name": "Collaboration / Production / Export Bridge"},
+    {"id": 13, "name": "Plugin / Learning / Product Release Candidate"}
+  ],
+  "absorbed_codex_core_objects": [
+    "NarrativeTaskSpec",
+    "StorySandbox",
+    "StoryRepositoryLoader",
+    "EAT8DFeatureVector",
+    "FeatureCompletenessReport",
+    "DimensionConfidence",
+    "EAT8DAdvisoryReport",
+    "RevisionDirection",
+    "StoryPatch",
+    "StoryDiff",
+    "NarrativeGateReport",
+    "NarrativePR",
+    "ReviewChecklist",
+    "WriterApprovalToken",
+    "MergedStoryState",
+    "ReleaseSeal"
+  ],
+  "pages": [
+    {
+      "page": "Page08",
+      "name": "Lineage / Hub / Formula Authority",
+      "stage_range": "Stage186~190",
+      "absorbs_logical_phases": [0, 1, 2],
+      "stages": [
+        {"stage": 186, "name": "Branchpoint Map Builder"},
+        {"stage": 187, "name": "Inheritance Contract Gate"},
+        {"stage": 188, "name": "Hub Authority Reconciliation"},
+        {"stage": 189, "name": "Formula / Logic Ledger v2"},
+        {"stage": 190, "name": "Page08 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page09",
+      "name": "Commercial Absorption Constitution + Codex-first Policy",
+      "stage_range": "Stage191~194",
+      "absorbs_logical_phases": [3],
+      "stages": [
+        {"stage": 191, "name": "Commercial Feature Taxonomy"},
+        {"stage": 192, "name": "Feature-to-Contract Mapping"},
+        {"stage": 193, "name": "Provider Sandbox / Writer Approval Policy"},
+        {"stage": 194, "name": "Page09 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page10",
+      "name": "Story Repository / Story Bible / Codex / Context Preview",
+      "stage_range": "Stage195~200",
+      "absorbs_logical_phases": [4, 5],
+      "stages": [
+        {"stage": 195, "name": "Project Manifest & Story Bible Contract"},
+        {"stage": 196, "name": "Entity Registry / Character / Location / Lore Cards"},
+        {"stage": 197, "name": "Mention Timeline / Alias Index / Relation Graph"},
+        {"stage": 198, "name": "Context Packet Builder"},
+        {"stage": 199, "name": "Prompt Preview / Redaction Gate"},
+        {"stage": 200, "name": "Page10 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page11",
+      "name": "Writer Surface / Narrative IDE Contract / Draft Candidate Sandbox",
+      "stage_range": "Stage201~206",
+      "absorbs_logical_phases": [6, 7],
+      "stages": [
+        {"stage": 201, "name": "Manuscript Document Contract"},
+        {"stage": 202, "name": "Chapter / Scene / Beat Node Model"},
+        {"stage": 203, "name": "Revision Snapshot / Comment Layer"},
+        {"stage": 204, "name": "Provider Sandbox Draft Candidate"},
+        {"stage": 205, "name": "Candidate Ranking / Evidence Report"},
+        {"stage": 206, "name": "Page11 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page12",
+      "name": "EAT8D Feature Extraction / Developmental Evaluation / Narrative Gate Runner v2 / Graph Advisory",
+      "stage_range": "Stage207~213",
+      "absorbs_logical_phases": [8, 9],
+      "stages": [
+        {"stage": 207, "name": "EAT8D Feature Schema & Confidence Ledger"},
+        {"stage": 208, "name": "Scene-to-8D Feature Extractor"},
+        {"stage": 209, "name": "8D Developmental Report & Revision Direction Mapper"},
+        {"stage": 210, "name": "Narrative Gate Runner v2"},
+        {"stage": 211, "name": "Beta Reader Persona / Reader Surface Advisory"},
+        {"stage": 212, "name": "Narrative Knowledge Graph / Contradiction Advisory"},
+        {"stage": 213, "name": "Page12 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page13",
+      "name": "Story Patch / Narrative PR / Human-Approved Repair Commit",
+      "stage_range": "Stage214~217",
+      "absorbs_logical_phases": [10],
+      "stages": [
+        {"stage": 214, "name": "NarrativeTaskSpec & StoryPatch Contract"},
+        {"stage": 215, "name": "Story Sandbox Manager / Reversible Patch Store"},
+        {"stage": 216, "name": "Narrative PR / Review Pack / Author Approval Token"},
+        {"stage": 217, "name": "Page13 Narrative Codex Core Seal"}
+      ]
+    },
+    {
+      "page": "Page14",
+      "name": "MultiWork / Series Studio OS",
+      "stage_range": "Stage218~223",
+      "absorbs_logical_phases": [11],
+      "stages": [
+        {"stage": 218, "name": "MultiWork Preflight & Isolation Audit"},
+        {"stage": 219, "name": "Project Isolation Manager"},
+        {"stage": 220, "name": "Shared Character / Shared World Read-Only Store"},
+        {"stage": 221, "name": "Cross-Work Canon Governor"},
+        {"stage": 222, "name": "Author License / IP Boundary Gate"},
+        {"stage": 223, "name": "Page14 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page15",
+      "name": "Collaboration / Review / Narrative IDE Integration / Export",
+      "stage_range": "Stage224~228",
+      "absorbs_logical_phases": [12],
+      "stages": [
+        {"stage": 224, "name": "Role-Based Review Workflow"},
+        {"stage": 225, "name": "Read-Only Share / Reviewer Permission"},
+        {"stage": 226, "name": "Suggestion / Feedback Resolution State"},
+        {"stage": 227, "name": "Export Contract / Format Gate"},
+        {"stage": 228, "name": "Page15 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page16",
+      "name": "Screenplay / Production Bridge",
+      "stage_range": "Stage229~233",
+      "absorbs_logical_phases": [12],
+      "stages": [
+        {"stage": 229, "name": "Screenplay Format Renderer"},
+        {"stage": 230, "name": "Script Breakdown Packet"},
+        {"stage": 231, "name": "Scene Element Tagger / Shot List Packet"},
+        {"stage": 232, "name": "Production Schedule Draft"},
+        {"stage": 233, "name": "Page16 Release Seal"}
+      ]
+    },
+    {
+      "page": "Page17",
+      "name": "Plugin / Learning / Multi-Agent Creative Studio / Product Release Candidate",
+      "stage_range": "Stage234~240",
+      "absorbs_logical_phases": [13],
+      "stages": [
+        {"stage": 234, "name": "Plugin Manifest / Capability Declaration"},
+        {"stage": 235, "name": "Plugin Sandbox / Fixture Pack / Plugin Gate"},
+        {"stage": 236, "name": "Learning Audit Mode"},
+        {"stage": 237, "name": "Bounded Personalization Profile"},
+        {"stage": 238, "name": "Product Security / Regression Freeze"},
+        {"stage": 239, "name": "Writer Studio Release Candidate"},
+        {"stage": 240, "name": "Page17 Final Release Seal"}
+      ]
+    }
+  ],
+  "required_page_document_pattern": [
+    "Expert Consensus",
+    "Proposal",
+    "Blueprint",
+    "Contract Schema",
+    "Runner plan",
+    "Release Gate plan",
+    "Fixture Pack",
+    "Negative Fixture Pack",
+    "Evidence Report plan",
+    "Integrity verification plan",
+    "Hub PR / Actions / Release Closure plan",
+    "Next-chat handoff"
+  ],
+  "next_action": {
+    "page": "Page08",
+    "stage": 186,
+    "title": "Branchpoint Map Builder",
+    "branch_suggestion": "stage186-page08-branchpoint-map"
+  }
+}

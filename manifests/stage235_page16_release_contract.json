@@ -1,0 +1,27 @@
+{
+  "page": "Page16",
+  "stage": 235,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Page16 Release Seal Contract",
+  "depends_on": [231, 232, 233, 234],
+  "required_documents": [
+    "docs/proposals/page16_screenplay_production_bridge_proposal.md",
+    "docs/architecture/page16_screenplay_production_bridge_blueprint.md"
+  ],
+  "required_manifests": [
+    "manifests/stage231_screenplay_renderer_contract.json",
+    "manifests/stage232_script_breakdown_contract.json",
+    "manifests/stage233_scene_element_shotlist_contract.json",
+    "manifests/stage234_production_schedule_contract.json"
+  ],
+  "release_gate_rules": [
+    "stage231_to_stage235_order_required",
+    "page15_dependency_required",
+    "stage230_gitnexus_evidence_required",
+    "upstream_warnings_carried_forward",
+    "screenplay_projection_must_not_mutate_manuscript",
+    "production_packets_must_remain_advisory",
+    "page17_handoff_declared_without_page17_implementation"
+  ],
+  "next_page": "Page17"
+}

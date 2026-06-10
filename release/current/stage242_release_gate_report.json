@@ -1,0 +1,61 @@
+{
+  "auto_repair_apply_enabled": false,
+  "automatic_promotion_enabled": false,
+  "baseline_stage": "235",
+  "branchpoint_lineage_preserved": true,
+  "canon_mutation_enabled": false,
+  "carried_forward_warnings": [
+    "Page10 GitNexus evidence refresh remains pending.",
+    "Page11 GitNexus evidence refresh remains pending.",
+    "Page12 GitNexus evidence refresh remains pending.",
+    "Stage185 remains local-known and not hub official."
+  ],
+  "checks": {
+    "active_version_pass": {
+      "status": "pass"
+    },
+    "package_manifest_alignment_pass": {
+      "status": "pass"
+    },
+    "page17_gate_pass": {
+      "status": "pass"
+    },
+    "page18_stage243_absent_pass": {
+      "status": "pass"
+    },
+    "provider_zero_pass": {
+      "status": "pass"
+    },
+    "required_files_pass": {
+      "status": "pass"
+    },
+    "stage242_gitnexus_evidence_pass": {
+      "status": "pass"
+    },
+    "warning_visibility_pass": {
+      "status": "pass"
+    },
+    "write_training_boundary_pass": {
+      "status": "pass"
+    }
+  },
+  "credential_leakage": 0,
+  "cross_project_write_enabled": false,
+  "evolution_write_enabled": false,
+  "issues": [],
+  "live_provider_call_count_in_release_gate": 0,
+  "memory_write_enabled": false,
+  "node2_raw_reveal_access": 0,
+  "post_roadmap_authority_review_open": true,
+  "provider_default_calls": 0,
+  "provider_evaluation_enabled": false,
+  "provider_generation_count": 0,
+  "provider_generation_enabled": false,
+  "runtime_execution_count": 0,
+  "runtime_training_enabled": false,
+  "stage": "242",
+  "status": "pass",
+  "title": "Page17 Authority Closure",
+  "warning_preserving_release": true,
+  "write_operation_count": 0
+}

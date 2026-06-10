@@ -1,0 +1,22 @@
+{
+  "page": "Page13",
+  "stage": 215,
+  "status": "PASS_WITH_APPROVED_FALLBACK_PENDING_GITNEXUS",
+  "name": "Review Object Contract",
+  "depends_on": [213, 214],
+  "record_groups": [
+    "review_id",
+    "proposal_id",
+    "mapping_id",
+    "review_scope",
+    "evidence_refs",
+    "review_notes"
+  ],
+  "rules": [
+    "proposal_id_required",
+    "mapping_id_required",
+    "evidence_refs_required",
+    "review_scope_required"
+  ],
+  "next_stage": 216
+}

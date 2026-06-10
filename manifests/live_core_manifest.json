@@ -104,15 +104,17 @@
     "stage183_future_absorption_deprecation_planner",
     "stage183_release_gate",
     "stage184_page07_release_seal",
-    "stage184_release_gate"
+    "stage184_release_gate",
+    "stage242_page17_authority_closure",
+    "stage242_release_gate"
   ],
-  "active_version": "stage184",
-  "canonical_package": "V1700_stage184_page07_release_seal_release_integrated_repository_with_artifacts.zip",
-  "canonical_sha256_sidecar": "V1700_stage184_page07_release_seal_release_integrated_repository_with_artifacts.zip.sha256",
-  "current_stage": "stage184",
-  "current_title": "Page07 Release Seal",
-  "next_stage": "stage185",
-  "next_title": "Post-Page07 Expansion Reserve",
+  "active_version": "stage242",
+  "canonical_package": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip",
+  "canonical_sha256_sidecar": "V1700_stage242_page17_authority_closure_release_integrated_repository_with_artifacts.zip.sha256",
+  "current_stage": "stage242",
+  "current_title": "Page17 Authority Closure",
+  "next_stage": "post-roadmap-authority-review",
+  "next_title": "Post-Roadmap Authority Review",
   "provider_default_calls": 0,
   "runtime_entrypoint": "src/v1700/cli.py",
   "runtime_profile": "v1700_literary_os_1_0_stable",
@@ -518,5 +520,13 @@
       "status": "active",
       "title": "Evaluation Boundary and Leakage Preflight"
     }
+  },
+  "stage242": {
+    "baseline_stage": "stage235",
+    "evidence": "release/current/stage242_page17_release_report.json",
+    "next_stage": "post-roadmap-authority-review",
+    "release_gate": "release/current/stage242_release_gate_report.json",
+    "status": "active",
+    "title": "Page17 Authority Closure"
   }
 }

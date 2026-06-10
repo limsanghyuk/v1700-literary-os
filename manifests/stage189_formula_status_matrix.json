@@ -1,0 +1,18 @@
+{
+  "stage": 189,
+  "title": "Formula / Logic Status Matrix",
+  "status": "IMPLEMENTED_MATRIX_SEED",
+  "created_at": "2026-05-29",
+  "matrix": [
+    {"entry_id": "provider_zero_default", "status": "CORE", "successor_page": "Page09 / Page11", "page08_seal_blocker": false},
+    {"entry_id": "node2_surface_safety", "status": "CORE", "successor_page": "Page10 / Page15", "page08_seal_blocker": false},
+    {"entry_id": "memory_contract_first_read_first", "status": "CORE", "successor_page": "Page10", "page08_seal_blocker": false},
+    {"entry_id": "render_candidate_not_commit", "status": "CORE", "successor_page": "Page11", "page08_seal_blocker": false},
+    {"entry_id": "eat8d_advisory_tensor", "status": "ADVISORY", "successor_page": "Page12", "page08_seal_blocker": false},
+    {"entry_id": "gig_contradiction_advisory", "status": "ADVISORY", "successor_page": "Page12", "page08_seal_blocker": false},
+    {"entry_id": "story_patch_requires_approval", "status": "PLANNED", "successor_page": "Page13", "page08_seal_blocker": false},
+    {"entry_id": "multiwork_isolation_before_sharing", "status": "GATED", "successor_page": "Page14", "page08_seal_blocker": false},
+    {"entry_id": "learning_audit_first", "status": "GATED", "successor_page": "Page17", "page08_seal_blocker": false},
+    {"entry_id": "gitnexus_lineage_connectivity", "status": "PENDING_REQUIRED_EVIDENCE", "successor_page": "Stage190 / Page08 seal", "page08_seal_blocker": true}
+  ]
+}

@@ -1,0 +1,10 @@
+
+  GitNexus Analyzer
+
+{"level":40,"time":1780537223889,"name":"gitnexus","msg":"  Skipped 28 large files (>512KB, likely generated/vendored)"}
+
+  Repository indexed successfully (24.2s)
+
+  26,833 nodes | 40,705 edges | 502 clusters | 300 flows
+  C:\AI_Codex\codex-work\gpt\github_push\v1700-literary-os_page08_roadmap
+

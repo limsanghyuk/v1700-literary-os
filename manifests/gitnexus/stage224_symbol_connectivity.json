@@ -1,0 +1,130 @@
+{
+  "version_id": "stage224",
+  "scope": "Page14 Stage219~224 full repository state with inherited Page10~Page13 lineage",
+  "records": [
+    {
+      "owner": "Page10",
+      "artifact": "release/current/page10_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page11",
+        "Stage224",
+        "Page14"
+      ],
+      "notes": [
+        "Page11 release gate explicitly inherits Page10 dependency."
+      ]
+    },
+    {
+      "owner": "Page11",
+      "artifact": "release/current/page11_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page12",
+        "Stage224",
+        "Page14"
+      ],
+      "notes": [
+        "Page12 release gate explicitly inherits Page11 dependency."
+      ]
+    },
+    {
+      "owner": "Page12",
+      "artifact": "release/current/page12_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page13",
+        "Stage224",
+        "Page14"
+      ],
+      "notes": [
+        "Page13 release gate explicitly inherits Page12 dependency."
+      ]
+    },
+    {
+      "owner": "Page13",
+      "artifact": "release/current/page13_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Stage224"
+      ],
+      "notes": [
+        "Page14 release gate explicitly inherits Page13 dependency."
+      ]
+    },
+    {
+      "owner": "Stage219",
+      "artifact": "manifests/stage219_work_registry_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Stage224"
+      ],
+      "notes": [
+        "Stage224 summary and Page14 release gate list Stage219 as the first Page14 contract."
+      ]
+    },
+    {
+      "owner": "Stage220",
+      "artifact": "manifests/stage220_series_index_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Stage224"
+      ],
+      "notes": [
+        "Stage220 is preserved in the Page14 contract chain."
+      ]
+    },
+    {
+      "owner": "Stage221",
+      "artifact": "manifests/stage221_shared_world_record_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Stage224"
+      ],
+      "notes": [
+        "Stage221 is preserved in the Page14 contract chain."
+      ]
+    },
+    {
+      "owner": "Stage222",
+      "artifact": "manifests/stage222_cross_work_link_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Page14",
+        "Stage224"
+      ],
+      "notes": [
+        "Stage222 continuity bridge remains a Page14-local contract."
+      ]
+    },
+    {
+      "owner": "Stage223",
+      "artifact": "manifests/stage223_work_boundary_handoff_contract.json",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage224",
+        "Page15"
+      ],
+      "notes": [
+        "Page15 is declared only as handoff; no Page15 implementation files are present in this branch."
+      ]
+    },
+    {
+      "owner": "Page14",
+      "artifact": "release/current/page14_release_gate_report.md",
+      "status": "CONNECTED",
+      "connected_to": [
+        "Stage224",
+        "Page13",
+        "Page15"
+      ],
+      "notes": [
+        "Page14 remains a multi-work coordination layer and does not implement Page15."
+      ]
+    }
+  ]
+}
