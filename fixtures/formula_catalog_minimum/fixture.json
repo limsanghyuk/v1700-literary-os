@@ -1,0 +1,79 @@
+{
+  "fixture_id": "formula_catalog_minimum_v0_1",
+  "fixture_version": "0.1",
+  "catalog_contract_ref": "docs/contracts/formula_catalog_record_contract.md",
+  "normalization_report_ref": "docs/reviews/formula_catalog_normalization_report.md",
+  "review_status": "DRAFT",
+  "formula_catalog_records": [
+    {
+      "formula_id": "formula_narrative_state_tensor_v0_1",
+      "formula_name": "Narrative State Tensor",
+      "formula_group": "NARRATIVE_STATE_TENSOR",
+      "canonical_label": "NARRATIVE_STATE_TENSOR_SIGNAL_SOURCE",
+      "lineage_ref": "UPLOADED_USER_FORMULA_ARCHIVE",
+      "alias_refs": ["nst", "narrative_state"],
+      "purpose": "Represent scene-level narrative state from structured metadata.",
+      "input_schema_refs": ["SceneBlueprintRecord.conflict_type", "SceneBlueprintRecord.tension_delta_label", "SceneBlueprintRecord.information_delta_label"],
+      "output_schema_refs": ["FormulaSignalRecord.output_signal_value_or_label"],
+      "allowed_consumer_refs": ["FORMULA_SIGNAL_RUNTIME_BRIDGE", "WRITER_IDE_ADVISORY_PANEL"],
+      "boundary_rule_refs": ["ADVISORY_ONLY", "VALID_FOR_SCHEMA_WIRING"],
+      "review_status": "DRAFT"
+    },
+    {
+      "formula_id": "formula_emotional_momentum_v0_1",
+      "formula_name": "Emotional Momentum",
+      "formula_group": "EMOTIONAL_MOMENTUM",
+      "canonical_label": "EMOTIONAL_MOMENTUM_SIGNAL_SOURCE",
+      "lineage_ref": "UPLOADED_USER_FORMULA_ARCHIVE",
+      "alias_refs": ["emotional_momentum", "emotion_delta"],
+      "purpose": "Estimate directional emotional transition in scene metadata.",
+      "input_schema_refs": ["SceneBlueprintRecord.emotional_start_tag", "SceneBlueprintRecord.emotional_end_tag", "SceneBlueprintRecord.tension_delta_label"],
+      "output_schema_refs": ["FormulaSignalRecord.output_signal_value_or_label"],
+      "allowed_consumer_refs": ["FORMULA_SIGNAL_RUNTIME_BRIDGE", "WRITER_IDE_ADVISORY_PANEL", "LEARNABLE_CRITIC_AUDIT"],
+      "boundary_rule_refs": ["ADVISORY_ONLY", "VALID_FOR_SCHEMA_WIRING", "VALID_FOR_LEARNABLE_CRITIC_AUDIT"],
+      "review_status": "DRAFT"
+    },
+    {
+      "formula_id": "formula_character_interaction_matrix_v0_1",
+      "formula_name": "Character Interaction Matrix",
+      "formula_group": "CHARACTER_INTERACTION_MATRIX",
+      "canonical_label": "CHARACTER_INTERACTION_SIGNAL_SOURCE",
+      "lineage_ref": "UPLOADED_USER_FORMULA_ARCHIVE",
+      "alias_refs": ["cim", "relationship_pressure"],
+      "purpose": "Summarize relationship pressure from structured relationship graph metadata.",
+      "input_schema_refs": ["RelationshipGraphRecord.pressure_level", "RelationshipGraphRecord.trust_level", "RelationshipGraphRecord.conflict_level"],
+      "output_schema_refs": ["FormulaSignalRecord.output_signal_value_or_label"],
+      "allowed_consumer_refs": ["FORMULA_SIGNAL_RUNTIME_BRIDGE", "WRITER_IDE_ADVISORY_PANEL"],
+      "boundary_rule_refs": ["ADVISORY_ONLY", "VALID_FOR_SCHEMA_WIRING"],
+      "review_status": "DRAFT"
+    },
+    {
+      "formula_id": "formula_drse_v0_1",
+      "formula_name": "DRSE",
+      "formula_group": "DRSE",
+      "canonical_label": "CAUSALITY_TRANSITION_SIGNAL_SOURCE",
+      "lineage_ref": "UPLOADED_USER_FORMULA_ARCHIVE",
+      "alias_refs": ["drse", "dynamic_residue_state_engine"],
+      "purpose": "Represent trigger-resolution-residue transition from causality metadata.",
+      "input_schema_refs": ["CausalityMatrixRecord.trigger_summary", "CausalityMatrixRecord.resolution_summary", "CausalityMatrixRecord.residue_summary"],
+      "output_schema_refs": ["FormulaSignalRecord.output_signal_value_or_label"],
+      "allowed_consumer_refs": ["FORMULA_SIGNAL_RUNTIME_BRIDGE", "VALUE_PROOF_PREREGISTRATION"],
+      "boundary_rule_refs": ["ADVISORY_ONLY", "VALID_FOR_VALUE_PROOF_PREREGISTRATION"],
+      "review_status": "DRAFT"
+    },
+    {
+      "formula_id": "formula_narrative_fitness_score_v0_1",
+      "formula_name": "Narrative Fitness Score",
+      "formula_group": "NARRATIVE_FITNESS_SCORE",
+      "canonical_label": "NARRATIVE_FITNESS_COMPANION_SIGNAL_SOURCE",
+      "lineage_ref": "UPLOADED_USER_FORMULA_ARCHIVE",
+      "alias_refs": ["nfs", "fitness_companion"],
+      "purpose": "Provide advisory companion signal for scene clarity and tension fit.",
+      "input_schema_refs": ["CriticThresholdRecord.minimum_causality_clarity", "CriticThresholdRecord.minimum_emotional_legibility", "SceneBlueprintRecord.tension_delta_label"],
+      "output_schema_refs": ["FormulaSignalRecord.output_signal_value_or_label"],
+      "allowed_consumer_refs": ["FORMULA_SIGNAL_RUNTIME_BRIDGE", "VALUE_PROOF_PREREGISTRATION", "WRITER_IDE_ADVISORY_PANEL"],
+      "boundary_rule_refs": ["ADVISORY_ONLY", "VALID_FOR_SCHEMA_WIRING", "VALID_FOR_VALUE_PROOF_PREREGISTRATION"],
+      "review_status": "DRAFT"
+    }
+  ]
+}
