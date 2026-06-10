@@ -1,0 +1,162 @@
+{
+  "acceptance_status": "ACCEPTED_FOR_WRITER_IDE_STATIC_FLOW",
+  "blocking_failure_count": 0,
+  "canonical_mutation_status": "NO_CANONICAL_MUTATION",
+  "created_at": "2026-06-10T12:45:00Z",
+  "downstream_status": "READY_FOR_WRITER_IDE_STATIC_FLOW",
+  "formula_signal_mappings": [
+    {
+      "advisory_only": true,
+      "formula_group": "NARRATIVE_STATE_TENSOR",
+      "formula_id": "formula_narrative_state_tensor_v0_1",
+      "formula_name": "Narrative State Tensor",
+      "formula_signal_id": "signal_nst_scene_001",
+      "learnable_critic_status": "AUDIT_REQUIRED_NO_COEFFICIENT_UPDATE",
+      "output_signal_type": "NARRATIVE_STATE_TENSOR_SIGNAL",
+      "output_signal_value_or_label": "pressure_state_increasing_information_reveal",
+      "signal_type_label": "FIXTURE_SIGNAL",
+      "source_record_ids": ["scene_001"],
+      "source_record_summaries": [
+        {
+          "conflict_type": "value_conflict",
+          "emotional_end_tag": "destabilized",
+          "emotional_start_tag": "controlled",
+          "record_id": "scene_001",
+          "record_type": "SceneBlueprintRecord",
+          "scene_function": "inciting_pressure",
+          "tension_delta_label": "increase"
+        }
+      ],
+      "source_record_types": ["SceneBlueprintRecord"],
+      "value_proof_status": "PREREGISTRATION_REQUIRED_NOT_PROOF",
+      "writer_ide_status": "ADVISORY_PANEL_ONLY"
+    },
+    {
+      "advisory_only": true,
+      "formula_group": "EMOTIONAL_MOMENTUM",
+      "formula_id": "formula_emotional_momentum_v0_1",
+      "formula_name": "Emotional Momentum",
+      "formula_signal_id": "signal_emotional_momentum_scene_001",
+      "learnable_critic_status": "AUDIT_REQUIRED_NO_COEFFICIENT_UPDATE",
+      "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+      "output_signal_value_or_label": "increase_destabilizing",
+      "signal_type_label": "FIXTURE_SIGNAL",
+      "source_record_ids": ["scene_001"],
+      "source_record_summaries": [
+        {
+          "conflict_type": "value_conflict",
+          "emotional_end_tag": "destabilized",
+          "emotional_start_tag": "controlled",
+          "record_id": "scene_001",
+          "record_type": "SceneBlueprintRecord",
+          "scene_function": "inciting_pressure",
+          "tension_delta_label": "increase"
+        }
+      ],
+      "source_record_types": ["SceneBlueprintRecord"],
+      "value_proof_status": "PREREGISTRATION_REQUIRED_NOT_PROOF",
+      "writer_ide_status": "ADVISORY_PANEL_ONLY"
+    },
+    {
+      "advisory_only": true,
+      "formula_group": "CHARACTER_INTERACTION_MATRIX",
+      "formula_id": "formula_character_interaction_matrix_v0_1",
+      "formula_name": "Character Interaction Matrix",
+      "formula_signal_id": "signal_character_interaction_relationship_001",
+      "learnable_critic_status": "AUDIT_REQUIRED_NO_COEFFICIENT_UPDATE",
+      "output_signal_type": "CHARACTER_INTERACTION_SIGNAL",
+      "output_signal_value_or_label": "high_pressure_low_trust_high_conflict",
+      "signal_type_label": "FIXTURE_SIGNAL",
+      "source_record_ids": ["relationship_001"],
+      "source_record_summaries": [
+        {
+          "conflict_level": "high",
+          "pressure_level": "high",
+          "record_id": "relationship_001",
+          "record_type": "RelationshipGraphRecord",
+          "relationship_type": "adversarial_dependency",
+          "trust_level": "low"
+        }
+      ],
+      "source_record_types": ["RelationshipGraphRecord"],
+      "value_proof_status": "PREREGISTRATION_REQUIRED_NOT_PROOF",
+      "writer_ide_status": "ADVISORY_PANEL_ONLY"
+    },
+    {
+      "advisory_only": true,
+      "formula_group": "DRSE",
+      "formula_id": "formula_drse_v0_1",
+      "formula_name": "DRSE",
+      "formula_signal_id": "signal_causality_transition_causality_001",
+      "learnable_critic_status": "AUDIT_REQUIRED_NO_COEFFICIENT_UPDATE",
+      "output_signal_type": "CAUSALITY_TRANSITION_SIGNAL",
+      "output_signal_value_or_label": "trigger_resolved_with_residue",
+      "signal_type_label": "FIXTURE_SIGNAL",
+      "source_record_ids": ["causality_001"],
+      "source_record_summaries": [
+        {
+          "record_id": "causality_001",
+          "record_type": "CausalityMatrixRecord",
+          "residue_summary": "unresolved emotional debt remains",
+          "resolution_summary": "the character avoids immediate collapse",
+          "trigger_summary": "a prior choice creates social pressure"
+        }
+      ],
+      "source_record_types": ["CausalityMatrixRecord"],
+      "value_proof_status": "PREREGISTRATION_REQUIRED_NOT_PROOF",
+      "writer_ide_status": "ADVISORY_PANEL_ONLY"
+    },
+    {
+      "advisory_only": true,
+      "formula_group": "NARRATIVE_FITNESS_SCORE",
+      "formula_id": "formula_narrative_fitness_score_v0_1",
+      "formula_name": "Narrative Fitness Score",
+      "formula_signal_id": "signal_nfs_scene_001",
+      "learnable_critic_status": "AUDIT_REQUIRED_NO_COEFFICIENT_UPDATE",
+      "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+      "output_signal_value_or_label": "fixture_fit_requires_review",
+      "signal_type_label": "FIXTURE_SIGNAL",
+      "source_record_ids": ["scene_001", "critic_threshold_001"],
+      "source_record_summaries": [
+        {
+          "conflict_type": "value_conflict",
+          "emotional_end_tag": "destabilized",
+          "emotional_start_tag": "controlled",
+          "record_id": "scene_001",
+          "record_type": "SceneBlueprintRecord",
+          "scene_function": "inciting_pressure",
+          "tension_delta_label": "increase"
+        },
+        {
+          "minimum_causality_clarity": "medium",
+          "minimum_emotional_legibility": "medium",
+          "record_id": "critic_threshold_001",
+          "record_type": "CriticThresholdRecord"
+        }
+      ],
+      "source_record_types": ["SceneBlueprintRecord", "CriticThresholdRecord"],
+      "value_proof_status": "PREREGISTRATION_REQUIRED_NOT_PROOF",
+      "writer_ide_status": "ADVISORY_PANEL_ONLY"
+    }
+  ],
+  "input_refs": {
+    "corpus": "fixtures/narrative_corpus_minimum/fixture.json",
+    "formula_catalog": "fixtures/formula_catalog_minimum/fixture.json",
+    "formula_signal": "fixtures/formula_signal_minimum/fixture.json",
+    "validator_result": "fixtures/option_b_validation/validator_result.json"
+  },
+  "learnable_critic_status": "NO_COEFFICIENT_UPDATE_AUDIT_REQUIRED",
+  "mapper_version": "0.1.0",
+  "mapping_count": 5,
+  "overall_status": "PASS",
+  "page18_status": "NOT_OPENED",
+  "result_id": "option_b_formula_signal_mapping_result_20260610T124500Z",
+  "review_status": "GENERATED_BY_SCAFFOLD_REVIEW",
+  "stage243_status": "NOT_CREATED",
+  "validation_completed_at": "2026-06-10T12:45:00Z",
+  "validation_started_at": "2026-06-10T12:45:00Z",
+  "validator_acceptance_status": "ACCEPTED_FOR_FORMULA_SIGNAL_MAPPING",
+  "validator_result_ref": "fixtures/option_b_validation/validator_result.json",
+  "value_proof_status": "NOT_PROOF_PREREGISTRATION_REQUIRED",
+  "warning_count": 0
+}
