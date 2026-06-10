@@ -1,0 +1,120 @@
+{
+  "mapping_table_id": "corpus_adapter_mapping_table_v0_1",
+  "adapter_version": "0.1",
+  "source_policy_ref": "docs/policies/narrative_corpus_source_policy.md",
+  "schema_ref": "docs/architecture/narrative_corpus_schema_v0_1.md",
+  "mapping_report_contract_ref": "docs/contracts/corpus_adapter_mapping_report_contract.md",
+  "review_status": "MAPPING_DRAFT",
+  "mappings": [
+    {
+      "source_field_name": "Drama_Entry",
+      "source_field_description": "structured work-level entry metadata from approved analysis source",
+      "target_record_type": "DramaEntryRecord",
+      "target_field_name": "entry_summary",
+      "transformation_rule": "copy_metadata_label",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "must not include full expressive passage"
+    },
+    {
+      "source_field_name": "Master_Theme",
+      "source_field_description": "structured theme metadata from approved analysis source",
+      "target_record_type": "CorePhilosophyRecord",
+      "target_field_name": "master_theme",
+      "transformation_rule": "copy_metadata_label",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "must remain abstract theme metadata"
+    },
+    {
+      "source_field_name": "Conflict_Axis",
+      "source_field_description": "structured conflict axis metadata",
+      "target_record_type": "CorePhilosophyRecord",
+      "target_field_name": "conflict_axis",
+      "transformation_rule": "copy_metadata_label",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "no full scene text"
+    },
+    {
+      "source_field_name": "Character",
+      "source_field_description": "structured character metadata",
+      "target_record_type": "CharacterRecord",
+      "target_field_name": "character_role_summary",
+      "transformation_rule": "normalize_identifier",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "character fields must be summarized metadata only"
+    },
+    {
+      "source_field_name": "Key_Object",
+      "source_field_description": "structured key object metadata",
+      "target_record_type": "KeyObjectRecord",
+      "target_field_name": "object_function_summary",
+      "transformation_rule": "copy_metadata_label",
+      "required_or_optional": "optional",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "object symbolism must be summarized"
+    },
+    {
+      "source_field_name": "Trigger",
+      "source_field_description": "structured causality trigger metadata",
+      "target_record_type": "CausalityMatrixRecord",
+      "target_field_name": "trigger_summary",
+      "transformation_rule": "summarize_user_provided_metadata",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "trigger must be short abstract metadata"
+    },
+    {
+      "source_field_name": "Resolution",
+      "source_field_description": "structured causality resolution metadata",
+      "target_record_type": "CausalityMatrixRecord",
+      "target_field_name": "resolution_summary",
+      "transformation_rule": "summarize_user_provided_metadata",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "resolution must be short abstract metadata"
+    },
+    {
+      "source_field_name": "Residue",
+      "source_field_description": "structured unresolved residue metadata",
+      "target_record_type": "CausalityMatrixRecord",
+      "target_field_name": "residue_summary",
+      "transformation_rule": "summarize_user_provided_metadata",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "residue must be short abstract metadata"
+    },
+    {
+      "source_field_name": "Dialogue_Tone",
+      "source_field_description": "structured dialogue tone metadata",
+      "target_record_type": "DialogueFunctionRecord",
+      "target_field_name": "dialogue_tone",
+      "transformation_rule": "map_enum_label",
+      "required_or_optional": "optional",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "no dialogue lines"
+    },
+    {
+      "source_field_name": "Scene_Blueprint",
+      "source_field_description": "structured scene function metadata",
+      "target_record_type": "SceneBlueprintRecord",
+      "target_field_name": "scene_function",
+      "transformation_rule": "map_enum_label",
+      "required_or_optional": "required_if_present",
+      "source_policy_requirement": "metadata_only_or_user_provided_structured_analysis",
+      "validation_status": "MAPPING_DRAFT",
+      "warning_note": "scene blueprint must not include full scene prose"
+    }
+  ]
+}
