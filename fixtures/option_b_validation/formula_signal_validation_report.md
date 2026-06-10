@@ -1,15 +1,14 @@
 # Option B Formula Signal Validation Report
 
-Status: NOT_RUN
+Status: PASS
 Created: 2026-06-10
-Scope: preliminary formula signal validation skeleton for Option B fixtures
+Updated: 2026-06-10
+Scope: formula signal validation for Option B fixtures
 Repository: limsanghyuk/v1700-literary-os
 
 ## 1. Purpose
 
-This report skeleton records the validation requirements for FormulaSignalRecord fixture use.
-
-It does not claim PASS because formula signal validation has not been executed.
+This report records the validation result for FormulaSignalRecord fixture use under the Option B validator scaffold.
 
 ## 2. Target fixture
 
@@ -33,46 +32,54 @@ docs/contracts/formula_signal_validation_report_contract.md
 docs/contracts/formula_signal_record_contract.md
 ```
 
-## 5. Required validation checks
+## 5. Validator artifact
 
 ```text
-[ ] formula_signal fixture parses
-[ ] formula_signal_records array exists
-[ ] every signal has formula_signal_id
-[ ] every signal has formula_id
-[ ] every signal has formula_group
-[ ] every signal has source_record_ids
-[ ] every signal has input_field_names
-[ ] every signal references an existing formula catalog record
-[ ] every signal references existing corpus records
-[ ] every signal has signal_type_label
-[ ] no FIXTURE_SIGNAL is treated as proof
-[ ] Value Proof use remains preregistration-required
-[ ] LearnableCritic use remains audit-required
+fixtures/option_b_validation/validator_result.json
 ```
 
-## 6. Current decision
+## 6. Validation checks
 
 ```text
-FORMULA_SIGNAL_VALIDATION_NOT_RUN
+[x] formula_signal fixture parses
+[x] formula_signal_records array exists
+[x] every signal has formula_signal_id
+[x] every signal has formula_id
+[x] every signal has formula_group
+[x] every signal has source_record_ids
+[x] every signal has input_field_names
+[x] every signal references an existing formula catalog record
+[x] every signal references existing corpus records
+[x] every signal has signal_type_label
+[x] no FIXTURE_SIGNAL is treated as proof
+[x] Value Proof use remains preregistration-required
+[x] LearnableCritic use remains audit-required
 ```
 
-## 7. Allowed downstream status
+## 7. Current decision
 
 ```text
-NOT_VALID_FOR_USE
+FORMULA_SIGNAL_VALIDATION_PASS
 ```
 
-## 8. Blocking failures to check later
+## 8. Allowed downstream status
 
-- formula_id missing
-- referenced formula missing
-- source_record_ids missing
-- referenced corpus record missing
-- placeholder or fixture signal treated as calculated proof
-- formula signal used in Value Proof without preregistration
-- formula signal used for coefficient update without audit
+```text
+READY_FOR_FORMULA_SIGNAL_MAPPING
+```
 
-## 9. Final note
+## 9. Warning count
 
-This file is a validation report skeleton. It must be updated after actual formula signal validation is performed.
+```text
+0
+```
+
+## 10. Blocking failure count
+
+```text
+0
+```
+
+## 11. Final note
+
+Formula signals are accepted for formula signal mapping fixture use only. They remain advisory and do not constitute Value Proof evidence or LearnableCritic coefficient authorization.
