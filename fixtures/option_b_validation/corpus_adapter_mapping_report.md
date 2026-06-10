@@ -1,15 +1,14 @@
 # Option B Corpus Adapter Mapping Report
 
-Status: NOT_RUN
+Status: PASS
 Created: 2026-06-10
-Scope: preliminary mapping report skeleton for Option B fixtures
+Updated: 2026-06-10
+Scope: mapping validation for Option B fixtures
 Repository: limsanghyuk/v1700-literary-os
 
 ## 1. Purpose
 
-This report skeleton records how the future corpus adapter mapping table should be reviewed.
-
-It does not claim mapping PASS because no validator has been executed.
+This report records how the current corpus adapter mapping table was reviewed under the Option B validator scaffold.
 
 ## 2. Target mapping table
 
@@ -23,45 +22,53 @@ fixtures/corpus_adapter_mapping/mapping_table.json
 docs/contracts/corpus_adapter_mapping_report_contract.md
 ```
 
-## 4. Required mapping table checks
+## 4. Validator artifact
 
 ```text
-[ ] mapping_table_id exists
-[ ] adapter_version exists
-[ ] source_policy_ref exists
-[ ] schema_ref exists
-[ ] mapping_report_contract_ref exists
-[ ] mappings array exists
-[ ] every mapping row has source_field_name
-[ ] every mapping row has target_record_type
-[ ] every mapping row has target_field_name
-[ ] every mapping row has transformation_rule
-[ ] every mapping row has source_policy_requirement
-[ ] no mapping allows restricted full text into accepted fixture
+fixtures/option_b_validation/validator_result.json
 ```
 
-## 5. Current decision
+## 5. Mapping table checks
 
 ```text
-MAPPING_VALIDATION_NOT_RUN
+[x] mapping_table_id exists
+[x] adapter_version exists
+[x] source_policy_ref exists
+[x] schema_ref exists
+[x] mapping_report_contract_ref exists
+[x] mappings array exists
+[x] every mapping row has source_field_name
+[x] every mapping row has target_record_type
+[x] every mapping row has target_field_name
+[x] every mapping row has transformation_rule
+[x] every mapping row has source_policy_requirement
+[x] no mapping allows restricted full text into accepted fixture
 ```
 
-## 6. Downstream readiness
+## 6. Current decision
 
 ```text
-NOT_READY
+MAPPING_VALIDATION_PASS
 ```
 
-## 7. Blocking failures to check later
+## 7. Downstream readiness
 
-- source_policy_ref missing
-- schema_ref missing
-- target record type not in schema
-- target field missing
-- transformation rule missing
-- provenance dropped by mapping
-- restricted full text mapped into accepted corpus fixture
+```text
+READY_FOR_FORMULA_SIGNAL_MAPPING
+```
 
-## 8. Final note
+## 8. Warning count
 
-This file is a mapping report skeleton. It must be updated after actual mapping validation is performed.
+```text
+0
+```
+
+## 9. Blocking failure count
+
+```text
+0
+```
+
+## 10. Final note
+
+The mapping table passes scaffold-level validation and is accepted for formula signal mapping fixture use under validator version 0.1.0.
