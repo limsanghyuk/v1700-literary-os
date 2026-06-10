@@ -1,15 +1,14 @@
 # Option B Schema Validation Report
 
-Status: NOT_RUN
+Status: PASS
 Created: 2026-06-10
-Scope: preliminary schema validation skeleton for Option B fixtures
+Updated: 2026-06-10
+Scope: schema validation for Option B fixtures
 Repository: limsanghyuk/v1700-literary-os
 
 ## 1. Purpose
 
-This report skeleton records schema validation requirements for Option B fixtures.
-
-It does not yet claim PASS because validation has not been executed.
+This report records schema validation results for the current Option B fixture bundle.
 
 ## 2. Target fixture bundle
 
@@ -32,39 +31,48 @@ docs/contracts/corpus_adapter_mapping_report_contract.md
 docs/contracts/corpus_adapter_rejected_record_contract.md
 ```
 
-## 4. Required validation checks
+## 4. Validator artifact
 
 ```text
-[ ] JSON files parse
-[ ] required top-level fields exist
-[ ] every corpus record includes record_id
-[ ] every corpus record includes record_type
-[ ] every corpus record includes source_class
-[ ] every corpus record includes rights_status
-[ ] every corpus record includes provenance_ref
-[ ] scene records include conflict and emotional transition metadata
-[ ] causality records include trigger / resolution / residue metadata
-[ ] formula records include lineage and boundary rules
-[ ] formula signals reference existing formula ids
-[ ] formula signals reference existing corpus record ids
-[ ] rejected records include rejection reason and severity
+fixtures/option_b_validation/validator_result.json
 ```
 
-## 5. Current decision
+## 5. Validation checks
 
 ```text
-SCHEMA_VALIDATION_NOT_RUN
+[x] JSON files parse
+[x] required top-level fields exist
+[x] every corpus record includes record_id
+[x] every corpus record includes record_type
+[x] every corpus record includes source_class
+[x] every corpus record includes rights_status
+[x] every corpus record includes provenance_ref
+[x] scene records include conflict and emotional transition metadata
+[x] causality records include trigger / resolution / residue metadata
+[x] formula records include lineage and boundary rules
+[x] formula signals reference existing formula ids
+[x] formula signals reference existing corpus record ids
+[x] rejected records include rejection reason and severity
 ```
 
-## 6. Blocking failures to check later
+## 6. Current decision
 
-- JSON parse failure
-- missing required top-level field
-- missing base record field
-- invalid cross-record reference
-- formula signal referencing nonexistent source record
-- formula signal referencing nonexistent formula record
+```text
+SCHEMA_VALIDATION_PASS
+```
 
-## 7. Final note
+## 7. Warning count
 
-This file is a validation report skeleton. It must be updated after actual validation is performed.
+```text
+0
+```
+
+## 8. Blocking failure count
+
+```text
+0
+```
+
+## 9. Final note
+
+The current Option B fixture bundle passes scaffold-level schema validation under validator version 0.1.0.
