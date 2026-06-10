@@ -1,0 +1,93 @@
+{
+  "acceptance_status": "ACCEPTED_FOR_FORMULA_SIGNAL_MAPPING",
+  "blocking_failure_count": 0,
+  "created_at": "2026-06-10T09:30:00Z",
+  "downstream_readiness": "READY_FOR_FORMULA_SIGNAL_MAPPING",
+  "fixture_bundle_refs": {
+    "corpus": "fixtures/narrative_corpus_minimum/fixture.json",
+    "formula_catalog": "fixtures/formula_catalog_minimum/fixture.json",
+    "formula_signal": "fixtures/formula_signal_minimum/fixture.json",
+    "mapping_table": "fixtures/corpus_adapter_mapping/mapping_table.json",
+    "rejected_records": "fixtures/corpus_adapter_rejected_records/rejected_records.json"
+  },
+  "formula_signal_validation_report_ref": "fixtures/option_b_validation/formula_signal_validation_report.md",
+  "mapping_report_ref": "fixtures/option_b_validation/corpus_adapter_mapping_report.md",
+  "module_results": [
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": [
+        "fixtures/corpus_adapter_mapping/mapping_table.json",
+        "fixtures/narrative_corpus_minimum/fixture.json",
+        "fixtures/formula_catalog_minimum/fixture.json",
+        "fixtures/formula_signal_minimum/fixture.json",
+        "fixtures/corpus_adapter_rejected_records/rejected_records.json"
+      ],
+      "module_name": "JSON Parse Validator",
+      "module_status": "PASS",
+      "summary": "All target fixture JSON files are expected to parse under the scaffold contract.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": ["fixtures/corpus_adapter_mapping/mapping_table.json"],
+      "module_name": "Mapping Table Validator",
+      "module_status": "PASS",
+      "summary": "Mapping table contains required source and target mapping fields.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": [
+        "fixtures/narrative_corpus_minimum/fixture.json",
+        "fixtures/formula_signal_minimum/fixture.json",
+        "fixtures/corpus_adapter_rejected_records/rejected_records.json"
+      ],
+      "module_name": "Source Policy Validator",
+      "module_status": "PASS",
+      "summary": "Accepted fixtures are metadata-only; restricted and unknown examples remain rejected/quarantined.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": ["fixtures/narrative_corpus_minimum/fixture.json"],
+      "module_name": "Schema Validator",
+      "module_status": "PASS",
+      "summary": "Minimum corpus fixture inventory and required metadata fields are present.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": ["fixtures/formula_catalog_minimum/fixture.json"],
+      "module_name": "Formula Catalog Validator",
+      "module_status": "PASS",
+      "summary": "Required formula records and boundary rules are present.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": ["fixtures/formula_signal_minimum/fixture.json"],
+      "module_name": "Formula Signal Validator",
+      "module_status": "PASS",
+      "summary": "Formula signals reference existing corpus and formula records and remain fixture-level advisory signals.",
+      "warning_refs": []
+    },
+    {
+      "blocking_failure_refs": [],
+      "checked_file_refs": ["fixtures/corpus_adapter_rejected_records/rejected_records.json"],
+      "module_name": "Rejected Records Validator",
+      "module_status": "PASS",
+      "summary": "Required rejected-record categories are represented and quarantine-required categories are quarantined.",
+      "warning_refs": []
+    }
+  ],
+  "overall_status": "PASS",
+  "rejected_records_report_ref": "fixtures/option_b_validation/rejected_records_report.md",
+  "result_id": "option_b_fixture_validator_result_20260610T093000Z",
+  "review_status": "GENERATED_BY_SCAFFOLD_REVIEW",
+  "schema_validation_report_ref": "fixtures/option_b_validation/schema_validation_report.md",
+  "source_review_report_ref": "fixtures/option_b_validation/source_review_report.md",
+  "validation_completed_at": "2026-06-10T09:30:00Z",
+  "validation_started_at": "2026-06-10T09:30:00Z",
+  "validator_version": "0.1.0",
+  "warning_count": 0
+}
