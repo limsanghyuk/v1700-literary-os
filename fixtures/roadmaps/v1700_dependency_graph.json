@@ -1,0 +1,111 @@
+{
+  "graph_id": "v1700_dependency_graph_20260612",
+  "status": "ACTIVE_GRAPH_JSON",
+  "current_next_node": "frontend_component_contracts",
+  "global_boundaries": {
+    "page18_status": "NOT_OPENED",
+    "stage243_status": "NOT_CREATED",
+    "provider_generation": "DISABLED",
+    "memory_write": "DISABLED",
+    "canon_mutation": "DISABLED",
+    "weight_update": "DISABLED"
+  },
+  "nodes": [
+    {
+      "id": "formula_signal_mapping_result",
+      "path": "fixtures/option_b_validation/formula_signal_mapping_result.json",
+      "type": "result_artifact",
+      "status": "PASS",
+      "depends_on": ["option_b_validator_result"],
+      "enables": ["writer_ide_static_flow_result"]
+    },
+    {
+      "id": "writer_ide_static_flow_result",
+      "path": "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+      "type": "result_artifact",
+      "status": "PASS",
+      "depends_on": ["formula_signal_mapping_result"],
+      "enables": ["manual_static_review_result"]
+    },
+    {
+      "id": "manual_static_review_result",
+      "path": "fixtures/option_b_validation/manual_static_review_result.json",
+      "type": "result_artifact",
+      "status": "PASS",
+      "depends_on": ["writer_ide_static_flow_result"],
+      "enables": ["writer_ide_advisory_panel_render_packet"]
+    },
+    {
+      "id": "writer_ide_advisory_panel_render_packet",
+      "path": "fixtures/option_b_validation/writer_ide_advisory_panel_render_packet.json",
+      "type": "render_packet",
+      "status": "PASS",
+      "depends_on": ["writer_ide_static_flow_result", "manual_static_review_result"],
+      "enables": ["writer_ide_render_packet_review_result"]
+    },
+    {
+      "id": "writer_ide_render_packet_review_result",
+      "path": "fixtures/option_b_validation/writer_ide_render_packet_review_result.json",
+      "type": "review_result",
+      "status": "PASS",
+      "depends_on": ["writer_ide_advisory_panel_render_packet"],
+      "enables": ["frontend_renderer_blueprint_packet"]
+    },
+    {
+      "id": "frontend_renderer_blueprint_packet",
+      "path": "fixtures/option_b_validation/frontend_renderer_blueprint_packet.json",
+      "type": "blueprint_packet",
+      "status": "LIGHTWEIGHT_BLUEPRINT_READY",
+      "depends_on": ["writer_ide_render_packet_review_result"],
+      "enables": ["frontend_component_contracts"]
+    },
+    {
+      "id": "formula_measurement_lab_blueprint",
+      "path": "docs/architecture/formula_measurement_lab_blueprint.md",
+      "type": "blueprint",
+      "status": "PROPOSED_SCAFFOLD",
+      "depends_on": ["formula_signal_mapping_result"],
+      "enables": ["formula_measurement_plan", "coefficient_candidate_registry"]
+    },
+    {
+      "id": "canonical_record_store_rag_blueprint",
+      "path": "docs/architecture/canonical_record_store_rag_blueprint.md",
+      "type": "blueprint",
+      "status": "PROPOSED_SCAFFOLD",
+      "depends_on": ["v1700_deficiency_registry"],
+      "enables": ["canonical_record_store_contract", "rag_retrieval_packet_contract"]
+    },
+    {
+      "id": "agent_board_blueprint",
+      "path": "docs/architecture/agent_board_blueprint.md",
+      "type": "blueprint",
+      "status": "PROPOSED_SCAFFOLD",
+      "depends_on": ["frontend_renderer_blueprint_packet"],
+      "enables": ["agent_action_record_contract"]
+    },
+    {
+      "id": "claude_multiwork_absorption_matrix",
+      "path": "docs/reviews/claude_multiwork_absorption_matrix.md",
+      "type": "review_matrix",
+      "status": "REVIEW_SCAFFOLD",
+      "depends_on": ["dual_model_lineage_policy"],
+      "enables": ["project_isolation_cases", "shared_character_readonly_cases"]
+    },
+    {
+      "id": "v1700_deficiency_registry",
+      "path": "docs/roadmaps/v1700_deficiency_registry.md",
+      "type": "roadmap_registry",
+      "status": "ACTIVE_ROADMAP_REGISTRY",
+      "depends_on": [],
+      "enables": ["priority_development_sequence", "dependency_graph"]
+    }
+  ],
+  "promotion_rule": [
+    "contract_exists",
+    "fixture_exists",
+    "validator_or_review_exists",
+    "result_artifact_exists",
+    "boundary_invariants_preserved",
+    "human_or_release_governor_decision_when_required"
+  ]
+}
