@@ -1,0 +1,44 @@
+{
+  "packet_id": "frontend_renderer_blueprint_packet_20260612T070000Z",
+  "status": "LIGHTWEIGHT_BLUEPRINT_READY",
+  "input_refs": [
+    "fixtures/option_b_validation/writer_ide_advisory_panel_render_packet.json",
+    "fixtures/option_b_validation/writer_ide_render_packet_review_result.json"
+  ],
+  "ui_regions": [
+    "left_rail_source_record_navigator",
+    "center_panel_selected_advisory_card",
+    "right_rail_formula_evidence_inspector",
+    "bottom_bar_manual_review_queue"
+  ],
+  "component_contracts": [
+    "AdvisoryCard",
+    "FormulaBoundaryBadge",
+    "SourceRecordChip",
+    "EvidenceRefList",
+    "ManualReviewControl",
+    "BlockedActionNotice"
+  ],
+  "allowed_events": [
+    "select_card",
+    "inspect_source_record_summary",
+    "inspect_evidence_ref",
+    "mark_review_decision_draft"
+  ],
+  "blocked_events": [
+    "generate_prose",
+    "write_memory",
+    "mutate_canon",
+    "update_weight",
+    "open_page18_runtime"
+  ],
+  "boundary_status": {
+    "page18_status": "NOT_OPENED",
+    "stage243_status": "NOT_CREATED",
+    "provider_generation": "DISABLED",
+    "memory_write": "DISABLED",
+    "canon_mutation": "DISABLED",
+    "weight_update": "DISABLED"
+  },
+  "next_readiness": "READY_FOR_FRONTEND_COMPONENT_CONTRACTS"
+}
