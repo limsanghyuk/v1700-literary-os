@@ -1,0 +1,136 @@
+{
+  "acceptance_status": "READY_FOR_UI_RENDER_PACKET_REVIEW",
+  "blocked_action_summary": [
+    "provider_generation",
+    "memory_write",
+    "canon_mutation",
+    "weight_update",
+    "page18_runtime"
+  ],
+  "blocking_failure_count": 0,
+  "blocking_failures": [],
+  "canonical_mutation_status": "NO_CANONICAL_MUTATION",
+  "created_at": "2026-06-10T13:15:00Z",
+  "generation_status": "DISABLED",
+  "memory_write_status": "DISABLED",
+  "overall_status": "PASS",
+  "page18_status": "NOT_OPENED",
+  "panel_card_count": 5,
+  "provider_status": "DISABLED",
+  "render_packet_id": "writer_ide_advisory_panel_render_packet_20260610T131500Z",
+  "renderer_version": "0.1.0",
+  "review_object_count": 5,
+  "review_state_summary": {
+    "default_review_status": "PENDING_REVIEW",
+    "manual_review_acceptance_status": "READY_FOR_HUMAN_REVIEW"
+  },
+  "source_result_refs": {
+    "manual_review": "fixtures/option_b_validation/manual_static_review_result.json",
+    "static_flow": "fixtures/option_b_validation/writer_ide_static_flow_result.json"
+  },
+  "stage243_status": "NOT_CREATED",
+  "validation_completed_at": "2026-06-10T13:15:00Z",
+  "validation_started_at": "2026-06-10T13:15:00Z",
+  "panel_cards": [
+    {
+      "allowed_decisions": ["ACCEPT_AS_ADVISORY", "REQUEST_REVISION", "REJECT_ADVISORY"],
+      "card_id": "render_card_writer_ide_panel_signal_nst_scene_001",
+      "display_mode": "read_only_advisory",
+      "evidence_refs": [
+        "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+        "fixtures/option_b_validation/manual_static_review_result.json"
+      ],
+      "formula_group": "NARRATIVE_STATE_TENSOR",
+      "formula_name": "Narrative State Tensor",
+      "formula_signal_id": "signal_nst_scene_001",
+      "ide_region": "advisory_panel",
+      "manual_review_status": "PENDING_REVIEW",
+      "panel_id": "writer_ide_panel_signal_nst_scene_001",
+      "required_reviewer_role": "writer_or_editor",
+      "review_object_id": "manual_review_writer_ide_panel_signal_nst_scene_001",
+      "source_record_ids": ["scene_001"],
+      "source_record_types": ["SceneBlueprintRecord"],
+      "surface_label": "Narrative State Tensor: pressure_state_increasing_information_reveal"
+    },
+    {
+      "allowed_decisions": ["ACCEPT_AS_ADVISORY", "REQUEST_REVISION", "REJECT_ADVISORY"],
+      "card_id": "render_card_writer_ide_panel_signal_emotional_momentum_scene_001",
+      "display_mode": "read_only_advisory",
+      "evidence_refs": [
+        "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+        "fixtures/option_b_validation/manual_static_review_result.json"
+      ],
+      "formula_group": "EMOTIONAL_MOMENTUM",
+      "formula_name": "Emotional Momentum",
+      "formula_signal_id": "signal_emotional_momentum_scene_001",
+      "ide_region": "advisory_panel",
+      "manual_review_status": "PENDING_REVIEW",
+      "panel_id": "writer_ide_panel_signal_emotional_momentum_scene_001",
+      "required_reviewer_role": "writer_or_editor",
+      "review_object_id": "manual_review_writer_ide_panel_signal_emotional_momentum_scene_001",
+      "source_record_ids": ["scene_001"],
+      "source_record_types": ["SceneBlueprintRecord"],
+      "surface_label": "Emotional Momentum: increase_destabilizing"
+    },
+    {
+      "allowed_decisions": ["ACCEPT_AS_ADVISORY", "REQUEST_REVISION", "REJECT_ADVISORY"],
+      "card_id": "render_card_writer_ide_panel_signal_character_interaction_relationship_001",
+      "display_mode": "read_only_advisory",
+      "evidence_refs": [
+        "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+        "fixtures/option_b_validation/manual_static_review_result.json"
+      ],
+      "formula_group": "CHARACTER_INTERACTION_MATRIX",
+      "formula_name": "Character Interaction Matrix",
+      "formula_signal_id": "signal_character_interaction_relationship_001",
+      "ide_region": "advisory_panel",
+      "manual_review_status": "PENDING_REVIEW",
+      "panel_id": "writer_ide_panel_signal_character_interaction_relationship_001",
+      "required_reviewer_role": "writer_or_editor",
+      "review_object_id": "manual_review_writer_ide_panel_signal_character_interaction_relationship_001",
+      "source_record_ids": ["relationship_001"],
+      "source_record_types": ["RelationshipGraphRecord"],
+      "surface_label": "Character Interaction Matrix: high_pressure_low_trust_high_conflict"
+    },
+    {
+      "allowed_decisions": ["ACCEPT_AS_ADVISORY", "REQUEST_REVISION", "REJECT_ADVISORY"],
+      "card_id": "render_card_writer_ide_panel_signal_causality_transition_causality_001",
+      "display_mode": "read_only_advisory",
+      "evidence_refs": [
+        "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+        "fixtures/option_b_validation/manual_static_review_result.json"
+      ],
+      "formula_group": "DRSE",
+      "formula_name": "DRSE",
+      "formula_signal_id": "signal_causality_transition_causality_001",
+      "ide_region": "advisory_panel",
+      "manual_review_status": "PENDING_REVIEW",
+      "panel_id": "writer_ide_panel_signal_causality_transition_causality_001",
+      "required_reviewer_role": "writer_or_editor",
+      "review_object_id": "manual_review_writer_ide_panel_signal_causality_transition_causality_001",
+      "source_record_ids": ["causality_001"],
+      "source_record_types": ["CausalityMatrixRecord"],
+      "surface_label": "DRSE: trigger_resolved_with_residue"
+    },
+    {
+      "allowed_decisions": ["ACCEPT_AS_ADVISORY", "REQUEST_REVISION", "REJECT_ADVISORY"],
+      "card_id": "render_card_writer_ide_panel_signal_nfs_scene_001",
+      "display_mode": "read_only_advisory",
+      "evidence_refs": [
+        "fixtures/option_b_validation/writer_ide_static_flow_result.json",
+        "fixtures/option_b_validation/manual_static_review_result.json"
+      ],
+      "formula_group": "NARRATIVE_FITNESS_SCORE",
+      "formula_name": "Narrative Fitness Score",
+      "formula_signal_id": "signal_nfs_scene_001",
+      "ide_region": "advisory_panel",
+      "manual_review_status": "PENDING_REVIEW",
+      "panel_id": "writer_ide_panel_signal_nfs_scene_001",
+      "required_reviewer_role": "writer_or_editor",
+      "review_object_id": "manual_review_writer_ide_panel_signal_nfs_scene_001",
+      "source_record_ids": ["scene_001", "critic_threshold_001"],
+      "source_record_types": ["SceneBlueprintRecord", "CriticThresholdRecord"],
+      "surface_label": "Narrative Fitness Score: fixture_fit_requires_review"
+    }
+  ]
+}
