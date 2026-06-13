@@ -1,0 +1,48 @@
+{
+  "packet_id": "frontend_component_contracts_packet_20260613",
+  "status": "LIGHTWEIGHT_CONTRACT_READY",
+  "input_refs": [
+    "fixtures/option_b_validation/frontend_renderer_blueprint_packet.json",
+    "fixtures/option_b_validation/writer_ide_advisory_panel_render_packet.json",
+    "fixtures/option_b_validation/writer_ide_render_packet_review_result.json"
+  ],
+  "component_contracts": [
+    {
+      "name": "AdvisoryCard",
+      "required_fields": ["card_id", "panel_id", "formula_signal_id", "formula_name", "surface_label", "manual_review_status", "display_mode", "evidence_refs"],
+      "mode": "read_only_advisory"
+    },
+    {
+      "name": "FormulaBoundaryBadge",
+      "required_fields": ["value_proof_status", "learnable_critic_status", "blocked_events"]
+    },
+    {
+      "name": "SourceRecordChip",
+      "required_fields": ["source_record_id", "source_record_type", "source_record_summary_ref"]
+    },
+    {
+      "name": "EvidenceRefList",
+      "required_fields": ["evidence_ref_id", "evidence_ref_path", "evidence_ref_type"]
+    },
+    {
+      "name": "ManualReviewControl",
+      "required_fields": ["review_object_id", "allowed_decisions", "default_decision", "required_reviewer_role"],
+      "default_decision": "PENDING_REVIEW"
+    },
+    {
+      "name": "BlockedActionNotice",
+      "required_fields": ["blocked_events", "boundary_status"]
+    }
+  ],
+  "allowed_events": ["select_card", "inspect_source_record_summary", "inspect_evidence_ref", "mark_review_decision_draft"],
+  "blocked_events": ["generate_prose", "write_memory", "mutate_canon", "update_weight", "open_page18_runtime"],
+  "boundary_status": {
+    "page18_status": "NOT_OPENED",
+    "stage243_status": "NOT_CREATED",
+    "provider_generation": "DISABLED",
+    "memory_write": "DISABLED",
+    "canon_mutation": "DISABLED",
+    "weight_update": "DISABLED"
+  },
+  "next_readiness": "READY_FOR_CANONICAL_RECORD_STORE_CONTRACT"
+}
