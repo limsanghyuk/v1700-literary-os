@@ -27,8 +27,11 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/reviews/corpus_absorption_build_report.md`
 - `docs/development/codex_web_local_gitnexus_evidence_protocol_report.md`
 - `docs/development/corpus_absorption_formula_bridge_session_report.md`
+- `docs/architecture/formula_signal_store_runtime_blueprint.md`
+- `docs/development/formula_signal_store_implementation_report.md`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
+- `release/current/formula_signal_store_pack/formula_signal_store_report.json`
 
 ## Key Commands
 
@@ -45,6 +48,7 @@ Canonical metadata authority: yes
 RAG-ready advisory registry: yes
 Learning-ready feature registry: yes
 Formula/tensor bridge: yes
+Formula signal store: yes
 Raw script hub commit: no
 Raw vector hub commit: no
 GitNexus re-analysis completed: yes
@@ -53,12 +57,12 @@ Hub continuity docs loaded: yes
 
 ## Next Recommended Step
 
-Connect `formula_signal_registry` into:
+Continue from `formula_signal_store` into:
 
-1. Formula Signal Store fixture
-2. LearnableCritic audit records
-3. Writer IDE advisory cards
-4. Value Proof Arm B guidance surface
+1. LearnableCritic audit records
+2. Writer IDE advisory cards
+3. Value Proof Arm B guidance surface
+4. Formula signal query consumers
 
 ## Rule
 

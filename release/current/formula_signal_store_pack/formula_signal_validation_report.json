@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "issues": [],
+  "record_count": 1395,
+  "required_fields": [
+    "formula_signal_id",
+    "formula_id",
+    "formula_group",
+    "source_record_ids",
+    "source_record_types",
+    "input_field_names",
+    "source_class_summary",
+    "rights_status_summary",
+    "output_signal_type",
+    "output_signal_value_or_label",
+    "confidence",
+    "explanation_summary",
+    "signal_type_label",
+    "critic_mapping_ref",
+    "value_proof_mapping_ref",
+    "writer_ide_panel_ref",
+    "created_at",
+    "review_status"
+  ],
+  "duplicate_ids": [],
+  "invalid_confidence": [],
+  "invalid_signal_type_labels": [],
+  "missing_writer_panels": [],
+  "canonical_mutation_leaks": []
+}

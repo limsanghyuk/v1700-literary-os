@@ -1,0 +1,589 @@
+{
+  "status": "pass",
+  "issues": [],
+  "supported_filters": [
+    "work_id",
+    "formula_group",
+    "review_status",
+    "writer_ide_panel_ref",
+    "min_confidence"
+  ],
+  "work_ids": [
+    "10부",
+    "11부",
+    "12부",
+    "13부",
+    "14부",
+    "15부",
+    "16부",
+    "17부",
+    "18부",
+    "19부",
+    "1부",
+    "20부",
+    "2부",
+    "3부",
+    "4부",
+    "5부",
+    "6부",
+    "7부",
+    "8부",
+    "9부",
+    "ing",
+    "가족의탄생",
+    "각설탕",
+    "간신",
+    "감시자들"
+  ],
+  "formula_groups": [
+    "Emotional Momentum",
+    "Narrative State Tensor",
+    "RAG/BM25/RRF retrieval fusion"
+  ],
+  "writer_panels": [
+    "writer_ide:left_panel:corpus_reference",
+    "writer_ide:right_panel:emotional_momentum",
+    "writer_ide:right_panel:narrative_state_tensor"
+  ],
+  "example_queries": {
+    "by_work": [
+      {
+        "formula_signal_id": "formula-signal:tensor:10부",
+        "formula_id": "formula:narrative_state_tensor",
+        "formula_group": "Narrative State Tensor",
+        "source_record_ids": [
+          "canonical_work:10부",
+          "learning_signal:10부"
+        ],
+        "source_record_types": [
+          "CanonicalWorkRecord",
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_scene_energy_ratio",
+          "mean_motif_residue_score",
+          "mean_curiosity_gradient",
+          "mean_dialogue_ratio"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_STATE_TENSOR_SIGNAL",
+        "output_signal_value_or_label": "REVIEW_REQUIRED",
+        "confidence": 0.78,
+        "explanation_summary": "Derived from metadata-only aggregate features for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:narrative_state_tensor",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:10부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:10부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2545",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:10부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:10부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      }
+    ],
+    "by_group": [
+      {
+        "formula_signal_id": "formula-signal:emotion:10부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:10부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2545",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:11부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:11부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2564",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 11부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:12부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:12부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2608",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 12부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:13부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:13부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2750",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 13부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:14부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:14부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2430",
+        "confidence": 0.92,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 14부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      }
+    ],
+    "by_panel": [
+      {
+        "formula_signal_id": "formula-signal:rag:10부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:10부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:11부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:11부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 11부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:12부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:12부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 12부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:13부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:13부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 13부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:14부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:14부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 14부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      }
+    ],
+    "high_confidence": [
+      {
+        "formula_signal_id": "formula-signal:tensor:10부",
+        "formula_id": "formula:narrative_state_tensor",
+        "formula_group": "Narrative State Tensor",
+        "source_record_ids": [
+          "canonical_work:10부",
+          "learning_signal:10부"
+        ],
+        "source_record_types": [
+          "CanonicalWorkRecord",
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_scene_energy_ratio",
+          "mean_motif_residue_score",
+          "mean_curiosity_gradient",
+          "mean_dialogue_ratio"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_STATE_TENSOR_SIGNAL",
+        "output_signal_value_or_label": "REVIEW_REQUIRED",
+        "confidence": 0.78,
+        "explanation_summary": "Derived from metadata-only aggregate features for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:narrative_state_tensor",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:10부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:10부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2545",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:rag:10부",
+        "formula_id": "formula:retrieval_grounding",
+        "formula_group": "RAG/BM25/RRF retrieval fusion",
+        "source_record_ids": [
+          "rag_index:10부"
+        ],
+        "source_record_types": [
+          "RagIndexRecord"
+        ],
+        "input_field_names": [
+          "scene_count",
+          "chunk_count",
+          "scene_index_ready",
+          "chunk_index_ready"
+        ],
+        "source_class_summary": "metadata_only_index_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_FITNESS_COMPANION_SIGNAL",
+        "output_signal_value_or_label": "RAG_READY",
+        "confidence": 1.0,
+        "explanation_summary": "Retrieval readiness derived from canonical RAG registry for 10부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:retrieval_grounding",
+        "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
+        "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      },
+      {
+        "formula_signal_id": "formula-signal:tensor:11부",
+        "formula_id": "formula:narrative_state_tensor",
+        "formula_group": "Narrative State Tensor",
+        "source_record_ids": [
+          "canonical_work:11부",
+          "learning_signal:11부"
+        ],
+        "source_record_types": [
+          "CanonicalWorkRecord",
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_scene_energy_ratio",
+          "mean_motif_residue_score",
+          "mean_curiosity_gradient",
+          "mean_dialogue_ratio"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "NARRATIVE_STATE_TENSOR_SIGNAL",
+        "output_signal_value_or_label": "REVIEW_REQUIRED",
+        "confidence": 0.78,
+        "explanation_summary": "Derived from metadata-only aggregate features for 11부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:narrative_state_tensor",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
+      },
+      {
+        "formula_signal_id": "formula-signal:emotion:11부",
+        "formula_id": "formula:emotional_momentum",
+        "formula_group": "Emotional Momentum",
+        "source_record_ids": [
+          "learning_signal:11부"
+        ],
+        "source_record_types": [
+          "LearningSignalRecord"
+        ],
+        "input_field_names": [
+          "mean_conflict_intensity",
+          "mean_dialogue_ratio",
+          "mean_curiosity_gradient",
+          "mean_motif_residue_score"
+        ],
+        "source_class_summary": "metadata_only_corpus_records",
+        "rights_status_summary": "user_provided_structured_analysis_db",
+        "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+        "output_signal_value_or_label": "intensity=0.2564",
+        "confidence": 0.78,
+        "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 11부.",
+        "signal_type_label": "CALCULATED_SIGNAL",
+        "critic_mapping_ref": "critic:emotion",
+        "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+        "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+        "created_at": "2026-06-16T04:55:27+00:00",
+        "review_status": "VALID_FOR_UI_WIRING"
+      }
+    ]
+  }
+}
