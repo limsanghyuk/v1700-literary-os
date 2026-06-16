@@ -17,6 +17,7 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `corpus_formula_bridge` module added
 - advisory formula signal pack generated
 - contracts, architecture docs, and audit docs added
+- writer-visible advisory consumer generated
 
 ## Read First
 
@@ -31,17 +32,21 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/development/formula_signal_store_implementation_report.md`
 - `docs/architecture/learnable_critic_audit_fixture_runtime_blueprint.md`
 - `docs/development/learnable_critic_audit_implementation_report.md`
+- `docs/architecture/writer_ide_advisory_consumer_runtime_blueprint.md`
+- `docs/development/writer_ide_advisory_consumer_implementation_report.md`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
 - `release/current/formula_signal_store_pack/formula_signal_store_report.json`
 - `release/current/learnable_critic_audit_pack/learnable_critic_audit_report.json`
+- `release/current/writer_ide_advisory_pack/writer_ide_advisory_consumer_report.json`
 
 ## Key Commands
 
 ```powershell
 python tools/run_local_corpus_absorption.py --corpus-root "C:\AI_Codex\codex-work\gpt\db\corpus_ko"
 python tools/run_local_corpus_formula_bridge.py
-python -m pytest tests/test_local_corpus_absorption.py tests/test_local_corpus_formula_bridge.py -q
+python tools/run_writer_ide_advisory_consumer.py
+python -m pytest tests/test_local_corpus_absorption.py tests/test_local_corpus_formula_bridge.py tests/test_formula_signal_store.py tests/test_learnable_critic_audit.py tests/test_writer_ide_advisory_consumer.py -q
 ```
 
 ## Current Safe Interpretation
@@ -53,20 +58,22 @@ Learning-ready feature registry: yes
 Formula/tensor bridge: yes
 Formula signal store: yes
 LearnableCritic audit fixture: yes
+Writer IDE advisory consumer: yes
 Raw script hub commit: no
 Raw vector hub commit: no
 GitNexus re-analysis completed: yes
 Hub continuity docs loaded: yes
+Focus work in latest advisory consumer run: 10부
 ```
 
 ## Next Recommended Step
 
 Continue from `formula_signal_store` into:
 
-1. Writer IDE advisory consumer
-2. Value Proof Arm B guidance surface
-3. Formula signal query consumers
-4. later Page18 decision-boundary artifacts
+1. Value Proof Arm B guidance surface
+2. Formula signal query consumers
+3. later Page18 decision-boundary artifacts
+4. future Writer IDE interaction contracts
 
 ## Rule
 

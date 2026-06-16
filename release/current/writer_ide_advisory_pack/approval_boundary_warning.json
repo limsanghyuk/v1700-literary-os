@@ -1,0 +1,11 @@
+{
+  "warning_id": "approval-warning:10부:critic-output",
+  "writer_session_id": "writer-session:10부:critic-review",
+  "subject_record_id": "advisory-output:emotion-audit",
+  "subject_record_type": "LearnableCriticAdvisoryOutputRecord",
+  "warning_type": "APPROVAL_REQUIRED_BEFORE_CANONICAL_MUTATION",
+  "message": "LearnableCritic output may be shown to the writer, but canonical manuscript mutation remains blocked until an ApprovalDecisionRecord is created.",
+  "required_contract_ref": "docs/contracts/approval_decision_record_contract.md",
+  "approval_status": "PENDING_REVIEW",
+  "canonical_mutation_allowed": false
+}

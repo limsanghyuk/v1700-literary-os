@@ -1,0 +1,112 @@
+{
+  "board_id": "writer-board:10부:advisory-review",
+  "writer_session_id": "writer-session:10부:critic-review",
+  "work_id": "10부",
+  "advisory_only": true,
+  "canonical_mutation_allowed": false,
+  "panel_refs": [
+    "writer_ide:center_panel:approval_boundary",
+    "writer_ide:left_panel:corpus_reference",
+    "writer_ide:right_panel:emotional_momentum",
+    "writer_ide:right_panel:narrative_state_tensor"
+  ],
+  "promotion_blockers": [
+    "approval_decision_required",
+    "scene_diff_required_for_canonical_change",
+    "learnable_critic_output_remains_advisory"
+  ],
+  "card_count": 4,
+  "warning_count": 1,
+  "cards": [
+    {
+      "card_id": "writer-card:writer_ide:center_panel:approval_boundary:10부",
+      "panel_ref": "writer_ide:center_panel:approval_boundary",
+      "zone": "center",
+      "work_id": "10부",
+      "headline": "10부 approval boundary review",
+      "summary": "ADJUST_EMOTIONAL_MOMENTUM_WEIGHT:+0.05 | delta=0.05 | approval=PENDING_REVIEW",
+      "severity": "review",
+      "formula_group_badges": [
+        "LearnableCritic",
+        "Approval Boundary"
+      ],
+      "signal_refs": [
+        "formula-signal:emotion:10부"
+      ],
+      "confidence": 0.78,
+      "advisory_only": true,
+      "canonical_mutation_allowed": false,
+      "review_status": "PENDING_REVIEW"
+    },
+    {
+      "card_id": "writer-card:writer_ide:left_panel:corpus_reference:10부",
+      "panel_ref": "writer_ide:left_panel:corpus_reference",
+      "zone": "left",
+      "work_id": "10부",
+      "headline": "10부 corpus grounding advisory",
+      "summary": "RAG_READY | Retrieval readiness derived from canonical RAG registry for 10부.",
+      "severity": "advisory",
+      "formula_group_badges": [
+        "RAG/BM25/RRF retrieval fusion"
+      ],
+      "signal_refs": [
+        "formula-signal:rag:10부"
+      ],
+      "confidence": 1.0,
+      "advisory_only": true,
+      "canonical_mutation_allowed": false,
+      "review_status": "VALID_FOR_UI_WIRING"
+    },
+    {
+      "card_id": "writer-card:writer_ide:right_panel:emotional_momentum:10부",
+      "panel_ref": "writer_ide:right_panel:emotional_momentum",
+      "zone": "right",
+      "work_id": "10부",
+      "headline": "10부 emotional momentum advisory",
+      "summary": "intensity=0.2545 | Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 10부.",
+      "severity": "advisory",
+      "formula_group_badges": [
+        "Emotional Momentum"
+      ],
+      "signal_refs": [
+        "formula-signal:emotion:10부"
+      ],
+      "confidence": 0.78,
+      "advisory_only": true,
+      "canonical_mutation_allowed": false,
+      "review_status": "VALID_FOR_UI_WIRING"
+    },
+    {
+      "card_id": "writer-card:writer_ide:right_panel:narrative_state_tensor:10부",
+      "panel_ref": "writer_ide:right_panel:narrative_state_tensor",
+      "zone": "right",
+      "work_id": "10부",
+      "headline": "10부 narrative tensor advisory",
+      "summary": "REVIEW_REQUIRED | Derived from metadata-only aggregate features for 10부.",
+      "severity": "advisory",
+      "formula_group_badges": [
+        "Narrative State Tensor"
+      ],
+      "signal_refs": [
+        "formula-signal:tensor:10부"
+      ],
+      "confidence": 0.78,
+      "advisory_only": true,
+      "canonical_mutation_allowed": false,
+      "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
+    }
+  ],
+  "warnings": [
+    {
+      "warning_id": "approval-warning:10부:critic-output",
+      "writer_session_id": "writer-session:10부:critic-review",
+      "subject_record_id": "advisory-output:emotion-audit",
+      "subject_record_type": "LearnableCriticAdvisoryOutputRecord",
+      "warning_type": "APPROVAL_REQUIRED_BEFORE_CANONICAL_MUTATION",
+      "message": "LearnableCritic output may be shown to the writer, but canonical manuscript mutation remains blocked until an ApprovalDecisionRecord is created.",
+      "required_contract_ref": "docs/contracts/approval_decision_record_contract.md",
+      "approval_status": "PENDING_REVIEW",
+      "canonical_mutation_allowed": false
+    }
+  ]
+}

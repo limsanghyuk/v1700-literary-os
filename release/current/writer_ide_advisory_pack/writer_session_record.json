@@ -1,0 +1,24 @@
+{
+  "writer_session_id": "writer-session:10부:critic-review",
+  "work_id": "10부",
+  "session_scope": "LEARNABLE_CRITIC_REVIEW",
+  "active_scene_refs": [
+    "scene:advisory-focus:10부"
+  ],
+  "active_character_refs": [],
+  "active_corpus_refs": [
+    "formula-signal:rag:10부"
+  ],
+  "active_formula_signal_refs": [
+    "formula-signal:emotion:10부",
+    "formula-signal:rag:10부",
+    "formula-signal:tensor:10부"
+  ],
+  "active_agent_refs": [
+    "critic:emotion_calibration_audit"
+  ],
+  "llm_boundary_level": "LLM-0",
+  "started_at": "2026-06-16T09:15:57+00:00",
+  "ended_at": "2026-06-16T09:15:57+00:00",
+  "session_status": "LOCKED_FOR_REVIEW"
+}

@@ -24,10 +24,19 @@ Added code:
 ```text
 src/v1700/corpus_absorption/
 src/v1700/corpus_formula_bridge/
+src/v1700/formula_signal_store/
+src/v1700/learnable_critic_audit/
+src/v1700/writer_ide_advisory_consumer/
 tools/run_local_corpus_absorption.py
 tools/run_local_corpus_formula_bridge.py
+tools/run_formula_signal_store.py
+tools/run_learnable_critic_audit_fixture.py
+tools/run_writer_ide_advisory_consumer.py
 tests/test_local_corpus_absorption.py
 tests/test_local_corpus_formula_bridge.py
+tests/test_formula_signal_store.py
+tests/test_learnable_critic_audit.py
+tests/test_writer_ide_advisory_consumer.py
 ```
 
 Added docs:
@@ -43,6 +52,12 @@ docs/architecture/corpus_formula_signal_bridge_blueprint.md
 docs/reviews/claude_chromadb_featuredb_audit.md
 docs/reviews/corpus_absorption_build_report.md
 docs/development/current_session_handoff.md
+docs/architecture/formula_signal_store_runtime_blueprint.md
+docs/development/formula_signal_store_implementation_report.md
+docs/architecture/learnable_critic_audit_fixture_runtime_blueprint.md
+docs/development/learnable_critic_audit_implementation_report.md
+docs/architecture/writer_ide_advisory_consumer_runtime_blueprint.md
+docs/development/writer_ide_advisory_consumer_implementation_report.md
 ```
 
 ### Generated hub-safe outputs
@@ -50,6 +65,9 @@ docs/development/current_session_handoff.md
 ```text
 release/current/corpus_ko_absorption_pack/
 release/current/corpus_formula_bridge_pack/
+release/current/formula_signal_store_pack/
+release/current/learnable_critic_audit_pack/
+release/current/writer_ide_advisory_pack/
 fixtures/research/drama_script_metadata_inventory_summary.json
 fixtures/research/chromadb_featuredb_audit_summary.json
 fixtures/research/script_feature_record_sample.json
@@ -79,6 +97,9 @@ canonical metadata layer
 RAG readiness layer
 learning signal layer
 formula bridge layer
+queryable formula signal store
+LearnableCritic audit fixture
+writer-visible advisory surface
 ```
 
 ## What The Next Chat Should Do
@@ -87,10 +108,10 @@ Do not rebuild raw corpus files into git.
 
 Instead, continue from the generated packs and implement one of:
 
-1. Formula Signal Store fixture and query surface
-2. LearnableCritic audited intake from formula signals
-3. Writer IDE advisory card renderer from formula signals
-4. Value Proof Arm B preregistered formula guidance pack
+1. Value Proof Arm B preregistered formula guidance pack
+2. Formula signal query consumers for additional downstream surfaces
+3. future Writer IDE interaction contracts
+4. Page18 decision-boundary artifacts only after evidence review
 
 ## Hard Boundaries
 
