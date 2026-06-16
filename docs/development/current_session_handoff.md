@@ -2,6 +2,8 @@
 
 Status: active  
 Updated: 2026-06-16
+Branch: `corpus-absorption-formula-bridge-handoff`
+PR: `#59`
 
 ## Session Goal
 
@@ -23,6 +25,8 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/architecture/corpus_formula_signal_bridge_blueprint.md`
 - `docs/reviews/claude_chromadb_featuredb_audit.md`
 - `docs/reviews/corpus_absorption_build_report.md`
+- `docs/development/codex_web_local_gitnexus_evidence_protocol_report.md`
+- `docs/development/corpus_absorption_formula_bridge_session_report.md`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
 
@@ -44,6 +48,7 @@ Formula/tensor bridge: yes
 Raw script hub commit: no
 Raw vector hub commit: no
 GitNexus re-analysis completed: yes
+Hub continuity docs loaded: yes
 ```
 
 ## Next Recommended Step
