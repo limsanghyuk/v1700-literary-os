@@ -1,0 +1,12 @@
+{
+  "input_source_id": "critic-input:sample-emotion-audit",
+  "critic_id": "critic:emotion_calibration_audit",
+  "source_record_id": "formula-signal:emotion:10부",
+  "source_record_type": "FormulaSignalRecord",
+  "source_class": "USER_PROVIDED_STRUCTURED_ANALYSIS_DB",
+  "rights_status": "user_provided_structured_analysis_db",
+  "formula_signal_ref": "formula-signal:emotion:10부",
+  "corpus_signal_ref": "formula_signal_store:10부",
+  "value_proof_ref": "value_proof:pending_preregistration",
+  "provenance_ref": "release/current/formula_signal_store_pack/formula_signal_store_report.json"
+}

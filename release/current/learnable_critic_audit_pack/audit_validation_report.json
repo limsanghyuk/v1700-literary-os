@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "issues": [],
+  "source_linked": true,
+  "seed_present": true,
+  "rollback_ready": true,
+  "human_review_required": true,
+  "canonical_mutation_allowed": false
+}

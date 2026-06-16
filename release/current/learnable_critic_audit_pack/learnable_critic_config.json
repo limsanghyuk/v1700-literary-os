@@ -1,0 +1,15 @@
+{
+  "critic_id": "critic:emotion_calibration_audit",
+  "critic_name": "Emotion Calibration Audit Critic",
+  "critic_axis": "EMOTIONAL_MOMENTUM",
+  "allowed_input_types": [
+    "FormulaSignalRecord"
+  ],
+  "allowed_output_types": [
+    "LearnableCriticAdvisoryOutputRecord"
+  ],
+  "coefficient_schema_ref": "NarrativePhysicsCoefficientSet.emotional_momentum_weight",
+  "source_policy_ref": "docs/policies/narrative_corpus_source_policy.md",
+  "approval_policy_ref": "docs/contracts/approval_decision_record_contract.md",
+  "status": "ADVISORY_ONLY"
+}

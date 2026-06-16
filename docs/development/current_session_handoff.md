@@ -29,9 +29,12 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/development/corpus_absorption_formula_bridge_session_report.md`
 - `docs/architecture/formula_signal_store_runtime_blueprint.md`
 - `docs/development/formula_signal_store_implementation_report.md`
+- `docs/architecture/learnable_critic_audit_fixture_runtime_blueprint.md`
+- `docs/development/learnable_critic_audit_implementation_report.md`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
 - `release/current/formula_signal_store_pack/formula_signal_store_report.json`
+- `release/current/learnable_critic_audit_pack/learnable_critic_audit_report.json`
 
 ## Key Commands
 
@@ -49,6 +52,7 @@ RAG-ready advisory registry: yes
 Learning-ready feature registry: yes
 Formula/tensor bridge: yes
 Formula signal store: yes
+LearnableCritic audit fixture: yes
 Raw script hub commit: no
 Raw vector hub commit: no
 GitNexus re-analysis completed: yes
@@ -59,10 +63,10 @@ Hub continuity docs loaded: yes
 
 Continue from `formula_signal_store` into:
 
-1. LearnableCritic audit records
-2. Writer IDE advisory cards
-3. Value Proof Arm B guidance surface
-4. Formula signal query consumers
+1. Writer IDE advisory consumer
+2. Value Proof Arm B guidance surface
+3. Formula signal query consumers
+4. later Page18 decision-boundary artifacts
 
 ## Rule
 
