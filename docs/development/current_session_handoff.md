@@ -18,6 +18,7 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - advisory formula signal pack generated
 - contracts, architecture docs, and audit docs added
 - writer-visible advisory consumer generated
+- Value Proof Arm B guidance surface scaffold generated
 
 ## Read First
 
@@ -34,6 +35,8 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/development/learnable_critic_audit_implementation_report.md`
 - `docs/architecture/writer_ide_advisory_consumer_runtime_blueprint.md`
 - `docs/development/writer_ide_advisory_consumer_implementation_report.md`
+- `docs/architecture/value_proof_arm_b_guidance_surface_runtime_blueprint.md`
+- `docs/development/value_proof_arm_b_guidance_surface_implementation_report.md`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
 - `release/current/formula_signal_store_pack/formula_signal_store_report.json`
@@ -46,7 +49,8 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 python tools/run_local_corpus_absorption.py --corpus-root "C:\AI_Codex\codex-work\gpt\db\corpus_ko"
 python tools/run_local_corpus_formula_bridge.py
 python tools/run_writer_ide_advisory_consumer.py
-python -m pytest tests/test_local_corpus_absorption.py tests/test_local_corpus_formula_bridge.py tests/test_formula_signal_store.py tests/test_learnable_critic_audit.py tests/test_writer_ide_advisory_consumer.py -q
+python tools/run_value_proof_arm_b_guidance_surface.py
+python -m pytest tests/test_local_corpus_absorption.py tests/test_local_corpus_formula_bridge.py tests/test_formula_signal_store.py tests/test_learnable_critic_audit.py tests/test_writer_ide_advisory_consumer.py tests/test_value_proof_arm_b_guidance_surface.py -q
 ```
 
 ## Current Safe Interpretation
@@ -59,21 +63,23 @@ Formula/tensor bridge: yes
 Formula signal store: yes
 LearnableCritic audit fixture: yes
 Writer IDE advisory consumer: yes
+Value Proof Arm B guidance surface: scaffold ready, local execution pending
 Raw script hub commit: no
 Raw vector hub commit: no
-GitNexus re-analysis completed: yes
+GitNexus re-analysis completed before latest scaffold: yes
 Hub continuity docs loaded: yes
 Focus work in latest advisory consumer run: 10부
 ```
 
 ## Next Recommended Step
 
-Continue from `formula_signal_store` into:
+Continue from `value_proof_arm_b_guidance_surface` into:
 
-1. Value Proof Arm B guidance surface
-2. Formula signal query consumers
-3. later Page18 decision-boundary artifacts
-4. future Writer IDE interaction contracts
+1. local Codex execution and validation of Value Proof Arm B guidance surface
+2. Value Proof Arm B preregistration packet builder
+3. Formula signal query consumers
+4. later Page18 decision-boundary artifacts
+5. future Writer IDE interaction contracts
 
 ## Rule
 
