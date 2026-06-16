@@ -1,0 +1,25 @@
+{
+  "manifest_counts": {
+    "source_files": 118,
+    "converted_works": 455,
+    "scenes": 34536,
+    "chroma_scene_vectors": 36683,
+    "chroma_slide_vectors": 19183,
+    "nkg_next_edges": 9437,
+    "nkg_characters": 836,
+    "nkg_char_scene_edges": 4681
+  },
+  "nkg_summary": {
+    "works": 455,
+    "nodes_scene": 36291,
+    "edges_next": 35836,
+    "characters": 2683,
+    "edges_char_scene": 31170,
+    "nochar": 0,
+    "llm_fallback": 75,
+    "total_characters": 5889
+  },
+  "empty_feature_db": true,
+  "rag_ready_work_count": 455,
+  "learning_ready_work_count": 455
+}
