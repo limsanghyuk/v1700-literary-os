@@ -1,0 +1,61 @@
+{
+  "handoff_id": "v1700_session_handoff_template_20260616",
+  "status": "ACTIVE_TEMPLATE",
+  "branch": "roadmap-page08-page17-commercial-absorption",
+  "session_model": {
+    "chat_session": "transient_working_surface",
+    "hub_repository": "durable_source_of_truth",
+    "local_codex": "local_execution_bridge",
+    "handoff_artifact": "cross_session_bridge"
+  },
+  "required_start_files": [
+    "docs/development/current_session_handoff.md",
+    "docs/roadmaps/v1700_document_index.md",
+    "docs/roadmaps/v1700_priority_development_sequence.md",
+    "docs/roadmaps/v1700_dependency_graph.md",
+    "fixtures/development/session_handoff_template.json"
+  ],
+  "required_end_updates": [
+    "docs/development/current_session_handoff.md",
+    "fixtures/development/session_handoff_template.json"
+  ],
+  "conditional_roadmap_updates": [
+    "docs/roadmaps/v1700_document_index.md",
+    "docs/roadmaps/v1700_priority_development_sequence.md",
+    "docs/roadmaps/v1700_dependency_graph.md"
+  ],
+  "current_readiness": "READY_FOR_CANONICAL_RECORD_STORE_CONTRACT",
+  "next_node": "canonical_record_store_contract",
+  "active_boundaries": {
+    "page18_implementation": "NOT_OPENED",
+    "stage243_plus": "NOT_CREATED",
+    "provider_generation": "DISABLED",
+    "memory_write": "DISABLED",
+    "canon_mutation": "DISABLED",
+    "weight_update": "DISABLED",
+    "raw_copyrighted_script_text": "DO_NOT_PUSH_TO_HUB"
+  },
+  "handoff_required_fields": [
+    "session_date",
+    "branch",
+    "last_commit",
+    "created_artifacts",
+    "current_readiness",
+    "next_node",
+    "active_boundaries",
+    "local_codex_actions",
+    "known_blockers",
+    "safe_upload_rule"
+  ],
+  "minimal_next_session_prompt": "Read the current session handoff, document index, priority sequence, dependency graph, and session handoff template from the hub. Continue from next_node without reopening Page18 or Stage243 unless explicitly approved.",
+  "local_codex_bridge": {
+    "handoff_doc": "docs/development/local_codex_execution_handoff.md",
+    "inventory_tool": "tools/local_db_inventory.py",
+    "safe_upload_outputs": [
+      ".local_db_survey/local_db_inventory_summary.json",
+      ".local_db_survey/local_db_file_inventory.csv",
+      ".local_db_survey/local_sqlite_schema_summary.json",
+      ".local_db_survey/local_db_survey_report.md"
+    ]
+  }
+}
