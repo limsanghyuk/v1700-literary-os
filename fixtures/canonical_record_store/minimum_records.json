@@ -1,0 +1,116 @@
+{
+  "fixture_id": "canonical_record_store_minimum_records_20260616",
+  "status": "MINIMUM_FIXTURE_READY",
+  "contract_ref": "docs/contracts/canonical_record_store_contract.md",
+  "boundary_status": {
+    "page18_implementation": "NOT_OPENED",
+    "stage243_plus": "NOT_CREATED",
+    "provider_generation": "DISABLED",
+    "memory_write": "DISABLED",
+    "canon_mutation": "DISABLED",
+    "weight_update": "DISABLED",
+    "raw_copyrighted_script_text": "DO_NOT_STORE"
+  },
+  "records": [
+    {
+      "record_id": "work_record_sample_001",
+      "record_type": "WorkRecord",
+      "work_title": "LOCAL_SCRIPT_WORK_TITLE_PLACEHOLDER",
+      "work_category": "DRAMA_SCRIPT_METADATA_ONLY",
+      "source_inventory_refs": ["source_file_record_sample_001"],
+      "rights_status": "RIGHTS_UNKNOWN",
+      "processing_status": "DISCOVERED",
+      "created_at": "2026-06-16T00:00:00Z",
+      "updated_at": "2026-06-16T00:00:00Z"
+    },
+    {
+      "record_id": "source_file_record_sample_001",
+      "record_type": "SourceFileRecord",
+      "source_name": "LOCAL_FILE_PLACEHOLDER",
+      "source_path_ref": "local_db_inventory.csv:relative_path",
+      "extension": ".txt",
+      "size_bytes": 0,
+      "sha256": "SHA256_PLACEHOLDER_FROM_LOCAL_INVENTORY",
+      "source_risk_class": "TEXT_SOURCE_DO_NOT_EXPORT_CONTENT",
+      "rights_status": "DO_NOT_EXPORT_TEXT",
+      "processing_status": "INVENTORIED"
+    },
+    {
+      "record_id": "scene_record_sample_001",
+      "record_type": "SceneRecord",
+      "work_record_id": "work_record_sample_001",
+      "source_file_record_id": "source_file_record_sample_001",
+      "scene_order": 1,
+      "safe_summary": "Metadata-only scene summary placeholder. No dialogue or full scene text.",
+      "character_refs": ["character_record_sample_001"],
+      "location_hint": "LOCATION_PLACEHOLDER",
+      "narrative_function_tags": ["setup", "conflict_hint"],
+      "rights_status": "DO_NOT_EXPORT_TEXT",
+      "text_storage_policy": "NO_FULL_TEXT"
+    },
+    {
+      "record_id": "character_record_sample_001",
+      "record_type": "CharacterRecord",
+      "work_record_id": "work_record_sample_001",
+      "character_name": "CHARACTER_PLACEHOLDER",
+      "alias_refs": [],
+      "role_hint": "UNKNOWN_ROLE",
+      "source_refs": ["source_file_record_sample_001"],
+      "processing_status": "DISCOVERED"
+    },
+    {
+      "record_id": "formula_signal_record_sample_001",
+      "record_type": "FormulaSignalRecord",
+      "formula_id": "NarrativeStateTensor",
+      "source_record_refs": ["scene_record_sample_001"],
+      "signal_name": "scene_state_placeholder",
+      "signal_value": "UNKNOWN_PENDING_FEATURE_AUDIT",
+      "confidence": 0.0,
+      "evidence_refs": ["scene_record_sample_001"],
+      "processing_status": "DISCOVERED"
+    },
+    {
+      "record_id": "feature_record_sample_001",
+      "record_type": "FeatureRecord",
+      "feature_name": "FEATURE_PLACEHOLDER",
+      "feature_value": "PENDING_FEATUREDB_AUDIT",
+      "feature_type": "UNKNOWN",
+      "source_record_refs": ["scene_record_sample_001"],
+      "feature_origin": "CLAUDE_FEATUREDB_OR_V1700_PENDING_AUDIT",
+      "feature_db_ref": "LOCAL_FEATUREDB_CANDIDATE_PLACEHOLDER",
+      "confidence": 0.0,
+      "processing_status": "DISCOVERED"
+    },
+    {
+      "record_id": "embedding_index_record_sample_001",
+      "record_type": "EmbeddingIndexRecord",
+      "index_name": "CHROMADB_CANDIDATE_PLACEHOLDER",
+      "embedding_model": "UNKNOWN_PENDING_AUDIT",
+      "index_path_ref": "local_db_inventory.csv:relative_path",
+      "linked_record_refs": ["scene_record_sample_001"],
+      "collection_count": 0,
+      "item_count": 0,
+      "index_health": "PENDING_LOCAL_SURVEY",
+      "processing_status": "DISCOVERED",
+      "authority_status": "NON_AUTHORITATIVE_INDEX"
+    },
+    {
+      "record_id": "human_approval_record_sample_001",
+      "record_type": "HumanApprovalRecord",
+      "approval_target_ref": "source_file_record_sample_001",
+      "approval_status": "PENDING_REVIEW",
+      "reviewer_role": "ReleaseGovernorOrHumanReviewer",
+      "reason": "Rights and source text export status must be reviewed before derived use.",
+      "created_at": "2026-06-16T00:00:00Z"
+    }
+  ],
+  "acceptance_expectations": {
+    "all_records_have_record_id": true,
+    "all_records_have_record_type": true,
+    "source_files_have_sha256": true,
+    "scene_records_use_no_full_text": true,
+    "embedding_index_non_authoritative": true,
+    "rights_status_present_on_source_bearing_records": true
+  },
+  "next_readiness": "READY_FOR_CANONICAL_RECORD_STORE_VALIDATOR"
+}
