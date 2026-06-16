@@ -46,12 +46,14 @@ docs/development/local_codex_execution_handoff.md
 docs/architecture/project_session_continuity_strategy.md
 docs/development/session_handoff_protocol.md
 fixtures/development/session_handoff_template.json
+docs/contracts/canonical_record_store_contract.md
+fixtures/canonical_record_store/minimum_records.json
 ```
 
 ## 4. Current readiness
 
 ```text
-READY_FOR_CANONICAL_RECORD_STORE_CONTRACT
+READY_FOR_CANONICAL_RECORD_STORE_VALIDATOR
 ```
 
 ## 5. Cross-session continuity rule
@@ -112,12 +114,13 @@ private keys or credentials
 ## 10. Next hub development node
 
 ```text
-canonical_record_store_contract
+canonical_record_store_validator
 ```
 
 Planned artifacts:
 
 ```text
-docs/contracts/canonical_record_store_contract.md
-fixtures/canonical_record_store/minimum_records.json
+tools/canonical_record_store_validator.py
+tests/test_canonical_record_store_validator.py
+fixtures/canonical_record_store/validator_result.json
 ```
