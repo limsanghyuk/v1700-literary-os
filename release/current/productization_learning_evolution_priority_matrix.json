@@ -1,0 +1,97 @@
+{
+  "title": "Productization and Measured Learning Evolution Priority Matrix",
+  "created": "2026-06-18",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "baseline": "stage242",
+  "status": "planning_loaded",
+  "page18_opened": false,
+  "stage243_created": false,
+  "runtime_training_enabled": false,
+  "priorities": [
+    {
+      "rank": 0,
+      "id": "evidence_completion",
+      "scope": "pre_page18",
+      "decision": "must_do_first",
+      "reason": "Page18 readiness is still blocked until the three Value Proof reports exist."
+    },
+    {
+      "rank": 1,
+      "id": "controlled_generation_boundary",
+      "scope": "candidate_page18",
+      "decision": "first_after_evidence_completion",
+      "core_outputs": ["ProviderExecutionPolicy", "OutputCaptureSchema", "CanonicalMutationBlocker"]
+    },
+    {
+      "rank": 2,
+      "id": "narrative_state_graph",
+      "scope": "candidate_page19",
+      "decision": "needed_before_quality_measurement",
+      "core_outputs": ["NarrativeStateGraph", "ContinuityConstraintEdge", "ContinuityViolationRecord"]
+    },
+    {
+      "rank": 3,
+      "id": "literary_value_proof_engine",
+      "scope": "candidate_page20",
+      "decision": "needed_before_product_dashboard_claims",
+      "core_outputs": ["EvaluatorRubric", "PairwisePreferenceRecord", "ValueProofConclusionRecord"]
+    },
+    {
+      "rank": 4,
+      "id": "writer_studio_surface",
+      "scope": "candidate_page21",
+      "decision": "needed_before_install_dashboard_productization",
+      "core_outputs": ["WriterWorkbenchSession", "ApprovalDecisionRecord", "ManuscriptPatchProposal"]
+    },
+    {
+      "rank": 5,
+      "id": "installer_runtime_distribution",
+      "scope": "candidate_page25",
+      "decision": "promoted_before_personalization_plugins_multi_agent",
+      "core_outputs": ["InstallProfile", "EnvironmentPreflightReport", "SecretBoundaryReport", "InstallValidationReport"]
+    },
+    {
+      "rank": 6,
+      "id": "dashboard_ui_ux_console",
+      "scope": "candidate_page26",
+      "decision": "promoted_before_measured_learning_activation",
+      "core_outputs": ["DashboardPanelManifest", "WriterUXRouteManifest", "DashboardPermissionPolicy", "DashboardValidationReport"]
+    },
+    {
+      "rank": 7,
+      "id": "data_construction_measurement_foundry",
+      "scope": "candidate_page27",
+      "decision": "required_before_learning_loop",
+      "core_outputs": ["MeasurementEvent", "MetricDefinitionRegistry", "EvaluationDatasetManifest", "DataQualityReport"]
+    },
+    {
+      "rank": 8,
+      "id": "measured_learning_loop",
+      "scope": "candidate_page28",
+      "decision": "allowed_only_after_measurement_foundry",
+      "core_outputs": ["LearningCandidateRecord", "ImprovementHypothesis", "LearningApprovalRecord", "LearningEffectReport"]
+    },
+    {
+      "rank": 9,
+      "id": "safe_personalization_memory",
+      "scope": "candidate_page22",
+      "decision": "delayed_until_dashboard_and_learning_boundaries_exist",
+      "core_outputs": ["WriterPreferenceProfile", "MemoryConsentRecord", "RollbackablePersonalizationSnapshot"]
+    },
+    {
+      "rank": 10,
+      "id": "plugin_tool_capability_layer",
+      "scope": "candidate_page23",
+      "decision": "delayed_until_install_and_dashboard_security_boundaries_exist",
+      "core_outputs": ["PluginManifest", "ToolSandboxPolicy", "PluginReleaseGate"]
+    },
+    {
+      "rank": 11,
+      "id": "multi_agent_literary_studio",
+      "scope": "candidate_page24",
+      "decision": "last_due_to_highest_autonomy_risk",
+      "core_outputs": ["AgentCapabilityProfile", "AgentHandoffRecord", "MultiAgentStudioSession"]
+    }
+  ],
+  "next_required_action": "run_local_value_proof_chain_and_commit_three_reports"
+}
