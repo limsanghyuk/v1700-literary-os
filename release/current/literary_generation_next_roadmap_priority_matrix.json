@@ -1,0 +1,142 @@
+{
+  "title": "Literary Generation Next Roadmap Priority Matrix",
+  "created": "2026-06-17",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "baseline": "stage242",
+  "status": "planning_loaded",
+  "page18_opened": false,
+  "stage243_created": false,
+  "priority_weights": {
+    "P1": "unlocks_blocked_roadmap_gate",
+    "P2": "improves_literary_generation_quality",
+    "P3": "reduces_safety_copyright_or_authority_risk",
+    "P4": "creates_reusable_runtime_infrastructure"
+  },
+  "priorities": [
+    {
+      "rank": 0,
+      "id": "evidence_completion",
+      "page": "pre_page18",
+      "decision": "must_do_first",
+      "why": ["P1", "P3"],
+      "required_outputs": [
+        "value_proof_arm_b_guidance_surface_report.json",
+        "value_proof_arm_b_preregistration_packet_report.json",
+        "value_proof_blind_evaluator_packet_report.json"
+      ],
+      "exit_gate": "all_reports_committed_and_page18_precheck_rerun"
+    },
+    {
+      "rank": 1,
+      "id": "controlled_literary_generation_boundary",
+      "page": "candidate_page18",
+      "decision": "design_after_evidence_completion",
+      "why": ["P1", "P2", "P3"],
+      "core_records": [
+        "LiteraryGenerationRequest",
+        "GenerationContextPacket",
+        "NarrativeConstraintPacket",
+        "ProviderExecutionPolicy",
+        "OutputCaptureSchema",
+        "CanonicalMutationBlocker"
+      ],
+      "exit_gate": "generation_boundary_pack_created_without_opening_uncontrolled_runtime"
+    },
+    {
+      "rank": 2,
+      "id": "narrative_state_graph_runtime",
+      "page": "candidate_page19",
+      "decision": "after_generation_boundary",
+      "why": ["P2", "P4"],
+      "core_records": [
+        "NarrativeStateGraph",
+        "SceneNode",
+        "CharacterArcNode",
+        "ConflictArcNode",
+        "ForeshadowingNode",
+        "EmotionalMomentumEdge",
+        "ContinuityConstraintEdge"
+      ],
+      "exit_gate": "continuity_validation_report_pass"
+    },
+    {
+      "rank": 3,
+      "id": "literary_value_proof_engine",
+      "page": "candidate_page20",
+      "decision": "after_blind_packets_and_output_capture_schema",
+      "why": ["P1", "P2", "P3"],
+      "core_records": [
+        "EvaluatorRubric",
+        "BlindEvaluationAssignment",
+        "PairwisePreferenceRecord",
+        "ContinuityScoreRecord",
+        "StyleCoherenceScoreRecord",
+        "EffectSizeReport",
+        "ValueProofConclusionRecord"
+      ],
+      "exit_gate": "value_proof_result_report_created"
+    },
+    {
+      "rank": 4,
+      "id": "writer_studio_product_surface",
+      "page": "candidate_page21",
+      "decision": "after_evaluation_records_exist",
+      "why": ["P2", "P4"],
+      "core_records": [
+        "WriterWorkbenchSession",
+        "SceneRevisionBoard",
+        "AdvisoryDiffCard",
+        "ApprovalDecisionRecord",
+        "ManuscriptPatchProposal",
+        "ExportBoundaryRecord"
+      ],
+      "exit_gate": "approval_boundary_report_pass"
+    },
+    {
+      "rank": 5,
+      "id": "safe_personalization_memory",
+      "page": "candidate_page22",
+      "decision": "after_writer_surface_boundary",
+      "why": ["P3", "P4"],
+      "core_records": [
+        "WriterPreferenceProfile",
+        "StylePreferenceVector",
+        "MemoryConsentRecord",
+        "RollbackablePersonalizationSnapshot",
+        "PersonalizationAuditLog"
+      ],
+      "exit_gate": "rollback_and_audit_pass"
+    },
+    {
+      "rank": 6,
+      "id": "plugin_tool_capability_layer",
+      "page": "candidate_page23",
+      "decision": "after_personalization_boundary",
+      "why": ["P3", "P4"],
+      "core_records": [
+        "PluginManifest",
+        "LiteraryCapabilityDeclaration",
+        "ToolSandboxPolicy",
+        "FixturePack",
+        "PluginReleaseGate"
+      ],
+      "exit_gate": "plugin_release_gate_pass"
+    },
+    {
+      "rank": 7,
+      "id": "multi_agent_literary_studio_runtime",
+      "page": "candidate_page24",
+      "decision": "after_plugin_capability_layer",
+      "why": ["P2", "P4"],
+      "core_records": [
+        "AgentCapabilityProfile",
+        "AgentHandoffRecord",
+        "AgentDecisionTrace",
+        "MultiAgentStudioSession",
+        "CanonicalMutationApprovalRecord"
+      ],
+      "exit_gate": "agent_handoff_validation_pass"
+    }
+  ],
+  "next_required_action": "run_local_value_proof_chain_and_commit_three_reports"
+}
