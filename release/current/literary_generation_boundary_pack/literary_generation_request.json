@@ -1,0 +1,22 @@
+{
+  "request_id": "page18-literary-generation-request:10부:preflight",
+  "work_id": "10부",
+  "mode": "boundary_preflight_only",
+  "base_task_brief_ref": "value_proof_base_task_brief_placeholder",
+  "target_length_policy": "locked_before_outputs",
+  "genre_hint": "literary_series_scene_or_screenplay",
+  "allowed_context_refs": [
+    "page18-generation-context:10부:preflight",
+    "page18-narrative-constraints:10부:preflight"
+  ],
+  "forbidden_context_refs": [
+    "source_text_payload",
+    "unregistered_prompt_mutation",
+    "post_output_threshold_change",
+    "canonical_mutation"
+  ],
+  "provider_execution_policy_ref": "page18-provider-execution-policy:10부:preflight",
+  "output_capture_schema_ref": "page18-output-capture-schema:10부:preflight",
+  "canonical_mutation_blocker_ref": "page18-canonical-mutation-blocker:10부:preflight",
+  "request_hash": "76926b409f173feecaf5dace3c7ef4b6f7e3392812a3cbb67cdfc0d84a59f268"
+}
