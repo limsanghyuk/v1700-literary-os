@@ -22,7 +22,9 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - Value Proof Arm B guidance surface generated
 - Value Proof Arm B preregistration packet builder generated
 - Value Proof blind evaluator packet builder generated
+- Value Proof blind evaluator public arm-id leak fixed
 - Page18 readiness precheck refreshed to `pass / ready_for_policy_review`
+- Stage242 asset checksum drift resolved for `AGENTS.md` and `CLAUDE.md`
 
 ## Read First
 
@@ -75,7 +77,9 @@ Writer IDE advisory consumer: yes
 Value Proof Arm B guidance surface: local report generated
 Value Proof Arm B preregistration packet builder: local report generated
 Value Proof blind evaluator packet builder: local report generated
+Blind evaluator public packet arm-id leak: fixed
 Page18 readiness precheck: pass / ready_for_policy_review
+Stage242 release asset integrity: pass
 Provider default calls: 0
 Runtime training enabled: false
 Canonical mutation allowed: false
@@ -92,7 +96,7 @@ Continue from `page18_readiness_precheck` into:
 2. Formula signal query consumers
 3. later Page18 decision-boundary artifacts
 4. future Writer IDE interaction contracts
-5. Stage242 asset checksum refresh for `AGENTS.md` / `CLAUDE.md` if clean asset integrity is required
+5. optional CI observation after PR update
 
 ## Rule
 

@@ -6,7 +6,7 @@ Branch: corpus-absorption-formula-bridge-handoff
 
 ## Goal
 
-Create local evidence for the full Value Proof chain and confirm Page18 readiness precheck status.
+Create local evidence for the full Value Proof chain, hide public evaluator arm identity, and confirm Page18 readiness precheck status.
 
 ## Command List
 
@@ -35,8 +35,23 @@ page18_readiness_precheck_report.json
 guidance surface: pass
 preregistration packet: pass
 blind evaluator packet: pass
+blind evaluator public arm-id leak: fixed
 page18 readiness precheck: pass / ready_for_policy_review
+Stage242 release asset integrity: pass
 ```
+
+## Public Packet Boundary
+
+Evaluator-visible packet JSON must not contain:
+
+```text
+arm-a
+arm-b
+value-proof-arm
+source_prompt_packet_id
+```
+
+The private A/B mapping is retained in `private_arm_mapping` with `visible_to_evaluator = false`.
 
 ## Next
 

@@ -20,6 +20,15 @@ value_proof_arm_b_preregistration_packet_report.json
 value_proof_blind_evaluator_packet_report.json
 ```
 
+The blind evaluator public packet no longer exposes:
+
+```text
+arm-a
+arm-b
+value-proof-arm
+source_prompt_packet_id
+```
+
 ## Boundary
 
 ```text
@@ -28,7 +37,12 @@ runtime_training_enabled = false
 canonical_mutation_allowed = false
 page18_runtime_opened = false
 stage243_created = false
+private_arm_mapping.visible_to_evaluator = false
 ```
+
+## Release Integrity
+
+Stage242 release asset integrity passes after refreshing the `AGENTS.md` and `CLAUDE.md` SHA256 entries.
 
 ## Next Required Action
 

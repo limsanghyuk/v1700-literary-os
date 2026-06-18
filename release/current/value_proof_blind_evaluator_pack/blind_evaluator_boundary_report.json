@@ -1,8 +1,8 @@
 {
   "boundary_report_id": "value-proof-blind-evaluator-boundary:10부",
   "work_id": "10부",
-  "registry_hash": "9735f485baa0bcfd10294ebe57e61775e1cf24c39f2e459e542f949e1b93f7da",
-  "private_mapping_hash": "e3fb700293c58fbe322463d68c02899a67a29aa9a82113be1b954ce37720838b",
+  "registry_hash": "87157eaae422f80da59f380d9d62e5011b2ab4594ffbced58869d0c6b756181e",
+  "private_mapping_hash": "d7e79c2898eabef65e610512f11253e44e831fb54f1ca606af96419215c44ca6",
   "provider_default_calls": 0,
   "runtime_training_enabled": false,
   "canonical_mutation_allowed": false,

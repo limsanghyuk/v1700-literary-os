@@ -83,12 +83,13 @@ def run_value_proof_blind_evaluator_packet_builder(
 
 
 def _build_evaluator_packet(slot: str, work_id: str, prompt_packet: dict[str, Any]) -> dict[str, Any]:
+    prompt_packet_id = str(prompt_packet.get("prompt_packet_id", ""))
+    prompt_packet_hash = str(prompt_packet.get("packet_hash", ""))
     packet = {
         "evaluator_packet_id": f"value-proof-evaluator-packet:{work_id}:{slot}",
         "slot": slot,
         "work_id": work_id,
-        "source_prompt_packet_id": prompt_packet.get("prompt_packet_id", ""),
-        "source_prompt_packet_hash": prompt_packet.get("packet_hash", ""),
+        "source_prompt_packet_ref_hash": _prompt_packet_ref_hash(prompt_packet_id, prompt_packet_hash),
         "visible_to_evaluator": True,
         "label_visible_to_evaluator": False,
         "evaluation_prompt_body_included": False,
@@ -104,6 +105,17 @@ def _build_evaluator_packet(slot: str, work_id: str, prompt_packet: dict[str, An
     }
     packet["evaluator_packet_hash"] = _stable_hash(packet)
     return packet
+
+
+def _prompt_packet_ref_hash(prompt_packet_id: str, prompt_packet_hash: str) -> str:
+    if not prompt_packet_id or not prompt_packet_hash:
+        return ""
+    return _stable_hash(
+        {
+            "source_prompt_packet_id": prompt_packet_id,
+            "source_prompt_packet_hash": prompt_packet_hash,
+        }
+    )
 
 
 def _build_packet_registry(work_id: str, created_at: str, packet_01: dict[str, Any], packet_02: dict[str, Any]) -> dict[str, Any]:
@@ -187,8 +199,8 @@ def _validate_blind_packet(
     issues: list[str] = []
     if preregistration_report.get("status") != "pass":
         issues.append("preregistration_report_not_pass")
-    if not packet_01.get("source_prompt_packet_hash") or not packet_02.get("source_prompt_packet_hash"):
-        issues.append("source_prompt_packet_hash_missing")
+    if not packet_01.get("source_prompt_packet_ref_hash") or not packet_02.get("source_prompt_packet_ref_hash"):
+        issues.append("source_prompt_packet_ref_hash_missing")
     if packet_01.get("evaluator_packet_hash") == packet_02.get("evaluator_packet_hash"):
         issues.append("evaluator_packet_hashes_identical")
     if packet_01.get("label_visible_to_evaluator") is not False or packet_02.get("label_visible_to_evaluator") is not False:
