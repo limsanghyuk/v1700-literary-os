@@ -1,0 +1,20 @@
+{
+  "constraint_packet_id": "page18-narrative-constraints:10부:preflight",
+  "work_id": "10부",
+  "continuity_constraints": [
+    "do_not_change_canonical_facts"
+  ],
+  "character_arc_constraints": [
+    "preserve_existing_arc_refs"
+  ],
+  "conflict_progression_constraints": [
+    "preserve_formula_signal_boundary"
+  ],
+  "foreshadowing_constraints": [
+    "advisory_only_until_output_capture_phase"
+  ],
+  "style_boundary_refs": [
+    "writer_advisory_surface_refs_only"
+  ],
+  "constraint_packet_hash": "62da863744e800dbc86ebd9f4b399066e8fc262425c781c0b7cbc8a6d6d12437"
+}
