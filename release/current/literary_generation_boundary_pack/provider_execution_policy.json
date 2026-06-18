@@ -1,0 +1,12 @@
+{
+  "policy_id": "page18-provider-execution-policy:10부:preflight",
+  "work_id": "10부",
+  "provider_default_calls": 0,
+  "provider_generation_allowed": false,
+  "credentials_externalized": true,
+  "secret_logging_allowed": false,
+  "requires_explicit_execution_phase": true,
+  "runtime_training_enabled": false,
+  "page18_runtime_opened": false,
+  "policy_hash": "cb0a396ae0d8a53348b7eb7be0e97d7cae912c86da8b7c4d624bba42f0856caf"
+}
