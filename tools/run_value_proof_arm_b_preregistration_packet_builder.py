@@ -9,11 +9,11 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from v1700.value_proof_arm_b_guidance_surface import run_value_proof_arm_b_guidance_surface
+from v1700.value_proof_arm_b_preregistration_packet_builder import run_value_proof_arm_b_preregistration_packet_builder
 
 
 def main() -> None:
-    result = run_value_proof_arm_b_guidance_surface(repo_root=ROOT)
+    result = run_value_proof_arm_b_preregistration_packet_builder(repo_root=ROOT)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

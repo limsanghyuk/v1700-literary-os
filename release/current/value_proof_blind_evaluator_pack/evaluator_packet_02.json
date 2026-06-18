@@ -1,0 +1,20 @@
+{
+  "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_02",
+  "slot": "slot_02",
+  "work_id": "10부",
+  "source_prompt_packet_id": "value-proof-arm-b-prompt:10부:preregistered",
+  "source_prompt_packet_hash": "66b7c3db030137a1f9d9c45ca0f81768b1df59e08bc2f4e1c84117b6323e87cd",
+  "visible_to_evaluator": true,
+  "label_visible_to_evaluator": false,
+  "evaluation_prompt_body_included": false,
+  "output_capture_allowed": false,
+  "provider_generation_allowed": false,
+  "canonical_mutation_allowed": false,
+  "raw_script_text_allowed": false,
+  "evaluator_instructions": [
+    "Compare only the later captured outputs.",
+    "Do not infer the hidden packet source.",
+    "Do not change thresholds after outputs are seen."
+  ],
+  "evaluator_packet_hash": "676e79216f6d20b0d5c499f2cd7d6a88586204a437ac9d7b78ceceb0cf431182"
+}

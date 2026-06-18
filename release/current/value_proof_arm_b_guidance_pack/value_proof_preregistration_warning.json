@@ -1,0 +1,14 @@
+{
+  "warning_id": "value-proof-arm-b-warning:10부:preregistration",
+  "work_id": "10부",
+  "warning_type": "PREREGISTRATION_REQUIRED_BEFORE_ARM_B_USE",
+  "message": "Arm B guidance may only be used after prompt packets, thresholds, evaluator policy, and allowed formula guidance are preregistered.",
+  "required_contract_refs": [
+    "docs/templates/value_proof_preregistration_template.md",
+    "docs/fixtures/value_proof_minimum_fixture_spec.md",
+    "docs/architecture/value_proof_experiment_engine_blueprint.md"
+  ],
+  "canonical_mutation_allowed": false,
+  "provider_generation_allowed": false,
+  "page18_runtime_opened": false
+}

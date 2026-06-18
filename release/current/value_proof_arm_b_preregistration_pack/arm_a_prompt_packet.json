@@ -1,0 +1,26 @@
+{
+  "prompt_packet_id": "value-proof-arm-a-prompt:10부:preregistered",
+  "arm": "A",
+  "work_id": "10부",
+  "base_task_brief_ref": "value_proof_base_task_brief_placeholder",
+  "target_length_policy": "LOCKED_BEFORE_OUTPUTS",
+  "allowed_context": [
+    "base_task_brief",
+    "target_length",
+    "genre_hint"
+  ],
+  "forbidden_context": [
+    "formula_signal_refs",
+    "writer_ide_surface_cards",
+    "learnable_critic_explanation",
+    "raw_script_text"
+  ],
+  "guidance_refs": [],
+  "formula_signal_refs": [],
+  "visible_to_evaluator": false,
+  "raw_script_text_allowed": false,
+  "provider_generation_allowed": false,
+  "canonical_mutation_allowed": false,
+  "post_output_mutation_allowed": false,
+  "packet_hash": "09ca1f86724849fc28cd2704935bc7edc3837df707dcdc1d4f101dea9a158f12"
+}

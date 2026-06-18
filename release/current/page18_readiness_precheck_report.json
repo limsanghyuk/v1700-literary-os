@@ -1,25 +1,26 @@
 {
   "title": "Page18 Readiness Precheck",
-  "created": "2026-06-17",
+  "created": "2026-06-18",
   "branch": "corpus-absorption-formula-bridge-handoff",
   "baseline": "stage242",
-  "status": "blocked",
-  "decision": "not_ready",
+  "status": "pass",
+  "decision": "ready_for_policy_review",
   "checks": {
     "stage242_baseline": "present",
-    "value_proof_guidance_report": "missing",
-    "value_proof_preregistration_report": "missing",
-    "value_proof_blind_evaluator_report": "missing",
+    "value_proof_guidance_report": "present",
+    "value_proof_preregistration_report": "present",
+    "value_proof_blind_evaluator_report": "present",
     "provider_default_calls": 0,
     "runtime_training_enabled": false,
     "canonical_mutation_allowed": false,
     "page18_runtime_opened": false,
     "stage243_created": false
   },
-  "issues": [
-    "value_proof_guidance_report_missing",
-    "value_proof_preregistration_report_missing",
-    "value_proof_blind_evaluator_report_missing"
-  ],
-  "next_required_action": "run local Value Proof chain and commit generated reports"
+  "issues": [],
+  "next_required_action": "policy review and warning decision before any Page18 opening",
+  "paths": {
+    "value_proof_guidance_report": "release/current/value_proof_arm_b_guidance_pack/value_proof_arm_b_guidance_surface_report.json",
+    "value_proof_preregistration_report": "release/current/value_proof_arm_b_preregistration_pack/value_proof_arm_b_preregistration_packet_report.json",
+    "value_proof_blind_evaluator_report": "release/current/value_proof_blind_evaluator_pack/value_proof_blind_evaluator_packet_report.json"
+  }
 }
