@@ -1,0 +1,24 @@
+{
+  "title": "Page18 Controlled Literary Generation Boundary Preflight",
+  "status": "pass",
+  "mode": "PAGE18_CONTROLLED_GENERATION_BOUNDARY_PREFLIGHT",
+  "issues": [],
+  "allowed_promotion": "page18_boundary_preflight_pass",
+  "page18_runtime_opened": false,
+  "stage243_created": false,
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "canonical_mutation_allowed": false,
+  "experiment_started": false,
+  "capture_started": false,
+  "parts": {
+    "literary_generation_request": "literary_generation_request.json",
+    "generation_context_packet": "generation_context_packet.json",
+    "narrative_constraint_packet": "narrative_constraint_packet.json",
+    "provider_execution_policy": "provider_execution_policy.json",
+    "output_capture_schema": "output_capture_schema.json",
+    "canonical_mutation_blocker": "canonical_mutation_blocker.json",
+    "page18_generation_boundary_validation_report": "page18_generation_boundary_validation_report.json",
+    "generation_boundary_report": "generation_boundary_report.json"
+  }
+}
