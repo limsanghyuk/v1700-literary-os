@@ -1,0 +1,12 @@
+{
+  "blocker_id": "page18-canonical-mutation-blocker:10부:preflight",
+  "work_id": "10부",
+  "canonical_mutation_allowed": false,
+  "requires_approval_decision_record": true,
+  "requires_rollback_record": true,
+  "blocked_mutation_targets": [
+    "canonical_manuscript",
+    "canonical_memory",
+    "writer_approved_output"
+  ]
+}
