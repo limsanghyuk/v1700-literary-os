@@ -1,7 +1,7 @@
 {
   "status": "pass",
   "issues": [],
-  "record_count": 1395,
+  "record_count": 6120,
   "required_fields": [
     "formula_signal_id",
     "formula_id",

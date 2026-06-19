@@ -5,7 +5,7 @@
   "coefficient_name": "emotional_momentum_weight",
   "coefficient_value": 1.0,
   "coefficient_version": "v0",
-  "created_at": "2026-06-16T05:21:42+00:00",
+  "created_at": "2026-06-19T02:29:10+00:00",
   "source_basis": "baseline_narrative_physics_coefficients",
   "review_status": "BASELINE_LOCKED"
 }

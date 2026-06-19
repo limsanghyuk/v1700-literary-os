@@ -1,10 +1,12 @@
 {
   "boundary_report_id": "page18-generation-boundary:10부:preflight",
-  "created_at": "2026-06-18T01:55:00+00:00",
+  "created_at": "2026-06-19T02:30:59+00:00",
   "work_id": "10부",
   "status": "pass",
   "request_hash": "76926b409f173feecaf5dace3c7ef4b6f7e3392812a3cbb67cdfc0d84a59f268",
   "context_packet_id": "page18-generation-context:10부:preflight",
+  "metadata_ref_count": 6,
+  "proof_packet_ref_count": 8,
   "constraint_packet_hash": "62da863744e800dbc86ebd9f4b399066e8fc262425c781c0b7cbc8a6d6d12437",
   "provider_policy_hash": "cb0a396ae0d8a53348b7eb7be0e97d7cae912c86da8b7c4d624bba42f0856caf",
   "output_schema_id": "page18-output-capture-schema:10부:preflight",
@@ -15,7 +17,7 @@
   "page18_runtime_opened": false,
   "stage243_created": false,
   "experiment_started": false,
-  "capture_started": false,
+  "output_capture_started": false,
   "source_text_allowed": false,
-  "boundary_hash": "b57378574d9219d81c9ed24cf59b4ada4d3ead6e3d6f948bea630d1eb70af582"
+  "boundary_hash": "50948241d4a80683415c21651241b5a2d02ff63aca89f73d0eb54d4d009301d0"
 }

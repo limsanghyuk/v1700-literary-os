@@ -93,3 +93,23 @@ using raw protected corpus text in prompts
 ## Final Review Statement
 
 Page18 is no longer blocked by missing Value Proof local evidence. It is ready for policy-controlled opening-gate planning only.
+
+## 2026-06-19 Local Codex Update
+
+The local DB under `C:\AI_Codex\codex-work\gpt\db\corpus_ko` was surveyed again and recorded as metadata-only evidence. The downstream chain was regenerated from that latest local DB snapshot.
+
+```text
+local_corpus_db_survey: pass
+scene_jsonl_files: 2030
+scene_records: 122681
+chunk_records: 209144
+feature_records: 122681
+absorbed_work_count: 2040
+formula_signal_count: 6120
+page18_boundary_preflight: pass
+allowed_promotion: page18_boundary_preflight_pass
+page18_metadata_refs: 6
+page18_proof_packet_refs: 8
+```
+
+No raw corpus text, raw vectors, provider generation, runtime training, output capture, Page18 runtime opening, or Stage243 creation occurred in this update.

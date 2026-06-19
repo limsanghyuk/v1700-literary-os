@@ -23,7 +23,7 @@
     "blind_packet_registry": {
       "registry_id": "value-proof-blind-evaluator-registry:10부",
       "work_id": "10부",
-      "created_at": "2026-06-18T01:30:44+00:00",
+      "created_at": "2026-06-19T02:29:11+00:00",
       "blind_slots": [
         {
           "slot": "slot_01",
@@ -38,7 +38,7 @@
       ],
       "arm_labels_visible_to_evaluator": false,
       "output_capture_started": false,
-      "registry_hash": "87157eaae422f80da59f380d9d62e5011b2ab4594ffbced58869d0c6b756181e"
+      "registry_hash": "865ef4cfbaa7f6b92870b938390b1b677af25229c72bd658cecd4cf635188084"
     },
     "evaluator_packet_01": {
       "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_01",
@@ -101,7 +101,7 @@
     "blind_evaluator_boundary_report": {
       "boundary_report_id": "value-proof-blind-evaluator-boundary:10부",
       "work_id": "10부",
-      "registry_hash": "87157eaae422f80da59f380d9d62e5011b2ab4594ffbced58869d0c6b756181e",
+      "registry_hash": "865ef4cfbaa7f6b92870b938390b1b677af25229c72bd658cecd4cf635188084",
       "private_mapping_hash": "d7e79c2898eabef65e610512f11253e44e831fb54f1ca606af96419215c44ca6",
       "provider_default_calls": 0,
       "runtime_training_enabled": false,

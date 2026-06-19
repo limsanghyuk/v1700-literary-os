@@ -14,5 +14,5 @@
   "iteration_count": 0,
   "loss_or_error_metric": "fixture_only_no_runtime_optimization",
   "seed_ref": "seed:learnable-critic-audit",
-  "created_at": "2026-06-16T05:21:42+00:00"
+  "created_at": "2026-06-19T02:29:10+00:00"
 }

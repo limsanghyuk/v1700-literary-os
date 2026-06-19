@@ -40,8 +40,8 @@
         "critic:emotion_calibration_audit"
       ],
       "llm_boundary_level": "LLM-0",
-      "started_at": "2026-06-16T09:15:57+00:00",
-      "ended_at": "2026-06-16T09:15:57+00:00",
+      "started_at": "2026-06-19T02:29:10+00:00",
+      "ended_at": "2026-06-19T02:29:10+00:00",
       "session_status": "LOCKED_FOR_REVIEW"
     },
     "learnable_critic_explanation_record": {

@@ -229,3 +229,34 @@ experiment_started
 ## Next Step After This Plan
 
 Implement the package and preflight runner exactly within this scope.
+
+## 2026-06-19 Local Codex Hardening Update
+
+The first implementation pass is now complete as a preflight-only boundary. The generation context packet now carries concrete `metadata_refs` and `proof_packet_refs` with SHA256 digests, including:
+
+```text
+corpus_absorption_report
+corpus_formula_bridge_report
+formula_signal_store_report
+local_corpus_db_survey_report
+page18_readiness_precheck
+page18_policy_review_warning_decision
+page18_opening_gate_checklist
+value_proof_guidance_report
+value_proof_preregistration_report
+value_proof_blind_evaluator_report
+stage242_release_gate_report
+release_gate_report
+```
+
+The boundary remains preflight-only:
+
+```text
+provider generation: false
+output capture started: false
+Page18 runtime opened: false
+Stage243 created: false
+runtime training: false
+canonical mutation: false
+raw corpus prompt export: false
+```

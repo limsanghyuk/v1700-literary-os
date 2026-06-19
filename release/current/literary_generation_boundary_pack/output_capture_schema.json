@@ -1,10 +1,10 @@
 {
   "schema_id": "page18-output-capture-schema:10부:preflight",
   "work_id": "10부",
-  "capture_started": false,
+  "output_capture_started": false,
   "capture_allowed": false,
   "capture_path_policy": "disabled_until_schema_freeze",
-  "hash_required": true,
+  "generated_output_hash_required": true,
   "canonical_mutation_allowed": false,
   "provider_generation_allowed": false
 }

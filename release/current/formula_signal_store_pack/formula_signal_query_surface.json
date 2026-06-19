@@ -20,8 +20,10 @@
     "18부",
     "19부",
     "1부",
+    "1프로의어떤것_01",
     "20부",
     "2부",
+    "38사기동대_38",
     "3부",
     "4부",
     "5부",
@@ -29,11 +31,9 @@
     "7부",
     "8부",
     "9부",
-    "ing",
-    "가족의탄생",
-    "각설탕",
-    "간신",
-    "감시자들"
+    "W_01",
+    "W_02",
+    "W_03"
   ],
   "formula_groups": [
     "Emotional Momentum",
@@ -76,7 +76,7 @@
         "critic_mapping_ref": "critic:narrative_state_tensor",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
       },
       {
@@ -105,7 +105,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -134,7 +134,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       }
     ],
@@ -165,7 +165,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -194,7 +194,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -223,7 +223,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -252,7 +252,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -281,7 +281,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       }
     ],
@@ -312,7 +312,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -341,7 +341,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -370,7 +370,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -399,7 +399,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -428,7 +428,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       }
     ],
@@ -462,7 +462,7 @@
         "critic_mapping_ref": "critic:narrative_state_tensor",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
       },
       {
@@ -491,7 +491,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -520,7 +520,7 @@
         "critic_mapping_ref": "critic:retrieval_grounding",
         "value_proof_mapping_ref": "value_proof:retrieval_context_panel",
         "writer_ide_panel_ref": "writer_ide:left_panel:corpus_reference",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       },
       {
@@ -552,7 +552,7 @@
         "critic_mapping_ref": "critic:narrative_state_tensor",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:narrative_state_tensor",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_VALUE_PROOF_PREREGISTRATION"
       },
       {
@@ -581,7 +581,7 @@
         "critic_mapping_ref": "critic:emotion",
         "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
         "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
-        "created_at": "2026-06-16T04:55:27+00:00",
+        "created_at": "2026-06-19T02:29:08+00:00",
         "review_status": "VALID_FOR_UI_WIRING"
       }
     ]

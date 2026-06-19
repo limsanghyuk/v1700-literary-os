@@ -4,5 +4,5 @@
   "rollback_target_state_id": "coefficient-state:emotion:before",
   "rollback_reason": "Candidate coefficient remains advisory until human approval.",
   "rollback_status": "READY",
-  "performed_at": "2026-06-16T05:21:42+00:00"
+  "performed_at": "2026-06-19T02:29:10+00:00"
 }

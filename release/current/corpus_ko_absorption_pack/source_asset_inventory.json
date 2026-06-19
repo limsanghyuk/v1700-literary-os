@@ -35,8 +35,8 @@
       "relative_path": "parse_stats.json",
       "asset_kind": "parse_statistics",
       "extension": ".json",
-      "size_bytes": 17774,
-      "sha256": "06be5a0dc5a0c5836533a012775f0ae4d3a60032f274fe38954584d3df887307",
+      "size_bytes": 72022,
+      "sha256": "ce492e1e046e88641dbfae8f32b023a93811d47ac41824213bae10f73969d63d",
       "rights_status": "user_provided_structured_analysis_db",
       "access_policy": "metadata_only"
     },
@@ -45,8 +45,8 @@
       "relative_path": "nkg_summary.json",
       "asset_kind": "graph_summary",
       "extension": ".json",
-      "size_bytes": 173,
-      "sha256": "88be8af83398d4afafae008eae8d284e2fcda8f9c78aa7d71a5f1dfe4de2c55c",
+      "size_bytes": 45743,
+      "sha256": "febfc80e4d77456e8bbe274d6dba47ba243b2961d4be4a3b5d7af1f9c654b8f7",
       "rights_status": "user_provided_structured_analysis_db",
       "access_policy": "metadata_only"
     },
@@ -55,18 +55,8 @@
       "relative_path": "nkg.json",
       "asset_kind": "graph_summary",
       "extension": ".json",
-      "size_bytes": 211900,
-      "sha256": "a25c27063aeab96f7bb95abdebb116c23b9ff81fc122535724293120824ec83b",
-      "rights_status": "user_provided_structured_analysis_db",
-      "access_policy": "metadata_only"
-    },
-    {
-      "asset_id": "asset:8ee0ebf3fb9a",
-      "relative_path": "chroma_export.tar.gz",
-      "asset_kind": "vector_export_archive",
-      "extension": ".gz",
-      "size_bytes": 241594368,
-      "sha256": "7a6354f958ce3557e16ed6ea01adc8cb3eaecd5c632b618e77c62df2def6ec02",
+      "size_bytes": 688761,
+      "sha256": "71c225af68ec1d4842fa3fff5f3f50c1f1d45959caea60b5dc8beef83a3cee73",
       "rights_status": "user_provided_structured_analysis_db",
       "access_policy": "metadata_only"
     },

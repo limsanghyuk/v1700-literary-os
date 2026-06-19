@@ -30,7 +30,13 @@ def run_page18_generation_boundary_preflight(
     work_id = _resolve_work_id(readiness_report)
     created_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    context_packet = build_generation_context_packet(work_id)
+    metadata_refs = _build_metadata_refs(repo_root)
+    proof_packet_refs = _build_proof_packet_refs(repo_root, readiness_report)
+    context_packet = build_generation_context_packet(
+        work_id,
+        metadata_refs=metadata_refs,
+        proof_packet_refs=proof_packet_refs,
+    )
     provider_policy = _build_provider_execution_policy(work_id)
     output_schema = build_output_capture_schema(work_id)
     mutation_blocker = build_canonical_mutation_blocker(work_id)
@@ -102,6 +108,53 @@ def _resolve_work_id(readiness_report: dict[str, Any]) -> str:
     if paths:
         return "10부"
     return "10부"
+
+
+def _build_metadata_refs(repo_root: Path) -> list[dict[str, Any]]:
+    candidates = [
+        ("corpus_absorption_report", "release/current/corpus_ko_absorption_pack/corpus_absorption_report.json"),
+        ("corpus_formula_bridge_report", "release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json"),
+        ("formula_signal_store_report", "release/current/formula_signal_store_pack/formula_signal_store_report.json"),
+        ("local_corpus_db_survey_report", "release/current/local_corpus_db_survey_report.json"),
+        ("narrative_corpus_source_policy", "docs/policies/narrative_corpus_source_policy.md"),
+        ("corpus_formula_signal_bridge_blueprint", "docs/architecture/corpus_formula_signal_bridge_blueprint.md"),
+    ]
+    return _build_existing_refs(repo_root, candidates, ref_class="metadata")
+
+
+def _build_proof_packet_refs(repo_root: Path, readiness_report: dict[str, Any]) -> list[dict[str, Any]]:
+    paths = readiness_report.get("paths", {}) if isinstance(readiness_report, dict) else {}
+    candidates = [
+        ("page18_readiness_precheck", "release/current/page18_readiness_precheck_report.json"),
+        ("page18_policy_review_warning_decision", "release/current/page18_policy_review_warning_decision.json"),
+        ("page18_opening_gate_checklist", "release/current/page18_opening_gate_checklist.json"),
+        ("value_proof_guidance_report", paths.get("value_proof_guidance_report", "")),
+        ("value_proof_preregistration_report", paths.get("value_proof_preregistration_report", "")),
+        ("value_proof_blind_evaluator_report", paths.get("value_proof_blind_evaluator_report", "")),
+        ("stage242_release_gate_report", "release/current/stage242_release_gate_report.json"),
+        ("release_gate_report", "release/current/release_gate_report.json"),
+    ]
+    return _build_existing_refs(repo_root, candidates, ref_class="proof")
+
+
+def _build_existing_refs(repo_root: Path, candidates: list[tuple[str, str]], *, ref_class: str) -> list[dict[str, Any]]:
+    refs: list[dict[str, Any]] = []
+    for ref_id, relative_path in candidates:
+        if not relative_path:
+            continue
+        path = repo_root / relative_path
+        if not path.exists() or not path.is_file():
+            continue
+        refs.append(
+            {
+                "ref_id": ref_id,
+                "ref_class": ref_class,
+                "path": relative_path,
+                "sha256": _sha256(path),
+                "raw_text_exported": False,
+            }
+        )
+    return refs
 
 
 def _build_literary_generation_request(
@@ -185,6 +238,8 @@ def _build_boundary_report(
         "status": validation["status"],
         "request_hash": request.get("request_hash", ""),
         "context_packet_id": context_packet.get("context_packet_id", ""),
+        "metadata_ref_count": len(context_packet.get("metadata_refs", [])),
+        "proof_packet_ref_count": len(context_packet.get("proof_packet_refs", [])),
         "constraint_packet_hash": constraint_packet.get("constraint_packet_hash", ""),
         "provider_policy_hash": provider_policy.get("policy_hash", ""),
         "output_schema_id": output_schema.get("schema_id", ""),
@@ -233,6 +288,10 @@ def _validate_boundary(
         issues.append("canonical_mutation_allowed")
     if context_packet.get("source_text_allowed") is not False:
         issues.append("source_text_allowed")
+    if not context_packet.get("metadata_refs"):
+        issues.append("metadata_refs_missing")
+    if not context_packet.get("proof_packet_refs"):
+        issues.append("proof_packet_refs_missing")
     forbidden_refs = set(request.get("forbidden_context_refs", []))
     if "source_text_payload" not in forbidden_refs:
         issues.append("source_text_payload_not_forbidden")
@@ -244,6 +303,14 @@ def _validate_boundary(
 def _stable_hash(payload: dict[str, Any]) -> str:
     serialized = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def _sha256(path: Path) -> str:
+    hasher = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
 
 
 def _load_json(path: Path) -> dict[str, Any] | None:
