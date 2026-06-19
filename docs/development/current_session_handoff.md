@@ -13,6 +13,7 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 
 - local DB survey outputs generated as repo evidence without raw text export
 - latest local `corpus_ko` DB surveyed from `C:\AI_Codex\codex-work\gpt\db\corpus_ko`
+- Google Drive corpus/scripts metadata-only registry generated; no Drive file contents, raw corpus text, scripts bodies, credentials, or protected attachment contents were exported
 - `corpus_absorption` metadata-only canonical corpus pack regenerated
 - `corpus_formula_bridge` advisory formula signal pack regenerated
 - `formula_signal_store` query surface regenerated
@@ -40,10 +41,12 @@ Build a V1700-ready metadata-only corpus layer from the local `corpus_ko` worksp
 - `docs/development/codex_web_local_gitnexus_evidence_protocol_report.md`
 - `docs/development/chatgpt_project_corpus_data_handoff.md`
 - `docs/development/local_corpus_db_latest_survey_report.md`
+- `docs/development/drive_corpus_scripts_registry_report.md`
 - `docs/development/value_proof_local_execution_handoff.md`
 - `docs/development/page18_readiness_precheck_report.md`
 - `docs/development/page18_policy_review_warning_decision.md`
 - `release/current/local_corpus_db_survey_report.json`
+- `release/current/drive_corpus_scripts_registry.json`
 - `release/current/corpus_ko_absorption_pack/corpus_absorption_report.json`
 - `release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json`
 - `release/current/formula_signal_store_pack/formula_signal_store_report.json`
@@ -103,6 +106,9 @@ Absorbed canonical work count: 2040
 Formula signal count: 6120
 Page18 metadata refs: 6
 Page18 proof packet refs: 8
+Drive corpus/scripts archive confirmed: false
+Drive registry status: pass_with_warnings
+Drive registry content policy: metadata_only
 ```
 
 ## Next Recommended Step
@@ -113,7 +119,8 @@ Continue from `page18_boundary_preflight_pass` into:
 2. decide the next hardening unit before any runtime opening
 3. preserve the no-provider-generation and no-Stage243 boundary until explicitly approved
 4. consider a later encoding-normalization pass for legacy mojibake work identifiers
-5. optional CI observation after PR update
+5. if the intended Drive archive exists, inspect it by exact Drive URL or title fragment at metadata level first
+6. optional CI observation after PR update
 
 ## Rule
 

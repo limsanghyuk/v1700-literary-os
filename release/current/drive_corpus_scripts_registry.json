@@ -1,0 +1,218 @@
+{
+  "schema": "v1700.drive_corpus_scripts_registry.v1",
+  "created_at": "2026-06-19",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "repository": "limsanghyuk/v1700-literary-os",
+  "status": "pass_with_warnings",
+  "purpose": "Record metadata-only Google Drive corpus/scripts discovery so web planning can distinguish confirmed local corpus DB evidence from Drive-side archive or folder candidates.",
+  "safety_policy": {
+    "raw_drive_content_downloaded": false,
+    "raw_corpus_text_exported": false,
+    "security_file_content_exported": false,
+    "registry_content": "metadata_only",
+    "notes": [
+      "Drive file and folder content was not fetched.",
+      "The registry stores candidate titles, MIME types, sizes, timestamps, folder relationships, and discovery decisions only.",
+      "No corpus prose, script body, credential material, or protected attachment content is included."
+    ]
+  },
+  "archive_discovery": {
+    "decision": "no_confirmed_raw_corpus_or_scripts_archive",
+    "raw_archive_mime_candidates_count": 0,
+    "raw_archive_mime_query": "mimeType != folder AND zip/tar/gzip/7z/rar MIME candidates",
+    "name_extension_queries": [
+      ".zip",
+      ".tar",
+      ".gz",
+      ".7z",
+      ".rar"
+    ],
+    "name_extension_result_summary": "The .zip search returned Google Docs sidecars such as .zip.sha256, .zip.filelist, and .zip.sha256sums. The .tar/.gz/.7z/.rar searches returned no confirmed raw archive candidates.",
+    "warning": "A differently named archive could still exist outside the searched result window. A full paginated Drive inventory or exact Drive URL would be required to prove absence."
+  },
+  "golden_corpus_registry": {
+    "decision": "folder_candidates_found_but_currently_empty_below_node2_rewrite",
+    "folders": [
+      {
+        "title": "golden_corpus",
+        "drive_id": "1fWwMMOqEbVm1SWYZncdejCi6PPumni6q",
+        "mime_type": "application/vnd.google-apps.folder",
+        "created_time": "2026-05-12T06:38:39.017Z",
+        "parent": {
+          "title": "data",
+          "drive_id": "1k5rGsKbk1ySWztlhqeF5T3zfRRTmanhu"
+        },
+        "observed_child_folders": [
+          {
+            "title": "node2_rewrite",
+            "drive_id": "1QYlAvtCDqj_wA4Y79QcuRp1STUVeQf7Z",
+            "created_time": "2026-05-12T06:39:09.159Z",
+            "listed_child_count": 0
+          }
+        ]
+      },
+      {
+        "title": "golden_corpus",
+        "drive_id": "1H2Vdaks1BIndPZyCUS6wBNreSEM75cGH",
+        "mime_type": "application/vnd.google-apps.folder",
+        "created_time": "2026-05-12T06:38:02.944Z",
+        "parent": {
+          "title": "data",
+          "drive_id": "15MZW5DqxpJ0iBS_0QyUOl1oHIddIad_E"
+        },
+        "observed_child_folders": [
+          {
+            "title": "node2_rewrite",
+            "drive_id": "1sO9lt5Vpb-xJDX-hBm08Ad26Da0Kprpj",
+            "created_time": "2026-05-12T06:38:44.039Z",
+            "listed_child_count": 0
+          }
+        ]
+      }
+    ],
+    "related_docs": [
+      {
+        "title": "V1650_STAGE25_8_GOLDEN_CORPUS_LONG_SEASON_REGRESSION.md",
+        "drive_id": "1t23wH8iIj6ojF9CZWBhPQhtTebnBikokccZhQ7dLzEg",
+        "mime_type": "application/vnd.google-apps.document",
+        "size": "1676",
+        "created_time": "2026-05-12T06:54:19.980Z"
+      },
+      {
+        "title": "V1650_STAGE25_8_GOLDEN_CORPUS_LONG_SEASON_REGRESSION.md",
+        "drive_id": "1nhy9cpGdlsXKJE62LEL6yr8CWqUEa4ETCU-QYWV58NU",
+        "mime_type": "application/vnd.google-apps.document",
+        "size": "1677",
+        "created_time": "2026-05-12T06:49:06.458Z"
+      }
+    ]
+  },
+  "scripts_registry": {
+    "decision": "scripts_folder_candidates_found_but_not_confirmed_as_corpus_scripts_archive",
+    "inspected_folders": [
+      {
+        "title": "scripts",
+        "drive_id": "1mhZAguGv4a0Bje87U8cXTBEqRFmxx8nw",
+        "created_time": "2026-05-12T06:39:57.584Z",
+        "parent": {
+          "title": "zotero",
+          "drive_id": "123jRCs5p52wOxp4kZpzCfY1OuXg-fadw"
+        },
+        "listed_children": [
+          {
+            "title": "zotero.py",
+            "mime_type": "text/x-python",
+            "size": "29806",
+            "created_time": "2026-05-12T07:02:05.055Z"
+          }
+        ]
+      },
+      {
+        "title": "scripts",
+        "drive_id": "12kC5YMlrHn9jJ9PGIhM8AvElvOJE6ZxE",
+        "created_time": "2026-05-12T06:39:48.461Z",
+        "parent": {
+          "title": "brainstorming",
+          "drive_id": "1bwcPdZkAhtkuPnF08oSNLloHOxFdcpug"
+        },
+        "listed_children": [
+          {
+            "title": "frame-template",
+            "mime_type": "application/vnd.google-apps.document",
+            "size": "1056"
+          },
+          {
+            "title": "server.cjs",
+            "mime_type": "application/octet-stream",
+            "size": "11218"
+          },
+          {
+            "title": "start-server.sh",
+            "mime_type": "text/x-sh",
+            "size": "4606"
+          },
+          {
+            "title": "helper.js",
+            "mime_type": "text/javascript",
+            "size": "2707"
+          },
+          {
+            "title": "stop-server.sh",
+            "mime_type": "text/x-sh",
+            "size": "1314"
+          }
+        ]
+      },
+      {
+        "title": "scripts",
+        "drive_id": "1Hq3PW8n-txHSQCZ40vUJWBiKWqZj8wJM",
+        "created_time": "2026-05-12T06:39:46.462Z",
+        "parent": {
+          "title": "sentry",
+          "drive_id": "19rcAGNmtgC2CXIBxsFqXV2FRD9ZR6fH3"
+        },
+        "listed_children": [
+          {
+            "title": "sentry_api.py",
+            "mime_type": "text/x-python",
+            "size": "7855",
+            "created_time": "2026-05-12T07:00:53.908Z"
+          }
+        ]
+      },
+      {
+        "title": "scripts",
+        "drive_id": "1b1O5-bYLC31pVbCCT78jJqvkmCJEd0oN",
+        "created_time": "2026-05-12T06:39:46.449Z",
+        "parent": {
+          "title": "android-emulator-qa",
+          "drive_id": "1F1qHCmSv3XvG1kQ4kSyTaBlwMb62uGgU"
+        },
+        "listed_children": [
+          {
+            "title": "ui_pick.py",
+            "mime_type": "text/x-python",
+            "size": "1865",
+            "created_time": "2026-05-12T07:00:53.866Z"
+          },
+          {
+            "title": "ui_tree_summarize.py",
+            "mime_type": "text/x-python",
+            "size": "3318",
+            "created_time": "2026-05-12T07:00:53.875Z"
+          }
+        ]
+      }
+    ],
+    "uninspected_top_search_folder_ids": [
+      "1sRYDR2sOeGi7vi2lAdRF5p8QgMfqpMQq",
+      "1YN900j3vfHYvpbXWSYHID_46ZGCGsmSL",
+      "1r9XM2PWXvsqz_g-tkBQkVX-gHqU7YzhF",
+      "1fei5LpbVLtVoFZSRroj3rZcSifsq5dWg",
+      "1aTIkUDU1aoZpxKW5Nrjl5YkswRf-ZjpP",
+      "1vKSkxa1ml90gyMnec9CghbqFe32IvItA",
+      "1ecpFF5C8m5UxmAIUoXsaiqJjjEr2NT_g",
+      "1Q6SRFoZLUhlnvcrYjKE_cmW7SPZGkLgK",
+      "1dhac3n299Pu-kFHRq6EzBa7kYtUSldO3",
+      "1QoZGUcvsb1wQtuTStX7DDxThCV41zxrK",
+      "17bK_VO_7hJwVNpTjRCKEfz8tQfFvvapQ",
+      "1zoQhT5YjGGcwSfvwur9hAPtE6_99M7zW",
+      "1gfe5HMfq8NgdVG5rp_Bs-uCQUFCavYKQ",
+      "1gL8cY_pVyZUOdcEHswP-AmTN-2LoEXZk"
+    ]
+  },
+  "hub_integration_decision": {
+    "selected_path": "option_2_drive_corpus_scripts_registry",
+    "reason": "No raw corpus/scripts archive was confirmed by MIME or extension search. The safe actionable artifact is a metadata-only Drive registry that lets the web project reason about Drive candidates without exposing protected file contents.",
+    "current_authority_relationship": [
+      "Local corpus DB under C:\\AI_Codex\\codex-work\\gpt\\db\\corpus_ko remains the current generated evidence source.",
+      "Drive registry is a discovery and planning layer, not a replacement for local generated corpus evidence.",
+      "A future exact Drive archive URL or full paginated inventory may upgrade this registry."
+    ]
+  },
+  "recommended_next_actions": [
+    "If the intended archive exists, provide its exact Drive URL or title fragment so local Codex can inspect metadata without content download.",
+    "If no archive is required, continue using the local corpus_ko generated packs as evidence and treat this Drive registry as a candidate map.",
+    "Before any Drive corpus content ingestion, create an explicit metadata-only import plan and rights/safety review."
+  ]
+}
