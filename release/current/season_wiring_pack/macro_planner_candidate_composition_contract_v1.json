@@ -1,0 +1,391 @@
+{
+  "document_type": "macro_planner_candidate_composition_contract",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "authority_scope": "Evaluation-Aligned Macro Composition",
+  "purpose": "Convert Macro Planner evaluation dimensions into generation-time composition obligations so that candidate structures are built to satisfy the same standards used for evaluation.",
+  "core_principle": "Evaluation criteria must not remain only after-the-fact scoring rules. They must become forward construction constraints for season, episode, scene, causality, payoff, character, relationship, conflict, hook, and rhythm design.",
+  "work_division": {
+    "performed_by": "ChatGPT",
+    "execution_location": "remote_github",
+    "codex_local_required": false,
+    "reason": "This is architecture/schema/design work based on existing metadata-only authority and does not require local filesystem scan."
+  },
+  "input_authority": {
+    "local_cleaned_seqcard_v4": {
+      "local_hub_verified": true,
+      "remote_github_verified_for_cleaned_snapshot": false,
+      "seqcard_records": 37166,
+      "linkage_v4_exact_episode": 456,
+      "linkage_v4_unmatched": 120,
+      "schema_registry": "2.1-stage243-v4"
+    },
+    "remote_source_seqcard_v4": {
+      "remote_github_verified": true,
+      "seqcard_records": 37800,
+      "source_type": "uploaded_zip_aggregate_manifest"
+    }
+  },
+  "evaluation_to_composition_map": [
+    {
+      "evaluation_dimension": "season_goal_clarity",
+      "question": "시즌 목표가 명확한가",
+      "constructor": "SeasonGoalConstructor",
+      "required_output": "SeasonGoalSpec",
+      "must_define": [
+        "season_dramatic_question",
+        "central_conflict_promise",
+        "theme_statement",
+        "protagonist_goal",
+        "antagonistic_force",
+        "season_end_transformation"
+      ],
+      "hard_rule_links": [
+        "missing_season_goal",
+        "missing_inciting_force"
+      ]
+    },
+    {
+      "evaluation_dimension": "episode_arc_coherence",
+      "question": "회차 구조가 이어지는가",
+      "constructor": "EpisodeArcConstructor",
+      "required_output": "EpisodeArcChain",
+      "must_define": [
+        "episode_goal",
+        "episode_turn",
+        "episode_cost",
+        "incoming_state",
+        "outgoing_state",
+        "dependency_from_previous_episode",
+        "setup_for_next_episode"
+      ],
+      "hard_rule_links": [
+        "impossible_episode_order",
+        "midpoint_missing",
+        "crisis_missing",
+        "climax_missing"
+      ]
+    },
+    {
+      "evaluation_dimension": "scene_grid_necessity",
+      "question": "장면들이 꼭 필요한가",
+      "constructor": "SceneGridConstructor",
+      "required_output": "SceneFunctionGrid",
+      "must_define": [
+        "scene_function_core",
+        "scene_function_core2",
+        "scene_payload",
+        "state_change",
+        "causal_input",
+        "causal_output",
+        "cut_reason_if_removed"
+      ],
+      "hard_rule_links": [
+        "scene_necessity_gap",
+        "redundant_scene_cluster",
+        "scene_function_distribution_collapse"
+      ]
+    },
+    {
+      "evaluation_dimension": "causal_spine_integrity",
+      "question": "인과관계가 맞는가",
+      "constructor": "CausalSpineBuilder",
+      "required_output": "CausalSpineGraph",
+      "must_define": [
+        "cause_node",
+        "effect_node",
+        "because_therefore_link",
+        "decision_pressure",
+        "consequence",
+        "contradiction_check"
+      ],
+      "hard_rule_links": [
+        "causality_contradiction",
+        "causal_spine_break",
+        "stakes_regression_without_reason"
+      ]
+    },
+    {
+      "evaluation_dimension": "plant_payoff_integrity",
+      "question": "복선과 회수가 맞는가",
+      "constructor": "PlantPayoffLedger",
+      "required_output": "PlantPayoffLedger",
+      "must_define": [
+        "plant_id",
+        "plant_episode",
+        "plant_scene",
+        "plant_function",
+        "payoff_episode",
+        "payoff_scene",
+        "payoff_function",
+        "payoff_effect",
+        "status"
+      ],
+      "hard_rule_links": [
+        "orphan_plant_without_payoff",
+        "payoff_without_plant",
+        "unmotivated_reversal"
+      ]
+    },
+    {
+      "evaluation_dimension": "character_arc_continuity",
+      "question": "인물 변화가 자연스러운가",
+      "constructor": "CharacterArcTrajectoryBuilder",
+      "required_output": "CharacterArcTrajectory",
+      "must_define": [
+        "initial_belief",
+        "target_belief",
+        "desire_shift",
+        "pressure_events",
+        "arc_step_by_episode",
+        "trigger_for_each_change",
+        "cost_of_change"
+      ],
+      "hard_rule_links": [
+        "character_arc_discontinuity",
+        "belief_change_without_event",
+        "status_change_without_cause",
+        "agency_collapse_without_design_reason"
+      ]
+    },
+    {
+      "evaluation_dimension": "relationship_arc_continuity",
+      "question": "관계 변화가 자연스러운가",
+      "constructor": "RelationshipArcMatrix",
+      "required_output": "RelationshipArcMatrix",
+      "must_define": [
+        "relationship_pair",
+        "initial_relation_state",
+        "trust_power_dependency_values",
+        "turning_events",
+        "betrayal_or_bond_events",
+        "episode_by_episode_relation_delta"
+      ],
+      "hard_rule_links": [
+        "relationship_arc_discontinuity"
+      ]
+    },
+    {
+      "evaluation_dimension": "conflict_escalation",
+      "question": "갈등이 상승하는가",
+      "constructor": "ConflictEscalationScheduler",
+      "required_output": "ConflictEscalationCurve",
+      "must_define": [
+        "conflict_layer",
+        "pressure_level_by_episode",
+        "reversal_points",
+        "loss_points",
+        "stakes_increase",
+        "irreversibility_markers"
+      ],
+      "hard_rule_links": [
+        "stakes_regression_without_reason",
+        "crisis_missing",
+        "climax_missing"
+      ]
+    },
+    {
+      "evaluation_dimension": "hook_sequence_quality",
+      "question": "회차 끝 후킹이 있는가",
+      "constructor": "EpisodeHookScheduler",
+      "required_output": "EpisodeHookSchedule",
+      "must_define": [
+        "hook_type",
+        "unresolved_question",
+        "new_information",
+        "risk_or_desire_shift",
+        "next_episode_pull",
+        "hook_payoff_plan"
+      ],
+      "hard_rule_links": [
+        "episode_hook_absent_over_threshold",
+        "payoff_without_plant"
+      ]
+    },
+    {
+      "evaluation_dimension": "genre_rhythm_balance",
+      "question": "장르 리듬이 적절한가",
+      "constructor": "GenreRhythmController",
+      "required_output": "GenreRhythmPlan",
+      "must_define": [
+        "genre_mode",
+        "rhythm_targets_by_episode",
+        "scene_function_distribution_targets",
+        "relief_after_intensity",
+        "romance_or_humor_or_mystery_balance",
+        "fatigue_prevention_rule"
+      ],
+      "hard_rule_links": [
+        "genre_rhythm_flatline",
+        "scene_function_distribution_collapse"
+      ]
+    }
+  ],
+  "composition_pipeline": [
+    {
+      "order": 1,
+      "step": "ThemeGenreSeasonGoalInput",
+      "output": "InputBrief",
+      "description": "Accept theme, genre, format, season length, and target dramatic promise."
+    },
+    {
+      "order": 2,
+      "step": "SeasonGoalConstructor",
+      "output": "SeasonGoalSpec",
+      "description": "Create the controlling dramatic question, theme, central conflict, and season-end transformation."
+    },
+    {
+      "order": 3,
+      "step": "CausalSpineBuilder",
+      "output": "CausalSpineGraph",
+      "description": "Build the because-therefore chain before episode and scene expansion."
+    },
+    {
+      "order": 4,
+      "step": "CharacterArcTrajectoryBuilder",
+      "output": "CharacterArcTrajectory",
+      "description": "Define character belief/desire/status changes and required triggering events."
+    },
+    {
+      "order": 5,
+      "step": "RelationshipArcMatrix",
+      "output": "RelationshipArcMatrix",
+      "description": "Define trust, power, dependency, betrayal, bond, and alliance movement."
+    },
+    {
+      "order": 6,
+      "step": "PlantPayoffLedger",
+      "output": "PlantPayoffLedger",
+      "description": "Create plant/payoff commitments before detailed episode writing."
+    },
+    {
+      "order": 7,
+      "step": "ConflictEscalationScheduler",
+      "output": "ConflictEscalationCurve",
+      "description": "Schedule escalation, reversals, losses, crisis, climax, and irreversibility."
+    },
+    {
+      "order": 8,
+      "step": "EpisodeArcConstructor",
+      "output": "EpisodeArcChain",
+      "description": "Build each episode as a state transition linked to prior and next episodes."
+    },
+    {
+      "order": 9,
+      "step": "SceneGridConstructor",
+      "output": "SceneFunctionGrid",
+      "description": "Create scene-level function grid using core/core2 taxonomy and necessity payload."
+    },
+    {
+      "order": 10,
+      "step": "EpisodeHookScheduler",
+      "output": "EpisodeHookSchedule",
+      "description": "Attach hook obligations and payoff plans to episode endings."
+    },
+    {
+      "order": 11,
+      "step": "GenreRhythmController",
+      "output": "GenreRhythmPlan",
+      "description": "Balance intensity, relief, romance, mystery, humor, action, and fatigue prevention."
+    },
+    {
+      "order": 12,
+      "step": "HardRuleSelfChecker",
+      "output": "HardRuleSelfCheckReport",
+      "description": "Run the same hard-rule gate used by evaluation before candidate packaging."
+    },
+    {
+      "order": 13,
+      "step": "ScorecardPreflight",
+      "output": "ScorecardPreflightReport",
+      "description": "Estimate scorecard readiness only after hard-rule pass."
+    },
+    {
+      "order": 14,
+      "step": "RevisionPlanner",
+      "output": "RevisionPlan",
+      "description": "Create repair actions for hard-rule failures, weak dimensions, or warnings."
+    },
+    {
+      "order": 15,
+      "step": "CandidatePackageEmitter",
+      "output": "MacroPlannerCandidatePackage",
+      "description": "Emit a fixture-only candidate package for Gate A review."
+    }
+  ],
+  "runtime_boundary": {
+    "actual_prose_generation_allowed": false,
+    "page18_runtime_opened": false,
+    "provider_call_count": 0,
+    "fixture_only": true,
+    "allowed_outputs": [
+      "SeasonGoalSpec",
+      "CausalSpineGraph",
+      "CharacterArcTrajectory",
+      "RelationshipArcMatrix",
+      "PlantPayoffLedger",
+      "ConflictEscalationCurve",
+      "EpisodeArcChain",
+      "SceneFunctionGrid",
+      "EpisodeHookSchedule",
+      "GenreRhythmPlan",
+      "HardRuleSelfCheckReport",
+      "ScorecardPreflightReport",
+      "RevisionPlan",
+      "MacroPlannerCandidatePackage"
+    ],
+    "blocked_outputs": [
+      "raw_script_text",
+      "verbatim_corpus_text",
+      "live_scene_prose",
+      "provider_generated_draft",
+      "canonical_memory_mutation",
+      "runtime_training_update",
+      "promotion_claim"
+    ]
+  },
+  "learning_feedback_policy": {
+    "principle": "When tests reveal a structure that outperforms older formulas, the learned rule may be promoted into construction constraints only after metadata-only evidence, hard-rule validation, heldout testing, and authority review.",
+    "allowed_learning_signal": [
+      "aggregate scene-function distribution",
+      "core/core2 pair statistics",
+      "plant/payoff integrity outcomes",
+      "hard-rule failure patterns",
+      "scorecard dimension deltas",
+      "revision success rates",
+      "heldout structural pass/fail"
+    ],
+    "blocked_learning_signal": [
+      "raw prose memorization",
+      "verbatim original script extraction",
+      "unreviewed provider output",
+      "private token or model artifact",
+      "canonical mutation without approval"
+    ]
+  },
+  "next_required_artifacts": [
+    "composition_output_schema_v1.json",
+    "composition_self_check_fixture_v1.json",
+    "macro_planner_candidate_package_schema_v1.json",
+    "stage243_roadmap_reprioritization_20260703.md"
+  ],
+  "promotion_interpretation": {
+    "composition_contract_is_not_promotion": true,
+    "candidate_package_is_not_promotion": true,
+    "gate_a_review_is_not_promotion": true,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "draft_text_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "promotion_claim": false
+  }
+}
