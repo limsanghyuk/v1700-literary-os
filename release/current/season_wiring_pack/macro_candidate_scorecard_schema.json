@@ -1,0 +1,113 @@
+{
+  "document_type": "macro_candidate_scorecard_schema",
+  "version": "2.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "purpose": "Define the schema for evaluating Macro Planner Candidate fixtures after hard-rule gating.",
+  "schema_kind": "contract_schema",
+  "required_top_level_fields": [
+    "candidate_id",
+    "candidate_kind",
+    "input_authority",
+    "safety",
+    "hard_rule_evaluation",
+    "weighted_metric_evaluation",
+    "final_verdict"
+  ],
+  "candidate_fields": {
+    "candidate_id": "string",
+    "candidate_kind": "season_arc | episode_arc | scene_grid | plant_payoff_chain | character_arc_trajectory | multi_candidate_package",
+    "fixture_only": "boolean",
+    "source_snapshot_reference": "seqcard_v4_cleaned_local | seqcard_v4_remote_source_manifest | synthetic_fixture",
+    "evaluation_mode": "blind_structural | heldout_structure | negative_control | regression_fixture"
+  },
+  "input_authority_fields": {
+    "local_hub_verified": "boolean",
+    "remote_github_verified": "boolean",
+    "seqcard_records_used": "integer",
+    "linkage_exact_episode": "integer | null",
+    "linkage_unmatched": "integer | null",
+    "schema_registry_version": "string | null"
+  },
+  "safety_fields": {
+    "provider_call_count": "integer",
+    "runtime_generation": "boolean",
+    "raw_text_exported": "boolean",
+    "raw_vectors_exported": "boolean",
+    "draft_text_exported": "boolean",
+    "token_exported": "boolean",
+    "adapter_weight_exported": "boolean",
+    "promotion_claim": "boolean"
+  },
+  "hard_rule_evaluation_fields": {
+    "hard_rule_pass": "boolean",
+    "safety_failures": "array",
+    "critical_failures": "array",
+    "major_failures": "array",
+    "minor_warnings": "array",
+    "cluster_policy_applied": "boolean",
+    "weighted_score_considered": "boolean",
+    "disqualification_reason": "string | null"
+  },
+  "weighted_metric_evaluation_fields": {
+    "weighted_score": "number",
+    "score_threshold": "number",
+    "dimension_scores": {
+      "season_goal_clarity": "number",
+      "episode_arc_coherence": "number",
+      "scene_grid_necessity": "number",
+      "causal_spine_integrity": "number",
+      "plant_payoff_integrity": "number",
+      "character_arc_continuity": "number",
+      "relationship_arc_continuity": "number",
+      "conflict_escalation": "number",
+      "hook_sequence_quality": "number",
+      "genre_rhythm_balance": "number"
+    },
+    "dimension_weights": {
+      "season_goal_clarity": 0.08,
+      "episode_arc_coherence": 0.12,
+      "scene_grid_necessity": 0.1,
+      "causal_spine_integrity": 0.14,
+      "plant_payoff_integrity": 0.14,
+      "character_arc_continuity": 0.12,
+      "relationship_arc_continuity": 0.08,
+      "conflict_escalation": 0.08,
+      "hook_sequence_quality": 0.07,
+      "genre_rhythm_balance": 0.07
+    }
+  },
+  "final_verdict_fields": {
+    "verdict": "pass | pass_with_warning | fail_hard_rule | fail_safety | fail_weighted_score | manual_review_required",
+    "promotion_status": "blocked | candidate_ready_for_gate_a_review | not_applicable",
+    "summary": "string",
+    "next_required_step": "string"
+  },
+  "verdict_logic": {
+    "if_safety_failures_nonempty": "fail_safety",
+    "if_critical_failures_nonempty": "fail_hard_rule",
+    "if_major_failures_count_gte_2": "fail_hard_rule",
+    "if_major_failures_count_eq_1": "manual_review_required",
+    "if_minor_warnings_count_gte_4": "manual_review_required",
+    "if_hard_rule_pass_false": "fail_hard_rule",
+    "if_weighted_score_below_threshold_after_hard_pass": "fail_weighted_score",
+    "if_hard_pass_and_score_pass_and_warnings_nonempty": "pass_with_warning",
+    "if_hard_pass_and_score_pass_and_no_warnings": "pass"
+  },
+  "promotion_interpretation": {
+    "scorecard_pass_is_not_promotion": true,
+    "scorecard_pass_can_support_gate_a_review": true,
+    "macro_planner_promotion_requires_repeated_blind_evaluation": true,
+    "full_author_promotion_requires_generation_revision_learning_loop": true
+  },
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "promotion_claim": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  }
+}
