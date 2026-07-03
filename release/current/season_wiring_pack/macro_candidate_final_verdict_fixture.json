@@ -1,0 +1,118 @@
+{
+  "document_type": "macro_candidate_final_verdict_fixture",
+  "version": "2.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "purpose": "Demonstrate how hard-rule gate results override weighted scores in Macro Planner Candidate evaluation.",
+  "fixture_only": true,
+  "provider_call_count": 0,
+  "runtime_generation": false,
+  "raw_text_exported": false,
+  "promotion_claim": false,
+  "examples": [
+    {
+      "candidate_id": "macro_candidate_negative_control_high_score_fail_001",
+      "candidate_kind": "multi_candidate_package",
+      "evaluation_mode": "negative_control",
+      "input_authority": {
+        "local_hub_verified": true,
+        "remote_github_verified": false,
+        "seqcard_records_used": 37166,
+        "linkage_exact_episode": 456,
+        "linkage_unmatched": 120,
+        "schema_registry_version": "2.1-stage243-v4"
+      },
+      "safety": {
+        "provider_call_count": 0,
+        "runtime_generation": false,
+        "raw_text_exported": false,
+        "raw_vectors_exported": false,
+        "draft_text_exported": false,
+        "token_exported": false,
+        "adapter_weight_exported": false,
+        "promotion_claim": false
+      },
+      "hard_rule_evaluation": {
+        "hard_rule_pass": false,
+        "safety_failures": [],
+        "critical_failures": [
+          "payoff_without_plant"
+        ],
+        "major_failures": [
+          "orphan_plant_without_payoff"
+        ],
+        "minor_warnings": [
+          "core_core2_pair_incoherence"
+        ],
+        "cluster_policy_applied": true,
+        "weighted_score_considered": false,
+        "disqualification_reason": "Critical payoff_without_plant failure. Weighted score must be ignored."
+      },
+      "weighted_metric_evaluation": {
+        "weighted_score": 0.84,
+        "score_threshold": 0.72,
+        "score_interpretation": "ignored_due_to_hard_rule_failure"
+      },
+      "final_verdict": {
+        "verdict": "fail_hard_rule",
+        "promotion_status": "blocked",
+        "summary": "Candidate scores above threshold but fails a critical hard rule. It is not eligible for Macro Planner evidence.",
+        "next_required_step": "Repair plant/payoff logic and rerun hard-rule evaluation before weighted scoring."
+      }
+    },
+    {
+      "candidate_id": "macro_candidate_heldout_pass_warning_001",
+      "candidate_kind": "season_arc",
+      "evaluation_mode": "heldout_structure",
+      "input_authority": {
+        "local_hub_verified": true,
+        "remote_github_verified": false,
+        "seqcard_records_used": 37166,
+        "linkage_exact_episode": 456,
+        "linkage_unmatched": 120,
+        "schema_registry_version": "2.1-stage243-v4"
+      },
+      "safety": {
+        "provider_call_count": 0,
+        "runtime_generation": false,
+        "raw_text_exported": false,
+        "raw_vectors_exported": false,
+        "draft_text_exported": false,
+        "token_exported": false,
+        "adapter_weight_exported": false,
+        "promotion_claim": false
+      },
+      "hard_rule_evaluation": {
+        "hard_rule_pass": true,
+        "safety_failures": [],
+        "critical_failures": [],
+        "major_failures": [],
+        "minor_warnings": [
+          "scene_function_distribution_collapse"
+        ],
+        "cluster_policy_applied": true,
+        "weighted_score_considered": true,
+        "disqualification_reason": null
+      },
+      "weighted_metric_evaluation": {
+        "weighted_score": 0.78,
+        "score_threshold": 0.72,
+        "score_interpretation": "considered_after_hard_rule_pass"
+      },
+      "final_verdict": {
+        "verdict": "pass_with_warning",
+        "promotion_status": "candidate_ready_for_gate_a_review",
+        "summary": "Candidate passes hard-rule gate and weighted threshold but retains a scene-function rhythm warning.",
+        "next_required_step": "Use as Gate A review input only; do not declare Macro Planner Promotion."
+      }
+    }
+  ],
+  "global_interpretation": {
+    "fixture_creation_is_not_promotion": true,
+    "pass_with_warning_is_not_promotion": true,
+    "gate_a_review_is_not_macro_planner_promotion": true,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  }
+}
