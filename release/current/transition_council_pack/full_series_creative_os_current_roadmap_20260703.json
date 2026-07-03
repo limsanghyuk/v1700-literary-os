@@ -1,0 +1,192 @@
+{
+  "document_type": "full_series_creative_os_current_roadmap",
+  "version": "1.0-20260703",
+  "created_at": "2026-07-03",
+  "status": "current_prioritized_roadmap",
+  "scope": "Stage243 and later GPT V1700 full-series creative OS development",
+  "north_star_alignment": {
+    "goal": "Autonomous long-form literary generation operating system with planning, creation, critique, revision, and measured learning loop.",
+    "full_series_target": true,
+    "detailed_prose_generation_target": true,
+    "current_stage_boundary": "Stage243 metadata-only schema/fixture/blueprint preparation"
+  },
+  "goal_layers": [
+    {
+      "layer": 1,
+      "name": "Full-Series Planning and Blueprinting",
+      "outputs": [
+        "FullSeriesArcSpec",
+        "SeasonPlan",
+        "EpisodeArcChain",
+        "EpisodePlan",
+        "SequenceBlueprint",
+        "SceneBlueprint",
+        "LLMRendererPromptPacket",
+        "RevisionInstructionPlan"
+      ]
+    },
+    {
+      "layer": 2,
+      "name": "Controlled Detailed Prose and Manuscript Generation",
+      "outputs": [
+        "DetailedSceneDraft",
+        "RevisedSceneDraft",
+        "EpisodeManuscript",
+        "FullSeasonManuscript",
+        "EvaluationReport",
+        "RevisionPlan",
+        "RegenerationPlan",
+        "LearningSignalPacket"
+      ]
+    }
+  ],
+  "priority_order": [
+    {
+      "priority": "P0",
+      "name": "Authority and Safety Split",
+      "status": "maintained",
+      "description": "Keep local hub and remote GitHub authority separated; no raw corpus, vectors, tokens, adapter weights, or provider output in hub."
+    },
+    {
+      "priority": "P1",
+      "name": "FullSeriesArcSpec / SeasonPlan schema",
+      "status": "next",
+      "description": "Define the top-level 16/24 episode arc contract before lower-level scene schemas."
+    },
+    {
+      "priority": "P2",
+      "name": "EpisodeArcChain schema",
+      "status": "pending",
+      "description": "Define episode-to-episode state transition, escalation, midpoint, crisis, climax, and resolution structure."
+    },
+    {
+      "priority": "P3",
+      "name": "SequenceBlueprint schema",
+      "status": "pending",
+      "description": "Define sequence-level dramatic purpose and scene cluster requirements."
+    },
+    {
+      "priority": "P4",
+      "name": "SceneBlueprint schema",
+      "status": "pending",
+      "description": "Define scene purpose, function, causality, plant/payoff, character/relationship delta, and renderer constraints."
+    },
+    {
+      "priority": "P5",
+      "name": "LLMRendererPromptPacket schema",
+      "status": "pending",
+      "description": "Define how blueprints become controlled prompts for later LLM prose rendering."
+    },
+    {
+      "priority": "P6",
+      "name": "FullSeasonCandidatePackage schema",
+      "status": "pending",
+      "description": "Package full series arc, episode arcs, sequence/scene blueprints, self-checks, scorecard preflight, and revision plan."
+    },
+    {
+      "priority": "P7",
+      "name": "Fixture-only Full Series Candidate Package",
+      "status": "pending",
+      "description": "Create metadata-only candidate package without provider generation or raw text."
+    },
+    {
+      "priority": "P8",
+      "name": "Hard-Rule Self-Check across full season",
+      "status": "pending",
+      "description": "Apply hard-rule gate to full series, episode chain, sequence, and scene blueprint levels."
+    },
+    {
+      "priority": "P9",
+      "name": "Scorecard Preflight",
+      "status": "pending",
+      "description": "Apply scorecard only after hard-rule pass."
+    },
+    {
+      "priority": "P10",
+      "name": "Gate A Review Packet",
+      "status": "pending",
+      "description": "Review candidate structures as Gate A evidence, not as promotion."
+    },
+    {
+      "priority": "P11",
+      "name": "Heldout / Negative-Control Evaluation",
+      "status": "pending",
+      "description": "Test candidate robustness against heldout fixtures and negative controls."
+    },
+    {
+      "priority": "P12",
+      "name": "Page18 Controlled Prose Generation Preparation",
+      "status": "later_blocked",
+      "description": "Prepare for controlled generation only after structural evidence is sufficient."
+    },
+    {
+      "priority": "P13",
+      "name": "Controlled Detailed Scene Prose Generation",
+      "status": "later_blocked",
+      "description": "Generate detailed scenes only under Page18 controlled boundary."
+    },
+    {
+      "priority": "P14",
+      "name": "Episode Manuscript Assembly",
+      "status": "later_blocked",
+      "description": "Assemble generated scenes into coherent episode manuscripts."
+    },
+    {
+      "priority": "P15",
+      "name": "Full Season Manuscript Assembly",
+      "status": "later_blocked",
+      "description": "Assemble episodes into full 16/24 episode season manuscript."
+    },
+    {
+      "priority": "P16",
+      "name": "Evaluation / Revision / Regeneration Loop",
+      "status": "later_blocked",
+      "description": "Evaluate generated output, create revision plans, regenerate, and compare improvement."
+    },
+    {
+      "priority": "P17",
+      "name": "LearningSignalPacket and measured improvement registry",
+      "status": "later_blocked",
+      "description": "Register safe measured learning signals without raw prose memorization or unapproved canonical mutation."
+    }
+  ],
+  "current_allowed_outputs": [
+    "metadata-only manifests",
+    "schema contracts",
+    "fixture-only candidate packages",
+    "blueprint contracts",
+    "prompt packet schemas",
+    "self-check reports",
+    "scorecard preflight reports",
+    "revision plans",
+    "hub authority records"
+  ],
+  "current_blocked_outputs": [
+    "actual_scene_prose",
+    "provider_generated_scene",
+    "full_episode_manuscript",
+    "full_season_manuscript",
+    "verbatim_source_text",
+    "raw_drama_script",
+    "canonical_memory_mutation",
+    "runtime_training_update",
+    "adapter_promotion",
+    "promotion_claim"
+  ],
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "draft_text_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "promotion_claim": false
+  },
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "next_required_step": "Create full_series_arc_spec_schema_v1.json and season_plan_schema_v1.json"
+}
