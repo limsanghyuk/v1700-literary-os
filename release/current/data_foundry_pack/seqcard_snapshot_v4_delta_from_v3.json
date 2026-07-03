@@ -1,0 +1,51 @@
+{
+  "document_type": "seqcard_snapshot_v4_delta_from_v3",
+  "version": "1.0",
+  "created_at": "2026-07-03",
+  "baseline_v3": {
+    "source_sha256": "be257bb255bfa3014bf2d051ab073cceff53e8fb730e27d222aebc306b311f13",
+    "seqcard_jsonl_files": 457,
+    "episode_meta_files": 457,
+    "series_count_by_filename": 22,
+    "seqcard_records": 29873
+  },
+  "current_v4": {
+    "source_sha256": "89b3ab196c363dec52621ed8129a665a9d81b14978f7eb105f037096826f70b1",
+    "seqcard_jsonl_files": 577,
+    "episode_meta_files": 577,
+    "series_count_by_filename": 29,
+    "seqcard_records": 37800
+  },
+  "delta": {
+    "seqcard_jsonl_files_added": 120,
+    "episode_meta_files_added": 120,
+    "series_added_count": 7,
+    "seqcard_records_added": 7927,
+    "record_growth_ratio": 0.2653
+  },
+  "added_series_by_filename": {
+    "W": 16,
+    "그들이사는세상": 16,
+    "밀회": 16,
+    "스카이캐슬": 20,
+    "시크릿가든": 20,
+    "스토브리그": 16,
+    "추적자": 16
+  },
+  "interpretation": {
+    "data_bridge_impact": "SeqCard v4 materially strengthens the Stage243 Data Bridge and improves macro planner prototype coverage.",
+    "prototype_threshold": "The 37,800 scene/function records fall inside the previously proposed 20,000-50,000 record macro planner prototype band.",
+    "promotion_threshold": "The 29-series / 577-episode snapshot is still below the proposed 50-100 works and 1,000-2,000 episode macro planner promotion candidate band.",
+    "promotion_effect": "No promotion claim is created by this delta. Macro Planner and Full Author remain blocked."
+  },
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "provider_called": false,
+    "runtime_generation": false,
+    "promotion_claim": false
+  }
+}
