@@ -1,0 +1,57 @@
+{
+  "task_name": "Stage243 Macro Planner Candidate Composition Contract v1",
+  "performed_by": "ChatGPT",
+  "execution_location": "remote_github",
+  "created_at": "2026-07-03",
+  "created_artifacts": [
+    "release/current/season_wiring_pack/macro_planner_candidate_composition_contract_v1.json",
+    "release/current/transition_council_pack/stage243_roadmap_reprioritization_20260703.md",
+    "release/current/transition_council_pack/chatgpt_direct_work_result_packet_composition_contract_v1_20260703.json"
+  ],
+  "updated_artifacts": [],
+  "work_method": {
+    "chatgpt_direct_work": [
+      "convert evaluation dimensions into composition obligations",
+      "define constructor sequence",
+      "define generation-time self-check policy",
+      "define learning feedback policy",
+      "reorder Stage243 roadmap priority",
+      "load artifacts to remote GitHub"
+    ],
+    "codex_local_work": [],
+    "codex_local_required": false,
+    "codex_not_required_reason": "This is architecture and schema design work and does not require local filesystem or DB validation."
+  },
+  "input_user_direction": {
+    "evaluation_must_consider_final_goal": true,
+    "composition_generation_must_be_considered_with_evaluation": true,
+    "constructor_sequence_must_be_reflected_in_planning": true,
+    "roadmap_must_be_reprioritized_if_sequence_changes": true
+  },
+  "result": {
+    "composition_contract_created": true,
+    "roadmap_reprioritized": true,
+    "gate_a_review_packet_deferred_until_after_composition_schemas": true,
+    "next_required_step": "Composition Output Schemas v1",
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "verification": {
+    "json_parse": "not_locally_executed_by_chatgpt",
+    "remote_fetch_verification": "pending_at_creation",
+    "secret_scan": "not_applicable_for_chatgpt_generated_metadata_only_text",
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "authority_status": {
+    "local_hub_verified": "not_applicable",
+    "remote_github_verified": "pending_at_creation",
+    "promotion_status": "blocked"
+  },
+  "next_required_step": "Create composition_output_schema_v1.json, composition_self_check_fixture_v1.json, and macro_planner_candidate_package_schema_v1.json"
+}
