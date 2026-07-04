@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0-stage243",
+  "authority": {
+    "artifact_kind": "FullSeasonCandidatePackage",
+    "fixture_only": true,
+    "metadata_only": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "package_identity": {
+    "candidate_package_id": "fixture_full_season_candidate_v1_20260704",
+    "series_id": "synthetic_series_fixture_v1",
+    "season_id": "synthetic_season_fixture_v1",
+    "working_title": "Metadata-Only Full Season Candidate Fixture",
+    "target_episode_count": 16,
+    "candidate_kind": "full_season_candidate_package",
+    "candidate_status": "draft_fixture"
+  },
+  "source_artifact_refs": {
+    "schema_versions": [
+      "full_series_arc_spec_schema_v1:1.0-stage243",
+      "season_plan_schema_v1:1.0-stage243",
+      "episode_arc_chain_schema_v1:1.0-stage243",
+      "sequence_blueprint_schema_v1:1.0-stage243",
+      "scene_blueprint_schema_v1:1.0-stage243",
+      "llm_renderer_prompt_packet_schema_v1:1.0-stage243",
+      "full_season_candidate_package_schema_v1:1.0-stage243"
+    ],
+    "input_authority": [
+      "release/current/transition_council_pack/full_series_creative_os_consolidated_master_plan_20260703.md",
+      "release/current/transition_council_pack/full_series_schema_foundation_v1_report_20260704.md",
+      "release/current/transition_council_pack/episode_arc_chain_schema_v1_report_20260704.md",
+      "release/current/transition_council_pack/sequence_blueprint_schema_v1_report_20260704.md",
+      "release/current/transition_council_pack/scene_blueprint_schema_v1_report_20260704.md",
+      "release/current/transition_council_pack/llm_renderer_prompt_packet_schema_v1_report_20260704.md",
+      "release/current/transition_council_pack/full_season_candidate_package_schema_v1_report_20260704.md"
+    ],
+    "source_policy": "metadata_only"
+  },
+  "included_artifact_inventory": {
+    "full_series_arc_spec_count": 1,
+    "season_plan_count": 1,
+    "episode_arc_chain_count": 1,
+    "sequence_blueprint_count": 16,
+    "scene_blueprint_count": 48,
+    "renderer_prompt_packet_count": 48
+  },
+  "full_series_arc_spec_ref": {
+    "artifact_id": "fixture_full_series_arc_spec_v1",
+    "artifact_kind": "FullSeriesArcSpec",
+    "path": "#/fixture/full_series_arc_spec_ref",
+    "schema_version": "1.0-stage243",
+    "status": "present"
+  },
+  "season_plan_ref": {
+    "artifact_id": "fixture_season_plan_v1",
+    "artifact_kind": "SeasonPlan",
+    "path": "#/fixture/season_plan_ref",
+    "schema_version": "1.0-stage243",
+    "status": "present"
+  },
+  "episode_arc_chain_ref": {
+    "artifact_id": "fixture_episode_arc_chain_v1",
+    "artifact_kind": "EpisodeArcChain",
+    "path": "#/fixture/episode_arc_chain_ref",
+    "schema_version": "1.0-stage243",
+    "status": "present"
+  },
+  "sequence_blueprint_refs": [
+    {
+      "artifact_id": "fixture_sequence_blueprint_bundle_v1",
+      "artifact_kind": "SequenceBlueprintBundle",
+      "path": "#/fixture/sequence_blueprint_refs",
+      "schema_version": "1.0-stage243",
+      "status": "present"
+    }
+  ],
+  "scene_blueprint_refs": [
+    {
+      "artifact_id": "fixture_scene_blueprint_bundle_v1",
+      "artifact_kind": "SceneBlueprintBundle",
+      "path": "#/fixture/scene_blueprint_refs",
+      "schema_version": "1.0-stage243",
+      "status": "present"
+    }
+  ],
+  "llm_renderer_prompt_packet_refs": [
+    {
+      "artifact_id": "fixture_llm_renderer_prompt_packet_bundle_v1",
+      "artifact_kind": "LLMRendererPromptPacketBundle",
+      "path": "#/fixture/llm_renderer_prompt_packet_refs",
+      "schema_version": "1.0-stage243",
+      "status": "present"
+    }
+  ],
+  "cross_level_integrity_checks": {
+    "series_to_season_integrity": {
+      "check_id": "series_to_season_integrity",
+      "status": "not_run",
+      "findings": ["P7 fixture created; local schema validation not yet executed."],
+      "blocking": false
+    },
+    "season_to_episode_integrity": {
+      "check_id": "season_to_episode_integrity",
+      "status": "not_run",
+      "findings": ["Episode chain integrity must be validated in P8/P9."],
+      "blocking": false
+    },
+    "episode_to_sequence_integrity": {
+      "check_id": "episode_to_sequence_integrity",
+      "status": "not_run",
+      "findings": ["Sequence decomposition bundle is metadata-only and pending validation."],
+      "blocking": false
+    },
+    "sequence_to_scene_integrity": {
+      "check_id": "sequence_to_scene_integrity",
+      "status": "not_run",
+      "findings": ["Scene blueprint bundle is metadata-only and pending validation."],
+      "blocking": false
+    },
+    "scene_to_renderer_packet_integrity": {
+      "check_id": "scene_to_renderer_packet_integrity",
+      "status": "not_run",
+      "findings": ["Renderer packet bundle is metadata-only and pending validation."],
+      "blocking": false
+    },
+    "plant_payoff_integrity": {
+      "check_id": "plant_payoff_integrity",
+      "status": "not_run",
+      "findings": ["Plant/payoff references are declared but not validated."],
+      "blocking": false
+    },
+    "character_arc_integrity": {
+      "check_id": "character_arc_integrity",
+      "status": "not_run",
+      "findings": ["Character arc references are declared but not validated."],
+      "blocking": false
+    },
+    "relationship_arc_integrity": {
+      "check_id": "relationship_arc_integrity",
+      "status": "not_run",
+      "findings": ["Relationship arc references are declared but not validated."],
+      "blocking": false
+    },
+    "causal_spine_integrity": {
+      "check_id": "causal_spine_integrity",
+      "status": "not_run",
+      "findings": ["Causal spine references are declared but not validated."],
+      "blocking": false
+    },
+    "hook_chain_integrity": {
+      "check_id": "hook_chain_integrity",
+      "status": "not_run",
+      "findings": ["Hook chain references are declared but not validated."],
+      "blocking": false
+    },
+    "genre_rhythm_integrity": {
+      "check_id": "genre_rhythm_integrity",
+      "status": "not_run",
+      "findings": ["Genre rhythm references are declared but not validated."],
+      "blocking": false
+    }
+  },
+  "hard_rule_gate_summary": {
+    "gate_version": "macro_planner_hard_rule_gate_v2",
+    "overall_status": "manual_review_required",
+    "critical_failures": [],
+    "major_failures": [],
+    "minor_warnings": [
+      {
+        "rule_id": "fixture_not_validated_yet",
+        "severity": "minor",
+        "scope": "package",
+        "description": "Fixture was created as metadata-only instance; formal schema validation and hard-rule execution have not yet run.",
+        "recommended_action": "Run schema validation and full-season hard-rule self-check before Gate A."
+      }
+    ],
+    "blocking_failure_count": 0,
+    "manual_review_required": true
+  },
+  "scorecard_preflight_summary": {
+    "scorecard_version": "macro_candidate_scorecard_schema_v1",
+    "weighted_score": 0,
+    "threshold": 0.75,
+    "dimension_results": [
+      {"dimension": "season_goal_clarity", "score": 0, "weight": 0.08, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "episode_arc_coherence", "score": 0, "weight": 0.12, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "scene_grid_necessity", "score": 0, "weight": 0.10, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "causal_spine_integrity", "score": 0, "weight": 0.14, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "plant_payoff_integrity", "score": 0, "weight": 0.14, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "character_arc_continuity", "score": 0, "weight": 0.12, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "relationship_arc_continuity", "score": 0, "weight": 0.08, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "conflict_escalation", "score": 0, "weight": 0.08, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "hook_sequence_quality", "score": 0, "weight": 0.07, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."},
+      {"dimension": "genre_rhythm_balance", "score": 0, "weight": 0.07, "status": "not_run", "notes": "Fixture-only package; scorecard not executed."}
+    ],
+    "scorecard_status": "not_run",
+    "scorecard_is_promotion": false
+  },
+  "revision_plan": {
+    "revision_required": false,
+    "revision_items": [],
+    "regeneration_allowed": false,
+    "human_review_required": true
+  },
+  "review_packet_readiness": {
+    "gate_a_ready": false,
+    "required_missing_artifacts": [],
+    "required_missing_checks": [
+      "local_json_parse_validation",
+      "schema_validation_against_full_season_candidate_package_schema_v1",
+      "cross_level_integrity_execution",
+      "hard_rule_gate_execution",
+      "scorecard_preflight_execution"
+    ],
+    "next_review_step": "run_schema_validation"
+  },
+  "hub_loading": {
+    "repository": "limsanghyuk/v1700-literary-os",
+    "branch": "corpus-absorption-formula-bridge-handoff",
+    "created_artifacts": [
+      "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json"
+    ],
+    "remote_fetch_verified": false
+  },
+  "safety_boundary": {
+    "stage243_candidate_only": true,
+    "actual_provider_call_allowed": false,
+    "actual_prose_generation_allowed": false,
+    "raw_source_allowed": false,
+    "canonical_mutation_allowed": false,
+    "training_update_allowed": false,
+    "adapter_promotion_allowed": false
+  },
+  "promotion_interpretation": {
+    "schema_is_promotion": false,
+    "candidate_package_is_generation": false,
+    "gate_a_review_is_promotion": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  }
+}
