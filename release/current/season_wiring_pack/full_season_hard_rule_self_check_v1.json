@@ -1,0 +1,108 @@
+{
+  "document_type": "full_season_hard_rule_self_check",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-04",
+  "stage": "Stage243",
+  "roadmap_position": "P8",
+  "candidate_id": "fixture_full_season_candidate_v1_20260704",
+  "source_fixture": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+  "hard_rule_gate_ref": "release/current/season_wiring_pack/macro_planner_hard_rule_gate.json",
+  "hard_rule_gate_version": "2.0-stage243",
+  "authority": {
+    "performed_by": "ChatGPT",
+    "execution_location": "remote_github",
+    "fixture_only": true,
+    "metadata_only": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "gate_policy_applied": {
+    "hard_rule_precedes_weighted_score": true,
+    "weighted_score_considered": false,
+    "reason_weighted_score_not_considered": "P7 fixture has not completed schema validation, cross-level integrity execution, or hard-rule pass."
+  },
+  "self_check_summary": {
+    "hard_rule_pass": false,
+    "final_verdict": "manual_review_required",
+    "disqualification_reason": "Gate A remains blocked because the fixture is metadata-only and validation/integrity execution has not yet been completed.",
+    "critical_failures": [],
+    "major_failures": [],
+    "minor_warnings": [
+      {
+        "rule_id": "fixture_not_schema_validated",
+        "severity": "minor",
+        "group_id": "boundary",
+        "scope": "package",
+        "finding": "Fixture exists but formal JSON/schema validation has not been executed in a local or CI validation environment.",
+        "required_action": "Run JSON parse and schema validation before Gate A."
+      },
+      {
+        "rule_id": "cross_level_integrity_not_run",
+        "severity": "minor",
+        "group_id": "season_structure",
+        "scope": "full_season_chain",
+        "finding": "All cross-level integrity checks in the fixture are still marked not_run.",
+        "required_action": "Execute series-to-season, season-to-episode, episode-to-sequence, sequence-to-scene, and scene-to-renderer-packet checks."
+      },
+      {
+        "rule_id": "scorecard_not_run",
+        "severity": "minor",
+        "group_id": "evaluation",
+        "scope": "scorecard_preflight",
+        "finding": "Scorecard status is not_run; weighted score must not be interpreted.",
+        "required_action": "Run scorecard preflight only after hard-rule pass."
+      }
+    ]
+  },
+  "group_results": [
+    {
+      "group_id": "boundary",
+      "status": "pass_with_warning",
+      "result": "No boundary violation is declared in the fixture. Formal local scan remains recommended.",
+      "blocking": false
+    },
+    {
+      "group_id": "season_structure",
+      "status": "manual_review_required",
+      "result": "Cannot fully pass because the fixture contains metadata references rather than executed season-structure validation results.",
+      "blocking": true
+    },
+    {
+      "group_id": "causality_and_payoff",
+      "status": "manual_review_required",
+      "result": "Cannot fully pass because payoff and causal-spine integrity checks are not_run in the fixture.",
+      "blocking": true
+    },
+    {
+      "group_id": "character_and_relationship_arc",
+      "status": "manual_review_required",
+      "result": "Cannot fully pass because character and relationship arc integrity checks are not_run in the fixture.",
+      "blocking": true
+    },
+    {
+      "group_id": "scene_function_coverage",
+      "status": "manual_review_required",
+      "result": "Cannot fully pass because scene blueprint bundle and genre rhythm integrity are metadata-only references pending execution.",
+      "blocking": true
+    }
+  ],
+  "required_next_actions": [
+    "local_json_parse_validation",
+    "schema_validation_against_full_season_candidate_package_schema_v1",
+    "cross_level_integrity_execution",
+    "full_season_hard_rule_gate_execution_with_instantiated_artifacts",
+    "scorecard_preflight_after_hard_rule_pass"
+  ],
+  "review_readiness": {
+    "gate_a_ready": false,
+    "next_review_step": "run_schema_validation",
+    "reason": "P8 self-check confirms the fixture is created but not yet validated enough for Gate A."
+  },
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  }
+}
