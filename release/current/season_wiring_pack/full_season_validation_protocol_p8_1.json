@@ -1,0 +1,139 @@
+{
+  "document_type": "full_season_validation_protocol",
+  "version": "1.0-stage243-p8.1",
+  "created_at": "2026-07-04",
+  "stage": "Stage243",
+  "roadmap_position": "P8.1",
+  "title": "JSON/schema validation and cross-level integrity execution protocol",
+  "source_fixture": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+  "source_schema": "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
+  "source_hard_rule_self_check": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+  "authority": {
+    "performed_by": "ChatGPT",
+    "execution_location": "remote_github",
+    "protocol_only": true,
+    "local_execution_required": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "purpose": "Define the required validation steps before P9 Scorecard Preflight can be interpreted.",
+  "validation_sequence": [
+    {
+      "step_id": "P8.1.1",
+      "name": "JSON parse validation",
+      "input_paths": [
+        "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+        "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json"
+      ],
+      "expected_result_fields": [
+        "json_parse_pass",
+        "json_parse_error_count",
+        "parsed_file_count"
+      ],
+      "blocking_if_failed": true
+    },
+    {
+      "step_id": "P8.1.2",
+      "name": "Schema validation",
+      "input_paths": [
+        "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+        "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json"
+      ],
+      "expected_result_fields": [
+        "schema_validation_pass",
+        "schema_error_count",
+        "schema_error_paths"
+      ],
+      "blocking_if_failed": true
+    },
+    {
+      "step_id": "P8.1.3",
+      "name": "Cross-level integrity execution",
+      "input_paths": [
+        "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json"
+      ],
+      "required_checks": [
+        "series_to_season_integrity",
+        "season_to_episode_integrity",
+        "episode_to_sequence_integrity",
+        "sequence_to_scene_integrity",
+        "scene_to_renderer_packet_integrity",
+        "plant_payoff_integrity",
+        "character_arc_integrity",
+        "relationship_arc_integrity",
+        "causal_spine_integrity",
+        "hook_chain_integrity",
+        "genre_rhythm_integrity"
+      ],
+      "expected_result_fields": [
+        "cross_level_integrity_pass",
+        "integrity_error_count",
+        "integrity_warning_count",
+        "blocking_integrity_findings"
+      ],
+      "blocking_if_failed": true
+    },
+    {
+      "step_id": "P8.1.4",
+      "name": "Boundary invariant check",
+      "input_paths": [
+        "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json"
+      ],
+      "required_invariants": {
+        "provider_call_count": 0,
+        "runtime_generation": false,
+        "draft_text_exported": false,
+        "promotion_claim": false
+      },
+      "expected_result_fields": [
+        "boundary_invariants_pass",
+        "boundary_error_count",
+        "boundary_warning_count"
+      ],
+      "blocking_if_failed": true
+    },
+    {
+      "step_id": "P8.1.5",
+      "name": "Validation result packet creation",
+      "output_path": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+      "expected_result_fields": [
+        "overall_validation_status",
+        "gate_a_ready_after_validation",
+        "scorecard_preflight_allowed",
+        "next_required_step"
+      ],
+      "blocking_if_failed": false
+    }
+  ],
+  "allowed_overall_validation_statuses": [
+    "pass",
+    "pass_with_warning",
+    "manual_review_required",
+    "fail_validation",
+    "blocked"
+  ],
+  "decision_logic": {
+    "if_json_parse_fails": "fail_validation",
+    "if_schema_validation_fails": "fail_validation",
+    "if_cross_level_integrity_has_blocking_finding": "manual_review_required_or_fail_validation",
+    "if_boundary_invariant_fails": "blocked",
+    "if_all_required_checks_pass": "pass_or_pass_with_warning",
+    "scorecard_preflight_allowed_only_if": "overall_validation_status is pass or pass_with_warning and hard-rule pass is true"
+  },
+  "current_status": {
+    "protocol_created": true,
+    "validation_executed": false,
+    "local_execution_required": true,
+    "gate_a_ready": false,
+    "scorecard_preflight_allowed": false,
+    "reason": "P8.1 protocol is created, but actual JSON/schema validation and cross-level integrity execution have not yet run."
+  },
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  }
+}
