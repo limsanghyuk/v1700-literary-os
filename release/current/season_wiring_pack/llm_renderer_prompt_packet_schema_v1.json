@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://v1700-literary-os.local/schemas/llm_renderer_prompt_packet_schema_v1.json",
+  "document_type": "llm_renderer_prompt_packet_schema",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-04",
+  "stage": "Stage243",
+  "title": "LLMRendererPromptPacket v1",
+  "description": "Schema for packaging SceneBlueprint payloads into controlled prompt packets for a future LLM renderer without allowing the renderer to invent long-range structure from scratch.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "source_refs",
+    "packet_identity",
+    "renderer_role_contract",
+    "generation_scope",
+    "context_stack",
+    "scene_blueprint_payloads",
+    "prompt_directives",
+    "continuity_constraints",
+    "must_include_payloads",
+    "must_avoid_payloads",
+    "hard_rule_constraints",
+    "output_format_request",
+    "revision_hooks",
+    "safety_boundary",
+    "promotion_interpretation"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0-stage243"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_kind", "fixture_only", "metadata_only", "provider_call_count", "runtime_generation", "raw_text_exported", "draft_text_exported", "promotion_claim"],
+      "properties": {
+        "artifact_kind": {"type": "string", "const": "LLMRendererPromptPacket"},
+        "fixture_only": {"type": "boolean", "const": true},
+        "metadata_only": {"type": "boolean", "const": true},
+        "provider_call_count": {"type": "integer", "const": 0},
+        "runtime_generation": {"type": "boolean", "const": false},
+        "raw_text_exported": {"type": "boolean", "const": false},
+        "draft_text_exported": {"type": "boolean", "const": false},
+        "promotion_claim": {"type": "boolean", "const": false}
+      }
+    },
+    "source_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["full_series_arc_spec_id", "season_plan_id", "episode_arc_chain_id", "sequence_blueprint_id", "scene_blueprint_id"],
+      "properties": {
+        "full_series_arc_spec_id": {"type": "string"},
+        "season_plan_id": {"type": "string"},
+        "episode_arc_chain_id": {"type": "string"},
+        "sequence_blueprint_id": {"type": "string"},
+        "scene_blueprint_id": {"type": "string"},
+        "source_schema_versions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "packet_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packet_id", "series_id", "season_id", "episode", "sequence_id", "packet_purpose", "packet_mode"],
+      "properties": {
+        "packet_id": {"type": "string"},
+        "series_id": {"type": "string"},
+        "season_id": {"type": "string"},
+        "episode": {"type": "integer", "minimum": 1, "maximum": 24},
+        "sequence_id": {"type": "string"},
+        "packet_purpose": {"type": "string"},
+        "packet_mode": {"type": "string", "enum": ["single_scene", "scene_cluster", "revision", "regeneration", "comparison_fixture"]}
+      }
+    },
+    "renderer_role_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["renderer_model_family", "renderer_responsibility", "planner_responsibility", "long_range_structure_locked", "raw_corpus_use_allowed"],
+      "properties": {
+        "renderer_model_family": {"type": "string"},
+        "renderer_responsibility": {"type": "array", "items": {"type": "string"}},
+        "planner_responsibility": {"type": "array", "items": {"type": "string"}},
+        "long_range_structure_locked": {"type": "boolean", "const": true},
+        "raw_corpus_use_allowed": {"type": "boolean", "const": false}
+      }
+    },
+    "generation_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope_type", "scene_ids", "allowed_generation_target", "blocked_generation_target"],
+      "properties": {
+        "scope_type": {"type": "string", "enum": ["scene", "sequence_scene_cluster", "revision_only", "metadata_fixture_only"]},
+        "scene_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "allowed_generation_target": {"type": "array", "items": {"type": "string"}},
+        "blocked_generation_target": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "context_stack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["series_context_summary", "season_context_summary", "episode_context_summary", "sequence_context_summary", "prior_continuity_summary", "next_continuity_requirement"],
+      "properties": {
+        "series_context_summary": {"type": "string"},
+        "season_context_summary": {"type": "string"},
+        "episode_context_summary": {"type": "string"},
+        "sequence_context_summary": {"type": "string"},
+        "prior_continuity_summary": {"type": "string"},
+        "next_continuity_requirement": {"type": "string"}
+      }
+    },
+    "scene_blueprint_payloads": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/scene_payload"},
+      "minItems": 1
+    },
+    "prompt_directives": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["style_directive", "tone_directive", "pov_or_camera_directive", "dialogue_directive", "subtext_directive", "pacing_directive", "sensory_detail_directive"],
+      "properties": {
+        "style_directive": {"type": "string"},
+        "tone_directive": {"type": "string"},
+        "pov_or_camera_directive": {"type": "string"},
+        "dialogue_directive": {"type": "string"},
+        "subtext_directive": {"type": "string"},
+        "pacing_directive": {"type": "string"},
+        "sensory_detail_directive": {"type": "string"}
+      }
+    },
+    "continuity_constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint_item"}},
+    "must_include_payloads": {"type": "array", "items": {"$ref": "#/$defs/constraint_item"}},
+    "must_avoid_payloads": {"type": "array", "items": {"$ref": "#/$defs/constraint_item"}},
+    "hard_rule_constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint_item"}},
+    "output_format_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requested_output_kind", "structure", "include_metadata_echo", "include_revision_targets"],
+      "properties": {
+        "requested_output_kind": {"type": "string", "enum": ["draft_scene_prose", "draft_scene_cluster", "revision_plan", "regeneration_candidate", "metadata_only_fixture"]},
+        "structure": {"type": "array", "items": {"type": "string"}},
+        "include_metadata_echo": {"type": "boolean"},
+        "include_revision_targets": {"type": "boolean"}
+      }
+    },
+    "revision_hooks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_failure_modes", "review_questions", "regeneration_levers", "scorecard_feedback_slots"],
+      "properties": {
+        "expected_failure_modes": {"type": "array", "items": {"type": "string"}},
+        "review_questions": {"type": "array", "items": {"type": "string"}},
+        "regeneration_levers": {"type": "array", "items": {"type": "string"}},
+        "scorecard_feedback_slots": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "safety_boundary": {"$ref": "#/$defs/safety_boundary"},
+    "promotion_interpretation": {"$ref": "#/$defs/promotion_interpretation"}
+  },
+  "$defs": {
+    "scene_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_id", "scene_order", "scene_function_core", "scene_function_core2", "scene_purpose", "scene_objective", "dramatic_conflict", "entry_state", "exit_state", "required_state_change", "causal_input", "causal_output", "information_reveal", "emotional_turn", "dialogue_intention", "subtext_target", "visual_or_directorial_notes", "ending_hook_or_transition", "renderer_prompt_constraints", "scene_necessity_claim"],
+      "properties": {
+        "scene_id": {"type": "string"},
+        "scene_order": {"type": "integer", "minimum": 1},
+        "scene_function_core": {"type": "string"},
+        "scene_function_core2": {"type": "string"},
+        "scene_purpose": {"type": "string"},
+        "scene_objective": {"type": "string"},
+        "dramatic_conflict": {"type": "string"},
+        "entry_state": {"type": "string"},
+        "exit_state": {"type": "string"},
+        "required_state_change": {"type": "string"},
+        "causal_input": {"type": "array", "items": {"type": "string"}},
+        "causal_output": {"type": "array", "items": {"type": "string"}},
+        "information_reveal": {"type": "array", "items": {"type": "string"}},
+        "emotional_turn": {"type": "string"},
+        "dialogue_intention": {"type": "string"},
+        "subtext_target": {"type": "string"},
+        "visual_or_directorial_notes": {"type": "string"},
+        "ending_hook_or_transition": {"type": "string"},
+        "renderer_prompt_constraints": {"type": "array", "items": {"type": "string"}},
+        "scene_necessity_claim": {"type": "string"}
+      }
+    },
+    "constraint_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["constraint_id", "constraint_type", "description", "severity"],
+      "properties": {
+        "constraint_id": {"type": "string"},
+        "constraint_type": {"type": "string"},
+        "description": {"type": "string"},
+        "severity": {"type": "string", "enum": ["blocking", "major", "minor", "advisory"]}
+      }
+    },
+    "safety_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage243_packet_only", "actual_provider_call_allowed", "actual_prose_generation_allowed", "raw_source_allowed", "canonical_mutation_allowed", "training_update_allowed"],
+      "properties": {
+        "stage243_packet_only": {"type": "boolean", "const": true},
+        "actual_provider_call_allowed": {"type": "boolean", "const": false},
+        "actual_prose_generation_allowed": {"type": "boolean", "const": false},
+        "raw_source_allowed": {"type": "boolean", "const": false},
+        "canonical_mutation_allowed": {"type": "boolean", "const": false},
+        "training_update_allowed": {"type": "boolean", "const": false}
+      }
+    },
+    "promotion_interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_is_promotion", "prompt_packet_is_generation", "macro_planner_promotion", "full_author_promotion", "live_generation_readiness"],
+      "properties": {
+        "schema_is_promotion": {"type": "boolean", "const": false},
+        "prompt_packet_is_generation": {"type": "boolean", "const": false},
+        "macro_planner_promotion": {"type": "string", "const": "blocked"},
+        "full_author_promotion": {"type": "string", "const": "blocked"},
+        "live_generation_readiness": {"type": "string", "const": "blocked"}
+      }
+    }
+  }
+}
