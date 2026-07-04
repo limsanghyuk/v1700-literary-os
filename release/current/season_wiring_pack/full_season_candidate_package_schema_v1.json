@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://v1700-literary-os.local/schemas/full_season_candidate_package_schema_v1.json",
+  "document_type": "full_season_candidate_package_schema",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-04",
+  "stage": "Stage243",
+  "title": "FullSeasonCandidatePackage v1",
+  "description": "Schema for packaging FullSeriesArcSpec, SeasonPlan, EpisodeArcChain, SequenceBlueprint, SceneBlueprint, LLMRendererPromptPacket, validation summaries, scorecard preflight, and revision plan into one reviewable Stage243 full-season candidate structure.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "package_identity",
+    "source_artifact_refs",
+    "included_artifact_inventory",
+    "full_series_arc_spec_ref",
+    "season_plan_ref",
+    "episode_arc_chain_ref",
+    "sequence_blueprint_refs",
+    "scene_blueprint_refs",
+    "llm_renderer_prompt_packet_refs",
+    "cross_level_integrity_checks",
+    "hard_rule_gate_summary",
+    "scorecard_preflight_summary",
+    "revision_plan",
+    "review_packet_readiness",
+    "hub_loading",
+    "safety_boundary",
+    "promotion_interpretation"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0-stage243"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_kind", "fixture_only", "metadata_only", "provider_call_count", "runtime_generation", "raw_text_exported", "draft_text_exported", "promotion_claim"],
+      "properties": {
+        "artifact_kind": {"type": "string", "const": "FullSeasonCandidatePackage"},
+        "fixture_only": {"type": "boolean", "const": true},
+        "metadata_only": {"type": "boolean", "const": true},
+        "provider_call_count": {"type": "integer", "const": 0},
+        "runtime_generation": {"type": "boolean", "const": false},
+        "raw_text_exported": {"type": "boolean", "const": false},
+        "draft_text_exported": {"type": "boolean", "const": false},
+        "promotion_claim": {"type": "boolean", "const": false}
+      }
+    },
+    "package_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_package_id", "series_id", "season_id", "working_title", "target_episode_count", "candidate_kind", "candidate_status"],
+      "properties": {
+        "candidate_package_id": {"type": "string"},
+        "series_id": {"type": "string"},
+        "season_id": {"type": "string"},
+        "working_title": {"type": "string"},
+        "target_episode_count": {"type": "integer", "enum": [16, 24]},
+        "candidate_kind": {"type": "string", "const": "full_season_candidate_package"},
+        "candidate_status": {"type": "string", "enum": ["draft_fixture", "self_checked_fixture", "gate_a_ready", "manual_review_required", "blocked"]}
+      }
+    },
+    "source_artifact_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_versions", "input_authority", "source_policy"],
+      "properties": {
+        "schema_versions": {"type": "array", "items": {"type": "string"}},
+        "input_authority": {"type": "array", "items": {"type": "string"}},
+        "source_policy": {"type": "string", "enum": ["metadata_only", "fixture_only", "remote_hub_reference_only"]}
+      }
+    },
+    "included_artifact_inventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["full_series_arc_spec_count", "season_plan_count", "episode_arc_chain_count", "sequence_blueprint_count", "scene_blueprint_count", "renderer_prompt_packet_count"],
+      "properties": {
+        "full_series_arc_spec_count": {"type": "integer", "minimum": 1},
+        "season_plan_count": {"type": "integer", "minimum": 1},
+        "episode_arc_chain_count": {"type": "integer", "minimum": 1},
+        "sequence_blueprint_count": {"type": "integer", "minimum": 1},
+        "scene_blueprint_count": {"type": "integer", "minimum": 1},
+        "renderer_prompt_packet_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "full_series_arc_spec_ref": {"$ref": "#/$defs/artifact_ref"},
+    "season_plan_ref": {"$ref": "#/$defs/artifact_ref"},
+    "episode_arc_chain_ref": {"$ref": "#/$defs/artifact_ref"},
+    "sequence_blueprint_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}, "minItems": 1},
+    "scene_blueprint_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}, "minItems": 1},
+    "llm_renderer_prompt_packet_refs": {"type": "array", "items": {"$ref": "#/$defs/artifact_ref"}, "minItems": 1},
+    "cross_level_integrity_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "series_to_season_integrity",
+        "season_to_episode_integrity",
+        "episode_to_sequence_integrity",
+        "sequence_to_scene_integrity",
+        "scene_to_renderer_packet_integrity",
+        "plant_payoff_integrity",
+        "character_arc_integrity",
+        "relationship_arc_integrity",
+        "causal_spine_integrity",
+        "hook_chain_integrity",
+        "genre_rhythm_integrity"
+      ],
+      "properties": {
+        "series_to_season_integrity": {"$ref": "#/$defs/integrity_check"},
+        "season_to_episode_integrity": {"$ref": "#/$defs/integrity_check"},
+        "episode_to_sequence_integrity": {"$ref": "#/$defs/integrity_check"},
+        "sequence_to_scene_integrity": {"$ref": "#/$defs/integrity_check"},
+        "scene_to_renderer_packet_integrity": {"$ref": "#/$defs/integrity_check"},
+        "plant_payoff_integrity": {"$ref": "#/$defs/integrity_check"},
+        "character_arc_integrity": {"$ref": "#/$defs/integrity_check"},
+        "relationship_arc_integrity": {"$ref": "#/$defs/integrity_check"},
+        "causal_spine_integrity": {"$ref": "#/$defs/integrity_check"},
+        "hook_chain_integrity": {"$ref": "#/$defs/integrity_check"},
+        "genre_rhythm_integrity": {"$ref": "#/$defs/integrity_check"}
+      }
+    },
+    "hard_rule_gate_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gate_version", "overall_status", "critical_failures", "major_failures", "minor_warnings", "blocking_failure_count", "manual_review_required"],
+      "properties": {
+        "gate_version": {"type": "string"},
+        "overall_status": {"type": "string", "enum": ["pass", "pass_with_warning", "manual_review_required", "fail_hard_rule", "fail_safety"]},
+        "critical_failures": {"type": "array", "items": {"$ref": "#/$defs/gate_finding"}},
+        "major_failures": {"type": "array", "items": {"$ref": "#/$defs/gate_finding"}},
+        "minor_warnings": {"type": "array", "items": {"$ref": "#/$defs/gate_finding"}},
+        "blocking_failure_count": {"type": "integer", "minimum": 0},
+        "manual_review_required": {"type": "boolean"}
+      }
+    },
+    "scorecard_preflight_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scorecard_version", "weighted_score", "threshold", "dimension_results", "scorecard_status", "scorecard_is_promotion"],
+      "properties": {
+        "scorecard_version": {"type": "string"},
+        "weighted_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "threshold": {"type": "number", "minimum": 0, "maximum": 1},
+        "dimension_results": {"type": "array", "items": {"$ref": "#/$defs/scorecard_dimension_result"}},
+        "scorecard_status": {"type": "string", "enum": ["not_run", "pass", "pass_with_warning", "manual_review_required", "fail_weighted_score", "ignored_due_to_hard_rule_failure"]},
+        "scorecard_is_promotion": {"type": "boolean", "const": false}
+      }
+    },
+    "revision_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision_required", "revision_items", "regeneration_allowed", "human_review_required"],
+      "properties": {
+        "revision_required": {"type": "boolean"},
+        "revision_items": {"type": "array", "items": {"$ref": "#/$defs/revision_item"}},
+        "regeneration_allowed": {"type": "boolean", "const": false},
+        "human_review_required": {"type": "boolean"}
+      }
+    },
+    "review_packet_readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gate_a_ready", "required_missing_artifacts", "required_missing_checks", "next_review_step"],
+      "properties": {
+        "gate_a_ready": {"type": "boolean"},
+        "required_missing_artifacts": {"type": "array", "items": {"type": "string"}},
+        "required_missing_checks": {"type": "array", "items": {"type": "string"}},
+        "next_review_step": {"type": "string", "enum": ["create_fixture", "run_schema_validation", "run_hard_rule_gate", "run_scorecard_preflight", "create_gate_a_review_packet", "manual_review"]}
+      }
+    },
+    "hub_loading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "branch", "created_artifacts", "remote_fetch_verified"],
+      "properties": {
+        "repository": {"type": "string"},
+        "branch": {"type": "string"},
+        "created_artifacts": {"type": "array", "items": {"type": "string"}},
+        "remote_fetch_verified": {"type": "boolean"}
+      }
+    },
+    "safety_boundary": {"$ref": "#/$defs/safety_boundary"},
+    "promotion_interpretation": {"$ref": "#/$defs/promotion_interpretation"}
+  },
+  "$defs": {
+    "artifact_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_id", "artifact_kind", "path", "schema_version", "status"],
+      "properties": {
+        "artifact_id": {"type": "string"},
+        "artifact_kind": {"type": "string"},
+        "path": {"type": "string"},
+        "schema_version": {"type": "string"},
+        "status": {"type": "string", "enum": ["required", "present", "pending", "blocked", "not_applicable"]}
+      }
+    },
+    "integrity_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["check_id", "status", "findings", "blocking"],
+      "properties": {
+        "check_id": {"type": "string"},
+        "status": {"type": "string", "enum": ["not_run", "pass", "pass_with_warning", "fail", "blocked"]},
+        "findings": {"type": "array", "items": {"type": "string"}},
+        "blocking": {"type": "boolean"}
+      }
+    },
+    "gate_finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "severity", "scope", "description", "recommended_action"],
+      "properties": {
+        "rule_id": {"type": "string"},
+        "severity": {"type": "string", "enum": ["safety", "critical", "major", "minor", "advisory"]},
+        "scope": {"type": "string"},
+        "description": {"type": "string"},
+        "recommended_action": {"type": "string"}
+      }
+    },
+    "scorecard_dimension_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dimension", "score", "weight", "status", "notes"],
+      "properties": {
+        "dimension": {"type": "string"},
+        "score": {"type": "number", "minimum": 0, "maximum": 1},
+        "weight": {"type": "number", "minimum": 0, "maximum": 1},
+        "status": {"type": "string", "enum": ["not_run", "pass", "warning", "fail", "ignored"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "revision_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision_id", "target_artifact", "target_scope", "reason", "priority", "allowed_action"],
+      "properties": {
+        "revision_id": {"type": "string"},
+        "target_artifact": {"type": "string"},
+        "target_scope": {"type": "string"},
+        "reason": {"type": "string"},
+        "priority": {"type": "string", "enum": ["blocking", "high", "medium", "low"]},
+        "allowed_action": {"type": "string", "enum": ["schema_patch", "fixture_patch", "manual_review", "defer", "blocked"]}
+      }
+    },
+    "safety_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage243_candidate_only", "actual_provider_call_allowed", "actual_prose_generation_allowed", "raw_source_allowed", "canonical_mutation_allowed", "training_update_allowed", "adapter_promotion_allowed"],
+      "properties": {
+        "stage243_candidate_only": {"type": "boolean", "const": true},
+        "actual_provider_call_allowed": {"type": "boolean", "const": false},
+        "actual_prose_generation_allowed": {"type": "boolean", "const": false},
+        "raw_source_allowed": {"type": "boolean", "const": false},
+        "canonical_mutation_allowed": {"type": "boolean", "const": false},
+        "training_update_allowed": {"type": "boolean", "const": false},
+        "adapter_promotion_allowed": {"type": "boolean", "const": false}
+      }
+    },
+    "promotion_interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_is_promotion", "candidate_package_is_generation", "gate_a_review_is_promotion", "macro_planner_promotion", "full_author_promotion", "live_generation_readiness"],
+      "properties": {
+        "schema_is_promotion": {"type": "boolean", "const": false},
+        "candidate_package_is_generation": {"type": "boolean", "const": false},
+        "gate_a_review_is_promotion": {"type": "boolean", "const": false},
+        "macro_planner_promotion": {"type": "string", "const": "blocked"},
+        "full_author_promotion": {"type": "string", "const": "blocked"},
+        "live_generation_readiness": {"type": "string", "const": "blocked"}
+      }
+    }
+  }
+}
