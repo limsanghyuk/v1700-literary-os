@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://v1700-literary-os.local/schemas/sequence_blueprint_schema_v1.json",
+  "document_type": "sequence_blueprint_schema",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-04",
+  "stage": "Stage243",
+  "title": "SequenceBlueprint v1",
+  "description": "Schema for decomposing EpisodeArcChain nodes into sequence-level dramatic units before SceneBlueprint and LLMRendererPromptPacket generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "source_refs",
+    "sequence_package_identity",
+    "episode_ref",
+    "sequence_count",
+    "sequence_nodes",
+    "intra_episode_sequence_dependencies",
+    "episode_entry_exit_integrity",
+    "hard_rule_preflight",
+    "scorecard_preflight_targets",
+    "decomposition_targets",
+    "safety_boundary",
+    "promotion_interpretation"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0-stage243"
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_kind",
+        "fixture_only",
+        "metadata_only",
+        "provider_call_count",
+        "runtime_generation",
+        "raw_text_exported",
+        "promotion_claim"
+      ],
+      "properties": {
+        "artifact_kind": {
+          "type": "string",
+          "const": "SequenceBlueprint"
+        },
+        "fixture_only": {
+          "type": "boolean",
+          "const": true
+        },
+        "metadata_only": {
+          "type": "boolean",
+          "const": true
+        },
+        "provider_call_count": {
+          "type": "integer",
+          "const": 0
+        },
+        "runtime_generation": {
+          "type": "boolean",
+          "const": false
+        },
+        "raw_text_exported": {
+          "type": "boolean",
+          "const": false
+        },
+        "promotion_claim": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "source_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "full_series_arc_spec_id",
+        "season_plan_id",
+        "episode_arc_chain_id",
+        "episode_node_id"
+      ],
+      "properties": {
+        "full_series_arc_spec_id": {"type": "string"},
+        "season_plan_id": {"type": "string"},
+        "episode_arc_chain_id": {"type": "string"},
+        "episode_node_id": {"type": "string"},
+        "source_schema_versions": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "sequence_package_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "series_id",
+        "season_id",
+        "episode",
+        "sequence_package_id",
+        "package_purpose"
+      ],
+      "properties": {
+        "series_id": {"type": "string"},
+        "season_id": {"type": "string"},
+        "episode": {"type": "integer", "minimum": 1, "maximum": 24},
+        "sequence_package_id": {"type": "string"},
+        "package_purpose": {"type": "string"}
+      }
+    },
+    "episode_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode",
+        "episode_title",
+        "episode_function",
+        "entry_state",
+        "exit_state",
+        "main_turn",
+        "ending_hook"
+      ],
+      "properties": {
+        "episode": {"type": "integer", "minimum": 1, "maximum": 24},
+        "episode_title": {"type": "string"},
+        "episode_function": {"type": "string"},
+        "entry_state": {"type": "string"},
+        "exit_state": {"type": "string"},
+        "main_turn": {"type": "string"},
+        "ending_hook": {"type": "string"}
+      }
+    },
+    "sequence_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sequence_nodes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sequence_node"},
+      "minItems": 1
+    },
+    "intra_episode_sequence_dependencies": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sequence_dependency_link"}
+    },
+    "episode_entry_exit_integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "first_sequence_matches_episode_entry_state",
+        "last_sequence_matches_episode_exit_state",
+        "all_sequence_transitions_linked",
+        "unexplained_state_jump_count"
+      ],
+      "properties": {
+        "first_sequence_matches_episode_entry_state": {"type": "boolean"},
+        "last_sequence_matches_episode_exit_state": {"type": "boolean"},
+        "all_sequence_transitions_linked": {"type": "boolean"},
+        "unexplained_state_jump_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "hard_rule_preflight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_checks",
+        "blocking_failures",
+        "warning_failures",
+        "sequence_blueprint_pass_required"
+      ],
+      "properties": {
+        "required_checks": {"type": "array", "items": {"type": "string"}},
+        "blocking_failures": {"type": "array", "items": {"type": "string"}},
+        "warning_failures": {"type": "array", "items": {"type": "string"}},
+        "sequence_blueprint_pass_required": {"type": "boolean", "const": true}
+      }
+    },
+    "scorecard_preflight_targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode_arc_coherence",
+        "scene_grid_necessity",
+        "causal_spine_integrity",
+        "plant_payoff_integrity",
+        "character_arc_continuity",
+        "relationship_arc_continuity",
+        "conflict_escalation",
+        "hook_sequence_quality",
+        "genre_rhythm_balance"
+      ],
+      "properties": {
+        "episode_arc_coherence": {"type": "boolean"},
+        "scene_grid_necessity": {"type": "boolean"},
+        "causal_spine_integrity": {"type": "boolean"},
+        "plant_payoff_integrity": {"type": "boolean"},
+        "character_arc_continuity": {"type": "boolean"},
+        "relationship_arc_continuity": {"type": "boolean"},
+        "conflict_escalation": {"type": "boolean"},
+        "hook_sequence_quality": {"type": "boolean"},
+        "genre_rhythm_balance": {"type": "boolean"}
+      }
+    },
+    "decomposition_targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "next_schema",
+        "scene_blueprint_required",
+        "renderer_prompt_packet_required"
+      ],
+      "properties": {
+        "next_schema": {"type": "string", "const": "scene_blueprint_schema_v1.json"},
+        "scene_blueprint_required": {"type": "boolean", "const": true},
+        "renderer_prompt_packet_required": {"type": "boolean", "const": true}
+      }
+    },
+    "safety_boundary": {"$ref": "#/$defs/safety_boundary"},
+    "promotion_interpretation": {"$ref": "#/$defs/promotion_interpretation"}
+  },
+  "$defs": {
+    "sequence_node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sequence_id",
+        "episode",
+        "sequence_order",
+        "sequence_title",
+        "sequence_purpose",
+        "sequence_theme_focus",
+        "sequence_dramatic_question",
+        "entry_state",
+        "exit_state",
+        "required_state_change",
+        "conflict_escalation_step",
+        "character_arc_delta",
+        "relationship_arc_delta",
+        "plant_operations",
+        "payoff_operations",
+        "tone_and_genre_mode",
+        "directorial_intention",
+        "scene_count_target",
+        "scene_blueprint_targets",
+        "renderer_handoff_summary",
+        "hard_rule_risks"
+      ],
+      "properties": {
+        "sequence_id": {"type": "string"},
+        "episode": {"type": "integer", "minimum": 1, "maximum": 24},
+        "sequence_order": {"type": "integer", "minimum": 1},
+        "sequence_title": {"type": "string"},
+        "sequence_purpose": {"type": "string"},
+        "sequence_theme_focus": {"type": "string"},
+        "sequence_dramatic_question": {"type": "string"},
+        "entry_state": {"type": "string"},
+        "exit_state": {"type": "string"},
+        "required_state_change": {"type": "string"},
+        "conflict_escalation_step": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["conflict_layer", "pressure_level", "stakes_change"],
+          "properties": {
+            "conflict_layer": {"type": "string"},
+            "pressure_level": {"type": "integer", "minimum": 1, "maximum": 10},
+            "stakes_change": {"type": "string"}
+          }
+        },
+        "character_arc_delta": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/arc_delta"}
+        },
+        "relationship_arc_delta": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/arc_delta"}
+        },
+        "plant_operations": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/plant_operation"}
+        },
+        "payoff_operations": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/payoff_operation"}
+        },
+        "tone_and_genre_mode": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["primary_mode", "secondary_mode", "intensity", "rhythm_note"],
+          "properties": {
+            "primary_mode": {"type": "string"},
+            "secondary_mode": {"type": "string"},
+            "intensity": {"type": "integer", "minimum": 1, "maximum": 10},
+            "rhythm_note": {"type": "string"}
+          }
+        },
+        "directorial_intention": {"type": "string"},
+        "scene_count_target": {"type": "integer", "minimum": 1},
+        "scene_blueprint_targets": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/scene_blueprint_target"},
+          "minItems": 1
+        },
+        "renderer_handoff_summary": {"type": "string"},
+        "hard_rule_risks": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "sequence_dependency_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from_sequence_id",
+        "to_sequence_id",
+        "dependency_type",
+        "payload",
+        "required_for_validity"
+      ],
+      "properties": {
+        "from_sequence_id": {"type": "string"},
+        "to_sequence_id": {"type": "string"},
+        "dependency_type": {
+          "type": "string",
+          "enum": ["causal", "information", "emotional", "relationship", "plant_payoff", "conflict", "hook", "genre_rhythm"]
+        },
+        "payload": {"type": "string"},
+        "required_for_validity": {"type": "boolean"}
+      }
+    },
+    "arc_delta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_id", "state_before", "state_after", "trigger_event", "cost_or_consequence"],
+      "properties": {
+        "target_id": {"type": "string"},
+        "state_before": {"type": "string"},
+        "state_after": {"type": "string"},
+        "trigger_event": {"type": "string"},
+        "cost_or_consequence": {"type": "string"}
+      }
+    },
+    "plant_operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["plant_id", "operation_type", "payload", "expected_payoff_ref"],
+      "properties": {
+        "plant_id": {"type": "string"},
+        "operation_type": {"type": "string", "enum": ["introduce", "reinforce", "complicate", "misdirect"]},
+        "payload": {"type": "string"},
+        "expected_payoff_ref": {"type": "string"}
+      }
+    },
+    "payoff_operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["payoff_id", "plant_id", "operation_type", "effect"],
+      "properties": {
+        "payoff_id": {"type": "string"},
+        "plant_id": {"type": "string"},
+        "operation_type": {"type": "string", "enum": ["partial", "full", "inverted", "delayed"]},
+        "effect": {"type": "string"}
+      }
+    },
+    "scene_blueprint_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_target_id", "scene_order", "scene_purpose", "required_state_change", "scene_function_hint"],
+      "properties": {
+        "scene_target_id": {"type": "string"},
+        "scene_order": {"type": "integer", "minimum": 1},
+        "scene_purpose": {"type": "string"},
+        "required_state_change": {"type": "string"},
+        "scene_function_hint": {"type": "string"}
+      }
+    },
+    "safety_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actual_prose_allowed", "provider_generation_allowed", "raw_source_allowed", "canonical_mutation_allowed"],
+      "properties": {
+        "actual_prose_allowed": {"type": "boolean", "const": false},
+        "provider_generation_allowed": {"type": "boolean", "const": false},
+        "raw_source_allowed": {"type": "boolean", "const": false},
+        "canonical_mutation_allowed": {"type": "boolean", "const": false}
+      }
+    },
+    "promotion_interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_is_promotion", "macro_planner_promotion", "full_author_promotion", "live_generation_readiness"],
+      "properties": {
+        "schema_is_promotion": {"type": "boolean", "const": false},
+        "macro_planner_promotion": {"type": "string", "const": "blocked"},
+        "full_author_promotion": {"type": "string", "const": "blocked"},
+        "live_generation_readiness": {"type": "string", "const": "blocked"}
+      }
+    }
+  }
+}
