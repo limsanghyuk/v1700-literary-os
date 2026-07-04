@@ -1,0 +1,59 @@
+{
+  "document_type": "stage243_current_hub_loadout_index",
+  "version": "1.0-20260704",
+  "created_at": "2026-07-04",
+  "status": "current_hub_loadout_index_after_p8_1",
+  "repository": "limsanghyuk/v1700-literary-os",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "current_stage": "Stage243",
+  "current_position": "P8.1 protocol prepared; local validation required next",
+  "gate_state": {
+    "gate_a_ready": false,
+    "scorecard_preflight_allowed": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "schema_chain_artifacts": [
+    "release/current/season_wiring_pack/full_series_arc_spec_schema_v1.json",
+    "release/current/season_wiring_pack/season_plan_schema_v1.json",
+    "release/current/season_wiring_pack/episode_arc_chain_schema_v1.json",
+    "release/current/season_wiring_pack/sequence_blueprint_schema_v1.json",
+    "release/current/season_wiring_pack/scene_blueprint_schema_v1.json",
+    "release/current/season_wiring_pack/llm_renderer_prompt_packet_schema_v1.json",
+    "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json"
+  ],
+  "fixture_and_protocol_artifacts": [
+    "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+    "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+    "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json"
+  ],
+  "transition_council_artifacts": [
+    "release/current/transition_council_pack/stage243_full_series_progress_audit_20260704.md",
+    "release/current/transition_council_pack/local_p8_1_validation_execution_manual_20260704.md",
+    "release/current/transition_council_pack/full_season_validation_protocol_p8_1_report_20260704.md",
+    "release/current/transition_council_pack/full_season_hard_rule_self_check_v1_report_20260704.md",
+    "release/current/transition_council_pack/full_season_candidate_package_fixture_v1_report_20260704.md"
+  ],
+  "local_required_next_output": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+  "local_required_actions": [
+    "pull latest working branch",
+    "parse JSON files",
+    "validate fixture against schema",
+    "execute cross-level integrity checks",
+    "check boundary invariants",
+    "write validation result JSON",
+    "commit and push validation result"
+  ],
+  "boundary_state": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "notes": [
+    "Remote artifacts have been authored and loaded through P8.1.",
+    "Actual validation has not yet been executed locally.",
+    "P9 Scorecard Preflight remains blocked until validation and hard-rule state permit."
+  ]
+}
