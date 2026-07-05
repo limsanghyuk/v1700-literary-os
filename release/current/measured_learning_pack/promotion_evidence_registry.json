@@ -24,7 +24,7 @@
   },
   "evidence_classes": {
     "structural_evidence": {
-      "status": "partial_seqcard_v5_loaded_p8_1_pass_with_warning_gate_a_blocked",
+      "status": "partial_seqcard_v5_p8_2_deeper_integrity_manual_review_required_gate_a_blocked",
       "supports": [
         "SeqCard v3 scene-function inventory",
         "16-label scene function taxonomy coverage",
@@ -50,7 +50,9 @@
         "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
         "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
         "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
-        "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json"
+        "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
+        "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json"
       ],
       "current_measured_facts": {
         "seqcard_jsonl_files": 457,
@@ -90,7 +92,15 @@
         "p8_1_integrity_warning_count": 11,
         "p8_1_boundary_invariants_pass": true,
         "p8_1_hard_rule_pass_from_self_check": false,
-        "p8_1_gate_a_ready_after_validation": false
+        "p8_1_gate_a_ready_after_validation": false,
+        "p8_2_deeper_integrity_status": "manual_review_required",
+        "p8_2_pass_with_warning_count": 4,
+        "p8_2_manual_review_required_count": 7,
+        "p8_2_fail_hard_rule_count": 0,
+        "p8_2_blocked_count": 0,
+        "p8_2_hard_rule_pass": false,
+        "p8_2_gate_a_ready": false,
+        "p8_2_scorecard_preflight_allowed": false
       },
       "limitations": [
         "Season arc contract fixture exists but is not measured generator evidence",
@@ -236,6 +246,12 @@
         "human approval boundary"
       ],
       "blocked_reason": "Contract preflight exists, but closed authoring loop is not implemented"
+    },
+    "p8_2_hard_rule_gate": {
+      "status": "manual_review_required",
+      "hard_rule_pass": false,
+      "gate_a_ready": false,
+      "scorecard_preflight_allowed": false
     }
   },
   "blocked_claims": [

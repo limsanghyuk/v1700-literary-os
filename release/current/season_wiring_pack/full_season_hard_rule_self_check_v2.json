@@ -1,0 +1,102 @@
+{
+  "document_type": "full_season_hard_rule_self_check",
+  "version": "2.0-stage243-p8.2-local-execution",
+  "created_at": "2026-07-05T07:59:49.230724+00:00",
+  "source_p8_1_result": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+  "source_deeper_integrity_result": "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+  "hard_rule_pass": false,
+  "final_verdict": "manual_review_required",
+  "gate_a_ready": false,
+  "scorecard_preflight_allowed": false,
+  "blocking_findings": [
+    {
+      "check_id": "series_to_season_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Inspect instantiated FullSeriesArcSpec and SeasonPlan fields before hard-rule pass."
+    },
+    {
+      "check_id": "season_to_episode_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide or inspect instantiated EpisodeArcChain nodes for the 16-episode candidate."
+    },
+    {
+      "check_id": "plant_payoff_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide metadata-only plant/payoff ledger IDs and timing links."
+    },
+    {
+      "check_id": "character_arc_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide metadata-only character arc transition graph with causal supports."
+    },
+    {
+      "check_id": "relationship_arc_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide metadata-only relationship transition graph with supporting event IDs."
+    },
+    {
+      "check_id": "causal_spine_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide metadata-only causal edge graph linking episode, sequence, and scene IDs."
+    },
+    {
+      "check_id": "hook_chain_integrity",
+      "status": "manual_review_required",
+      "required_next_action": "Provide metadata-only hook ledger with downstream consequence IDs."
+    }
+  ],
+  "warning_findings": [
+    {
+      "check_id": "episode_to_sequence_integrity",
+      "status": "pass_with_warning",
+      "limitations": [
+        "Corpus-level episode-to-sequence coverage is complete, but fixture-specific episode-to-sequence IDs are not enumerated."
+      ]
+    },
+    {
+      "check_id": "sequence_to_scene_integrity",
+      "status": "pass_with_warning",
+      "limitations": [
+        "Member-scene metadata has no warning samples, but required transition support is not available as exported fixture instances."
+      ]
+    },
+    {
+      "check_id": "scene_to_renderer_packet_integrity",
+      "status": "pass_with_warning",
+      "limitations": [
+        "Counts and safety boundary align, but packet-by-scene bijection is not instantiated in exported metadata."
+      ]
+    },
+    {
+      "check_id": "genre_rhythm_integrity",
+      "status": "pass_with_warning",
+      "limitations": [
+        "Scene-function distribution is strong corpus-level rhythm evidence, but candidate-specific genre mode and rhythm target are not instantiated."
+      ]
+    }
+  ],
+  "required_next_actions": [
+    "do_not_run_P9_until_hard_rule_pass_and_gate_a_ready",
+    "provide_metadata_only_instantiated_episode_sequence_scene_ledgers",
+    "provide_metadata_only_plant_payoff_character_relationship_causal_hook_ledgers",
+    "rerun_P8_2_deeper_integrity_after_ledgers_are_available"
+  ],
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "safety": {
+    "metadata_only": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "live_prose_generation": false,
+    "canonical_mutation": false,
+    "training_update": false,
+    "adapter_promotion": false,
+    "promotion_claim": false,
+    "p9_scorecard_preflight_run": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false
+  }
+}

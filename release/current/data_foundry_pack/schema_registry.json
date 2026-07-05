@@ -1,8 +1,8 @@
 {
   "document_type": "schema_registry",
-  "version": "2.3-stage243-v5-p8.1-rerun",
+  "version": "2.4-stage243-v5-p8.2-deeper-integrity",
   "created_at": "2026-07-03",
-  "purpose": "Stage243 metadata-only schema authority for corpus_ko, SeqCard v5, EpisodeArc, SequenceBlueprint, linkage v5, taxonomy, pair distribution, Pass1-Pass7 contracts, macro candidate evaluation, P8.1 local validation, and redaction policy.",
+  "purpose": "Stage243 metadata-only schema authority for corpus_ko, SeqCard v5, EpisodeArc, SequenceBlueprint, linkage v5, taxonomy, pair distribution, Pass1-Pass7 contracts, macro candidate evaluation, P8.1 local validation, and redaction policy. Includes P8.2 local deeper integrity result and hard-rule self-check v2. Includes P8.2 local deeper integrity result and hard-rule self-check v2.",
   "safety": {
     "metadata_only": true,
     "raw_text_exported": false,
@@ -984,6 +984,21 @@
       "sha256": "f0332942d5f0c5a41e5237e5b4fc1c7f9b7413e8f4f34d95223fcd132aeb3cd9",
       "roadmap_position": "P8.1",
       "export_policy": "validation protocol metadata only"
+    },
+    "full_season_deeper_integrity_result_p8_2": {
+      "path": "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+      "document_type": "full_season_deeper_integrity_result",
+      "status": "manual_review_required",
+      "check_count": 11,
+      "manual_review_required_count": 7,
+      "export_policy": "metadata-only integrity findings; no raw prose exported"
+    },
+    "full_season_hard_rule_self_check_v2": {
+      "path": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json",
+      "document_type": "full_season_hard_rule_self_check",
+      "hard_rule_pass": false,
+      "final_verdict": "manual_review_required",
+      "export_policy": "metadata-only hard-rule gate result; no promotion claim"
     }
   }
 }
