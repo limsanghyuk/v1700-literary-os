@@ -1,0 +1,50 @@
+{
+  "task_name": "Stage243 P8.3 Metadata-Only Instantiated Ledger Design",
+  "performed_by": "ChatGPT",
+  "execution_location": "remote_github",
+  "created_at": "2026-07-05",
+  "created_artifacts": [
+    "release/current/season_wiring_pack/full_season_instantiated_ledger_schema_p8_3.json",
+    "release/current/season_wiring_pack/full_season_instantiated_ledger_fixture_p8_3.json",
+    "release/current/transition_council_pack/p8_3_instantiated_ledger_design_report_20260705.md",
+    "release/current/transition_council_pack/codex_local_p8_3_ledger_build_handoff_20260705.md",
+    "release/current/transition_council_pack/chatgpt_direct_work_result_packet_p8_3_ledger_design_20260705.json"
+  ],
+  "work_method": {
+    "chatgpt_direct_work": [
+      "P8.2 manual_review_required state interpretation",
+      "metadata-only instantiated ledger schema design",
+      "template-only ledger fixture creation",
+      "Codex-local ledger build handoff creation",
+      "remote hub load"
+    ],
+    "codex_local_required_next": true,
+    "codex_local_reason": "Actual ledger population requires local metadata inspection and should not be fabricated by ChatGPT."
+  },
+  "current_state_after_p8_3_design": {
+    "p8_2_status": "manual_review_required",
+    "p8_3_schema": "created",
+    "p8_3_template_fixture": "created_template_only",
+    "ledger_population": "local_required",
+    "hard_rule_pass": false,
+    "gate_a_ready": false,
+    "scorecard_preflight_allowed": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "local_required_next_outputs": [
+    "release/current/season_wiring_pack/full_season_instantiated_ledger_result_p8_3.json",
+    "release/current/transition_council_pack/p8_3_local_instantiated_ledger_build_report_20260705.md"
+  ],
+  "safety": {
+    "metadata_only": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "training_update_started": false,
+    "adapter_promotion": false,
+    "promotion_claim": false,
+    "p9_scorecard_preflight_run": false
+  },
+  "next_required_step": "Codex-local build of full_season_instantiated_ledger_result_p8_3.json using the P8.3 schema."
+}
