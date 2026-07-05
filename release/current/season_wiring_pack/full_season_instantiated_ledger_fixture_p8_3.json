@@ -1,0 +1,89 @@
+{
+  "document_type": "full_season_instantiated_ledger",
+  "version": "1.0-stage243-p8.3-template",
+  "authority": {
+    "metadata_only": true,
+    "fixture_template_only": true,
+    "local_execution_required": true,
+    "raw_text_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "promotion_claim": false
+  },
+  "source_refs": {
+    "schema": "release/current/season_wiring_pack/full_season_instantiated_ledger_schema_p8_3.json",
+    "p8_2_deeper_integrity_result": "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+    "p8_2_hard_rule_self_check": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json",
+    "p8_1_validation_result": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+    "candidate_package_fixture": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+    "seqcard_v5_manifest": "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+    "episode_arc_inventory_v5": "release/current/data_foundry_pack/episode_arc_inventory_v5.json",
+    "sequence_blueprint_inventory_v5": "release/current/data_foundry_pack/sequence_blueprint_inventory_v5.json"
+  },
+  "candidate_identity": {
+    "candidate_package_id": "fixture_full_season_candidate_v1_20260704",
+    "series_id": "synthetic_series_fixture_v1",
+    "season_id": "synthetic_season_fixture_v1",
+    "target_episode_count": 16
+  },
+  "ledger_status": {
+    "overall_status": "template_only",
+    "ledger_instance_level": "template_only",
+    "gate_a_ready": false,
+    "scorecard_preflight_allowed": false
+  },
+  "ledgers": {
+    "episode_node_ledger": [],
+    "sequence_binding_ledger": [],
+    "scene_binding_ledger": [],
+    "renderer_packet_binding_ledger": [],
+    "plant_payoff_ledger": [],
+    "character_arc_transition_ledger": [],
+    "relationship_arc_transition_ledger": [],
+    "causal_edge_ledger": [],
+    "hook_consequence_ledger": [],
+    "genre_rhythm_target_ledger": []
+  },
+  "coverage_summary": {
+    "episode_nodes": 0,
+    "sequence_bindings": 0,
+    "scene_bindings": 0,
+    "renderer_bindings": 0,
+    "plant_payoff_links": 0,
+    "character_transitions": 0,
+    "relationship_transitions": 0,
+    "causal_edges": 0,
+    "hook_links": 0,
+    "genre_rhythm_targets": 0
+  },
+  "hard_rule_resolution_targets": [
+    "series_to_season_integrity",
+    "season_to_episode_integrity",
+    "episode_to_sequence_integrity",
+    "sequence_to_scene_integrity",
+    "scene_to_renderer_packet_integrity",
+    "plant_payoff_integrity",
+    "character_arc_integrity",
+    "relationship_arc_integrity",
+    "causal_spine_integrity",
+    "hook_chain_integrity",
+    "genre_rhythm_integrity"
+  ],
+  "template_notes": [
+    "This fixture is a schema-conforming empty ledger scaffold, not an instantiated evidence result.",
+    "Codex-local must populate metadata-only IDs, refs, and transition links before P8.2 can be rerun.",
+    "Do not treat this template as hard-rule pass evidence.",
+    "Do not run P9 from this template."
+  ],
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "training_update": false,
+    "adapter_promotion": false,
+    "promotion_claim": false,
+    "p9_scorecard_preflight_run": false
+  }
+}
