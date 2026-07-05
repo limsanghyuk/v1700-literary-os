@@ -1,0 +1,49 @@
+{
+  "document_type": "sequence_blueprint_inventory_v5",
+  "version": "5.0",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "source_seqcard_manifest": "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "full_jsonl_rows_exported": false,
+    "heading_title_intent_gist_values_exported": false,
+    "original_extracted_exported": false,
+    "dump_txt_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false,
+    "promotion_claim": false
+  },
+  "file_count": 648,
+  "record_count": 6146,
+  "keys": [
+    "by",
+    "core_mix",
+    "episode_no",
+    "goal",
+    "member_scene_nos",
+    "obstacle",
+    "place_cluster",
+    "pov_char",
+    "runtime_share",
+    "scene_budget",
+    "scene_span",
+    "seq_id",
+    "seq_index",
+    "sequence_intent",
+    "sq_index",
+    "turn_class",
+    "turn_type",
+    "value_shift",
+    "work_id"
+  ],
+  "records_per_episode": {
+    "min": 2,
+    "max": 24,
+    "mean": 9.4846
+  },
+  "member_scene_warning_count": 0,
+  "member_scene_warning_samples": [],
+  "export_policy": "metadata-only; sequence intent/goal/obstacle text values are not exported"
+}

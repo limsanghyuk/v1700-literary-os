@@ -1,0 +1,25 @@
+{
+  "document_type": "claude_seqcard_ko_zip_integrity_report",
+  "version": "20260705_160707",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "source_zip": "C:\\claude\\db\\seqcard_ko.zip",
+  "source_zip_sha256": "cf8ad0f0045d37d6725a44675f7918bccf696ea3749f88d4fb97211d503a70e0",
+  "local_incoming_zip_copy": "C:\\AI_Codex\\local_only\\incoming\\seqcard_ko_20260705_160707.zip",
+  "local_incoming_zip_sha256": "cf8ad0f0045d37d6725a44675f7918bccf696ea3749f88d4fb97211d503a70e0",
+  "sha256_match": true,
+  "zip_crc_testzip_ok": true,
+  "zip_testzip_bad_entry": null,
+  "entries_total": 3301,
+  "files_total": 3295,
+  "dirs_total": 6,
+  "extension_counts": {
+    ".json": 1363,
+    ".jsonl": 1308,
+    ".md": 5,
+    ".py": 8,
+    ".txt": 611,
+    "[none]": 6
+  },
+  "source_bearing_archive": true,
+  "release_current_raw_archive_allowed": false
+}

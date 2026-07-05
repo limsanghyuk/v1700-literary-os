@@ -1,0 +1,1603 @@
+{
+  "document_type": "scene_function_pair_distribution_v5",
+  "version": "5.0",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "source_seqcard_manifest": "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+  "summary": {
+    "records_total": 41168,
+    "unique_pairs": 265,
+    "core2_NONE_treated_as_missing": true
+  },
+  "pairs": [
+    {
+      "core": "PERIL",
+      "core2": "NONE",
+      "count": 2020,
+      "percent": 4.9067
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "NONE",
+      "count": 1862,
+      "percent": 4.5229
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "NONE",
+      "count": 1581,
+      "percent": 3.8404
+    },
+    {
+      "core": "HOOK",
+      "core2": "NONE",
+      "count": 1035,
+      "percent": 2.5141
+    },
+    {
+      "core": "LOSS",
+      "core2": "NONE",
+      "count": 1004,
+      "percent": 2.4388
+    },
+    {
+      "core": "REVELATION",
+      "core2": "CONFLICT",
+      "count": 855,
+      "percent": 2.0769
+    },
+    {
+      "core": "DESIRE",
+      "core2": "NONE",
+      "count": 812,
+      "percent": 1.9724
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "PERIL",
+      "count": 811,
+      "percent": 1.97
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "DESIRE",
+      "count": 808,
+      "percent": 1.9627
+    },
+    {
+      "core": "REVELATION",
+      "core2": "NONE",
+      "count": 800,
+      "percent": 1.9433
+    },
+    {
+      "core": "PERIL",
+      "core2": "HOOK",
+      "count": 792,
+      "percent": 1.9238
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "REVELATION",
+      "count": 719,
+      "percent": 1.7465
+    },
+    {
+      "core": "BOND",
+      "core2": "NONE",
+      "count": 706,
+      "percent": 1.7149
+    },
+    {
+      "core": "BOND",
+      "core2": "RELIEF",
+      "count": 660,
+      "percent": 1.6032
+    },
+    {
+      "core": "PERIL",
+      "core2": "CONFLICT",
+      "count": 660,
+      "percent": 1.6032
+    },
+    {
+      "core": "REVELATION",
+      "core2": "PERIL",
+      "count": 612,
+      "percent": 1.4866
+    },
+    {
+      "core": "RELIEF",
+      "core2": "NONE",
+      "count": 607,
+      "percent": 1.4744
+    },
+    {
+      "core": "REVELATION",
+      "core2": "HOOK",
+      "count": 542,
+      "percent": 1.3166
+    },
+    {
+      "core": "ORACLE",
+      "core2": "NONE",
+      "count": 497,
+      "percent": 1.2072
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "LOSS",
+      "count": 478,
+      "percent": 1.1611
+    },
+    {
+      "core": "RELIEF",
+      "core2": "BOND",
+      "count": 461,
+      "percent": 1.1198
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "BOND",
+      "count": 428,
+      "percent": 1.0396
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "HOOK",
+      "count": 417,
+      "percent": 1.0129
+    },
+    {
+      "core": "DESIRE",
+      "core2": "CONFLICT",
+      "count": 410,
+      "percent": 0.9959
+    },
+    {
+      "core": "REVELATION",
+      "core2": "LOSS",
+      "count": 393,
+      "percent": 0.9546
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "PUNISH",
+      "count": 389,
+      "percent": 0.9449
+    },
+    {
+      "core": "LOSS",
+      "core2": "BOND",
+      "count": 388,
+      "percent": 0.9425
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "BOND",
+      "count": 364,
+      "percent": 0.8842
+    },
+    {
+      "core": "PUNISH",
+      "core2": "CONFLICT",
+      "count": 363,
+      "percent": 0.8818
+    },
+    {
+      "core": "LOSS",
+      "core2": "CONFLICT",
+      "count": 359,
+      "percent": 0.872
+    },
+    {
+      "core": "HOOK",
+      "core2": "PERIL",
+      "count": 336,
+      "percent": 0.8162
+    },
+    {
+      "core": "REVELATION",
+      "core2": "BOND",
+      "count": 332,
+      "percent": 0.8065
+    },
+    {
+      "core": "BOND",
+      "core2": "DESIRE",
+      "count": 314,
+      "percent": 0.7627
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "ORACLE",
+      "count": 307,
+      "percent": 0.7457
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "NONE",
+      "count": 305,
+      "percent": 0.7409
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "CONFLICT",
+      "count": 295,
+      "percent": 0.7166
+    },
+    {
+      "core": "BOND",
+      "core2": "ROMANCE",
+      "count": 291,
+      "percent": 0.7069
+    },
+    {
+      "core": "PERIL",
+      "core2": "REVELATION",
+      "count": 290,
+      "percent": 0.7044
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "HOOK",
+      "count": 287,
+      "percent": 0.6971
+    },
+    {
+      "core": "HOOK",
+      "core2": "CONFLICT",
+      "count": 272,
+      "percent": 0.6607
+    },
+    {
+      "core": "DESIRE",
+      "core2": "BOND",
+      "count": 270,
+      "percent": 0.6558
+    },
+    {
+      "core": "BOND",
+      "core2": "CONFLICT",
+      "count": 269,
+      "percent": 0.6534
+    },
+    {
+      "core": "LOSS",
+      "core2": "PERIL",
+      "count": 265,
+      "percent": 0.6437
+    },
+    {
+      "core": "BOND",
+      "core2": "LOSS",
+      "count": 263,
+      "percent": 0.6388
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "CONFLICT",
+      "count": 254,
+      "percent": 0.617
+    },
+    {
+      "core": "PERIL",
+      "core2": "LOSS",
+      "count": 244,
+      "percent": 0.5927
+    },
+    {
+      "core": "REVELATION",
+      "core2": "ORACLE",
+      "count": 241,
+      "percent": 0.5854
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "REVERSAL",
+      "count": 235,
+      "percent": 0.5708
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "RELIEF",
+      "count": 233,
+      "percent": 0.566
+    },
+    {
+      "core": "LOSS",
+      "core2": "REVELATION",
+      "count": 230,
+      "percent": 0.5587
+    },
+    {
+      "core": "REVELATION",
+      "core2": "DESIRE",
+      "count": 227,
+      "percent": 0.5514
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "ESTABLISH",
+      "count": 226,
+      "percent": 0.549
+    },
+    {
+      "core": "PERIL",
+      "core2": "DESIRE",
+      "count": 224,
+      "percent": 0.5441
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "PERIL",
+      "count": 220,
+      "percent": 0.5344
+    },
+    {
+      "core": "ORACLE",
+      "core2": "PERIL",
+      "count": 219,
+      "percent": 0.532
+    },
+    {
+      "core": "PERIL",
+      "core2": "ORACLE",
+      "count": 212,
+      "percent": 0.515
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "BOND",
+      "count": 211,
+      "percent": 0.5125
+    },
+    {
+      "core": "ORACLE",
+      "core2": "CONFLICT",
+      "count": 207,
+      "percent": 0.5028
+    },
+    {
+      "core": "DESIRE",
+      "core2": "PERIL",
+      "count": 206,
+      "percent": 0.5004
+    },
+    {
+      "core": "DESIRE",
+      "core2": "HOOK",
+      "count": 203,
+      "percent": 0.4931
+    },
+    {
+      "core": "PUNISH",
+      "core2": "NONE",
+      "count": 196,
+      "percent": 0.4761
+    },
+    {
+      "core": "HOOK",
+      "core2": "REVELATION",
+      "count": 195,
+      "percent": 0.4737
+    },
+    {
+      "core": "LOSS",
+      "core2": "DESIRE",
+      "count": 177,
+      "percent": 0.4299
+    },
+    {
+      "core": "RESCUE",
+      "core2": "PERIL",
+      "count": 177,
+      "percent": 0.4299
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "RELIEF",
+      "count": 177,
+      "percent": 0.4299
+    },
+    {
+      "core": "PERIL",
+      "core2": "BOND",
+      "count": 174,
+      "percent": 0.4227
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "PERIL",
+      "count": 170,
+      "percent": 0.4129
+    },
+    {
+      "core": "PERIL",
+      "core2": "RESCUE",
+      "count": 166,
+      "percent": 0.4032
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "ROMANCE",
+      "count": 159,
+      "percent": 0.3862
+    },
+    {
+      "core": "BOND",
+      "core2": "REVELATION",
+      "count": 156,
+      "percent": 0.3789
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "NONE",
+      "count": 155,
+      "percent": 0.3765
+    },
+    {
+      "core": "PERIL",
+      "core2": "ESTABLISH",
+      "count": 147,
+      "percent": 0.3571
+    },
+    {
+      "core": "RESCUE",
+      "core2": "NONE",
+      "count": 147,
+      "percent": 0.3571
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "CONFLICT",
+      "count": 147,
+      "percent": 0.3571
+    },
+    {
+      "core": "DESIRE",
+      "core2": "ORACLE",
+      "count": 146,
+      "percent": 0.3546
+    },
+    {
+      "core": "LOSS",
+      "core2": "PUNISH",
+      "count": 146,
+      "percent": 0.3546
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "DESIRE",
+      "count": 141,
+      "percent": 0.3425
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "DESIRE",
+      "count": 141,
+      "percent": 0.3425
+    },
+    {
+      "core": "PERIL",
+      "core2": "REVERSAL",
+      "count": 140,
+      "percent": 0.3401
+    },
+    {
+      "core": "REVELATION",
+      "core2": "PUNISH",
+      "count": 140,
+      "percent": 0.3401
+    },
+    {
+      "core": "BOND",
+      "core2": "PERIL",
+      "count": 137,
+      "percent": 0.3328
+    },
+    {
+      "core": "RELIEF",
+      "core2": "CONFLICT",
+      "count": 135,
+      "percent": 0.3279
+    },
+    {
+      "core": "PUNISH",
+      "core2": "LOSS",
+      "count": 133,
+      "percent": 0.3231
+    },
+    {
+      "core": "REVELATION",
+      "core2": "RELIEF",
+      "count": 133,
+      "percent": 0.3231
+    },
+    {
+      "core": "DESIRE",
+      "core2": "LOSS",
+      "count": 132,
+      "percent": 0.3206
+    },
+    {
+      "core": "BOND",
+      "core2": "ORACLE",
+      "count": 129,
+      "percent": 0.3134
+    },
+    {
+      "core": "ORACLE",
+      "core2": "BOND",
+      "count": 129,
+      "percent": 0.3134
+    },
+    {
+      "core": "ORACLE",
+      "core2": "REVELATION",
+      "count": 127,
+      "percent": 0.3085
+    },
+    {
+      "core": "DESIRE",
+      "core2": "ROMANCE",
+      "count": 126,
+      "percent": 0.3061
+    },
+    {
+      "core": "ORACLE",
+      "core2": "DESIRE",
+      "count": 126,
+      "percent": 0.3061
+    },
+    {
+      "core": "BOND",
+      "core2": "ESTABLISH",
+      "count": 124,
+      "percent": 0.3012
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "RELIEF",
+      "count": 122,
+      "percent": 0.2963
+    },
+    {
+      "core": "LOSS",
+      "core2": "ROMANCE",
+      "count": 121,
+      "percent": 0.2939
+    },
+    {
+      "core": "RESCUE",
+      "core2": "BOND",
+      "count": 121,
+      "percent": 0.2939
+    },
+    {
+      "core": "PUNISH",
+      "core2": "PERIL",
+      "count": 118,
+      "percent": 0.2866
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "HOOK",
+      "count": 117,
+      "percent": 0.2842
+    },
+    {
+      "core": "BOND",
+      "core2": "HOOK",
+      "count": 112,
+      "percent": 0.2721
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "ORACLE",
+      "count": 112,
+      "percent": 0.2721
+    },
+    {
+      "core": "REUNION",
+      "core2": "BOND",
+      "count": 112,
+      "percent": 0.2721
+    },
+    {
+      "core": "RELIEF",
+      "core2": "ROMANCE",
+      "count": 111,
+      "percent": 0.2696
+    },
+    {
+      "core": "DESIRE",
+      "core2": "ESTABLISH",
+      "count": 108,
+      "percent": 0.2623
+    },
+    {
+      "core": "LOSS",
+      "core2": "HOOK",
+      "count": 107,
+      "percent": 0.2599
+    },
+    {
+      "core": "PUNISH",
+      "core2": "REVELATION",
+      "count": 107,
+      "percent": 0.2599
+    },
+    {
+      "core": "ORACLE",
+      "core2": "HOOK",
+      "count": 104,
+      "percent": 0.2526
+    },
+    {
+      "core": "HOOK",
+      "core2": "DESIRE",
+      "count": 100,
+      "percent": 0.2429
+    },
+    {
+      "core": "REUNION",
+      "core2": "RELIEF",
+      "count": 99,
+      "percent": 0.2405
+    },
+    {
+      "core": "DESIRE",
+      "core2": "RELIEF",
+      "count": 98,
+      "percent": 0.238
+    },
+    {
+      "core": "DESIRE",
+      "core2": "REVELATION",
+      "count": 98,
+      "percent": 0.238
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "ESTABLISH",
+      "count": 98,
+      "percent": 0.238
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "DESIRE",
+      "count": 98,
+      "percent": 0.238
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "RELIEF",
+      "count": 96,
+      "percent": 0.2332
+    },
+    {
+      "core": "RELIEF",
+      "core2": "HOOK",
+      "count": 95,
+      "percent": 0.2308
+    },
+    {
+      "core": "REVELATION",
+      "core2": "ROMANCE",
+      "count": 90,
+      "percent": 0.2186
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "LOSS",
+      "count": 90,
+      "percent": 0.2186
+    },
+    {
+      "core": "LOSS",
+      "core2": "ORACLE",
+      "count": 89,
+      "percent": 0.2162
+    },
+    {
+      "core": "HOOK",
+      "core2": "ESTABLISH",
+      "count": 87,
+      "percent": 0.2113
+    },
+    {
+      "core": "HOOK",
+      "core2": "BOND",
+      "count": 86,
+      "percent": 0.2089
+    },
+    {
+      "core": "ORACLE",
+      "core2": "ESTABLISH",
+      "count": 84,
+      "percent": 0.204
+    },
+    {
+      "core": "INTRO",
+      "core2": "NONE",
+      "count": 83,
+      "percent": 0.2016
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "LOSS",
+      "count": 82,
+      "percent": 0.1992
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "HOOK",
+      "count": 80,
+      "percent": 0.1943
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "INTRO",
+      "count": 79,
+      "percent": 0.1919
+    },
+    {
+      "core": "LOSS",
+      "core2": "RELIEF",
+      "count": 79,
+      "percent": 0.1919
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "LOSS",
+      "count": 77,
+      "percent": 0.187
+    },
+    {
+      "core": "PERIL",
+      "core2": "RELIEF",
+      "count": 77,
+      "percent": 0.187
+    },
+    {
+      "core": "RELIEF",
+      "core2": "ESTABLISH",
+      "count": 77,
+      "percent": 0.187
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "BOND",
+      "count": 75,
+      "percent": 0.1822
+    },
+    {
+      "core": "RELIEF",
+      "core2": "DESIRE",
+      "count": 72,
+      "percent": 0.1749
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "PUNISH",
+      "count": 72,
+      "percent": 0.1749
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "CONFLICT",
+      "count": 71,
+      "percent": 0.1725
+    },
+    {
+      "core": "LOSS",
+      "core2": "ESTABLISH",
+      "count": 68,
+      "percent": 0.1652
+    },
+    {
+      "core": "ORACLE",
+      "core2": "LOSS",
+      "count": 67,
+      "percent": 0.1627
+    },
+    {
+      "core": "REUNION",
+      "core2": "ROMANCE",
+      "count": 66,
+      "percent": 0.1603
+    },
+    {
+      "core": "HOOK",
+      "core2": "ORACLE",
+      "count": 65,
+      "percent": 0.1579
+    },
+    {
+      "core": "REVELATION",
+      "core2": "REVERSAL",
+      "count": 63,
+      "percent": 0.153
+    },
+    {
+      "core": "RELIEF",
+      "core2": "REVELATION",
+      "count": 62,
+      "percent": 0.1506
+    },
+    {
+      "core": "RELIEF",
+      "core2": "PERIL",
+      "count": 61,
+      "percent": 0.1482
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "REVELATION",
+      "count": 61,
+      "percent": 0.1482
+    },
+    {
+      "core": "INTRO",
+      "core2": "CONFLICT",
+      "count": 59,
+      "percent": 0.1433
+    },
+    {
+      "core": "REVELATION",
+      "core2": "ESTABLISH",
+      "count": 58,
+      "percent": 0.1409
+    },
+    {
+      "core": "INTRO",
+      "core2": "ESTABLISH",
+      "count": 56,
+      "percent": 0.136
+    },
+    {
+      "core": "PERIL",
+      "core2": "PUNISH",
+      "count": 56,
+      "percent": 0.136
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "INTRO",
+      "count": 55,
+      "percent": 0.1336
+    },
+    {
+      "core": "RESCUE",
+      "core2": "RELIEF",
+      "count": 55,
+      "percent": 0.1336
+    },
+    {
+      "core": "RELIEF",
+      "core2": "LOSS",
+      "count": 53,
+      "percent": 0.1287
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "PERIL",
+      "count": 53,
+      "percent": 0.1287
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "REVELATION",
+      "count": 53,
+      "percent": 0.1287
+    },
+    {
+      "core": "PERIL",
+      "core2": "PERIL",
+      "count": 50,
+      "percent": 0.1215
+    },
+    {
+      "core": "RESCUE",
+      "core2": "CONFLICT",
+      "count": 50,
+      "percent": 0.1215
+    },
+    {
+      "core": "HOOK",
+      "core2": "LOSS",
+      "count": 49,
+      "percent": 0.119
+    },
+    {
+      "core": "PUNISH",
+      "core2": "RELIEF",
+      "count": 49,
+      "percent": 0.119
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "REVELATION",
+      "count": 48,
+      "percent": 0.1166
+    },
+    {
+      "core": "REUNION",
+      "core2": "NONE",
+      "count": 46,
+      "percent": 0.1117
+    },
+    {
+      "core": "INTRO",
+      "core2": "HOOK",
+      "count": 44,
+      "percent": 0.1069
+    },
+    {
+      "core": "PUNISH",
+      "core2": "REVERSAL",
+      "count": 43,
+      "percent": 0.1045
+    },
+    {
+      "core": "RELIEF",
+      "core2": "REVERSAL",
+      "count": 42,
+      "percent": 0.102
+    },
+    {
+      "core": "RESCUE",
+      "core2": "REVERSAL",
+      "count": 42,
+      "percent": 0.102
+    },
+    {
+      "core": "REUNION",
+      "core2": "CONFLICT",
+      "count": 42,
+      "percent": 0.102
+    },
+    {
+      "core": "HOOK",
+      "core2": "RELIEF",
+      "count": 41,
+      "percent": 0.0996
+    },
+    {
+      "core": "LOSS",
+      "core2": "REVERSAL",
+      "count": 41,
+      "percent": 0.0996
+    },
+    {
+      "core": "RELIEF",
+      "core2": "ORACLE",
+      "count": 41,
+      "percent": 0.0996
+    },
+    {
+      "core": "RESCUE",
+      "core2": "REVELATION",
+      "count": 41,
+      "percent": 0.0996
+    },
+    {
+      "core": "HOOK",
+      "core2": "REVERSAL",
+      "count": 39,
+      "percent": 0.0947
+    },
+    {
+      "core": "INTRO",
+      "core2": "BOND",
+      "count": 39,
+      "percent": 0.0947
+    },
+    {
+      "core": "ORACLE",
+      "core2": "RELIEF",
+      "count": 39,
+      "percent": 0.0947
+    },
+    {
+      "core": "RELIEF",
+      "core2": "REUNION",
+      "count": 38,
+      "percent": 0.0923
+    },
+    {
+      "core": "DESIRE",
+      "core2": "REVERSAL",
+      "count": 34,
+      "percent": 0.0826
+    },
+    {
+      "core": "RELIEF",
+      "core2": "RELIEF",
+      "count": 33,
+      "percent": 0.0802
+    },
+    {
+      "core": "LOSS",
+      "core2": "LOSS",
+      "count": 32,
+      "percent": 0.0777
+    },
+    {
+      "core": "ORACLE",
+      "core2": "ROMANCE",
+      "count": 32,
+      "percent": 0.0777
+    },
+    {
+      "core": "PUNISH",
+      "core2": "HOOK",
+      "count": 32,
+      "percent": 0.0777
+    },
+    {
+      "core": "RESCUE",
+      "core2": "ROMANCE",
+      "count": 32,
+      "percent": 0.0777
+    },
+    {
+      "core": "REUNION",
+      "core2": "LOSS",
+      "count": 32,
+      "percent": 0.0777
+    },
+    {
+      "core": "BOND",
+      "core2": "INTRO",
+      "count": 31,
+      "percent": 0.0753
+    },
+    {
+      "core": "HOOK",
+      "core2": "HOOK",
+      "count": 31,
+      "percent": 0.0753
+    },
+    {
+      "core": "REUNION",
+      "core2": "HOOK",
+      "count": 31,
+      "percent": 0.0753
+    },
+    {
+      "core": "RESCUE",
+      "core2": "DESIRE",
+      "count": 30,
+      "percent": 0.0729
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "ORACLE",
+      "count": 30,
+      "percent": 0.0729
+    },
+    {
+      "core": "REUNION",
+      "core2": "PERIL",
+      "count": 29,
+      "percent": 0.0704
+    },
+    {
+      "core": "REVELATION",
+      "core2": "RESCUE",
+      "count": 29,
+      "percent": 0.0704
+    },
+    {
+      "core": "BOND",
+      "core2": "BOND",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "BOND",
+      "core2": "REUNION",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "RESCUE",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "INTRO",
+      "core2": "DESIRE",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "REUNION",
+      "core2": "REVELATION",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "RESCUE",
+      "count": 26,
+      "percent": 0.0632
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "ROMANCE",
+      "count": 25,
+      "percent": 0.0607
+    },
+    {
+      "core": "DESIRE",
+      "core2": "DESIRE",
+      "count": 24,
+      "percent": 0.0583
+    },
+    {
+      "core": "HOOK",
+      "core2": "INTRO",
+      "count": 24,
+      "percent": 0.0583
+    },
+    {
+      "core": "PUNISH",
+      "core2": "DESIRE",
+      "count": 24,
+      "percent": 0.0583
+    },
+    {
+      "core": "BOND",
+      "core2": "REVERSAL",
+      "count": 23,
+      "percent": 0.0559
+    },
+    {
+      "core": "HOOK",
+      "core2": "ROMANCE",
+      "count": 23,
+      "percent": 0.0559
+    },
+    {
+      "core": "INTRO",
+      "core2": "RELIEF",
+      "count": 23,
+      "percent": 0.0559
+    },
+    {
+      "core": "PERIL",
+      "core2": "ROMANCE",
+      "count": 23,
+      "percent": 0.0559
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "ESTABLISH",
+      "count": 22,
+      "percent": 0.0534
+    },
+    {
+      "core": "PUNISH",
+      "core2": "BOND",
+      "count": 21,
+      "percent": 0.051
+    },
+    {
+      "core": "RESCUE",
+      "core2": "LOSS",
+      "count": 21,
+      "percent": 0.051
+    },
+    {
+      "core": "RESCUE",
+      "core2": "REUNION",
+      "count": 21,
+      "percent": 0.051
+    },
+    {
+      "core": "BOND",
+      "core2": "RESCUE",
+      "count": 20,
+      "percent": 0.0486
+    },
+    {
+      "core": "RELIEF",
+      "core2": "PUNISH",
+      "count": 20,
+      "percent": 0.0486
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "REVERSAL",
+      "count": 20,
+      "percent": 0.0486
+    },
+    {
+      "core": "RESCUE",
+      "core2": "HOOK",
+      "count": 18,
+      "percent": 0.0437
+    },
+    {
+      "core": "DESIRE",
+      "core2": "PUNISH",
+      "count": 16,
+      "percent": 0.0389
+    },
+    {
+      "core": "PUNISH",
+      "core2": "RESCUE",
+      "count": 16,
+      "percent": 0.0389
+    },
+    {
+      "core": "REVELATION",
+      "core2": "REUNION",
+      "count": 16,
+      "percent": 0.0389
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "ROMANCE",
+      "count": 16,
+      "percent": 0.0389
+    },
+    {
+      "core": "DESIRE",
+      "core2": "RESCUE",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "ORACLE",
+      "core2": "REVERSAL",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "RELIEF",
+      "core2": "RESCUE",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "REVELATION",
+      "core2": "INTRO",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "REVELATION",
+      "core2": "REVELATION",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "ESTABLISH",
+      "count": 15,
+      "percent": 0.0364
+    },
+    {
+      "core": "ORACLE",
+      "core2": "INTRO",
+      "count": 14,
+      "percent": 0.034
+    },
+    {
+      "core": "PERIL",
+      "core2": "INTRO",
+      "count": 14,
+      "percent": 0.034
+    },
+    {
+      "core": "PUNISH",
+      "core2": "ORACLE",
+      "count": 14,
+      "percent": 0.034
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "REUNION",
+      "count": 14,
+      "percent": 0.034
+    },
+    {
+      "core": "HOOK",
+      "core2": "REUNION",
+      "count": 13,
+      "percent": 0.0316
+    },
+    {
+      "core": "PUNISH",
+      "core2": "ESTABLISH",
+      "count": 13,
+      "percent": 0.0316
+    },
+    {
+      "core": "DESIRE",
+      "core2": "INTRO",
+      "count": 12,
+      "percent": 0.0291
+    },
+    {
+      "core": "INTRO",
+      "core2": "ORACLE",
+      "count": 12,
+      "percent": 0.0291
+    },
+    {
+      "core": "INTRO",
+      "core2": "PERIL",
+      "count": 12,
+      "percent": 0.0291
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "ORACLE",
+      "count": 12,
+      "percent": 0.0291
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "PUNISH",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "REVERSAL",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "HOOK",
+      "core2": "RESCUE",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "INTRO",
+      "core2": "ROMANCE",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "LOSS",
+      "core2": "RESCUE",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "PERIL",
+      "core2": "REUNION",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "REUNION",
+      "core2": "DESIRE",
+      "count": 11,
+      "percent": 0.0267
+    },
+    {
+      "core": "CONFLICT",
+      "core2": "REUNION",
+      "count": 10,
+      "percent": 0.0243
+    },
+    {
+      "core": "INTRO",
+      "core2": "REVELATION",
+      "count": 10,
+      "percent": 0.0243
+    },
+    {
+      "core": "ORACLE",
+      "core2": "PUNISH",
+      "count": 10,
+      "percent": 0.0243
+    },
+    {
+      "core": "DESIRE",
+      "core2": "REUNION",
+      "count": 9,
+      "percent": 0.0219
+    },
+    {
+      "core": "RESCUE",
+      "core2": "PUNISH",
+      "count": 9,
+      "percent": 0.0219
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "ROMANCE",
+      "count": 9,
+      "percent": 0.0219
+    },
+    {
+      "core": "BOND",
+      "core2": "PUNISH",
+      "count": 8,
+      "percent": 0.0194
+    },
+    {
+      "core": "LOSS",
+      "core2": "REUNION",
+      "count": 8,
+      "percent": 0.0194
+    },
+    {
+      "core": "ORACLE",
+      "core2": "RESCUE",
+      "count": 7,
+      "percent": 0.017
+    },
+    {
+      "core": "RELIEF",
+      "core2": "INTRO",
+      "count": 7,
+      "percent": 0.017
+    },
+    {
+      "core": "RESCUE",
+      "core2": "ORACLE",
+      "count": 7,
+      "percent": 0.017
+    },
+    {
+      "core": "REUNION",
+      "core2": "ESTABLISH",
+      "count": 7,
+      "percent": 0.017
+    },
+    {
+      "core": "RESCUE",
+      "core2": "ESTABLISH",
+      "count": 6,
+      "percent": 0.0146
+    },
+    {
+      "core": "REUNION",
+      "core2": "ORACLE",
+      "count": 6,
+      "percent": 0.0146
+    },
+    {
+      "core": "ORACLE",
+      "core2": "ORACLE",
+      "count": 5,
+      "percent": 0.0121
+    },
+    {
+      "core": "REUNION",
+      "core2": "REVERSAL",
+      "count": 5,
+      "percent": 0.0121
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "INTRO",
+      "count": 5,
+      "percent": 0.0121
+    },
+    {
+      "core": "HOOK",
+      "core2": "PUNISH",
+      "count": 4,
+      "percent": 0.0097
+    },
+    {
+      "core": "PUNISH",
+      "core2": "PUNISH",
+      "count": 4,
+      "percent": 0.0097
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "REUNION",
+      "count": 4,
+      "percent": 0.0097
+    },
+    {
+      "core": "ROMANCE",
+      "core2": "RESCUE",
+      "count": 4,
+      "percent": 0.0097
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "RESCUE",
+      "count": 3,
+      "percent": 0.0073
+    },
+    {
+      "core": "REUNION",
+      "core2": "PUNISH",
+      "count": 3,
+      "percent": 0.0073
+    },
+    {
+      "core": "REUNION",
+      "core2": "RESCUE",
+      "count": 3,
+      "percent": 0.0073
+    },
+    {
+      "core": "REVERSAL",
+      "core2": "INTRO",
+      "count": 3,
+      "percent": 0.0073
+    },
+    {
+      "core": "INTRO",
+      "core2": "LOSS",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "INTRO",
+      "core2": "RESCUE",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "LOSS",
+      "core2": "INTRO",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "PUNISH",
+      "core2": "INTRO",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "PUNISH",
+      "core2": "ROMANCE",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "RESCUE",
+      "core2": "INTRO",
+      "count": 2,
+      "percent": 0.0049
+    },
+    {
+      "core": "ESTABLISH",
+      "core2": "REUNION",
+      "count": 1,
+      "percent": 0.0024
+    },
+    {
+      "core": "INTRO",
+      "core2": "PUNISH",
+      "count": 1,
+      "percent": 0.0024
+    },
+    {
+      "core": "INTRO",
+      "core2": "REVERSAL",
+      "count": 1,
+      "percent": 0.0024
+    },
+    {
+      "core": "REUNION",
+      "core2": "INTRO",
+      "count": 1,
+      "percent": 0.0024
+    },
+    {
+      "core": "REUNION",
+      "core2": "REUNION",
+      "count": 1,
+      "percent": 0.0024
+    }
+  ]
+}
