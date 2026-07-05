@@ -1,0 +1,55 @@
+{
+  "task_name": "Stage243 P8.2 Hard-Rule Gate Rerun / Fix",
+  "performed_by": "ChatGPT",
+  "execution_location": "remote_github",
+  "created_at": "2026-07-05",
+  "created_artifacts": [
+    "release/current/season_wiring_pack/full_season_hard_rule_gate_rerun_p8_2.json",
+    "release/current/transition_council_pack/p8_2_hard_rule_gate_rerun_report_20260705.md",
+    "release/current/transition_council_pack/codex_local_p8_2_deeper_integrity_handoff_20260705.md",
+    "release/current/transition_council_pack/chatgpt_direct_work_result_packet_p8_2_hard_rule_rerun_20260705.json"
+  ],
+  "updated_artifacts": [],
+  "work_method": {
+    "chatgpt_direct_work": [
+      "P8.1 rerun state interpretation",
+      "hard-rule gate rerun policy definition",
+      "11 deeper integrity warning classification",
+      "P9 blocking decision",
+      "Codex-local execution handoff creation",
+      "remote hub load"
+    ],
+    "codex_local_work": [],
+    "codex_local_required_next": true,
+    "codex_local_reason": "The 11 deeper integrity checks require local artifact inspection and execution evidence."
+  },
+  "current_state_after_p8_2_contract": {
+    "p8_1_status": "pass_with_warning",
+    "hard_rule_pass": false,
+    "final_verdict": "manual_review_required",
+    "gate_a_ready": false,
+    "scorecard_preflight_allowed": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "local_required_next_outputs": [
+    "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+    "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json",
+    "release/current/transition_council_pack/p8_2_local_deeper_integrity_execution_report_20260705.md"
+  ],
+  "remote_hub": {
+    "repository": "limsanghyuk/v1700-literary-os",
+    "branch": "corpus-absorption-formula-bridge-handoff",
+    "push_status": "committed_to_remote_branch"
+  },
+  "safety": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "training_update_started": false,
+    "adapter_promotion": false,
+    "promotion_claim": false
+  },
+  "next_required_step": "Codex-local execution of P8.2 deeper integrity checks, then hard-rule self-check v2 and P8.1 rerun."
+}
