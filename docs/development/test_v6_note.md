@@ -5,5 +5,5 @@ Analysis handoff note.
 Required checks:
 
 - structure exists
-- files parse
+- JSON and JSONL files parse
 - headings are specific
