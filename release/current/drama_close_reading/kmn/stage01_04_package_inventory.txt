@@ -1,0 +1,53 @@
+KMN Stage01~04 developer delivery package inventory summary
+
+Package:
+- kmn_stage01_04_developer_delivery_claude_style_v1.zip
+- sha256: 488ae8f23dc5c598836c8896ef421d8603cae3649a7f78f6364a55f8bc6c3755
+- file_count: 249
+- raw_script_exported: false
+
+Top-level directories:
+- authored/
+- authored_seq/
+- authored_arc/
+- authored_edges/
+- authored_chararc/
+- authored_relarc/
+- authored_payoff/
+- authored_series/
+- legacy_seqcard_or_sequence_cards/
+- manifests/stage03/
+- manifests/stage04/
+- method_comparison/
+- quarantine/
+- reports/episode/
+- reports/stage03/
+- reports/stage04/
+- scripts_reference/
+- season_wiring/
+- source_lock/
+- stage01_02/
+- validation/episode/
+- validation/final/
+- validation/stage03/
+- validation/stage04/
+
+Canonical entrypoints:
+- Stage01: authored/결혼못하는남자_01.seqcard.jsonl ... authored/결혼못하는남자_16.seqcard.jsonl
+- Stage02: authored_seq/결혼못하는남자_01.seqblueprint.jsonl ... authored_seq/결혼못하는남자_16.seqblueprint.jsonl
+- Stage03: authored_chararc/, authored_relarc/, authored_edges/, authored_payoff/, authored_series/
+- Stage04: season_wiring/
+
+Important files:
+- MANIFEST.json
+- PACKAGE_SPEC.md
+- README.md
+- SHA256SUMS.txt
+- method_comparison/GPT_VS_CLAUDE_STAGE03_04_METHOD_COMPARISON.md
+- quarantine/QUARANTINE_MANIFEST.json
+- validation/final/KMN_STAGE01_04_PRECISION_QUALITY_AUDIT_REPORT.md
+
+Precision audit package:
+- kmn_stage01_04_precision_quality_audit_v4.zip
+- sha256: e90e4dff2438cc2997a7a21efa74e1070d838a619b063d7c47f23682ae1ebd1c
+- decision: PASS_FINAL_STAGE01_04_PRECISION_AUDIT
