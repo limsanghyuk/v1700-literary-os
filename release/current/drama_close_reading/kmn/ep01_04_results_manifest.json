@@ -1,0 +1,52 @@
+{
+  "schema": "KMN_EP01_04_DIRECT_READING_RESULTS_MANIFEST_v1",
+  "work_id": "결혼못하는남자",
+  "created_utc": "2026-07-09T10:28:00Z",
+  "authority": {
+    "source_policy": "no raw script export; source maps contain sha/span metadata only",
+    "stage1_policy": "direct-read authored semantic fields; Python may not generate meaning fields",
+    "stage2_policy": "18-field SequenceBlueprint with 16-function taxonomy provenance",
+    "promotion_policy": "PASS only after structure + content audit; false-pass/quarantine records retained"
+  },
+  "artifacts": [
+    {
+      "episode_no": 1,
+      "artifact": "kmn_ep01_forced_direct_reading_final_v1.zip",
+      "sha256": "c5ba72876390402c131030f598e7f6962dc7f0a48ea300ba01ee0f75db67afb1",
+      "bytes": 91878,
+      "files_in_zip": 23,
+      "contains": ["MANIFEST.json", "README.md", "gpt_independent_close_reading/stage1", "gpt_independent_close_reading/stage2", "gpt_independent_close_reading/validation", "source_lock/no_raw", "claude_original_seqcard_format"]
+    },
+    {
+      "episode_no": 2,
+      "artifact": "kmn_ep02_forced_direct_reading_final_v1.zip",
+      "sha256": "340d6c2139dab6c37bb2cf98141402e5c1344c57be7b554f6393bd052ae36248",
+      "bytes": 84141,
+      "files_in_zip": 27,
+      "contains": ["MANIFEST.json", "README.md", "gpt_independent_close_reading/stage1", "gpt_independent_close_reading/stage2", "gpt_independent_close_reading/validation", "source_lock/no_raw", "claude_original_seqcard_format"]
+    },
+    {
+      "episode_no": 3,
+      "artifact": "kmn_ep03_forced_direct_reading_final_v1.zip",
+      "sha256": "12af821409d7c049d61ae34673b43d17b649e1ed7a016e6dd360abdfe67fc349",
+      "bytes": 81202,
+      "files_in_zip": 27,
+      "contains": ["MANIFEST.json", "README.md", "gpt_independent_close_reading/stage1", "gpt_independent_close_reading/stage2", "gpt_independent_close_reading/validation", "source_lock/no_raw", "claude_original_seqcard_format"]
+    },
+    {
+      "episode_no": 4,
+      "artifact": "kmn_ep04_forced_direct_reading_final_v1.zip",
+      "sha256": "7ded91a66ca64c7850c8ce1fd448ff2504ec160dcb1770f431d3fd622072c8f6",
+      "bytes": 76934,
+      "files_in_zip": 26,
+      "contains": ["MANIFEST.json", "README.md", "gpt_independent_close_reading/stage1", "gpt_independent_close_reading/stage2", "gpt_independent_close_reading/validation", "source_lock/no_raw", "claude_original_seqcard_format"]
+    }
+  ],
+  "aggregate": {
+    "episode_count": 4,
+    "scene_count_total": 326,
+    "sequence_count_total": 48,
+    "raw_script_exported": false,
+    "status": "metadata-only hub manifest loaded; binary ZIP artifacts remain local/private unless release storage is explicitly configured"
+  }
+}
