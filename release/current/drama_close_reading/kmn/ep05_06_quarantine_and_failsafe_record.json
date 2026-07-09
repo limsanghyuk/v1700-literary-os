@@ -1,0 +1,26 @@
+{
+  "schema": "KMN_EP05_06_QUARANTINE_AND_FAILSAFE_RECORD_v1",
+  "created_utc": "2026-07-09T10:28:00Z",
+  "failed_artifact": "kmn_ep05_06_forced_direct_reading_8q_batch_final_v3.zip",
+  "failed_artifact_sha256": "8aa9d28b93777e2496dd1d37042d9607c26ce1b9667cd2663b6185fd6338fdb2",
+  "audit_artifact": "kmn_ep05_06_quality_audit_against_ep01_04_v1.zip",
+  "audit_artifact_sha256": "d18d0eaac5d3f0c88e99efe35d277a9fa33afbcf69e876f777147f37e725a732",
+  "decision": "FAIL_QUARANTINE_NOT_DIRECT_READING",
+  "symptoms": {
+    "EP05": {"visible_source_refs": 468, "process_template_hits": 78, "direct_reading_score": 0},
+    "EP06": {"visible_source_refs": 414, "process_template_hits": 69, "direct_reading_score": 0}
+  },
+  "root_cause": [
+    "two-episode batch expansion was incorrectly treated as meaning-field generation scope",
+    "Python/template path generated semantic fields instead of acting only as extractor/validator/packager",
+    "structure validators masked content authorship failure"
+  ],
+  "hard_rules": [
+    "batch is validation/package unit only",
+    "episode must be individually locked before next episode semantic writing begins unless true separate WriterAgent context exists",
+    "Python must never generate Stage1 semantic fields",
+    "visible source reference markers inside semantic fields are blocking failures",
+    "false PASS must be revoked and retained as negative fixture"
+  ],
+  "promotion": {"canonical": false, "stage3_input_allowed": false, "learning_prior_allowed": false, "negative_fixture": true}
+}
