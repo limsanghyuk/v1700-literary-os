@@ -1,0 +1,51 @@
+{
+  "decision": "PASS_FINAL_STAGE01_04_PRECISION_AUDIT",
+  "audited_package": "kmn_stage01_04_developer_delivery_claude_style_v1.zip",
+  "outer_sha256": "488ae8f23dc5c598836c8896ef421d8603cae3649a7f78f6364a55f8bc6c3755",
+  "precision_audit_sha256": "e90e4dff2438cc2997a7a21efa74e1070d838a619b063d7c47f23682ae1ebd1c",
+  "zip_integrity": "PASS",
+  "sidecar_sha256_match": true,
+  "internal_sha256s_checked": 248,
+  "internal_sha256_failures": [],
+  "raw_source_file_entries": [],
+  "blocking_failures": [],
+  "episode_scorecard": [
+    {"episode_no": 1, "decision": "PASS", "stage1_cards": 96, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 2, "decision": "PASS", "stage1_cards": 81, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 3, "decision": "PASS", "stage1_cards": 77, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 4, "decision": "PASS", "stage1_cards": 72, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 5, "decision": "PASS", "stage1_cards": 78, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 6, "decision": "PASS", "stage1_cards": 69, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 7, "decision": "PASS", "stage1_cards": 63, "stage2_sequences": 9, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 8, "decision": "PASS", "stage1_cards": 102, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 9, "decision": "PASS", "stage1_cards": 59, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 10, "decision": "PASS", "stage1_cards": 52, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 11, "decision": "PASS", "stage1_cards": 71, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 12, "decision": "PASS", "stage1_cards": 94, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 13, "decision": "PASS", "stage1_cards": 81, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 14, "decision": "PASS", "stage1_cards": 88, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 15, "decision": "PASS", "stage1_cards": 82, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0},
+    {"episode_no": 16, "decision": "PASS", "stage1_cards": 84, "stage2_sequences": 12, "template_contaminated_cards": 0, "visible_ref_cards": 0, "field_copy_errors": 0, "runtime_share_sum": 1.0}
+  ],
+  "stage03_audit": {
+    "character_arcs": 6,
+    "relationship_arcs": 9,
+    "local_edges": 173,
+    "cross_episode_edges": 15,
+    "payoff_candidates": 12,
+    "edge_ref_errors": 0,
+    "payoff_ref_errors": 0,
+    "series_arc_present": true
+  },
+  "stage04_audit": {
+    "season_wiring_graph_present": true,
+    "season_wiring_nodes": 217,
+    "season_wiring_edges": 401,
+    "payoff_setup_closure_matrix_rows": 12,
+    "payoff_matrix_missing_payoff_ids": [],
+    "episode_role_map_rows": 16,
+    "episode_role_map_missing_episodes": [],
+    "tension_curve_points": 16,
+    "closure_report_present": true
+  }
+}
