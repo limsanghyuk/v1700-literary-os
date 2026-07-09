@@ -1,0 +1,56 @@
+{
+  "package_id": "KMN_STAGE01_04_HUB_LOAD_HANDOFF_V1",
+  "work_id": "결혼못하는남자",
+  "scope": "EP01-EP16 Stage01-Stage04",
+  "final_decision": "PASS_FINAL_STAGE01_04_PRECISION_AUDIT",
+  "raw_script_exported": false,
+  "provider_call_count": 0,
+  "canonical_developer_delivery": {
+    "filename": "kmn_stage01_04_developer_delivery_claude_style_v1.zip",
+    "sha256": "488ae8f23dc5c598836c8896ef421d8603cae3649a7f78f6364a55f8bc6c3755",
+    "size_bytes": 2406153,
+    "storage_note": "Binary artifact tracked by SHA256. Repo load records metadata/report/manifest; use release asset or private artifact store for binary hosting."
+  },
+  "precision_audit": {
+    "filename": "kmn_stage01_04_precision_quality_audit_v4.zip",
+    "sha256": "e90e4dff2438cc2997a7a21efa74e1070d838a619b063d7c47f23682ae1ebd1c",
+    "size_bytes": 4088,
+    "decision": "PASS_FINAL_STAGE01_04_PRECISION_AUDIT"
+  },
+  "summary": {
+    "episode_count": 16,
+    "scene_count": 1249,
+    "sequence_count": 189,
+    "template_contamination_hits": 0,
+    "visible_reference_markers": 0,
+    "episode_failures": 0,
+    "stage03": {
+      "character_arcs": 6,
+      "relationship_arcs": 9,
+      "local_edges": 173,
+      "cross_episode_edges": 15,
+      "payoff_candidates": 12
+    },
+    "stage04": {
+      "season_wiring_nodes": 217,
+      "season_wiring_edges": 401,
+      "payoff_closure_rows": 12,
+      "episode_role_rows": 16,
+      "tension_curve_points": 16
+    }
+  },
+  "canonical_entrypoints": {
+    "Stage01": "authored/*.seqcard.jsonl",
+    "Stage02": "authored_seq/*.seqblueprint.jsonl",
+    "Stage03": ["authored_chararc/", "authored_relarc/", "authored_edges/", "authored_payoff/", "authored_series/"],
+    "Stage04": "season_wiring/"
+  },
+  "hub_text_files": [
+    "docs/analysis/kdrama/kmn_stage01_04_full_analysis_operating_report.md",
+    "docs/development/kmn_stage01_04_next_chat_handoff.md",
+    "release/current/drama_close_reading/kmn/stage01_04_release_gate_summary.md",
+    "release/current/drama_close_reading/kmn/stage01_04_precision_audit_summary.json",
+    "release/current/drama_close_reading/kmn/stage01_04_artifact_sha256s.txt",
+    "docs/analysis/kdrama/kmn_gpt_vs_claude_stage03_04_method_comparison.md"
+  ]
+}
