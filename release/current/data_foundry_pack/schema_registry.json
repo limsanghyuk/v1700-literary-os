@@ -1,6 +1,6 @@
 {
   "document_type": "schema_registry",
-  "version": "2.4-stage243-v5-p8.2-deeper-integrity",
+  "version": "2.5-stage243-v5-p8.3-ledger-build",
   "created_at": "2026-07-03",
   "purpose": "Stage243 metadata-only schema authority for corpus_ko, SeqCard v5, EpisodeArc, SequenceBlueprint, linkage v5, taxonomy, pair distribution, Pass1-Pass7 contracts, macro candidate evaluation, P8.1 local validation, and redaction policy. Includes P8.2 local deeper integrity result and hard-rule self-check v2. Includes P8.2 local deeper integrity result and hard-rule self-check v2.",
   "safety": {
@@ -999,6 +999,20 @@
       "hard_rule_pass": false,
       "final_verdict": "manual_review_required",
       "export_policy": "metadata-only hard-rule gate result; no promotion claim"
+    },
+    "full_season_instantiated_ledger_result_p8_3": {
+      "path": "release/current/season_wiring_pack/full_season_instantiated_ledger_result_p8_3.json",
+      "document_type": "full_season_instantiated_ledger",
+      "overall_status": "manual_review_required",
+      "ledger_instance_level": "reference_only",
+      "schema_validation_pass": true,
+      "export_policy": "metadata-only; no raw prose, vectors, or generated text"
+    },
+    "full_season_instantiated_ledger_validation_p8_3": {
+      "path": "release/current/season_wiring_pack/full_season_instantiated_ledger_validation_p8_3.json",
+      "document_type": "full_season_instantiated_ledger_validation",
+      "validation_status": "pass_with_manual_review_required",
+      "export_policy": "metadata-only validation report"
     }
   }
 }

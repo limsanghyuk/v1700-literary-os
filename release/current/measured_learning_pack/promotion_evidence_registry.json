@@ -24,7 +24,7 @@
   },
   "evidence_classes": {
     "structural_evidence": {
-      "status": "partial_seqcard_v5_p8_2_deeper_integrity_manual_review_required_gate_a_blocked",
+      "status": "partial_seqcard_v5_p8_3_ledger_build_manual_review_required_gate_a_blocked",
       "supports": [
         "SeqCard v3 scene-function inventory",
         "16-label scene function taxonomy coverage",
@@ -52,7 +52,9 @@
         "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
         "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
         "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
-        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json"
+        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json",
+        "release/current/season_wiring_pack/full_season_instantiated_ledger_result_p8_3.json",
+        "release/current/season_wiring_pack/full_season_instantiated_ledger_validation_p8_3.json"
       ],
       "current_measured_facts": {
         "seqcard_jsonl_files": 457,
@@ -100,7 +102,12 @@
         "p8_2_blocked_count": 0,
         "p8_2_hard_rule_pass": false,
         "p8_2_gate_a_ready": false,
-        "p8_2_scorecard_preflight_allowed": false
+        "p8_2_scorecard_preflight_allowed": false,
+        "p8_3_ledger_overall_status": "manual_review_required",
+        "p8_3_ledger_instance_level": "reference_only",
+        "p8_3_schema_validation_pass": true,
+        "p8_3_gate_a_ready": false,
+        "p8_3_scorecard_preflight_allowed": false
       },
       "limitations": [
         "Season arc contract fixture exists but is not measured generator evidence",
@@ -250,6 +257,12 @@
     "p8_2_hard_rule_gate": {
       "status": "manual_review_required",
       "hard_rule_pass": false,
+      "gate_a_ready": false,
+      "scorecard_preflight_allowed": false
+    },
+    "p8_3_instantiated_ledger_build": {
+      "status": "manual_review_required",
+      "schema_validation_pass": true,
       "gate_a_ready": false,
       "scorecard_preflight_allowed": false
     }

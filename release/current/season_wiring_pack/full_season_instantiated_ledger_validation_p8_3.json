@@ -1,0 +1,35 @@
+{
+  "document_type": "full_season_instantiated_ledger_validation",
+  "version": "1.0-stage243-p8.3-local-build",
+  "created_at": "2026-07-10T02:43:32.359870+00:00",
+  "source_schema": "release/current/season_wiring_pack/full_season_instantiated_ledger_schema_p8_3.json",
+  "source_result": "release/current/season_wiring_pack/full_season_instantiated_ledger_result_p8_3.json",
+  "input_files_present": {
+    "release/current/season_wiring_pack/full_season_instantiated_ledger_schema_p8_3.json": true,
+    "release/current/season_wiring_pack/full_season_instantiated_ledger_fixture_p8_3.json": true,
+    "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json": true,
+    "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json": true,
+    "release/current/season_wiring_pack/full_season_validation_result_p8_1.json": true,
+    "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json": true,
+    "release/current/data_foundry_pack/episode_arc_inventory_v5.json": true,
+    "release/current/data_foundry_pack/sequence_blueprint_inventory_v5.json": true
+  },
+  "json_parse_pass": true,
+  "schema_validation_pass": true,
+  "schema_error_count": 0,
+  "schema_errors": [],
+  "validation_status": "pass_with_manual_review_required",
+  "gate_a_ready": false,
+  "scorecard_preflight_allowed": false,
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "training_update": false,
+    "adapter_promotion": false,
+    "promotion_claim": false,
+    "p9_scorecard_preflight_run": false
+  }
+}
