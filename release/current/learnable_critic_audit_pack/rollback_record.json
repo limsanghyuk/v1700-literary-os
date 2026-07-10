@@ -1,0 +1,8 @@
+{
+  "rollback_id": "rollback:emotion-audit",
+  "coefficient_diff_id": "coefficient-diff:emotion-audit",
+  "rollback_target_state_id": "coefficient-state:emotion:before",
+  "rollback_reason": "Candidate coefficient remains advisory until human approval.",
+  "rollback_status": "READY",
+  "performed_at": "2026-06-19T02:29:10+00:00"
+}

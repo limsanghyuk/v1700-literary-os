@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://v1700-literary-os.local/schemas/full_season_instantiated_ledger_schema_p8_3.json",
+  "document_type": "full_season_instantiated_ledger_schema",
+  "version": "1.0-stage243-p8.3",
+  "created_at": "2026-07-05",
+  "stage": "Stage243",
+  "roadmap_position": "P8.3",
+  "title": "Metadata-Only Instantiated Ledger Schema for Full-Season Hard-Rule Resolution",
+  "description": "Schema for metadata-only instantiated ledgers required to resolve P8.2 manual_review_required findings without exporting raw drama text or running live generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_type",
+    "version",
+    "authority",
+    "source_refs",
+    "candidate_identity",
+    "ledger_status",
+    "ledgers",
+    "coverage_summary",
+    "hard_rule_resolution_targets",
+    "safety"
+  ],
+  "properties": {
+    "document_type": {"const": "full_season_instantiated_ledger"},
+    "version": {"type": "string"},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metadata_only", "raw_text_exported", "provider_call_count", "runtime_generation", "promotion_claim"],
+      "properties": {
+        "metadata_only": {"const": true},
+        "fixture_template_only": {"type": "boolean"},
+        "local_execution_required": {"type": "boolean"},
+        "raw_text_exported": {"const": false},
+        "provider_call_count": {"const": 0},
+        "runtime_generation": {"const": false},
+        "promotion_claim": {"const": false}
+      }
+    },
+    "source_refs": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "candidate_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_package_id", "series_id", "season_id", "target_episode_count"],
+      "properties": {
+        "candidate_package_id": {"type": "string"},
+        "series_id": {"type": "string"},
+        "season_id": {"type": "string"},
+        "target_episode_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "ledger_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall_status", "ledger_instance_level", "gate_a_ready", "scorecard_preflight_allowed"],
+      "properties": {
+        "overall_status": {"enum": ["template_only", "partial", "manual_review_required", "pass_with_warning", "pass", "blocked"]},
+        "ledger_instance_level": {"enum": ["template_only", "reference_only", "metadata_instantiated", "human_reviewed_metadata_instantiated"]},
+        "gate_a_ready": {"type": "boolean"},
+        "scorecard_preflight_allowed": {"type": "boolean"}
+      }
+    },
+    "ledgers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode_node_ledger",
+        "sequence_binding_ledger",
+        "scene_binding_ledger",
+        "renderer_packet_binding_ledger",
+        "plant_payoff_ledger",
+        "character_arc_transition_ledger",
+        "relationship_arc_transition_ledger",
+        "causal_edge_ledger",
+        "hook_consequence_ledger",
+        "genre_rhythm_target_ledger"
+      ],
+      "properties": {
+        "episode_node_ledger": {"type": "array", "items": {"$ref": "#/$defs/episode_node"}},
+        "sequence_binding_ledger": {"type": "array", "items": {"$ref": "#/$defs/sequence_binding"}},
+        "scene_binding_ledger": {"type": "array", "items": {"$ref": "#/$defs/scene_binding"}},
+        "renderer_packet_binding_ledger": {"type": "array", "items": {"$ref": "#/$defs/renderer_binding"}},
+        "plant_payoff_ledger": {"type": "array", "items": {"$ref": "#/$defs/plant_payoff_link"}},
+        "character_arc_transition_ledger": {"type": "array", "items": {"$ref": "#/$defs/arc_transition"}},
+        "relationship_arc_transition_ledger": {"type": "array", "items": {"$ref": "#/$defs/arc_transition"}},
+        "causal_edge_ledger": {"type": "array", "items": {"$ref": "#/$defs/causal_edge"}},
+        "hook_consequence_ledger": {"type": "array", "items": {"$ref": "#/$defs/hook_consequence"}},
+        "genre_rhythm_target_ledger": {"type": "array", "items": {"$ref": "#/$defs/genre_rhythm_target"}}
+      }
+    },
+    "coverage_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["episode_nodes", "sequence_bindings", "scene_bindings", "renderer_bindings", "plant_payoff_links", "character_transitions", "relationship_transitions", "causal_edges", "hook_links", "genre_rhythm_targets"],
+      "properties": {
+        "episode_nodes": {"type": "integer", "minimum": 0},
+        "sequence_bindings": {"type": "integer", "minimum": 0},
+        "scene_bindings": {"type": "integer", "minimum": 0},
+        "renderer_bindings": {"type": "integer", "minimum": 0},
+        "plant_payoff_links": {"type": "integer", "minimum": 0},
+        "character_transitions": {"type": "integer", "minimum": 0},
+        "relationship_transitions": {"type": "integer", "minimum": 0},
+        "causal_edges": {"type": "integer", "minimum": 0},
+        "hook_links": {"type": "integer", "minimum": 0},
+        "genre_rhythm_targets": {"type": "integer", "minimum": 0}
+      }
+    },
+    "hard_rule_resolution_targets": {
+      "type": "array",
+      "items": {"enum": ["series_to_season_integrity", "season_to_episode_integrity", "episode_to_sequence_integrity", "sequence_to_scene_integrity", "scene_to_renderer_packet_integrity", "plant_payoff_integrity", "character_arc_integrity", "relationship_arc_integrity", "causal_spine_integrity", "hook_chain_integrity", "genre_rhythm_integrity"]}
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metadata_only", "raw_text_exported", "raw_vectors_exported", "provider_call_count", "runtime_generation", "training_update", "adapter_promotion", "promotion_claim", "p9_scorecard_preflight_run"],
+      "properties": {
+        "metadata_only": {"const": true},
+        "raw_text_exported": {"const": false},
+        "raw_vectors_exported": {"const": false},
+        "provider_call_count": {"const": 0},
+        "runtime_generation": {"const": false},
+        "training_update": {"const": false},
+        "adapter_promotion": {"const": false},
+        "promotion_claim": {"const": false},
+        "p9_scorecard_preflight_run": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "episode_node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["episode_id", "episode_no", "entry_state_ref", "exit_state_ref", "central_conflict_ref", "sequence_ids", "status"],
+      "properties": {
+        "episode_id": {"type": "string"},
+        "episode_no": {"type": "integer", "minimum": 1},
+        "entry_state_ref": {"type": "string"},
+        "exit_state_ref": {"type": "string"},
+        "central_conflict_ref": {"type": "string"},
+        "sequence_ids": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "sequence_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sequence_id", "episode_id", "seq_index", "scene_ids", "status"],
+      "properties": {
+        "sequence_id": {"type": "string"},
+        "episode_id": {"type": "string"},
+        "seq_index": {"type": "integer", "minimum": 1},
+        "scene_ids": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "scene_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_id", "sequence_id", "scene_function", "causal_input_refs", "causal_output_refs", "status"],
+      "properties": {
+        "scene_id": {"type": "string"},
+        "sequence_id": {"type": "string"},
+        "scene_function": {"type": "string"},
+        "causal_input_refs": {"type": "array", "items": {"type": "string"}},
+        "causal_output_refs": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "renderer_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_id", "renderer_packet_id", "long_range_authority_locked", "status"],
+      "properties": {
+        "scene_id": {"type": "string"},
+        "renderer_packet_id": {"type": "string"},
+        "long_range_authority_locked": {"type": "boolean"},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "plant_payoff_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["plant_id", "plant_location_ref", "payoff_location_ref", "timing_status", "status"],
+      "properties": {
+        "plant_id": {"type": "string"},
+        "plant_location_ref": {"type": "string"},
+        "payoff_location_ref": {"type": "string"},
+        "timing_status": {"enum": ["valid", "warning", "invalid", "manual_review_required"]},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "arc_transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["arc_id", "subject_id", "from_state_ref", "to_state_ref", "supporting_event_refs", "status"],
+      "properties": {
+        "arc_id": {"type": "string"},
+        "subject_id": {"type": "string"},
+        "from_state_ref": {"type": "string"},
+        "to_state_ref": {"type": "string"},
+        "supporting_event_refs": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "causal_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge_id", "cause_ref", "effect_ref", "edge_type", "status"],
+      "properties": {
+        "edge_id": {"type": "string"},
+        "cause_ref": {"type": "string"},
+        "effect_ref": {"type": "string"},
+        "edge_type": {"enum": ["episode_to_episode", "episode_to_sequence", "sequence_to_scene", "scene_to_scene", "plant_to_payoff", "hook_to_consequence"]},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "hook_consequence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hook_id", "hook_location_ref", "consequence_ref", "resolution_status", "status"],
+      "properties": {
+        "hook_id": {"type": "string"},
+        "hook_location_ref": {"type": "string"},
+        "consequence_ref": {"type": "string"},
+        "resolution_status": {"enum": ["resolved", "pending", "orphan", "manual_review_required"]},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    },
+    "genre_rhythm_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["episode_id", "genre_mode", "target_function_mix_ref", "actual_function_mix_ref", "status"],
+      "properties": {
+        "episode_id": {"type": "string"},
+        "genre_mode": {"type": "string"},
+        "target_function_mix_ref": {"type": "string"},
+        "actual_function_mix_ref": {"type": "string"},
+        "status": {"enum": ["instantiated", "placeholder", "manual_review_required"]}
+      }
+    }
+  }
+}

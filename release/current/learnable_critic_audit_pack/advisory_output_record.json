@@ -1,0 +1,14 @@
+{
+  "advisory_output_id": "advisory-output:emotion-audit",
+  "critic_id": "critic:emotion_calibration_audit",
+  "input_source_refs": [
+    "critic-input:sample-emotion-audit"
+  ],
+  "output_type": "LearnableCriticAdvisoryOutputRecord",
+  "score_or_label": "ADJUST_EMOTIONAL_MOMENTUM_WEIGHT:+0.05",
+  "explanation": "Audit fixture proposes a bounded, review-only emotional momentum coefficient adjustment.",
+  "confidence": 0.78,
+  "suggested_action": "REVIEW_ONLY",
+  "canonical_mutation_allowed": false,
+  "review_status": "APPROVAL_REQUIRED"
+}

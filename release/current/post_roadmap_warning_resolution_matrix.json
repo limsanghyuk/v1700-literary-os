@@ -1,0 +1,12 @@
+{
+  "title": "Post-Roadmap Warning Resolution Matrix",
+  "created": "2026-06-17",
+  "baseline": "stage242",
+  "status": "open",
+  "items": [
+    {"id": "page10", "state": "pending", "next": "refresh evidence"},
+    {"id": "page11", "state": "pending", "next": "refresh evidence"},
+    {"id": "page12", "state": "pending", "next": "refresh evidence"},
+    {"id": "stage185", "state": "policy_open", "next": "review evidence"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "issues": [],
+  "spec": {
+    "name": "FormulaSignalRegistryJsonStore",
+    "path": "release/current/corpus_formula_bridge_pack/formula_signal_registry.json",
+    "source_report": "release/current/corpus_formula_bridge_pack/corpus_formula_bridge_report.json",
+    "mode": "read_only_queryable",
+    "advisory_only": true,
+    "canonical_mutation_allowed": false
+  },
+  "repo_root": "C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize"
+}

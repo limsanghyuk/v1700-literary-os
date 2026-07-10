@@ -1,0 +1,7 @@
+{
+  "seed_id": "seed:learnable-critic-audit",
+  "seed_value": 17000616,
+  "run_id": "calibration-run:emotion-audit",
+  "randomization_scope": "audit_fixture_only",
+  "reproducibility_note": "Static audit fixture, no hidden learning loop."
+}

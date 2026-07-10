@@ -1,0 +1,8 @@
+{
+  "approval_id": "approval:emotion-audit",
+  "coefficient_diff_id": "coefficient-diff:emotion-audit",
+  "reviewer_role": "PRINCIPAL_AUTHORITY_REVIEWER",
+  "approval_status": "PENDING_REVIEW",
+  "approval_note": "Audit fixture prepared; no promotion until explicit human decision.",
+  "approved_at": "2026-06-19T02:29:10+00:00"
+}

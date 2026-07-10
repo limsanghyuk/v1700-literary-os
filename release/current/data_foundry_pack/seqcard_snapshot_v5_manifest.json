@@ -1,0 +1,337 @@
+{
+  "document_type": "seqcard_snapshot_v5_manifest",
+  "version": "5.0",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "source": {
+    "source_zip": "C:\\claude\\db\\seqcard_ko.zip",
+    "source_zip_sha256": "cf8ad0f0045d37d6725a44675f7918bccf696ea3749f88d4fb97211d503a70e0",
+    "source_zip_bytes": 21048187,
+    "zip_crc_testzip_ok": true,
+    "zip_testzip_bad_entry": null,
+    "total_entries": 3301,
+    "total_files": 3295,
+    "total_dirs": 6,
+    "total_uncompressed_bytes": 59979080,
+    "extension_counts": {
+      ".json": 1363,
+      ".jsonl": 1308,
+      ".md": 5,
+      ".py": 8,
+      ".txt": 611,
+      "[none]": 6
+    },
+    "original_extracted_files_present": 609,
+    "txt_entries_present": 611,
+    "source_bearing_archive": true,
+    "hub_raw_archive_allowed": false,
+    "local_incoming_zip_copy": "C:\\AI_Codex\\local_only\\incoming\\seqcard_ko_20260705_160707.zip",
+    "local_incoming_zip_sha256_matches": true,
+    "snapshot_root": "C:\\AI_Codex\\codex-work\\gpt\\release\\current\\data_foundry_pack\\claude_seqcard_ko_snapshot_20260705_160707"
+  },
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "full_jsonl_rows_exported": false,
+    "heading_title_intent_gist_values_exported": false,
+    "original_extracted_exported": false,
+    "dump_txt_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false,
+    "promotion_claim": false
+  },
+  "inventory": {
+    "snapshot_files_total": 2672,
+    "snapshot_bytes_total": 23157147,
+    "seqcard_jsonl_files": 648,
+    "episode_meta_files": 648,
+    "series_arc_files": 63,
+    "episode_arc_files": 648,
+    "seqblueprint_files": 648,
+    "python_scripts": 7,
+    "markdown_files": 5,
+    "seqcard_records": 41168,
+    "seqblueprint_records": 6146,
+    "series_count_by_filename": 33,
+    "jsonl_parse_errors": 0,
+    "json_parse_errors": 0
+  },
+  "series_by_filename": [
+    {
+      "series_id": "\ub300\uc7a5\uae08",
+      "episode_files": 54
+    },
+    {
+      "series_id": "\uc5ed\uc804\uc758\uc5ec\uc655",
+      "episode_files": 31
+    },
+    {
+      "series_id": "\uacf5\uc8fc\uc758\ub0a8\uc790",
+      "episode_files": 24
+    },
+    {
+      "series_id": "\uad81",
+      "episode_files": 24
+    },
+    {
+      "series_id": "\ub179\ub450\uaf43",
+      "episode_files": 24
+    },
+    {
+      "series_id": "\ubaa8\ub798\uc2dc\uacc4",
+      "episode_files": 24
+    },
+    {
+      "series_id": "\ub354\ud0b9\ud22c\ud558\uce20",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\ub9c8\uc655",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\uc2a4\uce74\uc774\uce90\uc2ac",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\uc2dc\ud06c\ub9bf\uac00\ub4e0",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\uc2dc\ud2f0\ud5cc\ud130",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\uc2f8\uc778",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\ucd5c\uac15\uce60\uc6b0",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\uce74\uc778\uacfc\uc544\ubca8",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\ud558\uc580\uac70\ud0d1",
+      "episode_files": 20
+    },
+    {
+      "series_id": "\ub108\uc758\ubaa9\uc18c\ub9ac\uac00\ub4e4\ub824",
+      "episode_files": 18
+    },
+    {
+      "series_id": "\ubca0\ud1a0\ubca4\ubc14\uc774\ub7ec\uc2a4",
+      "episode_files": 17
+    },
+    {
+      "series_id": "\ucee4\ud53c\ud504\ub9b0\uc2a4",
+      "episode_files": 17
+    },
+    {
+      "series_id": "W",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uac1c\uc640\ub291\ub300\uc758\uc2dc\uac04",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uacbd\uc131\uc2a4\uce94\ub4e4",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uadf8\ub4e4\uc774\uc0ac\ub294\uc138\uc0c1",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ub3c4\uae68\ube44",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ubbf8\uc548\ud558\ub2e4\uc0ac\ub791\ud55c\ub2e4",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ubc00\ud68c",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ubc30\uac00\ubcf8\ub4dc",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ube44\ubc00\uc758\uc232",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uc2a4\ud1a0\ube0c\ub9ac\uadf8",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uc2dc\uadf8\ub110",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\uc6cc\ud0b9\ub9d8",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ucd94\uc801\uc790",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ud0dc\uc591\uc758\ud6c4\uc608",
+      "episode_files": 16
+    },
+    {
+      "series_id": "\ubbf8\uc0dd",
+      "episode_files": 11
+    }
+  ],
+  "schema": {
+    "seqcard_jsonl_keys": [
+      "by",
+      "core",
+      "core2",
+      "heading",
+      "intent_gist",
+      "scene_no",
+      "skin",
+      "title",
+      "work_id"
+    ],
+    "episode_meta_keys": [
+      "by",
+      "core_dist",
+      "episode_function",
+      "scene_count",
+      "work_id"
+    ],
+    "series_arc_keys": [
+      "antagonist",
+      "by",
+      "central_dramatic_question",
+      "complete",
+      "conflict_persist",
+      "episode_top_core_trajectory",
+      "episodes",
+      "episodes_total",
+      "logline",
+      "macro_turning_points",
+      "missing_episodes",
+      "note",
+      "open_ending",
+      "protagonist",
+      "resolution",
+      "scene_transition_grammar_top20",
+      "scenes_total",
+      "season_structure",
+      "sequences_total",
+      "series",
+      "series_core_dist",
+      "theme_statement",
+      "tone",
+      "totals"
+    ],
+    "episode_arc_keys": [
+      "act_structure",
+      "by",
+      "central_conflict_axis",
+      "core_dist",
+      "dramatic_question",
+      "entry_state",
+      "episode_function",
+      "episode_no",
+      "exit_state",
+      "scene_count",
+      "sequence_count",
+      "turning_point",
+      "work_id"
+    ],
+    "seqblueprint_jsonl_keys": [
+      "by",
+      "core_mix",
+      "episode_no",
+      "goal",
+      "member_scene_nos",
+      "obstacle",
+      "place_cluster",
+      "pov_char",
+      "runtime_share",
+      "scene_budget",
+      "scene_span",
+      "seq_id",
+      "seq_index",
+      "sequence_intent",
+      "sq_index",
+      "turn_class",
+      "turn_type",
+      "value_shift",
+      "work_id"
+    ]
+  },
+  "taxonomy_summary": {
+    "records_total": 41168,
+    "core_filled": 41168,
+    "core_missing": 0,
+    "core2_filled": 29312,
+    "core2_missing_or_none": 11856,
+    "core_values": [
+      "BOND",
+      "CONFLICT",
+      "DESIRE",
+      "ESTABLISH",
+      "HOOK",
+      "INTRO",
+      "LOSS",
+      "ORACLE",
+      "PERIL",
+      "PUNISH",
+      "RELIEF",
+      "RESCUE",
+      "REUNION",
+      "REVELATION",
+      "REVERSAL",
+      "ROMANCE"
+    ],
+    "core2_values": [
+      "BOND",
+      "CONFLICT",
+      "DESIRE",
+      "ESTABLISH",
+      "HOOK",
+      "INTRO",
+      "LOSS",
+      "ORACLE",
+      "PERIL",
+      "PUNISH",
+      "RELIEF",
+      "RESCUE",
+      "REUNION",
+      "REVELATION",
+      "REVERSAL",
+      "ROMANCE"
+    ],
+    "all_16_present_in_core": true,
+    "all_16_present_in_core2": true
+  },
+  "cross_layer_coverage": {
+    "seqcard_episode_ids": 648,
+    "episode_meta_files": 648,
+    "episode_arc_files": 648,
+    "seqblueprint_files": 648,
+    "seqcard_without_episode_arc": [],
+    "episode_arc_without_seqcard": [],
+    "seqcard_without_seqblueprint": [],
+    "seqblueprint_without_seqcard": [],
+    "member_scene_warning_count": 0,
+    "member_scene_warning_samples": []
+  },
+  "parse_error_samples": {
+    "seqcard_jsonl": [],
+    "seqblueprint_jsonl": [],
+    "json": []
+  }
+}

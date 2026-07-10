@@ -1,0 +1,70 @@
+{
+  "task_name": "Stage243 Macro Planner Hard-Rule Gate and Candidate Evaluation v2",
+  "performed_by": "ChatGPT",
+  "execution_location": "remote_github",
+  "created_at": "2026-07-03",
+  "created_artifacts": [
+    "release/current/season_wiring_pack/macro_planner_hard_rule_gate.json",
+    "release/current/season_wiring_pack/macro_planner_disqualification_rules.json",
+    "release/current/season_wiring_pack/macro_candidate_scorecard_schema.json",
+    "release/current/season_wiring_pack/macro_candidate_final_verdict_fixture.json",
+    "release/current/season_wiring_pack/macro_planner_evaluation_v2_report.md",
+    "release/current/transition_council_pack/chatgpt_direct_work_result_packet_macro_hard_rule_v2_20260703.json"
+  ],
+  "updated_artifacts": [],
+  "work_method": {
+    "chatgpt_direct_work": [
+      "hard-rule gate design",
+      "disqualification rule design",
+      "scorecard schema design",
+      "final verdict fixture design",
+      "evaluation v2 report generation",
+      "remote hub load"
+    ],
+    "codex_local_work": [],
+    "codex_local_required": false,
+    "codex_not_required_reason": "No local filesystem, DB scan, archive scan, or local git status was required for this design task."
+  },
+  "input_authority": {
+    "local_cleaned_seqcard_v4": {
+      "local_hub_verified": true,
+      "remote_github_verified_for_cleaned_snapshot": false,
+      "seqcard_records": 37166,
+      "linkage_v4_exact_episode": 456,
+      "linkage_v4_unmatched": 120,
+      "schema_registry": "2.1-stage243-v4"
+    },
+    "remote_source_seqcard_v4": {
+      "remote_github_verified": true,
+      "seqcard_records": 37800,
+      "source_type": "uploaded_zip_aggregate_manifest"
+    }
+  },
+  "verification": {
+    "json_parse": "not_locally_executed_by_chatgpt",
+    "remote_fetch_verification": "pending_at_creation",
+    "secret_scan": "not_applicable_for_chatgpt_generated_metadata_only_text",
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "authority_status": {
+    "local_hub_verified": "not_applicable",
+    "remote_github_verified": "pending_at_creation",
+    "promotion_status": "blocked"
+  },
+  "result": {
+    "hard_rule_gate_created": true,
+    "disqualification_rules_created": true,
+    "scorecard_schema_created": true,
+    "final_verdict_fixture_created": true,
+    "evaluation_report_created": true,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "next_required_step": "Stage243 Macro Planner Candidate Gate A Review Packet"
+}

@@ -1,0 +1,151 @@
+{
+  "document_type": "v1700_transition_council_traceability_matrix",
+  "version": "0.1",
+  "authority_baseline": "Stage242 / Page17 Authority Closure",
+  "page18_runtime_opened": false,
+  "stage243_created": false,
+  "north_star": "Human writer team emulation inside GPT V1700 Literary OS: planning, judgment, creation, criticism, revision, and measured learning for autonomous long-form literary generation.",
+  "safety_invariants": {
+    "provider_default_calls": 0,
+    "runtime_training_enabled": false,
+    "canonical_mutation_allowed": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_committed": false,
+    "page18_runtime_opened": false,
+    "stage243_created": false
+  },
+  "traceability": [
+    {
+      "page": "Page18",
+      "existing_design_purpose": "Controlled Literary Generation Boundary",
+      "north_star_mapping": "safe boundary before scene generation",
+      "gap": "runtime opening conditions and output capture freeze are not complete",
+      "patch": "Boundary hardening, ProviderExecutionPolicy, OutputCaptureSchema freeze candidate, CanonicalMutationBlocker validation",
+      "priority": "high",
+      "alignment_decision": "KEEP_PATCH",
+      "forbidden": ["live_provider_generation", "output_capture_start", "canonical_mutation", "runtime_training"]
+    },
+    {
+      "page": "Page19",
+      "existing_design_purpose": "Narrative State Graph Runtime",
+      "north_star_mapping": "long-form narrative memory, continuity, foreshadowing, conflict state",
+      "gap": "state graph is not yet connected to a 16/24 episode loop",
+      "patch": "Season Wiring Orchestrator, N-to-N-plus-1 feedback, PayoffBrief injection, SceneBeatGrid binding",
+      "priority": "immediate",
+      "alignment_decision": "PATCH"
+    },
+    {
+      "page": "Page20",
+      "existing_design_purpose": "Literary Evaluation and Value Proof",
+      "north_star_mapping": "error detection, criticism, quality proof",
+      "gap": "evaluation data quality and pair contamination controls are insufficient",
+      "patch": "Preference Pair Builder I1-I5, per-token scoring, length neutrality, no-verbatim gate, work-level split",
+      "priority": "high",
+      "alignment_decision": "PATCH"
+    },
+    {
+      "page": "Page21",
+      "existing_design_purpose": "Writer Studio Product Surface",
+      "north_star_mapping": "revision proposal, advisory surface, human approval",
+      "gap": "writer-visible surface is weak",
+      "patch": "fixture-only demo writer studio, SceneFunctionCard, AdvisoryDiffCard, ApprovalDecisionRecord",
+      "priority": "medium",
+      "alignment_decision": "PATCH"
+    },
+    {
+      "page": "Page22",
+      "existing_design_purpose": "Safe Personalization and Memory",
+      "north_star_mapping": "long-term writer preference and project memory",
+      "gap": "automatic memory mutation risk",
+      "patch": "approval-based memory boundary",
+      "priority": "deferred",
+      "alignment_decision": "DEFER"
+    },
+    {
+      "page": "Page23",
+      "existing_design_purpose": "Plugin and Tool Capability Layer",
+      "north_star_mapping": "external research and tool expansion",
+      "gap": "expansion before the core creative loop is risky",
+      "patch": "tool permission boundary and audit log",
+      "priority": "deferred",
+      "alignment_decision": "DEFER"
+    },
+    {
+      "page": "Page24",
+      "existing_design_purpose": "Multi-Agent Literary Studio Runtime",
+      "north_star_mapping": "human writer team role emulation",
+      "gap": "hollow multi-agent risk before Page19-21 are functional",
+      "patch": "AgentRoleContract, AgentHandoffRecord, MultiAgentStudioSession schema",
+      "priority": "deferred_core",
+      "alignment_decision": "DEFER_CORE"
+    },
+    {
+      "page": "Page25",
+      "existing_design_purpose": "Installer and Runtime Distribution Layer",
+      "north_star_mapping": "practical local execution and distribution",
+      "gap": "clean package hygiene and secret boundary needed",
+      "patch": "runtime doctor, clean package builder, secret boundary check",
+      "priority": "deferred_hygiene",
+      "alignment_decision": "DEFER_HYGIENE"
+    },
+    {
+      "page": "Page26",
+      "existing_design_purpose": "Dashboard and UI/UX Console",
+      "north_star_mapping": "authority/data/evaluation/learning visibility",
+      "gap": "dashboard should follow a working core loop",
+      "patch": "dashboard surface map after writer studio skeleton",
+      "priority": "deferred",
+      "alignment_decision": "DEFER"
+    },
+    {
+      "page": "Page27",
+      "existing_design_purpose": "Data Construction and Measurement Foundry",
+      "north_star_mapping": "data to intent layer to measurable asset",
+      "gap": "raw source and metadata need separation and inventory",
+      "patch": "corpus_ko01 inventory, seqcard metadata absorption, scene function taxonomy report",
+      "priority": "immediate",
+      "alignment_decision": "KEEP_IMMEDIATE"
+    },
+    {
+      "page": "Page28",
+      "existing_design_purpose": "Measured Learning and Model Improvement Loop",
+      "north_star_mapping": "measured results to learning signal",
+      "gap": "4070 experiments need registry and promotion decision records",
+      "patch": "local training run registry, learning effect report, adapter promotion blocked/pass record",
+      "priority": "immediate",
+      "alignment_decision": "KEEP_IMMEDIATE"
+    }
+  ],
+  "stage243_scope": {
+    "recommended_definition": "Season Wiring + Data/Learning Bridge Stage",
+    "allowed": [
+      "corpus_metadata_inventory",
+      "seqcard_metadata_absorption",
+      "preference_pair_builder_invariants",
+      "learning_effect_registry",
+      "season_wiring_preflight",
+      "page18_opening_checklist",
+      "writer_surface_skeleton"
+    ],
+    "forbidden": [
+      "live_provider_generation",
+      "output_capture_start",
+      "canonical_memory_mutation",
+      "runtime_training",
+      "adapter_promotion_without_evidence",
+      "raw_text_export",
+      "raw_vector_export",
+      "secret_or_adapter_weight_commit",
+      "stage244_auto_creation"
+    ]
+  },
+  "next_artifacts": [
+    "docs/planning/gpt_v1700_integrated_master_plan.md",
+    "docs/planning/page18_to_page28_traceability_matrix.md",
+    "docs/planning/north_star_alignment_audit.md",
+    "docs/planning/stage243_scope_definition.md",
+    "release/current/transition_council_pack/traceability_matrix.json"
+  ]
+}

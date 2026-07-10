@@ -1,0 +1,84 @@
+{
+  "source_asset_inventory": [
+    {
+      "asset_id": "asset:ffa5b716b5a5",
+      "relative_path": "manifest.json",
+      "asset_kind": "manifest",
+      "extension": ".json",
+      "size_bytes": 3207,
+      "sha256": "7335a864ce1bd42993af820a48472fe695aa022d0a453d3e5e7a21f4ce9b8e94",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:dec510d86424",
+      "relative_path": "sources.json",
+      "asset_kind": "source_registry",
+      "extension": ".json",
+      "size_bytes": 11481,
+      "sha256": "928219e15036ce0516382ce7a525df64e7704460f00db1db4762d91773503704",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:26a0caee37d2",
+      "relative_path": "qc_report.json",
+      "asset_kind": "quality_control_report",
+      "extension": ".json",
+      "size_bytes": 18682,
+      "sha256": "f05e9221b478b00ed8ed83149b394b108ee3d464dc093a5c6a208e6bfbe5a9e5",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:da4df4bfd4e8",
+      "relative_path": "parse_stats.json",
+      "asset_kind": "parse_statistics",
+      "extension": ".json",
+      "size_bytes": 72022,
+      "sha256": "ce492e1e046e88641dbfae8f32b023a93811d47ac41824213bae10f73969d63d",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:872ab78d0b14",
+      "relative_path": "nkg_summary.json",
+      "asset_kind": "graph_summary",
+      "extension": ".json",
+      "size_bytes": 45743,
+      "sha256": "febfc80e4d77456e8bbe274d6dba47ba243b2961d4be4a3b5d7af1f9c654b8f7",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:1da09ab2f7fb",
+      "relative_path": "nkg.json",
+      "asset_kind": "graph_summary",
+      "extension": ".json",
+      "size_bytes": 688761,
+      "sha256": "71c225af68ec1d4842fa3fff5f3f50c1f1d45959caea60b5dc8beef83a3cee73",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:b6c2e2bc9130",
+      "relative_path": "chroma/chroma.sqlite3",
+      "asset_kind": "vector_store_sqlite",
+      "extension": ".sqlite3",
+      "size_bytes": 12288,
+      "sha256": "3804cfe2af6a9cb7123cda41a46bb3b656283e69971964b08ee96beaa3e7553a",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    },
+    {
+      "asset_id": "asset:7da58002755b",
+      "relative_path": "scene_features.db",
+      "asset_kind": "feature_store_sqlite",
+      "extension": ".db",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rights_status": "user_provided_structured_analysis_db",
+      "access_policy": "metadata_only"
+    }
+  ]
+}

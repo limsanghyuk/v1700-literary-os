@@ -1,0 +1,64 @@
+{
+  "task_name": "Stage243 P8 Full-Season Hard-Rule Self-Check",
+  "performed_by": "ChatGPT",
+  "execution_location": "remote_github",
+  "created_at": "2026-07-04",
+  "roadmap_position": "P8",
+  "created_artifacts": [
+    "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+    "release/current/transition_council_pack/full_season_hard_rule_self_check_v1_report_20260704.md",
+    "release/current/transition_council_pack/chatgpt_direct_work_result_packet_full_season_hard_rule_p8_20260704.json"
+  ],
+  "updated_artifacts": [],
+  "work_method": {
+    "chatgpt_direct_work": [
+      "fixture state review",
+      "hard-rule gate policy alignment",
+      "full-season group check classification",
+      "validation gap identification",
+      "Gate A readiness decision",
+      "remote hub load and push"
+    ],
+    "codex_local_work": [],
+    "codex_local_required": "recommended_next",
+    "codex_local_reason": "Actual JSON parse, schema validation, and deeper safety scan require local validation execution or CI."
+  },
+  "self_check_result": {
+    "candidate_id": "fixture_full_season_candidate_v1_20260704",
+    "hard_rule_pass": false,
+    "final_verdict": "manual_review_required",
+    "gate_a_ready": false,
+    "weighted_score_considered": false,
+    "reason": "Fixture exists but formal schema validation and cross-level integrity execution have not yet run."
+  },
+  "required_next_actions": [
+    "local_json_parse_validation",
+    "schema_validation_against_full_season_candidate_package_schema_v1",
+    "cross_level_integrity_execution",
+    "full_season_hard_rule_gate_execution_with_instantiated_artifacts",
+    "scorecard_preflight_after_hard_rule_pass"
+  ],
+  "hub_loading": {
+    "repository": "limsanghyuk/v1700-literary-os",
+    "branch": "corpus-absorption-formula-bridge-handoff",
+    "method": "GitHub contents API create_file commits",
+    "remote_push_status": "committed_to_remote_branch"
+  },
+  "verification": {
+    "remote_fetch_verification": "pending_at_creation",
+    "json_parse": "not_locally_executed_by_chatgpt",
+    "schema_validation": "not_executed",
+    "hard_rule_gate": "metadata_fixture_self_check_only",
+    "scorecard_preflight": "not_executed",
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "draft_text_exported": false,
+    "promotion_claim": false
+  },
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "next_required_step": "P8.1 JSON/schema validation and cross-level integrity execution before P9 Scorecard Preflight."
+}

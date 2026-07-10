@@ -1,0 +1,20 @@
+{
+  "coefficient_diff_id": "coefficient-diff:emotion-audit",
+  "before_state_id": "coefficient-state:emotion:before",
+  "after_state_id": "coefficient-state:emotion:after",
+  "changed_fields": [
+    "coefficient_value",
+    "coefficient_version"
+  ],
+  "old_values": {
+    "coefficient_value": 1.0
+  },
+  "new_values": {
+    "coefficient_value": 1.05
+  },
+  "change_reason": "Audit-first candidate adjustment derived from a high-confidence emotional momentum signal.",
+  "source_signal_refs": [
+    "formula-signal:emotion:10부"
+  ],
+  "calibration_run_ref": "calibration-run:emotion-audit"
+}

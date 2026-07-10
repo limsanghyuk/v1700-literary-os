@@ -1,0 +1,202 @@
+{
+  "document_type": "full_season_deeper_integrity_result",
+  "version": "1.0-stage243-p8.2-local-execution",
+  "created_at": "2026-07-05T07:59:49.230724+00:00",
+  "source_validation_result": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+  "source_p8_2_contract": "release/current/season_wiring_pack/full_season_hard_rule_gate_rerun_p8_2.json",
+  "input_files_present": {
+    "release/current/season_wiring_pack/full_season_validation_result_p8_1.json": true,
+    "release/current/season_wiring_pack/full_season_hard_rule_gate_rerun_p8_2.json": true,
+    "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json": true,
+    "release/current/data_foundry_pack/episode_arc_inventory_v5.json": true,
+    "release/current/data_foundry_pack/sequence_blueprint_inventory_v5.json": true,
+    "release/current/data_foundry_pack/scene_function_taxonomy_16_v5.json": true,
+    "release/current/data_foundry_pack/scene_function_pair_distribution_v5.json": true,
+    "release/current/data_foundry_pack/schema_registry.json": true,
+    "release/current/measured_learning_pack/promotion_evidence_registry.json": true
+  },
+  "check_results": [
+    {
+      "check_id": "series_to_season_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "series_id_present": true,
+        "season_id_present": true,
+        "target_episode_count": 16,
+        "full_series_arc_spec_ref_present": true,
+        "season_plan_ref_present": true
+      },
+      "limitations": [
+        "Fixture exposes references and package identity, but not instantiated season goal, central conflict axis, entry state, or exit state values.",
+        "Metadata-only references cannot prove series-to-season narrative alignment."
+      ],
+      "required_next_action": "Inspect instantiated FullSeriesArcSpec and SeasonPlan fields before hard-rule pass."
+    },
+    {
+      "check_id": "season_to_episode_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "target_episode_count": 16,
+        "episode_arc_chain_ref_status": "present",
+        "seqcard_episode_ids": 648,
+        "episode_arc_files": 648,
+        "seqcard_without_episode_arc": [],
+        "episode_arc_without_seqcard": []
+      },
+      "limitations": [
+        "V5 corpus-level EpisodeArc coverage is complete, but the fixture does not expose the actual 16 ordered episode nodes.",
+        "Midpoint, crisis, climax, resolution, and episode transition continuity cannot be proven from counts alone."
+      ],
+      "required_next_action": "Provide or inspect instantiated EpisodeArcChain nodes for the 16-episode candidate."
+    },
+    {
+      "check_id": "episode_to_sequence_integrity",
+      "status": "pass_with_warning",
+      "evidence": {
+        "fixture_target_episode_count": 16,
+        "fixture_sequence_blueprint_count": 16,
+        "v5_sequence_count_min": 2,
+        "v5_sequence_count_max": 24,
+        "v5_sequence_count_mean": 9.4846,
+        "seqcard_without_seqblueprint": [],
+        "seqblueprint_without_seqcard": []
+      },
+      "limitations": [
+        "Corpus-level episode-to-sequence coverage is complete, but fixture-specific episode-to-sequence IDs are not enumerated."
+      ],
+      "required_next_action": "Bind fixture episode nodes to concrete sequence blueprint IDs before hard-rule pass."
+    },
+    {
+      "check_id": "sequence_to_scene_integrity",
+      "status": "pass_with_warning",
+      "evidence": {
+        "sequence_blueprint_record_count": 6146,
+        "records_per_episode": {
+          "min": 2,
+          "max": 24,
+          "mean": 9.4846
+        },
+        "member_scene_warning_count": 0,
+        "member_scene_warning_samples": [],
+        "fixture_scene_blueprint_count": 48
+      },
+      "limitations": [
+        "Member-scene metadata has no warning samples, but required transition support is not available as exported fixture instances."
+      ],
+      "required_next_action": "Bind fixture sequence spans to concrete scene blueprint IDs before hard-rule pass."
+    },
+    {
+      "check_id": "scene_to_renderer_packet_integrity",
+      "status": "pass_with_warning",
+      "evidence": {
+        "fixture_scene_blueprint_count": 48,
+        "fixture_renderer_prompt_packet_count": 48,
+        "renderer_refs_present": true,
+        "provider_call_allowed": false,
+        "prose_generation_allowed": false,
+        "canonical_mutation_allowed": false
+      },
+      "limitations": [
+        "Counts and safety boundary align, but packet-by-scene bijection is not instantiated in exported metadata."
+      ],
+      "required_next_action": "Expose metadata-only scene_id to renderer_packet_id mapping for hard-rule pass."
+    },
+    {
+      "check_id": "plant_payoff_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "fixture_declared_status": "not_run",
+        "p8_1_warning_present": true
+      },
+      "limitations": [
+        "Plant/payoff ledgers are not exported as instantiated metadata, so orphan plant, payoff-without-plant, timing, and unresolved setup risks cannot be cleared."
+      ],
+      "required_next_action": "Provide metadata-only plant/payoff ledger IDs and timing links."
+    },
+    {
+      "check_id": "character_arc_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "fixture_declared_status": "not_run",
+        "p8_1_warning_present": true
+      },
+      "limitations": [
+        "Character state, belief, motivation, and agency transitions are not exported as instantiated metadata."
+      ],
+      "required_next_action": "Provide metadata-only character arc transition graph with causal supports."
+    },
+    {
+      "check_id": "relationship_arc_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "fixture_declared_status": "not_run",
+        "p8_1_warning_present": true
+      },
+      "limitations": [
+        "Relationship state transitions and reversal causes are not exported as instantiated metadata."
+      ],
+      "required_next_action": "Provide metadata-only relationship transition graph with supporting event IDs."
+    },
+    {
+      "check_id": "causal_spine_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "fixture_declared_status": "not_run",
+        "p8_1_warning_present": true
+      },
+      "limitations": [
+        "Causal dependency edges across episodes and sequences are not exported as instantiated metadata."
+      ],
+      "required_next_action": "Provide metadata-only causal edge graph linking episode, sequence, and scene IDs."
+    },
+    {
+      "check_id": "hook_chain_integrity",
+      "status": "manual_review_required",
+      "evidence": {
+        "fixture_declared_status": "not_run",
+        "p8_1_warning_present": true
+      },
+      "limitations": [
+        "Hook-to-consequence links are not exported as instantiated metadata."
+      ],
+      "required_next_action": "Provide metadata-only hook ledger with downstream consequence IDs."
+    },
+    {
+      "check_id": "genre_rhythm_integrity",
+      "status": "pass_with_warning",
+      "evidence": {
+        "scene_function_records_total": 41168,
+        "core_missing": 0,
+        "all_16_present_in_core": true,
+        "unique_scene_function_pairs": 265,
+        "core2_none_treated_as_missing": true
+      },
+      "limitations": [
+        "Scene-function distribution is strong corpus-level rhythm evidence, but candidate-specific genre mode and rhythm target are not instantiated."
+      ],
+      "required_next_action": "Bind candidate season genre mode and per-episode rhythm targets to scene-function metadata."
+    }
+  ],
+  "pass_count": 0,
+  "pass_with_warning_count": 4,
+  "manual_review_required_count": 7,
+  "fail_hard_rule_count": 0,
+  "blocked_count": 0,
+  "overall_deeper_integrity_status": "manual_review_required",
+  "hard_rule_recommendation": "do_not_pass",
+  "gate_a_recommendation": "blocked",
+  "scorecard_preflight_recommendation": "blocked",
+  "safety": {
+    "metadata_only": true,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "live_prose_generation": false,
+    "canonical_mutation": false,
+    "training_update": false,
+    "adapter_promotion": false,
+    "promotion_claim": false,
+    "p9_scorecard_preflight_run": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false
+  }
+}

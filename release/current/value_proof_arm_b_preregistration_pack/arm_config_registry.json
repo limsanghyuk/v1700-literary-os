@@ -1,0 +1,44 @@
+{
+  "registry_id": "value-proof-arm-config:10부:preregistered",
+  "work_id": "10부",
+  "arms": [
+    {
+      "arm": "A",
+      "role": "PURE_LLM_BASELINE",
+      "prompt_packet_id": "value-proof-arm-a-prompt:10부:preregistered",
+      "prompt_packet_hash": "09ca1f86724849fc28cd2704935bc7edc3837df707dcdc1d4f101dea9a158f12",
+      "allowed_context": [
+        "base_task_brief",
+        "target_length",
+        "genre_hint"
+      ],
+      "forbidden_context": [
+        "formula_signal_refs",
+        "writer_ide_surface_cards",
+        "learnable_critic_explanation",
+        "raw_script_text"
+      ]
+    },
+    {
+      "arm": "B",
+      "role": "V1700_STRUCTURED_GUIDANCE",
+      "prompt_packet_id": "value-proof-arm-b-prompt:10부:preregistered",
+      "prompt_packet_hash": "66b7c3db030137a1f9d9c45ca0f81768b1df59e08bc2f4e1c84117b6323e87cd",
+      "allowed_context": [
+        "metadata_only_corpus_refs",
+        "writer_ide_advisory_surface_cards",
+        "formula_signal_refs",
+        "learnable_critic_review_only_explanation"
+      ],
+      "forbidden_context": [
+        "raw_script_text",
+        "unregistered_prompt_mutation",
+        "post_output_threshold_change",
+        "canonical_mutation",
+        "evaluator_visible_arm_label"
+      ]
+    }
+  ],
+  "arm_labels_hidden_from_evaluator": true,
+  "provider_execution_allowed": false
+}

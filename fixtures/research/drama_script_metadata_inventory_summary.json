@@ -1,0 +1,9 @@
+{
+  "corpus_id": "corpus_ko",
+  "work_count": 2040,
+  "source_json_count": 118,
+  "scene_record_work_count": 2030,
+  "feature_record_work_count": 2030,
+  "status": "pass",
+  "mode": "LOCAL_METADATA_ONLY_CORPUS_ABSORPTION"
+}

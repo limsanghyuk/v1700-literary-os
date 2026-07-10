@@ -1,0 +1,10 @@
+{
+  "alignment_result_id": "alignment-result:emotion-audit",
+  "calibration_run_id": "calibration-run:emotion-audit",
+  "before_alignment": 0.62,
+  "after_alignment": 0.67,
+  "improvement_delta": 0.05,
+  "failure_notes": [],
+  "overfit_warning": false,
+  "human_review_required": true
+}

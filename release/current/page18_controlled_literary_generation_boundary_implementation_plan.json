@@ -1,0 +1,67 @@
+{
+  "title": "Page18 Controlled Literary Generation Boundary Implementation Plan",
+  "created": "2026-06-18",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "baseline": "stage242",
+  "status": "implementation_plan_prepared",
+  "page18_runtime_opened": false,
+  "stage243_created": false,
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "canonical_mutation_allowed": false,
+  "target_package_layout": [
+    "src/v1700/literary_generation_boundary/",
+    "src/v1700/generation_context_packet/",
+    "src/v1700/output_capture_schema/",
+    "tools/run_page18_generation_boundary_preflight.py",
+    "tests/test_page18_generation_boundary.py"
+  ],
+  "required_records": [
+    "LiteraryGenerationRequest",
+    "GenerationContextPacket",
+    "NarrativeConstraintPacket",
+    "ProviderExecutionPolicy",
+    "OutputCaptureSchema",
+    "CanonicalMutationBlocker",
+    "GenerationBoundaryValidationReport"
+  ],
+  "required_output_pack": [
+    "release/current/literary_generation_boundary_pack/generation_boundary_report.json",
+    "release/current/literary_generation_boundary_pack/literary_generation_request.json",
+    "release/current/literary_generation_boundary_pack/generation_context_packet.json",
+    "release/current/literary_generation_boundary_pack/narrative_constraint_packet.json",
+    "release/current/literary_generation_boundary_pack/provider_execution_policy.json",
+    "release/current/literary_generation_boundary_pack/output_capture_schema.json",
+    "release/current/literary_generation_boundary_pack/canonical_mutation_blocker.json",
+    "release/current/literary_generation_boundary_pack/page18_generation_boundary_validation_report.json"
+  ],
+  "test_requirements": [
+    "request_references_all_boundary_records",
+    "context_packet_metadata_only_refs_only",
+    "provider_default_calls_zero",
+    "provider_generation_allowed_false",
+    "output_capture_started_false",
+    "capture_allowed_false",
+    "canonical_mutation_allowed_false",
+    "page18_runtime_opened_false",
+    "stage243_created_false",
+    "raw_script_text_allowed_false",
+    "forbidden_context_blocks_raw_script_text_and_unregistered_prompt_mutation"
+  ],
+  "non_goals": [
+    "provider_generation",
+    "generated_prose_capture",
+    "experiment_start",
+    "canonical_manuscript_mutation",
+    "runtime_training",
+    "stage243_creation",
+    "raw_protected_corpus_text_in_prompt_packets"
+  ],
+  "allowed_promotion": "page18_boundary_preflight_pass",
+  "forbidden_promotion": [
+    "page18_runtime_opened",
+    "stage243_created",
+    "experiment_started"
+  ],
+  "next_valid_action": "implement_page18_boundary_preflight_package_with_no_provider_generation"
+}

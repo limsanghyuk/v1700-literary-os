@@ -1,0 +1,384 @@
+{
+  "document_type": "promotion_evidence_registry",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-03",
+  "purpose": "Registry separating measured evidence, blocked promotion claims, and next evidence requirements for GPT V1700 Stage243.",
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false
+  },
+  "current_global_status": {
+    "stage": "Stage243",
+    "stage_definition": "Season Wiring + Data/Learning Bridge pre-runtime stage",
+    "live_generation_readiness": "blocked",
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "page18_runtime": "closed",
+    "provider_default_calls": 0
+  },
+  "evidence_classes": {
+    "structural_evidence": {
+      "status": "partial_seqcard_v5_p8_2_deeper_integrity_manual_review_required_gate_a_blocked",
+      "supports": [
+        "SeqCard v3 scene-function inventory",
+        "16-label scene function taxonomy coverage",
+        "filename-stem corpus linkage baseline"
+      ],
+      "current_artifacts": [
+        "release/current/data_foundry_pack/seqcard_snapshot_v3_manifest.json",
+        "release/current/data_foundry_pack/seqcard_corpus_linkage_v3.json",
+        "release/current/data_foundry_pack/scene_function_taxonomy_16.json",
+        "release/current/data_foundry_pack/scene_function_pair_distribution_v3.json",
+        "release/current/data_foundry_pack/schema_registry.json",
+        "release/current/data_foundry_pack/seqcard_snapshot_v4_manifest.json",
+        "release/current/data_foundry_pack/seqcard_corpus_linkage_v4.json",
+        "release/current/data_foundry_pack/scene_function_taxonomy_16_v4.json",
+        "release/current/data_foundry_pack/scene_function_pair_distribution_v4.json",
+        "release/current/data_foundry_pack/seqcard_snapshot_v4_delta_from_v3.json",
+        "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+        "release/current/data_foundry_pack/seqcard_corpus_linkage_v5.json",
+        "release/current/data_foundry_pack/episode_arc_inventory_v5.json",
+        "release/current/data_foundry_pack/sequence_blueprint_inventory_v5.json",
+        "release/current/data_foundry_pack/seqcard_v5_p8_1_schema_mapping.json",
+        "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+        "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+        "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
+        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+        "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
+        "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+        "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json"
+      ],
+      "current_measured_facts": {
+        "seqcard_jsonl_files": 457,
+        "episode_meta_files": 457,
+        "series_count_by_filename": 22,
+        "seqcard_records": 29873,
+        "taxonomy_16_present_in_core": true,
+        "taxonomy_16_present_in_core2": true,
+        "linkage_exact_episode": 336,
+        "linkage_series_only": 1,
+        "linkage_unmatched": 120,
+        "seqcard_v4_jsonl_files": 577,
+        "seqcard_v4_episode_meta_files": 577,
+        "seqcard_v4_series_count_by_filename": 29,
+        "seqcard_v4_records": 37166,
+        "seqcard_v4_jsonl_parse_errors": 0,
+        "seqcard_v4_json_parse_errors": 0,
+        "linkage_v4_exact_episode": 456,
+        "linkage_v4_series_only": 1,
+        "linkage_v4_unmatched": 120,
+        "seqcard_v5_jsonl_files": 648,
+        "seqcard_v5_episode_meta_files": 648,
+        "seqcard_v5_episode_arc_files": 648,
+        "seqcard_v5_seqblueprint_files": 648,
+        "seqcard_v5_records": 41168,
+        "seqcard_v5_seqblueprint_records": 6146,
+        "seqcard_v5_series_count_by_filename": 33,
+        "linkage_v5_exact_episode": 476,
+        "linkage_v5_series_only": 1,
+        "linkage_v5_unmatched": 171,
+        "p8_1_validation_status": "pass_with_warning",
+        "p8_1_scorecard_preflight_allowed": false,
+        "p8_1_json_parse_pass": true,
+        "p8_1_schema_validation_pass": true,
+        "p8_1_schema_error_count": 0,
+        "p8_1_cross_level_integrity_pass": true,
+        "p8_1_integrity_warning_count": 11,
+        "p8_1_boundary_invariants_pass": true,
+        "p8_1_hard_rule_pass_from_self_check": false,
+        "p8_1_gate_a_ready_after_validation": false,
+        "p8_2_deeper_integrity_status": "manual_review_required",
+        "p8_2_pass_with_warning_count": 4,
+        "p8_2_manual_review_required_count": 7,
+        "p8_2_fail_hard_rule_count": 0,
+        "p8_2_blocked_count": 0,
+        "p8_2_hard_rule_pass": false,
+        "p8_2_gate_a_ready": false,
+        "p8_2_scorecard_preflight_allowed": false
+      },
+      "limitations": [
+        "Season arc contract fixture exists but is not measured generator evidence",
+        "Episode arc contract fixture exists but is not measured generator evidence",
+        "SceneBeatGrid contract fixture exists but is not measured generator evidence",
+        "No blind structural evaluation fixture yet"
+      ],
+      "promotion_effect": "does_not_unlock_macro_planner"
+    },
+    "generative_evidence": {
+      "status": "preflight_envelope_created_but_runtime_blocked",
+      "supports": [
+        "Pass5 DraftPacket fixture envelope exists with provider_call_count=0 and draft_text_exported=false"
+      ],
+      "current_artifacts": [
+        "release/current/season_wiring_pack/pass5_draftpacket_fixture.json",
+        "release/current/season_wiring_pack/pass4_to_pass7_preflight_report.json"
+      ],
+      "limitations": [
+        "Page18 runtime is closed",
+        "Provider calls are forbidden in Stage243",
+        "No exported draft prose evidence",
+        "Pass5 is fixture-only DraftPacket metadata, not literary generation"
+      ],
+      "promotion_effect": "does_not_unlock_live_generation_or_full_author"
+    },
+    "revision_evidence": {
+      "status": "contract_preflight_partial",
+      "supports": [
+        "Pass6 GateResult fixture exists",
+        "Pass7 PanelResult fixture exists"
+      ],
+      "current_artifacts": [
+        "release/current/season_wiring_pack/pass6_gateresult_fixture.json",
+        "release/current/season_wiring_pack/pass7_panelresult_fixture.json",
+        "release/current/season_wiring_pack/pass4_to_pass7_preflight_report.json"
+      ],
+      "required_artifacts": [
+        "RevisionProposal schema",
+        "accepted_rejected_revision_registry"
+      ],
+      "limitations": [
+        "No closed brief-draft-gate-panel-revision loop evidence yet",
+        "PanelResult fixture is metadata-only and contains no prose preference notes"
+      ],
+      "promotion_effect": "blocks_full_author"
+    },
+    "craft_axis_evidence": {
+      "status": "measured_partial",
+      "supports": [
+        "LLM-1 craft critic / show-vs-flat-tell preference axis"
+      ],
+      "current_artifacts": [
+        "release/current/measured_learning_pack/4070_evidence_card.md",
+        "release/current/measured_learning_pack/4070_spe10_pathb_evidence_card.json"
+      ],
+      "current_measured_facts": {
+        "experiment": "SP-E.10 Path B v3",
+        "axis": "show/tell craft preference",
+        "rounds": 5,
+        "adopt_rounds": 5,
+        "final_w1": 0.808,
+        "final_ci_lower": 0.7592,
+        "lrr": 0.0,
+        "c3_passed": true
+      },
+      "limitations": [
+        "Craft-axis evidence is not macro planner evidence",
+        "Craft-axis evidence is not full author evidence",
+        "Adapter weights are not exported or promoted"
+      ],
+      "promotion_effect": "supports_measured_learning_only"
+    }
+  },
+  "gate_status": {
+    "gate_a_data_bridge": {
+      "status": "partial_pass",
+      "evidence": [
+        "corpus_ko metadata survey",
+        "SeqCard v3 manifest",
+        "schema registry v2",
+        "linkage v3 baseline",
+        "SeqCard v4 manifest and linkage baseline",
+        "SeqCard v5 EpisodeArc and SequenceBlueprint metadata layers",
+        "P8.1 local full-season validation result pass_with_warning"
+      ],
+      "remaining_blockers": [
+        "P8 hard-rule self-check is false; rerun/fix hard-rule gate before Gate A",
+        "P8.1 integrity warnings remain: 11 not_run deeper instantiated checks",
+        "unmatched linkage records v5: 171",
+        "series_only linkage records v5: 1",
+        "remote authority reflection for local rerun result if GitHub is authority"
+      ]
+    },
+    "gate_b_macro_planner": {
+      "status": "blocked_after_multicandidate_fixture_evaluation",
+      "preflight_evidence": [
+        "SeasonArc contract fixture",
+        "EpisodeArc contract fixture",
+        "SceneGrid contract fixture",
+        "PlantPayoffChain contract fixture",
+        "CharacterArcTrajectory contract fixture",
+        "Macro Planner Candidate preflight report",
+        "Single Blind Structural Evaluation fixture",
+        "Macro Planner scoring rubric",
+        "Multi-candidate Blind Structural Evaluation fixture set",
+        "Negative/control macro fixtures",
+        "Held-out season structure fixtures",
+        "Macro planner metric thresholds",
+        "Macro Planner multi-candidate evaluation report"
+      ],
+      "required_evidence": [
+        "real held-out metadata-only structure packs beyond fixtures",
+        "hard-rule and weighted-score threshold separation",
+        "human-reviewed Gate B promotion protocol",
+        "remote authority confirmation if GitHub is the chosen authority"
+      ],
+      "blocked_reason": "Multi-candidate metadata fixture evaluation exists, but generalized real held-out macro planning evidence and human-reviewed Gate B protocol do not exist yet"
+    },
+    "gate_c_measured_learning": {
+      "status": "partial_pass",
+      "evidence": [
+        "4070 SP-E.10 Path B v3 5/5 ADOPT craft-axis result"
+      ],
+      "remaining_blockers": [
+        "promotion policy for multiple axes",
+        "registry of held-out metrics across tasks",
+        "adapter promotion remains blocked"
+      ]
+    },
+    "gate_d_full_author": {
+      "status": "blocked_after_contract_preflight",
+      "preflight_evidence": [
+        "Pass4 RetrievalPacket fixture",
+        "Pass5 DraftPacket fixture-only envelope",
+        "Pass6 GateResult fixture",
+        "Pass7 PanelResult fixture",
+        "Pass4-Pass7 preflight report"
+      ],
+      "required_evidence": [
+        "RevisionProposal",
+        "accepted/rejected loop evidence",
+        "human approval boundary"
+      ],
+      "blocked_reason": "Contract preflight exists, but closed authoring loop is not implemented"
+    },
+    "p8_2_hard_rule_gate": {
+      "status": "manual_review_required",
+      "hard_rule_pass": false,
+      "gate_a_ready": false,
+      "scorecard_preflight_allowed": false
+    }
+  },
+  "blocked_claims": [
+    {
+      "claim": "GPT V1700 is a macro planner",
+      "status": "blocked",
+      "reason": "Structural data exists, but macro planning generator and blind evaluation evidence are missing"
+    },
+    {
+      "claim": "GPT V1700 is a full author",
+      "status": "blocked",
+      "reason": "Brief-draft-gate-panel-revision-learning loop is not implemented"
+    },
+    {
+      "claim": "Page18 live generation is ready",
+      "status": "blocked",
+      "reason": "Stage243 forbids provider calls and runtime generation"
+    },
+    {
+      "claim": "4070 craft-axis result promotes adapter or full model",
+      "status": "blocked",
+      "reason": "Evidence supports measured craft-axis learning only"
+    }
+  ],
+  "completed_codex_work": [
+    {
+      "priority": 1,
+      "work_item": "Pass4-Pass7 preflight fixtures",
+      "status": "completed",
+      "outputs": [
+        "release/current/season_wiring_pack/pass4_retrievalpacket_fixture.json",
+        "release/current/season_wiring_pack/pass5_draftpacket_fixture.json",
+        "release/current/season_wiring_pack/pass6_gateresult_fixture.json",
+        "release/current/season_wiring_pack/pass7_panelresult_fixture.json",
+        "release/current/season_wiring_pack/pass4_to_pass7_preflight_report.json",
+        "release/current/season_wiring_pack/pass4_to_pass7_preflight_report.md"
+      ],
+      "constraints": [
+        "provider_call=0",
+        "fixture-only DraftPacket",
+        "no raw prose export"
+      ]
+    },
+    {
+      "priority": 2,
+      "work_item": "Macro Planner Candidate fixtures",
+      "status": "completed_contract_preflight",
+      "outputs": [
+        "release/current/season_wiring_pack/macro_candidate_season_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_episode_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_scene_grid_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_plant_payoff_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_character_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_planner_candidate_preflight_report.json",
+        "release/current/season_wiring_pack/macro_planner_candidate_preflight_report.md"
+      ],
+      "constraints": [
+        "contract and fixture metadata only",
+        "provider_call=0",
+        "runtime_generation=false",
+        "no promotion claim"
+      ]
+    },
+    {
+      "priority": 3,
+      "work_item": "Blind Structural Evaluation fixture",
+      "status": "completed_fixture_only",
+      "outputs": [
+        "release/current/season_wiring_pack/macro_planner_scoring_rubric.json",
+        "release/current/season_wiring_pack/blind_structural_evaluation_fixture.json",
+        "release/current/season_wiring_pack/macro_planner_evaluation_report.json",
+        "release/current/season_wiring_pack/macro_planner_evaluation_report.md"
+      ],
+      "constraints": [
+        "provider_call=0",
+        "no prose generation",
+        "metadata-only scoring rubric",
+        "no macro planner promotion claim"
+      ]
+    },
+    {
+      "priority": 4,
+      "work_item": "Multi-candidate Blind Structural Evaluation set",
+      "status": "completed_fixture_only_with_threshold_warning",
+      "outputs": [
+        "release/current/season_wiring_pack/blind_structural_evaluation_multicandidate_set.json",
+        "release/current/season_wiring_pack/negative_control_macro_fixtures.json",
+        "release/current/season_wiring_pack/heldout_season_structure_fixtures.json",
+        "release/current/season_wiring_pack/macro_planner_metric_thresholds.json",
+        "release/current/season_wiring_pack/macro_planner_multicandidate_evaluation_report.json",
+        "release/current/season_wiring_pack/macro_planner_multicandidate_evaluation_report.md"
+      ],
+      "constraints": [
+        "provider_call=0",
+        "no prose generation",
+        "metadata-only scoring",
+        "no macro planner promotion claim"
+      ],
+      "warning": "Negative controls are separated by hard-rule failures; weighted score threshold alone is insufficient for promotion."
+    }
+  ],
+  "next_required_codex_work": [
+    {
+      "priority": 1,
+      "work_item": "Real held-out metadata-only structure packs and Gate B protocol",
+      "required_outputs": [
+        "real_heldout_structure_pack_manifest.json",
+        "macro_planner_hard_rule_thresholds_v2.json",
+        "gate_b_human_review_protocol.md",
+        "macro_planner_real_heldout_evaluation_report.md"
+      ],
+      "constraints": [
+        "provider_call=0",
+        "metadata-only",
+        "no raw prose export",
+        "no promotion claim until human-reviewed Gate B"
+      ]
+    },
+    {
+      "priority": 2,
+      "work_item": "Remote authority confirmation",
+      "required_outputs": [
+        "remote_hub_reflection_status.md"
+      ],
+      "constraints": [
+        "only if GitHub/remote branch is chosen as authority"
+      ]
+    }
+  ]
+}

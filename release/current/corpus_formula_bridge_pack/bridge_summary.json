@@ -1,0 +1,24 @@
+{
+  "average_tensor_dimensions": {
+    "dramatic_pressure": 0.478487,
+    "motif_continuity": 0.474184,
+    "reader_curiosity": 0.329176,
+    "dialogue_density": 0.097945,
+    "retrieval_grounding": 0.997059
+  },
+  "signal_groups": [
+    "Emotional Momentum",
+    "Narrative State Tensor",
+    "RAG/BM25/RRF retrieval fusion"
+  ],
+  "advisory_only": true,
+  "value_proof_ready_count": 2040,
+  "writer_panel_refs": [
+    "writer_ide:left_panel:corpus_reference",
+    "writer_ide:right_panel:emotional_momentum",
+    "writer_ide:right_panel:narrative_state_tensor"
+  ],
+  "source_work_count": 2040,
+  "rag_ready_count": 2030,
+  "learning_ready_count": 2030
+}

@@ -1,0 +1,18 @@
+{
+  "calibration_run_id": "calibration-run:emotion-audit",
+  "critic_id": "critic:emotion_calibration_audit",
+  "input_source_refs": [
+    "critic-input:sample-emotion-audit"
+  ],
+  "formula_signal_refs": [
+    "formula-signal:emotion:10부"
+  ],
+  "value_proof_refs": [
+    "value_proof:pending_preregistration"
+  ],
+  "learning_rate": 0.0,
+  "iteration_count": 0,
+  "loss_or_error_metric": "fixture_only_no_runtime_optimization",
+  "seed_ref": "seed:learnable-critic-audit",
+  "created_at": "2026-06-19T02:29:10+00:00"
+}

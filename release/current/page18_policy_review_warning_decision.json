@@ -1,0 +1,54 @@
+{
+  "title": "Page18 Policy Review and Warning Decision",
+  "created": "2026-06-18",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "baseline": "stage242",
+  "status": "pass",
+  "decision": "warning_preserving_ready_for_page18_opening_gate",
+  "clean_open_status": "not_yet",
+  "page18_runtime_opened": false,
+  "stage243_created": false,
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "canonical_mutation_allowed": false,
+  "evidence": {
+    "value_proof_guidance_report": "present_pass",
+    "value_proof_preregistration_report": "present_pass",
+    "value_proof_blind_evaluator_report": "present_pass",
+    "page18_readiness_precheck": "pass_ready_for_policy_review",
+    "release_gate": "pass",
+    "stage242_release_gate": "pass",
+    "release_asset_integrity": "pass"
+  },
+  "resolved_warnings": [
+    {
+      "id": "blind_evaluator_source_prompt_packet_id_leak",
+      "status": "resolved",
+      "resolution": "evaluator-visible source_prompt_packet_id removed and replaced with source_prompt_packet_ref_hash",
+      "private_mapping_retained": true,
+      "private_mapping_visible_to_evaluator": false
+    }
+  ],
+  "remaining_warnings": [
+    {
+      "id": "page18_not_opened_runtime",
+      "status": "warning_preserved",
+      "reason": "readiness is not equivalent to opening runtime"
+    },
+    {
+      "id": "generated_output_not_started",
+      "status": "warning_preserved",
+      "reason": "no provider generation, output capture, or experiment has started"
+    }
+  ],
+  "approved_next_step": "prepare_page18_opening_gate_checklist_and_implementation_plan",
+  "not_approved": [
+    "open_page18_runtime_immediately",
+    "create_stage243",
+    "start_provider_generation",
+    "capture_generated_outputs",
+    "mutate_canonical_manuscript_records",
+    "enable_runtime_training",
+    "use_raw_protected_corpus_text_in_prompts"
+  ]
+}

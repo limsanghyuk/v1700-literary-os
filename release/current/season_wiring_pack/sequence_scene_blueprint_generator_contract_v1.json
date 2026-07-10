@@ -1,0 +1,225 @@
+{
+  "document_type": "sequence_scene_blueprint_generator_contract",
+  "version": "1.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "authority_scope": "Macro Planner to LLM Renderer Handoff",
+  "purpose": "Define GPT V1700's role as a long-form creative planner that produces sequence and scene blueprints, not final prose, so a latest-generation LLM renderer can later generate detailed prose from those blueprints under Page18 boundary control.",
+  "core_thesis": "Modern large language models are already strong at detailed prose generation when given rich scene information. GPT V1700 should therefore focus on long-range planning, sequence purpose, scene division, dramatic function, causal logic, character/relationship movement, plant/payoff, hook, rhythm, and renderer-ready prompt packets.",
+  "model_role_definition": {
+    "not_primary_role": [
+      "freeform_prose_generator",
+      "verbatim_drama_writer",
+      "raw_corpus_reproducer",
+      "unbounded_scene_drafter"
+    ],
+    "primary_role": [
+      "long_form_macro_planner",
+      "sequence_architect",
+      "scene_blueprint_author",
+      "director_brief_generator",
+      "llm_renderer_prompt_packager",
+      "hard_rule_self_checker",
+      "revision_instruction_planner"
+    ]
+  },
+  "design_implication": {
+    "planner_output_must_be": "rich enough for a modern LLM to generate high-quality prose without needing raw source corpus or hidden author memory",
+    "planner_output_must_not_be": "actual final prose, raw script text, or provider-generated draft during Stage243",
+    "success_definition": "The system succeeds when it can decide what sequences and scenes should exist, why they exist, what each scene must accomplish, and how a renderer should generate them."
+  },
+  "blueprint_hierarchy": [
+    {
+      "level": 1,
+      "artifact": "SeasonPlan",
+      "function": "Defines season-wide dramatic question, theme, central conflict, transformation arc, and end-state."
+    },
+    {
+      "level": 2,
+      "artifact": "EpisodePlan",
+      "function": "Defines episode-level state transition, goal, turn, cost, hook, and relation to season arc."
+    },
+    {
+      "level": 3,
+      "artifact": "SequenceBlueprint",
+      "function": "Defines a cluster of scenes with one dramatic purpose, tonal mode, escalation step, and internal progression."
+    },
+    {
+      "level": 4,
+      "artifact": "SceneBlueprint",
+      "function": "Defines each scene's function, objective, conflict, state change, character movement, causality, plant/payoff, visual/directorial intention, and renderer prompt instructions."
+    },
+    {
+      "level": 5,
+      "artifact": "LLMRendererPromptPacket",
+      "function": "Packages the sequence and scene blueprint into a controlled prompt for a latest LLM renderer to produce prose later."
+    }
+  ],
+  "sequence_blueprint_required_fields": [
+    "sequence_id",
+    "episode_id",
+    "sequence_title",
+    "sequence_purpose",
+    "sequence_theme_focus",
+    "sequence_dramatic_question",
+    "entry_state",
+    "exit_state",
+    "conflict_escalation_step",
+    "character_arc_delta",
+    "relationship_arc_delta",
+    "plant_payoff_operations",
+    "tone_and_genre_mode",
+    "directorial_intention",
+    "scene_count_target",
+    "scene_blueprint_refs",
+    "hard_rule_risks",
+    "renderer_handoff_summary"
+  ],
+  "scene_blueprint_required_fields": [
+    "scene_id",
+    "sequence_id",
+    "episode_id",
+    "scene_order",
+    "scene_function_core",
+    "scene_function_core2",
+    "scene_purpose",
+    "scene_objective",
+    "dramatic_conflict",
+    "character_entry_state",
+    "character_exit_state",
+    "relationship_delta",
+    "causal_input",
+    "causal_output",
+    "plant_operations",
+    "payoff_operations",
+    "information_reveal",
+    "emotional_turn",
+    "visual_or_directorial_notes",
+    "dialogue_intention",
+    "subtext_target",
+    "ending_hook_or_transition",
+    "renderer_prompt_constraints",
+    "hard_rule_self_check"
+  ],
+  "llm_renderer_prompt_packet_required_fields": [
+    "packet_id",
+    "renderer_model_family",
+    "generation_scope",
+    "do_not_use_raw_corpus",
+    "sequence_context_summary",
+    "scene_blueprints",
+    "style_directive",
+    "tone_directive",
+    "pov_or_camera_directive",
+    "dialogue_directive",
+    "subtext_directive",
+    "continuity_constraints",
+    "must_include_payloads",
+    "must_avoid_payloads",
+    "hard_rule_constraints",
+    "output_format_request",
+    "revision_hooks"
+  ],
+  "pipeline_position": {
+    "after": [
+      "SeasonGoalSpec",
+      "CausalSpineGraph",
+      "CharacterArcTrajectory",
+      "RelationshipArcMatrix",
+      "PlantPayoffLedger",
+      "ConflictEscalationCurve",
+      "EpisodeArcChain",
+      "SceneFunctionGrid",
+      "EpisodeHookSchedule",
+      "GenreRhythmPlan"
+    ],
+    "before": [
+      "Page18 Controlled Generation Boundary",
+      "LLM Renderer Detailed Prose Generation",
+      "Revision Evaluation Loop"
+    ]
+  },
+  "renderer_boundary": {
+    "stage243_actual_renderer_call_allowed": false,
+    "page18_runtime_opened": false,
+    "provider_call_count": 0,
+    "allowed_stage243_output": [
+      "SequenceBlueprint",
+      "SceneBlueprint",
+      "LLMRendererPromptPacket",
+      "HardRuleSelfCheckReport",
+      "RevisionInstructionPlan"
+    ],
+    "blocked_stage243_output": [
+      "actual_scene_prose",
+      "provider_generated_scene",
+      "verbatim_source_text",
+      "raw_drama_script",
+      "canonical_memory_mutation",
+      "runtime_training_update",
+      "promotion_claim"
+    ]
+  },
+  "evaluation_alignment": {
+    "sequence_purpose_maps_to": [
+      "season_goal_clarity",
+      "episode_arc_coherence"
+    ],
+    "scene_purpose_maps_to": [
+      "scene_grid_necessity",
+      "causal_spine_integrity"
+    ],
+    "plant_payoff_operations_map_to": [
+      "plant_payoff_integrity"
+    ],
+    "character_and_relationship_delta_maps_to": [
+      "character_arc_continuity",
+      "relationship_arc_continuity"
+    ],
+    "conflict_and_hook_maps_to": [
+      "conflict_escalation",
+      "hook_sequence_quality"
+    ],
+    "tone_and_rhythm_maps_to": [
+      "genre_rhythm_balance"
+    ]
+  },
+  "hard_rule_self_check_before_renderer": [
+    "missing_sequence_purpose",
+    "scene_without_state_change",
+    "scene_without_causal_output",
+    "payoff_without_plant",
+    "orphan_plant_without_payoff",
+    "character_change_without_trigger",
+    "relationship_shift_without_event",
+    "episode_hook_absent_over_threshold",
+    "genre_rhythm_flatline",
+    "raw_text_leakage",
+    "promotion_claim_detected"
+  ],
+  "llm_handoff_principle": "The renderer prompt must tell the LLM what to write, why the scene exists, what must change, what must be preserved, what must be avoided, and what output format to produce. It must not ask the LLM to invent the macro structure from scratch.",
+  "next_required_artifacts": [
+    "sequence_blueprint_schema_v1.json",
+    "scene_blueprint_schema_v1.json",
+    "llm_renderer_prompt_packet_schema_v1.json",
+    "sequence_scene_blueprint_fixture_v1.json"
+  ],
+  "promotion_interpretation": {
+    "blueprint_generator_contract_is_not_promotion": true,
+    "prompt_packet_is_not_live_generation": true,
+    "renderer_call_remains_blocked": true,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "draft_text_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "promotion_claim": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mapping_id": "value-proof-private-arm-mapping:10부",
+  "work_id": "10부",
+  "visible_to_evaluator": false,
+  "records": [
+    {
+      "slot": "slot_01",
+      "arm": "A",
+      "prompt_packet_hash": "09ca1f86724849fc28cd2704935bc7edc3837df707dcdc1d4f101dea9a158f12",
+      "evaluator_packet_hash": "1f45b1ad8a35356eaeb7c16865f4b2a587dc3e0d73568b3f683b545621c7c95e"
+    },
+    {
+      "slot": "slot_02",
+      "arm": "B",
+      "prompt_packet_hash": "66b7c3db030137a1f9d9c45ca0f81768b1df59e08bc2f4e1c84117b6323e87cd",
+      "evaluator_packet_hash": "bdebea44f21b92801b4f6fc777cfa4487664da28d4da99077aacbc695b5059a5"
+    }
+  ],
+  "mapping_hash": "d7e79c2898eabef65e610512f11253e44e831fb54f1ca606af96419215c44ca6"
+}

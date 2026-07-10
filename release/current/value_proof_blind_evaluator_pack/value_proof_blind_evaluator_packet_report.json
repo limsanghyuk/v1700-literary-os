@@ -1,0 +1,120 @@
+{
+  "title": "Value Proof Blind Evaluator Packet Builder",
+  "status": "pass",
+  "mode": "VALUE_PROOF_BLIND_EVALUATOR_PACKET_FIXTURE",
+  "issues": [],
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "canonical_mutation_allowed": false,
+  "page18_runtime_opened": false,
+  "experiment_started": false,
+  "output_capture_started": false,
+  "paths": {
+    "repo_root": "C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize",
+    "preregistration_report": "C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\\release\\current\\value_proof_arm_b_preregistration_pack\\value_proof_arm_b_preregistration_packet_report.json"
+  },
+  "counters": {
+    "focus_work_id": "10부",
+    "evaluator_packet_count": 2,
+    "private_mapping_count": 2,
+    "public_arm_label_count": 0
+  },
+  "parts": {
+    "blind_packet_registry": {
+      "registry_id": "value-proof-blind-evaluator-registry:10부",
+      "work_id": "10부",
+      "created_at": "2026-06-19T02:29:11+00:00",
+      "blind_slots": [
+        {
+          "slot": "slot_01",
+          "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_01",
+          "evaluator_packet_hash": "1f45b1ad8a35356eaeb7c16865f4b2a587dc3e0d73568b3f683b545621c7c95e"
+        },
+        {
+          "slot": "slot_02",
+          "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_02",
+          "evaluator_packet_hash": "bdebea44f21b92801b4f6fc777cfa4487664da28d4da99077aacbc695b5059a5"
+        }
+      ],
+      "arm_labels_visible_to_evaluator": false,
+      "output_capture_started": false,
+      "registry_hash": "865ef4cfbaa7f6b92870b938390b1b677af25229c72bd658cecd4cf635188084"
+    },
+    "evaluator_packet_01": {
+      "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_01",
+      "slot": "slot_01",
+      "work_id": "10부",
+      "source_prompt_packet_ref_hash": "46049767257c7878ffecd59434d9796c8e40179cc45c3490ebbe8614b52aa4ab",
+      "visible_to_evaluator": true,
+      "label_visible_to_evaluator": false,
+      "evaluation_prompt_body_included": false,
+      "output_capture_allowed": false,
+      "provider_generation_allowed": false,
+      "canonical_mutation_allowed": false,
+      "raw_script_text_allowed": false,
+      "evaluator_instructions": [
+        "Compare only the later captured outputs.",
+        "Do not infer the hidden packet source.",
+        "Do not change thresholds after outputs are seen."
+      ],
+      "evaluator_packet_hash": "1f45b1ad8a35356eaeb7c16865f4b2a587dc3e0d73568b3f683b545621c7c95e"
+    },
+    "evaluator_packet_02": {
+      "evaluator_packet_id": "value-proof-evaluator-packet:10부:slot_02",
+      "slot": "slot_02",
+      "work_id": "10부",
+      "source_prompt_packet_ref_hash": "d8d0170bc18ad6b37668cf8742c1917013c1ba67948103b506215d82c9b8044c",
+      "visible_to_evaluator": true,
+      "label_visible_to_evaluator": false,
+      "evaluation_prompt_body_included": false,
+      "output_capture_allowed": false,
+      "provider_generation_allowed": false,
+      "canonical_mutation_allowed": false,
+      "raw_script_text_allowed": false,
+      "evaluator_instructions": [
+        "Compare only the later captured outputs.",
+        "Do not infer the hidden packet source.",
+        "Do not change thresholds after outputs are seen."
+      ],
+      "evaluator_packet_hash": "bdebea44f21b92801b4f6fc777cfa4487664da28d4da99077aacbc695b5059a5"
+    },
+    "private_arm_mapping": {
+      "mapping_id": "value-proof-private-arm-mapping:10부",
+      "work_id": "10부",
+      "visible_to_evaluator": false,
+      "records": [
+        {
+          "slot": "slot_01",
+          "arm": "A",
+          "prompt_packet_hash": "09ca1f86724849fc28cd2704935bc7edc3837df707dcdc1d4f101dea9a158f12",
+          "evaluator_packet_hash": "1f45b1ad8a35356eaeb7c16865f4b2a587dc3e0d73568b3f683b545621c7c95e"
+        },
+        {
+          "slot": "slot_02",
+          "arm": "B",
+          "prompt_packet_hash": "66b7c3db030137a1f9d9c45ca0f81768b1df59e08bc2f4e1c84117b6323e87cd",
+          "evaluator_packet_hash": "bdebea44f21b92801b4f6fc777cfa4487664da28d4da99077aacbc695b5059a5"
+        }
+      ],
+      "mapping_hash": "d7e79c2898eabef65e610512f11253e44e831fb54f1ca606af96419215c44ca6"
+    },
+    "blind_evaluator_boundary_report": {
+      "boundary_report_id": "value-proof-blind-evaluator-boundary:10부",
+      "work_id": "10부",
+      "registry_hash": "865ef4cfbaa7f6b92870b938390b1b677af25229c72bd658cecd4cf635188084",
+      "private_mapping_hash": "d7e79c2898eabef65e610512f11253e44e831fb54f1ca606af96419215c44ca6",
+      "provider_default_calls": 0,
+      "runtime_training_enabled": false,
+      "canonical_mutation_allowed": false,
+      "page18_runtime_opened": false,
+      "experiment_started": false,
+      "output_capture_started": false,
+      "arm_labels_visible_to_evaluator": false,
+      "raw_script_text_allowed": false
+    },
+    "value_proof_blind_evaluator_validation_report": {
+      "status": "pass",
+      "issues": []
+    }
+  }
+}

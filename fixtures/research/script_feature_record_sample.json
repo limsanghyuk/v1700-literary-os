@@ -1,0 +1,17 @@
+{
+  "work_id": "10부",
+  "feature_scene_count": 44,
+  "mean_conflict_intensity": 0.198705,
+  "mean_scene_energy_ratio": 2.289591,
+  "mean_motif_residue_score": 0.512818,
+  "mean_curiosity_gradient": 0.306318,
+  "mean_dialogue_ratio": 0.0,
+  "signal_keys": [
+    "conflict_intensity",
+    "scene_energy_ratio",
+    "motif_residue_score",
+    "curiosity_gradient",
+    "dialogue_ratio"
+  ],
+  "learning_ready": true
+}

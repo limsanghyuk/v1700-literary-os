@@ -1,0 +1,178 @@
+{
+  "document_type": "promotion_gate_definition",
+  "version": "1.0",
+  "created_at": "2026-07-02",
+  "stage": "Stage243",
+  "scope": "metadata_only_promotion_framework",
+  "safety": {
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false
+  },
+  "current_decision": {
+    "stage243_scope": "Data Bridge + Learning Bridge + Season Wiring Preflight",
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked",
+    "reason": "Current evidence supports scene/craft and metadata bridge work, but does not prove 16/24-episode macro planning or full authoring closed loop."
+  },
+  "promotion_levels": [
+    {
+      "level": 0,
+      "name": "Scene Function Classifier",
+      "claim": "Classifies scenes into the core function taxonomy.",
+      "current_status": "supported_by_seqcard_taxonomy"
+    },
+    {
+      "level": 1,
+      "name": "Scene Brief Planner",
+      "claim": "Creates scene briefs from premise and beat structure.",
+      "current_status": "prototype_supported_by_pass1_to_pass3"
+    },
+    {
+      "level": 2,
+      "name": "Episode Planner",
+      "claim": "Creates coherent episode-level arcs and scene grids.",
+      "current_status": "candidate_needed"
+    },
+    {
+      "level": 3,
+      "name": "Season Macro Planner",
+      "claim": "Creates 16/24-episode season plans with causality, plant/payoff, and character arcs.",
+      "current_status": "blocked_until_gate_b"
+    },
+    {
+      "level": 4,
+      "name": "Draft Author",
+      "claim": "Generates scene drafts from approved scene briefs.",
+      "current_status": "blocked_until_pass5_and_page18_boundary"
+    },
+    {
+      "level": 5,
+      "name": "Revision Author",
+      "claim": "Uses gate/panel feedback to improve drafts.",
+      "current_status": "blocked_until_revision_trace_registry"
+    },
+    {
+      "level": 6,
+      "name": "Full Author",
+      "claim": "Runs the full design, generation, evaluation, revision, and learning loop over long-form series.",
+      "current_status": "blocked_until_gate_d"
+    }
+  ],
+  "gates": [
+    {
+      "gate_id": "GateA",
+      "name": "Macro Planner Candidate",
+      "promotion_result": "candidate_only",
+      "required_evidence": [
+        "50_or_more_works_or_equivalent_structural_diversity",
+        "1000_or_more_episode_level_metadata_records",
+        "70000_or_more_scene_function_records",
+        "seqcard_corpus_linkage_v2",
+        "schema_registry",
+        "season_arc_generation_packet",
+        "episode_arc_generation_packet",
+        "scene_grid_generation_packet"
+      ],
+      "blocked_claims_after_pass": [
+        "full_author",
+        "live_generation_readiness"
+      ]
+    },
+    {
+      "gate_id": "GateB",
+      "name": "Macro Planner Promotion",
+      "promotion_result": "macro_planner_promotion_candidate_or_pass",
+      "required_evidence": [
+        "30_or_more_new_seed_tests",
+        "15_or_more_16_episode_design_packets",
+        "15_or_more_24_episode_design_packets",
+        "blind_structural_evaluation_pass",
+        "reveal_payoff_consistency_pass",
+        "character_arc_continuity_pass",
+        "baseline_planner_comparison_pass",
+        "failure_case_review_complete"
+      ],
+      "blocked_claims_after_pass": [
+        "full_author",
+        "live_generation_readiness"
+      ]
+    },
+    {
+      "gate_id": "GateC",
+      "name": "Full Author Candidate",
+      "promotion_result": "candidate_only",
+      "required_evidence": [
+        "Pass4_RetrievalPacket_implemented",
+        "Pass5_DraftPacket_implemented",
+        "Pass6_GateResult_implemented",
+        "Pass7_PanelResult_implemented",
+        "10000_or_more_scene_brief_to_draft_records",
+        "10000_or_more_gate_results",
+        "10000_or_more_panel_results",
+        "5000_or_more_revision_traces",
+        "accepted_rejected_registry",
+        "craft_axis_evidence_separated_from_macro_evidence"
+      ],
+      "blocked_claims_after_pass": [
+        "full_author_promotion"
+      ]
+    },
+    {
+      "gate_id": "GateD",
+      "name": "Full Author Promotion",
+      "promotion_result": "full_author_promotion_candidate_or_pass",
+      "required_evidence": [
+        "10_or_more_full_16_episode_simulations",
+        "5_or_more_full_24_episode_simulations",
+        "long_range_causality_audit_pass",
+        "character_arc_continuity_audit_pass",
+        "prose_dialogue_blind_evaluation_pass",
+        "revision_loop_improvement_shown",
+        "human_or_mixed_critic_panel_pass",
+        "full_season_value_proof_packet_complete"
+      ],
+      "blocked_claims_after_pass": []
+    }
+  ],
+  "required_stage243_artifacts": [
+    "manifest_v2.json",
+    "schema_registry.json",
+    "seqcard_corpus_linkage_v2.json",
+    "scene_function_taxonomy_16.json",
+    "macro_analysis_layer_schema.json",
+    "promotion_evidence_registry.json",
+    "macro_full_author_blocker_report.md",
+    "pass_contract_registry.md"
+  ],
+  "evidence_classes": {
+    "structural_evidence": [
+      "season_arc_correctness",
+      "episode_arc_coherence",
+      "scene_function_distribution",
+      "causality_graph",
+      "plant_payoff_chain",
+      "character_arc_trajectory"
+    ],
+    "generative_evidence": [
+      "draft_quality",
+      "dialogue_naturalness",
+      "style_coherence",
+      "scene_function_execution",
+      "anti_llm_flatness_reduction"
+    ],
+    "revision_evidence": [
+      "gate_result",
+      "panel_result",
+      "revision_instruction",
+      "revised_draft",
+      "accepted_or_rejected",
+      "measured_improvement"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "document_type": "seqcard_v5_p8_1_schema_mapping",
+  "version": "1.0",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "purpose": "Map Claude SeqCard v5 data layers to GPT V1700 P8.1 local validation inputs without exporting raw drama text.",
+  "source_artifacts": [
+    "seqcard_snapshot_v5_manifest.json",
+    "episode_arc_inventory_v5.json",
+    "sequence_blueprint_inventory_v5.json",
+    "seqcard_corpus_linkage_v5.json"
+  ],
+  "new_data_layers": {
+    "scene_card": "authored/*.seqcard.jsonl",
+    "episode_arc": "authored_arc/*.episodearc.json",
+    "sequence_blueprint": "authored_seq/*.seqblueprint.jsonl"
+  },
+  "intended_use": {
+    "SceneCard": "scene function taxonomy and scene-level coverage checks",
+    "EpisodeArc": "EpisodeArcChain validation, entry/exit state and act-structure checks",
+    "SequenceBlueprint": "sequence-level member scene coverage, value-shift and turn-class checks",
+    "FullSeasonCandidatePackage": "metadata-only fixture enrichment and cross-level integrity checks"
+  },
+  "p8_1_relevance": {
+    "can_strengthen_full_season_validation": true,
+    "can_replace_missing_p8_1_candidate_files": false,
+    "required_missing_hub_inputs": [
+      "full_season_candidate_package_fixture_v1.json",
+      "full_season_candidate_package_schema_v1.json",
+      "full_season_hard_rule_self_check_v1.json",
+      "full_season_validation_protocol_p8_1.json"
+    ],
+    "recommended_next_local_action": "If P8.1 files are supplied by remote hub, run validation. If not, keep P8.1 blocked and use v5 as data bridge/mapping evidence only."
+  },
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "full_jsonl_rows_exported": false,
+    "heading_title_intent_gist_values_exported": false,
+    "original_extracted_exported": false,
+    "dump_txt_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false,
+    "promotion_claim": false
+  }
+}

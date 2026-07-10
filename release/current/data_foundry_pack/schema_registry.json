@@ -1,0 +1,1004 @@
+{
+  "document_type": "schema_registry",
+  "version": "2.4-stage243-v5-p8.2-deeper-integrity",
+  "created_at": "2026-07-03",
+  "purpose": "Stage243 metadata-only schema authority for corpus_ko, SeqCard v5, EpisodeArc, SequenceBlueprint, linkage v5, taxonomy, pair distribution, Pass1-Pass7 contracts, macro candidate evaluation, P8.1 local validation, and redaction policy. Includes P8.2 local deeper integrity result and hard-rule self-check v2. Includes P8.2 local deeper integrity result and hard-rule self-check v2.",
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false,
+    "safe_to_export_registry": true
+  },
+  "redaction_policy": {
+    "never_export": [
+      "raw scripts",
+      "original_extracted/**",
+      "_dump*.txt",
+      "full JSONL rows containing prose",
+      "scene/chunk text values",
+      "heading/title/intent_gist full values",
+      "embedding vectors",
+      "API keys",
+      "HF tokens",
+      "adapter weights",
+      "model checkpoints"
+    ],
+    "allowed_metadata_only": [
+      "file counts",
+      "record counts",
+      "schema keys",
+      "extension counts",
+      "SHA256 hashes",
+      "parse status",
+      "aggregate taxonomy counts",
+      "filename-stem linkage",
+      "safe_to_export flags",
+      "provider/runtime/canonical mutation flags"
+    ],
+    "text_like_fields": [
+      "text",
+      "heading",
+      "title",
+      "intent_gist",
+      "skin",
+      "by",
+      "why_link",
+      "summary",
+      "content",
+      "draft"
+    ]
+  },
+  "schemas": {
+    "corpus_scene_jsonl": {
+      "path": "db/corpus_ko/scenes/*.jsonl",
+      "record_count": 156407,
+      "keys": [
+        "work_id",
+        "scene_no",
+        "heading",
+        "text",
+        "method"
+      ],
+      "text_like_fields": [
+        "text",
+        "heading"
+      ],
+      "safe_to_export": [
+        "keys",
+        "record_count",
+        "file_count",
+        "parse_status"
+      ],
+      "export_policy": "keys_and_counts_only; redact text-like field values"
+    },
+    "corpus_chunk_jsonl": {
+      "path": "db/corpus_ko/chunks/*.jsonl",
+      "record_count": 254731,
+      "keys": [
+        "work_id",
+        "scene_no",
+        "chunk_no",
+        "heading",
+        "part",
+        "kind",
+        "text"
+      ],
+      "text_like_fields": [
+        "text",
+        "heading"
+      ],
+      "safe_to_export": [
+        "keys",
+        "record_count",
+        "file_count",
+        "parse_status"
+      ],
+      "export_policy": "keys_and_counts_only; redact text-like field values"
+    },
+    "corpus_feature_json": {
+      "path": "db/corpus_ko/features/*.json",
+      "record_count": 147631,
+      "keys": [
+        "scene_no",
+        "n_chars",
+        "n_lines",
+        "n_dialogue",
+        "dialogue_ratio",
+        "conflict_intensity",
+        "scene_energy_ratio",
+        "motif_residue_score",
+        "curiosity_gradient"
+      ],
+      "numeric_feature_keys": [
+        "n_chars",
+        "n_lines",
+        "n_dialogue",
+        "dialogue_ratio",
+        "conflict_intensity",
+        "scene_energy_ratio",
+        "motif_residue_score",
+        "curiosity_gradient"
+      ],
+      "safe_to_export": [
+        "keys",
+        "record_count",
+        "aggregate_statistics"
+      ],
+      "export_policy": "aggregate statistics allowed; raw adjacent text not included"
+    },
+    "seqcard_snapshot_v3_manifest": {
+      "path": "release/current/data_foundry_pack/seqcard_snapshot_v3_manifest.json",
+      "keys": [
+        "document_type",
+        "version",
+        "created_at_utc",
+        "source",
+        "safety",
+        "inventory",
+        "series_by_filename",
+        "schema",
+        "taxonomy_summary",
+        "parse_error_samples"
+      ],
+      "record_count_fields": [
+        "inventory.seqcard_records",
+        "inventory.seqcard_jsonl_files",
+        "inventory.episode_meta_files",
+        "inventory.series_count_by_filename"
+      ],
+      "current_counts": {
+        "seqcard_jsonl_files": 457,
+        "episode_meta_files": 457,
+        "series_arc_files": 23,
+        "seqcard_records": 29873,
+        "series_count_by_filename": 22,
+        "jsonl_parse_errors": 0,
+        "json_parse_errors": 0
+      },
+      "export_policy": "metadata-only manifest; no raw JSONL rows or text-like values"
+    },
+    "seqcard_v3_jsonl": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260703/authored/*.seqcard.jsonl",
+      "record_count": 29873,
+      "keys": [
+        "by",
+        "core",
+        "core2",
+        "heading",
+        "intent_gist",
+        "scene_no",
+        "skin",
+        "title",
+        "work_id"
+      ],
+      "taxonomy_fields": [
+        "core",
+        "core2"
+      ],
+      "text_like_fields": [
+        "by",
+        "heading",
+        "intent_gist",
+        "skin",
+        "title"
+      ],
+      "normalization": {
+        "core2_values_treated_as_missing": [
+          "",
+          "NONE",
+          "NULL",
+          "N/A",
+          "NA",
+          "-"
+        ]
+      },
+      "safe_to_export": [
+        "keys",
+        "record_count",
+        "core_counts",
+        "core2_counts",
+        "pair_counts",
+        "filename_stems"
+      ],
+      "export_policy": "aggregate taxonomy and linkage only; do not export text-like field values"
+    },
+    "seqcard_v3_episode_meta_json": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260703/authored/*.episode_meta.json",
+      "file_count": 457,
+      "keys": [
+        "by",
+        "core_dist",
+        "episode_function",
+        "scene_count",
+        "work_id"
+      ],
+      "text_like_fields": [
+        "by",
+        "episode_function"
+      ],
+      "safe_to_export": [
+        "keys",
+        "file_count",
+        "scene_count",
+        "core_dist"
+      ],
+      "export_policy": "counts and distributions only; redact prose values"
+    },
+    "seqcard_v3_series_arc_json": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260703/authored/*series_arc.json",
+      "file_count": 23,
+      "keys": [
+        "[list]",
+        "by",
+        "conflict_persist",
+        "episode_top_core_trajectory",
+        "episodes",
+        "episodes_total",
+        "note",
+        "scene_transition_grammar_top20",
+        "scenes_total",
+        "series",
+        "series_core_dist",
+        "totals"
+      ],
+      "safe_to_export": [
+        "keys",
+        "file_count",
+        "episodes_total",
+        "scenes_total",
+        "aggregate_distributions"
+      ],
+      "export_policy": "aggregate arc metadata only"
+    },
+    "seqcard_corpus_linkage_v3": {
+      "path": "release/current/data_foundry_pack/seqcard_corpus_linkage_v3.json",
+      "record_count": 457,
+      "keys": [
+        "seqcard_episode_id",
+        "series_id",
+        "episode_no",
+        "seqcard_file",
+        "seqcard_records",
+        "corpus_scene_file",
+        "corpus_feature_file",
+        "corpus_chunk_file",
+        "match_type",
+        "confidence",
+        "notes"
+      ],
+      "summary": {
+        "exact_episode": 336,
+        "series_only": 1,
+        "unmatched": 120
+      },
+      "linkage_method": "filename-stem only; raw text not used",
+      "safe_to_export": [
+        "record_count",
+        "match_type_summary",
+        "filename_stem_paths",
+        "unmatched_work_queue"
+      ],
+      "export_policy": "metadata-only linkage"
+    },
+    "scene_function_taxonomy_16": {
+      "path": "release/current/data_foundry_pack/scene_function_taxonomy_16.json",
+      "taxonomy_values": [
+        "BOND",
+        "CONFLICT",
+        "DESIRE",
+        "ESTABLISH",
+        "HOOK",
+        "INTRO",
+        "LOSS",
+        "ORACLE",
+        "PERIL",
+        "PUNISH",
+        "RELIEF",
+        "RESCUE",
+        "REUNION",
+        "REVELATION",
+        "REVERSAL",
+        "ROMANCE"
+      ],
+      "summary_fields": [
+        "records_total",
+        "core_filled",
+        "core_missing",
+        "core2_filled",
+        "core2_missing_or_none",
+        "all_16_present_in_core",
+        "all_16_present_in_core2"
+      ],
+      "current_summary": {
+        "records_total": 29873,
+        "core_filled": 29873,
+        "core_missing": 0,
+        "core2_filled": 19409,
+        "core2_missing_or_none": 10464,
+        "all_16_present_in_core": true,
+        "all_16_present_in_core2": true
+      },
+      "safe_to_export": [
+        "taxonomy_values",
+        "counts",
+        "percentages"
+      ],
+      "export_policy": "aggregate function taxonomy only"
+    },
+    "scene_function_pair_distribution_v3": {
+      "path": "release/current/data_foundry_pack/scene_function_pair_distribution_v3.json",
+      "keys": [
+        "core",
+        "core2",
+        "count",
+        "percent"
+      ],
+      "summary": {
+        "records_total": 29873,
+        "unique_pairs": 252,
+        "core2_NONE_treated_as_missing": true
+      },
+      "safe_to_export": [
+        "aggregate_pair_counts",
+        "percentages"
+      ],
+      "export_policy": "aggregate pair distribution only"
+    },
+    "pass1_workspec": {
+      "status": "implemented_contract",
+      "input": "premise dict",
+      "output": "WorkSpec",
+      "keys": [
+        "title",
+        "genre",
+        "n_episodes",
+        "master_theme",
+        "conflict_axis",
+        "core_dilemma",
+        "characters",
+        "arc_summary"
+      ],
+      "provider_call_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "fixture_metadata"
+      ]
+    },
+    "pass2_beat": {
+      "status": "implemented_contract",
+      "input": "WorkSpec + motifs",
+      "output": "Beat[]",
+      "keys": [
+        "beat_id",
+        "function",
+        "pos",
+        "causal_parent",
+        "intent",
+        "plant_motifs",
+        "payoff_motifs",
+        "target_tension"
+      ],
+      "provider_call_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "fixture_metadata"
+      ]
+    },
+    "pass3_scenebrief": {
+      "status": "implemented_contract",
+      "input": "WorkSpec + Beat[]",
+      "output": "SceneBrief[]",
+      "keys": [
+        "scene_id",
+        "beat_id",
+        "slug",
+        "characters",
+        "dramatic_function",
+        "targets",
+        "rag_refs",
+        "draft",
+        "gate",
+        "panel"
+      ],
+      "provider_call_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "fixture_metadata"
+      ]
+    },
+    "pass4_retrievalpacket": {
+      "status": "preflight_fixture_created",
+      "fixture_artifact": "release/current/season_wiring_pack/pass4_retrievalpacket_fixture.json",
+      "input": "SceneBrief + metadata indexes",
+      "output": "RetrievalPacket",
+      "keys": [
+        "scene_id",
+        "query_terms",
+        "matched_refs",
+        "feature_summary",
+        "nkg_edges",
+        "redaction_status"
+      ],
+      "provider_call_allowed": false,
+      "raw_text_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "redacted_refs",
+        "aggregate_features"
+      ]
+    },
+    "pass5_draftpacket": {
+      "status": "preflight_fixture_created_fixture_only",
+      "fixture_artifact": "release/current/season_wiring_pack/pass5_draftpacket_fixture.json",
+      "input": "SceneBrief + RetrievalPacket",
+      "output": "DraftPacket",
+      "keys": [
+        "scene_id",
+        "generator_id",
+        "draft_present_local_only",
+        "draft_text_exported",
+        "input_contract_version",
+        "metadata"
+      ],
+      "provider_call_allowed": false,
+      "runtime_generation_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "fixture_presence_flags"
+      ]
+    },
+    "pass6_gateresult": {
+      "status": "preflight_fixture_created",
+      "fixture_artifact": "release/current/season_wiring_pack/pass6_gateresult_fixture.json",
+      "input": "SceneBrief + DraftPacket metadata",
+      "output": "GateResult",
+      "keys": [
+        "scene_id",
+        "pass_bool",
+        "violations",
+        "measured_features",
+        "thresholds",
+        "redaction_status"
+      ],
+      "provider_call_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "violations",
+        "aggregate_measured_features"
+      ]
+    },
+    "pass7_panelresult": {
+      "status": "preflight_fixture_created",
+      "fixture_artifact": "release/current/season_wiring_pack/pass7_panelresult_fixture.json",
+      "input": "SceneBrief + GateResult + DraftPacket metadata",
+      "output": "PanelResult",
+      "keys": [
+        "scene_id",
+        "score",
+        "dimensions",
+        "preference_notes_exported",
+        "uncertainty",
+        "recommended_action"
+      ],
+      "provider_call_allowed": false,
+      "preference_notes_raw_export_allowed": false,
+      "safe_to_export": [
+        "schema",
+        "scores",
+        "dimensions",
+        "recommended_action"
+      ]
+    },
+    "macro_analysis_layer_schema": {
+      "status": "candidate_contract_fixtures_single_and_multicandidate_eval_created",
+      "fixture_artifacts": [
+        "release/current/season_wiring_pack/macro_candidate_season_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_episode_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_scene_grid_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_plant_payoff_fixture.json",
+        "release/current/season_wiring_pack/macro_candidate_character_arc_fixture.json",
+        "release/current/season_wiring_pack/macro_planner_candidate_preflight_report.json",
+        "release/current/season_wiring_pack/macro_planner_scoring_rubric.json",
+        "release/current/season_wiring_pack/blind_structural_evaluation_fixture.json",
+        "release/current/season_wiring_pack/macro_planner_evaluation_report.json",
+        "release/current/season_wiring_pack/blind_structural_evaluation_multicandidate_set.json",
+        "release/current/season_wiring_pack/negative_control_macro_fixtures.json",
+        "release/current/season_wiring_pack/heldout_season_structure_fixtures.json",
+        "release/current/season_wiring_pack/macro_planner_metric_thresholds.json",
+        "release/current/season_wiring_pack/macro_planner_multicandidate_evaluation_report.json"
+      ],
+      "objects": [
+        "SeasonPlan",
+        "EpisodePlan",
+        "SceneBeatGrid",
+        "CausalSpine",
+        "PlantPayoffChain",
+        "CharacterArcTrajectory",
+        "BlindStructuralEvaluationFixture",
+        "BlindStructuralEvaluationMultiCandidateSet",
+        "NegativeControlMacroFixture",
+        "HeldoutSeasonStructureFixture",
+        "MacroPlannerMetricThresholds"
+      ],
+      "provider_call_allowed": false,
+      "promotion_allowed": false,
+      "export_policy": "schemas and fixtures only until evidence registry unblocks promotion"
+    },
+    "blind_structural_evaluation_fixture": {
+      "status": "single_and_multicandidate_fixtures_created",
+      "path": "release/current/season_wiring_pack/blind_structural_evaluation_fixture.json",
+      "keys": [
+        "candidate_id",
+        "artifact_refs",
+        "dimension_scores",
+        "weighted_score",
+        "contract_preflight_pass",
+        "promotion_recommendation",
+        "reason_codes"
+      ],
+      "safe_to_export": [
+        "rubric",
+        "dimension_scores",
+        "aggregate_scores",
+        "reason_codes",
+        "promotion_boundary"
+      ],
+      "export_policy": "metadata-only blind structural scores; no story text or source identity",
+      "multicandidate_path": "release/current/season_wiring_pack/blind_structural_evaluation_multicandidate_set.json"
+    },
+    "macro_planner_scoring_rubric": {
+      "status": "fixture_created",
+      "path": "release/current/season_wiring_pack/macro_planner_scoring_rubric.json",
+      "dimensions": [
+        "season_to_episode_traceability",
+        "episode_to_scene_grid_traceability",
+        "plant_payoff_integrity",
+        "character_arc_alignment",
+        "taxonomy_coverage",
+        "safety_boundary"
+      ],
+      "export_policy": "rubric metadata only"
+    },
+    "macro_planner_multicandidate_evaluation": {
+      "status": "fixture_created_with_threshold_warning",
+      "path": "release/current/season_wiring_pack/blind_structural_evaluation_multicandidate_set.json",
+      "companion_artifacts": [
+        "release/current/season_wiring_pack/negative_control_macro_fixtures.json",
+        "release/current/season_wiring_pack/heldout_season_structure_fixtures.json",
+        "release/current/season_wiring_pack/macro_planner_metric_thresholds.json",
+        "release/current/season_wiring_pack/macro_planner_multicandidate_evaluation_report.json"
+      ],
+      "summary": {
+        "candidate_count": 6,
+        "heldout_positive_count": 3,
+        "negative_control_count": 3,
+        "heldout_pass_rate": 1,
+        "negative_control_fail_rate": 1,
+        "mean_heldout_weighted_score": 0.975,
+        "mean_negative_control_weighted_score": 0.8233,
+        "threshold_gap_warning": true,
+        "promotion_claim": false
+      },
+      "keys": [
+        "candidate_id",
+        "fixture_role",
+        "dimension_scores",
+        "weighted_score",
+        "hard_rule_failures",
+        "contract_preflight_pass",
+        "expected_outcome",
+        "observed_outcome",
+        "promotion_recommendation",
+        "reason_codes"
+      ],
+      "safe_to_export": [
+        "rubric",
+        "dimension_scores",
+        "aggregate_scores",
+        "hard_rule_failures",
+        "reason_codes",
+        "promotion_boundary"
+      ],
+      "export_policy": "metadata-only multi-candidate structural scores; no story text, source text, vectors, or provider output"
+    },
+    "seqcard_snapshot_v4_manifest": {
+      "path": "release/current/data_foundry_pack/seqcard_snapshot_v4_manifest.json",
+      "keys": [
+        "document_type",
+        "version",
+        "created_at_utc",
+        "source",
+        "safety",
+        "inventory",
+        "series_by_filename",
+        "schema",
+        "taxonomy_summary",
+        "parse_error_samples"
+      ],
+      "record_count_fields": [
+        "inventory.seqcard_records",
+        "inventory.seqcard_jsonl_files",
+        "inventory.episode_meta_files",
+        "inventory.series_count_by_filename"
+      ],
+      "current_counts": {
+        "snapshot_files_total": 1197,
+        "snapshot_bytes_total": 15641458,
+        "seqcard_jsonl_files": 577,
+        "episode_meta_files": 577,
+        "series_arc_files": 29,
+        "python_scripts": 7,
+        "markdown_files": 3,
+        "seqcard_records": 37166,
+        "series_count_by_filename": 29,
+        "jsonl_parse_errors": 0,
+        "json_parse_errors": 0
+      },
+      "export_policy": "metadata-only manifest; no raw JSONL rows or text-like values"
+    },
+    "seqcard_v4_jsonl": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260703_194028/authored/*.seqcard.jsonl",
+      "record_count": 37166,
+      "file_count": 577,
+      "keys": [
+        "by",
+        "core",
+        "core2",
+        "heading",
+        "intent_gist",
+        "scene_no",
+        "skin",
+        "title",
+        "work_id"
+      ],
+      "taxonomy_fields": [
+        "core",
+        "core2"
+      ],
+      "text_like_fields": [
+        "by",
+        "heading",
+        "intent_gist",
+        "skin",
+        "title"
+      ],
+      "safe_to_export": [
+        "keys",
+        "record_count",
+        "core_counts",
+        "core2_counts",
+        "pair_counts",
+        "filename_stems"
+      ],
+      "export_policy": "aggregate taxonomy and linkage only; do not export text-like field values"
+    },
+    "seqcard_v4_episode_meta_json": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260703_194028/authored/*.episode_meta.json",
+      "file_count": 577,
+      "keys": [
+        "by",
+        "core_dist",
+        "episode_function",
+        "scene_count",
+        "work_id"
+      ],
+      "text_like_fields": [
+        "by",
+        "episode_function"
+      ],
+      "safe_to_export": [
+        "keys",
+        "file_count",
+        "scene_count",
+        "core_dist"
+      ],
+      "export_policy": "counts and distributions only; redact prose values"
+    },
+    "seqcard_corpus_linkage_v4": {
+      "path": "release/current/data_foundry_pack/seqcard_corpus_linkage_v4.json",
+      "record_count": 577,
+      "keys": [
+        "seqcard_episode_id",
+        "series_id",
+        "episode_no",
+        "seqcard_file",
+        "seqcard_records",
+        "corpus_scene_file",
+        "corpus_feature_file",
+        "corpus_chunk_file",
+        "match_type",
+        "confidence",
+        "notes"
+      ],
+      "summary": {
+        "exact_episode": 456,
+        "series_only": 1,
+        "unmatched": 120
+      },
+      "linkage_method": "filename-stem only; raw text not used",
+      "safe_to_export": [
+        "record_count",
+        "match_type_summary",
+        "filename_stem_paths",
+        "unmatched_work_queue"
+      ],
+      "export_policy": "metadata-only linkage"
+    },
+    "scene_function_taxonomy_16_v4": {
+      "path": "release/current/data_foundry_pack/scene_function_taxonomy_16_v4.json",
+      "summary_fields": [
+        "records_total",
+        "core_filled",
+        "core_missing",
+        "core2_filled",
+        "core2_missing_or_none",
+        "all_16_present_in_core",
+        "all_16_present_in_core2"
+      ],
+      "current_summary": {
+        "records_total": 37166,
+        "core_filled": 37166,
+        "core_missing": 0,
+        "core2_filled": 26702,
+        "core2_missing_or_none": 10464,
+        "core_values": [
+          "BOND",
+          "CONFLICT",
+          "DESIRE",
+          "ESTABLISH",
+          "HOOK",
+          "INTRO",
+          "LOSS",
+          "ORACLE",
+          "PERIL",
+          "PUNISH",
+          "RELIEF",
+          "RESCUE",
+          "REUNION",
+          "REVELATION",
+          "REVERSAL",
+          "ROMANCE"
+        ],
+        "core2_values": [
+          "BOND",
+          "CONFLICT",
+          "DESIRE",
+          "ESTABLISH",
+          "HOOK",
+          "INTRO",
+          "LOSS",
+          "ORACLE",
+          "PERIL",
+          "PUNISH",
+          "RELIEF",
+          "RESCUE",
+          "REUNION",
+          "REVELATION",
+          "REVERSAL",
+          "ROMANCE"
+        ],
+        "all_16_present_in_core": true,
+        "all_16_present_in_core2": true
+      },
+      "safe_to_export": [
+        "taxonomy_values",
+        "counts",
+        "percentages"
+      ],
+      "export_policy": "aggregate function taxonomy only"
+    },
+    "scene_function_pair_distribution_v4": {
+      "path": "release/current/data_foundry_pack/scene_function_pair_distribution_v4.json",
+      "keys": [
+        "core",
+        "core2",
+        "count",
+        "percent"
+      ],
+      "summary": {
+        "records_total": 37166,
+        "unique_pairs": null,
+        "core2_NONE_treated_as_missing": true
+      },
+      "safe_to_export": [
+        "aggregate_pair_counts",
+        "percentages"
+      ],
+      "export_policy": "aggregate pair distribution only"
+    },
+    "seqcard_snapshot_v5_manifest": {
+      "path": "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+      "current_counts": {
+        "snapshot_files_total": 2672,
+        "snapshot_bytes_total": 23157147,
+        "seqcard_jsonl_files": 648,
+        "episode_meta_files": 648,
+        "series_arc_files": 63,
+        "episode_arc_files": 648,
+        "seqblueprint_files": 648,
+        "python_scripts": 7,
+        "markdown_files": 5,
+        "seqcard_records": 41168,
+        "seqblueprint_records": 6146,
+        "series_count_by_filename": 33,
+        "jsonl_parse_errors": 0,
+        "json_parse_errors": 0
+      },
+      "keys": [
+        "document_type",
+        "version",
+        "created_at_utc",
+        "source",
+        "safety",
+        "inventory",
+        "series_by_filename",
+        "schema",
+        "taxonomy_summary",
+        "cross_layer_coverage",
+        "parse_error_samples"
+      ],
+      "export_policy": "metadata-only manifest; no raw JSONL rows or text-like values"
+    },
+    "seqcard_v5_jsonl": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260705_160707/authored/*.seqcard.jsonl",
+      "file_count": 648,
+      "record_count": 41168,
+      "keys": [
+        "by",
+        "core",
+        "core2",
+        "heading",
+        "intent_gist",
+        "scene_no",
+        "skin",
+        "title",
+        "work_id"
+      ],
+      "text_like_fields": [
+        "by",
+        "heading",
+        "intent_gist",
+        "skin",
+        "title"
+      ],
+      "export_policy": "aggregate taxonomy and linkage only; do not export text-like field values"
+    },
+    "episode_arc_v5_json": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260705_160707/authored_arc/*.episodearc.json",
+      "file_count": 648,
+      "keys": [
+        "act_structure",
+        "by",
+        "central_conflict_axis",
+        "core_dist",
+        "dramatic_question",
+        "entry_state",
+        "episode_function",
+        "episode_no",
+        "exit_state",
+        "scene_count",
+        "sequence_count",
+        "turning_point",
+        "work_id"
+      ],
+      "text_like_fields": [
+        "turning_point",
+        "entry_state",
+        "exit_state",
+        "central_conflict_axis",
+        "episode_function",
+        "dramatic_question"
+      ],
+      "export_policy": "schema, counts, aggregate distributions only; no prose field values"
+    },
+    "sequence_blueprint_v5_jsonl": {
+      "path": "release/current/data_foundry_pack/claude_seqcard_ko_snapshot_20260705_160707/authored_seq/*.seqblueprint.jsonl",
+      "file_count": 648,
+      "record_count": 6146,
+      "keys": [
+        "by",
+        "core_mix",
+        "episode_no",
+        "goal",
+        "member_scene_nos",
+        "obstacle",
+        "place_cluster",
+        "pov_char",
+        "runtime_share",
+        "scene_budget",
+        "scene_span",
+        "seq_id",
+        "seq_index",
+        "sequence_intent",
+        "sq_index",
+        "turn_class",
+        "turn_type",
+        "value_shift",
+        "work_id"
+      ],
+      "text_like_fields": [
+        "sequence_intent",
+        "goal",
+        "obstacle",
+        "value_shift"
+      ],
+      "export_policy": "schema, counts, coverage, aggregate records per episode only; no prose field values"
+    },
+    "seqcard_corpus_linkage_v5": {
+      "path": "release/current/data_foundry_pack/seqcard_corpus_linkage_v5.json",
+      "record_count": 648,
+      "summary": {
+        "exact_episode": 476,
+        "series_only": 1,
+        "unmatched": 171
+      },
+      "linkage_method": "filename-stem only; raw text not used",
+      "export_policy": "metadata-only linkage"
+    },
+    "seqcard_v5_p8_1_schema_mapping": {
+      "path": "release/current/data_foundry_pack/seqcard_v5_p8_1_schema_mapping.json",
+      "purpose": "Map scene/episode/sequence metadata layers to P8.1 full-season validation inputs",
+      "export_policy": "metadata-only mapping; does not replace missing P8.1 full_season_* input files"
+    },
+    "full_season_validation_result_p8_1": {
+      "path": "release/current/season_wiring_pack/full_season_validation_result_p8_1.json",
+      "status": "pass_with_warning",
+      "json_parse_pass": true,
+      "schema_validation_pass": true,
+      "cross_level_integrity_pass": true,
+      "integrity_warning_count": 11,
+      "boundary_invariants_pass": true,
+      "gate_a_ready_after_validation": false,
+      "scorecard_preflight_allowed": false,
+      "provider_call_allowed": false,
+      "promotion_allowed": false,
+      "export_policy": "validation status and blocker metadata only"
+    },
+    "full_season_candidate_package_fixture_v1": {
+      "path": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+      "bytes": 10342,
+      "sha256": "8fb74d834284119f04430e77e8804627131954a8a0ca1ca3e3ff7f8d180ad725",
+      "export_policy": "metadata-only fixture; no raw prose generation"
+    },
+    "full_season_candidate_package_schema_v1": {
+      "path": "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
+      "bytes": 13870,
+      "sha256": "9778be229aba2820c9d3b5c7d0734bf4dba4822b977f67b57136ec858a7d920f",
+      "export_policy": "schema only"
+    },
+    "full_season_hard_rule_self_check_v1": {
+      "path": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+      "bytes": 4507,
+      "sha256": "4d91ab5478bae3212138704ec34234a73de322cc4e7bbef087d553fbd83a24c9",
+      "hard_rule_pass": false,
+      "export_policy": "hard-rule metadata only"
+    },
+    "full_season_validation_protocol_p8_1": {
+      "path": "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
+      "bytes": 5086,
+      "sha256": "f0332942d5f0c5a41e5237e5b4fc1c7f9b7413e8f4f34d95223fcd132aeb3cd9",
+      "roadmap_position": "P8.1",
+      "export_policy": "validation protocol metadata only"
+    },
+    "full_season_deeper_integrity_result_p8_2": {
+      "path": "release/current/season_wiring_pack/full_season_deeper_integrity_result_p8_2.json",
+      "document_type": "full_season_deeper_integrity_result",
+      "status": "manual_review_required",
+      "check_count": 11,
+      "manual_review_required_count": 7,
+      "export_policy": "metadata-only integrity findings; no raw prose exported"
+    },
+    "full_season_hard_rule_self_check_v2": {
+      "path": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v2.json",
+      "document_type": "full_season_hard_rule_self_check",
+      "hard_rule_pass": false,
+      "final_verdict": "manual_review_required",
+      "export_policy": "metadata-only hard-rule gate result; no promotion claim"
+    }
+  }
+}

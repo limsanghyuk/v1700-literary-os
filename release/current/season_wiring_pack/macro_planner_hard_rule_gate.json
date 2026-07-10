@@ -1,0 +1,149 @@
+{
+  "document_type": "macro_planner_hard_rule_gate",
+  "version": "2.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "authority_scope": "Macro Planner Candidate Evaluation v2",
+  "purpose": "Define non-negotiable structural gates that must be passed before weighted macro-planner scores can be considered.",
+  "work_division": {
+    "performed_by": "ChatGPT",
+    "execution_location": "remote_github",
+    "codex_local_required": false,
+    "reason": "This is schema and gate design work, not local filesystem validation."
+  },
+  "input_authority": {
+    "local_cleaned_seqcard_v4": {
+      "local_hub_verified": true,
+      "remote_github_verified_for_cleaned_snapshot": false,
+      "seqcard_jsonl_files": 577,
+      "episode_meta_files": 577,
+      "seqcard_records": 37166,
+      "linkage_v4_exact_episode": 456,
+      "linkage_v4_unmatched": 120,
+      "schema_registry": "2.1-stage243-v4"
+    },
+    "remote_source_snapshot": {
+      "remote_github_verified": true,
+      "seqcard_records": 37800,
+      "source_type": "uploaded_zip_aggregate_manifest"
+    },
+    "authority_decision": "Use local cleaned v4 values for implementation planning and keep the remote source manifest as source snapshot audit."
+  },
+  "gate_policy": {
+    "weighted_score_is_secondary": true,
+    "hard_rule_precedes_weighted_score": true,
+    "single_critical_failure_disqualifies": true,
+    "multiple_major_failures_disqualify": true,
+    "minor_failures_can_create_warning_only": true,
+    "final_verdict_precedence": [
+      "safety_failure",
+      "critical_hard_rule_failure",
+      "major_hard_rule_failure_cluster",
+      "weighted_score_threshold",
+      "warning_review"
+    ]
+  },
+  "hard_rule_groups": [
+    {
+      "group_id": "safety_boundary",
+      "description": "Rules that protect Stage243 runtime and data boundaries.",
+      "default_failure_effect": "disqualify",
+      "rules": [
+        "raw_text_leakage",
+        "raw_vector_leakage",
+        "provider_call_detected",
+        "runtime_generation_detected",
+        "promotion_claim_detected",
+        "secret_or_token_leakage",
+        "adapter_or_model_artifact_committed"
+      ]
+    },
+    {
+      "group_id": "season_structure",
+      "description": "Rules that enforce season-level macro structure.",
+      "default_failure_effect": "disqualify_if_critical_or_clustered",
+      "rules": [
+        "missing_season_goal",
+        "missing_inciting_force",
+        "midpoint_missing",
+        "crisis_missing",
+        "climax_missing",
+        "resolution_missing",
+        "impossible_episode_order",
+        "episode_hook_absent_over_threshold"
+      ]
+    },
+    {
+      "group_id": "causality_and_payoff",
+      "description": "Rules that enforce because-therefore continuity and plant/payoff integrity.",
+      "default_failure_effect": "disqualify_if_critical",
+      "rules": [
+        "causality_contradiction",
+        "orphan_plant_without_payoff",
+        "payoff_without_plant",
+        "unmotivated_reversal",
+        "causal_spine_break",
+        "stakes_regression_without_reason"
+      ]
+    },
+    {
+      "group_id": "character_and_relationship_arc",
+      "description": "Rules that enforce long-form character and relationship progression.",
+      "default_failure_effect": "disqualify_if_critical_or_clustered",
+      "rules": [
+        "character_arc_discontinuity",
+        "relationship_arc_discontinuity",
+        "belief_change_without_event",
+        "status_change_without_cause",
+        "agency_collapse_without_design_reason"
+      ]
+    },
+    {
+      "group_id": "scene_function_coverage",
+      "description": "Rules that ensure scene-function labels serve macro structure rather than superficial distribution.",
+      "default_failure_effect": "warning_or_disqualify_if_clustered",
+      "rules": [
+        "scene_function_distribution_collapse",
+        "core_core2_pair_incoherence",
+        "redundant_scene_cluster",
+        "scene_necessity_gap",
+        "genre_rhythm_flatline"
+      ]
+    }
+  ],
+  "minimum_output_fields": [
+    "candidate_id",
+    "hard_rule_pass",
+    "critical_failures",
+    "major_failures",
+    "minor_warnings",
+    "weighted_score",
+    "weighted_score_considered",
+    "final_verdict",
+    "disqualification_reason",
+    "promotion_claim"
+  ],
+  "allowed_final_verdicts": [
+    "pass",
+    "pass_with_warning",
+    "fail_hard_rule",
+    "fail_safety",
+    "fail_weighted_score",
+    "manual_review_required"
+  ],
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "draft_text_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "fixture_only": true,
+    "promotion_claim": false,
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "next_use": "Apply this gate before any Macro Planner Candidate score is interpreted as evidence."
+}

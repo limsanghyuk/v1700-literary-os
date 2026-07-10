@@ -1,0 +1,37 @@
+{
+  "prompt_packet_id": "value-proof-arm-b-prompt:10부:preregistered",
+  "arm": "B",
+  "work_id": "10부",
+  "base_task_brief_ref": "value_proof_base_task_brief_placeholder",
+  "target_length_policy": "LOCKED_BEFORE_OUTPUTS",
+  "allowed_context": [
+    "metadata_only_corpus_refs",
+    "writer_ide_advisory_surface_cards",
+    "formula_signal_refs",
+    "learnable_critic_review_only_explanation"
+  ],
+  "forbidden_context": [
+    "raw_script_text",
+    "unregistered_prompt_mutation",
+    "post_output_threshold_change",
+    "canonical_mutation",
+    "evaluator_visible_arm_label"
+  ],
+  "guidance_refs": [
+    "value-proof-arm-b:center:1:10부",
+    "value-proof-arm-b:left:2:10부",
+    "value-proof-arm-b:right:3:10부",
+    "value-proof-arm-b:right:4:10부"
+  ],
+  "formula_signal_refs": [
+    "formula-signal:emotion:10부",
+    "formula-signal:rag:10부",
+    "formula-signal:tensor:10부"
+  ],
+  "visible_to_evaluator": false,
+  "raw_script_text_allowed": false,
+  "provider_generation_allowed": false,
+  "canonical_mutation_allowed": false,
+  "post_output_mutation_allowed": false,
+  "packet_hash": "66b7c3db030137a1f9d9c45ca0f81768b1df59e08bc2f4e1c84117b6323e87cd"
+}

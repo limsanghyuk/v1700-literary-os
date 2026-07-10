@@ -1,0 +1,98 @@
+{
+  "title": "Page18 Opening Gate Checklist",
+  "created": "2026-06-18",
+  "branch": "corpus-absorption-formula-bridge-handoff",
+  "baseline": "stage242",
+  "target": "controlled_literary_generation_boundary",
+  "status": "prepared_not_executed",
+  "page18_runtime_opened": false,
+  "stage243_created": false,
+  "gates": [
+    {
+      "id": "authority_baseline",
+      "required": [
+        "stage242_authority_baseline_present",
+        "page17_authority_closure_preserved",
+        "release_gate_pass",
+        "stage242_release_gate_pass",
+        "release_asset_integrity_pass"
+      ]
+    },
+    {
+      "id": "value_proof_evidence",
+      "required": [
+        "guidance_surface_report_pass",
+        "preregistration_packet_report_pass",
+        "blind_evaluator_packet_report_pass",
+        "page18_readiness_precheck_pass_ready_for_policy_review"
+      ]
+    },
+    {
+      "id": "blind_evaluation_safety",
+      "required": [
+        "public_evaluator_packet_has_no_arm_a",
+        "public_evaluator_packet_has_no_arm_b",
+        "public_evaluator_packet_has_no_value_proof_arm",
+        "public_evaluator_packet_has_no_source_prompt_packet_id",
+        "source_prompt_packet_ref_hash_used",
+        "private_arm_mapping_visible_to_evaluator_false"
+      ]
+    },
+    {
+      "id": "provider_execution_policy",
+      "required": [
+        "provider_execution_policy_exists",
+        "provider_default_calls_zero_before_explicit_execution",
+        "credentials_externalized",
+        "no_secret_in_repo_logs_docs_comments_or_fixtures",
+        "provider_generation_disabled_by_default"
+      ]
+    },
+    {
+      "id": "output_capture_schema",
+      "required": [
+        "output_capture_schema_exists",
+        "generated_output_storage_path_declared",
+        "no_raw_protected_corpus_text_in_prompts",
+        "output_capture_disabled_until_schema_freeze",
+        "captured_output_cannot_mutate_canonical_manuscript_records"
+      ]
+    },
+    {
+      "id": "canonical_mutation_boundary",
+      "required": [
+        "canonical_mutation_blocker_exists",
+        "canonical_mutation_allowed_false_by_default",
+        "approval_decision_record_required",
+        "rollback_strategy_declared"
+      ]
+    },
+    {
+      "id": "page18_implementation_scope",
+      "allowed_first_modules": [
+        "src/v1700/literary_generation_boundary/",
+        "src/v1700/generation_context_packet/",
+        "src/v1700/output_capture_schema/",
+        "tools/run_page18_generation_boundary_preflight.py",
+        "tests/test_page18_generation_boundary.py",
+        "release/current/literary_generation_boundary_pack/"
+      ],
+      "forbidden": [
+        "stage243_creation",
+        "runtime_training",
+        "production_provider_generation",
+        "unbounded_output_capture",
+        "auto_canonical_mutation",
+        "raw_corpus_prompt_export"
+      ]
+    }
+  ],
+  "required_exit_artifacts": [
+    "release/current/literary_generation_boundary_pack/generation_boundary_report.json",
+    "release/current/literary_generation_boundary_pack/provider_execution_policy.json",
+    "release/current/literary_generation_boundary_pack/output_capture_schema.json",
+    "release/current/literary_generation_boundary_pack/canonical_mutation_blocker.json",
+    "release/current/literary_generation_boundary_pack/page18_generation_boundary_validation_report.json"
+  ],
+  "next_valid_action": "prepare_page18_controlled_literary_generation_boundary_implementation_without_provider_generation"
+}

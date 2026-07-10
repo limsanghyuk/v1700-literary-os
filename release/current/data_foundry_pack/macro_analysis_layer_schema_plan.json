@@ -1,0 +1,135 @@
+{
+  "document_type": "macro_analysis_layer_schema_plan",
+  "version": "1.0",
+  "created_at": "2026-07-02",
+  "stage": "Stage243",
+  "purpose": "Define the analysis layers required above Claude's 16 scene-function taxonomy before macro planner or full author promotion can be evaluated.",
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "token_exported": false,
+    "adapter_weight_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false
+  },
+  "core_scene_function_taxonomy_16": [
+    {"code": "ESTABLISH", "function": "establish setting, status, or rules", "core_question": "What is the current order?"},
+    {"code": "ORACLE", "function": "omen, forecast, or foreshadow", "core_question": "What future shadow is planted?"},
+    {"code": "INTRO", "function": "introduce new element", "core_question": "What new person, place, problem, or force enters?"},
+    {"code": "BOND", "function": "build relationship", "core_question": "Who becomes connected?"},
+    {"code": "CONFLICT", "function": "create opposition", "core_question": "Who or what collides?"},
+    {"code": "REVERSAL", "function": "reverse state, power, knowledge, or expectation", "core_question": "What turns upside down?"},
+    {"code": "LOSS", "function": "cause loss", "core_question": "What is lost?"},
+    {"code": "PUNISH", "function": "impose consequence", "core_question": "What price is paid?"},
+    {"code": "REVELATION", "function": "reveal hidden information", "core_question": "What truth emerges?"},
+    {"code": "REUNION", "function": "reconnect separated people or plot lines", "core_question": "Who or what meets again?"},
+    {"code": "RELIEF", "function": "release pressure", "core_question": "Where does tension ease?"},
+    {"code": "ROMANCE", "function": "move romantic line", "core_question": "How does attraction, jealousy, or love move?"},
+    {"code": "PERIL", "function": "create danger", "core_question": "What is at risk now?"},
+    {"code": "RESCUE", "function": "save or escape", "core_question": "Who or what is rescued?"},
+    {"code": "DESIRE", "function": "expose want or goal", "core_question": "What does the character want?"},
+    {"code": "HOOK", "function": "pull next scene or episode", "core_question": "What unresolved question remains?"}
+  ],
+  "analysis_layers": [
+    {
+      "layer_id": 0,
+      "name": "Identity",
+      "purpose": "Locate the scene in work, episode, season, and genre space.",
+      "fields": ["work_id", "series_title", "episode_no", "scene_no", "global_scene_no", "scene_uid", "source_type", "genre", "subgenre", "episode_position_ratio", "season_position_ratio"],
+      "promotion_role": "required_for_linkage"
+    },
+    {
+      "layer_id": 1,
+      "name": "Scene Function Core",
+      "purpose": "Represent the primary and secondary dramatic function of the scene.",
+      "fields": ["core", "core2", "core_intensity", "function_purity", "function_transition", "dominant_question", "scene_answer", "unanswered_remainder"],
+      "promotion_role": "scene_function_foundation"
+    },
+    {
+      "layer_id": 2,
+      "name": "Episode Season Position",
+      "purpose": "Locate the scene in episode and season macro-structure.",
+      "fields": ["episode_role", "act_position", "season_phase", "is_inciting_scene", "is_midpoint_scene", "is_crisis_scene", "is_climax_scene", "is_resolution_scene", "is_episode_ending_hook", "is_cold_open", "is_tag_scene"],
+      "promotion_role": "macro_planner"
+    },
+    {
+      "layer_id": 3,
+      "name": "Causality",
+      "purpose": "Track what caused the scene and what it causes later.",
+      "fields": ["causal_parent_scene_ids", "causal_child_scene_ids", "because_of", "therefore_to", "decision_point", "irreversible_change", "stakes_before", "stakes_after", "causal_strength", "replaceability", "necessity_reason"],
+      "promotion_role": "macro_planner"
+    },
+    {
+      "layer_id": 4,
+      "name": "Plant Payoff",
+      "purpose": "Track foreshadowing, reveal, mystery, and payoff chains.",
+      "fields": ["plant_items", "payoff_items", "payoff_target_episode", "payoff_target_scene", "reveal_type", "reveal_scope", "knowledge_delta_audience", "knowledge_delta_character", "mystery_opened", "mystery_closed", "information_asymmetry"],
+      "promotion_role": "macro_planner"
+    },
+    {
+      "layer_id": 5,
+      "name": "Character Arc",
+      "purpose": "Track want, need, belief, agency, and emotional change.",
+      "fields": ["active_characters", "pov_character", "character_want_before", "character_want_after", "character_need", "character_flaw_activated", "belief_before", "belief_after", "status_change", "moral_choice", "agency_level", "emotional_turn", "arc_delta"],
+      "promotion_role": "macro_planner_and_full_author"
+    },
+    {
+      "layer_id": 6,
+      "name": "Relationship Arc",
+      "purpose": "Track trust, intimacy, power, dependency, rupture, alliance, and reunion.",
+      "fields": ["relationship_pair", "relationship_before", "relationship_after", "trust_delta", "intimacy_delta", "power_delta", "dependency_delta", "betrayal_signal", "bond_signal", "relationship_turn_type"],
+      "promotion_role": "macro_planner_and_full_author"
+    },
+    {
+      "layer_id": 7,
+      "name": "Conflict System",
+      "purpose": "Track conflict type, axis, opposing force, intensity, and escalation.",
+      "fields": ["conflict_type", "conflict_axis", "opposing_force", "conflict_object", "conflict_intensity", "conflict_escalation", "winner_this_scene", "loser_this_scene", "new_obstacle", "pressure_added"],
+      "promotion_role": "macro_planner"
+    },
+    {
+      "layer_id": 8,
+      "name": "Tension Genre Rhythm",
+      "purpose": "Track pacing, fatigue risk, and genre pressure.",
+      "fields": ["tension_before", "tension_after", "tension_delta", "scene_energy", "pacing_role", "genre_pressure", "mystery_density", "romance_pressure", "comic_relief_weight", "melodrama_weight", "action_pressure", "fatigue_risk"],
+      "promotion_role": "macro_planner_and_full_author"
+    },
+    {
+      "layer_id": 9,
+      "name": "Scene Necessity",
+      "purpose": "Evaluate whether the scene is necessary, redundant, mergeable, or cuttable.",
+      "fields": ["scene_necessity_score", "unique_function", "redundancy_with", "merge_candidate", "cut_risk", "minimum_required_payload", "optional_payload", "scene_compression_plan"],
+      "promotion_role": "editor_function"
+    },
+    {
+      "layer_id": 10,
+      "name": "Dialogue Style Craft",
+      "purpose": "Evaluate dialogue, style, subtext, exposition load, and anti-LLM flatness.",
+      "fields": ["dialogue_ratio", "subtext_level", "exposition_load", "voice_distinctiveness", "show_tell_balance", "cliche_risk", "line_tension", "korean_dialogue_naturalness", "style_drift_risk", "anti_llm_flatness_score"],
+      "promotion_role": "full_author"
+    },
+    {
+      "layer_id": 11,
+      "name": "Retrieval Linkage",
+      "purpose": "Connect a scene brief to metadata-only references without exposing raw text.",
+      "fields": ["retrieval_query_terms", "matched_scene_refs", "matched_core_pattern", "matched_arc_position", "matched_feature_summary", "nkg_edges", "redaction_status"],
+      "promotion_role": "Pass4"
+    },
+    {
+      "layer_id": 12,
+      "name": "Gate Panel Revision",
+      "purpose": "Track structural gate, critic reward, revision instruction, acceptance, and learning signal.",
+      "fields": ["gate_pass", "gate_violations", "panel_score", "panel_dimensions", "revision_required", "revision_reason", "revision_instruction", "accepted_or_rejected", "learning_signal_type", "promotion_eligible"],
+      "promotion_role": "Pass6_Pass7_full_author"
+    }
+  ],
+  "next_artifacts": [
+    "schema_registry.json",
+    "scene_function_taxonomy_16.json",
+    "macro_analysis_layer_schema.json",
+    "seqcard_corpus_linkage_v2.json",
+    "promotion_evidence_registry.json"
+  ]
+}

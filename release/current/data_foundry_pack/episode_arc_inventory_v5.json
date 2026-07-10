@@ -1,0 +1,55 @@
+{
+  "document_type": "episode_arc_inventory_v5",
+  "version": "5.0",
+  "created_at_utc": "2026-07-05T07:18:36.390734+00:00",
+  "source_seqcard_manifest": "release/current/data_foundry_pack/seqcard_snapshot_v5_manifest.json",
+  "safety": {
+    "metadata_only": true,
+    "raw_text_exported": false,
+    "full_jsonl_rows_exported": false,
+    "heading_title_intent_gist_values_exported": false,
+    "original_extracted_exported": false,
+    "dump_txt_exported": false,
+    "provider_called": false,
+    "runtime_training_started": false,
+    "canonical_mutation_started": false,
+    "promotion_claim": false
+  },
+  "file_count": 648,
+  "keys": [
+    "act_structure",
+    "by",
+    "central_conflict_axis",
+    "core_dist",
+    "dramatic_question",
+    "entry_state",
+    "episode_function",
+    "episode_no",
+    "exit_state",
+    "scene_count",
+    "sequence_count",
+    "turning_point",
+    "work_id"
+  ],
+  "aggregate": {
+    "sequence_count_min": 2,
+    "sequence_count_max": 24,
+    "sequence_count_mean": 9.4846,
+    "scene_count_min": 12,
+    "scene_count_max": 143,
+    "scene_count_mean": 63.5309
+  },
+  "coverage": {
+    "seqcard_episode_ids": 648,
+    "episode_meta_files": 648,
+    "episode_arc_files": 648,
+    "seqblueprint_files": 648,
+    "seqcard_without_episode_arc": [],
+    "episode_arc_without_seqcard": [],
+    "seqcard_without_seqblueprint": [],
+    "seqblueprint_without_seqcard": [],
+    "member_scene_warning_count": 0,
+    "member_scene_warning_samples": []
+  },
+  "export_policy": "metadata-only; no episode prose values exported"
+}

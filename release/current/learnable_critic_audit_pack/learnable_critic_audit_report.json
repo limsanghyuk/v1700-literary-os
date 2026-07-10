@@ -1,0 +1,195 @@
+{
+  "title": "Learnable Critic Audit Fixture",
+  "status": "pass",
+  "mode": "AUDIT_FIRST_LEARNABLE_CRITIC_FIXTURE",
+  "issues": [],
+  "provider_default_calls": 0,
+  "runtime_training_enabled": false,
+  "actual_coefficient_optimization_enabled": false,
+  "canonical_mutation_allowed": false,
+  "approval_required": true,
+  "paths": {
+    "repo_root": "C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize",
+    "source_formula_signal_store": "C:\\AI_Codex\\codex-work\\gpt\\github_push\\v1700-literary-os_page07_officialize\\release\\current\\formula_signal_store_pack\\formula_signal_store_report.json"
+  },
+  "counters": {
+    "selected_signal_confidence": 0.78,
+    "alignment_improvement_delta": 0.05,
+    "input_source_count": 1,
+    "coefficient_change_count": 1
+  },
+  "parts": {
+    "learnable_critic_config": {
+      "critic_id": "critic:emotion_calibration_audit",
+      "critic_name": "Emotion Calibration Audit Critic",
+      "critic_axis": "EMOTIONAL_MOMENTUM",
+      "allowed_input_types": [
+        "FormulaSignalRecord"
+      ],
+      "allowed_output_types": [
+        "LearnableCriticAdvisoryOutputRecord"
+      ],
+      "coefficient_schema_ref": "NarrativePhysicsCoefficientSet.emotional_momentum_weight",
+      "source_policy_ref": "docs/policies/narrative_corpus_source_policy.md",
+      "approval_policy_ref": "docs/contracts/approval_decision_record_contract.md",
+      "status": "ADVISORY_ONLY"
+    },
+    "critic_input_source_record": {
+      "input_source_id": "critic-input:sample-emotion-audit",
+      "critic_id": "critic:emotion_calibration_audit",
+      "source_record_id": "formula-signal:emotion:10부",
+      "source_record_type": "FormulaSignalRecord",
+      "source_class": "USER_PROVIDED_STRUCTURED_ANALYSIS_DB",
+      "rights_status": "user_provided_structured_analysis_db",
+      "formula_signal_ref": "formula-signal:emotion:10부",
+      "corpus_signal_ref": "formula_signal_store:10부",
+      "value_proof_ref": "value_proof:pending_preregistration",
+      "provenance_ref": "release/current/formula_signal_store_pack/formula_signal_store_report.json"
+    },
+    "coefficient_state_before": {
+      "coefficient_state_id": "coefficient-state:emotion:before",
+      "critic_id": "critic:emotion_calibration_audit",
+      "formula_id": "formula:emotional_momentum",
+      "coefficient_name": "emotional_momentum_weight",
+      "coefficient_value": 1.0,
+      "coefficient_version": "v0",
+      "created_at": "2026-06-19T02:29:10+00:00",
+      "source_basis": "baseline_narrative_physics_coefficients",
+      "review_status": "BASELINE_LOCKED"
+    },
+    "coefficient_state_after": {
+      "coefficient_state_id": "coefficient-state:emotion:after",
+      "critic_id": "critic:emotion_calibration_audit",
+      "formula_id": "formula:emotional_momentum",
+      "coefficient_name": "emotional_momentum_weight",
+      "coefficient_value": 1.05,
+      "coefficient_version": "v0_candidate_1",
+      "created_at": "2026-06-19T02:29:10+00:00",
+      "source_basis": "formula_signal_store_audit_fixture",
+      "review_status": "CANDIDATE_REVIEW_REQUIRED"
+    },
+    "deterministic_seed_record": {
+      "seed_id": "seed:learnable-critic-audit",
+      "seed_value": 17000616,
+      "run_id": "calibration-run:emotion-audit",
+      "randomization_scope": "audit_fixture_only",
+      "reproducibility_note": "Static audit fixture, no hidden learning loop."
+    },
+    "calibration_run_record": {
+      "calibration_run_id": "calibration-run:emotion-audit",
+      "critic_id": "critic:emotion_calibration_audit",
+      "input_source_refs": [
+        "critic-input:sample-emotion-audit"
+      ],
+      "formula_signal_refs": [
+        "formula-signal:emotion:10부"
+      ],
+      "value_proof_refs": [
+        "value_proof:pending_preregistration"
+      ],
+      "learning_rate": 0.0,
+      "iteration_count": 0,
+      "loss_or_error_metric": "fixture_only_no_runtime_optimization",
+      "seed_ref": "seed:learnable-critic-audit",
+      "created_at": "2026-06-19T02:29:10+00:00"
+    },
+    "coefficient_diff_record": {
+      "coefficient_diff_id": "coefficient-diff:emotion-audit",
+      "before_state_id": "coefficient-state:emotion:before",
+      "after_state_id": "coefficient-state:emotion:after",
+      "changed_fields": [
+        "coefficient_value",
+        "coefficient_version"
+      ],
+      "old_values": {
+        "coefficient_value": 1.0
+      },
+      "new_values": {
+        "coefficient_value": 1.05
+      },
+      "change_reason": "Audit-first candidate adjustment derived from a high-confidence emotional momentum signal.",
+      "source_signal_refs": [
+        "formula-signal:emotion:10부"
+      ],
+      "calibration_run_ref": "calibration-run:emotion-audit"
+    },
+    "alignment_result_record": {
+      "alignment_result_id": "alignment-result:emotion-audit",
+      "calibration_run_id": "calibration-run:emotion-audit",
+      "before_alignment": 0.62,
+      "after_alignment": 0.67,
+      "improvement_delta": 0.05,
+      "failure_notes": [],
+      "overfit_warning": false,
+      "human_review_required": true
+    },
+    "rollback_record": {
+      "rollback_id": "rollback:emotion-audit",
+      "coefficient_diff_id": "coefficient-diff:emotion-audit",
+      "rollback_target_state_id": "coefficient-state:emotion:before",
+      "rollback_reason": "Candidate coefficient remains advisory until human approval.",
+      "rollback_status": "READY",
+      "performed_at": "2026-06-19T02:29:10+00:00"
+    },
+    "human_approval_record": {
+      "approval_id": "approval:emotion-audit",
+      "coefficient_diff_id": "coefficient-diff:emotion-audit",
+      "reviewer_role": "PRINCIPAL_AUTHORITY_REVIEWER",
+      "approval_status": "PENDING_REVIEW",
+      "approval_note": "Audit fixture prepared; no promotion until explicit human decision.",
+      "approved_at": "2026-06-19T02:29:10+00:00"
+    },
+    "advisory_output_record": {
+      "advisory_output_id": "advisory-output:emotion-audit",
+      "critic_id": "critic:emotion_calibration_audit",
+      "input_source_refs": [
+        "critic-input:sample-emotion-audit"
+      ],
+      "output_type": "LearnableCriticAdvisoryOutputRecord",
+      "score_or_label": "ADJUST_EMOTIONAL_MOMENTUM_WEIGHT:+0.05",
+      "explanation": "Audit fixture proposes a bounded, review-only emotional momentum coefficient adjustment.",
+      "confidence": 0.78,
+      "suggested_action": "REVIEW_ONLY",
+      "canonical_mutation_allowed": false,
+      "review_status": "APPROVAL_REQUIRED"
+    },
+    "selected_formula_signal": {
+      "formula_signal_id": "formula-signal:emotion:10부",
+      "formula_id": "formula:emotional_momentum",
+      "formula_group": "Emotional Momentum",
+      "source_record_ids": [
+        "learning_signal:10부"
+      ],
+      "source_record_types": [
+        "LearningSignalRecord"
+      ],
+      "input_field_names": [
+        "mean_conflict_intensity",
+        "mean_dialogue_ratio",
+        "mean_curiosity_gradient",
+        "mean_motif_residue_score"
+      ],
+      "source_class_summary": "metadata_only_corpus_records",
+      "rights_status_summary": "user_provided_structured_analysis_db",
+      "output_signal_type": "EMOTIONAL_MOMENTUM_SIGNAL",
+      "output_signal_value_or_label": "intensity=0.2545",
+      "confidence": 0.78,
+      "explanation_summary": "Emotion vector computed from aggregated conflict/dialogue/curiosity/residue features for 10부.",
+      "signal_type_label": "CALCULATED_SIGNAL",
+      "critic_mapping_ref": "critic:emotion",
+      "value_proof_mapping_ref": "value_proof:arm_b_formula_guidance",
+      "writer_ide_panel_ref": "writer_ide:right_panel:emotional_momentum",
+      "created_at": "2026-06-19T02:29:08+00:00",
+      "review_status": "VALID_FOR_UI_WIRING"
+    },
+    "audit_validation_report": {
+      "status": "pass",
+      "issues": [],
+      "source_linked": true,
+      "seed_present": true,
+      "rollback_ready": true,
+      "human_review_required": true,
+      "canonical_mutation_allowed": false
+    }
+  }
+}

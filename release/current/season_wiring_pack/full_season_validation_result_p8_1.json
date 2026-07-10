@@ -1,0 +1,85 @@
+{
+  "document_type": "full_season_validation_result",
+  "version": "1.0-stage243-p8.1-local-rerun",
+  "created_at_utc": "2026-07-05T07:47:07.989443+00:00",
+  "source_fixture": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+  "source_schema": "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
+  "source_self_check": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+  "source_protocol": "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
+  "input_file_fingerprints": {
+    "fixture": {
+      "path": "release/current/season_wiring_pack/full_season_candidate_package_fixture_v1.json",
+      "bytes": 10342,
+      "sha256": "8fb74d834284119f04430e77e8804627131954a8a0ca1ca3e3ff7f8d180ad725"
+    },
+    "schema": {
+      "path": "release/current/season_wiring_pack/full_season_candidate_package_schema_v1.json",
+      "bytes": 13870,
+      "sha256": "9778be229aba2820c9d3b5c7d0734bf4dba4822b977f67b57136ec858a7d920f"
+    },
+    "self_check": {
+      "path": "release/current/season_wiring_pack/full_season_hard_rule_self_check_v1.json",
+      "bytes": 4507,
+      "sha256": "4d91ab5478bae3212138704ec34234a73de322cc4e7bbef087d553fbd83a24c9"
+    },
+    "protocol": {
+      "path": "release/current/season_wiring_pack/full_season_validation_protocol_p8_1.json",
+      "bytes": 5086,
+      "sha256": "f0332942d5f0c5a41e5237e5b4fc1c7f9b7413e8f4f34d95223fcd132aeb3cd9"
+    }
+  },
+  "json_parse_pass": true,
+  "json_parse_error_count": 0,
+  "parsed_file_count": 4,
+  "schema_validation_pass": true,
+  "schema_error_count": 0,
+  "schema_error_paths": [],
+  "cross_level_integrity_pass": true,
+  "integrity_error_count": 0,
+  "integrity_warning_count": 11,
+  "blocking_integrity_findings": [],
+  "boundary_invariants_pass": true,
+  "boundary_error_count": 0,
+  "boundary_warning_count": 0,
+  "overall_validation_status": "pass_with_warning",
+  "gate_a_ready_after_validation": false,
+  "scorecard_preflight_allowed": false,
+  "required_next_actions": [
+    "run_deeper_instantiated_integrity_checks",
+    "rerun_hard_rule_gate"
+  ],
+  "promotion_status": {
+    "macro_planner_promotion": "blocked",
+    "full_author_promotion": "blocked",
+    "live_generation_readiness": "blocked"
+  },
+  "safety": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "draft_text_exported": false,
+    "training_update_started": false,
+    "adapter_promotion": false,
+    "promotion_claim": false
+  },
+  "missing_required_inputs": [],
+  "protocol_document_type": "full_season_validation_protocol",
+  "protocol_roadmap_position": "P8.1",
+  "integrity_warnings": [
+    "not_run:series_to_season_integrity",
+    "not_run:season_to_episode_integrity",
+    "not_run:episode_to_sequence_integrity",
+    "not_run:sequence_to_scene_integrity",
+    "not_run:scene_to_renderer_packet_integrity",
+    "not_run:plant_payoff_integrity",
+    "not_run:character_arc_integrity",
+    "not_run:relationship_arc_integrity",
+    "not_run:causal_spine_integrity",
+    "not_run:hook_chain_integrity",
+    "not_run:genre_rhythm_integrity"
+  ],
+  "boundary_errors": [],
+  "hard_rule_pass_from_self_check": false,
+  "next_required_step": "rerun_hard_rule_gate_before_scorecard"
+}

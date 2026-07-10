@@ -1,0 +1,14 @@
+{
+  "explanation_record_id": "critic-explanation:10부:review",
+  "writer_session_id": "writer-session:10부:critic-review",
+  "critic_id": "critic:emotion_calibration_audit",
+  "advisory_output_id": "advisory-output:emotion-audit",
+  "formula_signal_ref": "formula-signal:emotion:10부",
+  "coefficient_diff_id": "coefficient-diff:emotion-audit",
+  "alignment_result_id": "alignment-result:emotion-audit",
+  "confidence": 0.78,
+  "explanation_summary": "Audit fixture proposes a bounded, review-only emotional momentum coefficient adjustment.",
+  "suggested_action": "REVIEW_ONLY",
+  "approval_status": "PENDING_REVIEW",
+  "canonical_mutation_allowed": false
+}

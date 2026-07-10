@@ -1,0 +1,172 @@
+{
+  "document_type": "macro_planner_disqualification_rules",
+  "version": "2.0-stage243",
+  "created_at": "2026-07-03",
+  "stage": "Stage243",
+  "purpose": "Define the hard-rule failures that disqualify or warn Macro Planner Candidate fixtures before weighted score interpretation.",
+  "rule_scale": {
+    "critical": "Single occurrence disqualifies the candidate.",
+    "major": "Single occurrence may require manual review; two or more major failures disqualify.",
+    "minor": "Does not disqualify alone; creates warning or review flag.",
+    "safety": "Always disqualifies and blocks all promotion interpretation."
+  },
+  "rules": [
+    {
+      "rule_id": "raw_text_leakage",
+      "severity": "safety",
+      "group": "safety_boundary",
+      "definition": "Candidate, fixture, scorecard, or report contains raw corpus prose or near-verbatim script text.",
+      "failure_effect": "fail_safety",
+      "required_action": "Remove leaked content, regenerate metadata-only fixture, rerun scan."
+    },
+    {
+      "rule_id": "provider_call_detected",
+      "severity": "safety",
+      "group": "safety_boundary",
+      "definition": "Any provider call is made during Stage243 fixture evaluation.",
+      "failure_effect": "fail_safety",
+      "required_action": "Discard run; mark as invalid for Stage243 evidence."
+    },
+    {
+      "rule_id": "runtime_generation_detected",
+      "severity": "safety",
+      "group": "safety_boundary",
+      "definition": "Actual live generation is performed rather than fixture-only envelope generation.",
+      "failure_effect": "fail_safety",
+      "required_action": "Block run; keep Page18 runtime closed."
+    },
+    {
+      "rule_id": "promotion_claim_detected",
+      "severity": "safety",
+      "group": "safety_boundary",
+      "definition": "Fixture/report claims Macro Planner, Full Author, or Live Generation promotion from preflight evidence.",
+      "failure_effect": "fail_safety",
+      "required_action": "Correct authority language; restore blocked status."
+    },
+    {
+      "rule_id": "missing_season_goal",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "The season has no explicit macro objective, thematic promise, or dominant dramatic question.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "missing_inciting_force",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "The structure lacks an inciting force that changes the protagonist/system state and launches the season engine.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "midpoint_missing",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "No midpoint turn or irreversible reorientation exists in the season/episode arc.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "crisis_missing",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "No crisis point forces a decisive cost, irreversible choice, or structural collapse before climax.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "climax_missing",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "No climax resolves or transforms the central conflict established by the season arc.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "impossible_episode_order",
+      "severity": "critical",
+      "group": "season_structure",
+      "definition": "An episode depends on information, action, relationship state, or payoff that has not yet been planted or caused.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "causality_contradiction",
+      "severity": "critical",
+      "group": "causality_and_payoff",
+      "definition": "A later event contradicts the stated cause/effect chain without deliberate explanation.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "orphan_plant_without_payoff",
+      "severity": "major",
+      "group": "causality_and_payoff",
+      "definition": "A plant, clue, motif, promise, or setup has no payoff target or closure path.",
+      "failure_effect": "manual_review_or_fail_if_clustered"
+    },
+    {
+      "rule_id": "payoff_without_plant",
+      "severity": "critical",
+      "group": "causality_and_payoff",
+      "definition": "A payoff, reveal, reversal, or rescue appears without prior setup, plant, expectation, or causal basis.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "unmotivated_reversal",
+      "severity": "major",
+      "group": "causality_and_payoff",
+      "definition": "A reversal occurs because the outline requires it, not because prior decisions and pressures force it.",
+      "failure_effect": "manual_review_or_fail_if_clustered"
+    },
+    {
+      "rule_id": "character_arc_discontinuity",
+      "severity": "critical",
+      "group": "character_and_relationship_arc",
+      "definition": "A character belief, desire, status, morality, or agency state changes without triggering event or accumulated pressure.",
+      "failure_effect": "fail_hard_rule"
+    },
+    {
+      "rule_id": "relationship_arc_discontinuity",
+      "severity": "major",
+      "group": "character_and_relationship_arc",
+      "definition": "Trust, intimacy, power, dependency, betrayal, or alliance shifts without preceding interaction or cause.",
+      "failure_effect": "manual_review_or_fail_if_clustered"
+    },
+    {
+      "rule_id": "episode_hook_absent_over_threshold",
+      "severity": "major",
+      "group": "season_structure",
+      "definition": "Episode endings fail to create forward propulsion beyond the configured threshold.",
+      "failure_effect": "manual_review_or_fail_if_clustered"
+    },
+    {
+      "rule_id": "scene_function_distribution_collapse",
+      "severity": "minor",
+      "group": "scene_function_coverage",
+      "definition": "Scene-function distribution collapses into repeated CONFLICT/PERIL/HOOK without sufficient ESTABLISH/BOND/REVELATION/RELIEF rhythm.",
+      "failure_effect": "warning"
+    },
+    {
+      "rule_id": "core_core2_pair_incoherence",
+      "severity": "minor",
+      "group": "scene_function_coverage",
+      "definition": "Core and core2 labels form a pattern that does not match the stated scene role or macro position.",
+      "failure_effect": "warning"
+    },
+    {
+      "rule_id": "redundant_scene_cluster",
+      "severity": "minor",
+      "group": "scene_function_coverage",
+      "definition": "Multiple adjacent scenes perform the same function without escalation, contrast, or additional payload.",
+      "failure_effect": "warning"
+    }
+  ],
+  "cluster_policy": {
+    "major_failures_to_disqualify": 2,
+    "minor_warnings_to_manual_review": 4,
+    "critical_failures_to_disqualify": 1,
+    "safety_failures_to_disqualify": 1
+  },
+  "safety_invariants": {
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_text_exported": false,
+    "raw_vectors_exported": false,
+    "promotion_claim": false
+  }
+}
