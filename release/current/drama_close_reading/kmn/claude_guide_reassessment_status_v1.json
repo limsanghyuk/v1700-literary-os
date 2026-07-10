@@ -1,0 +1,36 @@
+{
+  "work_id": "결혼못하는남자",
+  "previous_status": "PASS_FINAL_STAGE01_04_PRECISION_AUDIT",
+  "current_status": "FAIL_EXISTING_KMN_STAGE01_04_UNDER_CLAUDE_GUIDE",
+  "status_reason": "New Claude Stage01-04 guide requires exact schemas, per-episode CharacterArc/RelationshipArc, causal LocalEdge, and verified Stage04 fan-in. Existing Stage03/04 is metadata-derived and non-compliant; Stage02 also contains schema/type violations.",
+  "stage01": {
+    "records": 1249,
+    "status": "PARTIAL_USABLE",
+    "action": "Preserve GPT extended direct-reading records and use Claude 9-key compatibility projection."
+  },
+  "stage02": {
+    "records": 189,
+    "status": "SCHEMA_CORRECTED_LOCAL_PACKAGE",
+    "action": "Normalize exact 18 keys, value_shift dict, scene_span list, four-bucket turn_class, coverage and runtime_share."
+  },
+  "stage03": {
+    "status": "QUARANTINED_REAUTHOR_REQUIRED",
+    "existing_character_arc_records": 6,
+    "existing_relationship_arc_records": 9,
+    "existing_local_edge_records": 173
+  },
+  "stage04": {
+    "status": "QUARANTINED_REAUTHOR_REQUIRED"
+  },
+  "local_artifacts": {
+    "stage01_02_corrected_zip": {
+      "filename": "kmn_claude_guide_reassessment_stage01_02_corrected_v1.zip",
+      "sha256": "3194fc9678af1a718b0738ecd102b07c2c6fb1a5acab118c1a417f26611c757a"
+    },
+    "forensic_audit_zip": {
+      "filename": "kmn_claude_guide_forensic_audit_v1.zip",
+      "sha256": "e6aff1e5ccd04bca758400a6f262cadf73b6b619ec24b9ff86bed67e06f802ee"
+    }
+  },
+  "final_pass_allowed": false
+}
