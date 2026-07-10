@@ -1,0 +1,11 @@
+{
+  "package_id": "KMN_CLAUDE_GUIDE_STAGE01_02_CORRECTED_V1",
+  "work_id": "결혼못하는남자",
+  "scope": "EP01-EP16 Stage01-Stage02",
+  "status": "SUPERSEDED_BY_FINAL_STAGE01_04_PACKAGE",
+  "replacement_manifest": "release/current/drama_close_reading/kmn/stage01_04_claude_guide_final_manifest.json",
+  "additional_final_corrections": {
+    "stage02_core_mix_records": 22
+  },
+  "note": "The earlier Stage01/02 corrected package passed structural correction but the final independent audit found 22 core_mix values not grounded in member SceneCard core/core2. Those records are corrected in the final Stage01-04 package."
+}
