@@ -1,0 +1,13 @@
+{
+  "work_id": "결혼못하는남자",
+  "guide": "docs/external/claude_drama_analysis_method_manual_stage01_04_v1.md",
+  "decision": "SUPERSEDED_BY_FINAL_REAUTHORED_PASS",
+  "former_decision": "FAIL_EXISTING_KMN_STAGE01_04_UNDER_CLAUDE_GUIDE",
+  "replacement_manifest": "release/current/drama_close_reading/kmn/stage01_04_claude_guide_final_manifest.json",
+  "replacement_gate_summary": "release/current/drama_close_reading/kmn/stage01_04_claude_guide_final_gate_summary.md",
+  "replacement_artifact_sha256": "7eef95efa1a76a930ff0bcf59952357d421ac7ef8be1724e9fcb4e811acfa1d8",
+  "replacement_audit_sha256": "5af87ba8c14418dbea776a64253458c9e4152221185cfadb01fa9461ce76f544",
+  "final_decision": "ERRORS 0 — CLAUDE GUIDE STRONG GATES ALL PASS",
+  "raw_script_exported": false,
+  "python_semantic_generation": false
+}
