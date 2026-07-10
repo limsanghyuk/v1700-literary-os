@@ -1,0 +1,67 @@
+{
+  "document_type": "codex_local_gumiho_segmentation_handoff",
+  "date": "2026-07-10",
+  "status": "metadata_only_segmentation_preflight_complete_stage01_blocked",
+  "work_id": "내여자친구는구미호",
+  "source_domain": "Korean drama 04",
+  "local_source": {
+    "source_zip": "C:\\AI_Codex\\codex-work\\gpt\\db\\Scripts\\한국드라마04\\내여자친구는구미호.zip",
+    "zip_sha256": "661ae78b05daa9dfa6e2ae3e5e490d811d133da7b9e99311c3988e1ba19feca1",
+    "episode_count": 16,
+    "hwp_integrity": "pass",
+    "raw_text_exported_to_hub": false
+  },
+  "local_tools": [
+    "C:\\AI_Codex\\codex-work\\gpt\\tools\\extract_gumiho_hwp_sources.py",
+    "C:\\AI_Codex\\codex-work\\gpt\\tools\\build_gumiho_segmentation_candidates.py",
+    "C:\\AI_Codex\\codex-work\\gpt\\tools\\build_gumiho_segmentation_review_queue.py",
+    "C:\\AI_Codex\\codex-work\\gpt\\tools\\prepare_gumiho_segmentation_approval_template.py",
+    "C:\\AI_Codex\\codex-work\\gpt\\tools\\validate_apply_gumiho_segmentation_ledger.py"
+  ],
+  "hub_loaded_metadata_only_results": [
+    "release/current/data_foundry_pack/gumiho_segmentation_candidate_validation_20260710.json",
+    "release/current/data_foundry_pack/gumiho_segmentation_review_queue_validation_20260710.json",
+    "release/current/data_foundry_pack/gumiho_approved_segmentation_ledger_template_summary_20260710.json",
+    "release/current/data_foundry_pack/gumiho_approved_segmentation_ledger_validation_20260710.json"
+  ],
+  "validation_summary": {
+    "candidate_segments": 252,
+    "review_queue_items": 252,
+    "approved_ledger_rows": 252,
+    "pending_rows": 252,
+    "error_count": 0,
+    "warning_count": 252,
+    "raw_text_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "canonical_stage01_allowed": false
+  },
+  "gate_decision": {
+    "stage01_scenecard": "blocked",
+    "reason": "no approved scene boundary ledger exists yet",
+    "automatic_scene_no_assignment_allowed": false
+  },
+  "next_required_local_step": {
+    "complete_template": "C:\\AI_Codex\\codex-work\\gpt\\db\\seqcard_ko\\segmentation_review\\내여자친구는구미호_approved_segmentation_ledger_template_20260710.csv",
+    "validate_command": "python C:\\AI_Codex\\codex-work\\gpt\\tools\\validate_apply_gumiho_segmentation_ledger.py --ledger <completed-ledger.csv-or-jsonl>",
+    "canonical_output_if_pass": "C:\\AI_Codex\\codex-work\\gpt\\db\\seqcard_ko\\segmentation_review\\내여자친구는구미호_canonical_segmentation_ledger_20260710.jsonl"
+  },
+  "forbidden": [
+    "raw_dialogue_export",
+    "raw_scene_text_export",
+    "raw_chunk_text_export",
+    "embedding_vector_export",
+    "provider_call",
+    "runtime_generation",
+    "training_update",
+    "promotion_claim",
+    "automatic_stage01_promotion",
+    "stage02_03_04_derivation_from_pending_segments"
+  ],
+  "chatgpt_project_use": [
+    "local_source_available_and_integrity_checked",
+    "pre_stage01_not_stage01_complete",
+    "blocker_is_approved_scene_segmentation",
+    "next_design_step_is_review_protocol_or_local_reviewer_workflow"
+  ]
+}

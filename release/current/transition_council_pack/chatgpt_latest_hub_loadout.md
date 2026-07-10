@@ -103,6 +103,32 @@ C:\AI_Codex\codex-work\gpt\release\current\transition_council_pack\p8_1_local_va
 C:\AI_Codex\codex-work\gpt\release\current\transition_council_pack\p8_1_local_validation_rerun_report_20260705.md
 ```
 
+Gumiho local segmentation preflight outputs:
+
+```text
+C:\AI_Codex\codex-work\gpt\release\current\transition_council_pack\codex_local_gumiho_segmentation_handoff_20260710.md
+C:\AI_Codex\codex-work\gpt\release\current\transition_council_pack\codex_local_gumiho_segmentation_handoff_20260710.json
+C:\AI_Codex\codex-work\gpt\release\current\data_foundry_pack\gumiho_segmentation_candidate_validation_20260710.json
+C:\AI_Codex\codex-work\gpt\release\current\data_foundry_pack\gumiho_segmentation_review_queue_validation_20260710.json
+C:\AI_Codex\codex-work\gpt\release\current\data_foundry_pack\gumiho_approved_segmentation_ledger_template_summary_20260710.json
+C:\AI_Codex\codex-work\gpt\release\current\data_foundry_pack\gumiho_approved_segmentation_ledger_validation_20260710.json
+```
+
+Gumiho gate state:
+
+```text
+candidate_segments: 252
+review_queue_items: 252
+approved_ledger_rows: 252
+pending_rows: 252
+error_count: 0
+raw_text_exported: false
+provider_call_count: 0
+runtime_generation: false
+canonical_stage01_allowed: false
+Stage01 SceneCard: blocked until approved segmentation ledger exists
+```
+
 Promotion/evidence registry outputs:
 
 ```text

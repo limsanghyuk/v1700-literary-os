@@ -1,0 +1,18 @@
+{
+  "document_type": "approved_segmentation_ledger_template_summary",
+  "work_id": "내여자친구는구미호",
+  "created_at_utc": "2026-07-10T03:27:53.868044+00:00",
+  "source_review_queue": "segmentation_review/내여자친구는구미호_segmentation_review_queue_20260710.jsonl",
+  "jsonl_template": "segmentation_review/내여자친구는구미호_approved_segmentation_ledger_template_20260710.jsonl",
+  "csv_template": "segmentation_review/내여자친구는구미호_approved_segmentation_ledger_template_20260710.csv",
+  "review_item_count": 252,
+  "reviewer_action_counts": {
+    "pending": 252
+  },
+  "episode_count": 16,
+  "raw_text_exported": false,
+  "provider_call_count": 0,
+  "runtime_generation": false,
+  "canonical_stage01_allowed": false,
+  "required_for_stage01": "completed approved segmentation ledger with stable approved_scene_no and line ranges"
+}

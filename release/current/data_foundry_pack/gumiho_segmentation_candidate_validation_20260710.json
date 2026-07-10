@@ -1,0 +1,125 @@
+{
+  "document_type": "segmentation_candidate_validation",
+  "work_id": "내여자친구는구미호",
+  "error_count": 0,
+  "errors": [],
+  "episodes": [
+    {
+      "ep": 1,
+      "source_lines": 424,
+      "segments": 15,
+      "low": 15,
+      "medium": 0
+    },
+    {
+      "ep": 2,
+      "source_lines": 481,
+      "segments": 16,
+      "low": 15,
+      "medium": 1
+    },
+    {
+      "ep": 3,
+      "source_lines": 476,
+      "segments": 15,
+      "low": 14,
+      "medium": 1
+    },
+    {
+      "ep": 4,
+      "source_lines": 467,
+      "segments": 15,
+      "low": 15,
+      "medium": 0
+    },
+    {
+      "ep": 5,
+      "source_lines": 450,
+      "segments": 15,
+      "low": 15,
+      "medium": 0
+    },
+    {
+      "ep": 6,
+      "source_lines": 526,
+      "segments": 17,
+      "low": 17,
+      "medium": 0
+    },
+    {
+      "ep": 7,
+      "source_lines": 524,
+      "segments": 17,
+      "low": 16,
+      "medium": 1
+    },
+    {
+      "ep": 8,
+      "source_lines": 484,
+      "segments": 16,
+      "low": 13,
+      "medium": 3
+    },
+    {
+      "ep": 9,
+      "source_lines": 470,
+      "segments": 16,
+      "low": 15,
+      "medium": 1
+    },
+    {
+      "ep": 10,
+      "source_lines": 478,
+      "segments": 17,
+      "low": 17,
+      "medium": 0
+    },
+    {
+      "ep": 11,
+      "source_lines": 448,
+      "segments": 15,
+      "low": 15,
+      "medium": 0
+    },
+    {
+      "ep": 12,
+      "source_lines": 525,
+      "segments": 18,
+      "low": 18,
+      "medium": 0
+    },
+    {
+      "ep": 13,
+      "source_lines": 503,
+      "segments": 18,
+      "low": 17,
+      "medium": 1
+    },
+    {
+      "ep": 14,
+      "source_lines": 442,
+      "segments": 15,
+      "low": 15,
+      "medium": 0
+    },
+    {
+      "ep": 15,
+      "source_lines": 423,
+      "segments": 14,
+      "low": 13,
+      "medium": 1
+    },
+    {
+      "ep": 16,
+      "source_lines": 372,
+      "segments": 13,
+      "low": 13,
+      "medium": 0
+    }
+  ],
+  "total_segments": 252,
+  "low_confidence_segments": 243,
+  "medium_confidence_segments": 9,
+  "canonical_stage01_allowed": false,
+  "manual_review_required": true
+}

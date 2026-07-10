@@ -1,0 +1,1020 @@
+{
+  "document_type": "approved_segmentation_ledger_validation",
+  "work_id": "내여자친구는구미호",
+  "validated_at_utc": "2026-07-10T03:28:07.669671+00:00",
+  "row_count": 252,
+  "reviewer_action_counts": {
+    "pending": 252
+  },
+  "approved_scene_count": 0,
+  "pending_count": 252,
+  "error_count": 0,
+  "warning_count": 252,
+  "errors": [],
+  "warnings": [
+    {
+      "row": 1,
+      "review_item_id": "내여자친구는구미호_E01_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 2,
+      "review_item_id": "내여자친구는구미호_E01_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 3,
+      "review_item_id": "내여자친구는구미호_E01_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 4,
+      "review_item_id": "내여자친구는구미호_E01_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 5,
+      "review_item_id": "내여자친구는구미호_E01_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 6,
+      "review_item_id": "내여자친구는구미호_E01_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 7,
+      "review_item_id": "내여자친구는구미호_E01_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 8,
+      "review_item_id": "내여자친구는구미호_E01_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 9,
+      "review_item_id": "내여자친구는구미호_E01_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 10,
+      "review_item_id": "내여자친구는구미호_E01_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 11,
+      "review_item_id": "내여자친구는구미호_E01_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 12,
+      "review_item_id": "내여자친구는구미호_E01_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 13,
+      "review_item_id": "내여자친구는구미호_E01_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 14,
+      "review_item_id": "내여자친구는구미호_E01_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 15,
+      "review_item_id": "내여자친구는구미호_E01_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 16,
+      "review_item_id": "내여자친구는구미호_E02_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 17,
+      "review_item_id": "내여자친구는구미호_E02_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 18,
+      "review_item_id": "내여자친구는구미호_E02_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 19,
+      "review_item_id": "내여자친구는구미호_E02_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 20,
+      "review_item_id": "내여자친구는구미호_E02_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 21,
+      "review_item_id": "내여자친구는구미호_E02_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 22,
+      "review_item_id": "내여자친구는구미호_E02_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 23,
+      "review_item_id": "내여자친구는구미호_E02_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 24,
+      "review_item_id": "내여자친구는구미호_E02_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 25,
+      "review_item_id": "내여자친구는구미호_E02_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 26,
+      "review_item_id": "내여자친구는구미호_E02_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 27,
+      "review_item_id": "내여자친구는구미호_E02_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 28,
+      "review_item_id": "내여자친구는구미호_E02_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 29,
+      "review_item_id": "내여자친구는구미호_E02_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 30,
+      "review_item_id": "내여자친구는구미호_E02_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 31,
+      "review_item_id": "내여자친구는구미호_E02_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 32,
+      "review_item_id": "내여자친구는구미호_E03_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 33,
+      "review_item_id": "내여자친구는구미호_E03_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 34,
+      "review_item_id": "내여자친구는구미호_E03_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 35,
+      "review_item_id": "내여자친구는구미호_E03_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 36,
+      "review_item_id": "내여자친구는구미호_E03_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 37,
+      "review_item_id": "내여자친구는구미호_E03_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 38,
+      "review_item_id": "내여자친구는구미호_E03_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 39,
+      "review_item_id": "내여자친구는구미호_E03_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 40,
+      "review_item_id": "내여자친구는구미호_E03_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 41,
+      "review_item_id": "내여자친구는구미호_E03_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 42,
+      "review_item_id": "내여자친구는구미호_E03_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 43,
+      "review_item_id": "내여자친구는구미호_E03_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 44,
+      "review_item_id": "내여자친구는구미호_E03_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 45,
+      "review_item_id": "내여자친구는구미호_E03_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 46,
+      "review_item_id": "내여자친구는구미호_E03_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 47,
+      "review_item_id": "내여자친구는구미호_E04_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 48,
+      "review_item_id": "내여자친구는구미호_E04_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 49,
+      "review_item_id": "내여자친구는구미호_E04_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 50,
+      "review_item_id": "내여자친구는구미호_E04_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 51,
+      "review_item_id": "내여자친구는구미호_E04_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 52,
+      "review_item_id": "내여자친구는구미호_E04_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 53,
+      "review_item_id": "내여자친구는구미호_E04_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 54,
+      "review_item_id": "내여자친구는구미호_E04_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 55,
+      "review_item_id": "내여자친구는구미호_E04_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 56,
+      "review_item_id": "내여자친구는구미호_E04_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 57,
+      "review_item_id": "내여자친구는구미호_E04_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 58,
+      "review_item_id": "내여자친구는구미호_E04_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 59,
+      "review_item_id": "내여자친구는구미호_E04_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 60,
+      "review_item_id": "내여자친구는구미호_E04_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 61,
+      "review_item_id": "내여자친구는구미호_E04_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 62,
+      "review_item_id": "내여자친구는구미호_E05_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 63,
+      "review_item_id": "내여자친구는구미호_E05_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 64,
+      "review_item_id": "내여자친구는구미호_E05_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 65,
+      "review_item_id": "내여자친구는구미호_E05_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 66,
+      "review_item_id": "내여자친구는구미호_E05_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 67,
+      "review_item_id": "내여자친구는구미호_E05_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 68,
+      "review_item_id": "내여자친구는구미호_E05_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 69,
+      "review_item_id": "내여자친구는구미호_E05_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 70,
+      "review_item_id": "내여자친구는구미호_E05_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 71,
+      "review_item_id": "내여자친구는구미호_E05_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 72,
+      "review_item_id": "내여자친구는구미호_E05_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 73,
+      "review_item_id": "내여자친구는구미호_E05_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 74,
+      "review_item_id": "내여자친구는구미호_E05_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 75,
+      "review_item_id": "내여자친구는구미호_E05_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 76,
+      "review_item_id": "내여자친구는구미호_E05_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 77,
+      "review_item_id": "내여자친구는구미호_E06_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 78,
+      "review_item_id": "내여자친구는구미호_E06_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 79,
+      "review_item_id": "내여자친구는구미호_E06_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 80,
+      "review_item_id": "내여자친구는구미호_E06_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 81,
+      "review_item_id": "내여자친구는구미호_E06_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 82,
+      "review_item_id": "내여자친구는구미호_E06_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 83,
+      "review_item_id": "내여자친구는구미호_E06_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 84,
+      "review_item_id": "내여자친구는구미호_E06_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 85,
+      "review_item_id": "내여자친구는구미호_E06_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 86,
+      "review_item_id": "내여자친구는구미호_E06_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 87,
+      "review_item_id": "내여자친구는구미호_E06_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 88,
+      "review_item_id": "내여자친구는구미호_E06_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 89,
+      "review_item_id": "내여자친구는구미호_E06_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 90,
+      "review_item_id": "내여자친구는구미호_E06_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 91,
+      "review_item_id": "내여자친구는구미호_E06_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 92,
+      "review_item_id": "내여자친구는구미호_E06_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 93,
+      "review_item_id": "내여자친구는구미호_E06_C017",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 94,
+      "review_item_id": "내여자친구는구미호_E07_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 95,
+      "review_item_id": "내여자친구는구미호_E07_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 96,
+      "review_item_id": "내여자친구는구미호_E07_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 97,
+      "review_item_id": "내여자친구는구미호_E07_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 98,
+      "review_item_id": "내여자친구는구미호_E07_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 99,
+      "review_item_id": "내여자친구는구미호_E07_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 100,
+      "review_item_id": "내여자친구는구미호_E07_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 101,
+      "review_item_id": "내여자친구는구미호_E07_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 102,
+      "review_item_id": "내여자친구는구미호_E07_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 103,
+      "review_item_id": "내여자친구는구미호_E07_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 104,
+      "review_item_id": "내여자친구는구미호_E07_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 105,
+      "review_item_id": "내여자친구는구미호_E07_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 106,
+      "review_item_id": "내여자친구는구미호_E07_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 107,
+      "review_item_id": "내여자친구는구미호_E07_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 108,
+      "review_item_id": "내여자친구는구미호_E07_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 109,
+      "review_item_id": "내여자친구는구미호_E07_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 110,
+      "review_item_id": "내여자친구는구미호_E07_C017",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 111,
+      "review_item_id": "내여자친구는구미호_E08_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 112,
+      "review_item_id": "내여자친구는구미호_E08_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 113,
+      "review_item_id": "내여자친구는구미호_E08_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 114,
+      "review_item_id": "내여자친구는구미호_E08_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 115,
+      "review_item_id": "내여자친구는구미호_E08_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 116,
+      "review_item_id": "내여자친구는구미호_E08_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 117,
+      "review_item_id": "내여자친구는구미호_E08_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 118,
+      "review_item_id": "내여자친구는구미호_E08_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 119,
+      "review_item_id": "내여자친구는구미호_E08_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 120,
+      "review_item_id": "내여자친구는구미호_E08_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 121,
+      "review_item_id": "내여자친구는구미호_E08_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 122,
+      "review_item_id": "내여자친구는구미호_E08_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 123,
+      "review_item_id": "내여자친구는구미호_E08_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 124,
+      "review_item_id": "내여자친구는구미호_E08_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 125,
+      "review_item_id": "내여자친구는구미호_E08_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 126,
+      "review_item_id": "내여자친구는구미호_E08_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 127,
+      "review_item_id": "내여자친구는구미호_E09_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 128,
+      "review_item_id": "내여자친구는구미호_E09_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 129,
+      "review_item_id": "내여자친구는구미호_E09_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 130,
+      "review_item_id": "내여자친구는구미호_E09_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 131,
+      "review_item_id": "내여자친구는구미호_E09_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 132,
+      "review_item_id": "내여자친구는구미호_E09_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 133,
+      "review_item_id": "내여자친구는구미호_E09_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 134,
+      "review_item_id": "내여자친구는구미호_E09_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 135,
+      "review_item_id": "내여자친구는구미호_E09_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 136,
+      "review_item_id": "내여자친구는구미호_E09_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 137,
+      "review_item_id": "내여자친구는구미호_E09_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 138,
+      "review_item_id": "내여자친구는구미호_E09_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 139,
+      "review_item_id": "내여자친구는구미호_E09_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 140,
+      "review_item_id": "내여자친구는구미호_E09_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 141,
+      "review_item_id": "내여자친구는구미호_E09_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 142,
+      "review_item_id": "내여자친구는구미호_E09_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 143,
+      "review_item_id": "내여자친구는구미호_E10_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 144,
+      "review_item_id": "내여자친구는구미호_E10_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 145,
+      "review_item_id": "내여자친구는구미호_E10_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 146,
+      "review_item_id": "내여자친구는구미호_E10_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 147,
+      "review_item_id": "내여자친구는구미호_E10_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 148,
+      "review_item_id": "내여자친구는구미호_E10_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 149,
+      "review_item_id": "내여자친구는구미호_E10_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 150,
+      "review_item_id": "내여자친구는구미호_E10_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 151,
+      "review_item_id": "내여자친구는구미호_E10_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 152,
+      "review_item_id": "내여자친구는구미호_E10_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 153,
+      "review_item_id": "내여자친구는구미호_E10_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 154,
+      "review_item_id": "내여자친구는구미호_E10_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 155,
+      "review_item_id": "내여자친구는구미호_E10_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 156,
+      "review_item_id": "내여자친구는구미호_E10_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 157,
+      "review_item_id": "내여자친구는구미호_E10_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 158,
+      "review_item_id": "내여자친구는구미호_E10_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 159,
+      "review_item_id": "내여자친구는구미호_E10_C017",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 160,
+      "review_item_id": "내여자친구는구미호_E11_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 161,
+      "review_item_id": "내여자친구는구미호_E11_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 162,
+      "review_item_id": "내여자친구는구미호_E11_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 163,
+      "review_item_id": "내여자친구는구미호_E11_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 164,
+      "review_item_id": "내여자친구는구미호_E11_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 165,
+      "review_item_id": "내여자친구는구미호_E11_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 166,
+      "review_item_id": "내여자친구는구미호_E11_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 167,
+      "review_item_id": "내여자친구는구미호_E11_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 168,
+      "review_item_id": "내여자친구는구미호_E11_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 169,
+      "review_item_id": "내여자친구는구미호_E11_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 170,
+      "review_item_id": "내여자친구는구미호_E11_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 171,
+      "review_item_id": "내여자친구는구미호_E11_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 172,
+      "review_item_id": "내여자친구는구미호_E11_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 173,
+      "review_item_id": "내여자친구는구미호_E11_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 174,
+      "review_item_id": "내여자친구는구미호_E11_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 175,
+      "review_item_id": "내여자친구는구미호_E12_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 176,
+      "review_item_id": "내여자친구는구미호_E12_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 177,
+      "review_item_id": "내여자친구는구미호_E12_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 178,
+      "review_item_id": "내여자친구는구미호_E12_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 179,
+      "review_item_id": "내여자친구는구미호_E12_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 180,
+      "review_item_id": "내여자친구는구미호_E12_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 181,
+      "review_item_id": "내여자친구는구미호_E12_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 182,
+      "review_item_id": "내여자친구는구미호_E12_C008",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 183,
+      "review_item_id": "내여자친구는구미호_E12_C009",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 184,
+      "review_item_id": "내여자친구는구미호_E12_C010",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 185,
+      "review_item_id": "내여자친구는구미호_E12_C011",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 186,
+      "review_item_id": "내여자친구는구미호_E12_C012",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 187,
+      "review_item_id": "내여자친구는구미호_E12_C013",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 188,
+      "review_item_id": "내여자친구는구미호_E12_C014",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 189,
+      "review_item_id": "내여자친구는구미호_E12_C015",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 190,
+      "review_item_id": "내여자친구는구미호_E12_C016",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 191,
+      "review_item_id": "내여자친구는구미호_E12_C017",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 192,
+      "review_item_id": "내여자친구는구미호_E12_C018",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 193,
+      "review_item_id": "내여자친구는구미호_E13_C001",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 194,
+      "review_item_id": "내여자친구는구미호_E13_C002",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 195,
+      "review_item_id": "내여자친구는구미호_E13_C003",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 196,
+      "review_item_id": "내여자친구는구미호_E13_C004",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 197,
+      "review_item_id": "내여자친구는구미호_E13_C005",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 198,
+      "review_item_id": "내여자친구는구미호_E13_C006",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 199,
+      "review_item_id": "내여자친구는구미호_E13_C007",
+      "warning": "pending_review_blocks_stage01"
+    },
+    {
+      "row": 200,
+      "review_item_id": "내여자친구는구미호_E13_C008",
+      "warning": "pending_review_blocks_stage01"
+    }
+  ],
+  "raw_text_exported": false,
+  "provider_call_count": 0,
+  "runtime_generation": false,
+  "canonical_stage01_allowed": false
+}

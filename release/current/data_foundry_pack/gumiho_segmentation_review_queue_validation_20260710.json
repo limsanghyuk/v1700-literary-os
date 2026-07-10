@@ -1,0 +1,14 @@
+{
+  "document_type": "segmentation_review_queue_validation",
+  "work_id": "내여자친구는구미호",
+  "queue_path": "segmentation_review/내여자친구는구미호_segmentation_review_queue_20260710.jsonl",
+  "review_item_count": 252,
+  "candidate_count": 252,
+  "count_match": true,
+  "error_count": 0,
+  "errors": [],
+  "pending_count": 252,
+  "raw_text_exported": false,
+  "canonical_stage01_allowed": false,
+  "manual_review_required": true
+}
