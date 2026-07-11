@@ -1,0 +1,146 @@
+{
+  "schema": "DramaAnalysisProtocol-v2",
+  "version": "2.0.0",
+  "updated": "2026-07-12",
+  "status": "AUTHORITATIVE",
+  "authority_order": [
+    "docs/drama_analysis/DRAMA_ANALYSIS_OPERATING_MANUAL_V2.md",
+    "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "docs/drama_analysis/VALIDATION_RELEASE_PROTOCOL_V2.md",
+    "docs/drama_analysis/GPT_CLAUDE_ALIGNMENT_AND_INGESTION_V1.md",
+    "docs/drama_analysis/WORK_CATALOG_2026-07-12.md"
+  ],
+  "units": {
+    "semantic_authoring_atom": "quarter",
+    "lock_unit": "episode",
+    "default_delivery_unit": "half-season",
+    "safe_reduced_delivery_unit": "two-episodes",
+    "final_integration_unit": "full-series",
+    "quarter_order": ["Q1", "Q2", "Q3", "Q4"]
+  },
+  "source_policy": {
+    "direct_reading_required": true,
+    "python_semantic_generation": false,
+    "raw_script_exported": false,
+    "canonical_scene_numbering": "1-based ordinal by source scene/block occurrence",
+    "source_marker_preserved": true,
+    "source_lock_required": true
+  },
+  "schemas": {
+    "SceneCard": {
+      "key_count": 9,
+      "keys": ["work_id", "scene_no", "heading", "title", "intent_gist", "core", "core2", "skin", "by"]
+    },
+    "EpisodeMeta": {
+      "key_count": 5,
+      "keys": ["work_id", "scene_count", "core_dist", "episode_function", "by"]
+    },
+    "SequenceBlueprint": {
+      "key_count": 18,
+      "keys": ["seq_id", "work_id", "episode_no", "seq_index", "member_scene_nos", "scene_span", "scene_budget", "sequence_intent", "goal", "obstacle", "value_shift", "turn_type", "turn_class", "core_mix", "pov_char", "place_cluster", "runtime_share", "by"]
+    },
+    "EpisodeArc": {
+      "key_count": 13,
+      "keys": ["work_id", "episode_no", "scene_count", "sequence_count", "dramatic_question", "act_structure", "entry_state", "exit_state", "turning_point", "central_conflict_axis", "episode_function", "core_dist", "by"]
+    },
+    "CharacterArc": {
+      "key_count": 8,
+      "keys": ["work_id", "character", "episode_no", "state_label", "state_delta", "trigger_scene_no", "by", "evidence"]
+    },
+    "RelationshipArc": {
+      "key_count": 9,
+      "keys": ["work_id", "char_a", "char_b", "episode_no", "relation_state", "relation_delta", "trigger_scene_no", "evidence", "by"]
+    },
+    "Edge": {
+      "key_count": 12,
+      "keys": ["edge_id", "work_id", "edge_type", "src_episode_no", "src_scene_no", "tgt_episode_no", "tgt_scene_no", "gap_episodes", "label", "confidence", "note", "by"]
+    },
+    "PayoffCandidate": {
+      "key_count": 7,
+      "keys": ["candidate_id", "work_id", "episode_no", "scene_no", "edge_type_guess", "description", "by"]
+    },
+    "FullSeriesArc": {
+      "key_count": 17,
+      "keys": ["series", "episodes_total", "scenes_total", "sequences_total", "logline", "central_dramatic_question", "theme_statement", "protagonist", "antagonist", "season_structure", "macro_turning_points", "resolution", "open_ending", "tone", "conflict_persist", "series_core_dist", "by"]
+    },
+    "QuarterAudit": {
+      "key_count": 15,
+      "keys": ["schema", "work_id", "episode_no", "quarter", "scene_range", "scene_count", "source_scene_hashes", "stage01_subset_sha256", "placeholder_count", "duplicate_title_count", "duplicate_intent_count", "direct_reading_completed", "python_semantic_generation", "status", "by"]
+    }
+  },
+  "enums": {
+    "CORE": ["ESTABLISH", "ORACLE", "INTRO", "BOND", "CONFLICT", "REVERSAL", "LOSS", "PUNISH", "REVELATION", "REUNION", "RELIEF", "ROMANCE", "PERIL", "RESCUE", "DESIRE", "HOOK"],
+    "TURN_TYPE": ["RISE", "BOND", "PUNISH", "FALL", "LOSS", "REVEAL", "ORACLE", "REVERSAL", "STALL", "HOOK", "CONFLICT"],
+    "TURN_CLASS": ["RISE", "FALL", "REVEAL", "STALL"],
+    "PAYOFF_GUESS": ["plant_payoff", "callback", "subplot_counterpoint", "resolved_here"],
+    "CROSS_EDGE_TYPE": ["callback", "plant_payoff", "subplot_counterpoint"],
+    "STATUS": ["DRAFT", "CANDIDATE", "QUARANTINE", "PASS_CANDIDATE", "CANONICAL", "SUPERSEDED"],
+    "CANDIDATE_DISPOSITION": ["PROMOTED_CROSS_EDGE", "RECLASSIFIED_LOCAL_OR_ADJACENT_CAUSAL", "RESOLVED_WITHIN_EPISODE", "REJECTED_DUPLICATE", "REJECTED_INSUFFICIENT_EVIDENCE", "REJECTED_SOURCE_MISMATCH"]
+  },
+  "turn_class_map": {
+    "RISE": "RISE",
+    "BOND": "RISE",
+    "PUNISH": "RISE",
+    "FALL": "FALL",
+    "LOSS": "FALL",
+    "REVEAL": "REVEAL",
+    "ORACLE": "REVEAL",
+    "REVERSAL": "REVEAL",
+    "STALL": "STALL",
+    "HOOK": "STALL",
+    "CONFLICT": "STALL"
+  },
+  "invariants": {
+    "sequence_scene_coverage": "every scene exactly once",
+    "sequence_member_order": "continuous ascending",
+    "sequence_density_min": 0.11,
+    "sequence_density_recommended": [0.12, 0.17],
+    "runtime_share_sum": 1.0,
+    "runtime_share_tolerance": 0.000001,
+    "value_shift_keys": ["from", "to"],
+    "turning_point_keys": ["seq_index", "desc"],
+    "local_edge": {
+      "edge_type": "causal",
+      "same_episode": true,
+      "gap_episodes": 0,
+      "label_equals_target_core": true
+    },
+    "cross_edge": {
+      "target_episode_greater_than_source": true,
+      "gap_arithmetic_required": true,
+      "label_equals_target_core": true,
+      "full_series_fan_in_required": true
+    },
+    "character_trigger_presence": true,
+    "relationship_both_participants_present": true,
+    "candidate_disposition_coverage": 1.0
+  },
+  "gates": [
+    "SOURCE_LOCK",
+    "QUARTER",
+    "EPISODE",
+    "HALF_SEASON",
+    "FULL_SERIES",
+    "FUNCTIONAL_HOLDOUT",
+    "ARTIFACT_INTEGRITY"
+  ],
+  "anti_gaming": {
+    "unreplaced_variables_allowed": 0,
+    "visible_reference_residue_allowed": 0,
+    "keyword_artifacts_allowed": 0,
+    "python_meaning_generation_allowed": false,
+    "report_validation_contradiction_allowed": false,
+    "mechanical_phase_map_allowed": false,
+    "auto_episode_bridge_allowed": false,
+    "masked_skeleton_repeat_default_fail_ratio": 0.15
+  },
+  "release": {
+    "real_validator_required": true,
+    "fresh_extraction_required": true,
+    "zip_crc_required": true,
+    "sha256_manifest_required": true,
+    "user_approval_required_for_canonical": true,
+    "default_final_status": "PASS_CANDIDATE"
+  },
+  "next_action": "SELECT_NEXT_UNANALYZED_WORK_FROM_한국드라마04"
+}
