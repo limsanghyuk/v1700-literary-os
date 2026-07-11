@@ -28,6 +28,26 @@ python tools/check_release_asset_integrity.py
 
 `python tools/session_start.py` is mandatory before planning, proposal work, blueprint work, Stage implementation, integrity repair, or release-authority closure.
 
+## Drama Analysis Authoring
+
+The authoritative entrypoint for Korean drama close-reading, Stage01~04 schemas, validation, GPT–Claude ingestion, current completed-work status, and new-session handoff is:
+
+```text
+docs/drama_analysis/README.md
+```
+
+A new session must read that index before selecting or analyzing another work from `한국드라마04`. The historical Claude-to-GPT v1 manual under `docs/external/` is preserved, but the v2 documents under `docs/drama_analysis/` take priority when they conflict.
+
+Current GPT Stage01~04 candidate works recorded there:
+
+```text
+101번째프로포즈
+결혼못하는남자
+공주가돌아왔다
+시티헌터
+내여자친구는구미호
+```
+
 ## Stage Lineage
 
 ```text
