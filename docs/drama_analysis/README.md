@@ -1,7 +1,7 @@
 # 드라마 분석 권위 인덱스
 
 Document status: **AUTHORITATIVE ENTRYPOINT**  
-Version: 2.0  
+Version: 2.1  
 Updated: 2026-07-12 (Asia/Seoul)
 
 이 디렉터리는 GPT가 한국 드라마 원본을 직접 읽고 Stage01~04 분석 산출물을 만드는 데 필요한 최신 권위 문서군이다. 새 대화창·새 세션·새 모델은 다른 과거 문서보다 이 파일을 먼저 읽어야 한다.
@@ -73,12 +73,22 @@ EP01 Q1→Q2→Q3→Q4→회차 게이트
 - 공주가돌아왔다
 - 시티헌터
 - 내여자친구는구미호
+- 좋은사람
+- 파라다이스목장
 
-모두 Stage01~04 완성 패키지를 보유하며 현재 허브 문서상 지위는 `PASS_CANDIDATE`다. 상세 수량·패키지 SHA256·검증 상태는 `WORK_CATALOG_2026-07-12.md`와 `WORK_STATUS_2026-07-12.json`을 참조한다.
+누적 상태:
+
+```text
+7작품 / 115회 / 7,518 SceneCard / 1,043 SequenceBlueprint
+787 CharacterArc / 757 RelationshipArc
+1,634 LocalEdge / 580 PayoffCandidate / 301 CrossEpisodeEdge
+```
+
+모두 최신 권위 계약으로 fresh extraction·ZIP CRC·내부 SHA·휴대형 validator를 재검증했으며 현재 지위는 `PASS_CANDIDATE`다. 사용자 승인 전 `CANONICAL`로 승격하지 않는다. 상세 수량·패키지 SHA256·보강 이력은 `WORK_CATALOG_2026-07-12.md`와 `WORK_STATUS_2026-07-12.json`을 참조한다.
 
 ## 다음 정상 작업
 
-한국드라마04에서 위 5작품과 겹치지 않는 다음 작품 1편을 선정한다. 원본 분리 상태, 장면 경계 안정성, 반시즌 균형, 장르 확장성, Claude 동일 작품 비교 가능성을 평가한 뒤 SourceLock을 만들고 전반부 분석을 시작한다.
+한국드라마04에서 위 7작품과 겹치지 않는 다음 작품 1편을 선정한다. 원본 분리 상태, 장면 경계 안정성, 반시즌 균형, 장르 확장성, Claude 동일 작품 비교 가능성을 평가한 뒤 SourceLock을 만들고 전반부 분석을 시작한다.
 
 ## 보고 원칙
 

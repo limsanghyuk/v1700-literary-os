@@ -1,20 +1,20 @@
 {
-  "schema": "DramaAnalysisWorkStatus-v1",
+  "schema": "DramaAnalysisWorkStatus-v2-authoritative-repair",
   "updated": "2026-07-12",
   "project": "한국드라마04",
   "status_policy": "PASS_CANDIDATE until explicit user approval",
   "summary": {
-    "works": 5,
-    "episodes": 83,
-    "scene_cards": 5641,
-    "sequences": 809,
-    "episode_arcs": 83,
-    "character_arcs": 608,
-    "relationship_arcs": 581,
-    "local_edges": 1409,
-    "payoff_candidates": 420,
-    "cross_episode_edges": 191,
-    "full_series_arcs": 5
+    "works": 7,
+    "episodes": 115,
+    "scene_cards": 7518,
+    "sequences": 1043,
+    "episode_arcs": 115,
+    "character_arcs": 787,
+    "relationship_arcs": 757,
+    "local_edges": 1634,
+    "payoff_candidates": 580,
+    "cross_episode_edges": 301,
+    "full_series_arcs": 7
   },
   "completed_works": [
     {
@@ -26,13 +26,15 @@
       "episode_arcs": 15,
       "character_arcs": 120,
       "relationship_arcs": 104,
-      "local_edges": 185,
+      "local_edges": 182,
       "payoff_candidates": 68,
       "cross_episode_edges": 35,
-      "package": "p101_stage01_04_repaired_final_v2(1).zip",
-      "sha256": "c02c65501b89743c630d9f4f4a86c8d57627d48d5e8fd68236dff0589f02c767",
-      "validation": "PASS_CANDIDATE — ERRORS 0",
-      "canonical_allowed": false
+      "quarter_audits": 60,
+      "package": "p101_stage01_04_authoritative_final_v3.zip",
+      "sha256": "9fb78c7a95dcf775f70fbeaf99c5f218e5534380e92a27940ba4cec80c0da338",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "EpisodeMeta 15회, turn_type 59건, 회차 간 LocalEdge 3건을 최신 계약으로 교정"
     },
     {
       "work_id": "결혼못하는남자",
@@ -43,14 +45,15 @@
       "episode_arcs": 16,
       "character_arcs": 89,
       "relationship_arcs": 92,
-      "local_edges": 134,
+      "local_edges": 128,
       "payoff_candidates": 38,
       "cross_episode_edges": 13,
-      "package": "kmn_stage01_04_source_repaired_final_v2(1).zip",
-      "sha256": "8abe6b3ba45e0aabe0925739dfe5adbfc37a7c7fe7bc4f4c1e7868eeee6bacde",
-      "validation": "PASS_CANDIDATE — ERRORS 0",
+      "quarter_audits": 64,
+      "package": "kmn_stage01_04_authoritative_final_v3.zip",
+      "sha256": "79a8641abab51eb0f8a72896be8b096474e2224589d374af3556c54bff142f06",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
       "canonical_allowed": false,
-      "note": "The 1249-scene strong-gate report is historical/superseded; actual authored record count and validation_v2 are 1250."
+      "repair_summary": "EpisodeMeta 16회, turn_type 80건, runtime_share 13회, 회차 간 LocalEdge 6건 교정"
     },
     {
       "work_id": "공주가돌아왔다",
@@ -61,13 +64,15 @@
       "episode_arcs": 16,
       "character_arcs": 147,
       "relationship_arcs": 152,
-      "local_edges": 499,
+      "local_edges": 477,
       "payoff_candidates": 94,
       "cross_episode_edges": 33,
-      "package": "princess_stage01_04_full_series_repaired_final_v2(1).zip",
-      "sha256": "48c861ad1e414ceeafff438af038585f3faa38ab66d43a3bbbb8d80729dad3e5",
-      "validation": "PASS_CANDIDATE_FULL_SERIES_REPAIRED_V2",
-      "canonical_allowed": false
+      "quarter_audits": 64,
+      "package": "princess_stage01_04_authoritative_final_v3.zip",
+      "sha256": "f0c682369dfed99ea9eb8621b7ebe7823f127ea091acc5329bd303f2d3e6de93",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "runtime_share 1회, 회차 간 LocalEdge 22건을 최신 계약으로 교정"
     },
     {
       "work_id": "시티헌터",
@@ -81,12 +86,12 @@
       "local_edges": 463,
       "payoff_candidates": 140,
       "cross_episode_edges": 55,
-      "candidate_dispositions": 140,
-      "package": "cityhunter_stage01_04_full_series_final_v1.zip",
-      "sha256": "8c895241875bbb096188fe834daefc6ccfb20e8ae91743e6153ebcf50e05cc37",
-      "validation": "PASS_CANDIDATE_FULL_SERIES_STAGE01_04",
-      "functional_holdout": "12/12 PASS_LIMITED_NONBLINDED",
-      "canonical_allowed": false
+      "quarter_audits": 80,
+      "package": "cityhunter_stage01_04_authoritative_final_v3.zip",
+      "sha256": "871e1abf26256b797e8813768b46423aa2c45afc091f73fd413ce1e23f370414",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "의미 데이터 변경 없이 SourceLock·QuarterAudit·공통 권위 검증을 통일"
     },
     {
       "work_id": "내여자친구는구미호",
@@ -100,12 +105,50 @@
       "local_edges": 128,
       "payoff_candidates": 80,
       "cross_episode_edges": 55,
-      "candidate_dispositions": 80,
-      "package": "gumiho_stage01_04_full_series_final_v1.zip",
-      "sha256": "66499cceff00561a3b4441b07cb64e88921215e8492c7983f78d51fdc748194d",
-      "validation": "PASS_CANDIDATE_FULL_SERIES_STAGE01_04",
-      "functional_holdout": "12/12 PASS_LIMITED_NONBLINDED",
-      "canonical_allowed": false
+      "quarter_audits": 64,
+      "package": "gumiho_stage01_04_authoritative_final_v3.zip",
+      "sha256": "6d64412f088aa24303a85a0e27abd5d215295ac529692dd4bd06e7ec4a8adfb3",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "의미 데이터 변경 없이 SourceLock·QuarterAudit·공통 권위 검증을 통일"
+    },
+    {
+      "work_id": "좋은사람",
+      "status": "PASS_CANDIDATE",
+      "episodes": 16,
+      "scene_cards": 938,
+      "sequences": 114,
+      "episode_arcs": 16,
+      "character_arcs": 99,
+      "relationship_arcs": 96,
+      "local_edges": 128,
+      "payoff_candidates": 80,
+      "cross_episode_edges": 55,
+      "quarter_audits": 64,
+      "package": "goodperson_stage01_04_authoritative_final_v3.zip",
+      "sha256": "e5b8fa92f32172a348737d4d80d99e642cfc4832ca495a7104a74b58519589bd",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "의미 데이터 변경 없이 SourceLock·QuarterAudit·공통 권위 검증을 통일"
+    },
+    {
+      "work_id": "파라다이스목장",
+      "status": "PASS_CANDIDATE",
+      "episodes": 16,
+      "scene_cards": 939,
+      "sequences": 120,
+      "episode_arcs": 16,
+      "character_arcs": 80,
+      "relationship_arcs": 80,
+      "local_edges": 128,
+      "payoff_candidates": 80,
+      "cross_episode_edges": 55,
+      "quarter_audits": 64,
+      "package": "paradise_stage01_04_authoritative_final_v3.zip",
+      "sha256": "b5720d6074eae96840d4904065023873227f3eb3a6617b54f9c6339d67b58f50",
+      "validation": "PASS_CANDIDATE_AUTHORITATIVE_V3 — ERRORS 0 / WARNINGS 0",
+      "canonical_allowed": false,
+      "repair_summary": "EP09~16 460장면 직접독해, 후반부 59시퀀스·Stage03·Stage04 55건·FullSeriesArc 완결"
     }
   ],
   "exclude_from_new_selection": [
@@ -113,7 +156,9 @@
     "결혼못하는남자",
     "공주가돌아왔다",
     "시티헌터",
-    "내여자친구는구미호"
+    "내여자친구는구미호",
+    "좋은사람",
+    "파라다이스목장"
   ],
   "next": {
     "action": "SELECT_NEXT_UNANALYZED_WORK_FROM_한국드라마04",
