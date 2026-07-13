@@ -1,0 +1,16 @@
+{
+  "run_id": "gpt_20260714_bimil_ep01_01",
+  "status": "GPT_RUN_CANDIDATE_LOCKED_STAGE01_SSOT_BASIS",
+  "locked_files": [
+    "authored_bridge/비밀의숲.bridge.jsonl",
+    "authored_cast/비밀의숲_01.cast.jsonl",
+    "derived_character_load/비밀의숲_01.load.jsonl",
+    "audit/비밀의숲_01.castcoverage.json",
+    "analysis_run_manifest.json",
+    "source_basis/SOURCE_BASIS.json"
+  ],
+  "mutable_after_lock": false,
+  "supersession_rule": "Any raw-source reauthoring must be issued as a new run_id; this run is never overwritten.",
+  "comparison_permission": "PRELIMINARY_ONLY",
+  "by": "gpt_5_6_thinking"
+}
