@@ -1,0 +1,27 @@
+{
+  "work_id": "비밀의숲",
+  "episode_no": 1,
+  "basis": "STAGE01_03_SSOT_BACKFILL",
+  "raw_script_available_in_active_runtime": false,
+  "raw_script_directly_read": false,
+  "inputs": [
+    {
+      "path": "seqcard_ko/authored/비밀의숲_01.seqcard.jsonl",
+      "sha256": "02ce93c4b7b47dadc137e1946439d859cf2449bbb163740ee9bc96327baca984",
+      "records": 72
+    },
+    {
+      "path": "seqcard_ko/authored_seq/비밀의숲_01.seqblueprint.jsonl",
+      "sha256": "c6c11ef75aa5a4ee1002b1b3f2e280d79f5d71a71e39212d7be2fceabb165b4f",
+      "records": 14
+    },
+    {
+      "path": "seqcard_ko/authored_arc/비밀의숲_01.episodearc.json",
+      "sha256": "4e0282bc3da24095c479e42d300a118614d82e3e356f7ef802fe2975908d05ba",
+      "records": 1
+    }
+  ],
+  "independence_boundary": "Claude CastPresence/EntityBridge/CharacterLoad files were not opened or used as row-level inputs. Existing shared Stage01-03 SSOT was used.",
+  "limitation": "Raw-script grounding and source-block alignment remain unverified; this run must not be promoted to canonical or used for final kappa until raw-source audit is completed.",
+  "by": "gpt_5_6_thinking"
+}
