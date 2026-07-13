@@ -1,8 +1,8 @@
-# GPT–Claude 드라마 분석 규격 일치화·편입 규칙 v1
+# GPT–Claude 드라마 분석 규격 일치화·편입 규칙 v1.1
 
-Document ID: GPT-CLAUDE-DRAMA-ALIGNMENT-V1  
+Document ID: GPT-CLAUDE-DRAMA-ALIGNMENT-V1.1  
 Status: AUTHORITATIVE ALIGNMENT RECORD  
-Updated: 2026-07-12
+Updated: 2026-07-13
 
 ## 1. 최종 정정 결론
 
@@ -16,7 +16,7 @@ Updated: 2026-07-12
 - 보강 후 Stage01~04 내용 자체: 수용 가능
 - GPT와 Claude의 SequenceBlueprint·EpisodeArc 핵심 스키마: 본질적으로 동일
 
-따라서 현재의 비교 대상은 “스키마가 다른 두 진영”이 아니라, 동일한 Stage01~04 계약을 서로 다른 저작·검증 체계로 수행한 결과다.
+현재 비교 대상은 “스키마가 다른 두 진영”이 아니라 동일한 Stage01~04 계약을 서로 다른 저작·검증 체계로 수행한 결과다.
 
 ## 2. 실제로 발견된 핵심 결함
 
@@ -28,12 +28,7 @@ gap_episodes == 1
 edge_type == causal
 ```
 
-이것은 다음 이유로 부적합하다.
-
-1. LocalEdge라는 계층명과 모순
-2. CrossEpisodeEdge 채널과 중복
-3. Claude 강한 게이트가 회차 내 edge만 허용
-4. 작품마다 bridge 처리 방식이 달라 규약이 비일관
+이 구조는 LocalEdge라는 계층명과 모순되고 CrossEpisodeEdge 채널과 중복되며 작품별 규약을 불일치시킨다.
 
 최종 보정 규칙:
 
@@ -42,11 +37,9 @@ LocalEdge = 동일 회차, gap 0, causal
 CrossEpisodeEdge = 후속 회차, 검증된 callback/plant_payoff/subplot_counterpoint
 ```
 
-회차 간 bridge를 의미 손실 없이 cross 계층으로 이동하거나, 단순 인접 연결이면 기각한다.
+회차 간 bridge는 실제 장거리 회수이면 cross 계층으로 이동하고, 단순 인접 연결이면 기각한다.
 
-## 3. 스키마 일치화
-
-공통 정본 계약:
+## 3. 공통 정본 계약
 
 ```text
 SceneCard 9 keys
@@ -58,37 +51,33 @@ RelationshipArc 9 keys
 Local/Cross Edge 12 keys
 PayoffCandidate 7 keys
 FullSeriesArc 17 keys
+QuarterAudit 15 keys
 ```
 
-공통 enum:
+공통 enum과 품질 하한:
 
 ```text
 CORE16
+TURN_TYPE11
 TURN_CLASS4
 PayoffCandidate4
 CrossEpisodeEdge3
-```
-
-공통 품질 하한:
-
-```text
 sequence density >= 0.11
 권장 0.12~0.17
 runtime_share sum == 1.0
 trigger participant presence
 core_mix grounding
+candidate disposition coverage == 100%
 ```
 
 ## 4. GPT 방식에서 Claude가 수용한 검증 장치
-
-스키마 필드가 아니라 method/evidence 계층을 수용했다.
 
 ### V1 Functional Holdout
 
 - baseline retrieval과 graph-assisted retrieval 비교
 - Recall@5 또는 target evidence hit
 - 그래프층의 C축 효용 측정
-- 비블라인드 제한을 명시
+- 비블라인드 제한 명시
 
 ### V2 SourceLock
 
@@ -102,18 +91,18 @@ core_mix grounding
 
 - Q1→Q4 직접독해 순서 증명
 - 부분 Stage01 hash
-- placeholder/중복/Python 의미 생성 검사
+- placeholder·중복·Python 의미 생성 검사
 
 ### V4 Lineage·Quarantine
 
 - 실패판 격리
 - supersession 관계
-- 의미 변경·무손실 규약 보정 구분
+- 의미 변경과 무손실 규약 보정 구분
 - 과거 FAIL과 수정 이력 보존
 
 ### V5 Portable Real Validator
 
-- 절대경로 없음
+- 절대 경로 없음
 - 실제 산출물 재계산
 - non-zero failure exit
 - fresh extraction에서 재실행
@@ -133,19 +122,17 @@ core_mix grounding
 
 ## 6. 외부 산출물 편입 절차
 
-GPT 또는 Claude 외부 패키지를 정본 코퍼스에 넣을 때:
-
 ```text
 1. staging에 별도 해제
 2. 패키지 SHA256·ZIP CRC
 3. SourceLock과 실제 scene count 대조
 4. 작품 내부 schema inventory
-5. 규약 보정과 의미 재저작을 분리
+5. 규약 보정과 의미 재저작 분리
 6. work_id/seq_id/edge_id 정규화
 7. turning_point를 {seq_index, desc}로 정규화
 8. LocalEdge 회차 간 bridge 제거
-9. verify_work 실행
-10. verify_new_layers 또는 동등 강한 게이트 실행
+9. verify_work 또는 동등 gate 실행
+10. verify_new_layers 또는 동등 gate 실행
 11. 두 gate ERRORS 0
 12. fresh extraction 재검증
 13. 기존 정본 백업
@@ -157,7 +144,7 @@ GPT 또는 Claude 외부 패키지를 정본 코퍼스에 넣을 때:
 
 서로 다른 분석판의 장면 수 또는 canonical ordinal이 다르면 계층을 혼합하지 않는다.
 
-금지 예:
+금지:
 
 ```text
 Claude Stage01 + GPT Stage03/04
@@ -177,14 +164,13 @@ GPT SceneCard + Claude Sequence
 
 ### 무손실 보정
 
-- `work_id` 표기 통일
-- ID 접두사 통일
+- `work_id`와 ID 접두사 통일
 - 문자열 `scene_span`을 동일 값 list로 변환
-- turning_point scene를 containing sequence에 매핑
-- Local bridge를 검증된 CrossEdge로 이동
-- runtime 반올림 마지막 값 보정
+- turning point를 containing sequence에 매핑
+- 검증된 Local bridge를 CrossEdge로 이동
+- runtime 반올림의 마지막 값 보정
 
-의미 문장은 변경하지 않으며 ledger에 `semantic_text_changed: false`를 기록한다.
+의미 문장을 변경하지 않고 ledger에 `semantic_text_changed: false`를 기록한다.
 
 ### 의미 재저작
 
@@ -197,21 +183,52 @@ GPT SceneCard + Claude Sequence
 
 원문·Stage01을 다시 읽고 작성하며 `semantic_text_changed: true`를 기록한다.
 
-## 9. 수용 상태
+## 9. 최신 수용 상태 — 7작품 authoritative v3
 
-2026-07-12 현재 GPT 분석 5작품은 강한 검증을 통과한 `PASS_CANDIDATE`로 관리한다.
+2026-07-13 현재 다음 7작품은 최신 권위 계약과 독립 재검증을 통과한 `PASS_CANDIDATE`다.
 
-- 101번째프로포즈
-- 결혼못하는남자
-- 공주가돌아왔다
-- 시티헌터
-- 내여자친구는구미호
+```text
+101번째프로포즈
+결혼못하는남자
+공주가돌아왔다
+시티헌터
+내여자친구는구미호
+좋은사람
+파라다이스목장
+```
 
-앞의 4작품은 Claude 측 재감사·수용 이력이 있으며, 구미호는 동일 v2 계약으로 GPT가 신규 완성했다.
+누적:
+
+```text
+115회
+7,518 SceneCard
+1,043 SequenceBlueprint
+787 CharacterArc
+757 RelationshipArc
+1,634 LocalEdge
+580 PayoffCandidate
+301 CrossEpisodeEdge
+460 QuarterAudit
+7 FullSeriesArc
+```
+
+공통 감사 결과:
+
+```text
+7/7 PASS_CANDIDATE_AUTHORITATIVE_V3
+errors 0
+warnings 0
+fresh extraction PASS
+ZIP CRC PASS
+internal SHA PASS
+portable validator PASS
+```
+
+사용자 승인 전 `CANONICAL`은 금지한다. 최신 개별 수량·패키지 SHA는 `WORK_STATUS_2026-07-12.json`과 `WORK_CATALOG_2026-07-12.md`가 권위다.
 
 ## 10. 추가 분석 계층
 
-새 계층은 양쪽이 합의한 다음 절차를 따른다.
+새 계층은 다음 절차를 따른다.
 
 ```text
 proposal

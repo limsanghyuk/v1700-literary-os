@@ -1,7 +1,8 @@
 # 새 대화창 드라마 분석 부트스트랩 체크리스트
 
-Updated: 2026-07-12  
-Purpose: 과거 대화를 보지 못하는 새 세션이 즉시 다음 작품 분석을 시작하기 위한 최소 실행 순서
+Version: 2.1  
+Updated: 2026-07-13  
+Purpose: 과거 대화를 보지 못하는 새 세션이 즉시 다음 작품 분석을 시작하기 위한 실행 순서
 
 ## A. 문서 로드
 
@@ -9,28 +10,29 @@ Purpose: 과거 대화를 보지 못하는 새 세션이 즉시 다음 작품 �
 
 ```text
 1. docs/drama_analysis/README.md
-2. DRAMA_ANALYSIS_OPERATING_MANUAL_V2.md
-3. SCHEMA_CONTRACTS_V2.md
-4. VALIDATION_RELEASE_PROTOCOL_V2.md
-5. GPT_CLAUDE_ALIGNMENT_AND_INGESTION_V1.md
-6. WORK_CATALOG_2026-07-12.md
-7. 최신 docs/sessions/*_drama_analysis_handoff/README.md
+2. CURRENT_AUTHORITY_SNAPSHOT_2026-07-13.md
+3. DRAMA_ANALYSIS_OPERATING_MANUAL_V2.md
+4. SCHEMA_CONTRACTS_V2.md
+5. VALIDATION_RELEASE_PROTOCOL_V2.md
+6. GPT_CLAUDE_ALIGNMENT_AND_INGESTION_V1.md
+7. WORK_CATALOG_2026-07-12.md
+8. WORK_STATUS_2026-07-12.json
+9. docs/sessions/2026-07-13_drama_analysis_authority_refresh/README.md
 ```
 
-읽은 뒤 다음 내용을 스스로 확인한다.
+읽은 뒤 다음을 스스로 확인한다.
 
-- 완료 작품 5편
-- Stage01~04 계층
+- 완료 작품 7편
+- Stage01~04 계층과 근거 계보
 - quarter/episode/half-season/full-series 단위
 - Python 의미 생성 금지
-- LocalEdge와 CrossEpisodeEdge 차이
+- LocalEdge와 CrossEpisodeEdge의 차이
 - 사용자 승인 전 CANONICAL 금지
+- 최신 next pointer가 `SELECT_NEXT_UNANALYZED_WORK_FROM_한국드라마04`인지
 
 ## B. 현재 상태 확인
 
-`WORK_STATUS_2026-07-12.json`을 읽고 완료 작품을 제외한다.
-
-제외:
+`WORK_STATUS_2026-07-12.json`을 읽고 다음 작품을 제외한다.
 
 ```text
 101번째프로포즈
@@ -38,6 +40,17 @@ Purpose: 과거 대화를 보지 못하는 새 세션이 즉시 다음 작품 �
 공주가돌아왔다
 시티헌터
 내여자친구는구미호
+좋은사람
+파라다이스목장
+```
+
+누적 권위 수량:
+
+```text
+7작품 / 115회 / 7,518 SceneCard / 1,043 SequenceBlueprint
+787 CharacterArc / 757 RelationshipArc
+1,634 LocalEdge / 580 PayoffCandidate / 301 CrossEpisodeEdge
+460 QuarterAudit / 7 FullSeriesArc
 ```
 
 현재 next:
@@ -50,12 +63,13 @@ Purpose: 과거 대화를 보지 못하는 새 세션이 즉시 다음 작품 �
 
 1. 한국드라마04 ZIP 존재 확인
 2. 내부 작품 ZIP 목록 추출
-3. 완료 작품 제외
+3. 완료 7작품 제외
 4. 후보별 회차 파일 수 확인
 5. 파일 인코딩 복원 시험
 6. 장면 경계 탐지 시험
 7. 총 장면 수·전후반 균형 계산
 8. 장르·Claude 동일 작품 여부 확인
+9. 이전 GPT 패키지 또는 중복 lineage 확인
 
 작품 선정 점수 예:
 
@@ -67,7 +81,7 @@ genre diversification    0~3
 same-title benchmark     0~2
 ```
 
-최고점 작품을 선정하되, 자동 점수보다 실제 원본 가독성을 우선한다.
+자동 점수보다 실제 원본 가독성과 경계 재현성을 우선한다.
 
 ## D. SourceLock 생성
 
@@ -91,16 +105,14 @@ status SOURCE_LOCKED_READY_FOR_EP01_Q1
 next EP01_Q1
 ```
 
-### 장면 번호 주의
-
-원본 marker가 중복·결번·역순이면:
+장면 번호 정책:
 
 ```text
-scene_no = 등장 순서 ordinal
-source_marker_no = 원본 값 보존
+scene_no = 원문에서 장면 경계가 나타난 순서의 1-based ordinal
+source_marker_no = 원본 표기 보존
 ```
 
-원본 marker가 없으면 재현 가능한 블록 경계 규칙을 사용한다.
+원본 marker가 없으면 재현 가능한 블록 경계 규칙을 SourceLock에 명시한다.
 
 ## E. 사용자 초기 보고
 
@@ -196,7 +208,7 @@ canonical_allowed false
 
 ## J. 세션 중단 시 handoff
 
-세션 한도·오류로 중단될 경우 다음을 허브에 남긴다.
+세션 한도·오류로 중단될 경우 허브에 다음을 남긴다.
 
 ```text
 last_locked_episode
@@ -223,8 +235,8 @@ next = read EP07 scenes 1~18
 ## K. 새 세션에 그대로 전달할 명령문
 
 ```text
-개발자 허브의 docs/drama_analysis/README.md를 시작점으로 v2 문서를 전부 읽고 적용하라.
-WORK_STATUS에서 완료 작품 5편을 제외하라.
+개발자 허브의 docs/drama_analysis/README.md와 CURRENT_AUTHORITY_SNAPSHOT_2026-07-13.md를 시작점으로 권위 문서를 전부 읽고 적용하라.
+WORK_STATUS에서 완료 작품 7편을 제외하라.
 한국드라마04의 남은 작품을 조사해 원본 안정성이 가장 높은 1편을 선정하라.
 SourceLock v2와 전·후반 계획을 만들고 EP01 Q1부터 직접독해하라.
 Python은 추출·직렬화·검증·패키징에만 사용하라.
@@ -236,7 +248,7 @@ Python은 추출·직렬화·검증·패키징에만 사용하라.
 작업 시작 전 다음 질문에 전부 “예”여야 한다.
 
 ```text
-[ ] 이미 완료한 작품을 제외했는가
+[ ] 완료 7작품을 제외했는가
 [ ] SourceLock이 있는가
 [ ] 장면 경계 정책이 재현 가능한가
 [ ] quarter 범위가 정해졌는가
