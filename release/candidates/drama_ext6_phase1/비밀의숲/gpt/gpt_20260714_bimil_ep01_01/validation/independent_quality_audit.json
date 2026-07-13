@@ -1,0 +1,30 @@
+{
+  "run_id": "gpt_20260714_bimil_ep01_01",
+  "status": "PASS_CANDIDATE_NOT_CANONICAL",
+  "counts": {
+    "entity_bridge": 23,
+    "cast_presence": 170,
+    "character_load": 23,
+    "annotated_scenes": 70,
+    "empty_scenes": 2,
+    "unresolved_scenes": 0
+  },
+  "bands": {"CAMEO": 15, "MAJOR": 2, "MINOR": 5, "DOMINANT": 1},
+  "top_characters": [
+    {"canonical_name":"황시목","present_scene_count":49,"focal_scene_count":44,"speaking_scene_count":27,"scene_share":0.6806,"focal_share":0.6111,"scene_share_band":"DOMINANT"},
+    {"canonical_name":"강진섭","present_scene_count":21,"focal_scene_count":14,"speaking_scene_count":15,"scene_share":0.2917,"focal_share":0.1944,"scene_share_band":"MAJOR"},
+    {"canonical_name":"한여진","present_scene_count":21,"focal_scene_count":17,"speaking_scene_count":16,"scene_share":0.2917,"focal_share":0.2361,"scene_share_band":"MAJOR"},
+    {"canonical_name":"김수찬","present_scene_count":8,"focal_scene_count":2,"speaking_scene_count":8,"scene_share":0.1111,"focal_share":0.0278,"scene_share_band":"MINOR"},
+    {"canonical_name":"박무성 어머니","present_scene_count":8,"focal_scene_count":3,"speaking_scene_count":4,"scene_share":0.1111,"focal_share":0.0417,"scene_share_band":"MINOR"},
+    {"canonical_name":"박무성","present_scene_count":7,"focal_scene_count":0,"speaking_scene_count":1,"scene_share":0.0972,"focal_share":0.0,"scene_share_band":"MINOR"},
+    {"canonical_name":"영은수","present_scene_count":7,"focal_scene_count":5,"speaking_scene_count":7,"scene_share":0.0972,"focal_share":0.0694,"scene_share_band":"MINOR"},
+    {"canonical_name":"서동재","present_scene_count":6,"focal_scene_count":4,"speaking_scene_count":4,"scene_share":0.0833,"focal_share":0.0556,"scene_share_band":"MINOR"}
+  ],
+  "independence": {
+    "claude_row_level_outputs_opened": false,
+    "shared_stage01_03_ssot_used": true,
+    "raw_script_used": false
+  },
+  "promotion_boundary": "Preliminary cross-provider comparison only. Canonical promotion and final kappa require raw-source grounding.",
+  "by": "gpt_5_6_thinking"
+}
