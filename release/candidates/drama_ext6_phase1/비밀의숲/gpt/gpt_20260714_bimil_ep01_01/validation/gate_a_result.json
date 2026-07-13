@@ -1,0 +1,18 @@
+{
+  "gate": "A_CONTRACT_INTEGRITY",
+  "run_id": "gpt_20260714_bimil_ep01_01",
+  "status": "PASS",
+  "errors": 0,
+  "checks": {
+    "exact_keysets": "PASS",
+    "enum_membership": "PASS",
+    "types": "PASS",
+    "grain_uniqueness": "PASS",
+    "foreign_keys": "PASS",
+    "counts_recomputed": "PASS",
+    "derived_values_recomputed": "PASS",
+    "coverage_union": "PASS"
+  },
+  "counts": {"bridge": 23, "cast": 170, "load": 23, "scenes": 72},
+  "by": "deterministic_validator"
+}
