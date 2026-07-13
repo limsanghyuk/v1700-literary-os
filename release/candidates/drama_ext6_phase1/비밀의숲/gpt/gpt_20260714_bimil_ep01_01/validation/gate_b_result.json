@@ -1,0 +1,22 @@
+{
+  "gate": "B_GROUNDING_ANTI_GAMING",
+  "run_id": "gpt_20260714_bimil_ep01_01",
+  "status": "PARTIAL_PASS_STAGE01_BASIS",
+  "errors": 0,
+  "warnings": 2,
+  "checks": {
+    "scene_card_existence": "PASS",
+    "character_key_grounding_to_bridge": "PASS",
+    "evidence_ref_nonempty": "PASS",
+    "placeholder_scan": "PASS",
+    "fixed_skeleton_scan": "PASS",
+    "raw_text_export_policy": "PASS",
+    "raw_script_direct_grounding": "DEFERRED_NOT_AVAILABLE",
+    "source_scene_alignment": "DEFERRED_NOT_AVAILABLE"
+  },
+  "warning_codes": [
+    "RAW_SCRIPT_DIRECT_READING_NOT_AVAILABLE_IN_ACTIVE_RUNTIME",
+    "SOURCE_SCENE_ALIGNMENT_NOT_AVAILABLE"
+  ],
+  "by": "deterministic_validator_plus_gpt_audit"
+}
