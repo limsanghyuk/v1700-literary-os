@@ -1,0 +1,18 @@
+{
+  "work_id": "비밀의숲",
+  "episode_no": 1,
+  "source_archive_name": "비밀의숲(1).zip",
+  "source_archive_sha256": "1646fa60fe286522ec7d3662d515fd632a0626d599863b3de9fccd2e3382b16a",
+  "source_member": "비밀의 숲/비밀의 숲 대본 1회.hwp",
+  "source_hwp_sha256": "03fb4195cf080a794320e4e3735eac645b748fab5bcfbddd07b004286550c9f2",
+  "extracted_text_sha256": "d97f2447220288a242da49f62608bbdb8e3fc2de421ffa00fad82e657dbaaee6",
+  "extracted_text_line_count": 1347,
+  "physical_heading_count": 76,
+  "logical_scene_count": 72,
+  "alignment_merges": {
+    "scene_7": [7, 8, 9],
+    "scene_56": [58, 59, 60]
+  },
+  "raw_source_in_deliverable": false,
+  "by": "gpt_5_6_thinking_rawsource"
+}
