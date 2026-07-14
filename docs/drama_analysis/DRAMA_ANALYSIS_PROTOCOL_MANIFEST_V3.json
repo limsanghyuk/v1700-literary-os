@@ -1,7 +1,7 @@
 {
   "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V3",
   "status": "AUTHORITATIVE_CANDIDATE",
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "authority_index": "docs/drama_analysis/DRAMA_ANALYSIS_AUTHORITY_INDEX_V3.md",
   "documents": [
     {
@@ -10,13 +10,13 @@
       "status": "AUTHORITATIVE"
     },
     {
-      "path": "docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md",
-      "role": "direct_reading_method_and_depth",
+      "path": "docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md",
+      "role": "current_execution_database_and_ext6_policy",
       "status": "AUTHORITATIVE_CANDIDATE"
     },
     {
-      "path": "docs/drama_analysis/DRAMA_STAGE_EXT6_CONTRACT_MATRIX_V3.md",
-      "role": "stage_ext6_integration_contract",
+      "path": "docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md",
+      "role": "direct_reading_method_and_depth",
       "status": "AUTHORITATIVE_CANDIDATE"
     },
     {
@@ -35,32 +35,49 @@
       "status": "AUTHORITATIVE_CANDIDATE"
     },
     {
-      "path": "docs/drama_analysis/DRAMA_DUAL_PROVIDER_COMPARISON_PROTOCOL_V1.md",
-      "role": "gpt_claude_blind_comparison",
-      "status": "AUTHORITATIVE_CANDIDATE"
+      "path": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md",
+      "role": "ext6_deferred_optional_sidecar",
+      "status": "DEFERRED_OPTIONAL_EXPERIMENT"
     },
     {
-      "path": "docs/drama_analysis/RETURNED_ILJIMAE_EP20_24_EXECUTION_PLAN_V1.md",
-      "role": "current_work_execution_plan",
-      "status": "IN_PROGRESS_EP20_LOCKED_NEXT_EP21"
+      "path": "docs/drama_analysis/DRAMA_STAGE_EXT6_CONTRACT_MATRIX_V3.md",
+      "role": "preserved_ext6_contract_if_reactivated",
+      "status": "PRESERVED_EXPERIMENTAL"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json",
+      "role": "current_database_status_and_remaining_work",
+      "status": "INTEGRATED_VALIDATED_PROGRESS"
+    },
+    {
+      "path": "docs/sessions/2026-07-15_drama_database_integration_and_stage04_upgrade/README.md",
+      "role": "current_session_work_artifacts_and_handoff",
+      "status": "COMPLETE_HANDOFF"
     }
   ],
   "mandatory_principles": {
     "direct_reading": true,
     "episode_quarters": 4,
     "safe_execution_scope_episodes": 1,
+    "developer_delivery_block_episodes": 8,
     "python_semantic_generation": false,
-    "raw_script_exported": false,
-    "stage04_after_full_series": true,
+    "stage04_after_full_stage01_03_validation": true,
+    "cross_work_quality_comparison_required": false,
     "ext6_sidecar_only": true,
+    "ext6_default_enabled": false,
+    "raw_source_hub_commit": false,
     "canonical_requires_user_approval": true
   },
-  "current_work": {
-    "work_id": "돌아온일지매",
-    "completed_episode_span": [1, 20],
-    "next_episode": 21,
-    "stage04": "DEFERRED",
-    "execution_status": "EP20_CHECKPOINT_LOCKED",
-    "latest_checkpoint_sha256": "e3748f5590209386d88f9952eb606538f961fc82519ad28e9085ce222bc0bb1b"
-  }
+  "current_database": {
+    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_v1.zip",
+    "sha256": "fbcff3f8d184d4d36a4364fe8caca14b3591ae0c8b64b07ebccfaf2564b3ad6c",
+    "works": 49,
+    "episodes": 938,
+    "scene_cards": 58945,
+    "stage01_04_complete": 34,
+    "stage04_upgrade_remaining": 15,
+    "remaining_episodes": 364,
+    "remaining_scene_cards": 23090
+  },
+  "next": "SELECT_ONE_REMAINING_WORK_AND_UPGRADE_STAGE03_PLUS_STAGE04"
 }
