@@ -1,45 +1,48 @@
 # 돌아온 일지매 EP20~EP24 실행 계획 v1
 
 - Document ID: `RETURNED-ILJIMAE-EP20-24-EXECUTION-PLAN-V1`
-- Status: `READY_TO_EXECUTE`
+- Status: `IN_PROGRESS_EP20_LOCKED_NEXT_EP21`
 - Work: `돌아온일지매`
 
 ## 1. 현재 잠금 상태
 
 ```text
-완료·검증 범위: EP01~EP19
-다음 재진입: EP20 Q1
-EP20 대화상 독해 보고: 존재
-EP20 영속 파일/QuarterAudit/checkpoint: 없음
-판정: INTERRUPTED_BEFORE_PERSISTENCE
+완료·검증 범위: EP01~EP20
+최신 체크포인트: EP20_CHECKPOINT_LOCKED
+다음 재진입: EP21 Q1
+Gate errors: 0
+SourceLock next: EP21
 Stage04: DEFERRED
 ```
 
-EP01~EP19 개발자 핸드오프는 결정론적 계약 교정 36건 반영 후 `PASS_CANDIDATE_EP01_19_AFTER_DETERMINISTIC_CONTRACT_REPAIR` 상태다.
+EP20은 과거 `INTERRUPTED_BEFORE_PERSISTENCE` 상태에서 원본 Q1부터 다시 직접독해했다. 대화상 요약을 승계하지 않고 Stage01~03·EXT6·QuarterAudit·강한 게이트·ZIP 체크포인트를 새로 생성했다.
 
-누적 규모:
+EP20 결과:
 
 ```text
-SceneCard 1,065
-SequenceBlueprint 138
-EpisodeArc 19
-CharacterArc 138
-RelationshipArc 115
-LocalEdge 194
-PayoffCandidate 161
-EntityBridge 342
-CastPresence 3,876
-CharacterLoad 729
-SourceSceneAlignment 1,065
-QuarterAudit 76
+SceneCard 56
+SequenceBlueprint 8
+EpisodeArc 1
+CharacterArc 8
+RelationshipArc 9
+LocalEdge 15
+PayoffCandidate 10
+CastPresence 188
+CharacterLoad 31
+SourceSceneAlignment 56
+QuarterAudit 4
+EntityBridge 누적 348
+checkpoint SHA256 e3748f5590209386d88f9952eb606538f961fc82519ad28e9085ce222bc0bb1b
 ```
+
+EP01~EP19 개발자 핸드오프는 결정론적 계약 교정 36건 반영 후 `PASS_CANDIDATE_EP01_19_AFTER_DETERMINISTIC_CONTRACT_REPAIR` 상태다.
 
 ## 2. 실행 분할
 
 세션 한도 재발 방지를 위해 한 실행에서 한 회차만 완료한다.
 
 ```text
-Run A: EP20 Q1→Q4 → Stage01~03/EXT6 → 강한 게이트 → checkpoint
+Run A: EP20 — COMPLETE / CHECKPOINT LOCKED
 Run B: EP21 Q1→Q4 → Stage01~03/EXT6 → 강한 게이트 → checkpoint
 Run C: EP22 Q1→Q4 → Stage01~03/EXT6 → 강한 게이트 → checkpoint
 Run D: EP23 Q1→Q4 → Stage01~03/EXT6 → 강한 게이트 → checkpoint
@@ -105,7 +108,7 @@ Run F에서:
 
 ## 7. 진행 보고 규칙
 
-회차가 대화상으로 이해되었더라도 checkpoint가 없으면 완료라고 보고하지 않는다. 다음 형식만 사용한다.
+회차가 대화상으로 이해되었더라도 checkpoint가 없으면 완료라고 보고하지 않는다.
 
 ```text
 EPxx_CHECKPOINT_LOCKED
