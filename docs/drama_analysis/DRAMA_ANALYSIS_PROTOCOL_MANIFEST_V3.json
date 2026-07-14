@@ -1,0 +1,65 @@
+{
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V3",
+  "status": "AUTHORITATIVE_CANDIDATE",
+  "date": "2026-07-14",
+  "authority_index": "docs/drama_analysis/DRAMA_ANALYSIS_AUTHORITY_INDEX_V3.md",
+  "documents": [
+    {
+      "path": "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+      "role": "stage01_04_exact_schema",
+      "status": "AUTHORITATIVE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md",
+      "role": "direct_reading_method_and_depth",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_STAGE_EXT6_CONTRACT_MATRIX_V3.md",
+      "role": "stage_ext6_integration_contract",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md",
+      "role": "strong_validation_and_release",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md",
+      "role": "lineage_package_handoff",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_SESSION_EXECUTION_SAFETY_V1.md",
+      "role": "session_limit_and_persistence_safety",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_DUAL_PROVIDER_COMPARISON_PROTOCOL_V1.md",
+      "role": "gpt_claude_blind_comparison",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/RETURNED_ILJIMAE_EP20_24_EXECUTION_PLAN_V1.md",
+      "role": "current_work_execution_plan",
+      "status": "READY_TO_EXECUTE"
+    }
+  ],
+  "mandatory_principles": {
+    "direct_reading": true,
+    "episode_quarters": 4,
+    "safe_execution_scope_episodes": 1,
+    "python_semantic_generation": false,
+    "raw_script_exported": false,
+    "stage04_after_full_series": true,
+    "ext6_sidecar_only": true,
+    "canonical_requires_user_approval": true
+  },
+  "current_work": {
+    "work_id": "돌아온일지매",
+    "completed_episodes": [1, 19],
+    "next_episode": 20,
+    "stage04": "DEFERRED",
+    "interruption_status": "INTERRUPTED_BEFORE_PERSISTENCE"
+  }
+}
