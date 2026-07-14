@@ -1,0 +1,27 @@
+{
+  "run_id": "gpt_20260714_bimil_ep01_rawsource_02",
+  "canonical_files": {
+    "authored_cast/비밀의숲_01.cast.jsonl": {
+      "row_count": 197,
+      "sha256": "0c24994cd1ae8325db8e78862936e0d7185ed44ca8d76978abf2e7d77eb13e5e",
+      "shards_in_order": [
+        "authored_cast/shards/비밀의숲_01.cast.part01.jsonl",
+        "authored_cast/shards/비밀의숲_01.cast.part02.jsonl",
+        "authored_cast/shards/비밀의숲_01.cast.part03.jsonl",
+        "authored_cast/shards/비밀의숲_01.cast.part04.jsonl"
+      ]
+    },
+    "source_alignment/비밀의숲_01.source_scene_alignment.jsonl": {
+      "row_count": 72,
+      "sha256": "21f563c5f28dfa8bf6490e858d3b3cde814adf4bfb8e6a863fecf90ca50697d0",
+      "shards_in_order": [
+        "source_alignment/shards/비밀의숲_01.source_scene_alignment.part01.jsonl",
+        "source_alignment/shards/비밀의숲_01.source_scene_alignment.part02.jsonl",
+        "source_alignment/shards/비밀의숲_01.source_scene_alignment.part03.jsonl"
+      ]
+    }
+  },
+  "reconstruction": "Concatenate shards byte-for-byte in listed order with no extra separator; each shard already ends with newline.",
+  "bridge_sha256": "231b4b9e58612b61ad273befaf5070dd0205f30395ff9b20fbcbfd7a5cf6fa3e",
+  "character_load_sha256": "425e689f2e8de40085c89a9404382dfb564356b4a9fd3048dcd05d28ae4587c7"
+}
