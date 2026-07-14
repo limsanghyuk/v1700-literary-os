@@ -42,7 +42,7 @@
     {
       "path": "docs/drama_analysis/RETURNED_ILJIMAE_EP20_24_EXECUTION_PLAN_V1.md",
       "role": "current_work_execution_plan",
-      "status": "READY_TO_EXECUTE"
+      "status": "IN_PROGRESS_EP20_LOCKED_NEXT_EP21"
     }
   ],
   "mandatory_principles": {
@@ -57,9 +57,10 @@
   },
   "current_work": {
     "work_id": "돌아온일지매",
-    "completed_episodes": [1, 19],
-    "next_episode": 20,
+    "completed_episode_span": [1, 20],
+    "next_episode": 21,
     "stage04": "DEFERRED",
-    "interruption_status": "INTERRUPTED_BEFORE_PERSISTENCE"
+    "execution_status": "EP20_CHECKPOINT_LOCKED",
+    "latest_checkpoint_sha256": "e3748f5590209386d88f9952eb606538f961fc82519ad28e9085ce222bc0bb1b"
   }
 }
