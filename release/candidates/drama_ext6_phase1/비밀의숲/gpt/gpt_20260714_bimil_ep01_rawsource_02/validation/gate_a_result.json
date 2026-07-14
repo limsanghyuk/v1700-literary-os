@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "W_MIXED_TEMPORAL_MODE_S07: 박무성은 현재 시신+과거 회상 발화를 단일 row로 축약",
+    "W_MIXED_TEMPORAL_MODE_S56: 황시목은 현재 성인+과거 아동 발화를 단일 row로 축약",
+    "W_CONTRACT_V1_ARCHIVAL_COUNT: ARCHIVAL_OR_MEMORY가 present_scene_count에 포함됨"
+  ],
+  "counts": {
+    "bridge": 30,
+    "cast": 197,
+    "load": 30,
+    "scenes": 72,
+    "annotated": 70,
+    "empty": 2,
+    "unresolved": 0
+  },
+  "checks": [
+    "exact_keyset",
+    "enum",
+    "type",
+    "grain_uniqueness",
+    "foreign_keys",
+    "coverage_union",
+    "character_load_recomputation"
+  ]
+}
