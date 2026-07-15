@@ -1,8 +1,14 @@
 {
-  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V3",
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V3_1",
   "status": "AUTHORITATIVE_CANDIDATE",
   "date": "2026-07-15",
   "authority_index": "docs/drama_analysis/DRAMA_ANALYSIS_AUTHORITY_INDEX_V3.md",
+  "minimum_new_session_load": [
+    "docs/drama_analysis/README.md",
+    "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+    "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "docs/drama_analysis/DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json"
+  ],
   "documents": [
     {
       "path": "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
@@ -12,6 +18,16 @@
     {
       "path": "docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md",
       "role": "current_execution_database_and_ext6_policy",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+      "role": "single_entry_execution_guide_for_new_conversations",
+      "status": "AUTHORITATIVE_CANDIDATE"
+    },
+    {
+      "path": "docs/drama_analysis/DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md",
+      "role": "ensemble_breadth_and_edge_anti_overgrowth_policy",
       "status": "AUTHORITATIVE_CANDIDATE"
     },
     {
@@ -40,46 +56,31 @@
       "status": "DEFERRED_OPTIONAL_EXPERIMENT"
     },
     {
-      "path": "docs/drama_analysis/DRAMA_STAGE_EXT6_CONTRACT_MATRIX_V3.md",
-      "role": "preserved_ext6_contract_if_reactivated",
-      "status": "PRESERVED_EXPERIMENTAL"
-    },
-    {
       "path": "docs/drama_analysis/DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json",
       "role": "current_database_status_and_remaining_work",
-      "status": "INTEGRATED_VALIDATED_PROGRESS"
+      "status": "INTEGRATED_VALIDATED_PROGRESS_43_OF_49"
     },
     {
-      "path": "docs/sessions/2026-07-15_drama_database_integration_and_stage04_upgrade/README.md",
-      "role": "current_session_work_artifacts_and_handoff",
+      "path": "docs/sessions/2026-07-15_drama_new_session_execution_and_sign_upgrade/README.md",
+      "role": "current_session_method_and_artifact_handoff",
       "status": "COMPLETE_HANDOFF"
     }
   ],
   "evidence_results": [
     {
       "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_COMPARISON_2026-07-15.md",
-      "role": "killme_vs_stove_human_readable_quality_comparison",
-      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
+      "role": "evidence_for_ensemble_strength_and_contract_failures",
+      "status": "EVIDENCE_BACKED_COMPARISON"
     },
     {
       "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_METRICS_2026-07-15.json",
-      "role": "killme_vs_stove_aggregate_quality_metrics",
+      "role": "aggregate_quality_metrics",
       "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
     },
     {
       "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_GATE_RESULT_2026-07-15.json",
-      "role": "killme_vs_stove_quality_gate_decision",
+      "role": "quality_gate_decision",
       "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
-    },
-    {
-      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_EVIDENCE_MANIFEST_2026-07-15.json",
-      "role": "input_integrity_method_and_artifact_manifest",
-      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
-    },
-    {
-      "path": "docs/sessions/2026-07-15_killme_vs_stove_quality_comparison/README.md",
-      "role": "chatgpt_design_handoff",
-      "status": "COMPLETE_HANDOFF"
     }
   ],
   "mandatory_principles": {
@@ -89,22 +90,55 @@
     "developer_delivery_block_episodes": 8,
     "python_semantic_generation": false,
     "stage04_after_full_stage01_03_validation": true,
-    "cross_work_quality_comparison_required": false,
-    "ext6_sidecar_only": true,
+    "ensemble_character_relationship_breadth_adopted": true,
+    "fixed_arc_quota": false,
+    "cross_episode_local_edge_allowed": false,
+    "automatic_adjacent_scene_edge_generation": false,
+    "local_edge_overgrowth_audit_ratio": 0.1,
+    "adjacent_local_edge_audit_ratio": 0.5,
+    "payoff_candidate_disposition_required": 1.0,
+    "automatic_episode_boundary_bridge_allowed": false,
     "ext6_default_enabled": false,
     "raw_source_hub_commit": false,
     "canonical_requires_user_approval": true
   },
   "current_database": {
-    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_v1.zip",
-    "sha256": "fbcff3f8d184d4d36a4364fe8caca14b3591ae0c8b64b07ebccfaf2564b3ad6c",
+    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_v1.zip",
+    "sha256": "2c1059eeecec38961f8e15ba68240bf4217b3996cf9318d5e29795b7a44932a6",
     "works": 49,
     "episodes": 938,
     "scene_cards": 58945,
-    "stage01_04_complete": 34,
-    "stage04_upgrade_remaining": 15,
-    "remaining_episodes": 364,
-    "remaining_scene_cards": 23090
+    "stage01_04_complete": 43,
+    "stage04_upgrade_remaining": 6
   },
-  "next": "SELECT_ONE_REMAINING_WORK_AND_UPGRADE_STAGE03_PLUS_STAGE04"
+  "canonical_promotion": {
+    "approval_basis": "USER_APPROVED_AFTER_HUB_AUTHORITY_LOAD",
+    "approval_date": "2026-07-15",
+    "count": 13,
+    "works": [
+      "W",
+      "경성스캔들",
+      "미안하다사랑한다",
+      "밀회",
+      "더킹투하츠",
+      "뉴하트",
+      "킬미힐미",
+      "하얀거탑",
+      "마왕",
+      "스카이캐슬",
+      "궁",
+      "카인과아벨",
+      "싸인"
+    ],
+    "ext6_in_scope": false
+  },
+  "remaining_work_ids": [
+    "공주의남자",
+    "녹두꽃",
+    "모래시계",
+    "역전의여왕",
+    "최강칠우",
+    "대장금"
+  ],
+  "next": "READ_MINIMUM_NEW_SESSION_LOAD_AND_SELECT_ONE_ELIGIBLE_WORK"
 }
