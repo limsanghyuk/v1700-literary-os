@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_15_V2",
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_15_V3",
   "status": "INTEGRATED_VALIDATED_PROGRESS",
   "date": "2026-07-15",
   "timezone": "Asia/Seoul",
@@ -12,40 +12,43 @@
     "ext6_policy": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md"
   },
   "database": {
-    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_v1.zip",
-    "sha256": "2c1059eeecec38961f8e15ba68240bf4217b3996cf9318d5e29795b7a44932a6",
+    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_sandglass_v1.zip",
+    "sha256": "f79e1962348216197ccf9687a5881c99621f42ad0693ccfc6ad580aba69c521e",
     "works": 49,
     "episodes": 938,
     "scene_cards": 58945,
-    "stage01_04_complete": 43,
-    "stage04_upgrade_remaining": 6
+    "stage01_04_complete": 44,
+    "stage04_upgrade_remaining": 5
   },
   "latest_completed_work": {
-    "work_id": "싸인",
+    "work_id": "모래시계",
     "status": "CANONICAL_STAGE01_04",
-    "artifact": "싸인_stage01_04_upgraded_full_series_v1.zip",
-    "sha256": "b62649d0e0f48d0a75ba2269ca97c82cff8358386ed63124f3eb39d9c3b85a79",
+    "artifact": "모래시계_stage01_04_upgraded_full_series_v1.zip",
+    "sha256": "1a27669d051f8cbd2c54dd222178ae9db35229912ea091a8493fa8487091a2ca",
     "counts": {
-      "SceneCard": 1358,
-      "EpisodeMeta": 20,
-      "SequenceBlueprint": 235,
-      "EpisodeArc": 20,
-      "CharacterArc": 100,
-      "RelationshipArc": 80,
-      "LocalEdge": 60,
-      "PayoffCandidate": 40,
-      "CrossEpisodeEdge": 36,
-      "CandidateDisposition": 40,
+      "SceneCard": 1365,
+      "EpisodeMeta": 24,
+      "SequenceBlueprint": 217,
+      "EpisodeArc": 24,
+      "CharacterArc": 118,
+      "RelationshipArc": 94,
+      "LocalEdge": 48,
+      "PayoffCandidate": 24,
+      "CrossEpisodeEdge": 23,
+      "CandidateDisposition": 24,
       "FullSeriesArc": 1
     },
     "ensemble_method_adopted": true,
+    "local_edge_selective": true,
+    "candidate_disposition_complete": true,
+    "auto_boundary_bridges": 0,
     "errors": 0,
     "warnings": 0
   },
   "canonical_promotion": {
     "approval_basis": "USER_APPROVED_AFTER_HUB_AUTHORITY_LOAD",
     "approval_date": "2026-07-15",
-    "count": 13,
+    "count": 14,
     "works": [
       "W",
       "경성스캔들",
@@ -59,7 +62,8 @@
       "스카이캐슬",
       "궁",
       "카인과아벨",
-      "싸인"
+      "싸인",
+      "모래시계"
     ],
     "ext6_in_scope": false
   },
@@ -83,6 +87,7 @@
     "돌아온일지매",
     "드림",
     "마왕",
+    "모래시계",
     "미생",
     "미안하다사랑한다",
     "밀회",
@@ -121,14 +126,6 @@
       "work_id": "녹두꽃",
       "episodes": 24,
       "scene_cards": 1636,
-      "status": "STAGE04_UPGRADE_REQUIRED",
-      "source_status": "ORIGINALS_AVAILABLE",
-      "priority_group": "ELIGIBLE_NORMAL"
-    },
-    {
-      "work_id": "모래시계",
-      "episodes": 24,
-      "scene_cards": 1365,
       "status": "STAGE04_UPGRADE_REQUIRED",
       "source_status": "ORIGINALS_AVAILABLE",
       "priority_group": "ELIGIBLE_NORMAL"
@@ -188,7 +185,6 @@
   "recommended_next_order": [
     "공주의남자",
     "녹두꽃",
-    "모래시계",
     "역전의여왕",
     "최강칠우_SOURCE_RECOVERY",
     "대장금_LAST"
