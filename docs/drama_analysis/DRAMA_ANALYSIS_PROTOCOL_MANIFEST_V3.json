@@ -55,6 +55,33 @@
       "status": "COMPLETE_HANDOFF"
     }
   ],
+  "evidence_results": [
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_COMPARISON_2026-07-15.md",
+      "role": "killme_vs_stove_human_readable_quality_comparison",
+      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
+    },
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_METRICS_2026-07-15.json",
+      "role": "killme_vs_stove_aggregate_quality_metrics",
+      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
+    },
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_GATE_RESULT_2026-07-15.json",
+      "role": "killme_vs_stove_quality_gate_decision",
+      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
+    },
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_EVIDENCE_MANIFEST_2026-07-15.json",
+      "role": "input_integrity_method_and_artifact_manifest",
+      "status": "LOCAL_VERIFIED_EVIDENCE_HANDOFF"
+    },
+    {
+      "path": "docs/sessions/2026-07-15_killme_vs_stove_quality_comparison/README.md",
+      "role": "chatgpt_design_handoff",
+      "status": "COMPLETE_HANDOFF"
+    }
+  ],
   "mandatory_principles": {
     "direct_reading": true,
     "episode_quarters": 4,

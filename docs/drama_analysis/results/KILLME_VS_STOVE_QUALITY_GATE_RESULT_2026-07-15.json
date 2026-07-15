@@ -1,0 +1,94 @@
+{
+  "schema": "SEQCARD_CROSS_WORK_QUALITY_GATE_RESULT_V1",
+  "date": "2026-07-15",
+  "comparison_id": "killme_vs_stove_20260715",
+  "authority": [
+    "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md",
+    "docs/drama_analysis/DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md",
+    "docs/drama_analysis/DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md"
+  ],
+  "verdict": {
+    "preferred_work": "킬미힐미",
+    "reason": "current_contract_compliance_stage04_disposition_and_reproducible_evidence",
+    "킬미힐미": {
+      "classification": "PREFERRED_CURRENT_REFERENCE",
+      "gate_status": "PASS_CANDIDATE_SUPPORTED_BY_PACKAGE_EVIDENCE",
+      "canonical": false,
+      "blocking_errors": 0,
+      "promotion_claim": false
+    },
+    "스토브리그": {
+      "classification": "SEMANTICALLY_USEFUL_REWORK_REQUIRED",
+      "gate_status": "BLOCKED_CURRENT_CONTRACT",
+      "canonical": false,
+      "promotion_claim": false,
+      "blocking_findings": [
+        {
+          "code": "LOCAL_EDGE_CROSS_EPISODE_BRIDGE",
+          "count": 16
+        },
+        {
+          "code": "EPISODE_QUALIFIED_WORK_ID_MISMATCH",
+          "count": 964
+        },
+        {
+          "code": "PAYOFF_CANDIDATE_WITHOUT_DISPOSITION",
+          "count": 83
+        },
+        {
+          "code": "SOURCE_LOCK_V2_MISSING",
+          "count": 1
+        },
+        {
+          "code": "WORK_LEVEL_STRONG_VALIDATION_MISSING",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "shared_passes": {
+    "stage01_02_files_complete": true,
+    "sequence_scene_coverage_errors": 0,
+    "sequence_partition_overlap_errors": 0,
+    "sequence_density_within_0_12_0_17": true,
+    "duplicate_ids": 0,
+    "invalid_cross_episode_edge_references": 0,
+    "full_series_arc_17_keys_filled": true,
+    "placeholder_values": 0
+  },
+  "comparative_strengths": {
+    "킬미힐미": [
+      "stage01_functional_depth",
+      "episode_qualified_stage03_ids",
+      "curated_local_causality",
+      "100_percent_candidate_disposition",
+      "source_lock_and_validation_lineage"
+    ],
+    "스토브리그": [
+      "ensemble_character_breadth",
+      "relationship_pair_breadth",
+      "concise_stage01_02_descriptions",
+      "valid_existing_cross_episode_references"
+    ]
+  },
+  "스토브리그_required_remediation": [
+    "create_source_lock_v2_for_16_episodes",
+    "normalize_964_stage03_work_ids",
+    "remove_or_reclassify_16_cross_episode_bridges_from_local_edge_files",
+    "audit_710_local_edges_for_adjacent_sequence_gaming",
+    "disposition_all_83_payoff_candidates",
+    "rebuild_cross_episode_edges_and_full_series_arc_if_needed",
+    "run_current_strong_and_anti_gaming_gates_to_errors_0",
+    "record_lineage_and_supersession"
+  ],
+  "data_safety": {
+    "raw_script_exported": false,
+    "raw_dialogue_exported": false,
+    "raw_authored_rows_exported": false,
+    "raw_vectors_exported": false,
+    "api_keys_exported": false,
+    "provider_call_count": 0,
+    "runtime_generation": false
+  }
+}
