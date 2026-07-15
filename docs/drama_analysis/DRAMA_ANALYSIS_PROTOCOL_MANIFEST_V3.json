@@ -31,6 +31,11 @@
       "status": "AUTHORITATIVE_CANDIDATE"
     },
     {
+      "path": "docs/drama_analysis/DRAMA_METHOD_ADOPTION_DECISION_2026-07-15.json",
+      "role": "machine_readable_ensemble_method_adoption_decision",
+      "status": "ADOPTED_FOR_NEW_ANALYSIS"
+    },
+    {
       "path": "docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md",
       "role": "direct_reading_method_and_depth",
       "status": "AUTHORITATIVE_CANDIDATE"
