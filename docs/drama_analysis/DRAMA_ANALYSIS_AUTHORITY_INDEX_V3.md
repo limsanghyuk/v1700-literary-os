@@ -2,13 +2,13 @@
 
 - Document ID: `DRAMA-ANALYSIS-AUTHORITY-INDEX-V3`
 - Status: `AUTHORITATIVE_CANDIDATE`
-- Version: `3.3`
+- Version: `3.4`
 - Date: 2026-07-16
-- Scope: 원본 직접독해, Stage01~04, 앙상블 추적, 블록 실행, 데이터베이스 편입, 검증·계보·세션 안전
+- Scope: 원본 직접독해, Stage01~04, 앙상블 추적, 블록 실행, 데이터베이스 편입, 문자열·경로 검증, 계보·세션 안전
 
 ## 1. 목적
 
-분산된 exact schema, 직접독해, 장편 블록 실행, 검증, 계보, 원본 저장, 세션 안전과 최신 작품 상태를 연결한다. 새 대화창은 과거 대화를 전수 조사하지 않고 최소 권위 문서만 읽고 분석을 재개할 수 있어야 한다.
+분산된 exact schema, 직접독해, 장편 블록 실행, 검증, 계보, 원본 저장, 문자열 인코딩, 세션 안전과 최신 작품 상태를 연결한다. 새 대화창은 과거 대화를 전수 조사하지 않고 최소 권위 문서만 읽고 분석을 재개할 수 있어야 한다.
 
 ## 2. 새 대화창 최소 로드
 
@@ -71,6 +71,8 @@ source inventory
 - 자동 회차 경계 브리지 0
 - 사후 일괄 QuarterAudit 금지
 - 사용자 승인 전 CANONICAL 금지
+- ZIP 한글 경로는 UTF-8 flag 필수
+- 정본 텍스트는 UTF-8, U+FFFD 0을 릴리스 게이트로 적용
 
 ## 6. 데이터베이스 디렉터리 권위
 
@@ -78,6 +80,7 @@ source inventory
 seqcard_ko/                              의미 데이터·규격 문서
 seqcard_ko/original_extracted/{work}/   회차별 UTF-8 TXT
 seqcard_ko/source_lock/                  단일 SourceLock 루트
+seqcard_ko/AUTHORED_WORK_INDEX_V7.json  51작품 분석 계층 전수 인덱스
 tools/                                   실행 검증기
 validation/                              검증 결과·휴대형 검증기
 upgrade_audit/                           감사·이전 판본·lineage
@@ -89,13 +92,14 @@ provenance/                              원본 입수·변환 이력
 ## 7. 현재 데이터베이스
 
 ```text
-artifact: seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip
-SHA256: 678ce8313357319000b30109cd961aaa6309cee5d0f1221bcdb47f7769bf198a
+artifact: seqcard_ko_developer_release_51works_50complete_utf8_repaired_v7.zip
+SHA256: 8a27d901d7122a1d9aebcadde459864adffd56c31553931327652744662e851f
 works: 51
 episodes: 970
 SceneCard: 60,875
+authored files: 1,994
+analysis-layer files: 7,790
 Stage01~04 complete: 50
-remaining: 1
 remaining: 최강칠우 / SOURCE_HOLD_EXPERIMENTAL
 canonical promoted works: 14
 ```
@@ -103,9 +107,16 @@ canonical promoted works: 14
 ```text
 ZIP CRC PASS
 fresh extraction PASS
-portable validator PASS
+SHA256 ledger 9,742 / mismatch 0
+filename mojibake 0
+invalid UTF-8 0
+U+FFFD files 0
+JSON/JSONL parse errors 0
+analysis files missing versus V6 0
 errors 0 / warnings 0
 ```
+
+V6은 한글 ZIP 경로 인코딩 결함으로 superseded 처리한다. 분석 파일은 삭제되지 않았으며 V4→V5/V6에서 제거된 11개는 비정본 build·dump·temporary·cache 파일이다.
 
 대용량 DB ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 artifact name, SHA256, count, validation, lineage, handoff만 기록한다.
 
@@ -128,6 +139,7 @@ errors 0 / warnings 0
 
 ```text
 docs/sessions/2026-07-16-drama-db-clean-tree-wolf-arc13/README.md
+docs/sessions/2026-07-16-drama-db-v7-utf8-repair/README.md
 ```
 
 ## 9. 권위 상태
@@ -139,7 +151,8 @@ DIRECT_READING_BLOCK_SUPPLEMENT: AUTHORITATIVE_CANDIDATE
 ENSEMBLE_EDGE_POLICY: AUTHORITATIVE_CANDIDATE
 VALIDATION_GATES: AUTHORITATIVE_CANDIDATE
 DATABASE_DIRECTORY_STANDARD: AUTHORITATIVE_CANDIDATE
+UTF8_PATH_AND_TEXT_GATE: AUTHORITATIVE_CANDIDATE
 EXT6_HXT6_DEFAULT: DEFERRED_DISABLED_PRESERVED
-DATABASE_STATUS: INTEGRATED_VALIDATED_50_OF_51
+DATABASE_STATUS: INTEGRATED_VALIDATED_50_OF_51_V7
 CANONICAL_PROMOTION: USER_APPROVED_14_WORKS_UNCHANGED
 ```
