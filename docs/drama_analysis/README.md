@@ -1,7 +1,7 @@
 # 드라마 분석 권위 인덱스
 
 Document status: **AUTHORITATIVE ENTRYPOINT / V3 CANDIDATE BRANCH**  
-Version: 3.3-candidate  
+Version: 3.4-candidate  
 Updated: 2026-07-16 (Asia/Seoul)
 
 이 디렉터리는 한국 드라마 원본을 직접 읽어 Stage01~04 분석 산출물을 만들고, 검증된 결과를 `seqcard_ko` 데이터베이스에 편입하는 권위 문서군의 단일 진입점이다.
@@ -70,6 +70,7 @@ original_extracted/{작품명}/ 원본 TXT 저장
 seqcard_ko/                              의미 데이터·규격 문서
 seqcard_ko/original_extracted/{작품명}/ 작품별 UTF-8 TXT
 seqcard_ko/source_lock/                  단일 SourceLock 루트
+seqcard_ko/AUTHORED_WORK_INDEX_V7.json  51작품 분석 계층 전수 인덱스
 tools/                                   실행 검증기
 validation/                              검증 결과·휴대형 검증기
 upgrade_audit/                           감사·이전 판본·lineage
@@ -81,15 +82,15 @@ provenance/                              입수 원본·변환 이력
 ## 6. 현재 데이터베이스 상태
 
 ```text
-artifact: seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip
-SHA256: 678ce8313357319000b30109cd961aaa6309cee5d0f1221bcdb47f7769bf198a
+artifact: seqcard_ko_developer_release_51works_50complete_utf8_repaired_v7.zip
+SHA256: 8a27d901d7122a1d9aebcadde459864adffd56c31553931327652744662e851f
 works: 51
 episodes: 970
 SceneCard: 60,875
+authored files: 1,994
+analysis-layer files: 7,790
 Stage01~04 complete: 50
-remaining: 1
-remaining work: 최강칠우
-remaining status: SOURCE_HOLD_EXPERIMENTAL
+remaining: 최강칠우 / SOURCE_HOLD_EXPERIMENTAL
 CANONICAL promoted: 14
 ```
 
@@ -98,10 +99,16 @@ CANONICAL promoted: 14
 ```text
 ZIP CRC PASS
 fresh extraction PASS
-SHA256 ledger 9,738 / mismatch 0
-portable validator PASS
+SHA256 ledger 9,742 / mismatch 0
+filename mojibake 0
+invalid UTF-8 text 0
+U+FFFD files 0
+JSON/JSONL parse errors 0
+analysis files missing versus V6 0
 errors 0 / warnings 0
 ```
+
+V6은 한글 ZIP 경로 인코딩 결함으로 폐기한다. 분석 파일 삭제는 없었으며, V4→V5/V6에서 제거된 11개는 build script·dump·temporary validator·cache뿐이다.
 
 대용량 ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 파일명·SHA·count·validation·lineage·handoff만 기록한다.
 
@@ -123,6 +130,7 @@ errors 0 / warnings 0
 
 ```text
 docs/sessions/2026-07-16-drama-db-clean-tree-wolf-arc13/README.md
+docs/sessions/2026-07-16-drama-db-v7-utf8-repair/README.md
 ```
 
 ## 8. CANONICAL 승격 상태
@@ -135,7 +143,7 @@ W, 경성스캔들, 미안하다사랑한다, 밀회,
 마왕, 스카이캐슬, 궁, 카인과아벨, 싸인, 모래시계
 ```
 
-이번 DB 정리와 개와늑대의시간 ARC13 보강은 `PASS_CANDIDATE`이며 CANONICAL 승격을 수행하지 않았다.
+이번 DB 정리·개와늑대의시간 ARC13 보강·V7 문자열 복구는 `PASS_CANDIDATE`이며 CANONICAL 승격을 수행하지 않았다.
 
 ## 9. EXT6/HXT6
 
@@ -155,5 +163,6 @@ EXT6/HXT6은 `DEFERRED_OPTIONAL_SIDECAR`다.
 전체 DB ZIP SHA256
 완료작·잔여작 수
 SourceLock·원본 폴더 상태
+문자열·파일명 UTF-8 상태
 CANONICAL 승격 여부
 ```
