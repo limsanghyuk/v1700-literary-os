@@ -1,0 +1,71 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_16_V6",
+  "status": "INTEGRATED_VALIDATED_DEVELOPER_RELEASE",
+  "date": "2026-07-16",
+  "timezone": "Asia/Seoul",
+  "authority": {
+    "entrypoint": "docs/drama_analysis/README.md",
+    "new_session_guide": "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+    "exact_schema": "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "direct_reading_block_supplement": "docs/drama_analysis/DRAMA_DIRECT_READING_AND_BLOCK_EXECUTION_SUPPLEMENT_V3.md",
+    "ext6_policy": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md"
+  },
+  "database": {
+    "artifact": "seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip",
+    "sha256": "678ce8313357319000b30109cd961aaa6309cee5d0f1221bcdb47f7769bf198a",
+    "size_bytes": 48829456,
+    "zip_entries": 9842,
+    "works": 51,
+    "episodes": 970,
+    "scene_cards": 60875,
+    "stage01_04_complete": 50,
+    "remaining": 1,
+    "zip_crc": "PASS",
+    "fresh_extraction": "PASS",
+    "portable_validator": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "directory_structure": {
+    "status": "PASS_DEVELOPER_CLEAN_TREE_V6",
+    "core_data_root": "seqcard_ko",
+    "validators": ["tools", "validation"],
+    "original_scripts": "seqcard_ko/original_extracted/{work_id}",
+    "source_lock_root": "seqcard_ko/source_lock",
+    "audit_history": "upgrade_audit",
+    "provenance": "provenance",
+    "core_python_files": 0,
+    "original_extracted_root_txt": 0,
+    "original_work_folders": 51,
+    "source_lock_roots": 1,
+    "quarantine_in_core": false,
+    "ext6_hxt6_preserved": true
+  },
+  "wolf_time_episodearc_migration": {
+    "work_id": "개와늑대의시간",
+    "status": "PASS_CANDIDATE_ARC13_MIGRATION",
+    "episodes": 16,
+    "scenes": 880,
+    "sequences": 143,
+    "episode_arc_files": 16,
+    "exact_arc13": true,
+    "legacy_numeric_remaining_in_canonical": 0,
+    "legacy_numeric_preserved_for_lineage": 16,
+    "source_files": 16,
+    "source_lock": "seqcard_ko/source_lock/개와늑대의시간_SOURCE_LOCK_V3.json",
+    "python_semantic_generation": false,
+    "errors": 0,
+    "warnings": 0
+  },
+  "source_hold": {
+    "work_id": "최강칠우",
+    "status": "SOURCE_HOLD_EXPERIMENTAL",
+    "reason": "EP03 verified original script remains unavailable"
+  },
+  "canonical_promotion": {
+    "count": 14,
+    "changed_in_this_release": false,
+    "requires_explicit_user_approval": true
+  },
+  "large_artifact_policy": "The database ZIP and raw scripts are not committed to the hub; the hub stores artifact name, SHA256, counts, validation, lineage, and handoff only."
+}
