@@ -2,13 +2,13 @@
 
 - Document ID: `DRAMA-ANALYSIS-AUTHORITY-INDEX-V3`
 - Status: `AUTHORITATIVE_CANDIDATE`
-- Version: `3.2`
-- Date: 2026-07-15
-- Scope: 원본 직접독해, Stage01~04, 앙상블 추적, 데이터베이스 편입, 검증·계보·세션 안전
+- Version: `3.3`
+- Date: 2026-07-16
+- Scope: 원본 직접독해, Stage01~04, 앙상블 추적, 블록 실행, 데이터베이스 편입, 검증·계보·세션 안전
 
 ## 1. 목적
 
-분산된 exact schema, 직접독해, 검증, 계보, 세션 안전, 작품 상태를 연결하고 새 대화창이 과거 대화 전체를 읽지 않고 즉시 분석을 실행하도록 권위와 최소 로드 세트를 고정한다.
+분산된 exact schema, 직접독해, 장편 블록 실행, 검증, 계보, 원본 저장, 세션 안전과 최신 작품 상태를 연결한다. 새 대화창은 과거 대화를 전수 조사하지 않고 최소 권위 문서만 읽고 분석을 재개할 수 있어야 한다.
 
 ## 2. 새 대화창 최소 로드
 
@@ -16,130 +16,130 @@
 README.md
 → DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md
 → SCHEMA_CONTRACTS_V2.md
-→ DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json
+→ DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-16.json
+→ DRAMA_DIRECT_READING_AND_BLOCK_EXECUTION_SUPPLEMENT_V3.md
 ```
-
-위 네 문서로 실행을 시작할 수 있다. 나머지는 충돌 해결·정밀 감사·중단 복구 시 참조한다.
 
 ## 3. 권위 순서
 
 1. `SCHEMA_CONTRACTS_V2.md` — exact keyset, type, enum, ID, FK, invariants
-2. `DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md` — 실행 단위, DB 삽입, EXT6 보류
-3. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md` — 신규 세션 통합 실행 순서
-4. `DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md` — 앙상블 폭, LocalEdge 선별, 후보 전수 처분
-5. `DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md` — 직접독해·내용 깊이
-6. `DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md` — 구조·내용·반게이밍·Stage04·패키지 검증
-7. `DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md` — SourceLock, QuarterAudit, quarantine, supersession, ZIP, 허브 편입
-8. `DRAMA_SESSION_EXECUTION_SAFETY_V1.md` — 세션 한도, 영속화, 중단 복구
-9. `EXT6_DEFERRED_SIDECAR_POLICY_V1.md` — EXT6 현재 보류
-10. `DRAMA_STAGE_EXT6_CONTRACT_MATRIX_V3.md` — EXT6 재활성화 시 보존 계약
-11. `DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json` — 현재 49작품, 44완료, 5잔여
-12. 최신 `docs/sessions/*drama*/README.md` — 작업 산출물·SHA·다음 진입점
+2. `DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md` — 현재 실행 단위·DB 삽입·EXT6 보류
+3. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md` — 신규 세션 통합 실행
+4. `DRAMA_DIRECT_READING_AND_BLOCK_EXECUTION_SUPPLEMENT_V3.md` — 직접독해·블록 속도·장편 토큰 관리·SourceLock·중단 복구
+5. `DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md` — 앙상블 폭·LocalEdge 선별·후보 처분
+6. `DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md` — 내용 깊이
+7. `DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md` — 구조·내용·반게이밍·Stage04·패키지 검증
+8. `DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md` — SourceLock·QuarterAudit·quarantine·supersession·ZIP·허브 편입
+9. `DRAMA_SESSION_EXECUTION_SAFETY_V1.md` — 세션 한도·영속화·중단 복구
+10. `EXT6_DEFERRED_SIDECAR_POLICY_V1.md` — EXT6/HXT6 보류·보존
+11. `DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-16.json` — 최신 51작품 DB 상태
+12. 최신 `docs/sessions/*drama*/README.md` — 산출물·SHA·validation·handoff
 
-## 4. 기존 자산과의 관계
-
-- Stage01~04 exact schema는 변경하지 않는다.
-- 새 실행 가이드는 기존 운영·마스터·검증 문서를 실행 순서로 통합한다.
-- 앙상블 정책은 Stage03 레코드 폭을 넓히지만 키를 추가하지 않는다.
-- 스토브리그의 인물·관계 폭은 채택한다.
-- 스토브리그의 과도한 LocalEdge·인접 연결·미처리 후보는 채택하지 않는다.
-- EXT6은 Stage01~04 파일에 필드를 추가하지 않는 비활성 sidecar다.
-
-## 5. 기본 파이프라인
+## 4. 기본 파이프라인
 
 ```text
 source inventory
+→ original_extracted/{작품명}/ UTF-8 TXT 저장
 → SourceLock
 → episode Q1→Q4 Stage01
-→ episode Stage02
-→ EpisodeArc
-→ ensemble CharacterArc·RelationshipArc
-→ selective LocalEdge·PayoffCandidate
-→ episode gate·checkpoint
+→ Stage02 SequenceBlueprint·EpisodeArc
+→ Stage03 CharacterArc·RelationshipArc·LocalEdge·PayoffCandidate
+→ episode light gate
+→ approximately 8-episode block strong validation
 → full Stage01~03 validation
 → Stage04 100% candidate disposition
 → CrossEpisodeEdge·FullSeriesArc
 → independent ZIP
 → seqcard_ko insertion
-→ full DB validation·ZIP
+→ full DB validation·ZIP fresh extraction
 ```
 
-## 6. 고정 규칙
+## 5. 고정 규칙
 
 - Python 의미 생성 금지
+- 기존 정상 자산은 유지하고 결함 범위만 재저작
+- 기존 SceneCard는 색인, 원본은 최종 증거
 - 의미 저작 최소 단위 quarter
-- 원자 범위 1회차
-- 전달 블록 8회차
-- Stage04는 전 작품 Stage01~03 검증 후 수행
-- 앙상블 변화 누락 금지
+- 원자 잠금 단위 episode
+- 전달·강검증 기본 단위 약 8 episodes
+- 매 회차 의미 강검증 반복 금지
+- Stage03 회차별 수직 처리
 - 변화 없는 인물·관계 수량 채우기 금지
-- 회차 간 LocalEdge 0
-- 인접 장면 자동 연결 금지
+- LocalEdge 동일 회차·gap 0
+- 회차 간 연결은 Stage04 CrossEpisodeEdge
 - PayoffCandidate disposition 100%
 - 자동 회차 경계 브리지 0
+- 사후 일괄 QuarterAudit 금지
 - 사용자 승인 전 CANONICAL 금지
+
+## 6. 데이터베이스 디렉터리 권위
+
+```text
+seqcard_ko/                              의미 데이터·규격 문서
+seqcard_ko/original_extracted/{work}/   회차별 UTF-8 TXT
+seqcard_ko/source_lock/                  단일 SourceLock 루트
+tools/                                   실행 검증기
+validation/                              검증 결과·휴대형 검증기
+upgrade_audit/                           감사·이전 판본·lineage
+provenance/                              원본 입수·변환 이력
+```
+
+`seqcard_ko` core에는 Python·ZIP·TMP·BAK·LOG를 두지 않는다. `_quarantine`, 독립 `docs`, 독립 `quarter_audits`, 독립 `source_alignment`, 중복 `source_lock`은 core에 두지 않는다. EXT6/HXT6 관련 `_ext6_audit`은 유지한다.
 
 ## 7. 현재 데이터베이스
 
 ```text
-works: 49
-episodes: 938
-SceneCard: 58,945
-Stage01~04 complete: 44
-remaining upgrades: 5
+artifact: seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip
+SHA256: 678ce8313357319000b30109cd961aaa6309cee5d0f1221bcdb47f7769bf198a
+works: 51
+episodes: 970
+SceneCard: 60,875
+Stage01~04 complete: 50
+remaining: 1
+remaining: 최강칠우 / SOURCE_HOLD_EXPERIMENTAL
 canonical promoted works: 14
 ```
 
-최신 artifact:
-
 ```text
-seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_sandglass_v1.zip
-SHA256 f79e1962348216197ccf9687a5881c99621f42ad0693ccfc6ad580aba69c521e
+ZIP CRC PASS
+fresh extraction PASS
+portable validator PASS
+errors 0 / warnings 0
 ```
 
-## 8. CANONICAL 승격
+대용량 DB ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 artifact name, SHA256, count, validation, lineage, handoff만 기록한다.
 
-사용자 명시 승인과 작품별 강검증 통과에 따라 다음 14작품을 CANONICAL로 승격한다.
+## 8. 개와늑대의시간 레거시 보강
 
-```text
-W, 경성스캔들, 미안하다사랑한다, 밀회,
-더킹투하츠, 뉴하트, 킬미힐미, 하얀거탑,
-마왕, 스카이캐슬, 궁, 카인과아벨, 싸인, 모래시계
-```
-
-## 9. 잔여 작품과 재진입
+16회 숫자행 EpisodeArc를 원본 TXT·SceneCard·SequenceBlueprint 직접 검토를 거친 exact ARC13으로 교체했다.
 
 ```text
-공주의남자: 정상 후보
-녹두꽃: 정상 후보
-역전의여왕: Stage02 재저작·31회 블록
-최강칠우: SOURCE_HOLD, 실제 EP03 필요
-대장금: 최종 순서, 54회·8회차 블록
+episodes 16
+scenes 880
+sequences 143
+ARC13 16/16
+legacy numeric remaining in canonical 0
+legacy numeric preserved for lineage 16
+Python semantic generation false
+errors 0 / warnings 0
 ```
 
-다음 진입점:
+상세 기록:
 
 ```text
-DATABASE_STATUS
-→ SELECT_ONE_ELIGIBLE_WORK
-→ SOURCE_PREFLIGHT
-→ EP01_Q1_OR_REQUIRED_REAUTHOR_POINT
-→ FULL_STAGE01_03_VALIDATION
-→ STAGE04_FAN_IN
-→ INDEPENDENT_ZIP
-→ DATABASE_ZIP_UPDATE
+docs/sessions/2026-07-16-drama-db-clean-tree-wolf-arc13/README.md
 ```
 
-## 10. 권위 상태
+## 9. 권위 상태
 
 ```text
 STAGE01_04_SCHEMA: AUTHORITATIVE
 NEW_SESSION_EXECUTION_GUIDE: AUTHORITATIVE_CANDIDATE
+DIRECT_READING_BLOCK_SUPPLEMENT: AUTHORITATIVE_CANDIDATE
 ENSEMBLE_EDGE_POLICY: AUTHORITATIVE_CANDIDATE
-CURRENT_OPERATING_SUPPLEMENT: AUTHORITATIVE_CANDIDATE
-CLOSE_READING_PROTOCOL: AUTHORITATIVE_CANDIDATE
 VALIDATION_GATES: AUTHORITATIVE_CANDIDATE
-EXT6_DEFAULT: DEFERRED_DISABLED
-DATABASE_STATUS: INTEGRATED_VALIDATED_PROGRESS_44_OF_49
-CANONICAL_PROMOTION: USER_APPROVED_14_WORKS
+DATABASE_DIRECTORY_STANDARD: AUTHORITATIVE_CANDIDATE
+EXT6_HXT6_DEFAULT: DEFERRED_DISABLED_PRESERVED
+DATABASE_STATUS: INTEGRATED_VALIDATED_50_OF_51
+CANONICAL_PROMOTION: USER_APPROVED_14_WORKS_UNCHANGED
 ```
