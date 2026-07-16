@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_16_V6",
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_16_V7_UTF8_REPAIRED",
   "status": "INTEGRATED_VALIDATED_DEVELOPER_RELEASE",
   "date": "2026-07-16",
   "timezone": "Asia/Seoul",
@@ -11,29 +11,54 @@
     "ext6_policy": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md"
   },
   "database": {
-    "artifact": "seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip",
-    "sha256": "678ce8313357319000b30109cd961aaa6309cee5d0f1221bcdb47f7769bf198a",
-    "size_bytes": 48829456,
-    "zip_entries": 9842,
+    "artifact": "seqcard_ko_developer_release_51works_50complete_utf8_repaired_v7.zip",
+    "supersedes": "seqcard_ko_developer_release_51works_50complete_wolf_arc13_v6.zip",
+    "sha256": "8a27d901d7122a1d9aebcadde459864adffd56c31553931327652744662e851f",
+    "size_bytes": 48488346,
+    "zip_entries": 9743,
     "works": 51,
     "episodes": 970,
     "scene_cards": 60875,
+    "authored_flat_files": 1994,
+    "analysis_layer_files": 7790,
     "stage01_04_complete": 50,
     "remaining": 1,
     "zip_crc": "PASS",
     "fresh_extraction": "PASS",
-    "portable_validator": "PASS",
+    "sha256_ledger_entries": 9742,
+    "sha256_mismatch": 0,
     "errors": 0,
     "warnings": 0
   },
+  "encoding_and_string_validation": {
+    "status": "PASS_UTF8_PATHS_AND_TEXT",
+    "mojibake_filenames": 0,
+    "non_ascii_zip_paths_without_utf8_flag": 0,
+    "invalid_utf8_text_files": 0,
+    "replacement_character_files": 0,
+    "json_jsonl_parse_errors": 0,
+    "cp949_to_utf8_converted": 73,
+    "safe_string_repairs": 7
+  },
+  "analysis_completeness": {
+    "works_in_authored_index": 51,
+    "episodes_in_seqcard_layer": 970,
+    "analysis_files_missing_vs_v6": 0,
+    "analysis_files_added_vs_v6": 0,
+    "changed_analysis_files": 3,
+    "change_reason": "safe U+FFFD repairs only",
+    "v4_to_v5_removed_files": 11,
+    "removed_files_class": "build scripts, dumps, temporary validators and cache only; no analysis records"
+  },
   "directory_structure": {
-    "status": "PASS_DEVELOPER_CLEAN_TREE_V6",
+    "status": "PASS_DEVELOPER_CLEAN_TREE_V7_UTF8_REPAIRED",
     "core_data_root": "seqcard_ko",
     "validators": ["tools", "validation"],
     "original_scripts": "seqcard_ko/original_extracted/{work_id}",
     "source_lock_root": "seqcard_ko/source_lock",
     "audit_history": "upgrade_audit",
     "provenance": "provenance",
+    "authored_work_index": "seqcard_ko/AUTHORED_WORK_INDEX_V7.json",
     "core_python_files": 0,
     "original_extracted_root_txt": 0,
     "original_work_folders": 51,
@@ -67,5 +92,6 @@
     "changed_in_this_release": false,
     "requires_explicit_user_approval": true
   },
+  "handoff": "docs/sessions/2026-07-16-drama-db-v7-utf8-repair/README.md",
   "large_artifact_policy": "The database ZIP and raw scripts are not committed to the hub; the hub stores artifact name, SHA256, counts, validation, lineage, and handoff only."
 }
