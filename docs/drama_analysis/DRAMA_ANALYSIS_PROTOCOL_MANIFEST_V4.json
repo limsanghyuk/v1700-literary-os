@@ -8,6 +8,7 @@
   ],
   "conditional_load": {
     "new_work_selection": "latest DRAMA_ANALYSIS_DATABASE_STATUS or DB work index",
+    "first_time_detailed_onboarding": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V1.md",
     "resume": "single compact work checkpoint JSON",
     "conflict_or_audit": "specialized reference document only"
   },
@@ -19,6 +20,33 @@
     "stage04_after_full_stage01_03_pass": true,
     "fresh_extraction_per_final_package": 1,
     "python_semantic_generation": false
+  },
+  "stage03_method": {
+    "adopt_claude_ensemble_breadth": true,
+    "scan_domains": [
+      "protagonist_and_antagonist",
+      "core_allies_and_rivals",
+      "organization_decision_makers",
+      "opposition_functional_characters",
+      "recurring_staff_family_colleagues",
+      "episode_axis_changing_minor_characters",
+      "alliance_rivalry_hierarchy_collusion_transaction_concealment_relations"
+    ],
+    "record_only_actual_character_or_relationship_change": true,
+    "fixed_record_quota": false,
+    "mechanical_all_character_arc_generation": false,
+    "mechanical_all_pair_relationship_generation": false
+  },
+  "edge_and_candidate_policy": {
+    "localedge_same_episode_only": true,
+    "localedge_gap_episodes": 0,
+    "localedge_edge_type": "causal",
+    "automatic_adjacent_scene_linking": false,
+    "cross_episode_localedge_allowed": false,
+    "cross_episode_links_confirmed_only_in_stage04": true,
+    "automatic_episode_boundary_bridge": false,
+    "payoff_candidate_disposition_required_ratio": 1.0,
+    "unprocessed_candidate_allowed": false
   },
   "episode_light_gate": [
     "parse",
@@ -57,6 +85,8 @@
   "authority": {
     "exact_schema": "SCHEMA_CONTRACTS_V2.md",
     "execution": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V2.md",
-    "validation_efficiency": "DRAMA_VALIDATION_AND_SESSION_EFFICIENCY_POLICY_V1.md"
+    "validation_efficiency": "DRAMA_VALIDATION_AND_SESSION_EFFICIENCY_POLICY_V1.md",
+    "detailed_onboarding_companion": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V1.md",
+    "ensemble_edge_policy": "DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md"
   }
 }
