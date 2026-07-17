@@ -1,0 +1,60 @@
+{
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5",
+  "status": "AUTHORITATIVE",
+  "updated": "2026-07-17",
+  "minimum_new_conversation_load": [
+    "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "SCHEMA_CONTRACTS_V2.md"
+  ],
+  "conditional_load": {
+    "new_work_selection": "latest database status or DB work index",
+    "resume": "one compact work checkpoint JSON",
+    "conflict_or_audit": "only the relevant specialized document"
+  },
+  "completion_authority": {
+    "structural_pass_required": true,
+    "semantic_quality_pass_required": true,
+    "fresh_extraction_pass_required": true,
+    "user_approval_required_for_canonical": true
+  },
+  "execution": {
+    "semantic_reading_unit": "quarter",
+    "semantic_atomic_unit": "one_episode",
+    "deterministic_serialization_batch_max_episodes": 4,
+    "strong_validation_block": "half_season_or_approximately_8_episodes",
+    "stage04_after_full_stage01_03_dual_pass": true,
+    "python_semantic_generation": false
+  },
+  "semantic_quality_gate": {
+    "exact_semantic_duplicates": "blocking_except_explicit_short_label_exception",
+    "masked_skeleton_repetition": "manual_review_at_3; fail_if_largest_group_over_5_percent_or_total_repeated_over_15_percent",
+    "trigger_participant_grounding": true,
+    "counterfactual_localedge_review": true,
+    "cross_target_concentration_review_at": 3,
+    "speed_anomaly_audit": true
+  },
+  "delivery": {
+    "individual_work_zip": true,
+    "individual_fresh_validation": true,
+    "updated_full_database_zip": true,
+    "database_final_validation": true,
+    "deliver_together_by_default": true
+  },
+  "database_validation": {
+    "default": "incremental_with_immutable_certified_base",
+    "new_work_structural_validation": true,
+    "new_work_semantic_quality_validation": true,
+    "full_global_gates": ["registry", "source", "encoding", "database", "release"],
+    "full_legacy_revalidation_triggers": [
+      "previous_tree_changed",
+      "previous_zip_sha_mismatch",
+      "validator_contract_changed",
+      "previous_fresh_extraction_certificate_missing"
+    ]
+  },
+  "authority": {
+    "execution": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "exact_schema": "SCHEMA_CONTRACTS_V2.md",
+    "manifest": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json"
+  }
+}
