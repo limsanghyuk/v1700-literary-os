@@ -1,85 +1,166 @@
 # 드라마 분석 권위 인덱스 v5
 
-- Status: `AUTHORITATIVE`
-- Updated: 2026-07-17
-- Supersedes: `DRAMA_ANALYSIS_AUTHORITY_INDEX_V4.md`
+- Status: `AUTHORITATIVE / CURRENT POLICY REVISION`
+- Updated: `2026-07-18`
+- Version note: 운영 정책 갱신으로 문서·DB 릴리즈 번호를 증가시키지 않는다.
 
-## 새 대화창 필수 로드
+---
 
-1. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`
+## 1. 새 대화창 필수 로드
+
+1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
 2. `SCHEMA_CONTRACTS_V2.md`
 
-신규 작품 선정 시 `DRAMA_ANALYSIS_DATABASE_STATUS_V12.json` 또는 최신 작품 인덱스 하나를 추가한다. 중단 작업 재개 시 해당 작품 compact checkpoint 하나만 추가한다.
+신규 작품 선정 시 최신 DB 작품 인덱스 하나를 추가한다. 중단 재개 시 작품별 단일 checkpoint 하나만 추가한다.
 
-처음 적용하는 모델이나 Stage03~04의 상세 저작 밀도·앙상블·Edge 선택성 기준이 필요한 경우 다음 companion을 추가한다.
+압축 실행 순서가 필요하면 `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`를 사용한다.
 
-```text
-DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md
-DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md
-```
+---
 
-## 권위 우선순위
+## 2. 권위 우선순위
 
-| 영역 | 권위 문서 |
-|---|---|
-| 실행 순서·속도·검증 cadence | `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` |
-| exact keyset·enum·ID·FK | `SCHEMA_CONTRACTS_V2.md` |
-| 기계 판독 실행 정책 | `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` |
-| 최신 DB 상태 | `DRAMA_ANALYSIS_DATABASE_STATUS_V12.json` |
-| 상세 신규 작품 실행 해설 | `DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md` |
-| Claude Stage03~04 장점 선택적 채택 | `DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md` |
-| 앙상블·LocalEdge 선택성 세부 정책 | `DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md` |
-| 직접독해 깊이 | `DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md` |
-| lineage·package | `DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md` |
-| 새 대화창 준비도 근거 | `DRAMA_METHOD_READINESS_AUDIT_2026-07-17.md` |
+| 순위 | 영역 | 권위 문서 |
+|---:|---|---|
+| 1 | exact keyset·enum·ID·FK | `SCHEMA_CONTRACTS_V2.md` |
+| 2 | 현재 실행·검증·릴리즈 정책 | `START_HERE_NEW_DRAMA_ANALYSIS.md` |
+| 3 | 새 대화창 압축 실행 순서 | `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` |
+| 4 | 기계 판독 정책 | `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` |
+| 5 | 작품별 실행 상태 | SourceLock Core·단일 checkpoint |
+| 6 | 과거 상세 저작 사례 | `DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md` |
+| 7 | Claude 장점 참고 | `DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md` |
+| 8 | 과거 사고·포렌식 | 관련 incident·audit 문서 |
 
-## 완료 권위
+과거 상세 문서가 QuarterAudit, 약 8회차 강검사, 반복 validator, 매 작품 새 DB 릴리즈를 기본 의무로 요구하면 현재 START_HERE 정책이 우선한다.
 
-```text
-STRUCTURAL_PASS
-+ SEMANTIC_QUALITY_PASS
-+ PACKAGE_FRESH_EXTRACTION_PASS
-= PASS_CANDIDATE
-```
+---
 
-구조 PASS만으로 의미 품질 완료를 선언하지 않는다. 사용자 승인 전 `CANONICAL`을 사용하지 않는다.
-
-## Claude 장점 결합 정책
-
-채택:
-
-- CharacterArc의 이전 상태→trigger→선택→새 상태→후속 영향 설명
-- RelationshipArc의 신뢰·권력·정보·의존·적대·거래·은폐·공모 다축 해석
-- LocalEdge의 source→중간 인과 메커니즘→target 설명
-- CrossEpisodeEdge의 plant→변형→payoff→인물·관계·주제 결과 설명
-- 조직·가족·팀·경쟁 진영까지 넓은 앙상블 스캔
-
-배제:
-
-- 기계적 전 인물·전 관계 Arc화
-- 고정 수량
-- 과도한 LocalEdge
-- 장면 인접성 자동 연결
-- 회차 간 LocalEdge
-- 미처리 후보
-- 낮은 완결성과 검증 없는 Stage04
+## 3. 현재 실행 권위
 
 ```text
-Claude식 의미 밀도·앙상블 독해
-+
-현행 GPT식 선택성·CandidateDisposition·SourceLock·검증·패키징
+원본 직접독해
+→ 회차별 Stage01~03 직접 저작
+→ 정본 저장
+→ 최소 구조검사 1회
+→ 단일 checkpoint
+→ 다음 회차
+→ 전 시즌 Stage04
+→ 작품 완료검사
+→ 작품 ZIP Fresh Extraction 1회
+→ DB 증분 편입
 ```
 
-## 기본 전달 규칙
+검증은 직접독해를 대신하지 않는다. Python·템플릿 의미 생성과 여러 회차 동시 의미 생성은 금지한다.
 
-드라마 한 작품의 전 시즌 분석이 완료되면 다음을 같은 보고에서 제공한다.
+---
 
-- 개별 작품 Stage01~04 ZIP
-- 개별 Fresh Extraction 검증서
-- 작품을 편입한 최신 전체 DB ZIP
-- 전체 DB 최종 검증서
-- 각 ZIP SHA256과 주요 집계
+## 4. 기본 검증
 
-## 문서 로드 제한
+### 회차
 
-과거 대화 전체, 모든 세션 README, 모든 방법론 문서를 시작 전에 전수 조사하지 않는다. 충돌·품질 감사·계약 변경이 있을 때만 관련 전문 문서를 부분 조회한다.
+- parse·exact keyset·type
+- ID 중복
+- SceneCard coverage
+- Sequence partition·span·budget·runtime
+- Arc·Edge reference
+- LocalEdge same episode/gap 0
+- 필수 파일 존재
+
+결과는 작품별 단일 checkpoint에 기록한다.
+
+### 작품 완료
+
+- 전 회차 Stage01~03 존재
+- CandidateDisposition 100%
+- CrossEpisodeEdge·FullSeriesArc 무결성
+- 작품 ZIP
+- 작품 ZIP Fresh Extraction 1회
+
+---
+
+## 5. 기본 절차에서 제외
+
+다음은 일반 작품의 기본 의무가 아니다.
+
+- Q별 QuarterAudit
+- 회차별 다수 검증 JSON
+- 여러 checkpoint
+- 반복 checksum
+- 전반부·약 8회차 강경검사
+- 회차·블록·전 시즌 중복 validator
+- 회차별 ZIP·Fresh Extraction
+- 중복 validation registry
+- 작품마다 전체 DB 새 릴리즈
+
+원본 불일치, 직접독해 누락 의심, 대량 템플릿 반복, LocalEdge 과밀, Provider 충돌, SourceLock 불일치, 정본 교체, 사용자 요청 시에만 포렌식으로 실행한다.
+
+---
+
+## 6. GPT·Claude 공동 정본
+
+GPT와 Claude는 동일한 공통 정본 규격을 사용한다.
+
+공통 의무:
+
+- 원본 직접독해
+- 회차 순차 처리
+- exact Stage01~04 schema
+- 동일 ID·enum·FK
+- LocalEdge 동일 회차
+- CandidateDisposition 100%
+- SourceLock Core
+- 단일 checkpoint
+- Provider provenance
+
+Claude의 의미 밀도·앙상블 분석과 GPT의 구조화·계보 관리 장점을 결합한다. 어느 Provider도 자동 상위가 아니며 사용자 승인 후 공동 `CANONICAL`이 된다.
+
+---
+
+## 7. SourceLock 권위
+
+기본은 작품당 SourceLock Core 한 파일이다.
+
+- 원본 archive·회차 파일 SHA
+- 인코딩·번호·장면 경계 정책
+- 회차별 canonical 장면 수
+- direct reading attestation
+- provider·model·run ID
+- completed episodes·next pointer
+
+장면별·Quarter별 상세 해시는 사고가 있는 작품만 확장한다.
+
+---
+
+## 8. DB 및 릴리즈 권위
+
+- 신규 작품만 증분 편입한다.
+- 기존 정본 전 작품을 매번 다시 의미검사하지 않는다.
+- 작품 완료와 전체 DB 릴리즈 생성을 분리한다.
+- 새 Governance 번호·전체 DB ZIP·release manifest는 사용자의 명시적 지시가 있을 때만 생성한다.
+- 문서 변경, validator 변경, 신규 작품 추가만으로 릴리즈 번호를 올리지 않는다.
+- 최신 인증 DB 릴리즈는 사용자 승인 전까지 동결한다.
+
+---
+
+## 9. EXT6
+
+`EXT6_DISABLED_BY_DEFAULT`.
+
+사용자의 명시적 요청, GPT×Claude 교차비교, 연구용 고밀도 코퍼스 구축에서만 별도 실행한다. EXT6 미적용은 Stage01~04 불완전이 아니다.
+
+---
+
+## 10. 개발자 보고
+
+중간 보고는 사용자가 요구할 때만 최소 형식으로 한다.
+
+```text
+작품 / 완료 회차 / current pointer / 저장 Stage / 구조검사 / 차단 오류
+```
+
+실제 저장되지 않은 진행은 보고하지 않는다.
+
+---
+
+## 11. 문서 로드 제한
+
+과거 대화 전체, 모든 세션 README, 모든 방법론 문서를 시작 전에 전수 조사하지 않는다. 충돌·품질 사고·계약 변경이 발생했을 때만 관련 전문 문서를 부분 조회한다.
