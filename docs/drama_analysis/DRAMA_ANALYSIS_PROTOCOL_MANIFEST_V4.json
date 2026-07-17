@@ -1,92 +1,12 @@
 {
   "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V4",
-  "status": "AUTHORITATIVE",
+  "status": "SUPERSEDED",
   "updated": "2026-07-17",
-  "minimum_new_conversation_load": [
-    "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V2.md",
-    "SCHEMA_CONTRACTS_V2.md"
-  ],
-  "conditional_load": {
-    "new_work_selection": "latest DRAMA_ANALYSIS_DATABASE_STATUS or DB work index",
-    "first_time_detailed_onboarding": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V1.md",
-    "resume": "single compact work checkpoint JSON",
-    "conflict_or_audit": "specialized reference document only"
-  },
-  "execution": {
-    "semantic_reading_unit": "quarter",
-    "semantic_atomic_unit": "one_episode",
-    "deterministic_serialization_batch_max_episodes": 4,
-    "strong_validation_block": "half_season_or_approximately_8_episodes",
-    "stage04_after_full_stage01_03_pass": true,
-    "fresh_extraction_per_final_package": 1,
-    "python_semantic_generation": false
-  },
-  "stage03_method": {
-    "adopt_claude_ensemble_breadth": true,
-    "scan_domains": [
-      "protagonist_and_antagonist",
-      "core_allies_and_rivals",
-      "organization_decision_makers",
-      "opposition_functional_characters",
-      "recurring_staff_family_colleagues",
-      "episode_axis_changing_minor_characters",
-      "alliance_rivalry_hierarchy_collusion_transaction_concealment_relations"
-    ],
-    "record_only_actual_character_or_relationship_change": true,
-    "fixed_record_quota": false,
-    "mechanical_all_character_arc_generation": false,
-    "mechanical_all_pair_relationship_generation": false
-  },
-  "edge_and_candidate_policy": {
-    "localedge_same_episode_only": true,
-    "localedge_gap_episodes": 0,
-    "localedge_edge_type": "causal",
-    "automatic_adjacent_scene_linking": false,
-    "cross_episode_localedge_allowed": false,
-    "cross_episode_links_confirmed_only_in_stage04": true,
-    "automatic_episode_boundary_bridge": false,
-    "payoff_candidate_disposition_required_ratio": 1.0,
-    "unprocessed_candidate_allowed": false
-  },
-  "episode_light_gate": [
-    "parse",
-    "exact_schema_and_ids",
-    "scene_coverage",
-    "sequence_partition",
-    "runtime_share_sum",
-    "trigger_and_edge_reference_existence",
-    "localedge_same_episode_gap_zero",
-    "checkpoint_and_next_pointer"
-  ],
-  "deferred_to_block_strong_gate": [
-    "semantic_exact_and_masked_repetition",
-    "ensemble_omission",
-    "relationship_reverse_duplicate_global_scan",
-    "localedge_density_and_adjacency",
-    "payoff_candidate_global_duplicate",
-    "cross_episode_consistency",
-    "full_source_hash_rescan"
-  ],
-  "database_validation": {
-    "default": "incremental_with_immutable_certified_base",
-    "full_revalidation_triggers": [
-      "previous_tree_changed",
-      "previous_zip_sha_mismatch",
-      "validator_contract_changed",
-      "previous_fresh_extraction_certificate_missing"
-    ]
-  },
-  "evidence_storage": {
-    "independent_work_package_raw_evidence": true,
-    "operating_database_quarter_audits_directory": false,
-    "operating_database_direct_reading_evidence_directory": false,
-    "operating_database_aggregate_attestation_and_hashes": true
-  },
-  "authority": {
-    "exact_schema": "SCHEMA_CONTRACTS_V2.md",
-    "execution": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V2.md",
-    "validation_efficiency": "DRAMA_VALIDATION_AND_SESSION_EFFICIENCY_POLICY_V1.md",
-    "detailed_onboarding_companion": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V1.md",
-    "ensemble_edge_policy": "DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md"
-  }
+  "superseded_by": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json",
+  "historical_execution_authority": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V2.md",
+  "current_execution_authority": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+  "current_exact_schema_authority": "SCHEMA_CONTRACTS_V2.md",
+  "current_detailed_onboarding": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+  "current_claude_strength_adoption": "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md",
+  "note": "V4 is retained for lineage only. New work analysis must load the V5 manifest and V3 execution guide."
 }
