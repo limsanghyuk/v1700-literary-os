@@ -1,128 +1,143 @@
-# 드라마 분석 권위 인덱스
+# 드라마 분석 권위 진입점
 
-Document status: **AUTHORITATIVE ENTRYPOINT**  
-Version: 2.2  
-Updated: 2026-07-13 (Asia/Seoul)
+- 상태: `AUTHORITATIVE ENTRYPOINT / CURRENT`
+- 갱신: `2026-07-18`
+- 적용: GPT·Claude 공동 분석
+- DB 릴리즈: 사용자 명시 승인 전 동결
 
-이 디렉터리는 GPT가 한국 드라마 원본을 직접 읽고 Stage01~04 분석 산출물을 만드는 데 필요한 최신 권위 문서군이다. 새 대화창·새 세션·새 모델은 다른 과거 문서보다 이 파일을 먼저 읽어야 한다.
+이 디렉터리는 한국 드라마 원본 직접독해, Stage01~04 저작, SourceLock, 최소 검증, 공동 정본 DB 편입의 단일 진입점이다.
+
+## 새 대화창 최소 로드
+
+1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
+2. `SCHEMA_CONTRACTS_V2.md`
+3. 최신 DB 전체 작품 인덱스
+4. 재개 작업이면 작품별 단일 checkpoint
+
+압축 실행 가이드:
+
+- `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`
+
+과거 대화 전체, 모든 세션 README, 모든 역사 문서를 시작 전에 전수 조사하지 않는다.
 
 ## 권위 우선순위
 
-충돌이 있을 때 아래 순서가 우선한다.
+1. `SCHEMA_CONTRACTS_V2.md` — exact keyset·enum·ID·FK
+2. `START_HERE_NEW_DRAMA_ANALYSIS.md` — 현재 실행·검증·릴리즈 정책
+3. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` — 압축 실행 순서
+4. `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` — machine-readable 정책
+5. 작품 SourceLock Core·단일 checkpoint
+6. 과거 operating manual·validation·incident 문서
 
-1. `CURRENT_AUTHORITY_SNAPSHOT_2026-07-13.md`
-2. `DRAMA_ANALYSIS_OPERATING_MANUAL_V2.md`
-3. `SCHEMA_CONTRACTS_V2.md`
-4. `VALIDATION_RELEASE_PROTOCOL_V2.md`
-5. `GPT_CLAUDE_ALIGNMENT_AND_INGESTION_V1.md`
-6. `WORK_CATALOG_2026-07-12.md`
-7. `NEXT_SESSION_BOOTSTRAP_CHECKLIST.md`
-8. `PROTOCOL_V2.json` 및 `WORK_STATUS_2026-07-12.json`
-9. 최신 `docs/sessions/*drama*/README.md`
+과거 문서가 QuarterAudit, 약 8회차 강검사, 반복 validator, 매 작품 새 DB 릴리즈를 기본 의무로 요구하면 현재 START_HERE 정책이 우선한다.
 
-`docs/external/claude_drama_analysis_method_manual_stage01_04_v1.md`는 중요한 역사·원형 문서이지만, 초기 감사의 오탐과 이후 규격 정정이 포함되기 전 문서다. v1과 이 디렉터리의 최신 문서가 충돌하면 **이 디렉터리의 최신 문서**를 적용한다.
-
-## 새 세션의 5분 시작 절차
+## 표준 실행
 
 ```text
-1. 이 README를 읽는다.
-2. CURRENT_AUTHORITY_SNAPSHOT_2026-07-13.md를 읽는다.
-3. OPERATING_MANUAL_V2의 작업 단위와 Python 경계를 읽는다.
-4. SCHEMA_CONTRACTS_V2의 키셋·enum·ID 규칙을 로드한다.
-5. VALIDATION_RELEASE_PROTOCOL_V2의 fail-closed 게이트를 로드한다.
-6. WORK_STATUS에서 완료한 7작품을 제외한다.
-7. 한국드라마04 원본 목록을 조사하여 다음 작품 1편을 선정한다.
-8. SourceLock v2를 만들고 전체 회차·장면·반시즌 작업량을 잠근다.
-9. EP01 Q1부터 직접독해를 시작한다.
-```
-
-## 최신 실행 단위
-
-```text
-의미 저작 최소 단위: quarter
-잠금 단위: episode
-기본 사용자 제출 단위: half-season
-안전 축소 제출 단위: 2 episodes
-최종 통합 단위: full series
-```
-
-반시즌 제출은 여러 회차를 한 번에 자동 생성한다는 뜻이 아니다. 내부에서는 반드시 다음 순서를 유지한다.
-
-```text
-EP01 Q1→Q2→Q3→Q4→회차 게이트
-→ EP02 Q1→Q2→Q3→Q4→회차 게이트
+원본 inventory
+→ 최신 DB 차집합
+→ SourceLock Core
+→ EP01 Q1→Q4 직접독해
+→ EP01 Stage01~03 직접 저작
+→ 정본 저장
+→ 최소 구조검사 1회
+→ 단일 checkpoint
+→ EP02
 → ...
-→ 전반부 통합 게이트
+→ 전 시즌 Stage04
+→ 작품 완료검사
+→ 작품 ZIP Fresh Extraction 1회
+→ DB 증분 편입
 ```
 
-내부 회차 PASS는 사용자 작업 완료가 아니다. 약속한 전반부·후반부 범위가 끝날 때만 사용자에게 완료를 보고한다.
+직접독해와 의미 저작이 본 작업이다. 검증은 이를 대신하지 않는다.
 
-## 절대 금지
+## 기본 검증
 
-- Python 또는 템플릿 함수로 의미 필드 생성
-- 키워드 조각을 분석문처럼 확장
-- 회차 요약을 인물별 CharacterArc에 복사
-- `LocalEdge`에 회차 간 연결 저장
-- 전 회차 독해 전 Stage04 확정
-- 실제 데이터를 검사하지 않는 stub validator
-- 사람용 PASS 보고서로 데이터 FAIL을 덮기
-- 사용자 승인 없이 `CANONICAL` 승격
+### 회차
 
-## 현재 완료된 GPT 분석 작품
+- JSON/JSONL parse
+- exact keyset·type
+- ID 중복
+- SceneCard ordinal coverage
+- Sequence partition·span·budget·runtime
+- Arc·Edge reference
+- LocalEdge same episode/gap 0
+- 필수 파일 존재
 
-- 101번째프로포즈
-- 결혼못하는남자
-- 공주가돌아왔다
-- 시티헌터
-- 내여자친구는구미호
-- 좋은사람
-- 파라다이스목장
+결과는 단일 checkpoint에 기록한다.
 
-누적 상태:
+### 작품 완료
+
+- 전 회차 Stage01~03 존재
+- CandidateDisposition 100%
+- CrossEpisodeEdge·FullSeriesArc 무결성
+- 작품 ZIP
+- Fresh Extraction 1회
+
+## 기본에서 제거
+
+- QuarterAudit 의무
+- 회차별 다수 증빙 JSON
+- 여러 checkpoint
+- 반복 checksum
+- 약 8회차 의무 강검사
+- 회차·블록·전 시즌 중복 validator
+- 회차별 ZIP·Fresh Extraction
+- 중복 validation registry
+- 작품마다 전체 DB 새 릴리즈
+
+위 항목은 원본 불일치, 직접독해 누락 의심, 템플릿 반복, Edge 과밀, Provider 충돌, SourceLock 불일치, 정본 교체, 사용자 요청 때만 포렌식으로 사용한다.
+
+## GPT·Claude 공동 정본
+
+공통:
+
+- 원본 직접독해
+- 회차 순차 처리
+- exact Stage01~04 schema
+- 동일 ID·enum·FK
+- SourceLock Core
+- 단일 checkpoint
+- LocalEdge 동일 회차
+- CandidateDisposition 100%
+- Provider provenance
+
+어느 Provider도 자동 상위가 아니다. 사용자 승인으로 공동 `CANONICAL`이 된다.
+
+## SourceLock
+
+작품당 Core 한 파일만 기본 유지한다. 장면별·Quarter별 상세 증빙은 사고 작품에서만 확장한다.
+
+## EXT6
+
+`EXT6_DISABLED_BY_DEFAULT`.
+
+사용자 명시 지시 또는 별도 교차비교·연구 작업에서만 실행한다.
+
+## 릴리즈 동결
+
+- 작품 완료와 전체 DB 릴리즈 생성을 분리한다.
+- 전체 DB ZIP·새 Governance 번호·release manifest는 사용자 명시 지시가 있을 때만 만든다.
+- 문서 변경, validator 변경, 작품 한 편 추가만으로 릴리즈 번호를 올리지 않는다.
+
+## 보고
+
+사용자가 중간 보고를 요구하지 않으면 최소 보고만 한다.
 
 ```text
-7작품 / 115회 / 7,518 SceneCard / 1,043 SequenceBlueprint
-115 EpisodeArc / 787 CharacterArc / 757 RelationshipArc
-1,634 LocalEdge / 580 PayoffCandidate / 301 CrossEpisodeEdge
-460 QuarterAudit / 7 FullSeriesArc
+작품 / 완료 회차 / current pointer / 저장 Stage / 구조검사 / 차단 오류
 ```
 
-모두 authoritative v3 권위 계약으로 fresh extraction·ZIP CRC·내부 SHA·휴대형 validator를 재검증했으며 현재 지위는 `PASS_CANDIDATE`다. 사용자 승인 전 `CANONICAL`로 승격하지 않는다. 상세 수량·패키지 SHA256·보강 이력은 `WORK_CATALOG_2026-07-12.md`와 `WORK_STATUS_2026-07-12.json`을 참조한다.
+실제 저장되지 않은 진행은 보고하지 않는다.
 
-## 현재 최신 허브 기준
+## 관련 문서
 
-```text
-latest authoritative drama commit:
-555530412ddda6ab623102778e54c79db37156c9
+- `START_HERE_NEW_DRAMA_ANALYSIS.md`
+- `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`
+- `SCHEMA_CONTRACTS_V2.md`
+- `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json`
+- `DRAMA_ANALYSIS_AUTHORITY_INDEX_V5.md`
+- `DRAMA_ANALYSIS_VALIDATION_SIMPLIFICATION_DECISION_2026-07-18.md`
 
-latest complete handoff:
-docs/sessions/2026-07-12_drama_7work_authoritative_v3/README.md
-
-latest authority refresh:
-docs/sessions/2026-07-13_drama_analysis_authority_refresh/README.md
-```
-
-대화 기록이 허브와 충돌하면, 검증된 허브 authoritative v3 상태를 우선한다. 특히 파라다이스목장은 허브 기준으로 EP09~EP16 직접독해와 Stage04까지 완료된 전 시즌 `PASS_CANDIDATE`다.
-
-## 다음 정상 작업
-
-한국드라마04에서 위 7작품과 겹치지 않는 다음 작품 1편을 선정한다. 원본 분리 상태, 장면 경계 안정성, 반시즌 균형, 장르 확장성, Claude 동일 작품 비교 가능성을 평가한 뒤 SourceLock을 만들고 전반부 분석을 시작한다.
-
-정확한 next pointer:
-
-```text
-SELECT_NEXT_UNANALYZED_WORK_FROM_한국드라마04
-→ SOURCE_ARCHIVE_INVENTORY
-→ SourceLock v2
-→ EP01 Q1 직접독해
-```
-
-## 보고 원칙
-
-개발자 보고는 최소화한다.
-
-```text
-작품 / 범위 / 레코드 수 / 최종 gate / 오류·경고 / SHA256 / 다음 진입점
-```
-
-분석 과정의 상세 판단과 보강 이력은 패키지 내부 ledger·validation·provenance에 저장하고, 대화 보고에는 핵심만 제시한다.
+대용량 ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 artifact name, SHA256, counts, lineage, handoff만 기록한다.
