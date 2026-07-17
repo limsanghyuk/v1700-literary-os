@@ -1,0 +1,757 @@
+{
+  "scope": "metadata_and_authored_analysis_only",
+  "raw_text_exported": false,
+  "works": [
+    {
+      "title": "킬미힐미",
+      "episodes": 20,
+      "layers": {
+        "scenes": {
+          "records": 1285,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 0.9475,
+          "text": {
+            "value_count": 3855,
+            "unique_ratio": 0.8407,
+            "duplicate_instance_ratio": 0.2218,
+            "average_chars": 33.7,
+            "token_type_ratio": 0.3616,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "title": {
+              "value_count": 1285,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 19.61,
+              "token_type_ratio": 0.4877,
+              "placeholder_value_count": 0
+            },
+            "intent_gist": {
+              "value_count": 1285,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 73.53,
+              "token_type_ratio": 0.4194,
+              "placeholder_value_count": 0
+            },
+            "skin": {
+              "value_count": 1285,
+              "unique_ratio": 0.523,
+              "duplicate_instance_ratio": 0.6646,
+              "average_chars": 7.94,
+              "token_type_ratio": 0.1674,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_reading": 1285
+          }
+        },
+        "sequences": {
+          "records": 193,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 579,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 44.9,
+            "token_type_ratio": 0.5293,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "sequence_intent": {
+              "value_count": 193,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 79.07,
+              "token_type_ratio": 0.6309,
+              "placeholder_value_count": 0
+            },
+            "goal": {
+              "value_count": 193,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 30.21,
+              "token_type_ratio": 0.5526,
+              "placeholder_value_count": 0
+            },
+            "obstacle": {
+              "value_count": 193,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 25.4,
+              "token_type_ratio": 0.6572,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_reading": 193
+          }
+        },
+        "episode_arcs": {
+          "records": 20,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 100,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 79.01,
+            "token_type_ratio": 0.607,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "dramatic_question": {
+              "value_count": 20,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 77,
+              "token_type_ratio": 0.6468,
+              "placeholder_value_count": 0
+            },
+            "central_conflict_axis": {
+              "value_count": 20,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 46.05,
+              "token_type_ratio": 0.6667,
+              "placeholder_value_count": 0
+            },
+            "entry_state": {
+              "value_count": 20,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 60.25,
+              "token_type_ratio": 0.8106,
+              "placeholder_value_count": 0
+            },
+            "exit_state": {
+              "value_count": 20,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 76.3,
+              "token_type_ratio": 0.8476,
+              "placeholder_value_count": 0
+            },
+            "episode_function": {
+              "value_count": 20,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 135.45,
+              "token_type_ratio": 0.7613,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 20
+          }
+        },
+        "character_arcs": {
+          "records": 60,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 180,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 50.48,
+            "token_type_ratio": 0.607,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "state_label": {
+              "value_count": 60,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 29.17,
+              "token_type_ratio": 0.7149,
+              "placeholder_value_count": 0
+            },
+            "state_delta": {
+              "value_count": 60,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 66.85,
+              "token_type_ratio": 0.6935,
+              "placeholder_value_count": 0
+            },
+            "evidence": {
+              "value_count": 60,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 55.42,
+              "token_type_ratio": 0.7394,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 60
+          }
+        },
+        "relationship_arcs": {
+          "records": 40,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 120,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 49.49,
+            "token_type_ratio": 0.6301,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "relation_state": {
+              "value_count": 40,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 27.1,
+              "token_type_ratio": 0.7631,
+              "placeholder_value_count": 0
+            },
+            "relation_delta": {
+              "value_count": 40,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 67.47,
+              "token_type_ratio": 0.7241,
+              "placeholder_value_count": 0
+            },
+            "evidence": {
+              "value_count": 40,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 53.9,
+              "token_type_ratio": 0.7435,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 40
+          }
+        },
+        "local_edges": {
+          "records": 40,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 80,
+            "unique_ratio": 0.6375,
+            "duplicate_instance_ratio": 0.4375,
+            "average_chars": 31.19,
+            "token_type_ratio": 0.736,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "label": {
+              "value_count": 40,
+              "unique_ratio": 0.275,
+              "duplicate_instance_ratio": 0.875,
+              "average_chars": 7.35,
+              "token_type_ratio": 0.275,
+              "placeholder_value_count": 0
+            },
+            "note": {
+              "value_count": 40,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 55.02,
+              "token_type_ratio": 0.7695,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 40
+          }
+        },
+        "payoff_candidates": {
+          "records": 60,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 60,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 53.62,
+            "token_type_ratio": 0.6437,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "description": {
+              "value_count": 60,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 53.62,
+              "token_type_ratio": 0.6437,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 60
+          }
+        },
+        "cross_edges": {
+          "records": 56,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 112,
+            "unique_ratio": 0.5893,
+            "duplicate_instance_ratio": 0.4821,
+            "average_chars": 25.39,
+            "token_type_ratio": 0.637,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "label": {
+              "value_count": 56,
+              "unique_ratio": 0.1786,
+              "duplicate_instance_ratio": 0.9643,
+              "average_chars": 6.98,
+              "token_type_ratio": 0.1786,
+              "placeholder_value_count": 0
+            },
+            "note": {
+              "value_count": 56,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 43.8,
+              "token_type_ratio": 0.6785,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "gpt-5.6-thinking.manual-upgrade-v1": 56
+          }
+        }
+      },
+      "normalized_density": {
+        "scenes_per_episode": 64.25,
+        "sequences_per_episode": 9.65,
+        "character_arcs_per_episode": 3.0,
+        "relationship_arcs_per_episode": 2.0,
+        "local_edges_per_episode": 2.0,
+        "payoff_candidates_per_episode": 3.0,
+        "cross_edges_per_episode": 2.8,
+        "sequence_to_scene_ratio": 0.1502
+      },
+      "semantic_breadth": {
+        "distinct_characters": 9,
+        "characters_with_multi_episode_arcs": 7,
+        "distinct_relationship_pairs": 9
+      },
+      "integrity": {
+        "missing_sequence_scene_coverage": 0,
+        "overlapping_sequence_scene_memberships": 0,
+        "invalid_trigger_scene_references": 0,
+        "invalid_local_edges": 0,
+        "invalid_cross_edges": 0,
+        "duplicate_ids": 0,
+        "episode_work_id_mismatches": 0
+      },
+      "graph_shape": {
+        "cross_episode_records_in_local_files": 0,
+        "adjacent_scene_local_edge_ratio": 0.1,
+        "candidate_disposition_records": 60,
+        "candidate_disposition_counts": {
+          "PROMOTED_CROSS_EDGE": 56,
+          "RECLASSIFIED_LOCAL_OR_ADJACENT_CAUSAL": 1,
+          "RESOLVED_WITHIN_EPISODE": 3
+        },
+        "unresolved_candidate_count": 0
+      },
+      "full_series_arc": {
+        "present": true,
+        "key_count": 17,
+        "filled_value_ratio": 1.0,
+        "macro_turning_point_count": 8
+      },
+      "audit_support": {
+        "source_lock": true,
+        "strong_validation": true,
+        "upgrade_summary": true,
+        "candidate_disposition_ledger": true,
+        "normalization_ledger": true,
+        "repair_ledger": true
+      }
+    },
+    {
+      "title": "스토브리그",
+      "episodes": 16,
+      "layers": {
+        "scenes": {
+          "records": 1003,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 3009,
+            "unique_ratio": 0.8608,
+            "duplicate_instance_ratio": 0.1678,
+            "average_chars": 20.7,
+            "token_type_ratio": 0.4436,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "title": {
+              "value_count": 1003,
+              "unique_ratio": 0.997,
+              "duplicate_instance_ratio": 0.006,
+              "average_chars": 11.62,
+              "token_type_ratio": 0.5273,
+              "placeholder_value_count": 0
+            },
+            "intent_gist": {
+              "value_count": 1003,
+              "unique_ratio": 0.999,
+              "duplicate_instance_ratio": 0.002,
+              "average_chars": 45.45,
+              "token_type_ratio": 0.4897,
+              "placeholder_value_count": 0
+            },
+            "skin": {
+              "value_count": 1003,
+              "unique_ratio": 0.5862,
+              "duplicate_instance_ratio": 0.4955,
+              "average_chars": 5.04,
+              "token_type_ratio": 0.508,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "cowork opus authoring": 1003
+          }
+        },
+        "sequences": {
+          "records": 155,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 465,
+            "unique_ratio": 0.9978,
+            "duplicate_instance_ratio": 0.0043,
+            "average_chars": 26.27,
+            "token_type_ratio": 0.5864,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "sequence_intent": {
+              "value_count": 155,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 45.28,
+              "token_type_ratio": 0.695,
+              "placeholder_value_count": 0
+            },
+            "goal": {
+              "value_count": 155,
+              "unique_ratio": 0.9935,
+              "duplicate_instance_ratio": 0.0129,
+              "average_chars": 19.85,
+              "token_type_ratio": 0.6248,
+              "placeholder_value_count": 0
+            },
+            "obstacle": {
+              "value_count": 155,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 13.68,
+              "token_type_ratio": 0.6743,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_reading": 155
+          }
+        },
+        "episode_arcs": {
+          "records": 16,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 80,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 45.04,
+            "token_type_ratio": 0.6371,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "dramatic_question": {
+              "value_count": 16,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 52.19,
+              "token_type_ratio": 0.7452,
+              "placeholder_value_count": 0
+            },
+            "central_conflict_axis": {
+              "value_count": 16,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 32.25,
+              "token_type_ratio": 0.6916,
+              "placeholder_value_count": 0
+            },
+            "entry_state": {
+              "value_count": 16,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 35.5,
+              "token_type_ratio": 0.8067,
+              "placeholder_value_count": 0
+            },
+            "exit_state": {
+              "value_count": 16,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 42,
+              "token_type_ratio": 0.8675,
+              "placeholder_value_count": 0
+            },
+            "episode_function": {
+              "value_count": 16,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 63.25,
+              "token_type_ratio": 0.7348,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_reading": 16
+          }
+        },
+        "character_arcs": {
+          "records": 96,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 288,
+            "unique_ratio": 0.9514,
+            "duplicate_instance_ratio": 0.0521,
+            "average_chars": 64.41,
+            "token_type_ratio": 0.6193,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "state_label": {
+              "value_count": 96,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 27.51,
+              "token_type_ratio": 0.8046,
+              "placeholder_value_count": 0
+            },
+            "state_delta": {
+              "value_count": 96,
+              "unique_ratio": 0.8542,
+              "duplicate_instance_ratio": 0.1562,
+              "average_chars": 70.73,
+              "token_type_ratio": 0.7259,
+              "placeholder_value_count": 0
+            },
+            "evidence": {
+              "value_count": 96,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 94.99,
+              "token_type_ratio": 0.6984,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_edgelayer": 60,
+            "sonnet_reading": 36
+          }
+        },
+        "relationship_arcs": {
+          "records": 75,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 225,
+            "unique_ratio": 0.9689,
+            "duplicate_instance_ratio": 0.0356,
+            "average_chars": 57.39,
+            "token_type_ratio": 0.6077,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "relation_state": {
+              "value_count": 75,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 23.51,
+              "token_type_ratio": 0.7538,
+              "placeholder_value_count": 0
+            },
+            "relation_delta": {
+              "value_count": 75,
+              "unique_ratio": 0.9067,
+              "duplicate_instance_ratio": 0.1067,
+              "average_chars": 66.76,
+              "token_type_ratio": 0.7218,
+              "placeholder_value_count": 0
+            },
+            "evidence": {
+              "value_count": 75,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 81.89,
+              "token_type_ratio": 0.6995,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_edgelayer": 48,
+            "sonnet_reading": 27
+          }
+        },
+        "local_edges": {
+          "records": 710,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 1420,
+            "unique_ratio": 0.5113,
+            "duplicate_instance_ratio": 0.4993,
+            "average_chars": 30.81,
+            "token_type_ratio": 0.4624,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "label": {
+              "value_count": 710,
+              "unique_ratio": 0.0225,
+              "duplicate_instance_ratio": 0.9986,
+              "average_chars": 6.67,
+              "token_type_ratio": 0.0225,
+              "placeholder_value_count": 0
+            },
+            "note": {
+              "value_count": 710,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 54.95,
+              "token_type_ratio": 0.4953,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_edgelayer": 441,
+            "sonnet_bridge": 6,
+            "sonnet_reading": 263
+          }
+        },
+        "payoff_candidates": {
+          "records": 83,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 83,
+            "unique_ratio": 1.0,
+            "duplicate_instance_ratio": 0.0,
+            "average_chars": 85.89,
+            "token_type_ratio": 0.6258,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "description": {
+              "value_count": 83,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 85.89,
+              "token_type_ratio": 0.6258,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_edgelayer": 52,
+            "sonnet_reading": 31
+          }
+        },
+        "cross_edges": {
+          "records": 10,
+          "distinct_keysets": 1,
+          "filled_value_ratio": 1.0,
+          "text": {
+            "value_count": 20,
+            "unique_ratio": 0.75,
+            "duplicate_instance_ratio": 0.35,
+            "average_chars": 66.25,
+            "token_type_ratio": 0.6849,
+            "placeholder_value_count": 0
+          },
+          "text_by_field": {
+            "label": {
+              "value_count": 10,
+              "unique_ratio": 0.5,
+              "duplicate_instance_ratio": 0.7,
+              "average_chars": 7.6,
+              "token_type_ratio": 0.5,
+              "placeholder_value_count": 0
+            },
+            "note": {
+              "value_count": 10,
+              "unique_ratio": 1.0,
+              "duplicate_instance_ratio": 0.0,
+              "average_chars": 124.9,
+              "token_type_ratio": 0.6915,
+              "placeholder_value_count": 0
+            }
+          },
+          "provenance_counts": {
+            "sonnet_reading": 10
+          }
+        }
+      },
+      "normalized_density": {
+        "scenes_per_episode": 62.69,
+        "sequences_per_episode": 9.69,
+        "character_arcs_per_episode": 6.0,
+        "relationship_arcs_per_episode": 4.69,
+        "local_edges_per_episode": 44.38,
+        "payoff_candidates_per_episode": 5.19,
+        "cross_edges_per_episode": 0.62,
+        "sequence_to_scene_ratio": 0.1545
+      },
+      "semantic_breadth": {
+        "distinct_characters": 26,
+        "characters_with_multi_episode_arcs": 15,
+        "distinct_relationship_pairs": 38
+      },
+      "integrity": {
+        "missing_sequence_scene_coverage": 0,
+        "overlapping_sequence_scene_memberships": 0,
+        "invalid_trigger_scene_references": 0,
+        "invalid_local_edges": 16,
+        "invalid_cross_edges": 0,
+        "duplicate_ids": 0,
+        "episode_work_id_mismatches": 964
+      },
+      "graph_shape": {
+        "cross_episode_records_in_local_files": 16,
+        "adjacent_scene_local_edge_ratio": 0.7,
+        "candidate_disposition_records": 0,
+        "candidate_disposition_counts": {},
+        "unresolved_candidate_count": 83
+      },
+      "full_series_arc": {
+        "present": true,
+        "key_count": 17,
+        "filled_value_ratio": 1.0,
+        "macro_turning_point_count": 7
+      },
+      "audit_support": {
+        "source_lock": false,
+        "strong_validation": false,
+        "upgrade_summary": false,
+        "candidate_disposition_ledger": false,
+        "normalization_ledger": false,
+        "repair_ledger": false
+      }
+    }
+  ]
+}

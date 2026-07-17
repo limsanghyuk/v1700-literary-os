@@ -1,0 +1,12 @@
+{
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V4",
+  "status": "SUPERSEDED",
+  "updated": "2026-07-17",
+  "superseded_by": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json",
+  "historical_execution_authority": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V2.md",
+  "current_execution_authority": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+  "current_exact_schema_authority": "SCHEMA_CONTRACTS_V2.md",
+  "current_detailed_onboarding": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+  "current_claude_strength_adoption": "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md",
+  "note": "V4 is retained for lineage only. New work analysis must load the V5 manifest and V3 execution guide."
+}

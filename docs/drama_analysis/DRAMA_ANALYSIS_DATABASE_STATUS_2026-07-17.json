@@ -1,0 +1,53 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_17",
+  "status": "PASS_CANDIDATE_GOVERNANCE_NORMALIZED",
+  "artifact": "seqcard_ko_developer_release_54works_53complete_governance_v10.zip",
+  "sha256": "bec1959b6de3267674638519c128a4dcd57013b47d8176318093bd1db9128275",
+  "works": 54,
+  "episodes": 1018,
+  "scene_cards": 63941,
+  "stage01_04_complete": 53,
+  "source_hold": ["최강칠우"],
+  "new_work": "굿캐스팅",
+  "new_work_counts": {
+    "episodes": 16,
+    "scene_cards": 1020,
+    "sequences": 117,
+    "character_arcs": 128,
+    "relationship_arcs": 128,
+    "local_edges": 93,
+    "payoff_candidates": 152,
+    "cross_episode_edges": 48,
+    "candidate_dispositions": 152
+  },
+  "classification_counts": {
+    "CANONICAL_USER_APPROVED": 14,
+    "PASS_CANDIDATE_STRUCTURAL": 39,
+    "SOURCE_HOLD_EXPERIMENTAL": 1
+  },
+  "direct_reading_attested_total": 19,
+  "candidate_disposition_evidence_present": 9,
+  "validation_mode": "INCREMENTAL_WITH_IMMUTABLE_V9_LINEAGE",
+  "fresh_extraction": {
+    "status": "PASS",
+    "authority_current_reports_pass": 54,
+    "new_work_errors": 0,
+    "new_work_warnings": 0,
+    "global_encoding": "PASS",
+    "global_source_lock": "PASS",
+    "global_registry": "PASS",
+    "global_database": "PASS",
+    "global_release": "PASS",
+    "sha256_mismatch": 0,
+    "pre_post_missing": 0,
+    "pre_post_extra": 0,
+    "pre_post_hash_mismatch": 0
+  },
+  "operating_database_evidence_policy": {
+    "quarter_audits_directory": false,
+    "direct_reading_evidence_directory": false,
+    "raw_evidence_retained_in_independent_work_package": true,
+    "aggregate_hashes_and_attestation_in_source_lock": true
+  },
+  "canonical_promotions_changed": false
+}

@@ -1,0 +1,215 @@
+{
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5",
+  "status": "AUTHORITATIVE_CURRENT_POLICY_REVISION",
+  "updated": "2026-07-18",
+  "version_increment": false,
+  "minimum_new_conversation_load": [
+    "START_HERE_NEW_DRAMA_ANALYSIS.md",
+    "SCHEMA_CONTRACTS_V2.md"
+  ],
+  "conditional_load": {
+    "new_work_selection": "latest database work index only",
+    "resume": "one compact work checkpoint JSON",
+    "conflict_or_forensic_audit": "only the relevant specialized document",
+    "ext6": "only when explicitly requested by the user"
+  },
+  "core_principles": {
+    "direct_reading_is_primary_work": true,
+    "semantic_authoring_is_manual": true,
+    "python_semantic_generation": false,
+    "episode_order_is_sequential": true,
+    "semantic_atomic_unit": "one_episode",
+    "multi_episode_semantic_generation": false,
+    "provider_neutral_canonical": true,
+    "providers": [
+      "gpt",
+      "claude"
+    ]
+  },
+  "execution": {
+    "reading_partition": "Q1_to_Q4_without_required_quarter_audit",
+    "episode_pipeline": [
+      "Q1_Q4_direct_reading",
+      "SceneCard",
+      "EpisodeMeta",
+      "SequenceBlueprint",
+      "EpisodeArc",
+      "CharacterArc",
+      "RelationshipArc",
+      "LocalEdge",
+      "PayoffCandidate",
+      "save_canonical_files",
+      "minimal_episode_structure_check",
+      "single_checkpoint_update",
+      "next_episode"
+    ],
+    "stage04_after_all_stage01_03_saved": true,
+    "candidate_disposition_required_ratio": 1.0,
+    "ext6_default": "DISABLED"
+  },
+  "source_lock": {
+    "required": true,
+    "default_profile": "CORE_ONE_FILE_PER_WORK",
+    "required_fields": [
+      "schema",
+      "work_id",
+      "series_title",
+      "episodes_total",
+      "source_archive",
+      "source_archive_sha256",
+      "source_encoding",
+      "numbering_policy",
+      "scene_boundary_policy",
+      "direct_reading_required",
+      "python_semantic_generation",
+      "provider",
+      "model",
+      "run_id",
+      "status",
+      "episodes",
+      "completed_episodes",
+      "next"
+    ],
+    "extended_scene_hashes_default": false,
+    "extended_profile_triggers": [
+      "conflicting_source_versions",
+      "scene_numbering_incident",
+      "source_hash_mismatch",
+      "canonical_replacement",
+      "user_request"
+    ]
+  },
+  "episode_validation": {
+    "profile": "MINIMAL_STRUCTURE_ONLY",
+    "run_once_per_episode": true,
+    "checks": [
+      "json_parse",
+      "exact_keyset_and_type",
+      "id_uniqueness",
+      "scenecard_coverage",
+      "sequence_partition_span_budget",
+      "runtime_share_sum",
+      "arc_and_edge_reference_existence",
+      "localedge_same_episode_gap_zero",
+      "required_files_exist"
+    ],
+    "semantic_rescoring": false,
+    "result_storage": "single_work_checkpoint",
+    "multiple_validation_json": false
+  },
+  "work_completion_validation": {
+    "run_once_after_stage04": true,
+    "checks": [
+      "all_episode_stage01_03_exist",
+      "global_id_and_fk_integrity",
+      "scene_sequence_count_consistency",
+      "candidate_disposition_100_percent",
+      "cross_episode_edge_integrity",
+      "full_series_arc_count_consistency",
+      "individual_work_zip",
+      "one_fresh_extraction"
+    ]
+  },
+  "forensic_validation": {
+    "default": false,
+    "triggers": [
+      "source_semantic_mismatch",
+      "direct_reading_omission_suspected",
+      "mass_template_repetition",
+      "localedge_overgeneration_or_automatic_adjacency",
+      "provider_result_conflict",
+      "source_lock_hash_mismatch",
+      "canonical_replacement",
+      "schema_migration",
+      "user_request"
+    ],
+    "legacy_tools_available": [
+      "QuarterAudit",
+      "block_semantic_strong_gate",
+      "repetition_audit",
+      "multi_stage_validator",
+      "extended_source_lock"
+    ]
+  },
+  "retired_from_default_execution": [
+    "required_quarter_audit_per_Q",
+    "multiple_evidence_json_per_episode",
+    "multiple_checkpoint_types",
+    "repeated_checksums",
+    "mandatory_half_season_or_8_episode_strong_gate",
+    "duplicate_episode_block_series_validators",
+    "episode_level_zip_and_fresh_extraction",
+    "duplicate_validation_registry_records",
+    "full_legacy_database_revalidation_for_each_new_work",
+    "new_database_release_for_each_completed_work"
+  ],
+  "stage03_04_selection": {
+    "record_only_actual_character_or_relationship_change": true,
+    "fixed_arc_edge_candidate_quota": false,
+    "mechanical_all_character_arc_generation": false,
+    "mechanical_all_pair_relationship_generation": false,
+    "automatic_adjacent_scene_localedge": false,
+    "cross_episode_localedge_allowed": false,
+    "unprocessed_candidate_allowed": false,
+    "automatic_episode_boundary_bridge": false
+  },
+  "provider_collaboration": {
+    "shared_schema": true,
+    "shared_database_contract": true,
+    "shared_source_lock_core": true,
+    "shared_single_checkpoint": true,
+    "provider_specific_internal_notes_allowed": true,
+    "provider_specific_prompt_allowed": true,
+    "provenance_required": true,
+    "canonical_requires_user_approval": true,
+    "claude_strengths_preserved": [
+      "character_state_transition_density",
+      "multi_axis_relationship_analysis",
+      "ensemble_breadth",
+      "causal_intermediate_mechanism",
+      "plant_transformation_payoff_explanation"
+    ]
+  },
+  "database_integration": {
+    "mode": "incremental_without_automatic_release",
+    "preserve_existing_canonical_tree": true,
+    "validate_new_work_only_by_default": true,
+    "global_checks": [
+      "work_id_collision",
+      "registry_path_integrity",
+      "new_work_reference_integrity"
+    ],
+    "revalidate_all_existing_semantics": false,
+    "release_freeze": true,
+    "new_release_requires_explicit_user_instruction": true,
+    "documentation_change_does_not_increment_release": true,
+    "validator_change_does_not_increment_release": true,
+    "single_work_addition_does_not_increment_release": true
+  },
+  "delivery": {
+    "individual_work_zip_after_full_completion": true,
+    "individual_work_fresh_extraction_once": true,
+    "updated_full_database_zip_by_default": false,
+    "new_database_release_by_default": false,
+    "full_database_package_only_on_explicit_user_request": true
+  },
+  "reporting": {
+    "minimal_by_default": true,
+    "report_only_actual_saved_state": true,
+    "required_status_fields": [
+      "work",
+      "completed_episodes",
+      "current_pointer",
+      "saved_layers",
+      "structure_check",
+      "blocking_error"
+    ]
+  },
+  "authority": {
+    "exact_schema": "SCHEMA_CONTRACTS_V2.md",
+    "full_new_conversation_onboarding": "START_HERE_NEW_DRAMA_ANALYSIS.md",
+    "execution_summary": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "manifest": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json",
+    "historical_detailed_playbooks": "conditional_only"
+  }
+}

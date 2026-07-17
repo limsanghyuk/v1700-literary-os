@@ -1,0 +1,42 @@
+{
+  "schema": "DRAMA_METHOD_ADOPTION_DECISION_V1",
+  "date": "2026-07-15",
+  "status": "ADOPTED_FOR_NEW_ANALYSIS",
+  "evidence": [
+    "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_COMPARISON_2026-07-15.md",
+    "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_METRICS_2026-07-15.json",
+    "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_GATE_RESULT_2026-07-15.json",
+    "싸인_stage01_04_upgraded_full_series_v1.zip"
+  ],
+  "adopted": [
+    "episode_level_ensemble_character_breadth",
+    "episode_level_relationship_pair_breadth",
+    "supporting_and_organizational_actor_tracking",
+    "actual_change_based_arc_inclusion"
+  ],
+  "rejected": [
+    "fixed_arc_quota",
+    "exhaustive_cast_to_arc_conversion",
+    "excessive_local_edge_density",
+    "automatic_adjacent_scene_linking",
+    "cross_episode_local_edges",
+    "undispositioned_payoff_candidates"
+  ],
+  "hard_gates": {
+    "cross_episode_local_edge_count": 0,
+    "automatic_episode_boundary_bridge_count": 0,
+    "payoff_candidate_disposition_ratio": 1.0,
+    "python_semantic_generation": false
+  },
+  "manual_audit_triggers": {
+    "local_edge_to_scene_ratio_gt": 0.1,
+    "adjacent_target_local_edge_ratio_gt": 0.5
+  },
+  "reference_works": {
+    "semantic_depth_and_stage04_lineage": "킬미힐미",
+    "ensemble_breadth_source": "스토브리그",
+    "current_contract_adoption_example": "싸인"
+  },
+  "schema_changed": false,
+  "ext6_in_scope": false
+}

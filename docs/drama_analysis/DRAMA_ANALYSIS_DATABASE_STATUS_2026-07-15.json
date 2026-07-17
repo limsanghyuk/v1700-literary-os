@@ -1,0 +1,193 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_15_V3",
+  "status": "INTEGRATED_VALIDATED_PROGRESS",
+  "date": "2026-07-15",
+  "timezone": "Asia/Seoul",
+  "authority": {
+    "entrypoint": "docs/drama_analysis/README.md",
+    "new_session_guide": "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+    "exact_schema": "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "ensemble_policy": "docs/drama_analysis/DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md",
+    "current_operating_supplement": "docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md",
+    "ext6_policy": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md"
+  },
+  "database": {
+    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_sandglass_v1.zip",
+    "sha256": "f79e1962348216197ccf9687a5881c99621f42ad0693ccfc6ad580aba69c521e",
+    "works": 49,
+    "episodes": 938,
+    "scene_cards": 58945,
+    "stage01_04_complete": 44,
+    "stage04_upgrade_remaining": 5
+  },
+  "latest_completed_work": {
+    "work_id": "모래시계",
+    "status": "CANONICAL_STAGE01_04",
+    "artifact": "모래시계_stage01_04_upgraded_full_series_v1.zip",
+    "sha256": "1a27669d051f8cbd2c54dd222178ae9db35229912ea091a8493fa8487091a2ca",
+    "counts": {
+      "SceneCard": 1365,
+      "EpisodeMeta": 24,
+      "SequenceBlueprint": 217,
+      "EpisodeArc": 24,
+      "CharacterArc": 118,
+      "RelationshipArc": 94,
+      "LocalEdge": 48,
+      "PayoffCandidate": 24,
+      "CrossEpisodeEdge": 23,
+      "CandidateDisposition": 24,
+      "FullSeriesArc": 1
+    },
+    "ensemble_method_adopted": true,
+    "local_edge_selective": true,
+    "candidate_disposition_complete": true,
+    "auto_boundary_bridges": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "canonical_promotion": {
+    "approval_basis": "USER_APPROVED_AFTER_HUB_AUTHORITY_LOAD",
+    "approval_date": "2026-07-15",
+    "count": 14,
+    "works": [
+      "W",
+      "경성스캔들",
+      "미안하다사랑한다",
+      "밀회",
+      "더킹투하츠",
+      "뉴하트",
+      "킬미힐미",
+      "하얀거탑",
+      "마왕",
+      "스카이캐슬",
+      "궁",
+      "카인과아벨",
+      "싸인",
+      "모래시계"
+    ],
+    "ext6_in_scope": false
+  },
+  "completed_works": [
+    "101번째프로포즈",
+    "W",
+    "강남엄마따라잡기",
+    "개와늑대의시간",
+    "결혼못하는남자",
+    "경성스캔들",
+    "공주가돌아왔다",
+    "구르미그린달빛",
+    "궁",
+    "그들이사는세상",
+    "내여자친구는구미호",
+    "내이름은김삼순",
+    "너의목소리가들려",
+    "뉴하트",
+    "더킹투하츠",
+    "도깨비",
+    "돌아온일지매",
+    "드림",
+    "마왕",
+    "모래시계",
+    "미생",
+    "미안하다사랑한다",
+    "밀회",
+    "배가본드",
+    "베토벤바이러스",
+    "비밀의숲",
+    "성균관스캔들",
+    "스카이캐슬",
+    "스토브리그",
+    "시그널",
+    "시크릿가든",
+    "시티헌터",
+    "신사의품격",
+    "싸인",
+    "워킹맘",
+    "좋은사람",
+    "쩐의전쟁",
+    "추적자",
+    "카인과아벨",
+    "칼잡이오수정",
+    "커피프린스",
+    "킬미힐미",
+    "태양의후예",
+    "하얀거탑"
+  ],
+  "remaining_works": [
+    {
+      "work_id": "공주의남자",
+      "episodes": 24,
+      "scene_cards": 1784,
+      "status": "STAGE04_UPGRADE_REQUIRED",
+      "source_status": "ORIGINALS_AVAILABLE",
+      "priority_group": "ELIGIBLE_NORMAL"
+    },
+    {
+      "work_id": "녹두꽃",
+      "episodes": 24,
+      "scene_cards": 1636,
+      "status": "STAGE04_UPGRADE_REQUIRED",
+      "source_status": "ORIGINALS_AVAILABLE",
+      "priority_group": "ELIGIBLE_NORMAL"
+    },
+    {
+      "work_id": "역전의여왕",
+      "episodes": 31,
+      "scene_cards": 1875,
+      "status": "STAGE02_REAUTHOR_REQUIRED",
+      "source_status": "ORIGINALS_AVAILABLE",
+      "priority_group": "BLOCKED_REAUTHOR_IN_8_EPISODE_BLOCKS"
+    },
+    {
+      "work_id": "최강칠우",
+      "episodes": 20,
+      "scene_cards": 1398,
+      "status": "SOURCE_HOLD",
+      "source_status": "EP03_VERIFIED_ORIGINAL_MISSING",
+      "priority_group": "WAIT_FOR_SOURCE_RECOVERY"
+    },
+    {
+      "work_id": "대장금",
+      "episodes": 54,
+      "scene_cards": 3630,
+      "status": "DEFERRED_LONG_FORM_LAST",
+      "source_status": "ORIGINALS_AVAILABLE",
+      "priority_group": "FINAL_8_EPISODE_BLOCK_PLAN"
+    }
+  ],
+  "source_holds": {
+    "최강칠우": {
+      "reason": "EP02와 EP03이 동일한 2부 대본 판본이며 실제 EP03 원본 부재",
+      "allowed_recovery": [
+        "verified_EP03_script",
+        "licensed_broadcast_transcript_as_reconstructed_source_candidate"
+      ],
+      "prohibited": [
+        "infer_from_EP02_EP04",
+        "reuse_duplicate_EP02",
+        "synopsis_based_scene_generation"
+      ]
+    }
+  },
+  "operating_policy": {
+    "episode_quarters": 4,
+    "atomic_checkpoint_episodes": 1,
+    "developer_delivery_block_episodes": 8,
+    "full_stage01_03_validation_before_stage04": true,
+    "ensemble_character_relationship_breadth_adopted": true,
+    "local_edge_cross_episode_allowed": false,
+    "automatic_adjacent_scene_edges": false,
+    "payoff_candidate_disposition_required": 1.0,
+    "ext6_default_enabled": false,
+    "python_semantic_generation": false,
+    "canonical_requires_user_approval": true
+  },
+  "recommended_next_order": [
+    "공주의남자",
+    "녹두꽃",
+    "역전의여왕",
+    "최강칠우_SOURCE_RECOVERY",
+    "대장금_LAST"
+  ],
+  "next": "SELECT_ONE_ELIGIBLE_WORK_AND_FOLLOW_NEW_CONVERSATION_EXECUTION_GUIDE_V1"
+}

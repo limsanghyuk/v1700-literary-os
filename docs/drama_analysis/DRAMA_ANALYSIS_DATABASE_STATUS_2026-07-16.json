@@ -1,0 +1,108 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_2026_07_16_V8_GOVERNANCE_NORMALIZED",
+  "status": "RELEASE_READY_PASS_CANDIDATE_GOVERNANCE_NORMALIZED",
+  "date": "2026-07-16",
+  "timezone": "Asia/Seoul",
+  "authority": {
+    "entrypoint": "docs/drama_analysis/README.md",
+    "new_session_guide": "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+    "exact_schema": "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "direct_reading_block_supplement": "docs/drama_analysis/DRAMA_DIRECT_READING_AND_BLOCK_EXECUTION_SUPPLEMENT_V3.md",
+    "ext6_policy": "docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md"
+  },
+  "database": {
+    "artifact": "seqcard_ko_developer_release_51works_50complete_governance_v8.zip",
+    "supersedes": "seqcard_ko_developer_release_51works_50complete_utf8_repaired_v7.zip",
+    "sha256": "a0249986653b330b309aded67b6c7e52aa977eecaab2f8d53ad79d36639e099a",
+    "size_bytes": 49085365,
+    "zip_entries": 9976,
+    "sha256_ledger_entries": 9975,
+    "works": 51,
+    "episodes": 970,
+    "scene_cards": 60875,
+    "analysis_layer_files": 7790,
+    "stage01_04_complete": 50,
+    "remaining": 1,
+    "remaining_work": "최강칠우",
+    "remaining_status": "SOURCE_HOLD_EXPERIMENTAL",
+    "zip_crc": "PASS",
+    "fresh_extraction": "PASS",
+    "actual_cli_rerun": "PASS",
+    "sha256_missing": 0,
+    "sha256_mismatch": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "governance_structure": {
+    "tools_current": "package-relative current validators",
+    "tools_history": "non-authoritative historical validators",
+    "validation_current": "single current global release gate set",
+    "validation_works": "51 work current fan-in records",
+    "validation_history": "superseded and component evidence",
+    "validation_registry": "validation/INDEX.json",
+    "validation_coverage": 51,
+    "source_lock_current": "seqcard_ko/source_lock/current",
+    "source_lock_registry": "seqcard_ko/source_lock/INDEX.json",
+    "source_lock_coverage": 51,
+    "legacy_source_locks_normalized": 16,
+    "retroactive_source_inventories": 35,
+    "direct_reading_attested_true": 16,
+    "direct_reading_attested_false": 35,
+    "retroactive_attestation_fabricated": false
+  },
+  "structural_migration": {
+    "migration": "CROSS_EPISODE_LOCALEDGE_TO_CROSSEPISODEEDGE",
+    "status": "PASS",
+    "works_count": 8,
+    "works": [
+      "구르미그린달빛",
+      "내이름은김삼순",
+      "미생",
+      "배가본드",
+      "비밀의숲",
+      "스토브리그",
+      "신사의품격",
+      "커피프린스"
+    ],
+    "records_migrated": 114,
+    "affected_local_files": 97,
+    "remaining_cross_episode_local_edges": 0,
+    "meaning_text_changed": false,
+    "python_semantic_generation": false,
+    "lineage": "upgrade_audit/structure_history/cross_episode_localedge_v8"
+  },
+  "fresh_extraction_validation": {
+    "global_gates": {
+      "encoding": "PASS",
+      "source_lock": "PASS",
+      "registry": "PASS",
+      "database": "PASS",
+      "release": "PASS",
+      "zip_portability": "PASS"
+    },
+    "work_validations": 51,
+    "work_failures": 0,
+    "filename_mojibake": 0,
+    "non_ascii_paths_without_utf8_flag": 0,
+    "invalid_utf8": 0,
+    "replacement_character_files": 0,
+    "tree_pre_files": 9976,
+    "tree_post_files": 9976,
+    "tree_missing": 0,
+    "tree_extra": 0,
+    "tree_hash_mismatch": 0
+  },
+  "source_hold": {
+    "work_id": "최강칠우",
+    "status": "SOURCE_HOLD_EXPERIMENTAL",
+    "reason": "EP03 verified original script remains unavailable",
+    "governance_validation_status": "PASS_WITH_SOURCE_HOLD_CLASSIFICATION"
+  },
+  "canonical_promotion": {
+    "count": 14,
+    "changed_in_this_release": false,
+    "requires_explicit_user_approval": true
+  },
+  "handoff": "docs/sessions/2026-07-16-drama-db-governance-v8/README.md",
+  "large_artifact_policy": "The database ZIP and raw scripts are not committed to the hub; the hub stores artifact name, SHA256, counts, validation, lineage, and handoff only."
+}

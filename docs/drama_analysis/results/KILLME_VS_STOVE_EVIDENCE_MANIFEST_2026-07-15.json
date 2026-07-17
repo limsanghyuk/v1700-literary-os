@@ -1,0 +1,118 @@
+{
+  "schema": "SEQCARD_CROSS_WORK_EVIDENCE_MANIFEST_V1",
+  "status": "VERIFIED_LOCAL_EVIDENCE_HANDOFF",
+  "date": "2026-07-15",
+  "comparison_id": "killme_vs_stove_20260715",
+  "purpose": "Compare Kill Me Heal Me and Stove League analysis quality under the current Stage01-04 contracts without exporting source text or authored rows.",
+  "inputs": [
+    {
+      "kind": "seqcard_archive",
+      "name": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_v1.zip",
+      "size_bytes": 37654669,
+      "sha256": "79F639C8DE72A8319CD183459C52C872B7987E8F0F4BA580BDC7337C8DAD2972",
+      "zip_entries": 7872,
+      "crc_test": "PASS",
+      "relevant_entries": {
+        "kill_me_heal_me": 189,
+        "stove_league": 149
+      }
+    },
+    {
+      "kind": "method_review_document",
+      "name": "드라마 분석 고찰 (1).docx",
+      "size_bytes": 414079,
+      "sha256": "19A7F99311EC4E786A16843ED97D2585F47314FAA07A317F34D3C110B040F6B0",
+      "pages": 47,
+      "pages_reviewed_for_current_rules": [
+        11,
+        22,
+        23,
+        24,
+        25,
+        32,
+        43,
+        44
+      ]
+    }
+  ],
+  "authority_documents": [
+    "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md",
+    "docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md",
+    "docs/drama_analysis/DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md",
+    "docs/drama_analysis/DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md"
+  ],
+  "verification_scope": {
+    "archive_crc": "PASS",
+    "relevant_json_or_jsonl_files_parsed": 301,
+    "json_parse_errors": 0,
+    "structural_scan": "FULL_FOR_BOTH_WORKS",
+    "semantic_diversity_scan": "AGGREGATE_ONLY",
+    "qualitative_review": "STRATIFIED_EARLY_MIDDLE_LATE_AND_LAYER_REVIEW",
+    "provider_calls": 0,
+    "runtime_generation": false
+  },
+  "evidence_summary": {
+    "kill_me_heal_me": {
+      "episodes": 20,
+      "scene_cards": 1285,
+      "sequence_blueprints": 193,
+      "stage03_work_id_mismatches": 0,
+      "invalid_local_edges": 0,
+      "payoff_candidates": 60,
+      "payoff_candidates_dispositioned": 60,
+      "source_lock_present": true,
+      "work_level_strong_validation_present": true,
+      "strong_validation_errors": 0,
+      "strong_validation_warnings": 0
+    },
+    "stove_league": {
+      "episodes": 16,
+      "scene_cards": 1003,
+      "sequence_blueprints": 155,
+      "stage03_work_id_mismatches": 964,
+      "invalid_local_edges": 16,
+      "payoff_candidates": 83,
+      "payoff_candidates_dispositioned": 0,
+      "source_lock_present": false,
+      "work_level_strong_validation_present": false
+    }
+  },
+  "generated_artifacts": [
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_COMPARISON_2026-07-15.md",
+      "role": "human_readable_comparison",
+      "sha256": "CB77E016041750777775A889F97EB275EFC4D7A352CA3BD1CCE232BC3EECCA69"
+    },
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_METRICS_2026-07-15.json",
+      "role": "machine_readable_aggregate_metrics",
+      "sha256": "0792B2A26716108304292D0DF40D52AE5F644C70E4CA904CBC0A4205EB944149"
+    },
+    {
+      "path": "docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_GATE_RESULT_2026-07-15.json",
+      "role": "machine_readable_gate_decision",
+      "sha256": "C617BD564A032F9F4233DB728F424804B75AA0B1D43D414640BB6CD8319D28E1"
+    },
+    {
+      "path": "tools/compare_seqcard_works.py",
+      "role": "reproducible_metadata_only_comparator",
+      "sha256": "C78A411A61C8DCC9F29305E9083EB66E8F4576D19D13D9630725846C3427ED96"
+    }
+  ],
+  "limitations": [
+    "This is not a second-human blind annotation of every source scene.",
+    "No claim is made that one provider or model is intrinsically superior.",
+    "The result is a package-readiness comparison under the current local contracts.",
+    "Cross-work comparison remains optional and does not grant canonical or promotion status."
+  ],
+  "data_safety": {
+    "raw_script_exported": false,
+    "raw_dialogue_exported": false,
+    "raw_authored_rows_exported": false,
+    "raw_vectors_exported": false,
+    "api_keys_exported": false,
+    "model_weights_exported": false,
+    "input_archives_committed": false
+  }
+}

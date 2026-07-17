@@ -1,0 +1,77 @@
+{
+  "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V3_2",
+  "status": "AUTHORITATIVE_CANDIDATE",
+  "date": "2026-07-15",
+  "authority_index": "docs/drama_analysis/DRAMA_ANALYSIS_AUTHORITY_INDEX_V3.md",
+  "minimum_new_session_load": [
+    "docs/drama_analysis/README.md",
+    "docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md",
+    "docs/drama_analysis/SCHEMA_CONTRACTS_V2.md",
+    "docs/drama_analysis/DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json"
+  ],
+  "documents": [
+    {"path":"docs/drama_analysis/SCHEMA_CONTRACTS_V2.md","role":"stage01_04_exact_schema","status":"AUTHORITATIVE"},
+    {"path":"docs/drama_analysis/DRAMA_ANALYSIS_CURRENT_OPERATING_SUPPLEMENT_2026-07-15.md","role":"current_execution_database_and_ext6_policy","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V1.md","role":"single_entry_execution_guide_for_new_conversations","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_ENSEMBLE_TRACKING_AND_EDGE_SELECTIVITY_POLICY_V1.md","role":"ensemble_breadth_and_edge_anti_overgrowth_policy","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_METHOD_ADOPTION_DECISION_2026-07-15.json","role":"machine_readable_ensemble_method_adoption_decision","status":"ADOPTED_FOR_NEW_ANALYSIS"},
+    {"path":"docs/drama_analysis/DRAMA_CLOSE_READING_MASTER_PROTOCOL_V3.md","role":"direct_reading_method_and_depth","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_VALIDATION_AND_RELEASE_GATES_V3.md","role":"strong_validation_and_release","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_LINEAGE_PACKAGE_HANDOFF_V2.md","role":"lineage_package_handoff","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/DRAMA_SESSION_EXECUTION_SAFETY_V1.md","role":"session_limit_and_persistence_safety","status":"AUTHORITATIVE_CANDIDATE"},
+    {"path":"docs/drama_analysis/EXT6_DEFERRED_SIDECAR_POLICY_V1.md","role":"ext6_deferred_optional_sidecar","status":"DEFERRED_OPTIONAL_EXPERIMENT"},
+    {"path":"docs/drama_analysis/DRAMA_ANALYSIS_DATABASE_STATUS_2026-07-15.json","role":"current_database_status_and_remaining_work","status":"INTEGRATED_VALIDATED_PROGRESS_44_OF_49"},
+    {"path":"docs/sessions/2026-07-15_drama_new_session_execution_and_sign_upgrade/README.md","role":"method_and_sign_upgrade_handoff","status":"COMPLETE_HANDOFF"},
+    {"path":"docs/sessions/2026-07-15_sandglass_stage01_04_upgrade/README.md","role":"sandglass_upgrade_artifact_and_resume_handoff","status":"COMPLETE_HANDOFF"}
+  ],
+  "evidence_results": [
+    {"path":"docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_COMPARISON_2026-07-15.md","role":"evidence_for_ensemble_strength_and_contract_failures","status":"EVIDENCE_BACKED_COMPARISON"},
+    {"path":"docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_METRICS_2026-07-15.json","role":"aggregate_quality_metrics","status":"LOCAL_VERIFIED_EVIDENCE_HANDOFF"},
+    {"path":"docs/drama_analysis/results/KILLME_VS_STOVE_QUALITY_GATE_RESULT_2026-07-15.json","role":"quality_gate_decision","status":"LOCAL_VERIFIED_EVIDENCE_HANDOFF"}
+  ],
+  "mandatory_principles": {
+    "direct_reading": true,
+    "episode_quarters": 4,
+    "safe_execution_scope_episodes": 1,
+    "developer_delivery_block_episodes": 8,
+    "python_semantic_generation": false,
+    "stage04_after_full_stage01_03_validation": true,
+    "ensemble_character_relationship_breadth_adopted": true,
+    "fixed_arc_quota": false,
+    "cross_episode_local_edge_allowed": false,
+    "automatic_adjacent_scene_edge_generation": false,
+    "local_edge_overgrowth_audit_ratio": 0.1,
+    "adjacent_local_edge_audit_ratio": 0.5,
+    "payoff_candidate_disposition_required": 1.0,
+    "automatic_episode_boundary_bridge_allowed": false,
+    "ext6_default_enabled": false,
+    "raw_source_hub_commit": false,
+    "canonical_requires_user_approval": true
+  },
+  "current_database": {
+    "artifact": "seqcard_ko_stage04_progress_W_dream_gangnam_gyeongseong_misa_milhwe_theking_newheart_killme_whitetower_mawang_skycastle_gung_kain_sign_sandglass_v1.zip",
+    "sha256": "f79e1962348216197ccf9687a5881c99621f42ad0693ccfc6ad580aba69c521e",
+    "works": 49,
+    "episodes": 938,
+    "scene_cards": 58945,
+    "stage01_04_complete": 44,
+    "stage04_upgrade_remaining": 5
+  },
+  "latest_completed_work": {
+    "work_id": "모래시계",
+    "artifact": "모래시계_stage01_04_upgraded_full_series_v1.zip",
+    "sha256": "1a27669d051f8cbd2c54dd222178ae9db35229912ea091a8493fa8487091a2ca",
+    "status": "CANONICAL_STAGE01_04",
+    "errors": 0,
+    "warnings": 0
+  },
+  "canonical_promotion": {
+    "approval_basis": "USER_APPROVED_AFTER_HUB_AUTHORITY_LOAD",
+    "approval_date": "2026-07-15",
+    "count": 14,
+    "works": ["W","경성스캔들","미안하다사랑한다","밀회","더킹투하츠","뉴하트","킬미힐미","하얀거탑","마왕","스카이캐슬","궁","카인과아벨","싸인","모래시계"],
+    "ext6_in_scope": false
+  },
+  "remaining_work_ids": ["공주의남자","녹두꽃","역전의여왕","최강칠우","대장금"],
+  "next": "READ_MINIMUM_NEW_SESSION_LOAD_AND_SELECT_ONE_ELIGIBLE_WORK"
+}
