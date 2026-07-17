@@ -1,0 +1,30 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_STATUS_V12",
+  "updated": "2026-07-17",
+  "release": "SEQCARD_KO_GOVERNANCE_RELEASE_V12",
+  "status": "PASS_CANDIDATE",
+  "works": 57,
+  "episodes": 1066,
+  "scene_cards": 66899,
+  "stage01_04_complete": 56,
+  "source_hold": ["최강칠우"],
+  "latest_integrated_work": "스타일",
+  "latest_work_canonical": false,
+  "validation_mode": "INCREMENTAL_WITH_IMMUTABLE_V11_LINEAGE_AND_NEW_SEMANTIC_GATE",
+  "new_work_gates": {
+    "structural": "PASS",
+    "semantic_quality": "PASS",
+    "fresh_extraction": "PASS"
+  },
+  "minimum_new_chat_load": [
+    "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "SCHEMA_CONTRACTS_V2.md",
+    "latest database status or work index"
+  ],
+  "default_completion_delivery": [
+    "individual work ZIP",
+    "individual validation",
+    "updated database ZIP",
+    "database validation"
+  ]
+}
