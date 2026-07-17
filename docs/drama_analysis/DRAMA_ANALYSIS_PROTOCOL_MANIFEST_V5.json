@@ -8,6 +8,10 @@
   ],
   "conditional_load": {
     "new_work_selection": "latest database status or DB work index",
+    "first_time_detailed_onboarding": [
+      "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+      "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md"
+    ],
     "resume": "one compact work checkpoint JSON",
     "conflict_or_audit": "only the relevant specialized document"
   },
@@ -25,13 +29,66 @@
     "stage04_after_full_stage01_03_dual_pass": true,
     "python_semantic_generation": false
   },
+  "stage03_04_strength_adoption": {
+    "adopt_claude_ensemble_breadth": true,
+    "adopt_claude_semantic_evidence_density": true,
+    "character_arc_components": [
+      "prior_state",
+      "trigger_event",
+      "character_choice",
+      "new_state",
+      "effect_on_next_action"
+    ],
+    "relationship_axes": [
+      "trust",
+      "power",
+      "information_asymmetry",
+      "dependence",
+      "hostility",
+      "transaction",
+      "concealment",
+      "collusion",
+      "protection",
+      "control"
+    ],
+    "localedge_note_components": [
+      "specific_source_action_or_information",
+      "intermediate_causal_mechanism",
+      "specific_target_result"
+    ],
+    "crossedge_note_components": [
+      "original_plant_function",
+      "intermediate_preservation_or_transformation",
+      "target_payoff",
+      "character_relationship_or_theme_effect"
+    ],
+    "text_length_is_not_quality_quota": true,
+    "same_work_blind_ab_proven": false
+  },
+  "selection_and_completion_controls": {
+    "record_only_actual_character_or_relationship_change": true,
+    "fixed_arc_edge_candidate_quota": false,
+    "mechanical_all_character_arc_generation": false,
+    "mechanical_all_pair_relationship_generation": false,
+    "automatic_adjacent_scene_localedge": false,
+    "cross_episode_localedge_allowed": false,
+    "candidate_disposition_required_ratio": 1.0,
+    "unprocessed_candidate_allowed": false,
+    "automatic_episode_boundary_bridge": false,
+    "regular_n_to_n_plus_2_crossedge_pattern_review": true,
+    "cross_target_concentration_review_at": 3
+  },
   "semantic_quality_gate": {
     "exact_semantic_duplicates": "blocking_except_explicit_short_label_exception",
     "masked_skeleton_repetition": "manual_review_at_3; fail_if_largest_group_over_5_percent_or_total_repeated_over_15_percent",
     "trigger_participant_grounding": true,
     "counterfactual_localedge_review": true,
     "cross_target_concentration_review_at": 3,
-    "speed_anomaly_audit": true
+    "speed_anomaly_audit": true,
+    "character_arc_evidence_depth_review": true,
+    "relationship_multi_axis_review": true,
+    "localedge_intermediate_mechanism_review": true,
+    "crossedge_transformation_and_effect_review": true
   },
   "delivery": {
     "individual_work_zip": true,
@@ -44,7 +101,13 @@
     "default": "incremental_with_immutable_certified_base",
     "new_work_structural_validation": true,
     "new_work_semantic_quality_validation": true,
-    "full_global_gates": ["registry", "source", "encoding", "database", "release"],
+    "full_global_gates": [
+      "registry",
+      "source",
+      "encoding",
+      "database",
+      "release"
+    ],
     "full_legacy_revalidation_triggers": [
       "previous_tree_changed",
       "previous_zip_sha_mismatch",
@@ -55,6 +118,8 @@
   "authority": {
     "execution": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
     "exact_schema": "SCHEMA_CONTRACTS_V2.md",
-    "manifest": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json"
+    "manifest": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json",
+    "detailed_onboarding": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+    "claude_strength_adoption": "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md"
   }
 }
