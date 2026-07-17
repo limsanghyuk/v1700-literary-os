@@ -16,10 +16,20 @@
     "semantic_quality": "PASS",
     "fresh_extraction": "PASS"
   },
+  "method_policy": {
+    "execution_guide": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "detailed_playbook": "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+    "claude_strength_adoption": "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md",
+    "principle": "CLAUDE_SEMANTIC_DENSITY_PLUS_CURRENT_GPT_SELECTIVITY_LEDGER_VALIDATION"
+  },
   "minimum_new_chat_load": [
     "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
     "SCHEMA_CONTRACTS_V2.md",
     "latest database status or work index"
+  ],
+  "first_time_detailed_onboarding": [
+    "DRAMA_NEW_WORK_DETAILED_PLAYBOOK_V2.md",
+    "DRAMA_CLAUDE_STAGE03_04_STRENGTH_ADOPTION_POLICY_V1.md"
   ],
   "default_completion_delivery": [
     "individual work ZIP",
