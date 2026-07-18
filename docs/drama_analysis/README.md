@@ -7,6 +7,14 @@
 
 이 디렉터리는 한국 드라마 원본 직접독해, Stage01~04 저작, SourceLock, 최소 검증, 공동 정본 DB 편입의 단일 진입점이다.
 
+## 현재 전체 DB 인계
+
+- 전체 DB: **63작품 / 1,166회 / 73,018 SceneCard**
+- 전 시즌 Stage01~04 완료: **61작품**
+- 최신 편입 정본: **우리집 EP01~20**
+- Governance 번호 증가: **없음 — V15 기반 증분 스냅샷**
+- 인계 문서: `DRAMA_DATABASE_HANDOFF_63WORKS_OUR_HOME_2026-07-18.md`
+
 ## 새 대화창 최소 로드
 
 1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
@@ -139,5 +147,6 @@
 - `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json`
 - `DRAMA_ANALYSIS_AUTHORITY_INDEX_V5.md`
 - `DRAMA_ANALYSIS_VALIDATION_SIMPLIFICATION_DECISION_2026-07-18.md`
+- `DRAMA_DATABASE_HANDOFF_63WORKS_OUR_HOME_2026-07-18.md`
 
 대용량 ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 artifact name, SHA256, counts, lineage, handoff만 기록한다.
