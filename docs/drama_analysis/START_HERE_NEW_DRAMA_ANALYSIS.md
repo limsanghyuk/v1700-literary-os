@@ -1,7 +1,7 @@
 # 새 대화창 드라마 분석 START HERE
 
 - 상태: `AUTHORITATIVE / CURRENT`
-- 갱신일: `2026-07-18`
+- 갱신일: `2026-07-19`
 - 적용 대상: GPT·Claude 공동 드라마 분석
 - exact schema: `SCHEMA_CONTRACTS_V2.md`
 - EXT6: `DISABLED_BY_DEFAULT`
@@ -45,7 +45,7 @@ EP01 Q1→Q4 직접독해
 - 어느 Provider도 자동 상위 권위를 갖지 않는다.
 - 사용자 승인 후 공동 `CANONICAL`로 승격한다.
 
-### 1.4 검증은 최소화한다
+### 1.4 검증은 최소화하되 구조와 의미를 분리한다
 
 다음은 일반 작품의 기본 의무에서 제거한다.
 
@@ -61,14 +61,17 @@ EP01 Q1→Q4 직접독해
 
 이 도구는 삭제하지 않고 **원본 불일치·직접독해 누락 의심·템플릿 반복·Edge 과밀·Provider 충돌·SourceLock 불일치·정본 교체·사용자 요청** 때만 포렌식으로 사용한다.
 
+구조검사 PASS는 스키마·키·참조·coverage만 입증한다. 원문 충실도, 고유 의미, 시퀀스 전진, Arc 변화, LocalEdge 반사실 인과를 입증하지 않는다. 일반 작품은 과도한 회차별 증빙 대신 전체의 약 50% 지점에서 의미 캘리브레이션 1회, Stage04 직전에 전 시즌 의미 품질검사 1회를 수행한다. 상세 기준은 `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`를 따른다.
+
 ---
 
 ## 2. 새 대화창 최소 로드
 
 1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
 2. `SCHEMA_CONTRACTS_V2.md`
-3. 최신 DB **전체 작품 인덱스** 1개
-4. 중단 재개 시 작품별 `checkpoint.json` 1개
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
+4. 최신 DB **전체 작품 인덱스** 1개
+5. 중단 재개 시 작품별 `checkpoint.json` 1개
 
 집계 수치만 있는 DB 상태 파일은 작품 선정용 차집합에 사용할 수 없다. 현재 작품 ID 전체가 있는 인덱스를 사용한다.
 
@@ -186,6 +189,11 @@ Q1 직접독해
 → 최소 구조검사
 → checkpoint next 갱신
 → 다음 회차
+→ 전체의 약 50%에서 의미 캘리브레이션 1회
+→ 교정 규칙을 후반부에 적용
+→ 전 회차 Stage01~03 완료
+→ 전 시즌 의미 품질검사 1회
+→ Stage04
 ```
 
 회차 완료는 채팅 보고가 아니라 위 파일의 실제 존재와 checkpoint 상태로 판단한다.
@@ -231,6 +239,10 @@ REVELATION REUNION RELIEF ROMANCE PERIL RESCUE DESIRE HOOK
 - 인물명·장소명만 교체한 템플릿
 - 존재하지 않는 감정·인과·사건
 - 필드 간 동일 요약 복사
+- 전 회차 공통 종결문
+- 장면 변화가 없는데 감정·인과를 장문화해 추가
+
+중간·완료 의미검사에서는 title·intent의 원문 대응, exact 반복, 인물명을 마스킹한 동일 골격, 장면 경계와 누락을 표본 대조한다.
 
 ### EpisodeMeta 정확히 5키
 
@@ -279,6 +291,9 @@ by
 - runtime 합 1.0
 - core_mix는 실제 member SceneCard 근거
 - seq_index 1부터 연속
+- 각 sequence의 goal·obstacle은 sequence_intent와 직접 대응
+- 시작 상태→행동 계획→종료 상태가 실제로 전진
+- 같은 goal·obstacle의 exact·masked 반복 금지
 
 turn_type 11종:
 
@@ -339,7 +354,7 @@ evidence
 이전 상태 → trigger → 선택·거부 → 새 상태 → 후속 영향
 ```
 
-실제 변화가 있는 인물만 기록한다. 주인공 외 가족·조직·팀·경쟁 진영도 실제 변화가 있으면 포함한다.
+실제 변화가 있는 인물만 기록한다. 주인공 외 가족·조직·팀·경쟁 진영도 실제 변화가 있으면 포함한다. `DESIRE`, `CONFLICT`, `series_start` 같은 범용 표지를 state 변화의 대용물로 반복하지 않는다.
 
 ### RelationshipArc 정확히 9키
 
@@ -355,7 +370,7 @@ evidence
 by
 ```
 
-신뢰·권력·정보 비대칭·의존·적대·거래·은폐·공모·보호·통제·위계의 실제 변화를 기록한다. trigger 장면에 양쪽 인물이 등장·통화·교신해야 한다. `(A,B)`와 `(B,A)` 중복을 금지한다.
+신뢰·권력·정보 비대칭·의존·적대·거래·은폐·공모·보호·통제·위계의 실제 변화를 기록한다. trigger 장면에 양쪽 인물이 등장·통화·교신해야 한다. `(A,B)`와 `(B,A)` 중복을 금지한다. 같은 회차의 동일 unordered pair는 하나의 복합 전진으로 통합한다.
 
 ### LocalEdge 정확히 12키
 
@@ -379,6 +394,7 @@ by
 ```text
 edge_type = causal
 src_episode_no = tgt_episode_no
+src_scene_no < tgt_scene_no
 gap_episodes = 0
 label = target SceneCard.core
 ```
@@ -409,7 +425,7 @@ by
 
 ## 11. 회차 최소 구조검사
 
-회차마다 단 한 번 실행한다. 의미를 재채점하지 않는다.
+회차마다 단 한 번 실행한다. 의미를 재채점하지 않는다. 이 검사의 PASS만으로 회차·작품의 의미 품질 PASS를 선언하지 않는다.
 
 1. JSON/JSONL parse
 2. exact keyset·자료형
@@ -531,6 +547,8 @@ by
 - CandidateDisposition 100%
 - CrossEpisodeEdge 참조 유효
 - FullSeriesArc counts 일치
+- 전 시즌 의미 품질검사 PASS
+- 의미 실패 0
 - 작품 ZIP 생성
 - 작품 ZIP Fresh Extraction 1회
 
@@ -638,6 +656,7 @@ DEFAULT: EXT6_DISABLED
 ## 21. 금지 목록
 
 - 직접독해 없는 의미 생성
+- 구조검사 PASS만으로 의미·작품 완료 선언
 - Python·템플릿 의미 저작
 - 여러 회차 동시 의미 생성
 - 미완료 파일 완료 선언
@@ -659,7 +678,8 @@ DEFAULT: EXT6_DISABLED
 
 1. `SCHEMA_CONTRACTS_V2.md` — exact keyset·enum·ID·FK
 2. `START_HERE_NEW_DRAMA_ANALYSIS.md` — 현재 실행·검증·릴리즈 정책
-3. 작품 SourceLock·checkpoint
-4. 과거 operating manual·incident 문서
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md` — 의미 품질·재발 방지 상세
+4. 작품 SourceLock·checkpoint
+5. 과거 operating manual·incident 문서
 
 과거 문서가 QuarterAudit, 블록 강검사, 반복 validator, 매 작품 DB 릴리즈를 기본 의무로 요구하더라도 이 문서의 현재 정책이 우선한다.
