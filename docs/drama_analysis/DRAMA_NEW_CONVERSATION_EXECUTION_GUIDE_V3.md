@@ -1,7 +1,7 @@
 # 새 대화창 한국 드라마 분석 즉시 실행 가이드 v3
 
 - 상태: `AUTHORITATIVE / CURRENT`
-- 갱신: `2026-07-18`
+- 갱신: `2026-07-19`
 - 상세 권위: `START_HERE_NEW_DRAMA_ANALYSIS.md`
 - exact schema: `SCHEMA_CONTRACTS_V2.md`
 - 문서·DB 릴리즈 번호 자동 증가 금지
@@ -10,8 +10,9 @@
 
 1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
 2. `SCHEMA_CONTRACTS_V2.md`
-3. 최신 DB 전체 작품 인덱스
-4. 재개 작업이면 단일 checkpoint
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
+4. 최신 DB 전체 작품 인덱스
+5. 재개 작업이면 단일 checkpoint
 
 ## 즉시 실행
 
@@ -26,6 +27,10 @@
 → 단일 checkpoint
 → EP02
 → ...
+→ 전체의 약 50% 의미 캘리브레이션
+→ 후반부 교정 규칙 적용
+→ 전 회차 Stage01~03 완료
+→ 전 시즌 의미 품질검사
 → 전 시즌 Stage04
 → 작품 완료검사
 → 작품 ZIP Fresh Extraction 1회
@@ -72,13 +77,14 @@ checkpoint
 - 목표·장애·가치·행동 계획·POV·장소·극적 방향 변화로 경계를 둔다.
 - 모든 장면은 정확히 한 시퀀스에 포함한다.
 - 누락·중복 0, span·budget 일치, runtime 합 1.0.
+- 각 시퀀스의 goal·obstacle은 고유하고 실제 상태를 전진시킨다.
 
 ## EpisodeArc·Stage03
 
 - EpisodeArc는 실제 entry→turning point→exit 변화를 기록한다.
 - CharacterArc는 실제 상태 변화가 있는 인물만 기록한다.
-- RelationshipArc는 양쪽 인물이 실제 접촉한 관계 변화만 기록한다.
-- LocalEdge는 같은 회차의 반사실 인과만 허용한다.
+- RelationshipArc는 양쪽 인물이 실제 접촉한 관계 변화만 기록하며 같은 회차의 동일 unordered pair를 중복하지 않는다.
+- LocalEdge는 같은 회차의 정방향 반사실 인과만 허용한다.
 - PayoffCandidate는 구체적인 장거리 plant 가능성만 기록한다.
 - 고정 수량은 없다.
 
@@ -97,7 +103,7 @@ LocalEdge same episode/gap0
 필수 파일 존재
 ```
 
-의미를 다시 채점하지 않는다. 결과는 단일 checkpoint에 기록한다.
+의미를 다시 채점하지 않는다. 결과는 단일 checkpoint에 기록한다. 구조 PASS만으로 의미 PASS나 작품 완료를 선언하지 않는다.
 
 ## Stage04
 
@@ -118,6 +124,8 @@ ID·FK 무결성
 CandidateDisposition 100%
 CrossEpisodeEdge 유효
 FullSeriesArc counts 일치
+전 시즌 의미 품질검사 PASS
+의미 실패 0
 작품 ZIP
 Fresh Extraction 1회
 ```
@@ -174,8 +182,9 @@ Fresh Extraction 1회
 
 1. `SCHEMA_CONTRACTS_V2.md`
 2. `START_HERE_NEW_DRAMA_ANALYSIS.md`
-3. 이 문서
-4. 작품 SourceLock·checkpoint
-5. 과거 playbook·incident 문서
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
+4. 이 문서
+5. 작품 SourceLock·checkpoint
+6. 과거 playbook·incident 문서
 
 충돌 시 현재 간소화 정책이 우선한다.
