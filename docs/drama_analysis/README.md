@@ -1,7 +1,7 @@
 # 드라마 분석 권위 진입점
 
 - 상태: `AUTHORITATIVE ENTRYPOINT / CURRENT`
-- 갱신: `2026-07-18`
+- 갱신: `2026-07-19`
 - 적용: GPT·Claude 공동 분석
 - DB 릴리즈: 사용자 명시 승인 전 동결
 
@@ -20,8 +20,9 @@
 
 1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
 2. `SCHEMA_CONTRACTS_V2.md`
-3. 최신 DB 전체 작품 인덱스
-4. 재개 작업이면 작품별 단일 checkpoint
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
+4. 최신 DB 전체 작품 인덱스
+5. 재개 작업이면 작품별 단일 checkpoint
 
 압축 실행 가이드:
 
@@ -33,10 +34,11 @@
 
 1. `SCHEMA_CONTRACTS_V2.md` — exact keyset·enum·ID·FK
 2. `START_HERE_NEW_DRAMA_ANALYSIS.md` — 현재 실행·검증·릴리즈 정책
-3. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` — 압축 실행 순서
-4. `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` — machine-readable 정책
-5. 작품 SourceLock Core·단일 checkpoint
-6. 과거 operating manual·validation·incident 문서
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md` — 의미 품질·재발 방지 상세
+4. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` — 압축 실행 순서
+5. `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` — machine-readable 정책
+6. 작품 SourceLock Core·단일 checkpoint
+7. 과거 operating manual·validation·incident 문서
 
 과거 문서가 QuarterAudit, 반복 강검사, 반복 validator, 매 작품 새 DB 릴리즈를 기본 의무로 요구하면 현재 정책이 우선한다.
 
@@ -182,6 +184,7 @@ Claude의 의미 증거 밀도·앙상블 폭·다축 관계 분석·인과 중�
 - `SCHEMA_CONTRACTS_V2.md`
 - `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json`
 - `DRAMA_ANALYSIS_AUTHORITY_INDEX_V5.md`
+- `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
 - `DRAMA_ANALYSIS_VALIDATION_SIMPLIFICATION_DECISION_2026-07-18.md`
 - `DRAMA_DATABASE_HANDOFF_64WORKS_SUHO_CHUNSA_2026-07-18.md`
 - `DRAMA_DATABASE_HANDOFF_63WORKS_OUR_HOME_2026-07-18.md` — 이전 스냅샷 기록
