@@ -1,11 +1,12 @@
 {
   "schema": "DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5",
   "status": "AUTHORITATIVE_CURRENT",
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "version_increment": false,
   "minimum_new_conversation_load": [
     "START_HERE_NEW_DRAMA_ANALYSIS.md",
-    "SCHEMA_CONTRACTS_V2.md"
+    "SCHEMA_CONTRACTS_V2.md",
+    "DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md"
   ],
   "conditional_load": {
     "new_work_selection": "latest complete database work index",
@@ -19,7 +20,10 @@
     "python_semantic_generation": false,
     "sequential_episode_processing": true,
     "multi_episode_semantic_generation": false,
-    "providers": ["gpt", "claude"],
+    "providers": [
+      "gpt",
+      "claude"
+    ],
     "provider_neutral_canonical": true
   },
   "episode_pipeline": [
@@ -56,7 +60,7 @@
   },
   "stage04": {
     "after_all_stage01_03_saved": true,
-    "candidate_disposition_required_ratio": 1.0,
+    "candidate_disposition_required_ratio": 1,
     "automatic_episode_bridge": false,
     "cross_episode_localedge_allowed": false
   },
@@ -64,6 +68,8 @@
     "run_once_after_stage04": true,
     "checks": [
       "all_episode_stage01_03_exist",
+      "full_series_semantic_quality_pass",
+      "semantic_errors_zero",
       "global_id_fk_integrity",
       "scene_sequence_count_consistency",
       "candidate_disposition_100_percent",
@@ -131,6 +137,39 @@
   "authority": {
     "exact_schema": "SCHEMA_CONTRACTS_V2.md",
     "full_onboarding": "START_HERE_NEW_DRAMA_ANALYSIS.md",
-    "execution_summary": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md"
+    "execution_summary": "DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md",
+    "semantic_quality": "DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md"
+  },
+  "midpoint_semantic_calibration": {
+    "required": true,
+    "frequency": "ONCE_AT_APPROXIMATELY_50_PERCENT",
+    "purpose": "detect_and_repair_semantic_drift_before_second_half",
+    "checks": [
+      "stage01_source_fidelity_and_scene_boundary_sample",
+      "stage01_exact_and_masked_template_repetition",
+      "stage02_intent_goal_obstacle_forward_progression",
+      "stage02_exact_and_masked_repetition",
+      "character_arc_trigger_state_and_evidence_grounding",
+      "relationship_arc_unordered_pair_and_participant_grounding",
+      "localedge_forward_counterfactual_causality_and_density",
+      "payoff_candidate_specificity_duplicate_and_same_episode_resolution"
+    ],
+    "repair_scope": "targeted_unless_layer_wide_contamination_is_proven"
+  },
+  "semantic_quality_gate": {
+    "distinct_from_structural_validation": true,
+    "structure_pass_does_not_imply_semantic_pass": true,
+    "before_stage04": true,
+    "checks": [
+      "no_source_mismatch_or_mass_scene_template",
+      "no_stage02_exact_or_masked_repetition_failure",
+      "no_mass_generic_character_or_relationship_state",
+      "no_same_episode_relationship_unordered_pair_duplicate",
+      "no_localedge_nonforward_or_cross_episode",
+      "counterfactual_localedge_sample_pass",
+      "trigger_and_evidence_source_sample_pass"
+    ],
+    "warnings_require_manual_source_judgment": true,
+    "validator_pass_gaming_prohibited": true
   }
 }
