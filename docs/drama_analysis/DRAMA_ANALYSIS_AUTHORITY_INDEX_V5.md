@@ -1,15 +1,16 @@
 # 드라마 분석 권위 인덱스 v5
 
 - 상태: `AUTHORITATIVE / CURRENT`
-- 갱신: `2026-07-18`
+- 갱신: `2026-07-19`
 - 문서·DB 릴리즈 번호 자동 증가 금지
 
 ## 새 대화창 필수 로드
 
 1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
 2. `SCHEMA_CONTRACTS_V2.md`
-3. 최신 DB 전체 작품 인덱스
-4. 재개 작업이면 작품별 단일 checkpoint
+3. `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md`
+4. 최신 DB 전체 작품 인덱스
+5. 재개 작업이면 작품별 단일 checkpoint
 
 ## 권위 우선순위
 
@@ -17,10 +18,11 @@
 |---:|---|---|
 | 1 | exact keyset·enum·ID·FK | `SCHEMA_CONTRACTS_V2.md` |
 | 2 | 현재 실행·검증·릴리즈 정책 | `START_HERE_NEW_DRAMA_ANALYSIS.md` |
-| 3 | 압축 실행 순서 | `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` |
-| 4 | machine-readable 정책 | `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` |
-| 5 | 작품 실행 상태 | SourceLock Core·단일 checkpoint |
-| 6 | 과거 상세 사례·incident | 필요할 때만 부분 조회 |
+| 3 | 의미 품질·재발 방지 | `DRAMA_ANALYSIS_SEMANTIC_QUALITY_LESSONS_2026-07-19.md` |
+| 4 | 압축 실행 순서 | `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` |
+| 5 | machine-readable 정책 | `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` |
+| 6 | 작품 실행 상태 | SourceLock Core·단일 checkpoint |
+| 7 | 과거 상세 사례·incident | 필요할 때만 부분 조회 |
 
 과거 문서가 QuarterAudit, 약 8회차 강검사, 반복 validator, 매 작품 새 DB 릴리즈를 기본 의무로 요구하면 현재 START_HERE 정책이 우선한다.
 
@@ -33,6 +35,9 @@ Q1→Q4 원본 직접독해
 → 최소 구조검사 1회
 → 단일 checkpoint
 → 다음 회차
+→ 전체의 약 50% 의미 캘리브레이션 1회
+→ 전 회차 Stage01~03 완료
+→ 전 시즌 의미 품질검사 1회
 → 전 시즌 Stage04
 → 작품 완료검사
 → 작품 ZIP Fresh Extraction 1회
