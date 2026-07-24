@@ -1,0 +1,30 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_AUTHORITY_POINTER_V1",
+  "status": "ACTIVE",
+  "effective_at": "2026-07-24",
+  "authority_id": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10",
+  "authority_path": "authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10",
+  "authority_manifest": "authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/AUTHORITY_MANIFEST.json",
+  "authority_manifest_sha256": "7bd0c66b850649f6f69d8ee4365c7b21e201d49fc9340596e96f00464a0f1342",
+  "schema_registry": "authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/schemas/EXACT_SCHEMA_REGISTRY.json",
+  "schema_registry_sha256": "211e27e45ea4e3f47597060e7fd79eefc823805562f7f43cb46b044c49a1defb",
+  "database_index": "AUTHORED_WORK_INDEX_V22.json",
+  "database_index_sha256": "525cd4b6b4b6514187cafebbff66dd4e67abff97153506bc3f11e145d98eaf52",
+  "works_total": 79,
+  "episodes_total": 1465,
+  "scenes_total": 92090,
+  "conflict_policy": "V10_AND_THIS_POINTER_OVERRIDE_LEGACY_V1_V9_AND_ROOT_V3_V5_GUIDES",
+  "new_session_minimum_load": [
+    "README.md",
+    "CURRENT_AUTHORITY_POINTER.json",
+    "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10.md",
+    "authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/AUTHORITY_MANIFEST.json",
+    "authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/schemas/EXACT_SCHEMA_REGISTRY.json",
+    "AUTHORED_WORK_INDEX_V22.json"
+  ],
+  "target_state_after_selection": [
+    "target work_state.json",
+    "last CHECKPOINT_LOCKED when resuming"
+  ],
+  "legacy_document_policy": "DELETE_FROM_ACTIVE_ROOT; PRESERVE_ONLY_DATA_PROVENANCE_AND_AUDIT_EVIDENCE"
+}

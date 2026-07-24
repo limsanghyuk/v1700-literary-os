@@ -1,189 +1,308 @@
-# 드라마 분석 권위 진입점
+# 새 세션 한국 드라마 분석 V10 실행 인계서
 
-- 상태: `AUTHORITATIVE ENTRYPOINT / CURRENT`
-- 갱신: `2026-07-18`
-- 적용: GPT·Claude 공동 분석
-- DB 릴리즈: 사용자 명시 승인 전 동결
+Document ID: `DRAMA_ANALYSIS_NEW_SESSION_HANDOFF_V10`  
+Effective date: `2026-07-24`  
+Status: `ACTIVE_ENTRYPOINT`  
+Authority: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10`
 
-이 디렉터리는 한국 드라마 원본 직접독해, Stage01~04 저작, SourceLock, 최소 검증, 공동 정본 DB 편입의 단일 진입점이다.
+이 문서는 새 대화창이 과거 세션 전체를 다시 조사하지 않고도 한국 드라마 한 작품을 즉시 선정·독해·분석·검증·저장할 수 있게 하는 단일 진입점이다.
 
-## 현재 전체 DB 인계
+## 1. 시작할 때 읽을 문서 — 정확히 6개
 
-- 전체 DB: **64작품 / 1,182회 / 74,078 SceneCard**
-- 전 시즌 Stage01~04 완료: **62작품**
-- 최신 편입 정본: **수호천사 EP01~16**
-- 사용자 승인 정본: **20작품**
-- Governance 번호 증가: **없음 — V15 기반 증분 스냅샷**
-- 최신 인계 문서: `DRAMA_DATABASE_HANDOFF_64WORKS_SUHO_CHUNSA_2026-07-18.md`
+다음 순서만 읽는다.
 
-## 새 대화창 최소 로드
+1. `README.md` — 지금 읽는 실행 인계서
+2. `CURRENT_AUTHORITY_POINTER.json` — 현재 권위와 해시
+3. `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10.md` — 유일한 의미·운영 규약
+4. `authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/AUTHORITY_MANIFEST.json` — V10 구성·해시
+5. `authority/DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10/schemas/EXACT_SCHEMA_REGISTRY.json` — exact keyset
+6. `AUTHORED_WORK_INDEX_V22.json` — 79작품 최신 물리 인덱스
 
-1. `START_HERE_NEW_DRAMA_ANALYSIS.md`
-2. `SCHEMA_CONTRACTS_V2.md`
-3. 최신 DB 전체 작품 인덱스
-4. 재개 작업이면 작품별 단일 checkpoint
+과거 V1–V9, GPT·Claude 개별 매뉴얼, 세션 handoff, 구형 DB 상태 문서는 읽지 않는다. 충돌 시 V10과 현재 포인터가 우선한다.
 
-압축 실행 가이드:
+대상 작품을 정한 뒤에만 실행 상태를 추가로 읽는다.
 
-- `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`
+- 신규 작품: V10 `work_state.template.json`로 새 `work_state.json` 생성
+- 기존 작품 재개: 대상 작품의 `work_state.json`과 마지막 `CHECKPOINT_LOCKED`
+- 기존 작품 재저작: 기존 lineage·SourceLock·현재 DB 파일을 읽되, 의미문을 먼저 모방하지 않는다
 
-과거 대화 전체, 모든 세션 README, 모든 역사 문서를 시작 전에 전수 조사하지 않는다.
+## 2. 현재 데이터베이스 상태
 
-## 권위 우선순위
+- 작품: 79
+- 회차: 1,465
+- SceneCard: 92,090
+- 최신 작품 인덱스: `AUTHORED_WORK_INDEX_V22.json`
+- 활성 권위: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10`
+- 《질투의 화신》: 물리 편입 완료, 현재 의미 보강 및 V10 Stage04 재감사 대기
+- 사용자 승인 전 전체 상태: `NOT_CANONICAL_USER_APPROVAL_REQUIRED`
 
-1. `SCHEMA_CONTRACTS_V2.md` — exact keyset·enum·ID·FK
-2. `START_HERE_NEW_DRAMA_ANALYSIS.md` — 현재 실행·검증·릴리즈 정책
-3. `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md` — 압축 실행 순서
-4. `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json` — machine-readable 정책
-5. 작품 SourceLock Core·단일 checkpoint
-6. 과거 operating manual·validation·incident 문서
+작품 선정 시 `AUTHORED_WORK_INDEX_V22.json`과 후보 작품명을 대조하여 기존 작품을 신규 작품으로 중복 편입하지 않는다.
 
-과거 문서가 QuarterAudit, 반복 강검사, 반복 validator, 매 작품 새 DB 릴리즈를 기본 의무로 요구하면 현재 정책이 우선한다.
+## 3. 절대 원칙
 
-## 표준 실행
+> 원본을 직접 읽고 이해한 뒤 고유하게 저작한다. 도구는 의미를 만들지 않고 판단을 보존·검증·운반한다.
+
+필수:
+
+- 한 회차 원본 전체를 처음부터 끝까지 순차 독해
+- 실제 행동·전략·정보 변화·선택·구조 기능을 구분
+- SceneCard exact 9키
+- 저작 run과 독립 감사 run 분리
+- 회차별 원자적 저장과 checksum
+- 최대 8회차 블록 강검사
+- 전 시즌 Stage01–03 잠금 후 Stage04
+- 후보 100% 처분
+- ZIP fresh extraction
+- 사용자 승인 전 `CANONICAL` 금지
+
+금지:
+
+- Python으로 의미 필드 생성
+- 대사·지문·기존 의미문 복사
+- 고유명만 바꾼 반복 문형
+- 장면 수 균등분할 Sequence
+- 회차 요약을 모든 Arc에 복제
+- 부분 원본으로 Stage04·전 시즌 PASS 생성
+- 저작자가 같은 run에서 독립 감사 PASS 생성
+- 구조 PASS를 의미 PASS로 확대
+
+## 4. 신규 작품 선정과 SourceLock
+
+1. 후보 목록과 79작품 인덱스를 대조한다.
+2. 전 회차와 최종회 존재를 확인한다.
+3. 최종회가 실제 종결본인지 읽어 확인한다.
+4. 중복 판본·수정 조각·추가 장면 조각을 분리한다.
+5. 원본 파일 SHA-256과 추출 텍스트 SHA-256을 기록한다.
+6. 첫 회차·중간 회차·최종회 표본을 원본과 추출본으로 대조한다.
+7. 삭제·삽입·번호 없는 외경·몽타주·회상 전환을 감사한다.
+8. canonical `scene_no=1..N`과 원문 `source_label`을 분리한다.
+9. `SourceFormatAudit`, `SourceLock`, canonical scene map을 잠근다.
+
+전 회차·결말이 완전하지 않으면 `FULL_SERIES_SOURCE_LOCKED`를 선언하지 않는다.
+
+## 5. 한 회차 실행 순서
 
 ```text
-원본 inventory·전체 회차 경계 선확정
-→ 최신 DB 차집합
-→ SourceLock Core
-→ EP01 Q1→Q4 직접독해
-→ EP01 Stage01~03 직접 저작
-→ 정본 저장
-→ 최소 구조검사 1회
-→ 단일 checkpoint
-→ 다음 회차를 순서대로 연속 처리
-→ 전체의 약 50% 지점에서 의미검사·보강 1회
-→ 교정 규칙을 후반부에 적용
-→ 마지막 회차까지 연속 처리
-→ 전 시즌 의미검사 1회
-→ 전 시즌 Stage04
-→ 작품 완료검사
-→ 작품 ZIP Fresh Extraction 1회
-→ DB 증분 편입
-→ 사용자 요청 시 전체 DB 호환 ZIP 1회
+SourceBoundaryReview
+→ 원본 전체 순차 독해
+→ Stage01 SceneCard
+→ EpisodeMeta
+→ Stage02 SequenceBlueprint
+→ EpisodeArc
+→ CharacterArc·RelationshipArc
+→ LocalEdge·PayoffCandidate
+→ 회차 경량검사
+→ 독립 원문 감사
+→ 원자적 저장
+→ EPISODE_CHECKPOINT_LOCKED
+→ 다음 회차
 ```
 
-직접독해와 의미 저작이 본 작업이다. 검증은 이를 대신하지 않는다.
+Q1–Q4는 긴 회차를 순서대로 읽기 위한 보조 단위일 뿐, 별도 극적 4막이나 정본 산출물이 아니다.
 
-중간의 약 50% 의미검사는 과거의 회차별·8회차별 반복 강검사와 다르다. 작품당 한 번만 수행하며, 전반부에서 발견한 원문 불일치·템플릿 반복·Arc 남발·LocalEdge 과밀·PayoffCandidate 오류를 보강하여 후반부에 재발하지 않게 하는 의미 캘리브레이션이다.
+앞 회차가 `EPISODE_CHECKPOINT_LOCKED`가 아니면 다음 회차를 잠그지 않는다.
 
-## 기본 검증
+## 6. Stage01
 
-### 회차
+SceneCard exact 9키:
+
+```text
+work_id, scene_no, heading, title, intent_gist,
+core, core2, skin, by
+```
+
+각 장면에서 확인한다.
+
+1. 누가 실제로 무엇을 하는가
+2. 목표·전략·은폐·회피는 무엇인가
+3. 새로 생기거나 변한 정보·관계·권력은 무엇인가
+4. 어떤 선택·거부·유예가 발생하는가
+5. 회차 구조에서 어떤 기능을 하는가
+6. 다음 장면을 미는 잔여 압력은 무엇인가
+
+`title`, `intent_gist`, `skin`은 서로 다른 정보를 담고, 다른 장면에도 붙을 수 있는 추상문을 쓰지 않는다.
+
+EpisodeMeta exact 5키:
+
+```text
+work_id, scene_count, core_dist, episode_function, by
+```
+
+`scene_count`와 `core_dist`는 저장된 SceneCard에서 결정론적으로 재계산한다.
+
+## 7. Stage02
+
+SequenceBlueprint exact 18키는 `EXACT_SCHEMA_REGISTRY.json`을 따른다.
+
+Sequence 경계는 다음 중 하나 이상이 실제로 변하는 지점에 둔다.
+
+- 지배 목표
+- 장애·압력
+- POV
+- 장소·시간
+- 행동 계획
+- 가치 방향
+- 극적 질문
+
+불변식:
+
+- 모든 장면이 정확히 한 Sequence에 포함
+- 누락·중복 0
+- `member_scene_nos` 연속·오름차순
+- `scene_span`, `scene_budget` 일치
+- `runtime_share` 합 1.0
+- 실제 SceneCard에 존재하는 `core_mix`
+- 균등 장면 수 분할 금지
+
+## 8. Stage03
+
+EpisodeArc는 회차의 `entry → turning point → exit` 변화를 기록한다.
+
+CharacterArc:
+
+- 실제 상태 변화가 있는 인물만 기록
+- `state_label`은 현재 상태
+- `state_delta`는 이번 회차 변화량
+- trigger 장면과 evidence는 원문 행동·대사에 근거
+
+RelationshipArc:
+
+- 두 당사자가 실제 접촉·통화·교신한 변화만 기록
+- `(A,B)`와 `(B,A)` 중복 금지
+- 단일 인물·집단·추상 세력을 관계쌍으로 만들지 않음
+
+LocalEdge:
+
+- 같은 회차의 구체적 반사실 인과만 허용
+- 단순 인접·주제 유사·Sequence 순서는 인과가 아님
+
+PayoffCandidate:
+
+- 장거리 회수 가능성이 있는 구체 plant만 기록
+- 고정 수량 없음
+- 후속 원문 확인 전 CrossEpisodeEdge로 확정하지 않음
+
+## 9. 회차·블록·전 시즌 검사
+
+### 회차 경량검사
 
 - JSON/JSONL parse
-- exact keyset·type
+- exact keyset·type·enum
 - ID 중복
 - SceneCard ordinal coverage
 - Sequence partition·span·budget·runtime
-- Arc·Edge reference
-- LocalEdge same episode/gap 0
-- 필수 파일 존재
+- Arc·Edge 참조
+- trigger 참여자
+- LocalEdge 회차·target core
+- placeholder·정확 중복·반복 문형
 
-결과는 단일 checkpoint에 기록한다.
+### 최대 8회차 블록 강검사
 
-### 작품 중간 50% 의미 게이트
+- 16부작: EP01–08 / EP09–16
+- 20부작: EP01–08 / EP09–16 / EP17–20
+- 24부작: EP01–08 / EP09–16 / EP17–24
 
-- 원문 대비 title·intent 정확성
-- exact semantic duplicate
-- masked skeleton·동일 종결 템플릿
-- CharacterArc trigger participant
-- RelationshipArc 양쪽 participant·역방향 중복
-- 앙상블 변화 누락
-- LocalEdge 반사실 인과·과밀·인접 편향
-- PayoffCandidate 구체 근거·중복·회차 내 해결
-- 문제 레코드 보강 후 후반부 진행
+검사 항목:
 
-### 작품 완료
+- 블록 전 파일 구조·참조
+- 원문 표본 재대조
+- 의미 중복·마스킹 문형
+- 균등 Sequence 경계
+- Arc trigger와 evidence
+- Edge 과밀·인접 편향
+- 감사 run 분리와 체크포인트
 
-- 전 회차 Stage01~03 존재
-- 전 시즌 의미검사 PASS
+### 전 시즌
+
+- 모든 회차 Stage01–03 잠금
+- 블록 잠금 전부 존재
+- 전 작품 의미 회귀검사
+- Stage04 독립 원문 재개방
 - CandidateDisposition 100%
-- CrossEpisodeEdge·FullSeriesArc 무결성
-- 작품 ZIP
-- Fresh Extraction 1회
+- FullSeriesArc count 일치
+- 작품 패키지·DB 편입·Fresh Extraction
 
-## 기본에서 제거
+## 10. Stage04
 
-- QuarterAudit 의무
-- 회차별 다수 증빙 JSON
-- 여러 checkpoint
-- 반복 checksum
-- 회차별·다중 블록별 반복 강검사
-- 회차·블록·전 시즌 중복 validator
-- 회차별·블록별 ZIP·Fresh Extraction
-- 중복 validation registry
-- 작품마다 전체 DB 새 릴리즈
+Stage04는 전 회차 Stage01–03 잠금 뒤 수행한다.
 
-위 항목은 원본 불일치, 직접독해 누락 의심, 템플릿 반복, Edge 과밀, Provider 충돌, SourceLock 불일치, 정본 교체, 사용자 요청 때만 포렌식으로 사용한다.
+1. 모든 PayoffCandidate를 원 발생 장면에서 다시 읽는다.
+2. 후보별 실제 회수 장면을 원문에서 다시 읽는다.
+3. 후보를 100% 처분한다.
+4. 실제 장거리 plant/payoff만 CrossEpisodeEdge로 승격한다.
+5. 자동 회차 bridge, 최종회 집결, 결혼식 참석, 주제 유사만으로 승격하지 않는다.
+6. FullSeriesArc를 전 시즌 전환에 따라 작성한다.
+7. 저작 run과 다른 audit run이 독립 검사한다.
 
-## GPT·Claude 공동 정본
+독립 원문 재개방 증거가 없으면 Stage04는 완료가 아니다.
 
-공통:
+## 11. 저장·중단 복구
 
-- 원본 직접독해
-- 회차 순차 처리
-- exact Stage01~04 schema
-- 동일 ID·enum·FK
-- SourceLock Core
-- 단일 checkpoint
-- LocalEdge 동일 회차
-- CandidateDisposition 100%
-- Provider provenance
+시간 계약:
 
-어느 Provider도 자동 상위가 아니다. 사용자 승인으로 공동 `CANONICAL`이 된다.
+- 20분: 체크포인트 준비
+- 25분: 산출물·상태·checksum 저장
+- 30분: 체크포인트 없는 의미 작업 하드스톱
 
-Claude의 의미 증거 밀도·앙상블 폭·다축 관계 분석·인과 중간 메커니즘을 수용하되, 최종 스키마·ID·FK·패키징은 동일 계약으로 정규화한다.
-
-## SourceLock
-
-작품당 Core 한 파일만 기본 유지한다. 작품 분석 전에 전체 회차 경계·인코딩·장면 번호 정책을 먼저 잠근다. 장면별·Quarter별 상세 증빙은 사고 작품에서만 확장한다.
-
-## 압축 호환 정책
-
-전체 DB ZIP은 다음을 기본으로 한다.
-
-- 짧은 ASCII archive root
-- 실제 Unicode 파일명과 UTF-8 filename flag
-- standard ZIP Deflate
-- 암호화 없음
-- 분할 압축 없음
-- 내부 경로 길이 260자 미만 목표
-- system unzip test
-- 전체 Fresh Extraction
-- SHA ledger 검증
-
-## EXT6
-
-`EXT6_DISABLED_BY_DEFAULT`.
-
-사용자 명시 지시 또는 별도 교차비교·연구 작업에서만 실행한다.
-
-## 릴리즈 동결
-
-- 작품 완료와 전체 DB 릴리즈 생성을 분리한다.
-- 전체 DB ZIP·새 Governance 번호·release manifest는 사용자 명시 지시가 있을 때만 만든다.
-- 문서 변경, validator 변경, 작품 한 편 추가만으로 Governance 번호를 올리지 않는다.
-
-## 보고
-
-사용자가 중간 보고를 요구하지 않으면 최소 보고만 한다.
+저장:
 
 ```text
-작품 / 완료 회차 / current pointer / 저장 Stage / 구조검사 / 차단 오류
+<file>.tmp
+→ parse
+→ flush/fsync
+→ 기존 파일 lineage 보존
+→ atomic rename
+→ SHA-256
+→ manifest·work_state·RunJournal 동기화
 ```
 
-실제 저장되지 않은 진행은 보고하지 않는다.
+중단 시 사용자 보고가 아니라 실제 파일·SHA·journal을 기준으로 마지막 `CHECKPOINT_LOCKED`까지 복구한다.
 
-## 관련 문서
+## 12. DB 편입
 
-- `START_HERE_NEW_DRAMA_ANALYSIS.md`
-- `DRAMA_NEW_CONVERSATION_EXECUTION_GUIDE_V3.md`
-- `SCHEMA_CONTRACTS_V2.md`
-- `DRAMA_ANALYSIS_PROTOCOL_MANIFEST_V5.json`
-- `DRAMA_ANALYSIS_AUTHORITY_INDEX_V5.md`
-- `DRAMA_ANALYSIS_VALIDATION_SIMPLIFICATION_DECISION_2026-07-18.md`
-- `DRAMA_DATABASE_HANDOFF_64WORKS_SUHO_CHUNSA_2026-07-18.md`
-- `DRAMA_DATABASE_HANDOFF_63WORKS_OUR_HOME_2026-07-18.md` — 이전 스냅샷 기록
+신규 작품:
 
-대용량 ZIP과 raw script는 허브에 커밋하지 않는다. 허브에는 artifact name, SHA256, counts, lineage, handoff만 기록한다.
+- `ADD_NEW_WORK`
+- 기존 79작품 의미 파일 변경 0
+- 신규 work_id 중복 0
+
+기존 작품 재저작:
+
+- `REPLACE_EXISTING_WORK`
+- 작품 lineage·source hash·scene ordinal 호환 확인
+- 서로 다른 판본의 Stage 혼합 금지
+- 작품 계층 전체 교체 또는 명시된 선택 재저작 ledger
+
+편입 후:
+
+- 최신 작품 인덱스·포인터·work_state 갱신
+- 전체 JSON/JSONL parse
+- 작품 수·회차 수·SceneCard 수 재집계
+- ZIP CRC·SHA ledger·fresh extraction
+- semantic FAIL 작품을 `CANONICAL`로 표시하지 않음
+
+## 13. 새 세션에 줄 첫 명령
+
+```text
+README.md부터 지정된 6개 문서를 순서대로 읽어 V10 권위와 해시를 확인하라.
+AUTHORED_WORK_INDEX_V22.json과 후보 원본 목록을 대조해 기존 DB에 없는 완전한 한 작품을 선정하라.
+전 회차와 최종회·판본·SourceLock을 먼저 잠근 뒤 EP01 원본 전체를 순차 독해하고,
+Stage01→02→03→회차 경량검사→독립 원문 감사→EPISODE_CHECKPOINT_LOCKED 순으로 진행하라.
+최대 8회차 블록마다 강검사하고, 전 회차 Stage01–03 잠금 뒤에만 Stage04를 수행하라.
+Python으로 의미를 생성하거나 과거 작품 문형을 복사하지 말고, 사용자 승인 전 CANONICAL을 선언하지 마라.
+```
+
+## 14. 충돌과 중단 조건
+
+다음이면 분석을 시작하거나 계속하지 않는다.
+
+- 포인터의 V10 master·manifest·schema·index 해시 불일치
+- 허브와 DB의 V10 authority hash 불일치
+- 전 회차·최종회 불완전
+- source label과 canonical ordinal 재현 불가
+- 기존 작품명·work_id 중복
+- 마지막 checkpoint보다 work_state가 앞서거나 뒤섞임
+- 같은 run이 저작과 독립 감사를 동시에 주장
+- 구조 PASS만 있고 원문 의미 감사 없음
+
+이 경우 상태를 `AUTHORITY_CONTRACT_DRIFT`, `SOURCE_HOLD`, `RECOVERY_REQUIRED`, `SEMANTIC_AUDIT_REQUIRED` 중 하나로 기록하고 사용자에게 보고한다.
