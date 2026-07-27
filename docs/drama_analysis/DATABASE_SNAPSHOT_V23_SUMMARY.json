@@ -1,0 +1,26 @@
+{
+  "schema": "DRAMA_ANALYSIS_DATABASE_SNAPSHOT_SUMMARY_V23",
+  "status": "CURRENT_EXTERNAL_DATABASE_SNAPSHOT",
+  "updated_at": "2026-07-28",
+  "works_total": 87,
+  "episodes_total": 1640,
+  "scene_cards_total": 102417,
+  "semantic_pass_works": 86,
+  "semantic_fail_works": 0,
+  "source_hold_works": [
+    "최강칠우"
+  ],
+  "semantic_hold_works": [],
+  "latest_reinforcement": {
+    "work_id": "하얀거탑",
+    "mode": "SELECTIVE_APPEND",
+    "accepted_claude_arc_records": 63,
+    "rejected_claude_arc_records": 97,
+    "baseline_records_overwritten": 0,
+    "core_recall_at_5": "1.00_PRESERVED",
+    "supplemental_recall_at_5": "0.00_TO_1.00"
+  },
+  "authority": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1",
+  "core_stage_schemas_changed": false,
+  "canonical_promotions_in_this_update": []
+}

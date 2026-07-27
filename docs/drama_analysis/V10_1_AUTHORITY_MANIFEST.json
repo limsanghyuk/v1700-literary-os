@@ -1,0 +1,28 @@
+{
+  "authority_id": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1",
+  "version": "10.1.0",
+  "effective_date": "2026-07-28",
+  "status": "ACTIVE_SINGLE_AUTHORITY",
+  "normative_document": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1.md",
+  "entrypoint": "README_V10_1.md",
+  "database_snapshot": "DATABASE_SNAPSHOT_V23_SUMMARY.json",
+  "supersedes": [
+    "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10"
+  ],
+  "core_stage_schemas_unchanged_from_v10": true,
+  "arc_coverage_expansion_pass_required_for_new_work": true,
+  "external_analysis_policy": "EXTERNAL_ANALYSIS_CANDIDATE_ONLY",
+  "default_existing_work_adoption_mode": "SELECTIVE_APPEND",
+  "functional_holdout_required_for_provider_adoption": true,
+  "non_target_immutability_required": true,
+  "full_rework_of_all_pass_works_required": false,
+  "canonical_auto_promotion": false,
+  "required_extension_evidence": [
+    "arc_coverage_audit.json",
+    "provider_selective_adoption_ledger.json",
+    "functional_holdout.json",
+    "provider_authorship_provenance",
+    "non_target_immutability",
+    "fresh_extraction"
+  ]
+}
