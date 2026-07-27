@@ -1,6 +1,6 @@
 # V1700 Literary OS - Stage242
 
-> Page17 Authority Closure
+> Page17 Authority Closure  
 > Provider-Zero AI longform novel and drama scenario generation system.
 
 ## Current Stage
@@ -30,23 +30,31 @@ python tools/check_release_asset_integrity.py
 
 ## Drama Analysis Authoring
 
-The authoritative entrypoint for Korean drama close-reading, Stage01~04 schemas, validation, GPT–Claude ingestion, current completed-work status, and new-session handoff is:
+The active entrypoint for Korean drama close-reading, Stage01~04 schemas, validation, GPT–Claude selective ingestion, current database status, and new-session handoff is:
 
 ```text
-docs/drama_analysis/README.md
+docs/drama_analysis/README_V10_1.md
 ```
 
-A new session must read that index before selecting or analyzing another work from `한국드라마04`. The historical Claude-to-GPT v1 manual under `docs/external/` is preserved, but the v2 documents under `docs/drama_analysis/` take priority when they conflict.
+The active drama-analysis authority is `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`. It preserves the V10 core exact schemas and adds:
 
-Current GPT Stage01~04 candidate works recorded there:
+- Arc Coverage Expansion Pass for newly analyzed works
+- external-provider analysis as candidate evidence only
+- `SELECTIVE_APPEND` as the default adoption mode
+- independent functional holdout and non-target immutability gates
+- no blanket reauthoring of all existing PASS works
+
+Current database snapshot recorded in the drama-analysis handoff:
 
 ```text
-101번째프로포즈
-결혼못하는남자
-공주가돌아왔다
-시티헌터
-내여자친구는구미호
+87 works
+1,640 episodes
+102,417 SceneCards
+86 semantic PASS works
+1 retained Source Hold: 최강칠우
 ```
+
+A new session must read the V10.1 drama-analysis entrypoint before selecting or analyzing another work. Historical V10 and provider-specific manuals remain provenance only when they conflict with V10.1.
 
 ## Stage Lineage
 
