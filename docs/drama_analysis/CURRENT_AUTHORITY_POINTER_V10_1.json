@@ -1,0 +1,29 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_AUTHORITY_POINTER_V2",
+  "status": "ACTIVE",
+  "effective_at": "2026-07-28",
+  "authority_id": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1",
+  "authority_document": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1.md",
+  "authority_manifest": "V10_1_AUTHORITY_MANIFEST.json",
+  "entrypoint": "README_V10_1.md",
+  "database_snapshot": "DATABASE_SNAPSHOT_V23_SUMMARY.json",
+  "works_total": 87,
+  "episodes_total": 1640,
+  "scenes_total": 102417,
+  "semantic_pass_works": 86,
+  "source_hold_works": [
+    "최강칠우"
+  ],
+  "conflict_policy": "V10_1_OVERRIDES_V1_V10_AND_PROVIDER_MANUALS",
+  "new_session_minimum_load": [
+    "README_V10_1.md",
+    "CURRENT_AUTHORITY_POINTER_V10_1.json",
+    "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1.md",
+    "V10_1_AUTHORITY_MANIFEST.json",
+    "DATABASE_SNAPSHOT_V23_SUMMARY.json",
+    "target work_state.json and last CHECKPOINT_LOCKED"
+  ],
+  "extension_policy": "NEW_WORK_ARC_COVERAGE_REQUIRED; EXISTING_PASS_WORK_SELECTIVE_ADOPTION_ONLY; EXTERNAL_ANALYSIS_CANDIDATE_ONLY",
+  "legacy_document_policy": "PRESERVE_V10_AS_HISTORY; V10_1_IS_ACTIVE",
+  "canonical_auto_promotion": false
+}
