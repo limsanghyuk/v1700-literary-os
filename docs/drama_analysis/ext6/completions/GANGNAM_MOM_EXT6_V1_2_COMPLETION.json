@@ -1,0 +1,49 @@
+{
+  "schema": "EXT6_WORK_COMPLETION_RECORD_V1_2",
+  "work_id": "강남엄마따라잡기",
+  "status": "PASS_CANDIDATE_EXT6_SELECTIVE_REINFORCEMENT_COMPLETE",
+  "completed_at": "2026-07-29T15:54:00+09:00",
+  "counts": {
+    "episodes": 18,
+    "scene_cards": 1246,
+    "source_scene_alignment": 1246,
+    "cast_presence": 5117,
+    "character_load": 684,
+    "entity_bridge": 114
+  },
+  "risk_audit": {
+    "candidates": 34,
+    "accepted": 17,
+    "rejected": 17,
+    "unresolved": 0
+  },
+  "selective_append": {
+    "character_arc": 9,
+    "relationship_arc": 8,
+    "overwrite": 0,
+    "delete": 0
+  },
+  "functional_holdout": {
+    "core_recall_at_5": "1.0_TO_1.0",
+    "supplemental_recall_at_5": "0.0_TO_1.0",
+    "total_recall_at_5": "0.3125_TO_1.0"
+  },
+  "validation": {
+    "structure": "PASS",
+    "semantic": "PASS",
+    "source_lock": "PASS",
+    "ext6": "PASS",
+    "functional_holdout": "PASS",
+    "fresh_extraction": "PASS",
+    "zip_crc": "PASS",
+    "internal_sha256": "PASS"
+  },
+  "package": {
+    "filename": "강남엄마따라잡기_EXT6_V1_2_INDIVIDUAL_PACKAGE_20260729.zip",
+    "sha256": "adf483e8a2530964e85972ebd2a19bbb1379819aa60b76dfe68b6e379d925d0a",
+    "file_count": 360,
+    "size_bytes": 1438960
+  },
+  "next_work": "개와늑대의시간",
+  "canonical_auto_promotion": false
+}
