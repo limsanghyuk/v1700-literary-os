@@ -1,0 +1,40 @@
+{
+  "schema": "EXT6_EXACT_SCHEMA_REGISTRY_V1_1",
+  "status": "AUTHORIZED_EXTENSION_USER_EXPLICIT",
+  "core_stage01_04_schema_changed": false,
+  "records": {
+    "EntityRegistry": {
+      "keys": ["schema", "work_id", "status", "entity_count", "entities", "by"],
+      "entity_keys": ["entity_id", "character_key", "canonical_name", "aliases", "mapping_status"]
+    },
+    "EntityBridge": {
+      "keys": ["work_id", "character_key", "canonical_name", "aliases", "entity_id", "mapping_status", "source_registry_ref", "source_registry_sha", "by"]
+    },
+    "CastPresence": {
+      "keys": ["work_id", "episode_no", "scene_no", "character_key", "entity_id", "presence_mode", "focality", "speaking_status", "evidence_ref", "by"],
+      "presence_mode": ["ONSCREEN", "VOICE_ONLY", "PHONE_OR_REMOTE", "ARCHIVAL_OR_MEMORY", "REFERENCED_ONLY"],
+      "focality": ["PRIMARY", "SECONDARY", "PRESENT_ONLY"],
+      "speaking_status": ["SPEAKING", "NONSPEAKING"]
+    },
+    "CharacterLoad": {
+      "keys": ["work_id", "episode_no", "character_key", "entity_id", "canonical_name", "present_scene_count", "focal_scene_count", "speaking_scene_count", "present_sequence_count", "scene_share", "focal_share", "scene_share_band", "act_placement", "first_scene_no", "last_scene_no", "max_absence_gap", "by"],
+      "scene_share_band": ["CAMEO", "MINOR", "MAJOR", "DOMINANT"]
+    },
+    "CastCoverageLedger": {
+      "keys": ["work_id", "episode_no", "episode_scene_count", "annotated_scene_nos", "empty_cast_scene_nos", "unresolved_scene_nos", "union_count", "by"]
+    },
+    "SourceHeadingRegistry": {
+      "keys": ["schema", "work_id", "episode_no", "source_text_sha256", "heading_count", "headings", "by"],
+      "heading_keys": ["source_heading_index", "source_line_no", "heading", "start", "line_end"]
+    },
+    "SourceSceneAlignment": {
+      "keys": ["work_id", "episode_no", "scene_no", "scene_heading", "source_heading_indexes", "alignment_type", "source_char_offsets", "source_hashes", "source_text_sha256", "alignment_note", "status", "by"],
+      "offset_keys": ["source_heading_index", "source_line_no", "start", "end"],
+      "hash_keys": ["source_heading_index", "source_line_no", "sha256", "char_len"],
+      "alignment_type": ["ONE_TO_ONE", "MERGED_SOURCE_HEADINGS", "LOGICAL_REHEADING", "MERGED_SOURCE_HEADINGS_WITH_LOGICAL_REHEADING"],
+      "status": ["VERIFIED_SEQUENCE_ALIGNMENT", "VERIFIED_MANUAL_OVERRIDE"]
+    }
+  },
+  "adoption_policy": "SELECTIVE_APPEND_ONLY",
+  "automatic_canonical_promotion": false
+}
