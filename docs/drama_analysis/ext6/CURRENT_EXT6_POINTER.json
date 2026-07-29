@@ -1,15 +1,17 @@
 {
-  "schema": "CURRENT_EXT6_POINTER_V1_2",
-  "status": "ACTIVE_USER_APPROVED",
+  "schema": "CURRENT_EXT6_POINTER_V1_4_APPEND_ONLY_CORRECTION",
+  "status": "IMMUTABILITY_CORRECTION_ACTIVE",
   "effective_date": "2026-07-29",
   "authority": "EXT6_SINGLE_AUTHORITY_V1_2",
   "exact_schema": "EXT6_EXACT_SCHEMA_REGISTRY_V1_1",
   "gold_method_anchor": "비밀의숲",
   "legacy_anchor_requiring_normalization": "돌아온일지매",
-  "rollout_queue": "EXT6_ROLLOUT_QUEUE_85WORKS_20260729.json",
-  "current_work": "101번째프로포즈",
+  "rollout_queue": "SUSPENDED_BY_APPEND_ONLY_IMMUTABILITY_CORRECTION",
+  "current_work": null,
+  "approved_scope": "NEW_EXT6_SIDECAR_EVIDENCE_ONLY",
   "core_stage01_04_schema_changed": false,
-  "default_adoption_mode": "SELECTIVE_APPEND",
+  "default_adoption_mode": "APPEND_ONLY_SIDECAR",
   "automatic_canonical_promotion": false,
-  "conflict_policy": "V10_1_CORE_AUTHORITY_WINS_FOR_STAGE01_04; EXT6 authority governs only sidecar evidence and selective reinforcement workflow"
+  "conflict_policy": "V10_1_CORE_AUTHORITY_WINS_BYTE_EXACT; REJECT_ALL OVERWRITE DELETE REORDER ENUM_REWRITE EDGE_DIRECTION_CHANGE",
+  "correction_document": "APPEND_ONLY_IMMUTABILITY_CORRECTION_20260729.md"
 }
