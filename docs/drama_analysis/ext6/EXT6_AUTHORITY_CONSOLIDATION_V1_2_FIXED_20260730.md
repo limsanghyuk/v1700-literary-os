@@ -41,11 +41,24 @@ V1.4·V1.5·V1.6 등의 표기는 과거 패키지 또는 교정 이력일 뿐 �
 
 구조 validator, ZIP CRC 또는 Fresh Extraction만 통과한 상태를 완료로 올리지 않는다.
 
+## Source order와 immutable scene ID
+
+Stage01의 immutable `scene_no` 순서가 원문 물리 순서와 다른 경우 다음을 적용한다.
+
+- Stage01 레코드와 scene_no는 수정·재발번하지 않는다.
+- SourceSceneAlignment JSONL은 원문 물리 offset 순서로 직렬화할 수 있다.
+- 각 alignment 레코드는 원래 scene_no를 identity로 유지한다.
+- scene_no 집합은 SceneCard 전집합과 정확히 일치해야 하며 중복·누락은 0이어야 한다.
+- 물리 순서 차이는 `LOGICAL_REHEADING` 또는 `MERGED_SOURCE_HEADINGS_WITH_LOGICAL_REHEADING`, `VERIFIED_MANUAL_OVERRIDE`, alignment note로 명시한다.
+- validator는 source offset 증가·비중첩과 scene_no 전집합 유일성을 독립 검사한다.
+- scene_no 오름차순을 맞추려고 무관한 후행 원문에 근거를 강제 귀속하는 행위를 금지한다.
+
 ## 최종 차단 게이트
 
 - 원문 근거가 해당 장면 배타 구간 내부에 존재
 - 장면 간 동일 근거 재사용 0
-- 정렬 중첩·역행 0
+- 정렬 중첩·source offset 역행 0
+- SceneCard scene_no 전집합과 alignment scene_no 전집합 일치
 - alias 충돌·비인물 Entity 0
 - focality와 speaking의 기계적 1:1 결합 금지
 - presence mode 문맥 판정
