@@ -1,18 +1,18 @@
-# 《궁》 EXT6 EP02 원문–Stage01 순서 충돌 감사
+# 《궁》 EXT6 EP02 원문–Stage01 순서 차이 감사
 
-Status: `SOURCE_ORDER_CONFLICT_HOLD`
+Status: `RESOLVED_WITH_PHYSICAL_SOURCE_ORDER_SERIALIZATION`
 
 ## 권위
 
 - Method: `EXT6_SINGLE_AUTHORITY_V1_2`
 - Schema: `EXT6_EXACT_SCHEMA_REGISTRY_V1_1`
 - Gold anchor: 《비밀의숲》
-- Trusted baseline: `DB90_EXT6_14WORKS_WINDOWS_COMPATIBLE_FIXED_20260730.zip`
+- Baseline: `DB90_EXT6_14WORKS_WINDOWS_COMPATIBLE_FIXED_20260730.zip`
 - Baseline SHA256: `901b266b696dc683cd95eeaeb5ca9e0233ce93a054a52c2f2c993564abcdb829`
 
 ## 발견 사항
 
-《궁》 EP02의 원문 물리 순서는 다음과 같다.
+EP02 원문 물리 순서:
 
 ```text
 Scene 30: L1571
@@ -23,30 +23,38 @@ Scene 31: L1952–1966
 Scene 32 이후
 ```
 
-Stage01 ordinal은 다음과 같다.
+Stage01 scene ID 순서:
 
 ```text
-30 → 31 → 32 → ... → 41 → 42 → 43 → 44
+30 → 31 → ... → 41 → 42 → 43 → 44
 ```
 
-따라서 Stage01을 byte-exact로 보존하면 Scene 42~44가 Scene 31보다 앞선 원문 구간을 참조하게 되어 V1.2의 source fragment 증가·비중첩 규칙을 위반한다.
+최초 자동 checkpoint는 단조 scene_no를 강제하면서 Scene 42~44를 L2261–2428의 무관한 가족 장면에 잘못 귀속했다. 이 intermediate checkpoint는 superseded 처리했다.
 
-기존 자동 alignment checkpoint는 Scene 42~44를 L2261–2428의 가족 장면에 강제 귀속했다. 이 근거는 장면 의미와 일치하지 않으므로 EP02 checkpoint는 승격 금지·무효 처리한다.
+## 해결 방식
 
-## 상태
+Stage01을 수정하거나 scene_no를 재발번하지 않았다.
 
-- 24회 alignment checkpoint: 생성됐으나 최종 승격 전 상태
-- EP02 checkpoint: `INVALIDATED_NOT_PROMOTED`
+- SourceSceneAlignment JSONL을 **원문 물리 순서**로 직렬화했다.
+- 각 레코드의 immutable `scene_no`는 그대로 보존했다.
+- Scene 42~44와 Scene 31의 차이는 `LOGICAL_REHEADING` 또는 `MERGED_SOURCE_HEADINGS_WITH_LOGICAL_REHEADING`, `VERIFIED_MANUAL_OVERRIDE`, alignment note로 기록했다.
+- validator는 JSONL의 물리 source offset 증가·비중첩과 scene_no의 전집합 유일 귀속을 각각 검사했다.
+
+## 검증 결과
+
+- SceneCard/alignment: 1,089/1,089
+- source offset 역행: 0
+- source interval 중첩: 0
+- evidence mismatch: 0
+- 장면 밖 evidence: 0
+- 장면 간 동일 evidence 재사용: 0
 - Stage01~04 변경: 0
-- EXT6 완료 패키지: 생성하지 않음
-- DB 편입: 수행하지 않음
-- 신뢰 EXT6 완료 작품 수: 14 유지
+- 허위 근거 귀속: 0
 
-## 해결 조건
+## 최종 상태
 
-1. core Stage01 거버넌스에서 EP02 ordinal과 정본 원문 중 어느 계보가 권위인지 확정한다.
-2. Stage01 ordinal 교정이 승인되면 EXT6가 아니라 core 계층에서 supersession을 기록한다.
-3. 권위 충돌 해소 후 EP02 alignment와 파생 계층만 다시 생성한다.
-4. 다른 회차 checkpoint는 블록 강검사 후 재사용한다.
-
-EXT6 내부에서 장면 번호를 임의 재배열하거나 무관한 원문 줄에 근거를 제조하지 않는다.
+- 《궁》 EXT6 V1.2 전체 계층: PASS
+- individual package: `궁_EXT6_APPEND_ONLY_EVIDENCE_FIXED_20260730.zip`
+- integrated database: `DB90_EXT6_15WORKS_WINDOWS_COMPATIBLE_FIXED_20260730.zip`
+- 버전 상승: 없음
+- 자동 CANONICAL 승격: 없음
