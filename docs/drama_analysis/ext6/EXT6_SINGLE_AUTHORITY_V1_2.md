@@ -2,7 +2,7 @@
 
 Document ID: `EXT6_SINGLE_AUTHORITY_V1_2`  
 Effective date: `2026-07-29`  
-Last amended: `2026-07-30`  
+Last amended: `2026-07-31`  
 Status: `ACTIVE_USER_APPROVED_SINGLE_METHOD_AUTHORITY`  
 Core authority: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`
 
@@ -82,6 +82,31 @@ V10.1 core·대상 work state 로드
 - V1.2 parser는 선행 탭 대사 형식과 `E/F/N/L/NA/NAR` 전달 표기를 정규화한다.
 - 동일 원문 line·character evidence를 서로 다른 논리 장면에 중복 귀속하지 않는다.
 
+### 6.1 원문 물리 순서와 immutable scene ID 분리
+
+`scene_no`는 Stage01 장면의 immutable identity이며 원문 물리 정렬 키가 아니다. 정렬기와 검증기는 다음 두 불변식을 분리하여 처리한다.
+
+1. **identity invariant**
+   - alignment의 `scene_no` 집합은 SceneCard의 `scene_no` 전집합과 정확히 일치한다.
+   - scene_no 중복·누락·재발번은 0이어야 한다.
+   - Stage01 레코드 순서와 값은 수정하지 않는다.
+
+2. **source-order invariant**
+   - SourceSceneAlignment JSONL의 직렬화 순서는 원문 `source_char_offsets.start` 오름차순이다.
+   - 직렬화된 원문 구간은 증가·비중첩이어야 한다.
+   - scene_no가 JSONL 안에서 비단조여도 원문 물리 순서가 정확하고 identity invariant를 만족하면 정상이다.
+
+Stage01의 scene_no 순서와 원문 물리 순서가 다르면 다음을 적용한다.
+
+- alignment 레코드는 원문 물리 순서로 저장한다.
+- 각 레코드는 원래 scene_no를 그대로 보존한다.
+- 차이를 `LOGICAL_REHEADING` 또는 `MERGED_SOURCE_HEADINGS_WITH_LOGICAL_REHEADING`, `VERIFIED_MANUAL_OVERRIDE`, `alignment_note`로 명시한다.
+- validator는 `source offset 증가·비중첩`과 `scene_no 전집합 유일성`을 독립 검사한다.
+- scene_no 오름차순을 맞추기 위해 무관한 후행 원문에 근거를 강제 귀속하는 행위를 금지한다.
+- 정렬기는 scene_no를 source-order sorting key로 사용할 수 없다.
+
+《궁》 EP02의 `30 → 42 → 43 → 44 → 31` 원문 순서 사례가 이 규칙의 기준 회귀 테스트다.
+
 ## 7. CastPresence 규칙
 
 - `ONSCREEN`: 장면의 물리적 인물
@@ -139,7 +164,8 @@ V10.1 core·대상 work state 로드
 - 10개 필수 계층 존재
 - exact schema 위반 0
 - SceneCard/alignment 수 일치
-- 정렬 중첩·역행 0
+- source offset 중첩·역행 0
+- SceneCard scene_no 전집합과 alignment scene_no 전집합의 정확한 일치
 - 원문 evidence mismatch·구간 밖 evidence 0
 - 장면 간 동일 evidence 재사용 0
 - alias 충돌·비인물 Entity 0
