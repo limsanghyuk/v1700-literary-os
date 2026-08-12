@@ -1,0 +1,7 @@
+{
+  "schema": "DRAMA_ANALYSIS_POINTER_ALIAS_V2",
+  "status": "ACTIVE_ALIAS",
+  "canonical_pointer": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json",
+  "reason": "Use one canonical filename for all new sessions; retain this alias for historical handoffs.",
+  "updated_at": "2026-08-12T22:42:00+09:00"
+}
