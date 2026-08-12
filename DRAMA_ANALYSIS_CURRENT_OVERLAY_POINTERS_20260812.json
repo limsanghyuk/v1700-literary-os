@@ -1,0 +1,36 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V1",
+  "status": "ACTIVE",
+  "date": "2026-08-12",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_12WORK_CANONICAL_AUTHORITY_20260812_V3",
+    "works": 12,
+    "records": 1795,
+    "semantic_independence_v3": "PASS",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 27123,
+    "hash_checks": 8975,
+    "errors": 0,
+    "strict_repaired_targets": ["강남엄마따라잡기", "가을동화"],
+    "supersedes": "DB98_THICK_12WORK_CANONICAL_AUTHORITY_20260811"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_12WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260812_V3",
+    "works": 12,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "runtime_scene_records": 12979,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_12WORK_CANONICAL_AUTHORITY_20260812_V3"
+  },
+  "non_target_immutability": {
+    "baseline_entries_checked": 34022,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery_sha256": "8481c311c6468ae824745d8116c8c9e5203f629ae305f71f67ec85446978e31c",
+  "fresh_extraction": "PASS",
+  "updated_at": "2026-08-12T22:42:00+09:00"
+}
