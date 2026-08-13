@@ -1,0 +1,50 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V2",
+  "status": "ACTIVE",
+  "date": "2026-08-13",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_13WORK_CANONICAL_AUTHORITY_20260813_V1",
+    "works": 13,
+    "records": 1944,
+    "semantic_independence_v3": "PASS",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 29683,
+    "hash_checks": 9720,
+    "errors": 0,
+    "strict_v3_targets": ["강남엄마따라잡기", "가을동화", "검사프린세스"],
+    "new_work": "검사프린세스",
+    "supersedes": "DB98_THICK_12WORK_CANONICAL_AUTHORITY_20260812_V3"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_13WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260813_V1",
+    "works": 13,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 219,
+    "runtime_episode_files": 219,
+    "runtime_scene_records": 14162,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_13WORK_CANONICAL_AUTHORITY_20260813_V1"
+  },
+  "new_work_closure": {
+    "work_id": "검사프린세스",
+    "episodes": 16,
+    "thick_records": 149,
+    "planner_episode_files": 16,
+    "runtime_episode_files": 16,
+    "runtime_scene_records": 1183,
+    "block01_sequences": 77,
+    "block02_sequences": 72,
+    "source_lock_lineage_rebind": "PASS"
+  },
+  "non_target_immutability": {
+    "baseline_files_checked": 34048,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery_sha256": "da33e1f329f938435e25ce2b5a254b74e64b69541f406fe40c719c368b384221",
+  "fresh_extraction": "PASS",
+  "updated_at": "2026-08-13T13:36:00+09:00"
+}
