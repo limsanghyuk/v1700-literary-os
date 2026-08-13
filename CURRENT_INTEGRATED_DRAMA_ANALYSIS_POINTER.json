@@ -3,5 +3,5 @@
   "status": "ACTIVE_ALIAS",
   "canonical_pointer": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json",
   "reason": "Use one canonical filename for all new sessions; retain this alias for historical handoffs.",
-  "updated_at": "2026-08-13T13:36:00+09:00"
+  "updated_at": "2026-08-13T18:40:00+09:00"
 }
