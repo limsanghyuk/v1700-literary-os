@@ -1,0 +1,52 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V4",
+  "status": "ACTIVE",
+  "date": "2026-08-13",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_15WORK_CANONICAL_AUTHORITY_20260813_V1",
+    "works": 15,
+    "records": 2197,
+    "semantic_independence_v3": "PASS",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 34333,
+    "hash_checks": 10985,
+    "errors": 0,
+    "strict_v3_targets": ["강남엄마따라잡기", "가을동화", "검사프린세스", "굿캐스팅", "건빵선생과별사탕"],
+    "new_work": "건빵선생과별사탕",
+    "supersedes": "DB98_THICK_14WORK_CANONICAL_AUTHORITY_20260813_V1"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_15WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260813_V1",
+    "works": 15,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 251,
+    "runtime_episode_files": 251,
+    "runtime_scene_records": 16291,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_15WORK_CANONICAL_AUTHORITY_20260813_V1"
+  },
+  "new_work_closure": {
+    "work_id": "건빵선생과별사탕",
+    "episodes": 16,
+    "thick_records": 136,
+    "planner_episode_files": 16,
+    "runtime_episode_files": 16,
+    "runtime_scene_records": 1109,
+    "block01_sequences": 69,
+    "block02_sequences": 67,
+    "whole_work_gate": "PASS",
+    "direct_source_review_ep01_16": "PASS"
+  },
+  "non_target_immutability": {
+    "baseline_files_checked": 25850,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery_sha256": "34803eeee3b3b8192625e6bf2ff9bf6587000e8431e0305d0c9a827352502401",
+  "fresh_extraction": "PASS",
+  "postseal_fresh_extraction": "PASS",
+  "updated_at": "2026-08-13T23:00:00+09:00"
+}
