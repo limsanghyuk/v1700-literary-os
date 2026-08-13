@@ -1,0 +1,51 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V3",
+  "status": "ACTIVE",
+  "date": "2026-08-13",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_14WORK_CANONICAL_AUTHORITY_20260813_V1",
+    "works": 14,
+    "records": 2061,
+    "semantic_independence_v3": "PASS",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 31984,
+    "hash_checks": 10305,
+    "errors": 0,
+    "strict_v3_targets": ["강남엄마따라잡기", "가을동화", "검사프린세스", "굿캐스팅"],
+    "new_work": "굿캐스팅",
+    "supersedes": "DB98_THICK_13WORK_CANONICAL_AUTHORITY_20260813_V1"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_14WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260813_V1",
+    "works": 14,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 235,
+    "runtime_episode_files": 235,
+    "runtime_scene_records": 15182,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_14WORK_CANONICAL_AUTHORITY_20260813_V1"
+  },
+  "new_work_closure": {
+    "work_id": "굿캐스팅",
+    "episodes": 16,
+    "thick_records": 117,
+    "planner_episode_files": 16,
+    "runtime_episode_files": 16,
+    "runtime_scene_records": 1020,
+    "block01_sequences": 66,
+    "block02_sequences": 51,
+    "whole_work_gate": "PASS",
+    "direct_source_review_ep01_16": "PASS"
+  },
+  "non_target_immutability": {
+    "baseline_files_checked": 25775,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery_sha256": "fabd09f66591a0f54de4dbee212a19bd7021f66e4deb189c1845a12021866d4d",
+  "fresh_extraction": "PASS",
+  "updated_at": "2026-08-13T18:40:00+09:00"
+}
