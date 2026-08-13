@@ -1,0 +1,14 @@
+{
+  "schema": "DRAMA_ANALYSIS_PLANNER_RUNTIME_AUTHORITY_MIRROR_V1",
+  "status": "ACTIVE_DERIVED_EXECUTION_AUTHORITY_CANDIDATE",
+  "authority_id": "DB98_PLANNER_RUNTIME_23WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V2_QUALITY_REPAIRED",
+  "depends_on_thick_authority_id": "DB98_THICK_23WORK_CANONICAL_AUTHORITY_20260814_V2_QUALITY_REPAIRED",
+  "works": 23,
+  "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+  "planner_episode_files": 418,
+  "runtime_episode_files": 418,
+  "runtime_scene_records": 26270,
+  "validation": "PASS",
+  "errors": 0,
+  "full_database_sha256": "f080e3ec8dce23e34a16a7aa1010bb27a106e2536df97e8d0b70313e1094d333"
+}
