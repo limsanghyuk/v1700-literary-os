@@ -1,0 +1,39 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V4_QUALITY_REPAIRED",
+  "status": "ACTIVE_CANDIDATE",
+  "date": "2026-08-14",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_23WORK_CANONICAL_AUTHORITY_20260814_V2_QUALITY_REPAIRED",
+    "authority_mirror": "DRAMA_ANALYSIS_THICK_23WORK_AUTHORITY_20260814_V2_QUALITY_REPAIRED.json",
+    "works": 23,
+    "records": 3436,
+    "semantic_independence_v3": "PASS_STRICT_ALL",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 60784,
+    "hash_checks": 17180,
+    "errors": 0,
+    "legacy_exceptions": 0
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_23WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V2_QUALITY_REPAIRED",
+    "authority_mirror": "DRAMA_ANALYSIS_PLANNER_RUNTIME_23WORK_AUTHORITY_20260814_V2_QUALITY_REPAIRED.json",
+    "works": 23,
+    "planner_episode_files": 418,
+    "runtime_episode_files": 418,
+    "runtime_scene_records": 26270,
+    "validation": "PASS",
+    "errors": 0
+  },
+  "quality_equalization": {
+    "strict_all_works": "23/23",
+    "new8_equal_or_above_existing15_q25_floor": "8/8_PASS",
+    "legacy_exceptions": 0
+  },
+  "full_database_delivery": {
+    "filename": "DB98_98WORK_STAGE04_23THICK_CLEAN_V5_QUALITY_REPAIRED_FINAL_20260814.zip",
+    "sha256": "f080e3ec8dce23e34a16a7aa1010bb27a106e2536df97e8d0b70313e1094d333",
+    "fresh_extraction": "PASS"
+  },
+  "updated_at": "2026-08-14T01:24:00+09:00"
+}
