@@ -10,7 +10,8 @@ This file is the current human-readable entrypoint. Do not begin a new drama-ana
 4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_25WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
 5. Read `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`.
 6. Before long THICK work, also read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`.
-7. After selecting a work, read SourceLock plus current work_state/checkpoint before resuming.
+7. Read `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` before selecting a new target so concurrent sessions do not claim the same work. This coordination file never overrides semantic/release authority.
+8. After selecting or resuming a work, read SourceLock plus current work_state/checkpoint before writing.
 
 ## Semantic authoring invariant
 
@@ -50,5 +51,6 @@ Whole-database integration/release is phase-separated: baseline reconcile → ta
 - Full database SHA256: `87bf39e78fce21943e52ce799688bbf9e71ffcb52b3d5dce211ba7b1b1836f37`.
 - Final fresh extraction: PASS.
 - Updated new-session bundle: `DRAMA_ANALYSIS_NEW_SESSION_COMPLETE_BUNDLE_20260814_25WORK.zip`, SHA256 `af924167546064b100bba0144e02b9a7eb4587b88ed39e1ec6b865678c114152`.
+- Active coordination claim: `국희` THICK authoring is in progress on the ㄱ track; consult `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` for the current claimed work and resume point.
 
 Canonical repository: `limsanghyuk/v1700-literary-os`.
