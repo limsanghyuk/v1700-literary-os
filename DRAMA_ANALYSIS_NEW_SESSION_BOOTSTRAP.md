@@ -9,9 +9,9 @@ This file is the current human-readable entrypoint. Do not begin a new drama-ana
 3. Read `DRAMA_ANALYSIS_EXACT_SCHEMA_REGISTRY_V10_1.json` and the current authority mirror.
 4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_25WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
 5. Read `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`.
-6. Before long THICK work, also read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`.
+6. Before long THICK work, also read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`. Use `tools/drama_analysis_phase_guard.py` or an equivalent mechanical guard; documentation-only compliance is not sufficient.
 7. Read `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` before selecting a new target so concurrent sessions do not claim the same work. This coordination file never overrides semantic/release authority.
-8. After selecting or resuming a work, read SourceLock plus current work_state/checkpoint before writing.
+8. After selecting or resuming a work, read SourceLock plus current work_state/checkpoint and execution-guard state before writing.
 
 ## Semantic authoring invariant
 
@@ -33,7 +33,9 @@ EXT6 is a `SELECTIVE_APPEND_ONLY` evidence sidecar. It does not supersede Stage0
 
 ## Interruption / release invariant
 
-Durable disk state outranks chat progress. THICK completion requires `CHECKPOINT_LOCKED`. New THICK semantic authoring uses one atomic sequence transaction and the response lease; at most three newly authored sequences are accepted per assistant response. At response end, fsync the checkpoint, release the writer lock, freeze semantic write surfaces, record next_seq_id, and stop.
+Durable disk state outranks chat progress. THICK completion requires `CHECKPOINT_LOCKED`. Source reading alone is not progress. New THICK semantic authoring uses one atomic sequence transaction and a mechanically enforced response lease; at most three newly authored sequences are accepted per assistant response. At response end, close the lease, fsync the checkpoint, release the writer lock, freeze semantic write surfaces, record `next_seq_id`, and stop.
+
+A response that authors THICK semantics must not also begin whole-work validation, R5, R8, database promotion, checksums, ZIP creation, fresh extraction, or hub promotion. Those are later phases, each requiring its own durable PASS evidence before transition.
 
 Whole-database integration/release is phase-separated: baseline reconcile → target payload integrate → non-target immutability → authority promote → strong validate → full parse/authority closure → checksums → ZIP → fresh extract → postzip validate → hub promote. The hub is promoted last.
 

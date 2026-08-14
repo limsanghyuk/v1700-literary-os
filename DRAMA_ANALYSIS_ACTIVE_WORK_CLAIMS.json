@@ -1,7 +1,7 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-14T18:26:00+09:00",
+  "updated_at": "2026-08-14T19:08:00+09:00",
   "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
   "claims": [
     {
@@ -33,6 +33,15 @@
         "hash_checks": 310,
         "blocking_errors": 0
       },
+      "execution_guard": {
+        "required": true,
+        "phase": "THICK_AUTHORING",
+        "max_new_sequences_per_response": 3,
+        "source_read_without_checkpoint_is_progress": false,
+        "forbid_cross_phase_same_response": true,
+        "incident_doc": "DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md",
+        "guard_tool": "tools/drama_analysis_phase_guard.py"
+      },
       "canonical_promoted": false
     }
   ],
@@ -41,6 +50,7 @@
     "Read this file before choosing a new work.",
     "This file coordinates concurrent sessions and never overrides semantic or release authority pointers.",
     "Do not start a second writer on a work whose claim state is ACTIVE.",
-    "Resolve exact live work_state/checkpoint from the active session artifact before resuming the claimed work."
+    "Resolve exact live work_state/checkpoint and execution-guard state before resuming the claimed work.",
+    "For THICK semantic authoring, the mechanical execution guard is mandatory when required=true."
   ]
 }
