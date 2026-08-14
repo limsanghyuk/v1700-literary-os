@@ -7,8 +7,8 @@ This file is the current human-readable entrypoint. Do not begin a new drama-ana
 1. Read `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`.
 2. Read `CURRENT_AUTHORITY_POINTER.json` and follow the authority it declares. Never hardcode V10 or V10.1 in session logic. The current pointer resolves to `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`.
 3. Read `DRAMA_ANALYSIS_EXACT_SCHEMA_REGISTRY_V10_1.json` and the current authority mirror.
-4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260813_14WORK.json` for the current CANONICAL THICK and Planner/Runtime authority IDs.
-5. Read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md` and `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md` before starting or resuming long semantic work.
+4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_24WORK.json` for the current CANONICAL THICK and Planner/Runtime authority IDs.
+5. Read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md` before starting/resuming long semantic or integration/release work.
 6. After selecting a work, read SourceLock plus its current work state/checkpoint before resuming.
 
 ## Semantic authoring invariant
@@ -29,19 +29,23 @@ For THICK/new semantic overlay authoring, use `1 sequence = 1 atomic transaction
 
 `SOURCE_READ → SEMANTIC_AUTHORED → FILE_SAVED → AUDIT_PASS → CHECKPOINT_LOCKED`.
 
-At the start of every response, reconcile durable disk state before trusting chat progress reports. Use a single-writer OS/file lock so a late-finishing prior process cannot overlap a new writer. Durable writes use temp → flush/fsync → atomic rename; semantic-spec commit, validation, record write, audit, and checkpoint should be one process when practical. Keep a conservative micro-batch budget and intentionally finish at a locked checkpoint rather than running until forced interruption.
+At the start of every response, reconcile durable disk state before trusting chat progress reports. Use a single-writer OS/file lock so a late-finishing prior process cannot overlap a new writer. Durable writes use temp → flush/fsync → atomic rename. Do not report an episode or sequence as complete before the checkpoint is locked on disk.
 
-Do not report an episode or sequence as complete before the checkpoint is locked on disk. Do not load an 8-episode source block or a full-episode packet into one model context by default; read only the current sequence member-scene ranges needed for authoring. Keep semantic authoring, R5/R8 regeneration, full validation, and packaging as separate phases.
+For whole-database integration/release, do not chain integration, promotion, validation, checksum, ZIP, fresh extraction, and postzip validation into one timeout budget. Each phase must leave a durable PASS report. If interrupted, inspect disk state and resume only the first incomplete phase.
 
 ## Current overlay closure
 
-- CANONICAL THICK: `DB98_THICK_14WORK_CANONICAL_AUTHORITY_20260813_V1`.
-- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_14WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260813_V1`.
-- Strict V3 targets: `강남엄마따라잡기`, `가을동화`, `검사프린세스`, `굿캐스팅`.
-- 14-work exact/provenance/source validation: PASS, 2,061 THICK records, 31,984 SOURCE refs, 10,305 hash checks, errors 0.
-- 14-work Planner/Runtime validation: PASS, 235 PlannerInput episode files, 235 Runtime episode files, 15,182 runtime scene records, errors 0.
-- New work `굿캐스팅`: 16 episodes, 117 THICK records, 1,020 Runtime scene records; Block01 66 sequences + Block02 51 sequences; EP01–16 direct source review and whole-work gate PASS.
-- Non-target CLEAN V1 immutability: PASS, 25,775 prior files checked, missing 0, unexpected changes 0.
-- Full database delivery SHA256: `fabd09f66591a0f54de4dbee212a19bd7021f66e4deb189c1845a12021866d4d`; final fresh extraction PASS.
+- Stage01–04: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, 98 works / 1,814 episodes / 114,371 SceneCards.
+- CANONICAL THICK: `DB98_THICK_24WORK_CANONICAL_AUTHORITY_20260814_V1_GRJB_INTEGRATED`.
+- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_24WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GRJB_INTEGRATED`.
+- 24-work strict semantic-independence V3: PASS, blocking errors 0, legacy diagnostic groups 0.
+- 24-work exact/provenance/source validation: PASS, 3,573 THICK records, 62,905 SOURCE refs, 17,865 hash checks, errors 0.
+- 24-work Planner/Runtime validation: PASS, 434 PlannerInput episode files, 434 Runtime episode files, 27,438 runtime scene records, errors 0.
+- New work `그저바라보다가`: 16 episodes / 137 THICK records / 1,168 Runtime scene records; semantic, exact/provenance, Planner/Runtime all PASS.
+- Quality homogenization for `그저바라보다가`: PASS; event 131.6, cast-function 58.7, info-shift 1.54/sequence, plant-payoff 1.54/sequence, all at or above the existing-15 Q25 floor.
+- Non-target CLEAN V5 immutability: PASS; 26,494 predecessor files checked, missing 0, changed 0 before authority metadata promotion.
+- Full database ZIP: `DB98_98WORK_STAGE04_24THICK_CLEAN_V6_GRJB_INTEGRATED_FINAL_20260814.zip`.
+- Full database SHA256: `b25ba041d21ab6299e92ac52b7e45dc099708019af6dcc12b97f82aa7974a9cd`.
+- Final fresh extraction: PASS; ZIP entries 26,559, checksum errors 0.
 
 Canonical repository: `limsanghyuk/v1700-literary-os`.
