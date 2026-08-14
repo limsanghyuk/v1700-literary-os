@@ -1,0 +1,93 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V5_25WORK",
+  "status": "ACTIVE",
+  "date": "2026-08-14",
+  "stage01_04": {
+    "authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+    "works": 98,
+    "episodes": 1814,
+    "scene_cards": 114371,
+    "status": "UNCHANGED"
+  },
+  "ext6": {
+    "integrated_works": 35,
+    "mode": "SELECTIVE_APPEND_ONLY",
+    "base_stage01_04_immutable": true,
+    "status": "UNCHANGED"
+  },
+  "thick": {
+    "authority_id": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
+    "works": 25,
+    "records": 3735,
+    "semantic_independence_v3": "PASS_STRICT_ALL",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 65915,
+    "hash_checks": 18675,
+    "errors": 0,
+    "new_work": "구해줘",
+    "new_work_records": 162,
+    "supersedes": "DB98_THICK_24WORK_CANONICAL_AUTHORITY_20260814_V1_GRJB_INTEGRATED"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_25WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
+    "works": 25,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 450,
+    "runtime_episode_files": 450,
+    "runtime_scene_records": 28341,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED"
+  },
+  "new_work_closure": {
+    "work_id": "구해줘",
+    "episodes": 16,
+    "thick_records": 162,
+    "planner_episode_files": 16,
+    "runtime_episode_files": 16,
+    "runtime_scene_records": 903,
+    "semantic_independence": "PASS",
+    "exact_provenance": "PASS",
+    "planner_runtime": "PASS",
+    "quality_homogenization": "PASS_EQUAL_OR_ABOVE_EXISTING15_Q25_FLOOR"
+  },
+  "quality": {
+    "existing15_q25_floor": {
+      "avg_event_chars": 114.35,
+      "avg_cast_function_chars": 54.85,
+      "info_shift_per_sequence": 0.98,
+      "plant_payoff_per_sequence": 1.17
+    },
+    "구해줘": {
+      "avg_event_chars": 381.76,
+      "avg_cast_function_chars": 71.45,
+      "info_shift_per_sequence": 3.22,
+      "plant_payoff_per_sequence": 3.88,
+      "status": "PASS"
+    }
+  },
+  "non_target_immutability": {
+    "baseline_files_checked": 26559,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery": {
+    "filename": "DB98_98WORK_STAGE04_25THICK_CLEAN_V7_GHJ_INTEGRATED_FINAL_20260814.zip",
+    "sha256": "87bf39e78fce21943e52ce799688bbf9e71ffcb52b3d5dce211ba7b1b1836f37",
+    "zip_entries": 27360,
+    "fresh_extraction": "PASS",
+    "fresh_files": 26636,
+    "checksum_entries": 26630,
+    "checksum_errors": 0
+  },
+  "new_session_bundle": {
+    "filename": "DRAMA_ANALYSIS_NEW_SESSION_COMPLETE_BUNDLE_20260814_25WORK.zip",
+    "sha256": "af924167546064b100bba0144e02b9a7eb4587b88ed39e1ec6b865678c114152",
+    "validation": "PASS"
+  },
+  "method_current": "DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md",
+  "recovery_protocol": "DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md",
+  "thick_response_lease_protocol": "DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md",
+  "updated_at": "2026-08-14T15:03:00+09:00"
+}
