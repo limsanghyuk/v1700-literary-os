@@ -62,6 +62,36 @@ For THICK/new overlay authoring, use conservative micro-batches:
 
 The assistant should intentionally end the response at a durable micro-batch checkpoint instead of continuing until the platform forcibly interrupts the turn.
 
+## Hard response-boundary enforcement
+
+The 3-sequence response budget is a hard safety limit, not a recommendation. A user request to finish an entire block in one response does not override this interruption-safety limit. Complete the block across successive durable micro-batches.
+
+A semantic writer must not continue producing new sequences after the assistant response has ended. Background or late-finishing continuation is forbidden. A process that was launched in the current response may finish only the already-started atomic sequence transaction; it must not advance to another sequence automatically.
+
+Every response that authors THICK must end in this order:
+
+`finish current atomic transaction → fsync checkpoint → release writer lock → report durable next_seq_id → stop`
+
+The next assistant response must reacquire the writer lock and run reconciliation before reading or authoring the next sequence.
+
+## Reconciliation promotion rule
+
+If interruption leaves semantic specs, atomic records, or audits ahead of `work_state`, do not discard them and do not trust them automatically. Reconciliation may promote only a contiguous prefix of sequence records for which all of the following independently pass:
+
+- semantic spec exists and parses
+- THICK record has exact schema
+- independent audit exists and says PASS
+- SequenceBlueprint member scenes match exactly
+- source / SceneCard / SequenceBlueprint / EpisodeArc / SourceLock hashes match the active baseline
+- scene_notes cover all member scenes exactly
+- no sequence gap exists before the candidate record
+
+After promotion, reassemble any completed episode file and atomically rewrite `work_state`. The recomputed durable `next_seq_id` is the only valid resume point.
+
+## Long-task phase separation
+
+Do not combine semantic authoring, episode assembly, whole-block strong validation, PlannerInput/R8 generation, database promotion, checksums, ZIP creation, or fresh-extraction validation into one long command. Each phase must produce a durable PASS report before the next phase begins. If a later phase times out, resume from the first phase without a durable PASS report rather than rerunning earlier completed phases.
+
 ## Progress reporting
 
 Distinguish `SOURCE_READ`, `SEMANTIC_AUTHORED`, `FILE_SAVED`, `AUDIT_PASS`, and `CHECKPOINT_LOCKED`. Do not tell the user an episode or sequence is complete until its current checkpoint is locked on disk.
