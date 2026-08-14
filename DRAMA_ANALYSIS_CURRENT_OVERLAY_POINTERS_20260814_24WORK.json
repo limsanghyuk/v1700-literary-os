@@ -1,0 +1,72 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V4_24WORK",
+  "status": "ACTIVE",
+  "date": "2026-08-14",
+  "stage01_04_authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+  "thick": {
+    "authority_id": "DB98_THICK_24WORK_CANONICAL_AUTHORITY_20260814_V1_GRJB_INTEGRATED",
+    "works": 24,
+    "records": 3573,
+    "semantic_independence_v3": "PASS_STRICT_ALL",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 62905,
+    "hash_checks": 17865,
+    "errors": 0,
+    "new_work": "그저바라보다가",
+    "new_work_records": 137,
+    "supersedes": "DB98_THICK_23WORK_CANONICAL_AUTHORITY_20260814_V2_QUALITY_REPAIRED"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_24WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GRJB_INTEGRATED",
+    "works": 24,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 434,
+    "runtime_episode_files": 434,
+    "runtime_scene_records": 27438,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_24WORK_CANONICAL_AUTHORITY_20260814_V1_GRJB_INTEGRATED"
+  },
+  "new_work_closure": {
+    "work_id": "그저바라보다가",
+    "episodes": 16,
+    "thick_records": 137,
+    "planner_episode_files": 16,
+    "runtime_episode_files": 16,
+    "runtime_scene_records": 1168,
+    "semantic_independence": "PASS",
+    "exact_provenance": "PASS",
+    "planner_runtime": "PASS",
+    "quality_homogenization": "PASS_EQUAL_OR_ABOVE_EXISTING15_Q25_FLOOR"
+  },
+  "quality": {
+    "existing15_q25_floor": {
+      "avg_event_chars": 114.35,
+      "avg_cast_function_chars": 54.85,
+      "info_shift_per_sequence": 0.98,
+      "plant_payoff_per_sequence": 1.17
+    },
+    "그저바라보다가": {
+      "avg_event_chars": 131.6,
+      "avg_cast_function_chars": 58.7,
+      "info_shift_per_sequence": 1.54,
+      "plant_payoff_per_sequence": 1.54,
+      "status": "PASS"
+    }
+  },
+  "non_target_immutability": {
+    "baseline_files_checked": 26494,
+    "missing_existing": 0,
+    "unexpected_changes": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery": {
+    "filename": "DB98_98WORK_STAGE04_24THICK_CLEAN_V6_GRJB_INTEGRATED_FINAL_20260814.zip",
+    "sha256": "b25ba041d21ab6299e92ac52b7e45dc099708019af6dcc12b97f82aa7974a9cd",
+    "zip_entries": 26559,
+    "fresh_extraction": "PASS",
+    "checksum_errors": 0
+  },
+  "recovery_protocol": "DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md",
+  "updated_at": "2026-08-14T11:36:00+09:00"
+}
