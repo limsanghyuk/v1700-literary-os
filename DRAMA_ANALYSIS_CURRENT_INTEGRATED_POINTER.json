@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V8_3",
+  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V8_4",
   "status": "ACTIVE_SINGLE_NEW_SESSION_ENTRYPOINT",
   "repository": "limsanghyuk/v1700-literary-os",
   "stage01_04_authority_pointer": "CURRENT_AUTHORITY_POINTER.json",
@@ -24,6 +24,12 @@
   "quality_candidate_is_canonical": false,
   "thread_anchor_pilot": "DRAMA_ANALYSIS_RILJIMAE_THREAD_CONTINUITY_PILOT_20260815.md",
   "thread_pilot_is_canonical": false,
+  "thread_cohort_candidate": "DRAMA_ANALYSIS_26WORK_THREAD_R1_COHORT_CANDIDATE_20260815.md",
+  "thread_cohort_candidate_is_canonical": false,
+  "thread_cohort_reviewed_works": 26,
+  "thread_cohort_id_only_changed_works": 18,
+  "thread_cohort_changed_entries": 193,
+  "thread_cohort_aliases": 127,
   "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers, current method, thread policy, and active claims before new work; never downgrade a newer live authority.",
-  "updated_at": "2026-08-15T00:25:00+09:00"
+  "updated_at": "2026-08-15T03:26:00+09:00"
 }
