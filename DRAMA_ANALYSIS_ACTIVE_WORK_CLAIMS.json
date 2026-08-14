@@ -1,7 +1,7 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-14T15:43:00+09:00",
+  "updated_at": "2026-08-14T15:51:00+09:00",
   "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
   "claims": [
     {
@@ -11,9 +11,17 @@
       "state": "ACTIVE",
       "episodes_total": 20,
       "sequences_total": 148,
-      "locked_sequences": 6,
-      "last_locked_seq_id": "국희_01_S06",
-      "next_seq_id": "국희_01_S07",
+      "locked_sequences": 56,
+      "last_locked_seq_id": "국희_08_S07",
+      "next_seq_id": "국희_09_S01",
+      "block01": {
+        "episodes": "EP01-EP08",
+        "sequences": 56,
+        "status": "PASS",
+        "semantic_independence_v3": "PASS_STRICT",
+        "exact_provenance": "PASS",
+        "fresh_extraction": "PASS"
+      },
       "canonical_promoted": false
     }
   ],
