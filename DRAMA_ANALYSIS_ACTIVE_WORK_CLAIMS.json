@@ -1,0 +1,27 @@
+{
+  "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
+  "status": "COORDINATION_ONLY_NOT_AUTHORITY",
+  "updated_at": "2026-08-14T15:23:00+09:00",
+  "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
+  "claims": [
+    {
+      "work_id": "국희",
+      "initial_group": "ㄱ",
+      "task": "THICK_NEW_WORK_AUTHORING",
+      "state": "ACTIVE",
+      "episodes_total": 20,
+      "sequences_total": 148,
+      "locked_sequences": 3,
+      "last_locked_seq_id": "국희_01_S03",
+      "next_seq_id": "국희_01_S04",
+      "canonical_promoted": false
+    }
+  ],
+  "reserved_initial_groups_reported_by_developer": ["ㄴ", "ㄷ"],
+  "rules": [
+    "Read this file before choosing a new work.",
+    "This file coordinates concurrent sessions and never overrides semantic or release authority pointers.",
+    "Do not start a second writer on a work whose claim state is ACTIVE.",
+    "Resolve exact live work_state/checkpoint from the active session artifact before resuming the claimed work."
+  ]
+}
