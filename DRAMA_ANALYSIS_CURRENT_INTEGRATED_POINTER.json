@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V8_2",
+  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V8_3",
   "status": "ACTIVE_SINGLE_NEW_SESSION_ENTRYPOINT",
   "repository": "limsanghyuk/v1700-literary-os",
   "stage01_04_authority_pointer": "CURRENT_AUTHORITY_POINTER.json",
@@ -13,11 +13,17 @@
   "new_session_live_refresh_rule": "DRAMA_ANALYSIS_NEW_SESSION_LIVE_REFRESH_RULE.md",
   "new_session_bundle_pointer": "DRAMA_ANALYSIS_NEW_SESSION_BUNDLE_POINTER.json",
   "method_current": "DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md",
+  "thread_continuity_policy": "DRAMA_ANALYSIS_THREAD_CONTINUITY_POLICY_R1_20260815.md",
+  "new_work_execution_runbook": "DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md",
   "integration_release_recovery_protocol": "DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md",
   "thick_execution_protocol": "DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md",
   "current_full_database": "DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip",
   "current_full_database_sha256": "39fea427974c212a0e42cf7cc1b63f1ddff875da050443091c77e0522cb4efe7",
   "fresh_extraction": "PASS",
-  "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers and active claims before new work; never downgrade a newer live authority.",
-  "updated_at": "2026-08-14T21:12:00+09:00"
+  "quality_equalized_candidate": "DRAMA_ANALYSIS_26WORK_QUALITY_EQUALIZED_CANDIDATE_20260815.md",
+  "quality_candidate_is_canonical": false,
+  "thread_anchor_pilot": "DRAMA_ANALYSIS_RILJIMAE_THREAD_CONTINUITY_PILOT_20260815.md",
+  "thread_pilot_is_canonical": false,
+  "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers, current method, thread policy, and active claims before new work; never downgrade a newer live authority.",
+  "updated_at": "2026-08-15T00:25:00+09:00"
 }
