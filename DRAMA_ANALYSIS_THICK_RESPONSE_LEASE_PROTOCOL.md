@@ -55,3 +55,16 @@ Only the contiguous sequence prefix within closed valid response leases is check
 ## Phase separation
 
 THICK semantic authoring, episode assembly, block audit, PlannerInput R5 generation, Runtime R8 generation, database promotion, packaging, and fresh-extraction validation remain separate phases. A timeout in a later phase must not invalidate earlier durable PASS phases.
+
+## 2026-08-14 hardening after repeated interruption
+
+The `국희` incident demonstrated that even correct documentation can be violated if a response attempts to satisfy a block-level milestone in one turn. Therefore the following are non-overridable:
+
+- A user request to finish a block defines the milestone only. It does not permit exceeding the 3-sequence lease.
+- Source reading without a `CHECKPOINT_LOCKED` THICK transaction is not progress and must not advance `locked_sequences` or `next_seq_id`.
+- A response that performs THICK semantic authoring must end after closing its semantic lease. It must not begin whole-work validation, R5, R8, DB integration, checksum build, ZIP build, fresh extraction, or hub promotion in that same response.
+- Later phases advance only from durable PASS evidence, never from chat prose.
+- `tools/drama_analysis_phase_guard.py` is the mechanical guard for these rules. Long THICK work must use it or an equivalent guard that rejects a fourth commit and out-of-order phase transitions.
+- If the guard state and chat text disagree, guard/durable disk state wins.
+
+See `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md` for the incident evidence and recovery point.
