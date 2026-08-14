@@ -1,19 +1,20 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-14T19:44:47+09:00",
+  "updated_at": "2026-08-14T20:08:00+09:00",
   "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
   "claims": [
     {
       "work_id": "국희",
       "initial_group": "ㄱ",
       "task": "THICK_NEW_WORK_AUTHORING",
-      "state": "ACTIVE",
+      "state": "THICK_AUTHORING_COMPLETE_STAGING",
       "episodes_total": 20,
       "sequences_total": 148,
-      "locked_sequences": 121,
-      "last_locked_seq_id": "국희_17_S03",
-      "next_seq_id": "국희_17_S04",
+      "locked_sequences": 148,
+      "last_locked_seq_id": "국희_20_S07",
+      "next_seq_id": null,
+      "next_phase": "WHOLE_WORK_GATE",
       "block01": {
         "episodes": "EP01-EP08",
         "sequences": 56,
@@ -35,21 +36,29 @@
       },
       "block03": {
         "episodes": "EP17-EP20",
-        "status": "IN_PROGRESS",
-        "locked_sequences": 3,
-        "last_locked_seq_id": "국희_17_S03",
-        "next_seq_id": "국희_17_S04",
+        "sequences": 30,
+        "status": "PASS",
+        "strong_validation": "PASS",
+        "semantic_independence_v3": "PASS_STRICT",
+        "exact_provenance": "PASS",
+        "fresh_extraction": "PASS",
+        "source_refs_checked_block": 521,
+        "hash_checks_block": 150,
+        "whole_work_source_refs_checked": 2744,
+        "whole_work_hash_checks": 740,
+        "blocking_errors": 0,
         "late_overrun_quarantined": true
       },
       "execution_guard": {
         "required": true,
-        "phase": "THICK_AUTHORING",
-        "max_new_sequences_per_response": 3,
+        "model": "BLOCK_ATOMIC_V2",
+        "max_block_episodes": 8,
+        "per_response_sequence_cap": null,
+        "sequence_atomic_commit_required": true,
+        "episode_checkpoint_required": true,
         "source_read_without_checkpoint_is_progress": false,
-        "forbid_cross_phase_same_response": true,
-        "last_closed_lease": "20260814T1934KST_GUKHEE_EP17_S01_S03",
-        "last_closed_lease_commits": 3,
-        "incident_doc": "DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md",
+        "cross_phase_requires_durable_pass": true,
+        "phase": "WHOLE_WORK_GATE",
         "guard_tool": "tools/drama_analysis_phase_guard.py"
       },
       "canonical_promoted": false
@@ -59,8 +68,9 @@
   "rules": [
     "Read this file before choosing a new work.",
     "This file coordinates concurrent sessions and never overrides semantic or release authority pointers.",
-    "Do not start a second writer on a work whose claim state is ACTIVE.",
+    "Do not start a second writer on a work whose claim state is active or staging-complete but not promoted.",
     "Resolve exact live work_state/checkpoint and execution-guard state before resuming the claimed work.",
-    "For THICK semantic authoring, the mechanical execution guard is mandatory when required=true."
+    "Block-Atomic V2 allows at most eight contiguous episodes per execution block and requires each sequence to be atomically locked before the next begins.",
+    "Later phases require durable PASS evidence before transition."
   ]
 }

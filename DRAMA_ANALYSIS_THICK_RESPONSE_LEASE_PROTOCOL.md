@@ -1,70 +1,64 @@
-# Drama Analysis — THICK Mechanical Response Lease Protocol
+# Drama Analysis — THICK Block-Atomic Execution Protocol V2
 
-This protocol mechanically enforces the response-boundary rules for long THICK authoring. It supplements `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`.
+This protocol supplements `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md` and supersedes the temporary 3-sequence response cap introduced after the repeated `국희` interruption.
 
-## Problem addressed
+## Decision
 
-Documentation-only limits were insufficient: late-finishing writer flows could continue after the assistant response boundary and create semantic specs/records/audits ahead of `work_state`. This produces false progress and race conditions even when the semantic records themselves look valid.
+The 3-sequence hard cap was an over-constrained mitigation. The actual failure mechanism was not sequence count itself; it was combining semantic authoring, later derivation, integration, packaging, and promotion into one long execution flow, plus allowing late writer output to appear after the response boundary.
 
-## Mechanical lease
+The current execution boundary is therefore the developer-defined block: **up to 8 contiguous episodes**. There is no arbitrary per-response sequence-count cap inside that block, provided every sequence is committed atomically and the writer remains single-process and foreground-only.
 
-Every assistant response that authors THICK must open exactly one response lease before the first new sequence.
+## Atomic sequence transaction
 
-A lease records:
-- `lease_id`
-- `start_locked_count`
-- `start_seq_id`
-- `max_new_sequences = 3`
-- `committed_count`
-- `accepted_seq_ids`
-- `state = OPEN | CLOSED`
+Every new THICK sequence must complete this transaction before the next sequence begins:
 
-The commit path must refuse a fourth sequence under the same lease.
+`SOURCE_READ -> SEMANTIC_AUTHORED -> spec atomic write -> exact/source checks -> THICK record atomic write -> independent audit PASS -> checkpoint atomic write`
 
-## Commit rule
+Only `CHECKPOINT_LOCKED` counts as progress. Source reading, chat prose, temporary files, or semantic drafts without a locked transaction do not advance `locked_sequences` or `next_seq_id`.
 
-For each sequence:
+## Block guard
 
-`SOURCE_READ -> SEMANTIC_AUTHORED -> spec atomic write -> exact/source checks -> THICK record atomic write -> independent audit PASS -> checkpoint atomic write -> lease counter increment`
+A block guard records:
+- `work_id`
+- `block_episode_start` / `block_episode_end`
+- `max_block_episodes = 8`
+- exact ordered `expected_seq_ids`
+- `block_expected_sequences`
+- `block_committed_sequences`
+- whole-work `locked_sequences_total`
+- `last_locked_seq_id` / `next_seq_id`
+- current phase and durable block-gate evidence
 
-No process may automatically advance to a next sequence after the lease reaches 3 commits.
+The guard must reject:
+- a sequence that is not the exact durable `next_seq_id`;
+- a block spanning more than 8 episodes;
+- non-contiguous episode blocks;
+- a commit without parseable spec, THICK record, and PASS audit;
+- block completion before all expected sequences are locked;
+- phase transition without durable PASS evidence.
 
-## End-of-response filesystem freeze
+## Episode and block checkpoints
 
-After the third commit, or before the response ends if fewer than three were authored:
+When all sequences for an episode are locked, rebuild that episode JSONL only from current atomic records and write an episode checkpoint. When all episodes in the block are closed, run the block strong gate. Only a PASS block gate may close the block.
 
-1. close the response lease;
-2. fsync the current checkpoint;
-3. release the writer lock;
-4. mark active semantic write surfaces read-only or otherwise deny new atomic renames;
-5. record `next_seq_id`;
-6. stop all semantic advancement.
+If execution stops at any point, reconcile from the contiguous prefix of valid atomic records and resume from the computed `next_seq_id`. Completed earlier sequences and episodes are not repeated.
 
-The next assistant response must run reconciliation, explicitly thaw the write surfaces, acquire a new writer lock, and open a new lease.
+## No late/background writer
 
-## Overrun handling
-
-Any semantic spec, THICK record, audit, or episode assembly created beyond the current response lease is not progress. It must be preserved in quarantine rather than silently accepted or deleted.
-
-Promotion from quarantine requires a later assistant response to re-read the relevant source range and re-run the normal semantic/audit path under a new response lease. Files may be reused only as comparison evidence, not as already-completed semantic authoring.
-
-## Reconciliation invariant
-
-Only the contiguous sequence prefix within closed valid response leases is checkpoint-locked progress. `work_state.next_seq_id` must be computed from that prefix, not from the furthest file present on disk.
+Semantic writers must not continue asynchronously after the assistant response ends. A late-finishing or overrun semantic file is not automatically progress. Preserve it in quarantine. It may be used as comparison evidence only after the relevant source is re-read and the sequence is revalidated and newly committed through the active block guard.
 
 ## Phase separation
 
-THICK semantic authoring, episode assembly, block audit, PlannerInput R5 generation, Runtime R8 generation, database promotion, packaging, and fresh-extraction validation remain separate phases. A timeout in a later phase must not invalidate earlier durable PASS phases.
+The following are separate durable phases:
 
-## 2026-08-14 hardening after repeated interruption
+`THICK_BLOCK_AUTHORING -> BLOCK_GATE -> WHOLE_WORK_GATE -> R5_BUILD -> R8_BUILD -> DB_INTEGRATION -> CHECKSUM_BUILD -> ZIP_BUILD -> FRESH_EXTRACTION -> HUB_PROMOTION`
 
-The `국희` incident demonstrated that even correct documentation can be violated if a response attempts to satisfy a block-level milestone in one turn. Therefore the following are non-overridable:
+A phase may use multiple commands, but the next phase starts only after a durable PASS report exists. Do not place all phases in one mega-script or background process.
 
-- A user request to finish a block defines the milestone only. It does not permit exceeding the 3-sequence lease.
-- Source reading without a `CHECKPOINT_LOCKED` THICK transaction is not progress and must not advance `locked_sequences` or `next_seq_id`.
-- A response that performs THICK semantic authoring must end after closing its semantic lease. It must not begin whole-work validation, R5, R8, DB integration, checksum build, ZIP build, fresh extraction, or hub promotion in that same response.
-- Later phases advance only from durable PASS evidence, never from chat prose.
-- `tools/drama_analysis_phase_guard.py` is the mechanical guard for these rules. Long THICK work must use it or an equivalent guard that rejects a fourth commit and out-of-order phase transitions.
-- If the guard state and chat text disagree, guard/durable disk state wins.
+Block-level THICK authoring and its block gate may be completed in one assistant response when the context remains bounded, because every sequence and episode is independently durable. R5/R8, database promotion, and release packaging remain later phases.
 
-See `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md` for the incident evidence and recovery point.
+## Progress authority
+
+Durable disk/guard state outranks chat text. If they disagree, the contiguous atomic checkpoint state is authoritative.
+
+See `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md` for the incident and the correction history. `tools/drama_analysis_phase_guard.py` implements this V2 block-atomic policy.
