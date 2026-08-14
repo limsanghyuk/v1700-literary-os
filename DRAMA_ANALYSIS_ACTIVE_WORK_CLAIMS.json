@@ -1,7 +1,7 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-14T19:08:00+09:00",
+  "updated_at": "2026-08-14T19:44:47+09:00",
   "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
   "claims": [
     {
@@ -11,9 +11,9 @@
       "state": "ACTIVE",
       "episodes_total": 20,
       "sequences_total": 148,
-      "locked_sequences": 118,
-      "last_locked_seq_id": "국희_16_S08",
-      "next_seq_id": "국희_17_S01",
+      "locked_sequences": 121,
+      "last_locked_seq_id": "국희_17_S03",
+      "next_seq_id": "국희_17_S04",
       "block01": {
         "episodes": "EP01-EP08",
         "sequences": 56,
@@ -33,12 +33,22 @@
         "hash_checks": 310,
         "blocking_errors": 0
       },
+      "block03": {
+        "episodes": "EP17-EP20",
+        "status": "IN_PROGRESS",
+        "locked_sequences": 3,
+        "last_locked_seq_id": "국희_17_S03",
+        "next_seq_id": "국희_17_S04",
+        "late_overrun_quarantined": true
+      },
       "execution_guard": {
         "required": true,
         "phase": "THICK_AUTHORING",
         "max_new_sequences_per_response": 3,
         "source_read_without_checkpoint_is_progress": false,
         "forbid_cross_phase_same_response": true,
+        "last_closed_lease": "20260814T1934KST_GUKHEE_EP17_S01_S03",
+        "last_closed_lease_commits": 3,
         "incident_doc": "DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md",
         "guard_tool": "tools/drama_analysis_phase_guard.py"
       },
