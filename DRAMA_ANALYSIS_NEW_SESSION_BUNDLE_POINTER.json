@@ -3,9 +3,11 @@
   "status": "CURRENT_SNAPSHOT",
   "snapshot_date": "2026-08-14",
   "bundle_filename": "DRAMA_ANALYSIS_NEW_SESSION_COMPLETE_BUNDLE_20260814_26WORK.zip",
-  "bundle_sha256": "87b0c707538cd6c4fb82a6cf22941ea7ed8bbe3aa0aabdbc38eedb79b38b92b9",
+  "bundle_sha256": "91bd2ac9f336650d0c0cbae6c0bfb42855d4c2a98d748cb3972a461a0d18ad86",
   "bundle_validation": "PASS",
   "bundle_fresh_extraction": "PASS",
+  "bundle_files": 73,
+  "active_three_sequence_hard_cap_occurrences": 0,
   "snapshot_thick_authority": "DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
   "snapshot_planner_runtime_authority": "DB98_PLANNER_RUNTIME_26WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
   "snapshot_full_database": "DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip",
@@ -14,5 +16,5 @@
   "fixed_three_sequence_hard_cap": "RETIRED",
   "live_hub_refresh_required": true,
   "freshness_rule": "This bundle is a snapshot. New sessions must resolve live main integrated pointer, overlay, method/bootstrap, and active claims before selecting or resuming work. A newer live authority supersedes this bundle.",
-  "updated_at": "2026-08-14T21:12:00+09:00"
+  "updated_at": "2026-08-14T21:16:00+09:00"
 }
