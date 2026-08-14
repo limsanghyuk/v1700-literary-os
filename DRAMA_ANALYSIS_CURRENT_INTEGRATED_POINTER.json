@@ -37,11 +37,13 @@
     "semantic_similarity_auto_merge": false
   },
   "quality_equalized_candidate": "DRAMA_ANALYSIS_26WORK_QUALITY_EQUALIZED_CANDIDATE_20260815.md",
-  "quality_candidate_is_canonical": true,
+  "quality_candidate_is_canonical": false,
+  "quality_candidate_superseded_by_v9": true,
   "thread_anchor_pilot": "DRAMA_ANALYSIS_RILJIMAE_THREAD_CONTINUITY_PILOT_20260815.md",
   "thread_pilot_is_canonical": false,
   "thread_cohort_candidate": "DRAMA_ANALYSIS_26WORK_THREAD_R1_COHORT_CANDIDATE_20260815.md",
-  "thread_cohort_candidate_is_canonical": true,
+  "thread_cohort_candidate_is_canonical": false,
+  "thread_cohort_candidate_superseded_by_v9": true,
   "promotion_report": "DRAMA_ANALYSIS_26WORK_QUALITY_THREAD_R1_V9_PROMOTION_20260815.md",
   "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers, current method, thread policy, and active claims before new work; never downgrade a newer live authority.",
   "updated_at": "2026-08-15T03:52:00+09:00"
