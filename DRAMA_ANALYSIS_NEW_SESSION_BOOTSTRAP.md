@@ -7,7 +7,7 @@ This file is the current human-readable entrypoint. Do not begin a new drama-ana
 1. Read `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`.
 2. Read `CURRENT_AUTHORITY_POINTER.json` and follow the authority it declares. Never hardcode a historical V10/V10.1 path. The current pointer resolves to `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`.
 3. Read `DRAMA_ANALYSIS_EXACT_SCHEMA_REGISTRY_V10_1.json` and the current authority mirror.
-4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_25WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
+4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_26WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
 5. Read `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`.
 6. Before long THICK work, read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`. Use `tools/drama_analysis_phase_guard.py` or an equivalent Block-Atomic V2 guard.
 7. Read `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` before selecting a target. This coordination file never overrides semantic/release authority.
@@ -48,12 +48,12 @@ The durable phases are `THICK_BLOCK_AUTHORING → BLOCK_GATE → WHOLE_WORK_GATE
 
 - Stage01–04: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, 98 works / 1,814 episodes / 114,371 SceneCards; unchanged.
 - EXT6: 35-work append-only cohort; unchanged.
-- CANONICAL THICK: `DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED`, 25 works / 3,735 records.
+- CANONICAL THICK: `DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED`, 26 works / 3,883 records.
 - THICK strict semantic-independence V3: PASS, blocking errors 0.
-- Exact/provenance/source: PASS, 65,915 SOURCE refs / 18,675 hash checks / errors 0.
-- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_25WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GHJ_INTEGRATED`, 25 works / 450 PlannerInput files / 450 Runtime files / 28,341 runtime scene records; errors 0.
-- 25th work `구해줘`: 16 episodes / 162 THICK records / 903 Runtime scene records; semantic, exact/provenance, quality, R5/R8 all PASS.
-- Full database ZIP: `DB98_98WORK_STAGE04_25THICK_CLEAN_V7_GHJ_INTEGRATED_FINAL_20260814.zip`, SHA256 `87bf39e78fce21943e52ce799688bbf9e71ffcb52b3d5dce211ba7b1b1836f37`; fresh extraction PASS.
-- Active coordination: `국희` THICK authoring has completed 148/148 in staging under Block-Atomic V2. Block03 EP17–EP20 is PASS; next phase is WHOLE_WORK_GATE. It is not yet CANONICAL. Consult `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json`.
+- Exact/provenance/source: PASS, 68,659 SOURCE refs / 19,415 hash checks / errors 0.
+- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_26WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED`, 26 works / 470 PlannerInput files / 470 Runtime files / 29,628 runtime scene records; errors 0.
+- 26th work `국희`: 20 episodes / 148 THICK records / 1,287 Runtime scene records; whole-work, semantic, exact/provenance, quality, R5/R8 all PASS.
+- Predecessor 25-work immutability: 26,636 pre-existing files checked before authority metadata promotion; missing 0 / changed 0.
+- Full database ZIP: `DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip`, SHA256 `39fea427974c212a0e42cf7cc1b63f1ddff875da050443091c77e0522cb4efe7`; final fresh extraction PASS.
 
 Canonical repository: `limsanghyuk/v1700-literary-os`.
