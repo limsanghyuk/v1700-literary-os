@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V5",
+  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V6",
   "status": "ACTIVE_SINGLE_NEW_SESSION_ENTRYPOINT",
   "repository": "limsanghyuk/v1700-literary-os",
   "stage01_04_authority_pointer": "CURRENT_AUTHORITY_POINTER.json",
@@ -11,5 +11,6 @@
   "precedence": "SOURCE_AND_SOURCELOCK > ROOT_CURRENT_STAGE01_04_AUTHORITY > CURRENT_CANONICAL_THICK > CURRENT_DERIVED_PLANNER_RUNTIME > HISTORICAL_DOCS",
   "new_session_bootstrap": "DRAMA_ANALYSIS_NEW_SESSION_BOOTSTRAP.md",
   "integration_release_recovery_protocol": "DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md",
-  "updated_at": "2026-08-14T11:36:00+09:00"
+  "thick_response_lease_protocol": "DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md",
+  "updated_at": "2026-08-14T12:38:00+09:00"
 }
