@@ -5,47 +5,50 @@ This file is the current human-readable entrypoint. Do not begin a new drama-ana
 ## Mandatory authority resolution
 
 1. Read `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`.
-2. Read `CURRENT_AUTHORITY_POINTER.json` and follow the authority it declares. Never hardcode V10 or V10.1 in session logic. The current pointer resolves to `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`.
+2. Read `CURRENT_AUTHORITY_POINTER.json` and follow the authority it declares. Never hardcode a historical V10/V10.1 path. The current pointer resolves to `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`.
 3. Read `DRAMA_ANALYSIS_EXACT_SCHEMA_REGISTRY_V10_1.json` and the current authority mirror.
-4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_24WORK.json` for the current CANONICAL THICK and Planner/Runtime authority IDs.
-5. Read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md` before starting/resuming long semantic or integration/release work.
-6. After selecting a work, read SourceLock plus its current work state/checkpoint before resuming.
+4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_25WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
+5. Read `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`.
+6. Before long THICK work, also read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`.
+7. After selecting a work, read SourceLock plus current work_state/checkpoint before resuming.
 
 ## Semantic authoring invariant
 
-The drama script itself is primary authority. Read the source directly and sequentially. One complete episode is the semantic authoring unit. Q1–Q4 and blocks of up to eight episodes are attention, checkpoint, and audit units only; they are not canonical acts and must not be used to semantically compress an episode.
+The drama script itself is primary authority. The model reads the source directly and sequentially and authors new narrative meaning itself. Python may extract, normalize, lock, hash, serialize, validate, compare, and package; Python must not invent narrative semantics.
 
-Python may extract, normalize, lock, hash, serialize, validate, compare, and package. Python must not invent SceneCard, SequenceBlueprint, EpisodeArc, CharacterArc, RelationshipArc, edges, payoff meaning, THICK meaning, or other narrative semantics.
+One complete episode is the semantic authoring unit. Q1→Q2→Q3→Q4 are attention/checkpoint units, not dramatic four-act labels. A block of up to eight episodes is an execution-limit boundary, not a semantic schema.
 
-Per episode the canonical order is: SourceBoundaryReview → full source read → Stage01 SceneCard + EpisodeMeta → Stage02 SequenceBlueprint + EpisodeArc → Stage03 CharacterArc + RelationshipArc + LocalEdge + PayoffCandidate → Arc Coverage Expansion Pass → light gate → independent source audit → atomic checkpoint. Stage04 CrossEpisodeEdge + FullSeriesArc is promoted only after full-season Stage01–03 is complete and locked.
+The canonical order is SourceBoundaryReview → Stage01 → Stage02 → Stage03 → full-series Stage04. LocalEdge is same-episode causal only with `gap_episodes=0`; cross-episode relations belong to Stage04.
 
-LocalEdge is same-episode only (`gap_episodes = 0`). Any cross-episode relation belongs to the Stage04 cross channel.
+For an existing PASS Stage01–04 work that lacks THICK, preserve Stage01–04, use SequenceBlueprint only as sequence boundaries, re-read the source, and author THICK independently. Stage02 event copying, Stage01/02 cast-function reuse, generic cast templates, duplicate strict cast functions, and unresolved evidence are blocking errors.
 
-For existing PASS works, V10.1 uses risk-based selective reinforcement rather than mandatory full reanalysis. New semantic layers must be source-grounded and independently useful; do not paraphrase old text merely to game overlap metrics.
+## Planner / Runtime / EXT6 boundary
 
-## Interruption-safe execution invariant
+Authority order is `Source/SourceLock → Stage01 → Stage02 → Stage03 → Stage04 → CANONICAL THICK → PlannerInput R5 → Runtime R8`.
 
-For THICK/new semantic overlay authoring, use `1 sequence = 1 atomic transaction`:
+R5 Episode N may consume only state known through N−1. R8 is deterministic projection from current THICK plus the same-episode R5; it does not independently author meaning and becomes stale if THICK changes.
 
-`SOURCE_READ → SEMANTIC_AUTHORED → FILE_SAVED → AUDIT_PASS → CHECKPOINT_LOCKED`.
+EXT6 is a `SELECTIVE_APPEND_ONLY` evidence sidecar. It does not supersede Stage01–04 or THICK. Current exact records are EntityRegistry, EntityBridge, CastPresence, CharacterLoad, CastCoverageLedger, SourceHeadingRegistry, and SourceSceneAlignment. Base Stage01–04 must remain byte-immutable under EXT6.
 
-At the start of every response, reconcile durable disk state before trusting chat progress reports. Use a single-writer OS/file lock so a late-finishing prior process cannot overlap a new writer. Durable writes use temp → flush/fsync → atomic rename. Do not report an episode or sequence as complete before the checkpoint is locked on disk.
+## Interruption / release invariant
 
-For whole-database integration/release, do not chain integration, promotion, validation, checksum, ZIP, fresh extraction, and postzip validation into one timeout budget. Each phase must leave a durable PASS report. If interrupted, inspect disk state and resume only the first incomplete phase.
+Durable disk state outranks chat progress. THICK completion requires `CHECKPOINT_LOCKED`. New THICK semantic authoring uses one atomic sequence transaction and the response lease; at most three newly authored sequences are accepted per assistant response. At response end, fsync the checkpoint, release the writer lock, freeze semantic write surfaces, record next_seq_id, and stop.
 
-## Current overlay closure
+Whole-database integration/release is phase-separated: baseline reconcile → target payload integrate → non-target immutability → authority promote → strong validate → full parse/authority closure → checksums → ZIP → fresh extract → postzip validate → hub promote. The hub is promoted last.
 
-- Stage01–04: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, 98 works / 1,814 episodes / 114,371 SceneCards.
-- CANONICAL THICK: `DB98_THICK_24WORK_CANONICAL_AUTHORITY_20260814_V1_GRJB_INTEGRATED`.
-- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_24WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GRJB_INTEGRATED`.
-- 24-work strict semantic-independence V3: PASS, blocking errors 0, legacy diagnostic groups 0.
-- 24-work exact/provenance/source validation: PASS, 3,573 THICK records, 62,905 SOURCE refs, 17,865 hash checks, errors 0.
-- 24-work Planner/Runtime validation: PASS, 434 PlannerInput episode files, 434 Runtime episode files, 27,438 runtime scene records, errors 0.
-- New work `그저바라보다가`: 16 episodes / 137 THICK records / 1,168 Runtime scene records; semantic, exact/provenance, Planner/Runtime all PASS.
-- Quality homogenization for `그저바라보다가`: PASS; event 131.6, cast-function 58.7, info-shift 1.54/sequence, plant-payoff 1.54/sequence, all at or above the existing-15 Q25 floor.
-- Non-target CLEAN V5 immutability: PASS; 26,494 predecessor files checked, missing 0, changed 0 before authority metadata promotion.
-- Full database ZIP: `DB98_98WORK_STAGE04_24THICK_CLEAN_V6_GRJB_INTEGRATED_FINAL_20260814.zip`.
-- Full database SHA256: `b25ba041d21ab6299e92ac52b7e45dc099708019af6dcc12b97f82aa7974a9cd`.
-- Final fresh extraction: PASS; ZIP entries 26,559, checksum errors 0.
+## Current overlay closure — 2026-08-14
+
+- Stage01–04: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, 98 works / 1,814 episodes / 114,371 SceneCards; unchanged.
+- EXT6: 35-work append-only cohort; unchanged.
+- CANONICAL THICK: `DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED`, 25 works / 3,735 records.
+- THICK strict semantic-independence V3: PASS, blocking errors 0.
+- Exact/provenance/source: PASS, 65,915 SOURCE refs / 18,675 hash checks / errors 0.
+- Planner/Runtime V1.1: `DB98_PLANNER_RUNTIME_25WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GHJ_INTEGRATED`, 25 works / 450 PlannerInput files / 450 Runtime files / 28,341 runtime scene records; errors 0.
+- 25th work `구해줘`: 16 episodes / 162 THICK records / 903 Runtime scene records; semantic, exact/provenance, quality, R5/R8 all PASS.
+- Predecessor 24-work immutability: 26,559 predecessor files checked before metadata promotion; missing 0 / changed 0.
+- Full database ZIP: `DB98_98WORK_STAGE04_25THICK_CLEAN_V7_GHJ_INTEGRATED_FINAL_20260814.zip`.
+- Full database SHA256: `87bf39e78fce21943e52ce799688bbf9e71ffcb52b3d5dce211ba7b1b1836f37`.
+- Final fresh extraction: PASS.
+- Updated new-session bundle: `DRAMA_ANALYSIS_NEW_SESSION_COMPLETE_BUNDLE_20260814_25WORK.zip`, SHA256 `af924167546064b100bba0144e02b9a7eb4587b88ed39e1ec6b865678c114152`.
 
 Canonical repository: `limsanghyuk/v1700-literary-os`.
