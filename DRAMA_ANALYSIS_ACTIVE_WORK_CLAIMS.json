@@ -1,75 +1,44 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-14T20:08:00+09:00",
-  "canonical_thick_authority": "DB98_THICK_25WORK_CANONICAL_AUTHORITY_20260814_V1_GHJ_INTEGRATED",
+  "updated_at": "2026-08-14T20:28:00+09:00",
+  "canonical_thick_authority": "DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
   "claims": [
     {
       "work_id": "국희",
       "initial_group": "ㄱ",
       "task": "THICK_NEW_WORK_AUTHORING",
-      "state": "THICK_AUTHORING_COMPLETE_STAGING",
+      "state": "COMPLETE_CANONICAL_PROMOTED",
       "episodes_total": 20,
       "sequences_total": 148,
       "locked_sequences": 148,
       "last_locked_seq_id": "국희_20_S07",
       "next_seq_id": null,
-      "next_phase": "WHOLE_WORK_GATE",
-      "block01": {
-        "episodes": "EP01-EP08",
-        "sequences": 56,
+      "next_phase": "DONE",
+      "block01": {"episodes":"EP01-EP08","sequences":56,"status":"PASS","semantic_independence_v3":"PASS_STRICT","exact_provenance":"PASS","fresh_extraction":"PASS"},
+      "block02": {"episodes":"EP09-EP16","sequences":62,"status":"PASS","semantic_independence_v3":"PASS_STRICT","exact_provenance":"PASS","fresh_extraction":"PASS","source_refs_checked":1015,"hash_checks":310,"blocking_errors":0},
+      "block03": {"episodes":"EP17-EP20","sequences":30,"status":"PASS","strong_validation":"PASS","semantic_independence_v3":"PASS_STRICT","exact_provenance":"PASS","fresh_extraction":"PASS","source_refs_checked_block":521,"hash_checks_block":150,"whole_work_source_refs_checked":2744,"whole_work_hash_checks":740,"blocking_errors":0,"late_overrun_quarantined":true},
+      "whole_work_gate": "PASS",
+      "planner_input_r5": {"status":"PASS","episode_files":20},
+      "runtime_r8": {"status":"PASS","episode_files":20,"scene_records":1287},
+      "promotion": {
         "status": "PASS",
-        "semantic_independence_v3": "PASS_STRICT",
-        "exact_provenance": "PASS",
+        "canonical_thick_authority": "DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
+        "planner_runtime_authority": "DB98_PLANNER_RUNTIME_26WORK_CANONICAL_PROFILE_V1_1_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
+        "database": "DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip",
+        "database_sha256": "39fea427974c212a0e42cf7cc1b63f1ddff875da050443091c77e0522cb4efe7",
         "fresh_extraction": "PASS"
       },
-      "block02": {
-        "episodes": "EP09-EP16",
-        "sequences": 62,
-        "status": "PASS",
-        "semantic_independence_v3": "PASS_STRICT",
-        "exact_provenance": "PASS",
-        "fresh_extraction": "PASS",
-        "source_refs_checked": 1015,
-        "hash_checks": 310,
-        "blocking_errors": 0
-      },
-      "block03": {
-        "episodes": "EP17-EP20",
-        "sequences": 30,
-        "status": "PASS",
-        "strong_validation": "PASS",
-        "semantic_independence_v3": "PASS_STRICT",
-        "exact_provenance": "PASS",
-        "fresh_extraction": "PASS",
-        "source_refs_checked_block": 521,
-        "hash_checks_block": 150,
-        "whole_work_source_refs_checked": 2744,
-        "whole_work_hash_checks": 740,
-        "blocking_errors": 0,
-        "late_overrun_quarantined": true
-      },
-      "execution_guard": {
-        "required": true,
-        "model": "BLOCK_ATOMIC_V2",
-        "max_block_episodes": 8,
-        "per_response_sequence_cap": null,
-        "sequence_atomic_commit_required": true,
-        "episode_checkpoint_required": true,
-        "source_read_without_checkpoint_is_progress": false,
-        "cross_phase_requires_durable_pass": true,
-        "phase": "WHOLE_WORK_GATE",
-        "guard_tool": "tools/drama_analysis_phase_guard.py"
-      },
-      "canonical_promoted": false
+      "execution_guard": {"required":true,"model":"BLOCK_ATOMIC_V2","max_block_episodes":8,"per_response_sequence_cap":null,"sequence_atomic_commit_required":true,"episode_checkpoint_required":true,"source_read_without_checkpoint_is_progress":false,"cross_phase_requires_durable_pass":true,"phase":"DONE","guard_tool":"tools/drama_analysis_phase_guard.py"},
+      "canonical_promoted": true
     }
   ],
   "reserved_initial_groups_reported_by_developer": ["ㄴ", "ㄷ"],
   "rules": [
     "Read this file before choosing a new work.",
-    "This file coordinates concurrent sessions and never overrides semantic or release authority pointers.",
-    "Do not start a second writer on a work whose claim state is active or staging-complete but not promoted.",
-    "Resolve exact live work_state/checkpoint and execution-guard state before resuming the claimed work.",
+    "This file coordinates concurrent sessions and never overrides semantic/release authority.",
+    "Only ACTIVE or staging-complete-not-promoted claims block a second writer; COMPLETE_CANONICAL_PROMOTED does not.",
+    "Resolve exact live work_state/checkpoint and execution-guard state before resuming any active work.",
     "Block-Atomic V2 allows at most eight contiguous episodes per execution block and requires each sequence to be atomically locked before the next begins.",
     "Later phases require durable PASS evidence before transition."
   ]
