@@ -1,0 +1,84 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V9_26WORK_QUALITY_THREAD_R1",
+  "status": "ACTIVE",
+  "date": "2026-08-15",
+  "stage01_04": {
+    "authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+    "schema_authority_id": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1",
+    "works": 98,
+    "episodes": 1814,
+    "scene_cards": 114371,
+    "selected_content_repair": true,
+    "stage01_repair_works": 13,
+    "stage02_repair_works": 1,
+    "stage03_content_changed": false,
+    "stage04_content_changed": false,
+    "source_sourcelock_changed": false,
+    "blanket_byte_immutability_claim": false,
+    "status": "SCHEMA_AUTHORITY_UNCHANGED_SELECTED_CONTENT_QUALITY_REPAIRED"
+  },
+  "ext6": {
+    "integrated_works": 35,
+    "mode": "SELECTIVE_APPEND_ONLY",
+    "changed_in_v9": false,
+    "status": "UNCHANGED"
+  },
+  "thick": {
+    "authority_id": "DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1",
+    "works": 26,
+    "records": 3883,
+    "semantic_independence_v3": "PASS_STRICT_ALL",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 68677,
+    "hash_checks": 19415,
+    "errors": 0,
+    "quality_equalization": "PASS_ALL_26_Q25_4_OF_4",
+    "thread_continuity_r1": "REVIEWED_26_SOURCE_GROUNDED",
+    "thread_id_only_changed_entries": 193,
+    "thread_aliases": 127,
+    "gaewolf_stage04_cross_thread_entries_added": 14,
+    "supersedes": "DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_26WORK_QUALITY_THREAD_R1_PROFILE_V1_1_AUTHORITY_20260815_V1",
+    "works": 26,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 470,
+    "runtime_episode_files": 470,
+    "runtime_scene_records": 29628,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1"
+  },
+  "quality": {
+    "q25_all4_works": 26,
+    "skin_repeat_gt20_works": 0,
+    "same_sequence_cast_duplicate_works": 0,
+    "status": "PASS"
+  },
+  "thread_r1": {
+    "reviewed_works": 26,
+    "diagnostic_40_30_is_hard_gate": false,
+    "semantic_similarity_auto_merge": false,
+    "resolves_thread_in_exact_schema": false,
+    "status": "CANONICAL_METHOD_APPLIED"
+  },
+  "protected_lineage": {
+    "stage03_stage04_source_sourcelock_ext6_files_checked": 11605,
+    "changed": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery": {
+    "filename": "DB98_98WORK_STAGE04_26THICK_QUALITY_THREAD_R1_CLEAN_V9_FINAL_20260815.zip",
+    "sha256": "0c205207bad085f31b002fe6bb06b65123baec578649cc0c337ec6cfb268014f",
+    "fresh_extraction": "PASS",
+    "checksum_entries": 26772,
+    "checksum_errors": 0,
+    "json_parse_errors": 0
+  },
+  "method_current": "DRAMA_ANALYSIS_METHOD_CURRENT_20260815_V9.md",
+  "thread_continuity_policy": "DRAMA_ANALYSIS_THREAD_CONTINUITY_POLICY_R1_20260815.md",
+  "new_session_bootstrap": "DRAMA_ANALYSIS_NEW_SESSION_BOOTSTRAP_V9_20260815.md",
+  "promotion_report": "DRAMA_ANALYSIS_26WORK_QUALITY_THREAD_R1_V9_PROMOTION_20260815.md",
+  "updated_at": "2026-08-15T03:52:00+09:00"
+}
