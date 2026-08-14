@@ -1,12 +1,12 @@
 # 한국 드라마 분석 현행 실행 방법 — 2026-08-14
 
 ## 1. 최상위 원칙
-원본 드라마 대본과 SourceLock이 최상위 의미 권위다. 모델이 원문을 회차 순서대로 직접 독해하고 이해한 뒤 의미를 저작한다. Python은 추출·정규화·해시·직렬화·검증·비교·패키징에만 사용하며 장면/인물/관계/인과 의미를 생성하지 않는다.
+원본 드라마 대본과 SourceLock이 최상위 의미 권위다. 모델이 원문을 회차 순서대로 직접 독해하고 이해한 뒤 의미를 저작한다. Python은 추출·정규화·해시·직렬화·검증·비교·조립·패키징에만 사용하며 장면/인물/관계/인과 의미를 생성하지 않는다.
 
 ## 2. 작업 단위
-- 의미 저작 단위: 한 회차 전체.
+- Stage01~04 의미 저작 단위: 한 회차 전체.
 - Q1→Q2→Q3→Q4: 긴 회차를 순서대로 읽기 위한 attention/checkpoint 단위이며 극적 4막을 뜻하지 않는다.
-- Block: 실행 한도를 관리하기 위해 전 회차를 최대 8회차씩 묶는 운영 경계. Block은 의미 스키마가 아니다.
+- Block: 실행 한도를 관리하기 위해 최대 8개의 연속 회차를 묶는 운영 경계. Block은 의미 스키마가 아니다.
 - 순서를 건너뛰지 않는다. EP01 완료 후 EP02, … 순으로 진행한다.
 
 ## 3. Stage01~04
@@ -23,7 +23,13 @@ CharacterArc 8키, RelationshipArc 9키, LocalEdge 12키, PayoffCandidate 7키. 
 전 시즌 Stage01~03이 잠긴 뒤 FullSeriesArc 17키와 CrossEpisodeEdge를 fan-in한다. 회차 간 callback/plant-payoff/subplot/cross-episode causal은 Stage04에 둔다.
 
 ## 4. CANONICAL THICK
-SequenceBlueprint의 경계는 사용하되 의미는 원문을 다시 읽어 독립 저작한다. 핵심은 `cast(character, desire_or_function, participation)`, 구체적 `event`, `info_shift`, `plant_payoff`, 모든 member scene을 덮는 `scene_notes`, `evidence_refs`와 `source_hashes`다. Stage02 event의 그대로 복사, Stage01/02 문장의 cast-function 재사용, generic cast 문구, strict 신규작의 동일 function 중복은 blocking error다. `1 Sequence = 1 atomic THICK transaction`이다.
+SequenceBlueprint의 경계는 사용하되 의미는 원문을 다시 읽어 독립 저작한다. 핵심은 `cast(character, desire_or_function, participation)`, 구체적 `event`, `info_shift`, `plant_payoff`, 모든 member scene을 덮는 `scene_notes`, `evidence_refs`와 `source_hashes`다. Stage02 event의 그대로 복사, Stage01/02 문장의 cast-function 재사용, generic cast 문구, strict 신규작의 동일 function 중복은 blocking error다.
+
+`1 Sequence = 1 atomic THICK transaction`이며 각 시퀀스는 다음 순서로 잠근다.
+
+`SOURCE_READ → SEMANTIC_AUTHORED → FILE_SAVED → AUDIT_PASS → CHECKPOINT_LOCKED`
+
+`CHECKPOINT_LOCKED`만 완료로 인정한다.
 
 ## 5. PlannerInput R5 / Runtime R8
 권위 순서: `Source/SourceLock → Stage01 → Stage02 → Stage03 → Stage04 → CANONICAL THICK → R5 → R8`.
@@ -36,11 +42,43 @@ EXT6는 Stage01~04/THICK를 대체하지 않는 `SELECTIVE_APPEND_ONLY` evidence
 ## 7. 검증과 승격
 작품 저작 완료 후 `exact schema/member-scene/source range/provenance hash → semantic independence V3 strict → whole-work quality → R5/R8 validator`를 통과해야 한다. 기존 정본 작품은 신규작 승격 직전 byte-immutability를 확인한다. 물리 payload 검증 후에만 authority pointer/manifest를 승격한다.
 
-## 8. 중단/재개 및 패키징
-채팅의 진행 보고보다 디스크의 durable checkpoint가 우선이다. THICK atomic state는 `PENDING→SOURCE_READ→SEMANTIC_AUTHORED→FILE_SAVED→AUDIT_PASS→CHECKPOINT_LOCKED`이며 CHECKPOINT_LOCKED만 완료다. 장시간 작업은 semantic authoring, assembly, strong validation, R5/R8, authority promotion, checksum, ZIP, fresh extraction을 분리한다. THICK 신규 저작 응답은 response lease를 사용해 최대 3개 신규 Sequence만 허용하며, 응답 종료 시 checkpoint fsync·writer lock 해제·write surface 동결 후 종료한다. ZIP을 만든 뒤 별도 디렉터리에 다시 풀어 공식 검증과 체크섬을 재실행한다.
+## 8. 중단/재개 — Block-Atomic V2
+채팅의 진행 보고보다 디스크의 durable checkpoint가 우선이다. 고정 규칙은 다음과 같다.
 
-## 9. 실험 계층의 경계
+- THICK 실행 Block은 최대 8개의 연속 회차다.
+- **응답당 고정 시퀀스 수 제한은 두지 않는다.** 과거의 3 Sequence hard cap은 폐기되었다.
+- 대신 각 Sequence는 반드시 원자적으로 `CHECKPOINT_LOCKED`된 뒤 다음 Sequence로 넘어간다.
+- 한 회차가 닫히면 현재 atomic records에서 episode JSONL을 재조립하고 episode checkpoint를 남긴다.
+- Block이 닫히면 독립 strong gate를 실행하고 PASS evidence를 남긴다.
+- background/late writer는 금지한다. 응답 경계 이후 생성된 overrun 파일은 quarantine으로 격리하며 진행으로 인정하지 않는다.
+- 실행이 중단되면 contiguous valid prefix를 재계산하여 `next_seq_id`에서 이어간다. 이미 잠긴 Sequence는 다시 하지 않는다.
+
+## 9. 장기 단계 분리
+다음 단계는 서로 다른 durable phase다.
+
+`THICK_BLOCK_AUTHORING → BLOCK_GATE → WHOLE_WORK_GATE → R5_BUILD → R8_BUILD → DB_INTEGRATION → CHECKSUM_BUILD → ZIP_BUILD → FRESH_EXTRACTION → HUB_PROMOTION`
+
+각 단계는 실제 PASS evidence가 있어야 다음 단계로 전환한다. 전체 파이프라인을 하나의 mega-script나 background process로 묶지 않는다. 후속 단계 실패가 앞선 PASS 단계를 무효화하지 않는다.
+
+## 10. 패키징과 fresh extraction
+최종 ZIP을 만든 뒤 별도 디렉터리에 다시 풀어 공식 검증과 체크섬을 재실행한다. fresh extraction이 PASS하기 전에는 release-ready나 canonical promotion을 선언하지 않는다. 허브 승격은 가장 마지막 단계다.
+
+## 11. 실험 계층의 경계
 Blind-forward/ablation/holdout/EXT6 Phase02 같은 실험은 기능 효용을 검증하기 위한 evidence다. 실험 PASS가 곧 canonical 의미 승격을 뜻하지 않는다. 측정값의 derivation, leakage, holdout 독립성, schema consistency가 별도로 검증되어야 한다.
 
-## 10. 현재 정본 상태
-Stage01~04: 98작 / 1,814회 / 114,371 SceneCards (V10.1, unchanged). EXT6 integrated cohort: 35작, append-only. CANONICAL THICK: 25작 / 3,735 Sequence. PlannerInput R5: 25작 / 450회. Runtime R8: 25작 / 450회 / 28,341 scene records. 25번째 작품은 구해줘이며 EP01~16 원문 직접 재독해 기반 THICK 162 Sequence가 strict/exact/R5-R8 gate를 통과했다.
+## 12. 현재 정본 상태 — 2026-08-14 26작
+- Stage01~04: 98작 / 1,814회 / 114,371 SceneCards (`DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, unchanged).
+- EXT6 integrated cohort: 35작, `SELECTIVE_APPEND_ONLY`, base Stage01~04 unchanged.
+- CANONICAL THICK: `DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED`, 26작 / 3,883 Sequence.
+- THICK semantic independence V3 strict: PASS, blocking errors 0.
+- Exact/provenance/source: SOURCE refs 68,659 / hash checks 19,415 / errors 0.
+- PlannerInput R5: 26작 / 470회.
+- Runtime R8: 26작 / 470회 / 29,628 scene records / errors 0.
+- 26번째 작품 `국희`: 20회 / 148 THICK / 1,287 Runtime scenes; whole-work, semantic independence, exact provenance, quality, R5/R8 모두 PASS.
+- 기존 25작 predecessor immutability: 26,636 files checked / missing 0 / changed 0.
+- 최종 DB: `DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip`.
+- 최종 DB SHA256: `39fea427974c212a0e42cf7cc1b63f1ddff875da050443091c77e0522cb4efe7`.
+- Final fresh extraction: PASS.
+
+## 13. 새 세션 최신성 규칙
+정적 번들 안의 숫자와 포인터는 생성 시점 snapshot이다. 새 세션은 반드시 허브 `main`의 `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`과 `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json`을 먼저 다시 읽는다. 번들 snapshot과 live hub가 다르면 **live hub가 우선**이며, 더 최신 권위를 과거 번들 상태로 되돌리지 않는다.

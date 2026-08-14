@@ -2,15 +2,26 @@
 
 This file is the current human-readable entrypoint. Do not begin a new drama-analysis session from an old handoff document.
 
+## Live-hub freshness rule
+
+A downloaded bundle is a **snapshot**, not a permanent authority. At the start of every new session, first re-read the live `main` versions of:
+
+- `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`
+- `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json`
+- the `overlay_pointer` named by the current integrated pointer
+- `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`
+
+If the bundle snapshot and live hub differ, the **live hub wins**. Never downgrade a newer live THICK/Planner/Runtime authority to the bundle's older count or IDs. This is especially important because other GPT sessions may be analyzing different dramas concurrently.
+
 ## Mandatory authority resolution
 
-1. Read `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`.
+1. Read live `DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER.json`.
 2. Read `CURRENT_AUTHORITY_POINTER.json` and follow the authority it declares. Never hardcode a historical V10/V10.1 path. The current pointer resolves to `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`.
 3. Read `DRAMA_ANALYSIS_EXACT_SCHEMA_REGISTRY_V10_1.json` and the current authority mirror.
-4. Read `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_26WORK.json` for current CANONICAL THICK and Planner/Runtime authority IDs.
+4. Follow the live integrated pointer's `overlay_pointer`. At this snapshot it is `DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_20260814_26WORK.json`.
 5. Read `DRAMA_ANALYSIS_METHOD_CURRENT_20260814.md`.
 6. Before long THICK work, read `DRAMA_ANALYSIS_NEW_WORK_EXECUTION_RUNBOOK.md`, `DRAMA_ANALYSIS_ATOMIC_CHECKPOINT_AND_RESUME_PROTOCOL.md`, `DRAMA_ANALYSIS_THICK_RESPONSE_LEASE_PROTOCOL.md`, `DRAMA_ANALYSIS_REPEAT_INTERRUPTION_INCIDENT_20260814.md`, and `DRAMA_ANALYSIS_INTEGRATION_RELEASE_RECOVERY_PROTOCOL.md`. Use `tools/drama_analysis_phase_guard.py` or an equivalent Block-Atomic V2 guard.
-7. Read `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` before selecting a target. This coordination file never overrides semantic/release authority.
+7. Read live `DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS.json` before selecting a target. This coordination file never overrides semantic/release authority, but it prevents concurrent sessions from claiming the same work.
 8. After selecting or resuming a work, read SourceLock plus current work_state/checkpoint and execution-guard state before writing.
 
 ## Semantic authoring invariant
@@ -36,7 +47,7 @@ EXT6 is a `SELECTIVE_APPEND_ONLY` evidence sidecar. It does not supersede Stage0
 Durable disk state outranks chat progress. THICK completion requires `CHECKPOINT_LOCKED`; source reading alone is not progress.
 
 - A THICK execution block is at most 8 contiguous episodes.
-- There is no arbitrary per-response sequence-count cap.
+- There is **no arbitrary per-response sequence-count cap**. The temporary 3-Sequence hard cap has been retired.
 - Each sequence is committed atomically and in exact `next_seq_id` order before the next sequence begins.
 - A completed episode is reassembled from current atomic records and checkpointed.
 - A completed block requires an independent block strong gate.
@@ -44,7 +55,7 @@ Durable disk state outranks chat progress. THICK completion requires `CHECKPOINT
 
 The durable phases are `THICK_BLOCK_AUTHORING → BLOCK_GATE → WHOLE_WORK_GATE → R5_BUILD → R8_BUILD → DB_INTEGRATION → CHECKSUM_BUILD → ZIP_BUILD → FRESH_EXTRACTION → HUB_PROMOTION`. Each phase requires durable PASS evidence before transition. Do not run the entire chain as one mega-script. The hub is promoted last.
 
-## Current overlay closure — 2026-08-14
+## Current overlay closure — snapshot 2026-08-14
 
 - Stage01–04: `DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1`, 98 works / 1,814 episodes / 114,371 SceneCards; unchanged.
 - EXT6: 35-work append-only cohort; unchanged.
