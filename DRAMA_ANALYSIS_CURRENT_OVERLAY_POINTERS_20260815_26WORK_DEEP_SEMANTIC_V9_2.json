@@ -1,0 +1,80 @@
+{
+  "schema": "DRAMA_ANALYSIS_CURRENT_OVERLAY_POINTERS_V9_2_26WORK_DEEP_SEMANTIC",
+  "status": "ACTIVE",
+  "date": "2026-08-15",
+  "stage01_04": {
+    "authority": "RESOLVE_FROM_CURRENT_AUTHORITY_POINTER",
+    "schema_authority_id": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1",
+    "works": 98,
+    "episodes": 1814,
+    "scene_cards": 114371,
+    "changed_in_deep_semantic_v9_2": false,
+    "status": "UNCHANGED_FROM_V9_LINEAGE"
+  },
+  "ext6": {
+    "integrated_works": 35,
+    "mode": "SELECTIVE_APPEND_ONLY",
+    "changed_in_deep_semantic_v9_2": false,
+    "status": "UNCHANGED"
+  },
+  "thick": {
+    "authority_id": "DB98_THICK_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CANONICAL_AUTHORITY_20260815_V1",
+    "works": 26,
+    "records": 3883,
+    "semantic_independence_v3": "PASS_STRICT_ALL",
+    "exact_schema_provenance_source": "PASS",
+    "source_refs_checked": 70239,
+    "hash_checks": 19415,
+    "errors": 0,
+    "q25_all4_works": 26,
+    "deep_semantic_integrity": "PASS",
+    "repair_works": 10,
+    "short_source_matches": 0,
+    "aggregate_bullet_remaining": 0,
+    "structural_template_remaining": 0,
+    "owner_blockers_remaining": 0,
+    "direct_source_samples_pass": 30,
+    "owner_colon_prefix_advisory": 959,
+    "supersedes": "DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1"
+  },
+  "thread_r1": {
+    "reviewed_works": 26,
+    "policy": "DRAMA_ANALYSIS_THREAD_CONTINUITY_POLICY_R1_20260815.md",
+    "diagnostic_40_30_is_hard_gate": false,
+    "semantic_similarity_auto_merge": false,
+    "resolves_thread_in_exact_schema": false,
+    "status": "CANONICAL_METHOD_INHERITED"
+  },
+  "planner_runtime": {
+    "authority_id": "DB98_PLANNER_RUNTIME_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_PROFILE_V1_1_AUTHORITY_20260815_V1",
+    "works": 26,
+    "planner_profile": "PLANNER_INPUT_CANONICAL_PROFILE_V1_1",
+    "planner_episode_files": 470,
+    "runtime_episode_files": 470,
+    "runtime_scene_records": 29628,
+    "deep_repair_regenerated_works": 10,
+    "deep_repair_regenerated_episodes": 178,
+    "validation": "PASS",
+    "errors": 0,
+    "depends_on_thick_authority_id": "DB98_THICK_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CANONICAL_AUTHORITY_20260815_V1"
+  },
+  "protected_lineage": {
+    "protected_files_checked": 16859,
+    "protected_changed": 0,
+    "protected_missing": 0,
+    "status": "PASS"
+  },
+  "full_database_delivery": {
+    "filename": "DB98_98WORK_STAGE04_26THICK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CLEAN_V9_2_FINAL_20260815.zip",
+    "sha256": "68c596edbc97b2c44c278ec9d71ef927fd763db7053faa5fa178e5fe5c93445c",
+    "zip_entries": 26835,
+    "checksum_entries": 26834,
+    "checksum_errors": 0,
+    "fresh_extraction": "PASS",
+    "json_parse_errors": 0
+  },
+  "method_current": "DRAMA_ANALYSIS_METHOD_CURRENT_20260815_V9_2.md",
+  "new_session_bootstrap": "DRAMA_ANALYSIS_NEW_SESSION_BOOTSTRAP_V9_2_20260815.md",
+  "promotion_report": "DRAMA_ANALYSIS_26WORK_DEEP_SEMANTIC_V9_2_PROMOTION_20260815.md",
+  "updated_at": "2026-08-15T16:27:00+09:00"
+}
