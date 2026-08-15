@@ -1,5 +1,5 @@
 {
-  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V9_QUALITY_THREAD_R1",
+  "schema": "DRAMA_ANALYSIS_CURRENT_INTEGRATED_POINTER_HUB_V9_1_DEEP_SEMANTIC_AUDIT",
   "status": "ACTIVE_SINGLE_NEW_SESSION_ENTRYPOINT",
   "repository": "limsanghyuk/v1700-literary-os",
   "stage01_04_authority_pointer": "CURRENT_AUTHORITY_POINTER.json",
@@ -21,11 +21,26 @@
   "current_full_database_sha256": "0c205207bad085f31b002fe6bb06b65123baec578649cc0c337ec6cfb268014f",
   "fresh_extraction": "PASS",
   "quality_equalization": {
-    "status": "CANONICAL_PASS",
+    "status": "CANONICAL_Q25_PASS_DEEP_SEMANTIC_REPAIR_REQUIRED",
     "works": 26,
     "q25_all4": 26,
     "skin_repeat_gt20_works": 0,
-    "same_sequence_cast_duplicate_works": 0
+    "same_sequence_cast_duplicate_works": 0,
+    "note": "Q25/structural quality gates remain PASS, but the deeper owner-level/source-sample audit found semantic defects requiring targeted repair."
+  },
+  "deep_semantic_integrity_audit": {
+    "report": "DRAMA_ANALYSIS_26WORK_PER_WORK_STRUCTURAL_SEMANTIC_INTEGRITY_AUDIT_20260815.md",
+    "status": "STRUCTURAL_INTEGRITY_PASS__DEEP_SEMANTIC_INTEGRITY_REPAIR_REQUIRED",
+    "structural_pass": 26,
+    "semantic_independence_v3_pass": 26,
+    "exact_provenance_pass": 26,
+    "planner_runtime_pass": 26,
+    "pass_strong": 6,
+    "pass_with_caution": 10,
+    "review_required": 1,
+    "repair_required": 9,
+    "direct_source_samples": 78,
+    "authority_payload_changed_by_audit": false
   },
   "thread_continuity_r1": {
     "status": "CANONICAL_METHOD_APPLIED_26WORK_REVIEWED",
@@ -45,6 +60,6 @@
   "thread_cohort_candidate_is_canonical": false,
   "thread_cohort_candidate_superseded_by_v9": true,
   "promotion_report": "DRAMA_ANALYSIS_26WORK_QUALITY_THREAD_R1_V9_PROMOTION_20260815.md",
-  "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers, current method, thread policy, and active claims before new work; never downgrade a newer live authority.",
-  "updated_at": "2026-08-15T03:52:00+09:00"
+  "bundle_freshness_rule": "A downloaded bundle is a snapshot. Always resolve live main pointers, current method, thread policy, active claims, and the current deep-semantic integrity audit before new work; never downgrade a newer live authority.",
+  "updated_at": "2026-08-15T14:10:00+09:00"
 }
