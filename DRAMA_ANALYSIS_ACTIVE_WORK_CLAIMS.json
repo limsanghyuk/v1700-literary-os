@@ -1,8 +1,8 @@
 {
   "schema": "DRAMA_ANALYSIS_ACTIVE_WORK_CLAIMS_V1",
   "status": "COORDINATION_ONLY_NOT_AUTHORITY",
-  "updated_at": "2026-08-15T03:52:00+09:00",
-  "canonical_thick_authority": "DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1",
+  "updated_at": "2026-08-15T16:27:00+09:00",
+  "canonical_thick_authority": "DB98_THICK_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CANONICAL_AUTHORITY_20260815_V1",
   "claims": [
     {
       "work_id": "국희",
@@ -21,18 +21,9 @@
       "whole_work_gate": "PASS",
       "planner_input_r5": {"status":"PASS","episode_files":20},
       "runtime_r8": {"status":"PASS","episode_files":20,"scene_records":1287},
-      "original_promotion": {
-        "status": "PASS",
-        "canonical_thick_authority": "DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED",
-        "database": "DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip"
-      },
-      "current_canonical_after_quality_thread_v9": {
-        "canonical_thick_authority": "DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1",
-        "planner_runtime_authority": "DB98_PLANNER_RUNTIME_26WORK_QUALITY_THREAD_R1_PROFILE_V1_1_AUTHORITY_20260815_V1",
-        "database": "DB98_98WORK_STAGE04_26THICK_QUALITY_THREAD_R1_CLEAN_V9_FINAL_20260815.zip",
-        "database_sha256": "0c205207bad085f31b002fe6bb06b65123baec578649cc0c337ec6cfb268014f",
-        "fresh_extraction": "PASS"
-      },
+      "original_promotion": {"status":"PASS","canonical_thick_authority":"DB98_THICK_26WORK_CANONICAL_AUTHORITY_20260814_V1_GUKHEE_INTEGRATED","database":"DB98_98WORK_STAGE04_26THICK_CLEAN_V8_GUKHEE_INTEGRATED_FINAL_20260814.zip"},
+      "quality_thread_v9_promotion": {"canonical_thick_authority":"DB98_THICK_26WORK_QUALITY_THREAD_R1_CANONICAL_AUTHORITY_20260815_V1","planner_runtime_authority":"DB98_PLANNER_RUNTIME_26WORK_QUALITY_THREAD_R1_PROFILE_V1_1_AUTHORITY_20260815_V1","database":"DB98_98WORK_STAGE04_26THICK_QUALITY_THREAD_R1_CLEAN_V9_FINAL_20260815.zip","database_sha256":"0c205207bad085f31b002fe6bb06b65123baec578649cc0c337ec6cfb268014f","fresh_extraction":"PASS"},
+      "current_canonical_after_deep_semantic_v9_2": {"canonical_thick_authority":"DB98_THICK_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CANONICAL_AUTHORITY_20260815_V1","planner_runtime_authority":"DB98_PLANNER_RUNTIME_26WORK_QUALITY_THREAD_R1_DEEP_SEMANTIC_PROFILE_V1_1_AUTHORITY_20260815_V1","database":"DB98_98WORK_STAGE04_26THICK_QUALITY_THREAD_R1_DEEP_SEMANTIC_CLEAN_V9_2_FINAL_20260815.zip","database_sha256":"68c596edbc97b2c44c278ec9d71ef927fd763db7053faa5fa178e5fe5c93445c","fresh_extraction":"PASS"},
       "execution_guard": {"required":true,"model":"BLOCK_ATOMIC_V2","max_block_episodes":8,"per_response_sequence_cap":null,"sequence_atomic_commit_required":true,"episode_checkpoint_required":true,"source_read_without_checkpoint_is_progress":false,"cross_phase_requires_durable_pass":true,"phase":"DONE","guard_tool":"tools/drama_analysis_phase_guard.py"},
       "canonical_promoted": true
     }
@@ -43,6 +34,7 @@
     "This file coordinates concurrent sessions and never overrides semantic/release authority.",
     "Only ACTIVE or staging-complete-not-promoted claims block a second writer; COMPLETE_CANONICAL_PROMOTED does not.",
     "Resolve live integrated pointer before selecting work; never downgrade a newer authority.",
+    "New work must follow the current V9.2 deep-semantic gate in addition to structural/Q25 gates.",
     "Block-Atomic V2 allows at most eight contiguous episodes per execution block and has no fixed per-response sequence cap.",
     "Later phases require durable PASS evidence before transition."
   ]
