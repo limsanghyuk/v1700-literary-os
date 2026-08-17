@@ -1,0 +1,11 @@
+{
+  "schema": "LOS_CROSS_HUB_POINTER_V1",
+  "date": "2026-08-15",
+  "reason": "두 허브 분리 운영으로 회사 세션이 확증 트랙 문서를 조회하지 못한 사고 해소",
+  "hubs": {
+    "data_track": {"repo": "limsanghyuk/v1700-literary-os", "scope": "드라마 분석·Stage01-04·THICK·PlannerInput/Runtime·EXT6"},
+    "engine_experiment_track": {"repo": "limsanghyuk/literary-os", "scope": "엔진 v795/v14 · 확증 실험 CT-01~CT-10 · 채점 규약 · 거시기획 설계", "canonical_paths": ["docs/tracks/confirmatory/", "docs/standards/", "docs/design/", "docs/sessions/"]}
+  },
+  "mirror": {"path": "experiments/confirmatory_track/", "authority": "READ_ONLY_COPY", "canonical_source": "limsanghyuk/literary-os"},
+  "instruction_for_new_sessions": "확증 실험 결과·채점 규약·CT 사전등록은 literary-os 저장소를 정본으로 조회할 것. 본 미러는 요약·검색용."
+}
