@@ -1,0 +1,14 @@
+{
+  "schema":"R21_PURE_GPT_TO_LITERARY_OS_ABLATION_FINAL_VERDICT_V1",
+  "date":"2026-08-19",
+  "status":"PARTIAL_SUPPORT_PRIMARY_PREREG_GATE_FAIL",
+  "scientific_class":"INTERNAL_BLIND_FORWARD_ABLATION_NOT_INDEPENDENT_CAUSAL_CERTIFICATION",
+  "targets":["난폭한로맨스 EP09","닥터챔프 EP09","드림 EP09"],
+  "medians":{"A0_PURE_GPT":65,"A1_RICH_STATE_NO_GRAMMAR":76,"B_LOS_STATE_SEQUENCE_GRAMMAR":80,"C_HIERARCHICAL":82,"D_RETRIEVAL_HIERARCHICAL":82},
+  "means":{"A0_PURE_GPT":67.6667,"A1_RICH_STATE_NO_GRAMMAR":77.3333,"B_LOS_STATE_SEQUENCE_GRAMMAR":78.3333,"C_HIERARCHICAL":80.3333,"D_RETRIEVAL_HIERARCHICAL":80.0},
+  "median_deltas":{"A1_minus_A0":11,"B_minus_A1":4,"C_minus_B":2,"D_minus_C":0,"D_minus_A0":17},
+  "preregistered_rules":{"B_ge_A0_plus_8":true,"C_ge_B_plus_3":false,"D_ge_C_minus_1":true,"D_ge_A0_all_3_targets":true,"overall_primary_gate":"FAIL_3_OF_4_CONDITIONS_PASS"},
+  "interpretation":{"pure_model_baseline":"A plain-recap base model can already create plausible sequences; one target scored 73, but the three-work median was 65.","rich_state_effect":"The largest incremental gain was A1-A0 +11 median, indicating that a richer, correctly maintained N-1 narrative state is a major asset.","los_representation_grammar_effect":"B-A1 +4 median supports added value from Literary OS structured state/THICK/explicit Sequence grammar, though this contrast is not a pure grammar-only ablation.","hierarchy_effect":"C-B +2 median is positive but below the preregistered +3 gate, so the prior +5 hierarchy gain did not fully replicate.","retrieval_effect":"D-C 0 median; current retrieval did not add measurable value in this sample.","failure_mode":"In 드림 EP09, Literary OS overcommitted to an active dangerous-match thread and missed the canonical escalation choice: license monopoly cancels the event itself. More information can harden the wrong center if episode-level axis selection is wrong."},
+  "claims_not_granted":["formal causal superiority over a base GPT","retrieval effectiveness","retrieval scaling","multi-episode autonomous control"],
+  "next_priority":"episode-axis selection / escalation-level prediction / active-thread suppression, then rerun with independent blind scoring and larger fresh target set"
+}
