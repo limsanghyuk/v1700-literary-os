@@ -1,0 +1,51 @@
+{
+  "schema": "R21_BLIND_FORWARD_SEQUENCEPLAN_V2_FINAL_VERDICT",
+  "date": "2026-08-19",
+  "status": "PASS_INTERNAL_BENCHMARK_WITH_LIMITATIONS",
+  "scientific_class": "INTERNAL_BLIND_FORWARD_ROBUSTNESS_BENCHMARK_NOT_INDEPENDENT_CAUSAL_CERTIFICATION",
+  "targets": ["강남엄마따라잡기_EP09", "굿캐스팅_EP09", "녹두꽃_EP09"],
+  "discarded_target": {
+    "target": "뉴하트_EP09",
+    "reason": "cross-target contamination detected before valid generation; replaced by 굿캐스팅 EP09"
+  },
+  "hard_gates": {
+    "generation_freeze_hash_mismatch_count": 0,
+    "blind_guard_all_pass": true,
+    "schema_all_pass": true,
+    "retrieval_high_specificity_copy_count": 0,
+    "all_hard_gates_pass": true
+  },
+  "semantic_scores": {
+    "B_STATE_DIRECT": {"scores": [71,77,64], "mean": 70.6666666667, "median": 71},
+    "C_HIERARCHICAL": {"scores": [76,82,69], "mean": 75.6666666667, "median": 76},
+    "D_RETRIEVAL_HIERARCHICAL": {"scores": [77,82,68], "mean": 75.6666666667, "median": 77}
+  },
+  "deltas": {
+    "C_minus_B_median": 5,
+    "D_minus_B_median": 6,
+    "D_minus_C_median": 1,
+    "D_not_worse_than_B_targets": 3
+  },
+  "deterministic_diagnostics": {
+    "mean_sequence_count_abs_error": {"B": 1.0, "C": 0.3333333333, "D": 0.3333333333},
+    "mean_thread_exact_f1": {"B": 0.4266666667, "C": 0.4421052632, "D": 0.3941970310},
+    "mean_char3_holdout_proximity": {"B": 0.8053699780, "C": 0.8130513300, "D": 0.8117579026}
+  },
+  "pilot_success_rule": {
+    "required": "hard PASS; D median>=B+5; D>=C; D not worse than B on >=2/3",
+    "pass": true
+  },
+  "promotion_policy": {
+    "SequencePlan_V2_capability": "SUPPORTED_FOR_FURTHER_EXPERIMENT",
+    "EpisodeSynopsisPlan_to_SequencePlan_hierarchical_control": "POSITIVE_INTERNAL_SIGNAL",
+    "retrieval_augmented_sequence_planning": "EXPERIMENTAL_WEAK_POSITIVE_NOT_YET_PROVEN",
+    "retrieval_scaling_claim": "NOT_TESTED",
+    "autonomous_multi_episode_rollout": "NOT_TESTED",
+    "formal_external_certification": "NOT_GRANTED"
+  },
+  "artifact": {
+    "local_package": "R21_BLIND_FORWARD_SEQUENCEPLAN_V2_EXPERIMENT_FINAL_20260819.zip",
+    "package_sha256": "2c2e074fe33f8115c90b239015b65036cadb54c6b250f1814130436e732a763a",
+    "fresh_validation": "PASS"
+  }
+}
