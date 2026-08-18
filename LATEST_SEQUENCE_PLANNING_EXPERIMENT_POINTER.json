@@ -1,0 +1,12 @@
+{
+  "schema":"LATEST_SEQUENCE_PLANNING_EXPERIMENT_POINTER_V1",
+  "date":"2026-08-19",
+  "result":"R21_PURE_GPT_TO_LITERARY_OS_ABLATION_RESULT_20260819.md",
+  "verdict":"R21_PURE_GPT_TO_LITERARY_OS_ABLATION_VERDICT_20260819.json",
+  "status":"PARTIAL_SUPPORT_PRIMARY_PREREG_GATE_FAIL",
+  "medians":{"A0_PURE_GPT":65,"A1_RICH_STATE_NO_GRAMMAR":76,"B_LOS_STATE_SEQUENCE_GRAMMAR":80,"C_HIERARCHICAL":82,"D_RETRIEVAL_HIERARCHICAL":82},
+  "key_deltas":{"rich_state_plus":11,"los_state_and_sequence_grammar_plus":4,"episodeplan_hierarchy_plus":2,"retrieval_plus":0,"full_stack_vs_plain_recap_plus":17},
+  "primary_gate":"FAIL_3_OF_4_CONDITIONS_PASS",
+  "next_priority":"EPISODE_AXIS_SELECTOR_AND_ESCALATION_LEVEL_PREDICTOR_AND_THREAD_SUPPRESSION_DEFERRAL",
+  "scientific_boundary":"INTERNAL_SAME_SESSION; NOT_INDEPENDENT_CAUSAL_CERTIFICATION"
+}
