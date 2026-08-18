@@ -1,0 +1,60 @@
+{
+  "schema": "CT13_R3_FINAL_RESEARCH_CLOSURE_R1",
+  "date": "2026-08-18",
+  "renderer_manifest_sha256": "b9a7c420dde4c58d2c7469272aa230fb220f0cc4784e1859a83b272b804774e0",
+  "renderer_outputs": 48,
+  "renderer_status": "SEALED_EXTERNAL_CLAUDE_6_ISOLATED_SESSIONS",
+  "formal_preregistered_verdict": "UNDECLARED",
+  "formal_reason": [
+    "R3 preregistration section 7 requires logical separation and states that a single assistant session cannot certify PASS.",
+    "No three genuinely separate blind GPT-family scorer sessions were established in the closing runtime.",
+    "Therefore the scorer-independence gate is not established even though within-session numerical replication is strong."
+  ],
+  "within_session_robustness_diagnostic": {
+    "status": "SUPPORTS_INCREMENTAL_UTILITY_BUT_NOT_FORMAL_CERTIFICATION",
+    "scoring_passes": 3,
+    "nature": "strict / semantic-lenient / conservative rubric passes inside one GPT session; not independent scorers",
+    "p4_diagnostic": {
+      "explicit_post_N_leakage_signals": 0,
+      "method": "renderer isolation evidence plus high-specificity comparison against N+1 novel EpisodeArc fields; diagnostic only"
+    },
+    "contrasts": {
+      "C_vs_B": {
+        "P1": {"positive_wins": 8, "negative_wins": 0, "ties": 4, "p_two_sided": 0.0078125},
+        "P2": {"positive_wins": 11, "negative_wins": 0, "ties": 1, "p_two_sided": 0.0009765625},
+        "P3": {"positive_wins": 12, "negative_wins": 0, "ties": 0, "p_two_sided": 0.00048828125},
+        "three_pass_direction_agreement": 0.9722222222222222
+      },
+      "C_vs_N": {
+        "P1": {"positive_wins": 10, "negative_wins": 0, "ties": 2, "p_two_sided": 0.001953125},
+        "P2": {"positive_wins": 10, "negative_wins": 0, "ties": 2, "p_two_sided": 0.001953125},
+        "P3": {"positive_wins": 12, "negative_wins": 0, "ties": 0, "p_two_sided": 0.00048828125},
+        "three_pass_direction_agreement": 1.0
+      },
+      "B_vs_A_auxiliary": {
+        "P1": {"positive_wins": 2, "negative_wins": 0, "ties": 10, "p_two_sided": 0.5},
+        "P2": {"positive_wins": 1, "negative_wins": 0, "ties": 11, "p_two_sided": 1.0},
+        "P3": {"positive_wins": 7, "negative_wins": 0, "ties": 5, "p_two_sided": 0.015625},
+        "three_pass_direction_agreement": 0.6944444444444444
+      }
+    },
+    "would_meet_numeric_pass_conditions_if_independent": {
+      "p4_zero": true,
+      "c_gt_b_two_metrics": true,
+      "c_gt_n_p1_or_p2": true,
+      "agreement_cb": true,
+      "agreement_cn": true,
+      "numeric_result": "PASS_LIKE"
+    }
+  },
+  "scientific_interpretation": {
+    "supported": "A work-specific EpisodeSynopsisPlan supplies planning information that strongly improves deferred-policy adherence, debt handling, and target-state attainment relative to B and mismatched-plan N in the sealed renderings.",
+    "not_yet_formally_proven": "The preregistered causal-control PASS claim because true 3-scorer independence is not established.",
+    "also_not_proven_by_CT13": "That an autonomous planner can itself generate an equally good EpisodeSynopsisPlan from N-1 only."
+  },
+  "database_policy": {
+    "reverse_engineered_38work_episodeplan_corpus": "KEEP_CANONICAL",
+    "autonomous_forward_generation_control": "EXPERIMENTAL_HOLD",
+    "do_not_rollback_38work_corpus": true
+  }
+}
