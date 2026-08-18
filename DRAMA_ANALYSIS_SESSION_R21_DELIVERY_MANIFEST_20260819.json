@@ -1,0 +1,97 @@
+{
+  "schema": "DRAMA_ANALYSIS_SESSION_R21_DELIVERY_MANIFEST_V1",
+  "status": "PASS_FINAL_FRESH_SESSION_HANDOFF",
+  "date": "2026-08-19",
+  "repository": "limsanghyuk/v1700-literary-os",
+  "stage01_04": {
+    "works": 98,
+    "v10_1_equivalent": 97,
+    "source_hold": 1,
+    "source_hold_work": "최강칠우",
+    "authority": "DRAMA_ANALYSIS_SINGLE_AUTHORITY_V10_1"
+  },
+  "current_canonical_cohort": {
+    "thick_works": 38,
+    "boundary_qualified_works": 38,
+    "stage02_sequences": 6357,
+    "thick_sequences": 6357,
+    "episode_planning_contexts": 714,
+    "episode_synopsis_plans": 714,
+    "episode_plan_schema": "EpisodeSynopsisPlan.v0.3-r1",
+    "sequence_allocations": 6357,
+    "r5": 714,
+    "r8": 714,
+    "runtime_scenes": 46078
+  },
+  "deep_semantic_r2_reinforcement": {
+    "works": ["개인의취향", "수호천사", "미안하다사랑한다", "미생"],
+    "stage01_04_changed": false,
+    "sequence_membership_changed": false,
+    "thick_semantics_reinforced": true,
+    "episode_plan_semantics_debt_reinforced": true,
+    "r5_r8_rebuilt": true,
+    "integration_repair": "미안하다사랑한다 EP16 / MISA_MUHYEOK_MINJU_REVENGE_SEDUCTION -> PAID",
+    "misaeng_reinforced_scope": "EP01-EP11"
+  },
+  "global_quality": {
+    "boundary": "PASS_38_OF_38",
+    "stage02_thick_parity": "6357_EQUALS_6357",
+    "exact_provenance": "PASS",
+    "source_refs_checked": 147633,
+    "hash_checks": 31785,
+    "semantic_v3": "PASS_38_OF_38",
+    "owner_grounding_blocking": 0,
+    "depth_blocking": 0,
+    "thread_r2": "PASS_38_OF_38",
+    "subplot_distinct_source_duplicate": 0,
+    "deep_semantic": "PASS_38_OF_38",
+    "episode_plan_hard_errors": 0,
+    "artifact_hash": "PASS_2142_OF_2142"
+  },
+  "ct13_r3": {
+    "renderer_outputs": 48,
+    "renderer_manifest_sha256": "b9a7c420dde4c58d2c7469272aa230fb220f0cc4784e1859a83b272b804774e0",
+    "formal_verdict": "UNDECLARED",
+    "diagnostic_effect": "PASS_LIKE_STRONG_INCREMENTAL_UTILITY_SUPPORT",
+    "reverse_engineered_episodeplan_corpus": "CANONICAL",
+    "autonomous_forward_control": "EXPERIMENTAL_HOLD"
+  },
+  "final_database": {
+    "filename": "DB98_98WORK_STAGE04_38THICK_BOUNDARY_R1_38QUAL_EPPLAN_38WORK_CANONICAL_V03_R1_4WORK_DEEP_SEMANTIC_R2_CURRENT_AUTHORITY_CLEAN_R21_V9_20260818_FINAL_SEALED.zip",
+    "sha256": "7c0cf924a5acd78d338df4f36a7626d14c290fbd6c9eadcf09bdc6ad1b8a1b49",
+    "fresh_validation": "PASS",
+    "files": 25914,
+    "checksum_errors": 0,
+    "crc_errors": 0,
+    "parse_errors": 0,
+    "credential_hits": 0
+  },
+  "new_session_learning_bundle": {
+    "filename": "DRAMA_ANALYSIS_NEW_SESSION_CURRENT_ONLY_R21_38THICK_38EPPLAN_4WORK_DEEP_SEMANTIC_R2_20260818_FINAL_SEALED.zip",
+    "sha256": "b932a186c195844b0c07537d4470c81df65eb12fcd621e78abf60b2a027f44e7",
+    "fresh_validation": "PASS",
+    "files": 4415,
+    "checksum_errors": 0,
+    "crc_errors": 0,
+    "parse_errors": 0,
+    "required_missing": 0,
+    "historical_current_pointer_files_in_learning_path": 0,
+    "pairing_database_sha_match": true
+  },
+  "current_docs": {
+    "session_handoff": "DRAMA_ANALYSIS_SESSION_HANDOFF_R21_20260819.md",
+    "method": "DRAMA_ANALYSIS_METHOD_CURRENT_R21_20260818.md",
+    "episode_plan_manual": "DRAMA_ANALYSIS_EPISODE_PLAN_HANDOFF_MANUAL_R5_20260818.md",
+    "ct13_closure": "CT13_R3_FINAL_RESEARCH_CLOSURE_R1_20260818.md",
+    "fourwork_integration_closure": "FOURWORK_DEEP_SEMANTIC_R2_INTEGRATION_CLOSURE_R1_20260818.md",
+    "fourwork_quality": "FOURWORK_DEEP_SEMANTIC_R2_QUALITY_COMPARISON_R1_20260818.md",
+    "research_roadmap": "LITERARY_OS_NARRATIVE_RETRIEVAL_HIERARCHICAL_PLANNING_ROADMAP_R1_20260819.md"
+  },
+  "next_research": {
+    "primary_question": "Can the model generate EpisodeSynopsisPlan from N-1 only, then generate congruent SequencePlans, with retrieval from the 38-work case library and without future SOURCE leakage?",
+    "retrieval_scaling": "PROPOSED_NOT_PREREGISTERED",
+    "blind_forward_episodeplan": "PROPOSED_NOT_PREREGISTERED",
+    "hierarchical_episode_to_sequence": "PROPOSED_NOT_PREREGISTERED",
+    "multi_episode_rollout": "PROPOSED_AFTER_FORWARD_GATE"
+  }
+}
