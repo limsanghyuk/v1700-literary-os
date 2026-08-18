@@ -1,0 +1,62 @@
+{
+  "series": "101번째프로포즈",
+  "scope": "EP01~EP15 Stage01~04",
+  "audit_basis": "Claude Stage01~04 manual v1 plus continuous-analysis evidence contract v2",
+  "decision": "FAIL_STRICT_CLAUDE_GATE_REPAIR_REQUIRED",
+  "canonical_promotion_allowed": false,
+  "overall_score_100": 77,
+  "scores": {
+    "stage01_scene_grounding_and_anti_gaming": 94,
+    "stage02_sequence_contract": 56,
+    "stage03_episode_character_relationship_causality": 91,
+    "stage04_full_series_fan_in": 69,
+    "provenance_and_portable_evidence": 78
+  },
+  "counts": {
+    "scene_cards": 1125,
+    "sequence_blueprints": 184,
+    "character_arcs": 120,
+    "relationship_arcs": 104,
+    "local_edges": 182,
+    "payoff_candidates": 68,
+    "cross_episode_edges": 38
+  },
+  "passes": {
+    "stage01_exact_duplicate_titles": 0,
+    "stage01_exact_duplicate_intents": 0,
+    "grounding_sample_pass": 45,
+    "grounding_sample_total": 45,
+    "unreplaced_template_variables": 0,
+    "visible_scene_ref_templates": 0,
+    "structural_schema_errors_except_turn_mapping": 0,
+    "global_id_duplicates": 0,
+    "checkpoint_evidence_files": 244,
+    "quarter_or_order_guard_files": 61,
+    "checkpoint_evidence_unique_hashes": 73,
+    "zip_integrity": "PASS",
+    "internal_sha256sums": "PASS"
+  },
+  "hard_failures": {
+    "stage02_explicit_turn_class_mapping_mismatches": 34,
+    "stage02_turn_types_not_covered_by_published_mapping": 35
+  },
+  "warnings": {
+    "stage04_uniform_confidence_0_98": 38,
+    "stage04_adjacent_causal_edges_misclassified_as_cross_episode": 3,
+    "stage04_type_changes_without_promotion_ledger": 4,
+    "source_lock_schema_variants": 3,
+    "source_hash_basis_documented": false,
+    "checkpoint_evidence_duplicate_member_files": 238,
+    "checkpoint_evidence_duplicate_groups": 67,
+    "quarter_audit_detail_level": "uneven"
+  },
+  "required_repairs": [
+    "Re-read and repair 34 deterministic Stage02 mapping mismatches.",
+    "Restrict or formally extend the turn_type registry for 35 unmapped records.",
+    "Reclassify or justify three adjacent causal Stage04 edges.",
+    "Add candidate-to-edge promotion ledger and evidence-calibrated confidence.",
+    "Normalize SourceLock v2 and declare original/normalized hash basis.",
+    "Deduplicate checkpoints and standardize quarter-audit evidence.",
+    "Rerun all gates and supersede the prior PASS consistently."
+  ]
+}
