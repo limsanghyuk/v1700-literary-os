@@ -1,0 +1,79 @@
+{
+  "schema": "DRAMA_ANALYSIS_SESSION_EXPERIMENT_REGISTRY_R21",
+  "date": "2026-08-19",
+  "status": "CURRENT_SESSION_EXPERIMENT_REGISTRY_COMPLETE",
+  "authority_split": {
+    "drama_corpus_method_release": "limsanghyuk/v1700-literary-os",
+    "ct_prereg_engine_experiments": "limsanghyuk/literary-os"
+  },
+  "session_executed_or_closed": [
+    {
+      "id": "CT13_R3_FINAL_CLOSURE",
+      "class": ["SCIENTIFIC_EXPERIMENT", "ROBUSTNESS_DIAGNOSTIC"],
+      "question": "Does work-specific EpisodeSynopsisPlan improve renderer planning quality?",
+      "renderer_outputs": 48,
+      "renderer_manifest_sha256": "b9a7c420dde4c58d2c7469272aa230fb220f0cc4784e1859a83b272b804774e0",
+      "within_session_three_rubric": {
+        "C_vs_B": {"P1_p": 0.0078125, "P2_p": 0.0009765625, "P3_p": 0.00048828125, "direction_agreement": 0.9722222222222222},
+        "C_vs_N": {"P1_p": 0.001953125, "P2_p": 0.001953125, "P3_p": 0.00048828125, "direction_agreement": 1.0},
+        "explicit_post_N_leakage_signals": 0
+      },
+      "formal_verdict": "UNDECLARED",
+      "diagnostic_effect": "PASS_LIKE_STRONG_INCREMENTAL_UTILITY_SUPPORT",
+      "reason": "three genuinely independent blind scorers not established"
+    },
+    {
+      "id": "EPISODE_PLAN_34_TO_38_CORPUS",
+      "class": ["ENGINEERING_VALIDATION"],
+      "result": {"works": 38, "plans": 714, "allocations": 6357, "hard_errors": 0},
+      "source_audit_34work_phase": {"episodes": 102, "source_anchors": 583, "pass": 102, "rewrite_required": 0}
+    },
+    {
+      "id": "FOURWORK_DEEP_SEMANTIC_R2_INTEGRATION",
+      "class": ["ENGINEERING_VALIDATION"],
+      "works": ["개인의취향", "수호천사", "미안하다사랑한다", "미생"],
+      "result": {
+        "stage02_thick": "6357=6357",
+        "source_refs": 147633,
+        "hash_checks": 31785,
+        "semantic_v3": "38/38 PASS",
+        "thread_r2": "38/38 PASS",
+        "deep_semantic": "38/38 PASS",
+        "episode_plans": "714 HARD 0",
+        "artifact_hash": "2142/2142 PASS"
+      },
+      "repair": "미안하다사랑한다 EP16 MISA_MUHYEOK_MINJU_REVENGE_SEDUCTION -> PAID"
+    },
+    {
+      "id": "SEQUENCE_BOUNDARY_R1_38WORK",
+      "class": ["ENGINEERING_VALIDATION", "MEASUREMENT_REPAIR"],
+      "result": {"boundary_qualified": "38/38", "stage02_thick_membership": "6357=6357"}
+    },
+    {
+      "id": "R21_RELEASE_FRESH_VALIDATION",
+      "class": ["ENGINEERING_VALIDATION"],
+      "database_sha256": "7c0cf924a5acd78d338df4f36a7626d14c290fbd6c9eadcf09bdc6ad1b8a1b49",
+      "new_session_bundle_sha256": "b932a186c195844b0c07537d4470c81df65eb12fcd621e78abf60b2a027f44e7",
+      "fresh_validation": "PASS"
+    }
+  ],
+  "historical_evidence_reopened": [
+    {"id": "BLIND_FORWARD_20260811", "result": "PASS_WITH_LIMITATIONS", "key_signal": "C THICK+PlannerInput 88 vs B 84 vs A 65; SequencePlan 86; holdout 73"},
+    {"id": "CT07", "key_signal": "r_L2G=0.807; depth effect +0.74"},
+    {"id": "CT07R", "key_signal": "r_T=0.817; measurement caveat"},
+    {"id": "CT08_FAMILY", "key_signal": "positive depth deltas repeated but formal declaration limited by scorer/measurement gates"},
+    {"id": "CT11", "formal": "NOT_ESTABLISHED", "cross_work_retrieval_C_minus_B": 0.070, "key_signal": "cross-work retrieval improved sequence-count sense"},
+    {"id": "CT11B", "formal": "NOT_ESTABLISHED"},
+    {"id": "CT11C", "formal": "NOT_ESTABLISHED", "key_signal": "deterministic k prior strong; irregular layer only showed generation advantage"},
+    {"id": "CT12A", "key_signal": "R1 0.737 / canonical reproduction R2 0.426 / uniform-vs-canonical 0.704; endpoint contamination alarm"}
+  ],
+  "next_research": [
+    "retrieval scaling: none/5/10/20/38 works",
+    "representation depth scaling: thin/THICK/THICK+Boundary/THICK+Boundary+EpisodePlan",
+    "N-1 blind forward autonomous EpisodeSynopsisPlan",
+    "generated EpisodeSynopsisPlan -> SequencePlans -> ScenePlans -> Beats",
+    "multi-episode rollout",
+    "originality and leakage guard",
+    "learned narrative priors/retrieval weights/dynamic narrative attention"
+  ]
+}
