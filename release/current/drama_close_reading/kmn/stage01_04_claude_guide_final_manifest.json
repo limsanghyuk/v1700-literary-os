@@ -1,0 +1,40 @@
+{
+  "package_id": "KMN_STAGE01_04_CLAUDE_GUIDE_REAUTHORED_FINAL_V1",
+  "work_id": "결혼못하는남자",
+  "scope": "EP01-EP16 Stage01-Stage04",
+  "decision": "ERRORS 0 — CLAUDE GUIDE STRONG GATES ALL PASS",
+  "artifact": {
+    "filename": "kmn_stage01_04_claude_guide_reauthored_final_v1.zip",
+    "sha256": "7eef95efa1a76a930ff0bcf59952357d421ac7ef8be1724e9fcb4e811acfa1d8",
+    "zip_integrity": "PASS",
+    "file_count": 190
+  },
+  "audit": {
+    "filename": "kmn_stage01_04_claude_guide_final_audit_v1.zip",
+    "sha256": "5af87ba8c14418dbea776a64253458c9e4152221185cfadb01fa9461ce76f544",
+    "decision": "ERRORS 0 — CLAUDE GUIDE STRONG GATES ALL PASS"
+  },
+  "counts": {
+    "episodes": 16,
+    "scenes": 1249,
+    "sequences": 189,
+    "episode_arcs": 16,
+    "character_arcs": 89,
+    "relationship_arcs": 92,
+    "local_edges": 128,
+    "payoff_candidates": 37,
+    "cross_episode_edges": 19
+  },
+  "corrections_during_final_audit": {
+    "character_relationship_trigger_scene_corrections": 10,
+    "stage02_core_mix_corrections": 22,
+    "invalid_same_episode_cross_edge_removed": 1
+  },
+  "python_semantic_generation": false,
+  "raw_script_exported": false,
+  "supersedes": [
+    "kmn_stage01_04_developer_delivery_claude_style_v1.zip",
+    "kmn_stage03_arc_edge_final_v3.zip",
+    "kmn_stage04_season_wiring_final_v3.zip"
+  ]
+}
