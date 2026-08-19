@@ -1,0 +1,18 @@
+{
+  "run_id": "gpt_20260714_bimil_ep01_rawsource_02",
+  "provider": "openai",
+  "model_id": "GPT-5.6 Thinking",
+  "contract_id": "SEQCARD-EXT6-PHASE1-CONTRACT-v1",
+  "work_id": "비밀의숲",
+  "episode_span": [
+    1,
+    1
+  ],
+  "source_lock_sha256": "03fb4195cf080a794320e4e3735eac645b748fab5bcfbddd07b004286550c9f2",
+  "direct_reading_attested": true,
+  "reading_protocol": "RAW HWP direct reading; 72 logical SceneCard scenes aligned to 76 physical headings; Q1 1-18, Q2 19-36, Q3 37-54, Q4 55-72",
+  "semantic_authoring": "GPT direct authored; Python used only for HWP extraction, serialization, deterministic derivation, validation, packaging",
+  "claude_row_level_outputs_read": false,
+  "status": "GPT_RAW_SOURCE_RUN_LOCKED_CANDIDATE",
+  "canonical": false
+}

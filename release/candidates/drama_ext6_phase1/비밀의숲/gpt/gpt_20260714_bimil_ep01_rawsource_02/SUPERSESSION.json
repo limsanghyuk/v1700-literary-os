@@ -1,0 +1,8 @@
+{
+  "supersedes_for_comparison": "gpt_20260714_bimil_ep01_01",
+  "previous_pr": 74,
+  "reason": "Previous run was authored from Stage01-03 SSOT because raw HWP source was unavailable. This run directly reads the uploaded HWP and aligns all 76 physical headings to 72 logical scenes.",
+  "previous_run_deleted": false,
+  "current_run": "gpt_20260714_bimil_ep01_rawsource_02",
+  "canonical": false
+}

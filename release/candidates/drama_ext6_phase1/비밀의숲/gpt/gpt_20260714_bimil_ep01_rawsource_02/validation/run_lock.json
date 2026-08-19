@@ -1,0 +1,10 @@
+{
+  "run_id": "gpt_20260714_bimil_ep01_rawsource_02",
+  "status": "LOCKED",
+  "gate_a": "PASS",
+  "gate_b": "PASS",
+  "direct_reading_attested": true,
+  "canonical": false,
+  "comparison_ready": true,
+  "locked_by": "gpt_5_6_thinking_rawsource"
+}

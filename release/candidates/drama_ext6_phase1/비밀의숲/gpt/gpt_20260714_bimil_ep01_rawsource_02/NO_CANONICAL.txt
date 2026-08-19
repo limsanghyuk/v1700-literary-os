@@ -1,0 +1,1 @@
+This run is a locked comparison candidate. It is not canonical until GPT-Claude adjudication and explicit user approval.

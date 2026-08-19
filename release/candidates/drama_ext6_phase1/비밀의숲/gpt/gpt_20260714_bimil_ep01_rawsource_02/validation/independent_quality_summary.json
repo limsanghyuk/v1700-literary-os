@@ -1,0 +1,33 @@
+{
+  "status": "PASS_CANDIDATE",
+  "direct_source": true,
+  "counts": {
+    "bridge": 30,
+    "cast": 197,
+    "load": 30,
+    "logical_scenes": 72,
+    "physical_headings": 76,
+    "annotated_scenes": 70,
+    "empty_scenes": 2,
+    "unresolved_scenes": 0
+  },
+  "band_distribution": {
+    "DOMINANT": 1,
+    "MAJOR": 2,
+    "MINOR": 8,
+    "CAMEO": 19
+  },
+  "top_character_load": [
+    {"character": "황시목", "present": 48, "focal": 43, "speaking": 21, "scene_share": 0.6667, "band": "DOMINANT"},
+    {"character": "강진섭", "present": 24, "focal": 15, "speaking": 11, "scene_share": 0.3333, "band": "MAJOR"},
+    {"character": "한여진", "present": 22, "focal": 17, "speaking": 14, "scene_share": 0.3056, "band": "MAJOR"},
+    {"character": "박무성어머니", "present": 13, "focal": 4, "speaking": 7, "scene_share": 0.1806, "band": "MINOR"},
+    {"character": "박무성", "present": 9, "focal": 0, "speaking": 1, "scene_share": 0.125, "band": "MINOR"}
+  ],
+  "gate_a": {"status": "PASS", "errors": 0},
+  "gate_b": {"status": "PASS", "errors": 0},
+  "known_contract_warnings": [
+    "S07 and S56 merge different temporal layers into one logical scene",
+    "Frozen Contract v1 counts ARCHIVAL_OR_MEMORY in present_scene_count"
+  ]
+}

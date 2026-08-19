@@ -1,0 +1,8 @@
+{
+  "package_name": "gpt_bimil_ext6_ep01_rawsource_run.zip",
+  "package_sha256": "7c84903e9e20e1dc0920c66b48ba3f9c17ff60470879db1e2639adeef393fff7",
+  "package_file_count": 13,
+  "zip_crc": "PASS",
+  "raw_source_in_package": false,
+  "note": "Binary package is delivered separately; hub stores reviewable text artifacts and ordered shards."
+}

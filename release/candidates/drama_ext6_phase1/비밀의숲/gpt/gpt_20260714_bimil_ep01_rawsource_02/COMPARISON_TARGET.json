@@ -1,0 +1,9 @@
+{
+  "comparison_target": true,
+  "provider": "openai",
+  "run_id": "gpt_20260714_bimil_ep01_rawsource_02",
+  "required_counterpart": "Claude raw-source locked EP01 run under the same frozen contract",
+  "compare_fields": ["character_set", "presence_mode", "focality", "speaking_status", "scene_share_band"],
+  "automatic_merge": false,
+  "user_approval_required": true
+}
