@@ -1,0 +1,29 @@
+{
+  "schema": "E11_C4_ARCHIVAL_HOLDOUT_OUTPUT_MANIFEST_R1",
+  "files": [
+    {
+      "path": "E11_C4_ARCHIVAL_HOLDOUT_REPORT_20260820.md",
+      "bytes": 3276,
+      "sha256": "45db461c31a8e64122b831852139e944bd9a47f53a38f85660bbe0d7e9a5536a"
+    },
+    {
+      "path": "E11_C4_ARCHIVAL_HOLDOUT_RESULTS.json",
+      "bytes": 10858,
+      "sha256": "ff2889e7c4573bfc2871f46cfed79159a28191e0b801c027170e19b6c88dbb21"
+    },
+    {
+      "path": "E11_C4_ARCHIVAL_HOLDOUT_ROW_LEDGER.jsonl",
+      "bytes": 40498,
+      "sha256": "2bf8c6ba461cccb315bb13783e1d859113b2b822f3938c087c0ec0aac8340f4c"
+    }
+  ],
+  "verification": {
+    "preunblind_freeze": "pass",
+    "row_count": 56,
+    "json_parse": "pass",
+    "provider_call_count": 0,
+    "runtime_generation": false,
+    "raw_source_exported": false,
+    "promotion_claim": false
+  }
+}

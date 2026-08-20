@@ -1,0 +1,361 @@
+{
+  "schema": "E11_C4_ARCHIVAL_HOLDOUT_RESULTS_R1",
+  "date": "2026-08-20",
+  "experiment_type": "archival holdout validation",
+  "claim_boundary": "internal evidence; not a newly generated prospective run; no promotion claim",
+  "integrity": {
+    "preunblind_freeze": {
+      "status": "pass",
+      "checked": [
+        "PREUNBLIND_FREEZE_MANIFEST.json",
+        "PREUNBLIND_C2_C4_PREDICTIONS.jsonl"
+      ],
+      "failures": []
+    },
+    "holdout_files": 12,
+    "holdout_hashes": [
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\개인의취향\\episode_plan.json",
+        "sha256": "19dbe2f06125dbdd105ffa1c1e4a8d6e8fef7f6c7bc32a6e6e04a23ed6e042a4",
+        "bytes": 18909
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\개인의취향\\episodearc.json",
+        "sha256": "a7656e7b892228c1bac94ebe84e0b0fa185467cf0eb30559e0b698d0a2eda754",
+        "bytes": 2470
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\난폭한로맨스\\episode_plan.json",
+        "sha256": "a703704ad11f962366710ade63eb2b2f3ecfd7f02ea995c2d59e82c92b92c16b",
+        "bytes": 22053
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\난폭한로맨스\\episodearc.json",
+        "sha256": "1a47359623df99c5c790975cabc6f525354a9c439389186ae06e5ffb225a665f",
+        "bytes": 1747
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\도깨비\\episode_plan.json",
+        "sha256": "970110e32b72d78acc42d7e50d298238dccd0e90578c78b53c77d25b45018dd8",
+        "bytes": 19904
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\도깨비\\episodearc.json",
+        "sha256": "a651248139717a07938d4952c836914cc94ae67e11849c445689d1c03d0a4a2c",
+        "bytes": 1939
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\라이벌\\episode_plan.json",
+        "sha256": "a06081affae74e86d8592aad3881364a7a4c6b2499d8a80880bb1b2bffb6c931",
+        "bytes": 26169
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\라이벌\\episodearc.json",
+        "sha256": "a2724fae8cec9d7de74a1dd802af368e3b716df621e6880818631b0ec264efef",
+        "bytes": 2234
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\로망스\\episode_plan.json",
+        "sha256": "bfcf450286f27d01cd787ef2a3c561fe7ea989b1b3a99c82fa36f5c4ed00b21c",
+        "bytes": 18269
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\로망스\\episodearc.json",
+        "sha256": "6c5a6db10817af42e19259a0da1e7ca150da24094a0855d7764668edc5b5d540",
+        "bytes": 1770
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\미안하다사랑한다\\episode_plan.json",
+        "sha256": "4dfb0852455128a7b637a959bd7473e4720a4f7da65db48737a821325115da5f",
+        "bytes": 19866
+      },
+      {
+        "path": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\06_HOLDOUT\\미안하다사랑한다\\episodearc.json",
+        "sha256": "4bd538d08ea18622887acff1f59b8462dfdab96bb9473d856cf440e9e339973f",
+        "bytes": 5250
+      }
+    ],
+    "allocation_counts": {
+      "개인의취향": 12,
+      "난폭한로맨스": 11,
+      "도깨비": 5,
+      "라이벌": 7,
+      "로망스": 7,
+      "미안하다사랑한다": 14
+    }
+  },
+  "gold_distribution": {
+    "L1": 38,
+    "L2": 15,
+    "L3": 3
+  },
+  "scope_metrics": {
+    "C2": {
+      "correct": 44,
+      "total": 56,
+      "accuracy": 0.7857142857142857,
+      "ordinal_mae": 0.23214285714285715,
+      "by_level": {
+        "L0": {
+          "support": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "L1": {
+          "support": 38,
+          "precision": 0.8222222222222222,
+          "recall": 0.9736842105263158,
+          "f1": 0.891566265060241
+        },
+        "L2": {
+          "support": 15,
+          "precision": 0.8333333333333334,
+          "recall": 0.3333333333333333,
+          "f1": 0.47619047619047616
+        },
+        "L3": {
+          "support": 3,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "f1": 0.5
+        },
+        "L4": {
+          "support": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "mismatches": [
+        {
+          "work": "개인의취향",
+          "seq": "S01",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S03",
+          "pred": "L3",
+          "gold": "L2"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S04",
+          "pred": "L3",
+          "gold": "L2"
+        },
+        {
+          "work": "도깨비",
+          "seq": "S05",
+          "pred": "L1",
+          "gold": "L3"
+        },
+        {
+          "work": "라이벌",
+          "seq": "S05",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "로망스",
+          "seq": "S06",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S06",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S07",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "라이벌",
+          "seq": "S07",
+          "pred": "L2",
+          "gold": "L1"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S09",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S09",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S10",
+          "pred": "L3",
+          "gold": "L2"
+        }
+      ]
+    },
+    "C4": {
+      "correct": 45,
+      "total": 56,
+      "accuracy": 0.8035714285714286,
+      "ordinal_mae": 0.21428571428571427,
+      "by_level": {
+        "L0": {
+          "support": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "L1": {
+          "support": 38,
+          "precision": 0.8222222222222222,
+          "recall": 0.9736842105263158,
+          "f1": 0.891566265060241
+        },
+        "L2": {
+          "support": 15,
+          "precision": 0.7272727272727273,
+          "recall": 0.5333333333333333,
+          "f1": 0.6153846153846153
+        },
+        "L3": {
+          "support": 3,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "L4": {
+          "support": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "mismatches": [
+        {
+          "work": "개인의취향",
+          "seq": "S01",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "도깨비",
+          "seq": "S04",
+          "pred": "L2",
+          "gold": "L3"
+        },
+        {
+          "work": "도깨비",
+          "seq": "S05",
+          "pred": "L1",
+          "gold": "L3"
+        },
+        {
+          "work": "라이벌",
+          "seq": "S05",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "로망스",
+          "seq": "S06",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S06",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S07",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "라이벌",
+          "seq": "S07",
+          "pred": "L2",
+          "gold": "L1"
+        },
+        {
+          "work": "난폭한로맨스",
+          "seq": "S09",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S09",
+          "pred": "L1",
+          "gold": "L2"
+        },
+        {
+          "work": "미안하다사랑한다",
+          "seq": "S12",
+          "pred": "L2",
+          "gold": "L3"
+        }
+      ]
+    }
+  },
+  "paired_scope_change": {
+    "improved": 3,
+    "worsened": 2,
+    "discordant": 5,
+    "two_sided_exact_p": 1.0
+  },
+  "intervention_metrics": {
+    "C2": {
+      "material_interventions_total": 11,
+      "material_interventions_evaluable": 11,
+      "hindsight_valid": 10,
+      "hindsight_invalid": 1,
+      "hindsight_unknown": 0,
+      "activation_precision_known": 0.9090909090909091,
+      "final_sequence_material_rewrites": 0
+    },
+    "C4": {
+      "material_interventions_total": 11,
+      "material_interventions_evaluable": 11,
+      "hindsight_valid": 10,
+      "hindsight_invalid": 1,
+      "hindsight_unknown": 0,
+      "activation_precision_known": 0.9090909090909091,
+      "final_sequence_material_rewrites": 0
+    }
+  },
+  "hypotheses": {
+    "H1": {
+      "criterion": "C4 accuracy > C2 and C4 ordinal MAE < C2",
+      "pass": true
+    },
+    "H2": {
+      "criterion": "C4 L3 recall no more than 0.10 below C2",
+      "pass": false
+    },
+    "H3": {
+      "criterion": "C4 final material rewrites = 0",
+      "pass": true
+    },
+    "H4": {
+      "criterion": "C4 material interventions < C2",
+      "pass": false
+    },
+    "H5": {
+      "criterion": "C4 stale-carrier <= C2",
+      "status": "NOT_EVALUABLE_ROW_LEDGER_ABSENT"
+    }
+  },
+  "scientific_interpretation": "The lexical A1 rule did not generalize across controller reason styles. A2 was already implicit in the E10 controller and therefore had no incremental activation."
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "E11_C4_ARCHIVAL_HOLDOUT_PREUNBLIND_FREEZE_R1",
+  "date": "2026-08-20",
+  "experiment_type": "archival holdout; E10 decisions were frozen before E10 target unblinding",
+  "source_decisions": "C:\\exp_20260820\\e11_c4_fresh_source\\E10\\R21_CONTINUOUS_EVENT_GATED_CONTROLLER_R2_20260820\\05_CONTROLLER_LOGS\\C_DECISIONS.jsonl",
+  "source_decisions_sha256": "f6322ea7def1ce6f6b0d9c238d8ba8ee26bd212d1500968d216201be701230e9",
+  "excluded_e11_works": [
+    "국희",
+    "궁",
+    "녹두꽃",
+    "대물",
+    "대장금",
+    "뉴하트"
+  ],
+  "targets": {
+    "개인의취향": 12,
+    "난폭한로맨스": 11,
+    "도깨비": 5,
+    "라이벌": 7,
+    "로망스": 7,
+    "미안하다사랑한다": 14
+  },
+  "observations": 56,
+  "scope_mapping": {
+    "L3": "completion=true and phase=true",
+    "L2": "phase=true without joint completion",
+    "L1": "otherwise"
+  },
+  "a1_rule": "retain L3 only for explicit episode-axis completion/transition/fixation language; otherwise downgrade L3 to L2",
+  "a2_rule": "suppress material replanning at each work's final Sequence; exit-state only",
+  "material_actions": [
+    "ADD_CONFIRMED_BRANCH",
+    "CLOSE_SECONDARY_BRANCH",
+    "PATCH_SECONDARY",
+    "PROMOTE_DUAL_CARRIER",
+    "SWITCH_CARRIER_MINIMAL_DELTA"
+  ],
+  "holdout_episode_plan_read_by_this_program": false,
+  "holdout_episode_arc_read_by_this_program": false,
+  "ledger": "PREUNBLIND_C2_C4_PREDICTIONS.jsonl",
+  "ledger_sha256": "37166de925f4f29cefb425e28598669d4ecbb14fcaff4dc964f48519a3a0c108",
+  "provider_call_count": 0,
+  "promotion_claim": false
+}
