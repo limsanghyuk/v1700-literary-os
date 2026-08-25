@@ -1,0 +1,66 @@
+{
+  "reports": [
+    {
+      "package": "/mnt/data/kmn_ep01_forced_direct_reading_final_v1.zip",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "scene_count": 96,
+        "visible_ep_ref_hits": 0,
+        "template_process_hits": 0,
+        "broken_particle_hits": 0,
+        "exact_duplicate_semantic_values": 0,
+        "repeated_5gram_ge4": 0,
+        "sequence_count": 12
+      },
+      "decision": "PASS"
+    },
+    {
+      "package": "/mnt/data/kmn_ep02_forced_direct_reading_final_v1.zip",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "scene_count": 81,
+        "visible_ep_ref_hits": 0,
+        "template_process_hits": 0,
+        "broken_particle_hits": 0,
+        "exact_duplicate_semantic_values": 0,
+        "repeated_5gram_ge4": 0,
+        "sequence_count": 12
+      },
+      "decision": "PASS"
+    },
+    {
+      "package": "/mnt/data/kmn_ep03_forced_direct_reading_final_v1.zip",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "scene_count": 77,
+        "visible_ep_ref_hits": 0,
+        "template_process_hits": 0,
+        "broken_particle_hits": 0,
+        "exact_duplicate_semantic_values": 0,
+        "repeated_5gram_ge4": 0,
+        "sequence_count": 12
+      },
+      "decision": "PASS"
+    },
+    {
+      "package": "/mnt/data/kmn_ep04_forced_direct_reading_final_v1.zip",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "scene_count": 72,
+        "visible_ep_ref_hits": 0,
+        "template_process_hits": 0,
+        "broken_particle_hits": 0,
+        "exact_duplicate_semantic_values": 0,
+        "repeated_5gram_ge4": 0,
+        "sequence_count": 12
+      },
+      "decision": "PASS"
+    }
+  ],
+  "decision": "PASS_EP01_04_RELEASE_GATE_RUN",
+  "note": "Run locally against the four ZIP packages before hub load. The gate checks anti-template signals and metadata-only constraints; it does not export raw drama text."
+}
